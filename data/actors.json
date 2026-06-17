@@ -1,0 +1,259 @@
+[
+  {
+    "user_id": "1338583394",
+    "name": "CarolAnn Liebelt",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/1338583394/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Comer animales es natural y normal; la carga de prueba la tiene el vegano, no yo.",
+    "analisis": "Principal contrincante de Bernard. Su argumento MUTA cada vez que se le cierra una salida — caso de manual de moving_goalposts: nutrición → omnívoros → millones de años → ecosistema → 'normal/default' → 'veganismo es creencia'. Dismissive y condescendiente ('fringe ideology', 'not my problem if you have a hard time understanding'). No de buena fe argumentativa pero sostiene el intercambio — busca tener la última palabra.",
+    "tactics": ["moving_goalposts", "naturalismo", "inversion_carga", "apelacion_normal", "reencuadre_veganismo_creencia", "peticion_de_principio", "is_ought"],
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No hacer data-dump de nutrición cuando pide fuentes — eso es el pantano que quiere. Nombrar el goalpost-move brevemente y devolver al hueso moral.",
+    "threads": ["27341517928804691", "27335635946059556"],
+    "interactions": [
+      {
+        "thread_id": "27341517928804691",
+        "date": "2026-06-16",
+        "their_move": "animal exploitation morally justified / part of ecosystem / biologically designed",
+        "our_reply_summary": "Concede biología total. Separa 'omnívoro = hecho de digestión' de 'animals are food = juicio de valor que estás metiendo en la definición'. Cierra con UNA pregunta: capacidad no implica derecho.",
+        "outcome": "goalpost"
+      },
+      {
+        "thread_id": "27341517928804691",
+        "date": "2026-06-16",
+        "their_move": "Being an omnivore means we NEED nutrients from both plants and animals. Supplements prove the diet is incomplete.",
+        "our_reply_summary": "Nombró el cambio de carril (moral status → supervivencia). Concedió biología. Clavó B12-de-bacterias-no-de-vacas + ganado también suplementado. Devolvió al hueso: necesidad de supervivencia ≠ su realidad (tiene súper lleno).",
+        "outcome": "pending"
+      }
+    ]
+  },
+  {
+    "user_id": "100018422793817",
+    "name": "Matt Terrain",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/100018422793817/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "No existe consumo sin daño; si todo daña, el veganismo no es moralmente superior.",
+    "analisis": "El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qué comes, vistes o habitas que NO dañe'. Sócrates hostil: pregunta para tender trampa, no para aprender. Seco, retórico, no insultante. Argumentativo de verdad — busca pelea dialéctica. No muerde los argumentos de Bernard; los elude.",
+    "tactics": ["futility_no_clean_option", "socrates_hostil", "crop_deaths_flip"],
+    "tone": "hostile_rhetorical",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop deaths (pantano cebado para eso). NO intentar demostrar que el veganismo causa daño-cero.",
+    "threads": ["27341517928804691"],
+    "interactions": [
+      {
+        "thread_id": "27341517928804691",
+        "date": "2026-06-16",
+        "their_move": "I still don't see the distinction. Animals or crops. They both kill. List the exploitative events that are the problem.",
+        "our_reply_summary": "Aterrizó la distinción de ROL del daño: subproducto de alimentar a todos vs el propósito mismo de la actividad. Reframeó 'exploitation' como RELACIÓN, no lista. Nombró que Matt usa esa distinción (accidente vs intención) en todo menos con animales. Devolvió la carga.",
+        "outcome": "silent"
+      }
+    ]
+  },
+  {
+    "user_id": "1037777423",
+    "name": "Adam Gaska",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/1037777423/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Toda explotación es justificable si es mutuamente beneficiosa; los beneficios no tienen que ser iguales.",
+    "analisis": "El arguer más peligroso por civil y por estructurado. No insulta, no naturaliza crudo, no troll. Argumenta desde un principio explícito (mutualismo asimétrico) y desde datos. El lurker lo lee como 'el carnista razonable'. Trabaja hacia atrás desde una conclusión ya tomada (mala fe estructural). Alto valor de audiencia.",
+    "tactics": ["principio_escudo", "data_dump_selectivo", "domestication_mutualism"],
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No usar 'consent' como argumento único (fácilmente deflectado a bebés/mascotas). No entrar en definiciones de diccionario de 'exploitation' o 'benefit'. No hacer analogías humanas fuertes (esclavitud). No decir 'the animal would rather not exist'. Exponer la estructura, no las palabras.",
+    "threads": ["27341517928804691", "27335635946059556"],
+    "interactions": [
+      {
+        "thread_id": "27341517928804691",
+        "date": "2026-06-16",
+        "their_move": "Yes. Any exploitation is justified if it is mutually beneficial. The benefits don't have to be equal.",
+        "our_reply_summary": "Expuso que 'mutually' hace todo el trabajo y es falso. Concedió cuidado/refugio pero clavó que esos beneficios son condicionales a su propio uso y muerte. Nombró que la relación se estructura desde el inicio en torno al criador. Cerró devolviendo la carga: '¿en qué sentido es el beneficio mutuo y no condicional a la explotación?'",
+        "outcome": "pending"
+      }
+    ]
+  },
+  {
+    "user_id": "100004284907337",
+    "name": "Julia Fairbrother",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/100004284907337/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Comer carne es biológicamente natural y nutricionalmente superior; la vida humana vale más que la animal.",
+    "analisis": "La carnista más elaborada del hilo — escribe párrafos, no one-liners. Alto valor de audiencia: refutarla bien deja el argumento carnista 'serio' desmontado para toda la galería. Juntó casi todo el catálogo estándar en un solo comment. Debate de buena fe aparente. No ha vuelto a responder tras ser contestada por Bernard y Jeff.",
+    "tactics": ["is_ought", "peticion_de_principio", "predator_comparison", "welfare_rhetoric", "whataboutism", "naturalismo", "species_hierarchy"],
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No hacer factory farming el centro del argumento (pivotan a 'humane/pasture-raised'). No data-dumpear nutrición. Trabajar el marco moral que aplica a TODO uso animal, no solo al industrial.",
+    "threads": ["27341517928804691"],
+    "interactions": [
+      {
+        "thread_id": "27341517928804691",
+        "date": "2026-06-16",
+        "their_move": "Biologically designed + supplements gotcha + human life more valuable + predator comparison + welfare rhetoric + whataboutism (human exploitation).",
+        "our_reply_summary": "Bernard respondió largo refutando el is-ought, nombrando la circularidad del 'human life is worth more', y separando agencia moral de comportamiento natural. Jeff Rockwell le tiró data-dump paralelo.",
+        "outcome": "silent"
+      }
+    ]
+  },
+  {
+    "user_id": "100081126484836",
+    "name": "Aj Meredith",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/100081126484836/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Mis morales están bien con comer animales porque la moral es subjetiva.",
+    "analisis": "Low-effort relativista. Suelta la postura, recolecta reacciones, y se desentiende del contenido. Cuando Jeff le respondió, cerró con '😂 correct' — no argumenta, ratifica con emoji. No va a sostener un intercambio serio.",
+    "tactics": ["relativismo_moral"],
+    "tone": "apathetic",
+    "verdict": "pozo_sin_fondo",
+    "register": "ignorar",
+    "what_not_to_do": "No perseguir. Gastar pólvora en alguien que no va a engancharse. Su frase ya quedó contestada indirectamente en las respuestas a CarolAnn/Julia.",
+    "threads": ["27341517928804691"],
+    "interactions": []
+  },
+  {
+    "user_id": "1549719792",
+    "name": "Jeff Rockwell",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/1549719792/",
+    "bando": "pro-vegan",
+    "postura_nucleo": "El veganismo es la opción moral por defecto y la sostenible; el daño cero no existe pero el daño innecesario sí se evita.",
+    "analisis": "El único aliado de Bernard en el hilo. Cubre el flanco ambiental/sistémico con data (biomasa, uso de tierra). Riesgo: data-dump sin estructura puede ser atacado por 'sin citar fuentes'. Coordinable: Bernard sostiene el frente ético/lógico, Jeff el ambiental/nutricional, sin pisarse.",
+    "tactics": [],
+    "tone": "civil",
+    "verdict": "aliado",
+    "register": "any",
+    "what_not_to_do": "No duplicar su data. Construir encima. No responderle a él directamente — dividir trabajo sin pisarse.",
+    "threads": ["27341517928804691"],
+    "interactions": []
+  },
+  {
+    "user_id": "669260908",
+    "name": "Steve Sullivan",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/669260908/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "La moral es subjetiva; vive y deja vivir; no me dictes qué comer.",
+    "analisis": "Relativista + libertario. No defiende que comer carne sea correcto, defiende que la moral no es objetiva y que nadie tiene derecho a dictarle. Calmado, no hostil, pero cerrado. Editó su comentario (le importa cómo queda). Bajo retorno pero no pozo sin fondo.",
+    "tactics": ["relativismo_moral", "libertarian_autonomy"],
+    "tone": "calm",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No escribir un ensayo de metaética. Una observación incisiva (él mismo tiene líneas que no cruza aunque 'la moral es subjetiva') y salir. Bajo retorno.",
+    "threads": ["27341517928804691", "27335635946059556"],
+    "interactions": []
+  },
+  {
+    "user_id": "100000050072653",
+    "name": "Scott James",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/100000050072653/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Ir vegano es el verdadero daño: mata 'bystanders' (cultivos) por lucro y exterminaría las razas domésticas.",
+    "analisis": "Dos gambitos clásicos en uno: (1) crop-deaths flip — pinta la ganadería como 'producto con propósito' y la agricultura vegetal como matanza de inocentes por lucro. (2) 'Exterminar las razas domésticas' si todos fueran veganos. Retórico, condescendiente ('feelings hurt', 'small minority'). Ambos gambitos son falsables y muy educativos para el lurker.",
+    "tactics": ["crop_deaths_flip"],
+    "tone": "sarcastic",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No entrar en body-count de crop deaths. La distinción es intención y necesidad, no cantidad. En 'exterminar razas': el mundo que transiciona no extermina, deja de criar.",
+    "threads": ["27341517928804691"],
+    "interactions": []
+  },
+  {
+    "user_id": "100000650843692",
+    "name": "Frank Teuton",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/100000650843692/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "La domesticación es mutualismo natural; abandonar esos beneficios es neurosis vegana.",
+    "analisis": "Naturalismo algo más sofisticado que el promedio + insulto ('vegan neuroses'). Usa 'commensal' mal (comensalismo = uno se beneficia, el otro no se afecta — contradice su propio 'benefit both'). Seco, desdeñoso, pseudo-intelectual. El error conceptual es explotable: el término que usa colapsa su propio argumento.",
+    "tactics": ["domestication_mutualism", "naturalismo", "insulto_ad_hominem"],
+    "tone": "disdainful",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No responder 'vegan neuroses' en su mismo registro. Nombrar la evasión con calma y pivotar. El error del término biológico es la carne del argumento.",
+    "threads": ["27341517928804691"],
+    "interactions": []
+  },
+  {
+    "user_id": "1277660735",
+    "name": "Dori Cavy Sims",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/1277660735/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Los animales también explotan; hasta las plantas se explotan (companion planting).",
+    "analisis": "Low-effort. Estira el término 'explotación' a plantas y animales no-sintientes para vaciarlo de carga moral. Error categorial: plantas no son sintientes; 'explotación' entre plantas no tiene víctima con intereses. Poco invertida en el debate.",
+    "tactics": ["naturalismo", "is_ought"],
+    "tone": "low_effort",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No gastar una jugada principal. Si se responde: una línea que reponga la distinción de sentiencia, nada más.",
+    "threads": ["27341517928804691"],
+    "interactions": []
+  },
+  {
+    "user_id": "61580416850698",
+    "name": "Jude Cooper",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/61580416850698/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Sin postura propia; pile-on de Matt Terrain con 'he can't'.",
+    "analisis": "Apareció solo para rematar el argumento de Matt con 'he can't'. Pile-on de dos palabras. Bando no completamente confirmado: también reaccionó a un comentario de Bernard con valencia desconocida.",
+    "tactics": [],
+    "tone": "low_effort",
+    "verdict": "pozo_sin_fondo",
+    "register": "ignorar",
+    "what_not_to_do": "Ignorar. Dos palabras no merecen una respuesta. Su sustancia ('no hay consumo sin daño') ya se contesta en las respuestas a Matt.",
+    "threads": ["27341517928804691"],
+    "interactions": []
+  },
+  {
+    "user_id": "813709465",
+    "name": "Paul Garcia",
+    "profile_url": "https://www.facebook.com/profile.php?id=813709465",
+    "bando": "anti-vegan",
+    "postura_nucleo": "'Plant-based' es marketing vacío; las proyecciones son press releases; sus 8 años vegano le arruinaron la salud.",
+    "analisis": "El arguer civil más valioso del hilo vegan-market. Ex-vegano de 8 años con historia médica real (oxalatos, fructosa, HMO que falló). No argumenta desde la moral — salió del terreno moral explícitamente. Persuadible al margen. El lurker lo lee como 'el carnista razonable'. Su error: n=1 como evidencia de categoría. Su queja médica es legítima; su inferencia categoría-dieta no.",
+    "tactics": ["anecdota_personal_n1", "data_dump_selectivo"],
+    "tone": "civil",
+    "verdict": "persuadible",
+    "register": "compasivo",
+    "what_not_to_do": "NO disputar su experiencia. NO atacar si la dieta fue la causa. Honrar el testimonio, ponerse de su lado contra los malos consejos que recibió, y ENTONCES separar n=1 de la categoría. No usar el martillo moral (él ya lo descartó).",
+    "threads": ["27335635946059556"],
+    "interactions": [
+      {
+        "thread_id": "27335635946059556",
+        "date": "2026-06-16",
+        "their_move": "Compartió testimonio de 8 años vegano: oxalatos, fructosa, mal diagnosticado, consejería vegana sesgada, finalmente mejoró añadiendo carne.",
+        "our_reply_summary": "Honró el testimonio sin disputar la experiencia. Se puso de su lado nombrando que los consejos que recibió (más hojas verdes con cálculos, agave con fructosa) están documentados como al revés. Reforzó SU queja de mala orientación. Devolvió la carga con n=1≠categoría + la moral es ortogonal a si un individuo prospera.",
+        "outcome": "pending"
+      }
+    ]
+  },
+  {
+    "user_id": "100011355404997",
+    "name": "Anna Angelika",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/100011355404997/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "El veganismo es una minoría irrelevante de idiotas; Beyond Meat colapsó; vivimos en el presente, no en 2035.",
+    "analisis": "La contrincante más hostil del hilo vegan-market. Dominancia social, no argumento. Mezcla UN punto real (Beyond Meat cayó ~99%) con muro de insulto personal. Busca humillar ante la galería, no convencer. Pozo sin fondo para argumento directo; su valor es de contraste de temperamento para el lurker.",
+    "tactics": ["insulto_ad_hominem", "cherry_pick_empresa", "popularidad_como_justificacion", "apelacion_mayoria", "presentismo"],
+    "tone": "hostile",
+    "verdict": "pozo_sin_fondo",
+    "register": "filo",
+    "what_not_to_do": "No responder al insulto en su nivel. No defender a Beyond Meat específicamente. Si se responde: una sola línea de contraste de temperamento + la meta-jugada (midiendo popularidad, no ética), y salir.",
+    "threads": ["27335635946059556"],
+    "interactions": []
+  },
+  {
+    "user_id": null,
+    "name": "Ellory Dahl",
+    "profile_url": null,
+    "bando": "anti-vegan",
+    "postura_nucleo": "El veganismo está muriendo / es ridiculizado; los números lo prueban.",
+    "analisis": "Insultador puro (×8 comentarios, 'intellectually challenged retards', 'dumbasses') con tres data-points de popularidad reales pero mal usados. Patrón: insulto + data-dump de popularidad. Núcleo del error: popularidad ≠ justificación moral. Bernard ya desmontó los tres data-points en este hilo respondiendo a otras personas (Anna, Steve, Les).",
+    "tactics": ["insulto_ad_hominem", "data_dump_selectivo", "popularidad_como_justificacion", "cherry_pick_empresa"],
+    "tone": "hostile",
+    "verdict": "pozo_sin_fondo",
+    "register": "filo",
+    "what_not_to_do": "NO refutar dato por dato (ya está hecho + da oxígeno a un troll). La jugada es META: nombrar que todos estos actores miden popularidad, no ética, y devolver al hueso con UNA respuesta.",
+    "threads": ["27335635946059556"],
+    "interactions": []
+  }
+]
