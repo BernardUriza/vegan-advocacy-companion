@@ -17,9 +17,9 @@ de los hilos. Gobernado por la regla `thread-actor-dossier`.
 | [Frank Teuton](frank-teuton.md) | 100000650843692 | Anti-vegan | Naturalismo "domesticación=mutualismo" + insulto "vegan neuroses"; usa "commensal" mal | ethical-framework |
 | [Dori Cavy Sims](dori-cavy-sims.md) | 1277660735 | Anti-vegan | Low-effort: "companion planting explota"; error categorial sentiencia | ethical-framework |
 | [Paul Garcia](paul-garcia.md) | 813709465 | Anti-vegan **de buena fe** (ex-vegano) | El arguer civil más valioso de vegan-market; testimonio ex-vegano de 8 años; exponer n=1≠categoría, no martillo moral | **vegan-market** |
+| [Adam Gaska](adam-gaska.md) | 1037777423 | Anti-vegan (**el razonable**/utilitarista frío) | "mutually beneficial justifies it" + "meat 1.31T→2.17T"; filo, exponer el método; "mutual benefit" excluye la muerte programada | **ethical-framework**, vegan-market |
 
 ### Dossier diferido (vistos en vegan-market, perfil completo cuando reaparezcan)
-- **Adam Gaska** (1037777423) — anti, **el razonable**: "meat industry crece 1.31T→2.17T". Punto: absoluto ≠ per-cápita.
 - **Buffo DeClown** (100047589760585) — anti: "vegan wins siempre a futuro, nunca hoy; fad diet". Bernard ya tiene borrador 'Bufón'.
 - **Ellory Dahl** (100010556977700) — anti, one-note: Beyond Meat $235→63¢ (repetido).
 - **Steve Sullivan** — ya tiene dossier; vista de salud añadida arriba.
