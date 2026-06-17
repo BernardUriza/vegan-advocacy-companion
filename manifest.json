@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_appName__",
+  "version": "0.1.0",
+  "description": "__MSG_appDescription__",
+  "default_locale": "en",
+
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "activeTab"
+  ],
+
+  "host_permissions": [
+    "http://localhost:3001/*",
+    "https://*.vercel.app/*"
+  ],
+
+  "side_panel": {
+    "default_path": "sidepanel/index.html"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_title": "Open Vegan Advocacy Companion"
+  }
+}

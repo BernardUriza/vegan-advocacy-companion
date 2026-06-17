@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="appName">Vegan Advocacy Companion</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1 data-i18n="header_title">🌱 Vegan Advocacy</h1>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-label" data-i18n="header_level">LEVEL</span>
+          <span class="stat-value" id="level">1</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label" data-i18n="header_xp">XP</span>
+          <span class="stat-value" id="xp">0</span>
+        </div>
+        <!-- Language Switcher -->
+        <div class="stat lang-switcher" aria-label="Language selector">
+          <button
+            class="lang-btn active"
+            data-lang="en"
+            aria-label="Switch to English"
+            aria-current="true"
+            title="English">
+            🇬🇧
+          </button>
+          <button
+            class="lang-btn"
+            data-lang="es"
+            aria-label="Cambiar a Español"
+            title="Español">
+            🇪🇸
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Fallacy Analyzer Section -->
+      <section class="section">
+        <h2 data-i18n="section_analyze_title">🎯 Analyze Argument</h2>
+        <p class="help-text" data-i18n-html="section_analyze_description">
+          Paste any argument and the system will detect logical fallacies automatically
+        </p>
+
+        <textarea
+          id="argumentInput"
+          data-i18n-placeholder="textarea_placeholder"
+          placeholder="Paste an argument here to analyze for logical fallacies..."
+          rows="4"
+        ></textarea>
+
+        <button id="validateBtn" class="btn btn-primary" data-i18n="button_analyze">
+          🔍 Analyze
+        </button>
+
+        <div id="feedback" class="feedback" style="display: none;"></div>
+      </section>
+
+      <!-- Snippets Section -->
+      <section class="section">
+        <h2 data-i18n="section_snippets_title">💬 Quick Responses</h2>
+        <p class="help-text" data-i18n="section_snippets_description">Copy these pre-written responses for common arguments:</p>
+
+        <div id="snippetsList" class="snippets-list">
+          <!-- Snippets will be loaded by script.js -->
+        </div>
+      </section>
+
+      <!-- Progress Section -->
+      <section class="section">
+        <h2 data-i18n="section_progress_title">📊 Your Progress</h2>
+        <div class="progress-stats">
+          <div class="progress-item">
+            <span class="progress-label" data-i18n="progress_fallacies">Fallacies Detected:</span>
+            <span class="progress-value" id="totalFallacies">0</span>
+          </div>
+          <div class="progress-item">
+            <span class="progress-label" data-i18n="progress_snippets_copied">Snippets Copied:</span>
+            <span class="progress-value" id="snippetsCopied">0</span>
+          </div>
+          <div class="progress-item">
+            <span class="progress-label" data-i18n="progress_total_xp">Total XP:</span>
+            <span class="progress-value" id="totalXP">0</span>
+          </div>
+          <div class="progress-item">
+            <span class="progress-label" data-i18n="progress_next_level">Next Level:</span>
+            <span class="progress-value" id="nextLevel">1000 XP</span>
+          </div>
+        </div>
+
+        <div class="xp-bar">
+          <div id="xpProgress" class="xp-bar-fill" style="width: 0%"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-text" data-i18n="footer_tagline">
+        Learn logic, improve your advocacy ✊
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

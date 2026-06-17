@@ -1,0 +1,89 @@
+{
+  "appName": {
+    "message": "Vegan Advocacy Companion",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Educational tool to identify logical fallacies in vegan advocacy debates",
+    "description": "Description of the extension"
+  },
+  "header_title": {
+    "message": "Vegan Advocacy"
+  },
+  "header_level": {
+    "message": "LEVEL"
+  },
+  "header_xp": {
+    "message": "XP"
+  },
+  "section_analyze_title": {
+    "message": "🎯 Analyze Argument"
+  },
+  "section_analyze_description": {
+    "message": "Paste any argument and the system will detect logical fallacies automatically"
+  },
+  "textarea_placeholder": {
+    "message": "Paste an argument here to analyze for logical fallacies..."
+  },
+  "button_analyze": {
+    "message": "🔍 Analyze"
+  },
+  "button_analyzing": {
+    "message": "⏳ Analyzing..."
+  },
+  "section_snippets_title": {
+    "message": "💬 Quick Responses"
+  },
+  "section_snippets_description": {
+    "message": "Copy these pre-written responses tailored to the detected fallacy:"
+  },
+  "button_copy": {
+    "message": "📋 Copy"
+  },
+  "button_copied": {
+    "message": "✓ Copied!"
+  },
+  "section_progress_title": {
+    "message": "📊 Your Progress"
+  },
+  "progress_fallacies": {
+    "message": "Fallacies Detected:"
+  },
+  "progress_snippets_copied": {
+    "message": "Snippets Copied:"
+  },
+  "progress_total_xp": {
+    "message": "Total XP:"
+  },
+  "progress_next_level": {
+    "message": "Next Level:"
+  },
+  "footer_tagline": {
+    "message": "Learn logic, improve your advocacy ✊"
+  },
+  "feedback_detected": {
+    "message": "✅ Fallacy Detected! +$1 XP"
+  },
+  "feedback_no_fallacy": {
+    "message": "ℹ️ No Fallacy Detected"
+  },
+  "feedback_no_fallacy_explanation": {
+    "message": "This argument doesn't contain a clear logical fallacy. It may be a reasonable point that deserves a substantive response."
+  },
+  "feedback_keywords": {
+    "message": "Detected keywords: $1"
+  },
+  "feedback_error": {
+    "message": "⚠️ Error analyzing. Please try again."
+  },
+  "snippets_hint_analyze": {
+    "message": "💡 Analyze an argument first to see relevant response snippets"
+  },
+  "snippets_no_data": {
+    "message": "No snippets available for this fallacy type yet."
+  },
+  "language_switch_extension_warning": {
+    "message": "Language switching is not available in Chrome Extension mode. Please change your Chrome language settings.",
+    "description": "Warning shown to Chrome Extension users"
+  }
+}

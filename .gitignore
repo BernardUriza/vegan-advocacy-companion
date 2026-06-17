@@ -1,0 +1,28 @@
+# deps
+node_modules/
+**/node_modules/
+
+# secrets / env (viven fuera del repo — secrets-management)
+.env
+.env.*
+!.env.example
+
+# next.js / build outputs
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+
+# logs
+*.log
+npm-debug.log*
+
+# macOS cruft
+.DS_Store
+Icon?
+Icon
+
+# working scratch
+scripts/.fb-snap.txt
+scripts/.draft-test.txt

@@ -1,0 +1,109 @@
+{
+  "appName": {
+    "message": "Vegan Advocacy Companion",
+    "description": "Name of the extension"
+  },
+  "appDescription": {
+    "message": "Educational tool to identify logical fallacies in vegan advocacy debates",
+    "description": "Description of the extension"
+  },
+  "header_title": {
+    "message": "Vegan Advocacy"
+  },
+  "header_level": {
+    "message": "LEVEL"
+  },
+  "header_xp": {
+    "message": "XP"
+  },
+  "section_identify_title": {
+    "message": "🎯 Identify Fallacy"
+  },
+  "section_identify_description": {
+    "message": "Practice identifying the <strong>Appeal to Tradition</strong> fallacy (\"We've always eaten meat\", \"Our ancestors ate animals\", etc.)"
+  },
+  "textarea_placeholder": {
+    "message": "Paste an argument here that you think contains an Appeal to Tradition fallacy..."
+  },
+  "button_validate": {
+    "message": "✓ Validate My Identification"
+  },
+  "button_analyzing": {
+    "message": "⏳ Analyzing..."
+  },
+  "section_snippets_title": {
+    "message": "💬 Quick Responses"
+  },
+  "section_snippets_description": {
+    "message": "Copy these pre-written responses for common arguments:"
+  },
+  "snippet_educational_title": {
+    "message": "Educational - Historical Context"
+  },
+  "snippet_educational_content": {
+    "message": "Many traditions change over time as we learn more. Slavery, denying women's rights, and burning witches were all traditions. Just because something was done historically doesn't make it morally right today. We now understand that animals can suffer, and we have alternatives."
+  },
+  "snippet_empathetic_title": {
+    "message": "Empathetic - Common Ground"
+  },
+  "snippet_empathetic_content": {
+    "message": "I understand the appeal to tradition - I grew up eating meat too. But traditions evolve as we gain new knowledge. We no longer practice many things our ancestors did because we've learned better ways. The question isn't what we've always done, but what's right given what we now know about animal sentience and environmental impact."
+  },
+  "snippet_assertive_title": {
+    "message": "Assertive - Direct Response"
+  },
+  "snippet_assertive_content": {
+    "message": "Appeal to tradition is a logical fallacy. Our ancestors also owned slaves, denied women basic rights, and practiced bloodletting as medicine. We abandoned those traditions when we learned better. The fact that we've eaten animals historically doesn't justify continuing when we have healthier, more ethical alternatives."
+  },
+  "snippet_scientific_title": {
+    "message": "Scientific - Evidence-Based"
+  },
+  "snippet_scientific_content": {
+    "message": "From an evolutionary perspective, humans are adaptable omnivores, not obligate carnivores. Studies show plant-based diets can meet all nutritional needs. What our ancestors ate was driven by survival necessity, not optimal health. Modern science gives us better options than appealing to paleolithic diets."
+  },
+  "snippet_philosophical_title": {
+    "message": "Philosophical - Ethics Focus"
+  },
+  "snippet_philosophical_content": {
+    "message": "Moral philosophy doesn't derive 'ought' from 'is' (Hume's Law). Even if humans have historically eaten animals, that doesn't establish it as morally correct. We need to evaluate practices based on their ethical merit - does the pleasure of taste justify causing suffering when we have alternatives?"
+  },
+  "button_copy": {
+    "message": "📋 Copy"
+  },
+  "button_copied": {
+    "message": "✓ Copied!"
+  },
+  "section_progress_title": {
+    "message": "📊 Your Progress"
+  },
+  "progress_fallacies": {
+    "message": "Fallacies Identified:"
+  },
+  "progress_total_xp": {
+    "message": "Total XP:"
+  },
+  "progress_next_level": {
+    "message": "Next Level:"
+  },
+  "footer_tagline": {
+    "message": "Learn logic, improve your advocacy ✊"
+  },
+  "feedback_correct": {
+    "message": "✅ Correct! +$1 XP"
+  },
+  "feedback_correct_explanation": {
+    "message": "Well done! This argument does contain an Appeal to Tradition fallacy."
+  },
+  "feedback_incorrect": {
+    "message": "❌ Not quite! No XP this time"
+  },
+  "feedback_incorrect_explanation": {
+    "message": "This doesn't appear to be an Appeal to Tradition fallacy. Look for arguments that justify meat-eating simply because \"we've always done it\" or \"it's traditional\"."
+  },
+  "feedback_keywords": {
+    "message": "Detected keywords: $1"
+  },
+  "feedback_error": {
+    "message": "⚠️ Error validating. Please try again."
+  }
+}

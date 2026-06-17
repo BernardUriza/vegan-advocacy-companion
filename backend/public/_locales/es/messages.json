@@ -1,0 +1,89 @@
+{
+  "appName": {
+    "message": "Compañero de Defensa Vegana",
+    "description": "Nombre de la extensión"
+  },
+  "appDescription": {
+    "message": "Herramienta educativa para identificar falacias lógicas en debates sobre veganismo",
+    "description": "Descripción de la extensión"
+  },
+  "header_title": {
+    "message": "Defensa Vegana"
+  },
+  "header_level": {
+    "message": "NIVEL"
+  },
+  "header_xp": {
+    "message": "XP"
+  },
+  "section_analyze_title": {
+    "message": "🎯 Analizar Argumento"
+  },
+  "section_analyze_description": {
+    "message": "Pega cualquier argumento y el sistema detectará falacias lógicas automáticamente"
+  },
+  "textarea_placeholder": {
+    "message": "Pega un argumento aquí para analizar falacias lógicas..."
+  },
+  "button_analyze": {
+    "message": "🔍 Analizar"
+  },
+  "button_analyzing": {
+    "message": "⏳ Analizando..."
+  },
+  "section_snippets_title": {
+    "message": "💬 Respuestas Rápidas"
+  },
+  "section_snippets_description": {
+    "message": "Copia estas respuestas pre-escritas adaptadas a la falacia detectada:"
+  },
+  "button_copy": {
+    "message": "📋 Copiar"
+  },
+  "button_copied": {
+    "message": "✓ ¡Copiado!"
+  },
+  "section_progress_title": {
+    "message": "📊 Tu Progreso"
+  },
+  "progress_fallacies": {
+    "message": "Falacias Detectadas:"
+  },
+  "progress_snippets_copied": {
+    "message": "Snippets Copiados:"
+  },
+  "progress_total_xp": {
+    "message": "XP Total:"
+  },
+  "progress_next_level": {
+    "message": "Próximo Nivel:"
+  },
+  "footer_tagline": {
+    "message": "Aprende lógica, mejora tu defensa ✊"
+  },
+  "feedback_detected": {
+    "message": "✅ ¡Falacia Detectada! +$1 XP"
+  },
+  "feedback_no_fallacy": {
+    "message": "ℹ️ No Se Detectó Falacia"
+  },
+  "feedback_no_fallacy_explanation": {
+    "message": "Este argumento no contiene una falacia lógica clara. Puede ser un punto razonable que merece una respuesta sustantiva."
+  },
+  "feedback_keywords": {
+    "message": "Palabras clave detectadas: $1"
+  },
+  "feedback_error": {
+    "message": "⚠️ Error al analizar. Por favor intenta de nuevo."
+  },
+  "snippets_hint_analyze": {
+    "message": "💡 Analiza un argumento primero para ver snippets de respuesta relevantes"
+  },
+  "snippets_no_data": {
+    "message": "No hay snippets disponibles para este tipo de falacia todavía."
+  },
+  "language_switch_extension_warning": {
+    "message": "El cambio de idioma no está disponible en modo Extensión de Chrome. Por favor cambia la configuración de idioma de Chrome.",
+    "description": "Advertencia mostrada a usuarios de Extensión de Chrome"
+  }
+}

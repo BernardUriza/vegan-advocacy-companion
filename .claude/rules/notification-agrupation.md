@@ -1,0 +1,78 @@
+# Notification Agrupation — etapa uno: agrupar por hilo, no por notificación
+
+Primera etapa del pipeline (→ [thread-actor-dossier] → [coagent-advise] →
+[comment-post-and-verify]). Facebook tira **N notificaciones por el mismo post**
+(comentó X, te mencionó Y, +15 reaccionaron…) y parece N cosas cuando es **una
+sola conversación**. La regla: nunca lista plana — **agrupar por hilo (post) y
+ponderar dónde hay deuda real.** Pipeline de alto volumen: corre el GOLDEN PATH
+sin re-explorar.
+
+## GOLDEN PATH — la mecánica exacta
+
+**0. TRIAGE RÁPIDO por script (arranque por default).** Antes de tocar el MCP,
+correr el scraper headless que reusa la sesión logueada vía CDP:
+```bash
+cd scripts && node notif-scan.mjs          # tabla humana ordenada por deuda
+node notif-scan.mjs --json                 # JSON para pipear
+```
+Conecta por CDP al Chrome de debug (`CDP_URL`, default `http://127.0.0.1:9333`),
+abre una **tab nueva** en el contexto logueado (NO navega las tabs de Bernard),
+extrae las notifs y **agrupa por `post_id` real** (lo lee del query param
+`?post_id=` del href de la notif — fix 2026-06-16; antes salía null y partía un
+post en varios hilos), separa el ruido de seguridad, ordena por deuda, y emite
+una **`openUrl` lista por hilo** — todo sin gastar tool-calls del MCP. El
+`openUrl` del hilo top **alimenta directo a `thread-extract.mjs` (etapa 2)**: no
+hace falta el MCP para resolver el `post_id`. **En prueba:** el path MCP (pasos
+1–6) queda como confirmación/fallback si el script falla o un hilo sale raro
+(ej. notifs de perfil personal con `pfbid` en vez de `post_id` numérico, que aún
+caen al agrupado por `comment_id`). (Requiere `playwright-core` en `scripts/`; el
+Chrome de debug vivo en 9333 — diagnóstico del `~/CLAUDE.md` si no responde.)
+
+**1. Llegar a notificaciones sin abrir tabs de más.** `list_pages` primero — casi
+siempre ya hay una tab de FB abierta. Si hay una en `facebook.com/notifications`,
+`select_page` esa. Si no, navega una tab de FB existente a
+`https://www.facebook.com/notifications`. (No abras Chrome a ciegas — diagnóstico
+del `~/CLAUDE.md` si el MCP no responde; el puerto suele ser **9333**, no 9222.)
+
+**2. `take_snapshot`.** El a11y tree lista cada notificación como un `link` cuyo
+texto es el aviso completo y cuya `url` trae los parámetros llave.
+
+**3. Parsear los parámetros de cada `url` de notificación:**
+
+| Parámetro | Para qué |
+|---|---|
+| `post_id` (o `/posts/<id>` / `multi_permalinks=<id>`) | **La llave de agrupación.** Mismo `post_id` = mismo hilo |
+| `comment_id` / `reply_comment_id` | Ancla para abrir en el comentario exacto (etapa dos) |
+| `notif_t` | El TIPO → define el peso (tabla abajo) |
+| `notif_id` | id único del aviso |
+
+**4. Clasificar por `notif_t`:**
+
+| `notif_t` | Categoría | Peso |
+|---|---|---|
+| `approve_from_another_device` | **Seguridad, NO es hilo** | Sácalo aparte |
+| `group_comment_mention` | Te mencionaron | **Alto — deuda** |
+| `group_comment` | Comentaron tu post | **Alto — deuda** |
+| `feedback_reaction_generic` | Reaccionaron / likes | **Bajo — dopamina** |
+
+**5. Ruido de seguridad → reportar aparte.** Varias `approve_from_another_device`
+en pocos minutos = ataque activo a la cuenta. Dilo explícito (Art. 3), no lo
+entierres como "ruido", y NO lo metas en la lista de hilos.
+
+**6. Entregar tabla, no prosa.** Una fila por hilo (agrupado por `post_id`),
+ordenada por prioridad: título del post, qué pasó (condensado), lo último sin leer
+con su antigüedad, si requiere acción. Recomendar **por dónde empezar** — decidir,
+no ofrecer dilema (Art. 4).
+
+## Ponderación (desempate)
+
+Dentro de los de peso alto, gana el hilo con actividad más reciente y con
+réplicas-a-tus-réplicas (`reply_comment_id` presente) — ahí es donde más se pierde
+"dónde quedó". Las reacciones (`+15 reacted`) son informativas, nunca deuda.
+
+## Por qué existe
+
+Registrada 2026-06-16. Bernard se pierde en debates veganos de grupos grandes
+("Vegans V's Meat Eaters") donde un post acumula decenas de comentarios, menciones
+y réplicas anidadas que FB notifica desagregadas. Agrupar por `post_id` + ponderar
+por deuda + separar el ruido de seguridad es el arranque del pipeline.

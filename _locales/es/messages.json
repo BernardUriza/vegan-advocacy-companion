@@ -1,0 +1,109 @@
+{
+  "appName": {
+    "message": "Compañero de Activismo Vegano",
+    "description": "Nombre de la extensión"
+  },
+  "appDescription": {
+    "message": "Herramienta educativa para identificar falacias lógicas en debates sobre veganismo",
+    "description": "Descripción de la extensión"
+  },
+  "header_title": {
+    "message": "Activismo Vegano"
+  },
+  "header_level": {
+    "message": "NIVEL"
+  },
+  "header_xp": {
+    "message": "XP"
+  },
+  "section_identify_title": {
+    "message": "🎯 Identificar Falacia"
+  },
+  "section_identify_description": {
+    "message": "Practica identificando la falacia de <strong>Apelación a la Tradición</strong> (\"Siempre hemos comido carne\", \"Nuestros ancestros comían animales\", etc.)"
+  },
+  "textarea_placeholder": {
+    "message": "Pega aquí un argumento que creas que contiene una falacia de Apelación a la Tradición..."
+  },
+  "button_validate": {
+    "message": "✓ Validar Mi Identificación"
+  },
+  "button_analyzing": {
+    "message": "⏳ Analizando..."
+  },
+  "section_snippets_title": {
+    "message": "💬 Respuestas Rápidas"
+  },
+  "section_snippets_description": {
+    "message": "Copia estas respuestas pre-escritas para argumentos comunes:"
+  },
+  "snippet_educational_title": {
+    "message": "Educativo - Contexto Histórico"
+  },
+  "snippet_educational_content": {
+    "message": "Muchas tradiciones cambian con el tiempo a medida que aprendemos más. La esclavitud, negar derechos a las mujeres y quemar brujas eran tradiciones. El hecho de que algo se haya hecho históricamente no lo hace moralmente correcto hoy. Ahora entendemos que los animales pueden sufrir, y tenemos alternativas."
+  },
+  "snippet_empathetic_title": {
+    "message": "Empático - Terreno Común"
+  },
+  "snippet_empathetic_content": {
+    "message": "Entiendo la apelación a la tradición - yo también crecí comiendo carne. Pero las tradiciones evolucionan a medida que ganamos nuevo conocimiento. Ya no practicamos muchas cosas que nuestros ancestros hacían porque hemos aprendido mejores formas. La pregunta no es qué hemos hecho siempre, sino qué es correcto dado lo que ahora sabemos sobre la sintiencia animal y el impacto ambiental."
+  },
+  "snippet_assertive_title": {
+    "message": "Asertivo - Respuesta Directa"
+  },
+  "snippet_assertive_content": {
+    "message": "La apelación a la tradición es una falacia lógica. Nuestros ancestros también tenían esclavos, negaban derechos básicos a las mujeres y practicaban sangrías como medicina. Abandonamos esas tradiciones cuando aprendimos mejor. El hecho de que hayamos comido animales históricamente no justifica continuar cuando tenemos alternativas más saludables y éticas."
+  },
+  "snippet_scientific_title": {
+    "message": "Científico - Basado en Evidencia"
+  },
+  "snippet_scientific_content": {
+    "message": "Desde una perspectiva evolutiva, los humanos somos omnívoros adaptables, no carnívoros obligados. Los estudios muestran que las dietas basadas en plantas pueden satisfacer todas las necesidades nutricionales. Lo que nuestros ancestros comían estaba impulsado por la necesidad de supervivencia, no por la salud óptima. La ciencia moderna nos da mejores opciones que apelar a dietas paleolíticas."
+  },
+  "snippet_philosophical_title": {
+    "message": "Filosófico - Enfoque Ético"
+  },
+  "snippet_philosophical_content": {
+    "message": "La filosofía moral no deriva el 'deber ser' del 'ser' (Ley de Hume). Incluso si los humanos históricamente han comido animales, eso no establece que sea moralmente correcto. Necesitamos evaluar las prácticas basándonos en su mérito ético - ¿el placer del sabor justifica causar sufrimiento cuando tenemos alternativas?"
+  },
+  "button_copy": {
+    "message": "📋 Copiar"
+  },
+  "button_copied": {
+    "message": "✓ ¡Copiado!"
+  },
+  "section_progress_title": {
+    "message": "📊 Tu Progreso"
+  },
+  "progress_fallacies": {
+    "message": "Falacias Identificadas:"
+  },
+  "progress_total_xp": {
+    "message": "XP Total:"
+  },
+  "progress_next_level": {
+    "message": "Próximo Nivel:"
+  },
+  "footer_tagline": {
+    "message": "Aprende lógica, mejora tu activismo ✊"
+  },
+  "feedback_correct": {
+    "message": "✅ ¡Correcto! +$1 XP"
+  },
+  "feedback_correct_explanation": {
+    "message": "¡Bien hecho! Este argumento sí contiene una falacia de Apelación a la Tradición."
+  },
+  "feedback_incorrect": {
+    "message": "❌ ¡No exactamente! Sin XP esta vez"
+  },
+  "feedback_incorrect_explanation": {
+    "message": "Esto no parece ser una falacia de Apelación a la Tradición. Busca argumentos que justifiquen comer carne simplemente porque \"siempre lo hemos hecho\" o \"es tradicional\"."
+  },
+  "feedback_keywords": {
+    "message": "Palabras clave detectadas: $1"
+  },
+  "feedback_error": {
+    "message": "⚠️ Error al validar. Por favor intenta de nuevo."
+  }
+}
