@@ -1,28 +1,26 @@
-# deps
-node_modules/
-**/node_modules/
-
-# secrets / env (viven fuera del repo — secrets-management)
+# secretos — viven fuera del repo (secrets-management)
 .env
 .env.*
-!.env.example
 
-# next.js / build outputs
+# imágenes (receipts / screenshots — no versionar binarios pesados)
+# para forzar un asset de imagen funcional a futuro: git add -f <archivo>
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.ico
+
+# deps y build regenerables — NUNCA versionar (no son "info", se regeneran)
+node_modules/
+**/node_modules/
 .next/
 out/
 dist/
 build/
 *.tsbuildinfo
 
-# logs
-*.log
-npm-debug.log*
-
-# macOS cruft
-.DS_Store
-Icon?
-Icon
-
-# working scratch
+# scratch del pipeline
 scripts/.fb-snap.txt
 scripts/.draft-test.txt
+.DS_Store
