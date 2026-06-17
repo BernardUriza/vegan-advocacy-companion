@@ -24,3 +24,7 @@ build/
 scripts/.fb-snap.txt
 scripts/.draft-test.txt
 .DS_Store
+
+# RAG: los PDFs originales viven en disco pero NO se versionan (binarios pesados,
+# ~10MB). Lo versionable es el TEXTO extraído (doctrine/rag/*.md). git add -f para forzar.
+doctrine/rag/*.pdf
