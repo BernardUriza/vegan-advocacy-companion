@@ -7,7 +7,12 @@
     "canonical_counter": "Concede the biology entirely, then separate can from should: 'Yes, we can digest meat — omnivore is a fact about digestion, not a moral status. The question is what justifies using a sentient being when we don't need to.'",
     "register": "filo",
     "what_not_to_do": "Don't debate whether humans are omnivores (they are). Don't attack the biology claim. Attack the is-ought leap.",
-    "actors_known": ["100004284907337", "1338583394", "1277660735", "100000650843692"],
+    "actors_known": [
+      "100004284907337",
+      "1338583394",
+      "1277660735",
+      "100000650843692"
+    ],
     "fallacy_type_id": "appeal_to_nature"
   },
   {
@@ -18,7 +23,9 @@
     "canonical_counter": "Name the move explicitly and briefly: 'notice what just happened — we just moved from [X] to [Y].' Then return to the original question without following the redirect. The lurker sees the pattern.",
     "register": "filo",
     "what_not_to_do": "Don't chase each new goalpost. Don't treat each shift as a new debate. Naming the move is the move.",
-    "actors_known": ["1338583394", "100004284907337"],
+    "actors_known": [
+      "1338583394"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -29,7 +36,10 @@
     "canonical_counter": "Point out that they don't actually live by pure moral relativism — they have lines they wouldn't cross even if others called them moral. 'You wouldn't say torturing a child is equally valid because morals are subjective.' One line, for the lurker. Don't overextend.",
     "register": "filo",
     "what_not_to_do": "Don't write a philosophy essay on metaethics. One incisive observation, then leave it.",
-    "actors_known": ["100081126484836", "669260908"],
+    "actors_known": [
+      "100081126484836",
+      "669260908"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -40,7 +50,9 @@
     "canonical_counter": "Name it and return the burden: 'The burden of proof is on whoever makes a claim. You're claiming it's justified to impose suffering on a sentient being for something we don't need. That's the claim that needs a justification, not the default of avoiding unnecessary harm.'",
     "register": "filo",
     "what_not_to_do": "Don't accept the frame that veganism is the 'fringe' that needs to justify itself. The default is not causing harm; exploitation is the departure from default.",
-    "actors_known": ["1338583394"],
+    "actors_known": [
+      "1338583394"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -51,7 +63,9 @@
     "canonical_counter": "Slavery was normal. Normalcy is a fact about behavior, not a moral argument. The question is whether the default is justifiable, not whether it's widespread.",
     "register": "filo",
     "what_not_to_do": "Don't just list other 'normal but wrong' practices — pick one sharp example. Don't let the conversation drift to what's culturally relative.",
-    "actors_known": ["1338583394", "100011355404997"],
+    "actors_known": [
+      "1338583394"
+    ],
     "fallacy_type_id": "appeal_to_tradition"
   },
   {
@@ -62,7 +76,9 @@
     "canonical_counter": "Perfect is not the enemy of good. The question isn't zero-harm — it's unnecessary harm. 'Harm exists in every food system. The ethical question is whether we're justified in deliberately imposing harm on a sentient being when a reasonable alternative exists.' Don't bite the crop-deaths hook.",
     "register": "filo",
     "what_not_to_do": "Don't engage with crop-death body counts. Don't try to prove veganism causes zero harm. The standard is avoidable harm, not zero harm.",
-    "actors_known": ["100018422793817"],
+    "actors_known": [
+      "100018422793817"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -73,7 +89,9 @@
     "canonical_counter": "Don't bite. Answer the underlying question cleanly without following the redirect: 'Exploitation isn't a list of events — it's a relationship. Breeding a sentient being into existence for the purpose of using and killing it is the relationship, not a checklist.' Return the question.",
     "register": "filo",
     "what_not_to_do": "Never make a list when they ask you to list. Never enumerate when they say 'be specific'. That's the trap — you enumerate, they pick one to attack.",
-    "actors_known": ["100018422793817"],
+    "actors_known": [
+      "100018422793817"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -84,7 +102,9 @@
     "canonical_counter": "Expose what the term is smuggling: 'Mutually beneficial presupposes a reciprocity structurally impossible between breeder and bred-to-die. The benefits the animal receives are conditional on the exact thing being justified — its use and death. That's not mutual; the relationship was structured around one party's interests from the start.' Return the burden.",
     "register": "filo",
     "what_not_to_do": "Don't debate semantics of 'exploitation' or 'benefit'. Don't use 'consent' as the only counter (easily deflected to infants/pets). Expose the structure, not the words.",
-    "actors_known": ["1037777423"],
+    "actors_known": [
+      "1037777423"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -95,7 +115,9 @@
     "canonical_counter": "Concede what's true in the data, then expose the frame: 'Yes, Beyond Meat's stock crashed — that's one company with execution problems. The plant-based category grew 6% that year.' Don't match dump for dump. One incisive concede-and-reframe.",
     "register": "filo",
     "what_not_to_do": "Don't counter with your own data dump. Don't debate which dataset is better. Expose that they're measuring popularity, not moral justifiability.",
-    "actors_known": ["100010556977700", "100011355404997", "1037777423"],
+    "actors_known": [
+      "1037777423"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -106,7 +128,9 @@
     "canonical_counter": "The problem isn't the quality of life — it's that the entire existence is designed around killing for something unnecessary. A comfortable life that ends in slaughter for non-necessity doesn't become morally neutral because the suffering was minimized.",
     "register": "filo",
     "what_not_to_do": "Don't make factory farming the centerpiece of the argument — they'll pivot to 'I buy humane/pasture-raised'. The welfare critique works against factory farming; the moral frame works against all animal use.",
-    "actors_known": ["100004284907337"],
+    "actors_known": [
+      "100004284907337"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -117,7 +141,9 @@
     "canonical_counter": "Concern for animal suffering doesn't prevent concern for human suffering — these aren't a zero-sum budget. 'Both matter. Noticing one doesn't cancel the other.' Then return to the original question.",
     "register": "filo",
     "what_not_to_do": "Don't get dragged into defending your track record on human rights. Don't make it about priorities. It's a deflection — name it briefly and return.",
-    "actors_known": ["100004284907337"],
+    "actors_known": [
+      "100004284907337"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -128,7 +154,10 @@
     "canonical_counter": "The distinction is intent and necessity. Crop deaths are incidental to feeding everyone, minimized where possible, and not the purpose of the activity. Animal farming kills intentionally and for non-necessity — and itself consumes more crops (70%+ of global cropland feeds animals, not humans). You don't escape crop deaths by eating meat; you add them.",
     "register": "filo",
     "what_not_to_do": "Don't get into a body-count competition. Don't dispute that crop deaths happen. The moral distinction is role-of-harm (byproduct vs purpose) not total count.",
-    "actors_known": ["100000050072653", "100018422793817"],
+    "actors_known": [
+      "100000050072653",
+      "100018422793817"
+    ],
     "fallacy_type_id": "false_equivalence"
   },
   {
@@ -139,7 +168,10 @@
     "canonical_counter": "Expose the error in the biology term itself: commensalism means one benefits, the other is neither helped nor harmed — not slaughtered. Real mutualism doesn't include one party's death as its purpose. The analogy collapses on its own terms.",
     "register": "filo",
     "what_not_to_do": "Don't argue that ants and aphids is irrelevant (they'll say 'examples from nature justify the pattern'). Argue that the biology terms they're using don't describe what farming actually is.",
-    "actors_known": ["100000650843692", "1037777423"],
+    "actors_known": [
+      "100000650843692",
+      "1037777423"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -150,7 +182,10 @@
     "canonical_counter": "Name the circularity: 'That's the conclusion, not the evidence. You're assuming animals are food in order to prove it's OK to treat them as food.' Then ask what would justify the hierarchy: 'What makes human interests categorically outweigh animal interests? Intelligence? Sentience? Social bonds? Those criteria don't carve at human vs. animal the way you need them to.'",
     "register": "filo",
     "what_not_to_do": "Don't accept the framing that 'human life is worth more' needs no argument. Ask for the criterion.",
-    "actors_known": ["100004284907337", "1338583394"],
+    "actors_known": [
+      "100004284907337",
+      "1338583394"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -161,7 +196,9 @@
     "canonical_counter": "Pointing out that something causes harm isn't dictating. You can choose to eat meat; I can point out it harms a sentient being. Those are both true simultaneously. Nobody's forcing anything.",
     "register": "filo",
     "what_not_to_do": "Don't get into libertarian philosophy. One sentence that breaks the conflation, then leave it. Low return.",
-    "actors_known": ["669260908"],
+    "actors_known": [
+      "669260908"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -172,7 +209,11 @@
     "canonical_counter": "Separate is from should: 'That's what we can do — it says nothing about what we should do. We're also biologically capable of many things we consider wrong. Capability doesn't confer permission.'",
     "register": "filo",
     "what_not_to_do": "Don't dispute the biology. Dispute the inference from biology to ethics.",
-    "actors_known": ["100004284907337", "1338583394", "1277660735"],
+    "actors_known": [
+      "100004284907337",
+      "1338583394",
+      "1277660735"
+    ],
     "fallacy_type_id": "appeal_to_nature"
   },
   {
@@ -183,7 +224,9 @@
     "canonical_counter": "Ask for the criterion: 'What makes human interests categorically outweigh animal interests? Whatever criterion you give — sentience, capacity to suffer, social bonds, language — either also applies to some animals or fails to draw the line you need. The hierarchy needs an argument, not an assertion.'",
     "register": "filo",
     "what_not_to_do": "Don't argue that animals matter more than humans. Argue that the hierarchy needs a justification that isn't circular.",
-    "actors_known": ["100004284907337"],
+    "actors_known": [
+      "100004284907337"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -194,7 +237,9 @@
     "canonical_counter": "We don't hold lions morally responsible for killing because they can't reason about alternatives. We hold humans to a different standard because we can. Moral agency is precisely the capacity that makes human choices subject to moral evaluation — and that capacity is missing from the animal comparison.",
     "register": "filo",
     "what_not_to_do": "Don't argue about whether animals are moral agents. Argue that humans clearly are, and that's exactly why the comparison fails.",
-    "actors_known": ["100004284907337", "100000650843692"],
+    "actors_known": [
+      "100004284907337"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -205,7 +250,9 @@
     "canonical_counter": "Popularity doesn't determine moral truth. Slavery was normal and popular — that didn't make it right. The moral question is independent of the trend line.",
     "register": "filo",
     "what_not_to_do": "Don't get into a data fight about market trends. Don't try to prove veganism is growing. The meta-move is exposing that they're measuring popularity, not ethics.",
-    "actors_known": ["100010556977700", "100011355404997"],
+    "actors_known": [
+      "100011355404997"
+    ],
     "fallacy_type_id": "appeal_to_tradition"
   },
   {
@@ -216,7 +263,9 @@
     "canonical_counter": "One company with execution problems ≠ the category. Apple nearly went bankrupt in 1997 — that didn't prove personal computers were dying. Beyond Meat's stock tells you about Beyond Meat's business model, not the plant-based trend.",
     "register": "filo",
     "what_not_to_do": "Don't defend Beyond Meat specifically. Expose the composition fallacy.",
-    "actors_known": ["100011355404997", "100010556977700"],
+    "actors_known": [
+      "100011355404997"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -227,7 +276,9 @@
     "canonical_counter": "The claim that causing unnecessary harm to sentient beings is wrong isn't a religious belief — it's an ethical proposition with reasons behind it. Calling it a belief system doesn't make the reasons disappear. What's the argument against the reasons?",
     "register": "filo",
     "what_not_to_do": "Don't defend veganism as 'not a belief system'. Argue that even if it were, the ethical arguments still need a response.",
-    "actors_known": ["1338583394"],
+    "actors_known": [
+      "1338583394"
+    ],
     "fallacy_type_id": null
   },
   {
@@ -238,7 +289,9 @@
     "canonical_counter": "Don't match the register. Name the evasion calmly: 'When the argument runs out, the insults start.' Contrast of temperament is visible to the lurker. One line max, then return to substance or disengage entirely.",
     "register": "filo",
     "what_not_to_do": "Never insult back. Never get defensive about being called a cult member. The lurker sees who is composed and who is not — that's the entire value of the exchange.",
-    "actors_known": ["100010556977700", "100011355404997"],
+    "actors_known": [
+      "100011355404997"
+    ],
     "fallacy_type_id": "ad_hominem"
   },
   {
@@ -249,7 +302,35 @@
     "canonical_counter": "Honor the experience, separate the inference: 'That experience is real and the medical advice you got sounds genuinely bad. But one poorly-navigated vegan journey — especially with misdiagnosed oxalate issues — doesn't indict the diet as a category any more than one poorly-navigated omnivore diet would.' Empathize first, then separate n=1 from the category.",
     "register": "compasivo",
     "what_not_to_do": "Don't dispute the experience. Don't debate whether their specific case was caused by the diet. Honor the story, then make the category distinction.",
-    "actors_known": ["813709465"],
+    "actors_known": [
+      "813709465"
+    ],
+    "fallacy_type_id": null
+  },
+  {
+    "id": "apelacion_mayoria",
+    "name": "Appeal to Majority / Bandwagon",
+    "category": "fallacy",
+    "definition": "Justifies meat-eating because most people do it or vegans are a small minority. 'Irrelevant minority that has no say.' Confuses how many hold a view with whether it's correct.",
+    "canonical_counter": "The number of people who hold a view says nothing about whether it's justified. Most of humanity once accepted slavery. Being a minority isn't a refutation — it's just a head count.",
+    "register": "filo",
+    "what_not_to_do": "Don't argue veganism is actually popular. Expose that popularity isn't an argument.",
+    "actors_known": [
+      "100011355404997"
+    ],
+    "fallacy_type_id": null
+  },
+  {
+    "id": "presentismo",
+    "name": "Presentism / Dismiss the Trend",
+    "category": "rhetoric",
+    "definition": "Dismisses projections or trends by insisting only the present moment counts. 'We live in the present, not 2035.' Used to wave away measured trajectories without engaging them.",
+    "canonical_counter": "A trend isn't refuted by saying 'but it's not the future yet.' The trajectory is measured in the present — that's the point. Dismissing tomorrow doesn't change today's direction.",
+    "register": "filo",
+    "what_not_to_do": "Don't get drawn into defending specific future dates. Defend the existence of the trend, not the precision of the year.",
+    "actors_known": [
+      "100011355404997"
+    ],
     "fallacy_type_id": null
   }
 ]

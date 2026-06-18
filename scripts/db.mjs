@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync, renameSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -14,7 +14,17 @@ export function readTactics() {
   return JSON.parse(readFileSync(TACTICS_PATH, 'utf8'));
 }
 
+// Atomic write: serialize to a temp file then rename. rename(2) is atomic on the
+// same filesystem, so a concurrent reader never sees a half-written/truncated
+// file, and the last writer wins cleanly instead of corrupting the JSON.
+function writeJsonAtomic(path, data) {
+  const tmp = `${path}.tmp.${process.pid}`;
+  writeFileSync(tmp, JSON.stringify(data, null, 2) + '\n', 'utf8');
+  renameSync(tmp, path);
+}
+
 export function getActor(userId) {
+  if (!userId) return null;
   return readActors().find(a => a.user_id === userId) ?? null;
 }
 
@@ -30,7 +40,7 @@ export function upsertActor(actor) {
   } else {
     actors.push(actor);
   }
-  writeFileSync(ACTORS_PATH, JSON.stringify(actors, null, 2), 'utf8');
+  writeJsonAtomic(ACTORS_PATH, actors);
   return actors[idx >= 0 ? idx : actors.length - 1];
 }
 
@@ -39,7 +49,7 @@ export function appendInteraction(userId, interaction) {
   const actor = actors.find(a => a.user_id === userId);
   if (!actor) throw new Error(`Actor ${userId} not found`);
   actor.interactions.push(interaction);
-  writeFileSync(ACTORS_PATH, JSON.stringify(actors, null, 2), 'utf8');
+  writeJsonAtomic(ACTORS_PATH, actors);
   return actor;
 }
 

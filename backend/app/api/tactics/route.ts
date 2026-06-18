@@ -1,29 +1,25 @@
 import { NextResponse } from "next/server";
-import { readFileSync } from "fs";
-import { resolve } from "path";
-
-function loadTactics() {
-  const path = resolve(process.cwd(), "../data/tactics.json");
-  return JSON.parse(readFileSync(path, "utf8"));
-}
-
-const CORS = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type",
-};
+import { loadTactics, CORS, type Tactic } from "@/lib/data-store";
 
 export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
-  const category = searchParams.get("category");
-  const register = searchParams.get("register");
+  try {
+    const { searchParams } = new URL(request.url);
+    const category = searchParams.get("category");
+    const register = searchParams.get("register");
 
-  let tactics = loadTactics();
+    let tactics: Tactic[] = loadTactics();
 
-  if (category) tactics = tactics.filter((t: any) => t.category === category);
-  if (register) tactics = tactics.filter((t: any) => t.register === register || t.register === "any");
+    if (category) tactics = tactics.filter((t) => t.category === category);
+    if (register) tactics = tactics.filter((t) => t.register === register || t.register === "any");
 
-  return NextResponse.json(tactics, { headers: CORS });
+    return NextResponse.json(tactics, { headers: CORS });
+  } catch (error) {
+    console.error("GET /api/tactics failed:", error);
+    return NextResponse.json(
+      { error: "Failed to load tactics" },
+      { status: 500, headers: CORS }
+    );
+  }
 }
 
 export async function OPTIONS() {

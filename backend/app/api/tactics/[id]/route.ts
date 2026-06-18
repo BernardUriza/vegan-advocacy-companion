@@ -1,36 +1,27 @@
 import { NextResponse } from "next/server";
-import { readFileSync } from "fs";
-import { resolve } from "path";
+import { loadTactics, loadActors, CORS } from "@/lib/data-store";
 
-function loadTactics() {
-  const path = resolve(process.cwd(), "../data/tactics.json");
-  return JSON.parse(readFileSync(path, "utf8"));
-}
+export async function GET(_req: Request, { params }: { params: Promise<{ id: string }> }) {
+  try {
+    const { id } = await params;
+    const tactic = loadTactics().find((t) => t.id === id);
 
-function loadActors() {
-  const path = resolve(process.cwd(), "../data/actors.json");
-  return JSON.parse(readFileSync(path, "utf8"));
-}
+    if (!tactic) {
+      return NextResponse.json({ error: "Tactic not found" }, { status: 404, headers: CORS });
+    }
 
-const CORS = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type",
-};
+    const knownActors = loadActors()
+      .filter((a) => tactic.actors_known.includes(a.user_id ?? ""))
+      .map((a) => ({ user_id: a.user_id, name: a.name, verdict: a.verdict, tone: a.tone }));
 
-export async function GET(_req: Request, { params }: { params: { id: string } }) {
-  const tactics = loadTactics();
-  const tactic = tactics.find((t: any) => t.id === params.id);
-
-  if (!tactic) {
-    return NextResponse.json({ error: "Tactic not found" }, { status: 404, headers: CORS });
+    return NextResponse.json({ ...tactic, knownActors }, { headers: CORS });
+  } catch (error) {
+    console.error("GET /api/tactics/[id] failed:", error);
+    return NextResponse.json(
+      { error: "Failed to load tactic" },
+      { status: 500, headers: CORS }
+    );
   }
-
-  const actors = loadActors();
-  const knownActors = actors.filter((a: any) => tactic.actors_known.includes(a.user_id))
-    .map((a: any) => ({ user_id: a.user_id, name: a.name, verdict: a.verdict, tone: a.tone }));
-
-  return NextResponse.json({ ...tactic, knownActors }, { headers: CORS });
 }
 
 export async function OPTIONS() {

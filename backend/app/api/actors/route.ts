@@ -1,31 +1,27 @@
 import { NextResponse } from "next/server";
-import { readFileSync } from "fs";
-import { resolve } from "path";
-
-function loadActors() {
-  const path = resolve(process.cwd(), "../data/actors.json");
-  return JSON.parse(readFileSync(path, "utf8"));
-}
-
-const CORS = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type",
-};
+import { loadActors, CORS, type Actor } from "@/lib/data-store";
 
 export async function GET(request: Request) {
-  const { searchParams } = new URL(request.url);
-  const bando = searchParams.get("bando");
-  const tactic = searchParams.get("tactic");
-  const verdict = searchParams.get("verdict");
+  try {
+    const { searchParams } = new URL(request.url);
+    const bando = searchParams.get("bando");
+    const tactic = searchParams.get("tactic");
+    const verdict = searchParams.get("verdict");
 
-  let actors = loadActors();
+    let actors: Actor[] = loadActors();
 
-  if (bando) actors = actors.filter((a: any) => a.bando === bando);
-  if (tactic) actors = actors.filter((a: any) => a.tactics.includes(tactic));
-  if (verdict) actors = actors.filter((a: any) => a.verdict === verdict);
+    if (bando) actors = actors.filter((a) => a.bando === bando);
+    if (tactic) actors = actors.filter((a) => a.tactics.includes(tactic));
+    if (verdict) actors = actors.filter((a) => a.verdict === verdict);
 
-  return NextResponse.json(actors, { headers: CORS });
+    return NextResponse.json(actors, { headers: CORS });
+  } catch (error) {
+    console.error("GET /api/actors failed:", error);
+    return NextResponse.json(
+      { error: "Failed to load actors" },
+      { status: 500, headers: CORS }
+    );
+  }
 }
 
 export async function OPTIONS() {

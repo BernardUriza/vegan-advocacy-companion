@@ -1,35 +1,25 @@
 import { NextResponse } from "next/server";
-import { readFileSync } from "fs";
-import { resolve } from "path";
+import { loadActors, loadTactics, CORS } from "@/lib/data-store";
 
-function loadActors() {
-  const path = resolve(process.cwd(), "../data/actors.json");
-  return JSON.parse(readFileSync(path, "utf8"));
-}
+export async function GET(_req: Request, { params }: { params: Promise<{ id: string }> }) {
+  try {
+    const { id } = await params;
+    const actor = loadActors().find((a) => a.user_id === id);
 
-function loadTactics() {
-  const path = resolve(process.cwd(), "../data/tactics.json");
-  return JSON.parse(readFileSync(path, "utf8"));
-}
+    if (!actor) {
+      return NextResponse.json({ error: "Actor not found" }, { status: 404, headers: CORS });
+    }
 
-const CORS = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Methods": "GET, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type",
-};
+    const tacticDetails = loadTactics().filter((t) => actor.tactics.includes(t.id));
 
-export async function GET(_req: Request, { params }: { params: { id: string } }) {
-  const actors = loadActors();
-  const actor = actors.find((a: any) => a.user_id === params.id);
-
-  if (!actor) {
-    return NextResponse.json({ error: "Actor not found" }, { status: 404, headers: CORS });
+    return NextResponse.json({ ...actor, tacticDetails }, { headers: CORS });
+  } catch (error) {
+    console.error("GET /api/actors/[id] failed:", error);
+    return NextResponse.json(
+      { error: "Failed to load actor" },
+      { status: 500, headers: CORS }
+    );
   }
-
-  const tactics = loadTactics();
-  const tacticDetails = tactics.filter((t: any) => actor.tactics.includes(t.id));
-
-  return NextResponse.json({ ...actor, tacticDetails }, { headers: CORS });
 }
 
 export async function OPTIONS() {
