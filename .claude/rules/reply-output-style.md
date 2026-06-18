@@ -105,7 +105,11 @@ observador vea quién razona y quién evade.
 tricolones repetitivos ("X, Y, and Z") · conclusiones demasiado perfectas ·
 párrafos que parecen mini-artículos · **sonar como profesor dando clase en vez de
 participante del grupo** · llevar tres objetivos a la vez (el smell de "AI
-drivel": demasiado armado/consciente de múltiples metas).
+drivel": demasiado armado/consciente de múltiples metas) · **staccato — cada frase
+en su propio renglón** (el tell de formato típico del borrador del coagent: buena
+sustancia pero fragmentada en líneas de una sola oración; en FB se lee listy y
+generado. El style-gate lo reformula a párrafos reales con ritmo mezclado ANTES de
+postear, conservando la sustancia).
 
 ## Pre-post check (lo ejecuta etapa 4)
 

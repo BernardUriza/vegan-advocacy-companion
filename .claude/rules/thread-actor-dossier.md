@@ -23,6 +23,14 @@ determinista** (oponente que te habló más reciente de lo que respondiste). Dev
 `{turns[], debt[]}` — todo el walk en un `node`, sin quemar tool-calls del MCP.
 **Es extracción + surfaceo, NO la decisión de la jugada:** la tabla de deuda solo
 señala candidatas; la jugada se decide con los dossiers (la pluma es de Bernard).
+**La frescura de la notificación es TRAMPA — la deuda real es `owes:true`, no el
+turno más reciente del hilo** (aprendizaje 2026-06-18): la notif disparó por la
+actividad más fresca (Shane↔Rüdiger, 6m) pero era un sub-debate entre DOS terceros,
+no dirigido a Bernard; el único `owes:true` era Frank Teuton (5h) — le respondió a
+Bernard más reciente de lo que Bernard le contestó. Elegir el blanco por "lo último
+que pasó en el hilo" te manda a una rama ajena; elegirlo por `owes:true` (oponente
+que te habló y no has contestado) apunta a la deuda real. Si una rama ya tiene tu
+turno DESPUÉS del del oponente, esa deuda está PAGADA aunque la notif insista.
 El JSON alimenta el transcript (paso 4) y los dossiers (paso 5) directo. **En
 prueba** — si un hilo sale raro (render nuevo de FB, deuda que no cuadra), caer al
 path MCP (pasos 1–3) como confirmación/fallback. (Requiere `playwright-core` en

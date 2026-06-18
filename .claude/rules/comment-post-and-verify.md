@@ -159,6 +159,7 @@ peor que ninguno. Nunca dejar basura publicada.
 | Enter no envía / agrega salto | foco perdido o caret mal | Re-focus el box y caret al final antes de Enter |
 | Composer "no encontrado" tras click Reply en una réplica anidada | en réplicas anidadas FB etiqueta el composer con el AUTOR PADRE (`Reply to <Bernard>`), no con la persona a la que respondes | NO busques `div[aria-label="Reply to <persona>"]`; busca el contenteditable cuyo `innerText` contiene la auto-mención `<persona>`. El tag correcto va en esa auto-mención, NO se borra |
 | Reply etiquetada: caret al inicio pisa la mención | `selectNodeContents+collapse(false)` mete el body DESPUÉS del `@mención` | correcto — NO `selectAll` (borraría el tag); el body arranca sin repetir el nombre (la mención ya lo pone) |
+| Verificación da `posted:true` pero `allPresent:false` / tail de otro comentario | ya hay MÁS de una reply tuya a esa persona (una vieja de hace días + la nueva); `.find()` por `aria-label` "Reply by Bernard … to <AUTHOR>" agarra la PRIMERA (la vieja) → falso match, casi un fake-green (Art. 2) | NO desambiguar solo por `aria-label`: `.filter(...)` TODAS tus replies a ese autor y quedarte con la que tenga el CONTENIDO nuevo (frases ancla del borrador) o `aria-label` con "a few seconds ago"/"now". El timestamp viejo ("a day ago") es el tell de que agarraste la equivocada |
 
 ## Por qué existe
 
