@@ -77,6 +77,14 @@ existe de un hilo anterior, **AÑADIR** la nueva aparición (no sobre-escribir �
 Art. 5). La llave es el `user_id` (el nombre se repite, el id no). Actualizar el
 índice `analysis/actors/README.md`.
 
+**6. Surfacear el counter-arsenal (no decidir la jugada — eso es etapa-3).** Por
+cada táctica etiquetada del actor, consultar `getFrameworksByTactic(tacticId)` (de
+`scripts/db.mjs`) y anotar en el dossier **qué frameworks la contrarrestan** (id +
+`attack_surface`). Es surfaceo de munición candidata, no la decisión del blanco. El
+índice inverso navegable (táctica → frameworks) vive en
+`analysis/frameworks/README.md`. La decisión de QUÉ desplegar (un solo framework,
+respetando su `attack_surface`) es de etapa-3 ([[coagent-advise]]).
+
 ## El dossier — análisis duro (sin suavizar, sin inventar)
 
 | Campo | Qué registra |

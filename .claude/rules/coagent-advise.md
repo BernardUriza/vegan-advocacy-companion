@@ -6,61 +6,50 @@ la inteligencia al **coagent orquestador** (GPT custom de Bernard — insult-gpt
 para que stress-testee la jugada de mayor palanca y redacte el borrador. Variante
 **outbound** de [[coagent]]: Claude NO reacciona al último turno, lo **siembra**.
 
-## GOLDEN PATH — la mecánica exacta (gotchas ya pagados)
+## La mecánica del DOM vive en `/coagent` (SSOT) — NO se duplica aquí
 
-**1. Resolver el coagent por IDENTIDAD, nunca por la tab abierta** ([[coagent]]
-§0): la URL que Bernard da explícito, o `COAGENT_CHATGPT_URL` del `.env` de ESTE
-repo. Hay varias conversaciones del mismo GPT (ej. `6a31477a` ≠ `6a2f4733`); usar
-la correcta.
+Esta etapa ES el outbound seed-&-read del skill **`/coagent`** (su SKILL.md cita
+este rule como "the project-level rule this generalizes"). Toda la mecánica volátil
+de manejar ChatGPT —resolver el coagent por identidad (`resolve-coagent.py`),
+reusar la tab sin duplicar, verificar `location.href` antes de escribir, insertar
+el master prompt con `execCommand` (gotcha del `args`), enviar con Enter, **esperar
+por estabilidad de contenido** (no por el `stop-button` stale), leer en llamada
+aparte, y entregar el veredicto a Bernard sin postear— es **`/coagent` GOLDEN PATH
+Steps 0–7**. Invocar `/coagent` o seguir su SKILL.md; cuando los selectores de
+ChatGPT cambien, se arregla **ahí una vez**, no en tres copias.
 
-**2. REUSAR la tab si ya existe — no duplicar** ([[coagent]] §0.5). `list_pages`
-primero: si ya hay una tab en la URL EXACTA, `select_page` esa. **Solo** `new_page`
-si no existe. (Lección 2026-06-16: hice `new_page` de una que ya estaba abierta y
-la dupliqué; Bernard: "ya estaba abierta". No toques otras tabs de ChatGPT.)
-
-**3. Verificar `location.href` JUSTO antes de escribir** (las tabs se mueven entre
-`select_page` y el `insertText`). `evaluate_script` que devuelva `location.href` +
-`document.title`; abortar si no contiene el chat id correcto.
-
-**4. Insertar el master prompt — ChatGPT SÍ acepta `execCommand`** (su composer es
-contenteditable simple, NO Lexical como FB — ver [[chrome-devtools-contenteditable-input]]):
-```js
-() => {
-  const el = document.querySelector('#prompt-textarea');
-  if (!el) return { ok:false, error:'no composer' };
-  el.focus();
-  document.execCommand('selectAll'); document.execCommand('delete');
-  const text = `<MASTER PROMPT inline>`;   // ver gotcha del args abajo
-  document.execCommand('insertText', false, text);
-  return { ok:true, len: el.innerText.length };
-}
-```
-**GOTCHA del `args` (ya pagado):** esta versión del MCP trata cada item de
-`evaluate_script.args` como **uid de elemento**, no como string → pasar el texto
-por `args` falla ("Element uid … not found" / "No snapshot found"). **FIX: embeber
-el texto DENTRO del cuerpo de la función** como template literal (sin `args`).
-
-**5. Enviar:** `press_key Enter`. Verificar: `totalMsgs` subió + `composerEmpty`.
-
-**6. Esperar sin leer a medias:** pollear `[data-testid="stop-button"]`; mientras
-`streaming:true`, no leas. Cuando termine, leer el último mensaje del assistant en
-una llamada aparte.
-
-**7. Entregar el veredicto + borrador a BERNARD** (no es orden para Claude; es
-inteligencia para él). Claude NO postea — eso es [comment-post-and-verify], y el
-botón de enviar es de Bernard.
+Lo que es de ESTA etapa (no del skill) es solo el **contenido del master prompt**
+(abajo) y que el destino del borrador es [comment-post-and-verify]. El botón de
+enviar a Facebook es de Bernard.
 
 ## El master prompt — denso, en este orden
 
 Línea de identidad obligatoria (`hola soy claude code, escribo desde
 exchange-coagent devtools.`) → qué etapa es → post raíz verbatim + reacciones →
 tablero completo (cada rama/actor con bando y táctica, resumen de los dossiers) →
-la jugada de mayor palanca + razonamiento, pidiéndole **stress-test** ("no me
-consientas", Art. 3) → el riesgo a anticipar → ask explícito (confirmar/refutar el
-blanco, redactar **como REPLY ETIQUETADA a la persona en su hilo** —norma del
-grupo, NUNCA root, ver [[comment-post-and-verify]]—, en la voz de Bernard, marcar
-**qué NO decir**) → recordatorio de
+**munición del arsenal** (ver abajo) → la jugada de mayor palanca + razonamiento,
+pidiéndole **stress-test** ("no me consientas", Art. 3) → el riesgo a anticipar →
+ask explícito (confirmar/refutar el blanco, redactar **como REPLY ETIQUETADA a la
+persona en su hilo** —norma del grupo, NUNCA root, ver [[comment-post-and-verify]]—,
+en la voz de Bernard, marcar **qué NO decir**) → recordatorio de
 scope (solo borrador, el botón es de Bernard).
+
+### Munición del arsenal — cablear `data/frameworks.json` al master prompt
+
+Por cada táctica del target (de su dossier), consultar
+`getFrameworksByTactic(tacticId)` (de `scripts/db.mjs`) y meter en el master prompt
+**los 1-2 counter-frameworks de mayor palanca**, cada uno con: su `name`, su
+`enables` (el ángulo deployable) y —obligatorio— su **`attack_surface`** como
+"qué NO hacer". El SSOT es `data/frameworks.json`; la vista navegable +
+índice inverso (táctica → frameworks) vive en `analysis/frameworks/README.md`.
+
+**Disciplina dura (innegociable):** el coagent elige **UN solo framework por
+reply**, NUNCA lo usa como premisa portante (es marco — ver el aprendizaje Göbekli
+en el framework `gobekli-kilometro-cero`), y respeta su `attack_surface`. Más
+munición ≠ mejor reply: un draft que apila frameworks contradice el norte de
+[[reply-output-style]] (corto, una idea, vuelve al hueso) y desperdicia al lurker.
+Los frameworks `deploy_as: auto-disciplina-del-activista` (ej. `lenguaje-carne-hachazo`)
+NO son armas contra el oponente — informan CÓMO se redacta, no qué se le lanza.
 
 ## Por qué existe
 
