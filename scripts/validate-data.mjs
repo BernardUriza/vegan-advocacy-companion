@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { readActors, readTactics } from './db.mjs';
+import { readActors, readTactics, readFrameworks } from './db.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const ACTORS_MD_DIR = resolve(ROOT, 'analysis/actors');
@@ -52,6 +52,22 @@ for (const t of tactics) {
   }
 }
 
+// 4b. Frameworks: unique ids, required fields, and related_tactics must resolve
+const frameworks = readFrameworks();
+const seenFw = new Set();
+for (const f of frameworks) {
+  for (const field of ['id', 'name', 'author', 'definition', 'enables', 'attack_surface', 'deploy_as']) {
+    if (!f[field]) errors.push(`framework "${f.id ?? '(no id)'}" missing required field "${field}"`);
+  }
+  if (f.id) {
+    if (seenFw.has(f.id)) errors.push(`duplicate framework id "${f.id}"`);
+    seenFw.add(f.id);
+  }
+  for (const t of f.related_tactics ?? []) {
+    if (!tacticIds.has(t)) errors.push(`framework "${f.id}" references undefined tactic "${t}"`);
+  }
+}
+
 // 5. Drift warning: a dossier markdown exists with a user_id absent from the JSON SSOT
 let mdWarnings = 0;
 try {
@@ -74,4 +90,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`✓ data integrity OK — ${actors.length} actors, ${tactics.length} tactics${mdWarnings ? `, ${mdWarnings} md drift warning(s)` : ''}`);
+console.log(`✓ data integrity OK — ${actors.length} actors, ${tactics.length} tactics, ${frameworks.length} frameworks${mdWarnings ? `, ${mdWarnings} md drift warning(s)` : ''}`);

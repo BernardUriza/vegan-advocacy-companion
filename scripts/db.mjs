@@ -5,6 +5,7 @@ import { fileURLToPath } from 'url';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const ACTORS_PATH = resolve(ROOT, 'data/actors.json');
 const TACTICS_PATH = resolve(ROOT, 'data/tactics.json');
+const FRAMEWORKS_PATH = resolve(ROOT, 'data/frameworks.json');
 
 export function readActors() {
   return JSON.parse(readFileSync(ACTORS_PATH, 'utf8'));
@@ -12,6 +13,10 @@ export function readActors() {
 
 export function readTactics() {
   return JSON.parse(readFileSync(TACTICS_PATH, 'utf8'));
+}
+
+export function readFrameworks() {
+  return JSON.parse(readFileSync(FRAMEWORKS_PATH, 'utf8'));
 }
 
 // Atomic write: serialize to a temp file then rename. rename(2) is atomic on the
@@ -32,6 +37,30 @@ export function getTactic(tacticId) {
   return readTactics().find(t => t.id === tacticId) ?? null;
 }
 
+export function getFramework(frameworkId) {
+  return readFrameworks().find(f => f.id === frameworkId) ?? null;
+}
+
+export function getFrameworksByAuthor(author) {
+  return readFrameworks().filter(f => f.author === author);
+}
+
+export function getFrameworksByTactic(tacticId) {
+  return readFrameworks().filter(f => (f.related_tactics ?? []).includes(tacticId));
+}
+
+export function upsertFramework(framework) {
+  const frameworks = readFrameworks();
+  const idx = frameworks.findIndex(f => f.id === framework.id);
+  if (idx >= 0) {
+    frameworks[idx] = { ...frameworks[idx], ...framework };
+  } else {
+    frameworks.push(framework);
+  }
+  writeJsonAtomic(FRAMEWORKS_PATH, frameworks);
+  return frameworks[idx >= 0 ? idx : frameworks.length - 1];
+}
+
 export function upsertActor(actor) {
   const actors = readActors();
   const idx = actors.findIndex(a => a.user_id === actor.user_id);
@@ -48,7 +77,7 @@ export function appendInteraction(userId, interaction) {
   const actors = readActors();
   const actor = actors.find(a => a.user_id === userId);
   if (!actor) throw new Error(`Actor ${userId} not found`);
-  actor.interactions.push(interaction);
+  (actor.interactions ??= []).push(interaction);
   writeJsonAtomic(ACTORS_PATH, actors);
   return actor;
 }
