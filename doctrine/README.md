@@ -30,6 +30,16 @@ pesados — ver `.gitignore`). Lo versionado es el `*.md` con el **texto extraí
 | **Neurobiología Interpersonal** (Siegel) | Neurociencia | Por qué la conexión empática regula el sistema nervioso |
 | **Anarquismo Vegano** | Política/ética | Marco abolicionista (animales no son propiedad) |
 
+### Fuentes de autores antiespecistas — alimentan `data/frameworks.json`, NO el registro compasivo
+
+Estas son el **arsenal PRO-vegano deployable** (registro filo): conceptos/términos acuñados que el pipeline despliega como **marco** (nunca premisa portante — ver `attack_surface` en cada framework). Bajadas vía Chrome DevTools / transcripción.
+
+| Fuente | Autor | Frameworks que alimenta |
+|---|---|---|
+| **Antropoespecismo / Göbekli Tepe** (conferencia UNAM 2019, Whisper) | Samuel Guerrero Azañedo | `antropoespecismo`, `gobekli-kilometro-cero` |
+| **Revolucionar la revolución** (charla "afilar el hacha", Whisper) | Samuel Guerrero Azañedo | `revolucionar-la-revolucion` |
+| **Violencia Especista / ENFOC** (entrevista LECA 2016, OCR + bio) | Romina Kachanoski | `violencia-especista`, `especidio` |
+
 ## Relación con el pipeline actual
 
 ⚠️ Hay **tensión de marco** entre esta doctrina y
