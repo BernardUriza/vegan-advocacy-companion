@@ -37,6 +37,25 @@ path MCP (pasos 1–3) como confirmación/fallback. (Requiere `playwright-core` 
 `scripts/`; Chrome de debug vivo en 9333 — diagnóstico del `~/CLAUDE.md` si no
 responde.)
 
+### Esquema del JSON de `thread-extract --json` (no re-parsear ad-hoc, 2026-06-19)
+
+Para leer la salida directo sin escribir re-parsers (lección: asumí campos
+inexistentes `theirAgeMin`/`ourAgeMin` y escribí 3 scripts /tmp de más). Campos reales:
+
+- **`debt[]`** (candidatas a deuda, NO la decisión): `author`, `user_id`,
+  `freshestMin` (edad en min del turno más fresco del oponente hacia Bernard),
+  `owes` (bool), `suspect` (bool), `kind` (`reply`/…), `oppCount`, `myCount`.
+  `owes:true` = el oponente tiene turnos hacia Bernard más frescos que la última
+  respuesta de Bernard — pero **sobre-dispara** cuando la rama mezcla turnos de
+  terceros; confirmar con el contenido antes de elegir blanco (frescura ≠ deuda).
+- **`turns[]`**: `author`, `user_id`, `target` (a quién responde; `(root)` si es
+  comentario al post), `isMine` (bool, es Bernard), `label` (el aria-label
+  "Comment/Reply by X to Y N ago"), `ageStr` (`"10 hours"`), `text`.
+- **`me`, `postOwner`, `postIsMine`, `expand`, `counts`** a nivel raíz. **NO**
+  trae el body del post raíz (turns[0] suele ser el 1er comentario, no el post —
+  bug conocido, backlog G.35). Filtrar turnos dirigidos a Bernard:
+  `t.isMine || (t.target||'').includes('Bernard')`.
+
 ### Path MCP (confirmación / fallback / cuando necesitas uids de botones)
 
 **1. Abrir el hilo por la URL de la notificación** (la de etapa uno, con su

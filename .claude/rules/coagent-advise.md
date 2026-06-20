@@ -51,6 +51,21 @@ munición ≠ mejor reply: un draft que apila frameworks contradice el norte de
 Los frameworks `deploy_as: auto-disciplina-del-activista` (ej. `lenguaje-carne-hachazo`)
 NO son armas contra el oponente — informan CÓMO se redacta, no qué se le lanza.
 
+## El seed grande va por ARCHIVO, no se re-teclea inline (engrasado 2026-06-19)
+
+Cuando el master prompt es grande (lote: ~8.5k chars), **componerlo en un archivo**
+(`.coagent/master-prompt-batch.md`) y de ahí insertarlo — NUNCA re-teclear el cuerpo
+a mano. La inserción del bulk es mecánica y reversible (misma forma que
+`comment-prepare`): hoy se embebe inline en `evaluate_script` (gotcha del `args` del
+skill `/coagent` — el texto va como literal en el body de la función, no por `args`),
+pero ese inline-a-mano fue la fricción de la corrida en lote. El root fix es
+**scriptear la inserción** (`scripts/seed-coagent.mjs`, backlog G.41): lee el archivo,
+teclea por CDP en `#prompt-textarea` (ChatGPT acepta `execCommand`, no es Lexical),
+deja la tab viva para que Claude verifique `location.href`+contenido y haga el Enter.
+El JUICIO (componer el prompt) se queda con Claude; solo el bulk-insert se scriptea.
+Hasta que exista el script: componer en archivo y embeber inline es el path, pero es
+el smell a eliminar — no es la forma final.
+
 ## Por qué existe
 
 Registrada 2026-06-16, engrasada el mismo día. Relaya la inteligencia al

@@ -60,6 +60,7 @@ determinista, #5 bajar dependencia del coagent.
 33. `comment-prepare`: auto-elegir el comentario correcto cuando hay varios del mismo autor (freshest owes:true). — Proposed
 34. `scripts/pipeline-status.mjs`: dashboard de deudas abiertas + pending outcomes + frameworks sin probar en una vista. — Proposed
 35. `fb-lib`: helper `readThreadRoot()` (el extractor agarró el 1er comentario como root — bug real visto hoy). — Proposed
+41. `scripts/seed-coagent.mjs` — scriptear la **inserción** del master prompt (estilo `comment-prepare`): lee un archivo de prompt, lo teclea por CDP en el composer de ChatGPT (`#prompt-textarea`, `execCommand` sirve, no es Lexical), deja la tab viva para que Claude verifique `location.href`+contenido y haga el Enter. Hoy se embebe ~8.5k chars **inline a mano** en `evaluate_script` (gotcha del `args`) — smell de reinvención manual, costó trabajo extra el 2026-06-19. El JUICIO (componer el prompt) se queda con Claude; solo el bulk-insert se scriptea. Ruta canónica a reusar: `scripts/comment-prepare.mjs` + `fb-lib.openPersistentPage`. — Proposed
 
 ## H. Dossier / observabilidad
 36. `gen-dossiers`: anexar por-actor los counter-frameworks (etapa-2 paso 6 horneado en la vista .md). — Proposed
