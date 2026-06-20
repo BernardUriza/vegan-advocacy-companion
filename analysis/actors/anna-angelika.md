@@ -91,4 +91,8 @@ No responder al insulto en su nivel. No defender a Beyond Meat específicamente.
 - **Su jugada:** Hombre de paja sobre el post de Frida: corrige que Frida no era vegana y que el cuadro es sobre la alimentacion forzada — algo que el post ya dice explicitamente (not a vegan activist); cierra con ad-hominem (stupid/uneducated) + acusacion de usar IA.
 - **Nuestra respuesta:** Expuse el straw man (refuto un claim que nadie hizo), concedi todo su dato historico mostrando que REFUERZA el punto, fundi su acusacion de IA en la misma espina (despachar al mensajero, no el argumento), cierre de validacion devastadora (engancho cuando casi nunca lo hace) + vuelta al hueso.
 
+### Hilo `27375477042075446` — 2026-06-20 · outcome: **pending**
+- **Su jugada:** Insulto + escudo: Lol dude this is a fun pastime group not a debate club, you cant debate your way out of a paper bag, you use AI, embarrassing, I dont have to justify.
+- **Nuestra respuesta:** Cierre corto (contraste de temperamento): le tomo la palabra — si es solo un pasatiempo y no es en serio, dejo de leer sus arrebatos como argumentos; bridge al hilo Frida donde esta el punto real. Reclasifica sus insultos de argumento a ruido con calma cordial, sin insultar de vuelta.
+
 _Hilos: 27335635946059556, 27363745576581926_
