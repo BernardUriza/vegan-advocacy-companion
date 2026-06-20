@@ -112,4 +112,8 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** El crux: membership of the human moral community vs sentience; flip de carga (sentience es asuncion vegana que tambien necesita justificacion); concedio no-absolutos y dropout rates del plant-based.
 - **Nuestra respuesta:** Concedio los 2 puntos empiricos; clavo la peticion de principio (la membresia hace todo el trabajo, un limite no es justificacion por existir); sentience rastrea un rasgo real (capacidad de ser danado) vs membresia arbitraria; estructura tribu/raza sin igualar sujetos; devolvio la carga: que tiene la membresia en si, aparte de algun rasgo, que cargue el peso moral.
 
+### Hilo `27375477042075446` — 2026-06-19 · outcome: **pending**
+- **Su jugada:** Petición de principio: "necesario" es lo disputado; carga/punto neutral; "sentience es solo una creencia igual que la mía"
+- **Nuestra respuesta:** (a) la vara es alternativas ADECUADAS no imposibilidad, ex-veganos=adherencia; (b) el punto de partida es "dañar a un sintiente necesita razón", su misma vara con un perro; (c) concedí moral≠hecho científico pero corta para ambos, sintiencia no-arbitraria vs especie; le pedí el criterio no-arbitrario.
+
 _Hilos: 27363745576581926, 27375477042075446_

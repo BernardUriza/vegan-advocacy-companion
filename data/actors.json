@@ -371,7 +371,22 @@
       "27335635946059556",
       "27363745576581926"
     ],
-    "interactions": []
+    "interactions": [
+      {
+        "thread_id": "27363745576581926",
+        "date": "2026-06-19",
+        "their_move": "Relativismo + autonomía libertaria: \"I won't justify it, no one to justify it to, morality is subjective, it's a you problem\"",
+        "our_reply_summary": "Separé las dos preguntas (¿cambiarás? vs ¿hay justificación?); el ejemplo del Muslim solo muestra que no le importa, no si es correcto; ella ya pesa razones → no vive el relativismo puro. Vuelta al hueso.",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27375477042075446",
+        "date": "2026-06-19",
+        "their_move": "Naturalismo/especismo (pato/paloma, baseline de supervivencia) + relativismo + amenaza (\"show you your place\")",
+        "our_reply_summary": "Ignoré la amenaza; is-ought: un pato no tiene agencia moral, \"natural\" describe el instinto no lo justifica; volví al hueso.",
+        "outcome": "pending"
+      }
+    ]
   },
   {
     "user_id": "100010556977700",
@@ -531,7 +546,15 @@
     "threads": [
       "27363745576581926"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "thread_id": "27363745576581926",
+        "date": "2026-06-19",
+        "their_move": "Sneer + meta-objeción al formato: \"Moral principle what a joke... little Bernie... extremely weak manner to frame\"",
+        "our_reply_summary": "Ignoré el sneer; reencuadré solo la objeción de formato: no pedí olvidar principios, pedí dejar las desviaciones y nombrar el principio que justifica. Pregunta de cierre.",
+        "outcome": "pending"
+      }
+    ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/100000418598784/"
   },
   {
@@ -672,6 +695,13 @@
         "their_move": "El crux: membership of the human moral community vs sentience; flip de carga (sentience es asuncion vegana que tambien necesita justificacion); concedio no-absolutos y dropout rates del plant-based.",
         "our_reply_summary": "Concedio los 2 puntos empiricos; clavo la peticion de principio (la membresia hace todo el trabajo, un limite no es justificacion por existir); sentience rastrea un rasgo real (capacidad de ser danado) vs membresia arbitraria; estructura tribu/raza sin igualar sujetos; devolvio la carga: que tiene la membresia en si, aparte de algun rasgo, que cargue el peso moral.",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "27375477042075446",
+        "date": "2026-06-19",
+        "their_move": "Petición de principio: \"necesario\" es lo disputado; carga/punto neutral; \"sentience es solo una creencia igual que la mía\"",
+        "our_reply_summary": "(a) la vara es alternativas ADECUADAS no imposibilidad, ex-veganos=adherencia; (b) el punto de partida es \"dañar a un sintiente necesita razón\", su misma vara con un perro; (c) concedí moral≠hecho científico pero corta para ambos, sintiencia no-arbitraria vs especie; le pedí el criterio no-arbitrario.",
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -800,6 +830,13 @@
         "date": "2026-06-19",
         "their_move": "Casos limite/insectos (bedbugs, cucarachas, mosquitos, ratas) tras conceder el argumento de necesidad. Socrates_hostil suave, buena fe.",
         "our_reply_summary": "Concedio plagas como conflicto/autodefensa (no criar-para-matar); no mordio la lista; devolvio al hueso: que hace necesario criar y matar para comida cuando no aplican esas circunstancias.",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27363745576581926",
+        "date": "2026-06-19",
+        "their_move": "Sobrepoblación salvaje→enfermedad como gestión natural; casi concede (\"you prove valid points\")",
+        "our_reply_summary": "Concedí que la gestión de fauna salvaje plantea preguntas reales, pero es lo contrario de criar 80B a propósito; pregunté qué separa control de población de criar para matar.",
         "outcome": "pending"
       }
     ],

@@ -45,4 +45,8 @@ No descartarlo como troll. Darle el argumento de necesidad una vez, sin condesce
 - **Su jugada:** Casos limite/insectos (bedbugs, cucarachas, mosquitos, ratas) tras conceder el argumento de necesidad. Socrates_hostil suave, buena fe.
 - **Nuestra respuesta:** Concedio plagas como conflicto/autodefensa (no criar-para-matar); no mordio la lista; devolvio al hueso: que hace necesario criar y matar para comida cuando no aplican esas circunstancias.
 
+### Hilo `27363745576581926` — 2026-06-19 · outcome: **pending**
+- **Su jugada:** Sobrepoblación salvaje→enfermedad como gestión natural; casi concede ("you prove valid points")
+- **Nuestra respuesta:** Concedí que la gestión de fauna salvaje plantea preguntas reales, pero es lo contrario de criar 80B a propósito; pregunté qué separa control de población de criar para matar.
+
 _Hilos: 27363745576581926_
