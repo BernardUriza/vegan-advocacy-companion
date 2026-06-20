@@ -112,9 +112,15 @@ no 9222). Reusar la tab de FB / del coagent abierta; nunca abrir a ciegas.
   `div[role="article"]` + screenshot). Si alguno quedó mal, BORRAR ese; los demás
   siguen.
 - **Cerrar el loop en el SSOT por cada post** (`appendInteraction(<user_id>,
-  { thread_id, date, their_move, our_reply_summary, outcome: "pending" })`). El
-  `outcome` arranca `pending` y se actualiza en el siguiente run cuando se vea la
-  reacción (`conceded`/`escalated`/`silent`/`goalpost`/`engaged`). Luego
+  { thread_id, date, their_move, our_reply_summary, framework: <id del framework
+  desplegado en etapa-3>, outcome: "pending" })`). **El campo `framework` es
+  OBLIGATORIO** — es lo único que alimenta el moat de efectividad
+  (`framework-stats` / `getFrameworkWinRate`); sin él, por más corridas que hagas,
+  el moat queda vacío y nunca sabrás qué jugada funciona. Registrá el id del
+  framework que el draft realmente usó (el que etapa-3 eligió de
+  `getFrameworksByTactic`), no el candidato surfaceado. El `outcome` arranca
+  `pending` y se cierra en el siguiente run con `close-outcomes.mjs`
+  (`conceded`/`escalated`/`silent`/`goalpost`/`engaged`). Luego
   `validate-data.mjs` + (si el folder está despejado) `gen-dossiers.mjs`, una vez al
   cerrar el lote.
 
