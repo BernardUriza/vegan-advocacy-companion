@@ -49,6 +49,19 @@ async function expandAll() {
 
 // ---- corre DENTRO de la página: walk de los articles ----
 function walkArticles(ME) {
+  // dueño del post: el heading/dialog "X's Post" o el primer link de autor del post.
+  // En MI post, un comentario raíz de un oponente está dirigido a mi pregunta = deuda.
+  let postOwner = '';
+  const heading = [...document.querySelectorAll('h2,[role="heading"]')]
+    .map((x) => (x.textContent || '').trim())
+    .find((s) => /['’]s Post$/.test(s));
+  if (heading) postOwner = heading.replace(/['’]s Post$/, '').trim();
+  if (!postOwner) {
+    const dlg = document.querySelector('[role="dialog"]');
+    const al = (dlg && dlg.getAttribute('aria-label')) || '';
+    const mm = al.match(/^(.+?)['’]s Post/);
+    if (mm) postOwner = mm[1].trim();
+  }
   const arts = [...document.querySelectorAll('div[role="article"]')];
   const rows = [];
   for (const a of arts) {
@@ -91,7 +104,7 @@ function walkArticles(ME) {
     })();
     rows.push({ author, user_id, target, isMine, label: label.slice(0, 90), ageStr, text });
   }
-  return rows;
+  return { postOwner, rows };
 }
 
 function normKey(r) {
@@ -106,31 +119,52 @@ function normKey(r) {
   return (r.user_id || r.author) + '|' + (r.target || '') + '|' + head;
 }
 
-function buildDebt(turns, ME) {
-  // patrón del grupo: diálogo persona-a-persona. Deuda = el oponente habló a ME
-  // más recientemente de lo que ME le respondió.
-  const opps = new Map(); // author -> { oppFresh, myFresh, user_id }
+function buildDebt(turns, ME, postIsMine) {
+  // Deuda = un oponente me habló y no le he respondido (o me respondió más reciente
+  // de lo que yo le contesté). DOS formas, ambas cuentan:
+  //   reply: respondió a MI reply (target === ME) — back-and-forth activo.
+  //   root : comentario raíz en MI post (sin target) — está dirigido a mi pregunta.
+  // El bug viejo solo contaba 'reply' → ignoraba decenas de raíces sin contestar.
+  // Margen anti-conservador: con edades gruesas ("1d" vs "23h") el agregado por-autor
+  // no distingue a QUÉ rama contesté. Si el último del oponente NO es claramente más
+  // viejo que mi último por este margen, NO asumo que lo contesté → surfaceo (suspect).
+  const MARGIN = 180; // min
+  const opps = new Map(); // author -> { oppFresh, myFresh, user_id, kind, oppCount, myCount }
   for (const t of turns) {
     const age = ageMinutes(t.ageStr);
-    if (!t.isMine && t.target === ME) {
-      const e = opps.get(t.author) || { oppFresh: Infinity, myFresh: Infinity, user_id: t.user_id };
-      e.oppFresh = Math.min(e.oppFresh, age);
+    const isReplyToMe = !t.isMine && t.target === ME;
+    const isRootOnMyPost = !t.isMine && !t.target && postIsMine;
+    if (isReplyToMe || isRootOnMyPost) {
+      const e = opps.get(t.author) || { oppFresh: Infinity, myFresh: Infinity, user_id: t.user_id, kind: 'root', oppCount: 0, myCount: 0 };
+      e.oppCount++;
+      if (age < e.oppFresh) {
+        e.oppFresh = age;
+        e.kind = isReplyToMe ? 'reply' : 'root';
+      }
       e.user_id = e.user_id || t.user_id;
       opps.set(t.author, e);
     }
     if (t.isMine && t.target) {
-      const e = opps.get(t.target) || { oppFresh: Infinity, myFresh: Infinity, user_id: null };
+      const e = opps.get(t.target) || { oppFresh: Infinity, myFresh: Infinity, user_id: null, kind: 'root', oppCount: 0, myCount: 0 };
       e.myFresh = Math.min(e.myFresh, age);
+      e.myCount++;
       opps.set(t.target, e);
     }
   }
   const debt = [];
   for (const [author, e] of opps) {
-    if (e.oppFresh < e.myFresh) {
-      debt.push({ author, user_id: e.user_id, freshestMin: e.oppFresh, owes: true });
+    if (e.oppFresh === Infinity) continue; // nunca me habló (solo le contesté yo a un raíz suyo viejo)
+    // raíz sin contestar (myFresh=Inf) o el oponente claramente más reciente → deuda dura.
+    const hardDebt = e.oppFresh < e.myFresh;
+    // reply ambigua: su último NO es claramente más viejo que el mío por el margen → verificar.
+    const clearlyAnswered = e.myFresh < e.oppFresh - MARGIN;
+    const suspect = !hardDebt && e.kind === 'reply' && !clearlyAnswered;
+    if (hardDebt || suspect) {
+      debt.push({ author, user_id: e.user_id, freshestMin: e.oppFresh, owes: !suspect, suspect, kind: e.kind, oppCount: e.oppCount, myCount: e.myCount });
     }
   }
-  debt.sort((a, b) => a.freshestMin - b.freshestMin);
+  // reply (activa) antes que root; suspect junto a su reply; dentro, por frescura.
+  debt.sort((a, b) => (a.kind === b.kind ? a.freshestMin - b.freshestMin : a.kind === 'reply' ? -1 : 1));
   return debt;
 }
 
@@ -141,7 +175,12 @@ async function main() {
     await page.waitForTimeout(2500);
     const exp = await page.evaluate(expandAll);
     await page.waitForTimeout(800);
-    const raw = await page.evaluate(walkArticles, ME);
+    const walked = await page.evaluate(walkArticles, ME);
+    const raw = walked.rows;
+    // dueño del post: lo detectado, o asumir MÍO (el pipeline corre sobre mis posts
+    // desde notificaciones) cuando no se pudo leer — y reportarlo (Art. 2).
+    const postOwner = walked.postOwner || '';
+    const postIsMine = postOwner ? postOwner === ME : true;
 
     // dedup
     const seen = new Set();
@@ -153,10 +192,12 @@ async function main() {
       turns.push(r);
     }
 
-    const debt = buildDebt(turns, ME);
+    const debt = buildDebt(turns, ME, postIsMine);
     const out = {
       url,
       me: ME,
+      postOwner: postOwner || '(no detectado — asumido mío)',
+      postIsMine,
       expand: exp,
       counts: { rawArticles: raw.length, uniqueTurns: turns.length },
       turns,
@@ -174,13 +215,16 @@ async function main() {
         console.log(`${who}${to}  [${fmtAge(ageMinutes(t.ageStr))}]`);
         console.log(`   ${t.text.slice(0, 120)}`);
       }
-      console.log(`\n=== DEUDA (oponentes que te hablaron más reciente de lo que respondiste) ===`);
-      if (!debt.length) console.log('  (ninguna — tienes la última palabra en todas las ramas)');
+      console.log(`\n=== DEUDA (post de ${postOwner || '?'}${postIsMine ? ' · TUYO' : ' · NO tuyo → raíces no cuentan'}) ===`);
+      console.log('  reply = te contestó tu reply (back-and-forth) · root = comentario raíz a tu post sin contestar');
+      if (!debt.length) console.log('  (ninguna — contestaste todo lo dirigido a ti)');
       for (const d of debt) {
-        console.log(`  🔴 ${d.author} (uid ${d.user_id || '?'}) — fresca [${fmtAge(d.freshestMin)}]`);
+        const tag = d.kind === 'reply' ? '↩️ reply' : '🌱 root ';
+        const sus = d.suspect ? ' ⚠️ AMBIGUA (verificar en vivo: él ' + d.oppCount + ' vs tú ' + d.myCount + ')' : '';
+        console.log(`  🔴 ${tag}  ${d.author} (uid ${d.user_id || '?'}) — [${fmtAge(d.freshestMin)}]${sus}`);
       }
       const top = debt[0];
-      if (top) console.log(`\n→ Deuda más fresca: ${top.author} [${fmtAge(top.freshestMin)}] — candidata a jugada (decide con el dossier).`);
+      if (top) console.log(`\n→ Deuda top: ${top.author} [${fmtAge(top.freshestMin)}] (${top.kind}) — candidata a jugada (decide con el dossier).`);
     }
   } finally {
     await done();
