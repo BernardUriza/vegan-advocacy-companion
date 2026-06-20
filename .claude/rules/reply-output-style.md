@@ -27,6 +27,33 @@ vegano.
   pregunta del marco quede plantada** (esto habilita el tono más mordaz de abajo).
 - No hay que demoler cada esquive en detalle: nombrarlo breve y volver al hueso.
 
+### La concesión es CONDICIONADA — buena fe de entrada, mala fe se expone primero
+
+Conceder lo empírico fortalece (arriba) — pero **el momento de la concesión NO es
+universal; depende del estado del interlocutor**. Confundirlo se ve lame ante el
+lurker.
+
+| Interlocutor | Cuándo conceder | Por qué |
+|---|---|---|
+| **Buena fe** | **De entrada, de frente.** Imperativo. | Honestidad intelectual; el lurker premia a quien concede lo obvio sin pelearlo. Abrir concediendo señala que no tienes miedo al dato. |
+| **Mala fe / trampa / hombre de paja** (su "punto" refuta algo que nadie dijo) | **NUNCA de apertura. Expón la trampa PRIMERO, concede DESPUÉS.** | Abrir con "tienes razón en X" cuando X era una trampa le da estatus/crédito a una jugada de mala fe — se ve débil ante el lurker. |
+
+Con mala fe el orden es **trampa → concesión desde la fuerza**: primero nombra que
+su "corrección" refuta un claim que nadie hizo (que el post ya decía lo contrario),
+y SOLO ENTONCES concede el dato — para entonces la concesión llega desde arriba
+("sí, todo eso es cierto, y además ya lo decía mi post"), no desde la debilidad. La
+misma frase concesiva, en orden invertido, pasa de fortaleza a sumisión.
+
+**Caso que la originó (2026-06-20, Anna Angelika, hilo Frida "Sin esperanza"):**
+Anna "corrigió" que Frida no era vegana — hombre de paja, porque el post dice
+literalmente "not a vegan activist". La reply NO abrió concediendo; abrió
+exponiendo el straw man ("¿en qué momento dije que Frida era vegana? El post dice
+lo contrario") y concedió el dato DESPUÉS, desde la fuerza. Bernard: *"se veria muy
+lame para el lurker que empezaramos concediendole el punto de que frida no era
+vegana. era la trampa. con alguien que opera de buena fe, eso es imperativo, aqui
+no."* Mapea directo a los dos registros de abajo: buena fe = compasivo (concede de
+entrada), mala fe = filo (expón la trampa, concede desde arriba).
+
 ## Los dos registros — compasivo y mordaz (un norte, dos instrumentos)
 
 Esta regla heredó dos doctrinas que parecían pelearse: el **Compassion Disruption
