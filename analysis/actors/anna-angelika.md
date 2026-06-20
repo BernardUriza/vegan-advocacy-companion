@@ -50,6 +50,7 @@ La contrincante más hostil del hilo vegan-market. Dominancia social, no argumen
   - `njn-normal-justo-necesario` → _deploy as:_ marco
 - **Presentism / Dismiss the Trend** (`presentismo`)
   - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `momento-truman-traicion-de-los-tuyos` → _deploy as:_ marco
 - **Moral Relativism Shield** (`relativismo_moral`)
   - `antropoespecismo` → _deploy as:_ marco
   - `violencia-especista` → _deploy as:_ marco
@@ -59,12 +60,14 @@ La contrincante más hostil del hilo vegan-market. Dominancia social, no argumen
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 - **Autonomy / Anti-Dictation Frame** (`libertarian_autonomy`)
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `violencia-estructural-infraestructura` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 
 ## Qué NO hacer
 

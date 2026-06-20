@@ -29,10 +29,12 @@ El arguer civil más valioso del hilo vegan-market. Ex-vegano de 8 años con his
 
 - **Personal Anecdote as Category Evidence** (`anecdota_personal_n1`)
   - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+  - `momento-truman-traicion-de-los-tuyos` → _deploy as:_ marco
 - **Selective Data Dump** (`data_dump_selectivo`)
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `mensaje-importa-formas-determinantes` → _deploy as:_ auto-disciplina-del-activista
   - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+  - `hablamos-en-nombre-de-los-demas-animales` → _deploy as:_ auto-disciplina-del-activista
 - **Moral Relativism Shield** (`relativismo_moral`)
   - `antropoespecismo` → _deploy as:_ marco
   - `violencia-especista` → _deploy as:_ marco
@@ -42,6 +44,7 @@ El arguer civil más valioso del hilo vegan-market. Ex-vegano de 8 años con his
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 - **Abolition Reductio / Domesticated Animal Extinction** (`abolition_reductio`)
   - `pollo-inconsciente-reductio` → _deploy as:_ premisa_portante
   - `vegano-por-un-dia-racista-entre-semana` → _deploy as:_ marco

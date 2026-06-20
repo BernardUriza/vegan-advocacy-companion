@@ -39,6 +39,8 @@ Anti-vegan de buena fe, civil, engancha. Reductio práctico desde su realidad de
   - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
   - `economia-especista-heredada` → _deploy as:_ marco
   - `antropoespecismo-universal-deslocalizar` → _deploy as:_ marco
+  - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
+  - `resistencia-al-cambio-es-defensa-del-privilegio` → _deploy as:_ auto-disciplina-del-activista
 - **Whataboutism / Human Exploitation Deflection** (`whataboutism`)
   - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
   - `pandemia-cooptada-todo-vale` → _deploy as:_ auto-disciplina-del-activista
@@ -59,6 +61,8 @@ Anti-vegan de buena fe, civil, engancha. Reductio práctico desde su realidad de
   - `gore-backfire-vaca-idilica` → _deploy as:_ auto-disciplina-del-activista
   - `mi-desarrollar-discrepancia` → _deploy as:_ marco
   - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+  - `carnismo-es-algodonismo` → _deploy as:_ marco
+  - `medida-tres-plazos-corto-medio-largo` → _deploy as:_ auto-disciplina-del-activista
 - **Domestication = Mutualism / Commensalism** (`domestication_mutualism`)
   - `domesticar-eufemismo-dominar` → _deploy as:_ marco
   - `violencia-estructural-infraestructura` → _deploy as:_ marco

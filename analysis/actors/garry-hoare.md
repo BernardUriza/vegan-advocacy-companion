@@ -38,6 +38,7 @@ Entra a defender a Yolanda con agresión (1 turno): 'I've shown you plenty of ev
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `mensaje-importa-formas-determinantes` → _deploy as:_ auto-disciplina-del-activista
   - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+  - `hablamos-en-nombre-de-los-demas-animales` → _deploy as:_ auto-disciplina-del-activista
 
 ## Qué NO hacer
 

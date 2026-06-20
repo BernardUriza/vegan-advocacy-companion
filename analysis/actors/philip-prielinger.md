@@ -29,12 +29,14 @@ Inversión de carga libertaria (2 turnos). Apoya a Roderick en el sneer ('strang
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `crueldad-no-es-la-causa` → _deploy as:_ marco
   - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
+  - `resistencia-al-cambio-es-defensa-del-privilegio` → _deploy as:_ auto-disciplina-del-activista
 - **Autonomy / Anti-Dictation Frame** (`libertarian_autonomy`)
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `violencia-estructural-infraestructura` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 - **Principle Shield / Begging the Principle** (`principio_escudo`)
   - `genesis-invertido` → _deploy as:_ marco
   - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante

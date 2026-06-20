@@ -43,6 +43,8 @@ Naturalismo sofisticado + insulto. En su replica de 5h escalo al combo crop-deat
   - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
   - `extranar-lo-naturalizado` → _deploy as:_ marco
   - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
+  - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
+  - `dos-caras-misma-moneda` → _deploy as:_ marco
 - **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
   - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
   - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
@@ -64,6 +66,8 @@ Naturalismo sofisticado + insulto. En su replica de 5h escalo al combo crop-deat
   - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
   - `economia-especista-heredada` → _deploy as:_ marco
   - `antropoespecismo-universal-deslocalizar` → _deploy as:_ marco
+  - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
+  - `resistencia-al-cambio-es-defensa-del-privilegio` → _deploy as:_ auto-disciplina-del-activista
 - **Moral Relativism Shield** (`relativismo_moral`)
   - `antropoespecismo` → _deploy as:_ marco
   - `violencia-especista` → _deploy as:_ marco
@@ -73,6 +77,7 @@ Naturalismo sofisticado + insulto. En su replica de 5h escalo al combo crop-deat
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 
 ## Qué NO hacer
 

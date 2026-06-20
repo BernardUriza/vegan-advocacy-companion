@@ -27,6 +27,7 @@ Un turno. Pose de apertura ('ready to listen') que puede ser genuina o performat
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `crueldad-no-es-la-causa` → _deploy as:_ marco
   - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
+  - `resistencia-al-cambio-es-defensa-del-privilegio` → _deploy as:_ auto-disciplina-del-activista
 - **Hostile Socratic Method** (`socrates_hostil`)
   - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
 
@@ -39,5 +40,9 @@ No descartarlo como troll. Darle el argumento de necesidad una vez, sin condesce
 ### Hilo `27363745576581926` — 2026-06-18 · outcome: **pending**
 - **Su jugada:** "Ready to listen, nunca oí un argumento valioso de por qué está mal" (inversión de carga + apertura performativa).
 - **Nuestra respuesta:** Reply etiquetada (registro compasivo, sin vocativo): tomé en serio su apertura; di el argumento de necesidad limpio (si un ser puede sufrir y quiere vivir, dañarlo necesita justificación, no causa); burden shift; cerré preguntando qué razón basta para anular el interés del animal cuando no hace falta.
+
+### Hilo `27363745576581926` — 2026-06-19 · outcome: **pending**
+- **Su jugada:** Casos limite/insectos (bedbugs, cucarachas, mosquitos, ratas) tras conceder el argumento de necesidad. Socrates_hostil suave, buena fe.
+- **Nuestra respuesta:** Concedio plagas como conflicto/autodefensa (no criar-para-matar); no mordio la lista; devolvio al hueso: que hace necesario criar y matar para comida cuando no aplican esas circunstancias.
 
 _Hilos: 27363745576581926_

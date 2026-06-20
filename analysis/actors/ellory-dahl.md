@@ -37,6 +37,7 @@ Insultador puro (×8 comentarios, 'intellectually challenged retards', 'dumbasse
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `mensaje-importa-formas-determinantes` → _deploy as:_ auto-disciplina-del-activista
   - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+  - `hablamos-en-nombre-de-los-demas-animales` → _deploy as:_ auto-disciplina-del-activista
 - **Popularity as Moral Proof** (`popularidad_como_justificacion`)
   - `njn-normal-justo-necesario` → _deploy as:_ marco
   - `extranar-lo-naturalizado` → _deploy as:_ marco

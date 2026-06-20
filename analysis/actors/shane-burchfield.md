@@ -38,4 +38,8 @@ No asumir mala fe por una sola pregunta. Si responde, tratar como genuina hasta 
 - **Su jugada:** Autonomía/personal-choice (you do you, let me be me) + error de categoría (muéstrame documentos LEGALES donde sea malo) + humane self-farming (crío los míos, sin matadero/gas/veal).
 - **Nuestra respuesta:** Reply etiquetada (compasivo, sin vocativo): reconoce el cuidado real que ya muestra; autonomía vale cuando solo te afecta a ti, pero hay un TERCERO (el animal) que no consintió; legal≠moral (cosas legales luego juzgadas mal); concede humane>industrial y aun así el hueso: matar un sintiente por preferencia con alternativas no se justifica por humane.
 
+### Hilo `27363745576581926` — 2026-06-19 · outcome: **pending**
+- **Su jugada:** Naturalismo + is/ought: tan natural como comer plantas; humanos subespecie de animales; probo plant-based.
+- **Nuestra respuesta:** Concedio toda la biologia, separo can de should (capacidad no es permiso); reconocio su me-enferme con compasion sin ceder el punto moral; cerro con que principio convierte we-can en we-may.
+
 _Hilos: 27363745576581926, 27341517928804691_

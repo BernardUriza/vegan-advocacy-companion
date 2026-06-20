@@ -32,6 +32,7 @@ El arguer más peligroso por civil y por estructurado. No insulta, no naturaliza
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `mensaje-importa-formas-determinantes` → _deploy as:_ auto-disciplina-del-activista
   - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+  - `hablamos-en-nombre-de-los-demas-animales` → _deploy as:_ auto-disciplina-del-activista
 - **Domestication = Mutualism / Commensalism** (`domestication_mutualism`)
   - `domesticar-eufemismo-dominar` → _deploy as:_ marco
   - `violencia-estructural-infraestructura` → _deploy as:_ marco

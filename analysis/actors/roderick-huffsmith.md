@@ -40,6 +40,7 @@ Troll contemptuoso (4 turnos), cero argumento. Su único contenido sustantivo es
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 - **Reframe: Veganism as Belief System** (`reencuadre_veganismo_creencia`)
   - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
@@ -51,6 +52,10 @@ Troll contemptuoso (4 turnos), cero argumento. Su único contenido sustantivo es
   - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
   - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
   - `mi-desarrollar-discrepancia` → _deploy as:_ marco
+  - `carnismo-es-algodonismo` → _deploy as:_ marco
+  - `estereotipo-prejuicio-discriminacion` → _deploy as:_ marco
+  - `tres-dimensiones-del-veganismo` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 
 ## Qué NO hacer
 

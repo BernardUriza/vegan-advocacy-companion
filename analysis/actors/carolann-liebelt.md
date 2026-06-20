@@ -45,10 +45,13 @@ Principal contrincante de Bernard. Su argumento MUTA cada vez que se le cierra u
   - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
   - `extranar-lo-naturalizado` → _deploy as:_ marco
   - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
+  - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
+  - `dos-caras-misma-moneda` → _deploy as:_ marco
 - **Burden of Proof Reversal** (`inversion_carga`)
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `crueldad-no-es-la-causa` → _deploy as:_ marco
   - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
+  - `resistencia-al-cambio-es-defensa-del-privilegio` → _deploy as:_ auto-disciplina-del-activista
 - **Appeal to Normalcy / Default** (`apelacion_normal`)
   - `antropoespecismo` → _deploy as:_ marco
   - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
@@ -62,6 +65,8 @@ Principal contrincante de Bernard. Su argumento MUTA cada vez que se le cierra u
   - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
   - `mentir-a-las-criaturas-sostiene-el-sistema` → _deploy as:_ marco
   - `normalizar-solo-una-parte-realidad` → _deploy as:_ marco
+  - `estereotipo-prejuicio-discriminacion` → _deploy as:_ marco
+  - `dos-caras-misma-moneda` → _deploy as:_ marco
 - **Reframe: Veganism as Belief System** (`reencuadre_veganismo_creencia`)
   - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
@@ -73,14 +78,21 @@ Principal contrincante de Bernard. Su argumento MUTA cada vez que se le cierra u
   - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
   - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
   - `mi-desarrollar-discrepancia` → _deploy as:_ marco
+  - `carnismo-es-algodonismo` → _deploy as:_ marco
+  - `estereotipo-prejuicio-discriminacion` → _deploy as:_ marco
+  - `tres-dimensiones-del-veganismo` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 - **Begging the Question / Circular Reasoning** (`peticion_de_principio`)
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `domesticar-eufemismo-dominar` → _deploy as:_ marco
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `filtro-especie-vs-individuo` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 - **Is-Ought / Naturalistic Fallacy** (`is_ought`)
   - `conocimiento-compromete` → _deploy as:_ marco
+  - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
+  - `dos-caras-misma-moneda` → _deploy as:_ marco
 
 ## Qué NO hacer
 

@@ -40,6 +40,7 @@ El mejor steelman anti-vegano del hilo, y CIVIL. Hace tres cosas finas: (1) acus
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 - **Principle Shield / Begging the Principle** (`principio_escudo`)
   - `genesis-invertido` → _deploy as:_ marco
   - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
@@ -49,6 +50,7 @@ El mejor steelman anti-vegano del hilo, y CIVIL. Hace tres cosas finas: (1) acus
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `filtro-especie-vs-individuo` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 - **Welfare Rhetoric / Comfortable Life Defense** (`welfare_rhetoric`)
   - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente
   - `violencia-especista` → _deploy as:_ marco
@@ -66,6 +68,8 @@ El mejor steelman anti-vegano del hilo, y CIVIL. Hace tres cosas finas: (1) acus
   - `gore-backfire-vaca-idilica` → _deploy as:_ auto-disciplina-del-activista
   - `mi-desarrollar-discrepancia` → _deploy as:_ marco
   - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+  - `carnismo-es-algodonismo` → _deploy as:_ marco
+  - `medida-tres-plazos-corto-medio-largo` → _deploy as:_ auto-disciplina-del-activista
 - **Crop Deaths / Bystander Flip** (`crop_deaths_flip`)
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
@@ -79,6 +83,8 @@ El mejor steelman anti-vegano del hilo, y CIVIL. Hace tres cosas finas: (1) acus
   - `paralelo-luchas-sociales-centrismos` → _deploy as:_ marco
   - `filtro-especie-vs-individuo` → _deploy as:_ marco
   - `libros-de-texto-niegan-sintiencia` → _deploy as:_ marco
+  - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
+  - `dos-caras-misma-moneda` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -101,5 +107,9 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 ### Hilo `27375477042075446` — 2026-06-18 · outcome: **pending**
 - **Su jugada:** Foto/condicionamiento: naturalismo (humanos cazaban antes de los medios → evolución, no condicionamiento) + tu-quoque (el veganismo TAMBIÉN es condicionado).
 - **Nuestra respuesta:** Reply etiquetada (filo-ligero, sin vocativo): concede todo lo histórico/evolutivo, separa ORIGEN de JUSTIFICACIÓN (de dónde viene una creencia ≠ si sobrevive escrutinio); el tu-quoque cambia el tema de justificación a procedencia. Devuelve al hueso: normal/viejo/natural son descripciones, no conclusiones — qué justifica criar y matar sintientes cuando hay alternativas.
+
+### Hilo `27363745576581926` — 2026-06-19 · outcome: **pending**
+- **Su jugada:** El crux: membership of the human moral community vs sentience; flip de carga (sentience es asuncion vegana que tambien necesita justificacion); concedio no-absolutos y dropout rates del plant-based.
+- **Nuestra respuesta:** Concedio los 2 puntos empiricos; clavo la peticion de principio (la membresia hace todo el trabajo, un limite no es justificacion por existir); sentience rastrea un rasgo real (capacidad de ser danado) vs membresia arbitraria; estructura tribu/raza sin igualar sujetos; devolvio la carga: que tiene la membresia en si, aparte de algun rasgo, que cargue el peso moral.
 
 _Hilos: 27363745576581926, 27375477042075446_

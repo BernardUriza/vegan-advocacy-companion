@@ -30,6 +30,7 @@ Low-effort relativista. Suelta la postura, recolecta reacciones, y se desentiend
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 
 ## Qué NO hacer
 

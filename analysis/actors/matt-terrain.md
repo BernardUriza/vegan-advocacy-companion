@@ -37,6 +37,8 @@ El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qu
   - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
   - `economia-especista-heredada` → _deploy as:_ marco
   - `antropoespecismo-universal-deslocalizar` → _deploy as:_ marco
+  - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
+  - `resistencia-al-cambio-es-defensa-del-privilegio` → _deploy as:_ auto-disciplina-del-activista
 - **Hostile Socratic Method** (`socrates_hostil`)
   - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
 - **Crop Deaths / Bystander Flip** (`crop_deaths_flip`)

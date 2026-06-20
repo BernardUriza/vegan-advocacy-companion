@@ -47,12 +47,16 @@ La única contrincante de buena fe real del hilo. Da razones personales, enganch
   - `gore-backfire-vaca-idilica` → _deploy as:_ auto-disciplina-del-activista
   - `mi-desarrollar-discrepancia` → _deploy as:_ marco
   - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+  - `carnismo-es-algodonismo` → _deploy as:_ marco
+  - `medida-tres-plazos-corto-medio-largo` → _deploy as:_ auto-disciplina-del-activista
 - **Selective Data Dump** (`data_dump_selectivo`)
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `mensaje-importa-formas-determinantes` → _deploy as:_ auto-disciplina-del-activista
   - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+  - `hablamos-en-nombre-de-los-demas-animales` → _deploy as:_ auto-disciplina-del-activista
 - **Personal Anecdote as Category Evidence** (`anecdota_personal_n1`)
   - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+  - `momento-truman-traicion-de-los-tuyos` → _deploy as:_ marco
 
 ## Qué NO hacer
 

@@ -31,8 +31,12 @@ Low-effort. Estira el término 'explotación' a plantas y animales no-sintientes
   - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
   - `extranar-lo-naturalizado` → _deploy as:_ marco
   - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
+  - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
+  - `dos-caras-misma-moneda` → _deploy as:_ marco
 - **Is-Ought / Naturalistic Fallacy** (`is_ought`)
   - `conocimiento-compromete` → _deploy as:_ marco
+  - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
+  - `dos-caras-misma-moneda` → _deploy as:_ marco
 
 ## Qué NO hacer
 

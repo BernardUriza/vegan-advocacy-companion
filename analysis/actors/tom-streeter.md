@@ -35,6 +35,8 @@ Un turno. Versión condensada del esquive de Les M: pluraliza las razones para e
   - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
   - `economia-especista-heredada` → _deploy as:_ marco
   - `antropoespecismo-universal-deslocalizar` → _deploy as:_ marco
+  - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
+  - `resistencia-al-cambio-es-defensa-del-privilegio` → _deploy as:_ auto-disciplina-del-activista
 - **Principle Shield / Begging the Principle** (`principio_escudo`)
   - `genesis-invertido` → _deploy as:_ marco
   - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
@@ -48,5 +50,9 @@ No perseguir cada razón de la lista. Nombrar que la pluralidad es el esquive: n
 ### Hilo `27363745576581926` — 2026-06-18 · outcome: **pending**
 - **Su jugada:** Futility/pluralism: "es todas esas cosas a la vez; si buscas UNA verdad universal no existe".
 - **Nuestra respuesta:** Reply etiquetada (sin vocativo): separé causas de justificación (su lista explica por qué la gente lo hace, no qué lo justifica); le concedí que no hay una sola verdad; pedí cuál ítem convierte el can-do en justified.
+
+### Hilo `27363745576581926` — 2026-06-19 · outcome: **pending**
+- **Su jugada:** Redefine justificacion=cualquier razon (sentido legal) para disolver la pregunta moral; relativismo (morales fluidas); 98pct farmers se creen morales; insulto.
+- **Nuestra respuesta:** Expuso el cambio de pregunta (si justificacion=tener una razon, el debate termina antes de empezar); se-creen-morales es lo en disputa no la respuesta; relativismo de una linea (torturar a un nino); ignoro el insulto con calma; cerro con la pregunta del principio.
 
 _Hilos: 27363745576581926_

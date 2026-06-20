@@ -25,6 +25,7 @@ Su jab inicial era sarcasmo light, no argumento. Bernard lo pivoteo (lo felicito
 
 - **AI Accusation / Bot Dismissal** (`ai_accusation`)
   - `educador-no-adoctrina-responde` → _deploy as:_ auto-disciplina-del-activista
+  - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
 - **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
   - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
   - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista

@@ -41,20 +41,26 @@ Motor del hilo (14 turnos). Repite el bucle CAN→SHOULD sin avanzar: cuando Rü
   - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
   - `extranar-lo-naturalizado` → _deploy as:_ marco
   - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
+  - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
+  - `dos-caras-misma-moneda` → _deploy as:_ marco
 - **Is-Ought / Naturalistic Fallacy** (`is_ought`)
   - `conocimiento-compromete` → _deploy as:_ marco
+  - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
+  - `dos-caras-misma-moneda` → _deploy as:_ marco
 - **Begging the Question / Circular Reasoning** (`peticion_de_principio`)
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `domesticar-eufemismo-dominar` → _deploy as:_ marco
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `filtro-especie-vs-individuo` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 - **Hostile Socratic Method** (`socrates_hostil`)
   - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
 - **Burden of Proof Reversal** (`inversion_carga`)
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `crueldad-no-es-la-causa` → _deploy as:_ marco
   - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
+  - `resistencia-al-cambio-es-defensa-del-privilegio` → _deploy as:_ auto-disciplina-del-activista
 - **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
   - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
   - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
@@ -63,6 +69,7 @@ Motor del hilo (14 turnos). Repite el bucle CAN→SHOULD sin avanzar: cuando Rü
   - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
 - **AI Accusation / Bot Dismissal** (`ai_accusation`)
   - `educador-no-adoctrina-responde` → _deploy as:_ auto-disciplina-del-activista
+  - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
 
 ## Qué NO hacer
 

@@ -32,12 +32,14 @@ Relativista + libertario. No defiende que comer carne sea correcto, defiende que
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 - **Autonomy / Anti-Dictation Frame** (`libertarian_autonomy`)
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `violencia-estructural-infraestructura` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 
 ## Qué NO hacer
 
