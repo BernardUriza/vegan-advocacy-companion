@@ -73,6 +73,20 @@
         "their_move": "I still don't see the distinction. Animals or crops. They both kill. List the exploitative events that are the problem.",
         "our_reply_summary": "Aterrizó la distinción de ROL del daño: subproducto de alimentar a todos vs el propósito mismo de la actividad. Reframeó 'exploitation' como RELACIÓN, no lista. Nombró que Matt usa esa distinción (accidente vs intención) en todo menos con animales. Devolvió la carga.",
         "outcome": "silent"
+      },
+      {
+        "thread_id": "27375477042075446",
+        "date": "2026-06-19",
+        "their_move": "Speciesism-flip: \"vegans son los verdaderos especistas, rescatan uno y matan otro\"",
+        "our_reply_summary": "Inversión: el carnista traza la línea por especie; el vegano aplica UNA vara (daño innecesario), no cría para matar; intención+necesidad no body-count. Le pedí qué hace a una especie comida y otra familia.",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27319402757682875",
+        "date": "2026-06-19",
+        "their_move": "Tu-quoque de hipocresía: \"todos usan plástico/meds developed on animals, cuántos hipócritas en una marcha\"",
+        "our_reply_summary": "\"As far as possible and practicable\" no es perfección; imperfección no refuta el principio; por su lógica nadie criticaría una injusticia; daño inevitable ≠ justifica el evitable.",
+        "outcome": "pending"
       }
     ]
   },
@@ -230,6 +244,13 @@
         "date": "2026-06-18",
         "their_move": "Inversión/goalpost: me acusó de esquivar por no contestar sus DOS preguntas reformuladas; crop_deaths_flip (\"criar para su propósito vs matar wildlife por profit\") + abolition_reductio (\"exterminar razas\").",
         "our_reply_summary": "Reply etiquetada (filo, apertura sin vocativo): nombré la inversión (él sustituyó mi pregunta por dos suyas); desarmé Q1 (\"designed for purpose\" pide la cuestión; crop-deaths = rol del daño, no idénticas) y Q2 (dejar de criar ≠ exterminar); cerré devolviéndolo a la pregunta original.",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27375477042075446",
+        "date": "2026-06-19",
+        "their_move": "Naturalismo + falacia genética (\"el condicionado eres tú\") + jab biológico (shovel hands / no-herbívoros)",
+        "our_reply_summary": "El origen de una creencia no dice si es verdadera; concedí que es aprendido y natural; las shovel hands cortan contra él (si natural es la vara, fuera agricultura/medicina). Vuelta al hueso.",
         "outcome": "pending"
       }
     ]
