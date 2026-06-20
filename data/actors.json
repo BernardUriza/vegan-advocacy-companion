@@ -435,6 +435,14 @@
         "their_move": "Naturalismo/especismo (pato/paloma, baseline de supervivencia) + relativismo + amenaza (\"show you your place\")",
         "our_reply_summary": "Ignoré la amenaza; is-ought: un pato no tiene agencia moral, \"natural\" describe el instinto no lo justifica; volví al hueso.",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "27375477042075446",
+        "date": "2026-06-20",
+        "their_move": "Relativismo/negativa a justificar: \"no justification is needed. I have no one to justify it to so I do not and I won not.\"",
+        "our_reply_summary": "Reply etiquetada CORTA (filo, pozo — 4 frases): decir \"no hace falta justificación\" en un debate sobre justificación es en sí una respuesta; el post no preguntaba a quién le debes explicación sino si una existe; todos tienen líneas que creen que importan aunque llamen subjetiva la moral, la pregunta es si la línea sobrevive el escrutinio; \"no la justificaré\" es tu elección pero no es lo mismo que tener una justificación. No mordí insulto, no defendí Beyond Meat, sin metaética.",
+        "framework": "relativismo_moral",
+        "outcome": "pending"
       }
     ]
   },
@@ -762,6 +770,14 @@
         "their_move": "Petición de principio: \"necesario\" es lo disputado; carga/punto neutral; \"sentience es solo una creencia igual que la mía\"",
         "our_reply_summary": "(a) la vara es alternativas ADECUADAS no imposibilidad, ex-veganos=adherencia; (b) el punto de partida es \"dañar a un sintiente necesita razón\", su misma vara con un perro; (c) concedí moral≠hecho científico pero corta para ambos, sintiencia no-arbitraria vs especie; le pedí el criterio no-arbitrario.",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "27363745576581926",
+        "date": "2026-06-20",
+        "their_move": "Crux contractarian: \"morally relevant according to whom?\"; sentience es mera aserción; los derechos emergen de la membresía en una comunidad recíproca, no de la capacidad de sufrir; \"mi posición describe cómo funcionan los derechos en el mundo real\".",
+        "our_reply_summary": "Reply etiquetada (filo): nombré el is/ought — \"describir cómo funcionan los derechos\" es sociológico (poder/contrato/club), la pregunta era normativa; los derechos legales excluyeron esclavos/mujeres/niños por ese mismo criterio de no-reciprocidad, \"así funcionan\" describió la esclavitud de 1850 sin justificarla; la capacidad de ser dañado no necesita árbitro externo porque hay alguien a quien le importa, la membresía SÍ necesita que el club te admita (permiso, no fundamento); devolví la carga: qué tiene la membresía en sí. ESTRUCTURA de exclusión sin igualar sujetos, sin marginal cases.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -803,6 +819,14 @@
         "date": "2026-06-19",
         "their_move": "Naturalismo + is/ought: tan natural como comer plantas; humanos subespecie de animales; probo plant-based.",
         "our_reply_summary": "Concedio toda la biologia, separo can de should (capacidad no es permiso); reconocio su me-enferme con compasion sin ceder el punto moral; cerro con que principio convierte we-can en we-may.",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27363745576581926",
+        "date": "2026-06-20",
+        "their_move": "\"¿quién eres tú para decidir tu moral para todos?\" (relativismo) PERO en la misma frase traza líneas morales: cruzar ciertas líneas (cría/trato/método de matanza/aditivos) está mal, por eso cría el suyo.",
+        "our_reply_summary": "Reply etiquetada (COMPASIVO): no es \"quién eres tú\" — él YA tiene líneas morales y las aplica a todos; concedí con respeto que ya cree que el sufrimiento/trato importan; el desacuerdo no es SI hay consideración moral sino DÓNDE se detiene; le devolví su propia línea: si el sufrimiento innecesario importa y hay alternativa adecuada, ¿por qué el paso final de matar es donde los intereses del animal dejan de contar? Sin atacar su forma de criar, sin factory farming, sin asumir mala fe.",
+        "framework": "consideracion-moral-no-cuanto-sufre",
         "outcome": "pending"
       }
     ],
@@ -855,6 +879,14 @@
         "date": "2026-06-19",
         "their_move": "Redefine justificacion=cualquier razon (sentido legal) para disolver la pregunta moral; relativismo (morales fluidas); 98pct farmers se creen morales; insulto.",
         "our_reply_summary": "Expuso el cambio de pregunta (si justificacion=tener una razon, el debate termina antes de empezar); se-creen-morales es lo en disputa no la respuesta; relativismo de una linea (torturar a un nino); ignoro el insulto con calma; cerro con la pregunta del principio.",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27363745576581926",
+        "date": "2026-06-20",
+        "their_move": "Colapsa razón=justificación explícito: \"the reason someone does something is their justification and vice versa\"; \"it is my life, my decision, my morality\"; tono grosero (hairy Shetland pony).",
+        "our_reply_summary": "Reply etiquetada (filo): nombré el equívoco — una razón EXPLICA, una justificación DEFIENDE; si fueran lo mismo nada sería injustificable (el que tortura por placer \"tiene su razón\"); Tom no defiende su práctica, dice que no tiene que defenderla, lo cual es postura no argumento; \"es mi vida\" no responde porque otro sintiente carga el costo; devolví al hueso: qué principio justifica cuando hay alternativa adecuada. No perseguí la lista, no mordí el tono.",
+        "framework": "no-necesidad-cambiaron-las-reglas",
         "outcome": "pending"
       }
     ],

@@ -83,4 +83,8 @@ No responder al insulto en su nivel. No defender a Beyond Meat específicamente.
 - **Su jugada:** Naturalismo/especismo (pato/paloma, baseline de supervivencia) + relativismo + amenaza ("show you your place")
 - **Nuestra respuesta:** Ignoré la amenaza; is-ought: un pato no tiene agencia moral, "natural" describe el instinto no lo justifica; volví al hueso.
 
+### Hilo `27375477042075446` — 2026-06-20 · outcome: **pending**
+- **Su jugada:** Relativismo/negativa a justificar: "no justification is needed. I have no one to justify it to so I do not and I won not."
+- **Nuestra respuesta:** Reply etiquetada CORTA (filo, pozo — 4 frases): decir "no hace falta justificación" en un debate sobre justificación es en sí una respuesta; el post no preguntaba a quién le debes explicación sino si una existe; todos tienen líneas que creen que importan aunque llamen subjetiva la moral, la pregunta es si la línea sobrevive el escrutinio; "no la justificaré" es tu elección pero no es lo mismo que tener una justificación. No mordí insulto, no defendí Beyond Meat, sin metaética.
+
 _Hilos: 27335635946059556, 27363745576581926_

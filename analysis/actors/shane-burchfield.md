@@ -42,4 +42,8 @@ No asumir mala fe por una sola pregunta. Si responde, tratar como genuina hasta 
 - **Su jugada:** Naturalismo + is/ought: tan natural como comer plantas; humanos subespecie de animales; probo plant-based.
 - **Nuestra respuesta:** Concedio toda la biologia, separo can de should (capacidad no es permiso); reconocio su me-enferme con compasion sin ceder el punto moral; cerro con que principio convierte we-can en we-may.
 
+### Hilo `27363745576581926` — 2026-06-20 · outcome: **pending**
+- **Su jugada:** "¿quién eres tú para decidir tu moral para todos?" (relativismo) PERO en la misma frase traza líneas morales: cruzar ciertas líneas (cría/trato/método de matanza/aditivos) está mal, por eso cría el suyo.
+- **Nuestra respuesta:** Reply etiquetada (COMPASIVO): no es "quién eres tú" — él YA tiene líneas morales y las aplica a todos; concedí con respeto que ya cree que el sufrimiento/trato importan; el desacuerdo no es SI hay consideración moral sino DÓNDE se detiene; le devolví su propia línea: si el sufrimiento innecesario importa y hay alternativa adecuada, ¿por qué el paso final de matar es donde los intereses del animal dejan de contar? Sin atacar su forma de criar, sin factory farming, sin asumir mala fe.
+
 _Hilos: 27363745576581926, 27341517928804691_

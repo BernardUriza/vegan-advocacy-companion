@@ -116,4 +116,8 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Petición de principio: "necesario" es lo disputado; carga/punto neutral; "sentience es solo una creencia igual que la mía"
 - **Nuestra respuesta:** (a) la vara es alternativas ADECUADAS no imposibilidad, ex-veganos=adherencia; (b) el punto de partida es "dañar a un sintiente necesita razón", su misma vara con un perro; (c) concedí moral≠hecho científico pero corta para ambos, sintiencia no-arbitraria vs especie; le pedí el criterio no-arbitrario.
 
+### Hilo `27363745576581926` — 2026-06-20 · outcome: **pending**
+- **Su jugada:** Crux contractarian: "morally relevant according to whom?"; sentience es mera aserción; los derechos emergen de la membresía en una comunidad recíproca, no de la capacidad de sufrir; "mi posición describe cómo funcionan los derechos en el mundo real".
+- **Nuestra respuesta:** Reply etiquetada (filo): nombré el is/ought — "describir cómo funcionan los derechos" es sociológico (poder/contrato/club), la pregunta era normativa; los derechos legales excluyeron esclavos/mujeres/niños por ese mismo criterio de no-reciprocidad, "así funcionan" describió la esclavitud de 1850 sin justificarla; la capacidad de ser dañado no necesita árbitro externo porque hay alguien a quien le importa, la membresía SÍ necesita que el club te admita (permiso, no fundamento); devolví la carga: qué tiene la membresía en sí. ESTRUCTURA de exclusión sin igualar sujetos, sin marginal cases.
+
 _Hilos: 27363745576581926, 27375477042075446_
