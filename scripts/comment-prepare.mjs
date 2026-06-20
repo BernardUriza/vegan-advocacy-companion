@@ -17,12 +17,48 @@
 //   (--anchor es opcional pero MUY recomendado: desambigua entre varios comentarios
 //    del mismo autor en el hilo. Sin él se toma el primer match del autor.)
 
-import { readFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, unlinkSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { openPersistentPage } from './fb-lib.mjs';
 
 function arg(name) {
   const i = process.argv.indexOf(name);
   return i >= 0 ? process.argv[i + 1] : null;
+}
+
+// PASO 0 mecánico — corre el style-gate DETERMINISTA (scripts/style-gate.mjs) sobre
+// el body. Reusa lo canónico (Art. 6): caza kill-phrases/staccato/abrir-con-nombre/
+// largo por regex. Devuelve el reporte; el caller aborta si hay flags DURAS.
+function runStyleGate(bodyText, authorName) {
+  const scriptPath = fileURLToPath(new URL('./style-gate.mjs', import.meta.url));
+  let file = arg('--body-file');
+  let tmp = null;
+  if (!file) {
+    tmp = join(tmpdir(), `cp-stylegate-${process.pid}.txt`);
+    writeFileSync(tmp, bodyText);
+    file = tmp;
+  }
+  const cliArgs = [scriptPath, file, '--json'];
+  if (authorName) cliArgs.push('--name', authorName);
+  try {
+    return JSON.parse(execFileSync('node', cliArgs, { encoding: 'utf8' }));
+  } catch (e) {
+    // style-gate sale con código 1 cuando hay flags duras; el JSON sigue en stdout
+    try {
+      return JSON.parse(e.stdout || '');
+    } catch {
+      return { clean: true, hardFlags: [], softFlags: [], _error: e.message };
+    }
+  } finally {
+    if (tmp) {
+      try {
+        unlinkSync(tmp);
+      } catch {}
+    }
+  }
 }
 
 const url = arg('--url') || process.argv.find((a) => a.startsWith('http'));
@@ -62,12 +98,16 @@ async function expandAll() {
 
 // --- DENTRO de la página: localizar el comentario target y abrir SU Reply ---
 function openComposer({ author, anchor, ME }) {
+  // anchor tolerante a mayúsculas y espacios: el verbatim de FB suele diferir del
+  // anchor por capitalización ("You haven't…" vs "you haven't…") o whitespace.
+  const norm = (s) => (s || '').toLowerCase().replace(/\s+/g, ' ').trim();
+  const na = norm(anchor);
   const arts = [...document.querySelectorAll('div[role="article"]')];
   const target = arts.find((a) => {
     const lbl = a.getAttribute('aria-label') || '';
     const txt = a.innerText || '';
     const mine = !!a.querySelector('[aria-label^="Edit or delete"]') || lbl.includes('by ' + ME);
-    return !mine && lbl.includes(author) && (anchor ? txt.includes(anchor) : true);
+    return !mine && lbl.includes(author) && (na ? norm(txt).includes(na) : true);
   });
   if (!target) return { ok: false, error: 'target article not found', author, anchor };
   target.scrollIntoView({ block: 'center' });
@@ -126,8 +166,28 @@ async function main() {
   const firstWords = bodyTrim.split('\n')[0].slice(0, 40);
   const lastWords = bodyTrim.slice(-40);
 
+  // PASO 0 — style-gate determinista ANTES de abrir tab: si el draft pisa la
+  // kill-list dura, ni se prepara (fail-fast; no gasta una tab ni round-trips).
+  const gate = runStyleGate(body, author);
+  if (gate && Array.isArray(gate.hardFlags) && gate.hardFlags.length) {
+    console.log(
+      JSON.stringify(
+        { ok: false, stage: 'style-gate', hardFlags: gate.hardFlags, softFlags: gate.softFlags || [], wordCount: gate.wordCount, checks: gate.checks },
+        null,
+        2
+      )
+    );
+    process.exit(4);
+  }
+
   const { page, detach } = await openPersistentPage();
   let detached = false;
+  // en fallo: cerrar la tab que abrimos (no dejar huérfana) Y soltar el CDP.
+  const failClose = async () => {
+    await page.close().catch(() => {});
+    await detach();
+    detached = true;
+  };
   try {
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(2500);
@@ -135,8 +195,7 @@ async function main() {
       () => !!document.querySelector('a[href*="/me/"], [aria-label="Your profile"]') || /facebook/i.test(document.title)
     );
     if (!loggedIn) {
-      await detach();
-      detached = true;
+      await failClose();
       console.log(JSON.stringify({ ok: false, stage: 'login', error: 'no logueado en esta tab (¿sesión de Bernard?)' }));
       process.exit(2);
     }
@@ -146,8 +205,7 @@ async function main() {
 
     const opened = await page.evaluate(openComposer, { author, anchor, ME });
     if (!opened.ok) {
-      await detach();
-      detached = true;
+      await failClose();
       console.log(JSON.stringify({ ok: false, stage: 'open', ...opened }, null, 2));
       process.exit(2);
     }
@@ -155,8 +213,7 @@ async function main() {
 
     const pasted = await page.evaluate(pasteBody, { author, body });
     if (!pasted.ok) {
-      await detach();
-      detached = true;
+      await failClose();
       console.log(JSON.stringify({ ok: false, stage: 'paste', opened, ...pasted }, null, 2));
       process.exit(2);
     }
@@ -176,6 +233,7 @@ async function main() {
           loggedIn,
           opened,
           composerLabel: pasted.composerLabel,
+          styleGate: { wordCount: gate.wordCount, softFlags: gate.softFlags || [] },
           check,
           nextStep: clean
             ? 'Claude+MCP: list_pages → select_page la tab en esta url → re-leer el composer (Art. 2) → press_key Enter → verificación histérica por div[role=article] + screenshot. Si quedó mal, BORRAR.'
