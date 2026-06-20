@@ -55,12 +55,20 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** I still don't see the distinction. Animals or crops. They both kill. List the exploitative events that are the problem.
 - **Nuestra respuesta:** Aterrizó la distinción de ROL del daño: subproducto de alimentar a todos vs el propósito mismo de la actividad. Reframeó 'exploitation' como RELACIÓN, no lista. Nombró que Matt usa esa distinción (accidente vs intención) en todo menos con animales. Devolvió la carga.
 
-### Hilo `27375477042075446` — 2026-06-19 · outcome: **pending**
+### Hilo `27375477042075446` — 2026-06-19 · outcome: **engaged**
 - **Su jugada:** Speciesism-flip: "vegans son los verdaderos especistas, rescatan uno y matan otro"
 - **Nuestra respuesta:** Inversión: el carnista traza la línea por especie; el vegano aplica UNA vara (daño innecesario), no cría para matar; intención+necesidad no body-count. Le pedí qué hace a una especie comida y otra familia.
 
-### Hilo `27319402757682875` — 2026-06-19 · outcome: **pending**
+### Hilo `27319402757682875` — 2026-06-19 · outcome: **engaged**
 - **Su jugada:** Tu-quoque de hipocresía: "todos usan plástico/meds developed on animals, cuántos hipócritas en una marcha"
 - **Nuestra respuesta:** "As far as possible and practicable" no es perfección; imperfección no refuta el principio; por su lógica nadie criticaría una injusticia; daño inevitable ≠ justifica el evitable.
+
+### Hilo `27319402757682875` — 2026-06-19 · outcome: **pending**
+- **Su jugada:** Tu quoque doblado: "your argument is tired and flawed... you and all vegans commit easily avoidable harm".
+- **Nuestra respuesta:** Nombré el tu quoque con calma; concedí que ningún sistema es daño-cero y que aun así su imperfección-ajena no justifica SU daño (un daño evitable no licencia otro). Devolví al hueso: qué principio justifica criar y matar un sentiente cuando hay alternativa viable.
+
+### Hilo `27375477042075446` — 2026-06-19 · outcome: **pending**
+- **Su jugada:** Mismo tu quoque en el hilo de especismo: "you all consume unnecessary foods... easily avoidable harm... my initial statement stands".
+- **Nuestra respuesta:** Nombré una vez el cambio de marco (de "vegans son especistas" a "vegans también dañan"); concedí que como variado; devolví al hueso del especismo (cerdo vs perro): qué hace a una especie comida y otra familia más allá del hábito.
 
 _Hilos: 27341517928804691_
