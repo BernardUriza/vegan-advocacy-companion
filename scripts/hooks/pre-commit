@@ -1,0 +1,14 @@
+#!/bin/sh
+# Pre-commit hook: block the commit if the JSON data layer fails integrity validation.
+# Install: see scripts/hooks/README.md (symlink into .git/hooks or set core.hooksPath).
+
+REPO_ROOT=$(git rev-parse --show-toplevel)
+
+echo "pre-commit: validating data integrity..."
+if ! node "$REPO_ROOT/scripts/validate-data.mjs"; then
+  echo "pre-commit: data validation FAILED — commit blocked. Fix the errors above or commit with --no-verify to bypass." >&2
+  exit 1
+fi
+
+echo "pre-commit: data integrity OK."
+exit 0

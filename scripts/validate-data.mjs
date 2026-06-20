@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync } from 'fs';
+import { readFileSync, readdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { readActors, readTactics, readFrameworks } from './db.mjs';
@@ -7,6 +7,7 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const ACTORS_MD_DIR = resolve(ROOT, 'analysis/actors');
 
 const errors = [];
+const warnings = [];
 
 const actors = readActors();
 const tactics = readTactics();
@@ -68,6 +69,43 @@ for (const f of frameworks) {
   }
 }
 
+// 4c. WARN: a framework with empty related_tactics is an orphan in the arsenal —
+// getFrameworksByTactic can never surface it, so it's unreachable counter-ammo.
+for (const f of frameworks) {
+  if (!(f.related_tactics ?? []).length) {
+    warnings.push(`framework "${f.id}" has empty related_tactics — orphan, unreachable via getFrameworksByTactic`);
+  }
+}
+
+// 4d. WARN: a tactic that NO framework counters is a coverage gap — when an actor
+// deploys it, stage-2/3 finds no counter-framework to surface.
+const counteredTactics = new Set();
+for (const f of frameworks) {
+  for (const t of f.related_tactics ?? []) counteredTactics.add(t);
+}
+for (const t of tactics) {
+  if (!counteredTactics.has(t.id)) {
+    warnings.push(`tactic "${t.id}" is countered by no framework — arsenal coverage gap`);
+  }
+}
+
+// 4e. ERROR: a framework's source_ref must point to a file that exists on disk
+// (relative to ROOT), or the citation is dangling.
+for (const f of frameworks) {
+  if (f.source_ref && !existsSync(resolve(ROOT, f.source_ref))) {
+    errors.push(`framework "${f.id}" source_ref does not exist on disk: "${f.source_ref}"`);
+  }
+}
+
+// 4f. ERROR: deploy_as must start with one of the 3 valid values (suffixes like
+// "marco (con cautela)" / "auto-disciplina-del-activista" are allowed).
+const VALID_DEPLOY_AS = ['marco', 'premisa_portante', 'auto-disciplina'];
+for (const f of frameworks) {
+  if (f.deploy_as && !VALID_DEPLOY_AS.some(v => f.deploy_as.startsWith(v))) {
+    errors.push(`framework "${f.id}" deploy_as "${f.deploy_as}" does not start with one of {${VALID_DEPLOY_AS.join(', ')}}`);
+  }
+}
+
 // 5. Drift warning: a dossier markdown exists with a user_id absent from the JSON SSOT
 let mdWarnings = 0;
 try {
@@ -84,10 +122,16 @@ try {
   // analysis/actors dir optional
 }
 
+if (warnings.length) {
+  console.warn(`\nDATA WARNINGS (${warnings.length} — signals, not failures):`);
+  for (const w of warnings) console.warn('  WARN: ' + w);
+}
+
 if (errors.length) {
   console.error(`\nDATA VALIDATION FAILED (${errors.length} error${errors.length > 1 ? 's' : ''}):`);
   for (const e of errors) console.error('  ✗ ' + e);
   process.exit(1);
 }
 
-console.log(`✓ data integrity OK — ${actors.length} actors, ${tactics.length} tactics, ${frameworks.length} frameworks${mdWarnings ? `, ${mdWarnings} md drift warning(s)` : ''}`);
+const warnNote = warnings.length ? `, ${warnings.length} data warning(s)` : '';
+console.log(`✓ data integrity OK — ${actors.length} actors, ${tactics.length} tactics, ${frameworks.length} frameworks${warnNote}${mdWarnings ? `, ${mdWarnings} md drift warning(s)` : ''}`);

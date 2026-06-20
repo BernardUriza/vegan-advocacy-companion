@@ -100,3 +100,84 @@ export function getDossierSummary(userId) {
     counters: tactics.map(t => ({ tactic: t.id, canonical_counter: t.canonical_counter, what_not_to_do: t.what_not_to_do })),
   };
 }
+
+// --- outcome-loop accessors (append-only; do not touch the functions above) ---
+
+// Lists every interaction still marked outcome="pending" across all actors,
+// flattened with the actor identity and the interaction's thread/framework so the
+// outcome-loop knows exactly which memory rows are still write-only (never closed).
+export function getPendingInteractions() {
+  const pending = [];
+  for (const actor of readActors()) {
+    for (const it of actor.interactions ?? []) {
+      if ((it.outcome ?? 'pending') === 'pending') {
+        pending.push({
+          user_id: actor.user_id,
+          name: actor.name,
+          thread_id: it.thread_id,
+          date: it.date,
+          framework: it.framework ?? null,
+          their_move: it.their_move,
+          our_reply_summary: it.our_reply_summary,
+        });
+      }
+    }
+  }
+  return pending;
+}
+
+// Closes the outcome of an existing pending interaction (matched by actor user_id
+// + thread_id) by writing the classified outcome. APPEND-only on the field level:
+// only mutates the `outcome` (and an optional `outcome_evidence` note) of an
+// interaction that is currently "pending"; never rewrites their_move /
+// our_reply_summary / framework, and never re-closes an already-closed one.
+export function closeOutcome(userId, threadId, outcome, evidence) {
+  const actors = readActors();
+  const actor = actors.find(a => a.user_id === userId);
+  if (!actor) throw new Error(`Actor ${userId} not found`);
+  const it = (actor.interactions ?? []).find(
+    x => x.thread_id === threadId && (x.outcome ?? 'pending') === 'pending'
+  );
+  if (!it) return null;
+  it.outcome = outcome;
+  if (evidence) it.outcome_evidence = evidence;
+  writeJsonAtomic(ACTORS_PATH, actors);
+  return { user_id: userId, thread_id: threadId, outcome, evidence: evidence ?? null };
+}
+
+// Efectividad de un framework (el moat): agrega los outcomes de cada interacción
+// de todos los actores donde se desplegó ese framework. Devuelve {deploys, ...outcomes}.
+export function getFrameworkWinRate(frameworkId) {
+  const result = { deploys: 0, conceded: 0, engaged: 0, silent: 0, escalated: 0, goalpost: 0, pending: 0 };
+  if (!frameworkId) return result;
+  for (const actor of readActors()) {
+    for (const interaction of actor.interactions ?? []) {
+      if (interaction.framework !== frameworkId) continue;
+      result.deploys++;
+      const o = interaction.outcome;
+      if (o && o !== 'deploys' && Object.prototype.hasOwnProperty.call(result, o)) result[o]++;
+    }
+  }
+  return result;
+}
+
+// getDossierSummary + the counter-arsenal surfaced from the actor's tactics in a
+// single read, so etapa-3 ([[coagent-advise]]) fetches everything it needs in one
+// call. `arsenal` is the deduped (by framework id) union of getFrameworksByTactic
+// over the actor's tactics; `arsenalByTactic` keeps the per-tactic breakdown.
+export function getDossierSummaryWithArsenal(userId) {
+  const summary = getDossierSummary(userId);
+  if (!summary) return null;
+  const frameworks = readFrameworks();
+  const arsenalById = new Map();
+  const arsenalByTactic = summary.actor.tactics.map(tacticId => {
+    const counters = frameworks.filter(f => (f.related_tactics ?? []).includes(tacticId));
+    for (const f of counters) if (!arsenalById.has(f.id)) arsenalById.set(f.id, f);
+    return { tactic: tacticId, frameworks: counters.map(f => ({ id: f.id, deploy_as: f.deploy_as, attack_surface: f.attack_surface })) };
+  });
+  return {
+    ...summary,
+    arsenal: [...arsenalById.values()].map(f => ({ id: f.id, name: f.name, enables: f.enables, deploy_as: f.deploy_as, attack_surface: f.attack_surface, related_tactics: f.related_tactics })),
+    arsenalByTactic,
+  };
+}
