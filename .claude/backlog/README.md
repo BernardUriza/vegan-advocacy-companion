@@ -68,7 +68,7 @@ determinista, #5 bajar dependencia del coagent.
 38. `getDossierSummary` que también devuelva los frameworks surfaceados (una sola llamada para etapa-3). — Proposed
 
 ## J. Ideas de contenido (posts originales — no el pipeline reactivo)
-42. [Post Frida Kahlo "Sin esperanza"](post-frida-sin-esperanza.md) — re-postear/afilar el post de 2020 (violencia alimentaria normalizada, la obra ES el argumento). — Proposed
+42. [Post Frida Kahlo "Sin esperanza"](post-frida-sin-esperanza.md) — re-postear/afilar el post de 2020 (violencia alimentaria normalizada, la obra ES el argumento). — Done (posteado 2026-06-20, copy afilada EN)
 
 ## I. Testing / CI
 39. Test mínimo de los accessors de `db.mjs` (getFrameworksByTactic, validate caza data mala). — Proposed

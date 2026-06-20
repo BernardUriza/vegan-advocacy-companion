@@ -1,7 +1,8 @@
 # Post idea — Frida Kahlo "Sin esperanza" (violencia normalizada)
 
-Status: Proposed
+Status: Done
 Proposed: 2026-06-19 by Bernard
+Done: 2026-06-20 — posteado en el feed con la copy AFILADA (no el verbatim 2020).
 
 ## What it is
 Re-post / actualizar un post propio de Bernard del 16 jul 2020 que ya corrió bien
@@ -35,7 +36,10 @@ momento se scriptea la publicación de posts originales, reusar `fb-lib` +
 es de Bernard). Por ahora es solo la idea archivada.
 
 ## Status / next step
-No construido — idea archivada a pedido de Bernard ("registrala para post nuevo de
-después"). Falta: decidir si re-postear el copy 2020 tal cual o afilarlo con el
-arsenal actual (un solo framework, voz humana), y la imagen ya existe en su perfil
-(post del 16 jul 2020).
+DONE (2026-06-20). Se afiló el copy 2020 (se mató el sermón académico
+"supremacista/educados para consumir"; un solo framework traducido — "'normal' no
+es un argumento, es lo que dejamos de mirar" = antropoespecismo sin jerga; se
+explotó el ángulo Frida-mexicana ≠ activista vegano para desarmar "ideología
+gringa/vegana"; cierre con pregunta al lurker). Versiones ES + EN en
+`.coagent/drafts/post-frida{,-en}.txt`. Posteado al feed con imagen HD; pasó el
+style-gate determinista. Pendiente solo observar reacciones.
