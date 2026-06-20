@@ -1194,5 +1194,85 @@
       "welfare_rhetoric"
     ],
     "lurker_risk": "high"
+  },
+  {
+    "id": "metafora-del-fronton",
+    "name": "La metáfora del frontón",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "veganismo político / crítica estratégica del movimiento",
+    "definition": "'Si lanzas la pelota suave, el frontón te la devuelve despacio; si la lanzas fuerte, te la devuelve fuerte. Durante veinte años lanzamos el mensaje de que el veganismo es alimentación, estilo de vida, una opción — y eso es exactamente lo que la sociedad nos devuelve.'",
+    "enables": "Autodisciplina: el mensaje que emites determina lo que la sociedad refleja de vuelta. Si relacionas el veganismo con dieta/salud/moda/crueldad, lo absorbe como opción reversible; si lo relacionas con el antropoespecismo, refleja el problema de fondo. Obliga a auditar el mensaje propio antes de culpar al receptor.",
+    "register": "filo",
+    "attack_surface": "Es una analogía mecánica: la recepción social real es más ruidosa que un frontón (medios, contramensajes de la industria, sesgos previos). No prueba causalidad — que 'opción' emitido y 'opción' percibido co-ocurran no demuestra que uno generó al otro.",
+    "deploy_as": "auto-disciplina-del-activista",
+    "source_ref": "doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md",
+    "related_tactics": [],
+    "lurker_risk": "med"
+  },
+  {
+    "id": "respetar-no-es-opcion",
+    "name": "Respetar a los animales no es una opción",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "veganismo político / default ético",
+    "definition": "'Si relacionamos el veganismo con una filosofía de vida, le estamos diciendo a la sociedad que respetar a los demás animales es una opción — como decir: no ser racista está bien, pero ser racista también está bien.'",
+    "enables": "Desarma el 'cada quien elige'. Ser surfer o budista sí es opción legítima — nadie está obligado a serlo. Pero empaquetar el veganismo como estilo/filosofía de vida lo degrada a preferencia, igualando 'no ser racista' con 'ser racista'. La justicia hacia un tercero no es electiva.",
+    "register": "filo",
+    "attack_surface": "El interlocutor responde que la analogía con el racismo asume ya resuelto el estatus moral del animal (petición de principio): solo es 'injusticia electiva' si los animales ya cuentan moralmente, que es justo lo en disputa.",
+    "deploy_as": "marco",
+    "source_ref": "doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md",
+    "related_tactics": [
+      "relativismo_moral",
+      "reencuadre_veganismo_creencia",
+      "libertarian_autonomy",
+      "peticion_de_principio"
+    ],
+    "lurker_risk": "med"
+  },
+  {
+    "id": "dimension-politica-entrar-estructuras-de-poder",
+    "name": "La dimensión política: sacarlo a la calle y entrar en las estructuras de poder",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "veganismo político / dimensión colectiva",
+    "definition": "'Así como la dimensión ideológica y la práctica tienen que ver con uno mismo, la política es trascender: sacar ese veganismo que tenemos dentro a la calle, propiciar la transformación social a través del activismo, ir a las calles y entrar en las estructuras de poder.'",
+    "enables": "Separa el veganismo individual (no consumir) del político (transformar lo colectivo). La tercera dimensión convierte al vegano en activista: el cambio personal no se completa hasta que se proyecta socialmente y disputa el poder institucional. Distingue 'dejé de consumir' de 'lucho por cambiar la matriz'.",
+    "register": "compasivo",
+    "attack_surface": "Puede leerse como inflación de exigencias: convierte una posición de consumo defendible en un mandato de militancia, lo que aliena a quien comparte el fin pero no la vocación activista. El salto de 'no participo de la injusticia' a 'debo entrar en las estructuras de poder' no es obvio.",
+    "deploy_as": "marco",
+    "source_ref": "doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md",
+    "related_tactics": [],
+    "lurker_risk": "high"
+  },
+  {
+    "id": "dos-caras-misma-moneda",
+    "name": "Antropoespecismo y veganismo: las dos caras de la misma moneda",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "veganismo político / síntesis",
+    "definition": "'No podemos entender el veganismo sin hacer frente al antropoespecismo, y no podemos entender el antropoespecismo sin abrazar el veganismo. Las seis creencias del antropoespecismo —necesidad, utilidad, pertenencia, superioridad, estatus, diferencia— se vuelven las seis certezas del veganismo.'",
+    "enables": "Ancla el veganismo a su negación, no a una dieta. Cada creencia antropoespecista dada por válida sin examen (los necesitamos, nos sirven, nos pertenecen, somos superiores, son propiedad, somos distintos) se invierte. Ser vegano = dejar de ser antropoespecista; el plato es síntoma, la creencia es la raíz. Reencuadra el debate de la conducta a la cosmovisión.",
+    "register": "filo",
+    "attack_surface": "Llamar 'certezas' a posiciones éticas (no somos superiores, no nos pertenecen) es discutible: la no-necesidad es empírica, pero el estatus moral no se 'comprueba' como un hecho — desliza juicios de valor bajo el lenguaje de la prueba.",
+    "deploy_as": "marco",
+    "source_ref": "doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md",
+    "related_tactics": [
+      "apelacion_normal",
+      "naturalismo",
+      "species_hierarchy",
+      "is_ought"
+    ],
+    "lurker_risk": "med"
+  },
+  {
+    "id": "transformacion-de-dentro-hacia-afuera",
+    "name": "La transformación es de dentro hacia afuera — informa y retírate",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "veganismo político / pedagogía del activista",
+    "definition": "'El cambio ha de ser de dentro para afuera, no de fuera para dentro. Nuestro papel es compartir información, argumentar, invitar a la reflexión — y ahí debe finalizar. Lo que se nos impone, tarde o temprano lo vomitamos; lo que decide uno mismo, no hay gobierno ni ley ni presión social que pueda con esa decisión.'",
+    "enables": "Autodisciplina contra el acoso militante. Seedear la información una vez y retirarse —no insistir, no re-preguntar— porque la decisión genuina solo es robusta si nace del poder de decisión propio. Lo impuesto se rechaza; lo elegido es inquebrantable. Con quien no quiere saber, dejarlo: hay un millón esperando recibir la información.",
+    "register": "compasivo",
+    "attack_surface": "Puede racionalizar la inacción ('ya informé, me retiro') y subestima que mucha gente cambia precisamente por presión social sostenida o normas que preceden a la convicción. La dicotomía impuesto/elegido es más porosa de lo que plantea.",
+    "deploy_as": "auto-disciplina-del-activista",
+    "source_ref": "doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md",
+    "related_tactics": [],
+    "lurker_risk": "med"
   }
 ]

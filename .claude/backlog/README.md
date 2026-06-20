@@ -49,7 +49,7 @@ determinista, #5 bajar dependencia del coagent.
 
 ## F. Extracción de contenido (la cola + tooling)
 26. ~~Transcribir las 2 entrevistas de Instagram (ANIMAL HUMANO) + extraer frameworks.~~ — **Done** (+10 frameworks → 71).
-27. **Veganismo Político (134 min): TRANSCRITO** (`doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md`, 18.4k palabras). **Extracción de frameworks DIFERIDA** → In progress (falta correr el agente extractor sobre ese transcript vs los 71). — In progress
+27. ~~Veganismo Político (134 min): transcribir + extraer.~~ — **Done** (18.4k palabras transcritas + 5 frameworks extraídos → arsenal en 76).
 28. OCR del cuerpo completo del PDF de Kachanoski con modelo `small` (hoy solo saqué estructura). — Proposed
 29. Re-transcribir Educación Especista con `ca`/autodetección para los tramos catalán garbleados. — Proposed
 30. `scripts/extract-frameworks.mjs`: empaquetar el patrón fan-out de extracción en script/comando reusable. — **Done** (scaffold + merge_fw helper).

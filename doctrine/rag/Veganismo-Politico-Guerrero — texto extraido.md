@@ -5,7 +5,7 @@
 - **Fuente:** https://www.youtube.com/watch?v=8qHssaa3oYA (~134 min, canal Lorena Bilicic).
 - **Método:** audio (yt-dlp) → faster-whisper base local vía videopipe (Azure caído toda la cola; fallback local, ver [[youtube-video-transcription]]). 18,406 palabras — la fuente más larga. Calidad limpia (esta vez Whisper acertó "antropoespecismo").
 - **Tema:** veganismo político — la dimensión colectiva/estructural; transformar la matriz antropoespecista.
-- **EXTRACCIÓN DE FRAMEWORKS: DIFERIDA** (decisión de Bernard — solo transcribir + guardar). Backlog: extraer frameworks nuevos vs los 71 existentes. Ver .claude/backlog.
+- **Frameworks que alimenta (extraídos):** metafora-del-fronton, respetar-no-es-opcion, dimension-politica-entrar-estructuras-de-poder, dos-caras-misma-moneda, transformacion-de-dentro-hacia-afuera (+5 → arsenal en 76).
 
 ---
 
