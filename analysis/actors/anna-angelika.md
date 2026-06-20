@@ -87,4 +87,8 @@ No responder al insulto en su nivel. No defender a Beyond Meat específicamente.
 - **Su jugada:** Relativismo/negativa a justificar: "no justification is needed. I have no one to justify it to so I do not and I won not."
 - **Nuestra respuesta:** Reply etiquetada CORTA (filo, pozo — 4 frases): decir "no hace falta justificación" en un debate sobre justificación es en sí una respuesta; el post no preguntaba a quién le debes explicación sino si una existe; todos tienen líneas que creen que importan aunque llamen subjetiva la moral, la pregunta es si la línea sobrevive el escrutinio; "no la justificaré" es tu elección pero no es lo mismo que tener una justificación. No mordí insulto, no defendí Beyond Meat, sin metaética.
 
+### Hilo `27395909046698912` — 2026-06-20 · outcome: **pending**
+- **Su jugada:** Hombre de paja sobre el post de Frida: corrige que Frida no era vegana y que el cuadro es sobre la alimentacion forzada — algo que el post ya dice explicitamente (not a vegan activist); cierra con ad-hominem (stupid/uneducated) + acusacion de usar IA.
+- **Nuestra respuesta:** Expuse el straw man (refuto un claim que nadie hizo), concedi todo su dato historico mostrando que REFUERZA el punto, fundi su acusacion de IA en la misma espina (despachar al mensajero, no el argumento), cierre de validacion devastadora (engancho cuando casi nunca lo hace) + vuelta al hueso.
+
 _Hilos: 27335635946059556, 27363745576581926_

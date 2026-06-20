@@ -59,4 +59,8 @@ No aceptar el marco 'tú tienes que justificarme a mí'. Devolver: la carga est�
 - **Su jugada:** Autonomía/elección informada: "now i can reflect myself and i choose meat and animal products" + honestidad apática "I get it is bad but I do not care" (concede la ética, elige no actuar). Civil, no-nativo, buena fe.
 - **Nuestra respuesta:** Registro compasivo: reconocí su honestidad (admite en vez de negar); separé elección de justificación (señalar el daño no es quitarle la elección); devolví la carga suave para el lurker: ¿qué razón hace el criar/matar justificado en vez de simplemente preferido? Inglés simple, sin filo.
 
+### Hilo `27375477042075446` — 2026-06-20 · outcome: **pending**
+- **Su jugada:** Inversion de carga / escudo de preferencia: Because I prefer my diet, I do not have to justify that. Buena fe, no insulta.
+- **Nuestra respuesta:** Separe preferencia de justificacion: una preferencia justifica elegir entre cosas sin victima; cuando hay victima evitable lo prefiero describe por que, no justifica. Concedi que puede elegir; devolvi la carga sin agredir (registro suave, buena fe) cerrando con pregunta honesta.
+
 _Hilos: 27363745576581926, 27375477042075446_

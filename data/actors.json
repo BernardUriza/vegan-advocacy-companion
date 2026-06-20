@@ -443,6 +443,14 @@
         "our_reply_summary": "Reply etiquetada CORTA (filo, pozo — 4 frases): decir \"no hace falta justificación\" en un debate sobre justificación es en sí una respuesta; el post no preguntaba a quién le debes explicación sino si una existe; todos tienen líneas que creen que importan aunque llamen subjetiva la moral, la pregunta es si la línea sobrevive el escrutinio; \"no la justificaré\" es tu elección pero no es lo mismo que tener una justificación. No mordí insulto, no defendí Beyond Meat, sin metaética.",
         "framework": "relativismo_moral",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "27395909046698912",
+        "date": "2026-06-20",
+        "their_move": "Hombre de paja sobre el post de Frida: corrige que Frida no era vegana y que el cuadro es sobre la alimentacion forzada — algo que el post ya dice explicitamente (not a vegan activist); cierra con ad-hominem (stupid/uneducated) + acusacion de usar IA.",
+        "our_reply_summary": "Expuse el straw man (refuto un claim que nadie hizo), concedi todo su dato historico mostrando que REFUERZA el punto, fundi su acusacion de IA en la misma espina (despachar al mensajero, no el argumento), cierre de validacion devastadora (engancho cuando casi nunca lo hace) + vuelta al hueso.",
+        "framework": "antropoespecismo",
+        "outcome": "pending"
       }
     ]
   },
@@ -679,6 +687,14 @@
         "their_move": "Autonomía/elección informada: \"now i can reflect myself and i choose meat and animal products\" + honestidad apática \"I get it is bad but I do not care\" (concede la ética, elige no actuar). Civil, no-nativo, buena fe.",
         "our_reply_summary": "Registro compasivo: reconocí su honestidad (admite en vez de negar); separé elección de justificación (señalar el daño no es quitarle la elección); devolví la carga suave para el lurker: ¿qué razón hace el criar/matar justificado en vez de simplemente preferido? Inglés simple, sin filo.",
         "framework": "no-es-opcion-de-vida",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27375477042075446",
+        "date": "2026-06-20",
+        "their_move": "Inversion de carga / escudo de preferencia: Because I prefer my diet, I do not have to justify that. Buena fe, no insulta.",
+        "our_reply_summary": "Separe preferencia de justificacion: una preferencia justifica elegir entre cosas sin victima; cuando hay victima evitable lo prefiero describe por que, no justifica. Concedi que puede elegir; devolvi la carga sin agredir (registro suave, buena fe) cerrando con pregunta honesta.",
+        "framework": "no-necesidad-cambiaron-las-reglas",
         "outcome": "pending"
       }
     ],
