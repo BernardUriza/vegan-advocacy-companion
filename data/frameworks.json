@@ -1029,5 +1029,170 @@
       "welfare_rhetoric"
     ],
     "lurker_risk": "low"
+  },
+  {
+    "id": "mensaje-para-el-humano-no-para-el-animal",
+    "name": "El 95% mal dirigido — el mensaje es para el humano, no para el animal",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "educación antiespecista / psicología social del activismo",
+    "definition": "El activismo de concienciación gasta el 95% de su esfuerzo dirigiendo la atención a los demás animales ('mira cómo son, también sienten, también sufren') hablándole a un homo sapiens al que le da igual: 'cuando llevas medio minuto explicando cómo son los demás animales, ese homo sapiens ya se ha dado la vuelta y se ha ido'. La educación antiespecista invierte el foco: 'también tiene un mensaje para usted, señor homo sapiens' — trabaja el rol que el humano tiene de sí mismo (el 'rey de la creación'), no solo el rol que asignó al animal.",
+    "enables": "Reencuadrar la conversación del sufrimiento animal (que el carnista ya filtró) hacia la autoimagen del interlocutor — el pedestal moral del que no quiere bajarse. Hace que el lurker se vea a sí mismo como objeto del análisis, no como espectador neutral de la pena ajena.",
+    "register": "filo",
+    "attack_surface": "El carnista puede acusar de psicologizar/atacarlo en vez de discutir hechos; un lurker puede leerlo como condescendiente. Requiere no caer en ad hominem: el foco es el rol heredado, no el defecto de la persona.",
+    "deploy_as": "marco",
+    "source_ref": "doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md",
+    "related_tactics": [
+      "species_hierarchy",
+      "futility_no_clean_option"
+    ],
+    "lurker_risk": "low"
+  },
+  {
+    "id": "carnismo-es-algodonismo",
+    "name": "Carnismo es algodonismo — el síntoma roba el foco al enemigo real",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "meta-estrategia antiespecista / crítica al carnismo",
+    "definition": "Cuando el movimiento por fin enfocaba el antropoespecismo, el carnismo de Melanie Joy desvió el foco hacia un mero síntoma. Paralelismo: 'en el siglo XIX, en vez de visibilizar el racismo, una autora dice: hay que luchar contra el algodonismo, porque hay un consumo brutal de algodón'. El algodón es un hábito más, no el enemigo; el racismo sí. Igual el carnismo: 'no deja de ser un hábito más, un síntoma más'. 'Lo último que le interesa al antropoespecismo es visibilizarse'.",
+    "enables": "Resistir la presión interna del movimiento a 'empezar por dejar la carne' o a valorar una explotación sobre otra; mantener el blanco en la jerarquía humana-superior, no en un consumo concreto. Desactiva el single-issue desde su propia lógica con una analogía histórica.",
+    "register": "filo",
+    "attack_surface": "Joy y muchos activistas defienden el carnismo como puerta de entrada pedagógica; descartarlo puede leerse como purismo que aleja a recién llegados. El paralelismo XIX es retóricamente fuerte pero discutible históricamente.",
+    "deploy_as": "marco",
+    "source_ref": "doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md",
+    "related_tactics": [
+      "welfare_rhetoric",
+      "reencuadre_veganismo_creencia"
+    ],
+    "lurker_risk": "med"
+  },
+  {
+    "id": "momento-truman-traicion-de-los-tuyos",
+    "name": "Momento Truman — el engaño y la traición de los que te educaron",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "educación antiespecista / fenomenología del despertar",
+    "definition": "El despertar como el instante en que el barco de Truman choca contra el muro pintado: 'toda su vida ha sido un engaño, una farsa'. El motor no es la culpa por el animal sino la indignación hacia los propios íntimos: '¿cómo es posible que ni mi familia, ni los maestros, ni mis amistades, nadie me informó antes de esto?'. Esa pregunta se vuelve obsesión — y produce al educador, no al consumidor culpable.",
+    "enables": "Nombrar para el lurker que la responsabilidad no es solo individual sino estructural (un sistema de transmisión que le ocultó la información). Quita la carga de la vergüenza personal y la traslada al condicionamiento heredado, bajando la defensa.",
+    "register": "compasivo",
+    "attack_surface": "Puede leerse como victimismo o excusa ('no fue mi culpa, me educaron') que diluye la agencia; el carnista puede usarlo para no cambiar ahora que ya sabe. Hay que cerrar el bucle: el condicionamiento explica el pasado, pero el conocimiento presente compromete.",
+    "deploy_as": "marco",
+    "source_ref": "doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md",
+    "related_tactics": [
+      "anecdota_personal_n1",
+      "presentismo"
+    ],
+    "lurker_risk": "low"
+  },
+  {
+    "id": "resistencia-al-cambio-es-defensa-del-privilegio",
+    "name": "Resistencia al cambio = defensa del privilegio, no del argumento",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "educación antiespecista / psicología de la resistencia",
+    "definition": "La gente prefiere negar la mayor — 'no te quieren escuchar, no quieren saber'. No es que el activista les provoque un problema; 'les está dando la oportunidad de conocerse a sí mismos'. Se resisten por los privilegios: '¿quién quiere bajarse del pedestal?', porque admitir el marco obliga a modificar 'tus ideas, tus comportamientos, tus hábitos, en aras de la ética'. La negativa a escuchar delata que se defiende una posición aventajada, no una verdad.",
+    "enables": "Para el activista, no tomar el rechazo como fracaso ni mala fe sino como reacción esperable de quien defiende un privilegio — sostiene la calma. Para el lurker, ver que la incomodidad del otro es señal de que el punto dio en el blanco.",
+    "register": "compasivo",
+    "attack_surface": "No-falsable si se usa mal: 'te resistes porque tengo razón' convierte cualquier desacuerdo legítimo en negación interesada (petición de principio). Hay que distinguir resistencia-privilegio de una objeción de buena fe.",
+    "deploy_as": "auto-disciplina-del-activista",
+    "source_ref": "doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md",
+    "related_tactics": [
+      "futility_no_clean_option",
+      "inversion_carga"
+    ],
+    "lurker_risk": "med"
+  },
+  {
+    "id": "estereotipo-prejuicio-discriminacion",
+    "name": "Estereotipo + prejuicio = discriminación — por qué 'discriminación' se queda corta",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "psicología social aplicada al antiespecismo",
+    "definition": "Definir el especismo solo como 'discriminación' es insuficiente: en psicología social la discriminación es apenas la fase conductual de una estructura de tres partes: estereotipo (cognitivo — 'el concepto que tenemos de los demás animales'), prejuicio (emocional — costumbres arraigadas que generan pertenencia de grupo) y discriminación (la suma). 'Discriminación se nos queda muy corto, porque la pregunta es: ¿y por qué discriminamos?'.",
+    "enables": "Responder a quien reduce el especismo a 'discriminación arbitraria' mostrando que detrás hay una creencia cognitiva instalada y un apego emocional de grupo — por eso los argumentos racionales rebotan (atacan solo la conducta, no el estereotipo ni el prejuicio que la sostienen).",
+    "register": "filo",
+    "attack_surface": "Aparato conceptual denso que suena a jerga académica (el spec de voz advierte contra el tono de profesor); en FB hay que traducirlo a lenguaje llano. Es un diagnóstico, no un argumento moral — no sustituye la pregunta ética.",
+    "deploy_as": "marco",
+    "source_ref": "doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md",
+    "related_tactics": [
+      "apelacion_normal",
+      "reencuadre_veganismo_creencia"
+    ],
+    "lurker_risk": "med"
+  },
+  {
+    "id": "tabula-rasa-ni-nacemos-ni-nos-hacen",
+    "name": "Tabula rasa (Pinker): ni nacemos especistas ni del todo nos hacen",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "antiespecismo abolicionista (naturaleza vs. crianza)",
+    "definition": "'Cuidado que he leído que nacemos antropoespecistas, esto no es del todo cierto... hay un libro, La tabula rasa, de Steven Pinker, que hace saltar por los aires el debate entre la crianza y la enseñanza... nacemos o nos hacemos racistas, antropoespecistas'. El especismo ni es puramente innato ni puramente inculcado: es más complejo que cualquiera de los dos polos.",
+    "enables": "Desarma dos esquives a la vez. Contra el naturalista ('comer carne es instintivo, lo traemos de fábrica'): no nacemos especistas, no es instinto fijo. Y contra el cínico ('te lavaron el cerebro igual que al otro'): tampoco somos pizarras en blanco, hay algo que se puede cuestionar y elegir. El especismo queda como construido sobre un sustrato moldeable —cuestionable y reversible— en vez de destino biológico o lavado total.",
+    "register": "filo",
+    "attack_surface": "Invocar a Pinker es recurso de autoridad que se vuelve en contra si el interlocutor conoce la obra: 'La tabla rasa' argumenta a favor de una naturaleza humana fuerte CONTRA el blank slate, no es un alegato antiespecista; de pasada puede leerse como name-drop o tergiversación. La distinción naturaleza/crianza no zanja el deber moral (sigue siendo is-ought).",
+    "deploy_as": "marco",
+    "source_ref": "doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md",
+    "related_tactics": [
+      "naturalismo",
+      "is_ought",
+      "ai_accusation"
+    ],
+    "lurker_risk": "med"
+  },
+  {
+    "id": "contraespecismo-postura-activa",
+    "name": "Contraespecismo: no basta estar en contra, hay que erradicarlo",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "antiespecismo abolicionista (meta-estrategia de activismo)",
+    "definition": "'El antiespecismo sería: estoy en contra del especismo, pero aquí me quedo. El contraespecismo sería, además de posicionarme en contra, voy a hacer lo necesario para erradicarlo... una actitud activa... voy con todo contra el antropoespecismo'.",
+    "enables": "Cierra la salida del 'antiespecista de salón' que se declara en contra y descansa. Convierte la postura de un adjetivo (lo rechazo) en un verbo (trabajo para abolirlo). Para el lurker marca la diferencia entre opinar y militar; para el activista es la barra.",
+    "register": "filo",
+    "attack_surface": "La distinción anti/contra es un neologismo de nicho que puede sonar a fabricar etiquetas internas y a purismo de movimiento; un interlocutor externo lo lee como jerga endogámica. 'Voy con todo' puede leerse como militancia agresiva sin las formas.",
+    "deploy_as": "auto-disciplina-del-activista",
+    "source_ref": "doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md",
+    "related_tactics": [],
+    "lurker_risk": "high"
+  },
+  {
+    "id": "tres-dimensiones-del-veganismo",
+    "name": "Las tres dimensiones del veganismo: teórica, práctica y política",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "antiespecismo abolicionista (definición conceptual)",
+    "definition": "'Las tres dimensiones del veganismo: la primera es la teórica, la científico-filosófica' (dejas de verte superior); la segunda es 'el veganismo práctico' (la transformación de hábitos, del desayuno a la cosmética); y la tercera el veganismo político: 'vegano es aquel que es activista... hace trascender del plano individual al colectivo'.",
+    "enables": "Ordena el reduccionismo que aplasta el veganismo a la dieta. Si alguien dice 'es solo comida', la respuesta no es discutir el plato sino mostrar que la dieta es apenas la dimensión práctica —la punta— mientras debajo está la teórica (rechazo del antropoespecismo) y encima la política. Da un mapa para diagnosticar en qué nivel se atascó la conversación.",
+    "register": "filo",
+    "attack_surface": "Definir al vegano como necesariamente activista es una definición estipulativa fuerte: excluye a quien practica el veganismo sin militar y suena a no-true-scotsman, un purismo que puede ahuyentar al que empieza por la dimensión práctica.",
+    "deploy_as": "marco",
+    "source_ref": "doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md",
+    "related_tactics": [
+      "reencuadre_veganismo_creencia"
+    ],
+    "lurker_risk": "med"
+  },
+  {
+    "id": "hablamos-en-nombre-de-los-demas-animales",
+    "name": "No hablamos en nombre propio: representamos a quien no puede hablar",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "antiespecismo abolicionista (ética del discurso activista)",
+    "definition": "'Nunca se nos olvide que no hablamos en nombre propio, estamos hablando en nombre de los demás animales... toda información que demos, por mínima que sea, hay que pensarla dos, tres y cuatro veces'. El ejercicio: imaginar que los animales pudieran hablar un minuto y preguntarles si el mensaje que lanzamos —y la manera— es lo que les conviene.",
+    "enables": "Auto-disciplina del rigor: como el activista habla por una víctima muda, cada exageración o dato indefendible se paga con la credibilidad de la causa entera, no con la suya. Justifica el cuidado obsesivo con cifras y formas.",
+    "register": "compasivo",
+    "attack_surface": "'Represento a los animales' puede sonar a apropiación de voz o mesianismo ('¿quién te eligió portavoz?'), y la pregunta de qué dirían los animales es ventriloquia: cualquiera pone en su boca lo que ya quería decir. Funciona como auto-disciplina interna, mucho menos como argumento ganador.",
+    "deploy_as": "auto-disciplina-del-activista",
+    "source_ref": "doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md",
+    "related_tactics": [
+      "data_dump_selectivo"
+    ],
+    "lurker_risk": "high"
+  },
+  {
+    "id": "medida-tres-plazos-corto-medio-largo",
+    "name": "La medida de tres plazos: hábitos, rol y estructuras de poder",
+    "author": "Samuel Guerrero Azañedo",
+    "tradition": "antiespecismo abolicionista (meta-estrategia de activismo)",
+    "definition": "Frente al neobienestarismo 'cortoplacista' que retoca síntomas, propone una medida corto+medio+largo plazo: 'uno, visibilizando el antropoespecismo; dos, visibilizando la educación antropoespecista; y luego educando en el veganismo político'. Corto = cambiar hábitos; medio = cuestionar tu rol y la educación recibida; largo = entrar en las estructuras de poder (p. ej. el sistema educativo) para las generaciones futuras.",
+    "enables": "Refuta el bienestarismo no negándolo sino mostrando que es media estrategia: ataca la punta del iceberg y deja intacta la base. Responde a 'mientras tanto qué hacemos con los animales de hoy' —se actúa en corto sin abandonar la raíz— y orienta dónde poner energía a largo plazo (educación de la infancia), no solo en la calle.",
+    "register": "filo",
+    "attack_surface": "Estrategia interna del movimiento: ante un no-vegano suena a planificación de cúpula y a 'meternos en las escuelas', que se lee como adoctrinamiento institucional —el reproche que el movimiento recibe—. El plazo largo es tan difuso que corre el riesgo de quedar en aspiración.",
+    "deploy_as": "auto-disciplina-del-activista",
+    "source_ref": "doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md",
+    "related_tactics": [
+      "welfare_rhetoric"
+    ],
+    "lurker_risk": "high"
   }
 ]

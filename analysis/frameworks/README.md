@@ -2,7 +2,7 @@
 
 > GENERATED from `data/frameworks.json` by `scripts/gen-frameworks.mjs`. Do not hand-edit — edit the JSON and regenerate.
 
-**61 frameworks** de **7 autores.** Cada uno es un concepto/jugada deployable; `deploy_as` y `attack_surface` gobiernan CÓMO usarlo (marco, nunca premisa portante salvo que sea inatacable; varios son auto-disciplina del activista, no armas).
+**71 frameworks** de **7 autores.** Cada uno es un concepto/jugada deployable; `deploy_as` y `attack_surface` gobiernan CÓMO usarlo (marco, nunca premisa portante salvo que sea inatacable; varios son auto-disciplina del activista, no armas).
 
 ## Resumen
 
@@ -69,6 +69,16 @@
 | [Entrevista Motivacional: desarrollar la discrepancia](#mi-desarrollar-discrepancia) | Miller & | marco | compasivo | sin probar |
 | [Trauma-Informed: la defensa no es maldad, es protección](#trauma-informed-defensa-no-es-maldad) | SAMHSA (Trauma-Informed | auto-disciplina-del-activista | compasivo | sin probar |
 | [Teoría del Apego: la seguridad precede a la apertura](#apego-seguridad-antes-que-razon) | Bowlby, Ainsworth | auto-disciplina-del-activista | compasivo | sin probar |
+| [El 95% mal dirigido — el mensaje es para el humano, no para el animal](#mensaje-para-el-humano-no-para-el-animal) | Samuel Guerrero | marco | filo | sin probar |
+| [Carnismo es algodonismo — el síntoma roba el foco al enemigo real](#carnismo-es-algodonismo) | Samuel Guerrero | marco | filo | sin probar |
+| [Momento Truman — el engaño y la traición de los que te educaron](#momento-truman-traicion-de-los-tuyos) | Samuel Guerrero | marco | compasivo | sin probar |
+| [Resistencia al cambio = defensa del privilegio, no del argumento](#resistencia-al-cambio-es-defensa-del-privilegio) | Samuel Guerrero | auto-disciplina-del-activista | compasivo | sin probar |
+| [Estereotipo + prejuicio = discriminación — por qué 'discriminación' se queda corta](#estereotipo-prejuicio-discriminacion) | Samuel Guerrero | marco | filo | sin probar |
+| [Tabula rasa (Pinker): ni nacemos especistas ni del todo nos hacen](#tabula-rasa-ni-nacemos-ni-nos-hacen) | Samuel Guerrero | marco | filo | sin probar |
+| [Contraespecismo: no basta estar en contra, hay que erradicarlo](#contraespecismo-postura-activa) | Samuel Guerrero | auto-disciplina-del-activista | filo | sin probar |
+| [Las tres dimensiones del veganismo: teórica, práctica y política](#tres-dimensiones-del-veganismo) | Samuel Guerrero | marco | filo | sin probar |
+| [No hablamos en nombre propio: representamos a quien no puede hablar](#hablamos-en-nombre-de-los-demas-animales) | Samuel Guerrero | auto-disciplina-del-activista | compasivo | sin probar |
+| [La medida de tres plazos: hábitos, rol y estructuras de poder](#medida-tres-plazos-corto-medio-largo) | Samuel Guerrero | auto-disciplina-del-activista | filo | sin probar |
 
 ## Por táctica del oponente — qué desplegar
 
@@ -76,33 +86,33 @@
 
 | Táctica del oponente | Frameworks que la contrarrestan |
 |---|---|
-| **Welfare Rhetoric / Comfortable Life Defense** (`welfare_rhetoric`) | [Revolucionar la revolución (autocrítica del movimiento)](#revolucionar-la-revolucion) · [Violencia Especista](#violencia-especista) · [Especídio](#especidio) · [Domesticar es un eufemismo de dominar/someter](#domesticar-eufemismo-dominar) · [El veganismo no es dieta ni estilo de vida — el algodón ecológico](#veganismo-no-es-dieta-ni-estilo-de-vida) · [La crueldad es el síntoma, no la causa](#crueldad-no-es-la-causa) · [El pollo inconsciente (la trampa del sufrimiento cero)](#pollo-inconsciente-reductio) · [Por qué 'violencia' y no maltrato/crueldad/abuso/trastorno](#por-que-no-maltrato-rigor-conceptual) · [El semáforo: rojo (especismo) vs amarillo (welfarismo) vs el quiebre vegano](#semaforo-rojo-amarillo-welfarismo) · [El árbol: especismo es la raíz, la violencia es el síntoma visible](#arbol-causa-sintoma) · [El problema no es cuánto sufre, es la consideración moral](#consideracion-moral-no-cuanto-sufre) · [El bienestarismo como jugada maestra: el poder saca el sufrimiento de la ecuación](#bienestarismo-jugada-maestra-del-poder) · [Elige el objetivo: consideración moral, no fin del sufrimiento](#consideracion-moral-no-fin-del-sufrimiento) · [Las imágenes gore se vuelven en contra: la vaca idílica gana](#gore-backfire-vaca-idilica) · [Entrevista Motivacional: desarrollar la discrepancia](#mi-desarrollar-discrepancia) · [Teoría del Apego: la seguridad precede a la apertura](#apego-seguridad-antes-que-razon) |
-| **Appeal to Normalcy / Default** (`apelacion_normal`) | [Antropoespecismo / Especismo Antropocéntrico](#antropoespecismo) · [Göbekli Tepe como 'kilómetro cero' del especismo](#gobekli-kilometro-cero) · [Violencia Especista](#violencia-especista) · [El problema es que no sabemos que tenemos un problema](#no-sabemos-que-tenemos-problema) · [NJN — la trampa de normal, justo y necesario](#njn-normal-justo-necesario) · [Liberar una jaula vs. liberar tu mente](#liberar-la-mente-abre-todas-las-jaulas) · [Violencia discursiva (la violencia del lenguaje)](#violencia-discursiva) · [El linaje de los Centrismos (especismo junto a sexismo/racismo)](#paralelo-luchas-sociales-centrismos) · [Extrañarse de lo naturalizado (nombrar que un acto ES violencia)](#extranar-lo-naturalizado) · [El especismo es una programación heredada en la infancia](#especismo-se-programa-en-la-infancia) · [Para sostener el sistema hay que mentirles a las criaturas](#mentir-a-las-criaturas-sostiene-el-sistema) · [Solo se normaliza una parte de la realidad (el kit de carnicería)](#normalizar-solo-una-parte-realidad) |
-| **Futility / No Clean Option** (`futility_no_clean_option`) | [El problema es que no sabemos que tenemos un problema](#no-sabemos-que-tenemos-problema) · [La no-necesidad: las reglas del juego cambiaron para siempre](#no-necesidad-cambiaron-las-reglas) · [Matrix — éramos la pastilla azul, no nacimos despiertos](#matrix-pastilla-azul) · [El conocimiento compromete — ya no puedes hacer como que no sabes](#conocimiento-compromete) · [El pollo inconsciente (la trampa del sufrimiento cero)](#pollo-inconsciente-reductio) · [Entender no es aceptar ni transformarse](#entender-no-es-transformarse) · [Violencia estructural: el aparataje que sostiene (mataderos como infraestructura)](#violencia-estructural-infraestructura) · [Violencia indirecta: el que paga/demanda es responsable, no solo el que ejecuta](#violencia-indirecta-quien-demanda) · [No necesitas convencer al 100%: basta el que está despertando](#sembrar-en-el-receptivo) · [Especismo económico: 'nos quedaríamos sin trabajo'](#economia-especista-heredada) · [El antropoespecismo es universal: deslocalizar la granja no resuelve nada](#antropoespecismo-universal-deslocalizar) |
-| **Reframe: Veganism as Belief System** (`reencuadre_veganismo_creencia`) | [Revolucionar la revolución (autocrítica del movimiento)](#revolucionar-la-revolucion) · [El veganismo no es dieta ni estilo de vida — el algodón ecológico](#veganismo-no-es-dieta-ni-estilo-de-vida) · [La dimensión política del veganismo — tomar posición](#dimension-politica-tomar-posicion) · [El carnismo manda el antropoespecismo de vuelta al anonimato](#carnismo-anonimato-critica) · ['Vegano' es un vocablo vacío: el norte es formar activistas](#formar-activistas-no-veganos) · [Violencia discursiva (la violencia del lenguaje)](#violencia-discursiva) · [El filtro especie: dejar de ver al individuo para verlo como categoría](#filtro-especie-vs-individuo) · [Respetar a la persona no obliga a respetar la idea inmoral](#respeto-persona-no-idea-inmoral) · [Entrevista Motivacional: evocar el cambio sin confrontar](#mi-evocar-cambio-sin-confrontar) · [Entrevista Motivacional: desarrollar la discrepancia](#mi-desarrollar-discrepancia) |
-| **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`) | [Antropoespecismo / Especismo Antropocéntrico](#antropoespecismo) · [Göbekli Tepe como 'kilómetro cero' del especismo](#gobekli-kilometro-cero) · [El paralelismo con la esclavitud negra](#esclavitud-paralelismo) · [De algo a alguien — objeto de propiedad a sujeto de derecho](#algo-a-alguien-sujeto-derecho) · [No 'explotación' ni 'maltrato': injusticia/esclavitud](#explotacion-vs-esclavitud-lexico) · ['Vegano por un día' = racista solo entre semana](#vegano-por-un-dia-racista-entre-semana) · [El linaje de los Centrismos (especismo junto a sexismo/racismo)](#paralelo-luchas-sociales-centrismos) · [El filtro especie: dejar de ver al individuo para verlo como categoría](#filtro-especie-vs-individuo) · [Los libros enseñan al animal en partes, nunca su sintiencia](#libros-de-texto-niegan-sintiencia) |
+| **Welfare Rhetoric / Comfortable Life Defense** (`welfare_rhetoric`) | [Revolucionar la revolución (autocrítica del movimiento)](#revolucionar-la-revolucion) · [Violencia Especista](#violencia-especista) · [Especídio](#especidio) · [Domesticar es un eufemismo de dominar/someter](#domesticar-eufemismo-dominar) · [El veganismo no es dieta ni estilo de vida — el algodón ecológico](#veganismo-no-es-dieta-ni-estilo-de-vida) · [La crueldad es el síntoma, no la causa](#crueldad-no-es-la-causa) · [El pollo inconsciente (la trampa del sufrimiento cero)](#pollo-inconsciente-reductio) · [Por qué 'violencia' y no maltrato/crueldad/abuso/trastorno](#por-que-no-maltrato-rigor-conceptual) · [El semáforo: rojo (especismo) vs amarillo (welfarismo) vs el quiebre vegano](#semaforo-rojo-amarillo-welfarismo) · [El árbol: especismo es la raíz, la violencia es el síntoma visible](#arbol-causa-sintoma) · [El problema no es cuánto sufre, es la consideración moral](#consideracion-moral-no-cuanto-sufre) · [El bienestarismo como jugada maestra: el poder saca el sufrimiento de la ecuación](#bienestarismo-jugada-maestra-del-poder) · [Elige el objetivo: consideración moral, no fin del sufrimiento](#consideracion-moral-no-fin-del-sufrimiento) · [Las imágenes gore se vuelven en contra: la vaca idílica gana](#gore-backfire-vaca-idilica) · [Entrevista Motivacional: desarrollar la discrepancia](#mi-desarrollar-discrepancia) · [Teoría del Apego: la seguridad precede a la apertura](#apego-seguridad-antes-que-razon) · [Carnismo es algodonismo — el síntoma roba el foco al enemigo real](#carnismo-es-algodonismo) · [La medida de tres plazos: hábitos, rol y estructuras de poder](#medida-tres-plazos-corto-medio-largo) |
+| **Appeal to Normalcy / Default** (`apelacion_normal`) | [Antropoespecismo / Especismo Antropocéntrico](#antropoespecismo) · [Göbekli Tepe como 'kilómetro cero' del especismo](#gobekli-kilometro-cero) · [Violencia Especista](#violencia-especista) · [El problema es que no sabemos que tenemos un problema](#no-sabemos-que-tenemos-problema) · [NJN — la trampa de normal, justo y necesario](#njn-normal-justo-necesario) · [Liberar una jaula vs. liberar tu mente](#liberar-la-mente-abre-todas-las-jaulas) · [Violencia discursiva (la violencia del lenguaje)](#violencia-discursiva) · [El linaje de los Centrismos (especismo junto a sexismo/racismo)](#paralelo-luchas-sociales-centrismos) · [Extrañarse de lo naturalizado (nombrar que un acto ES violencia)](#extranar-lo-naturalizado) · [El especismo es una programación heredada en la infancia](#especismo-se-programa-en-la-infancia) · [Para sostener el sistema hay que mentirles a las criaturas](#mentir-a-las-criaturas-sostiene-el-sistema) · [Solo se normaliza una parte de la realidad (el kit de carnicería)](#normalizar-solo-una-parte-realidad) · [Estereotipo + prejuicio = discriminación — por qué 'discriminación' se queda corta](#estereotipo-prejuicio-discriminacion) |
+| **Reframe: Veganism as Belief System** (`reencuadre_veganismo_creencia`) | [Revolucionar la revolución (autocrítica del movimiento)](#revolucionar-la-revolucion) · [El veganismo no es dieta ni estilo de vida — el algodón ecológico](#veganismo-no-es-dieta-ni-estilo-de-vida) · [La dimensión política del veganismo — tomar posición](#dimension-politica-tomar-posicion) · [El carnismo manda el antropoespecismo de vuelta al anonimato](#carnismo-anonimato-critica) · ['Vegano' es un vocablo vacío: el norte es formar activistas](#formar-activistas-no-veganos) · [Violencia discursiva (la violencia del lenguaje)](#violencia-discursiva) · [El filtro especie: dejar de ver al individuo para verlo como categoría](#filtro-especie-vs-individuo) · [Respetar a la persona no obliga a respetar la idea inmoral](#respeto-persona-no-idea-inmoral) · [Entrevista Motivacional: evocar el cambio sin confrontar](#mi-evocar-cambio-sin-confrontar) · [Entrevista Motivacional: desarrollar la discrepancia](#mi-desarrollar-discrepancia) · [Carnismo es algodonismo — el síntoma roba el foco al enemigo real](#carnismo-es-algodonismo) · [Estereotipo + prejuicio = discriminación — por qué 'discriminación' se queda corta](#estereotipo-prejuicio-discriminacion) · [Las tres dimensiones del veganismo: teórica, práctica y política](#tres-dimensiones-del-veganismo) |
+| **Futility / No Clean Option** (`futility_no_clean_option`) | [El problema es que no sabemos que tenemos un problema](#no-sabemos-que-tenemos-problema) · [La no-necesidad: las reglas del juego cambiaron para siempre](#no-necesidad-cambiaron-las-reglas) · [Matrix — éramos la pastilla azul, no nacimos despiertos](#matrix-pastilla-azul) · [El conocimiento compromete — ya no puedes hacer como que no sabes](#conocimiento-compromete) · [El pollo inconsciente (la trampa del sufrimiento cero)](#pollo-inconsciente-reductio) · [Entender no es aceptar ni transformarse](#entender-no-es-transformarse) · [Violencia estructural: el aparataje que sostiene (mataderos como infraestructura)](#violencia-estructural-infraestructura) · [Violencia indirecta: el que paga/demanda es responsable, no solo el que ejecuta](#violencia-indirecta-quien-demanda) · [No necesitas convencer al 100%: basta el que está despertando](#sembrar-en-el-receptivo) · [Especismo económico: 'nos quedaríamos sin trabajo'](#economia-especista-heredada) · [El antropoespecismo es universal: deslocalizar la granja no resuelve nada](#antropoespecismo-universal-deslocalizar) · [El 95% mal dirigido — el mensaje es para el humano, no para el animal](#mensaje-para-el-humano-no-para-el-animal) · [Resistencia al cambio = defensa del privilegio, no del argumento](#resistencia-al-cambio-es-defensa-del-privilegio) |
+| **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`) | [Antropoespecismo / Especismo Antropocéntrico](#antropoespecismo) · [Göbekli Tepe como 'kilómetro cero' del especismo](#gobekli-kilometro-cero) · [El paralelismo con la esclavitud negra](#esclavitud-paralelismo) · [De algo a alguien — objeto de propiedad a sujeto de derecho](#algo-a-alguien-sujeto-derecho) · [No 'explotación' ni 'maltrato': injusticia/esclavitud](#explotacion-vs-esclavitud-lexico) · ['Vegano por un día' = racista solo entre semana](#vegano-por-un-dia-racista-entre-semana) · [El linaje de los Centrismos (especismo junto a sexismo/racismo)](#paralelo-luchas-sociales-centrismos) · [El filtro especie: dejar de ver al individuo para verlo como categoría](#filtro-especie-vs-individuo) · [Los libros enseñan al animal en partes, nunca su sintiencia](#libros-de-texto-niegan-sintiencia) · [El 95% mal dirigido — el mensaje es para el humano, no para el animal](#mensaje-para-el-humano-no-para-el-animal) |
+| **Appeal to Nature / Naturalismo** (`naturalismo`) | [Antropoespecismo / Especismo Antropocéntrico](#antropoespecismo) · [Göbekli Tepe como 'kilómetro cero' del especismo](#gobekli-kilometro-cero) · [La no-necesidad: las reglas del juego cambiaron para siempre](#no-necesidad-cambiaron-las-reglas) · [NJN — la trampa de normal, justo y necesario](#njn-normal-justo-necesario) · [Liberar una jaula vs. liberar tu mente](#liberar-la-mente-abre-todas-las-jaulas) · [Extrañarse de lo naturalizado (nombrar que un acto ES violencia)](#extranar-lo-naturalizado) · [El especismo es una programación heredada en la infancia](#especismo-se-programa-en-la-infancia) · [Tabula rasa (Pinker): ni nacemos especistas ni del todo nos hacen](#tabula-rasa-ni-nacemos-ni-nos-hacen) |
 | **Moral Relativism Shield** (`relativismo_moral`) | [Antropoespecismo / Especismo Antropocéntrico](#antropoespecismo) · [Violencia Especista](#violencia-especista) · [Especídio](#especidio) · [El conocimiento compromete — ya no puedes hacer como que no sabes](#conocimiento-compromete) · [El veganismo no es dieta ni estilo de vida — el algodón ecológico](#veganismo-no-es-dieta-ni-estilo-de-vida) · [La dimensión política del veganismo — tomar posición](#dimension-politica-tomar-posicion) · [El veganismo no es un estilo de vida (no se elige no ser racista)](#no-es-opcion-de-vida) · [Respetar a la persona no obliga a respetar la idea inmoral](#respeto-persona-no-idea-inmoral) |
-| **Appeal to Nature / Naturalismo** (`naturalismo`) | [Antropoespecismo / Especismo Antropocéntrico](#antropoespecismo) · [Göbekli Tepe como 'kilómetro cero' del especismo](#gobekli-kilometro-cero) · [La no-necesidad: las reglas del juego cambiaron para siempre](#no-necesidad-cambiaron-las-reglas) · [NJN — la trampa de normal, justo y necesario](#njn-normal-justo-necesario) · [Liberar una jaula vs. liberar tu mente](#liberar-la-mente-abre-todas-las-jaulas) · [Extrañarse de lo naturalizado (nombrar que un acto ES violencia)](#extranar-lo-naturalizado) · [El especismo es una programación heredada en la infancia](#especismo-se-programa-en-la-infancia) |
 | **Begging the Question / Circular Reasoning** (`peticion_de_principio`) | [El paralelismo con la esclavitud negra](#esclavitud-paralelismo) · [Domesticar es un eufemismo de dominar/someter](#domesticar-eufemismo-dominar) · [De algo a alguien — objeto de propiedad a sujeto de derecho](#algo-a-alguien-sujeto-derecho) · [El veganismo no es un estilo de vida (no se elige no ser racista)](#no-es-opcion-de-vida) · [El filtro especie: dejar de ver al individuo para verlo como categoría](#filtro-especie-vs-individuo) |
 | **Autonomy / Anti-Dictation Frame** (`libertarian_autonomy`) | [De algo a alguien — objeto de propiedad a sujeto de derecho](#algo-a-alguien-sujeto-derecho) · [El veganismo no es dieta ni estilo de vida — el algodón ecológico](#veganismo-no-es-dieta-ni-estilo-de-vida) · [La dimensión política del veganismo — tomar posición](#dimension-politica-tomar-posicion) · [El veganismo no es un estilo de vida (no se elige no ser racista)](#no-es-opcion-de-vida) · [Violencia estructural: el aparataje que sostiene (mataderos como infraestructura)](#violencia-estructural-infraestructura) |
 | **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`) | [Matrix — éramos la pastilla azul, no nacimos despiertos](#matrix-pastilla-azul) · [No necesitas convencer al 100%: basta el que está despertando](#sembrar-en-el-receptivo) · [NVC: separar la observación del juicio](#nvc-observacion-sin-juicio) · [IFS: hablarle al niño herido bajo la defensa](#ifs-hablarle-al-nino-herido) · [Trauma-Informed: la defensa no es maldad, es protección](#trauma-informed-defensa-no-es-maldad) |
-| **Burden of Proof Reversal** (`inversion_carga`) | [El paralelismo con la esclavitud negra](#esclavitud-paralelismo) · [La crueldad es el síntoma, no la causa](#crueldad-no-es-la-causa) · [El problema no es cuánto sufre, es la consideración moral](#consideracion-moral-no-cuanto-sufre) |
+| **Burden of Proof Reversal** (`inversion_carga`) | [El paralelismo con la esclavitud negra](#esclavitud-paralelismo) · [La crueldad es el síntoma, no la causa](#crueldad-no-es-la-causa) · [El problema no es cuánto sufre, es la consideración moral](#consideracion-moral-no-cuanto-sufre) · [Resistencia al cambio = defensa del privilegio, no del argumento](#resistencia-al-cambio-es-defensa-del-privilegio) |
+| **Selective Data Dump** (`data_dump_selectivo`) | [La no-necesidad: las reglas del juego cambiaron para siempre](#no-necesidad-cambiaron-las-reglas) · [El mensaje importa, pero las formas son determinantes](#mensaje-importa-formas-determinantes) · [Teoría del Apego: la seguridad precede a la apertura](#apego-seguridad-antes-que-razon) · [No hablamos en nombre propio: representamos a quien no puede hablar](#hablamos-en-nombre-de-los-demas-animales) |
 | **Domestication = Mutualism / Commensalism** (`domestication_mutualism`) | [Domesticar es un eufemismo de dominar/someter](#domesticar-eufemismo-dominar) · [Violencia estructural: el aparataje que sostiene (mataderos como infraestructura)](#violencia-estructural-infraestructura) · [La premisa falsa de que los animales 'nos dan' cosas](#premisa-falsa-los-animales-nos-dan) |
-| **Selective Data Dump** (`data_dump_selectivo`) | [La no-necesidad: las reglas del juego cambiaron para siempre](#no-necesidad-cambiaron-las-reglas) · [El mensaje importa, pero las formas son determinantes](#mensaje-importa-formas-determinantes) · [Teoría del Apego: la seguridad precede a la apertura](#apego-seguridad-antes-que-razon) |
 | **Abolition Reductio / Domesticated Animal Extinction** (`abolition_reductio`) | [El pollo inconsciente (la trampa del sufrimiento cero)](#pollo-inconsciente-reductio) · ['Vegano por un día' = racista solo entre semana](#vegano-por-un-dia-racista-entre-semana) · [El semáforo: rojo (especismo) vs amarillo (welfarismo) vs el quiebre vegano](#semaforo-rojo-amarillo-welfarismo) |
 | **Cherry-Pick: One Company = Category** (`cherry_pick_empresa`) | [Génesis: la Biblia promueve el antropoespecismo, no el veganismo](#genesis-invertido) · [El árbol: especismo es la raíz, la violencia es el síntoma visible](#arbol-causa-sintoma) · [El bienestarismo como jugada maestra: el poder saca el sufrimiento de la ecuación](#bienestarismo-jugada-maestra-del-poder) |
 | **Moving Goalposts** (`moving_goalposts`) | [Por qué 'violencia' y no maltrato/crueldad/abuso/trastorno](#por-que-no-maltrato-rigor-conceptual) · [El semáforo: rojo (especismo) vs amarillo (welfarismo) vs el quiebre vegano](#semaforo-rojo-amarillo-welfarismo) · [El árbol: especismo es la raíz, la violencia es el síntoma visible](#arbol-causa-sintoma) |
+| **Presentism / Dismiss the Trend** (`presentismo`) | [Göbekli Tepe como 'kilómetro cero' del especismo](#gobekli-kilometro-cero) · [Momento Truman — el engaño y la traición de los que te educaron](#momento-truman-traicion-de-los-tuyos) |
 | **Crop Deaths / Bystander Flip** (`crop_deaths_flip`) | [La no-necesidad: las reglas del juego cambiaron para siempre](#no-necesidad-cambiaron-las-reglas) · [Violencia indirecta: el que paga/demanda es responsable, no solo el que ejecuta](#violencia-indirecta-quien-demanda) |
 | **Popularity as Moral Proof** (`popularidad_como_justificacion`) | [NJN — la trampa de normal, justo y necesario](#njn-normal-justo-necesario) · [Extrañarse de lo naturalizado (nombrar que un acto ES violencia)](#extranar-lo-naturalizado) |
+| **Is-Ought / Naturalistic Fallacy** (`is_ought`) | [El conocimiento compromete — ya no puedes hacer como que no sabes](#conocimiento-compromete) · [Tabula rasa (Pinker): ni nacemos especistas ni del todo nos hacen](#tabula-rasa-ni-nacemos-ni-nos-hacen) |
 | **Principle Shield / Begging the Principle** (`principio_escudo`) | [Génesis: la Biblia promueve el antropoespecismo, no el veganismo](#genesis-invertido) · [El problema no es cuánto sufre, es la consideración moral](#consideracion-moral-no-cuanto-sufre) |
 | **Whataboutism / Human Exploitation Deflection** (`whataboutism`) | [Violencia indirecta: el que paga/demanda es responsable, no solo el que ejecuta](#violencia-indirecta-quien-demanda) · [La pandemia cooptada como argumento — la cultura del 'todo vale'](#pandemia-cooptada-todo-vale) |
-| **Presentism / Dismiss the Trend** (`presentismo`) | [Göbekli Tepe como 'kilómetro cero' del especismo](#gobekli-kilometro-cero) |
+| **AI Accusation / Bot Dismissal** (`ai_accusation`) | [El educador no hace campaña: responde cuando el tema surge](#educador-no-adoctrina-responde) · [Tabula rasa (Pinker): ni nacemos especistas ni del todo nos hacen](#tabula-rasa-ni-nacemos-ni-nos-hacen) |
+| **Personal Anecdote as Category Evidence** (`anecdota_personal_n1`) | [Trauma-Informed: la defensa no es maldad, es protección](#trauma-informed-defensa-no-es-maldad) · [Momento Truman — el engaño y la traición de los que te educaron](#momento-truman-traicion-de-los-tuyos) |
 | **Appeal to Majority / Bandwagon** (`apelacion_mayoria`) | [NJN — la trampa de normal, justo y necesario](#njn-normal-justo-necesario) |
-| **Is-Ought / Naturalistic Fallacy** (`is_ought`) | [El conocimiento compromete — ya no puedes hacer como que no sabes](#conocimiento-compromete) |
 | **Predator Comparison / Lion Argument** (`predator_comparison`) | [El linaje de los Centrismos (especismo junto a sexismo/racismo)](#paralelo-luchas-sociales-centrismos) |
-| **AI Accusation / Bot Dismissal** (`ai_accusation`) | [El educador no hace campaña: responde cuando el tema surge](#educador-no-adoctrina-responde) |
 | **Hostile Socratic Method** (`socrates_hostil`) | [Entrevista Motivacional: evocar el cambio sin confrontar](#mi-evocar-cambio-sin-confrontar) |
-| **Personal Anecdote as Category Evidence** (`anecdota_personal_n1`) | [Trauma-Informed: la defensa no es maldad, es protección](#trauma-informed-defensa-no-es-maldad) |
 
 ## Samuel Guerrero Azañedo
 
@@ -767,6 +777,164 @@ _Fuente: doctrine/rag/Avolicion-Guerrero — texto extraido.md_
 **⚠️ attack_surface:** Un organizador dirá que las campañas concretas y temáticas son las que movilizan, recaudan y consiguen leyes — el frame abstracto del 'antropoespecismo' no convoca a la calle. Insistir en la raíz puede leerse como desdén por el trabajo de base.
 
 _Fuente: doctrine/rag/Avolicion-Guerrero — texto extraido.md_
+
+### El 95% mal dirigido — el mensaje es para el humano, no para el animal
+<a id="mensaje-para-el-humano-no-para-el-animal"></a>
+
+- **id:** `mensaje-para-el-humano-no-para-el-animal` · **tradición:** educación antiespecista / psicología social del activismo
+- **deploy_as:** marco · **registro:** filo
+
+**Qué es:** El activismo de concienciación gasta el 95% de su esfuerzo dirigiendo la atención a los demás animales ('mira cómo son, también sienten, también sufren') hablándole a un homo sapiens al que le da igual: 'cuando llevas medio minuto explicando cómo son los demás animales, ese homo sapiens ya se ha dado la vuelta y se ha ido'. La educación antiespecista invierte el foco: 'también tiene un mensaje para usted, señor homo sapiens' — trabaja el rol que el humano tiene de sí mismo (el 'rey de la creación'), no solo el rol que asignó al animal.
+
+**Habilita:** Reencuadrar la conversación del sufrimiento animal (que el carnista ya filtró) hacia la autoimagen del interlocutor — el pedestal moral del que no quiere bajarse. Hace que el lurker se vea a sí mismo como objeto del análisis, no como espectador neutral de la pena ajena.
+
+**⚠️ attack_surface:** El carnista puede acusar de psicologizar/atacarlo en vez de discutir hechos; un lurker puede leerlo como condescendiente. Requiere no caer en ad hominem: el foco es el rol heredado, no el defecto de la persona.
+
+**Contrarresta tácticas:** `species_hierarchy` (Species Hierarchy / Human Exceptionalism) · `futility_no_clean_option` (Futility / No Clean Option)
+
+_Fuente: doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md_
+
+### Carnismo es algodonismo — el síntoma roba el foco al enemigo real
+<a id="carnismo-es-algodonismo"></a>
+
+- **id:** `carnismo-es-algodonismo` · **tradición:** meta-estrategia antiespecista / crítica al carnismo
+- **deploy_as:** marco · **registro:** filo
+
+**Qué es:** Cuando el movimiento por fin enfocaba el antropoespecismo, el carnismo de Melanie Joy desvió el foco hacia un mero síntoma. Paralelismo: 'en el siglo XIX, en vez de visibilizar el racismo, una autora dice: hay que luchar contra el algodonismo, porque hay un consumo brutal de algodón'. El algodón es un hábito más, no el enemigo; el racismo sí. Igual el carnismo: 'no deja de ser un hábito más, un síntoma más'. 'Lo último que le interesa al antropoespecismo es visibilizarse'.
+
+**Habilita:** Resistir la presión interna del movimiento a 'empezar por dejar la carne' o a valorar una explotación sobre otra; mantener el blanco en la jerarquía humana-superior, no en un consumo concreto. Desactiva el single-issue desde su propia lógica con una analogía histórica.
+
+**⚠️ attack_surface:** Joy y muchos activistas defienden el carnismo como puerta de entrada pedagógica; descartarlo puede leerse como purismo que aleja a recién llegados. El paralelismo XIX es retóricamente fuerte pero discutible históricamente.
+
+**Contrarresta tácticas:** `welfare_rhetoric` (Welfare Rhetoric / Comfortable Life Defense) · `reencuadre_veganismo_creencia` (Reframe: Veganism as Belief System)
+
+_Fuente: doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md_
+
+### Momento Truman — el engaño y la traición de los que te educaron
+<a id="momento-truman-traicion-de-los-tuyos"></a>
+
+- **id:** `momento-truman-traicion-de-los-tuyos` · **tradición:** educación antiespecista / fenomenología del despertar
+- **deploy_as:** marco · **registro:** compasivo
+
+**Qué es:** El despertar como el instante en que el barco de Truman choca contra el muro pintado: 'toda su vida ha sido un engaño, una farsa'. El motor no es la culpa por el animal sino la indignación hacia los propios íntimos: '¿cómo es posible que ni mi familia, ni los maestros, ni mis amistades, nadie me informó antes de esto?'. Esa pregunta se vuelve obsesión — y produce al educador, no al consumidor culpable.
+
+**Habilita:** Nombrar para el lurker que la responsabilidad no es solo individual sino estructural (un sistema de transmisión que le ocultó la información). Quita la carga de la vergüenza personal y la traslada al condicionamiento heredado, bajando la defensa.
+
+**⚠️ attack_surface:** Puede leerse como victimismo o excusa ('no fue mi culpa, me educaron') que diluye la agencia; el carnista puede usarlo para no cambiar ahora que ya sabe. Hay que cerrar el bucle: el condicionamiento explica el pasado, pero el conocimiento presente compromete.
+
+**Contrarresta tácticas:** `anecdota_personal_n1` (Personal Anecdote as Category Evidence) · `presentismo` (Presentism / Dismiss the Trend)
+
+_Fuente: doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md_
+
+### Resistencia al cambio = defensa del privilegio, no del argumento
+<a id="resistencia-al-cambio-es-defensa-del-privilegio"></a>
+
+- **id:** `resistencia-al-cambio-es-defensa-del-privilegio` · **tradición:** educación antiespecista / psicología de la resistencia
+- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+
+**Qué es:** La gente prefiere negar la mayor — 'no te quieren escuchar, no quieren saber'. No es que el activista les provoque un problema; 'les está dando la oportunidad de conocerse a sí mismos'. Se resisten por los privilegios: '¿quién quiere bajarse del pedestal?', porque admitir el marco obliga a modificar 'tus ideas, tus comportamientos, tus hábitos, en aras de la ética'. La negativa a escuchar delata que se defiende una posición aventajada, no una verdad.
+
+**Habilita:** Para el activista, no tomar el rechazo como fracaso ni mala fe sino como reacción esperable de quien defiende un privilegio — sostiene la calma. Para el lurker, ver que la incomodidad del otro es señal de que el punto dio en el blanco.
+
+**⚠️ attack_surface:** No-falsable si se usa mal: 'te resistes porque tengo razón' convierte cualquier desacuerdo legítimo en negación interesada (petición de principio). Hay que distinguir resistencia-privilegio de una objeción de buena fe.
+
+**Contrarresta tácticas:** `futility_no_clean_option` (Futility / No Clean Option) · `inversion_carga` (Burden of Proof Reversal)
+
+_Fuente: doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md_
+
+### Estereotipo + prejuicio = discriminación — por qué 'discriminación' se queda corta
+<a id="estereotipo-prejuicio-discriminacion"></a>
+
+- **id:** `estereotipo-prejuicio-discriminacion` · **tradición:** psicología social aplicada al antiespecismo
+- **deploy_as:** marco · **registro:** filo
+
+**Qué es:** Definir el especismo solo como 'discriminación' es insuficiente: en psicología social la discriminación es apenas la fase conductual de una estructura de tres partes: estereotipo (cognitivo — 'el concepto que tenemos de los demás animales'), prejuicio (emocional — costumbres arraigadas que generan pertenencia de grupo) y discriminación (la suma). 'Discriminación se nos queda muy corto, porque la pregunta es: ¿y por qué discriminamos?'.
+
+**Habilita:** Responder a quien reduce el especismo a 'discriminación arbitraria' mostrando que detrás hay una creencia cognitiva instalada y un apego emocional de grupo — por eso los argumentos racionales rebotan (atacan solo la conducta, no el estereotipo ni el prejuicio que la sostienen).
+
+**⚠️ attack_surface:** Aparato conceptual denso que suena a jerga académica (el spec de voz advierte contra el tono de profesor); en FB hay que traducirlo a lenguaje llano. Es un diagnóstico, no un argumento moral — no sustituye la pregunta ética.
+
+**Contrarresta tácticas:** `apelacion_normal` (Appeal to Normalcy / Default) · `reencuadre_veganismo_creencia` (Reframe: Veganism as Belief System)
+
+_Fuente: doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md_
+
+### Tabula rasa (Pinker): ni nacemos especistas ni del todo nos hacen
+<a id="tabula-rasa-ni-nacemos-ni-nos-hacen"></a>
+
+- **id:** `tabula-rasa-ni-nacemos-ni-nos-hacen` · **tradición:** antiespecismo abolicionista (naturaleza vs. crianza)
+- **deploy_as:** marco · **registro:** filo
+
+**Qué es:** 'Cuidado que he leído que nacemos antropoespecistas, esto no es del todo cierto... hay un libro, La tabula rasa, de Steven Pinker, que hace saltar por los aires el debate entre la crianza y la enseñanza... nacemos o nos hacemos racistas, antropoespecistas'. El especismo ni es puramente innato ni puramente inculcado: es más complejo que cualquiera de los dos polos.
+
+**Habilita:** Desarma dos esquives a la vez. Contra el naturalista ('comer carne es instintivo, lo traemos de fábrica'): no nacemos especistas, no es instinto fijo. Y contra el cínico ('te lavaron el cerebro igual que al otro'): tampoco somos pizarras en blanco, hay algo que se puede cuestionar y elegir. El especismo queda como construido sobre un sustrato moldeable —cuestionable y reversible— en vez de destino biológico o lavado total.
+
+**⚠️ attack_surface:** Invocar a Pinker es recurso de autoridad que se vuelve en contra si el interlocutor conoce la obra: 'La tabla rasa' argumenta a favor de una naturaleza humana fuerte CONTRA el blank slate, no es un alegato antiespecista; de pasada puede leerse como name-drop o tergiversación. La distinción naturaleza/crianza no zanja el deber moral (sigue siendo is-ought).
+
+**Contrarresta tácticas:** `naturalismo` (Appeal to Nature / Naturalismo) · `is_ought` (Is-Ought / Naturalistic Fallacy) · `ai_accusation` (AI Accusation / Bot Dismissal)
+
+_Fuente: doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md_
+
+### Contraespecismo: no basta estar en contra, hay que erradicarlo
+<a id="contraespecismo-postura-activa"></a>
+
+- **id:** `contraespecismo-postura-activa` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
+- **deploy_as:** auto-disciplina-del-activista · **registro:** filo
+
+**Qué es:** 'El antiespecismo sería: estoy en contra del especismo, pero aquí me quedo. El contraespecismo sería, además de posicionarme en contra, voy a hacer lo necesario para erradicarlo... una actitud activa... voy con todo contra el antropoespecismo'.
+
+**Habilita:** Cierra la salida del 'antiespecista de salón' que se declara en contra y descansa. Convierte la postura de un adjetivo (lo rechazo) en un verbo (trabajo para abolirlo). Para el lurker marca la diferencia entre opinar y militar; para el activista es la barra.
+
+**⚠️ attack_surface:** La distinción anti/contra es un neologismo de nicho que puede sonar a fabricar etiquetas internas y a purismo de movimiento; un interlocutor externo lo lee como jerga endogámica. 'Voy con todo' puede leerse como militancia agresiva sin las formas.
+
+_Fuente: doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md_
+
+### Las tres dimensiones del veganismo: teórica, práctica y política
+<a id="tres-dimensiones-del-veganismo"></a>
+
+- **id:** `tres-dimensiones-del-veganismo` · **tradición:** antiespecismo abolicionista (definición conceptual)
+- **deploy_as:** marco · **registro:** filo
+
+**Qué es:** 'Las tres dimensiones del veganismo: la primera es la teórica, la científico-filosófica' (dejas de verte superior); la segunda es 'el veganismo práctico' (la transformación de hábitos, del desayuno a la cosmética); y la tercera el veganismo político: 'vegano es aquel que es activista... hace trascender del plano individual al colectivo'.
+
+**Habilita:** Ordena el reduccionismo que aplasta el veganismo a la dieta. Si alguien dice 'es solo comida', la respuesta no es discutir el plato sino mostrar que la dieta es apenas la dimensión práctica —la punta— mientras debajo está la teórica (rechazo del antropoespecismo) y encima la política. Da un mapa para diagnosticar en qué nivel se atascó la conversación.
+
+**⚠️ attack_surface:** Definir al vegano como necesariamente activista es una definición estipulativa fuerte: excluye a quien practica el veganismo sin militar y suena a no-true-scotsman, un purismo que puede ahuyentar al que empieza por la dimensión práctica.
+
+**Contrarresta tácticas:** `reencuadre_veganismo_creencia` (Reframe: Veganism as Belief System)
+
+_Fuente: doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md_
+
+### No hablamos en nombre propio: representamos a quien no puede hablar
+<a id="hablamos-en-nombre-de-los-demas-animales"></a>
+
+- **id:** `hablamos-en-nombre-de-los-demas-animales` · **tradición:** antiespecismo abolicionista (ética del discurso activista)
+- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+
+**Qué es:** 'Nunca se nos olvide que no hablamos en nombre propio, estamos hablando en nombre de los demás animales... toda información que demos, por mínima que sea, hay que pensarla dos, tres y cuatro veces'. El ejercicio: imaginar que los animales pudieran hablar un minuto y preguntarles si el mensaje que lanzamos —y la manera— es lo que les conviene.
+
+**Habilita:** Auto-disciplina del rigor: como el activista habla por una víctima muda, cada exageración o dato indefendible se paga con la credibilidad de la causa entera, no con la suya. Justifica el cuidado obsesivo con cifras y formas.
+
+**⚠️ attack_surface:** 'Represento a los animales' puede sonar a apropiación de voz o mesianismo ('¿quién te eligió portavoz?'), y la pregunta de qué dirían los animales es ventriloquia: cualquiera pone en su boca lo que ya quería decir. Funciona como auto-disciplina interna, mucho menos como argumento ganador.
+
+**Contrarresta tácticas:** `data_dump_selectivo` (Selective Data Dump)
+
+_Fuente: doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md_
+
+### La medida de tres plazos: hábitos, rol y estructuras de poder
+<a id="medida-tres-plazos-corto-medio-largo"></a>
+
+- **id:** `medida-tres-plazos-corto-medio-largo` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
+- **deploy_as:** auto-disciplina-del-activista · **registro:** filo
+
+**Qué es:** Frente al neobienestarismo 'cortoplacista' que retoca síntomas, propone una medida corto+medio+largo plazo: 'uno, visibilizando el antropoespecismo; dos, visibilizando la educación antropoespecista; y luego educando en el veganismo político'. Corto = cambiar hábitos; medio = cuestionar tu rol y la educación recibida; largo = entrar en las estructuras de poder (p. ej. el sistema educativo) para las generaciones futuras.
+
+**Habilita:** Refuta el bienestarismo no negándolo sino mostrando que es media estrategia: ataca la punta del iceberg y deja intacta la base. Responde a 'mientras tanto qué hacemos con los animales de hoy' —se actúa en corto sin abandonar la raíz— y orienta dónde poner energía a largo plazo (educación de la infancia), no solo en la calle.
+
+**⚠️ attack_surface:** Estrategia interna del movimiento: ante un no-vegano suena a planificación de cúpula y a 'meternos en las escuelas', que se lee como adoctrinamiento institucional —el reproche que el movimiento recibe—. El plazo largo es tan difuso que corre el riesgo de quedar en aspiración.
+
+**Contrarresta tácticas:** `welfare_rhetoric` (Welfare Rhetoric / Comfortable Life Defense)
+
+_Fuente: doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md_
 
 ## Romina Kachanoski
 
