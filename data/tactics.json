@@ -332,5 +332,31 @@
       "100011355404997"
     ],
     "fallacy_type_id": null
+  },
+  {
+    "id": "abolition_reductio",
+    "name": "Abolition Reductio / Domesticated Animal Extinction",
+    "category": "rhetoric",
+    "definition": "Frames the logical endpoint of veganism as absurd or cruel: if everyone went vegan, farm livestock would have to be killed/removed, there would be no pets, and zoos would close. Treats the wind-down of exploitation as a horror.",
+    "canonical_counter": "The reductio concedes the premise. We breed livestock into existence precisely to use them; stopping that means breeding fewer over time, not slaughtering the ones alive now. “No more animals bred to be killed” is the goal, not a nightmare. Pets and sanctuaries aren’t exploitation — the objection quietly swaps “using animals as resources” for “coexisting with animals.”",
+    "register": "filo",
+    "what_not_to_do": "Don’t get dragged into sci-fi logistics of a 100%-vegan world. Name that the endpoint (fewer animals bred to be killed) is the point, then return to the present moral question.",
+    "actors_known": [
+      "813709465"
+    ],
+    "fallacy_type_id": null
+  },
+  {
+    "id": "ai_accusation",
+    "name": "AI Accusation / Bot Dismissal",
+    "category": "social",
+    "definition": "Dismisses a well-composed reply by claiming it was written by AI (\"you are using ai, at least try to hide it\", \"bot\", \"chatgpt wrote this\") instead of engaging the substance. Poisons credibility so nothing the person said has to be answered. Increasingly common against articulate interlocutors.",
+    "canonical_counter": "Do NOT protest authenticity or write a long defense — length and polish confirm the accusation to the lurker. Answer SHORT and unmistakably human: a dry, low-effort line that the substance was never addressed. The composure + brevity kills the jab; the lurker sees who dodged and who answered.",
+    "register": "wit",
+    "what_not_to_do": "Never write a paragraph defending that you are not AI — that is the trap; the more polished the rebuttal, the more it looks generated. Do not get defensive or earnest. Keep it to one or two human sentences and point at the empty substance.",
+    "actors_known": [
+      "100002202037155"
+    ],
+    "fallacy_type_id": "ad_hominem"
   }
 ]

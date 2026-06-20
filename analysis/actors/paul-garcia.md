@@ -1,42 +1,40 @@
 # Paul Garcia
 
+> GENERATED from `data/actors.json` by `scripts/gen-dossiers.mjs`. Do not hand-edit — edit the JSON and regenerate.
+
 - **user_id:** 813709465
 - **Perfil:** https://www.facebook.com/profile.php?id=813709465
-- **Bando:** Anti-vegan **de buena fe** — ex-vegano (8 años), no insultador
-- **Veredicto de debate:** El arguer civil más valioso del hilo vegan-market. Persuadible al margen, y sobre todo **alto valor de audiencia**: el lurker lo lee como "el carnista razonable". Tratar como Adam Gaska: exponer el método/dónde generaliza de más, nunca el martillo moral (él ya disclaimó la moral). Conceder lo empírico lo desarma.
+- **Bando:** anti-vegan
+- **Veredicto:** persuadible · **Registro:** compasivo
+- **Postura núcleo:** 'Plant-based' es marketing vacío; las proyecciones son press releases; sus 8 años vegano le arruinaron la salud.
 
-## Postura núcleo
+## Análisis
 
-- "Plant-based" es término de marketing vacío (Oreos rebrandeados inflan cifras).
-- Las proyecciones de mercado son press releases con incentivo sell-side, no ciencia.
-- La comida plant-based ultraprocesada desplaza lo casero y genera más empaque/desperdicio.
-- India/China: el "reducen carne" es ruido (wet-markets post-COVID, presión gubernamental por uso de suelo y escasez, per-cápita SUBE con el ingreso), no conversión ética.
-- **Salió de la moral explícitamente:** "i made no mention of morality". Su crítica es empírica/económica, no de derechos.
+El arguer civil más valioso del hilo vegan-market. Ex-vegano de 8 años con historia médica real (oxalatos, fructosa, HMO que falló). No argumenta desde la moral — salió del terreno moral explícitamente. Persuadible al margen. El lurker lo lee como 'el carnista razonable'. Su error: n=1 como evidencia de categoría. Su queja médica es legítima; su inferencia categoría-dieta no.
 
-## El testimonio ex-vegano (vegan-market, [8h], 2026-06-16) — núcleo longitudinal
+## Tácticas
 
-Journey de ~8 años, declive de salud que atribuye a la dieta + a una comunidad vegana no solidaria ("no true scotsman" — siempre "lo estás haciendo mal"). Cronología:
-- Bien ~3 años; luego visitas médicas crecientes. HMO gringo: blood work "fantástico", desestima síntomas como "envejecer".
-- 1er cálculo renal → "comes demasiadas hojas verdes". Ácido úrico dispara. Internamiento metabólico. Dietistas reajustan: más/menos frutas, smoothies, un galón de agua/día.
-- Síntomas: débil, frío, dientes sensibles, hinchado, insomnio. Prueba jugo, raw food (mejora sueño pero dispara dolor articular).
-- Naturópata: panel comprensivo malo → suplementación obligatoria.
-- **Portugal** (descanso mental): un farmacéutico nota que sus recetas no cuadran con su enfermedad → su "pastilla del dolor" era anticonvulsivo off-label, su "pastilla para dormir" un antipsicótico. Primer médico (Dr. Ferreira) que no lo apura: lo desteta de suplementos/meds.
-- Dieta vegana portuguesa pesada en papa → "me sentí genial". Pero colesterol total sube → otra dietista pierde la cabeza (gluten-free).
-- Médicos portugueses **dan la causa raíz**: oxalatos → cálculos (qué hojas evitar, calcio con comidas oxalato-altas); lo sacan de fructosa. Dos realizaciones: (1) era dieta, (2) **todo el consejo venía catered a SER vegano** — nunca lácteo por calcio ni pescado por omega-3.
-- Coquetea con literatura paleo (nunca paleo real). Adopta "si la comida me enferma, como lo que disfruto y lidio con ello". Su prometida descubre que su infertilidad probablemente era su propia dieta vegana → switch.
-- Primer bocado de carne: doble quarter pounder, sin pan ("una variable a la vez").
+- **Personal Anecdote as Category Evidence** (`anecdota_personal_n1`) — Uses a personal experience (health decline attributed to vegan diet) as evidence against veganism as a category. N=1 presented as N=all. Common with ex-vegans.
+  - _Contra:_ Honor the experience, separate the inference: 'That experience is real and the medical advice you got sounds genuinely bad. But one poorly-navigated vegan journey — especially with misdiagnosed oxalate issues — doesn't indict the diet as a category any more than one poorly-navigated omnivore diet would.' Empathize first, then separate n=1 from the category.
+- **Selective Data Dump** (`data_dump_selectivo`) — Floods with data points that are real but cherry-picked and framed to support a pre-determined conclusion. Absolute numbers vs per-capita trends. Stock price vs category market. No causal analysis.
+  - _Contra:_ Concede what's true in the data, then expose the frame: 'Yes, Beyond Meat's stock crashed — that's one company with execution problems. The plant-based category grew 6% that year.' Don't match dump for dump. One incisive concede-and-reframe.
+- **Moral Relativism Shield** (`relativismo_moral`) — Uses 'morality is subjective' as a conversation-stopper rather than an argument. Does not engage with the specific moral claim. 'My morals are fine with me eating animals as morals are subjective.'
+  - _Contra:_ Point out that they don't actually live by pure moral relativism — they have lines they wouldn't cross even if others called them moral. 'You wouldn't say torturing a child is equally valid because morals are subjective.' One line, for the lurker. Don't overextend.
+- **Abolition Reductio / Domesticated Animal Extinction** (`abolition_reductio`) — Frames the logical endpoint of veganism as absurd or cruel: if everyone went vegan, farm livestock would have to be killed/removed, there would be no pets, and zoos would close. Treats the wind-down of exploitation as a horror.
+  - _Contra:_ The reductio concedes the premise. We breed livestock into existence precisely to use them; stopping that means breeding fewer over time, not slaughtering the ones alive now. “No more animals bred to be killed” is the goal, not a nightmare. Pets and sanctuaries aren’t exploitation — the objection quietly swaps “using animals as resources” for “coexisting with animals.”
 
-## Tácticas observadas
+## Qué NO hacer
 
-- Concede de vuelta lo que le concedes (intercambio honesto, raro en el hilo).
-- **n=1 como evidencia general**: su caso real (oxalatos/fructosa manejables + HMO que falló en diagnosticar) lo lleva implícito a "la dieta es el problema". El método falla ahí: una odisea médica mal diagnosticada ≠ indictment de la dieta como categoría.
-- Pivote India/China bien informado — hay que conceder lo empírico y separar "tendencia de consumo" de "conversión ética".
-- "No true scotsman" sobre la comunidad: queja legítima de experiencia, NO argumento contra el marco moral.
+NO disputar su experiencia. NO atacar si la dieta fue la causa. Honrar el testimonio, ponerse de su lado contra los malos consejos que recibió, y ENTONCES separar n=1 de la categoría. No usar el martillo moral (él ya lo descartó).
 
-## Tono
+## Log de interacciones
 
-Civil, articulado, reflexivo. Cero insulto. Genuinamente abierto ("ojalá la comunidad hubiera sido más solidaria, seguiría siendo vegano probablemente").
+### Hilo `27335635946059556` — 2026-06-16 · outcome: **goalpost**
+- **Su jugada:** Compartió testimonio de 8 años vegano: oxalatos, fructosa, mal diagnosticado, consejería vegana sesgada, finalmente mejoró añadiendo carne.
+- **Nuestra respuesta:** Honró el testimonio sin disputar la experiencia. Se puso de su lado nombrando que los consejos que recibió (más hojas verdes con cálculos, agave con fructosa) están documentados como al revés. Reforzó SU queja de mala orientación. Devolvió la carga con n=1≠categoría + la moral es ortogonal a si un individuo prospera.
 
-## Log de acciones
+### Hilo `27335635946059556` — 2026-06-18 · outcome: **pending**
+- **Su jugada:** Respondio a la pregunta moral retirandose a relativismo (‘morality es creencia personal, todo se justifica por un codigo personal’) y desplegando dos objeciones nuevas: la jerarquia plantas/bichos (‘veganos dicen que toda vida es igual pero matan plantas/insectos’) y el reductio de abolicion (si todos fueran veganos habria que matar al ganado, no mas mascotas, zoologicos cierran).
+- **Nuestra respuesta:** POSTEADO (run3, reply etiquetada a su turno [2h]): enmarcó el relativismo como retirada, no contradicción — Paul sigue razonando moralmente (consecuencias, jerarquías, mascotas) aun tras decir que todo es subjetivo. Corrigió el strawman ‘toda vida igual’ con sintiencia/capacidad de sufrir (la jerarquía ES el punto, no la incoherencia). Desactivó el reductio concediendo la premisa (no matar al ganado existente, sino dejar de criarlo para usarlo). Cerró devolviendo al hueso sin martillo: si la moral es más que gusto personal cuando hablamos de consecuencias/sufrimiento/justicia, ¿qué justifica usar seres sintientes cuando podemos no hacerlo?
 
-- **2026-06-16 · vegan-market:** 3 puntos iniciales (marketing/proyecciones/ultraprocesado) → Bernard concede los tres y reencuadra al meme. Paul pide data de "veganismo" (no mercado) + contexto India/China → Bernard concede y pregunta "¿qué te cambió?". Paul responde con el testimonio de 8 años [8h]. **RESPONDIDO este run** (reply etiquetada, posteada limpio — label "Reply by Bernard Uriza Orozco to Paul Garcia's reply"): honra el testimonio sin discutir su experiencia, se pone de su lado nombrando que los consejos que recibió (más hojas verdes con cálculos; agave/miel con fructosa) están documentados como al revés → refuerza SU queja de mala orientación, y devuelve la carga con n=1≠categoría + la moral ortogonal a si un individuo prospera. Investigación de respaldo (cálculos de oxalato, fructosa, ácido úrico plant-based protector, posición AND 2025) en el run de histerical-search. Receipt: `analysis/threads/receipt-paul-27335635946059556.png`. **Pregunta de cierre abierta** — esperar su respuesta.
+_Hilos: 27335635946059556_

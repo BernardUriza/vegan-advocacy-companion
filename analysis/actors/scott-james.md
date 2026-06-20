@@ -1,37 +1,36 @@
 # Scott James
 
+> GENERATED from `data/actors.json` by `scripts/gen-dossiers.mjs`. Do not hand-edit — edit the JSON and regenerate.
+
 - **user_id:** 100000050072653
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100000050072653/
-- **Bando:** Anti-vegan
-- **Postura núcleo:** "Ir vegano es el verdadero daño: mata 'bystanders' (cultivos) por lucro y exterminaría las razas domésticas."
+- **Bando:** anti-vegan
+- **Veredicto:** audiencia · **Registro:** filo
+- **Postura núcleo:** Ir vegano es el verdadero daño: mata 'bystanders' (cultivos) por lucro y exterminaría las razas domésticas.
 
-## Análisis duro
+## Análisis
 
-Comentario raíz (58m), aún sin responder. Dos gambitos clásicos en uno:
+Dos gambitos clásicos en uno: (1) crop-deaths flip — pinta la ganadería como 'producto con propósito' y la agricultura vegetal como matanza de inocentes por lucro. (2) 'Exterminar las razas domésticas' si todos fueran veganos. Retórico, condescendiente ('feelings hurt', 'small minority'). Ambos gambitos son falsables y muy educativos para el lurker.
 
-1. **Crop-deaths flip:** "growing & using a product designed for purpose vs
-   killing innocent bystanders for no use or purpose simply to maximise profits."
-   Invierte la carga moral: pinta la ganadería como "producto con propósito" y la
-   agricultura vegetal como matanza de inocentes por lucro. Es el mismo
-   crop-deaths de Matt Terrain, reencuadrado como acusación de hipocresía.
-2. **"Exterminar las razas domésticas":** "is it ethical to wipe out whole breeds
-   of domesticated birds & animals because a small minority have their feelings
-   hurt?" — el gambito de "si todos fueran veganos, el ganado desaparecería /
-   habría que matarlo". + desprecio ("feelings hurt", "small minority").
+## Tácticas
 
-Tácticas: crop-deaths, reductio falso (extinción de razas), framing de
-minoría/sentimentalismo, apelación al "propósito/lucro" como si legitimara.
+- **Crop Deaths / Bystander Flip** (`crop_deaths_flip`) — Uses the fact that crop agriculture kills field animals (mice, insects) to claim veganism causes more death, or to equate plant farming with animal farming morally. 'Growing crops kills innocent bystanders. Raising animals for purpose is cleaner.'
+  - _Contra:_ The distinction is intent and necessity. Crop deaths are incidental to feeding everyone, minimized where possible, and not the purpose of the activity. Animal farming kills intentionally and for non-necessity — and itself consumes more crops (70%+ of global cropland feeds animals, not humans). You don't escape crop deaths by eating meat; you add them.
+- **Abolition Reductio / Domesticated Animal Extinction** (`abolition_reductio`) — Frames the logical endpoint of veganism as absurd or cruel: if everyone went vegan, farm livestock would have to be killed/removed, there would be no pets, and zoos would close. Treats the wind-down of exploitation as a horror.
+  - _Contra:_ The reductio concedes the premise. We breed livestock into existence precisely to use them; stopping that means breeding fewer over time, not slaughtering the ones alive now. “No more animals bred to be killed” is the goal, not a nightmare. Pets and sanctuaries aren’t exploitation — the objection quietly swaps “using animals as resources” for “coexisting with animals.”
+- **Moving Goalposts** (`moving_goalposts`) — Changes the argument every time the current one is closed. Classic CarolAnn pattern: nutrition → omnivores → 'millions of years' → ecosystem → 'normal/default' → 'veganism is a belief system'. Each shift abandons the previous terrain without conceding it.
+  - _Contra:_ Name the move explicitly and briefly: 'notice what just happened — we just moved from [X] to [Y].' Then return to the original question without following the redirect. The lurker sees the pattern.
+- **Hostile Socratic Method** (`socrates_hostil`) — Disguises a trap as curiosity. Asks questions not to learn but to set up whack-a-mole redirection. 'Could you say exactly what the problem is with exploiting animals?' / 'List the exploitative events that are the problem.'
+  - _Contra:_ Don't bite. Answer the underlying question cleanly without following the redirect: 'Exploitation isn't a list of events — it's a relationship. Breeding a sentient being into existence for the purpose of using and killing it is the relationship, not a checklist.' Return the question.
 
-Tono: retórico, condescendiente ("feelings hurt"). No insulto directo.
+## Qué NO hacer
 
-**Veredicto:** audiencia, no conversión. Ambos gambitos son falsables y muy
-educativos de desmontar para el lurker (la ganadería *cría* a esos billones; un
-mundo que transiciona no "extermina razas", deja de criarlas; los crop-deaths
-son incidentales vs la matanza intencional + la ganadería consume MÁS cultivos).
-Buen blanco fresco, pero hoy gana CarolAnn por ser mención.
+No entrar en body-count de crop deaths. La distinción es intención y necesidad, no cantidad. En 'exterminar razas': el mundo que transiciona no extermina, deja de criar.
 
-## Log de acciones
+## Log de interacciones
 
-### Hilo `ethical-framework` (post 27341517928804691) — 2026-06-16
-- (58m) Raíz: crop-deaths flip + "exterminar razas domésticas / minoría con
-  sentimientos heridos". · **deuda abierta (no-mención), sin responder**
+### Hilo `27341517928804691` — 2026-06-18 · outcome: **pending**
+- **Su jugada:** Inversión/goalpost: me acusó de esquivar por no contestar sus DOS preguntas reformuladas; crop_deaths_flip ("criar para su propósito vs matar wildlife por profit") + abolition_reductio ("exterminar razas").
+- **Nuestra respuesta:** Reply etiquetada (filo, apertura sin vocativo): nombré la inversión (él sustituyó mi pregunta por dos suyas); desarmé Q1 ("designed for purpose" pide la cuestión; crop-deaths = rol del daño, no idénticas) y Q2 (dejar de criar ≠ exterminar); cerré devolviéndolo a la pregunta original.
+
+_Hilos: 27341517928804691_

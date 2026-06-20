@@ -1,50 +1,34 @@
 # Matt Terrain
 
+> GENERATED from `data/actors.json` by `scripts/gen-dossiers.mjs`. Do not hand-edit — edit the JSON and regenerate.
+
 - **user_id:** 100018422793817
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100018422793817/
-- **Bando:** Anti-vegan (variante futility / sócrates hostil)
-- **Postura núcleo:** "No existe consumo sin daño; si todo daña, el veganismo no es moralmente superior."
+- **Bando:** anti-vegan
+- **Veredicto:** audiencia · **Registro:** filo
+- **Postura núcleo:** No existe consumo sin daño; si todo daña, el veganismo no es moralmente superior.
 
-## Análisis duro
+## Análisis
 
-El más resbaladizo de clasificar. No defiende la carne con naturalismo como
-CarolAnn/Julia; ataca por el flanco de la **futilidad**: "dime qué comes, vistes
-o habitas que NO dañe a los animales o el ambiente". Es el argumento de "no hay
-consumo ético" usado para neutralizar el reclamo vegano por reducción al absurdo.
+El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qué comes, vistes o habitas que NO dañe'. Sócrates hostil: pregunta para tender trampa, no para aprender. Seco, retórico, no insultante. Argumentativo de verdad — busca pelea dialéctica. No muerde los argumentos de Bernard; los elude.
 
-Su comentario raíz — "Could you say exactly what the problem is with exploiting
-animals?" — parece una pregunta socrática neutral, pero leído junto a sus
-réplicas a Jeff es **sócrates hostil**: pregunta para tender trampa, no para
-aprender.
+## Tácticas
 
-Tácticas observadas:
-- **Futility / "no clean option"** ("everything harms, so veganism isn't special").
-- **Sócrates hostil** (preguntas-trampa disfrazadas de curiosidad).
-- Engancha y sostiene el intercambio (varias réplicas con Jeff).
+- **Futility / No Clean Option** (`futility_no_clean_option`) — Uses 'everything causes harm' to claim veganism isn't morally superior. 'Tell me what you eat, wear, or live in that allows you to choose NOT hurting animals.' Used to reduce veganism to absurdity by demanding zero harm.
+  - _Contra:_ Perfect is not the enemy of good. The question isn't zero-harm — it's unnecessary harm. 'Harm exists in every food system. The ethical question is whether we're justified in deliberately imposing harm on a sentient being when a reasonable alternative exists.' Don't bite the crop-deaths hook.
+- **Hostile Socratic Method** (`socrates_hostil`) — Disguises a trap as curiosity. Asks questions not to learn but to set up whack-a-mole redirection. 'Could you say exactly what the problem is with exploiting animals?' / 'List the exploitative events that are the problem.'
+  - _Contra:_ Don't bite. Answer the underlying question cleanly without following the redirect: 'Exploitation isn't a list of events — it's a relationship. Breeding a sentient being into existence for the purpose of using and killing it is the relationship, not a checklist.' Return the question.
+- **Crop Deaths / Bystander Flip** (`crop_deaths_flip`) — Uses the fact that crop agriculture kills field animals (mice, insects) to claim veganism causes more death, or to equate plant farming with animal farming morally. 'Growing crops kills innocent bystanders. Raising animals for purpose is cleaner.'
+  - _Contra:_ The distinction is intent and necessity. Crop deaths are incidental to feeding everyone, minimized where possible, and not the purpose of the activity. Animal farming kills intentionally and for non-necessity — and itself consumes more crops (70%+ of global cropland feeds animals, not humans). You don't escape crop deaths by eating meat; you add them.
 
-Tono: **seco, retórico**, no insultante. Argumentativo de verdad — busca pelea
-dialéctica, no solo trolear.
+## Qué NO hacer
 
-**Veredicto:** responder con cuidado y SOLO con el argumento correcto: futility
-se contesta con **reducción de daño / "lo perfecto no es enemigo de lo bueno"** —
-no se trata de daño-cero sino de daño-innecesario evitable. Su pregunta raíz
-("what exactly is the problem") sigue **sin responder** y es una puerta abierta
-para plantar el marco completo ante la galería.
+NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop deaths (pantano cebado para eso). NO intentar demostrar que el veganismo causa daño-cero.
 
-## Log de acciones
+## Log de interacciones
 
-### Hilo `ethical-framework` (post 27341517928804691) — 2026-06-16
-- (2h) Comentario raíz: "Could you say exactly what the problem is with exploiting animals?" · 1 reaction · **sin responder**
-- (2h) → Jeff Rockwell: "you make it sound like there's another option. One that involves NOT hurting animals or the environment…" · 1 reaction
-- (2h) → Jeff Rockwell: "tell me what you eat or wear or live, that allows you to choose NOT hurting animals or the environment ??" · 1 reaction
+### Hilo `27341517928804691` — 2026-06-16 · outcome: **silent**
+- **Su jugada:** I still don't see the distinction. Animals or crops. They both kill. List the exploitative events that are the problem.
+- **Nuestra respuesta:** Aterrizó la distinción de ROL del daño: subproducto de alimentar a todos vs el propósito mismo de la actividad. Reframeó 'exploitation' como RELACIÓN, no lista. Nombró que Matt usa esa distinción (accidente vs intención) en todo menos con animales. Devolvió la carga.
 
-### Actualización 2026-06-16 (tarde) — intercambio completo + deuda fresca [18m]
-La pregunta raíz YA fue respondida por Bernard (4h): distinción daño inevitable vs daño evitable/intencional, con la analogía del atropello deliberado vs accidente de tránsito. Matt NO engancha el argumento — lo elude:
-- (4h) "You said all food production involves harm, then said there's an alternative, then said harm is impossible. So which is it? How is providing sustenance unnecessary?" → confunde a propósito "sustento es necesario" con "sourcing animal es la parte opcional".
-- Bernard (3h) reafina: sustento necesario, fuente animal opcional; la pregunta es qué justifica el daño *evitable* específicamente.
-- **(18m, DEUDA, la mención):** "I still don't see the distinction. Animals or crops. They both kill. We veer off course, we were discussing exploitation. So list the exploitative events that are the problem." → DOS movimientos: (1) colapsa matar=explotar para borrar la distinción de intención; (2) anzuelo socrático "list the events" (whack-a-mole).
-- En paralelo le tira a Jeff Rockwell: "crop deaths son incidentales = mentira, going vegan helps environment = mentira, I eat only pasture raised, my diet causes fewer deaths than yours."
-
-**Jugada de este run:** NO morder el anzuelo de "listar eventos" (redirect), NO meterse al body-count de crop deaths (pantano, está cebado para eso). Aterrizar la distinción UNA vez limpia: matar como subproducto no buscado de alimentar a todos vs matar como el propósito mismo de la actividad — y que Matt usa esa misma distinción (accidente vs intención, en ley y vida diaria) en todo menos con animales. "Exploitation" no es una lista de eventos: es la relación — criar un ser sintiente para usarlo y matarlo por algo que no necesitamos. Devolver la carga.
-
-**RESPONDIDO [18m] este run** (reply etiquetada, posteada limpio — label "Reply by Bernard Uriza Orozco to Matt Terrain's reply"): aterriza la distinción de ROL del daño (subproducto de alimentar a todos vs el propósito mismo de la actividad), contesta su ask reframeando "exploitation" como RELACIÓN no lista, nombra que él usa esa misma distinción en todo menos con animales, y devuelve la carga. Sin morder body-count ni el anzuelo de enumerar. Receipt: `analysis/threads/receipt-matt-27341517928804691.png`. Pregunta de cierre abierta — esperar respuesta.
+_Hilos: 27341517928804691_

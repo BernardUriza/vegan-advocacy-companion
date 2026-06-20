@@ -1,38 +1,39 @@
 # Anna Angelika
 
+> GENERATED from `data/actors.json` by `scripts/gen-dossiers.mjs`. Do not hand-edit — edit the JSON and regenerate.
+
 - **user_id:** 100011355404997
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100011355404997/
-- **Bando:** Anti-vegan (agresiva / insulto)
-- **Postura núcleo:** "El veganismo es una minoría irrelevante de idiotas; Beyond Meat colapsó; vivimos en el presente, no en 2035."
+- **Bando:** anti-vegan
+- **Veredicto:** pozo_sin_fondo · **Registro:** filo
+- **Postura núcleo:** El veganismo es una minoría irrelevante de idiotas; Beyond Meat colapsó; vivimos en el presente, no en 2035.
 
-## Análisis duro
+## Análisis
 
-La contrincante **más hostil** del Hilo 2. Mezcla UN punto real (Beyond Meat
-cayó ~99% desde 2019) con un muro de insulto personal: "irrelevant minority",
-"idiots", "vegan lab slop", "watching you cry". Su táctica es **dominancia
-social, no argumento**: busca humillar ante la galería (juntó 3 reactions), no
-convencer.
+La contrincante más hostil del hilo vegan-market. Dominancia social, no argumento. Mezcla UN punto real (Beyond Meat cayó ~99%) con muro de insulto personal. Busca humillar ante la galería, no convencer. Pozo sin fondo para argumento directo; su valor es de contraste de temperamento para el lurker.
 
-Tácticas observadas:
-- **Cherry-pick de una empresa** (Beyond Meat) como prueba de toda la categoría —
-  falacia de composición. (Una acción ≠ el mercado plant-based.)
-- **Presentismo**: "we live in the present, not 2035" — descarta proyecciones por
-  ser futuras, sin tocar la tendencia.
-- **Insulto + desprecio de clase/estilo de vida** ("idiots", "cults", "lab slop").
-- **Apelación a la mayoría** ("irrelevant minority that has no say").
+## Tácticas
 
-Tono: **abiertamente despectivo, performativo**. No de buena fe; el objetivo es
-el aplauso de la galería carnista.
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`) — Attacks the person instead of the argument. Used for social dominance in the thread, not to persuade. 'Intellectually challenged retards', 'idiots', 'vegan lab slop', 'cult'. Often combined with one real data point as cover.
+  - _Contra:_ Don't match the register. Name the evasion calmly: 'When the argument runs out, the insults start.' Contrast of temperament is visible to the lurker. One line max, then return to substance or disengage entirely.
+- **Cherry-Pick: One Company = Category** (`cherry_pick_empresa`) — Uses the failure of one company (Beyond Meat's stock crash) to indict an entire category (plant-based food market). Composition fallacy.
+  - _Contra:_ One company with execution problems ≠ the category. Apple nearly went bankrupt in 1997 — that didn't prove personal computers were dying. Beyond Meat's stock tells you about Beyond Meat's business model, not the plant-based trend.
+- **Popularity as Moral Proof** (`popularidad_como_justificacion`) — Uses declining vegan adoption or market data as if it refutes the moral argument. 'Beyond Meat crashed. 3% → 1% of population. The meat market is growing.' Conflates popularity with moral justifiability.
+  - _Contra:_ Popularity doesn't determine moral truth. Slavery was normal and popular — that didn't make it right. The moral question is independent of the trend line.
+- **Appeal to Majority / Bandwagon** (`apelacion_mayoria`) — Justifies meat-eating because most people do it or vegans are a small minority. 'Irrelevant minority that has no say.' Confuses how many hold a view with whether it's correct.
+  - _Contra:_ The number of people who hold a view says nothing about whether it's justified. Most of humanity once accepted slavery. Being a minority isn't a refutation — it's just a head count.
+- **Presentism / Dismiss the Trend** (`presentismo`) — Dismisses projections or trends by insisting only the present moment counts. 'We live in the present, not 2035.' Used to wave away measured trajectories without engaging them.
+  - _Contra:_ A trend isn't refuted by saying 'but it's not the future yet.' The trajectory is measured in the present — that's the point. Dismissing tomorrow doesn't change today's direction.
+- **Moral Relativism Shield** (`relativismo_moral`) — Uses 'morality is subjective' as a conversation-stopper rather than an argument. Does not engage with the specific moral claim. 'My morals are fine with me eating animals as morals are subjective.'
+  - _Contra:_ Point out that they don't actually live by pure moral relativism — they have lines they wouldn't cross even if others called them moral. 'You wouldn't say torturing a child is equally valid because morals are subjective.' One line, for the lurker. Don't overextend.
+- **Autonomy / Anti-Dictation Frame** (`libertarian_autonomy`) — Reframes the moral argument as a political imposition: 'don't expect me to welcome you dictating what I can eat'. Conflates making an ethical argument with forcing compliance.
+  - _Contra:_ Pointing out that something causes harm isn't dictating. You can choose to eat meat; I can point out it harms a sentient being. Those are both true simultaneously. Nobody's forcing anything.
 
-**Veredicto:** NO responder al insulto en su nivel (regla de Bernard: no se rebaja
-a insultos — ver el patrón Buffo/Bufón del coagent). Si se contesta, es por la
-galería y SOLO el punto factual: Beyond Meat (una empresa con problemas de
-ejecución) ≠ la categoría plant-based (que crece); y "presente vs futuro" no borra
-la tendencia medida. Pero su ratio señal/ruido es bajo — probablemente pozo sin
-fondo. Mejor que una respuesta directa: un comentario raíz de datos que la
-neutralice junto con todo el pile-on de "veganismo muriendo".
+## Qué NO hacer
 
-## Log de acciones
+No responder al insulto en su nivel. No defender a Beyond Meat específicamente. Si se responde: una sola línea de contraste de temperamento + la meta-jugada (midiendo popularidad, no ética), y salir.
 
-### Hilo `vegan-market` (post 27335635946059556) — 2026-06-16
-- (14h) Comentario raíz · 3 reactions: "Was Beyond Meat included in those predictions? It crashed 99%… we live in the present, not 2035… irrelevant minority… idiots… vegan lab slop… watching you cry." · **sin responder**
+## Log de interacciones
+
+_(sin interacciones registradas)_
+_Hilos: 27335635946059556, 27363745576581926_

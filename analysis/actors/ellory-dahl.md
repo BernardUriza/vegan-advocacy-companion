@@ -1,49 +1,33 @@
 # Ellory Dahl
 
-- **user_id:** (pendiente — capturar del perfil en próxima pasada)
-- **Bando:** Anti-vegan — **insultador con data-dump**
-- **Postura núcleo:** "El veganismo está muriendo / es ridiculizado; los números lo prueban." Mide popularidad, no ética.
+> GENERATED from `data/actors.json` by `scripts/gen-dossiers.mjs`. Do not hand-edit — edit the JSON and regenerate.
 
-## Análisis duro
+- **user_id:** 100010556977700
+- **Perfil:** https://www.facebook.com/groups/770211166362062/user/100010556977700/
+- **Bando:** anti-vegan
+- **Veredicto:** pozo_sin_fondo · **Registro:** filo
+- **Postura núcleo:** El veganismo está muriendo / es ridiculizado; los números lo prueban.
 
-Insultador puro en forma ("intellectually challenged retards", "dumbasses",
-"retard" ×4) con tres data-points reales pegados encima. El patrón es
-**insulto + data-dump de popularidad**: cada "hecho" mide cuánta gente adopta el
-veganismo, no si está justificado.
+## Análisis
 
-Tácticas observadas:
-- **Insulto como apertura y cierre** (no argumento — temperamento).
-- **Data-dump de popularidad disfrazado de refutación moral:**
-  1. Beyond Meat $235 → $0.63 + rename legal ("no es legalmente meat").
-  2. China/Canadá: contratos de importación de carne (pork, beef, fish) crecientes.
-  3. "3% → 1% de la población, no hay crecimiento."
-- **Conflación popularidad↔justificación:** el núcleo del error. Que algo sea
-  impopular o un mal negocio no dice nada sobre si es correcto.
+Insultador puro (×8 comentarios, 'intellectually challenged retards', 'dumbasses') con tres data-points de popularidad reales pero mal usados. Patrón: insulto + data-dump de popularidad. Núcleo del error: popularidad ≠ justificación moral. Bernard ya desmontó los tres data-points en este hilo respondiendo a otras personas (Anna, Steve, Les).
 
-## Lo settled (Art. 7) — NO re-litigar dato por dato
+## Tácticas
 
-Bernard YA desmontó los tres puntos en este mismo hilo, a otras personas:
-- Beyond Meat → **Anna Angelika** [13h]: "stock price does not refute the moral argument".
-- China/India imports → **Steve Sullivan** [13h]: "confusing population trends with causation".
-- market/% → **Les M** [1h] / **Paul Garcia**: "market growth doesn't prove the world is going vegan — conceded".
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`) — Attacks the person instead of the argument. Used for social dominance in the thread, not to persuade. 'Intellectually challenged retards', 'idiots', 'vegan lab slop', 'cult'. Often combined with one real data point as cover.
+  - _Contra:_ Don't match the register. Name the evasion calmly: 'When the argument runs out, the insults start.' Contrast of temperament is visible to the lurker. One line max, then return to substance or disengage entirely.
+- **Selective Data Dump** (`data_dump_selectivo`) — Floods with data points that are real but cherry-picked and framed to support a pre-determined conclusion. Absolute numbers vs per-capita trends. Stock price vs category market. No causal analysis.
+  - _Contra:_ Concede what's true in the data, then expose the frame: 'Yes, Beyond Meat's stock crashed — that's one company with execution problems. The plant-based category grew 6% that year.' Don't match dump for dump. One incisive concede-and-reframe.
+- **Popularity as Moral Proof** (`popularidad_como_justificacion`) — Uses declining vegan adoption or market data as if it refutes the moral argument. 'Beyond Meat crashed. 3% → 1% of population. The meat market is growing.' Conflates popularity with moral justifiability.
+  - _Contra:_ Popularity doesn't determine moral truth. Slavery was normal and popular — that didn't make it right. The moral question is independent of the trend line.
+- **Cherry-Pick: One Company = Category** (`cherry_pick_empresa`) — Uses the failure of one company (Beyond Meat's stock crash) to indict an entire category (plant-based food market). Composition fallacy.
+  - _Contra:_ One company with execution problems ≠ the category. Apple nearly went bankrupt in 1997 — that didn't prove personal computers were dying. Beyond Meat's stock tells you about Beyond Meat's business model, not the plant-based trend.
 
-Re-refutar cada dato = repetirse + dar oxígeno a un troll. La jugada es META:
-nombrar que todos (Ellory, Roderick, CarolAnn, Buffo, Les) miden popularidad, no
-ética, y devolver al hueso (popularidad ≠ justificación; la esclavitud era normal
-y seguía siendo injusta). Una respuesta, plantar, salir.
+## Qué NO hacer
 
-## Tono
+NO refutar dato por dato (ya está hecho + da oxígeno a un troll). La jugada es META: nombrar que todos estos actores miden popularidad, no ética, y devolver al hueso con UNA respuesta.
 
-Hostil, despectivo, insulto por deporte. **No persuadible.** Valor exclusivo de
-**audiencia**: el lurker ve el contraste de temperamento (él grita "retard",
-Bernard sereno nombra la conflación). Roderick Huffsmith lo secunda sin argumento
-("So desperate. So ignorant." · "veganism on the path to extinction").
+## Log de interacciones
 
-## Log de acciones
-
-### Hilo `vegan-market` (post 27335635946059556) — 2026-06-16
-- ([19h], ×8 comentarios a Bernard/CarolAnn/raíz) Insulto + los 3 data-points de
-  popularidad. Secundado por Roderick Huffsmith.
-- (2026-06-16, tarde) Bernard corre el pipeline sobre él → jugada META decidida
-  (nombrar conflación popularidad/ética, contraste de temperamento, una sola
-  respuesta). Borrador vía coagent → gate de Bernard.
+_(sin interacciones registradas)_
+_Hilos: 27335635946059556_
