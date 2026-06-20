@@ -1,7 +1,7 @@
 import { writeFileSync, renameSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { readActors, readTactics } from './db.mjs';
+import { readActors, readTactics, readFrameworks } from './db.mjs';
 
 // JSON is the canonical source of truth (Art. 6). This regenerates the
 // human-readable dossier cards under analysis/actors/ from data/actors.json.
@@ -13,7 +13,14 @@ const OUT_DIR = resolve(ROOT, 'analysis/actors');
 
 const actors = readActors();
 const tactics = readTactics();
+const frameworks = readFrameworks();
 const tacticById = Object.fromEntries(tactics.map(t => [t.id, t]));
+
+// Same lookup logic as db.getFrameworksByTactic: a framework counters a tactic
+// when its related_tactics includes that tactic id.
+function frameworksByTactic(tacticId) {
+  return frameworks.filter(f => (f.related_tactics ?? []).includes(tacticId));
+}
 
 function slug(name) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -52,6 +59,27 @@ function renderActor(a) {
       lines.push(`- **${t.name}** (\`${tid}\`) — ${t.definition}`);
       lines.push(`  - _Contra:_ ${t.canonical_counter}`);
     }
+  }
+  lines.push('');
+  lines.push('## Counter-arsenal');
+  lines.push('');
+  lines.push('> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.');
+  lines.push('');
+  if (a.tactics.length === 0) {
+    lines.push('_(sin tácticas → sin counter-frameworks)_');
+  } else {
+    let anyCounter = false;
+    for (const tid of a.tactics) {
+      const t = tacticById[tid];
+      const counters = frameworksByTactic(tid);
+      if (counters.length === 0) continue;
+      anyCounter = true;
+      lines.push(`- **${t ? t.name : tid}** (\`${tid}\`)`);
+      for (const f of counters) {
+        lines.push(`  - \`${f.id}\` → _deploy as:_ ${f.deploy_as}`);
+      }
+    }
+    if (!anyCounter) lines.push('_(ninguna táctica tiene counter-framework registrado)_');
   }
   lines.push('');
   lines.push('## Qué NO hacer');

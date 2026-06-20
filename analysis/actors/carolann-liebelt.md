@@ -29,6 +29,59 @@ Principal contrincante de Bernard. Su argumento MUTA cada vez que se le cierra u
 - **Is-Ought / Naturalistic Fallacy** (`is_ought`) — Derives a moral 'should' from a descriptive 'is'. 'Biologically designed to eat meat' → 'therefore morally right to eat meat'. The jump from biological fact to moral justification needs justification that is never given.
   - _Contra:_ Separate is from should: 'That's what we can do — it says nothing about what we should do. We're also biologically capable of many things we consider wrong. Capability doesn't confer permission.'
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Moving Goalposts** (`moving_goalposts`)
+  - `por-que-no-maltrato-rigor-conceptual` → _deploy as:_ premisa_portante
+  - `semaforo-rojo-amarillo-welfarismo` → _deploy as:_ marco
+  - `arbol-causa-sintoma` → _deploy as:_ marco
+- **Appeal to Nature / Naturalismo** (`naturalismo`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `njn-normal-justo-necesario` → _deploy as:_ marco
+  - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
+  - `extranar-lo-naturalizado` → _deploy as:_ marco
+  - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
+- **Burden of Proof Reversal** (`inversion_carga`)
+  - `esclavitud-paralelismo` → _deploy as:_ marco
+  - `crueldad-no-es-la-causa` → _deploy as:_ marco
+  - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
+- **Appeal to Normalcy / Default** (`apelacion_normal`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `violencia-especista` → _deploy as:_ marco
+  - `no-sabemos-que-tenemos-problema` → _deploy as:_ marco
+  - `njn-normal-justo-necesario` → _deploy as:_ marco
+  - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
+  - `violencia-discursiva` → _deploy as:_ marco
+  - `paralelo-luchas-sociales-centrismos` → _deploy as:_ marco
+  - `extranar-lo-naturalizado` → _deploy as:_ marco
+  - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
+  - `mentir-a-las-criaturas-sostiene-el-sistema` → _deploy as:_ marco
+  - `normalizar-solo-una-parte-realidad` → _deploy as:_ marco
+- **Reframe: Veganism as Belief System** (`reencuadre_veganismo_creencia`)
+  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente
+  - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
+  - `dimension-politica-tomar-posicion` → _deploy as:_ marco
+  - `carnismo-anonimato-critica` → _deploy as:_ marco
+  - `formar-activistas-no-veganos` → _deploy as:_ auto-disciplina-del-activista
+  - `violencia-discursiva` → _deploy as:_ marco
+  - `filtro-especie-vs-individuo` → _deploy as:_ marco
+  - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+  - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
+  - `mi-desarrollar-discrepancia` → _deploy as:_ marco
+- **Begging the Question / Circular Reasoning** (`peticion_de_principio`)
+  - `esclavitud-paralelismo` → _deploy as:_ marco
+  - `domesticar-eufemismo-dominar` → _deploy as:_ marco
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
+  - `no-es-opcion-de-vida` → _deploy as:_ marco
+  - `filtro-especie-vs-individuo` → _deploy as:_ marco
+- **Is-Ought / Naturalistic Fallacy** (`is_ought`)
+  - `conocimiento-compromete` → _deploy as:_ marco
+
 ## Qué NO hacer
 
 No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No hacer data-dump de nutrición cuando pide fuentes — eso es el pantano que quiere. Nombrar el goalpost-move brevemente y devolver al hueso moral.

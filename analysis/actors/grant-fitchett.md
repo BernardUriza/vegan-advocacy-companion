@@ -29,6 +29,41 @@ Motor del hilo (14 turnos). Repite el bucle CAN→SHOULD sin avanzar: cuando Rü
 - **AI Accusation / Bot Dismissal** (`ai_accusation`) — Dismisses a well-composed reply by claiming it was written by AI ("you are using ai, at least try to hide it", "bot", "chatgpt wrote this") instead of engaging the substance. Poisons credibility so nothing the person said has to be answered. Increasingly common against articulate interlocutors.
   - _Contra:_ Do NOT protest authenticity or write a long defense — length and polish confirm the accusation to the lurker. Answer SHORT and unmistakably human: a dry, low-effort line that the substance was never addressed. The composure + brevity kills the jab; the lurker sees who dodged and who answered.
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Appeal to Nature / Naturalismo** (`naturalismo`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `njn-normal-justo-necesario` → _deploy as:_ marco
+  - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
+  - `extranar-lo-naturalizado` → _deploy as:_ marco
+  - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
+- **Is-Ought / Naturalistic Fallacy** (`is_ought`)
+  - `conocimiento-compromete` → _deploy as:_ marco
+- **Begging the Question / Circular Reasoning** (`peticion_de_principio`)
+  - `esclavitud-paralelismo` → _deploy as:_ marco
+  - `domesticar-eufemismo-dominar` → _deploy as:_ marco
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
+  - `no-es-opcion-de-vida` → _deploy as:_ marco
+  - `filtro-especie-vs-individuo` → _deploy as:_ marco
+- **Hostile Socratic Method** (`socrates_hostil`)
+  - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
+- **Burden of Proof Reversal** (`inversion_carga`)
+  - `esclavitud-paralelismo` → _deploy as:_ marco
+  - `crueldad-no-es-la-causa` → _deploy as:_ marco
+  - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
+  - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
+  - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
+  - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
+  - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
+  - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+- **AI Accusation / Bot Dismissal** (`ai_accusation`)
+  - `educador-no-adoctrina-responde` → _deploy as:_ auto-disciplina-del-activista
+
 ## Qué NO hacer
 
 No entrar a su bucle 'by what authority'. No defender a Beyond Meat ni pelear el dato omnívoro (concedido). Si acaso, una línea nombrando que lleva 14 comentarios respondiendo 'porque sí' a la misma pregunta — y salir.

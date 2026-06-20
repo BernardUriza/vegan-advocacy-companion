@@ -21,6 +21,22 @@ El arguer más peligroso por civil y por estructurado. No insulta, no naturaliza
 - **Domestication = Mutualism / Commensalism** (`domestication_mutualism`) — Frames domesticated animal use as a symbiotic or commensal relationship ('ants exploit aphids', 'humans and domesticates have commensal relationships that benefit both'). Misuses biology terms — commensalism means one benefits, the other is unaffected; mutualism means both benefit. Neither describes farming-to-slaughter.
   - _Contra:_ Expose the error in the biology term itself: commensalism means one benefits, the other is neither helped nor harmed — not slaughtered. Real mutualism doesn't include one party's death as its purpose. The analogy collapses on its own terms.
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Principle Shield / Begging the Principle** (`principio_escudo`)
+  - `genesis-invertido` → _deploy as:_ marco
+  - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
+- **Selective Data Dump** (`data_dump_selectivo`)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `mensaje-importa-formas-determinantes` → _deploy as:_ auto-disciplina-del-activista
+  - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+- **Domestication = Mutualism / Commensalism** (`domestication_mutualism`)
+  - `domesticar-eufemismo-dominar` → _deploy as:_ marco
+  - `violencia-estructural-infraestructura` → _deploy as:_ marco
+  - `premisa-falsa-los-animales-nos-dan` → _deploy as:_ marco
+
 ## Qué NO hacer
 
 No usar 'consent' como argumento único (fácilmente deflectado a bebés/mascotas). No entrar en definiciones de diccionario de 'exploitation' o 'benefit'. No hacer analogías humanas fuertes (esclavitud). No decir 'the animal would rather not exist'. Exponer la estructura, no las palabras.

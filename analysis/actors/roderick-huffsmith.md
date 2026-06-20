@@ -21,6 +21,37 @@ Troll contemptuoso (4 turnos), cero argumento. Su único contenido sustantivo es
 - **Reframe: Veganism as Belief System** (`reencuadre_veganismo_creencia`) — Reframes veganism as a 'belief system', 'cult', or 'ideology' equivalent to religion to exempt the interlocutor from engaging with its arguments. 'Veganism is a belief system and I'm not obligated to share those beliefs.'
   - _Contra:_ The claim that causing unnecessary harm to sentient beings is wrong isn't a religious belief — it's an ethical proposition with reasons behind it. Calling it a belief system doesn't make the reasons disappear. What's the argument against the reasons?
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
+  - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
+  - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
+  - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
+  - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
+  - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+- **Moral Relativism Shield** (`relativismo_moral`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `violencia-especista` → _deploy as:_ marco
+  - `especidio` → _deploy as:_ marco (con cautela)
+  - `conocimiento-compromete` → _deploy as:_ marco
+  - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
+  - `dimension-politica-tomar-posicion` → _deploy as:_ marco
+  - `no-es-opcion-de-vida` → _deploy as:_ marco
+  - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+- **Reframe: Veganism as Belief System** (`reencuadre_veganismo_creencia`)
+  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente
+  - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
+  - `dimension-politica-tomar-posicion` → _deploy as:_ marco
+  - `carnismo-anonimato-critica` → _deploy as:_ marco
+  - `formar-activistas-no-veganos` → _deploy as:_ auto-disciplina-del-activista
+  - `violencia-discursiva` → _deploy as:_ marco
+  - `filtro-especie-vs-individuo` → _deploy as:_ marco
+  - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+  - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
+  - `mi-desarrollar-discrepancia` → _deploy as:_ marco
+
 ## Qué NO hacer
 
 No pelear 'vegan cult'. No tomarse personal el 'little Bernie'. Máximo: reencuadrar la objeción de formato en una línea, sin filo.

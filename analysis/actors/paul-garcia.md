@@ -23,6 +23,30 @@ El arguer civil más valioso del hilo vegan-market. Ex-vegano de 8 años con his
 - **Abolition Reductio / Domesticated Animal Extinction** (`abolition_reductio`) — Frames the logical endpoint of veganism as absurd or cruel: if everyone went vegan, farm livestock would have to be killed/removed, there would be no pets, and zoos would close. Treats the wind-down of exploitation as a horror.
   - _Contra:_ The reductio concedes the premise. We breed livestock into existence precisely to use them; stopping that means breeding fewer over time, not slaughtering the ones alive now. “No more animals bred to be killed” is the goal, not a nightmare. Pets and sanctuaries aren’t exploitation — the objection quietly swaps “using animals as resources” for “coexisting with animals.”
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Personal Anecdote as Category Evidence** (`anecdota_personal_n1`)
+  - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+- **Selective Data Dump** (`data_dump_selectivo`)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `mensaje-importa-formas-determinantes` → _deploy as:_ auto-disciplina-del-activista
+  - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+- **Moral Relativism Shield** (`relativismo_moral`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `violencia-especista` → _deploy as:_ marco
+  - `especidio` → _deploy as:_ marco (con cautela)
+  - `conocimiento-compromete` → _deploy as:_ marco
+  - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
+  - `dimension-politica-tomar-posicion` → _deploy as:_ marco
+  - `no-es-opcion-de-vida` → _deploy as:_ marco
+  - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+- **Abolition Reductio / Domesticated Animal Extinction** (`abolition_reductio`)
+  - `pollo-inconsciente-reductio` → _deploy as:_ premisa_portante
+  - `vegano-por-un-dia-racista-entre-semana` → _deploy as:_ marco
+  - `semaforo-rojo-amarillo-welfarismo` → _deploy as:_ marco
+
 ## Qué NO hacer
 
 NO disputar su experiencia. NO atacar si la dieta fue la causa. Honrar el testimonio, ponerse de su lado contra los malos consejos que recibió, y ENTONCES separar n=1 de la categoría. No usar el martillo moral (él ya lo descartó).

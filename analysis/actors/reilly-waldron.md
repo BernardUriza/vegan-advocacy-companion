@@ -16,6 +16,12 @@ Aliado (4 turnos) con buena sustancia: 'meat is possible, not necessary; nobody'
 
 _(ninguna registrada)_
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+_(sin tácticas → sin counter-frameworks)_
+
 ## Qué NO hacer
 
 No imitar su cierre condescendiente. El filo va al servicio del marco, no al insulto que da coartada.

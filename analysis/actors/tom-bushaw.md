@@ -16,6 +16,12 @@ Un turno, jab psicológico a Anna. Aliado de bajo volumen.
 
 _(ninguna registrada)_
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+_(sin tácticas → sin counter-frameworks)_
+
 ## Qué NO hacer
 
 —

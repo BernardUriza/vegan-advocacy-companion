@@ -19,6 +19,21 @@ Low-effort. Estira el término 'explotación' a plantas y animales no-sintientes
 - **Is-Ought / Naturalistic Fallacy** (`is_ought`) — Derives a moral 'should' from a descriptive 'is'. 'Biologically designed to eat meat' → 'therefore morally right to eat meat'. The jump from biological fact to moral justification needs justification that is never given.
   - _Contra:_ Separate is from should: 'That's what we can do — it says nothing about what we should do. We're also biologically capable of many things we consider wrong. Capability doesn't confer permission.'
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Appeal to Nature / Naturalismo** (`naturalismo`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `njn-normal-justo-necesario` → _deploy as:_ marco
+  - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
+  - `extranar-lo-naturalizado` → _deploy as:_ marco
+  - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
+- **Is-Ought / Naturalistic Fallacy** (`is_ought`)
+  - `conocimiento-compromete` → _deploy as:_ marco
+
 ## Qué NO hacer
 
 No gastar una jugada principal. Si se responde: una línea que reponga la distinción de sentiencia, nada más.

@@ -29,6 +29,59 @@ La carnista más elaborada del hilo — escribe párrafos, no one-liners. Alto v
 - **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`) — Asserts that human life is categorically more valuable than animal life as a premise, without arguing for the criterion. 'Human life is far more valuable than animal life, therefore exploitation is justified.'
   - _Contra:_ Ask for the criterion: 'What makes human interests categorically outweigh animal interests? Whatever criterion you give — sentience, capacity to suffer, social bonds, language — either also applies to some animals or fails to draw the line you need. The hierarchy needs an argument, not an assertion.'
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Is-Ought / Naturalistic Fallacy** (`is_ought`)
+  - `conocimiento-compromete` → _deploy as:_ marco
+- **Begging the Question / Circular Reasoning** (`peticion_de_principio`)
+  - `esclavitud-paralelismo` → _deploy as:_ marco
+  - `domesticar-eufemismo-dominar` → _deploy as:_ marco
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
+  - `no-es-opcion-de-vida` → _deploy as:_ marco
+  - `filtro-especie-vs-individuo` → _deploy as:_ marco
+- **Predator Comparison / Lion Argument** (`predator_comparison`)
+  - `paralelo-luchas-sociales-centrismos` → _deploy as:_ marco
+- **Welfare Rhetoric / Comfortable Life Defense** (`welfare_rhetoric`)
+  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente
+  - `violencia-especista` → _deploy as:_ marco
+  - `especidio` → _deploy as:_ marco (con cautela)
+  - `domesticar-eufemismo-dominar` → _deploy as:_ marco
+  - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
+  - `crueldad-no-es-la-causa` → _deploy as:_ marco
+  - `pollo-inconsciente-reductio` → _deploy as:_ premisa_portante
+  - `por-que-no-maltrato-rigor-conceptual` → _deploy as:_ premisa_portante
+  - `semaforo-rojo-amarillo-welfarismo` → _deploy as:_ marco
+  - `arbol-causa-sintoma` → _deploy as:_ marco
+  - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
+  - `bienestarismo-jugada-maestra-del-poder` → _deploy as:_ marco
+  - `consideracion-moral-no-fin-del-sufrimiento` → _deploy as:_ marco
+  - `gore-backfire-vaca-idilica` → _deploy as:_ auto-disciplina-del-activista
+  - `mi-desarrollar-discrepancia` → _deploy as:_ marco
+  - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+- **Whataboutism / Human Exploitation Deflection** (`whataboutism`)
+  - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
+  - `pandemia-cooptada-todo-vale` → _deploy as:_ auto-disciplina-del-activista
+- **Appeal to Nature / Naturalismo** (`naturalismo`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `njn-normal-justo-necesario` → _deploy as:_ marco
+  - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
+  - `extranar-lo-naturalizado` → _deploy as:_ marco
+  - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
+- **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `esclavitud-paralelismo` → _deploy as:_ marco
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
+  - `explotacion-vs-esclavitud-lexico` → _deploy as:_ auto-disciplina-del-activista
+  - `vegano-por-un-dia-racista-entre-semana` → _deploy as:_ marco
+  - `paralelo-luchas-sociales-centrismos` → _deploy as:_ marco
+  - `filtro-especie-vs-individuo` → _deploy as:_ marco
+  - `libros-de-texto-niegan-sintiencia` → _deploy as:_ marco
+
 ## Qué NO hacer
 
 No hacer factory farming el centro del argumento (pivotan a 'humane/pasture-raised'). No data-dumpear nutrición. Trabajar el marco moral que aplica a TODO uso animal, no solo al industrial.

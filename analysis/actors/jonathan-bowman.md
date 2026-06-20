@@ -19,6 +19,17 @@ Un turno. Pose de apertura ('ready to listen') que puede ser genuina o performat
 - **Hostile Socratic Method** (`socrates_hostil`) — Disguises a trap as curiosity. Asks questions not to learn but to set up whack-a-mole redirection. 'Could you say exactly what the problem is with exploiting animals?' / 'List the exploitative events that are the problem.'
   - _Contra:_ Don't bite. Answer the underlying question cleanly without following the redirect: 'Exploitation isn't a list of events — it's a relationship. Breeding a sentient being into existence for the purpose of using and killing it is the relationship, not a checklist.' Return the question.
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Burden of Proof Reversal** (`inversion_carga`)
+  - `esclavitud-paralelismo` → _deploy as:_ marco
+  - `crueldad-no-es-la-causa` → _deploy as:_ marco
+  - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
+- **Hostile Socratic Method** (`socrates_hostil`)
+  - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
+
 ## Qué NO hacer
 
 No descartarlo como troll. Darle el argumento de necesidad una vez, sin condescendencia; el lurker juzga si su 'ready to listen' era real.

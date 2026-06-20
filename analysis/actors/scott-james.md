@@ -23,6 +23,24 @@ Dos gambitos clásicos en uno: (1) crop-deaths flip — pinta la ganadería como
 - **Hostile Socratic Method** (`socrates_hostil`) — Disguises a trap as curiosity. Asks questions not to learn but to set up whack-a-mole redirection. 'Could you say exactly what the problem is with exploiting animals?' / 'List the exploitative events that are the problem.'
   - _Contra:_ Don't bite. Answer the underlying question cleanly without following the redirect: 'Exploitation isn't a list of events — it's a relationship. Breeding a sentient being into existence for the purpose of using and killing it is the relationship, not a checklist.' Return the question.
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Crop Deaths / Bystander Flip** (`crop_deaths_flip`)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
+- **Abolition Reductio / Domesticated Animal Extinction** (`abolition_reductio`)
+  - `pollo-inconsciente-reductio` → _deploy as:_ premisa_portante
+  - `vegano-por-un-dia-racista-entre-semana` → _deploy as:_ marco
+  - `semaforo-rojo-amarillo-welfarismo` → _deploy as:_ marco
+- **Moving Goalposts** (`moving_goalposts`)
+  - `por-que-no-maltrato-rigor-conceptual` → _deploy as:_ premisa_portante
+  - `semaforo-rojo-amarillo-welfarismo` → _deploy as:_ marco
+  - `arbol-causa-sintoma` → _deploy as:_ marco
+- **Hostile Socratic Method** (`socrates_hostil`)
+  - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
+
 ## Qué NO hacer
 
 No entrar en body-count de crop deaths. La distinción es intención y necesidad, no cantidad. En 'exterminar razas': el mundo que transiciona no extermina, deja de criar.

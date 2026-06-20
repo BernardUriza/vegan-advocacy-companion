@@ -16,6 +16,12 @@ El único aliado de Bernard en el hilo. Cubre el flanco ambiental/sistémico con
 
 _(ninguna registrada)_
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+_(sin tácticas → sin counter-frameworks)_
+
 ## Qué NO hacer
 
 No duplicar su data. Construir encima. No responderle a él directamente — dividir trabajo sin pisarse.

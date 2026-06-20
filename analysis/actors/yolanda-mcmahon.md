@@ -23,6 +23,37 @@ La única contrincante de buena fe real del hilo. Da razones personales, enganch
 - **Personal Anecdote as Category Evidence** (`anecdota_personal_n1`) — Uses a personal experience (health decline attributed to vegan diet) as evidence against veganism as a category. N=1 presented as N=all. Common with ex-vegans.
   - _Contra:_ Honor the experience, separate the inference: 'That experience is real and the medical advice you got sounds genuinely bad. But one poorly-navigated vegan journey — especially with misdiagnosed oxalate issues — doesn't indict the diet as a category any more than one poorly-navigated omnivore diet would.' Empathize first, then separate n=1 from the category.
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Crop Deaths / Bystander Flip** (`crop_deaths_flip`)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
+- **Welfare Rhetoric / Comfortable Life Defense** (`welfare_rhetoric`)
+  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente
+  - `violencia-especista` → _deploy as:_ marco
+  - `especidio` → _deploy as:_ marco (con cautela)
+  - `domesticar-eufemismo-dominar` → _deploy as:_ marco
+  - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
+  - `crueldad-no-es-la-causa` → _deploy as:_ marco
+  - `pollo-inconsciente-reductio` → _deploy as:_ premisa_portante
+  - `por-que-no-maltrato-rigor-conceptual` → _deploy as:_ premisa_portante
+  - `semaforo-rojo-amarillo-welfarismo` → _deploy as:_ marco
+  - `arbol-causa-sintoma` → _deploy as:_ marco
+  - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
+  - `bienestarismo-jugada-maestra-del-poder` → _deploy as:_ marco
+  - `consideracion-moral-no-fin-del-sufrimiento` → _deploy as:_ marco
+  - `gore-backfire-vaca-idilica` → _deploy as:_ auto-disciplina-del-activista
+  - `mi-desarrollar-discrepancia` → _deploy as:_ marco
+  - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+- **Selective Data Dump** (`data_dump_selectivo`)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `mensaje-importa-formas-determinantes` → _deploy as:_ auto-disciplina-del-activista
+  - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+- **Personal Anecdote as Category Evidence** (`anecdota_personal_n1`)
+  - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+
 ## Qué NO hacer
 
 No dogpilear donde Rüdiger ya tiene la última palabra. No tratarla como Grant — es buena fe, el filo la endurecería. Si se entra: registro compasivo, conceder los nichos regenerativos y devolver al hueso (qué justifica criar+matar, no qué sistema agrícola es marginalmente mejor).

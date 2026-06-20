@@ -29,6 +29,43 @@ La contrincante más hostil del hilo vegan-market. Dominancia social, no argumen
 - **Autonomy / Anti-Dictation Frame** (`libertarian_autonomy`) — Reframes the moral argument as a political imposition: 'don't expect me to welcome you dictating what I can eat'. Conflates making an ethical argument with forcing compliance.
   - _Contra:_ Pointing out that something causes harm isn't dictating. You can choose to eat meat; I can point out it harms a sentient being. Those are both true simultaneously. Nobody's forcing anything.
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
+  - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
+  - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
+  - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
+  - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
+  - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+- **Cherry-Pick: One Company = Category** (`cherry_pick_empresa`)
+  - `genesis-invertido` → _deploy as:_ marco
+  - `arbol-causa-sintoma` → _deploy as:_ marco
+  - `bienestarismo-jugada-maestra-del-poder` → _deploy as:_ marco
+- **Popularity as Moral Proof** (`popularidad_como_justificacion`)
+  - `njn-normal-justo-necesario` → _deploy as:_ marco
+  - `extranar-lo-naturalizado` → _deploy as:_ marco
+- **Appeal to Majority / Bandwagon** (`apelacion_mayoria`)
+  - `njn-normal-justo-necesario` → _deploy as:_ marco
+- **Presentism / Dismiss the Trend** (`presentismo`)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+- **Moral Relativism Shield** (`relativismo_moral`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `violencia-especista` → _deploy as:_ marco
+  - `especidio` → _deploy as:_ marco (con cautela)
+  - `conocimiento-compromete` → _deploy as:_ marco
+  - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
+  - `dimension-politica-tomar-posicion` → _deploy as:_ marco
+  - `no-es-opcion-de-vida` → _deploy as:_ marco
+  - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+- **Autonomy / Anti-Dictation Frame** (`libertarian_autonomy`)
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
+  - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
+  - `dimension-politica-tomar-posicion` → _deploy as:_ marco
+  - `no-es-opcion-de-vida` → _deploy as:_ marco
+  - `violencia-estructural-infraestructura` → _deploy as:_ marco
+
 ## Qué NO hacer
 
 No responder al insulto en su nivel. No defender a Beyond Meat específicamente. Si se responde: una sola línea de contraste de temperamento + la meta-jugada (midiendo popularidad, no ética), y salir.

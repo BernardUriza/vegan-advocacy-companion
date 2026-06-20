@@ -21,6 +21,28 @@ El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qu
 - **Crop Deaths / Bystander Flip** (`crop_deaths_flip`) — Uses the fact that crop agriculture kills field animals (mice, insects) to claim veganism causes more death, or to equate plant farming with animal farming morally. 'Growing crops kills innocent bystanders. Raising animals for purpose is cleaner.'
   - _Contra:_ The distinction is intent and necessity. Crop deaths are incidental to feeding everyone, minimized where possible, and not the purpose of the activity. Animal farming kills intentionally and for non-necessity — and itself consumes more crops (70%+ of global cropland feeds animals, not humans). You don't escape crop deaths by eating meat; you add them.
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Futility / No Clean Option** (`futility_no_clean_option`)
+  - `no-sabemos-que-tenemos-problema` → _deploy as:_ marco
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
+  - `conocimiento-compromete` → _deploy as:_ marco
+  - `pollo-inconsciente-reductio` → _deploy as:_ premisa_portante
+  - `entender-no-es-transformarse` → _deploy as:_ auto-disciplina-del-activista
+  - `violencia-estructural-infraestructura` → _deploy as:_ marco
+  - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
+  - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
+  - `economia-especista-heredada` → _deploy as:_ marco
+  - `antropoespecismo-universal-deslocalizar` → _deploy as:_ marco
+- **Hostile Socratic Method** (`socrates_hostil`)
+  - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
+- **Crop Deaths / Bystander Flip** (`crop_deaths_flip`)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
+
 ## Qué NO hacer
 
 NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop deaths (pantano cebado para eso). NO intentar demostrar que el veganismo causa daño-cero.

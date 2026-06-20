@@ -17,6 +17,13 @@ Un turno, mínimo. Ambigüedad real (Art. 2): la pregunta sola no revela bando. 
 - **Hostile Socratic Method** (`socrates_hostil`) — Disguises a trap as curiosity. Asks questions not to learn but to set up whack-a-mole redirection. 'Could you say exactly what the problem is with exploiting animals?' / 'List the exploitative events that are the problem.'
   - _Contra:_ Don't bite. Answer the underlying question cleanly without following the redirect: 'Exploitation isn't a list of events — it's a relationship. Breeding a sentient being into existence for the purpose of using and killing it is the relationship, not a checklist.' Return the question.
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Hostile Socratic Method** (`socrates_hostil`)
+  - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
+
 ## Qué NO hacer
 
 No asumir mala fe por una sola pregunta. Si responde, tratar como genuina hasta que demuestre lo contrario.

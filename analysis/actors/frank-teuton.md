@@ -27,6 +27,53 @@ Naturalismo sofisticado + insulto. En su replica de 5h escalo al combo crop-deat
 - **Moral Relativism Shield** (`relativismo_moral`) — Uses 'morality is subjective' as a conversation-stopper rather than an argument. Does not engage with the specific moral claim. 'My morals are fine with me eating animals as morals are subjective.'
   - _Contra:_ Point out that they don't actually live by pure moral relativism — they have lines they wouldn't cross even if others called them moral. 'You wouldn't say torturing a child is equally valid because morals are subjective.' One line, for the lurker. Don't overextend.
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Domestication = Mutualism / Commensalism** (`domestication_mutualism`)
+  - `domesticar-eufemismo-dominar` → _deploy as:_ marco
+  - `violencia-estructural-infraestructura` → _deploy as:_ marco
+  - `premisa-falsa-los-animales-nos-dan` → _deploy as:_ marco
+- **Appeal to Nature / Naturalismo** (`naturalismo`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `njn-normal-justo-necesario` → _deploy as:_ marco
+  - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
+  - `extranar-lo-naturalizado` → _deploy as:_ marco
+  - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
+  - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
+  - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
+  - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
+  - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
+  - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+- **Crop Deaths / Bystander Flip** (`crop_deaths_flip`)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
+- **Futility / No Clean Option** (`futility_no_clean_option`)
+  - `no-sabemos-que-tenemos-problema` → _deploy as:_ marco
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
+  - `conocimiento-compromete` → _deploy as:_ marco
+  - `pollo-inconsciente-reductio` → _deploy as:_ premisa_portante
+  - `entender-no-es-transformarse` → _deploy as:_ auto-disciplina-del-activista
+  - `violencia-estructural-infraestructura` → _deploy as:_ marco
+  - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
+  - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
+  - `economia-especista-heredada` → _deploy as:_ marco
+  - `antropoespecismo-universal-deslocalizar` → _deploy as:_ marco
+- **Moral Relativism Shield** (`relativismo_moral`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `violencia-especista` → _deploy as:_ marco
+  - `especidio` → _deploy as:_ marco (con cautela)
+  - `conocimiento-compromete` → _deploy as:_ marco
+  - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
+  - `dimension-politica-tomar-posicion` → _deploy as:_ marco
+  - `no-es-opcion-de-vida` → _deploy as:_ marco
+  - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+
 ## Qué NO hacer
 
 NO entrar a competencia de body-count ni disputar que las crop-deaths ocurren. Conceder el dato, devolver al rol-del-dano (subproducto incidental vs muerte intencional como proposito) y al hecho de que comer animales SUMA crop-deaths (70%+ del cultivo los alimenta). No responder al insulto en su registro.

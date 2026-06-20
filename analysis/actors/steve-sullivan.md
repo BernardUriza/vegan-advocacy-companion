@@ -19,6 +19,26 @@ Relativista + libertario. No defiende que comer carne sea correcto, defiende que
 - **Autonomy / Anti-Dictation Frame** (`libertarian_autonomy`) — Reframes the moral argument as a political imposition: 'don't expect me to welcome you dictating what I can eat'. Conflates making an ethical argument with forcing compliance.
   - _Contra:_ Pointing out that something causes harm isn't dictating. You can choose to eat meat; I can point out it harms a sentient being. Those are both true simultaneously. Nobody's forcing anything.
 
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Moral Relativism Shield** (`relativismo_moral`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `violencia-especista` → _deploy as:_ marco
+  - `especidio` → _deploy as:_ marco (con cautela)
+  - `conocimiento-compromete` → _deploy as:_ marco
+  - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
+  - `dimension-politica-tomar-posicion` → _deploy as:_ marco
+  - `no-es-opcion-de-vida` → _deploy as:_ marco
+  - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+- **Autonomy / Anti-Dictation Frame** (`libertarian_autonomy`)
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
+  - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
+  - `dimension-politica-tomar-posicion` → _deploy as:_ marco
+  - `no-es-opcion-de-vida` → _deploy as:_ marco
+  - `violencia-estructural-infraestructura` → _deploy as:_ marco
+
 ## Qué NO hacer
 
 No escribir un ensayo de metaética. Una observación incisiva (él mismo tiene líneas que no cruza aunque 'la moral es subjetiva') y salir. Bajo retorno.
