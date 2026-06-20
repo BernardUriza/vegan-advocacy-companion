@@ -70,6 +70,32 @@ Dentro de los de peso alto, gana el hilo con actividad más reciente y con
 réplicas-a-tus-réplicas (`reply_comment_id` presente) — ahí es donde más se pierde
 "dónde quedó". Las reacciones (`+15 reacted`) son informativas, nunca deuda.
 
+## Trampa: dismissive ≠ ruido, y el agregado "y N otros" ENTIERRA deuda
+
+Un comentario **raíz dismissive / relativista / burlón en TU propio post** SÍ es
+deuda de etapa 1, **NO ruido de baja prioridad**. El reflejo de bucketearlo como
+"troll low-effort / dopamina → saltar" es el error: es un `group_comment` (peso
+**alto**) sobre TU post, se burla de ti o de tu marco **por nombre frente al
+lurker**, y una burla del marco sin responder pierde al lector silencioso (el
+norte de [[reply-output-style]]). "Dismissive" describe el tono, no el peso —
+nunca lo confundas con "low-priority".
+
+Ejemplos verbatim que DEBEN saltar (2026-06-19, hilo `27363745576581926`):
+- **Anna Angelika** (raíz): *"I defend nothing… I won't justify it because there
+  is no one to justify it to. Morality is subjective."* — relativismo + negativa a
+  justificar.
+- **Roderick Huffsmith** (raíz): *"'Moral principle' what a joke… they might not
+  align with little Bernie's… an extremely weak manner in which to frame a
+  conversation."* — burla + ataque meta al marco.
+
+**Por qué no saltaban:** FB los **agrega**. En etapa 1 solo se ve una línea —
+"Rüdiger Preiss **y 4 otros** comentaron tu post" — y Anna/Roderick quedan entre
+esos "4 otros", individualmente invisibles; solo aparecen al extraer en etapa 2.
+Por eso el `"y N otros"` de un `group_comment`/`group_comment_mention` NO es una
+sola fila: es **deuda oculta a expandir** — la etapa 1 debe señalar que ese hilo
+esconde ~N comentarios raíz por triagear, no contar solo al autor nombrado. La
+frescura/conteo del agregado pesa por los N escondidos, no por el uno visible.
+
 ## Por qué existe
 
 Registrada 2026-06-16. Bernard se pierde en debates veganos de grupos grandes

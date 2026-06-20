@@ -32,3 +32,7 @@ doctrine/rag/*.pdf
 # Pipeline scratch (drafts + coagent prompts) — efímeros, no se versionan
 scripts/draft-*.txt
 scripts/coagent-prompt-*.txt
+
+# Scratch del pipeline (master prompts, drafts, screenshots) — no se versiona
+.coagent/
+.drafts/
