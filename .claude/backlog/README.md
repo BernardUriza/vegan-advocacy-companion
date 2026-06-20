@@ -48,12 +48,12 @@ determinista, #5 bajar dependencia del coagent.
 25. Frameworks faltantes para tácticas top sin cobertura (crop_deaths_flip, predator_comparison, ai_accusation…). — Proposed
 
 ## F. Extracción de contenido (la cola + tooling)
-26. Transcribir las 2 entrevistas de Instagram (ANIMAL HUMANO) + extraer frameworks. — Proposed
-27. Transcribir Veganismo Político (134 min) + extraer. — Proposed
+26. ~~Transcribir las 2 entrevistas de Instagram (ANIMAL HUMANO) + extraer frameworks.~~ — **Done** (+10 frameworks → 71).
+27. **Veganismo Político (134 min): TRANSCRITO** (`doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md`, 18.4k palabras). **Extracción de frameworks DIFERIDA** → In progress (falta correr el agente extractor sobre ese transcript vs los 71). — In progress
 28. OCR del cuerpo completo del PDF de Kachanoski con modelo `small` (hoy solo saqué estructura). — Proposed
 29. Re-transcribir Educación Especista con `ca`/autodetección para los tramos catalán garbleados. — Proposed
-30. `scripts/extract-frameworks.mjs`: empaquetar el patrón fan-out de extracción en script/comando reusable. — Proposed
-31. Extraer frameworks de la propia doctrina compasiva (`doctrine/rag/` — Rosenberg, IFS, NVC). — Proposed
+30. `scripts/extract-frameworks.mjs`: empaquetar el patrón fan-out de extracción en script/comando reusable. — **Done** (scaffold + merge_fw helper).
+31. ~~Extraer frameworks de la propia doctrina compasiva (`doctrine/rag/` — Rosenberg, IFS, NVC).~~ — **Done** (6 frameworks compasivos → en el arsenal).
 
 ## G. Mecánica del pipeline
 32. `notif-scan`: manejar notifs de perfil personal con `pfbid` (el fallback que la regla menciona). — Proposed
