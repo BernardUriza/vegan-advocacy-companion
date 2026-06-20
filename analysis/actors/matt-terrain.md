@@ -5,12 +5,12 @@
 - **user_id:** 100018422793817
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100018422793817/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** sink_un_round · **Registro:** filo
 - **Postura núcleo:** No existe consumo sin daño; si todo daña, el veganismo no es moralmente superior.
 
 ## Análisis
 
-El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qué comes, vistes o habitas que NO dañe'. Sócrates hostil: pregunta para tender trampa, no para aprender. Seco, retórico, no insultante. Argumentativo de verdad — busca pelea dialéctica. No muerde los argumentos de Bernard; los elude.
+El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qué comes, vistes o habitas que NO dañe'. Sócrates hostil: pregunta para tender trampa, no para aprender. Seco, retórico, no insultante. Argumentativo de verdad — busca pelea dialéctica. No muerde los argumentos de Bernard; los elude. SINK CONFIRMADO (2026-06-20): corre el MISMO guion en cada hilo (tu-quoque / goalpost / hipocresia) y NUNCA concede; tras nombrarle limpio la evasion colapsa al loop terminal "my statement stands, you are avoiding/lying" con cero argumento nuevo. Medido en 3 hilos el mismo dia (mercado, especismo, hipocresia): el primer intercambio limpio educa al lurker; del 2do round en adelante el retorno es cero.
 
 ## Tácticas
 
@@ -59,7 +59,7 @@ El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qu
 
 ## Qué NO hacer
 
-NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop deaths (pantano cebado para eso). NO intentar demostrar que el veganismo causa daño-cero.
+NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop deaths (pantano cebado para eso). NO intentar demostrar que el veganismo causa daño-cero. NO perseguir el loop terminal: ENTRAR UNA SOLA VEZ por hilo (nombrar la evasion + devolver al hueso) y dejar que su reafirmacion vacia quede como ultima palabra visible. NO redactar un 2do/3er rebuttal en el mismo hilo — es sink, el lurker ya vio el patron.
 
 ## Log de interacciones
 
