@@ -15,7 +15,8 @@
       "apelacion_normal",
       "species_hierarchy",
       "relativismo_moral"
-    ]
+    ],
+    "lurker_risk": "med"
   },
   {
     "id": "gobekli-kilometro-cero",
@@ -33,7 +34,8 @@
       "presentismo",
       "apelacion_normal",
       "species_hierarchy"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "revolucionar-la-revolucion",
@@ -49,7 +51,8 @@
     "related_tactics": [
       "reencuadre_veganismo_creencia",
       "welfare_rhetoric"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "violencia-especista",
@@ -66,7 +69,8 @@
       "relativismo_moral",
       "apelacion_normal",
       "welfare_rhetoric"
-    ]
+    ],
+    "lurker_risk": "med"
   },
   {
     "id": "especidio",
@@ -82,7 +86,8 @@
     "related_tactics": [
       "relativismo_moral",
       "welfare_rhetoric"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "esclavitud-paralelismo",
@@ -99,7 +104,8 @@
       "species_hierarchy",
       "peticion_de_principio",
       "inversion_carga"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "no-sabemos-que-tenemos-problema",
@@ -115,7 +121,8 @@
     "related_tactics": [
       "apelacion_normal",
       "futility_no_clean_option"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "domesticar-eufemismo-dominar",
@@ -132,7 +139,8 @@
       "domestication_mutualism",
       "welfare_rhetoric",
       "peticion_de_principio"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "algo-a-alguien-sujeto-derecho",
@@ -149,7 +157,8 @@
       "peticion_de_principio",
       "species_hierarchy",
       "libertarian_autonomy"
-    ]
+    ],
+    "lurker_risk": "med"
   },
   {
     "id": "no-necesidad-cambiaron-las-reglas",
@@ -167,7 +176,8 @@
       "futility_no_clean_option",
       "crop_deaths_flip",
       "data_dump_selectivo"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "njn-normal-justo-necesario",
@@ -185,7 +195,8 @@
       "naturalismo",
       "apelacion_mayoria",
       "popularidad_como_justificacion"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "matrix-pastilla-azul",
@@ -201,7 +212,8 @@
     "related_tactics": [
       "insulto_ad_hominem",
       "futility_no_clean_option"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "conocimiento-compromete",
@@ -218,7 +230,8 @@
       "is_ought",
       "futility_no_clean_option",
       "relativismo_moral"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "veganismo-no-es-dieta-ni-estilo-de-vida",
@@ -236,7 +249,8 @@
       "welfare_rhetoric",
       "relativismo_moral",
       "libertarian_autonomy"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "dimension-politica-tomar-posicion",
@@ -253,7 +267,8 @@
       "reencuadre_veganismo_creencia",
       "libertarian_autonomy",
       "relativismo_moral"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "liberar-la-mente-abre-todas-las-jaulas",
@@ -266,7 +281,11 @@
     "attack_surface": "Es frase de cierre épica/aforística — el tipo de 'conclusión demasiado perfecta' que en un reply de FB suena a IA (choca con reply-output-style: 'casi nunca una frase épica'). No argumenta, evoca. Úsala rarísimo y solo cuando el intercambio ya está ganado en sustancia.",
     "deploy_as": "marco",
     "source_ref": "doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md",
-    "related_tactics": []
+    "related_tactics": [
+      "apelacion_normal",
+      "naturalismo"
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "crueldad-no-es-la-causa",
@@ -282,7 +301,8 @@
     "related_tactics": [
       "welfare_rhetoric",
       "inversion_carga"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "pollo-inconsciente-reductio",
@@ -299,7 +319,8 @@
       "welfare_rhetoric",
       "futility_no_clean_option",
       "abolition_reductio"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "lenguaje-carne-hachazo",
@@ -312,7 +333,8 @@
     "attack_surface": "Ante un lurker casual, insistir en no decir 'carne' se lee como purismo lingüístico o gatekeeping ('ni hablar normal puedes') y desvía del fondo a una pelea de vocabulario. El propio Samuel lo marca como 'lectura política, no personal' porque suena a regaño.",
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md",
-    "related_tactics": []
+    "related_tactics": [],
+    "lurker_risk": "high"
   },
   {
     "id": "explotacion-vs-esclavitud-lexico",
@@ -327,7 +349,8 @@
     "source_ref": "doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md",
     "related_tactics": [
       "species_hierarchy"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "carnismo-anonimato-critica",
@@ -340,7 +363,10 @@
     "attack_surface": "Es debate intra-movimiento muy teórico; un lurker se pierde o lo lee como sectarismo ('pelean por nombres'). Joy defiende 'carnismo' como herramienta de visibilización — la crítica de Samuel es discutible, no consensuada.",
     "deploy_as": "marco",
     "source_ref": "doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md",
-    "related_tactics": []
+    "related_tactics": [
+      "reencuadre_veganismo_creencia"
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "genesis-invertido",
@@ -356,7 +382,8 @@
     "related_tactics": [
       "principio_escudo",
       "cherry_pick_empresa"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "vegano-por-un-dia-racista-entre-semana",
@@ -372,7 +399,8 @@
     "related_tactics": [
       "abolition_reductio",
       "species_hierarchy"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "no-es-opcion-de-vida",
@@ -389,7 +417,8 @@
       "relativismo_moral",
       "libertarian_autonomy",
       "peticion_de_principio"
-    ]
+    ],
+    "lurker_risk": "med"
   },
   {
     "id": "formar-activistas-no-veganos",
@@ -404,7 +433,8 @@
     "source_ref": "doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md",
     "related_tactics": [
       "reencuadre_veganismo_creencia"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "entender-no-es-transformarse",
@@ -419,7 +449,8 @@
     "source_ref": "doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md",
     "related_tactics": [
       "futility_no_clean_option"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "preocupa-mas-el-movimiento",
@@ -432,7 +463,8 @@
     "attack_surface": "Volcar el foco crítico hacia dentro puede leerse como fuego amigo/divisionismo que desmoraliza a la base, y un oponente externo lo explota ('hasta ellos admiten que están confundidos'). El balance autocrítica/unidad es disputable.",
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md",
-    "related_tactics": []
+    "related_tactics": [],
+    "lurker_risk": "low"
   },
   {
     "id": "violencia-discursiva",
@@ -448,7 +480,8 @@
     "related_tactics": [
       "reencuadre_veganismo_creencia",
       "apelacion_normal"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "por-que-no-maltrato-rigor-conceptual",
@@ -464,7 +497,8 @@
     "related_tactics": [
       "welfare_rhetoric",
       "moving_goalposts"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "paralelo-luchas-sociales-centrismos",
@@ -481,7 +515,8 @@
       "species_hierarchy",
       "apelacion_normal",
       "predator_comparison"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "extranar-lo-naturalizado",
@@ -498,7 +533,8 @@
       "apelacion_normal",
       "popularidad_como_justificacion",
       "naturalismo"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "filtro-especie-vs-individuo",
@@ -515,7 +551,8 @@
       "species_hierarchy",
       "peticion_de_principio",
       "reencuadre_veganismo_creencia"
-    ]
+    ],
+    "lurker_risk": "med"
   },
   {
     "id": "semaforo-rojo-amarillo-welfarismo",
@@ -532,7 +569,8 @@
       "welfare_rhetoric",
       "moving_goalposts",
       "abolition_reductio"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "arbol-causa-sintoma",
@@ -549,7 +587,8 @@
       "cherry_pick_empresa",
       "welfare_rhetoric",
       "moving_goalposts"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "consideracion-moral-no-cuanto-sufre",
@@ -566,7 +605,8 @@
       "inversion_carga",
       "welfare_rhetoric",
       "principio_escudo"
-    ]
+    ],
+    "lurker_risk": "med"
   },
   {
     "id": "violencia-estructural-infraestructura",
@@ -583,7 +623,8 @@
       "libertarian_autonomy",
       "domestication_mutualism",
       "futility_no_clean_option"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "violencia-indirecta-quien-demanda",
@@ -600,7 +641,8 @@
       "whataboutism",
       "futility_no_clean_option",
       "crop_deaths_flip"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "sembrar-en-el-receptivo",
@@ -616,7 +658,8 @@
     "related_tactics": [
       "futility_no_clean_option",
       "insulto_ad_hominem"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "especismo-se-programa-en-la-infancia",
@@ -632,7 +675,8 @@
     "related_tactics": [
       "naturalismo",
       "apelacion_normal"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "economia-especista-heredada",
@@ -647,7 +691,8 @@
     "source_ref": "doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md",
     "related_tactics": [
       "futility_no_clean_option"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "mentir-a-las-criaturas-sostiene-el-sistema",
@@ -660,7 +705,10 @@
     "attack_surface": "Se puede contestar que a los niños se les oculta también la muerte, el sexo o la guerra sin que eso vuelva inmorales esas cosas; ocultar algo crudo no prueba que sea malo, solo que es crudo. Hay que sostener que aquí lo ocultado es la víctima misma, no la mera dureza.",
     "deploy_as": "marco",
     "source_ref": "doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md",
-    "related_tactics": []
+    "related_tactics": [
+      "apelacion_normal"
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "premisa-falsa-los-animales-nos-dan",
@@ -675,7 +723,8 @@
     "source_ref": "doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md",
     "related_tactics": [
       "domestication_mutualism"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "libros-de-texto-niegan-sintiencia",
@@ -690,7 +739,8 @@
     "source_ref": "doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md",
     "related_tactics": [
       "species_hierarchy"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "normalizar-solo-una-parte-realidad",
@@ -705,7 +755,8 @@
     "source_ref": "doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md",
     "related_tactics": [
       "apelacion_normal"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "educador-no-adoctrina-responde",
@@ -720,7 +771,8 @@
     "source_ref": "doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md",
     "related_tactics": [
       "ai_accusation"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "respeto-persona-no-idea-inmoral",
@@ -736,7 +788,8 @@
     "related_tactics": [
       "relativismo_moral",
       "reencuadre_veganismo_creencia"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "single-issue-diluye-mensaje",
@@ -749,7 +802,8 @@
     "attack_surface": "Backfire por purismo: el interlocutor puede acusar de sectarismo o de despreciar aliados ecologistas/sanitarios. Contestable empíricamente — coaliciones amplias a veces SÍ movilizan más; claridad vs. alcance es un trade-off real.",
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Avolicion-Guerrero — texto extraido.md",
-    "related_tactics": []
+    "related_tactics": [],
+    "lurker_risk": "high"
   },
   {
     "id": "pandemia-cooptada-todo-vale",
@@ -764,7 +818,8 @@
     "source_ref": "doctrine/rag/Avolicion-Guerrero — texto extraido.md",
     "related_tactics": [
       "whataboutism"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "bienestarismo-jugada-maestra-del-poder",
@@ -780,7 +835,8 @@
     "related_tactics": [
       "welfare_rhetoric",
       "cherry_pick_empresa"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "consideracion-moral-no-fin-del-sufrimiento",
@@ -795,7 +851,8 @@
     "source_ref": "doctrine/rag/Avolicion-Guerrero — texto extraido.md",
     "related_tactics": [
       "welfare_rhetoric"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "informar-deber-ser-informado-derecho",
@@ -808,7 +865,8 @@
     "attack_surface": "Pasivo de más para urgencias: un crítico dirá que 'esperar a que se acerquen' es lujo de quien no sangra. Aplicado mal, racionaliza no incomodar nunca.",
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Avolicion-Guerrero — texto extraido.md",
-    "related_tactics": []
+    "related_tactics": [],
+    "lurker_risk": "low"
   },
   {
     "id": "mensaje-importa-formas-determinantes",
@@ -823,7 +881,8 @@
     "source_ref": "doctrine/rag/Avolicion-Guerrero — texto extraido.md",
     "related_tactics": [
       "data_dump_selectivo"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "gore-backfire-vaca-idilica",
@@ -838,7 +897,8 @@
     "source_ref": "doctrine/rag/Avolicion-Guerrero — texto extraido.md",
     "related_tactics": [
       "welfare_rhetoric"
-    ]
+    ],
+    "lurker_risk": "high"
   },
   {
     "id": "antropoespecismo-universal-deslocalizar",
@@ -853,7 +913,8 @@
     "source_ref": "doctrine/rag/Avolicion-Guerrero — texto extraido.md",
     "related_tactics": [
       "futility_no_clean_option"
-    ]
+    ],
+    "lurker_risk": "low"
   },
   {
     "id": "sintomatismo-sintomas-inconexos",
@@ -866,6 +927,107 @@
     "attack_surface": "Un organizador dirá que las campañas concretas y temáticas son las que movilizan, recaudan y consiguen leyes — el frame abstracto del 'antropoespecismo' no convoca a la calle. Insistir en la raíz puede leerse como desdén por el trabajo de base.",
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Avolicion-Guerrero — texto extraido.md",
-    "related_tactics": []
+    "related_tactics": [],
+    "lurker_risk": "low"
+  },
+  {
+    "id": "nvc-observacion-sin-juicio",
+    "name": "NVC: separar la observación del juicio",
+    "author": "Marshall Rosenberg (NVC)",
+    "tradition": "registro compasivo / comunicación no violenta",
+    "definition": "El primer componente de la Comunicación No Violenta: distinguir lo que SE OBSERVA (un hecho concreto, verificable) de la EVALUACIÓN que le montamos encima. Rosenberg: mezclar observación y juicio hace que el otro escuche crítica y se cierre; describir el hecho desnudo, sin etiqueta moral sobre la persona, deja la puerta abierta. \"Observing without evaluating is the highest form of human intelligence\".",
+    "enables": "En un hilo: describir la práctica (criar y matar seres sintientes para un plato evitable) sin colgarle al interlocutor la etiqueta 'asesino/cruel/hipócrita'. El hecho queda plantado para el lurker; la persona no recibe el ataque que la haría defenderse en vez de pensar. Es la base que evita el sermón moralista que el registro compasivo prohíbe.",
+    "register": "compasivo",
+    "attack_surface": "No es un argumento contra el oponente — es auto-disciplina del que escribe. Riesgo: confundirse con tibieza (describir sin nombrar nada se lee como no decir nada); la observación debe seguir devolviendo al hueso, no diluirlo. Mal usada, un activista la convierte en eufemismo y pierde el filo del marco.",
+    "deploy_as": "auto-disciplina-del-activista",
+    "source_ref": "doctrine/rag/Nonviolent Communication (Rosenberg) — texto extraido.md",
+    "related_tactics": [
+      "insulto_ad_hominem"
+    ],
+    "lurker_risk": "low"
+  },
+  {
+    "id": "ifs-hablarle-al-nino-herido",
+    "name": "IFS: hablarle al niño herido bajo la defensa",
+    "author": "Richard Schwartz (IFS / Sistemas Familiares Internos)",
+    "tradition": "registro compasivo / sistemas familiares internos",
+    "definition": "IFS modela la psique como un Yo central rodeado de 'partes': exiliados (que guardan dolor/vergüenza/miedo de experiencias tempranas) y protectores (gerentes y bomberos) cuyo trabajo es mantener al exiliado oculto para evitar la angustia. La hostilidad, la burla y el data-dump son PROTECTORES en acción — no la persona, sino la parte que blinda al exiliado herido bajo ella.",
+    "enables": "Releer el insulto o la defensa agresiva como un protector que cuida una herida (culpa, complicidad sentida, miedo a que el marco propio se caiga), no como la persona entera. Permite no contraatacar al protector sino dirigirse, con calma, a lo que protege — el contraste de temperamento que desarma ante el lurker. Mapea directo al 'padre invertido' de la doctrina compasiva.",
+    "register": "compasivo",
+    "attack_surface": "Jerga clínica (exiliados/protectores) NUNCA va al comentario — es lente interno del que escribe, no diagnóstico que se le suelta al otro ('tu parte herida habla' es condescendiente y enciende). Riesgo de psicologizar al oponente en público: se lee como superioridad terapéutica. Solo informa el TONO, no se nombra.",
+    "deploy_as": "auto-disciplina-del-activista",
+    "source_ref": "doctrine/rag/IFS - Sistemas Familiares Internos (Schwartz) — texto extraido.md",
+    "related_tactics": [
+      "insulto_ad_hominem"
+    ],
+    "lurker_risk": "high"
+  },
+  {
+    "id": "mi-evocar-cambio-sin-confrontar",
+    "name": "Entrevista Motivacional: evocar el cambio sin confrontar",
+    "author": "Miller & Rollnick (Entrevista Motivacional)",
+    "tradition": "registro compasivo / entrevista motivacional",
+    "definition": "La EM nace tratando la ambivalencia: la persona articula y resuelve sus propias razones para cambiar, no el consejero. \"Ni la persuasión directa ni la confrontación son métodos efectivos para resolver la ambivalencia\" — confrontar dispara resistencia, que es parte natural y esperada del proceso. El cambio se evoca, no se impone; la resistencia se rueda, no se choca.",
+    "enables": "Resistir el 'reflejo de corregir' (rebatir cada esquive empuja al otro a defender su posición más fuerte). En vez de demoler, plantar la pregunta y dejar que la incomodidad la trabaje el propio interlocutor — y sobre todo el lurker, que resuelve su ambivalencia en silencio. Justifica la disciplina de NO perseguir cada desvío y devolver al hueso una sola vez.",
+    "register": "compasivo",
+    "attack_surface": "No es un arma de debate sino un estilo. Riesgo en Facebook: la EM clínica asume una alianza colaborativa que un hilo hostil no da — aplicada literal se ve pasiva. Acá sirve para el lurker, no para 'sanar' al oponente (límite duro del registro compasivo). Si el interlocutor es de mala fe confirmada, el registro correcto es el filo, no seguir evocando.",
+    "deploy_as": "auto-disciplina-del-activista",
+    "source_ref": "doctrine/rag/Entrevista Motivacional (Miller-Rollnick) — texto extraido.md",
+    "related_tactics": [
+      "socrates_hostil",
+      "reencuadre_veganismo_creencia"
+    ],
+    "lurker_risk": "low"
+  },
+  {
+    "id": "mi-desarrollar-discrepancia",
+    "name": "Entrevista Motivacional: desarrollar la discrepancia",
+    "author": "Miller & Rollnick (Entrevista Motivacional)",
+    "tradition": "registro compasivo / entrevista motivacional",
+    "definition": "Principio central de la EM: el cambio se motiva al hacer visible la brecha entre los VALORES que la persona ya sostiene y su conducta actual. No se le impone un valor nuevo — se ilumina la incoherencia entre lo que dice amar (no querer sufrimiento innecesario, amar a los animales) y lo que su plato sostiene, y se deja que esa tensión empuje.",
+    "enables": "Anclar el marco en un valor que el interlocutor YA declara ('los animales me importan', 'el sufrimiento innecesario está mal') y mostrar la distancia con la práctica, sin acusar. El lurker que comparte ese valor siente la grieta en cabeza propia. Es la versión compasiva de la inversión de carga: no impone una moral ajena, expone la que el otro ya dijo tener.",
+    "register": "compasivo",
+    "attack_surface": "Roza el 'te pillé en contradicción' si se hace con tono de gotcha — ahí se vuelve hostil y dispara la defensa que querías evitar. La discrepancia se OFRECE como pregunta, no se clava como veredicto. Un oponente puede negar el valor de partida ('no, los animales no me importan'); ahí el ancla desaparece y el registro cambia.",
+    "deploy_as": "marco",
+    "source_ref": "doctrine/rag/Entrevista Motivacional (Miller-Rollnick) — texto extraido.md",
+    "related_tactics": [
+      "reencuadre_veganismo_creencia",
+      "welfare_rhetoric"
+    ],
+    "lurker_risk": "low"
+  },
+  {
+    "id": "trauma-informed-defensa-no-es-maldad",
+    "name": "Trauma-Informed: la defensa no es maldad, es protección",
+    "author": "SAMHSA (Trauma-Informed Care)",
+    "tradition": "registro compasivo / atención informada por el trauma",
+    "definition": "El enfoque informado por el trauma reencuadra la pregunta de '¿qué te pasa?' a '¿qué te pasó?': conductas que parecen agresión, negación o cierre suelen ser respuestas aprendidas de protección, no maldad de carácter. La reacción defensiva ante el marco vegano (burla, rabia, evasión) se lee como un sistema protegiéndose de una culpa o disonancia que duele, no como un enemigo a derrotar.",
+    "enables": "Mantener al que escribe en el rol de 'adulto en la sala' que no contraataca — el contraste que el lurker registra. Despersonaliza la hostilidad (es la disonancia hablando, no la persona), lo que sostiene la calma del registro compasivo bajo fuego sin convertirla en sumisión.",
+    "register": "compasivo",
+    "attack_surface": "Lente interno, no etiqueta pública: decirle a alguien 'reaccionas así por un trauma' es patologizar y ofende. Riesgo de excusar todo como trauma y nunca nombrar la evasión — la compasión no borra la responsabilidad ni el hecho. No aplica a trolls puros (no hay herida que cuidar, solo deporte).",
+    "deploy_as": "auto-disciplina-del-activista",
+    "source_ref": "doctrine/rag/Trauma-Informed Care (SAMHSA) — texto extraido.md",
+    "related_tactics": [
+      "insulto_ad_hominem",
+      "anecdota_personal_n1"
+    ],
+    "lurker_risk": "low"
+  },
+  {
+    "id": "apego-seguridad-antes-que-razon",
+    "name": "Teoría del Apego: la seguridad precede a la apertura",
+    "author": "Bowlby, Ainsworth & Main (Teoría del Apego)",
+    "tradition": "registro compasivo / teoría del apego",
+    "definition": "La teoría del apego sostiene que un sistema nervioso que se siente amenazado prioriza la defensa sobre la exploración: solo desde una 'base segura' una persona se abre a información nueva o incómoda. Un interlocutor en alerta (atacado, ridiculizado, acorralado) no procesa el argumento — lo repele. La receptividad requiere primero seguridad relacional, no más presión.",
+    "enables": "Justifica bajar la amenaza antes de plantar el marco: validar lo legítimo de la posición del otro ('claro que los humanos pueden comer carne', 'tiene sentido que te moleste el tono moralista') abre una ventana donde la pregunta del hueso puede entrar — en él y, sobre todo, en el lurker. Es la base teórica de 'si atacan más, subí ternura, no volumen'.",
+    "register": "compasivo",
+    "attack_surface": "No es argumento sino estrategia de tono. Riesgo: convertir 'dar seguridad' en complacencia que nunca confronta el marco — la seguridad es para que la pregunta entre, no para evitarla. Con un interlocutor de mala fe que usa la cortesía como escudo, dar más seguridad refuerza el escudo; ahí el registro correcto es el filo controlado.",
+    "deploy_as": "auto-disciplina-del-activista",
+    "source_ref": "doctrine/rag/Teoria del Apego (Bowlby-Ainsworth-Main) — texto extraido.md",
+    "related_tactics": [
+      "data_dump_selectivo",
+      "welfare_rhetoric"
+    ],
+    "lurker_risk": "low"
   }
 ]

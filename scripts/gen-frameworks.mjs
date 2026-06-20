@@ -1,7 +1,7 @@
 import { writeFileSync, renameSync, mkdirSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { readFrameworks, readTactics } from './db.mjs';
+import { readFrameworks, readTactics, getFrameworkWinRate } from './db.mjs';
 
 // JSON is the canonical source of truth (Art. 6). This regenerates the
 // human-readable arsenal index under analysis/frameworks/ from data/frameworks.json.
@@ -25,6 +25,20 @@ function anchor(id) {
   return id.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
+// Efectividad (el moat): deploys + outcome dominante por framework, leído de
+// data/actors.json vía getFrameworkWinRate. 0 deploys = "sin probar".
+const OUTCOME_KEYS = ['conceded', 'engaged', 'silent', 'escalated', 'goalpost', 'pending'];
+function effectivenessCell(id) {
+  const wr = getFrameworkWinRate(id);
+  if (!wr.deploys) return 'sin probar';
+  const dominant = OUTCOME_KEYS
+    .map(k => [k, wr[k]])
+    .filter(([, n]) => n > 0)
+    .sort((a, b) => b[1] - a[1])[0];
+  const tag = dominant ? `${dominant[0]} ×${dominant[1]}` : 'sin outcome';
+  return `${wr.deploys} deploy${wr.deploys > 1 ? 's' : ''} · ${tag}`;
+}
+
 const byAuthor = {};
 for (const f of frameworks) (byAuthor[f.author] ??= []).push(f);
 
@@ -38,10 +52,10 @@ lines.push('');
 
 lines.push('## Resumen');
 lines.push('');
-lines.push('| Framework | Autor | deploy_as | Registro |');
-lines.push('|---|---|---|---|');
+lines.push('| Framework | Autor | deploy_as | Registro | Efectividad (actors.json) |');
+lines.push('|---|---|---|---|---|');
 for (const f of frameworks) {
-  lines.push(`| [${f.name}](#${anchor(f.id)}) | ${f.author.split(' ')[0]} ${f.author.split(' ')[1] ?? ''} | ${f.deploy_as} | ${f.register} |`);
+  lines.push(`| [${f.name}](#${anchor(f.id)}) | ${f.author.split(' ')[0]} ${f.author.split(' ')[1] ?? ''} | ${f.deploy_as} | ${f.register} | ${effectivenessCell(f.id)} |`);
 }
 lines.push('');
 
