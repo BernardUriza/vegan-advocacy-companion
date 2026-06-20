@@ -28,3 +28,7 @@ scripts/.draft-test.txt
 # RAG: los PDFs originales viven en disco pero NO se versionan (binarios pesados,
 # ~10MB). Lo versionable es el TEXTO extraído (doctrine/rag/*.md). git add -f para forzar.
 doctrine/rag/*.pdf
+
+# Pipeline scratch (drafts + coagent prompts) — efímeros, no se versionan
+scripts/draft-*.txt
+scripts/coagent-prompt-*.txt
