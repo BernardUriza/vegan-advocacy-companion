@@ -106,6 +106,24 @@ for (const f of frameworks) {
   }
 }
 
+// 4g. WARN: the moat-attribution gap. Every posted reply deployed a framework
+// (etapa-3 picks one); an interaction WITHOUT a `framework` id means that deploy
+// is invisible to framework-stats/getFrameworkWinRate, so the effectiveness moat
+// can never populate. This is LOUD on purpose — the silent gap that kept the moat
+// empty across many runs was a missing field nobody flagged.
+let missingFw = 0, missingFwClosed = 0;
+for (const a of actors) {
+  for (const it of a.interactions ?? []) {
+    if (!it.framework) {
+      missingFw++;
+      if ((it.outcome ?? 'pending') !== 'pending') missingFwClosed++;
+    }
+  }
+}
+if (missingFw) {
+  warnings.push(`${missingFw} interaction(s) lack a "framework" id (moat-attribution gap — invisible to framework-stats)${missingFwClosed ? `; ${missingFwClosed} of them are already CLOSED, so their effectiveness is lost permanently` : ''}`);
+}
+
 // 5. Drift warning: a dossier markdown exists with a user_id absent from the JSON SSOT
 let mdWarnings = 0;
 try {

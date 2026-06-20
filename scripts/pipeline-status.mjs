@@ -49,6 +49,13 @@ function build() {
   const untestedFrameworks = frameworks.filter((f) => !deployedFwIds.has(f.id));
   const testedFrameworks = frameworks.filter((f) => deployedFwIds.has(f.id));
 
+  // 2b. EL HUECO DE ATRIBUCIÓN: interacciones (replies posteadas) sin `framework`.
+  //     Cada una es un deploy invisible al moat de efectividad. Guard duro: si esto
+  //     sube, el pipeline está posteando sin registrar la jugada (el bug que mantuvo
+  //     el moat vacío). Las CERRADAS sin framework son pérdida permanente.
+  const missingFw = allInteractions.filter((i) => !i.framework);
+  const missingFwClosed = missingFw.filter((i) => !OPEN_OUTCOMES.has(i.outcome) && i.outcome).length;
+
   // 3. Reparto del tablero.
   const byBando = tally(actors, 'bando');
   const byVerdict = tally(actors, 'verdict');
@@ -69,6 +76,8 @@ function build() {
       frameworks_tested: testedFrameworks.length,
       frameworks_untested: untestedFrameworks.length,
       open_debt: openDebt.length,
+      attribution_gap: missingFw.length,
+      attribution_gap_closed: missingFwClosed,
     },
     openDebt,
     deployedFrameworks: [...deployedFwIds],
@@ -99,6 +108,14 @@ function printHuman(d) {
   console.log(
     `  ${t.actors} actores · ${t.tactics} tácticas · ${t.frameworks} frameworks · ${t.interactions} interacciones`
   );
+
+  if (t.attribution_gap) {
+    console.log(
+      `\n  ⚠️  HUECO DE ATRIBUCIÓN: ${t.attribution_gap}/${t.interactions} interacciones SIN \`framework\` → invisibles al moat` +
+      (t.attribution_gap_closed ? ` (${t.attribution_gap_closed} ya cerradas = efectividad perdida)` : '') +
+      `\n     el moat de efectividad NO se puebla mientras esto suba; etapa-4 debe grabar el framework desplegado.`
+    );
+  }
 
   console.log(`\n── DEUDA ABIERTA (${t.open_debt}) — outcome pending/goalpost, sigue vivo ──`);
   if (!d.openDebt.length) {
