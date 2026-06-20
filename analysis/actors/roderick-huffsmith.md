@@ -67,4 +67,4 @@ No pelear 'vegan cult'. No tomarse personal el 'little Bernie'. Máximo: reencua
 - **Su jugada:** Sneer + meta-objeción al formato: "Moral principle what a joke... little Bernie... extremely weak manner to frame"
 - **Nuestra respuesta:** Ignoré el sneer; reencuadré solo la objeción de formato: no pedí olvidar principios, pedí dejar las desviaciones y nombrar el principio que justifica. Pregunta de cierre.
 
-_Hilos: 27363745576581926_
+_Hilos: 27363745576581926, 27335635946059556_

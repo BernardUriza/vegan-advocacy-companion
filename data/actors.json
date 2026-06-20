@@ -57,14 +57,17 @@
     "tactics": [
       "futility_no_clean_option",
       "socrates_hostil",
-      "crop_deaths_flip"
+      "crop_deaths_flip",
+      "data_dump_selectivo",
+      "presentismo"
     ],
     "tone": "hostile_rhetorical",
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop deaths (pantano cebado para eso). NO intentar demostrar que el veganismo causa daño-cero.",
     "threads": [
-      "27341517928804691"
+      "27341517928804691",
+      "27335635946059556"
     ],
     "interactions": [
       {
@@ -103,6 +106,14 @@
         "date": "2026-06-19",
         "their_move": "Mismo tu quoque en el hilo de especismo: \"you all consume unnecessary foods... easily avoidable harm... my initial statement stands\".",
         "our_reply_summary": "Nombré una vez el cambio de marco (de \"vegans son especistas\" a \"vegans también dañan\"); concedí que como variado; devolví al hueso del especismo (cerdo vs perro): qué hace a una especie comida y otra familia más allá del hábito.",
+        "framework": "no-necesidad-cambiaron-las-reglas",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27335635946059556",
+        "date": "2026-06-19",
+        "their_move": "Deflexión empírica sobre la data del post de mercado: \"India is full of impoverished/sick people, China is the largest meat consumer growing, how accurate is the rest of your information?\" — convierte 2 ejemplos en sospecha de toda la data, ceba guerra de cifras.",
+        "our_reply_summary": "Concedí lo empírico libremente (China crece, India es parte económico); pivote: la data de mercado es DESCRIPTIVA, nunca fue el argumento — si el mercado dobla o colapsa la pregunta moral no se mueve. Devolví la carga: ¿qué principio justifica criar/matar a un sintiente cuando hay alternativa viable? Cero data propia, no mordí el body-count.",
         "framework": "no-necesidad-cambiaron-las-reglas",
         "outcome": "pending"
       }
@@ -583,7 +594,8 @@
     "register": "no_enganchar",
     "what_not_to_do": "No pelear 'vegan cult'. No tomarse personal el 'little Bernie'. Máximo: reencuadrar la objeción de formato en una línea, sin filo.",
     "threads": [
-      "27363745576581926"
+      "27363745576581926",
+      "27335635946059556"
     ],
     "interactions": [
       {

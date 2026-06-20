@@ -20,6 +20,10 @@ El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qu
   - _Contra:_ Don't bite. Answer the underlying question cleanly without following the redirect: 'Exploitation isn't a list of events — it's a relationship. Breeding a sentient being into existence for the purpose of using and killing it is the relationship, not a checklist.' Return the question.
 - **Crop Deaths / Bystander Flip** (`crop_deaths_flip`) — Uses the fact that crop agriculture kills field animals (mice, insects) to claim veganism causes more death, or to equate plant farming with animal farming morally. 'Growing crops kills innocent bystanders. Raising animals for purpose is cleaner.'
   - _Contra:_ The distinction is intent and necessity. Crop deaths are incidental to feeding everyone, minimized where possible, and not the purpose of the activity. Animal farming kills intentionally and for non-necessity — and itself consumes more crops (70%+ of global cropland feeds animals, not humans). You don't escape crop deaths by eating meat; you add them.
+- **Selective Data Dump** (`data_dump_selectivo`) — Floods with data points that are real but cherry-picked and framed to support a pre-determined conclusion. Absolute numbers vs per-capita trends. Stock price vs category market. No causal analysis.
+  - _Contra:_ Concede what's true in the data, then expose the frame: 'Yes, Beyond Meat's stock crashed — that's one company with execution problems. The plant-based category grew 6% that year.' Don't match dump for dump. One incisive concede-and-reframe.
+- **Presentism / Dismiss the Trend** (`presentismo`) — Dismisses projections or trends by insisting only the present moment counts. 'We live in the present, not 2035.' Used to wave away measured trajectories without engaging them.
+  - _Contra:_ A trend isn't refuted by saying 'but it's not the future yet.' The trajectory is measured in the present — that's the point. Dismissing tomorrow doesn't change today's direction.
 
 ## Counter-arsenal
 
@@ -44,6 +48,14 @@ El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qu
 - **Crop Deaths / Bystander Flip** (`crop_deaths_flip`)
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
+- **Selective Data Dump** (`data_dump_selectivo`)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `mensaje-importa-formas-determinantes` → _deploy as:_ auto-disciplina-del-activista
+  - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+  - `hablamos-en-nombre-de-los-demas-animales` → _deploy as:_ auto-disciplina-del-activista
+- **Presentism / Dismiss the Trend** (`presentismo`)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `momento-truman-traicion-de-los-tuyos` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -71,4 +83,8 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** Mismo tu quoque en el hilo de especismo: "you all consume unnecessary foods... easily avoidable harm... my initial statement stands".
 - **Nuestra respuesta:** Nombré una vez el cambio de marco (de "vegans son especistas" a "vegans también dañan"); concedí que como variado; devolví al hueso del especismo (cerdo vs perro): qué hace a una especie comida y otra familia más allá del hábito.
 
-_Hilos: 27341517928804691_
+### Hilo `27335635946059556` — 2026-06-19 · outcome: **pending**
+- **Su jugada:** Deflexión empírica sobre la data del post de mercado: "India is full of impoverished/sick people, China is the largest meat consumer growing, how accurate is the rest of your information?" — convierte 2 ejemplos en sospecha de toda la data, ceba guerra de cifras.
+- **Nuestra respuesta:** Concedí lo empírico libremente (China crece, India es parte económico); pivote: la data de mercado es DESCRIPTIVA, nunca fue el argumento — si el mercado dobla o colapsa la pregunta moral no se mueve. Devolví la carga: ¿qué principio justifica criar/matar a un sintiente cuando hay alternativa viable? Cero data propia, no mordí el body-count.
+
+_Hilos: 27341517928804691, 27335635946059556_
