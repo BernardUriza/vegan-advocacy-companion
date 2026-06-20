@@ -59,10 +59,12 @@ function classify(transcript, actor) {
   const oppByName = (t) => !t.mine && actor.name && t.author === actor.name;
   const isOpp = (t) => oppById(t) || oppByName(t);
 
-  // ancla = MI PRIMERA reply dirigida a ESTE oponente (no la global del hilo — si no,
-  // un back-and-forth con otro actor enterraría su turno). Todo lo que el oponente
-  // dijo DESPUÉS de que yo le hablé es su respuesta a mi reply = la señal del cierre.
-  let anchor = firstIndexWhere(turns, (t) => t.mine && t.target === actor.name);
+  // ancla = MI ÚLTIMA reply dirigida a ESTE oponente (no la primera — si le contesté
+  // varias veces a través de días, los turnos que él dijo ENTRE mi primera y mi última
+  // reply ya los respondí; solo lo que dijo DESPUÉS de mi ÚLTIMA reply es la respuesta
+  // a la jugada que estoy cerrando. Anclar en la primera mete keyword-bleed de turnos
+  // viejos/de otras ramas → silencio mal clasificado como escalated/goalpost).
+  let anchor = lastIndexWhere(turns, (t) => t.mine && t.target === actor.name);
   if (anchor < 0) anchor = lastIndexWhere(turns, (t) => t.mine);
 
   // turnos del oponente DESPUÉS de mi reply a él (lo que cuenta para el cierre).
