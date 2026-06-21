@@ -411,7 +411,9 @@
       "apelacion_mayoria",
       "presentismo",
       "relativismo_moral",
-      "libertarian_autonomy"
+      "libertarian_autonomy",
+      "deflexion_estetica",
+      "projection_subjetiva"
     ],
     "tone": "hostile",
     "verdict": "pozo_sin_fondo",
@@ -466,6 +468,14 @@
         "their_move": "Posteó un bodegón de FRUTA PODRIDA como prueba de que las plantas tambien se ven feas en pintura (logic 0, no es lo mismo) + insultos (toddler, AI dolls).",
         "our_reply_summary": "Filo corto: su propio cuadro la refuta — tuvo que pintar DESCOMPOSICION para que incomodara; nadie la fuerza por un embudo (no hay sujeto/victima, a rotting banana cant occupy that role); ironia: eligio un vanitas mientras presumia saber de arte; cierre (Bernard): una pregunta no es una exigencia — si se siente como presion a renunciar, eso lo trajo ella, no el post.",
         "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27395909046698912",
+        "date": "2026-06-21",
+        "their_move": "Deflexión estética: \"why does it look different on canvas vs plate? Because it is art (Surrealism/Cubism); art is symbolic not literal\" + \"if we could fit a whole cow on a plate we would\" + animales son comida, tus sentimientos son irrelevantes.",
+        "our_reply_summary": "Filo corto: el estilo explica la imaginería onírica, NO la asimetría carne-cruda/empaque; un bistec en charola no es surrealista; su propia línea de la charola concede el punto (la presentación esconde la escala); el malestar es pregunta aparte, el post pregunta no exige. Vuelta al hueso, sin morder insulto ni pelear arte.",
+        "framework": "deflexion_estetica",
         "outcome": "pending"
       }
     ]
@@ -830,7 +840,8 @@
     "analisis": "Audiencia genuina, no troll. El arco fue: naturalismo→can/should→relativismo (que él mismo refuta con sus propias líneas morales)→ahora preferencia/gusto+alergia. Su última no es esquive cínico: es una persona honesta diciendo \"no quiero/no puedo\". La jugada limpia es conceder el gusto y la alergia SIN desprecio y mover el peso al tercero. Registro compasivo obligatorio.",
     "tactics": [
       "socrates_hostil",
-      "preferencia_gusto"
+      "preferencia_gusto",
+      "crop_deaths_flip"
     ],
     "tone": "civil",
     "verdict": "audiencia",
@@ -875,6 +886,14 @@
         "date": "2026-06-21",
         "their_move": "Deflexión fatalista: todo se muere igual, nadie elige cuándo/cómo + dejo sarcástico (¿el premio de ser vegano es elegir cómo morir?).",
         "our_reply_summary": "Compasivo: concedí que todo muere y nadie elige; separé muerte-como-hecho de muerte-deliberadamente-impuesta; concedí gusto/realidades sin desprecio; cerré preguntando qué justifica matar intencionalmente a un animal que quería vivir cuando existe alternativa adecuada.",
+        "framework": "no-necesidad-cambiaron-las-reglas",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27363745576581926",
+        "date": "2026-06-21",
+        "their_move": "crop_deaths_flip: \"Same can be said for plants\" (las plantas también mueren/sienten).",
+        "our_reply_summary": "Cálido (buena fe): concedí hipotéticamente la preocupación por las plantas y mostré que la ganadería la AMPLIFICA (el cultivo pasa por el animal primero, paso extra); no es body-count sino rol del daño (subproducto incidental vs criar con la intención de matar); la agricultura no es inocua pero el rol del daño difiere; cierre al hueso (qué justifica traer un animal a existir para matarlo si hay otras formas de alimentarnos).",
         "framework": "no-necesidad-cambiaron-las-reglas",
         "outcome": "pending"
       }
@@ -1012,5 +1031,33 @@
     ],
     "interactions": [],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/965593289816591/"
+  },
+  {
+    "user_id": "100000755924068",
+    "name": "Tiana Thomas",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/100000755924068/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "El malestar del cuadro de Frida es proyección del espectador: ella pintaba SU sufrimiento (alimentación forzada por enfermedad), no una crítica al consumo de carne.",
+    "analisis": "Civil, no insultante. Mueve a relocalizar el malestar dentro del observador (projection / it-is-subjective). Reaccionó a mi comentario y respondió fresco (14m), señal de que sigue el hilo. Persuadible/audiencia, no pozo.",
+    "tactics": [
+      "projection_subjetiva"
+    ],
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No insistir en que todos DEBEN sentir malestar (le regala el punto subjetivo). Conceder que las reacciones varían y mostrar que la varianza no disuelve la pregunta. Tono medido, no pozo — es nueva y civil.",
+    "threads": [
+      "27395909046698912"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27395909046698912",
+        "date": "2026-06-21",
+        "their_move": "Projection: \"You are projecting YOUR discomfort with food, she was painting HER discomfort with being bed bound and funnel fed.\"",
+        "our_reply_summary": "Medido (nueva, civil): concedí la intención de Frida (el post lo dice); \"estás proyectando\" relocaliza la pregunta en vez de contestarla; concedí que las reacciones varían pero la varianza no disuelve la pregunta; el contenido (cuerpo forzado a recibir carne) hace su trabajo sin importar la intención; vuelta a la asimetría galería/plato.",
+        "framework": "projection_subjetiva",
+        "outcome": "pending"
+      }
+    ]
   }
 ]

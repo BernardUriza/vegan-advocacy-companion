@@ -371,5 +371,32 @@
       "100035105043255"
     ],
     "fallacy_type_id": null
+  },
+  {
+    "id": "projection_subjetiva",
+    "name": "Projection / It-is-Just-Subjective",
+    "category": "rhetoric",
+    "definition": "Dismisses moral or perceptual discomfort as the observer's own projection or as merely subjective, relocating the question inside the speaker instead of answering it. 'You are projecting YOUR discomfort.' 'The problem only exists for whoever is bothered.' 'It's subjective, so it's irrelevant.'",
+    "canonical_counter": "Calling a reaction 'just yours' doesn't establish it's unwarranted — it relocates the question instead of addressing it. The content (a body force-fed flesh) does its work regardless of who is or isn't bothered. And 'it's subjective' cuts both ways: it can't show the discomfort is wrong, only that you don't share it.",
+    "register": "filo",
+    "what_not_to_do": "Don't argue everyone MUST feel disturbed — that hands them the subjectivity point. Grant that reactions vary, then press that variance doesn't dissolve the question.",
+    "actors_known": [
+      "100000755924068",
+      "100011355404997"
+    ],
+    "fallacy_type_id": null
+  },
+  {
+    "id": "deflexion_estetica",
+    "name": "Aesthetic Deflection / It-is-Just-Art",
+    "category": "rhetoric",
+    "definition": "Answers a moral or perceptual question by appealing to art theory or stylization ('it looks different because it's Surrealism/Expressionism; art is symbolic, not literal'), substituting an art-style explanation for the actual question being asked.",
+    "canonical_counter": "Art style explains the dream imagery, not the asymmetry in question: why the same flesh reads as horror raw and as normal once packaged and renamed food. Surrealism has nothing to do with a shrink-wrapped steak. The stylization answer re-describes the brushwork to avoid the question.",
+    "register": "filo",
+    "what_not_to_do": "Don't get into an art-history fight on their turf. Name that they answered a different question, then restate the actual one.",
+    "actors_known": [
+      "100011355404997"
+    ],
+    "fallacy_type_id": null
   }
 ]

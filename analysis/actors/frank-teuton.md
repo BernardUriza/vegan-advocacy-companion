@@ -45,6 +45,7 @@ Naturalismo sofisticado + insulto. En su replica de 5h escalo al combo crop-deat
   - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
+  - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
 - **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
   - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
   - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista

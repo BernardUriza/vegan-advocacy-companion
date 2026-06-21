@@ -37,6 +37,7 @@ La carnista más elaborada del hilo — escribe párrafos, no one-liners. Alto v
   - `conocimiento-compromete` → _deploy as:_ marco
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
+  - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
 - **Begging the Question / Circular Reasoning** (`peticion_de_principio`)
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `domesticar-eufemismo-dominar` → _deploy as:_ marco
@@ -78,6 +79,7 @@ La carnista más elaborada del hilo — escribe párrafos, no one-liners. Alto v
   - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
+  - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
 - **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`)
   - `antropoespecismo` → _deploy as:_ marco
   - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
@@ -90,6 +92,7 @@ La carnista más elaborada del hilo — escribe párrafos, no one-liners. Alto v
   - `libros-de-texto-niegan-sintiencia` → _deploy as:_ marco
   - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
+  - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
 
 ## Qué NO hacer
 

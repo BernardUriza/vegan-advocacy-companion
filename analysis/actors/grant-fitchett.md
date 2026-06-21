@@ -43,10 +43,12 @@ Motor del hilo (14 turnos). Repite el bucle CAN→SHOULD sin avanzar: cuando Rü
   - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
+  - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
 - **Is-Ought / Naturalistic Fallacy** (`is_ought`)
   - `conocimiento-compromete` → _deploy as:_ marco
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
+  - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
 - **Begging the Question / Circular Reasoning** (`peticion_de_principio`)
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `domesticar-eufemismo-dominar` → _deploy as:_ marco

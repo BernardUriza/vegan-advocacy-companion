@@ -28,6 +28,10 @@ La contrincante más hostil del hilo vegan-market. Dominancia social, no argumen
   - _Contra:_ Point out that they don't actually live by pure moral relativism — they have lines they wouldn't cross even if others called them moral. 'You wouldn't say torturing a child is equally valid because morals are subjective.' One line, for the lurker. Don't overextend.
 - **Autonomy / Anti-Dictation Frame** (`libertarian_autonomy`) — Reframes the moral argument as a political imposition: 'don't expect me to welcome you dictating what I can eat'. Conflates making an ethical argument with forcing compliance.
   - _Contra:_ Pointing out that something causes harm isn't dictating. You can choose to eat meat; I can point out it harms a sentient being. Those are both true simultaneously. Nobody's forcing anything.
+- **Aesthetic Deflection / It-is-Just-Art** (`deflexion_estetica`) — Answers a moral or perceptual question by appealing to art theory or stylization ('it looks different because it's Surrealism/Expressionism; art is symbolic, not literal'), substituting an art-style explanation for the actual question being asked.
+  - _Contra:_ Art style explains the dream imagery, not the asymmetry in question: why the same flesh reads as horror raw and as normal once packaged and renamed food. Surrealism has nothing to do with a shrink-wrapped steak. The stylization answer re-describes the brushwork to avoid the question.
+- **Projection / It-is-Just-Subjective** (`projection_subjetiva`) — Dismisses moral or perceptual discomfort as the observer's own projection or as merely subjective, relocating the question inside the speaker instead of answering it. 'You are projecting YOUR discomfort.' 'The problem only exists for whoever is bothered.' 'It's subjective, so it's irrelevant.'
+  - _Contra:_ Calling a reaction 'just yours' doesn't establish it's unwarranted — it relocates the question instead of addressing it. The content (a body force-fed flesh) does its work regardless of who is or isn't bothered. And 'it's subjective' cuts both ways: it can't show the discomfort is wrong, only that you don't share it.
 
 ## Counter-arsenal
 
@@ -94,5 +98,13 @@ No responder al insulto en su nivel. No defender a Beyond Meat específicamente.
 ### Hilo `27375477042075446` — 2026-06-20 · outcome: **pending**
 - **Su jugada:** Insulto + escudo: Lol dude this is a fun pastime group not a debate club, you cant debate your way out of a paper bag, you use AI, embarrassing, I dont have to justify.
 - **Nuestra respuesta:** Cierre corto (contraste de temperamento): le tomo la palabra — si es solo un pasatiempo y no es en serio, dejo de leer sus arrebatos como argumentos; bridge al hilo Frida donde esta el punto real. Reclasifica sus insultos de argumento a ruido con calma cordial, sin insultar de vuelta.
+
+### Hilo `27395909046698912` — 2026-06-21 · outcome: **pending**
+- **Su jugada:** Posteó un bodegón de FRUTA PODRIDA como prueba de que las plantas tambien se ven feas en pintura (logic 0, no es lo mismo) + insultos (toddler, AI dolls).
+- **Nuestra respuesta:** Filo corto: su propio cuadro la refuta — tuvo que pintar DESCOMPOSICION para que incomodara; nadie la fuerza por un embudo (no hay sujeto/victima, a rotting banana cant occupy that role); ironia: eligio un vanitas mientras presumia saber de arte; cierre (Bernard): una pregunta no es una exigencia — si se siente como presion a renunciar, eso lo trajo ella, no el post.
+
+### Hilo `27395909046698912` — 2026-06-21 · outcome: **pending**
+- **Su jugada:** Deflexión estética: "why does it look different on canvas vs plate? Because it is art (Surrealism/Cubism); art is symbolic not literal" + "if we could fit a whole cow on a plate we would" + animales son comida, tus sentimientos son irrelevantes.
+- **Nuestra respuesta:** Filo corto: el estilo explica la imaginería onírica, NO la asimetría carne-cruda/empaque; un bistec en charola no es surrealista; su propia línea de la charola concede el punto (la presentación esconde la escala); el malestar es pregunta aparte, el post pregunta no exige. Vuelta al hueso, sin morder insulto ni pelear arte.
 
 _Hilos: 27335635946059556, 27363745576581926_

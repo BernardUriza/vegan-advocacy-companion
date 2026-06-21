@@ -85,6 +85,7 @@ El mejor steelman anti-vegano del hilo, y CIVIL. Hace tres cosas finas: (1) acus
   - `libros-de-texto-niegan-sintiencia` → _deploy as:_ marco
   - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
+  - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -119,5 +120,9 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 ### Hilo `27363745576581926` — 2026-06-20 · outcome: **pending**
 - **Su jugada:** Crux contractarian: "morally relevant according to whom?"; sentience es mera aserción; los derechos emergen de la membresía en una comunidad recíproca, no de la capacidad de sufrir; "mi posición describe cómo funcionan los derechos en el mundo real".
 - **Nuestra respuesta:** Reply etiquetada (filo): nombré el is/ought — "describir cómo funcionan los derechos" es sociológico (poder/contrato/club), la pregunta era normativa; los derechos legales excluyeron esclavos/mujeres/niños por ese mismo criterio de no-reciprocidad, "así funcionan" describió la esclavitud de 1850 sin justificarla; la capacidad de ser dañado no necesita árbitro externo porque hay alguien a quien le importa, la membresía SÍ necesita que el club te admita (permiso, no fundamento); devolví la carga: qué tiene la membresía en sí. ESTRUCTURA de exclusión sin igualar sujetos, sin marginal cases.
+
+### Hilo `27363745576581926` — 2026-06-21 · outcome: **pending**
+- **Su jugada:** Doble jugada: (a) peticion_de_principio — no demostraste el salto sentience→prohibición; (b) line-drawing/sorites: ¿dónde trazas la línea? (mosquitos, garrapatas, gusanos parásitos).
+- **Nuestra respuesta:** Filo calmado: la vaguedad del límite no disuelve los casos claros (crepúsculo ≠ mediodía/medianoche; vaca/cerdo en el centro). Devolví la carga: que ÉL nombre el criterio no-circular por el que el interés humano supera al animal — si no es la membresía de especie misma, ¿cuál es?
 
 _Hilos: 27363745576581926, 27375477042075446_

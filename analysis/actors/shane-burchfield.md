@@ -18,6 +18,8 @@ Audiencia genuina, no troll. El arco fue: naturalismo→can/should→relativismo
   - _Contra:_ Don't bite. Answer the underlying question cleanly without following the redirect: 'Exploitation isn't a list of events — it's a relationship. Breeding a sentient being into existence for the purpose of using and killing it is the relationship, not a checklist.' Return the question.
 - **Taste/Preference as Justification** (`preferencia_gusto`) — Defends animal use by appeal to personal taste or dislike of the alternatives: "I just like the taste", "I tried plant-based and don’t enjoy it", "soy is nasty to me", sometimes mixed with a genuine constraint (allergies). Treats a preference as if it settled the moral question.
   - _Contra:_ Concede the preference fully — nobody has to enjoy the alternatives, and a real allergy is a real constraint, not a character flaw. Then separate liking from justifying: a preference explains why you’d rather, it doesn’t answer whether your preference outweighs a sentient being’s life when an adequate alternative exists. Move the weight to the third party who pays for the preference.
+- **Crop Deaths / Bystander Flip** (`crop_deaths_flip`) — Uses the fact that crop agriculture kills field animals (mice, insects) to claim veganism causes more death, or to equate plant farming with animal farming morally. 'Growing crops kills innocent bystanders. Raising animals for purpose is cleaner.'
+  - _Contra:_ The distinction is intent and necessity. Crop deaths are incidental to feeding everyone, minimized where possible, and not the purpose of the activity. Animal farming kills intentionally and for non-necessity — and itself consumes more crops (70%+ of global cropland feeds animals, not humans). You don't escape crop deaths by eating meat; you add them.
 
 ## Counter-arsenal
 
@@ -25,6 +27,9 @@ Audiencia genuina, no troll. El arco fue: naturalismo→can/should→relativismo
 
 - **Hostile Socratic Method** (`socrates_hostil`)
   - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
+- **Crop Deaths / Bystander Flip** (`crop_deaths_flip`)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -47,5 +52,13 @@ No asumir mala fe por una sola pregunta. Si responde, tratar como genuina hasta 
 ### Hilo `27363745576581926` — 2026-06-20 · outcome: **pending**
 - **Su jugada:** "¿quién eres tú para decidir tu moral para todos?" (relativismo) PERO en la misma frase traza líneas morales: cruzar ciertas líneas (cría/trato/método de matanza/aditivos) está mal, por eso cría el suyo.
 - **Nuestra respuesta:** Reply etiquetada (COMPASIVO): no es "quién eres tú" — él YA tiene líneas morales y las aplica a todos; concedí con respeto que ya cree que el sufrimiento/trato importan; el desacuerdo no es SI hay consideración moral sino DÓNDE se detiene; le devolví su propia línea: si el sufrimiento innecesario importa y hay alternativa adecuada, ¿por qué el paso final de matar es donde los intereses del animal dejan de contar? Sin atacar su forma de criar, sin factory farming, sin asumir mala fe.
+
+### Hilo `27363745576581926` — 2026-06-21 · outcome: **pending**
+- **Su jugada:** Deflexión fatalista: todo se muere igual, nadie elige cuándo/cómo + dejo sarcástico (¿el premio de ser vegano es elegir cómo morir?).
+- **Nuestra respuesta:** Compasivo: concedí que todo muere y nadie elige; separé muerte-como-hecho de muerte-deliberadamente-impuesta; concedí gusto/realidades sin desprecio; cerré preguntando qué justifica matar intencionalmente a un animal que quería vivir cuando existe alternativa adecuada.
+
+### Hilo `27363745576581926` — 2026-06-21 · outcome: **pending**
+- **Su jugada:** crop_deaths_flip: "Same can be said for plants" (las plantas también mueren/sienten).
+- **Nuestra respuesta:** Cálido (buena fe): concedí hipotéticamente la preocupación por las plantas y mostré que la ganadería la AMPLIFICA (el cultivo pasa por el animal primero, paso extra); no es body-count sino rol del daño (subproducto incidental vs criar con la intención de matar); la agricultura no es inocua pero el rol del daño difiere; cierre al hueso (qué justifica traer un animal a existir para matarlo si hay otras formas de alimentarnos).
 
 _Hilos: 27363745576581926, 27341517928804691_
