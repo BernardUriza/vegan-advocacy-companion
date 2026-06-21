@@ -85,8 +85,33 @@ Datos a sacar de cada nodo:
 | Timestamp | texto del `link` de la hora (`3h`, `27m`…) |
 | Texto del comentario | los `StaticText` del `article` (concatenar) |
 | Reacciones | botón `N reactions` |
+| **Imagen adjunta** | `<img>` dentro del `article` con `src` de `fbcdn`/`scontent` y `naturalWidth>200`; el `alt` ("May be art of apple", "May be an image of text…") describe el contenido |
 | Quién→quién | el `aria-label` del article: `Reply by X to Y's reply` |
 | ¿Es Bernard? | sus comentarios traen botón `Edit or delete this`; los ajenos `Hide or report this` |
+
+### 3.5 — LEER las imágenes de los comentarios, no solo el texto (regla dura, 2026-06-21)
+
+**Un comentario puede tener su argumento ENTERO en una imagen adjunta, no en el
+texto.** Saltarla es un fake-green de extracción (Art. 2): perfilas al actor sin su
+jugada real. `thread-extract.mjs` hoy es **text-only** (no captura imágenes —
+backlog), así que en hilos con imágenes la extracción NO está completa hasta que se
+miran a ojo. Por cada `article` con `<img>` de `fbcdn`/`scontent`:
+
+1. **Lista las imágenes adjuntas** (filtra avatares: los placeholders son `svg`
+   150px; las fotos reales son `fbcdn`/`scontent` con `naturalWidth>200`).
+2. **Mira la que importa con visión** (`scrollIntoView` el `<img>` correcto →
+   `take_screenshot`). El `alt` orienta pero NO basta — léela.
+3. Si el comentario depende de la imagen, **el dossier/transcript registra qué
+   muestra** (no solo "adjuntó una imagen").
+
+**Gotcha pagado (2026-06-21):** Anna posteó un bodegón de fruta podrida COMO su
+argumento ("las plantas también se ven feas en pintura"). La extracción text-only
+lo perdió; al ir a verla, un `scrollIntoView` ciego agarró una imagen del FEED
+(un post de lobsters) en vez del cuadro — **targetea el `<img>` por el `article`
+del autor + dims/alt, nunca el primer `fbcdn` que aparezca**. La imagen correcta
+(`alt:"May be art of apple"`, 480×445, dentro del article de Anna) era la que
+volteaba su propio argumento (ver [[reply-output-style]] — "Voltear la evidencia
+del oponente"). Sin verla, el draft habría sido genérico.
 
 **4. Guardar transcript** en `analysis/threads/<post_id>-<slug>.md` (árbol
 completo, raíz → última réplica).

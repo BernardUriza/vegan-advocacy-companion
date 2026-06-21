@@ -54,6 +54,7 @@ determinista, #5 bajar dependencia del coagent.
 29. Re-transcribir Educación Especista con `ca`/autodetección para los tramos catalán garbleados. — Proposed
 30. `scripts/extract-frameworks.mjs`: empaquetar el patrón fan-out de extracción en script/comando reusable. — **Done** (scaffold + merge_fw helper).
 31. ~~Extraer frameworks de la propia doctrina compasiva (`doctrine/rag/` — Rosenberg, IFS, NVC).~~ — **Done** (6 frameworks compasivos → en el arsenal).
+43. `thread-extract.mjs`: capturar las **imágenes adjuntas** de cada comentario (`<img>` fbcdn/scontent, `naturalWidth>200`, con `alt` + `src`) en el `turns[]` JSON. Hoy es text-only → un comentario cuyo argumento ES una imagen (caso Anna 2026-06-21: bodegón de fruta podrida como "prueba") se pierde en la extracción y hay que cazarla a mano por MCP (gotcha: el `scrollIntoView` ciego agarra una imagen del feed). Ruta a reusar: el walk de `div[role=article]` ya existe en `fb-lib`/`thread-extract`; solo agregar el filtro de `<img>`. Ver regla [[thread-actor-dossier]] §3.5. — Proposed
 
 ## G. Mecánica del pipeline
 32. `notif-scan`: manejar notifs de perfil personal con `pfbid` (el fallback que la regla menciona). — Proposed

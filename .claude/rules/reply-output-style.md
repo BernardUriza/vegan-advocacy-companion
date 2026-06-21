@@ -147,6 +147,53 @@ re-anclar. Si no hace falta, no aparece en el cuerpo. El style-gate (etapa 4)
 - Volver constantemente al punto original.
 - Preguntas finales que obligan al otro a definirse.
 
+## Voltear la evidencia del oponente (la jugada de mayor palanca contra la mala fe)
+
+La técnica más potente ante un insultador/pozo sin fondo (registro filo) NO es
+refutar su insulto: es **usar SU propia evidencia o analogía contra ÉL**. Cuando
+un oponente trae un "contraejemplo" o una analogía para burlarse, casi siempre la
+trae mal — y exponerlo es lo que educa al lurker sin que tengas que subir el
+volumen. El lurker ve que la pieza que el otro creyó letal se le devuelve.
+
+Pasos (orden importa):
+1. **No muerdas el insulto.** Una sola línea calmada de contraste de temperamento
+   ("cuando se acaba el argumento empiezan los toddler/AI dolls") y nada más.
+2. **Nombra el error de categoría / la asunción oculta** que su propia evidencia
+   delata — corto, concreto, una idea.
+3. **Devuelve al hueso** (el sujeto/la víctima, la pregunta moral) y **sal** — no
+   persigas a un pozo sin fondo.
+
+### Caso que la originó (2026-06-21, Anna Angelika, hilo Frida)
+
+Anna posteó —como "prueba" de que "las plantas también se ven feas en pintura"— un
+**bodegón de fruta PODRIDA** (manzana magullada + plátano en descomposición), con
+insultos (toddler, AI dolls). Su propio cuadro la refutó, y la reply lo desmontó
+en tres capas, todas devolviendo al hueso:
+
+- **Error de categoría:** tuvo que pintar *descomposición* para que la fruta
+  incomodara. Una manzana fresca se lee como comida en cualquier lado; el animal
+  es el único alimento que debe volverse irreconocible para leerse como comida.
+- **Falta el sujeto:** "nadie la está forzando por un embudo" — no hay víctima, no
+  hay cuerpo, *a rotting banana can't occupy that role*. La incomodidad del Frida
+  nunca fue "lo crudo se ve feo"; es un cuerpo sintiente violentado (framework
+  [[algo-a-alguien-sujeto-derecho]]).
+- **Ironía sin ensañarse (UNA línea):** abrió diciendo que alguien faltó a clases
+  de arte, y eligió un *vanitas* (sobre la mortalidad, no sobre comida poco
+  apetecible) — leyó mal su propia evidencia.
+
+**Exponer la proyección SIN psicología clínica (regla dura de Bernard).** Su
+analogía ("una manzana podrida debería hacerme dejar la fruta") solo funciona si
+asume que una *pregunta* es una *exigencia de dejar de consumir*. Renderiza eso
+como la **forma lógica de su analogía**, NUNCA como diagnóstico ("tienes traumas /
+estás dolida") — un ad-hominem clínico pierde al lurker. La versión que sí:
+*"a question isn't a demand… if that question feels like pressure to give
+something up, that's a reaction brought to the post, not something the post itself
+is doing. I'm not telling anyone what they have to eat."* Reafirma que Bernard solo
+**pregunta**, no exige —ni a ella ni a nadie—; el norte sigue siendo el lurker.
+
+Esta jugada es generalizable a cualquier mala fe que aporta un contraejemplo
+autodestructivo: tómaselo, gíralo, devuélvelo al hueso, y sal.
+
 ## KILL-LIST — IA-tells que NUNCA se publican
 
 `"Let's unpack this"` · `"It's worth noting"` · `"At the end of the day"` ·
