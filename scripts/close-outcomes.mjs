@@ -9,7 +9,12 @@
 // Uso:
 //   node close-outcomes.mjs <transcript.json>            # aplica (escribe vía db.mjs)
 //   node close-outcomes.mjs <transcript.json> --dry-run  # clasifica sin escribir
+//   node close-outcomes.mjs <transcript.json> --silent-after-hours 6   # umbral del guard (default 12)
 //   cat transcript.json | node close-outcomes.mjs --stdin
+//
+// Guard de frescura: una jugada que daría `silent` pero cuya reply-ancla es más
+// reciente que --silent-after-hours queda `pending` (no se escribe) — el oponente
+// aún no la vio. Ver OUTCOME-LOOP.md.
 //
 // NO toca Chrome/red/Facebook: solo lee un transcript ya extraído (etapa 2) y
 // escribe el outcome con closeOutcome() (append-only sobre el campo). La integración
@@ -18,6 +23,14 @@
 
 import { readFileSync } from 'fs';
 import { getPendingInteractions, closeOutcome } from './db.mjs';
+import { ageMinutes } from './fb-lib.mjs';
+
+// Guard de frescura (root fix 2026-06-21): "silent" solo es honesto si el oponente
+// tuvo tiempo de ver tu reply y no volvió. Si tu reply-ancla es más reciente que este
+// umbral y el oponente no ha respondido, la jugada NO es silent — sigue `pending`.
+// Sin esto, correr close-outcomes minutos después de postear marca las jugadas frescas
+// como silent (fake-green, Art. 2) y colapsa maratones reales a silencio.
+const DEFAULT_SILENT_AFTER_MIN = 12 * 60;
 
 // ---- keyword sets para la clasificación (case-insensitive, word-ish boundaries) ----
 const CONCEDED = [
@@ -41,19 +54,22 @@ const hits = (text, list) => list.filter((k) => text.includes(k));
 
 // ---- normaliza el turno: tolera thread-extract (isMine/ageStr) y el shape del prompt (mine/age) ----
 function normTurn(t) {
+  const ageStr = t.ageStr ?? t.age ?? '';
   return {
     author: t.author,
     user_id: t.user_id ?? null,
     target: t.target ?? null,
     mine: t.mine ?? t.isMine ?? false,
     text: norm(t.text),
+    ageStr,
+    ageMin: ageMinutes(ageStr),
   };
 }
 
 // ---- clasifica el outcome de UNA interacción dada el transcript del hilo ----
 // La heurística mira lo que el oponente (actor) dijo DESPUÉS de tu última reply
 // en este hilo. Si no volvió a hablar → "silent".
-function classify(transcript, actor) {
+function classify(transcript, actor, silentAfterMin = DEFAULT_SILENT_AFTER_MIN) {
   const turns = transcript.map(normTurn);
   const oppById = (t) => actor.user_id && t.user_id && t.user_id === actor.user_id;
   const oppByName = (t) => !t.mine && actor.name && t.author === actor.name;
@@ -71,6 +87,15 @@ function classify(transcript, actor) {
   const after = turns.filter((t, i) => isOpp(t) && i > anchor);
 
   if (after.length === 0) {
+    // guard de frescura: si tu reply-ancla es muy reciente, el oponente aún no tuvo
+    // tiempo de verla — NO es silent, sigue pending (no escribir). Art. 2.
+    const anchorAge = anchor >= 0 ? turns[anchor].ageMin : Infinity;
+    if (Number.isFinite(anchorAge) && anchorAge < silentAfterMin) {
+      return {
+        outcome: 'pending',
+        evidence: `too fresh to call silent (your reply ~${anchorAge}m old < ${silentAfterMin}m threshold)`,
+      };
+    }
     // el oponente no volvió a hablar tras tu reply → silencio (la jugada quedó sin contestar).
     return { outcome: 'silent', evidence: 'opponent did not reply after your reply to them' };
   }
@@ -114,6 +139,11 @@ function loadTranscript() {
 
 function main() {
   const dryRun = process.argv.includes('--dry-run');
+  const hoursFlag = process.argv.findIndex((a) => a === '--silent-after-hours');
+  const silentAfterMin =
+    hoursFlag >= 0 && process.argv[hoursFlag + 1]
+      ? Math.round(parseFloat(process.argv[hoursFlag + 1]) * 60)
+      : DEFAULT_SILENT_AFTER_MIN;
   let doc;
   try {
     doc = loadTranscript();
@@ -154,9 +184,10 @@ function main() {
 
   const results = [];
   for (const p of pending) {
-    const { outcome, evidence } = classify(turns, { user_id: p.user_id, name: p.name });
+    const { outcome, evidence } = classify(turns, { user_id: p.user_id, name: p.name }, silentAfterMin);
     let applied = false;
-    if (!dryRun) {
+    // outcome 'pending' = el guard de frescura lo dejó abierto → NO escribir, sigue pending.
+    if (!dryRun && outcome !== 'pending') {
       const r = closeOutcome(p.user_id, p.thread_id, outcome, evidence);
       applied = !!r;
     }
@@ -166,7 +197,8 @@ function main() {
   const tally = results.reduce((m, r) => ((m[r.outcome] = (m[r.outcome] || 0) + 1), m), {});
   console.log(`\n=== OUTCOME-LOOP ${dryRun ? '(dry-run)' : ''} — hilo ${[...threadIds].join(', ') || '(?)'} ===`);
   for (const r of results) {
-    console.log(`  ${r.applied || dryRun ? '✓' : '—'} ${r.name} (${r.user_id})  outcome=${r.outcome}`);
+    const mark = r.outcome === 'pending' ? '⏳' : r.applied || dryRun ? '✓' : '—';
+    console.log(`  ${mark} ${r.name} (${r.user_id})  outcome=${r.outcome}`);
     console.log(`      framework=${r.framework ?? '(none)'} · ${r.evidence}`);
   }
   console.log(`\n  tally: ${JSON.stringify(tally)}  ${dryRun ? '(nada escrito — dry-run)' : '(escrito vía db.mjs)'}\n`);

@@ -55,6 +55,26 @@ entierre su turno y todo salga `silent`.)
 `goalpost` > `engaged`. Un insulto envenena aunque venga con un "good point"
 sarcástico; la concesión gana al goalpost porque es la señal más limpia de impacto.
 
+### Guard de frescura — `silent` solo si el oponente tuvo TIEMPO (root fix 2026-06-21)
+
+`silent` es honesto solo cuando el oponente vio tu reply y no volvió. Si corrés
+`close-outcomes` minutos después de postear (ej. cerrando el run anterior al final
+de un lote nuevo), tu reply-ancla es de hace minutos y el oponente aún no la vio —
+marcarla `silent` es un fake-green (Art. 2) y colapsa maratones reales a silencio.
+El guard: si la rama daría `silent` PERO tu reply-ancla es más reciente que el
+umbral (`--silent-after-hours N`, default **12h**), la jugada **NO se cierra** —
+sigue `pending` (no se escribe), con evidence `too fresh to call silent`. El
+próximo run, cuando el oponente ya tuvo tiempo, la cierra con el estado real.
+
+> Límite conocido (backlog): el guard cubre el branch `silent`, no `engaged`/
+> `escalated`/`conceded`. Si un transcript stale (o el gotcha de target en replies
+> anidados de FB, que etiqueta el composer con el autor PADRE) hace que el ancla
+> caiga en una reply VIEJA, un turno pre-fresco del oponente puede contar como
+> follow-up y dar `engaged` prematuro. Mitigación hoy: re-extraer el hilo fresco
+> antes de cerrar, y excluir del apply el hilo donde acabás de postear si su actor
+> sale `engaged` por esa causa. Fix de raíz pendiente: clasificación por-jugada
+> (no por-actor-último) usando la fecha de cada interacción.
+
 Las heurísticas son **groseras a propósito** (keyword-matching sobre el texto
 concatenado de los turnos post-reply del oponente). No pretenden NLP: surfacean un
 outcome defendible y dejan `outcome_evidence` con las keywords que dispararon, para
