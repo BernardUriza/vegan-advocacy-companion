@@ -459,6 +459,14 @@
         "our_reply_summary": "Cierre corto (contraste de temperamento): le tomo la palabra — si es solo un pasatiempo y no es en serio, dejo de leer sus arrebatos como argumentos; bridge al hilo Frida donde esta el punto real. Reclasifica sus insultos de argumento a ruido con calma cordial, sin insultar de vuelta.",
         "framework": null,
         "outcome": "pending"
+      },
+      {
+        "thread_id": "27395909046698912",
+        "date": "2026-06-21",
+        "their_move": "Posteó un bodegón de FRUTA PODRIDA como prueba de que las plantas tambien se ven feas en pintura (logic 0, no es lo mismo) + insultos (toddler, AI dolls).",
+        "our_reply_summary": "Filo corto: su propio cuadro la refuta — tuvo que pintar DESCOMPOSICION para que incomodara; nadie la fuerza por un embudo (no hay sujeto/victima, a rotting banana cant occupy that role); ironia: eligio un vanitas mientras presumia saber de arte; cierre (Bernard): una pregunta no es una exigencia — si se siente como presion a renunciar, eso lo trajo ella, no el post.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ]
   },
@@ -802,6 +810,14 @@
         "our_reply_summary": "Reply etiquetada (filo): nombré el is/ought — \"describir cómo funcionan los derechos\" es sociológico (poder/contrato/club), la pregunta era normativa; los derechos legales excluyeron esclavos/mujeres/niños por ese mismo criterio de no-reciprocidad, \"así funcionan\" describió la esclavitud de 1850 sin justificarla; la capacidad de ser dañado no necesita árbitro externo porque hay alguien a quien le importa, la membresía SÍ necesita que el club te admita (permiso, no fundamento); devolví la carga: qué tiene la membresía en sí. ESTRUCTURA de exclusión sin igualar sujetos, sin marginal cases.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "27363745576581926",
+        "date": "2026-06-21",
+        "their_move": "Doble jugada: (a) peticion_de_principio — no demostraste el salto sentience→prohibición; (b) line-drawing/sorites: ¿dónde trazas la línea? (mosquitos, garrapatas, gusanos parásitos).",
+        "our_reply_summary": "Filo calmado: la vaguedad del límite no disuelve los casos claros (crepúsculo ≠ mediodía/medianoche; vaca/cerdo en el centro). Devolví la carga: que ÉL nombre el criterio no-circular por el que el interés humano supera al animal — si no es la membresía de especie misma, ¿cuál es?",
+        "framework": "antropoespecismo",
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -810,10 +826,11 @@
     "user_id": "100035105043255",
     "name": "Shane Burchfield",
     "bando": "ambiguo",
-    "postura_nucleo": "Solo preguntó '¿qué alternativas sugieres?' — puede ser socrático hostil o pregunta genuina.",
-    "analisis": "Un turno, mínimo. Ambigüedad real (Art. 2): la pregunta sola no revela bando. Sin datos para clasificar duro.",
+    "postura_nucleo": "Buena fe; cría sus propios animales (humane self-farming). Tras conceder biología y aceptar que el sufrimiento importa, su última defensa pivotó a GUSTO/preferencia: no soporta el plant-based, no le gusta el 70%, soya nasty, y una alergia REAL a la mayoría de nueces.",
+    "analisis": "Audiencia genuina, no troll. El arco fue: naturalismo→can/should→relativismo (que él mismo refuta con sus propias líneas morales)→ahora preferencia/gusto+alergia. Su última no es esquive cínico: es una persona honesta diciendo \"no quiero/no puedo\". La jugada limpia es conceder el gusto y la alergia SIN desprecio y mover el peso al tercero. Registro compasivo obligatorio.",
     "tactics": [
-      "socrates_hostil"
+      "socrates_hostil",
+      "preferencia_gusto"
     ],
     "tone": "civil",
     "verdict": "audiencia",
@@ -851,6 +868,14 @@
         "their_move": "\"¿quién eres tú para decidir tu moral para todos?\" (relativismo) PERO en la misma frase traza líneas morales: cruzar ciertas líneas (cría/trato/método de matanza/aditivos) está mal, por eso cría el suyo.",
         "our_reply_summary": "Reply etiquetada (COMPASIVO): no es \"quién eres tú\" — él YA tiene líneas morales y las aplica a todos; concedí con respeto que ya cree que el sufrimiento/trato importan; el desacuerdo no es SI hay consideración moral sino DÓNDE se detiene; le devolví su propia línea: si el sufrimiento innecesario importa y hay alternativa adecuada, ¿por qué el paso final de matar es donde los intereses del animal dejan de contar? Sin atacar su forma de criar, sin factory farming, sin asumir mala fe.",
         "framework": "consideracion-moral-no-cuanto-sufre",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27363745576581926",
+        "date": "2026-06-21",
+        "their_move": "Deflexión fatalista: todo se muere igual, nadie elige cuándo/cómo + dejo sarcástico (¿el premio de ser vegano es elegir cómo morir?).",
+        "our_reply_summary": "Compasivo: concedí que todo muere y nadie elige; separé muerte-como-hecho de muerte-deliberadamente-impuesta; concedí gusto/realidades sin desprecio; cerré preguntando qué justifica matar intencionalmente a un animal que quería vivir cuando existe alternativa adecuada.",
+        "framework": "no-necesidad-cambiaron-las-reglas",
         "outcome": "pending"
       }
     ],
@@ -968,5 +993,24 @@
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61563003837147/"
+  },
+  {
+    "user_id": "965593289816591",
+    "name": "Indecent Bystander",
+    "bando": "anti-vegan",
+    "postura_nucleo": "One-liner en el hilo Frida: \"your assumption that this offends people is erroneous\" — niega la premisa del post privatizando la reacción (no ofende a nadie, lo proyectas tú).",
+    "analisis": "Un solo turno, eco del relativismo de Anna (\"el problema solo existe para quien se molesta\") pero SIN su baggage de pozo_sin_fondo. Niega el premise del post (la imagen perturba) reduciéndolo a opinión personal. Buen blanco LIMPIO para rebatir el claim \"esto no ofende\" de cara al lurker, sin re-feedear a Anna. El punto: el post nunca dijo que ofende por gusto/estética — dijo que pone la carne/órganos/alimentación forzada donde no puedes apartar la vista, y esa reacción precede a cualquier pregunta sobre intención.",
+    "tactics": [
+      "relativismo_moral"
+    ],
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No defender que la imagen ES objetivamente perturbadora para todos (eso concede su marco subjetivista). No pelear estética. Reanclar: el punto no era el gusto, era qué se vuelve visible cuando lo normalmente oculto se pone enfrente.",
+    "threads": [
+      "27395909046698912"
+    ],
+    "interactions": [],
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/965593289816591/"
   }
 ]

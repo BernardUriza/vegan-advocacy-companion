@@ -6,16 +6,18 @@
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100035105043255/
 - **Bando:** ambiguo
 - **Veredicto:** audiencia · **Registro:** compasivo
-- **Postura núcleo:** Solo preguntó '¿qué alternativas sugieres?' — puede ser socrático hostil o pregunta genuina.
+- **Postura núcleo:** Buena fe; cría sus propios animales (humane self-farming). Tras conceder biología y aceptar que el sufrimiento importa, su última defensa pivotó a GUSTO/preferencia: no soporta el plant-based, no le gusta el 70%, soya nasty, y una alergia REAL a la mayoría de nueces.
 
 ## Análisis
 
-Un turno, mínimo. Ambigüedad real (Art. 2): la pregunta sola no revela bando. Sin datos para clasificar duro.
+Audiencia genuina, no troll. El arco fue: naturalismo→can/should→relativismo (que él mismo refuta con sus propias líneas morales)→ahora preferencia/gusto+alergia. Su última no es esquive cínico: es una persona honesta diciendo "no quiero/no puedo". La jugada limpia es conceder el gusto y la alergia SIN desprecio y mover el peso al tercero. Registro compasivo obligatorio.
 
 ## Tácticas
 
 - **Hostile Socratic Method** (`socrates_hostil`) — Disguises a trap as curiosity. Asks questions not to learn but to set up whack-a-mole redirection. 'Could you say exactly what the problem is with exploiting animals?' / 'List the exploitative events that are the problem.'
   - _Contra:_ Don't bite. Answer the underlying question cleanly without following the redirect: 'Exploitation isn't a list of events — it's a relationship. Breeding a sentient being into existence for the purpose of using and killing it is the relationship, not a checklist.' Return the question.
+- **Taste/Preference as Justification** (`preferencia_gusto`) — Defends animal use by appeal to personal taste or dislike of the alternatives: "I just like the taste", "I tried plant-based and don’t enjoy it", "soy is nasty to me", sometimes mixed with a genuine constraint (allergies). Treats a preference as if it settled the moral question.
+  - _Contra:_ Concede the preference fully — nobody has to enjoy the alternatives, and a real allergy is a real constraint, not a character flaw. Then separate liking from justifying: a preference explains why you’d rather, it doesn’t answer whether your preference outweighs a sentient being’s life when an adequate alternative exists. Move the weight to the third party who pays for the preference.
 
 ## Counter-arsenal
 

@@ -358,5 +358,18 @@
       "100002202037155"
     ],
     "fallacy_type_id": "ad_hominem"
+  },
+  {
+    "id": "preferencia_gusto",
+    "name": "Taste/Preference as Justification",
+    "category": "justification",
+    "definition": "Defends animal use by appeal to personal taste or dislike of the alternatives: \"I just like the taste\", \"I tried plant-based and don’t enjoy it\", \"soy is nasty to me\", sometimes mixed with a genuine constraint (allergies). Treats a preference as if it settled the moral question.",
+    "canonical_counter": "Concede the preference fully — nobody has to enjoy the alternatives, and a real allergy is a real constraint, not a character flaw. Then separate liking from justifying: a preference explains why you’d rather, it doesn’t answer whether your preference outweighs a sentient being’s life when an adequate alternative exists. Move the weight to the third party who pays for the preference.",
+    "register": "compasivo",
+    "what_not_to_do": "Don’t dismiss the taste or the allergy as trivial — that reads as contempt to the lurker and to a good-faith person. Don’t argue that the alternatives actually taste great. Concede the constraint, then move the weight to the animal, gently.",
+    "actors_known": [
+      "100035105043255"
+    ],
+    "fallacy_type_id": null
   }
 ]
