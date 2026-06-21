@@ -5,8 +5,13 @@ ARGUMENTS: opcional.
   las deudas `owes:true` (cap 4 por lote) y las procesa en paralelo hasta un único
   gate de revisión.
 - Un número `N` → limita el lote a las N deudas de mayor palanca.
-- Una URL/`post_id` → **modo single**: un solo hilo, sin lote (para un target duro
-  o de alto riesgo que merece atención dedicada).
+- **Una URL con `reply_comment_id`/`comment_id` (un replylink) → modo SINGLE = ORDEN
+  DIRECTA de responder a ESE comentario exacto.** El blanco es el comentario que el
+  link ancla (`reply_comment_id` si está, si no `comment_id`), punto. NO se re-deriva
+  el target por la heurística de deuda (`owes:true`/frescura): esa tabla es para el
+  lote, NO para un replylink. Puede salir un reply corto (dismissal) o uno completo —
+  lo decide el contenido del target, pero el QUÉ-responder ya está fijado por el link.
+  Si el usuario pide "solo uno", es además cap=1: un solo reply, ese.
 
 ## Contexto
 
@@ -58,14 +63,25 @@ no 9222). Reusar la tab de FB / del coagent abierta; nunca abrir a ciegas.
 ## Instrucciones
 
 ### Etapa 1 — Agrupar notificaciones · regla [notification-agrupation]
-- Modo single (hay URL/`post_id`): saltar la agrupación e ir directo a ese hilo.
+- **Modo single (hay replylink):** saltar la agrupación. El blanco YA está dado por
+  el link — extraer el `reply_comment_id` (o `comment_id`) y ESE es el comentario a
+  contestar. No correr `notif-scan`, no ponderar deuda. Ir directo a ese hilo en
+  etapa 2 solo para sacar el verbatim del target + su contexto.
 - Modo lote (sin arg / con `N`): **correr `cd scripts && node notif-scan.mjs --json`**
   (triage: agrupa por `post_id` real, separa el ruido de seguridad, ordena por
   deuda, emite la `openUrl` por hilo). Tomar las `openUrl` de los hilos `🔴` (alta
   deuda); el cap del lote es `N` o 4. MCP solo si el script falla.
 
-### Etapa 2 — Perfilar los hilos del lote · regla [thread-actor-dossier]
-- **Correr `node thread-extract.mjs "<openUrl>" --json` por CADA hilo del lote**
+### Etapa 2 — Perfilar el/los hilo(s) · regla [thread-actor-dossier]
+- **Modo SINGLE (replylink): el blanco es el comentario del link, NO la tabla de
+  deuda.** Correr `node thread-extract.mjs "<replylink>" --json` para el contexto,
+  pero el target es el turno cuyo `comment_id` == el `reply_comment_id` (o
+  `comment_id`) de la URL — IGNORAR `debt[]`/`owes:true` (esa heurística por frescura
+  eligió mal en single el 2026-06-21: apuntó a Indecent Bystander cuando el link
+  anclaba la réplica de Anna). El `reply_comment_id` presente significa que el blanco
+  es un **reply**, no un comentario raíz: amarra el target a ese turno, no al más
+  fresco del hilo. Confirmar el verbatim del target antes de decidir la jugada.
+- **Modo LOTE: correr `node thread-extract.mjs "<openUrl>" --json` por CADA hilo**
   (un loop; los hilos son independientes). Quedarse SOLO con los targets `owes:true`
   reales — descartar la frescura sin deuda (CarolAnn/Adam hablándole a un aliado no
   es deuda tuya). El conjunto de `owes:true` a través de los hilos = los blancos del
@@ -139,8 +155,17 @@ no 9222). Reusar la tab de FB / del coagent abierta; nunca abrir a ciegas.
   [reply-output-style]).
 - **Output humano, no robótico** — el style-gate por-draft es obligatorio.
 - **Verificar con recibos** — DOM + screenshot por cada post, nunca asumir.
-- **Frescura ≠ deuda.** Solo `owes:true` entra al lote; un oponente hablándole a un
-  aliado no es deuda tuya.
+- **Frescura ≠ deuda.** Solo `owes:true` entra al **lote**; un oponente hablándole a
+  un aliado no es deuda tuya.
+- **El replylink manda en modo SINGLE.** Si el argumento es una URL con
+  `reply_comment_id`/`comment_id`, el blanco es ESE comentario — NUNCA re-derivar por
+  `owes:true`/frescura (eso es solo del lote). Obedecer el link es la orden; corto o
+  completo lo dicta el target. (Bug 2026-06-21: ignoré el `reply_comment_id` y elegí
+  por la tabla de deuda → blanco equivocado.)
+- **Etapa 3 NO se salta — ni en single.** El draft SIEMPRE sale del coagent
+  (seed→finalize, con frameworks+guardrail+seed-gate); el hook de procedencia
+  (`.claude/hooks/coagent-provenance-gate.mjs`) BLOQUEA el staging si no hay recibo
+  fresco que case por sha. "Solo un reply" cambia el cap, no exime la consulta.
 - **Solo análisis en etapas 2–3** — no se toca nada en FB hasta el gate de lote.
 - **JSON es la SSOT, el markdown es generado.** Escribir vía `db.mjs`; NUNCA editar
   `analysis/actors/*.md` a mano. Tras escribir: `validate-data.mjs` + `gen-dossiers.mjs`
@@ -152,6 +177,7 @@ no 9222). Reusar la tab de FB / del coagent abierta; nunca abrir a ciegas.
 ## Una línea para arrancar
 
 Modo lote → "Corriendo el pipeline en lote sobre las N deudas de mayor palanca."
-Modo single (con URL/`post_id`) → "Corriendo el pipeline sobre el hilo indicado."
-Luego ejecutar las etapas 1–3 para todo el lote y **parar en el gate de revisión de
-lote** (etapa 4).
+Modo single (replylink) → "Respondiendo al comentario que apunta el link (etapa 3
+coagent obligatoria)." — el blanco es ESE comentario, no la tabla de deuda.
+Luego ejecutar etapas 1–3 (en single, sobre el único target) y **parar en el gate de
+revisión** (etapa 4): nada se postea sin GO de Bernard.
