@@ -1274,5 +1274,24 @@
     "source_ref": "doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md",
     "related_tactics": [],
     "lurker_risk": "med"
+  },
+  {
+    "id": "dominacion-no-es-superioridad-moral",
+    "name": "Dominación ≠ superioridad moral: el poder fabricó el derecho, no lo justifica",
+    "author": "Bernard Uriza Orozco",
+    "tradition": "genealogía del especismo / crítica del poder (might ≠ right)",
+    "definition": "La dominación humana sobre los demás animales no nació de superioridad moral sino de ventaja material: fuimos mejores en cooperación, tecnología y control del entorno. Pero el poder cambia cómo vemos a quien queda debajo: con el tiempo los animales dejaron de verse como seres vivos y pasaron a ser recursos, propiedad, productos, herramientas. A más control, menos necesidad sentida de justificarlo — lo que empezó como supervivencia se volvió entitlement, y una vez instalado el entitlement el respeto es lo primero que desaparece. El hecho de dominar explica CÓMO llegamos aquí; no lo convierte en justo.",
+    "enables": "Contra-encuadra el movimiento species_hierarchy/naturalismo (\"somos la especie dominante\", \"los animales son recursos\", \"están aquí para nosotros\", \"cima de la cadena alimentaria\"): separa el hecho descriptivo del poder de cualquier licencia moral. Nombra el deslizamiento supervivencia→entitlement→pérdida de respeto, para que el lurker vea que tener poder no es lo mismo que tener razón. Es el contra directo al \"animals are here for us / are resources\" tipo Grant Fitchett.",
+    "register": "filo",
+    "attack_surface": "ALTO si se usa mal: el oponente lo voltea — \"entonces concedes que la fuerza decide, y la fuerza la tenemos nosotros → ganamos\". Hay que sostener la línea is/ought: el poder EXPLICA el origen, nunca lo JUSTIFICA — ese es justo el punto. No romantizar un pasado pre-poder \"en armonía\" (naturalismo invertido). Es MARCO, no premisa portante: si refutan la historia, la pregunta moral sigue en pie.",
+    "deploy_as": "marco",
+    "source_ref": "doctrine/originals/dominacion-no-es-superioridad-moral.md",
+    "related_tactics": [
+      "species_hierarchy",
+      "naturalismo",
+      "is_ought",
+      "apelacion_normal"
+    ],
+    "lurker_risk": "med"
   }
 ]
