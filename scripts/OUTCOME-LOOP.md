@@ -1,5 +1,12 @@
 # Outcome-loop — cerrar la memoria write-only
 
+> **El clasificador PRIMARIO es el reflex LLM** (`scripts/reflex.mjs`, etapa 0 del
+> pipeline — ver `.claude/rules/outcome-reflex.md`). El juicio del outcome —sobre
+> todo el `conceded`, que vive a veces en el propio `their_move` y que keywords
+> pierde— lo hace Claude leyendo el arco completo. El heurístico de keywords de
+> ESTE archivo (`close-outcomes.mjs`) quedó como **fallback offline / primer pase
+> grosero**; el reflex LLM lo SOBRESCRIBE cuando el keyword se equivocó.
+
 Las interacciones en `data/actors.json` nacen con `outcome: "pending"` y, hasta
 ahora, **nunca se cerraban**: cada reply que Bernard postea queda registrada pero
 su efecto (¿el oponente concedió? ¿escaló? ¿movió el poste? ¿se calló?) jamás se

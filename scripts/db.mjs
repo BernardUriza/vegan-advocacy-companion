@@ -145,6 +145,31 @@ export function closeOutcome(userId, threadId, outcome, evidence) {
   return { user_id: userId, thread_id: threadId, outcome, evidence: evidence ?? null };
 }
 
+// Escritura PRECISA y RE-JUZGABLE de un outcome (el reflex LLM la usa). A diferencia
+// de closeOutcome (que solo toca la PRIMERA pending del actor-hilo), esta apunta a UNA
+// interacción exacta por (user_id, thread_id, date, needle de their_move) y PUEDE
+// sobrescribir un outcome ya escrito — porque el LLM re-juzga el arco completo y a veces
+// corrige un veredicto viejo del heurístico de keywords (ej. una concesión que estaba
+// en el `their_move` y quedó mal marcada `silent`). Aborta si el match no es único.
+export function updateInteractionOutcome(userId, threadId, dateOrNeedle, needle, fields) {
+  const actors = readActors();
+  const actor = actors.find(a => a.user_id === userId);
+  if (!actor) throw new Error(`Actor ${userId} not found`);
+  const deburr = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
+  const date = needle === undefined ? null : dateOrNeedle;
+  const nd = needle === undefined ? dateOrNeedle : needle;
+  const cand = (actor.interactions ?? []).filter(
+    x => x.thread_id === threadId && (date ? x.date === date : true) && deburr(x.their_move).includes(deburr(nd))
+  );
+  if (cand.length !== 1) throw new Error(`match no único (${cand.length}) para ${userId}/${threadId} needle="${nd}"`);
+  const it = cand[0];
+  if (fields.outcome) it.outcome = fields.outcome;
+  if (fields.evidence) it.outcome_evidence = fields.evidence;
+  if (fields.note) it.outcome_note = fields.note;
+  writeJsonAtomic(ACTORS_PATH, actors);
+  return { user_id: userId, thread_id: threadId, outcome: it.outcome, note: it.outcome_note ?? null };
+}
+
 // Efectividad de un framework (el moat): agrega los outcomes de cada interacción
 // de todos los actores donde se desplegó ese framework. Devuelve {deploys, ...outcomes}.
 export function getFrameworkWinRate(frameworkId) {
