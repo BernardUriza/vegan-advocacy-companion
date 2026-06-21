@@ -27,12 +27,41 @@ enviar a Facebook es de Bernard.
 Línea de identidad obligatoria (`hola soy claude code, escribo desde
 exchange-coagent devtools.`) → qué etapa es → post raíz verbatim + reacciones →
 tablero completo (cada rama/actor con bando y táctica, resumen de los dossiers) →
-**munición del arsenal** (ver abajo) → la jugada de mayor palanca + razonamiento,
+**munición del arsenal** (ver abajo) → **el bloque guardrail abolicionista
+delimitado** (ver abajo) → la jugada de mayor palanca + razonamiento,
 pidiéndole **stress-test** ("no me consientas", Art. 3) → el riesgo a anticipar →
 ask explícito (confirmar/refutar el blanco, redactar **como REPLY ETIQUETADA a la
 persona en su hilo** —norma del grupo, NUNCA root, ver [[comment-post-and-verify]]—,
 en la voz de Bernard, marcar **qué NO decir**) → recordatorio de
 scope (solo borrador, el botón es de Bernard).
+
+## PASO 0 — seed-gate ANTES de seedear (mecánica, root fix 2026-06-21)
+
+Tras componer el master prompt en su archivo y **antes** de seedearlo al coagent,
+pasarlo por el gate determinista:
+
+```bash
+node scripts/seed-gate.mjs .coagent/master-prompt-batch.md
+```
+
+- **exit 0 (LIMPIO)** → la jugada no es bienestarista y el guardrail está presente;
+  seedear al coagent.
+- **exit 1 (FLAGS DURAS)** → **NO mandar al coagent**, reformular la JUGADA primero.
+  Las flags duras son:
+  - `welfaristInPlay` — la jugada (fuera del guardrail y de las citas verbatim del
+    oponente) usa léxico bienestarista como eje (`daño innecesario`, `rol del daño`,
+    `subproducto incidental`, `incidental vs propósito`, `menos daño`, `unnecessary/
+    least/reduce harm`, `byproduct`, `dos intereses en la balanza`). Reescribir el eje
+    a propiedad/esclavitud (ver abajo).
+  - `guardrailMissing` — falta el bloque guardrail delimitado.
+  - `guardrailHollow` — el bloque existe pero no nombra el eje propiedad/esclavitud
+    contra el daño prohibido (un guardrail de relleno no cuenta).
+
+Este es el equivalente etapa-3 del `style-gate` de etapa 4 (ver `scripts/SEED-GATE.md`):
+el welfarismo se inyecta en la **jugada**, no en el draft, así que el gate va donde se
+decide la jugada — antes del coagent, no después del borrador. El detector es el mismo
+SSOT (`scripts/welfarist-axis.mjs`), corrido en español. La regla del Art. 4 aplicada:
+lo regexeable se scriptea, el juicio (componer la jugada) se queda en Claude.
 
 ### Munición del arsenal — cablear `data/frameworks.json` al master prompt
 
@@ -42,6 +71,35 @@ Por cada táctica del target (de su dossier), consultar
 `enables` (el ángulo deployable) y —obligatorio— su **`attack_surface`** como
 "qué NO hacer". El SSOT es `data/frameworks.json`; la vista navegable +
 índice inverso (táctica → frameworks) vive en `analysis/frameworks/README.md`.
+
+**Eje abolicionista, no bienestarista (innegociable — [[abolitionist-framing]]).**
+El master prompt DEBE pedir marco **abolicionista**: el eje es propiedad/esclavitud
+(sujeto poseído), NO reducción/cantidad de daño. Prohibir explícito que el borrador
+redacte el eje en términos de "harm/unnecessary harm/least harm/incidental vs
+intentional" o que conceda "daño innecesario en las cosechas también" — eso aplana
+la diferencia categórica (en la cosecha no hay esclavo; en la granja sí) y pierde.
+Frente a crop_deaths/least-harm: nombrar la esclavitud y preguntar **¿existe la
+esclavitud necesaria?**. El framework de eje es `algo-a-alguien-sujeto-derecho`.
+
+Esta prohibición va en el master prompt como un **bloque guardrail delimitado** —
+el `seed-gate` (PASO 0) lo exige y lo excluye al cazar welfarismo (dentro del bloque,
+nombrar "harm/daño" es legítimo: se nombra para prohibirlo). Formato canónico:
+
+```
+<!-- GUARDRAIL-ABOLICIONISTA -->
+EJE INNEGOCIABLE: el argumento gira en PROPIEDAD/ESCLAVITUD (el animal es un sujeto
+poseído), NO en la cantidad ni el rol del daño. PROHIBIDO redactar el eje como
+"harm / unnecessary harm / least/reduce harm / byproduct / incidental vs purpose /
+daño innecesario / menos daño / dos intereses en la balanza", y PROHIBIDO conceder
+"daño innecesario también en las cosechas". Frente a crop_deaths: nombrar que la
+granja es esclavitud (hay un sujeto poseído) y la cosecha no, y preguntar ¿existe la
+esclavitud necesaria? El daño se menciona al pasar, jamás como eje portante.
+<!-- /GUARDRAIL-ABOLICIONISTA -->
+```
+
+Las JUGADAS (enables/attack_surface/razonamiento/riesgo de cada blanco) viven FUERA
+del bloque y deben estar limpias de ese léxico — si una jugada lo usa como eje, el
+`seed-gate` truena (`welfaristInPlay`).
 
 **Disciplina dura (innegociable):** el coagent elige **UN solo framework por
 reply**, NUNCA lo usa como premisa portante (es marco — ver el aprendizaje Göbekli

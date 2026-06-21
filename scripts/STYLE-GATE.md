@@ -49,6 +49,14 @@ coincide con ese nombre (el destinatario que el tag de FB ya etiqueta).
 | `wordCount` | blanda | fuera de 150-350 palabras | conteo + too_short/too_long |
 | `tricolon` | blanda (dura si se repite) | "X, Y, and Z" como molde | cada ocurrencia |
 | `emojiOrMarkdown` | dura | emojis, **bold**, MAYÚSCULAS-grito, headings | los tokens encontrados |
+| `welfaristAxis` | **dura** | framing bienestarista como EJE: "unnecessary/avoidable/least/reduce harm", "byproduct", "two interests on the scale", o quantum de daño ("harm/suffering/daño/sufrimiento") en apertura/cierre o ≥2 veces (eje, no al pasar) | términos fuertes + posición + conteo |
+
+`welfaristAxis` es el backstop mecánico de [[abolitionist-framing]]: el eje debe ser
+PROPIEDAD/ESCLAVITUD (sujeto poseído), no la cantidad/rol del daño. Un draft
+bienestarista NO puede llegar al composer — `comment-prepare` lo rechaza (exit 4)
+antes de abrir tab. Una mención del daño "al pasar" (1 vez, en medio del cuerpo) se
+tolera; en la apertura, el cierre, o repetida, es el eje → falla. Quita la discreción
+del único punto donde el redactor (LLM) deriva al prior bienestarista genérico.
 
 ## Por qué existe
 

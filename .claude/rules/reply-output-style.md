@@ -20,6 +20,14 @@ técnico. *"¿Qué justifica usar a seres sintientes como propiedad/recurso cuan
 existen alternativas?"* — la carga de prueba está en quien explota, no en el
 vegano.
 
+**El eje es ABOLICIONISTA, no bienestarista** (regla dura [[abolitionist-framing]],
+2026-06-21). El hueso NO es el daño ("harm/sufrimiento evitable/unnecessary harm")
+— eso es bienestarismo y concede el terreno. El hueso es el **estatus de
+propiedad/esclavitud**: el animal es un sujeto poseído. Frente a crop_deaths /
+least-harm NO se concede "daño innecesario en todos lados" (en la cosecha no hay
+nadie esclavizado; en la granja sí); se nombra la esclavitud y se pregunta **¿existe
+la esclavitud necesaria?**. El daño se menciona al pasar, jamás es el eje portante.
+
 - Las peleas técnicas (B12, Beyond Meat, depredadores, supplements) se **conceden**
   para mostrar que el marco NO depende de esos detalles — y el peso vuelve a la
   pregunta moral. Conceder lo empírico **fortalece**, no debilita.
@@ -209,7 +217,13 @@ postear, conservando la sustancia) · **abrir el cuerpo con el nombre del
 destinatario** (`"Les M Les, I don't…"`, `"Scott James Scott, the reason…"`): el
 tag de FB ya pone la auto-mención, abrir con "Nombre," DUPLICA el nombre y se lee
 a molde; el cuerpo arranca en la idea (ver "La apertura"). El style-gate borra el
-vocativo inicial antes de postear.
+vocativo inicial antes de postear. · **framing bienestarista como eje del
+argumento** ("harm/daño/unnecessary harm/avoidable harm/sufrimiento evitable/
+reduce-least-minimize harm/incidental vs intentional harm" como LA distinción, o
+conceder "unnecessary harm everywhere / en las cosechas también"): es bienestarismo,
+concede el terreno y pierde al lurker (ver [[abolitionist-framing]]). El eje va en
+PROPIEDAD/ESCLAVITUD/sujeto poseído/¿esclavitud necesaria?; el daño solo al pasar. El
+style-gate reformula el eje a abolicionista ANTES de postear.
 
 ## Pre-post check (lo ejecuta etapa 4)
 

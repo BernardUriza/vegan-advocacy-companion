@@ -14,6 +14,7 @@
 // (wordCount fuera de rango, tricolon, staccato moderado) avisan pero no fallan.
 
 import { readFileSync } from 'fs';
+import { detectWelfaristAxis } from './welfarist-axis.mjs';
 
 const args = process.argv.slice(2);
 const asJson = args.includes('--json');
@@ -170,6 +171,10 @@ function checkEmojiOrMarkdown() {
   };
 }
 
+// ------- check: framing BIENESTARISTA como eje (kill-list de [[abolitionist-framing]]) -------
+// El detector vive en welfarist-axis.mjs (SSOT, compartido con seed-gate de etapa 3).
+// Etapa 4 (draft inglés): la posición importa (el eje aterriza en apertura/cierre) y
+// quantum>=2 es eje. Política idéntica a la histórica.
 const checks = [
   checkKillPhrases(),
   checkStaccato(),
@@ -177,6 +182,7 @@ const checks = [
   checkWordCount(),
   checkTricolon(),
   checkEmojiOrMarkdown(),
+  detectWelfaristAxis(text, { lang: 'en', positional: true, quantumHardAt: 2 }),
 ];
 
 const hardFlags = checks.filter((c) => c.hard).map((c) => c.name);
@@ -205,6 +211,7 @@ if (asJson) {
   console.log(`[${checks[3].soft ? '~' : '.'}] wordCount         ${checks[3].wordCount} (${checks[3].flag})`);
   console.log(`[${checks[4].repeated ? 'X' : checks[4].soft ? '~' : '.'}] tricolon          ${checks[4].count} ocurrencia(s)${checks[4].count ? ': ' + checks[4].evidence.join(' | ') : ''}`);
   console.log(`[${mark(checks[5].hard)}] emojiOrMarkdown   emojis:${checks[5].emojis.length} bold:${checks[5].bold.length} grito:${checks[5].shoutWords.length} headings:${checks[5].headings.length}`);
+  console.log(`[${mark(checks[6].hard)}] welfaristAxis     ${checks[6].evidence.length ? checks[6].evidence.join(' | ') : 'eje no-bienestarista (ok)'}`);
   if (softFlags.length) console.log(`\nflags blandas (avisan, no fallan): ${softFlags.join(', ')}`);
 }
 
