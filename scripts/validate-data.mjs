@@ -68,6 +68,7 @@ for (const f of frameworks) {
     if (!tacticIds.has(t)) errors.push(`framework "${f.id}" references undefined tactic "${t}"`);
   }
 }
+const frameworkIds = new Set(frameworks.map(f => f.id).filter(Boolean));
 
 // 4c. WARN: a framework with empty related_tactics is an orphan in the arsenal —
 // getFrameworksByTactic can never surface it, so it's unreachable counter-ammo.
@@ -117,6 +118,13 @@ for (const a of actors) {
     if (!it.framework) {
       missingFw++;
       if ((it.outcome ?? 'pending') !== 'pending') missingFwClosed++;
+    } else if (!frameworkIds.has(it.framework)) {
+      // 4h. ERROR (hard): the `framework` field holds a value that is NOT a real
+      // framework id (commonly a TACTIC id like deflexion_estetica) → silently
+      // invisible to framework-stats, so it pollutes the moat while LOOKING
+      // attributed. The gap that kept the moat empty hid here; this fails loud.
+      const asTactic = tacticIds.has(it.framework) ? ' (this is a TACTIC id, not a framework)' : '';
+      errors.push(`actor "${a.name}" interaction [${it.thread_id ?? '?'} ${it.date ?? '?'}] framework "${it.framework}" is not a known framework id${asTactic}`);
     }
   }
 }

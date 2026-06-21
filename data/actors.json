@@ -44,6 +44,14 @@
         "their_move": "No, its both. There is no moral reason for me to stop eating meat. Why should I? (+ tu-quoque carrion/compost dirigido a Rüdiger, esquivando mi pregunta del marco)",
         "our_reply_summary": "Reply etiquetada anclada en su why-should-I-stop. Inversion de carga: no-reason-to-stop != justification; el post pidio justificar la explotacion, no una razon para parar. Concedio toda la biologia/carrion/B12. No persiguio el tu-quoque ni repitio el goalpost (Rudiger ya lo nombro, lo pocketeo). Cerro con la pregunta del marco para el lurker.",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "27405978672358616",
+        "date": "2026-06-21",
+        "their_move": "Naturalismo (\"evolved into herbivores?\") + claim de necesidad + \"incomplete diet\" + salida dismissive \"I am not interested\".",
+        "our_reply_summary": "Concede omnivoro, separa can/should, clava que \"necesidad\" es lo falso (consumidora con supermercado), nombra el \"not interested\" como tell, devuelve al hueso. Sin nutricion/B12.",
+        "framework": "no-necesidad-cambiaron-las-reglas",
+        "outcome": "pending"
       }
     ]
   },
@@ -443,8 +451,8 @@
         "date": "2026-06-20",
         "their_move": "Relativismo/negativa a justificar: \"no justification is needed. I have no one to justify it to so I do not and I won not.\"",
         "our_reply_summary": "Reply etiquetada CORTA (filo, pozo — 4 frases): decir \"no hace falta justificación\" en un debate sobre justificación es en sí una respuesta; el post no preguntaba a quién le debes explicación sino si una existe; todos tienen líneas que creen que importan aunque llamen subjetiva la moral, la pregunta es si la línea sobrevive el escrutinio; \"no la justificaré\" es tu elección pero no es lo mismo que tener una justificación. No mordí insulto, no defendí Beyond Meat, sin metaética.",
-        "framework": "relativismo_moral",
-        "outcome": "pending"
+        "outcome": "pending",
+        "framework_note": "framework unattributed: prior entry held a tactic id (relativismo_moral), real framework unrecoverable without fabrication"
       },
       {
         "thread_id": "27395909046698912",
@@ -475,7 +483,15 @@
         "date": "2026-06-21",
         "their_move": "Deflexión estética: \"why does it look different on canvas vs plate? Because it is art (Surrealism/Cubism); art is symbolic not literal\" + \"if we could fit a whole cow on a plate we would\" + animales son comida, tus sentimientos son irrelevantes.",
         "our_reply_summary": "Filo corto: el estilo explica la imaginería onírica, NO la asimetría carne-cruda/empaque; un bistec en charola no es surrealista; su propia línea de la charola concede el punto (la presentación esconde la escala); el malestar es pregunta aparte, el post pregunta no exige. Vuelta al hueso, sin morder insulto ni pelear arte.",
-        "framework": "deflexion_estetica",
+        "outcome": "pending",
+        "framework_note": "framework unattributed: prior entry held a tactic id (deflexion_estetica), real framework unrecoverable without fabrication"
+      },
+      {
+        "thread_id": "27405978672358616",
+        "date": "2026-06-21",
+        "their_move": "crop_deaths/least-harm data-dump (azucar, abejas/almendras) + tu-quoque + insulto \"use your brain not AI\".",
+        "our_reply_summary": "Concede el dano evitable en todos lados, distingue rol-del-dano (subproducto vs proposito: el animal ES el producto), no body-count, roza el jab de AI una linea, devuelve al hueso.",
+        "framework": "no-necesidad-cambiaron-las-reglas",
         "outcome": "pending"
       }
     ]
@@ -896,6 +912,14 @@
         "our_reply_summary": "Cálido (buena fe): concedí hipotéticamente la preocupación por las plantas y mostré que la ganadería la AMPLIFICA (el cultivo pasa por el animal primero, paso extra); no es body-count sino rol del daño (subproducto incidental vs criar con la intención de matar); la agricultura no es inocua pero el rol del daño difiere; cierre al hueso (qué justifica traer un animal a existir para matarlo si hay otras formas de alimentarnos).",
         "framework": "no-necesidad-cambiaron-las-reglas",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "27363745576581926",
+        "date": "2026-06-21",
+        "their_move": "preferencia/gusto (\"why suffer eating stuff I dont like\") + plant-sentience (\"plants are alive/dead too\").",
+        "our_reply_summary": "Registro compasivo: concede gusto+alergia sin desprecio, separa preferir de justificar, distincion del sujeto (\"nobody home\" en la planta vs alguien para quien la muerte importa), mueve el peso al animal, suave.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/100035105043255/"
@@ -1055,8 +1079,8 @@
         "date": "2026-06-21",
         "their_move": "Projection: \"You are projecting YOUR discomfort with food, she was painting HER discomfort with being bed bound and funnel fed.\"",
         "our_reply_summary": "Medido (nueva, civil): concedí la intención de Frida (el post lo dice); \"estás proyectando\" relocaliza la pregunta en vez de contestarla; concedí que las reacciones varían pero la varianza no disuelve la pregunta; el contenido (cuerpo forzado a recibir carne) hace su trabajo sin importar la intención; vuelta a la asimetría galería/plato.",
-        "framework": "projection_subjetiva",
-        "outcome": "pending"
+        "outcome": "pending",
+        "framework_note": "framework unattributed: prior entry held a tactic id (projection_subjetiva), real framework unrecoverable without fabrication"
       }
     ]
   }

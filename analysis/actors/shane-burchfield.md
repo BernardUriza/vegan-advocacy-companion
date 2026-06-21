@@ -19,7 +19,7 @@ Audiencia genuina, no troll. El arco fue: naturalismo→can/should→relativismo
 - **Taste/Preference as Justification** (`preferencia_gusto`) — Defends animal use by appeal to personal taste or dislike of the alternatives: "I just like the taste", "I tried plant-based and don’t enjoy it", "soy is nasty to me", sometimes mixed with a genuine constraint (allergies). Treats a preference as if it settled the moral question.
   - _Contra:_ Concede the preference fully — nobody has to enjoy the alternatives, and a real allergy is a real constraint, not a character flaw. Then separate liking from justifying: a preference explains why you’d rather, it doesn’t answer whether your preference outweighs a sentient being’s life when an adequate alternative exists. Move the weight to the third party who pays for the preference.
 - **Crop Deaths / Bystander Flip** (`crop_deaths_flip`) — Uses the fact that crop agriculture kills field animals (mice, insects) to claim veganism causes more death, or to equate plant farming with animal farming morally. 'Growing crops kills innocent bystanders. Raising animals for purpose is cleaner.'
-  - _Contra:_ The distinction is intent and necessity. Crop deaths are incidental to feeding everyone, minimized where possible, and not the purpose of the activity. Animal farming kills intentionally and for non-necessity — and itself consumes more crops (70%+ of global cropland feeds animals, not humans). You don't escape crop deaths by eating meat; you add them.
+  - _Contra:_ ABOLITIONIST axis, not harm-reduction (see abolitionist-framing rule). The distinction is NOT amount or role of harm (incidental vs purpose = welfarism, concedes the ground). It is PROPERTY/SLAVERY: in a crop field no one is owned — it's incidental death of someone who is not property; on a farm the animal is bred, owned and disposed of as property — that is slavery. Concede every crop death freely (it changes nothing, the axis was never harm), then name the status difference and invert the burden: the question isn't 'what justifies unnecessary harm' but 'does necessary slavery exist?'
 
 ## Counter-arsenal
 
@@ -60,5 +60,9 @@ No asumir mala fe por una sola pregunta. Si responde, tratar como genuina hasta 
 ### Hilo `27363745576581926` — 2026-06-21 · outcome: **pending**
 - **Su jugada:** crop_deaths_flip: "Same can be said for plants" (las plantas también mueren/sienten).
 - **Nuestra respuesta:** Cálido (buena fe): concedí hipotéticamente la preocupación por las plantas y mostré que la ganadería la AMPLIFICA (el cultivo pasa por el animal primero, paso extra); no es body-count sino rol del daño (subproducto incidental vs criar con la intención de matar); la agricultura no es inocua pero el rol del daño difiere; cierre al hueso (qué justifica traer un animal a existir para matarlo si hay otras formas de alimentarnos).
+
+### Hilo `27363745576581926` — 2026-06-21 · outcome: **pending**
+- **Su jugada:** preferencia/gusto ("why suffer eating stuff I dont like") + plant-sentience ("plants are alive/dead too").
+- **Nuestra respuesta:** Registro compasivo: concede gusto+alergia sin desprecio, separa preferir de justificar, distincion del sujeto ("nobody home" en la planta vs alguien para quien la muerte importa), mueve el peso al animal, suave.
 
 _Hilos: 27363745576581926, 27341517928804691_

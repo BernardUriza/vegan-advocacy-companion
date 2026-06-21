@@ -107,4 +107,8 @@ No responder al insulto en su nivel. No defender a Beyond Meat específicamente.
 - **Su jugada:** Deflexión estética: "why does it look different on canvas vs plate? Because it is art (Surrealism/Cubism); art is symbolic not literal" + "if we could fit a whole cow on a plate we would" + animales son comida, tus sentimientos son irrelevantes.
 - **Nuestra respuesta:** Filo corto: el estilo explica la imaginería onírica, NO la asimetría carne-cruda/empaque; un bistec en charola no es surrealista; su propia línea de la charola concede el punto (la presentación esconde la escala); el malestar es pregunta aparte, el post pregunta no exige. Vuelta al hueso, sin morder insulto ni pelear arte.
 
+### Hilo `27405978672358616` — 2026-06-21 · outcome: **pending**
+- **Su jugada:** crop_deaths/least-harm data-dump (azucar, abejas/almendras) + tu-quoque + insulto "use your brain not AI".
+- **Nuestra respuesta:** Concede el dano evitable en todos lados, distingue rol-del-dano (subproducto vs proposito: el animal ES el producto), no body-count, roza el jab de AI una linea, devuelve al hueso.
+
 _Hilos: 27335635946059556, 27363745576581926_
