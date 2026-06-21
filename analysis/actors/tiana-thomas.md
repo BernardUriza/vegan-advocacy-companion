@@ -33,4 +33,8 @@ No insistir en que todos DEBEN sentir malestar (le regala el punto subjetivo). C
 - **Su jugada:** Projection: "You are projecting YOUR discomfort with food, she was painting HER discomfort with being bed bound and funnel fed."
 - **Nuestra respuesta:** Medido (nueva, civil): concedí la intención de Frida (el post lo dice); "estás proyectando" relocaliza la pregunta en vez de contestarla; concedí que las reacciones varían pero la varianza no disuelve la pregunta; el contenido (cuerpo forzado a recibir carne) hace su trabajo sin importar la intención; vuelta a la asimetría galería/plato.
 
+### Hilo `27395909046698912` — 2026-06-21 · outcome: **pending**
+- **Su jugada:** projection_subjetiva (turno fresco): asumes que los consumidores solo comen carne hiper-procesada y se asquearian si pareciera animal; proyectas tu aversion.
+- **Nuestra respuesta:** Medido: concedi que mucha gente come animales reconocibles sin asco — y el argumento NUNCA dependio del asco. "Proyectas tu aversion" solo funciona si la aversion hace el trabajo; no lo hace. El eje es el mismo ser visto como alguien en un contexto y como algo en otro, lo note quien lo note. Cierre: que convierte a un ser vivo de alguien en algo.
+
 _Hilos: 27395909046698912_

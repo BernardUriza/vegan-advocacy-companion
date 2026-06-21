@@ -65,4 +65,8 @@ No asumir mala fe por una sola pregunta. Si responde, tratar como genuina hasta 
 - **Su jugada:** preferencia/gusto ("why suffer eating stuff I dont like") + plant-sentience ("plants are alive/dead too").
 - **Nuestra respuesta:** Registro compasivo: concede gusto+alergia sin desprecio, separa preferir de justificar, distincion del sujeto ("nobody home" en la planta vs alguien para quien la muerte importa), mueve el peso al animal, suave.
 
+### Hilo `27363745576581926` — 2026-06-21 · outcome: **pending**
+- **Su jugada:** Desmonte: agree-to-disagree + zebra/lion (predator) + "no tengo que justificarlo" + autonomia (deberia poder comer lo que sea legal).
+- **Nuestra respuesta:** Closer compasivo: el leon no POSEE a la cebra ni la cria como propiedad; Shane si cria/posee/dispone. "No tengo que justificarlo" choca con que el YA traza lineas morales. El desacuerdo no es SI aplica la moral sino DONDE termina la linea. Agradeci el intercambio honesto. Eje alguien-vs-algo.
+
 _Hilos: 27363745576581926, 27341517928804691_
