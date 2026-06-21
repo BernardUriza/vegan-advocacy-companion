@@ -67,7 +67,7 @@ export function upsertActor(actor) {
   if (idx >= 0) {
     actors[idx] = { ...actors[idx], ...actor };
   } else {
-    actors.push(actor);
+    actors.push({ tactics: [], threads: [], interactions: [], ...actor });
   }
   writeJsonAtomic(ACTORS_PATH, actors);
   return actors[idx >= 0 ? idx : actors.length - 1];
