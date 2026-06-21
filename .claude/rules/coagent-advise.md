@@ -6,6 +6,47 @@ la inteligencia al **coagent orquestador** (GPT custom de Bernard — insult-gpt
 para que stress-testee la jugada de mayor palanca y redacte el borrador. Variante
 **outbound** de [[coagent]]: Claude NO reacciona al último turno, lo **siembra**.
 
+## insult-gpt es enforcer de consistencia marco→salida (x/y), NO oráculo vegano
+
+Regla dura (2026-06-21). El coagent (insult-gpt) **NO es fuente de opinión vegana** —
+pedírsela devuelve **bienestarismo** (el prior por default de TODO LLM, el suyo y el
+de Claude). Su maestría es OTRA: **asociar lo que tú mismo le das y cazar la
+incoherencia**. Si le entregas un marco y una salida que no cuadra con ese marco, te
+corrige HACIA el marco — y en eso, hasta hoy, "no se le escapa una".
+
+Por eso el master prompt se estructura como **x / y**, nunca como pregunta ética
+abierta:
+
+- **x = {explicación del marco abolicionista}** — propiedad/esclavitud, sujeto
+  poseído, ¿existe la esclavitud necesaria?; el framework elegido con su `enables` y
+  su `attack_surface`. El eje, explícito y dado como premisa.
+- **y = {la respuesta candidata}** — el borrador actual, o la respuesta bienestarista
+  tentadora, o el argumento del oponente que tienta a contestar en términos de daño.
+
+El **ask** NO es "dame la respuesta vegana" (→ bienestarista). Es: **"mi marco es x,
+mi salida es y — ¿es y coherente con x? Si no, regrésame la y que SÍ lo sea."**
+insult-gpt entonces "insulta" la incoherencia y devuelve `y = {respuesta
+abolicionista}` consistente con el marco que TÚ fijaste. Ese es el valor del handoff
+y por qué es crucial: pone su fuerza (asociación/coherencia) al servicio del eje, en
+vez de su debilidad (ética → welfarista).
+
+**Nunca** le pidas el juicio ético desde cero; **siempre** dale el marco abolicionista
+como x y la candidata como y, y pídele consistencia.
+
+## Backstop NO-salteable: el hook de procedencia (root fix 2026-06-21)
+
+Una regla es salteable por diseño — el 2026-06-21 Claude saltó esta etapa entera y
+posteó a mano un draft bienestarista (quantum x5). El texto de una regla no frena el
+prior welfarista del modelo. El backstop determinista es un **PreToolUse hook** que
+ejecuta el harness, NO Claude: antes de que `comment-prepare.mjs` stagee un reply,
+exige el **recibo de consulta** `.coagent/<post_id>.consult.json` que emite
+`seed-coagent.mjs` — master con frameworks anotados + guardrail, `seed_gate:pass`, y
+`draft_sha` == sha del `--body-file`. Sin recibo fresco, o con sha que no cuadra →
+**STAGING BLOQUEADO**. El hook **NO juzga contenido** (eso es trabajo de LLM: el
+style-gate de etapa 4 + el check x/y del coagent de arriba); solo prueba que la
+etapa 3 **ocurrió** con frameworks. Ver `.claude/hooks/coagent-provenance-gate.mjs`
+y `scripts/seed-coagent.mjs`.
+
 ## La mecánica del DOM vive en `/coagent` (SSOT) — NO se duplica aquí
 
 Esta etapa ES el outbound seed-&-read del skill **`/coagent`** (su SKILL.md cita
