@@ -49,7 +49,7 @@ No descartarlo como troll. Darle el argumento de necesidad una vez, sin condesce
 - **Su jugada:** Sobrepoblación salvaje→enfermedad como gestión natural; casi concede ("you prove valid points")
 - **Nuestra respuesta:** Concedí que la gestión de fauna salvaje plantea preguntas reales, pero es lo contrario de criar 80B a propósito; pregunté qué separa control de población de criar para matar.
 
-### Hilo `27363745576581926` — 2026-06-19 · outcome: **pending**
+### Hilo `27363745576581926` — 2026-06-19 · outcome: **silent**
 - **Su jugada:** Cierre civil concediendo: "your right about that... just a different between how we see it... thxs for being a good sport".
 - **Nuestra respuesta:** Cierre cálido (registro compasivo), sin victory-lap; reconocí la civilidad y planté suave para el lurker que examinar el porqué de la elección sigue importando. Sin framework de combate.
 

@@ -41,7 +41,7 @@ No asumir mala fe por una sola pregunta. Si responde, tratar como genuina hasta 
 - **Su jugada:** Pregunta genuina: "What alternatives are you suggesting?"
 - **Nuestra respuesta:** Reply etiquetada (cálido, sin vocativo): la alternativa es plant-based (no exótico); no tiene que ser idéntica, solo adecuada; si lo es, la pregunta moral sigue. Cerré preguntando qué justifica usar animales si la alternativa es adecuada.
 
-### Hilo `27341517928804691` — 2026-06-18 · outcome: **pending**
+### Hilo `27341517928804691` — 2026-06-18 · outcome: **goalpost**
 - **Su jugada:** Autonomía/personal-choice (you do you, let me be me) + error de categoría (muéstrame documentos LEGALES donde sea malo) + humane self-farming (crío los míos, sin matadero/gas/veal).
 - **Nuestra respuesta:** Reply etiquetada (compasivo, sin vocativo): reconoce el cuidado real que ya muestra; autonomía vale cuando solo te afecta a ti, pero hay un TERCERO (el animal) que no consintió; legal≠moral (cosas legales luego juzgadas mal); concede humane>industrial y aun así el hueso: matar un sintiente por preferencia con alternativas no se justifica por humane.
 

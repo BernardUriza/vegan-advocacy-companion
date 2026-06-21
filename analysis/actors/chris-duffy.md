@@ -74,7 +74,7 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 
 ## Log de interacciones
 
-### Hilo `27319402757682875` — 2026-06-18 · outcome: **pending**
+### Hilo `27319402757682875` — 2026-06-18 · outcome: **silent**
 - **Su jugada:** Leash tu-quoque/reductio: "usar correa restringe el libre albedrío, los torturas, partakes en la opresión" + frame de propiedad (quién paga el cuidado si no es propiedad).
 - **Nuestra respuesta:** Reply etiquetada (sin vocativo): concedí que la correa restringe; separé cuidado-de-dependiente (interés del perro) de cría-para-uso (interés nuestro); tutela≠propiedad (el niño no es propiedad y alguien paga su cuidado); cerré preguntando qué relación se defiende al criar animales para usarlos.
 

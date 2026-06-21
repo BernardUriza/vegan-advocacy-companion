@@ -86,11 +86,11 @@ NO entrar a competencia de body-count ni disputar que las crop-deaths ocurren. C
 
 ## Log de interacciones
 
-### Hilo `27341517928804691` — 2026-06-18 · outcome: **pending**
+### Hilo `27341517928804691` — 2026-06-18 · outcome: **silent**
 - **Su jugada:** crop-deaths / ecocidal-monoculture tu quoque + no-moral-high-ground (relativismo) + futilidad (come back when vegans stop ecocide)
 - **Nuestra respuesta:** Conceder crop-deaths; rol-del-dano (subproducto incidental vs muerte intencional como proposito) en vez de body-count; el 70% del cropland alimenta ganado => comer animales SUMA esas muertes; ignorar el insulto; cerrar con la pregunta del marco.
 
-### Hilo `27341517928804691` — 2026-06-18 · outcome: **pending**
+### Hilo `27341517928804691` — 2026-06-18 · outcome: **silent**
 - **Su jugada:** Ronda 2 crop-deaths: 55% tillage consumo-humano-directo + pivote grass-fed (menos muertes por caloria) + nutricion + insulto (lazy hypocrites, carnophobia, eat bugs/get back to us)
 - **Nuestra respuesta:** Conced crop-deaths sin disputar cifras; rol-del-dano (subproducto incidental vs proposito) sostiene feedlot O pasto idealizado; nombr el cambio de track (harm-exists => no-moral-difference no se sigue); pastoral = ownership not coexistence (de-centrado, NO entr a feasibility/calorias); ignor el insulto; cerr con la pregunta del marco.
 

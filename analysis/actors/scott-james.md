@@ -47,11 +47,11 @@ No entrar en body-count de crop deaths. La distinción es intención y necesidad
 
 ## Log de interacciones
 
-### Hilo `27341517928804691` — 2026-06-18 · outcome: **pending**
+### Hilo `27341517928804691` — 2026-06-18 · outcome: **silent**
 - **Su jugada:** Inversión/goalpost: me acusó de esquivar por no contestar sus DOS preguntas reformuladas; crop_deaths_flip ("criar para su propósito vs matar wildlife por profit") + abolition_reductio ("exterminar razas").
 - **Nuestra respuesta:** Reply etiquetada (filo, apertura sin vocativo): nombré la inversión (él sustituyó mi pregunta por dos suyas); desarmé Q1 ("designed for purpose" pide la cuestión; crop-deaths = rol del daño, no idénticas) y Q2 (dejar de criar ≠ exterminar); cerré devolviéndolo a la pregunta original.
 
-### Hilo `27375477042075446` — 2026-06-19 · outcome: **pending**
+### Hilo `27375477042075446` — 2026-06-19 · outcome: **silent**
 - **Su jugada:** Naturalismo + falacia genética ("el condicionado eres tú") + jab biológico (shovel hands / no-herbívoros)
 - **Nuestra respuesta:** El origen de una creencia no dice si es verdadera; concedí que es aprendido y natural; las shovel hands cortan contra él (si natural es la vara, fuera agricultura/medicina). Vuelta al hueso.
 

@@ -105,7 +105,7 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Edge cases del species_hierarchy: "¿igual consideración que humanos? perro peligroso que mauled niños, especies invasoras".
 - **Nuestra respuesta:** Reply etiquetada (sin vocativo): consideración≠trato idéntico (niño/adulto); concedí perro/invasoras como CONFLICTOS de interés/autodefensa, distintos de crear-para-usar; re-exigí el criterio que protege a TODO humano y excluye a TODO animal sin degradar humanos.
 
-### Hilo `27375477042075446` — 2026-06-18 · outcome: **pending**
+### Hilo `27375477042075446` — 2026-06-18 · outcome: **silent**
 - **Su jugada:** Foto/condicionamiento: naturalismo (humanos cazaban antes de los medios → evolución, no condicionamiento) + tu-quoque (el veganismo TAMBIÉN es condicionado).
 - **Nuestra respuesta:** Reply etiquetada (filo-ligero, sin vocativo): concede todo lo histórico/evolutivo, separa ORIGEN de JUSTIFICACIÓN (de dónde viene una creencia ≠ si sobrevive escrutinio); el tu-quoque cambia el tema de justificación a procedencia. Devuelve al hueso: normal/viejo/natural son descripciones, no conclusiones — qué justifica criar y matar sintientes cuando hay alternativas.
 
@@ -113,7 +113,7 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** El crux: membership of the human moral community vs sentience; flip de carga (sentience es asuncion vegana que tambien necesita justificacion); concedio no-absolutos y dropout rates del plant-based.
 - **Nuestra respuesta:** Concedio los 2 puntos empiricos; clavo la peticion de principio (la membresia hace todo el trabajo, un limite no es justificacion por existir); sentience rastrea un rasgo real (capacidad de ser danado) vs membresia arbitraria; estructura tribu/raza sin igualar sujetos; devolvio la carga: que tiene la membresia en si, aparte de algun rasgo, que cargue el peso moral.
 
-### Hilo `27375477042075446` — 2026-06-19 · outcome: **pending**
+### Hilo `27375477042075446` — 2026-06-19 · outcome: **silent**
 - **Su jugada:** Petición de principio: "necesario" es lo disputado; carga/punto neutral; "sentience es solo una creencia igual que la mía"
 - **Nuestra respuesta:** (a) la vara es alternativas ADECUADAS no imposibilidad, ex-veganos=adherencia; (b) el punto de partida es "dañar a un sintiente necesita razón", su misma vara con un perro; (c) concedí moral≠hecho científico pero corta para ambos, sintiencia no-arbitraria vs especie; le pedí el criterio no-arbitrario.
 

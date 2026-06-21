@@ -107,11 +107,11 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 - **Su jugada:** animal exploitation morally justified / part of ecosystem / biologically designed
 - **Nuestra respuesta:** Concede biología total. Separa 'omnívoro = hecho de digestión' de 'animals are food = juicio de valor que estás metiendo en la definición'. Cierra con UNA pregunta: capacidad no implica derecho.
 
-### Hilo `27341517928804691` — 2026-06-16 · outcome: **pending**
+### Hilo `27341517928804691` — 2026-06-16 · outcome: **silent**
 - **Su jugada:** Being an omnivore means we NEED nutrients from both plants and animals. Supplements prove the diet is incomplete.
 - **Nuestra respuesta:** Nombró el cambio de carril (moral status → supervivencia). Concedió biología. Clavó B12-de-bacterias-no-de-vacas + ganado también suplementado. Devolvió al hueso: necesidad de supervivencia ≠ su realidad (tiene súper lleno).
 
-### Hilo `27341517928804691` — 2026-06-18 · outcome: **pending**
+### Hilo `27341517928804691` — 2026-06-18 · outcome: **silent**
 - **Su jugada:** No, its both. There is no moral reason for me to stop eating meat. Why should I? (+ tu-quoque carrion/compost dirigido a Rüdiger, esquivando mi pregunta del marco)
 - **Nuestra respuesta:** Reply etiquetada anclada en su why-should-I-stop. Inversion de carga: no-reason-to-stop != justification; el post pidio justificar la explotacion, no una razon para parar. Concedio toda la biologia/carrion/B12. No persiguio el tu-quoque ni repitio el goalpost (Rudiger ya lo nombro, lo pocketeo). Cerro con la pregunta del marco para el lurker.
 

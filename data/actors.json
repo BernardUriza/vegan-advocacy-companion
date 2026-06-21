@@ -36,14 +36,16 @@
         "date": "2026-06-16",
         "their_move": "Being an omnivore means we NEED nutrients from both plants and animals. Supplements prove the diet is incomplete.",
         "our_reply_summary": "Nombró el cambio de carril (moral status → supervivencia). Concedió biología. Clavó B12-de-bacterias-no-de-vacas + ganado también suplementado. Devolvió al hueso: necesidad de supervivencia ≠ su realidad (tiene súper lleno).",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       },
       {
         "thread_id": "27341517928804691",
         "date": "2026-06-18",
         "their_move": "No, its both. There is no moral reason for me to stop eating meat. Why should I? (+ tu-quoque carrion/compost dirigido a Rüdiger, esquivando mi pregunta del marco)",
         "our_reply_summary": "Reply etiquetada anclada en su why-should-I-stop. Inversion de carga: no-reason-to-stop != justification; el post pidio justificar la explotacion, no una razon para parar. Concedio toda la biologia/carrion/B12. No persiguio el tu-quoque ni repitio el goalpost (Rudiger ya lo nombro, lo pocketeo). Cerro con la pregunta del marco para el lurker.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       },
       {
         "thread_id": "27405978672358616",
@@ -107,7 +109,8 @@
         "their_move": "Tu quoque doblado: \"your argument is tired and flawed... you and all vegans commit easily avoidable harm\".",
         "our_reply_summary": "Nombré el tu quoque con calma; concedí que ningún sistema es daño-cero y que aun así su imperfección-ajena no justifica SU daño (un daño evitable no licencia otro). Devolví al hueso: qué principio justifica criar y matar un sentiente cuando hay alternativa viable.",
         "framework": "no-necesidad-cambiaron-las-reglas",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "opponent kept arguing (1 civil follow-up turn(s), no concession/escalation/goalpost markers)"
       },
       {
         "thread_id": "27375477042075446",
@@ -115,7 +118,8 @@
         "their_move": "Mismo tu quoque en el hilo de especismo: \"you all consume unnecessary foods... easily avoidable harm... my initial statement stands\".",
         "our_reply_summary": "Nombré una vez el cambio de marco (de \"vegans son especistas\" a \"vegans también dañan\"); concedí que como variado; devolví al hueso del especismo (cerdo vs perro): qué hace a una especie comida y otra familia más allá del hábito.",
         "framework": "no-necesidad-cambiaron-las-reglas",
-        "outcome": "pending"
+        "outcome": "escalated",
+        "outcome_evidence": "keywords: pathetic"
       },
       {
         "thread_id": "27335635946059556",
@@ -123,7 +127,8 @@
         "their_move": "Deflexión empírica sobre la data del post de mercado: \"India is full of impoverished/sick people, China is the largest meat consumer growing, how accurate is the rest of your information?\" — convierte 2 ejemplos en sospecha de toda la data, ceba guerra de cifras.",
         "our_reply_summary": "Concedí lo empírico libremente (China crece, India es parte económico); pivote: la data de mercado es DESCRIPTIVA, nunca fue el argumento — si el mercado dobla o colapsa la pregunta moral no se mueve. Devolví la carga: ¿qué principio justifica criar/matar a un sintiente cuando hay alternativa viable? Cero data propia, no mordí el body-count.",
         "framework": "no-necesidad-cambiaron-las-reglas",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "opponent kept arguing (1 civil follow-up turn(s), no concession/escalation/goalpost markers)"
       }
     ]
   },
@@ -153,7 +158,8 @@
         "date": "2026-06-16",
         "their_move": "Yes. Any exploitation is justified if it is mutually beneficial. The benefits don't have to be equal.",
         "our_reply_summary": "Expuso que 'mutually' hace todo el trabajo y es falso. Concedió cuidado/refugio pero clavó que esos beneficios son condicionales a su propio uso y muerte. Nombró que la relación se estructura desde el inicio en torno al criador. Cerró devolviendo la carga: '¿en qué sentido es el beneficio mutuo y no condicional a la explotación?'",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       }
     ]
   },
@@ -251,7 +257,8 @@
         "date": "2026-06-18",
         "their_move": "Relativismo (\"moral subjetiva\") + \"algo tiene que morir\" + \"no me dictes\".",
         "our_reply_summary": "Reply etiquetada (firme sin sermón, sin vocativo): concedí que algo muere para vivir, pero daño inevitable no justifica daño evitable (manejar vs atropellar a propósito); moral subjetiva no nivela todo; señalar un daño no es dictar. Cerré preguntando por qué subjetividad+daño-inevitable lleva a que criar y matar no necesite justificación.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       }
     ]
   },
@@ -281,14 +288,16 @@
         "date": "2026-06-18",
         "their_move": "Inversión/goalpost: me acusó de esquivar por no contestar sus DOS preguntas reformuladas; crop_deaths_flip (\"criar para su propósito vs matar wildlife por profit\") + abolition_reductio (\"exterminar razas\").",
         "our_reply_summary": "Reply etiquetada (filo, apertura sin vocativo): nombré la inversión (él sustituyó mi pregunta por dos suyas); desarmé Q1 (\"designed for purpose\" pide la cuestión; crop-deaths = rol del daño, no idénticas) y Q2 (dejar de criar ≠ exterminar); cerré devolviéndolo a la pregunta original.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       },
       {
         "thread_id": "27375477042075446",
         "date": "2026-06-19",
         "their_move": "Naturalismo + falacia genética (\"el condicionado eres tú\") + jab biológico (shovel hands / no-herbívoros)",
         "our_reply_summary": "El origen de una creencia no dice si es verdadera; concedí que es aprendido y natural; las shovel hands cortan contra él (si natural es la vara, fuera agricultura/medicina). Vuelta al hueso.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       }
     ]
   },
@@ -320,14 +329,16 @@
         "date": "2026-06-18",
         "their_move": "crop-deaths / ecocidal-monoculture tu quoque + no-moral-high-ground (relativismo) + futilidad (come back when vegans stop ecocide)",
         "our_reply_summary": "Conceder crop-deaths; rol-del-dano (subproducto incidental vs muerte intencional como proposito) en vez de body-count; el 70% del cropland alimenta ganado => comer animales SUMA esas muertes; ignorar el insulto; cerrar con la pregunta del marco.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       },
       {
         "thread_id": "27341517928804691",
         "date": "2026-06-18",
         "their_move": "Ronda 2 crop-deaths: 55% tillage consumo-humano-directo + pivote grass-fed (menos muertes por caloria) + nutricion + insulto (lazy hypocrites, carnophobia, eat bugs/get back to us)",
         "our_reply_summary": "Conced crop-deaths sin disputar cifras; rol-del-dano (subproducto incidental vs proposito) sostiene feedlot O pasto idealizado; nombr el cambio de track (harm-exists => no-moral-difference no se sigue); pastoral = ownership not coexistence (de-centrado, NO entr a feasibility/calorias); ignor el insulto; cerr con la pregunta del marco.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       }
     ]
   },
@@ -401,7 +412,8 @@
         "date": "2026-06-18",
         "their_move": "Respondio a la pregunta moral retirandose a relativismo (‘morality es creencia personal, todo se justifica por un codigo personal’) y desplegando dos objeciones nuevas: la jerarquia plantas/bichos (‘veganos dicen que toda vida es igual pero matan plantas/insectos’) y el reductio de abolicion (si todos fueran veganos habria que matar al ganado, no mas mascotas, zoologicos cierran).",
         "our_reply_summary": "POSTEADO (run3, reply etiquetada a su turno [2h]): enmarcó el relativismo como retirada, no contradicción — Paul sigue razonando moralmente (consecuencias, jerarquías, mascotas) aun tras decir que todo es subjetivo. Corrigió el strawman ‘toda vida igual’ con sintiencia/capacidad de sufrir (la jerarquía ES el punto, no la incoherencia). Desactivó el reductio concediendo la premisa (no matar al ganado existente, sino dejar de criarlo para usarlo). Cerró devolviendo al hueso sin martillo: si la moral es más que gusto personal cuando hablamos de consecuencias/sufrimiento/justicia, ¿qué justifica usar seres sintientes cuando podemos no hacerlo?",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       }
     ]
   },
@@ -437,22 +449,25 @@
         "date": "2026-06-19",
         "their_move": "Relativismo + autonomía libertaria: \"I won't justify it, no one to justify it to, morality is subjective, it's a you problem\"",
         "our_reply_summary": "Separé las dos preguntas (¿cambiarás? vs ¿hay justificación?); el ejemplo del Muslim solo muestra que no le importa, no si es correcto; ella ya pesa razones → no vive el relativismo puro. Vuelta al hueso.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       },
       {
         "thread_id": "27375477042075446",
         "date": "2026-06-19",
         "their_move": "Naturalismo/especismo (pato/paloma, baseline de supervivencia) + relativismo + amenaza (\"show you your place\")",
         "our_reply_summary": "Ignoré la amenaza; is-ought: un pato no tiene agencia moral, \"natural\" describe el instinto no lo justifica; volví al hueso.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       },
       {
         "thread_id": "27375477042075446",
         "date": "2026-06-20",
         "their_move": "Relativismo/negativa a justificar: \"no justification is needed. I have no one to justify it to so I do not and I won not.\"",
         "our_reply_summary": "Reply etiquetada CORTA (filo, pozo — 4 frases): decir \"no hace falta justificación\" en un debate sobre justificación es en sí una respuesta; el post no preguntaba a quién le debes explicación sino si una existe; todos tienen líneas que creen que importan aunque llamen subjetiva la moral, la pregunta es si la línea sobrevive el escrutinio; \"no la justificaré\" es tu elección pero no es lo mismo que tener una justificación. No mordí insulto, no defendí Beyond Meat, sin metaética.",
-        "outcome": "pending",
-        "framework_note": "framework unattributed: prior entry held a tactic id (relativismo_moral), real framework unrecoverable without fabrication"
+        "outcome": "silent",
+        "framework_note": "framework unattributed: prior entry held a tactic id (relativismo_moral), real framework unrecoverable without fabrication",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       },
       {
         "thread_id": "27395909046698912",
@@ -468,7 +483,8 @@
         "their_move": "Insulto + escudo: Lol dude this is a fun pastime group not a debate club, you cant debate your way out of a paper bag, you use AI, embarrassing, I dont have to justify.",
         "our_reply_summary": "Cierre corto (contraste de temperamento): le tomo la palabra — si es solo un pasatiempo y no es en serio, dejo de leer sus arrebatos como argumentos; bridge al hilo Frida donde esta el punto real. Reclasifica sus insultos de argumento a ruido con calma cordial, sin insultar de vuelta.",
         "framework": null,
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       },
       {
         "thread_id": "27395909046698912",
@@ -561,7 +577,8 @@
         "date": "2026-06-18",
         "their_move": "Leash tu-quoque/reductio: \"usar correa restringe el libre albedrío, los torturas, partakes en la opresión\" + frame de propiedad (quién paga el cuidado si no es propiedad).",
         "our_reply_summary": "Reply etiquetada (sin vocativo): concedí que la correa restringe; separé cuidado-de-dependiente (interés del perro) de cría-para-uso (interés nuestro); tutela≠propiedad (el niño no es propiedad y alguien paga su cuidado); cerré preguntando qué relación se defiende al criar animales para usarlos.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       }
     ]
   },
@@ -589,7 +606,8 @@
         "date": "2026-06-18",
         "their_move": "ai_accusation: tras ser pivoteado (admitio que lucra con veganos), deflecto a \"if you are going to use ai, at least try to hide it\" en vez de argumentar.",
         "our_reply_summary": "Counter wit/breve (~50 palabras): nombre la acusacion-de-IA como el modo de no tener nada que agregar; devolvi a su propia admision (el dijo que los veganos lo hacen rico, solo coincidi); NO defendi autenticidad; cerre con \"what exactly are you disputing?\". Voz humana, sin ensayo.",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "opponent kept arguing (1 civil follow-up turn(s), no concession/escalation/goalpost markers)"
       }
     ]
   },
@@ -677,7 +695,8 @@
         "date": "2026-06-19",
         "their_move": "Sneer + meta-objeción al formato: \"Moral principle what a joke... little Bernie... extremely weak manner to frame\"",
         "our_reply_summary": "Ignoré el sneer; reencuadré solo la objeción de formato: no pedí olvidar principios, pedí dejar las desviaciones y nombrar el principio que justifica. Pregunta de cierre.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/100000418598784/"
@@ -729,7 +748,8 @@
         "date": "2026-06-18",
         "their_move": "Burden-shift: \"no necesitas justificación; el vegano necesita una para detenerme y no hay\".",
         "our_reply_summary": "Reply etiquetada (sin vocativo): la carga es de quien impone el daño evitable, no de quien objeta (no pedimos justificar NO patear al perro); nadie puede detenerte, la pregunta es si la práctica se justifica. Cerré pidiendo el principio que justifica el daño cuando evitarlo es posible.",
-        "outcome": "pending"
+        "outcome": "escalated",
+        "outcome_evidence": "keywords: cult, manipulat"
       },
       {
         "thread_id": "27363745576581926",
@@ -737,7 +757,8 @@
         "their_move": "Inversion de carga + autonomia: no necesita justificacion para comer carne; el vegano necesita justificacion para detenerlo y no la hay; animal feelings are not reason enough to harm myself.",
         "our_reply_summary": "Framework algo-a-alguien-sujeto-derecho (via coagent, attack_surface respetado: sin jerga juridica, planteado como pregunta). Concede su logica y la voltea: accion que solo te afecta a ti no necesita justificacion, pero hay un TERCERO; cuando el dano cae en otro, la carga es de quien lo causa. Usa su propio ejemplo del perro. Hueso: que principio justifica danar a un animal cuando evitarlo es posible.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "escalated",
+        "outcome_evidence": "keywords: cult, manipulat"
       },
       {
         "thread_id": "27375477042075446",
@@ -745,7 +766,8 @@
         "their_move": "Autonomía/elección informada: \"now i can reflect myself and i choose meat and animal products\" + honestidad apática \"I get it is bad but I do not care\" (concede la ética, elige no actuar). Civil, no-nativo, buena fe.",
         "our_reply_summary": "Registro compasivo: reconocí su honestidad (admite en vez de negar); separé elección de justificación (señalar el daño no es quitarle la elección); devolví la carga suave para el lurker: ¿qué razón hace el criar/matar justificado en vez de simplemente preferido? Inglés simple, sin filo.",
         "framework": "no-es-opcion-de-vida",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       },
       {
         "thread_id": "27375477042075446",
@@ -753,7 +775,8 @@
         "their_move": "Inversion de carga / escudo de preferencia: Because I prefer my diet, I do not have to justify that. Buena fe, no insulta.",
         "our_reply_summary": "Separe preferencia de justificacion: una preferencia justifica elegir entre cosas sin victima; cuando hay victima evitable lo prefiero describe por que, no justifica. Concedi que puede elegir; devolvi la carga sin agredir (registro suave, buena fe) cerrando con pregunta honesta.",
         "framework": "no-necesidad-cambiaron-las-reglas",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/100003644215699/"
@@ -829,7 +852,8 @@
         "date": "2026-06-18",
         "their_move": "Foto/condicionamiento: naturalismo (humanos cazaban antes de los medios → evolución, no condicionamiento) + tu-quoque (el veganismo TAMBIÉN es condicionado).",
         "our_reply_summary": "Reply etiquetada (filo-ligero, sin vocativo): concede todo lo histórico/evolutivo, separa ORIGEN de JUSTIFICACIÓN (de dónde viene una creencia ≠ si sobrevive escrutinio); el tu-quoque cambia el tema de justificación a procedencia. Devuelve al hueso: normal/viejo/natural son descripciones, no conclusiones — qué justifica criar y matar sintientes cuando hay alternativas.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       },
       {
         "thread_id": "27363745576581926",
@@ -843,7 +867,8 @@
         "date": "2026-06-19",
         "their_move": "Petición de principio: \"necesario\" es lo disputado; carga/punto neutral; \"sentience es solo una creencia igual que la mía\"",
         "our_reply_summary": "(a) la vara es alternativas ADECUADAS no imposibilidad, ex-veganos=adherencia; (b) el punto de partida es \"dañar a un sintiente necesita razón\", su misma vara con un perro; (c) concedí moral≠hecho científico pero corta para ambos, sintiencia no-arbitraria vs especie; le pedí el criterio no-arbitrario.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       },
       {
         "thread_id": "27363745576581926",
@@ -896,7 +921,8 @@
         "date": "2026-06-18",
         "their_move": "Autonomía/personal-choice (you do you, let me be me) + error de categoría (muéstrame documentos LEGALES donde sea malo) + humane self-farming (crío los míos, sin matadero/gas/veal).",
         "our_reply_summary": "Reply etiquetada (compasivo, sin vocativo): reconoce el cuidado real que ya muestra; autonomía vale cuando solo te afecta a ti, pero hay un TERCERO (el animal) que no consintió; legal≠moral (cosas legales luego juzgadas mal); concede humane>industrial y aun así el hueso: matar un sintiente por preferencia con alternativas no se justifica por humane.",
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "keywords: predators, lions"
       },
       {
         "thread_id": "27363745576581926",
@@ -988,14 +1014,16 @@
         "date": "2026-06-18",
         "their_move": "Futility/pluralism: \"es todas esas cosas a la vez; si buscas UNA verdad universal no existe\".",
         "our_reply_summary": "Reply etiquetada (sin vocativo): separé causas de justificación (su lista explica por qué la gente lo hace, no qué lo justifica); le concedí que no hay una sola verdad; pedí cuál ítem convierte el can-do en justified.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       },
       {
         "thread_id": "27363745576581926",
         "date": "2026-06-19",
         "their_move": "Redefine justificacion=cualquier razon (sentido legal) para disolver la pregunta moral; relativismo (morales fluidas); 98pct farmers se creen morales; insulto.",
         "our_reply_summary": "Expuso el cambio de pregunta (si justificacion=tener una razon, el debate termina antes de empezar); se-creen-morales es lo en disputa no la respuesta; relativismo de una linea (torturar a un nino); ignoro el insulto con calma; cerro con la pregunta del principio.",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       },
       {
         "thread_id": "27363745576581926",
@@ -1003,7 +1031,8 @@
         "their_move": "Colapsa razón=justificación explícito: \"the reason someone does something is their justification and vice versa\"; \"it is my life, my decision, my morality\"; tono grosero (hairy Shetland pony).",
         "our_reply_summary": "Reply etiquetada (filo): nombré el equívoco — una razón EXPLICA, una justificación DEFIENDE; si fueran lo mismo nada sería injustificable (el que tortura por placer \"tiene su razón\"); Tom no defiende su práctica, dice que no tiene que defenderla, lo cual es postura no argumento; \"es mi vida\" no responde porque otro sintiente carga el costo; devolví al hueso: qué principio justifica cuando hay alternativa adecuada. No perseguí la lista, no mordí el tono.",
         "framework": "no-necesidad-cambiaron-las-reglas",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/696225646/"
@@ -1056,7 +1085,8 @@
         "their_move": "Cierre civil concediendo: \"your right about that... just a different between how we see it... thxs for being a good sport\".",
         "our_reply_summary": "Cierre cálido (registro compasivo), sin victory-lap; reconocí la civilidad y planté suave para el lurker que examinar el porqué de la elección sigue importando. Sin framework de combate.",
         "framework": "sembrar-en-el-receptivo",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "opponent did not reply after your reply to them"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61563003837147/"

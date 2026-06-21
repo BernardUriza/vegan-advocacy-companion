@@ -75,15 +75,15 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** Tu-quoque de hipocresía: "todos usan plástico/meds developed on animals, cuántos hipócritas en una marcha"
 - **Nuestra respuesta:** "As far as possible and practicable" no es perfección; imperfección no refuta el principio; por su lógica nadie criticaría una injusticia; daño inevitable ≠ justifica el evitable.
 
-### Hilo `27319402757682875` — 2026-06-19 · outcome: **pending**
+### Hilo `27319402757682875` — 2026-06-19 · outcome: **engaged**
 - **Su jugada:** Tu quoque doblado: "your argument is tired and flawed... you and all vegans commit easily avoidable harm".
 - **Nuestra respuesta:** Nombré el tu quoque con calma; concedí que ningún sistema es daño-cero y que aun así su imperfección-ajena no justifica SU daño (un daño evitable no licencia otro). Devolví al hueso: qué principio justifica criar y matar un sentiente cuando hay alternativa viable.
 
-### Hilo `27375477042075446` — 2026-06-19 · outcome: **pending**
+### Hilo `27375477042075446` — 2026-06-19 · outcome: **escalated**
 - **Su jugada:** Mismo tu quoque en el hilo de especismo: "you all consume unnecessary foods... easily avoidable harm... my initial statement stands".
 - **Nuestra respuesta:** Nombré una vez el cambio de marco (de "vegans son especistas" a "vegans también dañan"); concedí que como variado; devolví al hueso del especismo (cerdo vs perro): qué hace a una especie comida y otra familia más allá del hábito.
 
-### Hilo `27335635946059556` — 2026-06-19 · outcome: **pending**
+### Hilo `27335635946059556` — 2026-06-19 · outcome: **engaged**
 - **Su jugada:** Deflexión empírica sobre la data del post de mercado: "India is full of impoverished/sick people, China is the largest meat consumer growing, how accurate is the rest of your information?" — convierte 2 ejemplos en sospecha de toda la data, ceba guerra de cifras.
 - **Nuestra respuesta:** Concedí lo empírico libremente (China crece, India es parte económico); pivote: la data de mercado es DESCRIPTIVA, nunca fue el argumento — si el mercado dobla o colapsa la pregunta moral no se mueve. Devolví la carga: ¿qué principio justifica criar/matar a un sintiente cuando hay alternativa viable? Cero data propia, no mordí el body-count.
 
