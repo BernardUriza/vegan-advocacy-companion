@@ -62,6 +62,31 @@ no 9222). Reusar la tab de FB / del coagent abierta; nunca abrir a ciegas.
 
 ## Instrucciones
 
+### Etapa 0 — REFLEX: cerrar/re-juzgar el moat con LLM (antes de trabajo nuevo) · regla [outcome-reflex]
+- **Corre SIEMPRE primero, en CUALQUIER modo (single o lote).** Es el reflex de "qué
+  tenemos hasta ahora": re-lee los hilos con interacciones `pending` o mal cerradas,
+  re-juzga el `outcome` **con tu juicio de LLM** (NO keywords) leyendo el ARCO COMPLETO,
+  marca `conceded` (el oro que el heurístico de keywords pierde — vive a veces en el
+  propio `their_move`), y deja una nota por framework de qué aterrizó.
+- Mecánica (frontera Art. 4 — mecánica al script, juicio al LLM):
+  1. Re-extraer (etapa-2 `thread-extract --json`) los hilos con interacciones a juzgar
+     → `.coagent/tx-<id>.json`. (Reusar los transcripts si ya son frescos del run.)
+  2. `node scripts/reflex.mjs emit` → `.coagent/reflex-packets.json` (arco verbatim +
+     interacciones con framework, por actor-hilo).
+  3. **Claude lee cada arco y juzga**: `outcome` (conceded/engaged/silent/escalated/
+     goalpost) + `note` corta por framework + `evidence`; escribe
+     `.coagent/reflex-verdicts.json` `[{user_id,thread_id,date,needle,outcome,note,evidence}]`.
+     El `needle` es un substring del `their_move` (match único). El conceded es raro y
+     valiosísimo (la mina de oro en terreno desolado) — cázalo, no lo fuerces.
+  4. `node scripts/reflex.mjs apply --verdicts .coagent/reflex-verdicts.json` (dry-run
+     primero). Puede SOBRESCRIBIR un outcome viejo mal clasificado por keywords.
+  5. `validate-data.mjs` + (si el folder está despejado) `gen-dossiers.mjs`.
+- El guard de frescura sigue valiendo: una jugada sin respuesta del oponente y con
+  reply-ancla < umbral queda `pending` (no la fuerces a silent). El LLM lo respeta:
+  sin turnos del oponente tras tu reply → pending/silent según la edad, nunca conceded.
+- Tras el reflex, el moat (`getFrameworkWinRate`) ya refleja qué framework gana oro y
+  en qué tipo de interlocutor (buena fe vs pozo) — úsalo para elegir jugada en etapa-3.
+
 ### Etapa 1 — Agrupar notificaciones · regla [notification-agrupation]
 - **Modo single (hay replylink):** saltar la agrupación. El blanco YA está dado por
   el link — extraer el `reply_comment_id` (o `comment_id`) y ESE es el comentario a
