@@ -111,4 +111,8 @@ No responder al insulto en su nivel. No defender a Beyond Meat específicamente.
 - **Su jugada:** crop_deaths/least-harm data-dump (azucar, abejas/almendras) + tu-quoque + insulto "use your brain not AI".
 - **Nuestra respuesta:** Concede el dano evitable en todos lados, distingue rol-del-dano (subproducto vs proposito: el animal ES el producto), no body-count, roza el jab de AI una linea, devuelve al hueso.
 
+### Hilo `27395909046698912` — 2026-06-21 · outcome: **pending**
+- **Su jugada:** Cierre-troll proyectando: acusa a Bernard de "logically inconsistent argument based on personal opinion" (cuando ella estableció que toda lectura es opinion personal/subjetiva), "you made false statements" sin nombrar uno, y salida performativa ("steak for dinner / boring / chasing your tail").
+- **Nuestra respuesta:** Flip-y-salir corto (filo, pozo ronda 9): volteé la proyeccion — quien declaro toda lectura "personal opinion, irrelevant" no puede acusar a otro de argumentar desde opinion (la navaja corta su posicion); "false statements" sin nombrar uno es declarar victoria no ganarla; devolvi al hueso de CATEGORIA (no opinion): por que el mismo cuerpo se lee como alguien en un contexto y como algo en otro, eso no se disuelve llamandolo subjetivo; sali. Sin morder el troll, sin re-pelear Frida/arte/IA.
+
 _Hilos: 27335635946059556, 27363745576581926_
