@@ -104,6 +104,25 @@ decide la jugada — antes del coagent, no después del borrador. El detector es
 SSOT (`scripts/welfarist-axis.mjs`), corrido en español. La regla del Art. 4 aplicada:
 lo regexeable se scriptea, el juicio (componer la jugada) se queda en Claude.
 
+### Higiene del master para pasar el seed-gate (aprendido a chingadazos 2026-06-21)
+
+El seed-gate caza TU PROPIO master, no solo descuidos del coagent. Aun hiper-consciente
+del eje, Claude filtró léxico bienestarista en la jugada Y en el ask y el gate lo paró
+DOS veces antes de sembrar. Dos reglas mecánicas, no opcionales:
+
+1. **La cita verbatim del oponente VA en blockquote (líneas `>`).** El seed-gate
+   excluye los blockquotes (es la cita del rival, no tu jugada). Si la pegas como texto
+   plano, el "avoidable harm / unnecessary harm" del oponente cuenta como TUYO y el gate
+   truena con `welfaristInPlay` (falso positivo que es culpa del formato, no del eje).
+2. **En el ask, NUNCA escribas los términos bienestaristas literales** —ni para
+   decirle al coagent que los RECHACE—. El regex no entiende negación: "rechaza si
+   deriva a *daño innecesario*" igual dispara `welfaristInPlay`. Referencia el bloque
+   guardrail ("el léxico que el GUARDRAIL-ABOLICIONISTA prohíbe") en su lugar.
+3. **Corré el seed-gate esperando que te cache a TI.** Si truena, leé la flag, reescribí
+   la jugada/ask, re-corré hasta LIMPIO. Recién entonces `seed-coagent.mjs seed`. No es
+   un trámite: es el backstop funcionando sobre el autor más propenso al welfarismo —
+   vos.
+
 ### Munición del arsenal — cablear `data/frameworks.json` al master prompt
 
 Por cada táctica del target (de su dossier), consultar
@@ -164,6 +183,24 @@ deja la tab viva para que Claude verifique `location.href`+contenido y haga el E
 El JUICIO (componer el prompt) se queda con Claude; solo el bulk-insert se scriptea.
 Hasta que exista el script: componer en archivo y embeber inline es el path, pero es
 el smell a eliminar — no es la forma final.
+
+## Corridas en paralelo (2+ agentes, un solo Chrome) — aprendido 2026-06-21
+
+Cuando Bernard corre el pipeline con DOS agentes a la vez sobre el mismo Chrome de
+debug y el mismo insult-gpt, hay dos colisiones que la mecánica normal no blinda:
+
+1. **Misma conversación del coagent = mensajes interleaveados = basura.** Cada agente
+   abre su PROPIA conversación nueva con insult-gpt (`new_page` al GPT base
+   `g-iCKKoRd5A-insult-gpt`), NUNCA reusa la tab del otro (global [[coagent]] §0.5).
+   Si en `list_pages` ves una tab "Insult GPT - <tema>" que no abriste, es del otro
+   agente: no la toques.
+2. **Dos clientes MCP sobre un Chrome racean en `select_page`** (la selección es
+   global): si seleccionás tu tab mientras el otro opera, le arrebatás la suya a media
+   acción (Art. 5). Esto NO se resuelve solo — se **serializa con Bernard**: hacer
+   TODO lo reversible sin Chrome (componer master x/y, seed-gate, recibo parcial de
+   `seed-coagent seed`), reportar "staged", y esperar que él libere el carril del
+   browser antes de sembrar. El `list_pages` (read-only) sí se puede para ver el
+   estado sin tocar nada.
 
 ## Por qué existe
 

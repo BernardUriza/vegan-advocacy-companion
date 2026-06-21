@@ -31,6 +31,17 @@ Bernard más reciente de lo que Bernard le contestó. Elegir el blanco por "lo �
 que pasó en el hilo" te manda a una rama ajena; elegirlo por `owes:true` (oponente
 que te habló y no has contestado) apunta a la deuda real. Si una rama ya tiene tu
 turno DESPUÉS del del oponente, esa deuda está PAGADA aunque la notif insista.
+
+**PERO la tabla de deuda es SOLO para el modo lote. En modo SINGLE (un replylink) el
+blanco lo manda el LINK, no la heurística** (aprendizaje 2026-06-21, bug real): si la
+URL trae `reply_comment_id`/`comment_id`, ESE comentario exacto es el target — un
+`reply_comment_id` presente significa que es un **reply**, no un raíz, así que amarrá
+el blanco al turno cuyo id == ese, e **IGNORÁ `debt[]`/`owes:true`** (esa tabla por
+frescura eligió mal: con el link anclando la réplica de Anna, `owes:true` apuntó a
+Indecent Bystander —un raíz— y casi contesto al equivocado). Confirmá el verbatim del
+target del link antes de decidir la jugada; si la extracción dejó ramas sin expandir
+(`expand.remaining > 0`), abrí el link para ver el comentario anclado. El replylink es
+orden directa: obedecerlo, corto o completo según lo que pida el target.
 El JSON alimenta el transcript (paso 4) y los dossiers (paso 5) directo. **En
 prueba** — si un hilo sale raro (render nuevo de FB, deuda que no cuadra), caer al
 path MCP (pasos 1–3) como confirmación/fallback. (Requiere `playwright-core` en
