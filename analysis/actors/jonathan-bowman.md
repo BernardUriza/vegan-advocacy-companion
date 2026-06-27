@@ -37,19 +37,19 @@ No descartarlo como troll. Darle el argumento de necesidad una vez, sin condesce
 
 ## Log de interacciones
 
-### Hilo `27363745576581926` — 2026-06-18 · outcome: **conceded**
+### Hilo `27363745576581926` — 2026-06-18 · outcome: **engaged**
 - **Su jugada:** "Ready to listen, nunca oí un argumento valioso de por qué está mal" (inversión de carga + apertura performativa).
 - **Nuestra respuesta:** Reply etiquetada (registro compasivo, sin vocativo): tomé en serio su apertura; di el argumento de necesidad limpio (si un ser puede sufrir y quiere vivir, dañarlo necesita justificación, no causa); burden shift; cerré preguntando qué razón basta para anular el interés del animal cuando no hace falta.
 
-### Hilo `27363745576581926` — 2026-06-19 · outcome: **conceded**
+### Hilo `27363745576581926` — 2026-06-19 · outcome: **engaged**
 - **Su jugada:** Casos limite/insectos (bedbugs, cucarachas, mosquitos, ratas) tras conceder el argumento de necesidad. Socrates_hostil suave, buena fe.
 - **Nuestra respuesta:** Concedio plagas como conflicto/autodefensa (no criar-para-matar); no mordio la lista; devolvio al hueso: que hace necesario criar y matar para comida cuando no aplican esas circunstancias.
 
-### Hilo `27363745576581926` — 2026-06-19 · outcome: **conceded**
+### Hilo `27363745576581926` — 2026-06-19 · outcome: **engaged**
 - **Su jugada:** Sobrepoblación salvaje→enfermedad como gestión natural; casi concede ("you prove valid points")
 - **Nuestra respuesta:** Concedí que la gestión de fauna salvaje plantea preguntas reales, pero es lo contrario de criar 80B a propósito; pregunté qué separa control de población de criar para matar.
 
-### Hilo `27363745576581926` — 2026-06-19 · outcome: **conceded**
+### Hilo `27363745576581926` — 2026-06-19 · outcome: **engaged**
 - **Su jugada:** Cierre civil concediendo: "your right about that... just a different between how we see it... thxs for being a good sport".
 - **Nuestra respuesta:** Cierre cálido (registro compasivo), sin victory-lap; reconocí la civilidad y planté suave para el lurker que examinar el porqué de la elección sigue importando. Sin framework de combate.
 

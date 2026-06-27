@@ -97,11 +97,11 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Steelman: relativismo moral + sube la vara adecuado→equivalente + principio welfare "unnecessary suffering minimised"
 - **Nuestra respuesta:** Reply etiquetada (filo controlado): re-ancla adecuado vs equivalente; expone el "unnecessary" que él mismo metió (si hay alternativas adecuadas, no es necesario → su principio aterriza en veganismo); concede el relativismo; cierra obligándolo a definir qué excluye "unnecessary".
 
-### Hilo `27363745576581926` — 2026-06-18 · outcome: **pending**
+### Hilo `27363745576581926` — 2026-06-18 · outcome: **engaged**
 - **Su jugada:** species_hierarchy: "humans have a higher moral status, entitled to use animals"; redefinió "necessary" con analogía música/café/mascotas; movió el crux a estatus moral.
 - **Nuestra respuesta:** Reply etiquetada (sin vocativo): concedí que el estatus moral ES el crux real (buena fe); maté la analogía (ninguna actividad tiene una víctima — "no one it's done to"); exigí el CRITERIO de la jerarquía (qué propiedad tienen todos los humanos y ningún animal, con la lógica de marginal cases embebida sin nombrar a nadie); cerré pidiendo el criterio que funda la línea.
 
-### Hilo `27363745576581926` — 2026-06-18 · outcome: **pending**
+### Hilo `27363745576581926` — 2026-06-18 · outcome: **engaged**
 - **Su jugada:** Edge cases del species_hierarchy: "¿igual consideración que humanos? perro peligroso que mauled niños, especies invasoras".
 - **Nuestra respuesta:** Reply etiquetada (sin vocativo): consideración≠trato idéntico (niño/adulto); concedí perro/invasoras como CONFLICTOS de interés/autodefensa, distintos de crear-para-usar; re-exigí el criterio que protege a TODO humano y excluye a TODO animal sin degradar humanos.
 
@@ -109,7 +109,7 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Foto/condicionamiento: naturalismo (humanos cazaban antes de los medios → evolución, no condicionamiento) + tu-quoque (el veganismo TAMBIÉN es condicionado).
 - **Nuestra respuesta:** Reply etiquetada (filo-ligero, sin vocativo): concede todo lo histórico/evolutivo, separa ORIGEN de JUSTIFICACIÓN (de dónde viene una creencia ≠ si sobrevive escrutinio); el tu-quoque cambia el tema de justificación a procedencia. Devuelve al hueso: normal/viejo/natural son descripciones, no conclusiones — qué justifica criar y matar sintientes cuando hay alternativas.
 
-### Hilo `27363745576581926` — 2026-06-19 · outcome: **pending**
+### Hilo `27363745576581926` — 2026-06-19 · outcome: **engaged**
 - **Su jugada:** El crux: membership of the human moral community vs sentience; flip de carga (sentience es asuncion vegana que tambien necesita justificacion); concedio no-absolutos y dropout rates del plant-based.
 - **Nuestra respuesta:** Concedio los 2 puntos empiricos; clavo la peticion de principio (la membresia hace todo el trabajo, un limite no es justificacion por existir); sentience rastrea un rasgo real (capacidad de ser danado) vs membresia arbitraria; estructura tribu/raza sin igualar sujetos; devolvio la carga: que tiene la membresia en si, aparte de algun rasgo, que cargue el peso moral.
 
@@ -117,12 +117,20 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Petición de principio: "necesario" es lo disputado; carga/punto neutral; "sentience es solo una creencia igual que la mía"
 - **Nuestra respuesta:** (a) la vara es alternativas ADECUADAS no imposibilidad, ex-veganos=adherencia; (b) el punto de partida es "dañar a un sintiente necesita razón", su misma vara con un perro; (c) concedí moral≠hecho científico pero corta para ambos, sintiencia no-arbitraria vs especie; le pedí el criterio no-arbitrario.
 
-### Hilo `27363745576581926` — 2026-06-20 · outcome: **pending**
+### Hilo `27363745576581926` — 2026-06-20 · outcome: **engaged**
 - **Su jugada:** Crux contractarian: "morally relevant according to whom?"; sentience es mera aserción; los derechos emergen de la membresía en una comunidad recíproca, no de la capacidad de sufrir; "mi posición describe cómo funcionan los derechos en el mundo real".
 - **Nuestra respuesta:** Reply etiquetada (filo): nombré el is/ought — "describir cómo funcionan los derechos" es sociológico (poder/contrato/club), la pregunta era normativa; los derechos legales excluyeron esclavos/mujeres/niños por ese mismo criterio de no-reciprocidad, "así funcionan" describió la esclavitud de 1850 sin justificarla; la capacidad de ser dañado no necesita árbitro externo porque hay alguien a quien le importa, la membresía SÍ necesita que el club te admita (permiso, no fundamento); devolví la carga: qué tiene la membresía en sí. ESTRUCTURA de exclusión sin igualar sujetos, sin marginal cases.
 
-### Hilo `27363745576581926` — 2026-06-21 · outcome: **pending**
+### Hilo `27363745576581926` — 2026-06-21 · outcome: **silent**
 - **Su jugada:** Doble jugada: (a) peticion_de_principio — no demostraste el salto sentience→prohibición; (b) line-drawing/sorites: ¿dónde trazas la línea? (mosquitos, garrapatas, gusanos parásitos).
 - **Nuestra respuesta:** Filo calmado: la vaguedad del límite no disuelve los casos claros (crepúsculo ≠ mediodía/medianoche; vaca/cerdo en el centro). Devolví la carga: que ÉL nombre el criterio no-circular por el que el interés humano supera al animal — si no es la membresía de especie misma, ¿cuál es?
+
+### Hilo `27405978672358616` — 2026-06-21 · outcome: **engaged**
+- **Su jugada:** Peticion de principio: "smuggled your conclusion into your premise" — niega la inferencia can→unnecessary con analogias (shelter/cars/glasses) y reencuadra la carne como "legitimate benefits" (nutricional/cultural/economico/practico) a ponderar.
+- **Nuestra respuesta:** Concede que can≠unnecessary (la inferencia sola seria debil), pero clava el category shift: house/glasses/car NO son alguien; el animal si. La carne entra como recurso medido por lo que el humano saca, y ESO es lo que esta en disputa. Crop deaths no explican por que traer a un ser a existencia COMO propiedad. Cierra: que principio convierte a un ser vivo en algo que puede poseerse.
+
+### Hilo `27405978672358616` — 2026-06-23 · outcome: **engaged**
+- **Su jugada:** Peticion de principio (2da vuelta): "you moved the assumption one step deeper" — que asumo una presuncion contra el uso del ser sintiente, y eso es el punto en disputa; pide por que sintiencia implica no-uso.
+- **Nuestra respuesta:** La presuncion NO es inventada ni smuggled: ya la aplicamos sin discutir a todo alguien (perro del vecino, bebe). La carga no es demostrarla, es que Les nombre que rasgo concreto saca al cerdo de la categoria alguien donde ya metemos al perro. Alguien vs algo en lenguaje llano.
 
 _Hilos: 27363745576581926, 27375477042075446_

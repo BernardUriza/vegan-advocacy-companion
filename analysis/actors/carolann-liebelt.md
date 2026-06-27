@@ -115,8 +115,12 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 - **Su jugada:** No, its both. There is no moral reason for me to stop eating meat. Why should I? (+ tu-quoque carrion/compost dirigido a Rüdiger, esquivando mi pregunta del marco)
 - **Nuestra respuesta:** Reply etiquetada anclada en su why-should-I-stop. Inversion de carga: no-reason-to-stop != justification; el post pidio justificar la explotacion, no una razon para parar. Concedio toda la biologia/carrion/B12. No persiguio el tu-quoque ni repitio el goalpost (Rudiger ya lo nombro, lo pocketeo). Cerro con la pregunta del marco para el lurker.
 
-### Hilo `27405978672358616` — 2026-06-21 · outcome: **pending**
+### Hilo `27405978672358616` — 2026-06-21 · outcome: **engaged**
 - **Su jugada:** Naturalismo ("evolved into herbivores?") + claim de necesidad + "incomplete diet" + salida dismissive "I am not interested".
 - **Nuestra respuesta:** Concede omnivoro, separa can/should, clava que "necesidad" es lo falso (consumidora con supermercado), nombra el "not interested" como tell, devuelve al hueso. Sin nutricion/B12.
+
+### Hilo `27405978672358616` — 2026-06-21 · outcome: **goalpost**
+- **Su jugada:** Moving goalposts / reductio burlon: "Why eat at all? Why not get a feeding tube and live off of synthetic nutritional replacement?" — desvia de propiedad a metodo de alimentacion.
+- **Nuestra respuesta:** Nombra el cambio de tema sin perseguirlo: la conversacion era sobre tratar a un ser vivo como propiedad, no sobre tubos. Concede que podria sobrevivir de modos raros pero el metodo nunca fue el punto; elegir como alimentarme no responde por el ser del otro lado. El feeding tube es una forma de evitar la pregunta, no una refutacion. Devuelve al hueso: que hace aceptable volver propiedad a un ser vivo. Corto (deliberado).
 
 _Hilos: 27341517928804691, 27335635946059556_

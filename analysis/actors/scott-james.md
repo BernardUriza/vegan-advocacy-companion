@@ -55,4 +55,8 @@ No entrar en body-count de crop deaths. La distinción es intención y necesidad
 - **Su jugada:** Naturalismo + falacia genética ("el condicionado eres tú") + jab biológico (shovel hands / no-herbívoros)
 - **Nuestra respuesta:** El origen de una creencia no dice si es verdadera; concedí que es aprendido y natural; las shovel hands cortan contra él (si natural es la vara, fuera agricultura/medicina). Vuelta al hueso.
 
+### Hilo `27405978672358616` — 2026-06-21 · outcome: **escalated**
+- **Su jugada:** Sarcasmo + data-dump regulatorio + reductio de extincion: "most cruel sector... regulated & policed... vEgAn movement"; mezcla extincion, pets, livestock y working animals como si no criar mas animales fuera una perdida.
+- **Nuestra respuesta:** Ignora el sarcasmo uno-por-uno y desnuda la asuncion de fondo: que los animales existen para nosotros. Eso trata a seres vivos como lineas de producto (unidades disponibles a futuro). Un ser no se beneficia de existir para ser poseido, y que un sistema los produzca no lo justifica. Extincion/pets/livestock saltan la pregunta previa: por que un ser vivo deberia existir como propiedad.
+
 _Hilos: 27341517928804691_

@@ -47,15 +47,15 @@ No aceptar el marco 'tú tienes que justificarme a mí'. Devolver: la carga est�
 
 ## Log de interacciones
 
-### Hilo `27363745576581926` — 2026-06-18 · outcome: **escalated**
+### Hilo `27363745576581926` — 2026-06-18 · outcome: **engaged**
 - **Su jugada:** Burden-shift: "no necesitas justificación; el vegano necesita una para detenerme y no hay".
 - **Nuestra respuesta:** Reply etiquetada (sin vocativo): la carga es de quien impone el daño evitable, no de quien objeta (no pedimos justificar NO patear al perro); nadie puede detenerte, la pregunta es si la práctica se justifica. Cerré pidiendo el principio que justifica el daño cuando evitarlo es posible.
 
-### Hilo `27363745576581926` — 2026-06-19 · outcome: **escalated**
+### Hilo `27363745576581926` — 2026-06-19 · outcome: **silent**
 - **Su jugada:** Inversion de carga + autonomia: no necesita justificacion para comer carne; el vegano necesita justificacion para detenerlo y no la hay; animal feelings are not reason enough to harm myself.
 - **Nuestra respuesta:** Framework algo-a-alguien-sujeto-derecho (via coagent, attack_surface respetado: sin jerga juridica, planteado como pregunta). Concede su logica y la voltea: accion que solo te afecta a ti no necesita justificacion, pero hay un TERCERO; cuando el dano cae en otro, la carga es de quien lo causa. Usa su propio ejemplo del perro. Hueso: que principio justifica danar a un animal cuando evitarlo es posible.
 
-### Hilo `27375477042075446` — 2026-06-20 · outcome: **silent**
+### Hilo `27375477042075446` — 2026-06-20 · outcome: **engaged**
 - **Su jugada:** Autonomía/elección informada: "now i can reflect myself and i choose meat and animal products" + honestidad apática "I get it is bad but I do not care" (concede la ética, elige no actuar). Civil, no-nativo, buena fe.
 - **Nuestra respuesta:** Registro compasivo: reconocí su honestidad (admite en vez de negar); separé elección de justificación (señalar el daño no es quitarle la elección); devolví la carga suave para el lurker: ¿qué razón hace el criar/matar justificado en vez de simplemente preferido? Inglés simple, sin filo.
 

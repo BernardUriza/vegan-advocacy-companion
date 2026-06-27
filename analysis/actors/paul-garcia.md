@@ -56,7 +56,7 @@ NO disputar su experiencia. NO atacar si la dieta fue la causa. Honrar el testim
 
 ## Log de interacciones
 
-### Hilo `27335635946059556` — 2026-06-16 · outcome: **goalpost**
+### Hilo `27335635946059556` — 2026-06-16 · outcome: **engaged**
 - **Su jugada:** Compartió testimonio de 8 años vegano: oxalatos, fructosa, mal diagnosticado, consejería vegana sesgada, finalmente mejoró añadiendo carne.
 - **Nuestra respuesta:** Honró el testimonio sin disputar la experiencia. Se puso de su lado nombrando que los consejos que recibió (más hojas verdes con cálculos, agave con fructosa) están documentados como al revés. Reforzó SU queja de mala orientación. Devolvió la carga con n=1≠categoría + la moral es ortogonal a si un individuo prospera.
 

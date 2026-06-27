@@ -63,7 +63,7 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 
 ## Log de interacciones
 
-### Hilo `27341517928804691` — 2026-06-16 · outcome: **silent**
+### Hilo `27341517928804691` — 2026-06-16 · outcome: **escalated**
 - **Su jugada:** I still don't see the distinction. Animals or crops. They both kill. List the exploitative events that are the problem.
 - **Nuestra respuesta:** Aterrizó la distinción de ROL del daño: subproducto de alimentar a todos vs el propósito mismo de la actividad. Reframeó 'exploitation' como RELACIÓN, no lista. Nombró que Matt usa esa distinción (accidente vs intención) en todo menos con animales. Devolvió la carga.
 
