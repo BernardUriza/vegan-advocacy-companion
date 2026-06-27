@@ -45,11 +45,11 @@ No descartarlo como troll. Darle el argumento de necesidad una vez, sin condesce
 - **Su jugada:** Casos limite/insectos (bedbugs, cucarachas, mosquitos, ratas) tras conceder el argumento de necesidad. Socrates_hostil suave, buena fe.
 - **Nuestra respuesta:** Concedio plagas como conflicto/autodefensa (no criar-para-matar); no mordio la lista; devolvio al hueso: que hace necesario criar y matar para comida cuando no aplican esas circunstancias.
 
-### Hilo `27363745576581926` — 2026-06-19 · outcome: **engaged**
+### Hilo `27363745576581926` — 2026-06-19 · outcome: **conceded**
 - **Su jugada:** Sobrepoblación salvaje→enfermedad como gestión natural; casi concede ("you prove valid points")
 - **Nuestra respuesta:** Concedí que la gestión de fauna salvaje plantea preguntas reales, pero es lo contrario de criar 80B a propósito; pregunté qué separa control de población de criar para matar.
 
-### Hilo `27363745576581926` — 2026-06-19 · outcome: **engaged**
+### Hilo `27363745576581926` — 2026-06-19 · outcome: **conceded**
 - **Su jugada:** Cierre civil concediendo: "your right about that... just a different between how we see it... thxs for being a good sport".
 - **Nuestra respuesta:** Cierre cálido (registro compasivo), sin victory-lap; reconocí la civilidad y planté suave para el lurker que examinar el porqué de la elección sigue importando. Sin framework de combate.
 

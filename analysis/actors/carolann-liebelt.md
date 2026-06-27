@@ -123,4 +123,8 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 - **Su jugada:** Moving goalposts / reductio burlon: "Why eat at all? Why not get a feeding tube and live off of synthetic nutritional replacement?" — desvia de propiedad a metodo de alimentacion.
 - **Nuestra respuesta:** Nombra el cambio de tema sin perseguirlo: la conversacion era sobre tratar a un ser vivo como propiedad, no sobre tubos. Concede que podria sobrevivir de modos raros pero el metodo nunca fue el punto; elegir como alimentarme no responde por el ser del otro lado. El feeding tube es una forma de evitar la pregunta, no una refutacion. Devuelve al hueso: que hace aceptable volver propiedad a un ser vivo. Corto (deliberado).
 
+### Hilo `27335635946059556` — 2026-06-27 · outcome: **pending**
+- **Su jugada:** Tras desviar a nutricion/ultra-processed, deflexion I-didnt-run-away + ad-hominem (salud mental, jab del B12).
+- **Nuestra respuesta:** Conced nutricion/B12 de frente, nombr en una linea que la rama nutricional es el desvio, devolv al hueso: que justifica criar/poseer/matar a un sujeto (someone->property) cuando hay alternativa. Recuperacion tras un reply previo ego-driven.
+
 _Hilos: 27341517928804691, 27335635946059556_
