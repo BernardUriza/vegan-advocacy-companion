@@ -21,6 +21,14 @@ export const STRONG_CORE = [
   /\b(?:two|both)\s+interests\b/i,
   /\binterests?\s+on\s+the\s+scale\b/i,
   /\bon\s+the\s+scale\b/i,
+  /\bfeels?\s+(?:no\s+)?pain\b/i,
+  /\bpain-?free\b/i,
+  /\bpainless(?:ly)?\b/i,
+  /\bhumane(?:ly)?\s+(?:slaughter|kill|killed|killing|death|raised)\b/i,
+  /\bsiente\s+dolor\b/i,
+  /\bsin\s+dolor\b/i,
+  /\bindoloro\b/i,
+  /\bsacrificio\s+humanitario\b/i,
 ];
 
 // welfarismo en ESPAÑOL — como Claude escribe la JUGADA en el master prompt.
@@ -45,6 +53,16 @@ export const QUANTUM = [
   /\bda(?:ñ|n)o(?:s)?\b/i,
   /\bda(?:ñ|n)ar\b/i,
   /\bsufrimiento\b/i,
+  /\bpain\b/i,
+  /\bcruel(?:ty|ly)?\b/i,
+  /\bhumane(?:ly)?\b/i,
+  /\bwelfare\b/i,
+  /\bcompassion(?:ate)?\b/i,
+  /\bkindness\b/i,
+  /\bdolor\b/i,
+  /\bcrueldad\b/i,
+  /\bbienestar\b/i,
+  /\bcompasi(?:ó|o)n\b/i,
 ];
 
 function splitSentences(text) {

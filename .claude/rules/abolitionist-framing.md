@@ -59,6 +59,20 @@ En su lugar, el eje va en términos de: **propiedad, esclavitud, sujeto poseído
 estatus moral, alguien vs algo, ¿existe la esclavitud necesaria?**. El daño puede
 mencionarse al pasar, pero NUNCA es el eje portante del reply.
 
+### El detector (SSOT) cubre TODO el léxico welfarista, no solo "harm" — y se corre sobre CUALQUIER prosa generada
+
+El detector canónico `scripts/welfarist-axis.mjs` caza `pain/cruelty/humane/welfare/
+compassion/painless/feels pain/sin dolor/sacrificio humanitario` además de las formas
+de `harm/daño` (criterio inequívoco → STRONG; mención bare → QUANTUM soft, como `harm`,
+para no falsear el "nombrar-para-rechazar"). Lo consumen el `seed-gate` (masters,
+etapa-3), el `style-gate` (drafts, etapa-4) y `scripts/lint-prose.mjs <archivo|stdin>`
+— este último corre el MISMO detector sobre **cualquier prosa que Claude genere con
+audiencia de lurker** (contraataques anticipados, ejemplos, borradores ad-hoc), NO solo
+los drafts del pipeline. Ese era el gap: prosa generada fuera del pipeline escapaba el
+filtro y filtró `"who feels pain"` en un contraataque (2026-06-27). Disciplina dura:
+antes de presentar/postear prosa generada, `node scripts/lint-prose.mjs <archivo>`; si
+FLAG, reescribir el eje a propiedad/esclavitud. Ver [[welfarist-lint-any-prose]].
+
 ## La salida a prueba de concesión (Art. — marco, no premisa)
 
 Como todo framework, `algo-a-alguien-sujeto-derecho` se planta como la intuición que
