@@ -163,7 +163,19 @@ export function updateInteractionOutcome(userId, threadId, dateOrNeedle, needle,
   );
   if (cand.length !== 1) throw new Error(`match no único (${cand.length}) para ${userId}/${threadId} needle="${nd}"`);
   const it = cand[0];
-  if (fields.outcome) it.outcome = fields.outcome;
+  if (fields.outcome) {
+    // Guard del oro (root fix 2026-06-27): `conceded` es la mina de oro rara del moat.
+    // Re-juzgar entre outcomes débiles es libre, pero degradar un conceded a algo más
+    // débil debe ser DELIBERADO — sin esto, un verdict equivocado del reflex lo borra en
+    // silencio (lo que le pasó a Bowman en el commit 0333190). Rehúsa salvo force:true (Art. 5).
+    if (it.outcome === 'conceded' && fields.outcome !== 'conceded' && !fields.force) {
+      throw new Error(
+        `REHÚSA degradar conceded→${fields.outcome} para ${userId}/${threadId} (needle="${nd}"): ` +
+        `conceded es oro raro del moat; pasa force:true en el verdict para sobrescribirlo a propósito (Art. 5)`
+      );
+    }
+    it.outcome = fields.outcome;
+  }
   if (fields.evidence) it.outcome_evidence = fields.evidence;
   if (fields.note) it.outcome_note = fields.note;
   writeJsonAtomic(ACTORS_PATH, actors);

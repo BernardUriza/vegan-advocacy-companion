@@ -108,15 +108,18 @@ if (cmd === 'emit') {
   for (const v of verdicts) {
     if (!OUTCOMES.has(v.outcome)) { errs.push(`outcome inválido "${v.outcome}" (${v.user_id}/${v.thread_id})`); continue; }
     try {
-      if (!dry) updateInteractionOutcome(v.user_id, v.thread_id, v.date ?? null, v.needle, { outcome: v.outcome, evidence: v.evidence, note: v.note });
+      if (!dry) updateInteractionOutcome(v.user_id, v.thread_id, v.date ?? null, v.needle, { outcome: v.outcome, evidence: v.evidence, note: v.note, force: v.force });
       else {
         // validar match en dry-run sin escribir
         const a = readActors().find((x) => x.user_id === v.user_id);
         const deburr = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
         const c = (a?.interactions || []).filter((i) => i.thread_id === v.thread_id && (v.date ? i.date === v.date : true) && deburr(i.their_move).includes(deburr(v.needle)));
         if (c.length !== 1) throw new Error(`match no único (${c.length})`);
+        // espejo del guard del oro (db.updateInteractionOutcome): avisar EN DRY-RUN antes de aplicar.
+        if (c[0].outcome === 'conceded' && v.outcome !== 'conceded' && !v.force)
+          throw new Error(`degradaría conceded→${v.outcome} (oro) — pasa force:true para hacerlo a propósito (Art. 5)`);
       }
-      ok.push(`${v.outcome.padEnd(9)} ${v.user_id} t=${v.thread_id} «${(v.needle || '').slice(0, 40)}»`);
+      ok.push(`${v.outcome.padEnd(9)}${v.force ? ' (force)' : ''} ${v.user_id} t=${v.thread_id} «${(v.needle || '').slice(0, 40)}»`);
     } catch (e) { errs.push(`${v.user_id}/${v.thread_id} needle="${v.needle}": ${e.message}`); }
   }
   if (errs.length) { console.error(`ABORT-worthy: ${errs.length} errores${dry ? '' : ' (algunos sí se escribieron antes del error)'}:`); for (const e of errs) console.error('  - ' + e); }

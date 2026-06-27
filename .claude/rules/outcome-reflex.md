@@ -46,6 +46,12 @@ juicio (qué outcome, qué aprendió el framework) es del LLM = Claude**. Dos fa
 3. **apply** — `node scripts/reflex.mjs apply --verdicts .coagent/reflex-verdicts.json`
    (dry-run primero). Usa `db.updateInteractionOutcome`, que apunta a UNA interacción
    exacta y **puede SOBRESCRIBIR** un outcome viejo mal clasificado (re-juicio).
+   - **Guard del oro (root fix 2026-06-27):** degradar un `conceded` a algo más débil
+     está **bloqueado** (throw en write-layer + aviso en dry-run) salvo que el verdict
+     lleve `force: true`. El `conceded` es la mina rara; un verdict equivocado del reflex
+     lo borró en silencio una vez (Bowman, commit 0333190). Borrar oro debe ser
+     deliberado (Art. 5). Los upgrades a conceded y el re-juicio entre outcomes débiles
+     siguen libres.
 4. `validate-data.mjs` + (si `analysis/actors/` está despejado) `gen-dossiers.mjs`.
 
 ## El guard de frescura sigue valiendo
