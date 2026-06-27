@@ -105,7 +105,7 @@ function renderActor(a) {
 
 let count = 0;
 for (const a of actors) {
-  const path = resolve(OUT_DIR, `${slug(a.name)}.md`);
+  const path = resolve(OUT_DIR, `${slug(a.name) || a.user_id}.md`);
   writeAtomic(path, renderActor(a));
   count++;
 }
