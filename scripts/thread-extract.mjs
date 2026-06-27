@@ -168,6 +168,37 @@ function buildDebt(turns, ME, postIsMine) {
   return debt;
 }
 
+// Limpia el texto de un turno: quita el prefijo del autor y el trailer de engagement
+// ("8hLikeReply", "1wLikeReply2", "Edited"). Devuelve el cuerpo real del comentario.
+function cleanRootText(t) {
+  let s = t.text || '';
+  if (t.author && s.startsWith(t.author)) s = s.slice(t.author.length);
+  s = s.replace(/\d+\s*[smhdwy]o?\s*(Like|Love|Care|Haha|Wow|Sad|Angry|Reply|Edited).*$/i, '');
+  s = s.replace(/\s*(Like|Reply|Edited)\s*$/i, '');
+  return s.trim();
+}
+
+// unansweredRoots = comentarios raíz SUSTANTIVOS en MI post que no he contestado, CON su
+// texto verbatim. El gap que esto cierra: debt[] mezcla raíces sustantivas (Annabel) con
+// Likes vacíos y memes (GIPHY) bajo un mismo blob owes:true, fácil de descartar a ciegas.
+// Esta lista trae el cuerpo del comentario para que NUNCA se descarte sin leerlo (Art. 2),
+// y filtra el ruido (Like vacío, GIPHY, solo-link) en vez de dejarlo mezclado.
+function buildUnansweredRoots(turns, ME, postIsMine) {
+  if (!postIsMine) return [];
+  const answered = new Set(turns.filter((t) => t.isMine && t.target).map((t) => t.target));
+  const out = [];
+  for (const t of turns) {
+    if (t.isMine || t.target || t.author === ME) continue; // solo raíces ajenas
+    if (answered.has(t.author)) continue; // ya le contesté en otra rama
+    const body = cleanRootText(t);
+    if (body.length <= 15) continue; // Like vacío / sin cuerpo
+    if (/^giphy$/i.test(body) || /^https?:\/\/\S+$/i.test(body)) continue; // meme / solo-link
+    out.push({ author: t.author, user_id: t.user_id, freshestMin: ageMinutes(t.ageStr), ageStr: t.ageStr, text: body.slice(0, 400) });
+  }
+  out.sort((a, b) => a.freshestMin - b.freshestMin);
+  return out;
+}
+
 async function main() {
   const { page, done } = await openScratchPage();
   try {
@@ -193,6 +224,7 @@ async function main() {
     }
 
     const debt = buildDebt(turns, ME, postIsMine);
+    const unansweredRoots = buildUnansweredRoots(turns, ME, postIsMine);
     const out = {
       url,
       me: ME,
@@ -202,6 +234,7 @@ async function main() {
       counts: { rawArticles: raw.length, uniqueTurns: turns.length },
       turns,
       debt,
+      unansweredRoots,
     };
 
     if (asJson) {
@@ -225,6 +258,15 @@ async function main() {
       }
       const top = debt[0];
       if (top) console.log(`\n→ Deuda top: ${top.author} [${fmtAge(top.freshestMin)}] (${top.kind}) — candidata a jugada (decide con el dossier).`);
+      if (postIsMine) {
+        console.log(`\n=== RAÍCES SUSTANTIVAS SIN CONTESTAR en tu post (${unansweredRoots.length}) ===`);
+        console.log('  el agregado "y N otros" las entierra; aquí van CON su texto — léelas, no las descartes a ciegas (Art. 2)');
+        if (!unansweredRoots.length) console.log('  (ninguna — o todo es Like vacío/meme, o ya contestaste)');
+        for (const r of unansweredRoots) {
+          console.log(`  🌱 ${r.author} (uid ${r.user_id || '?'}) — [${fmtAge(r.freshestMin)}]`);
+          console.log(`     "${r.text.slice(0, 200)}"`);
+        }
+      }
     }
   } finally {
     await done();
