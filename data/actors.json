@@ -1289,11 +1289,12 @@
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/100000755924068/",
     "bando": "anti-vegan",
     "postura_nucleo": "El malestar del cuadro de Frida es proyección del espectador: ella pintaba SU sufrimiento (alimentación forzada por enfermedad), no una crítica al consumo de carne.",
-    "analisis": "Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al registro y CONFIESA el eje — \"animals produce animals... someone has to possess them. Track their genealogy... The one doing all the brainwork holds the reins. Animals < humans. Die mad.\" Defensa explicita de propiedad+jerarquia de especie + welfare-improving (\"lifetime welfare and deathtime technique have continually improved\"). Es oro para el eje abolicionista: nombro la posesion ella misma. Audiencia, civil-cortante.",
+    "analisis": "Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al registro y CONFIESA el eje — \"animals produce animals... someone has to possess them. Track their genealogy... The one doing all the brainwork holds the reins. Animals < humans. Die mad.\" Defensa explicita de propiedad+jerarquia de especie + welfare-improving (\"lifetime welfare and deathtime technique have continually improved\"). Es oro para el eje abolicionista: nombro la posesion ella misma. Audiencia, civil-cortante. | 2026-06-27: GIRO — volvió substantiva (no troll) con un argumento real de 3 puntos en el post someone: naturalismo de cría, sapience>sentience, y un reductio filoso sobre el eje (si el problema es ownership, aceptarías hunting/poaching). El register actual es filo civil, no troll; el lurker valía la respuesta.",
     "tactics": [
       "projection_subjetiva",
       "species_hierarchy",
-      "welfare_rhetoric"
+      "welfare_rhetoric",
+      "naturalismo"
     ],
     "tone": "civil",
     "verdict": "audiencia",
@@ -1344,6 +1345,14 @@
         "our_reply_summary": "Le tomo la palabra: describio la posesion con exactitud, pero describir no es justificar. \"Having the reins\" explica quien manda, no por que es legitimo mandar sobre un alguien. \"Animals<humans\" es la conclusion aseverada, no la razon. Devuelvo: que la hace legitima mas alla de que se pueda.",
         "outcome_evidence": "'Die mad' antes de mi reply; mi reply 3d sin respuesta.",
         "outcome_note": "algo-a-alguien-sujeto-derecho: confesion del eje ('someone has to possess them... holds the reins. Animals < humans. Die mad'). Mi reply Jun23 (possession=quien manda, no por que tiene derecho) sin respuesta 3d; 'Die mad' = cierre hostil. Silent."
+      },
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-27",
+        "their_move": "Argumento de 3 puntos (giro de troll a substantiva): 1) naturalismo de cria (los animales se reproducen solos, nosotros controlamos), 2) sapience>sentience, 3) reductio sobre el eje: si el problema es ownership, aceptas hunting/poaching porque el cazador no posee al animal.",
+        "our_reply_summary": "Centre el punto 3: el eje nunca fue el titulo legal sino la RELACION de tratar a un alguien como recurso para nuestro uso — la caza hace lo mismo sin papeles, asi que mi logica la condena igual (no la bendice). Conced el punto 1 (controlar la cria no cambia la relacion); desactive el 2 (sapience) en una linea sin entrar a marginal cases. Lenguaje llano, sin etiqueta slavery, devolvi la carga.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ]
   },

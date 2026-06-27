@@ -10,7 +10,7 @@
 
 ## Análisis
 
-Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al registro y CONFIESA el eje — "animals produce animals... someone has to possess them. Track their genealogy... The one doing all the brainwork holds the reins. Animals < humans. Die mad." Defensa explicita de propiedad+jerarquia de especie + welfare-improving ("lifetime welfare and deathtime technique have continually improved"). Es oro para el eje abolicionista: nombro la posesion ella misma. Audiencia, civil-cortante.
+Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al registro y CONFIESA el eje — "animals produce animals... someone has to possess them. Track their genealogy... The one doing all the brainwork holds the reins. Animals < humans. Die mad." Defensa explicita de propiedad+jerarquia de especie + welfare-improving ("lifetime welfare and deathtime technique have continually improved"). Es oro para el eje abolicionista: nombro la posesion ella misma. Audiencia, civil-cortante. | 2026-06-27: GIRO — volvió substantiva (no troll) con un argumento real de 3 puntos en el post someone: naturalismo de cría, sapience>sentience, y un reductio filoso sobre el eje (si el problema es ownership, aceptarías hunting/poaching). El register actual es filo civil, no troll; el lurker valía la respuesta.
 
 ## Tácticas
 
@@ -20,6 +20,8 @@ Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al 
   - _Contra:_ Ask for the criterion: 'What makes human interests categorically outweigh animal interests? Whatever criterion you give — sentience, capacity to suffer, social bonds, language — either also applies to some animals or fails to draw the line you need. The hierarchy needs an argument, not an assertion.'
 - **Welfare Rhetoric / Comfortable Life Defense** (`welfare_rhetoric`) — Claims animal use is justified because the animals have a 'comfortable life' and 'painless death'. Assumes welfare during life negates the moral problem of killing for non-necessity.
   - _Contra:_ The problem isn't the quality of life — it's that the entire existence is designed around killing for something unnecessary. A comfortable life that ends in slaughter for non-necessity doesn't become morally neutral because the suffering was minimized.
+- **Appeal to Nature / Naturalismo** (`naturalismo`) — Justifies an action because it is 'natural', ignoring that many natural things are harmful and many beneficial things are unnatural. In vegan debates: 'we're biologically designed to eat meat', 'we're at the top of the food chain', 'lions eat meat'.
+  - _Contra:_ Concede the biology entirely, then separate can from should: 'Yes, we can digest meat — omnivore is a fact about digestion, not a moral status. The question is what justifies using a sentient being when we don't need to.'
 
 ## Counter-arsenal
 
@@ -57,6 +59,17 @@ Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al 
   - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
   - `carnismo-es-algodonismo` → _deploy as:_ marco
   - `medida-tres-plazos-corto-medio-largo` → _deploy as:_ auto-disciplina-del-activista
+- **Appeal to Nature / Naturalismo** (`naturalismo`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `njn-normal-justo-necesario` → _deploy as:_ marco
+  - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
+  - `extranar-lo-naturalizado` → _deploy as:_ marco
+  - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
+  - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
+  - `dos-caras-misma-moneda` → _deploy as:_ marco
+  - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -79,5 +92,9 @@ NO pelear el body-count ni el "welfare mejora" (concederlo: mejor trato no cambi
 ### Hilo `27405978672358616` — 2026-06-23 · outcome: **silent**
 - **Su jugada:** Confesion explicita del eje: "someone has to possess them... holds the reins. Animals < humans. Die mad." — defiende posesion/jerarquia de especie como mecanismo necesario del sistema.
 - **Nuestra respuesta:** Le tomo la palabra: describio la posesion con exactitud, pero describir no es justificar. "Having the reins" explica quien manda, no por que es legitimo mandar sobre un alguien. "Animals<humans" es la conclusion aseverada, no la razon. Devuelvo: que la hace legitima mas alla de que se pueda.
+
+### Hilo `27330688236588406` — 2026-06-27 · outcome: **pending**
+- **Su jugada:** Argumento de 3 puntos (giro de troll a substantiva): 1) naturalismo de cria (los animales se reproducen solos, nosotros controlamos), 2) sapience>sentience, 3) reductio sobre el eje: si el problema es ownership, aceptas hunting/poaching porque el cazador no posee al animal.
+- **Nuestra respuesta:** Centre el punto 3: el eje nunca fue el titulo legal sino la RELACION de tratar a un alguien como recurso para nuestro uso — la caza hace lo mismo sin papeles, asi que mi logica la condena igual (no la bendice). Conced el punto 1 (controlar la cria no cambia la relacion); desactive el 2 (sapience) en una linea sin entrar a marginal cases. Lenguaje llano, sin etiqueta slavery, devolvi la carga.
 
 _Hilos: 27395909046698912, 27405978672358616_
