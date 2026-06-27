@@ -1,0 +1,37 @@
+# Dean Christie
+
+> GENERATED from `data/actors.json` by `scripts/gen-dossiers.mjs`. Do not hand-edit — edit the JSON and regenerate.
+
+- **user_id:** 1198831097
+- **Perfil:** https://www.facebook.com/groups/770211166362062/user/1198831097/
+- **Bando:** anti-vegan
+- **Veredicto:** audiencia · **Registro:** filo
+- **Postura núcleo:** Pide definir someone; sugiere que mi definicion no es la comun.
+
+## Análisis
+
+Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil con anzuelo (tu definicion no es la comun) -> riesgo de pantano semantico. No troll. Engageable para el lurker si se define limpio y se invierte la carga.
+
+## Tácticas
+
+- **Hostile Socratic Method** (`socrates_hostil`) — Disguises a trap as curiosity. Asks questions not to learn but to set up whack-a-mole redirection. 'Could you say exactly what the problem is with exploiting animals?' / 'List the exploitative events that are the problem.'
+  - _Contra:_ Don't bite. Answer the underlying question cleanly without following the redirect: 'Exploitation isn't a list of events — it's a relationship. Breeding a sentient being into existence for the purpose of using and killing it is the relationship, not a checklist.' Return the question.
+
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Hostile Socratic Method** (`socrates_hostil`)
+  - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
+
+## Qué NO hacer
+
+No litigar cual definicion es la comun, no dar definicion academica/juridica, no tratarla como premisa cerrada. Definir llano, anclar en la intuicion, invertir la carga.
+
+## Log de interacciones
+
+### Hilo `27468645086091974` — 2026-06-27 · outcome: **pending**
+- **Su jugada:** demanda definicional (define someone, tu definicion no es la comun).
+- **Nuestra respuesta:** Defin someone llano (sujeto con perspectiva, vive su vida desde adentro, evita dolor/quiere vivir), ancl en perro-vs-roca / quien-vs-que, invert la carga (que le falta al cerdo). Corto, sin pantano de diccionarios.
+
+_Hilos: 27468645086091974_

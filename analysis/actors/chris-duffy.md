@@ -78,4 +78,8 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** Leash tu-quoque/reductio: "usar correa restringe el libre albedrío, los torturas, partakes en la opresión" + frame de propiedad (quién paga el cuidado si no es propiedad).
 - **Nuestra respuesta:** Reply etiquetada (sin vocativo): concedí que la correa restringe; separé cuidado-de-dependiente (interés del perro) de cría-para-uso (interés nuestro); tutela≠propiedad (el niño no es propiedad y alguien paga su cuidado); cerré preguntando qué relación se defiende al criar animales para usarlos.
 
+### Hilo `27468645086091974` — 2026-06-27 · outcome: **pending**
+- **Su jugada:** creation=ownership (el cerdo existe porque un humano lo creo -> es propiedad) + cargo de antropomorfismo.
+- **Nuestra respuesta:** Conced lo legal/biologico (si los crian, si son propiedad legal), gir a que eso describe no justifica el status; crear-para-poseer es el problema no la solucion; ver al cerdo evitar dolor/querer vivir es observacion no antropomorfismo (lo sabe por sus cabras). Registro filo-light, sin sermon.
+
 _Hilos: march-property, 27319402757682875_

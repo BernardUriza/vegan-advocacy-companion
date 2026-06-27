@@ -667,6 +667,14 @@
         "outcome_evidence": "Chris Duffy (último turno): 'by using a leash you are... torturing them... you are partaking in that system of oppression.' Sin réplica posterior a la reply de Bernard (age 2d).",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome_note": "tutela≠propiedad vs leash-tu-quoque. Chris escaló (leash=tortura/opresión) y no volvió tras la reply de Bernard (2 días). Sin reconocimiento de validez; silent se sostiene."
+      },
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-06-27",
+        "their_move": "creation=ownership (el cerdo existe porque un humano lo creo -> es propiedad) + cargo de antropomorfismo.",
+        "our_reply_summary": "Conced lo legal/biologico (si los crian, si son propiedad legal), gir a que eso describe no justifica el status; crear-para-poseer es el problema no la solucion; ver al cerdo evitar dolor/querer vivir es observacion no antropomorfismo (lo sabe por sus cabras). Registro filo-light, sin sermon.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ]
   },
@@ -1439,5 +1447,33 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No debatir si las plantas sienten, no competir en body-count, no defender el conteo de pronombres como si fuera el punto. Eje propiedad/status, no dano."
+  },
+  {
+    "tactics": [
+      "socrates_hostil"
+    ],
+    "threads": [
+      "27468645086091974"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-06-27",
+        "their_move": "demanda definicional (define someone, tu definicion no es la comun).",
+        "our_reply_summary": "Defin someone llano (sujeto con perspectiva, vive su vida desde adentro, evita dolor/quiere vivir), ancl en perro-vs-roca / quien-vs-que, invert la carga (que le falta al cerdo). Corto, sin pantano de diccionarios.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "1198831097",
+    "name": "Dean Christie",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/1198831097/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Pide definir someone; sugiere que mi definicion no es la comun.",
+    "analisis": "Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil con anzuelo (tu definicion no es la comun) -> riesgo de pantano semantico. No troll. Engageable para el lurker si se define limpio y se invierte la carga.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No litigar cual definicion es la comun, no dar definicion academica/juridica, no tratarla como premisa cerrada. Definir llano, anclar en la intuicion, invertir la carga."
   }
 ]
