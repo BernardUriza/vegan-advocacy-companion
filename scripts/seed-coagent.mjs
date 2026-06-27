@@ -31,6 +31,7 @@ import { createHash } from 'crypto';
 import { spawnSync } from 'child_process';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { resolveUserPath } from './paths.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(HERE, '..');
@@ -101,11 +102,12 @@ if (!isMain) {
   const master = arg('--master');
   if (!postId || !master) die('uso: seed-coagent.mjs seed --post-id <id> --author "<A>" --master <file>');
 
-  const text = readFileSync(resolve(ROOT, master), 'utf8');
+  const masterPath = resolveUserPath(master, ROOT);
+  const text = readFileSync(masterPath, 'utf8');
   const v = validateMaster(text);
   if (v.problems.length) die('MASTER INVÁLIDO para el coagent:\n  - ' + v.problems.join('\n  - '));
 
-  const gate = runSeedGate(resolve(ROOT, master));
+  const gate = runSeedGate(masterPath);
   if (!gate.pass) die(`seed-gate FALLÓ (exit ${gate.code}) — reformula la jugada antes de sembrar:\n${gate.out}`);
 
   mkdirSync(COAGENT_DIR, { recursive: true });
@@ -113,7 +115,7 @@ if (!isMain) {
     status: 'seeded',
     post_id: postId,
     author: author || null,
-    master,
+    master: masterPath,
     frameworks: v.frameworks,
     guardrail: v.guardrail,
     seed_gate: 'pass',
@@ -133,14 +135,15 @@ if (!isMain) {
   const rp = receiptPath(postId);
   if (!existsSync(rp)) die(`no hay recibo parcial para ${postId} — corre \`seed\` primero (no saltes la consulta).`);
   const r = JSON.parse(readFileSync(rp, 'utf8'));
-  const draftText = readFileSync(resolve(ROOT, draft), 'utf8');
-  r.draft_file = draft;
+  const draftPath = resolveUserPath(draft, ROOT);
+  const draftText = readFileSync(draftPath, 'utf8');
+  r.draft_file = draftPath;
   r.draft_sha = draftSha(draftText);
   r.consulted_at = nowIso();
   r.status = 'consulted';
   writeFileSync(rp, JSON.stringify(r, null, 2) + '\n');
   console.log(`✓ recibo CONSULTADO: ${rp}`);
-  console.log(`  draft_sha: ${r.draft_sha} — ya puedes stagear con comment-prepare --body-file ${draft}`);
+  console.log(`  draft_sha: ${r.draft_sha} — ya puedes stagear con comment-prepare --body-file ${draftPath}`);
 } else if (cmd === 'show') {
   const postId = arg('--post-id');
   const rp = receiptPath(postId);

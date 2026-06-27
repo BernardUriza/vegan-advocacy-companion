@@ -2,6 +2,7 @@ import { readFileSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { readFrameworks, readTactics, upsertFramework } from './db.mjs';
+import { resolveUserPath } from './paths.mjs';
 
 // extract-frameworks — reusable FAN-OUT extraction scaffold (Stage F).
 //
@@ -90,7 +91,7 @@ function main() {
   const argv = process.argv.slice(2);
   const srcIdx = argv.indexOf('--source');
   if (srcIdx !== -1 && argv[srcIdx + 1]) {
-    const path = resolve(ROOT, argv[srcIdx + 1]);
+    const path = resolveUserPath(argv[srcIdx + 1], ROOT);
     const text = readFileSync(path, 'utf8');
     console.log(`source: ${argv[srcIdx + 1]}`);
     console.log(`  lines: ${text.split('\n').length}  chars: ${text.length}`);

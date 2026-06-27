@@ -23,6 +23,7 @@ import { readFileSync, writeFileSync, renameSync, readdirSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { readActors, updateInteractionOutcome } from './db.mjs';
+import { resolveUserPath } from './paths.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(HERE, '..');
@@ -31,6 +32,11 @@ const COAGENT = resolve(ROOT, '.coagent');
 function arg(flag, def) {
   const i = process.argv.indexOf(flag);
   return i >= 0 && process.argv[i + 1] ? process.argv[i + 1] : def;
+}
+// path del usuario contra el CWD; default del repo contra ROOT
+function fileArg(flag, defRelToRoot) {
+  const v = arg(flag);
+  return v ? resolveUserPath(v, ROOT) : resolve(ROOT, defRelToRoot);
 }
 function writeAtomic(path, data) {
   const tmp = `${path}.tmp.${process.pid}`;
@@ -46,8 +52,8 @@ function threadIdOf(doc) {
 const cmd = process.argv[2];
 
 if (cmd === 'emit') {
-  const txDir = resolve(ROOT, arg('--tx-dir', '.coagent'));
-  const out = resolve(ROOT, arg('--out', '.coagent/reflex-packets.json'));
+  const txDir = fileArg('--tx-dir', '.coagent');
+  const out = fileArg('--out', '.coagent/reflex-packets.json');
   // index transcripts por thread_id
   const tx = {};
   for (const f of readdirSync(txDir).filter((f) => f.startsWith('tx-') && f.endsWith('.json'))) {
@@ -93,7 +99,7 @@ if (cmd === 'emit') {
   console.log('  + una nota corta por framework (qué aterrizó / por qué), y escribe .coagent/reflex-verdicts.json:');
   console.log('  [{ user_id, thread_id, date, needle (substring del their_move), outcome, note, evidence }]');
 } else if (cmd === 'apply') {
-  const vf = resolve(ROOT, arg('--verdicts', '.coagent/reflex-verdicts.json'));
+  const vf = fileArg('--verdicts', '.coagent/reflex-verdicts.json');
   const dry = process.argv.includes('--dry-run');
   const verdicts = JSON.parse(readFileSync(vf, 'utf8'));
   const OUTCOMES = new Set(['conceded', 'engaged', 'silent', 'escalated', 'goalpost', 'pending']);

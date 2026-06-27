@@ -20,9 +20,12 @@
 import { readFileSync, writeFileSync, unlinkSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
 import { tmpdir } from 'node:os';
-import { join } from 'node:path';
+import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { openPersistentPage } from './fb-lib.mjs';
+import { resolveUserPath } from './paths.mjs';
+
+const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
 function arg(name) {
   const i = process.argv.indexOf(name);
@@ -34,7 +37,7 @@ function arg(name) {
 // largo por regex. Devuelve el reporte; el caller aborta si hay flags DURAS.
 function runStyleGate(bodyText, authorName) {
   const scriptPath = fileURLToPath(new URL('./style-gate.mjs', import.meta.url));
-  let file = arg('--body-file');
+  let file = resolveUserPath(arg('--body-file'), ROOT);
   let tmp = null;
   if (!file) {
     tmp = join(tmpdir(), `cp-stylegate-${process.pid}.txt`);
@@ -64,7 +67,7 @@ function runStyleGate(bodyText, authorName) {
 const url = arg('--url') || process.argv.find((a) => a.startsWith('http'));
 const author = arg('--author');
 const anchor = arg('--anchor') || '';
-const bodyFile = arg('--body-file');
+const bodyFile = resolveUserPath(arg('--body-file'), ROOT);
 const bodyInline = arg('--body');
 const ME = process.env.ME || 'Bernard Uriza Orozco';
 const body = bodyFile ? readFileSync(bodyFile, 'utf8').replace(/\s+$/, '') : bodyInline;

@@ -29,7 +29,10 @@ function block(lines) {
   process.exit(2);
 }
 function abs(p) {
-  return isAbsolute(p) ? p : resolve(PROJECT_DIR, p);
+  if (isAbsolute(p)) return p;
+  const fromCwd = resolve(process.cwd(), p);
+  if (existsSync(fromCwd)) return fromCwd;
+  return resolve(PROJECT_DIR, p);
 }
 
 let payload;
