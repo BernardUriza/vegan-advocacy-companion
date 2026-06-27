@@ -356,6 +356,14 @@
         "outcome": "escalated",
         "outcome_evidence": "Turno 1d: 'No sarcasm, just hatred of ignorance... With \"friends\" like Burnt out Bernard, animals don't need enemies' — insulto sin argumento.",
         "outcome_note": "algo-a-alguien-sujeto-derecho: al nombrar la asunción oculta ('los animales existen para nosotros') Scott abandonó el argumento y escaló a puro insulto. No hubo contra-argumento: el marco quedó sin respuesta sustantiva, lo que ante el lurker es una victoria silenciosa."
+      },
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-06-27",
+        "their_move": "Veredicto sin razon: 'Your argument is lost at someone. That is your weakness, not everyone else's.' Declara la derrota del eje someone/sujeto sin ofrecer criterio alternativo.",
+        "our_reply_summary": "Reply etiquetada (filo): concede que 'someone' solo no prueba nada (no se afirma como premisa), pero un veredicto tampoco es criterio. Plantea el framework como PREGUNTA: ¿que hace a un individuo un who y a otro un what poseible? Si su criterio es especie/inteligencia/racionalidad, que lo defienda; 'tu argumento falla' se salta la linea en vez de trazarla. Cierra pidiendo el criterio.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ]
   },
@@ -1587,5 +1595,25 @@
     "verdict": "persuadible",
     "register": "compasivo",
     "what_not_to_do": "NO debatir neurobiologia vegetal ni decir 'las plantas no sienten dolor' (welfarista, concede el eje del sufrimiento). NO conceder equivalencia crop-deaths como dano moral. Conceder TODO el plant-signaling y devolver al sujeto: ¿hay alguien ahi para quien su vida pueda ir bien o mal? Eje: sujeto/propiedad, no presencia/cantidad de respuesta al dano."
+  },
+  {
+    "tactics": [
+      "species_hierarchy",
+      "peticion_de_principio"
+    ],
+    "threads": [
+      "27330688236588406"
+    ],
+    "interactions": [],
+    "user_id": "100054560360296",
+    "name": "Annabel Jad",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100054560360296/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Silogismo no-humano->no-someone->propiedad: 'They are not people, so they are not someone. As they are not people, they are property.' Usa la membresia de especie (ser 'people'/humano) como el criterio que convierte a un animal en propiedad.",
+    "analisis": "Enuncia, terse y sin insulto, la tesis EXACTA que el post abolicionista ataca: no-humano = propiedad. La premisa oculta y no defendida es que 'someone'/estatus moral = ser de la especie humana. Eso es antropoespecismo en estado puro (la especie hace todo el trabajo) y ademas es la forma logica de la propiedad esclavista historica: declarar a una clase 'no-personas' para poder poseerla. NO defiende POR QUE la membresia de especie confiere la proteccion; la asume. Alto valor de lurker porque la premisa, una vez nombrada, se ve arbitraria.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "NO afirmar 'los animales SI son personas/someone' como premisa demostrada (peticion de principio, justo lo que su objecion explota). NO redactar el eje como dano/sufrimiento. Nombrar que 'people' es una etiqueta de ESPECIE, no un criterio moral, y preguntar QUE rasgo (no la etiqueta) supuestamente convierte a un humano en alguien-no-poseible y por que ese rasgo falta en un cerdo. Recordar al pasar que 'declarar a una clase no-personas' fue la formula de la propiedad esclavista."
   }
 ]
