@@ -133,4 +133,8 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Peticion de principio (2da vuelta): "you moved the assumption one step deeper" — que asumo una presuncion contra el uso del ser sintiente, y eso es el punto en disputa; pide por que sintiencia implica no-uso.
 - **Nuestra respuesta:** La presuncion NO es inventada ni smuggled: ya la aplicamos sin discutir a todo alguien (perro del vecino, bebe). La carga no es demostrarla, es que Les nombre que rasgo concreto saca al cerdo de la categoria alguien donde ya metemos al perro. Alguien vs algo en lenguaje llano.
 
+### Hilo `27468645086091974` — 2026-06-27 · outcome: **pending**
+- **Su jugada:** Inversion de carga (la carga es tuya no del 99%, evolucion/biologia/toda civilizacion) + reductio (tu marco no es absoluto, ya concedes defensa propia/invasivas). Full: tambien welfarista minimising unnecessary suffering.
+- **Nuestra respuesta:** Reply etiquetada (eje algo-a-alguien): historia/biologia = is, no ought; las excepciones son matar-en-conflicto, nunca POSEER a un sujeto como propiedad -> no vuelven arbitrario el eje. Carga de vuelta sobre el estatus de propiedad SIN asumir el someone como axioma (correccion del coagent). Cierra: cual es el principio que hace legitimo que un individuo exista como propiedad de otro?
+
 _Hilos: 27363745576581926, 27375477042075446_

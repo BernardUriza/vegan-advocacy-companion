@@ -1028,6 +1028,14 @@
         "our_reply_summary": "La presuncion NO es inventada ni smuggled: ya la aplicamos sin discutir a todo alguien (perro del vecino, bebe). La carga no es demostrarla, es que Les nombre que rasgo concreto saca al cerdo de la categoria alguien donde ya metemos al perro. Alguien vs algo en lenguaje llano.",
         "outcome_evidence": "Turno de Les 3d POSTERIOR a mi reply 3d: '...the assumption I still think you're smuggling'.",
         "outcome_note": "algo-a-alguien-sujeto-derecho: Les volvio tras mi reply del Jun23 reafirmando petitio principii ('the assumption I still think you're smuggling into the discussion'). El eje propiedad se sostuvo pero Les no cede el cargo de question-begging. Engaged, sin concesion."
+      },
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-06-27",
+        "their_move": "Inversion de carga (la carga es tuya no del 99%, evolucion/biologia/toda civilizacion) + reductio (tu marco no es absoluto, ya concedes defensa propia/invasivas). Full: tambien welfarista minimising unnecessary suffering.",
+        "our_reply_summary": "Reply etiquetada (eje algo-a-alguien): historia/biologia = is, no ought; las excepciones son matar-en-conflicto, nunca POSEER a un sujeto como propiedad -> no vuelven arbitrario el eje. Carga de vuelta sobre el estatus de propiedad SIN asumir el someone como axioma (correccion del coagent). Cierra: cual es el principio que hace legitimo que un individuo exista como propiedad de otro?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -1484,5 +1492,33 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No litigar cual definicion es la comun, no dar definicion academica/juridica, no tratarla como premisa cerrada. Definir llano, anclar en la intuicion, invertir la carga."
+  },
+  {
+    "tactics": [
+      "species_hierarchy"
+    ],
+    "threads": [
+      "27330688236588406"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-27",
+        "their_move": "Might-makes-right honesto: lower cognition + reliance + cant fight back = justifica usarlos, y saben rico.",
+        "our_reply_summary": "Reply etiquetada: los 3 marcadores son VULNERABILIDAD, no permiso; mas-debil=usable es la regla que rechazamos entre humanos; cant-fight-back es la confesion del mecanismo. Inversion: poder someter no da derecho a poseer. Cierra: que hace que ser mas debil convierta a alguien en propiedad?",
+        "framework": "antropoespecismo",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "100081660349433",
+    "name": "Nate Porter",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100081660349433/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Might-makes-right explicito: los animales pueden usarse porque tienen menor cognicion, dependen de nosotros, no pueden defenderse — y saben bien cocinados.",
+    "analisis": "Articulacion limpia y honesta del especismo por jerarquia/poder: enumera marcadores de VULNERABILIDAD (menor cognicion, dependencia, no pueden contraatacar) como si fueran justificacion de uso. El can-not-fight-back es la confesion: no es un argumento, es el mecanismo de dominacion. Muy educativo para el lurker porque dice en voz alta la premisa que casi todos ocultan.",
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "NO pelear umbrales de cognicion ni capacity-counting (eso es welfarista, concede que el estatus depende del CI). NO redactar el eje como daño. Nombrar que mas-vulnerable->mas-usable es supremacismo de especie; el someone sigue ahi aunque sea mas debil; la misma logica entre humanos la rechazamos. Eje: propiedad/sujeto poseido, no cantidad de sufrimiento."
   }
 ]
