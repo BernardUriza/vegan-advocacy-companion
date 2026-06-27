@@ -156,7 +156,8 @@
     "related_tactics": [
       "peticion_de_principio",
       "species_hierarchy",
-      "libertarian_autonomy"
+      "libertarian_autonomy",
+      "apelacion_refutacion_previa"
     ],
     "lurker_risk": "med"
   },

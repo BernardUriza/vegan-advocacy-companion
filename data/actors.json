@@ -1520,5 +1520,34 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "NO pelear umbrales de cognicion ni capacity-counting (eso es welfarista, concede que el estatus depende del CI). NO redactar el eje como daño. Nombrar que mas-vulnerable->mas-usable es supremacismo de especie; el someone sigue ahi aunque sea mas debil; la misma logica entre humanos la rechazamos. Eje: propiedad/sujeto poseido, no cantidad de sufrimiento."
+  },
+  {
+    "tactics": [
+      "apelacion_refutacion_previa",
+      "inversion_carga"
+    ],
+    "threads": [
+      "27330688236588406"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-27",
+        "their_move": "Dismissal por consenso + tone-policing: 'al menos 3 personas ya te dieron buenas respuestas y sigues diciendo que no entienden — explícate mejor'. No argumenta él; apela a un head-count de refutaciones (Tiana/Nate/Michael) y traslada la carga.",
+        "our_reply_summary": "Reply etiquetada, registro compasivo-firme. Reconoce que no insultó. Nombra que las 3 'correcciones' son criterios distintos (cognición/jerarquía/'no es someone') para la MISMA pregunta: cuándo un individuo vivo deja de tratarse como un quién y pasa a ser un qué poseíble. Eso ES la pregunta, no la respuesta. 'Explícate mejor' no aplica: la pregunta sigue abierta porque nadie defendió POR QUÉ su línea justifica el cambio de estatus, solo lo asume. Carga devuelta. Framework alguien-vs-algo como PREGUNTA (no premisa) — el coagent afiló mi versión que presuponía el 'quién'.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "100004662660380",
+    "name": "Scott Peter",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100004662660380/",
+    "bando": "ambiguo",
+    "postura_nucleo": "No argumenta él mismo; afirma que otros ya respondieron bien y que el problema es que Bernard no se explica. Veneer de buena fe ('me gusta que preguntes') sobre un dismissal.",
+    "analisis": "Civil, abre reconociendo la pregunta — pero el cuerpo es un esquive: apela a un head-count de refutaciones ('al menos 3 personas dieron buenas respuestas') sin nombrar ninguna, y tone-policea ('explícate mejor'), trasladando la carga a Bernard. Las 'correcciones' que invoca (Tiana=cognición, Nate=jerarquía/poder, Michael='no es un someone') respondieron can/biología/estatus-negado, NO la pregunta del post (qué justifica poseer a un sujeto). El tono civil lo hace candidato a audiencia/persuadible: no es troll. Educativo para el lurker desactivar el 'ya te respondieron' mostrando que respondieron OTRA pregunta.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "compasivo",
+    "what_not_to_do": "NO re-explicar bajo demanda ni defenderte de 'no te explicas' (acepta su premisa). NO perseguir cuáles 3 personas. Reconocer la buena fe del tono, nombrar que las correcciones respondieron can/biología/estatus-negado y no la pregunta del eje, devolver la carga con alguien-vs-algo como PREGUNTA (no premisa probada — su attack_surface). Eje propiedad/sujeto poseído, no daño."
   }
 ]

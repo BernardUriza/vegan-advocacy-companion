@@ -398,5 +398,18 @@
       "100011355404997"
     ],
     "fallacy_type_id": null
+  },
+  {
+    "id": "apelacion_refutacion_previa",
+    "name": "Appeal to Prior Refutation / You've-Been-Answered Deflection",
+    "category": "deflection",
+    "definition": "Claims the questioner has already been refuted by unnamed others ('3 people gave good answers') and reframes the still-open question as the questioner's failure to communicate ('you should explain yourself better'). Makes no argument itself: outsources the refutation and shifts the burden onto the asker.",
+    "canonical_counter": "Don't accept the premise that the prior answers hit the actual question. Name which question they answered (usually 'can we / are they smart enough / are they really a someone') versus the one asked (what justifies owning a subject that wants to live). The question staying open isn't a communication failure — it's the answer never arriving. Return the burden.",
+    "register": "compasivo",
+    "what_not_to_do": "NO ponerse a la defensiva ni re-explicar bajo demanda (eso acepta el tone-policing). NO perseguir 'cuáles 3 personas'. NO conceder que fuiste poco claro. Reconocer la buena fe del tono, nombrar el cambio-de-pregunta, reinvertir la carga. Eje propiedad/sujeto, jamás daño.",
+    "actors_known": [
+      "100004662660380"
+    ],
+    "fallacy_type_id": null
   }
 ]
