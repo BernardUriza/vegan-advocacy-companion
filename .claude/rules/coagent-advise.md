@@ -41,11 +41,14 @@ prior welfarista del modelo. El backstop determinista es un **PreToolUse hook** 
 ejecuta el harness, NO Claude: antes de que `comment-prepare.mjs` stagee un reply,
 exige el **recibo de consulta** `.coagent/<post_id>.consult.json` que emite
 `seed-coagent.mjs` — master con frameworks anotados + guardrail, `seed_gate:pass`, y
-`draft_sha` == sha del `--body-file`. Sin recibo fresco, o con sha que no cuadra →
-**STAGING BLOQUEADO**. El hook **NO juzga contenido** (eso es trabajo de LLM: el
-style-gate de etapa 4 + el check x/y del coagent de arriba); solo prueba que la
-etapa 3 **ocurrió** con frameworks. Ver `.claude/hooks/coagent-provenance-gate.mjs`
-y `scripts/seed-coagent.mjs`.
+el sha del `--body-file` debe matchear **uno de los drafts consultados** del post
+(`drafts[]`, root fix 2026-06-27: varios targets del mismo post acumulan en el recibo
+en vez de pisarse — `finalize` hace upsert por sha, el hook acepta cualquier match;
+shape legacy single-`draft_sha` se normaliza). Sin recibo fresco, o con sha que no
+cuadra con ninguno → **STAGING BLOQUEADO**. El hook **NO juzga contenido** (eso es
+trabajo de LLM: el style-gate de etapa 4 + el check x/y del coagent de arriba); solo
+prueba que la etapa 3 **ocurrió** con frameworks. Ver
+`.claude/hooks/coagent-provenance-gate.mjs` y `scripts/seed-coagent.mjs`.
 
 ## La mecánica del DOM vive en `/coagent` (SSOT) — NO se duplica aquí
 

@@ -111,39 +111,50 @@ if (!isMain) {
   if (!gate.pass) die(`seed-gate FALLÓ (exit ${gate.code}) — reformula la jugada antes de sembrar:\n${gate.out}`);
 
   mkdirSync(COAGENT_DIR, { recursive: true });
+  const rp = receiptPath(postId);
+  // PRESERVA los drafts ya consultados de este post (varios targets comparten el recibo
+  // keyed por post_id): un segundo `seed` para el mismo hilo NO debe borrar el draft que
+  // ya finalizó un target anterior. Normaliza el shape legacy single-draft.
+  const prev = existsSync(rp) ? JSON.parse(readFileSync(rp, 'utf8')) : null;
+  const drafts = Array.isArray(prev?.drafts) ? prev.drafts
+    : (prev?.draft_sha ? [{ author: prev.author ?? null, draft_sha: prev.draft_sha, draft_file: prev.draft_file ?? null, consulted_at: prev.consulted_at ?? null }] : []);
   const receipt = {
-    status: 'seeded',
+    status: drafts.length ? 'consulted' : 'seeded',
     post_id: postId,
-    author: author || null,
     master: masterPath,
     frameworks: v.frameworks,
     guardrail: v.guardrail,
     seed_gate: 'pass',
     seeded_at: nowIso(),
-    draft_sha: null,
-    draft_file: null,
-    consulted_at: null,
+    drafts,
   };
-  writeFileSync(receiptPath(postId), JSON.stringify(receipt, null, 2) + '\n');
-  console.log(`✓ recibo PARCIAL escrito: ${receiptPath(postId)}`);
+  writeFileSync(rp, JSON.stringify(receipt, null, 2) + '\n');
+  console.log(`✓ recibo PARCIAL escrito: ${rp}` + (drafts.length ? ` (preserva ${drafts.length} draft(s) ya consultado(s) del post)` : ''));
   console.log(`  frameworks anotados: ${v.frameworks.join(', ')}`);
+  console.log(`  author sembrado: ${author || '(sin etiqueta)'} — múltiples targets del mismo post comparten este recibo (drafts[]).`);
   console.log('  siembra el master al coagent (x={marco}, y={candidata}), lee la y abolicionista, guárdala y corre `finalize`.');
 } else if (cmd === 'finalize') {
   const postId = arg('--post-id');
   const draft = arg('--draft');
-  if (!postId || !draft) die('uso: seed-coagent.mjs finalize --post-id <id> --draft <file>');
+  const author = arg('--author');
+  if (!postId || !draft) die('uso: seed-coagent.mjs finalize --post-id <id> --draft <file> [--author "<A>"]');
   const rp = receiptPath(postId);
   if (!existsSync(rp)) die(`no hay recibo parcial para ${postId} — corre \`seed\` primero (no saltes la consulta).`);
   const r = JSON.parse(readFileSync(rp, 'utf8'));
+  // normaliza el shape legacy single-draft a drafts[]
+  if (!Array.isArray(r.drafts)) r.drafts = r.draft_sha ? [{ author: r.author ?? null, draft_sha: r.draft_sha, draft_file: r.draft_file ?? null, consulted_at: r.consulted_at ?? null }] : [];
   const draftPath = resolveUserPath(draft, ROOT);
-  const draftText = readFileSync(draftPath, 'utf8');
-  r.draft_file = draftPath;
-  r.draft_sha = draftSha(draftText);
-  r.consulted_at = nowIso();
+  const sha = draftSha(readFileSync(draftPath, 'utf8'));
+  // upsert por sha: varios targets del mismo post acumulan, no se pisan
+  const entry = { author: author || null, draft_sha: sha, draft_file: draftPath, consulted_at: nowIso() };
+  const i = r.drafts.findIndex((d) => d.draft_sha === sha);
+  if (i >= 0) r.drafts[i] = entry; else r.drafts.push(entry);
   r.status = 'consulted';
+  r.consulted_at = entry.consulted_at;
+  delete r.draft_sha; delete r.draft_file; delete r.author; // canónico vive en drafts[]
   writeFileSync(rp, JSON.stringify(r, null, 2) + '\n');
-  console.log(`✓ recibo CONSULTADO: ${rp}`);
-  console.log(`  draft_sha: ${r.draft_sha} — ya puedes stagear con comment-prepare --body-file ${draftPath}`);
+  console.log(`✓ recibo CONSULTADO: ${rp} (${r.drafts.length} draft(s) en el post)`);
+  console.log(`  draft_sha: ${sha}${author ? ` (${author})` : ''} — ya puedes stagear con comment-prepare --body-file ${draftPath}`);
 } else if (cmd === 'show') {
   const postId = arg('--post-id');
   const rp = receiptPath(postId);

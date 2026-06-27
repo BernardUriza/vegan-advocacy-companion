@@ -107,17 +107,23 @@ try {
   block(`GATE PROCEDENCIA: no pude leer --body-file "${bodyFile}" (${e.message}). Fail-closed.`);
 }
 const bodySha = draftSha(bodyText);
-if (bodySha !== r.draft_sha) {
+// varios targets pueden compartir un post → el recibo guarda drafts[]; el body-file debe
+// ser UNO de los drafts consultados. Normaliza el shape legacy single-draft.
+const drafts = Array.isArray(r.drafts) && r.drafts.length
+  ? r.drafts
+  : (r.draft_sha ? [{ draft_sha: r.draft_sha, consulted_at: r.consulted_at }] : []);
+const match = drafts.find((d) => d.draft_sha === bodySha);
+if (!match) {
   block([
-    'GATE PROCEDENCIA — STAGING BLOQUEADO: el draft a postear NO es el que devolvió el coagent.',
-    `  sha(body-file)=${bodySha}  recibo.draft_sha=${r.draft_sha}`,
+    'GATE PROCEDENCIA — STAGING BLOQUEADO: el draft a postear NO es ninguno de los que devolvió el coagent para este hilo.',
+    `  sha(body-file)=${bodySha}  recibo.drafts=[${drafts.map((d) => d.draft_sha).join(', ')}]`,
     'Si editaste el draft a mano tras la consulta, vuelve a pasarlo por el coagent (x/y) y re-finaliza.',
   ]);
 }
 
-const consultedAt = Date.parse(r.consulted_at || '');
+const consultedAt = Date.parse(match.consulted_at || r.consulted_at || '');
 if (!consultedAt || Date.now() - consultedAt > FRESH_MS) {
-  block(`GATE PROCEDENCIA: recibo viejo (consulted_at=${r.consulted_at}). Re-consulta al coagent para este hilo.`);
+  block(`GATE PROCEDENCIA: recibo viejo (consulted_at=${match.consulted_at || r.consulted_at}). Re-consulta al coagent para este hilo.`);
 }
 
 process.exit(0);
