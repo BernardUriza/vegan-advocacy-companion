@@ -411,5 +411,18 @@
       "100004662660380"
     ],
     "fallacy_type_id": null
+  },
+  {
+    "id": "plant_sentience_equivalence",
+    "name": "Plant Sentience / Sentience-Creep Equivalence",
+    "category": "rhetoric",
+    "definition": "Extends 'sentience' to plants (electrical/chemical signaling, ultrasonic sounds, anesthesia response, leaves closing, 'they enjoy music') to claim plants are 'beings' by the vegan's own definition, collapsing the moral category between plants and animals. 'Are plants not beings too? They respond to damage and can be anesthetized.' Distinct from crop_deaths_flip (body-count) — this attacks the CRITERION itself by sentience-creep.",
+    "canonical_counter": "ABOLITIONIST/subject axis, NOT a debate over plant neurobiology. Concede every signaling fact freely (plants signal, emit sounds, respond to anesthesia — fine, none of it is disputed). The axis was never how much something reacts; it's whether there is a SUBJECT — someone with a point of view for whom its own life can go well or badly from the inside. A plant has responses but no one home to mind them; an animal is a someone. Frameworks consideracion-moral-no-cuanto-sufre (I'm not debating reaction-complexity, I'm asking if there's a someone there) + algo-a-alguien-sujeto-derecho (someone vs something). If pressed: even granting plant-subjecthood, animal agriculture destroys far more plants via feed — but lead with the subject, mention body-count only at the pass.",
+    "register": "compasivo",
+    "what_not_to_do": "Don't argue 'plants don't really feel pain / lack nociceptors' — that fights on the welfarist pain/suffering axis and concedes that the criterion is suffering-capacity. Don't concede crop-death/plant-killing as morally equivalent harm. Don't get pulled into citing plant-neurobiology counter-studies. The axis is subject/property (is there a someone?), not the presence or amount of a damage-response.",
+    "actors_known": [
+      "585361402"
+    ],
+    "fallacy_type_id": "false_equivalence"
   }
 ]

@@ -157,7 +157,8 @@
       "peticion_de_principio",
       "species_hierarchy",
       "libertarian_autonomy",
-      "apelacion_refutacion_previa"
+      "apelacion_refutacion_previa",
+      "plant_sentience_equivalence"
     ],
     "lurker_risk": "med"
   },
@@ -605,7 +606,8 @@
     "related_tactics": [
       "inversion_carga",
       "welfare_rhetoric",
-      "principio_escudo"
+      "principio_escudo",
+      "plant_sentience_equivalence"
     ],
     "lurker_risk": "med"
   },

@@ -1507,6 +1507,16 @@
         "their_move": "Might-makes-right honesto: lower cognition + reliance + cant fight back = justifica usarlos, y saben rico.",
         "our_reply_summary": "Reply etiquetada: los 3 marcadores son VULNERABILIDAD, no permiso; mas-debil=usable es la regla que rechazamos entre humanos; cant-fight-back es la confesion del mecanismo. Inversion: poder someter no da derecho a poseer. Cierra: que hace que ser mas debil convierta a alguien en propiedad?",
         "framework": "antropoespecismo",
+        "outcome": "engaged",
+        "outcome_evidence": "Nate Porter return turns: 'My ex boyfriend could be a good case study/justification for bringing back roman style slavery, I stand behind my words philosophically' + 'understand the philosophy behind the guy on my pfp' (Senator Armstrong)",
+        "outcome_note": "antropoespecismo: tras pedirle defender el might-makes-right en abierto, Nate mordio la bala — 'I stand behind my words philosophically', justifica esclavitud romana, pfp Senator Armstrong (villano might-makes-right). No concedio ni se callo: engaged, doblando la apuesta. El lurker ve el principio carnista enunciado honesto = poder puro."
+      },
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-27",
+        "their_move": "Mordio la bala del might-makes-right en abierto: avala esclavitud romana ('I stand behind my words philosophically'), remite a la filosofia de Senator Armstrong (villano might-makes-right).",
+        "our_reply_summary": "Reply etiquetada (filo): concede que al menos fue honesto, nombra que la fuerza explica QUIEN es dominado pero nunca POR QUE la dominacion es legitima — poder describe, no es permiso; si el principio es 'el fuerte decide', lo unico que separa amo de esclavo es quien gana. Cierra: por que la capacidad de dominar deberia volverse el derecho a poseer/usar?",
+        "framework": "antropoespecismo",
         "outcome": "pending"
       }
     ],
@@ -1549,5 +1559,33 @@
     "verdict": "audiencia",
     "register": "compasivo",
     "what_not_to_do": "NO re-explicar bajo demanda ni defenderte de 'no te explicas' (acepta su premisa). NO perseguir cuáles 3 personas. Reconocer la buena fe del tono, nombrar que las correcciones respondieron can/biología/estatus-negado y no la pregunta del eje, devolver la carga con alguien-vs-algo como PREGUNTA (no premisa probada — su attack_surface). Eje propiedad/sujeto poseído, no daño."
+  },
+  {
+    "tactics": [
+      "plant_sentience_equivalence"
+    ],
+    "threads": [
+      "27330688236588406"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-27",
+        "their_move": "Plant-sentience equivalence: las plantas senalizan, emiten sonidos, se anestesian, 'disfrutan musica' (cita PMC) -> ¿no son 'beings' por tu definicion? Intenta colapsar la categoria moral por sentience-creep.",
+        "our_reply_summary": "Reply etiquetada (compasivo, buena fe): concede TODA la biologia vegetal sin pelear, devuelve al sujeto — el eje nunca fue cuan sofisticada es la respuesta sino si hay ALGUIEN ahi, un proceso vivo vs alguien para quien la vida ocurre desde adentro. Planteado interrogativo (no afirmacion, evita peticion de principio). Cierra: pig vs blade of grass, ¿mismo tipo de ser? si hay diferencia, ¿que hace a uno un who y al otro un what?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "585361402",
+    "name": "Martin Webster",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/585361402/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Plant-sentience equivalence: las plantas tambien senalizan, emiten sonidos, se anestesian y 'disfrutan musica' — ¿no son 'beings' por tu definicion? Intenta colapsar la categoria moral planta/animal por sentience-creep.",
+    "analisis": "Buena fe argumentativa: trae una cita (PMC sobre reacciones fisiologicas de plantas al sonido) y formula una pregunta genuina, no insulto. Su movimiento NO es crop-deaths/body-count sino atacar el CRITERIO mismo extendiendo sentiencia a las plantas. La trampa para el vegano es responder en el eje del DOLOR ('las plantas no tienen nociceptores') — eso es welfarismo y concede que el criterio es la capacidad de sufrir. El eje correcto: no hay un SUJETO, alguien a quien le importe su propia vida desde adentro; la planta reacciona pero no hay nadie en casa.",
+    "tone": "civil",
+    "verdict": "persuadible",
+    "register": "compasivo",
+    "what_not_to_do": "NO debatir neurobiologia vegetal ni decir 'las plantas no sienten dolor' (welfarista, concede el eje del sufrimiento). NO conceder equivalencia crop-deaths como dano moral. Conceder TODO el plant-signaling y devolver al sujeto: ¿hay alguien ahi para quien su vida pueda ir bien o mal? Eje: sujeto/propiedad, no presencia/cantidad de respuesta al dano."
   }
 ]
