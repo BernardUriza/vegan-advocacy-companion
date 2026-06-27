@@ -137,4 +137,8 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Inversion de carga (la carga es tuya no del 99%, evolucion/biologia/toda civilizacion) + reductio (tu marco no es absoluto, ya concedes defensa propia/invasivas). Full: tambien welfarista minimising unnecessary suffering.
 - **Nuestra respuesta:** Reply etiquetada (eje algo-a-alguien): historia/biologia = is, no ought; las excepciones son matar-en-conflicto, nunca POSEER a un sujeto como propiedad -> no vuelven arbitrario el eje. Carga de vuelta sobre el estatus de propiedad SIN asumir el someone como axioma (correccion del coagent). Cierra: cual es el principio que hace legitimo que un individuo exista como propiedad de otro?
 
+### Hilo `27468645086091974` — 2026-06-27 · outcome: **pending**
+- **Su jugada:** Burden-tennis sofisticado: simetria falsa ("why is it unjustified? restating doesnt prove premise") + reductio crop-deaths/self-defense/invasive (no puedes ubicar la linea) + 99% vs 1% / biologically normal / extraordinary claims require persuasion.
+- **Nuestra respuesta:** Filo: la carga NO es simetrica — poseer a un sujeto reclama autoridad sobre su existencia entera, eso es lo que necesita explicarse (como "por que injustificado poseer una persona" no es simetrico). Sus casos (self-defense/invasive/crop) son CONFLICTOS con alguien que ya existe; ninguno requiere CRIAR un sujeto para poseerlo — la granja si. No es donde pongo la raya en un gradiente, es que una relacion crea un individuo poseido y la otra no. 99%/normal explica aceptacion, no justificacion. Cierra: que principio hace legitimo que un individuo exista como propiedad de otro?
+
 _Hilos: 27363745576581926, 27375477042075446_

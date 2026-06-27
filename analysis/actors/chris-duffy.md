@@ -82,4 +82,8 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** creation=ownership (el cerdo existe porque un humano lo creo -> es propiedad) + cargo de antropomorfismo.
 - **Nuestra respuesta:** Conced lo legal/biologico (si los crian, si son propiedad legal), gir a que eso describe no justifica el status; crear-para-poseer es el problema no la solucion; ver al cerdo evitar dolor/querer vivir es observacion no antropomorfismo (lo sabe por sus cabras). Registro filo-light, sin sermon.
 
+### Hilo `27468645086091974` — 2026-06-27 · outcome: **pending**
+- **Su jugada:** Retrocedio de "el cerdo ES propiedad, simple" a condicion: ownership legitimate IF accommodate needs (fisica y mentalmente 100%); si no puedes, no es legitimo y deben quitarte los animales. (cuida cabras)
+- **Nuestra respuesta:** Compasivo: reconoce que cuida animales en serio, pero su criterio responde el TRATO no el TITULO — ya concedio que la propiedad necesita justificarse y puso toda la justificacion en cuan bien tratas a lo que posees. Buen cuidado vuelve la propiedad mas amable, no explica por que el titulo es legitimo. Cierra: que da al dueno ese estatus sobre el animal de entrada?
+
 _Hilos: march-property, 27319402757682875_

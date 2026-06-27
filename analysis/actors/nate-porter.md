@@ -49,4 +49,8 @@ NO pelear umbrales de cognicion ni capacity-counting (eso es welfarista, concede
 - **Su jugada:** Mordio la bala del might-makes-right en abierto: avala esclavitud romana ('I stand behind my words philosophically'), remite a la filosofia de Senator Armstrong (villano might-makes-right).
 - **Nuestra respuesta:** Reply etiquetada (filo): concede que al menos fue honesto, nombra que la fuerza explica QUIEN es dominado pero nunca POR QUE la dominacion es legitima — poder describe, no es permiso; si el principio es 'el fuerte decide', lo unico que separa amo de esclavo es quien gana. Cierra: por que la capacidad de dominar deberia volverse el derecho a poseer/usar?
 
+### Hilo `27330688236588406` — 2026-06-27 · outcome: **pending**
+- **Su jugada:** Power-is-permission (latent): poder dominar = permiso; "boils down to them tasting good" + relativismo cultural (perro/gato Asia, cuy Sudamerica, caballo demasiado util/respetado) — la linea sigue preferencia humana.
+- **Nuestra respuesta:** Filo: power-is-permission no justifica, solo dice quien domina decide (como != por que es legitimo). Su propio relativismo prueba que la categoria se construye alrededor de NOSOTROS, no de un hecho del animal — preferencia humana decidiendo quien cuenta. Cierra: que convierte el poder en permiso?
+
 _Hilos: 27330688236588406_
