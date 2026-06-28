@@ -74,8 +74,12 @@ No morder el insulto de la dignidad — UNA línea de contraste de temperamento 
 
 ## Log de interacciones
 
-### Hilo `27330688236588406` — 2026-06-27 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-06-27 · outcome: **engaged**
 - **Su jugada:** Relabela propiedad como "steward"; mete al animal junto a livestock/natural resources/product; concede fear/curiosity/emotions pero niega subjetividad (no sense of self / no concept of death -> no interest); naturalismo; se mofa de la dignidad de Bernard (paying with his dignity / his dignity isnt worth much / cheap thrills).
 - **Nuestra respuesta:** Reply etiquetada anclada en su mofa de la dignidad. Giró el insulto: la dignidad SÍ es el punto — la invoca para los suyos y se la roba al no-humano reclasificándolo (livestock->resources->products). Expuso el rename steward (su propia def mete al animal junto a natural resources). Volteó su concesión: admitió fear/curiosity/emotions (marcadores de un alguien con dignidad) y lo archivó como livestock; la pregunta nunca dependió de si entienden la muerte. Cerró al hueso: ¿qué hace legítimo que un alguien con dignidad sea propiedad de otro?
+
+### Hilo `27330688236588406` — 2026-06-28 · outcome: **pending**
+- **Su jugada:** Dobló tras mi reply de dignidad (15h): niega "dignity" como concepto humano (anthropomorphizing), repite escudo "steward not owner" (Controlled no / Managed yes / Disposed of no), "no entienden la muerte -> no interés", proyecta goalpost ("that wasnt even your question, now youre changing it"), capa de insulto (ignorant / arrogant / my darling). Ella + Philip se mofan en público (Bernie / cheap thrills / his dignity isnt worth much).
+- **Nuestra respuesta:** Reply etiquetada. P1 = defensa personal / contraste de temperamento para el lurker: nombré que el hilo bajó a Bernie / ignorant / my darling / get a dictionary / jokes-between-friends en vez de contestar, que no devolví el insulto porque el respeto no cuesta nada, y que un argumento que vale se sostiene sin el comentario sobre la persona. Luego al hueso: ella describe un individuo que experimenta (fear / curiosity / emotions) y sin principio nuevo lo archiva como "livestock" — ese salto sin justificar es el punto; "steward" renombra la relación pero no la legitima; la pregunta nunca cambió. Cierre: ¿qué principio hace legítimo que un individuo con sus propias experiencias exista como propiedad de otro, en vez de repetir que es "livestock"?
 
 _Hilos: 27330688236588406_
