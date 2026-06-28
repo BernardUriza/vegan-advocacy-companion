@@ -905,20 +905,32 @@
     "name": "Garry Hoare",
     "bando": "anti-vegan",
     "postura_nucleo": "Regenerative farming / pastured animals = menos muerte. Mismo crop-deaths-flip que Yolanda pero hostil ('Blinkered Triggered Vegan').",
-    "analisis": "Entra a defender a Yolanda con agresión (1 turno): 'I've shown you plenty of evidence... Blinkered Triggered Vegan who loves to tell people how to live'. Crop-deaths-flip + insulto + apela a 'discusiones previas' como evidencia. Variante hostil de Yolanda; no buena fe.",
+    "analisis": "Entra a defender a Yolanda con agresión (1 turno): 'I've shown you plenty of evidence... Blinkered Triggered Vegan who loves to tell people how to live'. Crop-deaths-flip + insulto + apela a 'discusiones previas' como evidencia. Variante hostil de Yolanda; no buena fe. || 27330 (post propio de Bernard, eje propiedad): comment raíz que ESQUIVA con 3 jugadas que el post ya descartó — crop-deaths tu-quoque (vegans kill billions), relativismo (who are you to say one life is worth more), y autonomía (nobody has the right to tell others how to live). El post dijo literal you-can-eat-meat + no-go-vegan; Garry contesta preguntas que nadie hizo y nunca toca la de propiedad. Mala fe / straw man — exponer la trampa primero, concesion desde la fuerza, devolver al hueso de propiedad. Lurker.",
     "tactics": [
       "crop_deaths_flip",
       "insulto_ad_hominem",
-      "data_dump_selectivo"
+      "data_dump_selectivo",
+      "relativismo_moral",
+      "libertarian_autonomy"
     ],
     "tone": "hostile",
     "verdict": "pozo_sin_fondo",
     "register": "filo",
-    "what_not_to_do": "No pelear el dato regenerativo en su nivel (concederlo como nicho). No morder el 'triggered'.",
+    "what_not_to_do": "No pelear el dato regenerativo en su nivel (concederlo como nicho). No morder el 'triggered'. No pelear el crop-deaths en body-count ni en harm (eje propiedad/esclavitud). No engancharse en metaetica del relativismo (un one-liner). No entrar a filosofia libertaria.",
     "threads": [
-      "27363745576581926"
+      "27363745576581926",
+      "27330688236588406"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-28",
+        "their_move": "Crop-deaths tu-quoque + relativismo + autonomia: who are you to say one life is worth more, nobody has the right to tell others how to live. Tres esquives que el post ya habia descartado (straw man).",
+        "our_reply_summary": "Expuse el hombre de paja primero (contesto 3 preguntas que nadie hizo; el post dijo you-can-eat-meat + no-telling-how-to-live), devolvi a la unica pregunta real (propiedad), gire el crop-deaths por estatus no conteo (difference in status not arithmetic), relativismo en un renglon, cerre con la imagen del post (habit wearing a costume).",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/100003886247108/"
   },
   {
