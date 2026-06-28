@@ -38,8 +38,12 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Demanda definicional (socrates hostil): "someone" assumes your argument, piggybacks on the gravitas of "person"; no redefinas la lengua — si tu caso es que la experiencia subjetiva hace mal poseer, arguméntalo por sus méritos.
 - **Nuestra respuesta:** Filo-ligero: no gano por diccionario — who/what es una distincion que el ya usa (un perro no es una roca, un nino no es una silla). Tomo su invitacion: dejemos la palabra, hablemos de la sustancia — un cerdo tiene punto de vista, experimenta su vida, evita peligro, tiene preferencias. Eso ES lo que pregunte. Cierra devolviendo su pregunta: que caracteristica falta que vuelve aceptable mover al cerdo a la categoria de propiedad / cual es el criterio para decidir que individuos pueden ser poseidos?
 
-### Hilo `27468645086091974` — 2026-06-28 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-06-28 · outcome: **engaged**
 - **Su jugada:** Pregunta genuina de buena fe: estas diciendo que todo ser con experiencia subjetiva no puede ser tratado como propiedad? tu vista es binaria? pide el principio que traza la linea ownable/not-ownable.
 - **Nuestra respuesta:** Conteste de frente (compasivo, premio su buena fe): el TITULO de propiedad sobre un sujeto con punto de vista propio es lo que pide justificacion, no la inteligencia ni un umbral; los casos marginales no cambian la pregunta. Le devolvi: que caracteristica vuelve legitima la propiedad?
+
+### Hilo `27468645086091974` — 2026-06-28 · outcome: **pending**
+- **Su jugada:** Test del cerdo salvaje (buena fe): si un cerdo salvaje no es de nadie, ¿matarlo es aceptable? Binario forzado — no->tu posición es harm no propiedad; sí->¿qué tiene de especial la propiedad si la experiencia subjetiva es idéntica en ambos casos?
+- **Nuestra respuesta:** Reply etiquetada (buena fe, sin filo). El coagent rechazó conceder la primera asta; en su lugar distinción FUNDAMENTO vs OBJETO: el fundamento de la posición es el estatus (un alguien con punto de vista, no un objeto), el objeto del debate en este hilo sigue siendo la PROPIEDAD (la institución que se defiende). Cerdo salvaje y de granja = mismo tipo de individuo; lo que cambia es la RELACIÓN que el humano establece (criado bajo control para existir como poseído/dispuesto). Necesidad/supervivencia al final como contraste secundario: la granja industrial no es supervivencia, es propiedad. Cierre: ¿qué principio hace legítimo que un individuo exista como propiedad de otro?
 
 _Hilos: 27468645086091974_
