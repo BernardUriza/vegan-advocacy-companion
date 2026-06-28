@@ -363,7 +363,9 @@
         "their_move": "Veredicto sin razon: 'Your argument is lost at someone. That is your weakness, not everyone else's.' Declara la derrota del eje someone/sujeto sin ofrecer criterio alternativo.",
         "our_reply_summary": "Reply etiquetada (filo): concede que 'someone' solo no prueba nada (no se afirma como premisa), pero un veredicto tampoco es criterio. Plantea el framework como PREGUNTA: ¿que hace a un individuo un who y a otro un what poseible? Si su criterio es especie/inteligencia/racionalidad, que lo defienda; 'tu argumento falla' se salta la linea en vez de trazarla. Cierra pidiendo el criterio.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "escalated",
+        "outcome_evidence": "You're not the Kamala Harris scriptwriter. No one is interested in reading your pathetic word salad",
+        "outcome_note": "algo-a-alguien: tras concederle que 'someone' solo no prueba nada y nombrar que 'es tu debilidad' es veredicto no criterio, cayo a puro insulto. Pozo confirmado: el eje no tiene traccion en el, solo dominancia social."
       }
     ]
   },
@@ -682,7 +684,9 @@
         "their_move": "creation=ownership (el cerdo existe porque un humano lo creo -> es propiedad) + cargo de antropomorfismo.",
         "our_reply_summary": "Conced lo legal/biologico (si los crian, si son propiedad legal), gir a que eso describe no justifica el status; crear-para-poseer es el problema no la solucion; ver al cerdo evitar dolor/querer vivir es observacion no antropomorfismo (lo sabe por sus cabras). Registro filo-light, sin sermon.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "yes ownership is legitimate and justified if you can accommodate the animals needs",
+        "outcome_note": "algo-a-alguien: al girar creation=how-not-why, retrocedio de 'el cerdo ES propiedad simple' a una condicion (legitimo SI acomodas necesidades) — movio el terreno, senal de que el how/why lando."
       },
       {
         "thread_id": "27468645086091974",
@@ -690,7 +694,9 @@
         "their_move": "Retrocedio de \"el cerdo ES propiedad, simple\" a condicion: ownership legitimate IF accommodate needs (fisica y mentalmente 100%); si no puedes, no es legitimo y deben quitarte los animales. (cuida cabras)",
         "our_reply_summary": "Compasivo: reconoce que cuida animales en serio, pero su criterio responde el TRATO no el TITULO — ya concedio que la propiedad necesita justificarse y puso toda la justificacion en cuan bien tratas a lo que posees. Buen cuidado vuelve la propiedad mas amable, no explica por que el titulo es legitimo. Cierra: que da al dueno ese estatus sobre el animal de entrada?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "under nsw bio security law they have to be destroyed. Animals are property, very simple",
+        "outcome_note": "algo-a-alguien: tras nombrar que su criterio responde el TRATO no el TITULO, re-anclo en legal/biosecurity ('si no son propiedad la ley los destruye') + acusacion de antropomorfismo. Circular hacia lo legal; engaged sin concesion."
       }
     ]
   },
@@ -1063,13 +1069,25 @@
         "their_move": "Inversion de carga (la carga es tuya no del 99%, evolucion/biologia/toda civilizacion) + reductio (tu marco no es absoluto, ya concedes defensa propia/invasivas). Full: tambien welfarista minimising unnecessary suffering.",
         "our_reply_summary": "Reply etiquetada (eje algo-a-alguien): historia/biologia = is, no ought; las excepciones son matar-en-conflicto, nunca POSEER a un sujeto como propiedad -> no vuelven arbitrario el eje. Carga de vuelta sobre el estatus de propiedad SIN asumir el someone como axioma (correccion del coagent). Cierra: cual es el principio que hace legitimo que un individuo exista como propiedad de otro?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "you're doing it again. You say it's not about percentages, but it absolutely is",
+        "outcome_note": "algo-a-alguien: respondio al is/ought repitiendo el burden-shift (es sobre porcentajes/mayoria). Engaged, terreno del crux de la carga."
       },
       {
         "thread_id": "27468645086091974",
         "date": "2026-06-27",
         "their_move": "Burden-tennis sofisticado: simetria falsa (\"why is it unjustified? restating doesnt prove premise\") + reductio crop-deaths/self-defense/invasive (no puedes ubicar la linea) + 99% vs 1% / biologically normal / extraordinary claims require persuasion.",
         "our_reply_summary": "Filo: la carga NO es simetrica — poseer a un sujeto reclama autoridad sobre su existencia entera, eso es lo que necesita explicarse (como \"por que injustificado poseer una persona\" no es simetrico). Sus casos (self-defense/invasive/crop) son CONFLICTOS con alguien que ya existe; ninguno requiere CRIAR un sujeto para poseerlo — la granja si. No es donde pongo la raya en un gradiente, es que una relacion crea un individuo poseido y la otra no. 99%/normal explica aceptacion, no justificacion. Cierra: que principio hace legitimo que un individuo exista como propiedad de otro?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "engaged",
+        "outcome_evidence": "that's only true if I first accept YOUR moral premise",
+        "outcome_note": "algo-a-alguien: tras romper la simetria (poseer reclama autoridad sobre la existencia ajena), sostuvo 'eso solo es cierto si acepto TU premisa' + apelacion a la mayoria. Stalemate sofisticado en el crux de la peticion-de-principio; el lurker ve el loop."
+      },
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-06-28",
+        "their_move": "Peticion de principio + apelacion a mayoria/historia/beneficios: ownership needs explaining solo si acepto TU premisa; 99% de la humanidad; ownership es solo un rasgo de la domesticacion.",
+        "our_reply_summary": "Rompi el loop (filo, correccion del coagent): la propiedad no es un hecho biologico, es una relacion social adicional; quien reclama el TITULO introduce algo especifico que justificar, no es mi premisa sino la estructura del reclamo. 99%/historia es is no ought. Cierre: que hay en el cerdo que vuelva justificada y no solo aceptada la relacion de pertenencia?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }
@@ -1487,6 +1505,16 @@
         "their_move": "Pedanteria someone-vs-it (conteo de pronombres en mi post) + deflexion crop-deaths/plantas (pimientos con defensas).",
         "our_reply_summary": "Conced el pronombre y que la cosecha mata seres (no mueve el eje), nombr que un sujeto lo es por su perspectiva no por mi gramatica, y que la planta no es poseida/criada como propiedad (campo != granja). Invert la carga sobre el status.",
         "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "engaged",
+        "outcome_evidence": "crops ARE bred into existence for everything you just said",
+        "outcome_note": "algo-a-alguien: tras conceder el pronombre y que la cosecha mata seres sin mover el eje, volvio con 'los cultivos TAMBIEN se crian' + 'someone solo aplica a personas'. Engaged; el flip esta servido (en la cosecha nadie es POSEIDO; y 'someone' ya lo usa para su perro)."
+      },
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-28",
+        "their_move": "Crops-bred flip (los cultivos TAMBIEN se crian) + someone solo para personas + acusa de cambiar definiciones.",
+        "our_reply_summary": "Filo ligero: crops-bred no toca el eje, los cultivos no son POSEIDOS como sujetos; nunca fue criado-para-existir sino poseido-como-un-quien. Quien/que es una distincion ordinaria que todos usamos (correccion del coagent: no afirmar que el lo dice de su perro), no un truco de diccionario. Cierre: cual es el criterio que pone al cerdo del lado que?",
+        "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }
     ],
@@ -1515,13 +1543,25 @@
         "their_move": "demanda definicional (define someone, tu definicion no es la comun).",
         "our_reply_summary": "Defin someone llano (sujeto con perspectiva, vive su vida desde adentro, evita dolor/quiere vivir), ancl en perro-vs-roca / quien-vs-que, invert la carga (que le falta al cerdo). Corto, sin pantano de diccionarios.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "words have established meanings for a reason",
+        "outcome_note": "algo-a-alguien: tras definir 'someone' en llano (sujeto con perspectiva), pidio usar significados establecidos. Engaged, aun en modo definicional."
       },
       {
         "thread_id": "27468645086091974",
         "date": "2026-06-27",
         "their_move": "Demanda definicional (socrates hostil): \"someone\" assumes your argument, piggybacks on the gravitas of \"person\"; no redefinas la lengua — si tu caso es que la experiencia subjetiva hace mal poseer, arguméntalo por sus méritos.",
         "our_reply_summary": "Filo-ligero: no gano por diccionario — who/what es una distincion que el ya usa (un perro no es una roca, un nino no es una silla). Tomo su invitacion: dejemos la palabra, hablemos de la sustancia — un cerdo tiene punto de vista, experimenta su vida, evita peligro, tiene preferencias. Eso ES lo que pregunte. Cierra devolviendo su pregunta: que caracteristica falta que vuelve aceptable mover al cerdo a la categoria de propiedad / cual es el criterio para decidir que individuos pueden ser poseidos?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "engaged",
+        "outcome_evidence": "are you saying that any being with subjective experience cannot be morally treated as property under any circumstances",
+        "outcome_note": "algo-a-alguien: GIRO a buena fe — paso de exigir definiciones a una pregunta genuina y precisa ('estas diciendo que todo ser con experiencia subjetiva no puede ser tratado como propiedad? tu vista es binaria?'). El mas prometedor del hilo: empujo el argumento en vez de cambiar de tema."
+      },
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-06-28",
+        "their_move": "Pregunta genuina de buena fe: estas diciendo que todo ser con experiencia subjetiva no puede ser tratado como propiedad? tu vista es binaria? pide el principio que traza la linea ownable/not-ownable.",
+        "our_reply_summary": "Conteste de frente (compasivo, premio su buena fe): el TITULO de propiedad sobre un sujeto con punto de vista propio es lo que pide justificacion, no la inteligencia ni un umbral; los casos marginales no cambian la pregunta. Le devolvi: que caracteristica vuelve legitima la propiedad?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }
@@ -1561,7 +1601,9 @@
         "their_move": "Mordio la bala del might-makes-right en abierto: avala esclavitud romana ('I stand behind my words philosophically'), remite a la filosofia de Senator Armstrong (villano might-makes-right).",
         "our_reply_summary": "Reply etiquetada (filo): concede que al menos fue honesto, nombra que la fuerza explica QUIEN es dominado pero nunca POR QUE la dominacion es legitima — poder describe, no es permiso; si el principio es 'el fuerte decide', lo unico que separa amo de esclavo es quien gana. Cierra: por que la capacidad de dominar deberia volverse el derecho a poseer/usar?",
         "framework": "antropoespecismo",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "justification for bringing back roman style slavery, I stand behind my words philosophically",
+        "outcome_note": "antropoespecismo: redoblo el might-makes-right en abierto (avala esclavitud romana, manda video de Senator Armstrong como su filosofia). No concede — pero para el lurker es ganancia: el bando se autodelata avalando esclavitud."
       },
       {
         "thread_id": "27330688236588406",
@@ -1569,7 +1611,9 @@
         "their_move": "Power-is-permission (latent): poder dominar = permiso; \"boils down to them tasting good\" + relativismo cultural (perro/gato Asia, cuy Sudamerica, caballo demasiado util/respetado) — la linea sigue preferencia humana.",
         "our_reply_summary": "Filo: power-is-permission no justifica, solo dice quien domina decide (como != por que es legitimo). Su propio relativismo prueba que la categoria se construye alrededor de NOSOTROS, no de un hecho del animal — preferencia humana decidiendo quien cuenta. Cierra: que convierte el poder en permiso?",
         "framework": "antropoespecismo",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "it does boil down to them tasting good",
+        "outcome_note": "antropoespecismo: sostuvo power-is-permission ('boils down to them tasting good' + relativismo cultural). Engaged, edgelord coherente; el how/why no lo mueve pero queda expuesto."
       }
     ],
     "user_id": "100081660349433",
@@ -1598,7 +1642,9 @@
         "their_move": "Dismissal por consenso + tone-policing: 'al menos 3 personas ya te dieron buenas respuestas y sigues diciendo que no entienden — explícate mejor'. No argumenta él; apela a un head-count de refutaciones (Tiana/Nate/Michael) y traslada la carga.",
         "our_reply_summary": "Reply etiquetada, registro compasivo-firme. Reconoce que no insultó. Nombra que las 3 'correcciones' son criterios distintos (cognición/jerarquía/'no es someone') para la MISMA pregunta: cuándo un individuo vivo deja de tratarse como un quién y pasa a ser un qué poseíble. Eso ES la pregunta, no la respuesta. 'Explícate mejor' no aplica: la pregunta sigue abierta porque nadie defendió POR QUÉ su línea justifica el cambio de estatus, solo lo asume. Carga devuelta. Framework alguien-vs-algo como PREGUNTA (no premisa) — el coagent afiló mi versión que presuponía el 'quién'.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "the answer you're looking for lies with all the answers combined",
+        "outcome_note": "algo-a-alguien: tras nombrar que las 3 'respuestas' contestaban partes distintas, paso a naturalismo+futility de buena fe ('la respuesta esta en todas combinadas'). Engaged, cordial."
       },
       {
         "thread_id": "27330688236588406",
@@ -1699,5 +1745,34 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No morder el insulto de la dignidad — UNA línea de contraste de temperamento y al hueso. No debatir el diccionario/semántica de \"steward\" ni hacer data-dump propio. No conceder daño/welfare (eje es propiedad/esclavitud, no harm). Voltear su PROPIA evidencia: admitió dolor/miedo/curiosidad (someone) y lo archivó como livestock/recurso (something) — ahí está el robo de dignidad. No pelear si entienden la muerte: no se necesita el concepto de muerte para ser alguien (species_hierarchy = criterio que no traza la línea)."
+  },
+  {
+    "tactics": [
+      "welfare_rhetoric",
+      "domestication_mutualism"
+    ],
+    "threads": [
+      "27330688236588406"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-28",
+        "their_move": "Stewardship/husbandry como alto moral: cuidar bien y optimizar el peso del animal, se siente bien sobre el well-being y provee con minimo esfuerzo; 1 sano mejor que matar 5-6 flacos.",
+        "our_reply_summary": "Compasivo, concesion de entrada: le creo que cuida en serio, pero todo su argumento es sobre el TRATO no el TITULO. Optimised-weight-to-provide dice solo que el animal existe para su beneficio. Un sujeto bien cuidado sigue siendo poseido. Cierre: propiedad vs responsabilidad. Sin body-count, guardrail welfare critico.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "1350950105",
+    "name": "Samantha Smith",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Husbandry/stewardship como alto moral: cuidar bien y optimizar el peso del animal es superior a cazar; se siente bien sobre el bienestar Y sobre proveer con minimo esfuerzo/maximo beneficio.",
+    "analisis": "27330 (post propio de Bernard): comment raiz de buena fe, sin insultos. Argumenta que la cria responsable (un animal sano y bien alimentado) es mejor que matar 5-6 flacos/enfermos — mezcla welfare-rhetoric (me siento bien sobre su well-being) con eficiencia (minimo trabajo, maximo beneficio para mi y los mios). Mismo eje steward que Chris Duffy/Samantha Mckenna: defiende el TRATO, no cuestiona el TITULO. El flip: optimizar el peso de un critter para proveerte = lo posees como recurso; un sujeto bien cuidado sigue siendo poseido. Buena fe -> registro compasivo, concesion de entrada.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "compasivo",
+    "what_not_to_do": "No competir en body-count (1 sano vs 5-6 flacos = welfarismo, no morder). No conceder less-harm como eje. No tratarla como mala fe (es buena fe: concede de entrada que cuida en serio). Eje propiedad/status: un sujeto bien cuidado sigue siendo poseido para tu beneficio.",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/1350950105/"
   }
 ]

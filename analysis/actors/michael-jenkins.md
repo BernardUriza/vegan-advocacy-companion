@@ -46,8 +46,12 @@ No debatir si las plantas sienten, no competir en body-count, no defender el con
 
 ## Log de interacciones
 
-### Hilo `27330688236588406` — 2026-06-27 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-06-27 · outcome: **engaged**
 - **Su jugada:** Pedanteria someone-vs-it (conteo de pronombres en mi post) + deflexion crop-deaths/plantas (pimientos con defensas).
 - **Nuestra respuesta:** Conced el pronombre y que la cosecha mata seres (no mueve el eje), nombr que un sujeto lo es por su perspectiva no por mi gramatica, y que la planta no es poseida/criada como propiedad (campo != granja). Invert la carga sobre el status.
+
+### Hilo `27330688236588406` — 2026-06-28 · outcome: **pending**
+- **Su jugada:** Crops-bred flip (los cultivos TAMBIEN se crian) + someone solo para personas + acusa de cambiar definiciones.
+- **Nuestra respuesta:** Filo ligero: crops-bred no toca el eje, los cultivos no son POSEIDOS como sujetos; nunca fue criado-para-existir sino poseido-como-un-quien. Quien/que es una distincion ordinaria que todos usamos (correccion del coagent: no afirmar que el lo dice de su perro), no un truco de diccionario. Cierre: cual es el criterio que pone al cerdo del lado que?
 
 _Hilos: 27330688236588406_

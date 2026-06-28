@@ -37,7 +37,7 @@ NO re-explicar bajo demanda ni defenderte de 'no te explicas' (acepta su premisa
 
 ## Log de interacciones
 
-### Hilo `27330688236588406` — 2026-06-27 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-06-27 · outcome: **engaged**
 - **Su jugada:** Dismissal por consenso + tone-policing: 'al menos 3 personas ya te dieron buenas respuestas y sigues diciendo que no entienden — explícate mejor'. No argumenta él; apela a un head-count de refutaciones (Tiana/Nate/Michael) y traslada la carga.
 - **Nuestra respuesta:** Reply etiquetada, registro compasivo-firme. Reconoce que no insultó. Nombra que las 3 'correcciones' son criterios distintos (cognición/jerarquía/'no es someone') para la MISMA pregunta: cuándo un individuo vivo deja de tratarse como un quién y pasa a ser un qué poseíble. Eso ES la pregunta, no la respuesta. 'Explícate mejor' no aplica: la pregunta sigue abierta porque nadie defendió POR QUÉ su línea justifica el cambio de estatus, solo lo asume. Carga devuelta. Framework alguien-vs-algo como PREGUNTA (no premisa) — el coagent afiló mi versión que presuponía el 'quién'.
 

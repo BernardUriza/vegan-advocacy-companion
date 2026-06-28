@@ -59,7 +59,7 @@ No entrar en body-count de crop deaths. La distinción es intención y necesidad
 - **Su jugada:** Sarcasmo + data-dump regulatorio + reductio de extincion: "most cruel sector... regulated & policed... vEgAn movement"; mezcla extincion, pets, livestock y working animals como si no criar mas animales fuera una perdida.
 - **Nuestra respuesta:** Ignora el sarcasmo uno-por-uno y desnuda la asuncion de fondo: que los animales existen para nosotros. Eso trata a seres vivos como lineas de producto (unidades disponibles a futuro). Un ser no se beneficia de existir para ser poseido, y que un sistema los produzca no lo justifica. Extincion/pets/livestock saltan la pregunta previa: por que un ser vivo deberia existir como propiedad.
 
-### Hilo `27468645086091974` — 2026-06-27 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-06-27 · outcome: **escalated**
 - **Su jugada:** Veredicto sin razon: 'Your argument is lost at someone. That is your weakness, not everyone else's.' Declara la derrota del eje someone/sujeto sin ofrecer criterio alternativo.
 - **Nuestra respuesta:** Reply etiquetada (filo): concede que 'someone' solo no prueba nada (no se afirma como premisa), pero un veredicto tampoco es criterio. Plantea el framework como PREGUNTA: ¿que hace a un individuo un who y a otro un what poseible? Si su criterio es especie/inteligencia/racionalidad, que lo defienda; 'tu argumento falla' se salta la linea en vez de trazarla. Cierra pidiendo el criterio.
 

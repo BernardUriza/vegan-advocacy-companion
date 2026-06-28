@@ -30,12 +30,16 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 
 ## Log de interacciones
 
-### Hilo `27468645086091974` — 2026-06-27 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-06-27 · outcome: **engaged**
 - **Su jugada:** demanda definicional (define someone, tu definicion no es la comun).
 - **Nuestra respuesta:** Defin someone llano (sujeto con perspectiva, vive su vida desde adentro, evita dolor/quiere vivir), ancl en perro-vs-roca / quien-vs-que, invert la carga (que le falta al cerdo). Corto, sin pantano de diccionarios.
 
-### Hilo `27468645086091974` — 2026-06-27 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-06-27 · outcome: **engaged**
 - **Su jugada:** Demanda definicional (socrates hostil): "someone" assumes your argument, piggybacks on the gravitas of "person"; no redefinas la lengua — si tu caso es que la experiencia subjetiva hace mal poseer, arguméntalo por sus méritos.
 - **Nuestra respuesta:** Filo-ligero: no gano por diccionario — who/what es una distincion que el ya usa (un perro no es una roca, un nino no es una silla). Tomo su invitacion: dejemos la palabra, hablemos de la sustancia — un cerdo tiene punto de vista, experimenta su vida, evita peligro, tiene preferencias. Eso ES lo que pregunte. Cierra devolviendo su pregunta: que caracteristica falta que vuelve aceptable mover al cerdo a la categoria de propiedad / cual es el criterio para decidir que individuos pueden ser poseidos?
+
+### Hilo `27468645086091974` — 2026-06-28 · outcome: **pending**
+- **Su jugada:** Pregunta genuina de buena fe: estas diciendo que todo ser con experiencia subjetiva no puede ser tratado como propiedad? tu vista es binaria? pide el principio que traza la linea ownable/not-ownable.
+- **Nuestra respuesta:** Conteste de frente (compasivo, premio su buena fe): el TITULO de propiedad sobre un sujeto con punto de vista propio es lo que pide justificacion, no la inteligencia ni un umbral; los casos marginales no cambian la pregunta. Le devolvi: que caracteristica vuelve legitima la propiedad?
 
 _Hilos: 27468645086091974_
