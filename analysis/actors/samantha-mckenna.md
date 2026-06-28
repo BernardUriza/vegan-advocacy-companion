@@ -1,0 +1,81 @@
+# Samantha Mckenna
+
+> GENERATED from `data/actors.json` by `scripts/gen-dossiers.mjs`. Do not hand-edit — edit the JSON and regenerate.
+
+- **user_id:** 100003780189781
+- **Perfil:** https://www.facebook.com/groups/2295597740524135/user/100003780189781/
+- **Bando:** anti-vegan
+- **Veredicto:** audiencia · **Registro:** filo
+- **Postura núcleo:** Los granjeros no son DUEÑOS, son "stewards" que manejan livestock/recursos naturales; los animales sienten dolor/miedo/curiosidad pero no tienen sentido de sí ni concepto de la muerte, así que no tienen interés en vivir — es solo como funciona el mundo.
+
+## Análisis
+
+Mala fe con paragraph sustancial. Relabela la propiedad como "stewardship" (principio_escudo) y su propia definición de diccionario mete al animal junto con "land, water and natural resources" y "product" — es decir, ADMITE los marcadores de alguien (pain, fear, curiosity, basic emotions) y los archiva como ALGO/recurso. Niega la subjetividad por un criterio (no concept of death -> no interest) que es species_hierarchy. Cierra con naturalismo ("the way the world works before/after humans"). Capa de burla: "cheap thrills", "get a dictionary", y se mofa de la DIGNIDAD de Bernard mientras se la roba al sujeto al llamarlo recurso. El target del replylink es su réplica burlona a Philip ("paying with his dignity").
+
+## Tácticas
+
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`) — Attacks the person instead of the argument. Used for social dominance in the thread, not to persuade. 'Intellectually challenged retards', 'idiots', 'vegan lab slop', 'cult'. Often combined with one real data point as cover.
+  - _Contra:_ Don't match the register. Name the evasion calmly: 'When the argument runs out, the insults start.' Contrast of temperament is visible to the lurker. One line max, then return to substance or disengage entirely.
+- **Principle Shield / Begging the Principle** (`principio_escudo`) — Hides a conclusion inside a principle that sounds neutral. 'Any exploitation is justified if mutually beneficial. Benefits don't have to be equal.' The principle does all the work while smuggling in the conclusion (animal use is exploitation, it's mutually beneficial).
+  - _Contra:_ Expose what the term is smuggling: 'Mutually beneficial presupposes a reciprocity structurally impossible between breeder and bred-to-die. The benefits the animal receives are conditional on the exact thing being justified — its use and death. That's not mutual; the relationship was structured around one party's interests from the start.' Return the burden.
+- **Appeal to Nature / Naturalismo** (`naturalismo`) — Justifies an action because it is 'natural', ignoring that many natural things are harmful and many beneficial things are unnatural. In vegan debates: 'we're biologically designed to eat meat', 'we're at the top of the food chain', 'lions eat meat'.
+  - _Contra:_ Concede the biology entirely, then separate can from should: 'Yes, we can digest meat — omnivore is a fact about digestion, not a moral status. The question is what justifies using a sentient being when we don't need to.'
+- **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`) — Asserts that human life is categorically more valuable than animal life as a premise, without arguing for the criterion. 'Human life is far more valuable than animal life, therefore exploitation is justified.'
+  - _Contra:_ Ask for the criterion: 'What makes human interests categorically outweigh animal interests? Whatever criterion you give — sentience, capacity to suffer, social bonds, language — either also applies to some animals or fails to draw the line you need. The hierarchy needs an argument, not an assertion.'
+- **Selective Data Dump** (`data_dump_selectivo`) — Floods with data points that are real but cherry-picked and framed to support a pre-determined conclusion. Absolute numbers vs per-capita trends. Stock price vs category market. No causal analysis.
+  - _Contra:_ Concede what's true in the data, then expose the frame: 'Yes, Beyond Meat's stock crashed — that's one company with execution problems. The plant-based category grew 6% that year.' Don't match dump for dump. One incisive concede-and-reframe.
+
+## Counter-arsenal
+
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
+  - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
+  - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
+  - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
+  - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
+  - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+- **Principle Shield / Begging the Principle** (`principio_escudo`)
+  - `genesis-invertido` → _deploy as:_ marco
+  - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
+- **Appeal to Nature / Naturalismo** (`naturalismo`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `njn-normal-justo-necesario` → _deploy as:_ marco
+  - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
+  - `extranar-lo-naturalizado` → _deploy as:_ marco
+  - `especismo-se-programa-en-la-infancia` → _deploy as:_ marco
+  - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
+  - `dos-caras-misma-moneda` → _deploy as:_ marco
+  - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
+- **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `esclavitud-paralelismo` → _deploy as:_ marco
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
+  - `explotacion-vs-esclavitud-lexico` → _deploy as:_ auto-disciplina-del-activista
+  - `vegano-por-un-dia-racista-entre-semana` → _deploy as:_ marco
+  - `paralelo-luchas-sociales-centrismos` → _deploy as:_ marco
+  - `filtro-especie-vs-individuo` → _deploy as:_ marco
+  - `libros-de-texto-niegan-sintiencia` → _deploy as:_ marco
+  - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
+  - `dos-caras-misma-moneda` → _deploy as:_ marco
+  - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
+- **Selective Data Dump** (`data_dump_selectivo`)
+  - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
+  - `mensaje-importa-formas-determinantes` → _deploy as:_ auto-disciplina-del-activista
+  - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
+  - `hablamos-en-nombre-de-los-demas-animales` → _deploy as:_ auto-disciplina-del-activista
+
+## Qué NO hacer
+
+No morder el insulto de la dignidad — UNA línea de contraste de temperamento y al hueso. No debatir el diccionario/semántica de "steward" ni hacer data-dump propio. No conceder daño/welfare (eje es propiedad/esclavitud, no harm). Voltear su PROPIA evidencia: admitió dolor/miedo/curiosidad (someone) y lo archivó como livestock/recurso (something) — ahí está el robo de dignidad. No pelear si entienden la muerte: no se necesita el concepto de muerte para ser alguien (species_hierarchy = criterio que no traza la línea).
+
+## Log de interacciones
+
+### Hilo `27330688236588406` — 2026-06-27 · outcome: **pending**
+- **Su jugada:** Relabela propiedad como "steward"; mete al animal junto a livestock/natural resources/product; concede fear/curiosity/emotions pero niega subjetividad (no sense of self / no concept of death -> no interest); naturalismo; se mofa de la dignidad de Bernard (paying with his dignity / his dignity isnt worth much / cheap thrills).
+- **Nuestra respuesta:** Reply etiquetada anclada en su mofa de la dignidad. Giró el insulto: la dignidad SÍ es el punto — la invoca para los suyos y se la roba al no-humano reclasificándolo (livestock->resources->products). Expuso el rename steward (su propia def mete al animal junto a natural resources). Volteó su concesión: admitió fear/curiosity/emotions (marcadores de un alguien con dignidad) y lo archivó como livestock; la pregunta nunca dependió de si entienden la muerte. Cerró al hueso: ¿qué hace legítimo que un alguien con dignidad sea propiedad de otro?
+
+_Hilos: 27330688236588406_

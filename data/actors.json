@@ -1655,5 +1655,37 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "NO afirmar 'los animales SI son personas/someone' como premisa demostrada (peticion de principio, justo lo que su objecion explota). NO redactar el eje como dano/sufrimiento. Nombrar que 'people' es una etiqueta de ESPECIE, no un criterio moral, y preguntar QUE rasgo (no la etiqueta) supuestamente convierte a un humano en alguien-no-poseible y por que ese rasgo falta en un cerdo. Recordar al pasar que 'declarar a una clase no-personas' fue la formula de la propiedad esclavista."
+  },
+  {
+    "tactics": [
+      "insulto_ad_hominem",
+      "principio_escudo",
+      "naturalismo",
+      "species_hierarchy",
+      "data_dump_selectivo"
+    ],
+    "threads": [
+      "27330688236588406"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-27",
+        "their_move": "Relabela propiedad como \"steward\"; mete al animal junto a livestock/natural resources/product; concede fear/curiosity/emotions pero niega subjetividad (no sense of self / no concept of death -> no interest); naturalismo; se mofa de la dignidad de Bernard (paying with his dignity / his dignity isnt worth much / cheap thrills).",
+        "our_reply_summary": "Reply etiquetada anclada en su mofa de la dignidad. Giró el insulto: la dignidad SÍ es el punto — la invoca para los suyos y se la roba al no-humano reclasificándolo (livestock->resources->products). Expuso el rename steward (su propia def mete al animal junto a natural resources). Volteó su concesión: admitió fear/curiosity/emotions (marcadores de un alguien con dignidad) y lo archivó como livestock; la pregunta nunca dependió de si entienden la muerte. Cerró al hueso: ¿qué hace legítimo que un alguien con dignidad sea propiedad de otro?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "100003780189781",
+    "name": "Samantha Mckenna",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100003780189781/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Los granjeros no son DUEÑOS, son \"stewards\" que manejan livestock/recursos naturales; los animales sienten dolor/miedo/curiosidad pero no tienen sentido de sí ni concepto de la muerte, así que no tienen interés en vivir — es solo como funciona el mundo.",
+    "analisis": "Mala fe con paragraph sustancial. Relabela la propiedad como \"stewardship\" (principio_escudo) y su propia definición de diccionario mete al animal junto con \"land, water and natural resources\" y \"product\" — es decir, ADMITE los marcadores de alguien (pain, fear, curiosity, basic emotions) y los archiva como ALGO/recurso. Niega la subjetividad por un criterio (no concept of death -> no interest) que es species_hierarchy. Cierra con naturalismo (\"the way the world works before/after humans\"). Capa de burla: \"cheap thrills\", \"get a dictionary\", y se mofa de la DIGNIDAD de Bernard mientras se la roba al sujeto al llamarlo recurso. El target del replylink es su réplica burlona a Philip (\"paying with his dignity\").",
+    "tone": "sarcastico",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No morder el insulto de la dignidad — UNA línea de contraste de temperamento y al hueso. No debatir el diccionario/semántica de \"steward\" ni hacer data-dump propio. No conceder daño/welfare (eje es propiedad/esclavitud, no harm). Voltear su PROPIA evidencia: admitió dolor/miedo/curiosidad (someone) y lo archivó como livestock/recurso (something) — ahí está el robo de dignidad. No pelear si entienden la muerte: no se necesita el concepto de muerte para ser alguien (species_hierarchy = criterio que no traza la línea)."
   }
 ]
