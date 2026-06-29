@@ -1,6 +1,6 @@
 # Gatos egipcios — el desprecio al "animal de granja" es carga cultural, no zoología
 
-Status: Drafted (visual + cuerpo listos; falta el GO para postear)
+Status: Posted (2026-06-29 → Vegans V's Meat Eaters (Open Debates) 3, root con imagen)
 Capturado: 2026-06-18 por Bernard
 
 ## Visual (hecho por Bernard)

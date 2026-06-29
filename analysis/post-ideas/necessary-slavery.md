@@ -1,6 +1,6 @@
 # ¿Existe la esclavitud necesaria? — el corte abolicionista contra "es necesario"
 
-Status: Drafted (cuerpo listo, pasó lint-prose; falta el GO para postear)
+Status: Posted (2026-06-29 → Vegans VS Meat Eaters, root sin imagen)
 Capturado: 2026-06-29 por Bernard
 
 ## Borrador del post (voz de Bernard)

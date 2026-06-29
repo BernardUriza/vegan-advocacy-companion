@@ -1,6 +1,6 @@
 # Sintiencia, no inteligencia — la línea son los casos marginales
 
-Status: Drafted (cuerpo listo, pasó lint-prose; falta el GO para postear)
+Status: Posted (2026-06-29 → Vegans&Meaters. Improving Interaction Skills 4 Vegan Activists, root sin imagen)
 Capturado: 2026-06-29 por Bernard
 
 ## Borrador del post (voz de Bernard)
