@@ -6,6 +6,7 @@ const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const ACTORS_PATH = resolve(ROOT, 'data/actors.json');
 const TACTICS_PATH = resolve(ROOT, 'data/tactics.json');
 const FRAMEWORKS_PATH = resolve(ROOT, 'data/frameworks.json');
+const THREADS_PATH = resolve(ROOT, 'data/threads.json');
 
 export function readActors() {
   return JSON.parse(readFileSync(ACTORS_PATH, 'utf8'));
@@ -217,4 +218,65 @@ export function getDossierSummaryWithArsenal(userId) {
     arsenal: [...arsenalById.values()].map(f => ({ id: f.id, name: f.name, enables: f.enables, deploy_as: f.deploy_as, attack_surface: f.attack_surface, related_tactics: f.related_tactics })),
     arsenalByTactic,
   };
+}
+
+// --- thread registry (thread_id -> group_id/slug) -------------------------------
+// La deuda real vive en el moat, NO en las notificaciones de FB (lossy: agrega y
+// vence). Para barrer la deuda independiente del embudo (debt-sweep.mjs) hace falta
+// reconstruir la openUrl de cada thread, y para eso el group_id. El moat referencia
+// thread_ids pero nunca guardó su grupo; este registro es esa tabla faltante. Se
+// auto-popula desde thread-extract.mjs en CADA extracción (ya recibe la URL con el
+// grupo), así nunca se desactualiza.
+
+function readThreads() {
+  try {
+    return JSON.parse(readFileSync(THREADS_PATH, 'utf8'));
+  } catch {
+    return {};
+  }
+}
+
+export function getThreadMeta(threadId) {
+  return readThreads()[threadId] ?? null;
+}
+
+export function registerThread({ thread_id, group_id, slug }) {
+  if (!thread_id || !group_id) return null;
+  const threads = readThreads();
+  const prev = threads[thread_id] ?? {};
+  threads[thread_id] = { thread_id, group_id, slug: slug ?? prev.slug ?? null };
+  writeJsonAtomic(THREADS_PATH, threads);
+  return threads[thread_id];
+}
+
+// Construye la openUrl canónica de un thread desde el registro (null si no está
+// registrado todavía — corré thread-extract una vez para auto-registrarlo).
+export function threadOpenUrl(threadId) {
+  const meta = getThreadMeta(threadId);
+  if (!meta?.group_id) return null;
+  return `https://www.facebook.com/groups/${meta.group_id}/posts/${threadId}/`;
+}
+
+// Threads con deuda ABIERTA (cualquier interacción pending|goalpost), uno por
+// thread_id con la lista de actores/outcomes. Esta es la fuente de verdad del
+// debt-sweep — NO las notificaciones. A diferencia de getPendingInteractions()
+// (solo pending), incluye goalpost (sigue vivo: el oponente movió el poste).
+export function getOpenDebtThreads() {
+  const OPEN = new Set(['pending', 'goalpost']);
+  const byThread = new Map();
+  for (const actor of readActors()) {
+    for (const it of actor.interactions ?? []) {
+      if (!OPEN.has(it.outcome ?? 'pending')) continue;
+      const tid = it.thread_id;
+      if (!byThread.has(tid)) byThread.set(tid, { thread_id: tid, actors: [] });
+      byThread.get(tid).actors.push({
+        user_id: actor.user_id,
+        name: actor.name,
+        outcome: it.outcome ?? 'pending',
+        date: it.date,
+        framework: it.framework ?? null,
+      });
+    }
+  }
+  return [...byThread.values()];
 }

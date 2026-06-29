@@ -12,6 +12,7 @@
 // El <openUrl> lo sirve notif-scan.mjs (campo `openUrl` / línea "abrir:").
 
 import { openScratchPage, ageMinutes, fmtAge } from './fb-lib.mjs';
+import { registerThread } from './db.mjs';
 
 const url = process.argv.find((a) => a.startsWith('http'));
 const asJson = process.argv.includes('--json');
@@ -21,6 +22,13 @@ if (!url) {
   console.error('uso: node thread-extract.mjs "<openUrl>" [--json]');
   process.exit(1);
 }
+
+// Auto-registrar el thread (thread_id -> group_id) para el debt-sweep: la openUrl
+// que recibimos YA trae el grupo, así el registro nunca se desactualiza.
+try {
+  const m = url.match(/\/groups\/(\d+)\/posts\/(\d+)/);
+  if (m) registerThread({ thread_id: m[2], group_id: m[1] });
+} catch {}
 
 // ---- corre DENTRO de la página: expandir todo (idempotente, hasta estable) ----
 async function expandAll() {

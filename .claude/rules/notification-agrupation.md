@@ -28,6 +28,27 @@ hace falta el MCP para resolver el `post_id`. **En prueba:** el path MCP (pasos
 caen al agrupado por `comment_id`). (Requiere `playwright-core` en `scripts/`; el
 Chrome de debug vivo en 9333 — diagnóstico del `~/CLAUDE.md` si no responde.)
 
+**0.5. DEBT SWEEP — la deuda real vive en el MOAT, no en las notificaciones.**
+`notif-scan` (paso 0) arranca desde el embudo de FB, y ese embudo es **lossy**: FB
+**agrega** ("and N others"), **vence** los avisos viejos, y un debate de hace días
+deja de notificar — su deuda se vuelve **invisible** aunque siga abierta. La fuente
+de verdad de la deuda NO es FB, es `data/actors.json` (interacciones `pending`/
+`goalpost`). Por eso, en lote, correr TAMBIÉN:
+```bash
+node debt-sweep.mjs            # tabla humana, ordenada por deuda dura
+node debt-sweep.mjs --json     # JSON para pipear
+```
+Itera los `thread_id` con deuda abierta del moat (`getOpenDebtThreads`), reconstruye
+la `openUrl` de cada uno desde `data/threads.json` (auto-poblado por `thread-extract`
+en cada corrida — el registro thread→group que el moat nunca guardó) y re-extrae en
+vivo, reportando los `owes:true`/`suspect` **sin depender de que FB siga
+notificando**. Caso que lo originó (2026-06-29): el embudo solo mostró 1 hilo
+caliente; el sweep sacó 4 con OWES dura, incluida deuda fresca real (Samantha
+Mckenna, 16h) que FB jamás surfaceó. **Honestidad (Art. 2):** `freshestMin === 99999`
+es centinela de "edad no parseada" (raíz vieja sin fechar), NO "fresco" — esas son
+candidatas a confirmar, no deuda viva. El sweep SURFACEA; la jugada se decide con los
+dossiers. (En modo SINGLE/replylink se salta — el blanco lo da el link, no el moat.)
+
 **1. Llegar a notificaciones sin abrir tabs de más.** `list_pages` primero — casi
 siempre ya hay una tab de FB abierta. Si hay una en `facebook.com/notifications`,
 `select_page` esa. Si no, navega una tab de FB existente a
