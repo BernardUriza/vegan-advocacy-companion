@@ -72,6 +72,6 @@ if (ba.hard) {
   console.log('FLAG — biocentrismo en el eje de la prosa (somos SENSOCENTRISTAS):');
   for (const e of ba.evidence) console.log(`  - ${e}`);
   console.log('No enmarques en "living being / la vida": el criterio es la SINTIENCIA, no la vida.');
-  console.log('Usa "sentient being / a subject who feels / sujeto sintiente" (ver sentiocentrism-not-biocentrism).');
+  console.log('Usa "sentient being / conscious being / a subject who feels / ser con conciencia" (ver sentiocentrism-not-biocentrism).');
 }
 process.exit(1);

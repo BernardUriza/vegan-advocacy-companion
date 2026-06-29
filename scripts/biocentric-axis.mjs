@@ -59,7 +59,7 @@ export function detectBiocentricAxis(text, { lang = 'en' } = {}) {
     strongHits,
     softCount,
     evidence: [
-      ...strongHits.map((h) => `strong:"${h}" → usar "sentient being / sujeto sintiente"`),
+      ...strongHits.map((h) => `strong:"${h}" → usar "sentient being / conscious being / sujeto sintiente / ser con conciencia"`),
       softCount ? `vida-suelta x${softCount} (revisar: ¿criterio o experiencia del sujeto?)` : null,
     ].filter(Boolean),
   };

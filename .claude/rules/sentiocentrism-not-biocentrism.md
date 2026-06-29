@@ -42,6 +42,14 @@ definición exacta que arma el por qué:
   un sujeto que siente** — ahí conecta con [[abolitionist-framing]]: tratar a ese
   sujeto como propiedad/recurso es precisamente frustrar sus intereses por el
   beneficio de otro.
+- **"Conciencia" es término equivalente válido para el sujeto.** Fuente:
+  [los animales no tienen…](https://respuestasveganas.org/argumento-los-animales-no-tienen/).
+  *"el deber se origina de los intereses de las **conciencias**"*. Sintiencia y
+  conciencia van juntas (la conciencia habilita la sintiencia). Por eso son
+  igualmente válidos: **"sentient being / conscious being / beings with
+  consciousness / seres con conciencia / conciencias / sujetos / aquellos que
+  sienten"**. NO es solo "sentient being" — "seres con una conciencia" nombra el
+  mismo sujeto y a veces aterriza mejor con el lurker.
 
 Implicación para los replies: el reemplazo de "living being" no es solo "sentient
 being" como etiqueta — es **el sujeto que siente y tiene intereses**. La pregunta
@@ -68,13 +76,31 @@ cuesta nada y cierra el esquive.
    being / la vida": *"¿qué justifica poseer a un sujeto que siente, teme y busca
    seguir vivo?"* — no *"¿qué justifica poseer a un ser vivo?"*.
 2. **El reemplazo:** "living being/individual/creature/thing" → "sentient being",
-   "a subject who feels", "someone with a point of view / experiences".
+   "**conscious being / a being with a consciousness**", "a subject who feels",
+   "someone with a point of view / experiences". Las tres familias (siente / es una
+   conciencia / es un sujeto con intereses) son intercambiables — elegir la que
+   aterrice mejor en ese hilo.
 3. **La posesiva SÍ es legítima:** "experience its own life from the inside" /
    "su propia vida" describe la EXPERIENCIA del sujeto (sensocéntrico correcto), no
    el criterio biocéntrico — no se toca.
 4. Combina con [[abolitionist-framing]]: el eje sigue siendo propiedad/esclavitud;
    esta regla solo garantiza que el **sujeto** del eje se nombre por su sintiencia,
    no por estar vivo.
+
+## "Los animales no tienen X" — la capacidad excluyente es IRRELEVANTE
+
+Fuente: [los animales no tienen…](https://respuestasveganas.org/argumento-los-animales-no-tienen/).
+Cuando el oponente excluye al animal por lo que le FALTA (razón, lenguaje,
+autoconciencia, concepto de muerte — la jugada de Samantha "no entienden la
+muerte"), la respuesta NO es pelear si la tienen o no: es nombrar que **esa
+capacidad es ortogonal al criterio moral**. Razonar/hablar/conceptualizar son
+irrelevantes para el estatus moral — la prueba es que **humanos que no las tienen
+(bebés, demencia avanzada) conservan el estatus completo** (argumento de los casos
+marginales / sobreposición de especies). Lo único relevante es **sentir / ser una
+conciencia con intereses**. Devuelve el criterio a la sintiencia y la capacidad que
+"les falta" se cae sola. (Cuidado con el attack_surface de los casos marginales: se
+usa para mostrar que el criterio NO es la inteligencia, nunca para degradar a esos
+humanos.)
 
 ## KILL-LIST de framing (los gates la aplican)
 
