@@ -90,4 +90,8 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** Conflacion propiedad-legal con justificacion moral + cierre hostil/sello: NSW biosecurity law exige destruir si no son propiedad; 'I own my goats, otherwise you could come claim them'; '#11: do you understand now? I'm going to make sure this silly concept is squashed as it's utterly absurd and ridiculous'.
 - **Nuestra respuesta:** Reply etiquetada, corta. Una linea calmada (no mordi el absurd/ridiculous): no discrepamos sobre lo que la ley DICE sino sobre lo que la ley JUSTIFICA. Su punto de la ley devuelto: que la ley pueda ordenar destruir al animal PORQUE es propiedad muestra que el estatus de propiedad es lo que licencia matarlo — describe el sistema, no justifica el estatus. 'The law says so' no responde la pregunta del post. Cierre devolviendo el estatus de propiedad.
 
+### Hilo `27468645086091974` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** Ronda: la ley NSW exige destruir al no-propiedad (feral); ownership da proteccion+derechos; do you own animals?
+- **Nuestra respuesta:** Conced que la ley establece propiedad; describir!=justificar; conteste su pregunta directa (mi posesion no decide la pregunta moral); devolvi: que justifica asignar autoridad total sobre un conscious individual con punto de vista. Sin pelear los tecnicismos.
+
 _Hilos: march-property, 27319402757682875_

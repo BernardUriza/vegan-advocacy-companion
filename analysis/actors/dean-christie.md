@@ -50,4 +50,8 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Buena fe, narrowing + CONCESION: 'we have narrowed the disagreement considerably; I also agree pigs have a point of view and deserve moral consideration', pero RELOCALIZA la cuestion del estatus al trato: 'ownership isnt the morally decisive issue; es relacion legal/social; su justificacion depende del trato/razones/consecuencias'.
 - **Nuestra respuesta:** Reply etiquetada (buena fe, agradeci el narrowing). Ancle en SU concesion (no reintroducir mi conclusion): ya acepto que el cerdo tiene punto de vista; entonces mover la pregunta del estatus al trato responde COMO se ejerce la propiedad, no POR QUE el estatus de owner es legitimo. Separe 'como lo posees' (trato) de 'si puede ser poseido' (estatus). Cierre devolviendo: antes de hablar del trato, que hace que un sujeto con punto de vista propio pueda pertenecer legitimamente a otro?
 
+### Hilo `27468645086091974` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** Reframe (near-gold): no hay rasgo del cerdo que lo haga poseible; ownership no es propiedad del animal sino relacion legal/social entre humanos
+- **Nuestra respuesta:** Aceptе su refinamiento de frente (mas preciso); voltее: que sea relacion social no explica por que esa autoridad debe existir; recorde el common ground (concedio point of view + moral consideration); devolvi: que justifica crear esa relacion de autoridad sobre un conscious individual con perspectiva propia.
+
 _Hilos: 27468645086091974_

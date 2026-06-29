@@ -709,6 +709,14 @@
         "outcome": "pending",
         "outcome_evidence": "Bernard's reply is 9 minutes old",
         "outcome_note": "algo-a-alguien-sujeto-derecho: Bernard volteo el punto legal (la ley puede destruir = la propiedad licencia matar, no lo justifica); reply ~9 min, sin respuesta."
+      },
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-06-29",
+        "their_move": "Ronda: la ley NSW exige destruir al no-propiedad (feral); ownership da proteccion+derechos; do you own animals?",
+        "our_reply_summary": "Conced que la ley establece propiedad; describir!=justificar; conteste su pregunta directa (mi posesion no decide la pregunta moral); devolvi: que justifica asignar autoridad total sobre un conscious individual con punto de vista. Sin pelear los tecnicismos.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ]
   },
@@ -1614,6 +1622,14 @@
         "our_reply_summary": "Reply etiquetada (buena fe, agradeci el narrowing). Ancle en SU concesion (no reintroducir mi conclusion): ya acepto que el cerdo tiene punto de vista; entonces mover la pregunta del estatus al trato responde COMO se ejerce la propiedad, no POR QUE el estatus de owner es legitimo. Separe 'como lo posees' (trato) de 'si puede ser poseido' (estatus). Cierre devolviendo: antes de hablar del trato, que hace que un sujeto con punto de vista propio pueda pertenecer legitimamente a otro?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-06-29",
+        "their_move": "Reframe (near-gold): no hay rasgo del cerdo que lo haga poseible; ownership no es propiedad del animal sino relacion legal/social entre humanos",
+        "our_reply_summary": "Aceptе su refinamiento de frente (mas preciso); voltее: que sea relacion social no explica por que esa autoridad debe existir; recorde el common ground (concedio point of view + moral consideration); devolvi: que justifica crear esa relacion de autoridad sobre un conscious individual con perspectiva propia.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "user_id": "1198831097",
@@ -1976,5 +1992,62 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "NO argumentar bienestar/dano ni pelear si el trato es bueno. Nombrar el consentimiento ausente y la asimetria (un lado termina muerto): el 'win-win' esconde que el animal sigue siendo propiedad de la que se dispone a voluntad. Separar describir (paso un arreglo) de justificar (el estatus de propiedad). NO conceder que es un intercambio entre iguales. Eje: poseer a un sujeto que siente sigue sin justificarse aunque lo alimentes."
+  },
+  {
+    "tactics": [
+      "species_hierarchy"
+    ],
+    "threads": [
+      "27330688236588406"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-29",
+        "their_move": "animals are not a someone, long winded question answered",
+        "our_reply_summary": "Nombre que es la conclusion en disputa, no la razon; pedi el criterio (someone vs something). Corto.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "100044887491107",
+    "name": "Goldie Wihongi",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100044887491107/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Niega el estatus de alguien con desden: animals are not a someone, long winded question answered (la negacion como cierre, no como argumento).",
+    "analisis": "Dismissal de una linea: repite la conclusion en disputa (no son alguien) con tono de ya-quedo-contestado dirigido al lurker. Cero argumento; el valor de responder es para el lurker (nombrar que repetir la negacion no es contestarla y pedir el criterio). Reply corto a proposito.",
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "NO reply largo (premia el desden); NO afirmar son alguien como premisa; pedir el criterio (que hace a un perro un quien y a un cerdo un que). NO eje de dano ni living being."
+  },
+  {
+    "tactics": [
+      "ai_accusation",
+      "insulto_ad_hominem"
+    ],
+    "threads": [
+      "27330688236588406"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-29",
+        "their_move": "youre pretending to be worried about animals and using ai?",
+        "our_reply_summary": "Nombre que la acusacion de IA no toca la pregunta (etiqueta puesta donde iba el argumento); pedi que muestre el fallo; devolvi al hueso (propiedad de un conscious individual). Corto.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "100024818371314",
+    "name": "Parnaibensis Nws",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100024818371314/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Sello-insulto ai_accusation: youre pretending to be worried about animals and using ai? — intenta cerrar el intercambio para el lurker via la acusacion de IA.",
+    "analisis": "No es argumento, es un sello para el lurker (insult-seal): la acusacion de IA cubre la falta de contra-argumento e intenta archivar el intercambio. Se contesta SOLO porque intenta cerrar; movimiento canonico = etiqueta-no-argumento + nombra el error, corto. Que una herramienta ayude a redactar no toca si un cerdo es alguien.",
+    "tone": "dismissive",
+    "verdict": "pozo sin fondo",
+    "register": "filo",
+    "what_not_to_do": "NO sonar herido; NO insultar de vuelta; NO entrar a discutir IA (seria aceptar el cambio de tema); corto, devolver al hueso."
   }
 ]
