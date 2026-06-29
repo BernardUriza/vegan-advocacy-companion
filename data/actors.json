@@ -1760,7 +1760,9 @@
         "their_move": "Dobló tras mi reply de dignidad (15h): niega \"dignity\" como concepto humano (anthropomorphizing), repite escudo \"steward not owner\" (Controlled no / Managed yes / Disposed of no), \"no entienden la muerte -> no interés\", proyecta goalpost (\"that wasnt even your question, now youre changing it\"), capa de insulto (ignorant / arrogant / my darling). Ella + Philip se mofan en público (Bernie / cheap thrills / his dignity isnt worth much).",
         "our_reply_summary": "Reply etiquetada. P1 = defensa personal / contraste de temperamento para el lurker: nombré que el hilo bajó a Bernie / ignorant / my darling / get a dictionary / jokes-between-friends en vez de contestar, que no devolví el insulto porque el respeto no cuesta nada, y que un argumento que vale se sostiene sin el comentario sobre la persona. Luego al hueso: ella describe un individuo que experimenta (fear / curiosity / emotions) y sin principio nuevo lo archiva como \"livestock\" — ese salto sin justificar es el punto; \"steward\" renombra la relación pero no la legitima; la pregunta nunca cambió. Cierre: ¿qué principio hace legítimo que un individuo con sus propias experiencias exista como propiedad de otro, en vez de repetir que es \"livestock\"?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "escalated",
+        "outcome_evidence": "#4 (8h): 'the only reply that has been ignorant is your own... you need a dictionary... Because that is what they are they are livestock. There's no need for a new principle... Again they are not property. And again there is no justification needed.'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras mi reply de defensa personal (insult-seal), volvio (#4, 8h) doblando el sello sin tocar la pregunta de propiedad: 'you need a dictionary', 'you continue to show ignorance', 'they are livestock', 'no need for a new principle, it literally settles the matter', y el remate 'it's only thanks to these animals you get to make such ignorant comments online'. Declara explicito 'there is no justification needed' = se niega a justificar la propiedad. No persuadible: pozo de sello + relabel livestock + relativismo. El marco no aterrizo; ella cerro con insulto, no con argumento."
       }
     ],
     "user_id": "100003780189781",
@@ -1802,5 +1804,57 @@
     "register": "compasivo",
     "what_not_to_do": "No competir en body-count (1 sano vs 5-6 flacos = welfarismo, no morder). No conceder less-harm como eje. No tratarla como mala fe (es buena fe: concede de entrada que cuida en serio). Eje propiedad/status: un sujeto bien cuidado sigue siendo poseido para tu beneficio.",
     "profile_url": "https://www.facebook.com/groups/2295597740524135/user/1350950105/"
+  },
+  {
+    "tactics": [
+      "abolition_reductio"
+    ],
+    "threads": [],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-29",
+        "their_move": "abolition_reductio (buena fe/civil): What makes it not ok for my child to own goldfish? — reto de consistencia, intenta sacar el debate del caso granja a toda tenencia de mascotas.",
+        "our_reply_summary": "Reply etiquetada. Mordi el reductio sin abrir el frente de mascotas: concedi la intuicion (ownership de un someone pide justificacion, no desaparece porque el animal sea chico o el dueno un nino) SIN conceder el encuadre — el hilo es sobre criar individuos para que existan como recursos bajo control humano, no un nino con un pez. Respuesta directa: yes, if an animal is a someone rather than a something, ownership deserves an explanation; people-have-always-done-it / its-my-pet no la dan. Cierre devolviendo la pregunta del post.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "904005715",
+    "name": "James Burridge",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Property-is-normal via mascotas: \"What makes it not ok for my child to own goldfish?\" — reto de consistencia/reductio al eje de propiedad usando una mascota.",
+    "analisis": "27330 (post propio de Bernard, eje propiedad): comment raiz de una linea, limpio y sin insulto. Corre un reductio: si poseer un sujeto sintiente esta mal, entonces el pez dorado del hijo tambien -> intenta mostrar que el eje de propiedad prueba demasiado. Tono civil; podria ser buena fe / probe genuino. La respuesta abolicionista NO esquiva: muerde la bala (idealmente tampoco propiedad), y devuelve al eje someone-vs-something + lo que distingue la granja es criar-para-matar, no el cariño.",
+    "tone": "civil",
+    "verdict": "audiencia / posible buena fe — reductio limpio, persuadible si se le contesta de frente sin esquivar",
+    "register": "buena fe a probar (de frente, muerde la bala con honestidad)",
+    "what_not_to_do": "NO esquivar el goldfish ni decir mascotas son distintas por cariño; muerde la bala (un sujeto no deberia ser propiedad de nadie) y aterriza el eje en que la granja ADEMAS cria-y-mata. NO welfarista.",
+    "profile_url": "https://www.facebook.com/profile.php?id=904005715"
+  },
+  {
+    "tactics": [
+      "domestication_mutualism"
+    ],
+    "threads": [],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-29",
+        "their_move": "domestication_mutualism: Symbiotic relationships. — enmarca cria/granja como relacion simbiotica/mutualista, no propiedad.",
+        "our_reply_summary": "Reply etiquetada, corta. Un solo giro sobre simbiosis: es una relacion entre dos partes; lo que pregunto es una relacion donde un lado existe bajo el control del otro, criado para fines humanos desde el inicio — cambiar la etiqueta no responde eso. Si solo se sostiene porque un individuo existe como algo que manejamos, usamos y disponemos, llamarlo simbiosis solo le pone nombre amable. Cierre devolviendo la pregunta del estatus de propiedad.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "1448957098",
+    "name": "Lindsay Beech",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Domesticacion-como-mutualismo: \"Symbiotic relationships\" — la granja es una relacion simbiotica/mutualista, no propiedad.",
+    "analisis": "27330: comment raiz de dos palabras (\"Symbiotic relationships.\"). Claim de domestication_mutualism: enmarca cria/granja como beneficio mutuo. Low-effort framing pero educa al lurker si se expone el error biologico: la simbiosis es beneficio mutuo, no criar-a-un-individuo-para-matarlo; una parte termina muerta. No es mutualismo, es propiedad.",
+    "tone": "dismissive/terse",
+    "verdict": "audiencia — framing de baja inversion; el rebuttal corto gana al lurker",
+    "register": "filo ligero (exponer el error del termino)",
+    "what_not_to_do": "NO conceder \"simbiosis\"; exponer que criar-para-matar no es beneficio mutuo. NO welfarista (no \"sufren menos\"); el eje es que un sujeto es poseido y matado, no mutualidad.",
+    "profile_url": "https://www.facebook.com/profile.php?id=1448957098"
   }
 ]
