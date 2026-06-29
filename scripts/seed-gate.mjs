@@ -29,6 +29,7 @@
 
 import { readFileSync } from 'fs';
 import { detectWelfaristAxis } from './welfarist-axis.mjs';
+import { detectBiocentricAxis } from './biocentric-axis.mjs';
 
 const args = process.argv.slice(2);
 const asJson = args.includes('--json');
@@ -85,14 +86,17 @@ const playText = stripQuotes(guard.rest);
 
 // ------- 3. detectar welfarismo en la jugada (español, no-posicional, quantum blando) -------
 const wa = detectWelfaristAxis(playText, { lang: 'es', positional: false, quantumHardAt: Infinity });
+const ba = detectBiocentricAxis(playText, { lang: 'es' });
 
 // ------- flags -------
 const guardrailMissing = !guard.present;
 const guardrailHollow = guard.present && !guardrailIsReal(guard.body);
 const welfaristInPlay = wa.strongHits.length > 0;
+const biocentricInPlay = ba.strongHits.length > 0;
 
 const hardFlags = [];
 if (welfaristInPlay) hardFlags.push('welfaristInPlay');
+if (biocentricInPlay) hardFlags.push('biocentricInPlay');
 if (guardrailMissing) hardFlags.push('guardrailMissing');
 if (guardrailHollow) hardFlags.push('guardrailHollow');
 
@@ -105,7 +109,9 @@ const result = {
   hardFlags,
   guardrail: { present: guard.present, real: guard.present && guardrailIsReal(guard.body) },
   welfaristInPlay,
+  biocentricInPlay,
   strongHits: wa.strongHits,
+  biocentricHits: ba.strongHits,
   quantumCountInPlay: wa.quantumCount,
   softNote,
 };
@@ -118,6 +124,7 @@ if (asJson) {
   console.log(clean ? 'LIMPIO (la jugada pasa — seedear al coagent)' : 'FLAGS DURAS → reformular la JUGADA antes de seedear (NO mandar al coagent)');
   console.log('');
   console.log(`[${mark(welfaristInPlay)}] welfaristInPlay   ${wa.strongHits.length ? 'EJE bienestarista en la jugada: ' + wa.strongHits.map((h) => `"${h}"`).join(', ') : 'eje no-bienestarista en la jugada (ok)'}`);
+  console.log(`[${mark(biocentricInPlay)}] biocentricInPlay  ${ba.strongHits.length ? 'EJE biocéntrico en la jugada (usar SINTIENCIA): ' + ba.strongHits.map((h) => `"${h}"`).join(', ') : 'eje sensocéntrico en la jugada (ok)'}`);
   console.log(`[${mark(guardrailMissing)}] guardrailMissing  ${guard.present ? 'bloque guardrail presente' : 'FALTA el bloque <!-- GUARDRAIL-ABOLICIONISTA --> ... <!-- /GUARDRAIL-ABOLICIONISTA -->'}`);
   console.log(`[${mark(guardrailHollow)}] guardrailHollow   ${!guard.present ? '(n/a, falta el bloque)' : guardrailIsReal(guard.body) ? 'guardrail real (nombra eje propiedad/esclavitud vs daño)' : 'guardrail HUECO: no nombra el eje propiedad/esclavitud contra el daño prohibido'}`);
   if (softNote) console.log(`\nnota blanda (avisa, no falla): ${softNote}`);

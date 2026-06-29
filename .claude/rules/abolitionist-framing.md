@@ -8,6 +8,12 @@ daño — y eso **concede el terreno y pierde**. El marco es **abolicionista**: 
 problema es el **estatus de propiedad** del animal (un sujeto poseído, esclavizado),
 no cuánto sufre ni si el daño es "necesario".
 
+Tiene una regla **hermana de eje**, [[sentiocentrism-not-biocentrism]]: ésta fija
+que el eje es propiedad/esclavitud (no daño); la hermana fija que el **sujeto** del
+eje se nombra por su SINTIENCIA (sentient being), no por estar vivo (living being).
+Las dos juntas: *¿qué justifica poseer a un sujeto que siente?* — ni "daño" ni
+"vida" como eje.
+
 Subordina a [[reply-output-style]] (el NORTE ya dice "usar seres sintientes como
 propiedad/recurso" — esta regla lo hace innegociable y nombra el drift bienestarista
 como kill-list) y a [[coagent-advise]] (el master prompt debe pedir marco

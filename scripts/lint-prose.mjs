@@ -20,6 +20,7 @@
 
 import { readFileSync } from 'fs';
 import { detectWelfaristAxis } from './welfarist-axis.mjs';
+import { detectBiocentricAxis } from './biocentric-axis.mjs';
 
 function arg(name, def = null) {
   const i = process.argv.indexOf(name);
@@ -53,15 +54,24 @@ const prose = raw
   .join('\n');
 
 const wa = detectWelfaristAxis(prose, { lang, positional: true, quantumHardAt: 2 });
+const ba = detectBiocentricAxis(prose, { lang });
 
 const label = file || '(stdin)';
 console.log(`lint-prose · ${label} · lang=${lang}`);
-if (!wa.hard) {
-  console.log('LIMPIO — eje no-bienestarista en la prosa portante (ok)');
+if (!wa.hard && !ba.hard) {
+  console.log('LIMPIO — eje no-bienestarista y sensocéntrico en la prosa portante (ok)');
   process.exit(0);
 }
-console.log('FLAG — welfarismo en el eje de la prosa:');
-for (const e of wa.evidence) console.log(`  - ${e}`);
-console.log('\nReescribe el eje a PROPIEDAD/ESCLAVITUD (¿qué convierte a un quién en un qué poseíble?).');
-console.log('El daño/pain/cruelty solo se menciona al pasar — jamás como eje portante (ver abolitionist-framing).');
+if (wa.hard) {
+  console.log('FLAG — welfarismo en el eje de la prosa:');
+  for (const e of wa.evidence) console.log(`  - ${e}`);
+  console.log('Reescribe el eje a PROPIEDAD/ESCLAVITUD (¿qué convierte a un quién en un qué poseíble?).');
+  console.log('El daño/pain/cruelty solo se menciona al pasar — jamás como eje portante (ver abolitionist-framing).');
+}
+if (ba.hard) {
+  console.log('FLAG — biocentrismo en el eje de la prosa (somos SENSOCENTRISTAS):');
+  for (const e of ba.evidence) console.log(`  - ${e}`);
+  console.log('No enmarques en "living being / la vida": el criterio es la SINTIENCIA, no la vida.');
+  console.log('Usa "sentient being / a subject who feels / sujeto sintiente" (ver sentiocentrism-not-biocentrism).');
+}
 process.exit(1);

@@ -223,7 +223,13 @@ reduce-least-minimize harm/incidental vs intentional harm" como LA distinción, 
 conceder "unnecessary harm everywhere / en las cosechas también"): es bienestarismo,
 concede el terreno y pierde al lurker (ver [[abolitionist-framing]]). El eje va en
 PROPIEDAD/ESCLAVITUD/sujeto poseído/¿esclavitud necesaria?; el daño solo al pasar. El
-style-gate reformula el eje a abolicionista ANTES de postear.
+style-gate reformula el eje a abolicionista ANTES de postear. · **framing
+BIOCÉNTRICO del sujeto** ("living being / living individual / a life / la vida" como
+el criterio de quién-cuenta): somos SENSOCENTRISTAS — el criterio es la sintiencia,
+no la vida; "living" abre el flanco plant-sentience. El sujeto se nombra "sentient
+being / a subject who feels / alguien con experiencias" (ver
+[[sentiocentrism-not-biocentrism]]). La posesiva ("its own life") está OK. El
+style-gate (`biocentricAxis`) lo frena ANTES de postear.
 
 ## Pre-post check (lo ejecuta etapa 4)
 

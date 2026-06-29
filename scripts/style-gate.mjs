@@ -15,6 +15,7 @@
 
 import { readFileSync } from 'fs';
 import { detectWelfaristAxis } from './welfarist-axis.mjs';
+import { detectBiocentricAxis } from './biocentric-axis.mjs';
 
 const args = process.argv.slice(2);
 const asJson = args.includes('--json');
@@ -183,6 +184,7 @@ const checks = [
   checkTricolon(),
   checkEmojiOrMarkdown(),
   detectWelfaristAxis(text, { lang: 'en', positional: true, quantumHardAt: 2 }),
+  detectBiocentricAxis(text, { lang: 'en' }),
 ];
 
 const hardFlags = checks.filter((c) => c.hard).map((c) => c.name);
@@ -212,6 +214,7 @@ if (asJson) {
   console.log(`[${checks[4].repeated ? 'X' : checks[4].soft ? '~' : '.'}] tricolon          ${checks[4].count} ocurrencia(s)${checks[4].count ? ': ' + checks[4].evidence.join(' | ') : ''}`);
   console.log(`[${mark(checks[5].hard)}] emojiOrMarkdown   emojis:${checks[5].emojis.length} bold:${checks[5].bold.length} grito:${checks[5].shoutWords.length} headings:${checks[5].headings.length}`);
   console.log(`[${mark(checks[6].hard)}] welfaristAxis     ${checks[6].evidence.length ? checks[6].evidence.join(' | ') : 'eje no-bienestarista (ok)'}`);
+  console.log(`[${mark(checks[7].hard)}] biocentricAxis    ${checks[7].evidence.length ? checks[7].evidence.join(' | ') : 'eje sensocéntrico (ok)'}`);
   if (softFlags.length) console.log(`\nflags blandas (avisan, no fallan): ${softFlags.join(', ')}`);
 }
 
