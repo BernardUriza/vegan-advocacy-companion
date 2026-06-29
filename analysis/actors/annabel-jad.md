@@ -50,5 +50,8 @@ NO afirmar 'los animales SI son personas/someone' como premisa demostrada (petic
 
 ## Log de interacciones
 
-_(sin interacciones registradas)_
+### Hilo `27330688236588406` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** Silogismo: no son personas -> no son alguien -> son propiedad (membresia de especie como criterio)
+- **Nuestra respuesta:** Nombre que people es etiqueta de especie no criterio; pedi el RASGO (no la etiqueta humano) que hace a alguien no-poseible; paralelismo historico por ESTRUCTURA (declarar clase fuera de la categoria protegida). Sin afirmar animals are people.
+
 _Hilos: 27330688236588406_

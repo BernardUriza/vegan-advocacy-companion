@@ -86,7 +86,7 @@ NO entrar a competencia de body-count ni disputar que las crop-deaths ocurren. C
 
 ## Log de interacciones
 
-### Hilo `27341517928804691` — 2026-06-18 · outcome: **silent**
+### Hilo `27341517928804691` — 2026-06-18 · outcome: **escalated**
 - **Su jugada:** crop-deaths / ecocidal-monoculture tu quoque + no-moral-high-ground (relativismo) + futilidad (come back when vegans stop ecocide)
 - **Nuestra respuesta:** Conceder crop-deaths; rol-del-dano (subproducto incidental vs muerte intencional como proposito) en vez de body-count; el 70% del cropland alimenta ganado => comer animales SUMA esas muertes; ignorar el insulto; cerrar con la pregunta del marco.
 

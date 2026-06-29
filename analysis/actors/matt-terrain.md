@@ -63,7 +63,7 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 
 ## Log de interacciones
 
-### Hilo `27341517928804691` — 2026-06-16 · outcome: **escalated**
+### Hilo `27341517928804691` — 2026-06-16 · outcome: **goalpost**
 - **Su jugada:** I still don't see the distinction. Animals or crops. They both kill. List the exploitative events that are the problem.
 - **Nuestra respuesta:** Aterrizó la distinción de ROL del daño: subproducto de alimentar a todos vs el propósito mismo de la actividad. Reframeó 'exploitation' como RELACIÓN, no lista. Nombró que Matt usa esa distinción (accidente vs intención) en todo menos con animales. Devolvió la carga.
 
@@ -75,7 +75,7 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** Tu-quoque de hipocresía: "todos usan plástico/meds developed on animals, cuántos hipócritas en una marcha"
 - **Nuestra respuesta:** "As far as possible and practicable" no es perfección; imperfección no refuta el principio; por su lógica nadie criticaría una injusticia; daño inevitable ≠ justifica el evitable.
 
-### Hilo `27319402757682875` — 2026-06-19 · outcome: **engaged**
+### Hilo `27319402757682875` — 2026-06-19 · outcome: **escalated**
 - **Su jugada:** Tu quoque doblado: "your argument is tired and flawed... you and all vegans commit easily avoidable harm".
 - **Nuestra respuesta:** Nombré el tu quoque con calma; concedí que ningún sistema es daño-cero y que aun así su imperfección-ajena no justifica SU daño (un daño evitable no licencia otro). Devolví al hueso: qué principio justifica criar y matar un sentiente cuando hay alternativa viable.
 

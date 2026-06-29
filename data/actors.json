@@ -31,18 +31,18 @@
         "our_reply_summary": "Concede biología total. Separa 'omnívoro = hecho de digestión' de 'animals are food = juicio de valor que estás metiendo en la definición'. Cierra con UNA pregunta: capacidad no implica derecho.",
         "outcome": "goalpost",
         "framework": "dominacion-no-es-superioridad-moral",
-        "outcome_evidence": "It's not my problem if you have a hard time understanding that several things can be true at once... The problem is that humans eat meat by default, and you have not convinced me as to why I should change.",
-        "outcome_note": "dominacion-no-es-superioridad-moral: CarolAnn rota el marco una y otra vez (nutricion -> omnivoro -> millones de anios -> sociedad -> ecosistema -> 'why should I stop'). Bernard nombra el goalpost explicitamente; ella nunca concede, solo desplaza el reclamo. Sin turno suyo tras la ultima reply de Bernard."
+        "outcome_evidence": "The onus is not on me, who is normal. Its on the fringe ideology to convince us",
+        "outcome_note": "dominacion-no-es-superioridad-moral: tras separar capacidad biologica de juicio moral, ella desvio a 'normal/onus is not on me'; shift de marco confirmado."
       },
       {
         "thread_id": "27341517928804691",
         "date": "2026-06-16",
         "their_move": "Being an omnivore means we NEED nutrients from both plants and animals. Supplements prove the diet is incomplete.",
         "our_reply_summary": "Nombró el cambio de carril (moral status → supervivencia). Concedió biología. Clavó B12-de-bacterias-no-de-vacas + ganado también suplementado. Devolvió al hueso: necesidad de supervivencia ≠ su realidad (tiene súper lleno).",
-        "outcome": "silent",
-        "outcome_evidence": "a plant based diet has no source of B12. I can get vitamin D from my diet.",
+        "outcome": "engaged",
+        "outcome_evidence": "That's their purpose on earth.",
         "framework": "no-necesidad-cambiaron-las-reglas",
-        "outcome_note": "no-necesidad-cambiaron-las-reglas: insistio en 'dieta incompleta / B12 no tiene fuente vegetal'; Bernard y Ruediger clavaron B12-de-bacterias + ganado tambien suplementado. Ella no concedio nada sobre esa rama y dejo de volver. Cero concesion."
+        "outcome_note": "no-necesidad-cambiaron-las-reglas: NO quedo silent — respondio reafirmando 'they are here for us to eat, their purpose'; sigue debatiendo sin conceder."
       },
       {
         "thread_id": "27341517928804691",
@@ -50,9 +50,9 @@
         "their_move": "No, its both. There is no moral reason for me to stop eating meat. Why should I? (+ tu-quoque carrion/compost dirigido a Rüdiger, esquivando mi pregunta del marco)",
         "our_reply_summary": "Reply etiquetada anclada en su why-should-I-stop. Inversion de carga: no-reason-to-stop != justification; el post pidio justificar la explotacion, no una razon para parar. Concedio toda la biologia/carrion/B12. No persiguio el tu-quoque ni repitio el goalpost (Rudiger ya lo nombro, lo pocketeo). Cerro con la pregunta del marco para el lurker.",
         "outcome": "silent",
-        "outcome_evidence": "No, its both. There is no moral reason for me to stop eating meat. Why should I?",
+        "outcome_evidence": "tras el turno de Bernard no hay mas turnos de CarolAnn",
         "framework": "consideracion-moral-no-cuanto-sufre",
-        "outcome_note": "consideracion-moral-no-cuanto-sufre: Bernard reencuadro 'why should I stop' como reclamo de carga, no justificacion, y replanto la pregunta del marco. CarolAnn no respondio tras esa reply. Sin concesion; pozo de mala fe que ya no volvio."
+        "outcome_note": "consideracion-moral-no-cuanto-sufre: no respondio al reply etiquetado; ancla de 11 dias, deuda muerta."
       },
       {
         "thread_id": "27405978672358616",
@@ -61,8 +61,8 @@
         "our_reply_summary": "Concede omnivoro, separa can/should, clava que \"necesidad\" es lo falso (consumidora con supermercado), nombra el \"not interested\" como tell, devuelve al hueso. Sin nutricion/B12.",
         "framework": "no-necesidad-cambiaron-las-reglas",
         "outcome": "engaged",
-        "outcome_evidence": "Turno: 'Have we evolved into herbivores?... Eating meat is still a necessity. You have chosen to eat an incomplete diet. I'm not interested.'",
-        "outcome_note": "no-necesidad-cambiaron-las-reglas: CarolAnn enganchó en el eje de necesidad ('eating meat is still a necessity', 'incomplete diet') aunque con salida dismissive ('I am not interested'). Es engaged con baja fe — el claim de necesidad nunca se demostró, que es justo donde el framework la quería."
+        "outcome_evidence": "Why not get a feeding tube and live off of synthetic nutritional replacement?",
+        "outcome_note": "no-necesidad-cambiaron-las-reglas: respondio al can/should con el reductio del feeding tube; sigue en el ring."
       },
       {
         "thread_id": "27405978672358616",
@@ -71,8 +71,8 @@
         "our_reply_summary": "Nombra el cambio de tema sin perseguirlo: la conversacion era sobre tratar a un ser vivo como propiedad, no sobre tubos. Concede que podria sobrevivir de modos raros pero el metodo nunca fue el punto; elegir como alimentarme no responde por el ser del otro lado. El feeding tube es una forma de evitar la pregunta, no una refutacion. Devuelve al hueso: que hace aceptable volver propiedad a un ser vivo. Corto (deliberado).",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "goalpost",
-        "outcome_evidence": "Turnos: 'Why not get a feeding tube and live off of synthetic nutritional replacement?' -> 'Why stop at just eliminating meat?'",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: CarolAnn no respondió la pregunta de propiedad; movió postes con un reductio ('why not get a feeding tube?') y al ser nombrado el desvío, lo defendió con otro ('why stop at eliminating meat?'). Clásico goalpost-moving — el marco no fue refutado, fue esquivado en serie."
+        "outcome_evidence": "Why stop at just eliminating meat?",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras nombrarle el cambio de tema, doblo el reductio en vez de tocar el estatus de propiedad."
       },
       {
         "thread_id": "27335635946059556",
@@ -80,7 +80,9 @@
         "their_move": "Tras desviar a nutricion/ultra-processed, deflexion I-didnt-run-away + ad-hominem (salud mental, jab del B12).",
         "our_reply_summary": "Conced nutricion/B12 de frente, nombr en una linea que la rama nutricional es el desvio, devolv al hueso: que justifica criar/poseer/matar a un sujeto (someone->property) cuando hay alternativa. Recuperacion tras un reply previo ego-driven.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "sigue con Teddy, nunca contesta a Bernard",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras su ad-hominem Bernard recupero al hueso de propiedad; no respondio aun, ancla de 2 dias = deuda viva."
       }
     ]
   },
@@ -112,10 +114,10 @@
         "date": "2026-06-16",
         "their_move": "I still don't see the distinction. Animals or crops. They both kill. List the exploitative events that are the problem.",
         "our_reply_summary": "Aterrizó la distinción de ROL del daño: subproducto de alimentar a todos vs el propósito mismo de la actividad. Reframeó 'exploitation' como RELACIÓN, no lista. Nombró que Matt usa esa distinción (accidente vs intención) en todo menos con animales. Devolvió la carga.",
-        "outcome": "escalated",
+        "outcome": "goalpost",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome_evidence": "Move past the lie that crop deaths are unintentional. It serves nothing. And so you cannot list the individual acts that you classify as exploitation?",
-        "outcome_note": "Frente al rol-del-daño (subproducto vs propósito), Matt no engaged el marco: lo tachó de mentira ('Move past the lie') y exigió una lista de actos, hardening a mala fe. El mismo registro lo llevó en paralelo a una espiral acusatoria con Jeff Rockwell ('liar', dox). No es silent simple: se cerró más antes de irse. El framework no aterrizó en él."
+        "outcome_evidence": "so you cannot list the individual acts that you classify as exploitation?",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: evadio exigiendo una lista de actos en vez de engancharse — deflexion de marco."
       },
       {
         "thread_id": "27375477042075446",
@@ -133,9 +135,9 @@
         "their_move": "Tu-quoque de hipocresía: \"todos usan plástico/meds developed on animals, cuántos hipócritas en una marcha\"",
         "our_reply_summary": "\"As far as possible and practicable\" no es perfección; imperfección no refuta el principio; por su lógica nadie criticaría una injusticia; daño inevitable ≠ justifica el evitable.",
         "outcome": "engaged",
-        "outcome_evidence": "Matt Terrain: \"nope. Failing again Sorry. Your argument is tired and flawed because no one ever said veganism is supposed to be zero harm. You and all vegans commit easily avoidable harm.\"",
+        "outcome_evidence": "Your argument is tired and flawed",
         "framework": "no-necesidad-cambiaron-las-reglas",
-        "outcome_note": "El tu-quoque de hipocresía permaneció en debate activo: Matt insiste sin conceder nada. El framework no-necesidad sostuvo el intercambio pero no arrancó reconocimiento."
+        "outcome_note": "no-necesidad-cambiaron-las-reglas: tras desmontar el tu-quoque, doblo dismissive pero sigue en el argumento."
       },
       {
         "thread_id": "27319402757682875",
@@ -143,9 +145,9 @@
         "their_move": "Tu quoque doblado: \"your argument is tired and flawed... you and all vegans commit easily avoidable harm\".",
         "our_reply_summary": "Nombré el tu quoque con calma; concedí que ningún sistema es daño-cero y que aun así su imperfección-ajena no justifica SU daño (un daño evitable no licencia otro). Devolví al hueso: qué principio justifica criar y matar un sentiente cuando hay alternativa viable.",
         "framework": "no-necesidad-cambiaron-las-reglas",
-        "outcome": "engaged",
-        "outcome_evidence": "Matt Terrain: \"and again and again. My statement stands. Point made. YOU are the one avoiding the point... You lying about that doesn't change facts.\"",
-        "outcome_note": "Tras nombrar el tu-quoque y devolver al hueso, Matt redobló y acusó a Bernard de mentir, sin conceder. Debate activo desde la trinchera, no concesión."
+        "outcome": "escalated",
+        "outcome_evidence": "You lying about that doesn't change facts.",
+        "outcome_note": "no-necesidad-cambiaron-las-reglas: subio a hostilidad directa ('you lying') + cierre dismissive."
       },
       {
         "thread_id": "27375477042075446",
@@ -164,8 +166,8 @@
         "our_reply_summary": "Concedí lo empírico libremente (China crece, India es parte económico); pivote: la data de mercado es DESCRIPTIVA, nunca fue el argumento — si el mercado dobla o colapsa la pregunta moral no se mueve. Devolví la carga: ¿qué principio justifica criar/matar a un sintiente cuando hay alternativa viable? Cero data propia, no mordí el body-count.",
         "framework": "no-necesidad-cambiaron-las-reglas",
         "outcome": "engaged",
-        "outcome_evidence": "Matt Terrain: 'I AM right about ALL my specifics. My comment has addressed your post as much as I saw fit to address it.'",
-        "outcome_note": "no-necesidad/descriptivo-vs-normativo: Bernard concedió lo empírico y devolvió la carga moral. Matt respondió pero rehusó el frame moral, amurallándose ('I AM right about ALL my specifics... addressed your post as much as I saw fit'). Intercambio activo sin concesión."
+        "outcome_evidence": "I AM right about ALL my specifics.",
+        "outcome_note": "no-necesidad-cambiaron-las-reglas: se nego al pivote reafirmando su sniping de cifras; dismissive pero sin troll."
       }
     ]
   },
@@ -196,9 +198,9 @@
         "their_move": "Yes. Any exploitation is justified if it is mutually beneficial. The benefits don't have to be equal.",
         "our_reply_summary": "Expuso que 'mutually' hace todo el trabajo y es falso. Concedió cuidado/refugio pero clavó que esos beneficios son condicionales a su propio uso y muerte. Nombró que la relación se estructura desde el inicio en torno al criador. Cerró devolviendo la carga: '¿en qué sentido es el beneficio mutuo y no condicional a la explotación?'",
         "outcome": "silent",
-        "outcome_evidence": "Yes. Any exploitation is justified if it is mutually beneficial. The benefits don't have to be equal.",
+        "outcome_evidence": "tras el reply de Bernard no hay mas turnos de Adam",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: Adam afirmo que la explotacion mutuamente beneficiosa se justifica; Bernard expuso que 'mutually' es falso porque el beneficio es condicional al uso y la muerte. Adam no respondio. Sin concesion ni nuevo turno."
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras exponer que el beneficio es condicional a su uso/muerte, Adam no respondio; ancla ~13d."
       }
     ]
   },
@@ -233,8 +235,8 @@
         "our_reply_summary": "Bernard respondió largo refutando el is-ought, nombrando la circularidad del 'human life is worth more', y separando agencia moral de comportamiento natural. Jeff Rockwell le tiró data-dump paralelo.",
         "outcome": "silent",
         "framework": "dominacion-no-es-superioridad-moral",
-        "outcome_evidence": "Julia: '...because human life is far more valuable than animal life it is morally justified.' (5d) — Bernard responde largo 5d; Julia no regresa, solo el aliado Jeff Rockwell tira data-dump paralelo.",
-        "outcome_note": "dominacion-no-es-superioridad-moral: Bernard refutó el is-ought, nombró la circularidad de 'human life is worth more', separó agencia moral de comportamiento natural y desmanteló el whataboutism. Julia nunca volvió tras la reply (5d). Cero señal de concesión; silent confirmado."
+        "outcome_evidence": "Julia nunca contesta",
+        "outcome_note": "dominacion-no-es-superioridad-moral: tras refutar is-ought + circularidad, Julia no volvio; ancla ~13d."
       }
     ]
   },
@@ -300,9 +302,9 @@
         "their_move": "Relativismo (\"moral subjetiva\") + \"algo tiene que morir\" + \"no me dictes\".",
         "our_reply_summary": "Reply etiquetada (firme sin sermón, sin vocativo): concedí que algo muere para vivir, pero daño inevitable no justifica daño evitable (manejar vs atropellar a propósito); moral subjetiva no nivela todo; señalar un daño no es dictar. Cerré preguntando por qué subjetividad+daño-inevitable lleva a que criar y matar no necesite justificación.",
         "outcome": "silent",
-        "outcome_evidence": "I could care less what you eat or don't, just don't expect me to welcome you dictating to me what I can or can't eat.",
+        "outcome_evidence": "no hay mas turnos de Steve",
         "framework": "no-es-opcion-de-vida",
-        "outcome_note": "Steve soltó relativismo + 'no me dictes' como comentario raíz y no volvió tras la reply de Bernard (daño-inevitable≠daño-evitable, señalar≠dictar). Reply de ~2 días, sin turno del oponente después: silent. Sin evidencia de concesión ni de escalada."
+        "outcome_note": "no-es-opcion-de-vida: tras separar dano inevitable de evitable, Steve no respondio; ancla ~11d."
       }
     ]
   },
@@ -333,9 +335,9 @@
         "their_move": "Inversión/goalpost: me acusó de esquivar por no contestar sus DOS preguntas reformuladas; crop_deaths_flip (\"criar para su propósito vs matar wildlife por profit\") + abolition_reductio (\"exterminar razas\").",
         "our_reply_summary": "Reply etiquetada (filo, apertura sin vocativo): nombré la inversión (él sustituyó mi pregunta por dos suyas); desarmé Q1 (\"designed for purpose\" pide la cuestión; crop-deaths = rol del daño, no idénticas) y Q2 (dejar de criar ≠ exterminar); cerré devolviéndolo a la pregunta original.",
         "outcome": "silent",
-        "outcome_evidence": "The fact your discomfort in reality made you try to move the goal posts, use \"what ifs\" & decline to answer the questions",
+        "outcome_evidence": "last Scott turn is the goalpost accusation",
         "framework": "consideracion-moral-no-cuanto-sufre",
-        "outcome_note": "Bernard desarmó la inversión/goalpost (designed-for-purpose pide la cuestión; dejar de criar ≠ exterminar) hace 2 días; Scott no volvió. Reply-ancla vieja → silent, no pending."
+        "outcome_note": "consideracion-moral-no-cuanto-sufre: Scott movio postes/acuso evasion, Bernard desarmo Q1/Q2, sin respuesta despues."
       },
       {
         "thread_id": "27375477042075446",
@@ -354,8 +356,8 @@
         "our_reply_summary": "Ignora el sarcasmo uno-por-uno y desnuda la asuncion de fondo: que los animales existen para nosotros. Eso trata a seres vivos como lineas de producto (unidades disponibles a futuro). Un ser no se beneficia de existir para ser poseido, y que un sistema los produzca no lo justifica. Extincion/pets/livestock saltan la pregunta previa: por que un ser vivo deberia existir como propiedad.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "escalated",
-        "outcome_evidence": "Turno 1d: 'No sarcasm, just hatred of ignorance... With \"friends\" like Burnt out Bernard, animals don't need enemies' — insulto sin argumento.",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: al nombrar la asunción oculta ('los animales existen para nosotros') Scott abandonó el argumento y escaló a puro insulto. No hubo contra-argumento: el marco quedó sin respuesta sustantiva, lo que ante el lurker es una victoria silenciosa."
+        "outcome_evidence": "With friends like Burnt out Bernard, animals don't need enemies",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras exponer la asuncion 'animals exist for us', Scott bajo a insulto puro."
       },
       {
         "thread_id": "27468645086091974",
@@ -364,8 +366,8 @@
         "our_reply_summary": "Reply etiquetada (filo): concede que 'someone' solo no prueba nada (no se afirma como premisa), pero un veredicto tampoco es criterio. Plantea el framework como PREGUNTA: ¿que hace a un individuo un who y a otro un what poseible? Si su criterio es especie/inteligencia/racionalidad, que lo defienda; 'tu argumento falla' se salta la linea en vez de trazarla. Cierra pidiendo el criterio.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "escalated",
-        "outcome_evidence": "You're not the Kamala Harris scriptwriter. No one is interested in reading your pathetic word salad",
-        "outcome_note": "algo-a-alguien: tras concederle que 'someone' solo no prueba nada y nombrar que 'es tu debilidad' es veredicto no criterio, cayo a puro insulto. Pozo confirmado: el eje no tiene traccion en el, solo dominancia social."
+        "outcome_evidence": "No one is interested in reading your pathetic word salad",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: Bernard pidio su criterio, Scott contesto con insulto no criterio."
       }
     ]
   },
@@ -397,10 +399,10 @@
         "date": "2026-06-18",
         "their_move": "crop-deaths / ecocidal-monoculture tu quoque + no-moral-high-ground (relativismo) + futilidad (come back when vegans stop ecocide)",
         "our_reply_summary": "Conceder crop-deaths; rol-del-dano (subproducto incidental vs muerte intencional como proposito) en vez de body-count; el 70% del cropland alimenta ganado => comer animales SUMA esas muertes; ignorar el insulto; cerrar con la pregunta del marco.",
-        "outcome": "silent",
-        "outcome_evidence": "Sin turno de Frank tras la última reply de Bernard (age 2 days); su último turno fue el insulto crop-deaths ('lazy hypocrites... eat a few bugs... get back to us').",
+        "outcome": "escalated",
+        "outcome_evidence": "self righteous, lazy hypocrites... misanthropic carnophobia",
         "framework": "no-necesidad-cambiaron-las-reglas",
-        "outcome_note": "Ronda 1 crop-deaths/rol-del-daño + futilidad. Frank siguió con ronda 2 más agresiva, luego no volvió tras la reply de Bernard (2 días). Sin concesión; el insulto escaló antes del silencio. Silent se sostiene."
+        "outcome_note": "no-necesidad-cambiaron-las-reglas: Frank volvio con crop-deaths data-dump AND insultos personales nuevos."
       },
       {
         "thread_id": "27341517928804691",
@@ -408,9 +410,9 @@
         "their_move": "Ronda 2 crop-deaths: 55% tillage consumo-humano-directo + pivote grass-fed (menos muertes por caloria) + nutricion + insulto (lazy hypocrites, carnophobia, eat bugs/get back to us)",
         "our_reply_summary": "Conced crop-deaths sin disputar cifras; rol-del-dano (subproducto incidental vs proposito) sostiene feedlot O pasto idealizado; nombr el cambio de track (harm-exists => no-moral-difference no se sigue); pastoral = ownership not coexistence (de-centrado, NO entr a feasibility/calorias); ignor el insulto; cerr con la pregunta del marco.",
         "outcome": "silent",
-        "outcome_evidence": "Frank Teuton (último turno): '55% of all tillage crops are grown for direct human consumption... vegans in general are mostly self righteous, lazy hypocrites... carnophobia'. Sin réplica posterior a la reply de Bernard.",
+        "outcome_evidence": "No Frank turn after Bernard's round-2",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome_note": "Ronda 2 crop-deaths (grass-fed/menos-muertes-por-caloría) + insulto. Bernard nombró el cambio de track y devolvió al hueso; Frank no respondió (reply 2 días). Escalada previa, luego silencio. Sin concesión."
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras el reply round-2 sosteniendo el eje de propiedad, Frank no volvio."
       }
     ]
   },
@@ -479,8 +481,8 @@
         "our_reply_summary": "Honró el testimonio sin disputar la experiencia. Se puso de su lado nombrando que los consejos que recibió (más hojas verdes con cálculos, agave con fructosa) están documentados como al revés. Reforzó SU queja de mala orientación. Devolvió la carga con n=1≠categoría + la moral es ortogonal a si un individuo prospera.",
         "outcome": "engaged",
         "framework": "apego-seguridad-antes-que-razon",
-        "outcome_evidence": "I appreciate you actually answering the question. Most people would have just thrown a meme at me... do you think your story tells us something about veganism itself, or about how hard it is for anyone to find a diet that fits their own biology",
-        "outcome_note": "apego-seguridad-antes-que-razon: Paul es de buena fe; compartio su testimonio largo y siguio el intercambio civil sin moverse de tema de forma evasiva. No es goalpost real (engancho de frente) pero tampoco concedio el punto moral. Es debate activo de buena fe sin concesion."
+        "outcome_evidence": "im always open to new data",
+        "outcome_note": "apego-seguridad-antes-que-razon: ex-vegan civil y abierto; debatio de buena fe sin conceder el caso moral."
       },
       {
         "thread_id": "27335635946059556",
@@ -488,9 +490,9 @@
         "their_move": "Respondio a la pregunta moral retirandose a relativismo (‘morality es creencia personal, todo se justifica por un codigo personal’) y desplegando dos objeciones nuevas: la jerarquia plantas/bichos (‘veganos dicen que toda vida es igual pero matan plantas/insectos’) y el reductio de abolicion (si todos fueran veganos habria que matar al ganado, no mas mascotas, zoologicos cierran).",
         "our_reply_summary": "POSTEADO (run3, reply etiquetada a su turno [2h]): enmarcó el relativismo como retirada, no contradicción — Paul sigue razonando moralmente (consecuencias, jerarquías, mascotas) aun tras decir que todo es subjetivo. Corrigió el strawman ‘toda vida igual’ con sintiencia/capacidad de sufrir (la jerarquía ES el punto, no la incoherencia). Desactivó el reductio concediendo la premisa (no matar al ganado existente, sino dejar de criarlo para usarlo). Cerró devolviendo al hueso sin martillo: si la moral es más que gusto personal cuando hablamos de consecuencias/sufrimiento/justicia, ¿qué justifica usar seres sintientes cuando podemos no hacerlo?",
         "outcome": "silent",
-        "outcome_evidence": "really vegans say all life is equal, but then most have no problem killing plants or bugs so they have a personal hierarchy",
+        "outcome_evidence": "No Paul turn after Bernard's reply",
         "framework": "mi-desarrollar-discrepancia",
-        "outcome_note": "mi-desarrollar-discrepancia: Paul se retiro a relativismo ('morality es creencia personal') y desplego objeciones nuevas (jerarquia plantas/bichos, reductio de abolicion). Bernard reencuadro relativismo como retirada y corrigio el strawman 'toda vida igual' con sintiencia. Paul no respondio tras esa reply. Sin concesion del eje moral."
+        "outcome_note": "mi-desarrollar-discrepancia: tras nombrar el retiro al relativismo + corregir 'all life equal' con sintiencia, Paul callo."
       }
     ]
   },
@@ -618,9 +620,9 @@
         "their_move": "crop_deaths flip welfarista (forma canónica): iguala criar/matar vacas con control de plagas (\"from the animal perspective intentional or incidental, it is a lost life\"), descarta la intención, y monta hipocresía sobre la premisa de que el argumento vegano es minimizar cantidad (treats/coffee = avoidable harm).",
         "our_reply_summary": "NO competí en número de muertes ni intención (terreno que mi turno previo welfarista le había regalado). Moví el eje a ESTATUS DE PROPIEDAD: el control de plagas mata a alguien que no es de nadie; la ganadería cría a un sujeto PARA ser poseído/dispuesto como recurso — la diferencia es estatus, no muerte. Desarmé la hipocresía nombrando su premisa oculta (solo funciona si el argumento fuera minimizar cantidad — no lo es; el café no involucra a nadie criado para ser poseído). Cierre con pregunta de estatus: ¿qué justifica criar a un sujeto para poseerlo si hay alternativa adecuada? Sin decir \"esclavitud\" frontal (relación concreta: criado/comprado/vendido/dispuesto). Redención del A2 welfarista de la mañana.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "engaged",
-        "outcome_evidence": "Turno: 'There's no special justification needed for breeding and killing cows any more than pest control... The main difference people point to is intent.'",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: al separar el eje (propiedad/sujeto poseído) del conteo de daño, Anna NO concedió: siguió montando el crop_deaths flip apoyándose en 'intent' ('pest control isn't accidental, it's deliberate'). Mantuvo el terreno bienestarista. Engaged, pero es pozo_sin_fondo: el lurker ya vio que el marco no depende del body-count."
+        "outcome": "silent",
+        "outcome_evidence": "no Anna turn after Bernard's reply",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras mover el eje de body-count/intent a estatus de propiedad, Anna no respondio; ~8 dias."
       }
     ]
   },
@@ -674,9 +676,9 @@
         "their_move": "Leash tu-quoque/reductio: \"usar correa restringe el libre albedrío, los torturas, partakes en la opresión\" + frame de propiedad (quién paga el cuidado si no es propiedad).",
         "our_reply_summary": "Reply etiquetada (sin vocativo): concedí que la correa restringe; separé cuidado-de-dependiente (interés del perro) de cría-para-uso (interés nuestro); tutela≠propiedad (el niño no es propiedad y alguien paga su cuidado); cerré preguntando qué relación se defiende al criar animales para usarlos.",
         "outcome": "silent",
-        "outcome_evidence": "Chris Duffy (último turno): 'by using a leash you are... torturing them... you are partaking in that system of oppression.' Sin réplica posterior a la reply de Bernard (age 2d).",
+        "outcome_evidence": "No Chris turn after Bernard's reply; ~11d",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome_note": "tutela≠propiedad vs leash-tu-quoque. Chris escaló (leash=tortura/opresión) y no volvió tras la reply de Bernard (2 días). Sin reconocimiento de validez; silent se sostiene."
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras separar cuidado-de-dependiente de cria-para-uso, Chris solto el hilo de la correa."
       },
       {
         "thread_id": "27468645086091974",
@@ -685,8 +687,8 @@
         "our_reply_summary": "Conced lo legal/biologico (si los crian, si son propiedad legal), gir a que eso describe no justifica el status; crear-para-poseer es el problema no la solucion; ver al cerdo evitar dolor/querer vivir es observacion no antropomorfismo (lo sabe por sus cabras). Registro filo-light, sin sermon.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
-        "outcome_evidence": "yes ownership is legitimate and justified if you can accommodate the animals needs",
-        "outcome_note": "algo-a-alguien: al girar creation=how-not-why, retrocedio de 'el cerdo ES propiedad simple' a una condicion (legitimo SI acomodas necesidades) — movio el terreno, senal de que el how/why lando."
+        "outcome_evidence": "ownership is legitimate and justified if you can accommodate the animals needs",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: respondio al describe!=justify refinando a ownership condicional al bienestar."
       },
       {
         "thread_id": "27468645086091974",
@@ -695,8 +697,8 @@
         "our_reply_summary": "Compasivo: reconoce que cuida animales en serio, pero su criterio responde el TRATO no el TITULO — ya concedio que la propiedad necesita justificarse y puso toda la justificacion en cuan bien tratas a lo que posees. Buen cuidado vuelve la propiedad mas amable, no explica por que el titulo es legitimo. Cierra: que da al dueno ese estatus sobre el animal de entrada?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
-        "outcome_evidence": "under nsw bio security law they have to be destroyed. Animals are property, very simple",
-        "outcome_note": "algo-a-alguien: tras nombrar que su criterio responde el TRATO no el TITULO, re-anclo en legal/biosecurity ('si no son propiedad la ley los destruye') + acusacion de antropomorfismo. Circular hacia lo legal; engaged sin concesion."
+        "outcome_evidence": "Animals are property, very simple",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: Bernard separo trato de titulo; Chris recayo a propiedad-legal/bioseguridad sin conceder."
       },
       {
         "thread_id": "27468645086091974",
@@ -704,7 +706,9 @@
         "their_move": "Conflacion propiedad-legal con justificacion moral + cierre hostil/sello: NSW biosecurity law exige destruir si no son propiedad; 'I own my goats, otherwise you could come claim them'; '#11: do you understand now? I'm going to make sure this silly concept is squashed as it's utterly absurd and ridiculous'.",
         "our_reply_summary": "Reply etiquetada, corta. Una linea calmada (no mordi el absurd/ridiculous): no discrepamos sobre lo que la ley DICE sino sobre lo que la ley JUSTIFICA. Su punto de la ley devuelto: que la ley pueda ordenar destruir al animal PORQUE es propiedad muestra que el estatus de propiedad es lo que licencia matarlo — describe el sistema, no justifica el estatus. 'The law says so' no responde la pregunta del post. Cierre devolviendo el estatus de propiedad.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "Bernard's reply is 9 minutes old",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: Bernard volteo el punto legal (la ley puede destruir = la propiedad licencia matar, no lo justifica); reply ~9 min, sin respuesta."
       }
     ]
   },
@@ -942,7 +946,9 @@
         "their_move": "Crop-deaths tu-quoque + relativismo + autonomia: who are you to say one life is worth more, nobody has the right to tell others how to live. Tres esquives que el post ya habia descartado (straw man).",
         "our_reply_summary": "Expuse el hombre de paja primero (contesto 3 preguntas que nadie hizo; el post dijo you-can-eat-meat + no-telling-how-to-live), devolvi a la unica pregunta real (propiedad), gire el crop-deaths por estatus no conteo (difference in status not arithmetic), relativismo en un renglon, cerre con la imagen del post (habit wearing a costume).",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "What gives you or anyone else the right to say that one life is worth more than another?",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras voltear el straw man (crop-deaths=estatus no conteo) y plantar propiedad, Garry no respondio; reply de 21h."
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/100003886247108/"
@@ -1058,8 +1064,8 @@
         "our_reply_summary": "Concede que can≠unnecessary (la inferencia sola seria debil), pero clava el category shift: house/glasses/car NO son alguien; el animal si. La carne entra como recurso medido por lo que el humano saca, y ESO es lo que esta en disputa. Crop deaths no explican por que traer a un ser a existencia COMO propiedad. Cierra: que principio convierte a un ser vivo en algo que puede poseerse.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
-        "outcome_evidence": "Turno 1d: 'I think you've just moved the assumption one step deeper... You've assumed that being a living, sentient being creates a presumption against human use that must first be overcome. That's the very point under dispute.'",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: Les es el interlocutor del crux — respondió sofisticado y civil con una segunda petición de principio ('you've moved the assumption one step deeper... that being sentient creates a presumption against human use is the very point under dispute'). No concedió, pero mantuvo el debate en el terreno del estatus moral, exactamente donde el marco quiere pelear. Es el engaged de mayor valor del hilo."
+        "outcome_evidence": "you've just moved the assumption one step deeper",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: Les sostiene burden-tennis sofisticado y vuelve a contestar; mala fe pero activo."
       },
       {
         "thread_id": "27405978672358616",
@@ -1068,8 +1074,8 @@
         "outcome": "engaged",
         "their_move": "Peticion de principio (2da vuelta): \"you moved the assumption one step deeper\" — que asumo una presuncion contra el uso del ser sintiente, y eso es el punto en disputa; pide por que sintiencia implica no-uso.",
         "our_reply_summary": "La presuncion NO es inventada ni smuggled: ya la aplicamos sin discutir a todo alguien (perro del vecino, bebe). La carga no es demostrarla, es que Les nombre que rasgo concreto saca al cerdo de la categoria alguien donde ya metemos al perro. Alguien vs algo en lenguaje llano.",
-        "outcome_evidence": "Turno de Les 3d POSTERIOR a mi reply 3d: '...the assumption I still think you're smuggling'.",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: Les volvio tras mi reply del Jun23 reafirmando petitio principii ('the assumption I still think you're smuggling into the discussion'). El eje propiedad se sostuvo pero Les no cede el cargo de question-begging. Engaged, sin concesion."
+        "outcome_evidence": "you're still treating your moral framework as the default position",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: Les contraataca con otra vuelta de simetria de carga; sigue debatiendo."
       },
       {
         "thread_id": "27468645086091974",
@@ -1078,8 +1084,8 @@
         "our_reply_summary": "Reply etiquetada (eje algo-a-alguien): historia/biologia = is, no ought; las excepciones son matar-en-conflicto, nunca POSEER a un sujeto como propiedad -> no vuelven arbitrario el eje. Carga de vuelta sobre el estatus de propiedad SIN asumir el someone como axioma (correccion del coagent). Cierra: cual es el principio que hace legitimo que un individuo exista como propiedad de otro?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
-        "outcome_evidence": "you're doing it again. You say it's not about percentages, but it absolutely is",
-        "outcome_note": "algo-a-alguien: respondio al is/ought repitiendo el burden-shift (es sobre porcentajes/mayoria). Engaged, terreno del crux de la carga."
+        "outcome_evidence": "you're doing it again",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: Les insiste inversion de carga 99%/evolucion; Bernard separa is/ought y Les vuelve, en trinchera."
       },
       {
         "thread_id": "27468645086091974",
@@ -1088,8 +1094,8 @@
         "our_reply_summary": "Filo: la carga NO es simetrica — poseer a un sujeto reclama autoridad sobre su existencia entera, eso es lo que necesita explicarse (como \"por que injustificado poseer una persona\" no es simetrico). Sus casos (self-defense/invasive/crop) son CONFLICTOS con alguien que ya existe; ninguno requiere CRIAR un sujeto para poseerlo — la granja si. No es donde pongo la raya en un gradiente, es que una relacion crea un individuo poseido y la otra no. 99%/normal explica aceptacion, no justificacion. Cierra: que principio hace legitimo que un individuo exista como propiedad de otro?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
-        "outcome_evidence": "that's only true if I first accept YOUR moral premise",
-        "outcome_note": "algo-a-alguien: tras romper la simetria (poseer reclama autoridad sobre la existencia ajena), sostuvo 'eso solo es cierto si acepto TU premisa' + apelacion a la mayoria. Stalemate sofisticado en el crux de la peticion-de-principio; el lurker ve el loop."
+        "outcome_evidence": "Simply restating your question doesn't prove your premise.",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: burden-tennis 'why is it unjustified?'; Les re-responde, debate vivo sin concesion."
       },
       {
         "thread_id": "27468645086091974",
@@ -1097,7 +1103,9 @@
         "their_move": "Peticion de principio + apelacion a mayoria/historia/beneficios: ownership needs explaining solo si acepto TU premisa; 99% de la humanidad; ownership es solo un rasgo de la domesticacion.",
         "our_reply_summary": "Rompi el loop (filo, correccion del coagent): la propiedad no es un hecho biologico, es una relacion social adicional; quien reclama el TITULO introduce algo especifico que justificar, no es mi premisa sino la estructura del reclamo. 99%/historia es is no ought. Cierre: que hay en el cerdo que vuelva justificada y no solo aceptada la relacion de pertenencia?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "What is it about the pig that makes this individual belongs to me a justified relationship?",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: Bernard rompe el loop (propiedad=relacion social, no hecho biologico); reply de 20h sin respuesta."
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -1138,9 +1146,9 @@
         "their_move": "Autonomía/personal-choice (you do you, let me be me) + error de categoría (muéstrame documentos LEGALES donde sea malo) + humane self-farming (crío los míos, sin matadero/gas/veal).",
         "our_reply_summary": "Reply etiquetada (compasivo, sin vocativo): reconoce el cuidado real que ya muestra; autonomía vale cuando solo te afecta a ti, pero hay un TERCERO (el animal) que no consintió; legal≠moral (cosas legales luego juzgadas mal); concede humane>industrial y aun así el hueso: matar un sintiente por preferencia con alternativas no se justifica por humane.",
         "outcome": "engaged",
-        "outcome_evidence": "i am not gona say I suport the thought that all humans should be vegan cuase of the animals feelings... basicly you do you I do me and we Cary on. Thank you sir for being the way life should be.",
+        "outcome_evidence": "agree to disagree",
         "framework": "no-es-opcion-de-vida",
-        "outcome_note": "no-es-opcion-de-vida: Shane es de buena fe (granjero humanitario) y el intercambio sigue VIVO (ultima reply de Bernard 6m, sin turno suyo aun). Su 'agree to disagree / thank you for being respectful' es cortesia desde la trinchera reafirmando que come carne, NO concesion del eje abolicionista. No movio goalposts; debate activo y civil sin concesion."
+        "outcome_note": "no-es-opcion-de-vida: Shane responde de buena fe pero NO concede; cierra 'agree to disagree' desde la trinchera."
       },
       {
         "thread_id": "27363745576581926",
@@ -1413,8 +1421,8 @@
         "outcome": "silent",
         "their_move": "Confesion explicita del eje: \"someone has to possess them... holds the reins. Animals < humans. Die mad.\" — defiende posesion/jerarquia de especie como mecanismo necesario del sistema.",
         "our_reply_summary": "Le tomo la palabra: describio la posesion con exactitud, pero describir no es justificar. \"Having the reins\" explica quien manda, no por que es legitimo mandar sobre un alguien. \"Animals<humans\" es la conclusion aseverada, no la razon. Devuelvo: que la hace legitima mas alla de que se pueda.",
-        "outcome_evidence": "'Die mad' antes de mi reply; mi reply 3d sin respuesta.",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: confesion del eje ('someone has to possess them... holds the reins. Animals < humans. Die mad'). Mi reply Jun23 (possession=quien manda, no por que tiene derecho) sin respuesta 3d; 'Die mad' = cierre hostil. Silent."
+        "outcome_evidence": "Animals < humans. Die mad.",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras 'die mad' Bernard expone describir!=justificar; sin respuesta al punto en 5 dias."
       },
       {
         "thread_id": "27330688236588406",
@@ -1422,7 +1430,9 @@
         "their_move": "Argumento de 3 puntos (giro de troll a substantiva): 1) naturalismo de cria (los animales se reproducen solos, nosotros controlamos), 2) sapience>sentience, 3) reductio sobre el eje: si el problema es ownership, aceptas hunting/poaching porque el cazador no posee al animal.",
         "our_reply_summary": "Centre el punto 3: el eje nunca fue el titulo legal sino la RELACION de tratar a un alguien como recurso para nuestro uso — la caza hace lo mismo sin papeles, asi que mi logica la condena igual (no la bendice). Conced el punto 1 (controlar la cria no cambia la relacion); desactive el 2 (sapience) en una linea sin entrar a marginal cases. Lenguaje llano, sin etiqueta slavery, devolvi la carga.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "we DO treat humans with suspended sapience as resources",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: Tiana empuja naturalismo/sapience/reductio caza y muerde la bala; Bernard contesta, reply de 1d sin re-respuesta."
       },
       {
         "thread_id": "27468645086091974",
@@ -1430,7 +1440,9 @@
         "their_move": "Naturalismo: \"todos mueren, todos serán comidos (wild/domestic/feral); no los traemos a existir, ellos lo hacen; con domésticos LIMITAMOS cuán jóvenes/seguido/cercano crían; los ferals son crop pests killed wholesale\".",
         "our_reply_summary": "Reply etiquetada (filo civil). Volteé su autocontradicción: dice \"they bring themselves into existence\" pero en la misma frase controla la cría (cuán jóvenes/seguido/quién) — si controla las condiciones de su existencia, \"nature did it\" describe la biología y salta el control humano. \"Todos mueren\" = is->ought (la mortalidad no dice nada sobre la legitimidad de poseer a un alguien). Ferals/crop pests = relación distinta, no defiende la propiedad. Cierre con SU propia palabra (\"hold the reins\"): ¿qué hace legítimo sostener las riendas de la existencia entera de otro individuo? Concedí welfare/body-count sin tocar el eje.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "they will all die, they will all be eaten",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: naturalismo 'todos mueren'; Bernard voltea la autocontradiccion (controlan la cria); reply de 18h sin respuesta."
       }
     ]
   },
@@ -1450,8 +1462,8 @@
         "our_reply_summary": "Filo: respondio una pregunta sobre TRATO mientras el post pregunta por ESTATUS. Concedi humane/comfortable life y aun asi queda la pregunta: que convierte a un ser vivo en recurso que pertenece a alguien. \"Asi opera el mundo\" describe, no justifica. Eje propiedad, no cantidad de daño.",
         "framework": "consideracion-moral-no-cuanto-sufre",
         "outcome": "engaged",
-        "outcome_evidence": "Turno fresco (7h): 'convenience. It's easier than going out and hunting your food... Our intelligence pushes us to constantly improve our methods.'",
-        "outcome_note": "consideracion-moral-no-cuanto-sufre: ante la pregunta de propiedad (qué hace aceptable poseer a un ser) Indecent NO concedió ni escaló: respondió 7h después con 'convenience... our intelligence pushes us to constantly improve our methods', re-justificando el uso por conveniencia/inteligencia. El marco quedó plantado pero él siguió enganchado con una nueva justificación, no con una concesión."
+        "outcome_evidence": "Humanely slaughtering an animal for food is none of those things",
+        "outcome_note": "consideracion-moral-no-cuanto-sufre: welfare_rhetoric; Bernard pivota estatus-no-trato e Indecent vuelve a responder."
       },
       {
         "thread_id": "27405978672358616",
@@ -1460,8 +1472,8 @@
         "outcome": "silent",
         "their_move": "Se replego de \"humane\" a \"convenience\" + \"our intelligence improves our methods\" (turno fresco 7h).",
         "our_reply_summary": "Conveniencia explica querer algo, no el permiso para poseer a un alguien; inteligencia = capacidad, no permiso (can/should). Moverse de humane a convenient es otra claim. El cultivo no requiere traer a un alguien a la existencia para poseerlo; la granja si. Devuelvo: que hace a la conveniencia suficiente para tratar a un ser como algo poseible.",
-        "outcome_evidence": "Mi reply 3d es el ultimo turno del sub-hilo; sin respuesta de Indecent.",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: Indecent replego humane->convenience->'intelligence improves our methods'. Mi reply Jun23 (capacity != permission, 'someone who exists for their own sake') sin respuesta 3d. El marco expuso convenience != entitlement; sin retorno. Silent."
+        "outcome_evidence": "convenience. It's easier than going out and hunting",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: se replego de humane a convenience; Bernard separa can/should; sin respuesta en 5 dias."
       }
     ],
     "user_id": "1640580380575005",
@@ -1522,8 +1534,8 @@
         "our_reply_summary": "Conced el pronombre y que la cosecha mata seres (no mueve el eje), nombr que un sujeto lo es por su perspectiva no por mi gramatica, y que la planta no es poseida/criada como propiedad (campo != granja). Invert la carga sobre el status.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
-        "outcome_evidence": "crops ARE bred into existence for everything you just said",
-        "outcome_note": "algo-a-alguien: tras conceder el pronombre y que la cosecha mata seres sin mover el eje, volvio con 'los cultivos TAMBIEN se crian' + 'someone solo aplica a personas'. Engaged; el flip esta servido (en la cosecha nadie es POSEIDO; y 'someone' ya lo usa para su perro)."
+        "outcome_evidence": "you only refer to them as someone once",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: pedanteria someone-vs-it + deflexion plantas; Bernard concede pronombre/cosecha sin mover eje y Michael re-responde."
       },
       {
         "thread_id": "27330688236588406",
@@ -1531,7 +1543,9 @@
         "their_move": "Crops-bred flip (los cultivos TAMBIEN se crian) + someone solo para personas + acusa de cambiar definiciones.",
         "our_reply_summary": "Filo ligero: crops-bred no toca el eje, los cultivos no son POSEIDOS como sujetos; nunca fue criado-para-existir sino poseido-como-un-quien. Quien/que es una distincion ordinaria que todos usamos (correccion del coagent: no afirmar que el lo dice de su perro), no un truco de diccionario. Cierre: cual es el criterio que pone al cerdo del lado que?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "crops ARE bred into existence",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: crops-bred flip + 'someone solo para personas'; Bernard responde que los cultivos no son poseidos como sujetos; reply de 21h sin re-respuesta."
       }
     ],
     "user_id": "100000547865199",
@@ -1628,8 +1642,8 @@
         "our_reply_summary": "Reply etiquetada: los 3 marcadores son VULNERABILIDAD, no permiso; mas-debil=usable es la regla que rechazamos entre humanos; cant-fight-back es la confesion del mecanismo. Inversion: poder someter no da derecho a poseer. Cierra: que hace que ser mas debil convierta a alguien en propiedad?",
         "framework": "antropoespecismo",
         "outcome": "engaged",
-        "outcome_evidence": "Nate Porter return turns: 'My ex boyfriend could be a good case study/justification for bringing back roman style slavery, I stand behind my words philosophically' + 'understand the philosophy behind the guy on my pfp' (Senator Armstrong)",
-        "outcome_note": "antropoespecismo: tras pedirle defender el might-makes-right en abierto, Nate mordio la bala — 'I stand behind my words philosophically', justifica esclavitud romana, pfp Senator Armstrong (villano might-makes-right). No concedio ni se callo: engaged, doblando la apuesta. El lurker ve el principio carnista enunciado honesto = poder puro."
+        "outcome_evidence": "Lower levels of cognition, reliance and an inability to fight back",
+        "outcome_note": "antropoespecismo: might-makes-right honesto; engancho la inversion vulnerabilidad-vs-permiso."
       },
       {
         "thread_id": "27330688236588406",
@@ -1638,8 +1652,8 @@
         "our_reply_summary": "Reply etiquetada (filo): concede que al menos fue honesto, nombra que la fuerza explica QUIEN es dominado pero nunca POR QUE la dominacion es legitima — poder describe, no es permiso; si el principio es 'el fuerte decide', lo unico que separa amo de esclavo es quien gana. Cierra: por que la capacidad de dominar deberia volverse el derecho a poseer/usar?",
         "framework": "antropoespecismo",
         "outcome": "engaged",
-        "outcome_evidence": "justification for bringing back roman style slavery, I stand behind my words philosophically",
-        "outcome_note": "antropoespecismo: redoblo el might-makes-right en abierto (avala esclavitud romana, manda video de Senator Armstrong como su filosofia). No concede — pero para el lurker es ganancia: el bando se autodelata avalando esclavitud."
+        "outcome_evidence": "I stand behind my words philosophically",
+        "outcome_note": "antropoespecismo: doblo filosoficamente (avala esclavitud romana, cita Senator Armstrong) — engagement comprometido, no troll."
       },
       {
         "thread_id": "27330688236588406",
@@ -1648,8 +1662,8 @@
         "our_reply_summary": "Filo: power-is-permission no justifica, solo dice quien domina decide (como != por que es legitimo). Su propio relativismo prueba que la categoria se construye alrededor de NOSOTROS, no de un hecho del animal — preferencia humana decidiendo quien cuenta. Cierra: que convierte el poder en permiso?",
         "framework": "antropoespecismo",
         "outcome": "engaged",
-        "outcome_evidence": "it does boil down to them tasting good",
-        "outcome_note": "antropoespecismo: sostuvo power-is-permission ('boils down to them tasting good' + relativismo cultural). Engaged, edgelord coherente; el how/why no lo mueve pero queda expuesto."
+        "outcome_evidence": "The power is the permission, it is latent",
+        "outcome_note": "antropoespecismo: defendio power-is-permission abiertamente; su relativismo cultural fue la palanca, debate continuo."
       }
     ],
     "user_id": "100081660349433",
@@ -1679,8 +1693,8 @@
         "our_reply_summary": "Reply etiquetada, registro compasivo-firme. Reconoce que no insultó. Nombra que las 3 'correcciones' son criterios distintos (cognición/jerarquía/'no es someone') para la MISMA pregunta: cuándo un individuo vivo deja de tratarse como un quién y pasa a ser un qué poseíble. Eso ES la pregunta, no la respuesta. 'Explícate mejor' no aplica: la pregunta sigue abierta porque nadie defendió POR QUÉ su línea justifica el cambio de estatus, solo lo asume. Carga devuelta. Framework alguien-vs-algo como PREGUNTA (no premisa) — el coagent afiló mi versión que presuponía el 'quién'.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
-        "outcome_evidence": "the answer you're looking for lies with all the answers combined",
-        "outcome_note": "algo-a-alguien: tras nombrar que las 3 'respuestas' contestaban partes distintas, paso a naturalismo+futility de buena fe ('la respuesta esta en todas combinadas'). Engaged, cordial."
+        "outcome_evidence": "at least 3 people have given very good correct answers",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tone-policing por head-count, sin insultos, volvio con reply substantiva."
       },
       {
         "thread_id": "27330688236588406",
@@ -1688,7 +1702,9 @@
         "their_move": "Buena fe cordial: naturalismo (somos animales evolucionados) + futility (si liberamos -> depredadores/sobrepoblacion -> mas matanza en defensa) + jab \"vegans spread misinfo\" + admira la conversacion abierta.",
         "our_reply_summary": "Compasivo: concede de entrada todo lo empirico (somos animales, ecologia es un lio, no propongo soltar a todos manana) y vuelve al hueso anterior: depredadores/sobrepoblacion explican por que soltar no es plan, evolucion explica como llegamos a comer animales — ninguno explica por que criar mas individuos COMO propiedad es legitimo. Cierra: que hace legitimo traer a un individuo a la existencia ya asignado como propiedad?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "I admire you for having an educated and open conversation",
+        "outcome_note": "naturalismo cordial con sign-off amable, sin conceder la pregunta de propiedad; sin respuesta tras el reply de Bernard."
       }
     ],
     "user_id": "100004662660380",
@@ -1716,7 +1732,9 @@
         "their_move": "Plant-sentience equivalence: las plantas senalizan, emiten sonidos, se anestesian, 'disfrutan musica' (cita PMC) -> ¿no son 'beings' por tu definicion? Intenta colapsar la categoria moral por sentience-creep.",
         "our_reply_summary": "Reply etiquetada (compasivo, buena fe): concede TODA la biologia vegetal sin pelear, devuelve al sujeto — el eje nunca fue cuan sofisticada es la respuesta sino si hay ALGUIEN ahi, un proceso vivo vs alguien para quien la vida ocurre desde adentro. Planteado interrogativo (no afirmacion, evita peticion de principio). Cierra: pig vs blade of grass, ¿mismo tipo de ser? si hay diferencia, ¿que hace a uno un who y al otro un what?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "Are those plants not beings by your definition",
+        "outcome_note": "plant-sentience-creep conceded biologicamente y vuelta a la linea who/what; Martin no respondio, ancla reciente."
       }
     ],
     "user_id": "585361402",
@@ -1738,7 +1756,16 @@
     "threads": [
       "27330688236588406"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-29",
+        "their_move": "Silogismo: no son personas -> no son alguien -> son propiedad (membresia de especie como criterio)",
+        "our_reply_summary": "Nombre que people es etiqueta de especie no criterio; pedi el RASGO (no la etiqueta humano) que hace a alguien no-poseible; paralelismo historico por ESTRUCTURA (declarar clase fuera de la categoria protegida). Sin afirmar animals are people.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
     "user_id": "100054560360296",
     "name": "Annabel Jad",
     "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100054560360296/",
@@ -1770,8 +1797,8 @@
         "our_reply_summary": "Reply etiquetada anclada en su mofa de la dignidad. Giró el insulto: la dignidad SÍ es el punto — la invoca para los suyos y se la roba al no-humano reclasificándolo (livestock->resources->products). Expuso el rename steward (su propia def mete al animal junto a natural resources). Volteó su concesión: admitió fear/curiosity/emotions (marcadores de un alguien con dignidad) y lo archivó como livestock; la pregunta nunca dependió de si entienden la muerte. Cerró al hueso: ¿qué hace legítimo que un alguien con dignidad sea propiedad de otro?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
-        "outcome_evidence": "15h reply: 'there's no argument it's just straight facts. Obviously you don't know what dignity is. Animals don't have dignity... putting a human concept to an animal... They are the Steward of these animals... they don't actually own them. Controlled no. Managed yes... Disposed of no... ignorant and arrogant.'",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: volvió y dobló, no concedió. Re-enactó el someone->something literal (admite fear/curiosity/basic emotions y los archiva como livestock; 'no sense of self / no concept of death -> no interest'). Sostiene el escudo 'steward not owner' y niega la palabra 'dignity' como concepto humano (anthropomorphizing). Subió insulto (ignorant/arrogant/'my darling') + proyectó goalpost ('that wasn't even your question, now you're changing it'). Audiencia, no persuadible: el eje aterriza para el lurker, ella no cede."
+        "outcome_evidence": "In farming You don't own the animal you're the steward.",
+        "outcome_note": "steward/livestock/no-concept-of-death con burla; engancho antes de la escalada posterior."
       },
       {
         "thread_id": "27330688236588406",
@@ -1780,8 +1807,8 @@
         "our_reply_summary": "Reply etiquetada. P1 = defensa personal / contraste de temperamento para el lurker: nombré que el hilo bajó a Bernie / ignorant / my darling / get a dictionary / jokes-between-friends en vez de contestar, que no devolví el insulto porque el respeto no cuesta nada, y que un argumento que vale se sostiene sin el comentario sobre la persona. Luego al hueso: ella describe un individuo que experimenta (fear / curiosity / emotions) y sin principio nuevo lo archiva como \"livestock\" — ese salto sin justificar es el punto; \"steward\" renombra la relación pero no la legitima; la pregunta nunca cambió. Cierre: ¿qué principio hace legítimo que un individuo con sus propias experiencias exista como propiedad de otro, en vez de repetir que es \"livestock\"?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "escalated",
-        "outcome_evidence": "#4 (8h): 'the only reply that has been ignorant is your own... you need a dictionary... Because that is what they are they are livestock. There's no need for a new principle... Again they are not property. And again there is no justification needed.'",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: tras mi reply de defensa personal (insult-seal), volvio (#4, 8h) doblando el sello sin tocar la pregunta de propiedad: 'you need a dictionary', 'you continue to show ignorance', 'they are livestock', 'no need for a new principle, it literally settles the matter', y el remate 'it's only thanks to these animals you get to make such ignorant comments online'. Declara explicito 'there is no justification needed' = se niega a justificar la propiedad. No persuadible: pozo de sello + relabel livestock + relativismo. El marco no aterrizo; ella cerro con insulto, no con argumento."
+        "outcome_evidence": "how ignorant and arrogant you are",
+        "outcome_note": "capa de insulto (ignorant/arrogant/my darling) + goalpost projection + burla publica con Philip."
       },
       {
         "thread_id": "27330688236588406",
@@ -1789,7 +1816,9 @@
         "their_move": "Sello insulto-doblado (16h): ignorant x3 / get a dictionary / no justification needed + steward-not-owner + livestock; taunt a Philip de que Bernard no le responde. Esquivó la pregunta de legitimidad por 3a vez.",
         "our_reply_summary": "Cierre insult-seal corto (119 palabras, no 4o ensayo): el sello esta parado donde deberia ir la respuesta (para el lurker). Volteo su propia evidencia sin importar la conclusion (coagent fix): describe un individuo con experiencias propias y, sin principio nuevo, lo archiva como recurso -> ese salto sin justificar ES la pregunta. Dejo la pregunta de legitimidad UNA vez y fuera.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "escalated",
+        "outcome_evidence": "You continue to show ignorance",
+        "outcome_note": "CHANGE pending->escalated: 3ra evasion de la pregunta de legitimidad con insultos triplicados + taunting via Philip; insult-pit cerrado, no deuda viva de buena fe."
       }
     ],
     "user_id": "100003780189781",
@@ -1818,7 +1847,9 @@
         "their_move": "Stewardship/husbandry como alto moral: cuidar bien y optimizar el peso del animal, se siente bien sobre el well-being y provee con minimo esfuerzo; 1 sano mejor que matar 5-6 flacos.",
         "our_reply_summary": "Compasivo, concesion de entrada: le creo que cuida en serio, pero todo su argumento es sobre el TRATO no el TITULO. Optimised-weight-to-provide dice solo que el animal existe para su beneficio. Un sujeto bien cuidado sigue siendo poseido. Cierre: propiedad vs responsabilidad. Sin body-count, guardrail welfare critico.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "Keeping one creature healthy and full is better than killing five or six",
+        "outcome_note": "husbandry treatment-not-title de buena fe; sin respuesta tras el reply, ancla reciente."
       }
     ],
     "user_id": "1350950105",
@@ -1844,7 +1875,9 @@
         "their_move": "abolition_reductio (buena fe/civil): What makes it not ok for my child to own goldfish? — reto de consistencia, intenta sacar el debate del caso granja a toda tenencia de mascotas.",
         "our_reply_summary": "Reply etiquetada. Mordi el reductio sin abrir el frente de mascotas: concedi la intuicion (ownership de un someone pide justificacion, no desaparece porque el animal sea chico o el dueno un nino) SIN conceder el encuadre — el hilo es sobre criar individuos para que existan como recursos bajo control humano, no un nino con un pez. Respuesta directa: yes, if an animal is a someone rather than a something, ownership deserves an explanation; people-have-always-done-it / its-my-pet no la dan. Cierre devolviendo la pregunta del post.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "What makes it not ok for my child to own goldfish?",
+        "outcome_note": "reductio de consistencia (pet ownership) de buena fe civil; reply de 50 min sin respuesta."
       }
     ],
     "user_id": "904005715",
@@ -1870,7 +1903,9 @@
         "their_move": "domestication_mutualism: Symbiotic relationships. — enmarca cria/granja como relacion simbiotica/mutualista, no propiedad.",
         "our_reply_summary": "Reply etiquetada, corta. Un solo giro sobre simbiosis: es una relacion entre dos partes; lo que pregunto es una relacion donde un lado existe bajo el control del otro, criado para fines humanos desde el inicio — cambiar la etiqueta no responde eso. Si solo se sostiene porque un individuo existe como algo que manejamos, usamos y disponemos, llamarlo simbiosis solo le pone nombre amable. Cierre devolviendo la pregunta del estatus de propiedad.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "Symbiotic relationships.",
+        "outcome_note": "reframe one-line 'symbiotic relationships'; reply de 48 min sin respuesta."
       }
     ],
     "user_id": "1448957098",
@@ -1883,5 +1918,63 @@
     "register": "filo ligero (exponer el error del termino)",
     "what_not_to_do": "NO conceder \"simbiosis\"; exponer que criar-para-matar no es beneficio mutuo. NO welfarista (no \"sufren menos\"); el eje es que un sujeto es poseido y matado, no mutualidad.",
     "profile_url": "https://www.facebook.com/profile.php?id=1448957098"
+  },
+  {
+    "tactics": [
+      "criterio_capacidad_superior",
+      "species_hierarchy"
+    ],
+    "threads": [
+      "27330688236588406"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-29",
+        "their_move": "Criterio = experiencia metafisica, no sintiencia + reductio cerebro-muerto contra la sintiencia",
+        "our_reply_summary": "Pedi definicion operativa de metaphysical experience; casos marginales (bebes/demencia) muestran que el criterio real no es la capacidad; conscious individual vs rock (algo-a-alguien); cierre con la pregunta de propiedad. No mordi el reductio.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "854405343",
+    "name": "Steven Lee Urich",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/854405343/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "El estatus moral va con 'la capacidad de tener una experiencia metafisica', NO con la sintiencia. Voltea los casos marginales contra la sintiencia: 'si las morales se basaran en sentir, seria moralmente bueno matar y comer a un humano cerebro-muerto (que carece de sintiencia)'.",
+    "analisis": "Sustitucion de criterio sofisticada y de bajo costo retorico: elige un criterio ('experiencia metafisica') vago y NO operacionalizado que convenientemente excluye a los animales, y arma el reductio de casos marginales EN REVERSA contra la sintiencia. Alto valor de lurker: ataca el criterio mismo (territorio exacto de la doctrina sensocentrista) y 'experiencia metafisica' no esta definida, asi que la linea que dibuja es arbitraria. El reductio del cerebro-muerto se responde limpio por ortogonalidad: no protegemos al humano vulnerable por una capacidad superior sino por ser/haber sido un sujeto con punto de vista. Sin insultos, argumenta de hecho — persuadible o buena audiencia.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "NUNCA conceder el reductio ('si, al cerebro-muerto si se podria') — usar los casos marginales SOLO para mostrar que el criterio no es la inteligencia, jamas para degradar a esos humanos. NO debatir si los animales tienen 'experiencia metafisica'. NO redactar el eje como dano. Pedir que defina 'experiencia metafisica' como criterio operativo; nombrar que es ortogonal al estatus moral (humanos sin ella lo conservan) y que el criterio es ser un sujeto que siente / una conciencia con intereses. Eje abolicionista: lo que requiere justificacion es poseer a ese sujeto."
+  },
+  {
+    "tactics": [
+      "domestication_mutualism",
+      "naturalismo"
+    ],
+    "threads": [
+      "27330688236588406"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-29",
+        "their_move": "Domesticacion como win-win entre especies (10,000 anos, los animales se quedan felices a ser alimentados)",
+        "our_reply_summary": "Separe describir de justificar; nombre la asimetria (one side determines every term of the relationship) y que la antiguedad explica que algo exista, no que deba continuar; cierre con la pregunta de propiedad. Sin lenguaje cargado.",
+        "framework": "domesticar-eufemismo-dominar",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "100003979186761",
+    "name": "Warren Foster",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100003979186761/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Domesticacion como mutualismo / 'win-win entre especies': hace ~10,000 anos humanos y ciertos animales llegaron a un arreglo donde los animales 'felizmente se quedan' a ser alimentados y cuidados — mas confiable que cazar, beneficioso para ambas especies.",
+    "analisis": "El mito de la domesticacion-como-contrato-feliz: enmarca una relacion de control total + matanza como un win-win voluntario. Sentimentaliza la propiedad y oculta que una parte es criada, poseida y matada SIN consentimiento. El 'win-win' exige que el animal 'acepte' ser comido; no hay simetria — un lado obtiene comida/refugio, el otro un cuchillo. Suena folksy y le gusta al lurker que prefiere la historia de la 'sociedad natural', por eso necesita nombrarse (la asimetria + el consentimiento ausente), no pelearse con body-count. El arreglo describe lo que paso, no justifica el estatus de propiedad.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "NO argumentar bienestar/dano ni pelear si el trato es bueno. Nombrar el consentimiento ausente y la asimetria (un lado termina muerto): el 'win-win' esconde que el animal sigue siendo propiedad de la que se dispone a voluntad. Separar describir (paso un arreglo) de justificar (el estatus de propiedad). NO conceder que es un intercambio entre iguales. Eje: poseer a un sujeto que siente sigue sin justificarse aunque lo alimentes."
   }
 ]

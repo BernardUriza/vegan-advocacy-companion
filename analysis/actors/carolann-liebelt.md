@@ -107,7 +107,7 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 - **Su jugada:** animal exploitation morally justified / part of ecosystem / biologically designed
 - **Nuestra respuesta:** Concede biología total. Separa 'omnívoro = hecho de digestión' de 'animals are food = juicio de valor que estás metiendo en la definición'. Cierra con UNA pregunta: capacidad no implica derecho.
 
-### Hilo `27341517928804691` — 2026-06-16 · outcome: **silent**
+### Hilo `27341517928804691` — 2026-06-16 · outcome: **engaged**
 - **Su jugada:** Being an omnivore means we NEED nutrients from both plants and animals. Supplements prove the diet is incomplete.
 - **Nuestra respuesta:** Nombró el cambio de carril (moral status → supervivencia). Concedió biología. Clavó B12-de-bacterias-no-de-vacas + ganado también suplementado. Devolvió al hueso: necesidad de supervivencia ≠ su realidad (tiene súper lleno).
 

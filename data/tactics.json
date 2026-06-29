@@ -439,5 +439,18 @@
       "100003780189781"
     ],
     "fallacy_type_id": "category_error"
+  },
+  {
+    "id": "criterio_capacidad_superior",
+    "name": "Criterio de Capacidad Superior / Reductio de Casos Marginales",
+    "category": "fallacy",
+    "definition": "Sustituye la sintiencia por una capacidad superior (experiencia metafisica, sapiencia, razon, autoconciencia, concepto de muerte) como el criterio del estatus moral, para excluir a los animales — y a veces voltea el argumento de casos marginales CONTRA la sintiencia ('si el criterio fuera sentir, seria moral comerse a un humano cerebro-muerto que no siente').",
+    "canonical_counter": "Esa capacidad es ORTOGONAL al estatus moral: humanos que NO la tienen (bebes, demencia avanzada, cerebro-muertos) conservan el estatus completo — casos marginales / sobreposicion de especies. Lo unico relevante es ser un sujeto que siente / una conciencia con intereses. El reductio del cerebro-muerto se desactiva igual: el criterio es la sintiencia/ser una conciencia, no una capacidad superior. Ademas 'experiencia metafisica' no esta definida — pedir el criterio operativo.",
+    "register": "filo",
+    "what_not_to_do": "NUNCA aceptar el reductio degradando al humano cerebro-muerto/vulnerable ('a ese si se podria') — los casos marginales se usan para mostrar que el criterio NO es la inteligencia, JAMAS para degradar a esos humanos. NO pelear si los animales tienen o no esa capacidad. NO redactar el eje como dano. Eje sensocentrico: el criterio es sentir/ser una conciencia con intereses, no una capacidad superior.",
+    "actors_known": [
+      "854405343"
+    ],
+    "fallacy_type_id": null
   }
 ]
