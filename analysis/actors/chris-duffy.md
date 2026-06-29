@@ -86,4 +86,8 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** Retrocedio de "el cerdo ES propiedad, simple" a condicion: ownership legitimate IF accommodate needs (fisica y mentalmente 100%); si no puedes, no es legitimo y deben quitarte los animales. (cuida cabras)
 - **Nuestra respuesta:** Compasivo: reconoce que cuida animales en serio, pero su criterio responde el TRATO no el TITULO — ya concedio que la propiedad necesita justificarse y puso toda la justificacion en cuan bien tratas a lo que posees. Buen cuidado vuelve la propiedad mas amable, no explica por que el titulo es legitimo. Cierra: que da al dueno ese estatus sobre el animal de entrada?
 
+### Hilo `27468645086091974` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** Conflacion propiedad-legal con justificacion moral + cierre hostil/sello: NSW biosecurity law exige destruir si no son propiedad; 'I own my goats, otherwise you could come claim them'; '#11: do you understand now? I'm going to make sure this silly concept is squashed as it's utterly absurd and ridiculous'.
+- **Nuestra respuesta:** Reply etiquetada, corta. Una linea calmada (no mordi el absurd/ridiculous): no discrepamos sobre lo que la ley DICE sino sobre lo que la ley JUSTIFICA. Su punto de la ley devuelto: que la ley pueda ordenar destruir al animal PORQUE es propiedad muestra que el estatus de propiedad es lo que licencia matarlo — describe el sistema, no justifica el estatus. 'The law says so' no responde la pregunta del post. Cierre devolviendo el estatus de propiedad.
+
 _Hilos: march-property, 27319402757682875_

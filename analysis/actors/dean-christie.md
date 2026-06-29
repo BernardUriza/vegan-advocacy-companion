@@ -42,8 +42,12 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Pregunta genuina de buena fe: estas diciendo que todo ser con experiencia subjetiva no puede ser tratado como propiedad? tu vista es binaria? pide el principio que traza la linea ownable/not-ownable.
 - **Nuestra respuesta:** Conteste de frente (compasivo, premio su buena fe): el TITULO de propiedad sobre un sujeto con punto de vista propio es lo que pide justificacion, no la inteligencia ni un umbral; los casos marginales no cambian la pregunta. Le devolvi: que caracteristica vuelve legitima la propiedad?
 
-### Hilo `27468645086091974` — 2026-06-28 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-06-28 · outcome: **engaged**
 - **Su jugada:** Test del cerdo salvaje (buena fe): si un cerdo salvaje no es de nadie, ¿matarlo es aceptable? Binario forzado — no->tu posición es harm no propiedad; sí->¿qué tiene de especial la propiedad si la experiencia subjetiva es idéntica en ambos casos?
 - **Nuestra respuesta:** Reply etiquetada (buena fe, sin filo). El coagent rechazó conceder la primera asta; en su lugar distinción FUNDAMENTO vs OBJETO: el fundamento de la posición es el estatus (un alguien con punto de vista, no un objeto), el objeto del debate en este hilo sigue siendo la PROPIEDAD (la institución que se defiende). Cerdo salvaje y de granja = mismo tipo de individuo; lo que cambia es la RELACIÓN que el humano establece (criado bajo control para existir como poseído/dispuesto). Necesidad/supervivencia al final como contraste secundario: la granja industrial no es supervivencia, es propiedad. Cierre: ¿qué principio hace legítimo que un individuo exista como propiedad de otro?
+
+### Hilo `27468645086091974` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** Buena fe, narrowing + CONCESION: 'we have narrowed the disagreement considerably; I also agree pigs have a point of view and deserve moral consideration', pero RELOCALIZA la cuestion del estatus al trato: 'ownership isnt the morally decisive issue; es relacion legal/social; su justificacion depende del trato/razones/consecuencias'.
+- **Nuestra respuesta:** Reply etiquetada (buena fe, agradeci el narrowing). Ancle en SU concesion (no reintroducir mi conclusion): ya acepto que el cerdo tiene punto de vista; entonces mover la pregunta del estatus al trato responde COMO se ejerce la propiedad, no POR QUE el estatus de owner es legitimo. Separe 'como lo posees' (trato) de 'si puede ser poseido' (estatus). Cierre devolviendo: antes de hablar del trato, que hace que un sujeto con punto de vista propio pueda pertenecer legitimamente a otro?
 
 _Hilos: 27468645086091974_
