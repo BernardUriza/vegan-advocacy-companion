@@ -20,6 +20,35 @@ biocéntrico y **impreciso**: deja la puerta abierta al tu-quoque de plant-senti
 criterio real es la **sintiencia**. No se editó lo ya posteado; la regla aplica de
 aquí en adelante.
 
+## La doctrina precisa (fuente canónica: respuestasveganas.org)
+
+Fuente: [resumen de ética y veganismo](https://respuestasveganas.org/resumen-etica-veganismo/).
+El sensocentrismo no es una preferencia de vocabulario — es la base ética, con una
+definición exacta que arma el por qué:
+
+- **El criterio es la sintiencia, no la vida.** *"La Ética es sensocentrista porque
+  la Regla de Oro se origina en los intereses de TODOS los seres sintientes"* — no
+  en estar vivo, no solo en los humanos (eso es antropocentrismo/especismo).
+- **Sintiencia = capacidad de experimentar dolor y placer**, y eso *"lo siente
+  ALGUIEN… implica reconocer la existencia de subjetividad y por tanto la existencia
+  de conciencia"*. Sentir implica un **sujeto** (subjetividad/conciencia), cuyo
+  sustrato material es un **cerebro/sistema nervioso**.
+- **Las plantas quedan fuera CON fundamento, no por hand-wave:** *"las plantas no
+  tienen cerebro"* → sin sustrato neurológico no hay subjetividad, no hay alguien,
+  no hay intereses que frustrar. Por eso el flanco plant-sentience es falso: una
+  planta no es un sujeto, no porque "no esté viva" sino porque **no siente**.
+- **El eje operativo son los INTERESES:** *"la satisfacción de intereses es el bien
+  y la frustración de intereses es el mal"*. El mal es **frustrar los intereses de
+  un sujeto que siente** — ahí conecta con [[abolitionist-framing]]: tratar a ese
+  sujeto como propiedad/recurso es precisamente frustrar sus intereses por el
+  beneficio de otro.
+
+Implicación para los replies: el reemplazo de "living being" no es solo "sentient
+being" como etiqueta — es **el sujeto que siente y tiene intereses**. La pregunta
+del marco más fuerte: *"¿qué justifica frustrar los intereses de un sujeto que siente
+—que teme, que busca seguir vivo— tratándolo como propiedad?"*. Eso es preciso,
+cierra el flanco vegetal, y es lo que el lurker ya intuye.
+
 ## La distinción
 
 | Biocéntrico (PIERDE — kill-list) | Sensocéntrico (el eje) |
