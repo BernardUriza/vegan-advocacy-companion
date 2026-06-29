@@ -425,5 +425,19 @@
       "585361402"
     ],
     "fallacy_type_id": "false_equivalence"
+  },
+  {
+    "id": "ecocentrismo_conservacion",
+    "name": "Ecocentrism / Conservation over the individual",
+    "category": "fallacy",
+    "definition": "Shifts the moral unit from the sentient INDIVIDUAL to an abstraction — 'the species', 'the ecosystem', 'nature', 'the balance', 'stewardship of the herd' — so individual animals can be bred, managed or killed for 'conservation', 'ecological health' or 'the food web'. In vegan debates: 'farming is part of the ecosystem', 'we're stewards keeping the balance', 'it's the circle of life', 'invasive species must be culled'.",
+    "canonical_counter": "The moral unit is the concrete sentient individual, not the abstraction. A species or an ecosystem doesn't feel anything — only an individual does. 'Conservation' or 'balance' that kills a someone for the sake of a collective is the category error: you can't owe a debt to an abstraction by harming the only ones who can actually be harmed. And farming isn't an ecosystem in balance — it's a human industry of massive forced breeding, the opposite of leaving nature alone. Caring about a concrete animal who can suffer and caring about the environment aren't in tension; the conflict only appears once you let the abstraction outrank the individual who feels.",
+    "register": "filo",
+    "what_not_to_do": "Don't accept the 'the environment OR the animal' framing — animalism supports environmental care; reject the dichotomy. Don't get pulled into ecology/population science. Don't argue the species/ecosystem doesn't matter at all — argue it isn't a SUBJECT, so it can't bear the interest that grounds the wrong. Keep the unit on the concrete individual who feels. Anchors to [[sentiocentrism-not-biocentrism]]: the criterion is a sentient subject's interests, and the bearer is the individual, never the collective.",
+    "source": "https://respuestasveganas.org/veganismo-ecologismo/",
+    "actors_known": [
+      "100003780189781"
+    ],
+    "fallacy_type_id": "category_error"
   }
 ]

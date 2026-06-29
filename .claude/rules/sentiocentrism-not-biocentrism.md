@@ -51,6 +51,15 @@ definición exacta que arma el por qué:
   sienten"**. NO es solo "sentient being" — "seres con una conciencia" nombra el
   mismo sujeto y a veces aterriza mejor con el lurker.
 
+- **La unidad moral es el INDIVIDUO concreto, no la especie/ecosistema.** Fuente:
+  [veganismo vs ecologismo](https://respuestasveganas.org/veganismo-ecologismo/).
+  Una especie o un ecosistema no siente nada — solo un individuo siente. El portador
+  del interés que funda el deber es **este sujeto que siente**, nunca la abstracción
+  colectiva. Por eso "conservación/equilibrio/stewardship" que mata individuos por la
+  especie/el ecosistema es un **error de categoría**: le cobra una deuda a una
+  abstracción dañando a los únicos que pueden ser dañados. (Táctica
+  `ecocentrismo_conservacion` en `data/tactics.json` — su counter.)
+
 Implicación para los replies: el reemplazo de "living being" no es solo "sentient
 being" como etiqueta — es **el sujeto que siente y tiene intereses**. La pregunta
 del marco más fuerte: *"¿qué justifica frustrar los intereses de un sujeto que siente

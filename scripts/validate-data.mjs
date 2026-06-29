@@ -46,6 +46,7 @@ for (const a of actors) {
 // 4. fallacy_type_id, if set, is a known backend fallacy id
 const KNOWN_FALLACIES = new Set([
   'appeal_to_tradition', 'appeal_to_nature', 'ad_hominem', 'straw_man', 'false_equivalence',
+  'category_error',
 ]);
 for (const t of tactics) {
   if (t.fallacy_type_id && !KNOWN_FALLACIES.has(t.fallacy_type_id)) {

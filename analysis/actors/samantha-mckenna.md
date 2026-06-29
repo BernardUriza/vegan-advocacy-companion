@@ -24,6 +24,8 @@ Mala fe con paragraph sustancial. Relabela la propiedad como "stewardship" (prin
   - _Contra:_ Ask for the criterion: 'What makes human interests categorically outweigh animal interests? Whatever criterion you give — sentience, capacity to suffer, social bonds, language — either also applies to some animals or fails to draw the line you need. The hierarchy needs an argument, not an assertion.'
 - **Selective Data Dump** (`data_dump_selectivo`) — Floods with data points that are real but cherry-picked and framed to support a pre-determined conclusion. Absolute numbers vs per-capita trends. Stock price vs category market. No causal analysis.
   - _Contra:_ Concede what's true in the data, then expose the frame: 'Yes, Beyond Meat's stock crashed — that's one company with execution problems. The plant-based category grew 6% that year.' Don't match dump for dump. One incisive concede-and-reframe.
+- **Ecocentrism / Conservation over the individual** (`ecocentrismo_conservacion`) — Shifts the moral unit from the sentient INDIVIDUAL to an abstraction — 'the species', 'the ecosystem', 'nature', 'the balance', 'stewardship of the herd' — so individual animals can be bred, managed or killed for 'conservation', 'ecological health' or 'the food web'. In vegan debates: 'farming is part of the ecosystem', 'we're stewards keeping the balance', 'it's the circle of life', 'invasive species must be culled'.
+  - _Contra:_ The moral unit is the concrete sentient individual, not the abstraction. A species or an ecosystem doesn't feel anything — only an individual does. 'Conservation' or 'balance' that kills a someone for the sake of a collective is the category error: you can't owe a debt to an abstraction by harming the only ones who can actually be harmed. And farming isn't an ecosystem in balance — it's a human industry of massive forced breeding, the opposite of leaving nature alone. Caring about a concrete animal who can suffer and caring about the environment aren't in tension; the conflict only appears once you let the abstraction outrank the individual who feels.
 
 ## Counter-arsenal
 
@@ -67,6 +69,8 @@ Mala fe con paragraph sustancial. Relabela la propiedad como "stewardship" (prin
   - `mensaje-importa-formas-determinantes` → _deploy as:_ auto-disciplina-del-activista
   - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
   - `hablamos-en-nombre-de-los-demas-animales` → _deploy as:_ auto-disciplina-del-activista
+- **Ecocentrism / Conservation over the individual** (`ecocentrismo_conservacion`)
+  - `filtro-especie-vs-individuo` → _deploy as:_ marco
 
 ## Qué NO hacer
 
