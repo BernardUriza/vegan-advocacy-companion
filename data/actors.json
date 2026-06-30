@@ -657,6 +657,14 @@
         "outcome": "goalpost",
         "outcome_evidence": "turn: 'We don't need to justify anything simply because you're demanding that we do. No justification needed. It's our choice.'",
         "outcome_note": "algo-a-alguien-sujeto-derecho: tras conceder la variación cultural, se retiró a 'we don't need to justify anything... no justification needed, it's our choice' — rechazo a justificar, NO concesión. Mueve el poste de 'es justificable' a 'no te debo justificación'. Pozo: la negativa a justificar es ella misma exponible para el lurker, pero rinde poco."
+      },
+      {
+        "thread_id": "27496390256650790",
+        "date": "2026-06-30",
+        "their_move": "Goalpost (\"no tenemos que justificar nada, no te debo defensa, es nuestra decisión\") + antropoespecismo (\"somos la única especie capaz de asignar valor moral\") + caso marginal del comatoso (\"consciousness alone no determina si está mal comer\")",
+        "our_reply_summary": "Reply etiquetada CORTA (pozo_sin_fondo, valor 100% lurker). \"No justification needed\" es la respuesta misma que el lurker lee cuando no se puede defender el título. Asignar valor moral no es lo mismo que ser lo único que lo TIENE (un juez dicta veredictos sin ser el único en la sala que importa). El caso del comatoso corta al revés: lo protegemos porque la pregunta es de subjetividad/estatus, no porque \"quien tiene el poder decide\". Cierre: ¿qué justifica tratar a un sujeto consciente como propiedad?",
+        "framework": "antropoespecismo",
+        "outcome": "pending"
       }
     ]
   },
@@ -753,6 +761,14 @@
         "outcome": "goalpost",
         "outcome_evidence": "turn (7h): 'if you don't own any animals or care for other living beings, what right do you have to judge or question those who do? Owning animals is a lifestyle... You as a person who refuses to answer that question...'",
         "outcome_note": "algo-a-alguien-sujeto-derecho: tras agotar el carril legal (NSW biosecurity/property), Chris abandono la pregunta de justificacion y se replego al standing/tu-quoque — 'what right do you have to judge or question those who do if you don't own any animals... you refuse to answer'. Mueve el poste de 'la propiedad es justificable' a 'no tienes legitimidad para preguntar'. Para el lurker: la credencial no es requisito para cuestionar una institucion."
+      },
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-06-30",
+        "their_move": "Standing/tu-quoque + sello-insulto: \"¿qué derecho tienes a juzgar si no posees animales?\" + apodo \"Bernie\" + \"eres de tercer mundo\" + \"¿escribes en español y lo metes a un traductor?\"",
+        "our_reply_summary": "Reply etiquetada. El standing no es el tema: no hace falta poseer esclavos para preguntar si poseer personas se justifica, ni operar una fábrica para preguntar si contamina; la pregunta se sostiene por sus méritos. Mis circunstancias no inciden (diez cerdos o ninguno, la pregunta de la propiedad sigue abierta); pasar de defender la práctica a cuestionar mi legitimidad es señal de que la práctica se defiende peor. Capa insult-seal FRÍA (doctrina insult-seal-defense, afinada por el coagent): el \"Bernie\", el comentario de país y el del traductor son etiquetas, no argumentos — no ofendido, pero no hacen el trabajo que su posición necesita; desvían del reclamo a la persona. Concedí que cuida sinceramente a sus cabras (buena fe, sin martillo moral). Cierre: ponme a un lado por completo, ¿qué justifica el título mismo de poseer a un sujeto consciente?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ]
   },
@@ -1174,6 +1190,14 @@
         "date": "2026-06-29",
         "their_move": "Reto al criterio: justifica por que la sintiencia es decisiva (la asertas); no contestas el line-drawing practico; mi criterio = obligaciones especiales a mi propia especie",
         "our_reply_summary": "Tome su reto de frente. Nombrar una frontera (especie) no es justificarla — es el paso que le pido. Mi criterio mira al individuo (un sujeto consciente con intereses desde su punto de vista), el suyo a la categoria; un humano sin las capacidades que valora sigue contando (casos marginales) => el trabajo real lo hace que haya alguien ahi, no el label ni la inteligencia. Concedi casos limite sin ceder los claros. Volvi al titulo de propiedad.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "4587084521560658",
+        "date": "2026-06-30",
+        "their_move": "Exige el principio: \"asertaste que la sintiencia es decisiva, no la justificaste; describiste la sintiencia, no la fundaste; back where we started\"",
+        "our_reply_summary": "Reply etiquetada. Di el principio (no la aserción): la sintiencia es decisiva porque vuelve \"ser tratado como propiedad\" algo que le pasa A ALGUIEN — a una roca/tractor no le quitas nada al poseerlo, no hay nadie para quien cuente; un sujeto sintiente es el único caso con alguien con un interés en juego. La membresía de especie no hace ese trabajo (categoría biológica; un humano con solo sintiencia bruta sigue sin ser poseíble; la especie sola, sin sujeto, protegería un cuerpo sin actividad cerebral igual que a una persona, cosa que nadie cree). Concedí los bordes (insectos/ostras) pero la incertidumbre del borde no disuelve el caso claro (un cerdo no es roca/tractor/repollo). Cierre: ¿qué justifica volver propiedad a ese alguien?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }
@@ -1744,6 +1768,14 @@
         "date": "2026-06-30",
         "their_move": "CRUX buena fe: sentience-relevant CONCEDIDO; pide por que la sintiencia POR SI SOLA hace la propiedad inherentemente ilegitima y no solo restringida (analogia padres/tutores: autoridad legitima existe, por que descalificar especificamente la PROPIEDAD).",
         "our_reply_summary": "Reply etiquetada. Derive (no restati): tutela = fiduciaria (beneficiario=el pupilo, no transferible, no recurso); propiedad = titulo sobre alguien tratado como algo disponible para los fines del dueno (criado/transferido/vendido/dispuesto). La sintiencia descalifica la PROPIEDAD especificamente porque no hay cosa a la que el titulo se adhiera. Cierre: que justifica volver a un conscious subject propiedad transferible en vez de admitir que toda autoridad legitima seria fiduciaria.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-06-30",
+        "their_move": "CRUX buena fe: el threshold moral es punto de vista/experiencia subjetiva; ¿son los humanos solo otro ser sintiente en esa categoría, o hay características adicionales moralmente relevantes? (donde cree que diferimos)",
+        "our_reply_summary": "Reply etiquetada. Concedí de frente las capacidades humanas extra (lenguaje, planeación abstracta, agencia moral) pero las ubiqué en OTRA pregunta (responsabilidades/derechos: votar, consentir), no en la de propiedad. Prueba de casos marginales: un bebé o discapacidad cognitiva severa carece de esas capacidades y SIGUE sin poder ser propiedad transferible -> no son ellas las que bloquean la propiedad; lo que la bloquea es que hay un sujeto con punto de vista. Las capacidades gradúan lo que se DEBE, no abren la puerta a poseer. Si fuera solidaridad de especie, el trabajo lo hace la membresía, no las capacidades. Cierre: ¿qué volvería poseíble a un cerdo consciente, si no esas capacidades cuya ausencia en algunos humanos no los vuelve poseíbles?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }

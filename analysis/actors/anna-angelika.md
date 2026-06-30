@@ -123,4 +123,8 @@ No responder al insulto en su nivel. No defender a Beyond Meat específicamente.
 - **Su jugada:** Relativismo cultural: diferentes culturas valoran distinto (India/Cuba/Islam); that choice is yours (pet pig o bacon)
 - **Nuestra respuesta:** Conced la variacion cultural (cierto); pero describe actitudes, no las justifica, y la variacion misma muestra que la linea es convencion no algo del animal; that-choice-is-yours re-afirma la autoridad reclamada; devolvi: por que esa autoridad debe existir sobre alguien con punto de vista.
 
+### Hilo `27496390256650790` — 2026-06-30 · outcome: **pending**
+- **Su jugada:** Goalpost ("no tenemos que justificar nada, no te debo defensa, es nuestra decisión") + antropoespecismo ("somos la única especie capaz de asignar valor moral") + caso marginal del comatoso ("consciousness alone no determina si está mal comer")
+- **Nuestra respuesta:** Reply etiquetada CORTA (pozo_sin_fondo, valor 100% lurker). "No justification needed" es la respuesta misma que el lurker lee cuando no se puede defender el título. Asignar valor moral no es lo mismo que ser lo único que lo TIENE (un juez dicta veredictos sin ser el único en la sala que importa). El caso del comatoso corta al revés: lo protegemos porque la pregunta es de subjetividad/estatus, no porque "quien tiene el poder decide". Cierre: ¿qué justifica tratar a un sujeto consciente como propiedad?
+
 _Hilos: 27335635946059556, 27363745576581926_
