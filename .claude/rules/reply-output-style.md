@@ -127,6 +127,34 @@ adelante** si llevás varios párrafos sin dirigirte a la persona y necesitás
 re-anclar. Si no hace falta, no aparece en el cuerpo. El style-gate (etapa 4)
 **borra cualquier vocativo inicial** antes de postear.
 
+## Afirmativo y contundente — NUNCA "negar-luego-afirmar" (regla dura, 2026-06-30)
+
+El "no es X, es Y" / "isn't X — it's Y" / "X, not Y" como pivote retórico es un
+**AI-tell** y **se lee aburrido**. Construir una frase negando primero la versión
+equivocada y afirmando después la correcta suena a máquina y le quita filo al
+punto. Bernard, 2026-06-30: *"otro guard duro que nota que es IA y se lee aburrido
+es cuando niegas y luego afirmas. Nunca lo hagas."*
+
+El ejemplo que la originó (de un draft posteado a Michael Jenkins):
+
+> ❌ `That isn't a neutral definition — it's the point in question set up as the entry fee.`
+> ✅ `You're walking into the point in question for free and calling it a definition.`
+
+La forma correcta es **afirmativa y contundente**: dí lo que ES, directo, sin la
+muleta del "no es A". El golpe gana fuerza cuando no lo amortiguás con una
+negación previa.
+
+- `It's not just authority with limits. It's a title over…` → `It's a title over…` /
+  `Ownership is a different kind of relation altogether.`
+- `there's no thing for a title to attach to — there's a subject` →
+  `a title can only attach to a thing; here you have someone.`
+- `fiduciary, not proprietary` → `the only legitimate authority here is fiduciary.`
+
+NO confundir con la **concesión-y-redirección** (la jugada del marco: "eso es
+cierto, y no toca el título"), que SÍ es humana y se conserva. Lo prohibido es el
+**pivote definicional por negación** ("no es A, es B") como forma de afirmar. El
+style-gate (etapa 4) lo caza y reformula a afirmativo ANTES de postear.
+
 ## La voz (mecánica, de las 16 del coagent + ajustes de Bernard)
 
 | Dimensión | Regla |
@@ -229,7 +257,12 @@ el criterio de quién-cuenta): somos SENSOCENTRISTAS — el criterio es la sinti
 no la vida; "living" abre el flanco plant-sentience. El sujeto se nombra "sentient
 being / a subject who feels / alguien con experiencias" (ver
 [[sentiocentrism-not-biocentrism]]). La posesiva ("its own life") está OK. El
-style-gate (`biocentricAxis`) lo frena ANTES de postear.
+style-gate (`biocentricAxis`) lo frena ANTES de postear. · **negar-luego-afirmar
+como pivote** ("no es X, es Y" / "isn't X — it's Y" / "X, not Y" para definir):
+AI-tell que se lee aburrido; decir lo que ES, afirmativo y contundente, sin la
+muleta de la negación previa (ver "Afirmativo y contundente"). NO confundir con
+concesión-y-redirección (esa se conserva). El style-gate lo reformula a afirmativo
+ANTES de postear.
 
 ## Pre-post check (lo ejecuta etapa 4)
 
