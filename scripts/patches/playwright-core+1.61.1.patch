@@ -1,0 +1,16 @@
+diff --git a/node_modules/playwright-core/lib/coreBundle.js b/node_modules/playwright-core/lib/coreBundle.js
+index 7d8468f..ab532b9 100644
+--- a/node_modules/playwright-core/lib/coreBundle.js
++++ b/node_modules/playwright-core/lib/coreBundle.js
+@@ -37820,7 +37820,10 @@ var init_crBrowser = __esm({
+         if (targetInfo.type === "browser")
+           return;
+         const session2 = this._session.createChildSession(sessionId);
+-        assert(targetInfo.browserContextId, "targetInfo: " + JSON.stringify(targetInfo, null, 2));
++        if (!targetInfo.browserContextId) {
++          session2.detach().catch(() => {});
++          return;
++        }
+         let context2 = this._contexts.get(targetInfo.browserContextId) || null;
+         if (!context2) {
+           context2 = this._defaultContext;
