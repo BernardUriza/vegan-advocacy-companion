@@ -105,4 +105,8 @@ NO pelear el body-count ni el "welfare mejora" (concederlo: mejor trato no cambi
 - **Su jugada:** Rechazo analogia esclavitud: animals != humans; slavery was keeping humans like animals; keeping animals like animals no es dilema
 - **Nuestra respuesta:** Conced cerdo!=humano (no es el reclamo); la analogia es por ESTRUCTURA (poseer a un sujeto como cosa), no por igualar especies; keeping-animals-like-animals da por hecho lo que se pregunta; devolvi: por que pertenecer a otra especie justifica poseer a alguien con punto de vista.
 
+### Hilo `27496390256650790` — 2026-06-30 · outcome: **pending**
+- **Su jugada:** Utilidad instrumental como (pseudo)justificacion: "we literally keep cats to kill for us, they dont taste good; or eat what we cant and turn it into what we can; or grow to 300lb in a year" — enumera usos para mostrar que el uso no es solo gusto.
+- **Nuestra respuesta:** Reply etiquetada (filo, audiencia). Concedi TODO el dato instrumental (gatos cazan plagas, rumiantes convierten pasto, crecimiento rapido) sin pelearlo. Cada punto mide la utilidad del animal PARA NOSOTROS (tool/converter/worker/product/resource) — explica por que los mantenemos, no que da el titulo para poseerlos. Un tractor se evalua entero por utilidad porque no hay nadie adentro; con un sujeto sintiente hay alguien con punto de vista, y la pregunta de propiedad hay que contestarla, no saltarla. Valor-para-nosotros != propiedad legitima. Cierre: la utilidad explica la practica; que justifica el titulo mismo de tratar a un sujeto consciente como propiedad porque nos es util?
+
 _Hilos: 27395909046698912, 27405978672358616_
