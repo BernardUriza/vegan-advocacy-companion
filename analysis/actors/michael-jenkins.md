@@ -50,8 +50,12 @@ No debatir si las plantas sienten, no competir en body-count, no defender el con
 - **Su jugada:** Pedanteria someone-vs-it (conteo de pronombres en mi post) + deflexion crop-deaths/plantas (pimientos con defensas).
 - **Nuestra respuesta:** Conced el pronombre y que la cosecha mata seres (no mueve el eje), nombr que un sujeto lo es por su perspectiva no por mi gramatica, y que la planta no es poseida/criada como propiedad (campo != granja). Invert la carga sobre el status.
 
-### Hilo `27330688236588406` — 2026-06-28 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-06-28 · outcome: **goalpost**
 - **Su jugada:** Crops-bred flip (los cultivos TAMBIEN se crian) + someone solo para personas + acusa de cambiar definiciones.
 - **Nuestra respuesta:** Filo ligero: crops-bred no toca el eje, los cultivos no son POSEIDOS como sujetos; nunca fue criado-para-existir sino poseido-como-un-quien. Quien/que es una distincion ordinaria que todos usamos (correccion del coagent: no afirmar que el lo dice de su perro), no un truco de diccionario. Cierre: cual es el criterio que pone al cerdo del lado que?
+
+### Hilo `27330688236588406` — 2026-06-30 · outcome: **pending**
+- **Su jugada:** Cierre definicional/petitio (32m): it is a dictionary dispute, someone solo aplica a personas, until you accept that there is no point discussing the rest.
+- **Nuestra respuesta:** Reply etiquetada. Expuse el petitio: decir que someone solo aplica a humanos no zanja la disputa, la asume; el rasgo (no la etiqueta humano) es lo que falta nombrar. Una roca no tiene punto de vista, un cerdo si; pedir aceptar la conclusion antes de discutir es ponerla como precio de entrada. Cierre: que rasgo, fuera de la especie, vuelve a un cerdo con punto de vista un something que puede ser propiedad.
 
 _Hilos: 27330688236588406_

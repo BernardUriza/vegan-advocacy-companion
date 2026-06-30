@@ -654,7 +654,9 @@
         "their_move": "Relativismo cultural: diferentes culturas valoran distinto (India/Cuba/Islam); that choice is yours (pet pig o bacon)",
         "our_reply_summary": "Conced la variacion cultural (cierto); pero describe actitudes, no las justifica, y la variacion misma muestra que la linea es convencion no algo del animal; that-choice-is-yours re-afirma la autoridad reclamada; devolvi: por que esa autoridad debe existir sobre alguien con punto de vista.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "turn: 'We don't need to justify anything simply because you're demanding that we do. No justification needed. It's our choice.'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras conceder la variación cultural, se retiró a 'we don't need to justify anything... no justification needed, it's our choice' — rechazo a justificar, NO concesión. Mueve el poste de 'es justificable' a 'no te debo justificación'. Pozo: la negativa a justificar es ella misma exponible para el lurker, pero rinde poco."
       }
     ]
   },
@@ -1615,9 +1617,17 @@
         "their_move": "Crops-bred flip (los cultivos TAMBIEN se crian) + someone solo para personas + acusa de cambiar definiciones.",
         "our_reply_summary": "Filo ligero: crops-bred no toca el eje, los cultivos no son POSEIDOS como sujetos; nunca fue criado-para-existir sino poseido-como-un-quien. Quien/que es una distincion ordinaria que todos usamos (correccion del coagent: no afirmar que el lo dice de su perro), no un truco de diccionario. Cierre: cual es el criterio que pone al cerdo del lado que?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
-        "outcome_evidence": "crops ARE bred into existence",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: crops-bred flip + 'someone solo para personas'; Bernard responde que los cultivos no son poseidos como sujetos; reply de 21h sin re-respuesta."
+        "outcome": "goalpost",
+        "outcome_evidence": "turn (32m): 'it is a dictionary dispute since you lot keep using someone to apply to animals when it only applies to people. Until you accept that fact, there's no point in discussing the rest.'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: dobló al cierre definicional — 'it is a dictionary dispute, someone only applies to people, until you accept that there's no point discussing the rest'. Petitio puro: hace de su conclusión (someone=solo personas) la precondición para seguir. Para el lurker: la 'disputa de diccionario' ES la pregunta que se está rogando."
+      },
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-30",
+        "their_move": "Cierre definicional/petitio (32m): it is a dictionary dispute, someone solo aplica a personas, until you accept that there is no point discussing the rest.",
+        "our_reply_summary": "Reply etiquetada. Expuse el petitio: decir que someone solo aplica a humanos no zanja la disputa, la asume; el rasgo (no la etiqueta humano) es lo que falta nombrar. Una roca no tiene punto de vista, un cerdo si; pedir aceptar la conclusion antes de discutir es ponerla como precio de entrada. Cierre: que rasgo, fuera de la especie, vuelve a un cerdo con punto de vista un something que puede ser propiedad.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "user_id": "100000547865199",
@@ -1718,6 +1728,16 @@
         "date": "2026-06-30",
         "their_move": "Round 2 buena fe (EL CRUX): no es membresia de especie sino capacidades (sapience/autonomia/agencia/reciprocidad) las moralmente relevantes a si la propiedad es apropiada; concede que sentience es relevante pero pide el principio que va de \"es sintiente\" a \"propiedad inherentemente impermisible\", no solo a \"obligaciones morales bajo constraints apropiadas\".",
         "our_reply_summary": "Conteste SU pregunta exacta: el principio es que un sujeto sintiente es alguien con vida experimentada desde adentro; la propiedad es la relacion que coloca al ser dentro de los fines de otro como recurso. Las \"appropriate constraints\" no responden: presuponen el titulo (que un sujeto PUEDE ser propiedad), que es lo que pido justificar. Las capacidades gradúan lo que se DEBE, no quien puede ser poseido (bebe/discapacidad cognitiva severa no abren la puerta a propiedad). La carga cae sobre quien defiende el titulo. Draft del AGENTE NUEVO v2 (coagent), con su critica Evaluador.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "engaged",
+        "outcome_evidence": "turn: 'I'm asking why sentience, by itself, is sufficient to make ownership inherently illegitimate. Those are different claims.'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: buena fe sostenida y de alto nivel. Concedió que la sintiencia ES moralmente relevante ('we've already agreed that it is'). El crux que deja abierto: por qué la sintiencia POR SÍ SOLA basta para hacer ilegítima la propiedad (relevante != suficiente). El framework aterriza pero todavía no responde el 'sufficient' — esa es la deuda exacta."
+      },
+      {
+        "thread_id": "27496390256650790",
+        "date": "2026-06-30",
+        "their_move": "CRUX buena fe: sentience-relevant CONCEDIDO; pide por que la sintiencia POR SI SOLA hace la propiedad inherentemente ilegitima y no solo restringida (analogia padres/tutores: autoridad legitima existe, por que descalificar especificamente la PROPIEDAD).",
+        "our_reply_summary": "Reply etiquetada. Derive (no restati): tutela = fiduciaria (beneficiario=el pupilo, no transferible, no recurso); propiedad = titulo sobre alguien tratado como algo disponible para los fines del dueno (criado/transferido/vendido/dispuesto). La sintiencia descalifica la PROPIEDAD especificamente porque no hay cosa a la que el titulo se adhiera. Cierre: que justifica volver a un conscious subject propiedad transferible en vez de admitir que toda autoridad legitima seria fiduciaria.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }
@@ -2035,9 +2055,17 @@
         "their_move": "domestication_mutualism: Symbiotic relationships. — enmarca cria/granja como relacion simbiotica/mutualista, no propiedad.",
         "our_reply_summary": "Reply etiquetada, corta. Un solo giro sobre simbiosis: es una relacion entre dos partes; lo que pregunto es una relacion donde un lado existe bajo el control del otro, criado para fines humanos desde el inicio — cambiar la etiqueta no responde eso. Si solo se sostiene porque un individuo existe como algo que manejamos, usamos y disponemos, llamarlo simbiosis solo le pone nombre amable. Cierre devolviendo la pregunta del estatus de propiedad.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
-        "outcome_evidence": "Symbiotic relationships.",
-        "outcome_note": "reframe one-line 'symbiotic relationships'; reply de 48 min sin respuesta."
+        "outcome": "engaged",
+        "outcome_evidence": "turn (5h): 'symbiosis exists where both parties get benefit... The animals get: Food, care, protection, medication, stress reduction.'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: expandió la simbiosis con una lista de beneficios al animal (food, care, protection, medication, stress reduction). Engaged, tono civil. El counter limpio: un beneficio no borra el título — la simbiosis donde un lado existe bajo la propiedad del otro y termina en el matadero no es mutualismo, es la relación misma en cuestión."
+      },
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-06-30",
+        "their_move": "domestication_mutualism expandido (5h): symbiosis = ambos se benefician (food/care/protection/medication); bred-dependent so negligent to abandon; relacion de confianza con el caballo.",
+        "our_reply_summary": "Reply etiquetada (afirmativo, sin negar-luego-afirmar). Conced el cuidado/afecto y el bond de confianza; el titulo sigue intacto debajo. Los beneficios son obligaciones que CRECEN de un titulo que ya se tiene (existe bajo propiedad, criado para fines humanos, vendible). bred-dependent = la institucion fabrico la dependencia; el deber de cuidar llega DESPUES y se apoya en la propiedad, nunca la otorgo. Simbiosis = palabra equivocada: un bond mutuo real deja a ambos duenos de si. Cierre: que da titulo legitimo a poseer a un sujeto sintiente criado a la dependencia.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "user_id": "1448957098",
@@ -2180,6 +2208,16 @@
         "date": "2026-06-29",
         "their_move": "We decided, driven by economics (herbivoros mas faciles/baratos); decisiones no arbitrarias sino economicas",
         "our_reply_summary": "Reconoci su honestidad (decision economica, no arbitraria); separe explicacion de justificacion: economia explica por que nos convino, no por que es legitimo; mas barato/facil poseer a alguien es justo lo que no lo justifica; if economics explains why we wanted that authority, what explains why we were entitled to it.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "engaged",
+        "outcome_evidence": "turn: 'their consciousness is insufficient to be valued. We only grant such value to other humans. All meat eating species behave this way.'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: volvió con sustancia tras conceder el origen económico — consciousness-insufficient + only-humans-grant-value (especismo explícito) + naturalismo (all meat-eating species) + futility (abandonar la ganadería no mejoraría las vidas). Cuatro frentes, ninguno toca el eje propiedad; el especismo es el centro a desmontar."
+      },
+      {
+        "thread_id": "27496390256650790",
+        "date": "2026-06-30",
+        "their_move": "Antropoespecismo explicito + naturalismo + futility (6h): consciousness insufficient to be valued, only humans get that value, all meat-eating species do it, abandoning farming wouldnt improve lives, nature is harsher.",
+        "our_reply_summary": "Reply etiquetada (afirmativo, sin negar-luego-afirmar). only humans get value = la linea especista dicha en voz alta llamada razon; la pregunta es si la linea rastrea estatus moral o solo preferencia de especie. Conced que quiza no merecen trato igual, pero pesan para poner en cuestion la PROPIEDAD. is/ought: el leon explica la depredacion; una institucion humana que construimos y corremos pide su propia justificacion. Conced naturaleza dura + nadie suelta todo manana, ambos dejan el titulo en pie. Cierre: que da titulo legitimo a poseer a un sujeto sintiente.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }

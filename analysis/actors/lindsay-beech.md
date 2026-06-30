@@ -32,8 +32,12 @@ NO conceder "simbiosis"; exponer que criar-para-matar no es beneficio mutuo. NO 
 
 ## Log de interacciones
 
-### Hilo `27330688236588406` — 2026-06-29 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-06-29 · outcome: **engaged**
 - **Su jugada:** domestication_mutualism: Symbiotic relationships. — enmarca cria/granja como relacion simbiotica/mutualista, no propiedad.
 - **Nuestra respuesta:** Reply etiquetada, corta. Un solo giro sobre simbiosis: es una relacion entre dos partes; lo que pregunto es una relacion donde un lado existe bajo el control del otro, criado para fines humanos desde el inicio — cambiar la etiqueta no responde eso. Si solo se sostiene porque un individuo existe como algo que manejamos, usamos y disponemos, llamarlo simbiosis solo le pone nombre amable. Cierre devolviendo la pregunta del estatus de propiedad.
+
+### Hilo `27330688236588406` — 2026-06-30 · outcome: **pending**
+- **Su jugada:** domestication_mutualism expandido (5h): symbiosis = ambos se benefician (food/care/protection/medication); bred-dependent so negligent to abandon; relacion de confianza con el caballo.
+- **Nuestra respuesta:** Reply etiquetada (afirmativo, sin negar-luego-afirmar). Conced el cuidado/afecto y el bond de confianza; el titulo sigue intacto debajo. Los beneficios son obligaciones que CRECEN de un titulo que ya se tiene (existe bajo propiedad, criado para fines humanos, vendible). bred-dependent = la institucion fabrico la dependencia; el deber de cuidar llega DESPUES y se apoya en la propiedad, nunca la otorgo. Simbiosis = palabra equivocada: un bond mutuo real deja a ambos duenos de si. Cierre: que da titulo legitimo a poseer a un sujeto sintiente criado a la dependencia.
 
 _Hilos: —_

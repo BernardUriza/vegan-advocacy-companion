@@ -119,7 +119,7 @@ No responder al insulto en su nivel. No defender a Beyond Meat específicamente.
 - **Su jugada:** crop_deaths flip welfarista (forma canónica): iguala criar/matar vacas con control de plagas ("from the animal perspective intentional or incidental, it is a lost life"), descarta la intención, y monta hipocresía sobre la premisa de que el argumento vegano es minimizar cantidad (treats/coffee = avoidable harm).
 - **Nuestra respuesta:** NO competí en número de muertes ni intención (terreno que mi turno previo welfarista le había regalado). Moví el eje a ESTATUS DE PROPIEDAD: el control de plagas mata a alguien que no es de nadie; la ganadería cría a un sujeto PARA ser poseído/dispuesto como recurso — la diferencia es estatus, no muerte. Desarmé la hipocresía nombrando su premisa oculta (solo funciona si el argumento fuera minimizar cantidad — no lo es; el café no involucra a nadie criado para ser poseído). Cierre con pregunta de estatus: ¿qué justifica criar a un sujeto para poseerlo si hay alternativa adecuada? Sin decir "esclavitud" frontal (relación concreta: criado/comprado/vendido/dispuesto). Redención del A2 welfarista de la mañana.
 
-### Hilo `27496390256650790` — 2026-06-29 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-06-29 · outcome: **goalpost**
 - **Su jugada:** Relativismo cultural: diferentes culturas valoran distinto (India/Cuba/Islam); that choice is yours (pet pig o bacon)
 - **Nuestra respuesta:** Conced la variacion cultural (cierto); pero describe actitudes, no las justifica, y la variacion misma muestra que la linea es convencion no algo del animal; that-choice-is-yours re-afirma la autoridad reclamada; devolvi: por que esa autoridad debe existir sobre alguien con punto de vista.
 
