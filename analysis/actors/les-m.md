@@ -145,4 +145,8 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Peticion de principio + apelacion a mayoria/historia/beneficios: ownership needs explaining solo si acepto TU premisa; 99% de la humanidad; ownership es solo un rasgo de la domesticacion.
 - **Nuestra respuesta:** Rompi el loop (filo, correccion del coagent): la propiedad no es un hecho biologico, es una relacion social adicional; quien reclama el TITULO introduce algo especifico que justificar, no es mi premisa sino la estructura del reclamo. 99%/historia es is no ought. Cierre: que hay en el cerdo que vuelva justificada y no solo aceptada la relacion de pertenencia?
 
+### Hilo `4587084521560658` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** Sofisticado multi-prong: assuming-conclusion + same-rights-as-humans strawman + membresia de especie (babies/dementia) + line-drawing (insects/oysters/bacteria) + burden-flip (ya priorizas humanos)
+- **Nuestra respuesta:** Decline el strawman de human rights (nadie lo pidio); el line-drawing lo contesta la sintiencia (bordes borrosos no borran el caso claro del cerdo, uncertainty at the margins doesnt make the centre disappear); voltee assuming-conclusion sobre la membresia de especie (describe como organizamos la sociedad, no justifica por que esa categoria biologica decide quien se posee); is-ought en how societies functioned; cierre en la pregunta de propiedad. Solte el frente de priorizacion para no apilar.
+
 _Hilos: 27363745576581926, 27375477042075446_
