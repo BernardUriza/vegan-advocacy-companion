@@ -750,7 +750,9 @@
         "their_move": "Ronda: la ley NSW exige destruir al no-propiedad (feral); ownership da proteccion+derechos; do you own animals?",
         "our_reply_summary": "Conced que la ley establece propiedad; describir!=justificar; conteste su pregunta directa (mi posesion no decide la pregunta moral); devolvi: que justifica asignar autoridad total sobre un conscious individual con punto de vista. Sin pelear los tecnicismos.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "turn (7h): 'if you don't own any animals or care for other living beings, what right do you have to judge or question those who do? Owning animals is a lifestyle... You as a person who refuses to answer that question...'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras agotar el carril legal (NSW biosecurity/property), Chris abandono la pregunta de justificacion y se replego al standing/tu-quoque — 'what right do you have to judge or question those who do if you don't own any animals... you refuse to answer'. Mueve el poste de 'la propiedad es justificable' a 'no tienes legitimidad para preguntar'. Para el lurker: la credencial no es requisito para cuestionar una institucion."
       }
     ]
   },
@@ -1163,7 +1165,9 @@
         "their_move": "Ronda 2: ya conteste (membresia de especie) + me acusa de esquivar el line-drawing",
         "our_reply_summary": "Reconoci que dio una respuesta DESCRIPTIVA (criterio que las sociedades usan) y la separe de la NORMATIVA (por que ese criterio debe aceptarse); re-afirme mi linea (sintiencia, con casos fronterizos que no borran el caso paradigmatico del cerdo), devolviendole su propia logica; cierre con que SU criterio (membresia de grupo) es el que debe justificar por que el grupo, no el ser un sujeto, decide quien se posee.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "turn (10h): 'You keep asking me to justify why species membership is morally decisive, but you still haven't justified why sentience is morally decisive. You've described sentience. You've asserted it's morally relevant... Now we're back where we started.'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: combativo pero sustantivo, sigue en el crux real. Restituye la simetria ('you've asserted sentience is decisive, not justified it; we're back where we started') y exige el principio que va de 'es sintiente' a 'no puede ser propiedad'. No concede ni se va — el crux de justificar la sintiencia como decisiva queda abierto, igual que con Dean/Michael."
       },
       {
         "thread_id": "4587084521560658",
@@ -1705,7 +1709,9 @@
         "their_move": "Reframe (near-gold): no hay rasgo del cerdo que lo haga poseible; ownership no es propiedad del animal sino relacion legal/social entre humanos",
         "our_reply_summary": "Aceptе su refinamiento de frente (mas preciso); voltее: que sea relacion social no explica por que esa autoridad debe existir; recorde el common ground (concedio point of view + moral consideration); devolvi: que justifica crear esa relacion de autoridad sobre un conscious individual con perspectiva propia.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "turn (16h): 'Are humans simply another sentient being within that same category, or do you think there are additional characteristics that distinguish humans in morally relevant ways? ... I think this is where we may differ.'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: buena fe sostenida y de alto nivel (el oro vive en los receptivos). Tras aceptar mi reformulacion (ownership = relacion legal/social, no rasgo del animal) volvio a estrechar con una pregunta-test genuina: son los humanos solo otro ser sintiente en esa categoria, o hay caracteristicas adicionales moralmente relevantes? Aterriza el marco pero deja el crux exacto abierto (sintiencia-suficiente vs capacidades-extra)."
       },
       {
         "thread_id": "27496390256650790",
