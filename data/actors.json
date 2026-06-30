@@ -664,6 +664,16 @@
         "their_move": "Goalpost (\"no tenemos que justificar nada, no te debo defensa, es nuestra decisión\") + antropoespecismo (\"somos la única especie capaz de asignar valor moral\") + caso marginal del comatoso (\"consciousness alone no determina si está mal comer\")",
         "our_reply_summary": "Reply etiquetada CORTA (pozo_sin_fondo, valor 100% lurker). \"No justification needed\" es la respuesta misma que el lurker lee cuando no se puede defender el título. Asignar valor moral no es lo mismo que ser lo único que lo TIENE (un juez dicta veredictos sin ser el único en la sala que importa). El caso del comatoso corta al revés: lo protegemos porque la pregunta es de subjetividad/estatus, no porque \"quien tiene el poder decide\". Cierre: ¿qué justifica tratar a un sujeto consciente como propiedad?",
         "framework": "antropoespecismo",
+        "outcome": "escalated",
+        "outcome_evidence": "turn (4h): 'You were the one who introduced the slippery slope... Ask your AI friend to do a better job... Who do you think you are to demand that someone justify their personal choices... I had pork chops today with apple sauce.'",
+        "outcome_note": "antropoespecismo: tras mi reply (juez + comatoso + negativa-como-respuesta), Anna ESCALO al insult-pit: burden-flip falso (acuso de introducir un slippery slope inexistente), insult-seal 'ask your AI friend', 'who do you think you are', y taunt 'pork chops with apple sauce'. Cero argumento nuevo defendible; refuerza pozo_sin_fondo. El valor sigue siendo 100% el lurker (exponer la fabricacion + la negativa)."
+      },
+      {
+        "thread_id": "27496390256650790",
+        "date": "2026-06-30",
+        "their_move": "Doblo como pozo: rebate el juez (un juez sigue la ley, es el unico que decide), BURDEN-FLIP FALSO (\"you introduced the slippery slope, defend it\" - falso: no hay slippery slope en el hilo; el unico caso-limite, humanos inconscientes, lo introdujo ELLA), insult-seal \"ask your AI friend\", re-asserta \"humans are the only ones who assign moral worth\", autonomia (\"don't owe justification / blue shoes / my human right to eat / who do you think you are\") + taunt \"pork chops with apple sauce\".",
+        "our_reply_summary": "Reply etiquetada CORTA (pozo). EXPUSE la fabricacion sin drama (no la llame mentira: mostre el hecho) - no hay slippery slope que defender; el caso-limite (humanos inconscientes) lo trajo ELLA y corta en su contra (estatus no se reparte por quien tiene el poder). VOLTEE su juez: un juez sigue una ley que no invento ni dobla a su gusto = asignar valor no es crearlo ni reservarlo para los tuyos. Nombre la negativa-como-respuesta (blue shoes / my right / don't owe = evaden el titulo); nadie pidio justificar un gusto privado, pedi justificar POSEER a un sujeto. AI-seal: etiqueta, no refutacion (una linea). Cierre: que justifica el titulo sobre alguien con punto de vista?",
+        "framework": "antropoespecismo",
         "outcome": "pending"
       }
     ]
