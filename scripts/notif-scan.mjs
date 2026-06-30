@@ -25,9 +25,14 @@ function extractInPage() {
     // dos últimos → post_id salía null y agrupaba por comment_id (mismo post en
     // varias filas). Leer el query param primero es el fix raíz.
     const mPosts = u.pathname.match(/\/posts\/(\d+)/);
-    const post_id = p.get('post_id') || p.get('multi_permalinks') || (mPosts ? mPosts[1] : null);
+    // multi_permalinks AGREGA varios post_id separados por coma cuando FB junta
+    // "N personas comentaron en tus publicaciones" en una sola notif. Antes la
+    // lista pegada entraba como post_id/key basura y rompía el openUrl (deuda
+    // invisible). story_fbid cubre los posts que no traen post_id. Tomar el 1ro.
+    const rawPost = p.get('post_id') || p.get('multi_permalinks') || p.get('story_fbid') || (mPosts ? mPosts[1] : null);
+    const post_id = rawPost ? rawPost.split(',')[0] : null;
     const mGroup = u.pathname.match(/\/groups\/(\d+)/);
-    const group_id = mGroup ? mGroup[1] : null;
+    const group_id = mGroup ? mGroup[1] : p.get('group_id') || null;
     const comment_id = p.get('comment_id');
     const reply_comment_id = p.get('reply_comment_id');
     // URL canónica para abrir en el comentario exacto (etapa 2 navega directo, sin MCP)
@@ -55,7 +60,13 @@ function extractInPage() {
 
 function group(items) {
   const security = items.filter((i) => i.notif_t === 'approve_from_another_device');
-  const threads = items.filter((i) => i.notif_t !== 'approve_from_another_device');
+  const rest = items.filter((i) => i.notif_t !== 'approve_from_another_device');
+  // RUIDO no-deuda: notifs sin post NI comment que abrir (page_user_activity,
+  // marketplace_*, seguidores de página, mensajes) — no son hilos de debate.
+  // Antes entraban a la lista de deuda con key basura ("UnreadVeganismo…",
+  // post_id null, sin openUrl). Separarlas para que no contaminen la deuda real.
+  const noise = rest.filter((i) => !i.post_id && !i.comment_id);
+  const threads = rest.filter((i) => i.post_id || i.comment_id);
 
   const byKey = new Map();
   for (const i of threads) {
@@ -82,7 +93,7 @@ function group(items) {
     return (b.hasReplyToReply ? 1 : 0) - (a.hasReplyToReply ? 1 : 0);
   });
 
-  return { security, groups };
+  return { security, noise, groups };
 }
 
 async function main() {
@@ -91,10 +102,10 @@ async function main() {
     await page.goto(NOTIF_URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(2500); // let hydration settle
     const items = await page.evaluate(extractInPage);
-    const { security, groups } = group(items);
+    const { security, noise, groups } = group(items);
 
     if (asJson) {
-      console.log(JSON.stringify({ generatedAtUrl: NOTIF_URL, security, groups }, null, 2));
+      console.log(JSON.stringify({ generatedAtUrl: NOTIF_URL, security, noise, groups }, null, 2));
     } else {
       console.log(`\n=== HILOS (${groups.length}) — ordenados por deuda ===`);
       for (const g of groups) {
@@ -106,6 +117,9 @@ async function main() {
       }
       if (security.length) {
         console.log(`\n⚠️  SEGURIDAD (NO es hilo): ${security.length}× approve_from_another_device — intento(s) de login. Revisa sesión/2FA.`);
+      }
+      if (noise.length) {
+        console.log(`\nℹ️  RUIDO no-deuda (${noise.length}, fuera de la lista): ${noise.map((n) => n.notif_t).join(', ')}`);
       }
       const top = groups.find((g) => g.tier === 'alto');
       if (top) {
