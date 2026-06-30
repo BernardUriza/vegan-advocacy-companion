@@ -153,4 +153,8 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Ronda 2: ya conteste (membresia de especie) + me acusa de esquivar el line-drawing
 - **Nuestra respuesta:** Reconoci que dio una respuesta DESCRIPTIVA (criterio que las sociedades usan) y la separe de la NORMATIVA (por que ese criterio debe aceptarse); re-afirme mi linea (sintiencia, con casos fronterizos que no borran el caso paradigmatico del cerdo), devolviendole su propia logica; cierre con que SU criterio (membresia de grupo) es el que debe justificar por que el grupo, no el ser un sujeto, decide quien se posee.
 
+### Hilo `4587084521560658` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** Reto al criterio: justifica por que la sintiencia es decisiva (la asertas); no contestas el line-drawing practico; mi criterio = obligaciones especiales a mi propia especie
+- **Nuestra respuesta:** Tome su reto de frente. Nombrar una frontera (especie) no es justificarla — es el paso que le pido. Mi criterio mira al individuo (un sujeto consciente con intereses desde su punto de vista), el suyo a la categoria; un humano sin las capacidades que valora sigue contando (casos marginales) => el trabajo real lo hace que haya alguien ahi, no el label ni la inteligencia. Concedi casos limite sin ceder los claros. Volvi al titulo de propiedad.
+
 _Hilos: 27363745576581926, 27375477042075446_

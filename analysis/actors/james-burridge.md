@@ -36,4 +36,8 @@ NO esquivar el goldfish ni decir mascotas son distintas por cariño; muerde la b
 - **Su jugada:** abolition_reductio (buena fe/civil): What makes it not ok for my child to own goldfish? — reto de consistencia, intenta sacar el debate del caso granja a toda tenencia de mascotas.
 - **Nuestra respuesta:** Reply etiquetada. Mordi el reductio sin abrir el frente de mascotas: concedi la intuicion (ownership de un someone pide justificacion, no desaparece porque el animal sea chico o el dueno un nino) SIN conceder el encuadre — el hilo es sobre criar individuos para que existan como recursos bajo control humano, no un nino con un pez. Respuesta directa: yes, if an animal is a someone rather than a something, ownership deserves an explanation; people-have-always-done-it / its-my-pet no la dan. Cierre devolviendo la pregunta del post.
 
+### Hilo `27330688236588406` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** Reductio de consistencia (buena fe): pet stores breeding goldfish for children to own — intenta sacar el debate a toda tenencia de mascotas
+- **Nuestra respuesta:** Mordi el reductio sin abrir el frente de mascotas: si es relevante y es la misma pregunta, mas chica; chico/nino/afecto no disuelven el titulo. Funde en el sujeto consciente con punto de vista; no exencion para pets, no le digo a nadie que suelte su pez; el titulo de propiedad sobre un someone es el mismo en pet shop y en granja.
+
 _Hilos: —_

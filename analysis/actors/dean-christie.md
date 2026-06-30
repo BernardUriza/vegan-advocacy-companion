@@ -46,7 +46,7 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Test del cerdo salvaje (buena fe): si un cerdo salvaje no es de nadie, ¿matarlo es aceptable? Binario forzado — no->tu posición es harm no propiedad; sí->¿qué tiene de especial la propiedad si la experiencia subjetiva es idéntica en ambos casos?
 - **Nuestra respuesta:** Reply etiquetada (buena fe, sin filo). El coagent rechazó conceder la primera asta; en su lugar distinción FUNDAMENTO vs OBJETO: el fundamento de la posición es el estatus (un alguien con punto de vista, no un objeto), el objeto del debate en este hilo sigue siendo la PROPIEDAD (la institución que se defiende). Cerdo salvaje y de granja = mismo tipo de individuo; lo que cambia es la RELACIÓN que el humano establece (criado bajo control para existir como poseído/dispuesto). Necesidad/supervivencia al final como contraste secundario: la granja industrial no es supervivencia, es propiedad. Cierre: ¿qué principio hace legítimo que un individuo exista como propiedad de otro?
 
-### Hilo `27468645086091974` — 2026-06-29 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-06-29 · outcome: **conceded**
 - **Su jugada:** Buena fe, narrowing + CONCESION: 'we have narrowed the disagreement considerably; I also agree pigs have a point of view and deserve moral consideration', pero RELOCALIZA la cuestion del estatus al trato: 'ownership isnt the morally decisive issue; es relacion legal/social; su justificacion depende del trato/razones/consecuencias'.
 - **Nuestra respuesta:** Reply etiquetada (buena fe, agradeci el narrowing). Ancle en SU concesion (no reintroducir mi conclusion): ya acepto que el cerdo tiene punto de vista; entonces mover la pregunta del estatus al trato responde COMO se ejerce la propiedad, no POR QUE el estatus de owner es legitimo. Separe 'como lo posees' (trato) de 'si puede ser poseido' (estatus). Cierre devolviendo: antes de hablar del trato, que hace que un sujeto con punto de vista propio pueda pertenecer legitimamente a otro?
 
@@ -57,5 +57,9 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 ### Hilo `27496390256650790` — 2026-06-29 · outcome: **pending**
 - **Su jugada:** sapient kind: ¿point-of-view es suficiente o solo relevante? la proteccion de infantes/dementia se basa en ser de una clase sapiente, no en funcion cognitiva actual; ¿threshold para full moral status?
 - **Nuestra respuesta:** Reconoci la distincion relevant-vs-sufficient; decline full-moral-status/equivalence (no es el reclamo, es no-propiedad); voltее: sapient-kind reubica la pertenencia de grupo sobre el sujeto concreto -> ¿por que la clase, no el que este individuo tenga un punto de vista, licencia poseerlo? Evite el side-debate del comatoso. Cierre en propiedad.
+
+### Hilo `27496390256650790` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** Sapience/agencia/reciprocidad como caracteristicas moralmente relevantes; sentience no basta para hacer ilegitima la propiedad; ownership-con-constraints != ilegitimo
+- **Nuestra respuesta:** Premie la buena fe. Explicite el fundamento (solo un sujeto consciente tiene experiencias que importan desde su perspectiva) en vez de axioma; sapience grada deberes pero no decide la entrada al circulo; "sapient kind" mueve el foco del individuo a la categoria; regular el trato presupone el titulo cuya justificacion es la pregunta.
 
 _Hilos: 27468645086091974_
