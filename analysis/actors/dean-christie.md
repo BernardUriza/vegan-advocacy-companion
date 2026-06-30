@@ -54,4 +54,8 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Reframe (near-gold): no hay rasgo del cerdo que lo haga poseible; ownership no es propiedad del animal sino relacion legal/social entre humanos
 - **Nuestra respuesta:** Aceptе su refinamiento de frente (mas preciso); voltее: que sea relacion social no explica por que esa autoridad debe existir; recorde el common ground (concedio point of view + moral consideration); devolvi: que justifica crear esa relacion de autoridad sobre un conscious individual con perspectiva propia.
 
+### Hilo `27496390256650790` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** sapient kind: ¿point-of-view es suficiente o solo relevante? la proteccion de infantes/dementia se basa en ser de una clase sapiente, no en funcion cognitiva actual; ¿threshold para full moral status?
+- **Nuestra respuesta:** Reconoci la distincion relevant-vs-sufficient; decline full-moral-status/equivalence (no es el reclamo, es no-propiedad); voltее: sapient-kind reubica la pertenencia de grupo sobre el sujeto concreto -> ¿por que la clase, no el que este individuo tenga un punto de vista, licencia poseerlo? Evite el side-debate del comatoso. Cierre en propiedad.
+
 _Hilos: 27468645086091974_

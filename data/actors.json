@@ -201,6 +201,22 @@
         "outcome_evidence": "tras el reply de Bernard no hay mas turnos de Adam",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome_note": "algo-a-alguien-sujeto-derecho: tras exponer que el beneficio es condicional a su uso/muerte, Adam no respondio; ancla ~13d."
+      },
+      {
+        "thread_id": "27051763587778150",
+        "date": "2026-06-29",
+        "their_move": "optimal-not-necessary + esquive definicional (la esclavitud es propiedad involuntaria de un humano por otro)",
+        "our_reply_summary": "Tomе su concesion (optimal=preferencia, no necesidad) -> ¿una preferencia justifica poseer a un conscious individual? Deje la palabra slavery fuera: la etiqueta es secundaria, la ESTRUCTURA (un lado posee/controla a otro sujeto) es lo que pide justificacion. Cierre en propiedad.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27496390256650790",
+        "date": "2026-06-29",
+        "their_move": "contempt-vs-propiedad: no exaltar != desprecio; valoro menos a un extraño que a mi esposa sin despreciarlo (+ Esther the Wonder Pig)",
+        "our_reply_summary": "Conced que no exaltar != desprecio (no es el punto); voltее su analogia: valoras menos a un extrano y AUN ASI no es tu propiedad para disponer; los grados de inversion emocional describen sentimientos, no justifican la propiedad. Esther fuera. Cierre en propiedad.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ]
   },
@@ -1122,6 +1138,14 @@
         "our_reply_summary": "Decline el strawman de human rights (nadie lo pidio); el line-drawing lo contesta la sintiencia (bordes borrosos no borran el caso claro del cerdo, uncertainty at the margins doesnt make the centre disappear); voltee assuming-conclusion sobre la membresia de especie (describe como organizamos la sociedad, no justifica por que esa categoria biologica decide quien se posee); is-ought en how societies functioned; cierre en la pregunta de propiedad. Solte el frente de priorizacion para no apilar.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "4587084521560658",
+        "date": "2026-06-29",
+        "their_move": "Ronda 2: ya conteste (membresia de especie) + me acusa de esquivar el line-drawing",
+        "our_reply_summary": "Reconoci que dio una respuesta DESCRIPTIVA (criterio que las sociedades usan) y la separe de la NORMATIVA (por que ese criterio debe aceptarse); re-afirme mi linea (sintiencia, con casos fronterizos que no borran el caso paradigmatico del cerdo), devolviendole su propia logica; cierre con que SU criterio (membresia de grupo) es el que debe justificar por que el grupo, no el ser un sujeto, decide quien se posee.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -1636,6 +1660,14 @@
         "date": "2026-06-29",
         "their_move": "Reframe (near-gold): no hay rasgo del cerdo que lo haga poseible; ownership no es propiedad del animal sino relacion legal/social entre humanos",
         "our_reply_summary": "Aceptе su refinamiento de frente (mas preciso); voltее: que sea relacion social no explica por que esa autoridad debe existir; recorde el common ground (concedio point of view + moral consideration); devolvi: que justifica crear esa relacion de autoridad sobre un conscious individual con perspectiva propia.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27496390256650790",
+        "date": "2026-06-29",
+        "their_move": "sapient kind: ¿point-of-view es suficiente o solo relevante? la proteccion de infantes/dementia se basa en ser de una clase sapiente, no en funcion cognitiva actual; ¿threshold para full moral status?",
+        "our_reply_summary": "Reconoci la distincion relevant-vs-sufficient; decline full-moral-status/equivalence (no es el reclamo, es no-propiedad); voltее: sapient-kind reubica la pertenencia de grupo sobre el sujeto concreto -> ¿por que la clase, no el que este individuo tenga un punto de vista, licencia poseerlo? Evite el side-debate del comatoso. Cierre en propiedad.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }

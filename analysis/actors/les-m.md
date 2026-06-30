@@ -149,4 +149,8 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Sofisticado multi-prong: assuming-conclusion + same-rights-as-humans strawman + membresia de especie (babies/dementia) + line-drawing (insects/oysters/bacteria) + burden-flip (ya priorizas humanos)
 - **Nuestra respuesta:** Decline el strawman de human rights (nadie lo pidio); el line-drawing lo contesta la sintiencia (bordes borrosos no borran el caso claro del cerdo, uncertainty at the margins doesnt make the centre disappear); voltee assuming-conclusion sobre la membresia de especie (describe como organizamos la sociedad, no justifica por que esa categoria biologica decide quien se posee); is-ought en how societies functioned; cierre en la pregunta de propiedad. Solte el frente de priorizacion para no apilar.
 
+### Hilo `4587084521560658` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** Ronda 2: ya conteste (membresia de especie) + me acusa de esquivar el line-drawing
+- **Nuestra respuesta:** Reconoci que dio una respuesta DESCRIPTIVA (criterio que las sociedades usan) y la separe de la NORMATIVA (por que ese criterio debe aceptarse); re-afirme mi linea (sintiencia, con casos fronterizos que no borran el caso paradigmatico del cerdo), devolviendole su propia logica; cierre con que SU criterio (membresia de grupo) es el que debe justificar por que el grupo, no el ser un sujeto, decide quien se posee.
+
 _Hilos: 27363745576581926, 27375477042075446_

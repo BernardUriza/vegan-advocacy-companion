@@ -48,4 +48,12 @@ No usar 'consent' como argumento único (fácilmente deflectado a bebés/mascota
 - **Su jugada:** Yes. Any exploitation is justified if it is mutually beneficial. The benefits don't have to be equal.
 - **Nuestra respuesta:** Expuso que 'mutually' hace todo el trabajo y es falso. Concedió cuidado/refugio pero clavó que esos beneficios son condicionales a su propio uso y muerte. Nombró que la relación se estructura desde el inicio en torno al criador. Cerró devolviendo la carga: '¿en qué sentido es el beneficio mutuo y no condicional a la explotación?'
 
+### Hilo `27051763587778150` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** optimal-not-necessary + esquive definicional (la esclavitud es propiedad involuntaria de un humano por otro)
+- **Nuestra respuesta:** Tomе su concesion (optimal=preferencia, no necesidad) -> ¿una preferencia justifica poseer a un conscious individual? Deje la palabra slavery fuera: la etiqueta es secundaria, la ESTRUCTURA (un lado posee/controla a otro sujeto) es lo que pide justificacion. Cierre en propiedad.
+
+### Hilo `27496390256650790` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** contempt-vs-propiedad: no exaltar != desprecio; valoro menos a un extraño que a mi esposa sin despreciarlo (+ Esther the Wonder Pig)
+- **Nuestra respuesta:** Conced que no exaltar != desprecio (no es el punto); voltее su analogia: valoras menos a un extrano y AUN ASI no es tu propiedad para disponer; los grados de inversion emocional describen sentimientos, no justifican la propiedad. Esther fuera. Cierre en propiedad.
+
 _Hilos: 27341517928804691, 27335635946059556_
