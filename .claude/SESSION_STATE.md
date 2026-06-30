@@ -1,35 +1,23 @@
-# SESSION STATE - 2026-06-30 (lote /vegan-pipeline)
+# SESSION STATE - 2026-06-30 (lote /vegan-pipeline) — DONE
 
 ## Quick Summary
-Corrida `/vegan-pipeline` modo LOTE. Etapas 0-3 hechas; PARADO en el GATE de
-revisión (etapa 4). 4 borradores style-gated esperando GO de Bernard. Nada
-posteado aún.
+Lote `/vegan-pipeline` COMPLETO. 4 replies posteados, verificados (div[role=article]
++ screenshot) y commiteados/pusheados. Working tree limpio.
 
-## Hecho
-- Commits previos: e5f340a (WIP huérfano de corrida AM), 9c18548 (reflex cierra
-  3 pending: Chris->goalpost, Dean->engaged, Les->engaged).
-- Etapa 0 reflex: moat honesto. algo-a-alguien domina (81 deploys, 2 conceded).
-- Etapas 1-2: notif-scan + debt-sweep + thread-extract de 4 hilos frescos.
-- Etapa 3: coagent (insult-gpt 6a435111) seedeado con master de lote x/y,
-  seed-gate LIMPIO, recibos de procedencia escritos por post (27468/27496/4587).
-  4 drafts + feedback de consistencia recibidos.
-- Etapa 4 PASO 0: style-gate por-draft LIMPIO los 4. Les editado (quité
-  negate-then-affirm).
+## Posteado (verificado)
+- Dean Christie  27468 (crux humans-extra-caps) — fw=algo-a-alguien-sujeto-derecho
+- Les M          4587  (justifica-sintiencia)   — fw=algo-a-alguien-sujeto-derecho
+- Chris Duffy    27468 (standing + insult-seal "Bernie", capa fría) — fw=algo-a-alguien-sujeto-derecho
+- Anna Angelika  27496 (goalpost+antropoespecismo, corto) — fw=antropoespecismo
+Todos outcome:pending. Commits: e5f340a, 9c18548, bd2f28d (pushed).
 
-## Los 4 blancos (drafts en .coagent/drafts/)
-1. Dean Christie (uid 1198831097) — post 27468 — crux humans-extra-caps. fw=algo-a-alguien-sujeto-derecho. ORO.
-2. Les M (uid 61581270521234) — post 4587 — crux justifica-sintiencia. fw=algo-a-alguien-sujeto-derecho.
-3. Chris Duffy (uid 100018541819048) — post 27468 — standing/tu-quoque. fw=algo-a-alguien-sujeto-derecho.
-4. Anna Angelika (uid 100011355404997) — post 27496 — goalpost+antropoespecismo. fw=antropoespecismo. CORTO (pozo).
+## Pendiente / handoff
+- **Tiana Thomas** (27496, raíz 1d "we keep cats to kill for us", OWES opp1/my0) —
+  Bernard la flageó (su link comment_id=27496566733299809) pero NO estaba en este
+  lote (sin draft del coagent). Sigue SIN contestar. Si la quiere: nuevo target,
+  requiere etapa-3 (coagent) + draft.
+- Los 4 outcome:pending se cerrarán en el próximo run con el reflex según respondan.
 
-## Next step
-GO de Bernard (todas / subconjunto / veta). Con GO: comment-prepare.mjs por draft
-(--url openUrl con comment_id, --author, --anchor frase del target, --body-file
-.coagent/drafts/<x>.txt) -> re-leer composer -> Enter -> verificación histérica.
-Luego appendInteraction(uid,{thread_id,date,their_move,our_reply_summary,
-framework,outcome:pending}) por post, validate-data, gen-dossiers.
-
-## openUrls (para comment-prepare)
-- 27468: https://www.facebook.com/groups/770211166362062/posts/27468645086091974/
-- 4587:  https://www.facebook.com/groups/2465017713767360/posts/4587084521560658/
-- 27496: https://www.facebook.com/groups/770211166362062/posts/27496390256650790/
+## Tabs vivas dejadas
+- coagent insult-gpt (6a435111) — para reuso.
+- Tab de Bernard en 27496 (Tiana) — NO tocada.
