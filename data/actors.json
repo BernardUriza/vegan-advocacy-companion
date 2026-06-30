@@ -639,6 +639,14 @@
         "outcome": "silent",
         "outcome_evidence": "no Anna turn after Bernard's reply",
         "outcome_note": "algo-a-alguien-sujeto-derecho: tras mover el eje de body-count/intent a estatus de propiedad, Anna no respondio; ~8 dias."
+      },
+      {
+        "thread_id": "27496390256650790",
+        "date": "2026-06-29",
+        "their_move": "Relativismo cultural: diferentes culturas valoran distinto (India/Cuba/Islam); that choice is yours (pet pig o bacon)",
+        "our_reply_summary": "Conced la variacion cultural (cierto); pero describe actitudes, no las justifica, y la variacion misma muestra que la linea es convencion no algo del animal; that-choice-is-yours re-afirma la autoridad reclamada; devolvi: por que esa autoridad debe existir sobre alguien con punto de vista.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ]
   },
@@ -1483,6 +1491,14 @@
         "outcome": "pending",
         "outcome_evidence": "they will all die, they will all be eaten",
         "outcome_note": "algo-a-alguien-sujeto-derecho: naturalismo 'todos mueren'; Bernard voltea la autocontradiccion (controlan la cria); reply de 18h sin respuesta."
+      },
+      {
+        "thread_id": "27051763587778150",
+        "date": "2026-06-29",
+        "their_move": "Rechazo analogia esclavitud: animals != humans; slavery was keeping humans like animals; keeping animals like animals no es dilema",
+        "our_reply_summary": "Conced cerdo!=humano (no es el reclamo); la analogia es por ESTRUCTURA (poseer a un sujeto como cosa), no por igualar especies; keeping-animals-like-animals da por hecho lo que se pregunta; devolvi: por que pertenecer a otra especie justifica poseer a alguien con punto de vista.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ]
   },
@@ -2097,5 +2113,62 @@
     "verdict": "pozo sin fondo",
     "register": "filo",
     "what_not_to_do": "NO sonar herido; NO insultar de vuelta; NO entrar a discutir IA (seria aceptar el cambio de tema); corto, devolver al hueso."
+  },
+  {
+    "tactics": [
+      "naturalismo",
+      "popularidad_como_justificacion"
+    ],
+    "threads": [
+      "27496390256650790"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27496390256650790",
+        "date": "2026-06-29",
+        "their_move": "We decided, driven by economics (herbivoros mas faciles/baratos); decisiones no arbitrarias sino economicas",
+        "our_reply_summary": "Reconoci su honestidad (decision economica, no arbitraria); separe explicacion de justificacion: economia explica por que nos convino, no por que es legitimo; mas barato/facil poseer a alguien es justo lo que no lo justifica; if economics explains why we wanted that authority, what explains why we were entitled to it.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "604363060",
+    "name": "Andy Rodgerson",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/604363060/",
+    "bando": "anti-vegan",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "postura_nucleo": "We decided, movido por economia (herbivoros mas faciles/baratos de criar); rabbits as food/pests; las decisiones no son arbitrarias sino economicas.",
+    "analisis": "Honesto y civil: admite we-decided y que el driver fue la economia. El gap: la economia explica POR QUE se hizo (costo/facilidad), no si es legitimo. Buena fe, buen target de audiencia (separar explicacion de justificacion).",
+    "what_not_to_do": "NO tratarlo como mala fe (civil); NO eje de dano; separar describir de justificar."
+  },
+  {
+    "tactics": [
+      "relativismo_moral"
+    ],
+    "threads": [
+      "27496390256650790"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27496390256650790",
+        "date": "2026-06-29",
+        "their_move": "Rendimiento instrumental: pigs taste better, easier to control, more food per animal than cats",
+        "our_reply_summary": "Conced que por rendimiento un cerdo supera a un gato (cierto); cada metrica mide utilidad-para-nosotros, no toca si el cerdo es un sujeto; describir por que es mejor recurso da por hecho que es un recurso, que es lo que se pregunta; devolvi la pregunta de propiedad.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "1679128970037236",
+    "name": "Indecent Bystander",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/1679128970037236/",
+    "bando": "anti-vegan",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "postura_nucleo": "Valor del animal = rendimiento instrumental: pigs taste better, easier to control, more food per animal than cats. (NOTA: uid del comentario 1679128970037236; el moat tenia otro Indecent Bystander uid 965593289816591 sin ints — posible cuenta distinta o uid stale.)",
+    "analisis": "La logica de propiedad desnuda: cada metrica mide utilidad-para-nosotros (sabor/control/rendimiento). Buen target de lurker: el contraste de medir a un alguien por su rendimiento expone que da por hecho que es un recurso.",
+    "what_not_to_do": "NO discutir las cifras de rendimiento; nombrar que las metricas presuponen la propiedad; NO eje de dano."
   }
 ]

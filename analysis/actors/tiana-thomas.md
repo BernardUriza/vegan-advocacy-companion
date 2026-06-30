@@ -101,4 +101,8 @@ NO pelear el body-count ni el "welfare mejora" (concederlo: mejor trato no cambi
 - **Su jugada:** Naturalismo: "todos mueren, todos serán comidos (wild/domestic/feral); no los traemos a existir, ellos lo hacen; con domésticos LIMITAMOS cuán jóvenes/seguido/cercano crían; los ferals son crop pests killed wholesale".
 - **Nuestra respuesta:** Reply etiquetada (filo civil). Volteé su autocontradicción: dice "they bring themselves into existence" pero en la misma frase controla la cría (cuán jóvenes/seguido/quién) — si controla las condiciones de su existencia, "nature did it" describe la biología y salta el control humano. "Todos mueren" = is->ought (la mortalidad no dice nada sobre la legitimidad de poseer a un alguien). Ferals/crop pests = relación distinta, no defiende la propiedad. Cierre con SU propia palabra ("hold the reins"): ¿qué hace legítimo sostener las riendas de la existencia entera de otro individuo? Concedí welfare/body-count sin tocar el eje.
 
+### Hilo `27051763587778150` — 2026-06-29 · outcome: **pending**
+- **Su jugada:** Rechazo analogia esclavitud: animals != humans; slavery was keeping humans like animals; keeping animals like animals no es dilema
+- **Nuestra respuesta:** Conced cerdo!=humano (no es el reclamo); la analogia es por ESTRUCTURA (poseer a un sujeto como cosa), no por igualar especies; keeping-animals-like-animals da por hecho lo que se pregunta; devolvi: por que pertenecer a otra especie justifica poseer a alguien con punto de vista.
+
 _Hilos: 27395909046698912, 27405978672358616_
