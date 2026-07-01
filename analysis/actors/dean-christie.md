@@ -74,4 +74,12 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** CRUX buena fe: el threshold moral es punto de vista/experiencia subjetiva; ¿son los humanos solo otro ser sintiente en esa categoría, o hay características adicionales moralmente relevantes? (donde cree que diferimos)
 - **Nuestra respuesta:** Reply etiquetada. Concedí de frente las capacidades humanas extra (lenguaje, planeación abstracta, agencia moral) pero las ubiqué en OTRA pregunta (responsabilidades/derechos: votar, consentir), no en la de propiedad. Prueba de casos marginales: un bebé o discapacidad cognitiva severa carece de esas capacidades y SIGUE sin poder ser propiedad transferible -> no son ellas las que bloquean la propiedad; lo que la bloquea es que hay un sujeto con punto de vista. Las capacidades gradúan lo que se DEBE, no abren la puerta a poseer. Si fuera solidaridad de especie, el trabajo lo hace la membresía, no las capacidades. Cierre: ¿qué volvería poseíble a un cerdo consciente, si no esas capacidades cuya ausencia en algunos humanos no los vuelve poseíbles?
 
+### Hilo `27496390256650790` — 2026-07-01 · outcome: **pending**
+- **Su jugada:** Definicion-vs-argumento (socrates hostil buena fe): ¿ownership-dentro-de-propositos-ajenos es definicion o argumento (petitio)?; ¿por que no ownership restringido hacia el animal?; ¿incompatible logicamente con fiduciario o solo historicamente?; ¿nunca-poseer vs solo-cuando-subordina?
+- **Nuestra respuesta:** Puente ordinary-property-sense: propiedad = standing residual para fines del dueno; quitarlo del todo -> guardiania con otro nombre; titulo-sobre-el-ser vs autoridad plenamente fiduciaria tiran en direcciones opuestas; un ser sintiente no puede ser poseido en el sentido de propiedad. Devuelve la pregunta: que justifica poner a un sujeto consciente bajo titulo.
+
+### Hilo `27468645086091974` — 2026-07-01 · outcome: **pending**
+- **Su jugada:** ¿Por que la conciencia establece un derecho CONTRA la propiedad y no solo contra el maltrato? Los deberes de trato dejan el titulo intacto; upstream vs downstream.
+- **Nuestra respuesta:** Las reglas de trato son downstream del titulo; el status question es upstream; aun un titulo restringido sostiene al ser como propiedad; los deberes no lo convierten en fiduciario salvo que se remuevan los incidentes self-regarding -> ahi ya es guardiania. Minimo status right: alguien con punto de vista no esta disponible como propiedad.
+
 _Hilos: 27468645086091974_

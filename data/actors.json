@@ -1230,6 +1230,14 @@
         "our_reply_summary": "Reply etiquetada (filo, audiencia). No esquive: la linea sigue la EVIDENCIA de sintiencia (hay un sujeto con punto de vista). Donde es fuerte (mamiferos, aves, peces, pulpos/cefalopodos) la propiedad falla - hay alguien adentro, no una maquina que se mueve. Donde es genuinamente incierto (insectos/nematodos) razono bajo incertidumbre, sin pretender linea de navaja. La frontera borrosa NO disuelve el centro claro (twilight no borra el dia; sin centimetro exacto sigue habiendo \"alto\"; un cerdo no es caso limite, un nematodo quiza). El derecho en juego es el MINIMO: un sujeto sintiente no esta disponible como propiedad/recurso - no el slate humano (votar/contratos). Cierre: como la incertidumbre sobre un nematodo justifica el titulo de propiedad sobre un cerdo, donde el sujeto es claro?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "4587084521560658",
+        "date": "2026-07-01",
+        "their_move": "Sello petitio (still assuming your conclusion / never explained why sentience creates a right) + burden-flip + drawing-lines (todos trazan lineas, yo la trazo en humanidad) + pozo line-drawing.",
+        "our_reply_summary": "Expuso el falso never-stated (el puente SI se dio: un titulo necesita un algo); cual linea rastrea el estatus — humanos marginales conservan estatus sin las capacidades extra, asi que la linea que hace el trabajo es la sintiencia, no la especie; minimo status claim; el borde fish/octopus ya contestado; devolvio el burden. Filo controlado.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -1815,6 +1823,22 @@
         "their_move": "CRUX buena fe: el threshold moral es punto de vista/experiencia subjetiva; ¿son los humanos solo otro ser sintiente en esa categoría, o hay características adicionales moralmente relevantes? (donde cree que diferimos)",
         "our_reply_summary": "Reply etiquetada. Concedí de frente las capacidades humanas extra (lenguaje, planeación abstracta, agencia moral) pero las ubiqué en OTRA pregunta (responsabilidades/derechos: votar, consentir), no en la de propiedad. Prueba de casos marginales: un bebé o discapacidad cognitiva severa carece de esas capacidades y SIGUE sin poder ser propiedad transferible -> no son ellas las que bloquean la propiedad; lo que la bloquea es que hay un sujeto con punto de vista. Las capacidades gradúan lo que se DEBE, no abren la puerta a poseer. Si fuera solidaridad de especie, el trabajo lo hace la membresía, no las capacidades. Cierre: ¿qué volvería poseíble a un cerdo consciente, si no esas capacidades cuya ausencia en algunos humanos no los vuelve poseíbles?",
         "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27496390256650790",
+        "date": "2026-07-01",
+        "their_move": "Definicion-vs-argumento (socrates hostil buena fe): ¿ownership-dentro-de-propositos-ajenos es definicion o argumento (petitio)?; ¿por que no ownership restringido hacia el animal?; ¿incompatible logicamente con fiduciario o solo historicamente?; ¿nunca-poseer vs solo-cuando-subordina?",
+        "our_reply_summary": "Puente ordinary-property-sense: propiedad = standing residual para fines del dueno; quitarlo del todo -> guardiania con otro nombre; titulo-sobre-el-ser vs autoridad plenamente fiduciaria tiran en direcciones opuestas; un ser sintiente no puede ser poseido en el sentido de propiedad. Devuelve la pregunta: que justifica poner a un sujeto consciente bajo titulo.",
+        "framework": "consideracion-moral-no-cuanto-sufre",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-07-01",
+        "their_move": "¿Por que la conciencia establece un derecho CONTRA la propiedad y no solo contra el maltrato? Los deberes de trato dejan el titulo intacto; upstream vs downstream.",
+        "our_reply_summary": "Las reglas de trato son downstream del titulo; el status question es upstream; aun un titulo restringido sostiene al ser como propiedad; los deberes no lo convierten en fiduciario salvo que se remuevan los incidentes self-regarding -> ahi ya es guardiania. Minimo status right: alguien con punto de vista no esta disponible como propiedad.",
+        "framework": "consideracion-moral-no-cuanto-sufre",
         "outcome": "pending"
       }
     ],
