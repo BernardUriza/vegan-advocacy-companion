@@ -169,4 +169,8 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Sello petitio (still assuming your conclusion / never explained why sentience creates a right) + burden-flip + drawing-lines (todos trazan lineas, yo la trazo en humanidad) + pozo line-drawing.
 - **Nuestra respuesta:** Expuso el falso never-stated (el puente SI se dio: un titulo necesita un algo); cual linea rastrea el estatus — humanos marginales conservan estatus sin las capacidades extra, asi que la linea que hace el trabajo es la sintiencia, no la especie; minimo status claim; el borde fish/octopus ya contestado; devolvio el burden. Filo controlado.
 
+### Hilo `4587084521560658` — 2026-07-01 · outcome: **pending**
+- **Su jugada:** Retreat-cycle: vamos en circulos / acepto que tu criterio es sintiencia pero nunca justificaste por que es decisiva / yo respondi la tuya, responde la mia: por que 99% de humanidad deberia abandonar su marco de cientos de miles de anos? / el burden es tuyo.
+- **Nuestra respuesta:** SWITCH DE EVASION (doble-estandar): vamos en circulos porque exige que mi linea se justifique hasta el fondo mientras exime la suya. El principio esta dado (la sintiencia hace que EXISTA un alguien para quien ser propiedad cuenta; roca no, cerdo si). Aplica su demanda a su linea: 99%/cientos de miles de anos mide cuantos y cuanto tiempo, no por que; popularidad y edad explican una practica, no defienden su titulo. El burden lo carga quien reclama standing para poseer a un alguien.
+
 _Hilos: 27363745576581926, 27375477042075446_

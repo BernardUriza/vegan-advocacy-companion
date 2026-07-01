@@ -82,4 +82,12 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** ¿Por que la conciencia establece un derecho CONTRA la propiedad y no solo contra el maltrato? Los deberes de trato dejan el titulo intacto; upstream vs downstream.
 - **Nuestra respuesta:** Las reglas de trato son downstream del titulo; el status question es upstream; aun un titulo restringido sostiene al ser como propiedad; los deberes no lo convierten en fiduciario salvo que se remuevan los incidentes self-regarding -> ahi ya es guardiania. Minimo status right: alguien con punto de vista no esta disponible como propiedad.
 
+### Hilo `27496390256650790` — 2026-07-01 · outcome: **pending**
+- **Su jugada:** Es self-regarding standing esencial a la propiedad o solo una estructura legal particular? Si la defines asi, construyes la conclusion en la palabra. La autoridad restringida sobre un sintiente es departure de ownership o re-descripcion? Dos forks: definicion vs cualquier control transferible ilegitimo.
+- **Nuestra respuesta:** El principio es DERIVADO, no estipulacion: autoridad legitima sobre un sujeto solo como cuidado PARA ese sujeto; la propiedad ubica el standing (control/exclusion/transfer/beneficio) del lado del dueno. La distincion ownership/guardiania es EVIDENCIA (la ley ya reclasifica lo no-self-regarding como tutela), no el fundamento. El defecto es el standing transferible sobre un sujeto; medios/fines.
+
+### Hilo `27468645086091974` — 2026-07-01 · outcome: **pending**
+- **Su jugada:** Es "un ser consciente no puede ser poseido" principio fundacional o derivado? Si derivado, de que principio?
+- **Nuestra respuesta:** DERIVADO, no axioma suelto. Principio base: un sujeto consciente tiene intereses propios, hay alguien para quien las cosas importan desde adentro; establece el status minimo (no puede ser tenido como recurso para fines ajenos). La propiedad crea ese titulo; la relacion fiduciaria tiene otra estructura (autoridad justificada por el beneficiario). Medios/fines.
+
 _Hilos: 27468645086091974_
