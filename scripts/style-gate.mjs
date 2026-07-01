@@ -42,6 +42,9 @@ const KILL_PHRASES = [
   "It's worth noting",
   'At the end of the day',
   "Here's the thing",
+  "that's a label, not an argument",
+  'a label, not an argument',
+  'is standing in for the answer',
 ];
 
 // ------- helpers de segmentación -------

@@ -36,18 +36,34 @@ cierre** y devolverle al lurker la tarea que el sello le quiso ahorrar.
 poder. Se contesta **solo cuando el insulto intenta CERRAR el intercambio para el
 lurker**; si es ruido suelto, se ignora.
 
-### Movimiento canónico (voz de Bernard, reusable)
+### El "that's a label, not an argument" está QUEMADO — NO lo uses (2026-07-01)
 
-> That's a label, not an argument. If the point is wrong, show where. Otherwise the
-> insult is just standing in for the answer.
+Regla dura: la frase **"that's a label, not an argument"** (y su primo "the insult is
+standing in for the answer") está **trillada y suena a IA/robot**. Bernard, 2026-07-01:
+*"eso de 'is a label' es muy trillado y sonamos como robot."* NO abrir con ella. El
+sello se neutraliza por un camino más original y más fuerte:
 
-o, más afilado:
+### Movimiento canónico — los RECIBOS son la refutación (no el meta-comentario)
 
-> "Ignorant" is doing a lot of work there. Name the mistake, or admit the label is
-> what you put where the argument was supposed to go.
+Cuando el sello es del tipo **gaslighting** ("your translator sucks", "ask your AI
+friend", "you don't even understand the argument"), la neutralización más potente NO
+es nombrar que es una etiqueta — es **demostrar memoria precisa de TODO el arco**, de
+modo que la acusación de incomprensión se cae sola:
 
-Una sola frase. Nombra que el sello ocupa el lugar del argumento y le devuelve al
-otro la carga de mostrar el error — frente al lurker.
+> If this were really a translator problem, I would not be able to track the whole
+> path of your argument this cleanly. First it was X, and I answered A. Then it became
+> Y, and I answered B. Then Z… Now the move is W.
+
+Si te acusan de no entender, el mapa exacto de su propia retirada ES la prueba de que
+entendiste — y expone que **quien cambia de tema es quien huye del punto**, no tú. Los
+recibos hacen el trabajo que el "that's a label" hacía, pero sin sonar robótico y
+sumando el reencuadre de su evasión. Tono: paciencia, no fastidio ("I'm asking the
+same question again, patiently"); el adulto en la sala tiene recibos.
+
+Para el sello-etiqueta simple ("eres ignorante/arrogante") sin gaslighting de
+comprensión, sigue valiendo devolver la carga en UNA línea — pero **redáctala fresca**,
+nunca con la fórmula quemada de arriba. Nombra el mistake concreto que falta, no que
+"es una etiqueta".
 
 ### Graduación (qué hacer según el comentario)
 
