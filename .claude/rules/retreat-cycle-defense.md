@@ -62,6 +62,31 @@ crop-deaths → "planta también siente" con la misma lógica de retirada.
    asking the same question again") es el arma contra quien apuesta a cansarte: el
    adulto en la sala que tiene tiempo y recibos gana al lurker. Tenemos tiempo; ella
    apuesta a que no.
+5. **Señala el SWITCH DE EVASIÓN, no "la contradicción".** Cuando dos estaciones son
+   incompatibles (el arco es *kettle logic* — defensas mutuamente inconsistentes),
+   el golpe fuerte NO es el gotcha formal "te contradijiste" (un oponente fino se
+   escapa separando planos y queda *más* ordenado de lo que es). El golpe difícil de
+   esquivar apunta al **uso táctico de los marcos**: *cuando necesita autoridad, dice
+   "los humanos deciden el valor moral"; cuando le piden justificar esa decisión, la
+   vuelve "es solo lo que la palabra significa".* La forma canónica, en UNA línea que
+   regresa al hueso:
+   > Notice the switch: when it helps, moral status is something humans choose; when
+   > that choice is questioned, it becomes "just what the word means." Either way, the
+   > title is still undefended.
+
+   Si es *decisión* → exige justificación; si es *definición* → presupone la
+   conclusión. En ambos casos el título sigue indefenso — y ahí vuelve la pregunta.
+   El término "kettle logic" es **detector interno, NUNCA se dice en público** (suena
+   a profesor y saca al lurker del hueso).
+
+### La disciplina de 3 piezas (innegociable — el flanco del método)
+
+Nombrar el patrón puede volverse un **sustituto del argumento**: si pasas demasiado
+tiempo en "mira cómo evade", el lurker siente que TÚ también esquivas la sustancia.
+Por eso cada vuelta lleva SIEMPRE, en este orden: **(1)** recibo factual del
+movimiento → **(2)** UNA sola frase nombrando el patrón/switch → **(3)** regreso
+inmediato a la pregunta del título. El nombrar es una escalera de vuelta al hueso,
+jamás una excursión meta. Si quitas la pieza (3), lo hiciste mal.
 
 ## Cuándo NO enganchar
 
@@ -78,6 +103,42 @@ en migrar, el silencio (con la pregunta sin contestar visible) es el mejor recib
   no una refutación estación-por-estación.
 - **Etapa 4 ([[reply-output-style]] / style-gate):** un draft que persiga una sola
   estación y pierda el arco, o que suene fastidiado en vez de paciente, se reformula.
+
+## Fundamento (teoría de argumentación + evidencia), y sus límites
+
+El instinto de esta regla tiene nombre y respaldo — pero léelo con la calibración,
+no como eslogan (Art. 2):
+
+- **El patrón** = **moving the goalposts** (abandonar un argumento derrotado y saltar
+  a otro sin admitir la derrota, conservando la conclusión) + **kettle logic** (apilar
+  defensas mutuamente inconsistentes). Primo del **motte-and-bailey** (avanzar la
+  tesis fuerte, replegarse a una débil al ser retado) y del **Gish gallop** (inundar
+  con volumen). Fuentes: [Kettle logic](https://www.logicallyfallacious.com/logicalfallacies/Kettle-Logic),
+  [Motte-and-bailey](https://en.wikipedia.org/wiki/Motte-and-bailey_fallacy),
+  [Gish gallop](https://en.wikipedia.org/wiki/Gish_gallop).
+- **La contra reconocida al Gish gallop coincide con la nuestra:** no persigas cada
+  punto (toma un *sample* representativo), **nombra la técnica** y explícale a la
+  audiencia por qué no das refutación punto-por-punto, presenta tu propia evidencia,
+  mantén la compostura ([Effectiviology](https://effectiviology.com/gish-gallop/)).
+- **Debatir para el lurker = inoculación / prebunking**, con respaldo: exponer la
+  TÁCTICA (no solo el tema) entrena a la audiencia a reconocer la manipulación, y
+  **generaliza** a otras instancias (McGuire 1964; van der Linden et al. 2017;
+  Roozenbeek & van der Linden 2019 —
+  [SagePub](https://journals.sagepub.com/doi/full/10.1177/00027162221087936),
+  [Cambridge](https://www.cam.ac.uk/stories/inoculateexperiment)). **PERO es regla
+  interna, NUNCA pose pública:** jamás anunciar "estoy inoculando a la audiencia /
+  performing for the lurker" — suena manipulativo y le da al oponente el escape
+  "admite que actúa para la galería". El valor está en nombrar el patrón, no en
+  proclamar la teoría.
+- **El miedo a "refutar endurece al oponente" (backfire effect) NO es el resultado
+  típico** de corregir falsedades: Wood & Porter (2019, 10,100 sujetos, 52 temas
+  polarizados) no hallaron backfire generalizado
+  ([SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2819073),
+  [PNAS](https://www.pnas.org/doi/pdf/10.1073/pnas.1912440117)). Calibración honesta:
+  eso NO significa que toda refutación convenza al oponente, ni que la identidad nunca
+  endurezca posiciones en ciertos contextos — significa que **no hay que temerle a la
+  corrección factual ante la audiencia**. La refutación no busca convertir al pozo;
+  busca entrenar al lector. Eso es exactamente el norte.
 
 ## Por qué existe
 
