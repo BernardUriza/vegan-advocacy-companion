@@ -156,6 +156,32 @@ function checkTricolon() {
   return { name: 'tricolon', hard: false, soft: hits.length >= 1, repeated: hits.length >= 2, count: hits.length, evidence: hits.slice(0, 6) };
 }
 
+// ------- check: negar-luego-afirmar como pivote (regla dura 2026-06-30) -------
+// AI-tell aburrido: "the X is not A. the X is B" / "isn't A — it's B" / "X, not Y" como
+// forma de AFIRMAR por negación. Se dice lo que ES, afirmativo. NO confundir con la
+// concesión-y-redirección ("that does not make X; it means Y") ni con el reframe-the-ask
+// ("I'm not asking A, I'm asking B"), que SÍ son humanos y se conservan — por eso el
+// detector ancla en la CÓPULA (is/it's) con un sujeto the/it/that, no en make/mean/ask.
+function checkNegateThenAffirm() {
+  const hits = [];
+  // 1. HARD — pivote copular: "<the X|it|that> is not <A con contenido> [. interjección corta.]
+  //    <the Y|it|that> is <B>". El `[\p{L}]` tras "is not " exige contenido → excluye la
+  //    concesión terminal "the other is not. I accept…" (predicado elidido, no es pivote).
+  const reCopula = /\b(?:the\s+[\p{L}'’-]+|it|that|this)\s+is\s+not\s+[\p{L}][\s\S]{1,110}?\b(?:the\s+[\p{L}'’-]+|it|that|this)\s+is\b(?!\s+not\b)/giu;
+  // 2. HARD — contracción: "isn't A — it's B" / "isn't A, it's B"
+  const reContraction = /\bis\s*n[’']t\b[^.!?]{2,70}?[—,-]\s*(?:it|that|the)[’']?s\b/giu;
+  let m;
+  while ((m = reCopula.exec(text)) !== null) hits.push(m[0].replace(/\s+/g, ' ').slice(0, 90));
+  while ((m = reContraction.exec(text)) !== null) hits.push(m[0].replace(/\s+/g, ' ').slice(0, 90));
+  // 3. SOFT — apositivo compacto "<palabra>, not <palabra>" ("substantive, not verbal").
+  //    Excluye preposiciones/artículos tras "not" para no cazar contrastes legítimos
+  //    ("cared for, not toward the purposes").
+  const soft = [];
+  const reAppos = /\b([\p{L}’'-]+),\s+not\s+(?!(?:toward|towards|for|to|in|into|on|of|with|within|at|by|from|the|a|an|as|about)\b)([\p{L}’'-]+)\b/giu;
+  while ((m = reAppos.exec(text)) !== null) soft.push(m[0].replace(/\s+/g, ' '));
+  return { name: 'negateThenAffirm', hard: hits.length > 0, soft: hits.length === 0 && soft.length > 0, count: hits.length, evidence: hits.slice(0, 4), softEvidence: soft.slice(0, 4) };
+}
+
 // ------- check: emojis / **bold** / MAYÚSCULAS-grito -------
 function checkEmojiOrMarkdown() {
   const emojiRe = /\p{Extended_Pictographic}/gu;
@@ -188,6 +214,7 @@ const checks = [
   checkEmojiOrMarkdown(),
   detectWelfaristAxis(text, { lang: 'en', positional: true, quantumHardAt: 2 }),
   detectBiocentricAxis(text, { lang: 'en' }),
+  checkNegateThenAffirm(),
 ];
 
 const hardFlags = checks.filter((c) => c.hard).map((c) => c.name);
@@ -218,6 +245,7 @@ if (asJson) {
   console.log(`[${mark(checks[5].hard)}] emojiOrMarkdown   emojis:${checks[5].emojis.length} bold:${checks[5].bold.length} grito:${checks[5].shoutWords.length} headings:${checks[5].headings.length}`);
   console.log(`[${mark(checks[6].hard)}] welfaristAxis     ${checks[6].evidence.length ? checks[6].evidence.join(' | ') : 'eje no-bienestarista (ok)'}`);
   console.log(`[${mark(checks[7].hard)}] biocentricAxis    ${checks[7].evidence.length ? checks[7].evidence.join(' | ') : 'eje sensocéntrico (ok)'}`);
+  console.log(`[${checks[8].hard ? 'X' : checks[8].soft ? '~' : '.'}] negateThenAffirm  ${checks[8].count ? 'pivote copular: ' + checks[8].evidence.map((h) => `"${h}"`).join(' | ') : checks[8].soft ? 'apositivo: ' + checks[8].softEvidence.join(' | ') : 'afirmativo (ok)'}`);
   if (softFlags.length) console.log(`\nflags blandas (avisan, no fallan): ${softFlags.join(', ')}`);
 }
 
