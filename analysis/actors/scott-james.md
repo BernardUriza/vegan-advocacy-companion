@@ -67,4 +67,8 @@ No entrar en body-count de crop deaths. La distinción es intención y necesidad
 - **Su jugada:** Insulto-sello tras dismissal: "Your argument is lost at someone, that is your weakness" + "pathetic word salad / Kamala Harris scriptwriter" — etiqueta para el lurker, sin refutacion.
 - **Nuestra respuesta:** insult-seal-defense: nombre que "lost at someone"/"word salad" son etiquetas, no refutaciones; pedi que nombre DONDE falla la distincion alguien/algo (sujeto con punto de vista vs objeto), o el insulto ocupa el lugar del argumento; sali. Corto (64 palabras), sin morder el insulto, sin sonar herido. Draft del agente nuevo v2.
 
+### Hilo `27330688236588406` — 2026-07-03 · outcome: **pending**
+- **Su jugada:** Tu-quoque de propiedad: you get owned every time you tap nonsense on your phone (dos sentidos de owned).
+- **Nuestra respuesta:** Separe los dos sentidos: el coloquial (una app captura tu atencion, te pone bajo terminos) conserva tu standing como persona -no eres activo transferible, no te crian/venden/matan-; el cerdo esta bajo titulo LITERAL (criado, gestionado, dispuesto como recurso). La metafora no toca la institucion. Cierre: que justifica el titulo literal sobre alguien con punto de vista.
+
 _Hilos: 27341517928804691_
