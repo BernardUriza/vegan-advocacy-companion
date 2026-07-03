@@ -1290,6 +1290,14 @@
         "our_reply_summary": "SWITCH DE EVASION (doble-estandar): vamos en circulos porque exige que mi linea se justifique hasta el fondo mientras exime la suya. El principio esta dado (la sintiencia hace que EXISTA un alguien para quien ser propiedad cuenta; roca no, cerdo si). Aplica su demanda a su linea: 99%/cientos de miles de anos mide cuantos y cuanto tiempo, no por que; popularidad y edad explican una practica, no defienden su titulo. El burden lo carga quien reclama standing para poseer a un alguien.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "4587084521560658",
+        "date": "2026-07-03",
+        "their_move": "Petitio (assuming your conclusion) + why-same-rights-as-humans + casos marginales (babies/dementia) + line-drawing (insects/fish/nematodes) + burden-flip.",
+        "our_reply_summary": "La acusacion de asumir la conclusion es falsa: parto de lo que EL concede (son sintientes); no reclamo mismos derechos/igualdad, solo lo minimo (no ser propiedad); sus casos marginales cortan en su contra (bebes/demencia sin las capacidades y con estatus completo -> el criterio es sentir, no la capacidad superior). Tome el nucleo (Gish discipline), no persegui cada rama. Cierre: cual es el rasgo que hace el trabajo.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -1770,6 +1778,14 @@
         "our_reply_summary": "Reply etiquetada. Expuse el petitio: decir que someone solo aplica a humanos no zanja la disputa, la asume; el rasgo (no la etiqueta humano) es lo que falta nombrar. Una roca no tiene punto de vista, un cerdo si; pedir aceptar la conclusion antes de discutir es ponerla como precio de entrada. Cierre: que rasgo, fuera de la especie, vuelve a un cerdo con punto de vista un something que puede ser propiedad.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-07-03",
+        "their_move": "Peticion de principio definicional: it is a dictionary dispute, someone only applies to people; + crops-are-bred-too.",
+        "our_reply_summary": "El diccionario no zanja lo moral; si someone rastrea especie o punto-de-vista ES la pregunta; definir someone=human antes mete la conclusion en la lengua; crops-are-bred es error de categoria (un cultivo no es alguien con standpoint). Devolvi la carga sobre el estatus. Cierre: que rasgo hace decisiva la membresia de especie.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "user_id": "100000547865199",
@@ -2100,6 +2116,14 @@
         "date": "2026-06-29",
         "their_move": "Silogismo: no son personas -> no son alguien -> son propiedad (membresia de especie como criterio)",
         "our_reply_summary": "Nombre que people es etiqueta de especie no criterio; pedi el RASGO (no la etiqueta humano) que hace a alguien no-poseible; paralelismo historico por ESTRUCTURA (declarar clase fuera de la categoria protegida). Sin afirmar animals are people.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "4587084521560658",
+        "date": "2026-07-03",
+        "their_move": "Silogismo no-humano->no-comparable: one group is human, the other is not, you cant compare humans with animals.",
+        "our_reply_summary": "Conced la diferencia de especie y exigi por que ESA diferencia decide propiedad; la comparacion es estructural (ambos sujetos con punto de vista), no identidad; humans-count-because-human mete la conclusion en la categoria; SIN afirmar son-someone como premisa demostrada (evite la petitio inversa). Cierre: que rasgo moralmente relevante hace aceptable poseer a un sujeto que siente cuando la unica diferencia es que no es humano.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }
@@ -2512,5 +2536,35 @@
     "postura_nucleo": "Concede que el abuso animal esta mal; reencuadra el desacuerdo a que-hacer-al-respecto (policy), no al estatus de propiedad.",
     "analisis": "Actor nuevo (post 27330), buena fe. Abre concediendo el common ground y desplazando a politica. Persuadible: el reframe es honesto, no hostil. El oro vive en la buena fe (moat).",
     "what_not_to_do": "No acusarlo; no aceptar el reencuadre a policy como el desacuerdo real; no eje bienestarista; no abrir con su nombre."
+  },
+  {
+    "tactics": [
+      "species_hierarchy",
+      "welfare_rhetoric",
+      "naturalismo"
+    ],
+    "threads": [
+      "27330688236588406"
+    ],
+    "interactions": [
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-07-03",
+        "their_move": "Gish gallop: species-diff + welfare-comparativo (stun vs Komodo) + farmers spend ££££ + omnivoro/teeth + wild-is-worse + meta anti-vegano (carnist/AI).",
+        "our_reply_summary": "Nombre el gallop en una linea; concedi el bloque empirico (especies difieren, wild brutal, farmers gastan, humanos digieren) sin conceder el titulo; clave que todo eso es ortogonal a la propiedad; el cuidado es downstream del titulo; wild-is-worse compara muertes (no era la pregunta); no claiming identical. Cierre: que justifica poner al sujeto bajo titulo humano.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "832080524",
+    "name": "Morgan Jenkins",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/832080524/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Acepta que los animales son individuos pero \"no en el mismo sentido que los humanos\"; el uso humano no es esclavitud sino cuidado (vet bills/refugio) y la matanza occidental es menos cruel que la depredacion salvaje.",
+    "analisis": "Gish gallop clasico (2026-07-03, post 27330, 8h): apila ~8 puntos en un comentario — diferencia de especie (crian distinto a sus crias), welfare-comparativo (stun vs Komodo dragon desgarrando un feto), \"farmers spend ££££\", omnivoro/teeth-argument (pandas), meta anti-vegano (carnist/AI/emotional manipulation), y wild-is-worse. El nucleo real es human-exceptionalism + care-justifica-uso. Registro civil-cortante, algo troll en el meta. No perseguir el gallop; nombrar la tecnica, tomar el nucleo (diferencias ortogonales al titulo; el cuidado es downstream del titulo), volver al hueso.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No perseguir cada punto del gallop (teeth/pandas/halal/carnist/AI). No competir en cantidad de crueldad ni conceder \"welfare\". No pelear si los humanos son omnivoros. Tomar el nucleo (individuos-pero-no-como-humanos + care=uso), nombrar el gallop en una linea, y volver al titulo de propiedad sobre un sujeto que siente."
   }
 ]

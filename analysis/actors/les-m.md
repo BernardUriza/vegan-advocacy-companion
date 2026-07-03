@@ -173,4 +173,8 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Retreat-cycle: vamos en circulos / acepto que tu criterio es sintiencia pero nunca justificaste por que es decisiva / yo respondi la tuya, responde la mia: por que 99% de humanidad deberia abandonar su marco de cientos de miles de anos? / el burden es tuyo.
 - **Nuestra respuesta:** SWITCH DE EVASION (doble-estandar): vamos en circulos porque exige que mi linea se justifique hasta el fondo mientras exime la suya. El principio esta dado (la sintiencia hace que EXISTA un alguien para quien ser propiedad cuenta; roca no, cerdo si). Aplica su demanda a su linea: 99%/cientos de miles de anos mide cuantos y cuanto tiempo, no por que; popularidad y edad explican una practica, no defienden su titulo. El burden lo carga quien reclama standing para poseer a un alguien.
 
+### Hilo `4587084521560658` — 2026-07-03 · outcome: **pending**
+- **Su jugada:** Petitio (assuming your conclusion) + why-same-rights-as-humans + casos marginales (babies/dementia) + line-drawing (insects/fish/nematodes) + burden-flip.
+- **Nuestra respuesta:** La acusacion de asumir la conclusion es falsa: parto de lo que EL concede (son sintientes); no reclamo mismos derechos/igualdad, solo lo minimo (no ser propiedad); sus casos marginales cortan en su contra (bebes/demencia sin las capacidades y con estatus completo -> el criterio es sentir, no la capacidad superior). Tome el nucleo (Gish discipline), no persegui cada rama. Cierre: cual es el rasgo que hace el trabajo.
+
 _Hilos: 27363745576581926, 27375477042075446_

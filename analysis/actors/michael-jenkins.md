@@ -58,4 +58,8 @@ No debatir si las plantas sienten, no competir en body-count, no defender el con
 - **Su jugada:** Cierre definicional/petitio (32m): it is a dictionary dispute, someone solo aplica a personas, until you accept that there is no point discussing the rest.
 - **Nuestra respuesta:** Reply etiquetada. Expuse el petitio: decir que someone solo aplica a humanos no zanja la disputa, la asume; el rasgo (no la etiqueta humano) es lo que falta nombrar. Una roca no tiene punto de vista, un cerdo si; pedir aceptar la conclusion antes de discutir es ponerla como precio de entrada. Cierre: que rasgo, fuera de la especie, vuelve a un cerdo con punto de vista un something que puede ser propiedad.
 
+### Hilo `27330688236588406` — 2026-07-03 · outcome: **pending**
+- **Su jugada:** Peticion de principio definicional: it is a dictionary dispute, someone only applies to people; + crops-are-bred-too.
+- **Nuestra respuesta:** El diccionario no zanja lo moral; si someone rastrea especie o punto-de-vista ES la pregunta; definir someone=human antes mete la conclusion en la lengua; crops-are-bred es error de categoria (un cultivo no es alguien con standpoint). Devolvi la carga sobre el estatus. Cierre: que rasgo hace decisiva la membresia de especie.
+
 _Hilos: 27330688236588406_

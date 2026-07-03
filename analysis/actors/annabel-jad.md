@@ -54,4 +54,8 @@ NO afirmar 'los animales SI son personas/someone' como premisa demostrada (petic
 - **Su jugada:** Silogismo: no son personas -> no son alguien -> son propiedad (membresia de especie como criterio)
 - **Nuestra respuesta:** Nombre que people es etiqueta de especie no criterio; pedi el RASGO (no la etiqueta humano) que hace a alguien no-poseible; paralelismo historico por ESTRUCTURA (declarar clase fuera de la categoria protegida). Sin afirmar animals are people.
 
+### Hilo `4587084521560658` — 2026-07-03 · outcome: **pending**
+- **Su jugada:** Silogismo no-humano->no-comparable: one group is human, the other is not, you cant compare humans with animals.
+- **Nuestra respuesta:** Conced la diferencia de especie y exigi por que ESA diferencia decide propiedad; la comparacion es estructural (ambos sujetos con punto de vista), no identidad; humans-count-because-human mete la conclusion en la categoria; SIN afirmar son-someone como premisa demostrada (evite la petitio inversa). Cierre: que rasgo moralmente relevante hace aceptable poseer a un sujeto que siente cuando la unica diferencia es que no es humano.
+
 _Hilos: 27330688236588406_
