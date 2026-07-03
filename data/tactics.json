@@ -452,5 +452,19 @@
       "854405343"
     ],
     "fallacy_type_id": null
+  },
+  {
+    "id": "concesion_reframe_policy",
+    "name": "Concede-and-Reframe-to-Policy",
+    "category": "framing",
+    "definition": "Concede el punto moral obvio (ej. \"animal abuse is wrong\") y desplaza el desacuerdo a la POLITICA (\"where we differ is what should be done about it\"), esquivando la pregunta del ESTATUS que hace posible el abuso. Suele ser de buena fe, pero mueve el debate del fundamento a la accion.",
+    "canonical_counter": "Aceptar el common ground de frente y mostrar que el desacuerdo es ANTERIOR a la politica: si ya llamamos abuso a maltratar al ser, es porque hay alguien ahi; el estatus de propiedad es el SUELO del abuso, no un tema aparte. Devolver al hueso: que justifica tener a un sujeto consciente como propiedad de entrada.",
+    "register": "compasivo",
+    "what_not_to_do": "No aceptar el reencuadre a \"que hacer\" como si fuera el desacuerdo real; no sonar como que le mueves el poste (anclar en SU palabra, abuse). No usar eje bienestarista.",
+    "source": "Marcus Yelvington 2026-07-02 (post 27330)",
+    "actors_known": [
+      "100094637395621"
+    ],
+    "fallacy_type_id": null
   }
 ]

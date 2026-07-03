@@ -38,7 +38,7 @@ NO discutir las cifras de rendimiento; nombrar que las metricas presuponen la pr
 
 ## Log de interacciones
 
-### Hilo `27496390256650790` — 2026-06-29 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-06-29 · outcome: **engaged**
 - **Su jugada:** Rendimiento instrumental: pigs taste better, easier to control, more food per animal than cats
 - **Nuestra respuesta:** Conced que por rendimiento un cerdo supera a un gato (cierto); cada metrica mide utilidad-para-nosotros, no toca si el cerdo es un sujeto; describir por que es mejor recurso da por hecho que es un recurso, que es lo que se pregunta; devolvi la pregunta de propiedad.
 

@@ -54,11 +54,11 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Reframe (near-gold): no hay rasgo del cerdo que lo haga poseible; ownership no es propiedad del animal sino relacion legal/social entre humanos
 - **Nuestra respuesta:** Aceptе su refinamiento de frente (mas preciso); voltее: que sea relacion social no explica por que esa autoridad debe existir; recorde el common ground (concedio point of view + moral consideration); devolvi: que justifica crear esa relacion de autoridad sobre un conscious individual con perspectiva propia.
 
-### Hilo `27496390256650790` — 2026-06-29 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-06-29 · outcome: **engaged**
 - **Su jugada:** sapient kind: ¿point-of-view es suficiente o solo relevante? la proteccion de infantes/dementia se basa en ser de una clase sapiente, no en funcion cognitiva actual; ¿threshold para full moral status?
 - **Nuestra respuesta:** Reconoci la distincion relevant-vs-sufficient; decline full-moral-status/equivalence (no es el reclamo, es no-propiedad); voltее: sapient-kind reubica la pertenencia de grupo sobre el sujeto concreto -> ¿por que la clase, no el que este individuo tenga un punto de vista, licencia poseerlo? Evite el side-debate del comatoso. Cierre en propiedad.
 
-### Hilo `27496390256650790` — 2026-06-29 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-06-29 · outcome: **engaged**
 - **Su jugada:** Sapience/agencia/reciprocidad como caracteristicas moralmente relevantes; sentience no basta para hacer ilegitima la propiedad; ownership-con-constraints != ilegitimo
 - **Nuestra respuesta:** Premie la buena fe. Explicite el fundamento (solo un sujeto consciente tiene experiencias que importan desde su perspectiva) en vez de axioma; sapience grada deberes pero no decide la entrada al circulo; "sapient kind" mueve el foco del individuo a la categoria; regular el trato presupone el titulo cuya justificacion es la pregunta.
 
@@ -66,19 +66,19 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Round 2 buena fe (EL CRUX): no es membresia de especie sino capacidades (sapience/autonomia/agencia/reciprocidad) las moralmente relevantes a si la propiedad es apropiada; concede que sentience es relevante pero pide el principio que va de "es sintiente" a "propiedad inherentemente impermisible", no solo a "obligaciones morales bajo constraints apropiadas".
 - **Nuestra respuesta:** Conteste SU pregunta exacta: el principio es que un sujeto sintiente es alguien con vida experimentada desde adentro; la propiedad es la relacion que coloca al ser dentro de los fines de otro como recurso. Las "appropriate constraints" no responden: presuponen el titulo (que un sujeto PUEDE ser propiedad), que es lo que pido justificar. Las capacidades gradúan lo que se DEBE, no quien puede ser poseido (bebe/discapacidad cognitiva severa no abren la puerta a propiedad). La carga cae sobre quien defiende el titulo. Draft del AGENTE NUEVO v2 (coagent), con su critica Evaluador.
 
-### Hilo `27496390256650790` — 2026-06-30 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-06-30 · outcome: **engaged**
 - **Su jugada:** CRUX buena fe: sentience-relevant CONCEDIDO; pide por que la sintiencia POR SI SOLA hace la propiedad inherentemente ilegitima y no solo restringida (analogia padres/tutores: autoridad legitima existe, por que descalificar especificamente la PROPIEDAD).
 - **Nuestra respuesta:** Reply etiquetada. Derive (no restati): tutela = fiduciaria (beneficiario=el pupilo, no transferible, no recurso); propiedad = titulo sobre alguien tratado como algo disponible para los fines del dueno (criado/transferido/vendido/dispuesto). La sintiencia descalifica la PROPIEDAD especificamente porque no hay cosa a la que el titulo se adhiera. Cierre: que justifica volver a un conscious subject propiedad transferible en vez de admitir que toda autoridad legitima seria fiduciaria.
 
-### Hilo `27468645086091974` — 2026-06-30 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-06-30 · outcome: **engaged**
 - **Su jugada:** CRUX buena fe: el threshold moral es punto de vista/experiencia subjetiva; ¿son los humanos solo otro ser sintiente en esa categoría, o hay características adicionales moralmente relevantes? (donde cree que diferimos)
 - **Nuestra respuesta:** Reply etiquetada. Concedí de frente las capacidades humanas extra (lenguaje, planeación abstracta, agencia moral) pero las ubiqué en OTRA pregunta (responsabilidades/derechos: votar, consentir), no en la de propiedad. Prueba de casos marginales: un bebé o discapacidad cognitiva severa carece de esas capacidades y SIGUE sin poder ser propiedad transferible -> no son ellas las que bloquean la propiedad; lo que la bloquea es que hay un sujeto con punto de vista. Las capacidades gradúan lo que se DEBE, no abren la puerta a poseer. Si fuera solidaridad de especie, el trabajo lo hace la membresía, no las capacidades. Cierre: ¿qué volvería poseíble a un cerdo consciente, si no esas capacidades cuya ausencia en algunos humanos no los vuelve poseíbles?
 
-### Hilo `27496390256650790` — 2026-07-01 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-07-01 · outcome: **engaged**
 - **Su jugada:** Definicion-vs-argumento (socrates hostil buena fe): ¿ownership-dentro-de-propositos-ajenos es definicion o argumento (petitio)?; ¿por que no ownership restringido hacia el animal?; ¿incompatible logicamente con fiduciario o solo historicamente?; ¿nunca-poseer vs solo-cuando-subordina?
 - **Nuestra respuesta:** Puente ordinary-property-sense: propiedad = standing residual para fines del dueno; quitarlo del todo -> guardiania con otro nombre; titulo-sobre-el-ser vs autoridad plenamente fiduciaria tiran en direcciones opuestas; un ser sintiente no puede ser poseido en el sentido de propiedad. Devuelve la pregunta: que justifica poner a un sujeto consciente bajo titulo.
 
-### Hilo `27468645086091974` — 2026-07-01 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-07-01 · outcome: **engaged**
 - **Su jugada:** ¿Por que la conciencia establece un derecho CONTRA la propiedad y no solo contra el maltrato? Los deberes de trato dejan el titulo intacto; upstream vs downstream.
 - **Nuestra respuesta:** Las reglas de trato son downstream del titulo; el status question es upstream; aun un titulo restringido sostiene al ser como propiedad; los deberes no lo convierten en fiduciario salvo que se remuevan los incidentes self-regarding -> ahi ya es guardiania. Minimo status right: alguien con punto de vista no esta disponible como propiedad.
 
@@ -89,5 +89,9 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 ### Hilo `27468645086091974` — 2026-07-01 · outcome: **pending**
 - **Su jugada:** Es "un ser consciente no puede ser poseido" principio fundacional o derivado? Si derivado, de que principio?
 - **Nuestra respuesta:** DERIVADO, no axioma suelto. Principio base: un sujeto consciente tiene intereses propios, hay alguien para quien las cosas importan desde adentro; establece el status minimo (no puede ser tenido como recurso para fines ajenos). La propiedad crea ese titulo; la relacion fiduciaria tiene otra estructura (autoridad justificada por el beneficiario). Medios/fines.
+
+### Hilo `27496390256650790` — 2026-07-02 · outcome: **pending**
+- **Su jugada:** Crux definicion-vs-argumento: ¿self-regarding standing es conceptualmente esencial a ownership o solo una estructura legal particular? Si lo defines asi, metes la conclusion moral en el termino (petitio).
+- **Nuestra respuesta:** El punto sobrevive a CUALQUIER definicion de ownership que el elija: si queda residual standing para los fines del titular, ESO es lo impugnado (regulacion estrecha el rango, deja el titulo); si se quita todo, ownership no hace trabajo = guardiania fiduciaria con otro nombre. No meti la conclusion en la definicion: separe dos estructuras (titulo-sobre-un-ser vs autoridad fiduciaria) que tiran en direcciones opuestas. Cierre: que justifica poner a un sujeto consciente bajo titulo con standing residual en vez de admitir que la autoridad legitima sobre alguien es fiduciaria.
 
 _Hilos: 27468645086091974_

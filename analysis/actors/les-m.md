@@ -145,7 +145,7 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Peticion de principio + apelacion a mayoria/historia/beneficios: ownership needs explaining solo si acepto TU premisa; 99% de la humanidad; ownership es solo un rasgo de la domesticacion.
 - **Nuestra respuesta:** Rompi el loop (filo, correccion del coagent): la propiedad no es un hecho biologico, es una relacion social adicional; quien reclama el TITULO introduce algo especifico que justificar, no es mi premisa sino la estructura del reclamo. 99%/historia es is no ought. Cierre: que hay en el cerdo que vuelva justificada y no solo aceptada la relacion de pertenencia?
 
-### Hilo `4587084521560658` — 2026-06-29 · outcome: **pending**
+### Hilo `4587084521560658` — 2026-06-29 · outcome: **engaged**
 - **Su jugada:** Sofisticado multi-prong: assuming-conclusion + same-rights-as-humans strawman + membresia de especie (babies/dementia) + line-drawing (insects/oysters/bacteria) + burden-flip (ya priorizas humanos)
 - **Nuestra respuesta:** Decline el strawman de human rights (nadie lo pidio); el line-drawing lo contesta la sintiencia (bordes borrosos no borran el caso claro del cerdo, uncertainty at the margins doesnt make the centre disappear); voltee assuming-conclusion sobre la membresia de especie (describe como organizamos la sociedad, no justifica por que esa categoria biologica decide quien se posee); is-ought en how societies functioned; cierre en la pregunta de propiedad. Solte el frente de priorizacion para no apilar.
 
@@ -153,7 +153,7 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Ronda 2: ya conteste (membresia de especie) + me acusa de esquivar el line-drawing
 - **Nuestra respuesta:** Reconoci que dio una respuesta DESCRIPTIVA (criterio que las sociedades usan) y la separe de la NORMATIVA (por que ese criterio debe aceptarse); re-afirme mi linea (sintiencia, con casos fronterizos que no borran el caso paradigmatico del cerdo), devolviendole su propia logica; cierre con que SU criterio (membresia de grupo) es el que debe justificar por que el grupo, no el ser un sujeto, decide quien se posee.
 
-### Hilo `4587084521560658` — 2026-06-29 · outcome: **pending**
+### Hilo `4587084521560658` — 2026-06-29 · outcome: **engaged**
 - **Su jugada:** Reto al criterio: justifica por que la sintiencia es decisiva (la asertas); no contestas el line-drawing practico; mi criterio = obligaciones especiales a mi propia especie
 - **Nuestra respuesta:** Tome su reto de frente. Nombrar una frontera (especie) no es justificarla — es el paso que le pido. Mi criterio mira al individuo (un sujeto consciente con intereses desde su punto de vista), el suyo a la categoria; un humano sin las capacidades que valora sigue contando (casos marginales) => el trabajo real lo hace que haya alguien ahi, no el label ni la inteligencia. Concedi casos limite sin ceder los claros. Volvi al titulo de propiedad.
 
@@ -161,11 +161,11 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Exige el principio: "asertaste que la sintiencia es decisiva, no la justificaste; describiste la sintiencia, no la fundaste; back where we started"
 - **Nuestra respuesta:** Reply etiquetada. Di el principio (no la aserción): la sintiencia es decisiva porque vuelve "ser tratado como propiedad" algo que le pasa A ALGUIEN — a una roca/tractor no le quitas nada al poseerlo, no hay nadie para quien cuente; un sujeto sintiente es el único caso con alguien con un interés en juego. La membresía de especie no hace ese trabajo (categoría biológica; un humano con solo sintiencia bruta sigue sin ser poseíble; la especie sola, sin sujeto, protegería un cuerpo sin actividad cerebral igual que a una persona, cosa que nadie cree). Concedí los bordes (insectos/ostras) pero la incertidumbre del borde no disuelve el caso claro (un cerdo no es roca/tractor/repollo). Cierre: ¿qué justifica volver propiedad a ese alguien?
 
-### Hilo `4587084521560658` — 2026-06-30 · outcome: **pending**
+### Hilo `4587084521560658` — 2026-06-30 · outcome: **engaged**
 - **Su jugada:** Concedio terreno ("you're getting closer", la sintiencia ES moralmente relevante) y presiona el LINE-DRAWING practico: donde traza la linea el framework, que derechos fluyen, y el sorites fish/octopuses/bees/ants/mosquitoes/nematodes - at what point.
 - **Nuestra respuesta:** Reply etiquetada (filo, audiencia). No esquive: la linea sigue la EVIDENCIA de sintiencia (hay un sujeto con punto de vista). Donde es fuerte (mamiferos, aves, peces, pulpos/cefalopodos) la propiedad falla - hay alguien adentro, no una maquina que se mueve. Donde es genuinamente incierto (insectos/nematodos) razono bajo incertidumbre, sin pretender linea de navaja. La frontera borrosa NO disuelve el centro claro (twilight no borra el dia; sin centimetro exacto sigue habiendo "alto"; un cerdo no es caso limite, un nematodo quiza). El derecho en juego es el MINIMO: un sujeto sintiente no esta disponible como propiedad/recurso - no el slate humano (votar/contratos). Cierre: como la incertidumbre sobre un nematodo justifica el titulo de propiedad sobre un cerdo, donde el sujeto es claro?
 
-### Hilo `4587084521560658` — 2026-07-01 · outcome: **pending**
+### Hilo `4587084521560658` — 2026-07-01 · outcome: **engaged**
 - **Su jugada:** Sello petitio (still assuming your conclusion / never explained why sentience creates a right) + burden-flip + drawing-lines (todos trazan lineas, yo la trazo en humanidad) + pozo line-drawing.
 - **Nuestra respuesta:** Expuso el falso never-stated (el puente SI se dio: un titulo necesita un algo); cual linea rastrea el estatus — humanos marginales conservan estatus sin las capacidades extra, asi que la linea que hace el trabajo es la sintiencia, no la especie; minimo status claim; el borde fish/octopus ya contestado; devolvio el burden. Filo controlado.
 

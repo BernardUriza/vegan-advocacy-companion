@@ -86,7 +86,7 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** Retrocedio de "el cerdo ES propiedad, simple" a condicion: ownership legitimate IF accommodate needs (fisica y mentalmente 100%); si no puedes, no es legitimo y deben quitarte los animales. (cuida cabras)
 - **Nuestra respuesta:** Compasivo: reconoce que cuida animales en serio, pero su criterio responde el TRATO no el TITULO — ya concedio que la propiedad necesita justificarse y puso toda la justificacion en cuan bien tratas a lo que posees. Buen cuidado vuelve la propiedad mas amable, no explica por que el titulo es legitimo. Cierra: que da al dueno ese estatus sobre el animal de entrada?
 
-### Hilo `27468645086091974` — 2026-06-29 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-06-29 · outcome: **engaged**
 - **Su jugada:** Conflacion propiedad-legal con justificacion moral + cierre hostil/sello: NSW biosecurity law exige destruir si no son propiedad; 'I own my goats, otherwise you could come claim them'; '#11: do you understand now? I'm going to make sure this silly concept is squashed as it's utterly absurd and ridiculous'.
 - **Nuestra respuesta:** Reply etiquetada, corta. Una linea calmada (no mordi el absurd/ridiculous): no discrepamos sobre lo que la ley DICE sino sobre lo que la ley JUSTIFICA. Su punto de la ley devuelto: que la ley pueda ordenar destruir al animal PORQUE es propiedad muestra que el estatus de propiedad es lo que licencia matarlo — describe el sistema, no justifica el estatus. 'The law says so' no responde la pregunta del post. Cierre devolviendo el estatus de propiedad.
 
@@ -94,7 +94,7 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** Ronda: la ley NSW exige destruir al no-propiedad (feral); ownership da proteccion+derechos; do you own animals?
 - **Nuestra respuesta:** Conced que la ley establece propiedad; describir!=justificar; conteste su pregunta directa (mi posesion no decide la pregunta moral); devolvi: que justifica asignar autoridad total sobre un conscious individual con punto de vista. Sin pelear los tecnicismos.
 
-### Hilo `27468645086091974` — 2026-06-30 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-06-30 · outcome: **escalated**
 - **Su jugada:** Standing/tu-quoque + sello-insulto: "¿qué derecho tienes a juzgar si no posees animales?" + apodo "Bernie" + "eres de tercer mundo" + "¿escribes en español y lo metes a un traductor?"
 - **Nuestra respuesta:** Reply etiquetada. El standing no es el tema: no hace falta poseer esclavos para preguntar si poseer personas se justifica, ni operar una fábrica para preguntar si contamina; la pregunta se sostiene por sus méritos. Mis circunstancias no inciden (diez cerdos o ninguno, la pregunta de la propiedad sigue abierta); pasar de defender la práctica a cuestionar mi legitimidad es señal de que la práctica se defiende peor. Capa insult-seal FRÍA (doctrina insult-seal-defense, afinada por el coagent): el "Bernie", el comentario de país y el del traductor son etiquetas, no argumentos — no ofendido, pero no hacen el trabajo que su posición necesita; desvían del reclamo a la persona. Concedí que cuida sinceramente a sus cabras (buena fe, sin martillo moral). Cierre: ponme a un lado por completo, ¿qué justifica el título mismo de poseer a un sujeto consciente?
 

@@ -56,4 +56,8 @@ No usar 'consent' como argumento único (fácilmente deflectado a bebés/mascota
 - **Su jugada:** contempt-vs-propiedad: no exaltar != desprecio; valoro menos a un extraño que a mi esposa sin despreciarlo (+ Esther the Wonder Pig)
 - **Nuestra respuesta:** Conced que no exaltar != desprecio (no es el punto); voltее su analogia: valoras menos a un extrano y AUN ASI no es tu propiedad para disponer; los grados de inversion emocional describen sentimientos, no justifican la propiedad. Esther fuera. Cierre en propiedad.
 
+### Hilo `27496390256650790` — 2026-07-02 · outcome: **pending**
+- **Su jugada:** principio_escudo: ownership = responsibility; si puedes/quieres hacerte responsable de algo (aun vivo), la propiedad esta justificada; la Tierra tambien es consciente; self-resolving situation (la propiedad descuidada se degrada).
+- **Nuestra respuesta:** La responsabilidad hacia un ser es FIDUCIARIA (deber hacia el sujeto, nace de que hay alguien con intereses) — funda obligaciones, NO un titulo para poseer. El salto de puedo-responsabilizarme a por-tanto-ownership-justificada no se sigue: un tutor tiene responsabilidad sin que el pupilo sea su propiedad. Self-resolving mide desde el lado del dueno (utilidad), no legitima el titulo. Tierra-consciente: una linea y fuera. Cierre: por que la capacidad de hacerse responsable de alguien crea un derecho a poseerlo como propiedad.
+
 _Hilos: 27341517928804691, 27335635946059556_
