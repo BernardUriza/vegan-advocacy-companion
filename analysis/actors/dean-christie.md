@@ -94,4 +94,8 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Crux definicion-vs-argumento: ¿self-regarding standing es conceptualmente esencial a ownership o solo una estructura legal particular? Si lo defines asi, metes la conclusion moral en el termino (petitio).
 - **Nuestra respuesta:** El punto sobrevive a CUALQUIER definicion de ownership que el elija: si queda residual standing para los fines del titular, ESO es lo impugnado (regulacion estrecha el rango, deja el titulo); si se quita todo, ownership no hace trabajo = guardiania fiduciaria con otro nombre. No meti la conclusion en la definicion: separe dos estructuras (titulo-sobre-un-ser vs autoridad fiduciaria) que tiran en direcciones opuestas. Cierre: que justifica poner a un sujeto consciente bajo titulo con standing residual en vez de admitir que la autoridad legitima sobre alguien es fiduciaria.
 
+### Hilo `27496390256650790` — 2026-07-03 · outcome: **pending**
+- **Su jugada:** Crux buena fe: sospecha de que gano por definición; ¿"un ser consciente no puede ser poseído" es fundacional o derivado? "trying to understand whether the conclusion follows".
+- **Nuestra respuesta:** Puente sustantivo (no verbal): test de standing residual — cualquier versión de propiedad, si deja standing residual del titular es lo impugnado; si no, ya es autoridad fiduciaria. Conclusión derivada del principio básico (sujeto con intereses propios). Cierre: ¿qué justifica poner a un sujeto consciente bajo un título con standing residual en vez de tratar toda autoridad como fiduciaria?
+
 _Hilos: 27468645086091974_

@@ -113,4 +113,8 @@ NO pelear el body-count ni el "welfare mejora" (concederlo: mejor trato no cambi
 - **Su jugada:** Again, if ownership is the issue, feral will do. (Si el problema es solo el titulo de propiedad, matar a un animal feral/no-poseido lo esquivaria.)
 - **Nuestra respuesta:** El test del cerdo salvaje: feral no escapa la pregunta, la traslada intacta. El fundamento nunca fue el papeleo del titulo sino que hay alguien — un sujeto sintiente — el mismo en feral y en granja. Tomar a un sujeto consciente no-poseido como comida sigue tratando a alguien como recurso. La propiedad es la INSTITUCION que industrializa el uso; el estatus de alguien esta en ambos. Corto (su turno fue one-liner).
 
+### Hilo `27496390256650790` — 2026-07-03 · outcome: **pending**
+- **Su jugada:** Naturalismo/species-hierarchy: "owned or not, all animals die and are eaten, that is their use at their end" + straw-man "you equate animals with humans".
+- **Nuestra respuesta:** Tomé su "their use at their end" como la confesión del título; concedí que mueren y que en lo silvestre nadie es poseído; separé morir≠estar-disponible-como-recurso; desarmé el straw-man (sujeto que siente ≠ igualar a humanos); feral no vuelve al alguien un algo. Cierre: ¿qué justifica tratar a un ser sintiente como algo disponible para nosotros?
+
 _Hilos: 27395909046698912, 27405978672358616_

@@ -60,4 +60,8 @@ No usar 'consent' como argumento único (fácilmente deflectado a bebés/mascota
 - **Su jugada:** principio_escudo: ownership = responsibility; si puedes/quieres hacerte responsable de algo (aun vivo), la propiedad esta justificada; la Tierra tambien es consciente; self-resolving situation (la propiedad descuidada se degrada).
 - **Nuestra respuesta:** La responsabilidad hacia un ser es FIDUCIARIA (deber hacia el sujeto, nace de que hay alguien con intereses) — funda obligaciones, NO un titulo para poseer. El salto de puedo-responsabilizarme a por-tanto-ownership-justificada no se sigue: un tutor tiene responsabilidad sin que el pupilo sea su propiedad. Self-resolving mide desde el lado del dueno (utilidad), no legitima el titulo. Tierra-consciente: una linea y fuera. Cierre: por que la capacidad de hacerse responsable de alguien crea un derecho a poseerlo como propiedad.
 
+### Hilo `27496390256650790` — 2026-07-03 · outcome: **pending**
+- **Su jugada:** Principio-escudo/paternalismo: "Because they cant care for themself and the care you offer makes their life better" (cuidado justifica propiedad).
+- **Nuestra respuesta:** El cuidado crea responsabilidad, no título; bebé/demencia/inconsciente como estructura (dependencia no vuelve propiedad al dependiente); fiduciario (deber apunta al sujeto) vs propietario (título transferible). Mejorar la vida de alguien no da derecho a poseerlo. Cierre: ¿por qué la capacidad de cuidar a un sujeto consciente crea un título para poseerlo como propiedad?
+
 _Hilos: 27341517928804691, 27335635946059556_
