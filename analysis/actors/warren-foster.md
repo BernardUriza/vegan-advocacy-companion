@@ -45,7 +45,7 @@ NO argumentar bienestar/dano ni pelear si el trato es bueno. Nombrar el consenti
 
 ## Log de interacciones
 
-### Hilo `27330688236588406` — 2026-06-29 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-06-29 · outcome: **engaged**
 - **Su jugada:** Domesticacion como win-win entre especies (10,000 anos, los animales se quedan felices a ser alimentados)
 - **Nuestra respuesta:** Separe describir de justificar; nombre la asimetria (one side determines every term of the relationship) y que la antiguedad explica que algo exista, no que deba continuar; cierre con la pregunta de propiedad. Sin lenguaje cargado.
 

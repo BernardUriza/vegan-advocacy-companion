@@ -53,7 +53,7 @@ No competir en body-count (1 sano vs 5-6 flacos = welfarismo, no morder). No con
 
 ## Log de interacciones
 
-### Hilo `27330688236588406` — 2026-06-28 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-06-28 · outcome: **silent**
 - **Su jugada:** Stewardship/husbandry como alto moral: cuidar bien y optimizar el peso del animal, se siente bien sobre el well-being y provee con minimo esfuerzo; 1 sano mejor que matar 5-6 flacos.
 - **Nuestra respuesta:** Compasivo, concesion de entrada: le creo que cuida en serio, pero todo su argumento es sobre el TRATO no el TITULO. Optimised-weight-to-provide dice solo que el animal existe para su beneficio. Un sujeto bien cuidado sigue siendo poseido. Cierre: propiedad vs responsabilidad. Sin body-count, guardrail welfare critico.
 

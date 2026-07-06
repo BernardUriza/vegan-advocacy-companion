@@ -43,7 +43,7 @@ NUNCA conceder el reductio ('si, al cerebro-muerto si se podria') — usar los c
 
 ## Log de interacciones
 
-### Hilo `27330688236588406` — 2026-06-29 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-06-29 · outcome: **silent**
 - **Su jugada:** Criterio = experiencia metafisica, no sintiencia + reductio cerebro-muerto contra la sintiencia
 - **Nuestra respuesta:** Pedi definicion operativa de metaphysical experience; casos marginales (bebes/demencia) muestran que el criterio real no es la capacidad; conscious individual vs rock (algo-a-alguien); cierre con la pregunta de propiedad. No mordi el reductio.
 

@@ -93,11 +93,11 @@ NO pelear el body-count ni el "welfare mejora" (concederlo: mejor trato no cambi
 - **Su jugada:** Confesion explicita del eje: "someone has to possess them... holds the reins. Animals < humans. Die mad." — defiende posesion/jerarquia de especie como mecanismo necesario del sistema.
 - **Nuestra respuesta:** Le tomo la palabra: describio la posesion con exactitud, pero describir no es justificar. "Having the reins" explica quien manda, no por que es legitimo mandar sobre un alguien. "Animals<humans" es la conclusion aseverada, no la razon. Devuelvo: que la hace legitima mas alla de que se pueda.
 
-### Hilo `27330688236588406` — 2026-06-27 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-06-27 · outcome: **silent**
 - **Su jugada:** Argumento de 3 puntos (giro de troll a substantiva): 1) naturalismo de cria (los animales se reproducen solos, nosotros controlamos), 2) sapience>sentience, 3) reductio sobre el eje: si el problema es ownership, aceptas hunting/poaching porque el cazador no posee al animal.
 - **Nuestra respuesta:** Centre el punto 3: el eje nunca fue el titulo legal sino la RELACION de tratar a un alguien como recurso para nuestro uso — la caza hace lo mismo sin papeles, asi que mi logica la condena igual (no la bendice). Conced el punto 1 (controlar la cria no cambia la relacion); desactive el 2 (sapience) en una linea sin entrar a marginal cases. Lenguaje llano, sin etiqueta slavery, devolvi la carga.
 
-### Hilo `27468645086091974` — 2026-06-28 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-06-28 · outcome: **silent**
 - **Su jugada:** Naturalismo: "todos mueren, todos serán comidos (wild/domestic/feral); no los traemos a existir, ellos lo hacen; con domésticos LIMITAMOS cuán jóvenes/seguido/cercano crían; los ferals son crop pests killed wholesale".
 - **Nuestra respuesta:** Reply etiquetada (filo civil). Volteé su autocontradicción: dice "they bring themselves into existence" pero en la misma frase controla la cría (cuán jóvenes/seguido/quién) — si controla las condiciones de su existencia, "nature did it" describe la biología y salta el control humano. "Todos mueren" = is->ought (la mortalidad no dice nada sobre la legitimidad de poseer a un alguien). Ferals/crop pests = relación distinta, no defiende la propiedad. Cierre con SU propia palabra ("hold the reins"): ¿qué hace legítimo sostener las riendas de la existencia entera de otro individuo? Concedí welfare/body-count sin tocar el eje.
 
@@ -105,15 +105,15 @@ NO pelear el body-count ni el "welfare mejora" (concederlo: mejor trato no cambi
 - **Su jugada:** Rechazo analogia esclavitud: animals != humans; slavery was keeping humans like animals; keeping animals like animals no es dilema
 - **Nuestra respuesta:** Conced cerdo!=humano (no es el reclamo); la analogia es por ESTRUCTURA (poseer a un sujeto como cosa), no por igualar especies; keeping-animals-like-animals da por hecho lo que se pregunta; devolvi: por que pertenecer a otra especie justifica poseer a alguien con punto de vista.
 
-### Hilo `27496390256650790` — 2026-06-30 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-06-30 · outcome: **engaged**
 - **Su jugada:** Utilidad instrumental como (pseudo)justificacion: "we literally keep cats to kill for us, they dont taste good; or eat what we cant and turn it into what we can; or grow to 300lb in a year" — enumera usos para mostrar que el uso no es solo gusto.
 - **Nuestra respuesta:** Reply etiquetada (filo, audiencia). Concedi TODO el dato instrumental (gatos cazan plagas, rumiantes convierten pasto, crecimiento rapido) sin pelearlo. Cada punto mide la utilidad del animal PARA NOSOTROS (tool/converter/worker/product/resource) — explica por que los mantenemos, no que da el titulo para poseerlos. Un tractor se evalua entero por utilidad porque no hay nadie adentro; con un sujeto sintiente hay alguien con punto de vista, y la pregunta de propiedad hay que contestarla, no saltarla. Valor-para-nosotros != propiedad legitima. Cierre: la utilidad explica la practica; que justifica el titulo mismo de tratar a un sujeto consciente como propiedad porque nos es util?
 
-### Hilo `27496390256650790` — 2026-07-02 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-07-02 · outcome: **engaged**
 - **Su jugada:** Again, if ownership is the issue, feral will do. (Si el problema es solo el titulo de propiedad, matar a un animal feral/no-poseido lo esquivaria.)
 - **Nuestra respuesta:** El test del cerdo salvaje: feral no escapa la pregunta, la traslada intacta. El fundamento nunca fue el papeleo del titulo sino que hay alguien — un sujeto sintiente — el mismo en feral y en granja. Tomar a un sujeto consciente no-poseido como comida sigue tratando a alguien como recurso. La propiedad es la INSTITUCION que industrializa el uso; el estatus de alguien esta en ambos. Corto (su turno fue one-liner).
 
-### Hilo `27496390256650790` — 2026-07-03 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-07-03 · outcome: **engaged**
 - **Su jugada:** Naturalismo/species-hierarchy: "owned or not, all animals die and are eaten, that is their use at their end" + straw-man "you equate animals with humans".
 - **Nuestra respuesta:** Tomé su "their use at their end" como la confesión del título; concedí que mueren y que en lo silvestre nadie es poseído; separé morir≠estar-disponible-como-recurso; desarmé el straw-man (sujeto que siente ≠ igualar a humanos); feral no vuelve al alguien un algo. Cierre: ¿qué justifica tratar a un ser sintiente como algo disponible para nosotros?
 

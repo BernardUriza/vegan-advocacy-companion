@@ -54,12 +54,16 @@ No debatir si las plantas sienten, no competir en body-count, no defender el con
 - **Su jugada:** Crops-bred flip (los cultivos TAMBIEN se crian) + someone solo para personas + acusa de cambiar definiciones.
 - **Nuestra respuesta:** Filo ligero: crops-bred no toca el eje, los cultivos no son POSEIDOS como sujetos; nunca fue criado-para-existir sino poseido-como-un-quien. Quien/que es una distincion ordinaria que todos usamos (correccion del coagent: no afirmar que el lo dice de su perro), no un truco de diccionario. Cierre: cual es el criterio que pone al cerdo del lado que?
 
-### Hilo `27330688236588406` — 2026-06-30 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-06-30 · outcome: **engaged**
 - **Su jugada:** Cierre definicional/petitio (32m): it is a dictionary dispute, someone solo aplica a personas, until you accept that there is no point discussing the rest.
 - **Nuestra respuesta:** Reply etiquetada. Expuse el petitio: decir que someone solo aplica a humanos no zanja la disputa, la asume; el rasgo (no la etiqueta humano) es lo que falta nombrar. Una roca no tiene punto de vista, un cerdo si; pedir aceptar la conclusion antes de discutir es ponerla como precio de entrada. Cierre: que rasgo, fuera de la especie, vuelve a un cerdo con punto de vista un something que puede ser propiedad.
 
-### Hilo `27330688236588406` — 2026-07-03 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-07-03 · outcome: **goalpost**
 - **Su jugada:** Peticion de principio definicional: it is a dictionary dispute, someone only applies to people; + crops-are-bred-too.
 - **Nuestra respuesta:** El diccionario no zanja lo moral; si someone rastrea especie o punto-de-vista ES la pregunta; definir someone=human antes mete la conclusion en la lengua; crops-are-bred es error de categoria (un cultivo no es alguien con standpoint). Devolvi la carga sobre el estatus. Cierre: que rasgo hace decisiva la membresia de especie.
+
+### Hilo `27330688236588406` — 2026-07-05 · outcome: **pending**
+- **Su jugada:** Relativismo cultural (estación 3 del retreat-cycle): nothing will settle the moral issue, morals differ by culture; dog/cat vs Hindu cow.
+- **Nuestra respuesta:** Disciplina de 3 piezas: recibo del arco (crops-bred → diccionario ×2 → relativismo), el switch en una línea (cuando el diccionario servía el significado era fijo; cuestionado, todo se volvió costumbre — en ambos casos el título sin defender), y el contra: la variación cultural DESCRIBE el desacuerdo, no lo resuelve; su propio ejemplo del perro lo delata (no lo trata como mero hábito local). Cierre: ¿criterio defendible para decidir quién puede ser propiedad, o solo la costumbre de la cultura con poder de nombrar?
 
 _Hilos: 27330688236588406_

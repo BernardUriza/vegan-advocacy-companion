@@ -31,7 +31,7 @@ NO debatir neurobiologia vegetal ni decir 'las plantas no sienten dolor' (welfar
 
 ## Log de interacciones
 
-### Hilo `27330688236588406` — 2026-06-27 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-06-27 · outcome: **silent**
 - **Su jugada:** Plant-sentience equivalence: las plantas senalizan, emiten sonidos, se anestesian, 'disfrutan musica' (cita PMC) -> ¿no son 'beings' por tu definicion? Intenta colapsar la categoria moral por sentience-creep.
 - **Nuestra respuesta:** Reply etiquetada (compasivo, buena fe): concede TODA la biologia vegetal sin pelear, devuelve al sujeto — el eje nunca fue cuan sofisticada es la respuesta sino si hay ALGUIEN ahi, un proceso vivo vs alguien para quien la vida ocurre desde adentro. Planteado interrogativo (no afirmacion, evita peticion de principio). Cierra: pig vs blade of grass, ¿mismo tipo de ser? si hay diferencia, ¿que hace a uno un who y al otro un what?
 

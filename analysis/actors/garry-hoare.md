@@ -67,7 +67,7 @@ No pelear el dato regenerativo en su nivel (concederlo como nicho). No morder el
 
 ## Log de interacciones
 
-### Hilo `27330688236588406` — 2026-06-28 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-06-28 · outcome: **silent**
 - **Su jugada:** Crop-deaths tu-quoque + relativismo + autonomia: who are you to say one life is worth more, nobody has the right to tell others how to live. Tres esquives que el post ya habia descartado (straw man).
 - **Nuestra respuesta:** Expuse el hombre de paja primero (contesto 3 preguntas que nadie hizo; el post dijo you-can-eat-meat + no-telling-how-to-live), devolvi a la unica pregunta real (propiedad), gire el crop-deaths por estatus no conteo (difference in status not arithmetic), relativismo en un renglon, cerre con la imagen del post (habit wearing a costume).
 

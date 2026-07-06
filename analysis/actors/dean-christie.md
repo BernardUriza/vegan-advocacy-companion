@@ -82,20 +82,24 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** ¿Por que la conciencia establece un derecho CONTRA la propiedad y no solo contra el maltrato? Los deberes de trato dejan el titulo intacto; upstream vs downstream.
 - **Nuestra respuesta:** Las reglas de trato son downstream del titulo; el status question es upstream; aun un titulo restringido sostiene al ser como propiedad; los deberes no lo convierten en fiduciario salvo que se remuevan los incidentes self-regarding -> ahi ya es guardiania. Minimo status right: alguien con punto de vista no esta disponible como propiedad.
 
-### Hilo `27496390256650790` — 2026-07-01 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-07-01 · outcome: **engaged**
 - **Su jugada:** Es self-regarding standing esencial a la propiedad o solo una estructura legal particular? Si la defines asi, construyes la conclusion en la palabra. La autoridad restringida sobre un sintiente es departure de ownership o re-descripcion? Dos forks: definicion vs cualquier control transferible ilegitimo.
 - **Nuestra respuesta:** El principio es DERIVADO, no estipulacion: autoridad legitima sobre un sujeto solo como cuidado PARA ese sujeto; la propiedad ubica el standing (control/exclusion/transfer/beneficio) del lado del dueno. La distincion ownership/guardiania es EVIDENCIA (la ley ya reclasifica lo no-self-regarding como tutela), no el fundamento. El defecto es el standing transferible sobre un sujeto; medios/fines.
 
-### Hilo `27468645086091974` — 2026-07-01 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-07-01 · outcome: **engaged**
 - **Su jugada:** Es "un ser consciente no puede ser poseido" principio fundacional o derivado? Si derivado, de que principio?
 - **Nuestra respuesta:** DERIVADO, no axioma suelto. Principio base: un sujeto consciente tiene intereses propios, hay alguien para quien las cosas importan desde adentro; establece el status minimo (no puede ser tenido como recurso para fines ajenos). La propiedad crea ese titulo; la relacion fiduciaria tiene otra estructura (autoridad justificada por el beneficiario). Medios/fines.
 
-### Hilo `27496390256650790` — 2026-07-02 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-07-02 · outcome: **engaged**
 - **Su jugada:** Crux definicion-vs-argumento: ¿self-regarding standing es conceptualmente esencial a ownership o solo una estructura legal particular? Si lo defines asi, metes la conclusion moral en el termino (petitio).
 - **Nuestra respuesta:** El punto sobrevive a CUALQUIER definicion de ownership que el elija: si queda residual standing para los fines del titular, ESO es lo impugnado (regulacion estrecha el rango, deja el titulo); si se quita todo, ownership no hace trabajo = guardiania fiduciaria con otro nombre. No meti la conclusion en la definicion: separe dos estructuras (titulo-sobre-un-ser vs autoridad fiduciaria) que tiran en direcciones opuestas. Cierre: que justifica poner a un sujeto consciente bajo titulo con standing residual en vez de admitir que la autoridad legitima sobre alguien es fiduciaria.
 
-### Hilo `27496390256650790` — 2026-07-03 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-07-03 · outcome: **engaged**
 - **Su jugada:** Crux buena fe: sospecha de que gano por definición; ¿"un ser consciente no puede ser poseído" es fundacional o derivado? "trying to understand whether the conclusion follows".
 - **Nuestra respuesta:** Puente sustantivo (no verbal): test de standing residual — cualquier versión de propiedad, si deja standing residual del titular es lo impugnado; si no, ya es autoridad fiduciaria. Conclusión derivada del principio básico (sujeto con intereses propios). Cierre: ¿qué justifica poner a un sujeto consciente bajo un título con standing residual en vez de tratar toda autoridad como fiduciaria?
+
+### Hilo `27496390256650790` — 2026-07-05 · outcome: **pending**
+- **Su jugada:** Crux del umbral (buena fe): ¿por qué CUALQUIER standing residual cruza una línea categórica y no es cuestión de grado/regulación? ¿exclusive fiduciary orientation es condición necesaria o ideal aproximable? Pide justificación no-circular.
+- **Nuestra respuesta:** No-circularidad de frente: grado y estatus responden preguntas distintas (cuánto se reserva vs para quién existe el arreglo). El estándar ya lo usa él con humanos: conservator con derecho residual de uso/transferencia/beneficio = corrupción del cargo, no legitimidad más modesta — lo que condena es la dirección (hacia el tenedor). Aproximar el ideal fiduciario ≠ título cuya función es reservar standing. Cierre: ¿corrupción o legitimidad menor, y qué cambia cuando el pupilo es un sujeto consciente de otra especie?
 
 _Hilos: 27468645086091974_

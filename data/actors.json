@@ -80,9 +80,9 @@
         "their_move": "Tras desviar a nutricion/ultra-processed, deflexion I-didnt-run-away + ad-hominem (salud mental, jab del B12).",
         "our_reply_summary": "Conced nutricion/B12 de frente, nombr en una linea que la rama nutricional es el desvio, devolv al hueso: que justifica criar/poseer/matar a un sujeto (someone->property) cuando hay alternativa. Recuperacion tras un reply previo ego-driven.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
-        "outcome_evidence": "sigue con Teddy, nunca contesta a Bernard",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: tras su ad-hominem Bernard recupero al hueso de propiedad; no respondio aun, ancla de 2 dias = deuda viva."
+        "outcome": "escalated",
+        "outcome_evidence": "CarolAnn: 'Sometimes I worry about your mental health and your ability to follow a conversation... I assume its a lack of B vitamins'",
+        "outcome_note": "algo-a-alguien: la reply de recibos la empujó a puro ad-hominem clínico (salud mental / B vitamins) sin tocar el marco — sello-insulto para el lurker, argumento abandonado."
       }
     ]
   },
@@ -216,7 +216,9 @@
         "their_move": "optimal-not-necessary + esquive definicional (la esclavitud es propiedad involuntaria de un humano por otro)",
         "our_reply_summary": "Tomе su concesion (optimal=preferencia, no necesidad) -> ¿una preferencia justifica poseer a un conscious individual? Deje la palabra slavery fuera: la etiqueta es secundaria, la ESTRUCTURA (un lado posee/controla a otro sujeto) es lo que pide justificacion. Cierre en propiedad.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Adam Gaska volvió con 'animal use is unnecessary in that nothing is truly necessary' (interacción 7-03)",
+        "outcome_note": "algo-a-alguien: no soltó el hueso — volvió con la disolución de 'necesario' (nothing is truly necessary). El eje propiedad lo obliga a redefinir palabras, no a justificar el título."
       },
       {
         "thread_id": "27496390256650790",
@@ -224,7 +226,9 @@
         "their_move": "contempt-vs-propiedad: no exaltar != desprecio; valoro menos a un extraño que a mi esposa sin despreciarlo (+ Esther the Wonder Pig)",
         "our_reply_summary": "Conced que no exaltar != desprecio (no es el punto); voltее su analogia: valoras menos a un extrano y AUN ASI no es tu propiedad para disponer; los grados de inversion emocional describen sentimientos, no justifican la propiedad. Esther fuera. Cierre en propiedad.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "siguió con ownership = responsibility (7-02) tras el volteo de la analogía del extraño",
+        "outcome_note": "algo-a-alguien: el volteo de su analogía (valoras menos a un extraño y AUN ASÍ no es tu propiedad) lo movió del contempt al principio_escudo — cambió de arma, sigue en la mesa."
       },
       {
         "thread_id": "27496390256650790",
@@ -232,7 +236,9 @@
         "their_move": "principio_escudo: ownership = responsibility; si puedes/quieres hacerte responsable de algo (aun vivo), la propiedad esta justificada; la Tierra tambien es consciente; self-resolving situation (la propiedad descuidada se degrada).",
         "our_reply_summary": "La responsabilidad hacia un ser es FIDUCIARIA (deber hacia el sujeto, nace de que hay alguien con intereses) — funda obligaciones, NO un titulo para poseer. El salto de puedo-responsabilizarme a por-tanto-ownership-justificada no se sigue: un tutor tiene responsabilidad sin que el pupilo sea su propiedad. Self-resolving mide desde el lado del dueno (utilidad), no legitima el titulo. Tierra-consciente: una linea y fuera. Cierre: por que la capacidad de hacerse responsable de alguien crea un derecho a poseerlo como propiedad.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Adam Gaska: 'Because they cant care for themself and the care you offer makes their life better'",
+        "outcome_note": "algo-a-alguien: la distinción fiduciario-vs-propietario lo forzó a bajar a paternalismo puro (they can't care for themself) — el título sigue sin defensa propia."
       },
       {
         "thread_id": "27496390256650790",
@@ -240,7 +246,9 @@
         "their_move": "Principio-escudo/paternalismo: \"Because they cant care for themself and the care you offer makes their life better\" (cuidado justifica propiedad).",
         "our_reply_summary": "El cuidado crea responsabilidad, no título; bebé/demencia/inconsciente como estructura (dependencia no vuelve propiedad al dependiente); fiduciario (deber apunta al sujeto) vs propietario (título transferible). Mejorar la vida de alguien no da derecho a poseerlo. Cierre: ¿por qué la capacidad de cuidar a un sujeto consciente crea un título para poseerlo como propiedad?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Adam Gaska: 'In the case of humans, we call it conservatorship... Slavery is illegal. Enslavement doesn't apply to non-human animals... If you are against ownership, are you against pets?'",
+        "outcome_note": "algo-a-alguien: respondió (1d) con conservatorship/legalismo (slavery is illegal, enslavement doesn't apply to animals) + tu-quoque de pets — deuda viva, jugada candidata del lote."
       },
       {
         "thread_id": "27051763587778150",
@@ -249,6 +257,14 @@
         "our_reply_summary": "Concedi lo cosmico (nada es metafisicamente necesario) y clave que ese nunca fue el punto: la vara es practica -dado que hay alternativa viable, que justifica el titulo. Nothing-is-necessary prueba demasiado: aplana la pregunta hasta que no distingue nada, incluida la distincion que EL respeta (no volveria propiedad a un humano dependiente por eso). El eje es el titulo. Cierre: dado que el uso animal no es requerido en sentido practico, que justifica poseer al sujeto consciente.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "27496390256650790",
+        "date": "2026-07-05",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending",
+        "their_move": "Conservatorship como pro-propiedad + legalismo (slavery is illegal, enslavement no aplica a animales) + tu-quoque de pets (¿estás contra pets? ¿luring away con mejor care?).",
+        "our_reply_summary": "Su ejemplo voltea a su contra: conservatorship es fiduciario puro — el conservator NO gana título de uso/venta/cría y tratarlo como activo corrompe el cargo; livestock ownership contiene exactamente el standing que al conservator se le niega. Legalidad describe, no justifica. Pets consistente: custodia por los intereses del perro, disputas por el interés del dependiente (lógica fiduciaria). Cierre: ¿por qué el estándar del conservatorship humano deja de aplicar con un ser consciente de otra especie?"
       }
     ]
   },
@@ -423,7 +439,9 @@
         "their_move": "Insulto-sello tras dismissal: \"Your argument is lost at someone, that is your weakness\" + \"pathetic word salad / Kamala Harris scriptwriter\" — etiqueta para el lurker, sin refutacion.",
         "our_reply_summary": "insult-seal-defense: nombre que \"lost at someone\"/\"word salad\" son etiquetas, no refutaciones; pedi que nombre DONDE falla la distincion alguien/algo (sujeto con punto de vista vs objeto), o el insulto ocupa el lugar del argumento; sali. Corto (64 palabras), sin morder el insulto, sin sonar herido. Draft del agente nuevo v2.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos suyos posteriores a la reply (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: tras la respuesta al sello-insulto no volvió (5d+). El sello quedó expuesto y la pregunta plantada sin contestar — recibo para el lurker."
       },
       {
         "thread_id": "27330688236588406",
@@ -734,7 +752,9 @@
         "their_move": "Peticion de principio pura (#8): DEFINE someone=human / something=non-human por decreto y de ahi concluye que los no-humanos son propiedad; declara el point of view irrelevante por fiat; sello insulto (your translator sucks / ask your AI friend). Cierra un arco de retirada: relativismo -> no-debo-justificar -> burden-flip falso -> antropomorfismo -> petitio.",
         "our_reply_summary": "Reencuadre de consolidacion: neutralizo el insulto via recibos (si fuera el traductor no podria rastrear todo tu arco tan limpio), re-mapeo toda su retirada mostrando memoria precisa (contra-gaslighting), desmonto el #8 (resuelve por vocabulario; irrelevant lo decreta; nowadays you cant own humans admite que es linea de estatus), e impongo la pregunta abolicionista con paciencia. Registro filo controlado.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos suyos posteriores a la consolidación (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: tras el reply de consolidación del arco (6 estaciones mapeadas) Anna no volvió (4d) — el retreat-cycle quedó visible y no abrió estación nueva en este hilo."
       }
     ]
   },
@@ -848,7 +868,17 @@
         "their_move": "Switch de evasión: abandonó el argumento legal NSW (feral must be destroyed if not property) y migró a standing tu-quoque \"you need to start talking about yourself / what right do you have to judge if you dont own animals\" + analogía del avión.",
         "our_reply_summary": "Nombré el cambio de terreno con recibos (respondí el legal en sus términos, concedí el NSW Biosecurity Act, separé gestión-de-feral de cría-para-matadero; luego migró a mi persona); la procedencia de quien pregunta no decide si la práctica se justifica; mi perfil no responde si un sujeto puede ser propiedad. Sin morder el tu-quoque ni perseguir el avión. Cierre: ¿qué justifica el título mismo sobre alguien con punto de vista, más allá de que la ley lo reconozca?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Chris Duffy: 'Animals are not humans, they do not have a point of view that is anthropomorphism. Animals are propert...'",
+        "outcome_note": "algo-a-alguien: respondió (1d) con recuento-de-hechos + negación del point of view como antropomorfismo + doblada en animals-are-property — deuda viva; el flanco es su 'anthropomorphism'."
+      },
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-07-05",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending",
+        "their_move": "Recuento-de-hechos + point of view = anthropomorphism + título justificado porque provee (privaciones, campo, sin vacaciones, amor) + interrogatorio personal (answer the questions Bernie).",
+        "our_reply_summary": "Concedí su cuidado de entrada (buena fe). Point of view no significa punto de vista HUMANO: la cabra siente/prefiere/confía/teme — él lo sabe mejor que nadie; nadie se sacrifica así por algo que no experimenta nada. Toda su lista es fiduciaria (apunta a la cabra) y nada requiere el título; el título añade solo can-be-sold-or-traded. Biografía no cambia la pregunta (una línea). Cierre: ¿qué añade el derecho-a-vender al amor que describes, y a beneficio de quién existe esa parte?"
       }
     ]
   },
@@ -1086,9 +1116,9 @@
         "their_move": "Crop-deaths tu-quoque + relativismo + autonomia: who are you to say one life is worth more, nobody has the right to tell others how to live. Tres esquives que el post ya habia descartado (straw man).",
         "our_reply_summary": "Expuse el hombre de paja primero (contesto 3 preguntas que nadie hizo; el post dijo you-can-eat-meat + no-telling-how-to-live), devolvi a la unica pregunta real (propiedad), gire el crop-deaths por estatus no conteo (difference in status not arithmetic), relativismo en un renglon, cerre con la imagen del post (habit wearing a costume).",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
-        "outcome_evidence": "What gives you or anyone else the right to say that one life is worth more than another?",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: tras voltear el straw man (crop-deaths=estatus no conteo) y plantar propiedad, Garry no respondio; reply de 21h."
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos suyos posteriores a la reply (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: el desmonte de las 3 preguntas-que-nadie-hizo (straw men) lo calló — 7d sin volver."
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/100003886247108/"
@@ -1243,9 +1273,9 @@
         "their_move": "Peticion de principio + apelacion a mayoria/historia/beneficios: ownership needs explaining solo si acepto TU premisa; 99% de la humanidad; ownership es solo un rasgo de la domesticacion.",
         "our_reply_summary": "Rompi el loop (filo, correccion del coagent): la propiedad no es un hecho biologico, es una relacion social adicional; quien reclama el TITULO introduce algo especifico que justificar, no es mi premisa sino la estructura del reclamo. 99%/historia es is no ought. Cierre: que hay en el cerdo que vuelva justificada y no solo aceptada la relacion de pertenencia?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
-        "outcome_evidence": "What is it about the pig that makes this individual belongs to me a justified relationship?",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: Bernard rompe el loop (propiedad=relacion social, no hecho biologico); reply de 20h sin respuesta."
+        "outcome": "silent",
+        "outcome_evidence": "último turno suyo hacia Bernard 7d; mi reply posterior sin respuesta",
+        "outcome_note": "algo-a-alguien: en ESTE hilo no volvió tras el burden-asimétrico (4d) — migró su actividad al hilo pig-someone; la mayoría/historia quedó sin re-defender aquí."
       },
       {
         "thread_id": "4587084521560658",
@@ -1313,7 +1343,9 @@
         "their_move": "Retreat-cycle: vamos en circulos / acepto que tu criterio es sintiencia pero nunca justificaste por que es decisiva / yo respondi la tuya, responde la mia: por que 99% de humanidad deberia abandonar su marco de cientos de miles de anos? / el burden es tuyo.",
         "our_reply_summary": "SWITCH DE EVASION (doble-estandar): vamos en circulos porque exige que mi linea se justifique hasta el fondo mientras exime la suya. El principio esta dado (la sintiencia hace que EXISTA un alguien para quien ser propiedad cuenta; roca no, cerdo si). Aplica su demanda a su linea: 99%/cientos de miles de anos mide cuantos y cuanto tiempo, no por que; popularidad y edad explican una practica, no defienden su titulo. El burden lo carga quien reclama standing para poseer a un alguien.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Les M volvió con 'assuming your conclusion' + babies/dementia/coma + special obligations to our own species",
+        "outcome_note": "algo-a-alguien: tras el mapeo del ciclo volvió con petitio + casos marginales + obligaciones-de-especie — respondió al marco aunque rotando estaciones."
       },
       {
         "thread_id": "4587084521560658",
@@ -1321,7 +1353,9 @@
         "their_move": "Petitio (assuming your conclusion) + why-same-rights-as-humans + casos marginales (babies/dementia) + line-drawing (insects/fish/nematodes) + burden-flip.",
         "our_reply_summary": "La acusacion de asumir la conclusion es falsa: parto de lo que EL concede (son sintientes); no reclamo mismos derechos/igualdad, solo lo minimo (no ser propiedad); sus casos marginales cortan en su contra (bebes/demencia sin las capacidades y con estatus completo -> el criterio es sentir, no la capacidad superior). Tome el nucleo (Gish discipline), no persegui cada rama. Cierre: cual es el rasgo que hace el trabajo.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "Retreat-cycle vuelta N en rama suelta: assuming-your-conclusion + rechaza la pregunta (cerrada por la crónica 7-04)",
+        "outcome_note": "algo-a-alguien: abrió vuelta N del retreat-cycle en una rama suelta en vez de defender la estación anterior — el arco consolidado del 7-04 lo dejó mapeado para el lurker."
       },
       {
         "thread_id": "4587084521560658",
@@ -1654,9 +1688,9 @@
         "their_move": "Argumento de 3 puntos (giro de troll a substantiva): 1) naturalismo de cria (los animales se reproducen solos, nosotros controlamos), 2) sapience>sentience, 3) reductio sobre el eje: si el problema es ownership, aceptas hunting/poaching porque el cazador no posee al animal.",
         "our_reply_summary": "Centre el punto 3: el eje nunca fue el titulo legal sino la RELACION de tratar a un alguien como recurso para nuestro uso — la caza hace lo mismo sin papeles, asi que mi logica la condena igual (no la bendice). Conced el punto 1 (controlar la cria no cambia la relacion); desactive el 2 (sapience) en una linea sin entrar a marginal cases. Lenguaje llano, sin etiqueta slavery, devolvi la carga.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
-        "outcome_evidence": "we DO treat humans with suspended sapience as resources",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: Tiana empuja naturalismo/sapience/reductio caza y muerde la bala; Bernard contesta, reply de 1d sin re-respuesta."
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores en este hilo (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: tras el desmonte del naturalismo de cría no volvió en este hilo (7d) — su actividad siguió en el hilo moral-circle."
       },
       {
         "thread_id": "27468645086091974",
@@ -1664,9 +1698,9 @@
         "their_move": "Naturalismo: \"todos mueren, todos serán comidos (wild/domestic/feral); no los traemos a existir, ellos lo hacen; con domésticos LIMITAMOS cuán jóvenes/seguido/cercano crían; los ferals son crop pests killed wholesale\".",
         "our_reply_summary": "Reply etiquetada (filo civil). Volteé su autocontradicción: dice \"they bring themselves into existence\" pero en la misma frase controla la cría (cuán jóvenes/seguido/quién) — si controla las condiciones de su existencia, \"nature did it\" describe la biología y salta el control humano. \"Todos mueren\" = is->ought (la mortalidad no dice nada sobre la legitimidad de poseer a un alguien). Ferals/crop pests = relación distinta, no defiende la propiedad. Cierre con SU propia palabra (\"hold the reins\"): ¿qué hace legítimo sostener las riendas de la existencia entera de otro individuo? Concedí welfare/body-count sin tocar el eje.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
-        "outcome_evidence": "they will all die, they will all be eaten",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: naturalismo 'todos mueren'; Bernard voltea la autocontradiccion (controlan la cria); reply de 18h sin respuesta."
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores en este hilo (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: el todos-mueren quedó contestado y no volvió en este hilo (7d)."
       },
       {
         "thread_id": "27051763587778150",
@@ -1682,7 +1716,9 @@
         "their_move": "Utilidad instrumental como (pseudo)justificacion: \"we literally keep cats to kill for us, they dont taste good; or eat what we cant and turn it into what we can; or grow to 300lb in a year\" — enumera usos para mostrar que el uso no es solo gusto.",
         "our_reply_summary": "Reply etiquetada (filo, audiencia). Concedi TODO el dato instrumental (gatos cazan plagas, rumiantes convierten pasto, crecimiento rapido) sin pelearlo. Cada punto mide la utilidad del animal PARA NOSOTROS (tool/converter/worker/product/resource) — explica por que los mantenemos, no que da el titulo para poseerlos. Un tractor se evalua entero por utilidad porque no hay nadie adentro; con un sujeto sintiente hay alguien con punto de vista, y la pregunta de propiedad hay que contestarla, no saltarla. Valor-para-nosotros != propiedad legitima. Cierre: la utilidad explica la practica; que justifica el titulo mismo de tratar a un sujeto consciente como propiedad porque nos es util?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "siguió con 'if ownership is the issue, feral will do' (7-02)",
+        "outcome_note": "algo-a-alguien: la utilidad instrumental no le alcanzó — siguió con feral-will-do y luego con instituciones. Contesta el eje propiedad sin justificar el título."
       },
       {
         "thread_id": "27496390256650790",
@@ -1690,7 +1726,9 @@
         "their_move": "Again, if ownership is the issue, feral will do. (Si el problema es solo el titulo de propiedad, matar a un animal feral/no-poseido lo esquivaria.)",
         "our_reply_summary": "El test del cerdo salvaje: feral no escapa la pregunta, la traslada intacta. El fundamento nunca fue el papeleo del titulo sino que hay alguien — un sujeto sintiente — el mismo en feral y en granja. Tomar a un sujeto consciente no-poseido como comida sigue tratando a alguien como recurso. La propiedad es la INSTITUCION que industrializa el uso; el estatus de alguien esta en ambos. Corto (su turno fue one-liner).",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "siguió con naturalismo/species-hierarchy (7-03)",
+        "outcome_note": "algo-a-alguien: del feral-loophole pasó a naturalismo/jerarquía — cada vuelta abandona la anterior; patrón de estaciones en formación."
       },
       {
         "thread_id": "27496390256650790",
@@ -1698,7 +1736,9 @@
         "their_move": "Naturalismo/species-hierarchy: \"owned or not, all animals die and are eaten, that is their use at their end\" + straw-man \"you equate animals with humans\".",
         "our_reply_summary": "Tomé su \"their use at their end\" como la confesión del título; concedí que mueren y que en lo silvestre nadie es poseído; separé morir≠estar-disponible-como-recurso; desarmé el straw-man (sujeto que siente ≠ igualar a humanos); feral no vuelve al alguien un algo. Cierre: ¿qué justifica tratar a un ser sintiente como algo disponible para nosotros?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Tiana Thomas: 'we add the institutions of /limiting/ breeding (right of decision), of excluding the same end use by others (ownership)... A better life and a better death, by the ability and right of decision making'",
+        "outcome_note": "algo-a-alguien: respondió (2d) con las 'instituciones' de la ganadería (limiting breeding, better life better death, right of decision) — vistió el título de stewardship. El volteo: cada institución que lista ES el ejercicio del título, no su justificación."
       }
     ]
   },
@@ -1809,7 +1849,9 @@
         "their_move": "Cierre definicional/petitio (32m): it is a dictionary dispute, someone solo aplica a personas, until you accept that there is no point discussing the rest.",
         "our_reply_summary": "Reply etiquetada. Expuse el petitio: decir que someone solo aplica a humanos no zanja la disputa, la asume; el rasgo (no la etiqueta humano) es lo que falta nombrar. Una roca no tiene punto de vista, un cerdo si; pedir aceptar la conclusion antes de discutir es ponerla como precio de entrada. Cierre: que rasgo, fuera de la especie, vuelve a un cerdo con punto de vista un something que puede ser propiedad.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Michael Jenkins: 'here's the rub tho, crops ARE bred into existence... And once again, someone applies to a person'",
+        "outcome_note": "algo-a-alguien: tras el desmonte del diccionario volvió con crops-are-bred + la misma petitio definicional — no defendió la definición, la repitió."
       },
       {
         "thread_id": "27330688236588406",
@@ -1817,7 +1859,17 @@
         "their_move": "Peticion de principio definicional: it is a dictionary dispute, someone only applies to people; + crops-are-bred-too.",
         "our_reply_summary": "El diccionario no zanja lo moral; si someone rastrea especie o punto-de-vista ES la pregunta; definir someone=human antes mete la conclusion en la lengua; crops-are-bred es error de categoria (un cultivo no es alguien con standpoint). Devolvi la carga sobre el estatus. Cierre: que rasgo hace decisiva la membresia de especie.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "Michael Jenkins: 'nothing will settle the moral issue, since different people have different morals based on culture, beliefs, etc... I wouldn't eat a dog or cat and a Hindu wouldn't eat a cow'",
+        "outcome_note": "algo-a-alguien: acorralado en la petitio del diccionario migró a relativismo cultural (morals differ by culture, dog/cat vs Hindu cow) — estación nueva del retreat-cycle, la definicional abandonada sin defender. Deuda viva 21h."
+      },
+      {
+        "thread_id": "27330688236588406",
+        "date": "2026-07-05",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending",
+        "their_move": "Relativismo cultural (estación 3 del retreat-cycle): nothing will settle the moral issue, morals differ by culture; dog/cat vs Hindu cow.",
+        "our_reply_summary": "Disciplina de 3 piezas: recibo del arco (crops-bred → diccionario ×2 → relativismo), el switch en una línea (cuando el diccionario servía el significado era fijo; cuestionado, todo se volvió costumbre — en ambos casos el título sin defender), y el contra: la variación cultural DESCRIBE el desacuerdo, no lo resuelve; su propio ejemplo del perro lo delata (no lo trata como mero hábito local). Cierre: ¿criterio defendible para decidir quién puede ser propiedad, o solo la costumbre de la cultura con poder de nombrar?"
       }
     ],
     "user_id": "100000547865199",
@@ -1975,7 +2027,9 @@
         "their_move": "Es self-regarding standing esencial a la propiedad o solo una estructura legal particular? Si la defines asi, construyes la conclusion en la palabra. La autoridad restringida sobre un sintiente es departure de ownership o re-descripcion? Dos forks: definicion vs cualquier control transferible ilegitimo.",
         "our_reply_summary": "El principio es DERIVADO, no estipulacion: autoridad legitima sobre un sujeto solo como cuidado PARA ese sujeto; la propiedad ubica el standing (control/exclusion/transfer/beneficio) del lado del dueno. La distincion ownership/guardiania es EVIDENCIA (la ley ya reclasifica lo no-self-regarding como tutela), no el fundamento. El defecto es el standing transferible sobre un sujeto; medios/fines.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "siguió al crux definición-vs-argumento el 7-02",
+        "outcome_note": "algo-a-alguien: siguió puliendo el crux con precisión (¿esencial o contingente?) — el intercambio es filosofía de verdad; el lurker ve el marco desplegado completo."
       },
       {
         "thread_id": "27468645086091974",
@@ -1983,7 +2037,9 @@
         "their_move": "Es \"un ser consciente no puede ser poseido\" principio fundacional o derivado? Si derivado, de que principio?",
         "our_reply_summary": "DERIVADO, no axioma suelto. Principio base: un sujeto consciente tiene intereses propios, hay alguien para quien las cosas importan desde adentro; establece el status minimo (no puede ser tenido como recurso para fines ajenos). La propiedad crea ese titulo; la relacion fiduciaria tiene otra estructura (autoridad justificada por el beneficiario). Medios/fines.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Dean Christie: 'I think I see the structure of your view more clearly now... But I'm still not seeing why that follows as a necessity rather than a moral preference'",
+        "outcome_note": "algo-a-alguien: buena fe genuina — reconstruyó la estructura del argumento correctamente y pregunta por qué es necesidad y no preferencia moral. Interlocutor tipo Bowman: veta de oro potencial."
       },
       {
         "thread_id": "27496390256650790",
@@ -1991,7 +2047,9 @@
         "their_move": "Crux definicion-vs-argumento: ¿self-regarding standing es conceptualmente esencial a ownership o solo una estructura legal particular? Si lo defines asi, metes la conclusion moral en el termino (petitio).",
         "our_reply_summary": "El punto sobrevive a CUALQUIER definicion de ownership que el elija: si queda residual standing para los fines del titular, ESO es lo impugnado (regulacion estrecha el rango, deja el titulo); si se quita todo, ownership no hace trabajo = guardiania fiduciaria con otro nombre. No meti la conclusion en la definicion: separe dos estructuras (titulo-sobre-un-ser vs autoridad fiduciaria) que tiran en direcciones opuestas. Cierre: que justifica poner a un sujeto consciente bajo titulo con standing residual en vez de admitir que la autoridad legitima sobre alguien es fiduciaria.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "volvió el 7-03 con el crux de buena fe sobre el threshold",
+        "outcome_note": "algo-a-alguien: volvió con la sospecha honesta de victoria-por-definición y pidió el fundamento — la pregunta exacta que el marco quiere en la mesa."
       },
       {
         "thread_id": "27496390256650790",
@@ -1999,7 +2057,17 @@
         "their_move": "Crux buena fe: sospecha de que gano por definición; ¿\"un ser consciente no puede ser poseído\" es fundacional o derivado? \"trying to understand whether the conclusion follows\".",
         "our_reply_summary": "Puente sustantivo (no verbal): test de standing residual — cualquier versión de propiedad, si deja standing residual del titular es lo impugnado; si no, ya es autoridad fiduciaria. Conclusión derivada del principio básico (sujeto con intereses propios). Cierre: ¿qué justifica poner a un sujeto consciente bajo un título con standing residual en vez de tratar toda autoridad como fiduciaria?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Dean Christie: 'You're saying that if any authority over a conscious subject includes residual standing for the holder... My question is about that thresho...'",
+        "outcome_note": "algo-a-alguien: respondió (1d) enfocando el key step: ¿por qué CUALQUIER standing residual del dueño vuelve impermisible la relación? Pide el umbral. Deuda viva de máxima palanca — candidato #1 del lote."
+      },
+      {
+        "thread_id": "27496390256650790",
+        "date": "2026-07-05",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending",
+        "their_move": "Crux del umbral (buena fe): ¿por qué CUALQUIER standing residual cruza una línea categórica y no es cuestión de grado/regulación? ¿exclusive fiduciary orientation es condición necesaria o ideal aproximable? Pide justificación no-circular.",
+        "our_reply_summary": "No-circularidad de frente: grado y estatus responden preguntas distintas (cuánto se reserva vs para quién existe el arreglo). El estándar ya lo usa él con humanos: conservator con derecho residual de uso/transferencia/beneficio = corrupción del cargo, no legitimidad más modesta — lo que condena es la dirección (hacia el tenedor). Aproximar el ideal fiduciario ≠ título cuya función es reservar standing. Cierre: ¿corrupción o legitimidad menor, y qué cambia cuando el pupilo es un sujeto consciente de otra especie?"
       }
     ],
     "user_id": "1198831097",
@@ -2088,9 +2156,9 @@
         "their_move": "Buena fe cordial: naturalismo (somos animales evolucionados) + futility (si liberamos -> depredadores/sobrepoblacion -> mas matanza en defensa) + jab \"vegans spread misinfo\" + admira la conversacion abierta.",
         "our_reply_summary": "Compasivo: concede de entrada todo lo empirico (somos animales, ecologia es un lio, no propongo soltar a todos manana) y vuelve al hueso anterior: depredadores/sobrepoblacion explican por que soltar no es plan, evolucion explica como llegamos a comer animales — ninguno explica por que criar mas individuos COMO propiedad es legitimo. Cierra: que hace legitimo traer a un individuo a la existencia ya asignado como propiedad?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
-        "outcome_evidence": "I admire you for having an educated and open conversation",
-        "outcome_note": "naturalismo cordial con sign-off amable, sin conceder la pregunta de propiedad; sin respuesta tras el reply de Bernard."
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: buena fe cordial que no volvió tras la respuesta (7d) — semilla plantada, sin cierre."
       }
     ],
     "user_id": "100004662660380",
@@ -2118,9 +2186,9 @@
         "their_move": "Plant-sentience equivalence: las plantas senalizan, emiten sonidos, se anestesian, 'disfrutan musica' (cita PMC) -> ¿no son 'beings' por tu definicion? Intenta colapsar la categoria moral por sentience-creep.",
         "our_reply_summary": "Reply etiquetada (compasivo, buena fe): concede TODA la biologia vegetal sin pelear, devuelve al sujeto — el eje nunca fue cuan sofisticada es la respuesta sino si hay ALGUIEN ahi, un proceso vivo vs alguien para quien la vida ocurre desde adentro. Planteado interrogativo (no afirmacion, evita peticion de principio). Cierra: pig vs blade of grass, ¿mismo tipo de ser? si hay diferencia, ¿que hace a uno un who y al otro un what?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
-        "outcome_evidence": "Are those plants not beings by your definition",
-        "outcome_note": "plant-sentience-creep conceded biologicamente y vuelta a la linea who/what; Martin no respondio, ancla reciente."
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: el cierre del flanco vegetal (sin cerebro no hay sujeto) no tuvo réplica (7d)."
       }
     ],
     "user_id": "585361402",
@@ -2149,7 +2217,9 @@
         "their_move": "Silogismo: no son personas -> no son alguien -> son propiedad (membresia de especie como criterio)",
         "our_reply_summary": "Nombre que people es etiqueta de especie no criterio; pedi el RASGO (no la etiqueta humano) que hace a alguien no-poseible; paralelismo historico por ESTRUCTURA (declarar clase fuera de la categoria protegida). Sin afirmar animals are people.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores en este hilo (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: el silogismo especie→propiedad quedó expuesto como petitio y no volvió en este hilo (6d); reapareció con lo mismo en pig-someone (deuda aparte)."
       },
       {
         "thread_id": "4587084521560658",
@@ -2230,7 +2300,9 @@
         "their_move": "Insult-pit triplicado tras el capstone: sweetheart it is really cute how you keep on trying / darling and sweetheart are for somebody not getting reality / you continue to embarrass yourself by showing you do not understand anything in reality. Cero argumento nuevo, 4a+ evasion de la pregunta de propiedad; antes habia taunteado a Philip de que Bernard responde a otros pero no a ella.",
         "our_reply_summary": "Insult-seal close (155 palabras) con la apertura que dicto Bernard: volti su acusacion de cheap thrills/buscar atencion (es ella la que vuelve turno tras turno; lo unico que le queda son labels vacios). Nombre la funcion del sello (parado donde iria la respuesta). Calling ignorant solo necesita audiencia, mostrar el error necesita argumento. Devolvi la pregunta de propiedad UNA vez en someone-vs-something: ella describio un individuo que siente miedo/curiosidad/emociones y lo archivo como livestock — que principio lo hace legitimo como propiedad de otro. Eje abolicionista+sensocentrista, sin morder el insulto, sin sonar herido. Tambien neutraliza su taunt de que no le respondo.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores a la reply (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: tras la respuesta al insult-pit triplicado no volvió (5d) — el capstone quedó como última palabra sustantiva; los sellos no taparon la pregunta."
       }
     ],
     "user_id": "100003780189781",
@@ -2259,9 +2331,9 @@
         "their_move": "Stewardship/husbandry como alto moral: cuidar bien y optimizar el peso del animal, se siente bien sobre el well-being y provee con minimo esfuerzo; 1 sano mejor que matar 5-6 flacos.",
         "our_reply_summary": "Compasivo, concesion de entrada: le creo que cuida en serio, pero todo su argumento es sobre el TRATO no el TITULO. Optimised-weight-to-provide dice solo que el animal existe para su beneficio. Un sujeto bien cuidado sigue siendo poseido. Cierre: propiedad vs responsabilidad. Sin body-count, guardrail welfare critico.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
-        "outcome_evidence": "Keeping one creature healthy and full is better than killing five or six",
-        "outcome_note": "husbandry treatment-not-title de buena fe; sin respuesta tras el reply, ancla reciente."
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: el stewardship quedó nombrado como ejercicio del título (no su justificación) y no volvió (7d)."
       }
     ],
     "user_id": "1350950105",
@@ -2287,9 +2359,9 @@
         "their_move": "abolition_reductio (buena fe/civil): What makes it not ok for my child to own goldfish? — reto de consistencia, intenta sacar el debate del caso granja a toda tenencia de mascotas.",
         "our_reply_summary": "Reply etiquetada. Mordi el reductio sin abrir el frente de mascotas: concedi la intuicion (ownership de un someone pide justificacion, no desaparece porque el animal sea chico o el dueno un nino) SIN conceder el encuadre — el hilo es sobre criar individuos para que existan como recursos bajo control humano, no un nino con un pez. Respuesta directa: yes, if an animal is a someone rather than a something, ownership deserves an explanation; people-have-always-done-it / its-my-pet no la dan. Cierre devolviendo la pregunta del post.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
-        "outcome_evidence": "What makes it not ok for my child to own goldfish?",
-        "outcome_note": "reductio de consistencia (pet ownership) de buena fe civil; reply de 50 min sin respuesta."
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: la respuesta consistente (sin excepción para pets) al reductio del goldfish no tuvo réplica (5d) — buena fe que quedó satisfecha o pensando."
       },
       {
         "thread_id": "27330688236588406",
@@ -2297,7 +2369,9 @@
         "their_move": "Reductio de consistencia (buena fe): pet stores breeding goldfish for children to own — intenta sacar el debate a toda tenencia de mascotas",
         "our_reply_summary": "Mordi el reductio sin abrir el frente de mascotas: si es relevante y es la misma pregunta, mas chica; chico/nino/afecto no disuelven el titulo. Funde en el sujeto consciente con punto de vista; no exencion para pets, no le digo a nadie que suelte su pez; el titulo de propiedad sobre un someone es el mismo en pet shop y en granja.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: segunda vuelta del reductio de consistencia también sin réplica (5d)."
       }
     ],
     "user_id": "904005715",
@@ -2333,7 +2407,9 @@
         "their_move": "domestication_mutualism expandido (5h): symbiosis = ambos se benefician (food/care/protection/medication); bred-dependent so negligent to abandon; relacion de confianza con el caballo.",
         "our_reply_summary": "Reply etiquetada (afirmativo, sin negar-luego-afirmar). Conced el cuidado/afecto y el bond de confianza; el titulo sigue intacto debajo. Los beneficios son obligaciones que CRECEN de un titulo que ya se tiene (existe bajo propiedad, criado para fines humanos, vendible). bred-dependent = la institucion fabrico la dependencia; el deber de cuidar llega DESPUES y se apoya en la propiedad, nunca la otorgo. Simbiosis = palabra equivocada: un bond mutuo real deja a ambos duenos de si. Cierre: que da titulo legitimo a poseer a un sujeto sintiente criado a la dependencia.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: el mutualismo expandido quedó contestado (el 'beneficio' no legitima el título) sin réplica (5d)."
       }
     ],
     "user_id": "1448957098",
@@ -2362,7 +2438,9 @@
         "their_move": "Criterio = experiencia metafisica, no sintiencia + reductio cerebro-muerto contra la sintiencia",
         "our_reply_summary": "Pedi definicion operativa de metaphysical experience; casos marginales (bebes/demencia) muestran que el criterio real no es la capacidad; conscious individual vs rock (algo-a-alguien); cierre con la pregunta de propiedad. No mordi el reductio.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: el criterio metafísico + reductio cerebro-muerto quedó respondido sin réplica (6d)."
       }
     ],
     "user_id": "854405343",
@@ -2391,7 +2469,9 @@
         "their_move": "Domesticacion como win-win entre especies (10,000 anos, los animales se quedan felices a ser alimentados)",
         "our_reply_summary": "Separe describir de justificar; nombre la asimetria (one side determines every term of the relationship) y que la antiguedad explica que algo exista, no que deba continuar; cierre con la pregunta de propiedad. Sin lenguaje cargado.",
         "framework": "domesticar-eufemismo-dominar",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Warren Foster: 'how do you think it would work out if the Cows, Sheep or Pigs made the decisions?'",
+        "outcome_note": "domesticar-eufemismo-dominar: el desmonte del mutualismo lo dejó en una sola pregunta-deflexión (¿y si las vacas decidieran?) — respuesta mínima, el win-win quedó sin defensa. Deuda de 5d."
       }
     ],
     "user_id": "100003979186761",
@@ -2419,7 +2499,9 @@
         "their_move": "animals are not a someone, long winded question answered",
         "our_reply_summary": "Nombre que es la conclusion en disputa, no la razon; pedi el criterio (someone vs something). Corto.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: dismissal de una línea, sin vuelta tras la respuesta (5d)."
       }
     ],
     "user_id": "100044887491107",
@@ -2448,7 +2530,9 @@
         "their_move": "youre pretending to be worried about animals and using ai?",
         "our_reply_summary": "Nombre que la acusacion de IA no toca la pregunta (etiqueta puesta donde iba el argumento); pedi que muestre el fallo; devolvi al hueso (propiedad de un conscious individual). Corto.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: el jab de 'using AI' no volvió tras la respuesta (5d) — sello sin argumento, expuesto y muerto."
       }
     ],
     "user_id": "100024818371314",
@@ -2487,7 +2571,9 @@
         "their_move": "Antropoespecismo explicito + naturalismo + futility (6h): consciousness insufficient to be valued, only humans get that value, all meat-eating species do it, abandoning farming wouldnt improve lives, nature is harsher.",
         "our_reply_summary": "Reply etiquetada (afirmativo, sin negar-luego-afirmar). only humans get value = la linea especista dicha en voz alta llamada razon; la pregunta es si la linea rastrea estatus moral o solo preferencia de especie. Conced que quiza no merecen trato igual, pero pesan para poner en cuestion la PROPIEDAD. is/ought: el leon explica la depredacion; una institucion humana que construimos y corremos pide su propia justificacion. Conced naturaleza dura + nadie suelta todo manana, ambos dejan el titulo en pie. Cierre: que da titulo legitimo a poseer a un sujeto sintiente.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: el antropoespecismo explícito quedó contestado sin réplica (5d)."
       }
     ],
     "user_id": "604363060",
@@ -2525,7 +2611,9 @@
         "their_move": "Predador-naturaleza + tasty/nutrition + we have as much right to kill as any predator (rendimiento + naturalismo)",
         "our_reply_summary": "Dos errores de categoria: el predador describe la naturaleza, no justifica una institucion humana de propiedad; tasty es preferencia, no titulo. Funde el criterio (solo un sujeto consciente tiene intereses que importan PARA EL, una roca no), sin tratar \"el cerdo es alguien\" como axioma. Devolvi al titulo de propiedad.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "sin turnos posteriores (extract fresco 2026-07-05)",
+        "outcome_note": "algo-a-alguien: predador/naturalismo respondido sin réplica (5d)."
       }
     ],
     "user_id": "1679128970037236",

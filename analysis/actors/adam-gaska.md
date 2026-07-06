@@ -48,24 +48,28 @@ No usar 'consent' como argumento único (fácilmente deflectado a bebés/mascota
 - **Su jugada:** Yes. Any exploitation is justified if it is mutually beneficial. The benefits don't have to be equal.
 - **Nuestra respuesta:** Expuso que 'mutually' hace todo el trabajo y es falso. Concedió cuidado/refugio pero clavó que esos beneficios son condicionales a su propio uso y muerte. Nombró que la relación se estructura desde el inicio en torno al criador. Cerró devolviendo la carga: '¿en qué sentido es el beneficio mutuo y no condicional a la explotación?'
 
-### Hilo `27051763587778150` — 2026-06-29 · outcome: **pending**
+### Hilo `27051763587778150` — 2026-06-29 · outcome: **engaged**
 - **Su jugada:** optimal-not-necessary + esquive definicional (la esclavitud es propiedad involuntaria de un humano por otro)
 - **Nuestra respuesta:** Tomе su concesion (optimal=preferencia, no necesidad) -> ¿una preferencia justifica poseer a un conscious individual? Deje la palabra slavery fuera: la etiqueta es secundaria, la ESTRUCTURA (un lado posee/controla a otro sujeto) es lo que pide justificacion. Cierre en propiedad.
 
-### Hilo `27496390256650790` — 2026-06-29 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-06-29 · outcome: **engaged**
 - **Su jugada:** contempt-vs-propiedad: no exaltar != desprecio; valoro menos a un extraño que a mi esposa sin despreciarlo (+ Esther the Wonder Pig)
 - **Nuestra respuesta:** Conced que no exaltar != desprecio (no es el punto); voltее su analogia: valoras menos a un extrano y AUN ASI no es tu propiedad para disponer; los grados de inversion emocional describen sentimientos, no justifican la propiedad. Esther fuera. Cierre en propiedad.
 
-### Hilo `27496390256650790` — 2026-07-02 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-07-02 · outcome: **engaged**
 - **Su jugada:** principio_escudo: ownership = responsibility; si puedes/quieres hacerte responsable de algo (aun vivo), la propiedad esta justificada; la Tierra tambien es consciente; self-resolving situation (la propiedad descuidada se degrada).
 - **Nuestra respuesta:** La responsabilidad hacia un ser es FIDUCIARIA (deber hacia el sujeto, nace de que hay alguien con intereses) — funda obligaciones, NO un titulo para poseer. El salto de puedo-responsabilizarme a por-tanto-ownership-justificada no se sigue: un tutor tiene responsabilidad sin que el pupilo sea su propiedad. Self-resolving mide desde el lado del dueno (utilidad), no legitima el titulo. Tierra-consciente: una linea y fuera. Cierre: por que la capacidad de hacerse responsable de alguien crea un derecho a poseerlo como propiedad.
 
-### Hilo `27496390256650790` — 2026-07-03 · outcome: **pending**
+### Hilo `27496390256650790` — 2026-07-03 · outcome: **engaged**
 - **Su jugada:** Principio-escudo/paternalismo: "Because they cant care for themself and the care you offer makes their life better" (cuidado justifica propiedad).
 - **Nuestra respuesta:** El cuidado crea responsabilidad, no título; bebé/demencia/inconsciente como estructura (dependencia no vuelve propiedad al dependiente); fiduciario (deber apunta al sujeto) vs propietario (título transferible). Mejorar la vida de alguien no da derecho a poseerlo. Cierre: ¿por qué la capacidad de cuidar a un sujeto consciente crea un título para poseerlo como propiedad?
 
 ### Hilo `27051763587778150` — 2026-07-03 · outcome: **pending**
 - **Su jugada:** Disolucion de necesario: animal use is unnecessary in that nothing is truly necessary; Im not necessary, life is unnecessary.
 - **Nuestra respuesta:** Concedi lo cosmico (nada es metafisicamente necesario) y clave que ese nunca fue el punto: la vara es practica -dado que hay alternativa viable, que justifica el titulo. Nothing-is-necessary prueba demasiado: aplana la pregunta hasta que no distingue nada, incluida la distincion que EL respeta (no volveria propiedad a un humano dependiente por eso). El eje es el titulo. Cierre: dado que el uso animal no es requerido en sentido practico, que justifica poseer al sujeto consciente.
+
+### Hilo `27496390256650790` — 2026-07-05 · outcome: **pending**
+- **Su jugada:** Conservatorship como pro-propiedad + legalismo (slavery is illegal, enslavement no aplica a animales) + tu-quoque de pets (¿estás contra pets? ¿luring away con mejor care?).
+- **Nuestra respuesta:** Su ejemplo voltea a su contra: conservatorship es fiduciario puro — el conservator NO gana título de uso/venta/cría y tratarlo como activo corrompe el cargo; livestock ownership contiene exactamente el standing que al conservator se le niega. Legalidad describe, no justifica. Pets consistente: custodia por los intereses del perro, disputas por el interés del dependiente (lógica fiduciaria). Cierre: ¿por qué el estándar del conservatorship humano deja de aplicar con un ser consciente de otra especie?
 
 _Hilos: 27341517928804691, 27335635946059556_

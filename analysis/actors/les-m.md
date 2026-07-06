@@ -141,7 +141,7 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Burden-tennis sofisticado: simetria falsa ("why is it unjustified? restating doesnt prove premise") + reductio crop-deaths/self-defense/invasive (no puedes ubicar la linea) + 99% vs 1% / biologically normal / extraordinary claims require persuasion.
 - **Nuestra respuesta:** Filo: la carga NO es simetrica — poseer a un sujeto reclama autoridad sobre su existencia entera, eso es lo que necesita explicarse (como "por que injustificado poseer una persona" no es simetrico). Sus casos (self-defense/invasive/crop) son CONFLICTOS con alguien que ya existe; ninguno requiere CRIAR un sujeto para poseerlo — la granja si. No es donde pongo la raya en un gradiente, es que una relacion crea un individuo poseido y la otra no. 99%/normal explica aceptacion, no justificacion. Cierra: que principio hace legitimo que un individuo exista como propiedad de otro?
 
-### Hilo `27468645086091974` — 2026-06-28 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-06-28 · outcome: **silent**
 - **Su jugada:** Peticion de principio + apelacion a mayoria/historia/beneficios: ownership needs explaining solo si acepto TU premisa; 99% de la humanidad; ownership es solo un rasgo de la domesticacion.
 - **Nuestra respuesta:** Rompi el loop (filo, correccion del coagent): la propiedad no es un hecho biologico, es una relacion social adicional; quien reclama el TITULO introduce algo especifico que justificar, no es mi premisa sino la estructura del reclamo. 99%/historia es is no ought. Cierre: que hay en el cerdo que vuelva justificada y no solo aceptada la relacion de pertenencia?
 
@@ -169,11 +169,11 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Sello petitio (still assuming your conclusion / never explained why sentience creates a right) + burden-flip + drawing-lines (todos trazan lineas, yo la trazo en humanidad) + pozo line-drawing.
 - **Nuestra respuesta:** Expuso el falso never-stated (el puente SI se dio: un titulo necesita un algo); cual linea rastrea el estatus — humanos marginales conservan estatus sin las capacidades extra, asi que la linea que hace el trabajo es la sintiencia, no la especie; minimo status claim; el borde fish/octopus ya contestado; devolvio el burden. Filo controlado.
 
-### Hilo `4587084521560658` — 2026-07-01 · outcome: **pending**
+### Hilo `4587084521560658` — 2026-07-01 · outcome: **engaged**
 - **Su jugada:** Retreat-cycle: vamos en circulos / acepto que tu criterio es sintiencia pero nunca justificaste por que es decisiva / yo respondi la tuya, responde la mia: por que 99% de humanidad deberia abandonar su marco de cientos de miles de anos? / el burden es tuyo.
 - **Nuestra respuesta:** SWITCH DE EVASION (doble-estandar): vamos en circulos porque exige que mi linea se justifique hasta el fondo mientras exime la suya. El principio esta dado (la sintiencia hace que EXISTA un alguien para quien ser propiedad cuenta; roca no, cerdo si). Aplica su demanda a su linea: 99%/cientos de miles de anos mide cuantos y cuanto tiempo, no por que; popularidad y edad explican una practica, no defienden su titulo. El burden lo carga quien reclama standing para poseer a un alguien.
 
-### Hilo `4587084521560658` — 2026-07-03 · outcome: **pending**
+### Hilo `4587084521560658` — 2026-07-03 · outcome: **goalpost**
 - **Su jugada:** Petitio (assuming your conclusion) + why-same-rights-as-humans + casos marginales (babies/dementia) + line-drawing (insects/fish/nematodes) + burden-flip.
 - **Nuestra respuesta:** La acusacion de asumir la conclusion es falsa: parto de lo que EL concede (son sintientes); no reclamo mismos derechos/igualdad, solo lo minimo (no ser propiedad); sus casos marginales cortan en su contra (bebes/demencia sin las capacidades y con estatus completo -> el criterio es sentir, no la capacidad superior). Tome el nucleo (Gish discipline), no persegui cada rama. Cierre: cual es el rasgo que hace el trabajo.
 
