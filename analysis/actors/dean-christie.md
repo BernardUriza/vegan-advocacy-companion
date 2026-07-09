@@ -23,6 +23,7 @@ Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil c
 
 - **Hostile Socratic Method** (`socrates_hostil`)
   - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
 
 ## Qué NO hacer
 
@@ -102,8 +103,12 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Crux del umbral (buena fe): ¿por qué CUALQUIER standing residual cruza una línea categórica y no es cuestión de grado/regulación? ¿exclusive fiduciary orientation es condición necesaria o ideal aproximable? Pide justificación no-circular.
 - **Nuestra respuesta:** No-circularidad de frente: grado y estatus responden preguntas distintas (cuánto se reserva vs para quién existe el arreglo). El estándar ya lo usa él con humanos: conservator con derecho residual de uso/transferencia/beneficio = corrupción del cargo, no legitimidad más modesta — lo que condena es la dirección (hacia el tenedor). Aproximar el ideal fiduciario ≠ título cuya función es reservar standing. Cierre: ¿corrupción o legitimidad menor, y qué cambia cuando el pupilo es un sujeto consciente de otra especie?
 
-### Hilo `27468645086091974` — 2026-07-05 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-07-05 · outcome: **engaged**
 - **Su jugada:** Crux necesidad-vs-preferencia (buena fe, hilo paralelo): ¿por qué tener intereses propios excluye TODA relación de propiedad en principio, si el ownership puede restringirse hasta proteger totalmente los intereses del sujeto? ¿por qué el label/estructura se vuelve impermisible?
 - **Nuestra respuesta:** Tomé su hipótesis del ownership totalmente restringido y la completé: restringido hasta que todo poder apunta al sujeto, la relación de propiedad desapareció en sustancia (tutela con la etiqueta vieja); el label importa porque el título responde quién conserva standing en conflicto/ambigüedad/residuo. Necesidad-vs-preferencia respondido por consistencia: con infantes/conservatorship ya tratamos tener-intereses-propios como incompatible con ser activo de otro. Complementario (no repetido) al reply de moral-circle del mismo día. Cierre: ¿qué función le queda al título salvo reservar lo que no es para el sujeto?
+
+### Hilo `27468645086091974` — 2026-07-08 · outcome: **pending**
+- **Su jugada:** Acusacion de esquive (VERIFICADA VERDADERA contra el arco): "the question you answered is not the question I asked... a rephrased version that already assumes your framing". Doble demanda de fundamentacion: (1) por que el corte esta en cero standing residual y no es cuestion de grado; (2) epistemologica: como llegaste a que la sintiencia es el umbral, si no es solo una intuicion o un marco adoptado. Concede la consistencia interna del sistema, ataca su piso.
+- **Nuestra respuesta:** Concedi de entrada y de frente que conteste la pregunta equivocada (buena fe = concesion de apertura). (1) El corte es por DIRECCION de la justificacion, no por cantidad de poder: un residuo estrecho sigue siendo residuo, y sigue diciendo que el sujeto consciente queda bajo un titulo por razones que no son enteramente suyas. (2) Concedi que toda base moral toca un juicio ultimo (sin decir "es solo mi intuicion", que le regalaba el "entonces es preferencia") y mostre que el criterio se LEE de los juicios que el ya sostiene: sapiencia/autonomia/agencia/reciprocidad son relevantes para contratos y voto, pero no son lo que bloquea la propiedad — bebes y demencia avanzada carecen de todas y siguen sin poder ser propiedad. Devolvi la pregunta: que rasgo hace ese trabajo, y si la respuesta es especie, por que la especie carga el umbral y no la subjetividad.
 
 _Hilos: 27468645086091974_

@@ -45,6 +45,7 @@ La carnista más elaborada del hilo — escribe párrafos, no one-liners. Alto v
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `filtro-especie-vs-individuo` → _deploy as:_ marco
   - `respetar-no-es-opcion` → _deploy as:_ marco
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
 - **Predator Comparison / Lion Argument** (`predator_comparison`)
   - `paralelo-luchas-sociales-centrismos` → _deploy as:_ marco
 - **Welfare Rhetoric / Comfortable Life Defense** (`welfare_rhetoric`)
@@ -93,6 +94,7 @@ La carnista más elaborada del hilo — escribe párrafos, no one-liners. Alto v
   - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
 
 ## Qué NO hacer
 

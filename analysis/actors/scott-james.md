@@ -40,6 +40,7 @@ Dos gambitos clásicos en uno: (1) crop-deaths flip — pinta la ganadería como
   - `arbol-causa-sintoma` → _deploy as:_ marco
 - **Hostile Socratic Method** (`socrates_hostil`)
   - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
 
 ## Qué NO hacer
 

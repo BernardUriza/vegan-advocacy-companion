@@ -27,6 +27,7 @@ Audiencia genuina, no troll. El arco fue: naturalismo→can/should→relativismo
 
 - **Hostile Socratic Method** (`socrates_hostil`)
   - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
 - **Crop Deaths / Bystander Flip** (`crop_deaths_flip`)
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `violencia-indirecta-quien-demanda` → _deploy as:_ marco

@@ -51,6 +51,7 @@ El mejor steelman anti-vegano del hilo, y CIVIL. Hace tres cosas finas: (1) acus
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `filtro-especie-vs-individuo` → _deploy as:_ marco
   - `respetar-no-es-opcion` → _deploy as:_ marco
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
 - **Welfare Rhetoric / Comfortable Life Defense** (`welfare_rhetoric`)
   - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente
   - `violencia-especista` → _deploy as:_ marco
@@ -86,6 +87,7 @@ El mejor steelman anti-vegano del hilo, y CIVIL. Hace tres cosas finas: (1) acus
   - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
 
 ## Qué NO hacer
 

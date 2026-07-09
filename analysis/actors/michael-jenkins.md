@@ -36,6 +36,7 @@ Primer choque (VEGANnoyance, mi post sobre someone). Substantivo, no troll (el r
   - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
 - **Crop Deaths / Bystander Flip** (`crop_deaths_flip`)
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
@@ -62,7 +63,7 @@ No debatir si las plantas sienten, no competir en body-count, no defender el con
 - **Su jugada:** Peticion de principio definicional: it is a dictionary dispute, someone only applies to people; + crops-are-bred-too.
 - **Nuestra respuesta:** El diccionario no zanja lo moral; si someone rastrea especie o punto-de-vista ES la pregunta; definir someone=human antes mete la conclusion en la lengua; crops-are-bred es error de categoria (un cultivo no es alguien con standpoint). Devolvi la carga sobre el estatus. Cierre: que rasgo hace decisiva la membresia de especie.
 
-### Hilo `27330688236588406` — 2026-07-05 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-07-05 · outcome: **escalated**
 - **Su jugada:** Relativismo cultural (estación 3 del retreat-cycle): nothing will settle the moral issue, morals differ by culture; dog/cat vs Hindu cow.
 - **Nuestra respuesta:** Disciplina de 3 piezas: recibo del arco (crops-bred → diccionario ×2 → relativismo), el switch en una línea (cuando el diccionario servía el significado era fijo; cuestionado, todo se volvió costumbre — en ambos casos el título sin defender), y el contra: la variación cultural DESCRIBE el desacuerdo, no lo resuelve; su propio ejemplo del perro lo delata (no lo trata como mero hábito local). Cierre: ¿criterio defendible para decidir quién puede ser propiedad, o solo la costumbre de la cultura con poder de nombrar?
 

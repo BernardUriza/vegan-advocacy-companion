@@ -262,9 +262,19 @@
         "thread_id": "27496390256650790",
         "date": "2026-07-05",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
+        "outcome": "engaged",
         "their_move": "Conservatorship como pro-propiedad + legalismo (slavery is illegal, enslavement no aplica a animales) + tu-quoque de pets (¿estás contra pets? ¿luring away con mejor care?).",
-        "our_reply_summary": "Su ejemplo voltea a su contra: conservatorship es fiduciario puro — el conservator NO gana título de uso/venta/cría y tratarlo como activo corrompe el cargo; livestock ownership contiene exactamente el standing que al conservator se le niega. Legalidad describe, no justifica. Pets consistente: custodia por los intereses del perro, disputas por el interés del dependiente (lógica fiduciaria). Cierre: ¿por qué el estándar del conservatorship humano deja de aplicar con un ser consciente de otra especie?"
+        "our_reply_summary": "Su ejemplo voltea a su contra: conservatorship es fiduciario puro — el conservator NO gana título de uso/venta/cría y tratarlo como activo corrompe el cargo; livestock ownership contiene exactamente el standing que al conservator se le niega. Legalidad describe, no justifica. Pets consistente: custodia por los intereses del perro, disputas por el interés del dependiente (lógica fiduciaria). Cierre: ¿por qué el estándar del conservatorship humano deja de aplicar con un ser consciente de otra especie?",
+        "outcome_evidence": "3d: 'ownership protects the interest of humans against another human. There is a whole bureaucracy that supports this. If you feel strongly enough, then you need to cajole enough people to develop the institution. You may even need to fight for it.' El titulo pasa de justificado a meramente vigente.",
+        "outcome_note": "El contraste fiduciario/propietario (algo-a-alguien-sujeto-derecho) empujo a Adam FUERA de la justificacion moral: dejo de defender que el titulo este justificado y paso a describir que existe y que hay una burocracia que lo sostiene. Concesion estructural implicita muy jugosa: admite que la propiedad protege intereses HUMANOS frente a otros humanos, o sea nada acerca del sujeto poseido. Ese abandono del terreno moral hacia la realpolitik es la superficie a voltear en el proximo reply."
+      },
+      {
+        "thread_id": "27496390256650790",
+        "date": "2026-07-08",
+        "their_move": "Abandono del terreno moral hacia la realpolitik institucional: \"ownership protects the interest of humans against another human. There is a whole bureaucracy that supports this. If you feel strongly enough, then you need to cajole enough people to develop the institution. You may even need to fight for it.\" Concesion estructural implicita: el titulo protege intereses HUMANOS frente a humanos, o sea nada del sujeto poseido.",
+        "our_reply_summary": "Le tome la concesion sin triunfalismo. Concedi que eso ES lo que hace la institucion: registra y hace exigibles reclamos entre personas. Y ahi mismo mostre que deja intacta la pregunta del animal bajo el titulo — revela a quien protege el sistema (el reclamante humano) y que el animal es aquello sobre lo que se organizan los reclamos humanos. Una burocracia estabiliza una practica y dice quien cuenta hoy como dueno; la cuestion de estatus sigue abierta. \"Convence a suficiente gente\" describe como cambian las instituciones, no por que el titulo presente es legitimo. Devolvi la pregunta rio arriba de la burocracia.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ]
   },
@@ -1867,9 +1877,11 @@
         "thread_id": "27330688236588406",
         "date": "2026-07-05",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
+        "outcome": "escalated",
         "their_move": "Relativismo cultural (estación 3 del retreat-cycle): nothing will settle the moral issue, morals differ by culture; dog/cat vs Hindu cow.",
-        "our_reply_summary": "Disciplina de 3 piezas: recibo del arco (crops-bred → diccionario ×2 → relativismo), el switch en una línea (cuando el diccionario servía el significado era fijo; cuestionado, todo se volvió costumbre — en ambos casos el título sin defender), y el contra: la variación cultural DESCRIBE el desacuerdo, no lo resuelve; su propio ejemplo del perro lo delata (no lo trata como mero hábito local). Cierre: ¿criterio defendible para decidir quién puede ser propiedad, o solo la costumbre de la cultura con poder de nombrar?"
+        "our_reply_summary": "Disciplina de 3 piezas: recibo del arco (crops-bred → diccionario ×2 → relativismo), el switch en una línea (cuando el diccionario servía el significado era fijo; cuestionado, todo se volvió costumbre — en ambos casos el título sin defender), y el contra: la variación cultural DESCRIBE el desacuerdo, no lo resuelve; su propio ejemplo del perro lo delata (no lo trata como mero hábito local). Cierre: ¿criterio defendible para decidir quién puede ser propiedad, o solo la costumbre de la cultura con poder de nombrar?",
+        "outcome_evidence": "1d: 'it doesn't matter in what reasoning I give. You'll just throw out some psycho babble nonsense that neither disproves my point nor proves yours. Animals are food. They are not people nor do they have the same rights that people do. In fact, the only rights they have are the ones people give them.' Abandono explicito de la razon + insulto + might-makes-right.",
+        "outcome_note": "El reencuadre de arco (recibos del retreat-cycle: crops-bred -> dictionary dispute -> relativismo) funciono como diagnostico: al quedarse sin estacion nueva, Michael abandono el argumento explicitamente y cayo al insulto + might-makes-right. algo-a-alguien-sujeto-derecho nunca fue refutado, fue rehuido. Pozo confirmado: el arco ya quedo visible para el lurker, no re-enganchar."
       }
     ],
     "user_id": "100000547865199",
@@ -2067,15 +2079,27 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending",
         "their_move": "Crux del umbral (buena fe): ¿por qué CUALQUIER standing residual cruza una línea categórica y no es cuestión de grado/regulación? ¿exclusive fiduciary orientation es condición necesaria o ideal aproximable? Pide justificación no-circular.",
-        "our_reply_summary": "No-circularidad de frente: grado y estatus responden preguntas distintas (cuánto se reserva vs para quién existe el arreglo). El estándar ya lo usa él con humanos: conservator con derecho residual de uso/transferencia/beneficio = corrupción del cargo, no legitimidad más modesta — lo que condena es la dirección (hacia el tenedor). Aproximar el ideal fiduciario ≠ título cuya función es reservar standing. Cierre: ¿corrupción o legitimidad menor, y qué cambia cuando el pupilo es un sujeto consciente de otra especie?"
+        "our_reply_summary": "No-circularidad de frente: grado y estatus responden preguntas distintas (cuánto se reserva vs para quién existe el arreglo). El estándar ya lo usa él con humanos: conservator con derecho residual de uso/transferencia/beneficio = corrupción del cargo, no legitimidad más modesta — lo que condena es la dirección (hacia el tenedor). Aproximar el ideal fiduciario ≠ título cuya función es reservar standing. Cierre: ¿corrupción o legitimidad menor, y qué cambia cuando el pupilo es un sujeto consciente de otra especie?",
+        "outcome_evidence": "Ultimo turno de Dean en 27496 tiene 5d; mi reply siguiente tiene 3d, sin respuesta. Su turno de 2d vive en 27468.",
+        "outcome_note": "Sin respuesta del oponente en este hilo (mi reply-ancla tiene 3d). Dean consolido su objecion en el hilo paralelo 27468 en vez de contestar aqui; el crux es identico. Se mantiene pending, no silent: sigue activo y la pregunta esta viva en el otro hilo."
       },
       {
         "thread_id": "27468645086091974",
         "date": "2026-07-05",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
+        "outcome": "engaged",
         "their_move": "Crux necesidad-vs-preferencia (buena fe, hilo paralelo): ¿por qué tener intereses propios excluye TODA relación de propiedad en principio, si el ownership puede restringirse hasta proteger totalmente los intereses del sujeto? ¿por qué el label/estructura se vuelve impermisible?",
-        "our_reply_summary": "Tomé su hipótesis del ownership totalmente restringido y la completé: restringido hasta que todo poder apunta al sujeto, la relación de propiedad desapareció en sustancia (tutela con la etiqueta vieja); el label importa porque el título responde quién conserva standing en conflicto/ambigüedad/residuo. Necesidad-vs-preferencia respondido por consistencia: con infantes/conservatorship ya tratamos tener-intereses-propios como incompatible con ser activo de otro. Complementario (no repetido) al reply de moral-circle del mismo día. Cierre: ¿qué función le queda al título salvo reservar lo que no es para el sujeto?"
+        "our_reply_summary": "Tomé su hipótesis del ownership totalmente restringido y la completé: restringido hasta que todo poder apunta al sujeto, la relación de propiedad desapareció en sustancia (tutela con la etiqueta vieja); el label importa porque el título responde quién conserva standing en conflicto/ambigüedad/residuo. Necesidad-vs-preferencia respondido por consistencia: con infantes/conservatorship ya tratamos tener-intereses-propios como incompatible con ser activo de otro. Complementario (no repetido) al reply de moral-circle del mismo día. Cierre: ¿qué función le queda al título salvo reservar lo que no es para el sujeto?",
+        "outcome_evidence": "2d: 'the question you answered is not the question I asked... you take a rephrased version of my question - one that already assumes your framing of ownership - and answer that instead... What is the justification for the underlying principle that makes any residual standing inherently impermissible... How did you arrive at that principle in the first place?... I can see the internal consistency of your system, but I still don't see the justification for the foundation it rests on.' Acusacion de esquive VERIFICADA CONTRA EL ARCO Y VERDADERA: mi reply del 07-05 contesto el caso 'ownership stripped to fiduciary' cuando el preguntaba por que el umbral es cero.",
+        "outcome_note": "algo-a-alguien-sujeto-derecho aterrizo la ESTRUCTURA (direccion de la justificacion: fiduciario vs propietario) y Dean la concedio explicitamente ('I can see the internal consistency of your system'). Lo que NO aterrizo es el FUNDAMENTO: por que el corte esta en cero standing residual y no es cuestion de grado, y como se llega epistemicamente a que la sintiencia es el umbral. El framework es fuerte describiendo la relacion, debil justificando su propio piso. Dean, buena fe, sostiene la MISMA pregunta 12 turnos sin mover el poste."
+      },
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-07-08",
+        "their_move": "Acusacion de esquive (VERIFICADA VERDADERA contra el arco): \"the question you answered is not the question I asked... a rephrased version that already assumes your framing\". Doble demanda de fundamentacion: (1) por que el corte esta en cero standing residual y no es cuestion de grado; (2) epistemologica: como llegaste a que la sintiencia es el umbral, si no es solo una intuicion o un marco adoptado. Concede la consistencia interna del sistema, ataca su piso.",
+        "our_reply_summary": "Concedi de entrada y de frente que conteste la pregunta equivocada (buena fe = concesion de apertura). (1) El corte es por DIRECCION de la justificacion, no por cantidad de poder: un residuo estrecho sigue siendo residuo, y sigue diciendo que el sujeto consciente queda bajo un titulo por razones que no son enteramente suyas. (2) Concedi que toda base moral toca un juicio ultimo (sin decir \"es solo mi intuicion\", que le regalaba el \"entonces es preferencia\") y mostre que el criterio se LEE de los juicios que el ya sostiene: sapiencia/autonomia/agencia/reciprocidad son relevantes para contratos y voto, pero no son lo que bloquea la propiedad — bebes y demencia avanzada carecen de todas y siguen sin poder ser propiedad. Devolvi la pregunta: que rasgo hace ese trabajo, y si la respuesta es especie, por que la especie carga el umbral y no la subjetividad.",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "outcome": "pending"
       }
     ],
     "user_id": "1198831097",
