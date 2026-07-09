@@ -14,18 +14,19 @@
 //   node debt-sweep.mjs            # tabla humana, ordenada por deuda dura
 //   node debt-sweep.mjs --json     # JSON para pipear
 //
-// Honestidad (Art. 2): freshestMin === 99999 es el centinela de "edad no parseada"
-// (raíz vieja que el parser no pudo fechar), NO "fresco". Esas son candidatas a
-// confirmar, no deuda viva confirmada — se marcan "edad?".
+// Honestidad (Art. 2): freshestMin === UNKNOWN_AGE es el centinela de "no pude fechar este
+// turno", NO "fresco" ni "viejísimo". Esas son candidatas a confirmar, no deuda viva
+// confirmada — se marcan "edad?". Un hilo cuya extracción quedó truncada se marca
+// EXTRACCIÓN INCOMPLETA: su deuda no se sirve como dato duro.
 
 import { execFileSync } from 'child_process';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { getOpenDebtThreads, getThreadMeta, threadOpenUrl } from './db.mjs';
+import { UNKNOWN_AGE } from './fb-lib.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const asJson = process.argv.includes('--json');
-const UNKNOWN_AGE = 99999;
 
 function extractThread(url) {
   const out = execFileSync('node', ['thread-extract.mjs', url, '--json'], {
@@ -53,11 +54,14 @@ for (const { thread_id, actors } of getOpenDebtThreads()) {
       thread_id,
       slug: meta?.slug ?? null,
       url,
-      expandRemaining: d.expand?.remaining ?? null,
+      // `complete` viene de thread-extract: si la extracción quedó truncada, la deuda de este
+      // hilo NO es confiable y el sweep debe decirlo en vez de servirla como dato duro (Art. 2).
+      complete: d.complete !== false,
+      completeness: d.completeness ?? null,
       turns: d.turns?.length ?? 0,
       moatActors,
-      owes: owes.map((x) => ({ author: x.author, user_id: x.user_id, freshestMin: x.freshestMin, oppCount: x.oppCount, myCount: x.myCount })),
-      suspect: suspect.map((x) => ({ author: x.author, user_id: x.user_id, freshestMin: x.freshestMin, oppCount: x.oppCount, myCount: x.myCount })),
+      owes: owes.map((x) => ({ author: x.author, user_id: x.user_id, freshestMin: x.freshestMin, ageUnknown: !!x.ageUnknown, neverAnswered: !!x.neverAnswered, oppCount: x.oppCount, myCount: x.myCount })),
+      suspect: suspect.map((x) => ({ author: x.author, user_id: x.user_id, freshestMin: x.freshestMin, ageUnknown: !!x.ageUnknown, neverAnswered: !!x.neverAnswered, oppCount: x.oppCount, myCount: x.myCount })),
     });
   } catch (e) {
     results.push({ thread_id, slug: meta?.slug ?? null, url, error: String(e.message || e).slice(0, 200), moatActors });
@@ -90,9 +94,17 @@ for (const r of results) {
     continue;
   }
   const hot = r.owes.length ? '🔴' : r.suspect.length ? '🟡' : '🟢';
-  const rem = r.expandRemaining ? ` · expand.remaining=${r.expandRemaining}` : '';
-  console.log(`${hot} ${r.thread_id} (${r.slug ?? '?'}) · ${r.turns} turnos${rem}`);
-  for (const o of r.owes) console.log(`     OWES  ${o.author}  ${age(o.freshestMin)}  opp${o.oppCount}/my${o.myCount}`);
+  console.log(`${hot} ${r.thread_id} (${r.slug ?? '?'}) · ${r.turns} turnos`);
+  if (!r.complete) {
+    const c = r.completeness ?? {};
+    const why = [
+      c.pendingExpandButtons ? `${c.pendingExpandButtons} sub-hilo(s) sin abrir` : null,
+      c.missingReplies ? `faltan ${c.missingReplies} réplicas prometidas` : null,
+      c.truncatedComments ? `${c.truncatedComments} comentario(s) cortados` : null,
+    ].filter(Boolean).join(' · ');
+    console.log(`     ⚠️  EXTRACCIÓN INCOMPLETA (${why}) — la deuda de abajo NO es confiable`);
+  }
+  for (const o of r.owes) console.log(`     OWES  ${o.author}  ${age(o.freshestMin)}${o.ageUnknown && o.neverAnswered ? ' (nunca contestada)' : ''}  opp${o.oppCount}/my${o.myCount}`);
   for (const s of r.suspect) console.log(`     susp  ${s.author}  ${age(s.freshestMin)}  opp${s.oppCount}/my${s.myCount}`);
   if (!r.owes.length && !r.suspect.length) console.log(`     (sin owes/suspect — deuda del moat probablemente pagada; candidato a reflex)`);
   console.log(`     moat: ${r.moatActors.join(', ')}\n`);

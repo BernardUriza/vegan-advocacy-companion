@@ -11,7 +11,7 @@
 //
 // El <openUrl> lo sirve notif-scan.mjs (campo `openUrl` / línea "abrir:").
 
-import { openScratchPage, ageMinutes, fmtAge } from './fb-lib.mjs';
+import { openScratchPage, ageMinutes, fmtAge, UNKNOWN_AGE } from './fb-lib.mjs';
 import { registerThread } from './db.mjs';
 
 const url = process.argv.find((a) => a.startsWith('http'));
@@ -33,26 +33,103 @@ try {
 // ---- corre DENTRO de la página: expandir todo (idempotente, hasta estable) ----
 async function expandAll() {
   const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+  const norm = (b) => (b.innerText || '').replace(/\s+/g, ' ').trim();
+  // FB tiene DOS renders del botón de expandir réplicas y solo uno empieza con "View":
+  //   a) "View all 3 replies" / "View 1 reply" / "View more replies"
+  //   b) "Bernard Uriza Orozco replied · 4 Replies"   ← el que faltaba (2026-07-08)
+  // Sin (b), sub-hilos enteros quedaban colapsados con remaining:0 — la extracción
+  // reportaba "expandí todo" sobre un hilo truncado (fake-green, Art. 2).
+  const EXPAND =
+    /^(View all \d+ repl|View more repl|View previous repl|View \d+ repl|View \d+ more comment|\d+ repl(y|ies)$)/i;
+  const REPLIED = / replied\s+·\s+\d+\s+Repl(y|ies)$/i;
+  // Cuánto promete FB, leído ANTES de expandir. Es el ÚNICO testigo independiente del
+  // scraper: contar botones al final solo mide el scraper contra sí mismo (si un regex deja
+  // de matchear, "0 pendientes" y "todo expandido" son indistinguibles). Ambos renders
+  // anuncian el tamaño de su rama colapsada; la suma es una COTA INFERIOR de las réplicas
+  // que deben aparecer. Si al final hay menos, la extracción está truncada, sin discusión.
+  const COUNT = /(?:^View all (\d+) repl|^View (\d+) repl|·\s+(\d+)\s+Repl(?:y|ies)$)/i;
+  // Detrás del post abierto sigue montado el FEED, con sus propios "View all N replies".
+  // Clickearlos expandía hilos ajenos y envenenaba el conteo de completitud. Se distinguen
+  // porque están OCULTOS; los del hilo abierto están visibles.
+  // (Acotar por [role=dialog] NO sirve: los articles del post viven fuera de ese nodo.)
+  // `checkVisibility()` es el chequeo real; `offsetParent` es fallback para Chrome viejo,
+  // pero da falso-oculto en `position: fixed` — nunca se usa solo.
+  const visible = (b) =>
+    typeof b.checkVisibility === 'function'
+      ? b.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true })
+      : b.offsetParent !== null;
+  const buttons = () => [...document.querySelectorAll('div[role="button"]')].filter(visible);
   const find = () =>
-    [...document.querySelectorAll('div[role="button"]')].filter((b) =>
-      /^(View all \d+ repl|View more repl|View previous repl|View \d+ repl|View \d+ more comment)/i.test(
-        (b.innerText || '').trim()
-      )
+    buttons().filter((b) => {
+      const t = norm(b);
+      return EXPAND.test(t) || REPLIED.test(t);
+    });
+  // "See more" trunca el cuerpo de un comentario largo: el argumento del oponente vive
+  // ahí. Solo los que están DENTRO de un article (los de la sidebar/feed no).
+  const findSeeMore = () =>
+    [...document.querySelectorAll('div[role="article"] div[role="button"]')].filter(
+      (b) => visible(b) && /^See more$/i.test(norm(b))
     );
-  let clicked = 0;
-  for (let round = 0; round < 8; round++) {
+  // Un SOLO disparo de click. El dispatchEvent('click') + b.click() lanzaba DOS activaciones:
+  // sobre un botón toggle eso abre y vuelve a cerrar la rama en la misma llamada. Se dejan
+  // los eventos de hover/press (React los usa para armar el handler) y se activa una vez.
+  const press = (b) => {
+    b.scrollIntoView({ block: 'center' });
+    for (const type of ['mouseover', 'mousedown', 'mouseup']) {
+      b.dispatchEvent(new MouseEvent(type, { bubbles: true, cancelable: true, view: window }));
+    }
+    if (typeof b.click === 'function') b.click();
+    else b.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }));
+  };
+  const articleCount = () => document.querySelectorAll('div[role="article"]').length;
+  const sumPromised = () =>
+    find()
+      .map((b) => norm(b).match(COUNT))
+      .filter(Boolean)
+      .reduce((sum, m) => sum + +(m[1] || m[2] || m[3] || 0), 0);
+  // Se captura ANTES de tocar nada: una vez expandido, el botón desaparece y con él la promesa.
+  const promisedReplies = sumPromised();
+  // Expandir un nivel REVELA los botones del siguiente (3 botones → 6 tras un click), así
+  // que el viejo `remaining > 0` no significaba "no ceden": el loop moría a media expansión.
+  // Se para solo cuando NADA se mueve: ni el hilo crece ni el set de botones cambia, dos
+  // rondas seguidas. Mirar solo los articles también cortaba antes de tiempo (una ronda
+  // puede expandir un sub-hilo ya renderizado y solo revelar el botón del nivel siguiente).
+  let clicked = 0, stagnant = 0, prevArticles = -1, prevBtns = -1, rounds = 0;
+  for (; rounds < 25; rounds++) {
     const btns = find();
     if (!btns.length) break;
-    for (const b of btns) {
-      b.scrollIntoView({ block: 'center' });
-      for (const type of ['mouseover', 'mousedown', 'mouseup', 'click']) {
-        b.dispatchEvent(new MouseEvent(type, { bubbles: true, cancelable: true, view: window }));
-      }
-      clicked++;
-    }
+    for (const b of btns) { press(b); clicked++; }
     await sleep(1400);
+    const nowArticles = articleCount();
+    const nowBtns = find().length;
+    stagnant = nowArticles === prevArticles && nowBtns === prevBtns ? stagnant + 1 : 0;
+    prevArticles = nowArticles;
+    prevBtns = nowBtns;
+    if (stagnant >= 2) break;
   }
-  return { clicked, remaining: find().length };
+  let expandedText = 0;
+  for (let round = 0; round < 5; round++) {
+    const more = findSeeMore();
+    if (!more.length) break;
+    for (const b of more) { press(b); expandedText++; }
+    await sleep(600);
+  }
+  // DOS señales, y hacen falta las dos:
+  //   · `pending`  — botones que no cedieron. Mide el scraper contra sí mismo: si un regex
+  //     deja de matchear (rediseño de FB, locale español), da 0 y MIENTE "todo expandido".
+  //   · `promisedReplies` — lo que FB dijo que había, leído antes de tocar el DOM. Sobrevive
+  //     al fallo del expander: si nada matchea, es 0 y no acusa, pero cuando SÍ matcheó
+  //     compara contra un número que el scraper no eligió.
+  const pending = find().length;
+  return {
+    clicked,
+    rounds,
+    expandedText,
+    articles: articleCount(),
+    pending,
+    promisedReplies,
+    truncatedRemaining: findSeeMore().length,
+  };
 }
 
 // ---- corre DENTRO de la página: walk de los articles ----
@@ -102,11 +179,16 @@ function walkArticles(ME) {
     const isMine = !!a.querySelector('[aria-label^="Edit or delete"]') || author === ME;
     // edad — agnóstico al render de FB (espaciado "1m Like Reply" o pegado
     // "4hLikeReply"): el timestamp del comentario va justo antes de su fila Like/Reply.
+    // Las unidades DEBEN cubrir lo mismo que `ageMinutes` (semana/mes/año incluidas) y el
+    // artículo ("a week ago"): este es el PRODUCTOR, y un `ageStr` vacío deja al parser
+    // sin nada que parsear. Medido el 2026-07-08: sin week/month/year aquí, 46 de 52
+    // turnos de un hilo salían sin fechar y su deuda se volvía invisible (Art. 2).
+    const UNITS = '(?:second|minute|hour|day|week|month|year)';
     const ageStr = (() => {
       if (/a few seconds|just now/i.test(label) || /a few seconds|just now/i.test(text)) return 'a few seconds';
-      const inLabel = label.match(/(\d+\s*(?:minute|hour|day)s?|about an hour|an hour)\s*ago/i);
+      const inLabel = label.match(new RegExp(`((?:\\d+|an?)\\s*${UNITS}s?|about an hour)\\s*ago`, 'i'));
       if (inLabel) return inLabel[1];
-      const inText = text.match(/(\d+)\s*([mhd])\s*(?=Like|Reply)/i);
+      const inText = text.match(/(\d+)\s*([mhdwy])\s*(?=Like|Love|Care|Haha|Wow|Sad|Angry|Reply|Edited)/i);
       if (inText) return inText[1] + inText[2];
       return '';
     })();
@@ -165,10 +247,30 @@ function buildDebt(turns, ME, postIsMine) {
     // raíz sin contestar (myFresh=Inf) o el oponente claramente más reciente → deuda dura.
     const hardDebt = e.oppFresh < e.myFresh;
     // reply ambigua: su último NO es claramente más viejo que el mío por el margen → verificar.
-    const clearlyAnswered = e.myFresh < e.oppFresh - MARGIN;
+    // Con la edad del oponente DESCONOCIDA no se puede afirmar que lo contestaste: el centinela
+    // (9e9) fingía ser un turno viejísimo y hacía `clearlyAnswered` verdadero, DROPEANDO deuda
+    // real. Ejemplo medido: él responde "1w" (sin fechar) y tú "8 days" → él habló después, pero
+    // 8 days < 9e9 y la deuda desaparecía de la tabla como si estuviera pagada (Art. 2).
+    const oppAgeUnknown = e.oppFresh === UNKNOWN_AGE;
+    const clearlyAnswered = !oppAgeUnknown && e.myFresh < e.oppFresh - MARGIN;
     const suspect = !hardDebt && e.kind === 'reply' && !clearlyAnswered;
     if (hardDebt || suspect) {
-      debt.push({ author, user_id: e.user_id, freshestMin: e.oppFresh, owes: !suspect, suspect, kind: e.kind, oppCount: e.oppCount, myCount: e.myCount });
+      // Honestidad (Art. 2): `freshestMin === UNKNOWN_AGE` NO es "recién llegado" ni una
+      // edad — es "no pude fechar este turno". Se marca explícito para que la tabla y los
+      // consumidores no lo lean como deuda fresca. `neverAnswered` dice POR QUÉ hay deuda
+      // cuando la edad es inútil: nunca le respondí, lo cual es cierto sin importar la fecha.
+      debt.push({
+        author,
+        user_id: e.user_id,
+        freshestMin: e.oppFresh,
+        ageUnknown: e.oppFresh === UNKNOWN_AGE,
+        neverAnswered: e.myFresh === Infinity,
+        owes: !suspect,
+        suspect,
+        kind: e.kind,
+        oppCount: e.oppCount,
+        myCount: e.myCount,
+      });
     }
   }
   // reply (activa) antes que root; suspect junto a su reply; dentro, por frescura.
@@ -233,12 +335,32 @@ async function main() {
 
     const debt = buildDebt(turns, ME, postIsMine);
     const unansweredRoots = buildUnansweredRoots(turns, ME, postIsMine);
+    // Completitud (Art. 2). Un total plausible sobre un hilo a medias fue el bug que hizo
+    // reportar deuda YA PAGADA (mine:0 cuando en realidad era mine:2). Tres formas de estar
+    // truncado, y cualquiera basta — ninguna es suficiente sola:
+    //   · quedaron botones de expandir sin abrir,
+    //   · FB prometió más réplicas de las que extrajimos (el testigo externo),
+    //   · quedaron cuerpos de comentario cortados en "See more" (el argumento del oponente).
+    const foundReplies = turns.filter((t) => t.target).length;
+    const missingReplies = Math.max(0, exp.promisedReplies - foundReplies);
+    const incomplete = exp.pending > 0 || missingReplies > 0 || exp.truncatedRemaining > 0;
+    const undatedTurns = turns.filter((t) => ageMinutes(t.ageStr) === UNKNOWN_AGE).length;
+
     const out = {
       url,
       me: ME,
       postOwner: postOwner || '(no detectado — asumido mío)',
       postIsMine,
       expand: exp,
+      complete: !incomplete,
+      completeness: {
+        pendingExpandButtons: exp.pending,
+        promisedReplies: exp.promisedReplies,
+        foundReplies,
+        missingReplies,
+        truncatedComments: exp.truncatedRemaining,
+        undatedTurns,
+      },
       counts: { rawArticles: raw.length, uniqueTurns: turns.length },
       turns,
       debt,
@@ -249,7 +371,21 @@ async function main() {
       console.log(JSON.stringify(out, null, 2));
     } else {
       console.log(`\n=== HILO (${turns.length} turnos únicos; ${raw.length} articles crudos) ===`);
-      console.log(`expand: ${exp.clicked} clicks, ${exp.remaining} botones sin ceder (suelen ser de posts vecinos)\n`);
+      console.log(
+        `expand: ${exp.clicked} clicks en ${exp.rounds} rondas · ${exp.articles} articles` +
+          ` · réplicas ${foundReplies}/${exp.promisedReplies} prometidas` +
+          ` · ${exp.expandedText} "See more" abiertos${incomplete ? '' : ' · COMPLETO'}`
+      );
+      if (incomplete) {
+        const why = [
+          exp.pending > 0 ? `${exp.pending} sub-hilo(s) sin abrir` : null,
+          missingReplies > 0 ? `faltan ${missingReplies} réplicas que FB prometió` : null,
+          exp.truncatedRemaining > 0 ? `${exp.truncatedRemaining} comentario(s) cortados en "See more"` : null,
+        ].filter(Boolean).join(' · ');
+        console.log(`  ⚠️  EXTRACCIÓN INCOMPLETA (${why}). La deuda de abajo NO es confiable — re-corré o confirmá en vivo (Art. 2).`);
+      }
+      if (undatedTurns) console.log(`  ⏳ ${undatedTurns}/${turns.length} turnos SIN FECHAR — su deuda se surfacea como ambigua, no como pagada.`);
+      console.log('');
       for (const t of turns) {
         const who = t.isMine ? '🟦 YO' : '⬜ ' + t.author;
         const to = t.target ? ` → ${t.target}` : ' (raíz)';
@@ -262,10 +398,15 @@ async function main() {
       for (const d of debt) {
         const tag = d.kind === 'reply' ? '↩️ reply' : '🌱 root ';
         const sus = d.suspect ? ' ⚠️ AMBIGUA (verificar en vivo: él ' + d.oppCount + ' vs tú ' + d.myCount + ')' : '';
-        console.log(`  🔴 ${tag}  ${d.author} (uid ${d.user_id || '?'}) — [${fmtAge(d.freshestMin)}]${sus}`);
+        const unk = d.ageUnknown
+          ? ` ⏳ SIN FECHAR${d.neverAnswered ? ' (deuda por nunca contestada, no por frescura)' : ' — confirmar antes de usar'}`
+          : '';
+        console.log(`  🔴 ${tag}  ${d.author} (uid ${d.user_id || '?'}) — [${fmtAge(d.freshestMin)}]${unk}${sus}`);
       }
-      const top = debt[0];
+      const dated = debt.filter((d) => !d.ageUnknown);
+      const top = dated[0];
       if (top) console.log(`\n→ Deuda top: ${top.author} [${fmtAge(top.freshestMin)}] (${top.kind}) — candidata a jugada (decide con el dossier).`);
+      else if (debt.length) console.log(`\n→ Sin deuda FECHADA: las ${debt.length} candidatas están sin fechar — confirmar en vivo antes de elegir jugada (Art. 2).`);
       if (postIsMine) {
         console.log(`\n=== RAÍCES SUSTANTIVAS SIN CONTESTAR en tu post (${unansweredRoots.length}) ===`);
         console.log('  el agregado "y N otros" las entierra; aquí van CON su texto — léelas, no las descartes a ciegas (Art. 2)');

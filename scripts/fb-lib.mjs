@@ -48,29 +48,41 @@ export async function openPersistentPage() {
   return { browser, ctx, page, detach };
 }
 
-// "3h", "27m", "15 minutes ago", "3 hours ago", "2 days ago", "about an hour ago",
-// "a few seconds ago" → minutos (99999 si no parsea). Entiende AMBOS renders de FB:
-// el compacto ("15m") del link de timestamp y el de palabra completa ("15 minutes
-// ago") del aria-label — el desajuste entre ambos era el bug que tiraba la deuda a [?].
+// Centinela de "no pude fechar esto". Debe ser mayor que CUALQUIER edad real: el viejo
+// 99999 equivalía a 69 días, así que un comentario de 3 meses (129600 min) se ordenaba
+// como MÁS viejo que lo desconocido y contaminaba la deuda. Se compara por identidad
+// (=== UNKNOWN_AGE), nunca por umbral.
+export const UNKNOWN_AGE = 9e9;
+
+const UNIT_MINUTES = { minute: 1, hour: 60, day: 1440, week: 10080, month: 43200, year: 525600 };
+const SHORT_MINUTES = { m: 1, h: 60, d: 1440, w: 10080, y: 525600 };
+
+// "3h", "27m", "1w", "15 minutes ago", "3 hours ago", "2 days ago", "a week ago",
+// "about an hour ago", "a few seconds ago" → minutos (UNKNOWN_AGE si no parsea).
+// Entiende AMBOS renders de FB: el compacto ("15m", "1w") del link de timestamp y el de
+// palabra completa ("15 minutes ago") del aria-label — el desajuste entre ambos era el
+// bug que tiraba la deuda a [?]. Semanas/meses/años se agregaron el 2026-07-08: sin
+// ellos, TODO comentario de ≥1 semana caía al centinela y su deuda se volvía inordenable.
 export function ageMinutes(text) {
   const t = text || '';
   if (/a few seconds|just now|\bnow\b/i.test(t)) return 0;
   if (/about an hour|an hour ago/i.test(t)) return 60;
-  const w = t.match(/(\d+)\s*(minute|hour|day)s?\b/i);
-  if (w) {
-    const n = +w[1];
-    const u = w[2].toLowerCase();
-    return u === 'minute' ? n : u === 'hour' ? n * 60 : n * 1440;
-  }
-  const m = t.match(/(\d+)\s*([mhd])\b/);
-  if (!m) return 99999;
-  const n = +m[1];
-  return m[2] === 'm' ? n : m[2] === 'h' ? n * 60 : n * 1440;
+  // "a week" / "a week ago" — el "ago" es opcional porque el productor (walkArticles)
+  // captura solo la cantidad+unidad, sin el sufijo.
+  const article = t.match(/\ban?\s+(minute|hour|day|week|month|year)\b/i);
+  if (article) return UNIT_MINUTES[article[1].toLowerCase()];
+  const long = t.match(/(\d+)\s*(second|minute|hour|day|week|month|year)s?\b/i);
+  if (long) return long[2].toLowerCase() === 'second' ? 0 : +long[1] * UNIT_MINUTES[long[2].toLowerCase()];
+  const short = t.match(/(\d+)\s*([mhdwy])\b/);
+  if (!short) return UNKNOWN_AGE;
+  return +short[1] * SHORT_MINUTES[short[2]];
 }
 
 export function fmtAge(min) {
-  if (min >= 99999) return '?';
-  return min < 60 ? `${min}m` : `${Math.round(min / 60)}h`;
+  if (min === UNKNOWN_AGE) return '?';
+  if (min < 60) return `${min}m`;
+  if (min < 1440) return `${Math.round(min / 60)}h`;
+  return `${Math.round(min / 1440)}d`;
 }
 
 // readThreadRoot(page) — extrae el POST RAÍZ real de un hilo de FB, NO el primer
