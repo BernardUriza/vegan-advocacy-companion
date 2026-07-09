@@ -554,7 +554,8 @@
       "species_hierarchy",
       "ecocentrismo_conservacion",
       "peticion_de_principio",
-      "reencuadre_veganismo_creencia"
+      "reencuadre_veganismo_creencia",
+      "pertenencia_de_clase"
     ],
     "lurker_risk": "med"
   },
@@ -1314,7 +1315,9 @@
       "criterio_capacidad_superior",
       "socrates_hostil",
       "peticion_de_principio",
-      "species_hierarchy"
+      "species_hierarchy",
+      "pertenencia_de_clase",
+      "demanda_objetividad_moral"
     ],
     "lurker_risk": "med"
   }

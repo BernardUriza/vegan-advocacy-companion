@@ -466,5 +466,29 @@
       "100094637395621"
     ],
     "fallacy_type_id": null
+  },
+  {
+    "id": "pertenencia_de_clase",
+    "name": "Defensa por Pertenencia de Clase / Variación Normal de la Especie",
+    "category": "fallacy",
+    "definition": "La réplica estándar al argumento de los casos marginales: no niega que un bebé o una persona con demencia carezcan de razón, lenguaje o reciprocidad — concede que esas capacidades no son suficientes ni necesarias en cada individuo — y sostiene que las capacidades \"explican por qué los humanos son tratados como personas\" COMO CLASE. El individuo hereda el estatus de la categoría a la que pertenece. Es más fina que species_hierarchy: no afirma superioridad, afirma que el estatus se predica del grupo.",
+    "canonical_counter": "Dos cortes. (1) Explicar no es justificar: si las capacidades solo explican por que la practica surgio, estan haciendo trabajo descriptivo, y el titulo sigue sin defensa. (2) El salto de \"la clase suele tener X\" a \"este individuo sin X no puede ser propiedad\" necesita un principio adicional — que el estatus se herede de la clase — que nunca se enuncia; y cuando se enuncia, hay que preguntar por que la clase relevante es \"humano\" y no \"sujeto que siente\". La pertenencia de clase reintroduce el especismo por la puerta de atras. Contra-marco: re-individualizar (filtro-especie-vs-individuo): el titulo no se aplica a una categoria, se aplica a ALGUIEN.",
+    "what_not_to_do": "NUNCA degradar al humano marginal para forzar la simetria (\"entonces al bebe si se le podria poseer\"). NO negar que las capacidades sean moralmente relevantes — lo son, para contratos, voto y culpabilidad; el punto es que no hacen el trabajo en la pregunta de la propiedad. NO pelear si los animales tienen o no esas capacidades: es ortogonal. NO redactar el eje como dano. NO llamarlo \"falacia\" en publico: en buena fe es una objecion seria y nombrarla asi pierde al lurker.",
+    "actors_known": [
+      "1198831097"
+    ],
+    "fallacy_type_id": null
+  },
+  {
+    "id": "demanda_objetividad_moral",
+    "name": "Demanda de Objetividad Moral / Falsabilidad del Fundamento",
+    "category": "epistemic",
+    "definition": "Concede la consistencia interna del marco y exige un escalon mas: que gives you confidence que tu umbral es una VERDAD MORAL OBJETIVA y no una intuicion profunda; y que contaria como evidencia de que tu juicio fundacional esta equivocado. Suele venir de buena fe (es la pregunta correcta) y observa, con razon, que muchos marcos internamente consistentes llegan a conclusiones distintas.",
+    "canonical_counter": "No huir al relativismo ni fingir acceso a hechos morales. Tres piezas: (1) La consistencia invocada no es interna-abstracta sino consistencia con los juicios que el interlocutor YA sostiene — eso no prueba verdad objetiva, pero SI elimina candidatos, que es todo lo que hace falta. (2) Simetria: el estandar que exige aplica igual a SU fundamento; si \"es solo una intuicion\" desarma mi posicion, desarma la suya. No para empatar, sino para mostrar que la demanda no puede ser unilateral. (3) Responder la pregunta de falsabilidad DE FRENTE, dando falsadores reales: si se mostrara que no hay nadie ahi (ningun punto de vista, ninguna experiencia); si se identificara un rasgo que vuelve licita la propiedad sobre un sujeto y estuvieramos dispuestos a aceptar sus consecuencias sobre los humanos que carecen de el; si la tutela fiduciaria y la propiedad no difirieran estructuralmente. Dar falsadores prueba que no es dogma y es lo mas fuerte que se puede hacer ante un interlocutor de buena fe.",
+    "what_not_to_do": "NO responder \"toda etica es subjetiva\" (regala el marco al relativismo). NO reclamar acceso privilegiado a hechos morales que no se pueden mostrar. NO usar la simetria como tu-quoque para empatar y salir corriendo — se nombra y se sigue respondiendo. NO negarse a dar falsadores: la negativa confirma que es dogma. NO redactar el eje como dano. NO citar filosofos por nombre ni decir \"equilibrio reflexivo\": suena a profesor y pierde al lurker.",
+    "actors_known": [
+      "1198831097"
+    ],
+    "fallacy_type_id": null
   }
 ]
