@@ -1298,5 +1298,24 @@
       "apelacion_normal"
     ],
     "lurker_risk": "med"
+  },
+  {
+    "id": "sobreposicion-de-especies-criterio-leido",
+    "name": "Sobreposición de especies — el criterio se LEE de los juicios que ya sostienes",
+    "author": "Oscar Horta / Daniel Dombrowski (argumento de los casos marginales)",
+    "tradition": "antiespecismo, ética analítica",
+    "definition": "Ante la demanda de fundamentar por qué la sintiencia (y no la razón, el lenguaje, la agencia moral o la reciprocidad) es el umbral del estatus moral, el criterio no se POSTULA como axioma: se DERIVA de los juicios que el interlocutor ya acepta. Ningún humano que carece de razón, lenguaje o capacidad de reciprocidad (un bebé, una demencia avanzada) puede ser poseído como propiedad. Luego ninguna de esas capacidades es lo que hace el trabajo de excluir la propiedad. Lo único que queda en pie en todos los casos es que hay alguien ahí: un sujeto que siente.",
+    "enables": "Es la respuesta a la demanda de FUNDAMENTACIÓN — la superficie de ataque de algo-a-alguien-sujeto-derecho. Desarma el \"eso es solo tu intuición / un marco que adoptaste\" sin apelar a un hecho moral externo: el principio no viene de fuera, se lee por consistencia de los juicios que el propio interlocutor ya sostiene. Concede honestamente que toda fundamentación moral termina en una intuición, y traslada la pregunta a cuál intuición sobrevive el test de consistencia sin excepciones ad hoc. Convierte la demanda \"justifica la sintiencia\" en la pregunta \"qué otro rasgo hace ese trabajo, si los humanos que carecen de todos los que nombras conservan el estatus\".",
+    "register": "compasivo",
+    "attack_surface": "JAMÁS degradar al humano marginal (\"a un bebé sí se le podría poseer\") — los casos marginales muestran que el criterio NO es la inteligencia, nunca que esos humanos valgan menos. Si el interlocutor MUERDE LA BALA (acepta que un humano sin razón podría ser propiedad), no se le persigue: ya se autoexpuso ante el lurker. Tampoco convertirlo en catálogo académico (\"el argumento de la sobreposición de especies\") — se dice en llano. Riesgo de sonar a profesor: es una pregunta, no una lección.",
+    "deploy_as": "marco (NUNCA premisa_portante)",
+    "source_ref": ".claude/rules/sentiocentrism-not-biocentrism.md",
+    "related_tactics": [
+      "criterio_capacidad_superior",
+      "socrates_hostil",
+      "peticion_de_principio",
+      "species_hierarchy"
+    ],
+    "lurker_risk": "med"
   }
 ]
