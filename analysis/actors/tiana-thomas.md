@@ -102,7 +102,7 @@ NO pelear el body-count ni el "welfare mejora" (concederlo: mejor trato no cambi
 - **Su jugada:** Naturalismo: "todos mueren, todos serán comidos (wild/domestic/feral); no los traemos a existir, ellos lo hacen; con domésticos LIMITAMOS cuán jóvenes/seguido/cercano crían; los ferals son crop pests killed wholesale".
 - **Nuestra respuesta:** Reply etiquetada (filo civil). Volteé su autocontradicción: dice "they bring themselves into existence" pero en la misma frase controla la cría (cuán jóvenes/seguido/quién) — si controla las condiciones de su existencia, "nature did it" describe la biología y salta el control humano. "Todos mueren" = is->ought (la mortalidad no dice nada sobre la legitimidad de poseer a un alguien). Ferals/crop pests = relación distinta, no defiende la propiedad. Cierre con SU propia palabra ("hold the reins"): ¿qué hace legítimo sostener las riendas de la existencia entera de otro individuo? Concedí welfare/body-count sin tocar el eje.
 
-### Hilo `27051763587778150` — 2026-06-29 · outcome: **pending**
+### Hilo `27051763587778150` — 2026-06-29 · outcome: **engaged**
 - **Su jugada:** Rechazo analogia esclavitud: animals != humans; slavery was keeping humans like animals; keeping animals like animals no es dilema
 - **Nuestra respuesta:** Conced cerdo!=humano (no es el reclamo); la analogia es por ESTRUCTURA (poseer a un sujeto como cosa), no por igualar especies; keeping-animals-like-animals da por hecho lo que se pregunta; devolvi: por que pertenecer a otra especie justifica poseer a alguien con punto de vista.
 
@@ -117,5 +117,9 @@ NO pelear el body-count ni el "welfare mejora" (concederlo: mejor trato no cambi
 ### Hilo `27496390256650790` — 2026-07-03 · outcome: **engaged**
 - **Su jugada:** Naturalismo/species-hierarchy: "owned or not, all animals die and are eaten, that is their use at their end" + straw-man "you equate animals with humans".
 - **Nuestra respuesta:** Tomé su "their use at their end" como la confesión del título; concedí que mueren y que en lo silvestre nadie es poseído; separé morir≠estar-disponible-como-recurso; desarmé el straw-man (sujeto que siente ≠ igualar a humanos); feral no vuelve al alguien un algo. Cierre: ¿qué justifica tratar a un ser sintiente como algo disponible para nosotros?
+
+### Hilo `27051763587778150` — 2026-07-08 · outcome: **pending**
+- **Su jugada:** Defensa positiva del cuidado como contrato: lista el control total (cercado, dosificar comida y agua, gestionar desechos, restringir el acceso de machos a hembras) y lo cierra con "with responsibilities come rights, with rights come responsibilities" + consentimiento retroactivo del domesticado: "the domesticatable animals have chosen the better life and the better death".
+- **Nuestra respuesta:** Tome su lista como lo que es —control humano total sobre las condiciones de existencia del animal— concedi que parte se hace con cuidado, y nombre que la eleccion en ese arreglo pertenece a quien construye la cerca y gestiona la reproduccion. La palabra "chosen" carga mas de lo que puede: el animal no eligio el sistema, lo eligio el humano. Y su propia formula (si la responsabilidad crea un derecho) apunta a tutela: el derecho seria del animal FRENTE a quien lo cuida, o sea autoridad fiduciaria. El titulo agrega otra cosa — el standing de decidir rol, reproduccion, movimiento y uso final desde el lado humano. Cierre: si la responsabilidad es de verdad hacia el animal, que justifica convertirla en un titulo sobre el animal.
 
 _Hilos: 27395909046698912, 27405978672358616_

@@ -175,7 +175,9 @@
         "their_move": "Naturalismo + burden-flip: we dont need to defend normal/natural/species-appropriate; its vegans who dont have one legit reason.",
         "our_reply_summary": "Dos piezas: normal/natural/species-appropriate describe un patron, no justifican el titulo (is-ought); muchas cosas comunes en la naturaleza no son permiso moral. Y no-necesito-defenderlo deja el claim central donde estaba: negarse a justificar no justifica el titulo. La carga cae en quien reclama autoridad de propiedad sobre un sujeto que siente. Sin morder el vegans-have-no-reason ni el pantano de cosechas. Cierre: que justifica el titulo de propiedad sobre alguien con punto de vista.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "5d: 'was I didn’t say “in nature”. I said we are normally and naturally a carnivorous species. And I do see you’re not offering a single legitimate reason to be vegan. Still.'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho separo patron (describe) de titulo (justifica), y Matt no toco el titulo: movio el poste de 'natural en la naturaleza' a 'somos naturalmente una especie carnivora' y re-emitio el mismo burden-flip ('sigues sin darme una razon legitima'). Cero defensa del titulo en dos vueltas. Es-a-debe intacto. Baja rentabilidad argumental, pero el lurker ve la evasion — reply corto, no perseguirlo."
       }
     ]
   },
@@ -256,7 +258,9 @@
         "their_move": "Disolucion de necesario: animal use is unnecessary in that nothing is truly necessary; Im not necessary, life is unnecessary.",
         "our_reply_summary": "Concedi lo cosmico (nada es metafisicamente necesario) y clave que ese nunca fue el punto: la vara es practica -dado que hay alternativa viable, que justifica el titulo. Nothing-is-necessary prueba demasiado: aplana la pregunta hasta que no distingue nada, incluida la distincion que EL respeta (no volveria propiedad a un humano dependiente por eso). El eje es el titulo. Cierre: dado que el uso animal no es requerido en sentido practico, que justifica poseer al sujeto consciente.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "5d: 'As far as the necessity of ownership, it is not necessary to own livestock to have the type of relationship that exists between humans and livestock. Ownership is a human construct that only benefits humans as it protects our interests from those of other humans... Livestock are not aware of ownership and only have interest in being cared for.'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho ATERRIZO el punto exacto: acorralado en el eje propiedad, Adam concedio el TITULO de forma literal y espontanea — 'it is not necessary to own livestock to have the type of relationship that exists between humans and livestock. Ownership is a human construct that only benefits humans... Livestock are not aware of ownership and only have interest in being cared for.' Es la tesis de Bernard dicha por el oponente. NO es conceded porque su CONCLUSION no se movio: abandono 'necesario' y abandono 'propiedad', y migro a reciprocidad ('what they offer in this reciprocal relationship is their own body as food') + burden-flip ('what justifies you arguing for an animal you have no relationship with'). Es retreat-cycle: rota la estacion, conserva la practica. La concesion del titulo es la municion del proximo reply."
       },
       {
         "thread_id": "27496390256650790",
@@ -273,6 +277,14 @@
         "date": "2026-07-08",
         "their_move": "Abandono del terreno moral hacia la realpolitik institucional: \"ownership protects the interest of humans against another human. There is a whole bureaucracy that supports this. If you feel strongly enough, then you need to cajole enough people to develop the institution. You may even need to fight for it.\" Concesion estructural implicita: el titulo protege intereses HUMANOS frente a humanos, o sea nada del sujeto poseido.",
         "our_reply_summary": "Le tome la concesion sin triunfalismo. Concedi que eso ES lo que hace la institucion: registra y hace exigibles reclamos entre personas. Y ahi mismo mostre que deja intacta la pregunta del animal bajo el titulo — revela a quien protege el sistema (el reclamante humano) y que el animal es aquello sobre lo que se organizan los reclamos humanos. Una burocracia estabiliza una practica y dice quien cuenta hoy como dueno; la cuestion de estatus sigue abierta. \"Convence a suficiente gente\" describe como cambian las instituciones, no por que el titulo presente es legitimo. Devolvi la pregunta rio arriba de la burocracia.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "27051763587778150",
+        "date": "2026-07-08",
+        "their_move": "Concesion espontanea del TITULO dentro de una defensa de la reciprocidad: \"it is not necessary to own livestock to have the type of relationship that exists between humans and livestock. Ownership is a human construct that only benefits humans as it protects our interests from those of other humans... Livestock are not aware of ownership and only have interest in being cared for.\" Sostiene que lo que el animal aporta al intercambio reciproco es su propio cuerpo como alimento, y cierra con burden-flip: que te justifica abogar por un animal con el que no tienes relacion, propones cuidarlo tu.",
+        "our_reply_summary": "Le devolvi su propia concesion sin triunfalismo: si el titulo no hace falta para la relacion, y solo ordena reclamos entre humanos, entonces el titulo es exactamente lo que sobra — el cuidado apunta al animal, la propiedad apunta a reclamos humanos frente a otros humanos. La reciprocidad no lo salva: una relacion donde una parte fija terminos, duracion y uso final del cuerpo de la otra es algo distinto de un intercambio entre iguales, y su PROPIO marco ya reconoce que la dependencia no vuelve poseible a nadie (dijo que a los humanos dependientes que no pueden reciprocar los conservamos). El burden-flip se contesta corto: objetar un titulo no exige ser el titular alternativo.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }
@@ -1374,7 +1386,9 @@
         "their_move": "Retreat-cycle vuelta N (en rama suelta): assuming-your-conclusion + rechaza la premisa de categoria compartida + su criterio en forma final institucional (They are human; membership of the human species is the basis of universal human rights; human rights don't depend on intelligence/autonomy/reasoning) + burden-flip (new universal standard) + line-drawing + clear objective boundary vs tu framework.",
         "our_reply_summary": "CONSOLIDACION DE ARCO (~700w, orden de Bernard) en el hilo largo: cronica cronologica de las 6 vueltas con SUS dicciones verbatim encadenadas, crudas y sin adjetivos (registro, no alegato); registra la convergencia real (el mismo dice que los derechos no dependen de inteligencia/autonomia/razon = mis casos marginales); su fundamento final es institucional (como estan construidos los derechos = descriptivo, is-ought); una frontera puede ser clara y aun deber la razon; el principio dado desde roca-y-tractor archivado como assertion cada vuelta. Cierre: pregunta del titulo anclada en su concesion inicial. + CIERRE de la rama suelta (reply a su T16): la rama fue error mio, respondido en el hilo largo, continuando alla (el lurker ve todo el arco en un lugar).",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "Su ultimo turno tiene 1 semana ('we're just going in circles...'); mi cronica de cierre tiene 4 dias y no hubo respuesta.",
+        "outcome_note": "La cronica de arco (recibos del retreat-cycle + misma pregunta replantada) cerro el intercambio: Les no volvio a escribir en 4 dias, tras 8 vueltas seguidas de 'you're assuming your conclusion'. El patron retreat-cycle-defense funciono como predice la regla: mapeado el arco, el que huye deja de responder y la pregunta sin contestar queda visible para el lurker. No re-enganchar."
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -1719,7 +1733,9 @@
         "their_move": "Rechazo analogia esclavitud: animals != humans; slavery was keeping humans like animals; keeping animals like animals no es dilema",
         "our_reply_summary": "Conced cerdo!=humano (no es el reclamo); la analogia es por ESTRUCTURA (poseer a un sujeto como cosa), no por igualar especies; keeping-animals-like-animals da por hecho lo que se pregunta; devolvi: por que pertenecer a otra especie justifica poseer a alguien con punto de vista.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "1w: 'With responsibilities come rights. With rights come responsibilities. All animals will die, all animals will be eaten. Only those tended by mankind will be dead BEFORE being eaten, and it seems to me that the domesticatable animals have chosen the better life and the better death.'",
+        "outcome_note": "Respondio sustantivamente al eje estructural: en vez de repetir 'animals != humans', desarrollo una defensa positiva del cuidado (cercado, alimento, control reproductivo) y la cerro con un contrato implicito ('with responsibilities come rights') + el consentimiento retroactivo del domesticado ('the domesticatable animals have chosen the better life and the better death'). algo-a-alguien la empujo de la negacion de la analogia a tener que ARGUMENTAR el titulo — y ahi expuso el flanco: describe una relacion de control total y la llama eleccion del animal. Deuda mia sin pagar."
       },
       {
         "thread_id": "27496390256650790",
@@ -1750,6 +1766,14 @@
         "outcome": "engaged",
         "outcome_evidence": "Tiana Thomas: 'we add the institutions of /limiting/ breeding (right of decision), of excluding the same end use by others (ownership)... A better life and a better death, by the ability and right of decision making'",
         "outcome_note": "algo-a-alguien: respondió (2d) con las 'instituciones' de la ganadería (limiting breeding, better life better death, right of decision) — vistió el título de stewardship. El volteo: cada institución que lista ES el ejercicio del título, no su justificación."
+      },
+      {
+        "thread_id": "27051763587778150",
+        "date": "2026-07-08",
+        "their_move": "Defensa positiva del cuidado como contrato: lista el control total (cercado, dosificar comida y agua, gestionar desechos, restringir el acceso de machos a hembras) y lo cierra con \"with responsibilities come rights, with rights come responsibilities\" + consentimiento retroactivo del domesticado: \"the domesticatable animals have chosen the better life and the better death\".",
+        "our_reply_summary": "Tome su lista como lo que es —control humano total sobre las condiciones de existencia del animal— concedi que parte se hace con cuidado, y nombre que la eleccion en ese arreglo pertenece a quien construye la cerca y gestiona la reproduccion. La palabra \"chosen\" carga mas de lo que puede: el animal no eligio el sistema, lo eligio el humano. Y su propia formula (si la responsabilidad crea un derecho) apunta a tutela: el derecho seria del animal FRENTE a quien lo cuida, o sea autoridad fiduciaria. El titulo agrega otra cosa — el standing de decidir rol, reproduccion, movimiento y uso final desde el lado humano. Cierre: si la responsabilidad es de verdad hacia el animal, que justifica convertirla en un titulo sobre el animal.",
+        "framework": "domesticar-eufemismo-dominar",
+        "outcome": "pending"
       }
     ]
   },
@@ -1898,7 +1922,9 @@
   },
   {
     "tactics": [
-      "socrates_hostil"
+      "socrates_hostil",
+      "pertenencia_de_clase",
+      "demanda_objetividad_moral"
     ],
     "threads": [
       "27468645086091974"
@@ -2101,6 +2127,14 @@
         "our_reply_summary": "Concedi de entrada y de frente que conteste la pregunta equivocada (buena fe = concesion de apertura). (1) El corte es por DIRECCION de la justificacion, no por cantidad de poder: un residuo estrecho sigue siendo residuo, y sigue diciendo que el sujeto consciente queda bajo un titulo por razones que no son enteramente suyas. (2) Concedi que toda base moral toca un juicio ultimo (sin decir \"es solo mi intuicion\", que le regalaba el \"entonces es preferencia\") y mostre que el criterio se LEE de los juicios que el ya sostiene: sapiencia/autonomia/agencia/reciprocidad son relevantes para contratos y voto, pero no son lo que bloquea la propiedad — bebes y demencia avanzada carecen de todas y siguen sin poder ser propiedad. Devolvi la pregunta: que rasgo hace ese trabajo, y si la respuesta es especie, por que la especie carga el umbral y no la subjetividad.",
         "framework": "sobreposicion-de-especies-criterio-leido",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "27468645086091974",
+        "date": "2026-07-08",
+        "their_move": "Concede que ahora si conteste la pregunta correcta (\"I agree that you have now addressed the why-is-the-cutoff-zero question more directly\") y sube dos escalones. (1) demanda_objetividad_moral: la consistencia interna no establece verdad objetiva porque muchos marcos consistentes concluyen distinto — que te da confianza de que tu umbral es verdad moral objetiva y no una intuicion profunda, y que contaria como evidencia de que te equivocas. (2) pertenencia_de_clase: rechaza la dicotomia capacidades-vs-especie; las capacidades asociadas a la sapiencia \"explican por que los humanos son tratados como personas\" COMO CLASE, y concede que pueden no bastar por si solas sin que eso vuelva decisiva a la sintiencia.",
+        "our_reply_summary": "Concedi de frente que la consistencia interna no establece verdad objetiva y me negue a fingir que si. Reduje el reclamo: el umbral se LEE de los juicios que ya compartimos — un humano dependiente sin autonomia, lenguaje, agencia moral, autodireccion ni reciprocidad sigue sin ser poseible, luego esas capacidades no hacen el trabajo en el umbral de la propiedad. Conteste la falsabilidad DE FRENTE con tres falsadores concretos: que no haya nadie ahi; que se identifique un rasgo que funde la no-propiedad, se aplique consistentemente y se acepten sus implicaciones sobre los humanos que carecen de el; o que la tutela fiduciaria y el titulo dejen de diferir estructuralmente. Sobre la pertenencia de clase: concedi que los derechos humanos se adhieren a la clase sin re-testear individuo por individuo, y mostre que eso sigue necesitando una razon de por que la clase relevante es \"humano\" y no \"sujetos conscientes\" — los que carecen de sapiencia heredan la proteccion igual. Cierre: no reclamo estatus moral pleno, reclamo que la sintiencia basta para poner la autoridad bajo direccion fiduciaria. Que rasgo, fuera de la especie misma, vuelve a un no-humano consciente disponible para el titulo.",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "outcome": "pending"
       }
     ],
     "user_id": "1198831097",
@@ -2260,7 +2294,9 @@
         "their_move": "Silogismo no-humano->no-comparable: one group is human, the other is not, you cant compare humans with animals.",
         "our_reply_summary": "Conced la diferencia de especie y exigi por que ESA diferencia decide propiedad; la comparacion es estructural (ambos sujetos con punto de vista), no identidad; humans-count-because-human mete la conclusion en la categoria; SIN afirmar son-someone como premisa demostrada (evite la petitio inversa). Cierre: que rasgo moralmente relevante hace aceptable poseer a un sujeto que siente cuando la unica diferencia es que no es humano.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "Su raiz tiene 1 semana; mi reply tiene 5 dias, sin respuesta posterior.",
+        "outcome_note": "algo-a-alguien-sujeto-derecho concedio la diferencia de especie de entrada y devolvio la pregunta a por que ESA diferencia decide quien puede ser propiedad. Annabel no respondio en 5 dias. Silent limpio: la concesion de apertura le quito el terreno del 'no puedes comparar' y no encontro segunda estacion."
       }
     ],
     "user_id": "100054560360296",

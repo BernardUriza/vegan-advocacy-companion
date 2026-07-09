@@ -102,7 +102,7 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** Switch de evasión: abandonó el argumento legal NSW (feral must be destroyed if not property) y migró a standing tu-quoque "you need to start talking about yourself / what right do you have to judge if you dont own animals" + analogía del avión.
 - **Nuestra respuesta:** Nombré el cambio de terreno con recibos (respondí el legal en sus términos, concedí el NSW Biosecurity Act, separé gestión-de-feral de cría-para-matadero; luego migró a mi persona); la procedencia de quien pregunta no decide si la práctica se justifica; mi perfil no responde si un sujeto puede ser propiedad. Sin morder el tu-quoque ni perseguir el avión. Cierre: ¿qué justifica el título mismo sobre alguien con punto de vista, más allá de que la ley lo reconozca?
 
-### Hilo `27468645086091974` — 2026-07-05 · outcome: **pending**
+### Hilo `27468645086091974` — 2026-07-05 · outcome: **silent**
 - **Su jugada:** Recuento-de-hechos + point of view = anthropomorphism + título justificado porque provee (privaciones, campo, sin vacaciones, amor) + interrogatorio personal (answer the questions Bernie).
 - **Nuestra respuesta:** Concedí su cuidado de entrada (buena fe). Point of view no significa punto de vista HUMANO: la cabra siente/prefiere/confía/teme — él lo sabe mejor que nadie; nadie se sacrifica así por algo que no experimenta nada. Toda su lista es fiduciaria (apunta a la cabra) y nada requiere el título; el título añade solo can-be-sold-or-traded. Biografía no cambia la pregunta (una línea). Cierre: ¿qué añade el derecho-a-vender al amor que describes, y a beneficio de quién existe esa parte?
 

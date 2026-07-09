@@ -88,7 +88,7 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** Deflexión empírica sobre la data del post de mercado: "India is full of impoverished/sick people, China is the largest meat consumer growing, how accurate is the rest of your information?" — convierte 2 ejemplos en sospecha de toda la data, ceba guerra de cifras.
 - **Nuestra respuesta:** Concedí lo empírico libremente (China crece, India es parte económico); pivote: la data de mercado es DESCRIPTIVA, nunca fue el argumento — si el mercado dobla o colapsa la pregunta moral no se mueve. Devolví la carga: ¿qué principio justifica criar/matar a un sintiente cuando hay alternativa viable? Cero data propia, no mordí el body-count.
 
-### Hilo `27051763587778150` — 2026-07-03 · outcome: **pending**
+### Hilo `27051763587778150` — 2026-07-03 · outcome: **goalpost**
 - **Su jugada:** Naturalismo + burden-flip: we dont need to defend normal/natural/species-appropriate; its vegans who dont have one legit reason.
 - **Nuestra respuesta:** Dos piezas: normal/natural/species-appropriate describe un patron, no justifican el titulo (is-ought); muchas cosas comunes en la naturaleza no son permiso moral. Y no-necesito-defenderlo deja el claim central donde estaba: negarse a justificar no justifica el titulo. La carga cae en quien reclama autoridad de propiedad sobre un sujeto que siente. Sin morder el vegans-have-no-reason ni el pantano de cosechas. Cierre: que justifica el titulo de propiedad sobre alguien con punto de vista.
 
