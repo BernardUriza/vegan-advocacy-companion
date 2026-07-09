@@ -22,7 +22,7 @@ import { execFileSync } from 'node:child_process';
 import { tmpdir } from 'node:os';
 import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { openPersistentPage } from './fb-lib.mjs';
+import { openPersistentPage, expandAllInPage } from './fb-lib.mjs';
 import { resolveUserPath } from './paths.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -77,27 +77,9 @@ if (!url || !author || !body) {
   process.exit(1);
 }
 
-// --- DENTRO de la página: expandir replies colapsadas (idempotente) ---
-async function expandAll() {
-  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-  const find = () =>
-    [...document.querySelectorAll('div[role="button"]')].filter((b) =>
-      /^(View all \d+ repl|View more repl|View previous repl|View \d+ repl|View \d+ more comment)/i.test(
-        (b.innerText || '').trim()
-      )
-    );
-  for (let round = 0; round < 6; round++) {
-    const btns = find();
-    if (!btns.length) break;
-    for (const b of btns) {
-      b.scrollIntoView({ block: 'center' });
-      for (const type of ['mouseover', 'mousedown', 'mouseup', 'click']) {
-        b.dispatchEvent(new MouseEvent(type, { bubbles: true, cancelable: true, view: window }));
-      }
-    }
-    await sleep(1300);
-  }
-}
+// El expand-all vive en fb-lib (`expandAllInPage`, SSOT). Estaba duplicado aquí y la copia
+// se quedó vieja: no cazaba el render "X replied · N Replies", así que un target dentro de
+// un sub-hilo colapsado daba "target article not found" (2026-07-08, Adam Gaska en 27051).
 
 // --- DENTRO de la página: localizar el comentario target y abrir SU Reply ---
 function openComposer({ author, anchor, ME }) {
@@ -203,8 +185,11 @@ async function main() {
       process.exit(2);
     }
 
-    await page.evaluate(expandAll);
+    const exp = await page.evaluate(expandAllInPage);
     await page.waitForTimeout(700);
+    if (exp.pending > 0) {
+      console.error(`[warn] quedaron ${exp.pending} sub-hilo(s) sin abrir — el target puede seguir colapsado`);
+    }
 
     const opened = await page.evaluate(openComposer, { author, anchor, ME });
     if (!opened.ok) {

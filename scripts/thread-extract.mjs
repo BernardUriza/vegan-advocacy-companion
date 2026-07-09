@@ -11,7 +11,7 @@
 //
 // El <openUrl> lo sirve notif-scan.mjs (campo `openUrl` / línea "abrir:").
 
-import { openScratchPage, ageMinutes, fmtAge, UNKNOWN_AGE } from './fb-lib.mjs';
+import { openScratchPage, ageMinutes, fmtAge, UNKNOWN_AGE, expandAllInPage } from './fb-lib.mjs';
 import { registerThread } from './db.mjs';
 
 const url = process.argv.find((a) => a.startsWith('http'));
@@ -30,107 +30,10 @@ try {
   if (m) registerThread({ thread_id: m[2], group_id: m[1] });
 } catch {}
 
-// ---- corre DENTRO de la página: expandir todo (idempotente, hasta estable) ----
-async function expandAll() {
-  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-  const norm = (b) => (b.innerText || '').replace(/\s+/g, ' ').trim();
-  // FB tiene DOS renders del botón de expandir réplicas y solo uno empieza con "View":
-  //   a) "View all 3 replies" / "View 1 reply" / "View more replies"
-  //   b) "Bernard Uriza Orozco replied · 4 Replies"   ← el que faltaba (2026-07-08)
-  // Sin (b), sub-hilos enteros quedaban colapsados con remaining:0 — la extracción
-  // reportaba "expandí todo" sobre un hilo truncado (fake-green, Art. 2).
-  const EXPAND =
-    /^(View all \d+ repl|View more repl|View previous repl|View \d+ repl|View \d+ more comment|\d+ repl(y|ies)$)/i;
-  const REPLIED = / replied\s+·\s+\d+\s+Repl(y|ies)$/i;
-  // Cuánto promete FB, leído ANTES de expandir. Es el ÚNICO testigo independiente del
-  // scraper: contar botones al final solo mide el scraper contra sí mismo (si un regex deja
-  // de matchear, "0 pendientes" y "todo expandido" son indistinguibles). Ambos renders
-  // anuncian el tamaño de su rama colapsada; la suma es una COTA INFERIOR de las réplicas
-  // que deben aparecer. Si al final hay menos, la extracción está truncada, sin discusión.
-  const COUNT = /(?:^View all (\d+) repl|^View (\d+) repl|·\s+(\d+)\s+Repl(?:y|ies)$)/i;
-  // Detrás del post abierto sigue montado el FEED, con sus propios "View all N replies".
-  // Clickearlos expandía hilos ajenos y envenenaba el conteo de completitud. Se distinguen
-  // porque están OCULTOS; los del hilo abierto están visibles.
-  // (Acotar por [role=dialog] NO sirve: los articles del post viven fuera de ese nodo.)
-  // `checkVisibility()` es el chequeo real; `offsetParent` es fallback para Chrome viejo,
-  // pero da falso-oculto en `position: fixed` — nunca se usa solo.
-  const visible = (b) =>
-    typeof b.checkVisibility === 'function'
-      ? b.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true })
-      : b.offsetParent !== null;
-  const buttons = () => [...document.querySelectorAll('div[role="button"]')].filter(visible);
-  const find = () =>
-    buttons().filter((b) => {
-      const t = norm(b);
-      return EXPAND.test(t) || REPLIED.test(t);
-    });
-  // "See more" trunca el cuerpo de un comentario largo: el argumento del oponente vive
-  // ahí. Solo los que están DENTRO de un article (los de la sidebar/feed no).
-  const findSeeMore = () =>
-    [...document.querySelectorAll('div[role="article"] div[role="button"]')].filter(
-      (b) => visible(b) && /^See more$/i.test(norm(b))
-    );
-  // Un SOLO disparo de click. El dispatchEvent('click') + b.click() lanzaba DOS activaciones:
-  // sobre un botón toggle eso abre y vuelve a cerrar la rama en la misma llamada. Se dejan
-  // los eventos de hover/press (React los usa para armar el handler) y se activa una vez.
-  const press = (b) => {
-    b.scrollIntoView({ block: 'center' });
-    for (const type of ['mouseover', 'mousedown', 'mouseup']) {
-      b.dispatchEvent(new MouseEvent(type, { bubbles: true, cancelable: true, view: window }));
-    }
-    if (typeof b.click === 'function') b.click();
-    else b.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }));
-  };
-  const articleCount = () => document.querySelectorAll('div[role="article"]').length;
-  const sumPromised = () =>
-    find()
-      .map((b) => norm(b).match(COUNT))
-      .filter(Boolean)
-      .reduce((sum, m) => sum + +(m[1] || m[2] || m[3] || 0), 0);
-  // Se captura ANTES de tocar nada: una vez expandido, el botón desaparece y con él la promesa.
-  const promisedReplies = sumPromised();
-  // Expandir un nivel REVELA los botones del siguiente (3 botones → 6 tras un click), así
-  // que el viejo `remaining > 0` no significaba "no ceden": el loop moría a media expansión.
-  // Se para solo cuando NADA se mueve: ni el hilo crece ni el set de botones cambia, dos
-  // rondas seguidas. Mirar solo los articles también cortaba antes de tiempo (una ronda
-  // puede expandir un sub-hilo ya renderizado y solo revelar el botón del nivel siguiente).
-  let clicked = 0, stagnant = 0, prevArticles = -1, prevBtns = -1, rounds = 0;
-  for (; rounds < 25; rounds++) {
-    const btns = find();
-    if (!btns.length) break;
-    for (const b of btns) { press(b); clicked++; }
-    await sleep(1400);
-    const nowArticles = articleCount();
-    const nowBtns = find().length;
-    stagnant = nowArticles === prevArticles && nowBtns === prevBtns ? stagnant + 1 : 0;
-    prevArticles = nowArticles;
-    prevBtns = nowBtns;
-    if (stagnant >= 2) break;
-  }
-  let expandedText = 0;
-  for (let round = 0; round < 5; round++) {
-    const more = findSeeMore();
-    if (!more.length) break;
-    for (const b of more) { press(b); expandedText++; }
-    await sleep(600);
-  }
-  // DOS señales, y hacen falta las dos:
-  //   · `pending`  — botones que no cedieron. Mide el scraper contra sí mismo: si un regex
-  //     deja de matchear (rediseño de FB, locale español), da 0 y MIENTE "todo expandido".
-  //   · `promisedReplies` — lo que FB dijo que había, leído antes de tocar el DOM. Sobrevive
-  //     al fallo del expander: si nada matchea, es 0 y no acusa, pero cuando SÍ matcheó
-  //     compara contra un número que el scraper no eligió.
-  const pending = find().length;
-  return {
-    clicked,
-    rounds,
-    expandedText,
-    articles: articleCount(),
-    pending,
-    promisedReplies,
-    truncatedRemaining: findSeeMore().length,
-  };
-}
+// El expand-all vive en fb-lib (`expandAllInPage`, SSOT — Art. 6). Estaba duplicado aquí y
+// en comment-prepare, y la copia de allá se quedó vieja: no cazaba el render
+// "X replied · N Replies", así que un target dentro de un sub-hilo colapsado daba
+// "target article not found" (2026-07-08).
 
 // ---- corre DENTRO de la página: walk de los articles ----
 function walkArticles(ME) {
@@ -314,7 +217,7 @@ async function main() {
   try {
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(2500);
-    const exp = await page.evaluate(expandAll);
+    const exp = await page.evaluate(expandAllInPage);
     await page.waitForTimeout(800);
     const walked = await page.evaluate(walkArticles, ME);
     const raw = walked.rows;

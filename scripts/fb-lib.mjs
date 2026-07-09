@@ -85,6 +85,87 @@ export function fmtAge(min) {
   return `${Math.round(min / 1440)}d`;
 }
 
+// expandAllInPage — SSOT del expand-all de un hilo de FB (Art. 6). Corre DENTRO de la
+// página (`page.evaluate(expandAllInPage)`), así que es autocontenida: sin imports, sin
+// closures externos. La usan thread-extract (para leer el hilo completo) y comment-prepare
+// (para que el comentario target no siga colapsado). Vivía DUPLICADA en ambos, y la copia
+// de comment-prepare se quedó vieja: no cazaba el render (b), así que un target dentro de
+// un sub-hilo colapsado daba "target article not found" (2026-07-08).
+//
+// Devuelve { clicked, rounds, expandedText, articles, pending, truncatedRemaining }.
+// `pending > 0` = quedaron sub-hilos sin abrir → la extracción está truncada.
+export async function expandAllInPage() {
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+  const norm = (b) => (b.innerText || '').replace(/\s+/g, ' ').trim();
+  // FB tiene DOS renders del botón de expandir réplicas y solo uno empieza con "View":
+  //   a) "View all 3 replies" / "View 1 reply" / "View more replies"
+  //   b) "Bernard Uriza Orozco replied · 4 Replies"
+  const EXPAND =
+    /^(View all \d+ repl|View more repl|View previous repl|View \d+ repl|View \d+ more comment|\d+ repl(y|ies)$)/i;
+  const REPLIED = / replied\s+·\s+\d+\s+Repl(y|ies)$/i;
+  // Detrás del post abierto sigue montado el FEED, con sus propios botones (ocultos).
+  // Clickearlos expandía hilos ajenos. `checkVisibility()` es el chequeo real; offsetParent
+  // es fallback para Chrome viejo, pero da falso-oculto en `position: fixed`.
+  const visible = (b) =>
+    typeof b.checkVisibility === 'function'
+      ? b.checkVisibility({ checkOpacity: true, checkVisibilityCSS: true })
+      : b.offsetParent !== null;
+  const buttons = () => [...document.querySelectorAll('div[role="button"]')].filter(visible);
+  const find = () => buttons().filter((b) => { const t = norm(b); return EXPAND.test(t) || REPLIED.test(t); });
+  // "See more" trunca el cuerpo de un comentario largo: el argumento del oponente vive ahí,
+  // y un anchor a mitad de texto no existe en el DOM hasta abrirlo.
+  const findSeeMore = () =>
+    [...document.querySelectorAll('div[role="article"] div[role="button"]')].filter(
+      (b) => visible(b) && /^See more$/i.test(norm(b))
+    );
+  // Un SOLO disparo de click: dispatchEvent('click') + b.click() daba DOS activaciones, y
+  // sobre un botón toggle eso abre y vuelve a cerrar la rama.
+  const press = (b) => {
+    b.scrollIntoView({ block: 'center' });
+    for (const type of ['mouseover', 'mousedown', 'mouseup']) {
+      b.dispatchEvent(new MouseEvent(type, { bubbles: true, cancelable: true, view: window }));
+    }
+    if (typeof b.click === 'function') b.click();
+    else b.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true, view: window }));
+  };
+  const articleCount = () => document.querySelectorAll('div[role="article"]').length;
+  const promisedReplies = find()
+    .map((b) => norm(b).match(/(?:^View all (\d+) repl|^View (\d+) repl|·\s+(\d+)\s+Repl(?:y|ies)$)/i))
+    .filter(Boolean)
+    .reduce((sum, m) => sum + +(m[1] || m[2] || m[3] || 0), 0);
+  // Expandir un nivel REVELA los botones del siguiente. Se para solo cuando NADA se mueve:
+  // ni el hilo crece ni el set de botones cambia, dos rondas seguidas.
+  let clicked = 0, stagnant = 0, prevArticles = -1, prevBtns = -1, rounds = 0;
+  for (; rounds < 25; rounds++) {
+    const btns = find();
+    if (!btns.length) break;
+    for (const b of btns) { press(b); clicked++; }
+    await sleep(1400);
+    const nowArticles = articleCount();
+    const nowBtns = find().length;
+    stagnant = nowArticles === prevArticles && nowBtns === prevBtns ? stagnant + 1 : 0;
+    prevArticles = nowArticles;
+    prevBtns = nowBtns;
+    if (stagnant >= 2) break;
+  }
+  let expandedText = 0;
+  for (let round = 0; round < 5; round++) {
+    const more = findSeeMore();
+    if (!more.length) break;
+    for (const b of more) { press(b); expandedText++; }
+    await sleep(600);
+  }
+  return {
+    clicked,
+    rounds,
+    expandedText,
+    articles: articleCount(),
+    promisedReplies,
+    pending: find().length,
+    truncatedRemaining: findSeeMore().length,
+  };
+}
+
 // readThreadRoot(page) — extrae el POST RAÍZ real de un hilo de FB, NO el primer
 // comentario. (Bug visto: `thread-extract.mjs#walkArticles` camina solo los
 // `div[role="article"]`, que en FB son los COMENTARIOS; el post raíz NO es un
