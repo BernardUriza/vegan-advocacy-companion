@@ -133,7 +133,8 @@ Art. 5). La llave es el `user_id` (el nombre se repite, el id no). Actualizar el
 índice `analysis/actors/README.md`.
 
 **6. Surfacear el counter-arsenal (no decidir la jugada — eso es etapa-3).** Por
-cada táctica etiquetada del actor, consultar `getFrameworksByTactic(tacticId)` (de
+cada táctica etiquetada del actor, consultar
+`getFrameworksByTactic(tacticId, { weaponsOnly: true })` (de
 `scripts/db.mjs`) y anotar en el dossier **qué frameworks la contrarrestan** (id +
 `attack_surface`). Es surfaceo de munición candidata, no la decisión del blanco. El
 índice inverso navegable (táctica → frameworks) vive en

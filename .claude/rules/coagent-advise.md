@@ -147,7 +147,9 @@ DOS veces antes de sembrar. Dos reglas mecánicas, no opcionales:
 ### Munición del arsenal — cablear `data/frameworks.json` al master prompt
 
 Por cada táctica del target (de su dossier), consultar
-`getFrameworksByTactic(tacticId)` (de `scripts/db.mjs`) y meter en el master prompt
+`getFrameworksByTactic(tacticId, { weaponsOnly: true })` (de `scripts/db.mjs` — el
+flag filtra los `deploy_as: auto-disciplina-del-activista`, que informan CÓMO se
+redacta y NO son armas contra el oponente) y meter en el master prompt
 **los 1-2 counter-frameworks de mayor palanca**, cada uno con: su `name`, su
 `enables` (el ángulo deployable) y —obligatorio— su **`attack_surface`** como
 "qué NO hacer". El SSOT es `data/frameworks.json`; la vista navegable +
