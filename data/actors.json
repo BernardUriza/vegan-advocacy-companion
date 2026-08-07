@@ -586,7 +586,9 @@
         "outcome": "engaged",
         "framework": "apego-seguridad-antes-que-razon",
         "outcome_evidence": "im always open to new data",
-        "outcome_note": "apego-seguridad-antes-que-razon: ex-vegan civil y abierto; debatio de buena fe sin conceder el caso moral."
+        "outcome_note": "apego-seguridad-antes-que-razon: ex-vegan civil y abierto; debatio de buena fe sin conceder el caso moral.",
+        "misattributed": true,
+        "misattribution_note": "framework deploy_as=auto-disciplina-del-activista: informa como se redacta, no es un arma desplegada contra el oponente. Excluido del win-rate; el registro historico se conserva."
       },
       {
         "thread_id": "27335635946059556",
@@ -1620,7 +1622,9 @@
         "framework": "sembrar-en-el-receptivo",
         "outcome": "conceded",
         "outcome_evidence": "Bowman verbatim hilo 27363745576581926: 'your right about that. Honestly it's just a differnt between how we see it... Hey thxs for being a good sport. Most arguments get messy... when trying to have a civil conversation about meat.'",
-        "outcome_note": "sembrar-en-el-receptivo: cierre calido sin victory-lap cosecho concesion civil del receptivo. Verbatim 'your right about that... thxs for being a good sport' = oro inequivoco. RE-JUICIO 2026-06-27: degradado por error a engaged en 0333190; restaurado."
+        "outcome_note": "sembrar-en-el-receptivo: cierre calido sin victory-lap cosecho concesion civil del receptivo. Verbatim 'your right about that... thxs for being a good sport' = oro inequivoco. RE-JUICIO 2026-06-27: degradado por error a engaged en 0333190; restaurado.",
+        "misattributed": true,
+        "misattribution_note": "framework deploy_as=auto-disciplina-del-activista: informa como se redacta, no es un arma desplegada contra el oponente. Excluido del win-rate; el registro historico se conserva."
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61563003837147/"
