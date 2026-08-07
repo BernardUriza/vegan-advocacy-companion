@@ -152,8 +152,12 @@ function checkTricolon() {
   while ((m = re.exec(text)) !== null) {
     hits.push(m[0].replace(/\s+/g, ' '));
   }
-  // soft siempre; hard solo si se repite (>=2) — un molde, no un uso aislado
-  return { name: 'tricolon', hard: false, soft: hits.length >= 1, repeated: hits.length >= 2, count: hits.length, evidence: hits.slice(0, 6) };
+  // soft con 1 (uso aislado, humano); HARD desde 2 — ahí ya es un molde, el tell de
+  // la kill-list ("tricolones repetitivos"). Estuvo `hard:false` hardcodeado hasta
+  // 2026-08-07: la tabla pintaba [X] y el gate salía exit 0 diciendo LIMPIO, así que
+  // el check era decorativo y ningún draft se frenó nunca por tricolon.
+  const repeated = hits.length >= 2;
+  return { name: 'tricolon', hard: repeated, soft: hits.length === 1, repeated, count: hits.length, evidence: hits.slice(0, 6) };
 }
 
 // ------- check: negar-luego-afirmar como pivote (regla dura 2026-06-30) -------

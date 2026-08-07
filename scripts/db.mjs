@@ -46,8 +46,19 @@ export function getFrameworksByAuthor(author) {
   return readFrameworks().filter(f => f.author === author);
 }
 
-export function getFrameworksByTactic(tacticId) {
-  return readFrameworks().filter(f => (f.related_tactics ?? []).includes(tacticId));
+// Un framework `deploy_as: auto-disciplina-del-activista` NO es un arma contra el
+// oponente: informa CÓMO se redacta, no qué se le lanza. 16% de los pares
+// (táctica -> framework) surfaceables son de ese tipo, y las rules de etapa-2/3 usan
+// esta función justo para surfacear counter-munición, así que sin filtro se ofrece
+// auto-disciplina como si fuera arma. `weaponsOnly` es opt-in para no romper el
+// contrato histórico (devolver TODOS los que referencian la táctica).
+export function isSelfDiscipline(framework) {
+  return /auto-disciplina/i.test(framework?.deploy_as ?? '');
+}
+
+export function getFrameworksByTactic(tacticId, { weaponsOnly = false } = {}) {
+  const matching = readFrameworks().filter(f => (f.related_tactics ?? []).includes(tacticId));
+  return weaponsOnly ? matching.filter(f => !isSelfDiscipline(f)) : matching;
 }
 
 export function upsertFramework(framework) {
@@ -186,11 +197,16 @@ export function updateInteractionOutcome(userId, threadId, dateOrNeedle, needle,
 // Efectividad de un framework (el moat): agrega los outcomes de cada interacción
 // de todos los actores donde se desplegó ese framework. Devuelve {deploys, ...outcomes}.
 export function getFrameworkWinRate(frameworkId) {
-  const result = { deploys: 0, conceded: 0, engaged: 0, silent: 0, escalated: 0, goalpost: 0, pending: 0 };
+  const result = { deploys: 0, conceded: 0, engaged: 0, silent: 0, escalated: 0, goalpost: 0, pending: 0, misattributed: 0 };
   if (!frameworkId) return result;
   for (const actor of readActors()) {
     for (const interaction of actor.interactions ?? []) {
       if (interaction.framework !== frameworkId) continue;
+      // Interacción marcada como mal atribuida (ej. un framework de auto-disciplina
+      // registrado como jugada desplegada): se cuenta aparte y NO entra al win-rate,
+      // porque inflaba el ranking con un "arma" que nunca se desplegó contra nadie.
+      // El registro histórico se conserva intacto en actors.json (Art. 5).
+      if (interaction.misattributed) { result.misattributed++; continue; }
       result.deploys++;
       const o = interaction.outcome;
       if (o && o !== 'deploys' && Object.prototype.hasOwnProperty.call(result, o)) result[o]++;
