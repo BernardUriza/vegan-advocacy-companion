@@ -2,12 +2,28 @@ import { openScratchPage, ageMinutes, fmtAge } from './fb-lib.mjs';
 
 const NOTIF_URL = 'https://www.facebook.com/notifications';
 const asJson = process.argv.includes('--json');
+const MAX_PAGINATE_ROUNDS = 25;
 
 const WEIGHT = {
   group_comment_mention: { tier: 'alto', label: 'te mencionaron' },
   group_comment: { tier: 'alto', label: 'comentaron tu post' },
+  mentions_comment: { tier: 'alto', label: 'comentaron donde te etiquetaron' },
+  feed_comment: { tier: 'alto', label: 'comentaron tu contenido' },
   feedback_reaction_generic: { tier: 'bajo', label: 'reaccionaron' },
 };
+
+// FB emite RELLENO ALGORÍTMICO bajo los mismos notif_t que las menciones reales:
+// "X highlighted a comment/post for you to check out" y "mentioned you AND OTHER
+// FOLLOWERS" son difusión sugerida, no deuda. Y "tagged everyone in a comment" es
+// spam de grupo. Sin este filtro el ranking arranca por spam de La Grupa y entierra
+// la deuda real de debate (medido 2026-08-07: 39 "menciones", solo 5 eran deuda).
+const FILLER_TEXT = [
+  /tagged everyone in a comment/i,
+  /highlighted a (comment|post) for you to check out/i,
+  /mentioned you and other followers/i,
+  /tagged you in a photo/i,
+];
+const isFiller = (text) => FILLER_TEXT.some((re) => re.test(text));
 
 function extractInPage() {
   const out = [];
@@ -65,8 +81,8 @@ function group(items) {
   // marketplace_*, seguidores de página, mensajes) — no son hilos de debate.
   // Antes entraban a la lista de deuda con key basura ("UnreadVeganismo…",
   // post_id null, sin openUrl). Separarlas para que no contaminen la deuda real.
-  const noise = rest.filter((i) => !i.post_id && !i.comment_id);
-  const threads = rest.filter((i) => i.post_id || i.comment_id);
+  const noise = rest.filter((i) => (!i.post_id && !i.comment_id) || isFiller(i.text));
+  const threads = rest.filter((i) => (i.post_id || i.comment_id) && !isFiller(i.text));
 
   const byKey = new Map();
   for (const i of threads) {
@@ -96,17 +112,56 @@ function group(items) {
   return { security, noise, groups };
 }
 
+async function exhaustFeed(page) {
+  let rounds = 0;
+  let lastCount = -1;
+  while (rounds < MAX_PAGINATE_ROUNDS) {
+    const count = await page.evaluate(
+      () => document.querySelectorAll('a[href*="notif_t="], a[href*="/posts/"]').length,
+    );
+    const clicked = await page.evaluate(() => {
+      const btn = [...document.querySelectorAll('div[role="button"], span, a')].find((el) =>
+        /see previous notifications|ver notificaciones anteriores/i.test((el.innerText || '').trim()),
+      );
+      if (!btn) return false;
+      btn.click();
+      return true;
+    });
+    if (!clicked) {
+      await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
+      await page.waitForTimeout(1500);
+      const after = await page.evaluate(
+        () => document.querySelectorAll('a[href*="notif_t="], a[href*="/posts/"]').length,
+      );
+      if (after === count && count === lastCount) return { rounds, exhausted: true, count: after };
+      lastCount = count;
+    } else {
+      await page.waitForTimeout(2000);
+    }
+    rounds++;
+  }
+  const count = await page.evaluate(
+    () => document.querySelectorAll('a[href*="notif_t="], a[href*="/posts/"]').length,
+  );
+  return { rounds, exhausted: false, count };
+}
+
 async function main() {
   const { page, done } = await openScratchPage();
   try {
     await page.goto(NOTIF_URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(2500); // let hydration settle
+    const feed = await exhaustFeed(page);
     const items = await page.evaluate(extractInPage);
     const { security, noise, groups } = group(items);
 
     if (asJson) {
-      console.log(JSON.stringify({ generatedAtUrl: NOTIF_URL, security, noise, groups }, null, 2));
+      console.log(JSON.stringify({ generatedAtUrl: NOTIF_URL, feed, security, noise, groups }, null, 2));
     } else {
+      const feedNote = feed.exhausted
+        ? `feed agotado (${feed.count} notifs, ${feed.rounds} rondas)`
+        : `⚠️ FEED NO AGOTADO tras ${feed.rounds} rondas (${feed.count} notifs) — puede faltar deuda vieja`;
+      console.log(`\n${feedNote}`);
       console.log(`\n=== HILOS (${groups.length}) — ordenados por deuda ===`);
       for (const g of groups) {
         const flag = g.tier === 'alto' ? '🔴' : '🟢';
