@@ -9,6 +9,15 @@
             "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/coagent-provenance-gate.mjs\""
           }
         ]
+      },
+      {
+        "matcher": "mcp__chrome-devtools__evaluate_script",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/mcp-publish-gate.mjs\""
+          }
+        ]
       }
     ]
   }
