@@ -92,4 +92,4 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** Naturalismo + burden-flip: we dont need to defend normal/natural/species-appropriate; its vegans who dont have one legit reason.
 - **Nuestra respuesta:** Dos piezas: normal/natural/species-appropriate describe un patron, no justifican el titulo (is-ought); muchas cosas comunes en la naturaleza no son permiso moral. Y no-necesito-defenderlo deja el claim central donde estaba: negarse a justificar no justifica el titulo. La carga cae en quien reclama autoridad de propiedad sobre un sujeto que siente. Sin morder el vegans-have-no-reason ni el pantano de cosechas. Cierre: que justifica el titulo de propiedad sobre alguien con punto de vista.
 
-_Hilos: 27341517928804691, 27335635946059556_
+_Hilos: 27341517928804691, 27335635946059556, 27937793019177176_

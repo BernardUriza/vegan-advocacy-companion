@@ -29,7 +29,7 @@ No acusarlo; no aceptar el reencuadre a policy como el desacuerdo real; no eje b
 
 ## Log de interacciones
 
-### Hilo `27330688236588406` — 2026-07-02 · outcome: **pending**
+### Hilo `27330688236588406` — 2026-07-02 · outcome: **silent**
 - **Su jugada:** Concede que el abuso animal esta mal; el desacuerdo es que-hacer-al-respecto (if anything, should be done about it) — reframe a policy.
 - **Nuestra respuesta:** Concedi el common ground (si, ambos vemos mal el abuso) y mostre que el desacuerdo es ANTERIOR a la politica: si ya llamamos abuso a maltratar al animal es porque hay alguien ahi; el estatus de propiedad es el suelo del abuso, no un tema aparte (no hablamos de abuse hacia una roca/tractor). Cierre: que justifica tener a un sujeto consciente como propiedad de entrada.
 
