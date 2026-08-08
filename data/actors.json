@@ -179,6 +179,14 @@
         "outcome": "goalpost",
         "outcome_evidence": "5d: 'was I didn’t say “in nature”. I said we are normally and naturally a carnivorous species. And I do see you’re not offering a single legitimate reason to be vegan. Still.'",
         "outcome_note": "algo-a-alguien-sujeto-derecho separo patron (describe) de titulo (justifica), y Matt no toco el titulo: movio el poste de 'natural en la naturaleza' a 'somos naturalmente una especie carnivora' y re-emitio el mismo burden-flip ('sigues sin darme una razon legitima'). Cero defensa del titulo en dos vueltas. Es-a-debe intacto. Baja rentabilidad argumental, pero el lurker ve la evasion — reply corto, no perseguirlo."
+      },
+      {
+        "thread_id": "27937793019177176",
+        "date": "2026-08-08",
+        "their_move": "Esquive definicional (give = yield a product, del diccionario) + sello-insulto: your entire premise is, again, based on ignorance.",
+        "our_reply_summary": "Volteó su diccionario: yield a product es el sentido para cosas (campo/mina/máquina) — usarlo para ella re-enuncia el post (la gramática la archiva como sitio de producción). Un solo round (sink). Cerró con la pregunta del título.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ]
   },
@@ -1400,6 +1408,14 @@
         "outcome": "silent",
         "outcome_evidence": "Su ultimo turno tiene 1 semana ('we're just going in circles...'); mi cronica de cierre tiene 4 dias y no hubo respuesta.",
         "outcome_note": "La cronica de arco (recibos del retreat-cycle + misma pregunta replantada) cerro el intercambio: Les no volvio a escribir en 4 dias, tras 8 vueltas seguidas de 'you're assuming your conclusion'. El patron retreat-cycle-defense funciono como predice la regla: mapeado el arco, el que huye deja de responder y la pregunta sin contestar queda visible para el lurker. No re-enganchar."
+      },
+      {
+        "thread_id": "27937793019177176",
+        "date": "2026-08-08",
+        "their_move": "Naturalismo/historia (humans ate meat long before veganism) + shorthand inocente + mofa (congratulations on discovering verbs) + demanda: changing gives to takes requires an actual ethical argument; wordplay, not a valid argument.",
+        "our_reply_summary": "Concedió lo cierto de entrada (shorthand, historia). Recibo de procedencia: indoctrinated es palabra SUYA, el post no la usa. Recibo central: exige el argumento ético a un post cuyo párrafo final ES esa pregunta — contestó el verbo y saltó la pregunta. La replantó idéntica.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -1790,6 +1806,14 @@
         "outcome": "silent",
         "outcome_evidence": "Sin turnos de Tiana después de nuestra última reply en 27051763587778150; ancla de 5 semanas.",
         "outcome_note": "Su defensa cuidado-como-contrato (control total presentado como responsabilidad que genera derechos) quedó contestada y no volvió en este hilo en 5 semanas. OJO: sigue activa en 27496 y en el hilo nuevo 27937 — no es abandono del debate, solo de esta rama."
+      },
+      {
+        "thread_id": "27937793019177176",
+        "date": "2026-08-08",
+        "their_move": "Reductio burlón sobre el producto: If no one takes the milk/egg, does the producer keep it? Where? inside?",
+        "our_reply_summary": "Respuesta literal para leche: el ternero — la pregunta solo suena absurda con la cría ya removida del cuadro. Para huevo: el título sobre el cuerpo, no el destino del output. Sin sarcasmo de vuelta; cerró con ¿qué hace legítimo poseerla?",
+        "framework": "premisa-falsa-los-animales-nos-dan",
+        "outcome": "pending"
       }
     ]
   },
@@ -2788,7 +2812,16 @@
     "threads": [
       "27937793019177176"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "thread_id": "27937793019177176",
+        "date": "2026-08-08",
+        "their_move": "Empirismo bienestarista de buena fe: robot milkers, the cows go in of their own accord as many times a day as they want to.",
+        "our_reply_summary": "Registro compasivo: concedió el dato completo de entrada. La voluntariedad ocurre dentro de la disponibilidad fabricada (criada para rendir mucho más de lo que un ternero tomaría; el robot responde una urgencia que el arreglo produce). El robot moderniza el cómo; el título queda intacto. Cierre en invitación genuina.",
+        "framework": "premisa-falsa-los-animales-nos-dan",
+        "outcome": "pending"
+      }
+    ],
     "user_id": "61571628458052",
     "name": "Kathy Ann Connolly",
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61571628458052/",
