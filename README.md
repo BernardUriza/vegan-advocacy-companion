@@ -1,138 +1,145 @@
 # 🌱 Vegan Advocacy Companion
 
-Compañero de **debate vegano de alto volumen** en grupos de Facebook (ej.
-"Vegans V's Meat Eaters"). No es un asistente de juguete: corre un **pipeline de
-4 etapas, engrasado y validado en producción**, que va de la notificación de FB a
-una respuesta posteada y verificada — escrita para educar al **lector silencioso
-casual** (el lurker), no para ganarle al troll.
+A companion for **high-volume vegan debate** in Facebook groups (think "Vegans
+V's Meat Eaters"). It's not a toy assistant: it runs a **4-stage pipeline,
+battle-tested in production**, that takes you from a Facebook notification to a
+posted and verified reply — written to reach the **casual lurker**, not to win
+against the troll.
 
-> **Qué es el producto y qué es maqueta.** El **pipeline de 4 etapas sobre
-> `scripts/fb-lib.mjs`** es lo que se usa a diario y lo que **sí ha dado
-> resultados** (comentarios posteados, debates ganados ante la galería, memoria
-> longitudinal de actores). La extensión Chrome + backend Azure que también vive
-> en este repo fue la **maqueta inicial** — sigue acá como referencia, pero no es
-> el producto vivo. Ver [Maqueta original](#maqueta-original--roadmap).
+> **What's the product and what's the prototype.** The **4-stage pipeline built
+> on `scripts/fb-lib.mjs`** is what gets used daily and what **actually
+> delivers** (comments posted, debates won in front of the gallery, longitudinal
+> memory of the people involved). The Chrome extension + Azure backend that also
+> lives in this repo was the **original prototype** — it stays here for
+> reference, but it's not the live product. See
+> [Original prototype](#original-prototype--roadmap).
 
 ---
 
-## El pipeline ganador — 4 etapas
+## The pipeline that works — 4 stages
 
-Flujo canónico, cada etapa con su GOLDEN PATH (selectores, gotchas y verificación
-ya pagados) en su propia regla bajo [`.claude/rules/`](.claude/rules/). El
-detalle vive en [`CLAUDE.md`](CLAUDE.md); esto es el mapa.
+This is the canonical flow. Each stage has its own GOLDEN PATH (selectors,
+gotchas and verification already paid for) in a rule under
+[`.claude/rules/`](.claude/rules/). The details live in
+[`CLAUDE.md`](CLAUDE.md); this is the map.
 
-| # | Etapa | Qué hace | Arranca por |
+| # | Stage | What it does | Entry point |
 |---|---|---|---|
-| 1 | **[notification-agrupation](.claude/rules/notification-agrupation.md)** | Agrupa notificaciones por `post_id` real, separa el ruido de seguridad, ordena por deuda, emite la `openUrl` por hilo | `scripts/notif-scan.mjs` |
-| 2 | **[thread-actor-dossier](.claude/rules/thread-actor-dossier.md)** | Expande el hilo completo, walk del árbol, tabla de deuda, y perfila a cada actor en un dossier longitudinal | `scripts/thread-extract.mjs` |
-| 3 | **[coagent-advise](.claude/rules/coagent-advise.md)** | Seedea al coagent orquestador (ChatGPT) el tablero + la jugada de mayor palanca para que la stress-testee y redacte el borrador | chrome-devtools MCP |
-| 4 | **[comment-post-and-verify](.claude/rules/comment-post-and-verify.md)** | Style-gate → preparar el draft → **GO de Bernard** → postear → verificación histérica + screenshot | `scripts/comment-prepare.mjs` + MCP |
+| 1 | **[notification-agrupation](.claude/rules/notification-agrupation.md)** (notification grouping) | Groups notifications by real `post_id`, filters out security noise, sorts by debt, emits the `openUrl` per thread | `scripts/notif-scan.mjs` |
+| 2 | **[thread-actor-dossier](.claude/rules/thread-actor-dossier.md)** | Expands the whole thread, walks the tree, builds the debt table, and profiles every actor in a longitudinal dossier | `scripts/thread-extract.mjs` |
+| 3 | **[coagent-advise](.claude/rules/coagent-advise.md)** | Seeds the orchestrator coagent (ChatGPT) with the board state + the highest-leverage move, so it can stress-test it and draft the reply | chrome-devtools MCP |
+| 4 | **[comment-post-and-verify](.claude/rules/comment-post-and-verify.md)** | Style gate → stage the draft → **Bernard's GO** → post → paranoid verification + screenshot | `scripts/comment-prepare.mjs` + MCP |
 
-**Atajo:** el skill `/vegan-pipeline` encadena las 4 etapas y se detiene en el
-gate irreversible de la etapa 4 (el botón de publicar es de Bernard, autorizado
-por jugada).
+**Shortcut:** the `/vegan-pipeline` skill chains all 4 stages and stops at the
+irreversible gate in stage 4 — the publish button is Bernard's, authorized one
+move at a time.
 
-### La frontera del firewall (Art. 4)
+### Where the firewall sits (Art. 4)
 
-Lo **reversible se scriptea** (scrapear, agrupar, expandir, walk del árbol, y
-**preparar el draft en el composer SIN enviar**). El **acto irreversible** —el
-`Enter` que publica + su verificación— y el **juicio** (qué jugada, prosa del
-dossier, style-gate) **nunca se scriptean**: eso es de Claude + MCP + Bernard.
+**Reversible work gets scripted**: scraping, grouping, expanding, walking the
+tree, and **staging the draft in the composer WITHOUT sending it**. The
+**irreversible act** — the `Enter` that publishes, plus its verification — and
+the **judgment calls** (which move to make, the dossier prose, the style gate)
+are **never scripted**. That part belongs to Claude + MCP + Bernard.
 
 ---
 
-## La automatización — `scripts/` (SSOT)
+## The automation — `scripts/` (single source of truth)
 
-Las partes mecánicas y deterministas se scriptean con `playwright-core` +
-`connectOverCDP` al **Chrome de debug (puerto 9333)**, colapsando ~6 round-trips
-del MCP en un `node` sin quemar tokens. Nunca tocan las tabs de Bernard: siempre
-abren tab nueva en el contexto logueado.
+The mechanical, deterministic parts run on `playwright-core` +
+`connectOverCDP` against the **debug Chrome (port 9333)**, collapsing ~6 MCP
+round-trips into one `node` run without burning tokens. The scripts never touch
+Bernard's tabs: they always open a fresh tab inside the logged-in context.
 
-| Script | Etapa | Qué hace |
+| Script | Stage | What it does |
 |---|---|---|
-| `fb-lib.mjs` | — | **Lib canónica — todo script la importa** (sesión CDP, tabs efímeras/persistentes, parsing de edad) |
-| `notif-scan.mjs` | 1 | Scrapea notificaciones, agrupa por `post_id`, ordena por deuda, emite `openUrl` |
-| `thread-extract.mjs` | 2 | Expande todo, walk del árbol, dedup de los 2 renders de FB, árbol + tabla de deuda |
-| `comment-prepare.mjs` | 4 (prep) | Localiza el comentario, abre Reply, pega el draft etiquetado **sin enviar**, deja la tab viva para el `Enter` de Claude+MCP |
+| `fb-lib.mjs` | — | **The canonical lib — every script imports it** (CDP session, ephemeral/persistent tabs, age parsing) |
+| `notif-scan.mjs` | 1 | Scrapes notifications, groups them by `post_id`, sorts by debt, emits `openUrl` |
+| `thread-extract.mjs` | 2 | Expands everything, walks the tree, dedupes Facebook's two renders, outputs tree + debt table |
+| `comment-prepare.mjs` | 4 (prep) | Finds the comment, opens Reply, pastes the tagged draft **without sending**, and leaves the tab alive for the `Enter` from Claude+MCP |
 
-Etapa 3 (coagent) es MCP a propósito — sin script: la UI de ChatGPT cambia más
-seguido que la de FB y la consulta debe ser a conciencia.
+Stage 3 (coagent) is MCP on purpose — no script. ChatGPT's UI changes more often
+than Facebook's, and that query needs a human-grade read.
 
-> **Antes de tocar Chrome:** diagnóstico del `~/CLAUDE.md` (el puerto suele ser
-> **9333**, no 9222). Nunca matar Chrome a ciegas.
-
----
-
-## La doctrina — [`doctrine/`](doctrine/)
-
-El bot nació como un project de Claude.ai, **"Bot Vegano Compasivo"**, importado
-a este repo. Ahí vive la doctrina fundacional (`compassion-disruption-2025.md` +
-el manual de arquitectura emocional) y el **RAG** de 8 fuentes (CNV/Rosenberg,
-Rogers, SAMHSA trauma-informed, Bowlby, IFS, Entrevista Motivacional, Siegel,
-Anarquismo Vegano) como texto extraído grepeable.
-
-El estilo de cada reply lo gobierna
-[`reply-output-style`](.claude/rules/reply-output-style.md): humano no robótico,
-150–350 palabras, **dos registros de un mismo norte** (compasivo ante buena
-fe/herida, mordaz ante mala fe/escudo, ninguno ante troll), kill-list de IA-tells,
-norte = inversión de carga / la pregunta del marco, escrito para el lurker.
+> **Before you touch Chrome:** run the diagnostic from `~/CLAUDE.md` (the port is
+> usually **9333**, not 9222). Never kill Chrome blindly.
 
 ---
 
-## La memoria longitudinal — [`analysis/`](analysis/)
+## The doctrine — [`doctrine/`](doctrine/)
 
-- `analysis/actors/<slug>.md` — **dossier duro por persona** (bando, postura,
-  tácticas, veredicto de debate, log fechado). Se acumula a través de hilos; la
-  llave es el `user_id`, no el nombre. Convierte el companion en memoria: quién
-  mueve postes, quién es persuadible, quién es pozo sin fondo.
-- `analysis/threads/<post_id>-<slug>.md` — transcript íntegro de cada hilo.
+The bot started life as a Claude.ai project, **"Bot Vegano Compasivo"**, and got
+imported here. That's where the founding doctrine lives
+(`compassion-disruption-2025.md` plus the emotional architecture manual), along
+with an 8-source **RAG** (NVC/Rosenberg, Rogers, SAMHSA trauma-informed, Bowlby,
+IFS, Motivational Interviewing, Siegel, Vegan Anarchism) stored as greppable
+extracted text.
+
+The voice of every reply is governed by
+[`reply-output-style`](.claude/rules/reply-output-style.md): human, not robotic;
+150–350 words; **two registers pointing the same direction** (compassionate with
+good faith or hurt, sharp with bad faith or posturing, nothing at all for
+trolls); a kill-list of AI tells; the through-line is flipping the burden of
+proof and asking the framing question — always written for the lurker.
 
 ---
 
-## Cómo correr el pipeline
+## The longitudinal memory — [`analysis/`](analysis/)
+
+- `analysis/actors/<slug>.md` — a **hard dossier per person** (side, position,
+  tactics, debate verdict, dated log). It accumulates across threads, and the key
+  is the `user_id`, not the display name. This is what turns the companion into
+  memory: who moves the goalposts, who's persuadable, who's a bottomless pit.
+- `analysis/threads/<post_id>-<slug>.md` — the full transcript of each thread.
+
+---
+
+## How to run the pipeline
 
 ```bash
-# Chrome de debug vivo en 9333 (diagnóstico en ~/CLAUDE.md si no responde)
+# Debug Chrome must be live on 9333 (see ~/CLAUDE.md if it doesn't answer)
 
-# Etapa 1 — triage de notificaciones
-cd scripts && node notif-scan.mjs            # tabla por deuda; --json para pipear
+# Stage 1 — triage the notifications
+cd scripts && node notif-scan.mjs            # table sorted by debt; --json to pipe it
 
-# Etapa 2 — perfilar el hilo elegido
-node thread-extract.mjs "<openUrl>" --json   # árbol + deuda → transcript + dossiers
+# Stage 2 — profile the thread you picked
+node thread-extract.mjs "<openUrl>" --json   # tree + debt -> transcript + dossiers
 
-# Etapas 3 y 4 — vía Claude + chrome-devtools MCP (coagent + posteo con GO)
+# Stages 3 and 4 — through Claude + chrome-devtools MCP (coagent + posting on GO)
 ```
 
-O simplemente invocar el skill **`/vegan-pipeline`** (con o sin URL/`post_id`).
+Or just invoke the **`/vegan-pipeline`** skill (with or without a URL /
+`post_id`).
 
 ---
 
-## Maqueta original — roadmap
+## Original prototype — roadmap
 
-La primera versión del repo fue una **extensión Chrome educativa** (identificar
-falacias con un backend Next.js + Azure OpenAI). **Fue maqueta** — quedó como
-referencia, no se mantiene como producto. Sus piezas siguen en el árbol:
+The first version of this repo was an **educational Chrome extension** that
+flagged logical fallacies through a Next.js + Azure OpenAI backend. **It was a
+prototype** — it's kept as reference and isn't maintained as a product. Its
+pieces are still in the tree:
 
 - `manifest.json`, `sidepanel/` (→ `backend/public/extension`), `background.js`,
-  `content/`, `icons/` — la extensión.
-- `backend/` — API Next.js (`/api/validate-fallacy`) + integración Azure Key Vault.
-- `I18N-TESTING.md`, `TESTING.md` — pruebas de la maqueta.
+  `content/`, `icons/` — the extension.
+- `backend/` — Next.js API (`/api/validate-fallacy`) + Azure Key Vault integration.
+- `I18N-TESTING.md`, `TESTING.md` — prototype tests.
 
-**Roadmap (features de la maqueta, aún no en el pipeline ganador):**
+**Roadmap (prototype features not yet in the working pipeline):**
 
-- [ ] Más tipos de falacia (Ad Hominem, Whataboutism…) servidos al pipeline.
-- [ ] Generación de snippets con IA alimentada por el `doctrine/rag/`.
-- [ ] Content script de "Mark as Debate" sobre FB.
-- [ ] Gamificación / tracking (XP, badges, streaks) — de la maqueta.
-- [ ] Capturar `user_id` automáticamente al perfilar (etapa 2).
+- [ ] More fallacy types (Ad Hominem, Whataboutism…) fed into the pipeline.
+- [ ] AI-generated snippets backed by `doctrine/rag/`.
+- [ ] A "Mark as Debate" content script for Facebook.
+- [ ] Gamification / tracking (XP, badges, streaks) — from the prototype.
+- [ ] Capture `user_id` automatically while profiling (stage 2).
 
 ---
 
 ## License
 
-MIT — proyecto educativo privado.
+MIT — private educational project.
 
 ---
 
-Construido para activistas veganos que pelean la guerra real: **el lector
-silencioso que está decidiendo qué pensar.**
+Built for vegan activists fighting the war that actually matters: **the silent
+reader who's still deciding what to think.**
