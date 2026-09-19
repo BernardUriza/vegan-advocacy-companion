@@ -59,6 +59,14 @@ confirmación/fallback. **Etapa 3 (coagent) es MCP a propósito** — sin script
 interfaz de ChatGPT cambia más seguido que la de FB y la consulta debe ser a
 conciencia (decisión de Bernard, 2026-06-16).
 
+## El iceberg del especismo (`iceberg/`)
+
+Página D3 que acomoda por niveles de profundidad lo que emerge de los grupos: nivel 0 = las
+frases verbatim, 1 = lo que presuponen, 2 = lo que se hace, 3 = cómo se defiende, 4 = cómo se
+reproduce, 5 = el fondo. **SSOT: `iceberg/data.js`**; `iceberg/moat.js` se genera con
+`node scripts/iceberg-build.mjs` (valida ids contra `data/tactics.json`/`data/frameworks.json`).
+Cada hilo procesado que enseñe algo nuevo deja un nodo ahí — ver `iceberg/README.md`.
+
 ## Rules (`.claude/rules/`)
 
 - [outcome-reflex](.claude/rules/outcome-reflex.md) — **etapa cero** (corre SIEMPRE primero): el reflex de "qué tenemos hasta ahora". Re-juzga el `outcome` de cada interacción con **juicio de LLM** (no keywords), marca el `conceded` que el heurístico pierde (vive a veces en el `their_move`), y enriquece nota por framework. Mecánica al script (`reflex.mjs` emit/apply), juicio al LLM. El moat resultante mapea qué framework gana oro y en qué interlocutor.

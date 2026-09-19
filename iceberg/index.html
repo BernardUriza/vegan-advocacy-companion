@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El iceberg del especismo</title>
+<style>
+  :root {
+    --bg: #05070d; --panel: #0c1220; --line: #1d2a44; --ink: #e6edf7; --muted: #8fa3c2; --accent: #7fb3ff;
+    --quote: #cfe0ff;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif; }
+  header { padding: 28px 24px 8px; max-width: 1400px; margin: 0 auto; }
+  header h1 { margin: 0; font-size: 30px; letter-spacing: -0.01em; }
+  header p { margin: 6px 0 0; color: var(--muted); max-width: 720px; }
+  .layout { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 24px; max-width: 1400px; margin: 0 auto; padding: 0 24px 80px; }
+  .stage { position: relative; }
+  svg { width: 100%; height: auto; display: block; }
+  .node { cursor: pointer; }
+  .node rect { stroke: rgba(255,255,255,.12); stroke-width: 1;
+  }
+  .node.shallow rect { stroke: rgba(18,48,90,.45); stroke-width: 1.2; transition: stroke .15s, filter .15s; }
+  .node:hover rect, .node.selected rect { stroke: var(--accent); stroke-width: 1.6; filter: drop-shadow(0 0 10px rgba(127,179,255,.55)); }
+  .node text { pointer-events: none; font-size: 13px; font-weight: 600; }
+  .link { fill: none; stroke: #9fc3ff; stroke-opacity: .18; stroke-width: 1.2; transition: stroke-opacity .15s, stroke-width .15s; }
+  .link.lit { stroke-opacity: .85; stroke-width: 2; }
+  .link.dim { stroke-opacity: .04; }
+  .node.dim { opacity: .35; }
+  .band-label { font-size: 15px; font-weight: 700; fill: #dfe9f7; }
+  .band-sub { font-size: 12px; fill: #9fb3d1; }
+  .band-num { font-size: 11px; fill: #6f86aa; letter-spacing: .12em; }
+  .band-line { stroke: rgba(160,190,230,.14); stroke-dasharray: 4 6; }
+  .waterline-label { font-size: 11px; fill: #b9d2f2; letter-spacing: .14em; }
+  aside { position: sticky; top: 16px; align-self: start; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; max-height: calc(100vh - 32px); overflow: auto; }
+  aside .lvl { color: var(--muted); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
+  aside h2 { margin: 6px 0 10px; font-size: 20px; line-height: 1.25; }
+  aside blockquote { margin: 0 0 12px; padding: 10px 14px; border-left: 3px solid var(--accent); background: rgba(127,179,255,.06); color: var(--quote); font-style: italic; }
+  aside blockquote cite { display: block; margin-top: 6px; font-style: normal; font-size: 12px; color: var(--muted); }
+  aside .body { margin: 0 0 14px; }
+  aside h3 { margin: 14px 0 6px; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { font-size: 12px; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--line); background: #0f1830; color: #c8d6ee; }
+  .chip.fw { border-color: #2a4a3a; background: #0e1f19; color: #bfe6cf; }
+  .rel button { display: block; width: 100%; text-align: left; background: none; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); padding: 6px 10px; margin: 4px 0; cursor: pointer; font: inherit; }
+  .rel button:hover { border-color: var(--accent); }
+  .empty { color: var(--muted); }
+  .meter { position: fixed; left: 14px; top: 50%; transform: translateY(-50%); width: 6px; height: 46vh; background: linear-gradient(#eaf3fb, #06080f); border-radius: 3px; opacity: .8; }
+  .meter i { position: absolute; left: -5px; width: 16px; height: 16px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent); transform: translateY(-50%); }
+  .meter span { position: absolute; left: 18px; white-space: nowrap; font-size: 11px; color: var(--muted); transform: translateY(-50%); letter-spacing: .1em; text-transform: uppercase; }
+  footer { max-width: 1400px; margin: 0 auto; padding: 0 24px 40px; color: var(--muted); font-size: 12px; }
+  @media (max-width: 980px) {
+    .layout { grid-template-columns: 1fr; }
+    aside { position: fixed; left: 0; right: 0; bottom: 0; top: auto; max-height: 46vh; border-radius: 14px 14px 0 0; transform: translateY(105%); transition: transform .25s; }
+    aside.open { transform: none; }
+    .meter { display: none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>El iceberg del especismo</h1>
+  <p>Arriba, las frases tal cual se oyen en los grupos de debate. Cada nivel hacia abajo es lo que esa frase necesita para sostenerse. Haz clic en un nodo; los hilos iluminan de dónde emerge y a dónde lleva.</p>
+</header>
+<div class="layout">
+  <div class="stage"><svg id="iceberg" role="img" aria-label="Iceberg del especismo"></svg></div>
+  <aside id="panel"><div class="empty">Selecciona un nodo.</div></aside>
+</div>
+<div class="meter" id="meter"><i></i><span></span></div>
+<footer id="foot"></footer>
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="data.js"></script>
+<script src="moat.js"></script>
+<script>
+(() => {
+  const D = window.ICEBERG, M = window.ICEBERG_MOAT || { tactics: {}, frameworks: {} };
+  const W = 1000, SKY = 150, BAND = 330, NODE_W = 172, NODE_H = 58, GAP_X = 14, GAP_Y = 16;
+  const H = SKY + BAND * D.levels.length + 80;
+  const halfWidth = { 0: 372, 1: 420, 2: 440, 3: 430, 4: 380, 5: 300 };
+  const bandY = lvl => SKY + BAND * lvl;
+  const bandMid = lvl => bandY(lvl) + BAND / 2;
+  const waterY = SKY + BAND * 0.92;
+  const color = d3.scaleLinear().domain([0, 1, 2, 3, 4, 5])
+    .range(['#cfe0f2', '#9dbde0', '#5b86bb', '#2f4f80', '#182645', '#080c18']).interpolate(d3.interpolateRgb);
+  const ink = lvl => lvl <= 1 ? '#0b1a2e' : '#e9f0fb';
+
+  const svg = d3.select('#iceberg').attr('viewBox', `0 0 ${W} ${H}`);
+  const defs = svg.append('defs');
+  const sky = defs.append('linearGradient').attr('id', 'sky').attr('x1', 0).attr('y1', 0).attr('x2', 0).attr('y2', 1);
+  sky.append('stop').attr('offset', 0).attr('stop-color', '#cfe3f7');
+  sky.append('stop').attr('offset', 1).attr('stop-color', '#8fb6de');
+  const sea = defs.append('linearGradient').attr('id', 'sea').attr('x1', 0).attr('y1', 0).attr('x2', 0).attr('y2', 1);
+  [[0, '#2f6ea6'], [0.25, '#1b3f6b'], [0.5, '#0f2140'], [0.78, '#070d1c'], [1, '#020308']]
+    .forEach(([o, c]) => sea.append('stop').attr('offset', o).attr('stop-color', c));
+  const ice = defs.append('linearGradient').attr('id', 'ice').attr('x1', 0).attr('y1', 0).attr('x2', 0).attr('y2', 1);
+  [[0, 'rgba(255,255,255,.98)'], [(waterY) / H, 'rgba(240,248,255,.96)'], [(waterY + 1) / H, 'rgba(180,215,245,.28)'],
+   [0.6, 'rgba(120,160,210,.14)'], [1, 'rgba(60,90,140,.06)']]
+    .forEach(([o, c]) => ice.append('stop').attr('offset', o).attr('stop-color', c));
+
+  svg.append('rect').attr('width', W).attr('height', waterY).attr('fill', 'url(#sky)');
+  svg.append('rect').attr('y', waterY).attr('width', W).attr('height', H - waterY).attr('fill', 'url(#sea)');
+
+  // silueta del iceberg: puntos por nivel con un dentado determinista
+  const jag = (i, k) => Math.sin(i * 12.9898 + k * 78.233) * 14;
+  const right = [], left = [];
+  right.push([W / 2 + 40, SKY - 90]);
+  right.push([W / 2 + 200, SKY - 30]);
+  D.levels.forEach((l, i) => {
+    const hw = halfWidth[l.id];
+    right.push([W / 2 + hw + jag(i, 1), bandY(l.id) + 40]);
+    right.push([W / 2 + hw + jag(i, 2), bandY(l.id) + BAND - 40]);
+    left.push([W / 2 - hw - jag(i, 3), bandY(l.id) + 40]);
+    left.push([W / 2 - hw - jag(i, 4), bandY(l.id) + BAND - 40]);
+  });
+  const bottom = [[W / 2 + 30, H - 40], [W / 2 - 60, H - 20]];
+  const outline = [...right, ...bottom, ...left.reverse(), [W / 2 - 190, SKY - 40], [W / 2 - 60, SKY - 120]];
+  svg.append('path').attr('d', d3.line().curve(d3.curveCatmullRomClosed.alpha(0.6))(outline))
+    .attr('fill', 'url(#ice)').attr('stroke', 'rgba(255,255,255,.22)').attr('stroke-width', 1.2);
+
+  svg.append('line').attr('x1', 0).attr('x2', W).attr('y1', waterY).attr('y2', waterY)
+    .attr('stroke', '#dff1ff').attr('stroke-opacity', .6).attr('stroke-width', 1.5);
+  svg.append('text').attr('class', 'waterline-label').attr('x', 14).attr('y', waterY - 8).text('LÍNEA DE FLOTACIÓN');
+
+  // bandas
+  const bands = svg.append('g');
+  D.levels.forEach(l => {
+    const g = bands.append('g');
+    if (l.id > 0) g.append('line').attr('class', 'band-line').attr('x1', 0).attr('x2', W).attr('y1', bandY(l.id)).attr('y2', bandY(l.id));
+    g.append('text').attr('class', 'band-num').attr('x', 14).attr('y', bandY(l.id) + 26).text(`NIVEL ${l.id}`);
+    g.append('text').attr('class', 'band-label').attr('x', 14).attr('y', bandY(l.id) + 48).text(l.name)
+      .style('fill', l.id === 0 ? '#12305a' : null);
+    const sub = g.append('text').attr('class', 'band-sub').attr('x', 14).attr('y', bandY(l.id) + 66).style('fill', l.id === 0 ? '#2b4b76' : null);
+    wrap(sub, l.sub, 230, 14);
+  });
+
+  // layout de nodos
+  const byLevel = d3.group(D.nodes, n => n.level);
+  const pos = new Map();
+  byLevel.forEach((nodes, lvl) => {
+    const hw = halfWidth[lvl];
+    const perRow = Math.max(1, Math.floor((2 * hw - 40) / (NODE_W + GAP_X)));
+    const rows = Math.ceil(nodes.length / perRow);
+    const totalH = rows * NODE_H + (rows - 1) * GAP_Y;
+    const y0 = bandMid(lvl) - totalH / 2 + (lvl === 0 ? 30 : 10);
+    nodes.forEach((n, i) => {
+      const r = Math.floor(i / perRow), c = i % perRow;
+      const inRow = Math.min(perRow, nodes.length - r * perRow);
+      const rowW = inRow * NODE_W + (inRow - 1) * GAP_X;
+      const x = W / 2 - rowW / 2 + c * (NODE_W + GAP_X);
+      pos.set(n.id, { x, y: y0 + r * (NODE_H + GAP_Y) });
+    });
+  });
+
+  // links (de padre a hijo)
+  const links = [];
+  D.nodes.forEach(n => (n.from || []).forEach(f => links.push({ source: f, target: n.id })));
+  const linkGen = d3.linkVertical().x(d => d.x).y(d => d.y);
+  const linkSel = svg.append('g').selectAll('path').data(links).join('path').attr('class', 'link')
+    .attr('d', d => {
+      const s = pos.get(d.source), t = pos.get(d.target);
+      return linkGen({ source: { x: s.x + NODE_W / 2, y: s.y + NODE_H }, target: { x: t.x + NODE_W / 2, y: t.y } });
+    });
+
+  // nodos
+  const nodeSel = svg.append('g').selectAll('g').data(D.nodes).join('g')
+    .attr('class', d => `node${d.level <= 1 ? ' shallow' : ''}`).attr('id', d => `n-${d.id}`)
+    .attr('transform', d => `translate(${pos.get(d.id).x},${pos.get(d.id).y})`)
+    .on('mouseenter', (e, d) => light(d, false)).on('mouseleave', () => { if (!selected) clear(); else light(selected, true); })
+    .on('click', (e, d) => select(d));
+  nodeSel.append('rect').attr('width', NODE_W).attr('height', NODE_H).attr('rx', 10).attr('fill', d => color(d.level));
+  nodeSel.append('text').attr('x', NODE_W / 2).attr('y', 0).attr('text-anchor', 'middle').style('fill', d => ink(d.level))
+    .each(function (d) { wrap(d3.select(this), d.title, NODE_W - 16, 15, NODE_H); });
+
+  // relaciones
+  const parents = new Map(D.nodes.map(n => [n.id, n.from || []]));
+  const children = new Map(D.nodes.map(n => [n.id, []]));
+  D.nodes.forEach(n => (n.from || []).forEach(f => children.get(f).push(n.id)));
+  const nodeById = new Map(D.nodes.map(n => [n.id, n]));
+  const closure = (id, map) => { const out = new Set(); const st = [id]; while (st.length) { const c = st.pop(); for (const k of map.get(c) || []) if (!out.has(k)) { out.add(k); st.push(k); } } return out; };
+
+  let selected = null;
+  function light(d) {
+    const up = closure(d.id, parents), down = closure(d.id, children);
+    const lit = new Set([d.id, ...up, ...down]);
+    nodeSel.classed('dim', n => !lit.has(n.id));
+    linkSel.classed('lit', l => lit.has(l.source) && lit.has(l.target)).classed('dim', l => !(lit.has(l.source) && lit.has(l.target)));
+  }
+  function clear() { nodeSel.classed('dim', false); linkSel.classed('lit', false).classed('dim', false); }
+  function select(d) {
+    selected = d; nodeSel.classed('selected', n => n.id === d.id); light(d, true); renderPanel(d);
+    history.replaceState(null, '', `#${d.id}`);
+    document.getElementById('panel').classList.add('open');
+  }
+  function renderPanel(d) {
+    const lvl = D.levels.find(l => l.id === d.level);
+    const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+    const chips = (arr, cls, dict) => arr && arr.length ? `<div class="chips">${arr.map(x => { const m = dict[x]; return `<span class="chip ${cls}" title="${esc(m ? (m.definition || m.enables) : x)}">${m ? esc(m.name) : x}</span>`; }).join('')}</div>` : '<div class="empty">—</div>';
+    const rel = ids => ids.length ? ids.map(id => `<button data-id="${id}">${nodeById.get(id).title}</button>`).join('') : '<div class="empty">—</div>';
+    document.getElementById('panel').innerHTML = `
+      <div class="lvl">Nivel ${d.level} · ${lvl.name}</div>
+      <h2>${d.title}</h2>
+      ${d.quote ? `<blockquote>“${d.quote}”<cite>${d.src || ''}</cite></blockquote>` : ''}
+      <p class="body">${d.body}</p>
+      <h3>Emerge de</h3><div class="rel">${rel(parents.get(d.id))}</div>
+      <h3>Lleva a</h3><div class="rel">${rel(children.get(d.id))}</div>
+      <h3>Tácticas del oponente</h3>${chips(d.tactics, '', M.tactics)}
+      <h3>Qué lo contrarresta</h3>${chips(d.frameworks, 'fw', M.frameworks)}`;
+    document.querySelectorAll('#panel .rel button').forEach(b => b.addEventListener('click', () => {
+      const n = nodeById.get(b.dataset.id); select(n);
+      document.getElementById(`n-${n.id}`).scrollIntoView({ block: 'center', behavior: 'smooth' });
+    }));
+  }
+
+  function wrap(text, str, width, lineH, boxH) {
+    const words = str.split(/\s+/); let line = [], lines = [];
+    const probe = text.append('tspan').attr('x', text.attr('x'));
+    words.forEach(w => { line.push(w); probe.text(line.join(' ')); if (probe.node().getComputedTextLength() > width && line.length > 1) { line.pop(); lines.push(line.join(' ')); line = [w]; } });
+    lines.push(line.join(' ')); probe.remove();
+    const y0 = boxH ? boxH / 2 - ((lines.length - 1) * lineH) / 2 + 5 : +text.attr('y');
+    lines.forEach((l, i) => text.append('tspan').attr('x', text.attr('x')).attr('y', y0 + i * lineH).text(l));
+  }
+
+  // medidor de profundidad según scroll
+  const meter = document.getElementById('meter'), dot = meter.querySelector('i'), lab = meter.querySelector('span');
+  const svgEl = document.getElementById('iceberg');
+  function onScroll() {
+    const r = svgEl.getBoundingClientRect(); const scale = r.height / H;
+    const centerY = (window.innerHeight / 2 - r.top) / scale;
+    const t = Math.max(0, Math.min(1, centerY / H));
+    const lvl = Math.max(0, Math.min(D.levels.length - 1, Math.floor((centerY - SKY) / BAND)));
+    dot.style.top = `${t * 100}%`; lab.style.top = `${t * 100}%`;
+    lab.textContent = centerY < waterY ? 'superficie' : `nivel ${lvl}`;
+  }
+  window.addEventListener('scroll', onScroll, { passive: true }); window.addEventListener('resize', onScroll); onScroll();
+
+  document.getElementById('foot').textContent = `${D.nodes.length} nodos · ${links.length} conexiones · ${D.levels.length} niveles · fuente: los hilos de los grupos de debate (vegan-advocacy-companion)`;
+  const h = location.hash.slice(1); if (h && nodeById.has(h)) { select(nodeById.get(h)); setTimeout(() => document.getElementById(`n-${h}`).scrollIntoView({ block: 'center' }), 50); }
+})();
+</script>
+</body>
+</html>
