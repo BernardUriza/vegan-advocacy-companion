@@ -490,5 +490,18 @@
       "1198831097"
     ],
     "fallacy_type_id": null
+  },
+  {
+    "id": "hipocresia_clausula_practicable",
+    "name": "Hypocrisy via the possible-and-practicable clause",
+    "category": "rhetoric",
+    "definition": "Francione analogy: a vegan who is against exploitation but invokes the Vegan Society clause (as far as is possible and practicable) to keep exploiting is as moral as someone against child abuse who keeps abusing because stopping is not practicable. Used by abolitionist PURISTS against welfarist vegans (flanking from the left, often in other vegans posts) and occasionally by anti-vegans as a tu-quoque. In a vegan-authored post it turns the comments into an intramural debate, which hands the cornered carnist an exit (they cannot even agree, so it IS subjective).",
+    "canonical_counter": "Two layers. STRATEGIC first: in your own post, do not feed the intramural debate — patience, let the post gather lurkers; the OP not biting internal drama is already text. When answering: short, courteous, acknowledge the point (Francione, yes), distinguish avoidable exploitation (buying the product of the title when walking past it is an option) from the structurally inescapable (roads, old medicine, supply chains nobody designed); the valid critique is of whoever uses the clause as an alibi, not of the concept. Take the long version to a root post of its own. PHILOSOPHICAL layer stays abolitionist: exploitation at issue = title/property over a conscious being; the field mouse belongs to no one; the seat of the one continuing the practice is the buyer of the title. Never defend the clause on harm-reduction terms.",
+    "register": "filo",
+    "what_not_to_do": "Do not open an intramural fight in your own post. Do not treat the purist as a carnist. Do not litigate the Vegan Society wording. Do not defend the clause via least/unavoidable harm (welfarism). Do not out-purist him. Do not call the analogy dishonest — show the seat it gets wrong and let it weigh.",
+    "actors_known": [
+      "1742478160"
+    ],
+    "fallacy_type_id": "false_equivalence"
   }
 ]
