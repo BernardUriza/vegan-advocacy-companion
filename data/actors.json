@@ -2832,5 +2832,33 @@
     "verdict": "audiencia",
     "register": "compasivo",
     "what_not_to_do": "NO disputar el dato (los robot milkers existen, las vacas sí van solas — concederlo de entrada, es buena fe). NO pelear welfare (mejor trato no cambia el estatus). Mostrar que la voluntariedad vive dentro de la disponibilidad fabricada y devolver el título."
+  },
+  {
+    "tactics": [
+      "crop_deaths_flip"
+    ],
+    "threads": [
+      "28046113755009790"
+    ],
+    "interactions": [
+      {
+        "thread_id": "28046113755009790",
+        "date": "2026-09-19",
+        "their_move": "Espejo de intención contra Barbara: crop deaths are not unintentional (evento permitido a sabiendas = intencional); slaughtering an animal for food is a pre-known incidental occurrence of a main event, igual que el ratón en la cosecha.",
+        "our_reply_summary": "Concedió entero el punto de intención (llámalo intencional; describe la matanza como incidental si quieres) y movió el eje a estatus: el ratón nunca fue criado ni poseído, el cerdo sí desde que nace hasta el cuchillo; el espejo solo refleja parado en el eje de Barbara. Cerró en la pregunta del título de propiedad (sin la de esclavitud necesaria — coagent: demasiado cargada para actor nuevo).",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "1742478160",
+    "name": "Philip Wheeldon",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/1742478160/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "La intención no distingue el campo de la granja: si un evento se permite a sabiendas es intencional; la matanza es tan incidental a producir comida como el ratón lo es a cosechar.",
+    "analisis": "Sofista dialéctico, no insultador (2026-09-19, post 28046113755009790 de Matt Terrain). Arma un argumento lógico real y lo remata con un espejo simétrico. Explota el flanco bienestarista que le regalan (Barbara: intentions matter) — y en ese eje tiene razón. En su comentario raíz del mismo hilo usa la analogía child abuse vs possible-and-practicable, o sea él mismo enmarca lo disputado como EXPLOTACIÓN (relación de estatus), no como intención. Primer contacto: se le concedió entero el punto de intención y se movió el eje a estatus/propiedad.",
+    "tone": "civil_sophist",
+    "verdict": "por_confirmar",
+    "register": "filo",
+    "what_not_to_do": "NO defender el eje de intención de Barbara. NO discutir cuál es el real goal de la granja. NO entrar al conteo. NO responder su analogía child abuse en el mismo round."
   }
 ]
