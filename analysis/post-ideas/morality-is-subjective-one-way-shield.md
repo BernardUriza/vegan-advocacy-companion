@@ -78,7 +78,7 @@ Status: **Posted** (2026-09-19). Copias verificadas por notificaciones del mismo
 - VEGANnoyance; The Group! (`2295597740524135`) → https://www.facebook.com/groups/2295597740524135/posts/28354739720849914/ — aprobado por admin, sin comentarios aún.
 - Vegans V's Meat Eaters (Open Debates) 3 (`770211166362062`) — **no verificado** en esta sesión (sin notificación; confirmar abriendo el grupo).
 
-### El único comentario: Philip Wheeldon — PACIENCIA, no se contesta todavía
+### El único comentario: Philip Wheeldon — respondido 2026-09-19 ~16:09 CST tras ~1h de paciencia
 
 Wheeldon pegó (raíz, 12m después del post) la analogía de Francione: vegano que invoca
 "possible and practicable" = quien dice que no puede dejar de abusar niños. Análisis de
@@ -93,6 +93,9 @@ acumule reacciones y lurkers antes de responder. Su comentario ya tiene 1 like
 (grillete: ya no lo borra). Cuando toque: corto, cortés, reconocer el punto (Francione,
 sí), distinguir evitable de estructural, "la crítica válida es a quien usa la cláusula
 como coartada, no al concepto", y llevarse el desarrollo a un post propio →
-[[possible-and-practicable-evitable-vs-estructural]]. El draft que preparé tratándolo
-como carnista se retiró sin postear (recibo `.coagent/28046483408306158.consult.json`
-queda como procedencia; el texto se rehace con el registro cortés cuando llegue la hora).
+[[possible-and-practicable-evitable-vs-estructural]]. **Respondido:** el texto que fue es el crudo del coagent, validado por Insult en Discord
+(`1550983610792681474`: "no hay segunda versión mejor"; único tweak: sin el "So" del cierre;
+sin comas de Oxford por el tricolón del gate). Verificado en FB: `Reply by Bernard Uriza
+Orozco to Philip Wheeldon's comment`, 4 frases ancla presentes. Recibo
+`.coagent/28046483408306158.consult.json` (sha `02b2f80f6f4bfafe`). Interacción en el moat con
+`violencia-indirecta-quien-demanda`, outcome `pending`.
