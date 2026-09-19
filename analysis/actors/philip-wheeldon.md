@@ -4,8 +4,8 @@
 
 - **user_id:** 1742478160
 - **Perfil:** https://www.facebook.com/groups/683615698352965/user/1742478160/
-- **Bando:** ambiguo — probable abolicionista purista (lectura de Insult 2026-09-19: su analogía child-abuse/possible-and-practicable es de Francione, textual, apuntada a veganos welfaristas; en el hilo de Matt espejeó a Barbara para reventar el eje de intención, consistente con purista anti-welfarista). NO confirmado por él mismo.
-- **Veredicto:** por_confirmar — aliado incómodo o purista; no pozo · **Registro:** cortés, sin filo — el contraste hace el trabajo
+- **Bando:** anti-vegan (CONFIRMADO 2026-09-19 ~15:40 en el hilo de Matt Terrain: llama 'liar' y 'nutter' a Barbara, sostiene que el goal de la ganadería es producir comida, y estira la definición de exploitation para que los crop deaths cuenten como exploitación de animales salvajes → tu-quoque contra el vegano. La lectura de Insult como purista abolicionista quedó refutada por su propio turno siguiente.)
+- **Veredicto:** sofista de crop-deaths; insulta a terceros cuando lo acorralan; probable sink tras 2 rounds · **Registro:** filo
 - **Postura núcleo:** La cláusula possible-and-practicable no es coartada: quien la invoca para seguir explotando es tan moral como quien dice que no puede dejar de abusar niños. La intención no distingue el campo de la granja.
 
 ## Análisis
@@ -29,7 +29,7 @@ Sofista dialéctico, civil, sin insulto (2026-09-19). Corrige a otros veganos en
 
 ## Qué NO hacer
 
-NO abrir debate intramural en el post propio (regala la salida al carnista). NO responder rápido — paciencia. NO litigar la definición de veganismo. NO tratarlo como carnista (el draft del 19-sep que lo hacía se RETIRÓ sin postear). NO purismo de vuelta ni golpearse el pecho. El desarrollo largo va a un post propio sobre la cláusula, otro día.
+NO abrir debate intramural en el post propio (regala la salida al carnista). NO responder rápido — paciencia. NO litigar la definición de veganismo. NO tratarlo como carnista (el draft del 19-sep que lo hacía se RETIRÓ sin postear). NO purismo de vuelta ni golpearse el pecho. El desarrollo largo va a un post propio sobre la cláusula, otro día. ROUND 2 (hilo de Matt): NO aceptar la atribución 'you find wild animals dying acceptable' — nadie dijo eso; verificar contra el arco y devolverla. NO competir en body-count de crop deaths. NO pelear su definición de exploitation — tomarla en serio y mostrar que describe la granja en su forma más pura (el animal ES la ganancia).
 
 ## Log de interacciones
 
@@ -40,5 +40,9 @@ NO abrir debate intramural en el post propio (regala la salida al carnista). NO 
 ### Hilo `28046483408306158` — 2026-09-19 · outcome: **pending**
 - **Su jugada:** Comentario raíz en el post del relativismo de Bernard, 12m tras publicarse: analogía de Francione — vegano que invoca 'possible and practicable' para seguir explotando es tan moral como quien dice que no puede dejar de abusar niños. Copy-paste del mismo texto que puso en el post de Matt Terrain. 1 like.
 - **Nuestra respuesta:** Tras ~1h de paciencia deliberada (estrategia de Bernard; texto validado por Insult en Discord): desmonta la analogía por asignación de silla — el que 'sigue' es quien paga el título sobre el cuerpo de un ser consciente, no el vegano; la cláusula cubre lo estructuralmente inescapable (carreteras, medicinas, cadenas) y no da permiso para comprar el producto directo del título; ratón bajo la máquina vs cerdo bajo título humano; 'my purity and your title are different questions' cierra el intramural; cierre con la pregunta del post. Cortés, sin filo contra veganos.
+
+### Hilo `28046113755009790` — 2026-09-19 · outcome: **pending**
+- **Su jugada:** Round 2 (reply a Bernard, ~15:40): estira la definición de exploitation (desbalance de poder + ganancia + sin recompensa) para que los crop deaths sean 'animales salvajes explotados', y atribuye falsamente: 'you find wild animals paying with their lives acceptable'. Tercera estación (intención → definición → atribución). En ramas paralelas llamó 'liar' y 'nutter' a Barbara.
+- **Nuestra respuesta:** Tomó su definición y la terminó: bajo ella la granja es el caso más puro (el cerdo ES la ganancia; el ratón es alguien afectado) — afectar y poseer son relaciones distintas y su propia definición traza la línea. Recibo de atribución sin drama ('I said nobody owns the field mouse'); la pieza de la tierra devuelta en una línea (la ganadería como mayor usuario); nombró el cambio de terreno en una frase; cerró con la pregunta del título + ¿existe la esclavitud necesaria? Round 2 de 2: si abre cuarta estación, silencio con la pregunta visible.
 
 _Hilos: 28046113755009790, 28046483408306158_
