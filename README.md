@@ -66,6 +66,22 @@ than Facebook's, and that query needs a human-grade read.
 
 ---
 
+## The iceberg — [`iceberg/`](iceberg/)
+
+**Live: https://aos.bernarduriza.com/iceberg/**
+
+A D3 page that lays out, by depth, everything that surfaces in the debate groups. Level 0
+is above the waterline: the phrases exactly as people write them ("It's food", "Humans are
+omnivores", "The cow gives milk", "Morality is subjective"). Every level below is what that
+phrase needs in order to stand — what it presupposes, what it materially does, how the
+system defends itself, how it reproduces, and the bottom. Click a node and the threads
+light up from the phrase down to what it's really defending.
+
+It's not a lore chart. Every node is derived from the moat — real threads, tagged
+tactics, frameworks with a win rate — and the source of truth is [`iceberg/data.js`](iceberg/data.js).
+Each processed thread that teaches something new leaves a node. Details in
+[`iceberg/README.md`](iceberg/README.md).
+
 ## The doctrine — [`doctrine/`](doctrine/)
 
 The bot started life as a Claude.ai project, **"Bot Vegano Compasivo"**, and got

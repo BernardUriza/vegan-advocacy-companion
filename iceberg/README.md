@@ -6,6 +6,35 @@ esa frase presupone, lo que hace materialmente, cómo se defiende el sistema, c�
 el fondo. Se oscurece conforme bajas.
 
 Abrir: `open iceberg/index.html` (funciona desde `file://`; D3 v7 desde jsdelivr).
+En vivo: **https://aos.bernarduriza.com/iceberg/** (publicar con `scripts/iceberg-publish.sh`).
+
+## Visión — por qué existe (2026-09-19)
+
+El "iceberg chart" es un género entero (lore, conspiraciones, memes) y los mapas de
+argumentos también existen. Este no es ninguna de las dos cosas: **es un mapa DERIVADO del
+moat** — 173 interacciones reales, 37 tácticas etiquetadas sobre gente concreta, frameworks
+con win-rate — donde cada nodo del fondo está amarrado por hilos a la frase literal que
+alguien escribió en un grupo un martes. Haces clic en "It's food" y se ilumina el camino
+hasta "alguien convertido en suministro". Ese camino iluminado es el reclamo que el
+activista le hacía al mundo, ahora con recibos.
+
+Lo que el iceberg demuestra es que las contradicciones del especismo cotidiano **no son
+pedantes, son estructurales**: cada estación de arriba existe para que no se tenga que mirar
+la de abajo. Por eso da autoridad frente al lurker — ya no se discute una frase, se señala
+qué la está sosteniendo.
+
+Tres compromisos que lo mantienen honesto:
+
+1. **Solo entra lo que salió de un hilo real.** Un nodo sin cita ni táctica del moat detrás
+   es opinión; el iceberg es evidencia acomodada.
+2. **Cada hilo procesado que enseñe algo nuevo deja un nodo** (regla en `CLAUDE.md`). Es el
+   mismo contrato que el moat: si no se registra el día que se aprende, se pierde.
+3. **Se publica en vivo** en `https://aos.bernarduriza.com/iceberg/` con
+   `scripts/iceberg-publish.sh` — el SSOT sigue aquí; la copia en activist-os es derivada y
+   está marcada como generada.
+
+Bernard, el día que nació: *"he logrado nombrar de forma más exacta lo que yo al mundo le
+reclamaba."* Ese es el criterio de calidad de cada nodo nuevo: ¿nombra más exacto?
 
 ## Archivos
 
