@@ -8,6 +8,10 @@ Cada archivo es una semilla: el framing original de Bernard + el argumento afila
 + cuándo desplegarlo + conexión con `data/tactics.json`. Status: Seed → Drafted →
 Posted.
 
+Status `Posted` lleva la lista de grupos + URL por grupo; un post raíz se publica
+en TODOS los grupos de `.claude/destinatarios-canales.txt` (ver
+[[root-post-publish]]).
+
 ## Índice
 
 - [egyptian-cats-cultural-moral-loading](egyptian-cats-cultural-moral-loading.md) — el desprecio al "animal de granja" es carga cultural/religiosa, no zoología (gatos egipcios vs "pearls before swine"). Counter a species_hierarchy. **Posted** 2026-06-29 → Vegans V's Meat Eaters (Open Debates) 3.
