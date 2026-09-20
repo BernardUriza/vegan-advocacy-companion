@@ -23,7 +23,9 @@ import { readFileSync, writeFileSync, renameSync, readdirSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { readActors, updateInteractionOutcome } from './db.mjs';
+import { MAX_AGE_DAYS, isStaleDate } from './freshness.mjs';
 import { resolveUserPath } from './paths.mjs';
+import { statSync } from 'fs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(HERE, '..');
@@ -55,20 +57,29 @@ if (cmd === 'emit') {
   const txDir = fileArg('--tx-dir', '.coagent');
   const out = fileArg('--out', '.coagent/reflex-packets.json');
   // index transcripts por thread_id
+  // TOPE DE FRESCURA (pipeline-freshness-cap): un transcript más viejo que MAX_AGE_DAYS
+  // no es "fresco del run" y no sirve para juzgar; una interacción más vieja ya no se
+  // re-juzga desde el reflex (se cierra por edad con close-outcomes). Sin esto el emit
+  // sacaba 59 packets hasta junio (2026-09-19).
   const tx = {};
+  let staleTx = 0;
   for (const f of readdirSync(txDir).filter((f) => f.startsWith('tx-') && f.endsWith('.json'))) {
     try {
-      const doc = JSON.parse(readFileSync(resolve(txDir, f), 'utf8'));
+      const p = resolve(txDir, f);
+      if (isStaleDate(statSync(p).mtime.toISOString())) { staleTx++; continue; }
+      const doc = JSON.parse(readFileSync(p, 'utf8'));
       const tid = threadIdOf(doc);
       if (tid && Array.isArray(doc.turns)) tx[tid] = doc;
     } catch { /* skip */ }
   }
+  let staleInteractions = 0;
 
   const packets = [];
   for (const actor of readActors()) {
     const byThread = {};
     for (const it of actor.interactions ?? []) {
       if (!it.framework) continue; // sin framework no hay nada que atribuir al moat
+      if (isStaleDate(it.date)) { staleInteractions++; continue; }
       (byThread[it.thread_id] = byThread[it.thread_id] || []).push(it);
     }
     for (const [tid, its] of Object.entries(byThread)) {
@@ -95,6 +106,7 @@ if (cmd === 'emit') {
   writeAtomic(out, packets);
   const nInt = packets.reduce((s, p) => s + p.interactions.length, 0);
   console.log(`✓ emit: ${packets.length} packets (${nInt} interacciones con framework) → ${out}`);
+  console.log(`  tope ${MAX_AGE_DAYS}d: ${staleInteractions} interacciones y ${staleTx} transcripts más viejos quedaron fuera (se cierran por edad, no se re-juzgan)`);
   console.log('  Claude: lee el arco de cada packet, juzga outcome (conceded/engaged/silent/escalated/goalpost)');
   console.log('  + una nota corta por framework (qué aterrizó / por qué), y escribe .coagent/reflex-verdicts.json:');
   console.log('  [{ user_id, thread_id, date, needle (substring del their_move), outcome, note, evidence }]');

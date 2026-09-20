@@ -1,4 +1,4 @@
-import { openScratchPage, ageMinutes, fmtAge } from './fb-lib.mjs';
+import { openScratchPage, ageMinutes, fmtAge, MAX_AGE_DAYS, isStaleMinutes } from './fb-lib.mjs';
 
 const NOTIF_URL = 'https://www.facebook.com/notifications';
 const asJson = process.argv.includes('--json');
@@ -91,7 +91,7 @@ function group(items) {
     byKey.get(key).notifs.push(i);
   }
 
-  const groups = [...byKey.values()].map((g) => {
+  const allGroups = [...byKey.values()].map((g) => {
     const tiers = g.notifs.map((n) => WEIGHT[n.notif_t]?.tier || 'bajo');
     const tier = tiers.includes('alto') ? 'alto' : 'bajo';
     const freshest = Math.min(...g.notifs.map((n) => ageMinutes(n.text)));
@@ -102,14 +102,21 @@ function group(items) {
     return { ...g, tier, freshestMin: freshest, hasReplyToReply, headline, openUrl };
   });
 
+  // TOPE DE FRESCURA: un hilo cuya notif más fresca ya pasó MAX_AGE_DAYS no entra a la
+  // lista de deuda — se reporta aparte, sin openUrl para abrir. Edad desconocida NO es
+  // vieja (candidata a confirmar). Ver .claude/rules/pipeline-freshness-cap.md.
+  const stale = allGroups.filter((g) => isStaleMinutes(g.freshestMin));
+  const groups = allGroups.filter((g) => !isStaleMinutes(g.freshestMin));
+
   // sort: alto first, then freshest, then reply-to-reply
   groups.sort((a, b) => {
     if (a.tier !== b.tier) return a.tier === 'alto' ? -1 : 1;
     if (a.freshestMin !== b.freshestMin) return a.freshestMin - b.freshestMin;
     return (b.hasReplyToReply ? 1 : 0) - (a.hasReplyToReply ? 1 : 0);
   });
+  stale.sort((a, b) => a.freshestMin - b.freshestMin);
 
-  return { security, noise, groups };
+  return { security, noise, groups, stale, maxAgeDays: MAX_AGE_DAYS };
 }
 
 async function exhaustFeed(page) {
@@ -153,16 +160,16 @@ async function main() {
     await page.waitForTimeout(2500); // let hydration settle
     const feed = await exhaustFeed(page);
     const items = await page.evaluate(extractInPage);
-    const { security, noise, groups } = group(items);
+    const { security, noise, groups, stale, maxAgeDays } = group(items);
 
     if (asJson) {
-      console.log(JSON.stringify({ generatedAtUrl: NOTIF_URL, feed, security, noise, groups }, null, 2));
+      console.log(JSON.stringify({ generatedAtUrl: NOTIF_URL, feed, maxAgeDays, security, noise, groups, stale: stale.map(({ openUrl, ...g }) => g) }, null, 2));
     } else {
       const feedNote = feed.exhausted
         ? `feed agotado (${feed.count} notifs, ${feed.rounds} rondas)`
         : `⚠️ FEED NO AGOTADO tras ${feed.rounds} rondas (${feed.count} notifs) — puede faltar deuda vieja`;
       console.log(`\n${feedNote}`);
-      console.log(`\n=== HILOS (${groups.length}) — ordenados por deuda ===`);
+      console.log(`\n=== HILOS (${groups.length}) — ordenados por deuda · tope ${maxAgeDays}d ===`);
       for (const g of groups) {
         const flag = g.tier === 'alto' ? '🔴' : '🟢';
         const rr = g.hasReplyToReply ? ' · reply-a-reply' : '';
@@ -175,6 +182,9 @@ async function main() {
       }
       if (noise.length) {
         console.log(`\nℹ️  RUIDO no-deuda (${noise.length}, fuera de la lista): ${noise.map((n) => n.notif_t).join(', ')}`);
+      }
+      if (stale.length) {
+        console.log(`\n⏳ VIEJOS (> ${maxAgeDays}d, ${stale.length} hilos, NO se abren): ${stale.map((g) => `${fmtAge(g.freshestMin)} ${g.post_id || g.key}`).join(' · ')}`);
       }
       const top = groups.find((g) => g.tier === 'alto');
       if (top) {

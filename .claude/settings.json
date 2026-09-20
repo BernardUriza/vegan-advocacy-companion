@@ -7,6 +7,10 @@
           {
             "type": "command",
             "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/coagent-provenance-gate.mjs\""
+          },
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/pipeline-freshness-cap.mjs\""
           }
         ]
       },

@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync, renameSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { MAX_AGE_DAYS, ageDaysFromDate } from './freshness.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const ACTORS_PATH = resolve(ROOT, 'data/actors.json');
@@ -277,7 +278,13 @@ export function threadOpenUrl(threadId) {
 // thread_id con la lista de actores/outcomes. Esta es la fuente de verdad del
 // debt-sweep — NO las notificaciones. A diferencia de getPendingInteractions()
 // (solo pending), incluye goalpost (sigue vivo: el oponente movió el poste).
-export function getOpenDebtThreads() {
+// Deuda abierta del moat (pending|goalpost) agrupada por hilo, con TOPE DE FRESCURA:
+// un hilo cuya interacción abierta más reciente tiene más de `maxAgeDays` (default
+// freshness.MAX_AGE_DAYS) es `stale` y NO se devuelve — el pipeline no reabre debates
+// muertos (2026-09-19). `includeStale: true` los devuelve marcados, para listarlos
+// SIN abrirlos. Cada hilo trae `newestDate` y `ageDays` (null si ninguna fecha parsea:
+// sin fecha no se declara viejo, Art. 2).
+export function getOpenDebtThreads({ maxAgeDays = MAX_AGE_DAYS, includeStale = false, now = Date.now() } = {}) {
   const OPEN = new Set(['pending', 'goalpost']);
   const byThread = new Map();
   for (const actor of readActors()) {
@@ -294,5 +301,12 @@ export function getOpenDebtThreads() {
       });
     }
   }
-  return [...byThread.values()];
+  const threads = [...byThread.values()].map((t) => {
+    const dated = t.actors.map((a) => a.date).filter((d) => Number.isFinite(Date.parse(d)));
+    const newestDate = dated.length ? dated.sort().at(-1) : null;
+    const ageDays = newestDate ? Math.round(ageDaysFromDate(newestDate, now) * 10) / 10 : null;
+    const stale = ageDays !== null && ageDays > maxAgeDays;
+    return { ...t, newestDate, ageDays, stale };
+  });
+  return includeStale ? threads : threads.filter((t) => !t.stale);
 }

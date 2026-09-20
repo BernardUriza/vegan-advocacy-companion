@@ -11,7 +11,7 @@
 //
 // El <openUrl> lo sirve notif-scan.mjs (campo `openUrl` / línea "abrir:").
 
-import { openScratchPage, ageMinutes, fmtAge, UNKNOWN_AGE, expandAllInPage } from './fb-lib.mjs';
+import { openScratchPage, ageMinutes, fmtAge, UNKNOWN_AGE, expandAllInPage, MAX_AGE_DAYS, isStaleMinutes } from './fb-lib.mjs';
 import { registerThread } from './db.mjs';
 
 const url = process.argv.find((a) => a.startsWith('http'));
@@ -248,6 +248,11 @@ async function main() {
     const missingReplies = Math.max(0, exp.promisedReplies - foundReplies);
     const incomplete = exp.pending > 0 || missingReplies > 0 || exp.truncatedRemaining > 0;
     const undatedTurns = turns.filter((t) => ageMinutes(t.ageStr) === UNKNOWN_AGE).length;
+    // TOPE DE FRESCURA: edad del turno más fresco del hilo. `stale:true` = todo el hilo
+    // pasó MAX_AGE_DAYS; el caller (debt-sweep / el pipeline) no debe trabajarlo.
+    const datedMins = turns.map((t) => ageMinutes(t.ageStr)).filter((m) => m !== UNKNOWN_AGE);
+    const freshestTurnMin = datedMins.length ? Math.min(...datedMins) : UNKNOWN_AGE;
+    const stale = isStaleMinutes(freshestTurnMin);
 
     const out = {
       url,
@@ -265,6 +270,9 @@ async function main() {
         undatedTurns,
       },
       counts: { rawArticles: raw.length, uniqueTurns: turns.length },
+      freshestTurnMin,
+      stale,
+      maxAgeDays: MAX_AGE_DAYS,
       turns,
       debt,
       unansweredRoots,

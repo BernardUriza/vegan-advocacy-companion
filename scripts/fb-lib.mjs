@@ -52,7 +52,8 @@ export async function openPersistentPage() {
 // 99999 equivalía a 69 días, así que un comentario de 3 meses (129600 min) se ordenaba
 // como MÁS viejo que lo desconocido y contaminaba la deuda. Se compara por identidad
 // (=== UNKNOWN_AGE), nunca por umbral.
-export const UNKNOWN_AGE = 9e9;
+export { UNKNOWN_AGE, MAX_AGE_DAYS, MAX_AGE_MIN, isStaleMinutes, isStaleDate } from './freshness.mjs';
+import { UNKNOWN_AGE } from './freshness.mjs';
 
 const UNIT_MINUTES = { minute: 1, hour: 60, day: 1440, week: 10080, month: 43200, year: 525600 };
 const SHORT_MINUTES = { m: 1, h: 60, d: 1440, w: 10080, y: 525600 };

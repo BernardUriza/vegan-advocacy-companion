@@ -23,7 +23,7 @@ import { execFileSync } from 'child_process';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { getOpenDebtThreads, getThreadMeta, threadOpenUrl } from './db.mjs';
-import { UNKNOWN_AGE } from './fb-lib.mjs';
+import { UNKNOWN_AGE, MAX_AGE_DAYS } from './freshness.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const asJson = process.argv.includes('--json');
@@ -38,10 +38,17 @@ function extractThread(url) {
 }
 
 const results = [];
-for (const { thread_id, actors } of getOpenDebtThreads()) {
+const staleSkipped = [];
+for (const { thread_id, actors, stale, newestDate, ageDays } of getOpenDebtThreads({ includeStale: true })) {
   const meta = getThreadMeta(thread_id);
   const url = threadOpenUrl(thread_id);
   const moatActors = actors.map((a) => `${a.name}(${a.outcome})`);
+  // TOPE DE FRESCURA: la deuda abierta más reciente de este hilo ya pasó MAX_AGE_DAYS —
+  // se lista, NO se abre (cero tabs, cero thread-extract). Ver pipeline-freshness-cap.md.
+  if (stale) {
+    staleSkipped.push({ thread_id, slug: meta?.slug ?? null, newestDate, ageDays, moatActors });
+    continue;
+  }
   if (!url) {
     results.push({ thread_id, unresolved: true, slug: meta?.slug ?? null, moatActors });
     continue;
@@ -72,7 +79,7 @@ const score = (r) => (r.owes?.length ?? 0) * 100 + (r.suspect?.length ?? 0) * 10
 results.sort((a, b) => score(b) - score(a));
 
 if (asJson) {
-  console.log(JSON.stringify({ generatedFrom: 'moat', threads: results }, null, 2));
+  console.log(JSON.stringify({ generatedFrom: 'moat', maxAgeDays: MAX_AGE_DAYS, threads: results, staleSkipped }, null, 2));
   process.exit(0);
 }
 
@@ -80,7 +87,12 @@ const age = (m) => (m === UNKNOWN_AGE ? 'edad?' : m >= 1440 ? `${Math.round(m / 
 console.log('═'.repeat(64));
 console.log('  DEBT SWEEP — deuda desde el MOAT (no desde notificaciones de FB)');
 console.log('═'.repeat(64));
-console.log(`  ${results.length} threads con deuda abierta · barridos en vivo\n`);
+console.log(`  ${results.length} threads con deuda abierta · barridos en vivo · tope ${MAX_AGE_DAYS}d\n`);
+if (staleSkipped.length) {
+  console.log(`⏳ VIEJOS (> ${MAX_AGE_DAYS}d) — ${staleSkipped.length} hilo(s) con deuda abierta en el moat que NO se abren:`);
+  for (const s of staleSkipped) console.log(`     ${s.thread_id} (${s.slug ?? '?'}) · última ${s.newestDate} (${s.ageDays}d) · ${s.moatActors.join(', ')}`);
+  console.log('     → ciérralos en el moat (close-outcomes / reflex apply como silent), no los reabras.\n');
+}
 
 for (const r of results) {
   if (r.unresolved) {
