@@ -55,3 +55,12 @@ test('getOpenDebtThreads hides stale threads by default and marks them with incl
   if (june) assert.equal(june.stale, true, 'a June thread must never come back as open debt');
   assert.equal(fresh.some((t) => t.newestDate && t.newestDate < '2026-08-01'), false);
 });
+
+test('ageMinutes: a body that merely contains "Now" is dated by its trailing token, not as 0m', async () => {
+  const { ageMinutes } = await import('./fb-lib.mjs');
+  assert.equal(ageMinutes('Unread Now in Antinatalismo para todxs DIFUSIÓN: "Traen niñ@s al mundo a sufrir…" 5w'), 5 * 10080);
+  assert.equal(ageMinutes('just now'), 0);
+  assert.equal(ageMinutes('Comment by X a few seconds ago'), 0);
+  assert.equal(ageMinutes('Bernard replied now'), 0);
+  assert.equal(ageMinutes('3h'), 180);
+});

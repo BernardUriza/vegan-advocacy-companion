@@ -66,7 +66,9 @@ const SHORT_MINUTES = { m: 1, h: 60, d: 1440, w: 10080, y: 525600 };
 // ellos, TODO comentario de ≥1 semana caía al centinela y su deuda se volvía inordenable.
 export function ageMinutes(text) {
   const t = text || '';
-  if (/a few seconds|just now|\bnow\b/i.test(t)) return 0;
+  // "now" solo cuenta como edad si ES el token de edad ("just now" / al final): una notif
+  // "Now in Antinatalismo… 5w" matcheaba \bnow\b en el cuerpo y salía como 0m (2026-09-19).
+  if (/a few seconds|just now|\bnow\s*$/i.test(t.trim())) return 0;
   if (/about an hour|an hour ago/i.test(t)) return 60;
   // "a week" / "a week ago" — el "ago" es opcional porque el productor (walkArticles)
   // captura solo la cantidad+unidad, sin el sufijo.
