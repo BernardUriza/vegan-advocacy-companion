@@ -108,6 +108,10 @@ proof and asking the framing question — always written for the lurker.
   memory: who moves the goalposts, who's persuadable, who's a bottomless pit.
 - `analysis/threads/<post_id>-<slug>.md` — the full transcript of each thread.
 
+**Privacy.** These dossiers are built only from public group posts, and the
+people in them can ask to see, fix, or delete their entry. How, and under
+which law, is in [`PRIVACY.md`](PRIVACY.md).
+
 ---
 
 ## How to run the pipeline
