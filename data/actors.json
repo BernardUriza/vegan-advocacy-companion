@@ -624,7 +624,7 @@
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/100011355404997/",
     "bando": "anti-vegan",
     "postura_nucleo": "El veganismo es una minoría irrelevante de idiotas; Beyond Meat colapsó; vivimos en el presente, no en 2035.",
-    "analisis": "La contrincante más hostil del hilo vegan-market. Dominancia social, no argumento. Mezcla UN punto real (Beyond Meat cayó ~99%) con muro de insulto personal. Busca humillar ante la galería, no convencer. Pozo sin fondo para argumento directo; su valor es de contraste de temperamento para el lurker.",
+    "analisis": "La contrincante más hostil del hilo vegan-market. Dominancia social, no argumento. Mezcla UN punto real (Beyond Meat cayó ~99%) con muro de insulto personal. Busca humillar ante la galería, no convencer. Pozo sin fondo para argumento directo; su valor es de contraste de temperamento para el lurker. | 2026-09-19: volvió al post raíz del relativismo (Open Debates 3) con su registro de SUSTANCIA (no el pozo): concede sin querer la tesis del post (\"those are human preferences, social rules and legal agreements\" = convención + poder), re-decreta someone/something por fiat (estación #8 de julio, ya mapeada), y trae UNA pieza nueva: propiedad = protección legal / responsable identificable / \"¿quieres que te quiten a tu mascota?\" — la confusión título vs tutela. Cierra con sello (\"personal opinion not logic\"). Es la objeción más fuerte al eje propiedad que ha traído alguien: alto valor lurker.",
     "tactics": [
       "insulto_ad_hominem",
       "cherry_pick_empresa",
@@ -634,7 +634,10 @@
       "relativismo_moral",
       "libertarian_autonomy",
       "deflexion_estetica",
-      "projection_subjetiva"
+      "projection_subjetiva",
+      "propiedad_como_proteccion",
+      "peticion_de_principio",
+      "species_hierarchy"
     ],
     "tone": "hostile",
     "verdict": "pozo_sin_fondo",
@@ -642,7 +645,8 @@
     "what_not_to_do": "No responder al insulto en su nivel. No defender a Beyond Meat específicamente. Si se responde: una sola línea de contraste de temperamento + la meta-jugada (midiendo popularidad, no ética), y salir.",
     "threads": [
       "27335635946059556",
-      "27363745576581926"
+      "27363745576581926",
+      "28500475619575577"
     ],
     "interactions": [
       {
@@ -2836,7 +2840,9 @@
   {
     "tactics": [
       "crop_deaths_flip",
-      "hipocresia_clausula_practicable"
+      "hipocresia_clausula_practicable",
+      "insulto_ad_hominem",
+      "whataboutism"
     ],
     "threads": [
       "28046113755009790",
@@ -2849,7 +2855,9 @@
         "their_move": "Espejo de intención contra Barbara: crop deaths are not unintentional (evento permitido a sabiendas = intencional); slaughtering an animal for food is a pre-known incidental occurrence of a main event, igual que el ratón en la cosecha.",
         "our_reply_summary": "Concedió entero el punto de intención (llámalo intencional; describe la matanza como incidental si quieres) y movió el eje a estatus: el ratón nunca fue criado ni poseído, el cerdo sí desde que nace hasta el cuchillo; el espejo solo refleja parado en el eje de Barbara. Cerró en la pregunta del título de propiedad (sin la de esclavitud necesaria — coagent: demasiado cargada para actor nuevo).",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "Wheeldon (3h): 'all that you are actually defining is farm animals being exploited… wild animals are the largest group of animals exploited by humans… you find innocent wild animals paying with their lives… acceptable' — no defiende la intención; nueva estación (definición + atribución).",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: conceder la intención entera y mover a estatus funcionó — Wheeldon abandonó la estación de intención sin defenderla y saltó a estirar la definición de exploitation. El eje propiedad quedó sin tocar; él cambió de terreno."
       },
       {
         "thread_id": "28046483408306158",
@@ -2857,7 +2865,9 @@
         "their_move": "Comentario raíz en el post del relativismo de Bernard, 12m tras publicarse: analogía de Francione — vegano que invoca 'possible and practicable' para seguir explotando es tan moral como quien dice que no puede dejar de abusar niños. Copy-paste del mismo texto que puso en el post de Matt Terrain. 1 like.",
         "our_reply_summary": "Tras ~1h de paciencia deliberada (estrategia de Bernard; texto validado por Insult en Discord): desmonta la analogía por asignación de silla — el que 'sigue' es quien paga el título sobre el cuerpo de un ser consciente, no el vegano; la cláusula cubre lo estructuralmente inescapable (carreteras, medicinas, cadenas) y no da permiso para comprar el producto directo del título; ratón bajo la máquina vs cerdo bajo título humano; 'my purity and your title are different questions' cierra el intramural; cierre con la pregunta del post. Cortés, sin filo contra veganos.",
         "framework": "violencia-indirecta-quien-demanda",
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "Wheeldon (2h, en el post de Bernard): 'an animal does not need to be the property of a human, for an animal to be being exploited by a human… Go drive a car around knowing that you are squashing people… enjoy ya jail sentence' — ni una palabra sobre la silla ni sobre evitable/estructural.",
+        "outcome_note": "violencia-indirecta-quien-demanda: desmontar la analogía por asignación de silla (quien 'sigue' es el que paga el título) no fue defendido — abandonó la analogía de Francione sin sostenerla y pegó el mismo párrafo de 'exploitation sin propiedad' + crop deaths que usó en el hilo de Matt. Estación nueva, misma que allá."
       },
       {
         "thread_id": "28046113755009790",
@@ -2865,7 +2875,9 @@
         "their_move": "Round 2 (reply a Bernard, ~15:40): estira la definición de exploitation (desbalance de poder + ganancia + sin recompensa) para que los crop deaths sean 'animales salvajes explotados', y atribuye falsamente: 'you find wild animals paying with their lives acceptable'. Tercera estación (intención → definición → atribución). En ramas paralelas llamó 'liar' y 'nutter' a Barbara.",
         "our_reply_summary": "Tomó su definición y la terminó: bajo ella la granja es el caso más puro (el cerdo ES la ganancia; el ratón es alguien afectado) — afectar y poseer son relaciones distintas y su propia definición traza la línea. Recibo de atribución sin drama ('I said nobody owns the field mouse'); la pieza de la tierra devuelta en una línea (la ganadería como mayor usuario); nombró el cambio de terreno en una frase; cerró con la pregunta del título + ¿existe la esclavitud necesaria? Round 2 de 2: si abre cuarta estación, silencio con la pregunta visible.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "Wheeldon (2h): 'an animal does not need to be the property of a human, for an animal to be being exploited… Ps enjoy ya jail sentence.. The question remains, what makes it legitimate for an innocent conscious beings to be dismembered alive by farm machinery' — copy-paste idéntico al que puso en el post del relativismo.",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tomar SU definición y terminarla (el cerdo ES la ganancia) no fue refutado — re-pegó el mismo párrafo de la definición, agregó 'enjoy ya jail sentence' y espejó la pregunta del título hacia crop deaths. Cuarta estación (re-aserción + insulto + espejo de pregunta). Plan de r2: silencio con la pregunta visible."
       }
     ],
     "user_id": "1742478160",
@@ -2875,7 +2887,7 @@
     "postura_nucleo": "La cláusula possible-and-practicable no es coartada: quien la invoca para seguir explotando es tan moral como quien dice que no puede dejar de abusar niños. La intención no distingue el campo de la granja.",
     "analisis": "Sofista dialéctico, civil, sin insulto (2026-09-19). Corrige a otros veganos en comentarios ajenos — el arquetipo del purista que flanquea por la izquierda. Pega el MISMO texto (child abuse) como raíz en posts distintos. En el post del relativismo de Bernard NO ataca el post: hace piling-on por encima, y el efecto retórico es regalarle al carnista arrinconado un debate intramural (\"ni ustedes se ponen de acuerdo\"). Su comentario ya tiene 1 like = posición pública comprometida (no lo va a borrar). Estrategia decidida por Bernard: PACIENCIA — dejar que el post acumule lurkers; la no-respuesta inicial ya es texto (el OP no muerde drama interno). Cuando se conteste: corto, cortés, reconociendo el punto (Francione, sí) y distinguiendo lo evitable de lo estructuralmente inescapable; la crítica válida es a quien usa la cláusula como coartada, no al concepto. El contraste (racional vs purista que se golpea el pecho) es el premio. En el hilo de Matt Terrain se le concedió el punto de intención y se movió el eje a estatus — alineado con él si es purista.",
     "tone": "civil_sophist_then_insults",
-    "verdict": "sofista de crop-deaths; insulta a terceros cuando lo acorralan; probable sink tras 2 rounds",
+    "verdict": "sofista de crop-deaths; insulta a terceros cuando lo acorralan; probable sink tras 2 rounds | 2026-09-19 r3: pegó el MISMO párrafo (exploitation sin propiedad + crop deaths + \"enjoy ya jail sentence\") en dos hilos; cuarta estación con espejo de la pregunta del título. Sink confirmado: un round más en el post propio, silencio en el de Matt.",
     "register": "filo",
     "what_not_to_do": "NO abrir debate intramural en el post propio (regala la salida al carnista). NO responder rápido — paciencia. NO litigar la definición de veganismo. NO tratarlo como carnista (el draft del 19-sep que lo hacía se RETIRÓ sin postear). NO purismo de vuelta ni golpearse el pecho. El desarrollo largo va a un post propio sobre la cláusula, otro día. ROUND 2 (hilo de Matt): NO aceptar la atribución 'you find wild animals dying acceptable' — nadie dijo eso; verificar contra el arco y devolverla. NO competir en body-count de crop deaths. NO pelear su definición de exploitation — tomarla en serio y mostrar que describe la granja en su forma más pura (el animal ES la ganancia)."
   }

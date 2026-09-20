@@ -503,5 +503,18 @@
       "1742478160"
     ],
     "fallacy_type_id": "false_equivalence"
+  },
+  {
+    "id": "propiedad_como_proteccion",
+    "name": "Property as Protection / Ownership-Guardianship Conflation",
+    "category": "rhetoric",
+    "definition": "Defends the property status of animals by pointing at what it supposedly buys them: 'being property gives them legal protection — an identifiable person is responsible for feeding, housing, vet care. If they are nobody's property, who is accountable? Do you want your pet taken because someone else likes it?' Conflates OWNERSHIP (a title over a body: the right to use, sell, confine, kill) with GUARDIANSHIP (a duty toward someone). Used by relativists/sophists (Anna Angelika, 2026-09-19) as the one substantive reply to the property axis.",
+    "canonical_counter": "Separate title from duty. A parent is responsible for a child without owning them; a guardian answers for a ward without a right to sell or kill them — responsibility never required a title. Then show who the 'protection' of property actually runs to: property law protects the OWNER's interest in the asset (nobody may take my cow), while the same title is exactly what lets the owner confine, sell and kill her. The thing that keeps a pet from being 'taken' is a duty owed to the pet, which is guardianship, not ownership. Her own example cuts against her: what she wants for her dog is what the title denies the pig. Return to the axis: what makes it legitimate for a conscious being to exist as property — a duty toward someone needs no title; a title is what needs justifying.",
+    "register": "filo",
+    "what_not_to_do": "Don't argue that animals should have NO legal status or that nobody should be responsible — that hands her the 'so who feeds them?' point. Don't litigate animal-law reform or legal personhood as a policy. Don't accept 'protection' as the axis (welfarism: how well the owned are treated). Keep it to title vs duty, one example (child/ward), and back to the question.",
+    "actors_known": [
+      "100011355404997"
+    ],
+    "fallacy_type_id": "false_equivalence"
   }
 ]
