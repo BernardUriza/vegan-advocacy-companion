@@ -10,7 +10,7 @@
 
 ## Análisis
 
-La contrincante más hostil del hilo vegan-market. Dominancia social, no argumento. Mezcla UN punto real (Beyond Meat cayó ~99%) con muro de insulto personal. Busca humillar ante la galería, no convencer. Pozo sin fondo para argumento directo; su valor es de contraste de temperamento para el lurker.
+La contrincante más hostil del hilo vegan-market. Dominancia social, no argumento. Mezcla UN punto real (Beyond Meat cayó ~99%) con muro de insulto personal. Busca humillar ante la galería, no convencer. Pozo sin fondo para argumento directo; su valor es de contraste de temperamento para el lurker. | 2026-09-19: volvió al post raíz del relativismo (Open Debates 3) con su registro de SUSTANCIA (no el pozo): concede sin querer la tesis del post ("those are human preferences, social rules and legal agreements" = convención + poder), re-decreta someone/something por fiat (estación #8 de julio, ya mapeada), y trae UNA pieza nueva: propiedad = protección legal / responsable identificable / "¿quieres que te quiten a tu mascota?" — la confusión título vs tutela. Cierra con sello ("personal opinion not logic"). Es la objeción más fuerte al eje propiedad que ha traído alguien: alto valor lurker.
 
 ## Tácticas
 
@@ -32,6 +32,12 @@ La contrincante más hostil del hilo vegan-market. Dominancia social, no argumen
   - _Contra:_ Art style explains the dream imagery, not the asymmetry in question: why the same flesh reads as horror raw and as normal once packaged and renamed food. Surrealism has nothing to do with a shrink-wrapped steak. The stylization answer re-describes the brushwork to avoid the question.
 - **Projection / It-is-Just-Subjective** (`projection_subjetiva`) — Dismisses moral or perceptual discomfort as the observer's own projection or as merely subjective, relocating the question inside the speaker instead of answering it. 'You are projecting YOUR discomfort.' 'The problem only exists for whoever is bothered.' 'It's subjective, so it's irrelevant.'
   - _Contra:_ Calling a reaction 'just yours' doesn't establish it's unwarranted — it relocates the question instead of addressing it. The content (a body force-fed flesh) does its work regardless of who is or isn't bothered. And 'it's subjective' cuts both ways: it can't show the discomfort is wrong, only that you don't share it.
+- **Property as Protection / Ownership-Guardianship Conflation** (`propiedad_como_proteccion`) — Defends the property status of animals by pointing at what it supposedly buys them: 'being property gives them legal protection — an identifiable person is responsible for feeding, housing, vet care. If they are nobody's property, who is accountable? Do you want your pet taken because someone else likes it?' Conflates OWNERSHIP (a title over a body: the right to use, sell, confine, kill) with GUARDIANSHIP (a duty toward someone). Used by relativists/sophists (Anna Angelika, 2026-09-19) as the one substantive reply to the property axis.
+  - _Contra:_ Separate title from duty. A parent is responsible for a child without owning them; a guardian answers for a ward without a right to sell or kill them — responsibility never required a title. Then show who the 'protection' of property actually runs to: property law protects the OWNER's interest in the asset (nobody may take my cow), while the same title is exactly what lets the owner confine, sell and kill her. The thing that keeps a pet from being 'taken' is a duty owed to the pet, which is guardianship, not ownership. Her own example cuts against her: what she wants for her dog is what the title denies the pig. Return to the axis: what makes it legitimate for a conscious being to exist as property — a duty toward someone needs no title; a title is what needs justifying.
+- **Begging the Question / Circular Reasoning** (`peticion_de_principio`) — Embeds the conclusion in a premise. 'Animals are food — that's the definition of an omnivore.' / 'Human life is far more valuable than animal life, therefore it's morally justified.' The conclusion (animals are food / human life outweighs animal) is assumed, not argued.
+  - _Contra:_ Name the circularity: 'That's the conclusion, not the evidence. You're assuming animals are food in order to prove it's OK to treat them as food.' Then ask what would justify the hierarchy: 'What makes human interests categorically outweigh animal interests? Intelligence? Sentience? Social bonds? Those criteria don't carve at human vs. animal the way you need them to.'
+- **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`) — Asserts that human life is categorically more valuable than animal life as a premise, without arguing for the criterion. 'Human life is far more valuable than animal life, therefore exploitation is justified.'
+  - _Contra:_ Ask for the criterion: 'What makes human interests categorically outweigh animal interests? Whatever criterion you give — sentience, capacity to suffer, social bonds, language — either also applies to some animals or fails to draw the line you need. The hierarchy needs an argument, not an assertion.'
 
 ## Counter-arsenal
 
@@ -72,6 +78,28 @@ La contrincante más hostil del hilo vegan-market. Dominancia social, no argumen
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `violencia-estructural-infraestructura` → _deploy as:_ marco
   - `respetar-no-es-opcion` → _deploy as:_ marco
+- **Begging the Question / Circular Reasoning** (`peticion_de_principio`)
+  - `esclavitud-paralelismo` → _deploy as:_ marco
+  - `domesticar-eufemismo-dominar` → _deploy as:_ marco
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
+  - `no-es-opcion-de-vida` → _deploy as:_ marco
+  - `filtro-especie-vs-individuo` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+- **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `esclavitud-paralelismo` → _deploy as:_ marco
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
+  - `explotacion-vs-esclavitud-lexico` → _deploy as:_ auto-disciplina-del-activista
+  - `vegano-por-un-dia-racista-entre-semana` → _deploy as:_ marco
+  - `paralelo-luchas-sociales-centrismos` → _deploy as:_ marco
+  - `filtro-especie-vs-individuo` → _deploy as:_ marco
+  - `libros-de-texto-niegan-sintiencia` → _deploy as:_ marco
+  - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
+  - `dos-caras-misma-moneda` → _deploy as:_ marco
+  - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
 
 ## Qué NO hacer
 
@@ -139,4 +167,8 @@ No responder al insulto en su nivel. No defender a Beyond Meat específicamente.
 - **Su jugada:** Peticion de principio pura (#8): DEFINE someone=human / something=non-human por decreto y de ahi concluye que los no-humanos son propiedad; declara el point of view irrelevante por fiat; sello insulto (your translator sucks / ask your AI friend). Cierra un arco de retirada: relativismo -> no-debo-justificar -> burden-flip falso -> antropomorfismo -> petitio.
 - **Nuestra respuesta:** Reencuadre de consolidacion: neutralizo el insulto via recibos (si fuera el traductor no podria rastrear todo tu arco tan limpio), re-mapeo toda su retirada mostrando memoria precisa (contra-gaslighting), desmonto el #8 (resuelve por vocabulario; irrelevant lo decreta; nowadays you cant own humans admite que es linea de estatus), e impongo la pregunta abolicionista con paciencia. Registro filo controlado.
 
-_Hilos: 27335635946059556, 27363745576581926_
+### Hilo `28500475619575577` — 2026-09-19 · outcome: **pending**
+- **Su jugada:** Comentario raíz en el post del relativismo (Open Debates 3), 1h tras publicarse, registro de SUSTANCIA: 'proves nothing about objective morality — those are human preferences, social rules and legal agreements'; 'consistently believe humans have rights… animals a different moral status'; someone/something por decreto otra vez; y la pieza nueva: 'animals being property gives them legal protection, identifiable person responsible… if they're not property, who's accountable? do you want your pet taken?'; cierre con sello 'personal opinion not logic'.
+- **Nuestra respuesta:** Reply etiquetada (245 palabras, filo, sustancia). Mostré que su primera frase es el post (convención + poder) y que su reply usa el escudo en un solo sentido otra vez: derechos para humanos, "different status" para la vaca, sin criterio — "different status" repite la diferencia, el título sigue sin argumento. Recibo de una línea: definir someone=human contesta por vocabulario, ya estuvimos ahí en julio. El eje del reply: título ≠ tutela — un padre responde sin poseer, un tutor no puede vender; la ley de propiedad protege el reclamo del dueño (nadie se lleva a tu vaca) y ese mismo título es lo que le deja confinarla, venderla y matarla; el perro que no quiere que le quiten está protegido por un deber hacia el perro, sin título; el cerdo tiene el título y ninguno de los deberes. Cierre: ¿qué hace legítimo que un ser consciente exista como propiedad?
+
+_Hilos: 27335635946059556, 27363745576581926, 28500475619575577_

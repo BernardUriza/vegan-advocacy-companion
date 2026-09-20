@@ -799,6 +799,15 @@
         "outcome": "silent",
         "outcome_evidence": "sin turnos suyos posteriores a la consolidación (extract fresco 2026-07-05)",
         "outcome_note": "algo-a-alguien: tras el reply de consolidación del arco (6 estaciones mapeadas) Anna no volvió (4d) — el retreat-cycle quedó visible y no abrió estación nueva en este hilo."
+      },
+      {
+        "thread_id": "28500475619575577",
+        "date": "2026-09-19",
+        "their_move": "Comentario raíz en el post del relativismo (Open Debates 3), 1h tras publicarse, registro de SUSTANCIA: 'proves nothing about objective morality — those are human preferences, social rules and legal agreements'; 'consistently believe humans have rights… animals a different moral status'; someone/something por decreto otra vez; y la pieza nueva: 'animals being property gives them legal protection, identifiable person responsible… if they're not property, who's accountable? do you want your pet taken?'; cierre con sello 'personal opinion not logic'.",
+        "our_reply_summary": "Reply etiquetada (245 palabras, filo, sustancia). Mostré que su primera frase es el post (convención + poder) y que su reply usa el escudo en un solo sentido otra vez: derechos para humanos, \"different status\" para la vaca, sin criterio — \"different status\" repite la diferencia, el título sigue sin argumento. Recibo de una línea: definir someone=human contesta por vocabulario, ya estuvimos ahí en julio. El eje del reply: título ≠ tutela — un padre responde sin poseer, un tutor no puede vender; la ley de propiedad protege el reclamo del dueño (nadie se lleva a tu vaca) y ese mismo título es lo que le deja confinarla, venderla y matarla; el perro que no quiere que le quiten está protegido por un deber hacia el perro, sin título; el cerdo tiene el título y ninguno de los deberes. Cierre: ¿qué hace legítimo que un ser consciente exista como propiedad?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "tactic": "propiedad_como_proteccion",
+        "outcome": "pending"
       }
     ]
   },
@@ -2878,6 +2887,15 @@
         "outcome": "goalpost",
         "outcome_evidence": "Wheeldon (2h): 'an animal does not need to be the property of a human, for an animal to be being exploited… Ps enjoy ya jail sentence.. The question remains, what makes it legitimate for an innocent conscious beings to be dismembered alive by farm machinery' — copy-paste idéntico al que puso en el post del relativismo.",
         "outcome_note": "algo-a-alguien-sujeto-derecho: tomar SU definición y terminarla (el cerdo ES la ganancia) no fue refutado — re-pegó el mismo párrafo de la definición, agregó 'enjoy ya jail sentence' y espejó la pregunta del título hacia crop deaths. Cuarta estación (re-aserción + insulto + espejo de pregunta). Plan de r2: silencio con la pregunta visible."
+      },
+      {
+        "thread_id": "28046483408306158",
+        "date": "2026-09-19",
+        "their_move": "Round 2 en MI post del relativismo (2h): copy-paste del mismo párrafo del hilo de Matt — 'an animal does not need to be the property of a human to be exploited', definición de exploitation estirada al uso de tierra, 'trillions of wild animals', tractores/'go drive a car around squashing people', 'Ps enjoy ya jail sentence', y espejo de mi pregunta de cierre hacia crop deaths.",
+        "our_reply_summary": "Reply etiquetada (204 palabras, filo paciente, ÚLTIMO round con él). Recibo: la analogía del abuso desapareció y el mismo párrafo está bajo el post de Matt, lo contesto una vez aquí. Su definición terminada con redacción nueva: en el campo el animal es afectado por el uso de tierra, en la granja el animal está dentro del reclamo (criado, retenido, vendido, dispuesto bajo título) — la ganancia ES ese cuerpo; afectar y poseer son relaciones distintas y ensanchar \"exploitation\" hace desaparecer el título dentro de la palabra. Su pregunta espejo contestada de frente: sí es objeción seria a cómo se manejan los campos, no da a nadie título sobre cerdos, y la ganadería está dentro del cargo (forraje, pastoreo, los cuerpos que posee). Cierre: la misma pregunta con paciencia + ¿existe la esclavitud necesaria? En el hilo de Matt: SILENCIO deliberado (cuarta estación).",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "tactic": "crop_deaths_flip",
+        "outcome": "pending"
       }
     ],
     "user_id": "1742478160",
