@@ -62,6 +62,11 @@ no 9222). Reusar la tab de FB / del coagent abierta; nunca abrir a ciegas.
 
 ## Instrucciones
 
+**Tope de frescura (regla [pipeline-freshness-cap], 2026-09-19): el pipeline NUNCA abre ni
+emite hilos/notifs/interacciones de más de 7 días** (techo 14; el hook deniega subirlo).
+`notif-scan` los saca a `stale`, `debt-sweep` los lista como VIEJOS sin extraer, `reflex
+emit` los omite. Un hilo viejo solo entra por replylink de Bernard (modo single).
+
 ### Etapa 0 — REFLEX: cerrar/re-juzgar el moat con LLM (antes de trabajo nuevo) · regla [outcome-reflex]
 - **Corre SIEMPRE primero, en CUALQUIER modo (single o lote).** Es el reflex de "qué
   tenemos hasta ahora": re-lee los hilos con interacciones `pending` o mal cerradas,

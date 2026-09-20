@@ -28,6 +28,11 @@ hace falta el MCP para resolver el `post_id`. **En prueba:** el path MCP (pasos
 caen al agrupado por `comment_id`). (Requiere `playwright-core` en `scripts/`; el
 Chrome de debug vivo en 9333 — diagnóstico del `~/CLAUDE.md` si no responde.)
 
+**Tope de frescura (regla [[pipeline-freshness-cap]], 2026-09-19):** `notif-scan` saca de
+`groups` a `stale` todo hilo cuya notif más fresca pase 7 días, y `debt-sweep` lista como
+VIEJOS —sin extraer— los hilos del moat cuya deuda abierta más reciente pase 7 días. Nada
+de eso se abre; un hilo viejo solo entra por replylink de Bernard.
+
 **0.5. DEBT SWEEP — la deuda real vive en el MOAT, no en las notificaciones.**
 `notif-scan` (paso 0) arranca desde el embudo de FB, y ese embudo es **lossy**: FB
 **agrega** ("and N others"), **vence** los avisos viejos, y un debate de hace días

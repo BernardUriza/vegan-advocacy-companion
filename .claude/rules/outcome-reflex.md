@@ -54,6 +54,12 @@ juicio (qué outcome, qué aprendió el framework) es del LLM = Claude**. Dos fa
      siguen libres.
 4. `validate-data.mjs` + (si `analysis/actors/` está despejado) `gen-dossiers.mjs`.
 
+## Tope de frescura del emit (2026-09-19)
+
+`reflex emit` omite las interacciones con `date` y los transcripts con `mtime` más viejos
+que 7 días ([[pipeline-freshness-cap]]) — de 59 packets a 2. Una interacción abierta de
+hace meses no se re-juzga: se cierra por edad (`close-outcomes` → `silent`).
+
 ## El guard de frescura sigue valiendo
 
 Una jugada sin respuesta del oponente y con reply-ancla reciente queda `pending`, no
