@@ -3,7 +3,7 @@ import { readFileSync } from 'fs';
 
 const CDP_URL = process.env.CDP_URL || 'http://127.0.0.1:9333';
 const CHAT_ID = '6a435111-a164-83e8-87ab-5f820921ecee';
-const master = readFileSync('../.coagent/master-prompt-batch.md', 'utf8');
+const master = readFileSync(process.argv[2] || '../.coagent/master-prompt-batch.md', 'utf8');
 
 const browser = await chromium.connectOverCDP(CDP_URL);
 let target = null;
