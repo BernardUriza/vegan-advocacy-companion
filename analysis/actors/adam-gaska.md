@@ -20,6 +20,8 @@ El arguer más peligroso por civil y por estructurado. No insulta, no naturaliza
   - _Contra:_ Concede what's true in the data, then expose the frame: 'Yes, Beyond Meat's stock crashed — that's one company with execution problems. The plant-based category grew 6% that year.' Don't match dump for dump. One incisive concede-and-reframe.
 - **Domestication = Mutualism / Commensalism** (`domestication_mutualism`) — Frames domesticated animal use as a symbiotic or commensal relationship ('ants exploit aphids', 'humans and domesticates have commensal relationships that benefit both'). Misuses biology terms — commensalism means one benefits, the other is unaffected; mutualism means both benefit. Neither describes farming-to-slaughter.
   - _Contra:_ Expose the error in the biology term itself: commensalism means one benefits, the other is neither helped nor harmed — not slaughtered. Real mutualism doesn't include one party's death as its purpose. The analogy collapses on its own terms.
+- **Demanda de Objetividad Moral / Falsabilidad del Fundamento** (`demanda_objetividad_moral`) — Concede la consistencia interna del marco y exige un escalon mas: que gives you confidence que tu umbral es una VERDAD MORAL OBJETIVA y no una intuicion profunda; y que contaria como evidencia de que tu juicio fundacional esta equivocado. Suele venir de buena fe (es la pregunta correcta) y observa, con razon, que muchos marcos internamente consistentes llegan a conclusiones distintas.
+  - _Contra:_ No huir al relativismo ni fingir acceso a hechos morales. Tres piezas: (1) La consistencia invocada no es interna-abstracta sino consistencia con los juicios que el interlocutor YA sostiene — eso no prueba verdad objetiva, pero SI elimina candidatos, que es todo lo que hace falta. (2) Simetria: el estandar que exige aplica igual a SU fundamento; si "es solo una intuicion" desarma mi posicion, desarma la suya. No para empatar, sino para mostrar que la demanda no puede ser unilateral. (3) Responder la pregunta de falsabilidad DE FRENTE, dando falsadores reales: si se mostrara que no hay nadie ahi (ningun punto de vista, ninguna experiencia); si se identificara un rasgo que vuelve licita la propiedad sobre un sujeto y estuvieramos dispuestos a aceptar sus consecuencias sobre los humanos que carecen de el; si la tutela fiduciaria y la propiedad no difirieran estructuralmente. Dar falsadores prueba que no es dogma y es lo mas fuerte que se puede hacer ante un interlocutor de buena fe.
 
 ## Counter-arsenal
 
@@ -37,6 +39,8 @@ El arguer más peligroso por civil y por estructurado. No insulta, no naturaliza
   - `domesticar-eufemismo-dominar` → _deploy as:_ marco
   - `violencia-estructural-infraestructura` → _deploy as:_ marco
   - `premisa-falsa-los-animales-nos-dan` → _deploy as:_ marco
+- **Demanda de Objetividad Moral / Falsabilidad del Fundamento** (`demanda_objetividad_moral`)
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
 
 ## Qué NO hacer
 
@@ -80,4 +84,4 @@ No usar 'consent' como argumento único (fácilmente deflectado a bebés/mascota
 - **Su jugada:** Concesion espontanea del TITULO dentro de una defensa de la reciprocidad: "it is not necessary to own livestock to have the type of relationship that exists between humans and livestock. Ownership is a human construct that only benefits humans as it protects our interests from those of other humans... Livestock are not aware of ownership and only have interest in being cared for." Sostiene que lo que el animal aporta al intercambio reciproco es su propio cuerpo como alimento, y cierra con burden-flip: que te justifica abogar por un animal con el que no tienes relacion, propones cuidarlo tu.
 - **Nuestra respuesta:** Le devolvi su propia concesion sin triunfalismo: si el titulo no hace falta para la relacion, y solo ordena reclamos entre humanos, entonces el titulo es exactamente lo que sobra — el cuidado apunta al animal, la propiedad apunta a reclamos humanos frente a otros humanos. La reciprocidad no lo salva: una relacion donde una parte fija terminos, duracion y uso final del cuerpo de la otra es algo distinto de un intercambio entre iguales, y su PROPIO marco ya reconoce que la dependencia no vuelve poseible a nadie (dijo que a los humanos dependientes que no pueden reciprocar los conservamos). El burden-flip se contesta corto: objetar un titulo no exige ser el titular alternativo.
 
-_Hilos: 27341517928804691, 27335635946059556_
+_Hilos: 27341517928804691, 27335635946059556, 28500475619575577_

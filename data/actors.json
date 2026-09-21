@@ -13,7 +13,9 @@
       "apelacion_normal",
       "reencuadre_veganismo_creencia",
       "peticion_de_principio",
-      "is_ought"
+      "is_ought",
+      "ecocentrismo_conservacion",
+      "relativismo_moral"
     ],
     "tone": "dismissive",
     "verdict": "audiencia",
@@ -21,7 +23,8 @@
     "what_not_to_do": "No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No hacer data-dump de nutrición cuando pide fuentes — eso es el pantano que quiere. Nombrar el goalpost-move brevemente y devolver al hueso moral.",
     "threads": [
       "27341517928804691",
-      "27335635946059556"
+      "27335635946059556",
+      "28500475619575577"
     ],
     "interactions": [
       {
@@ -107,7 +110,8 @@
     "threads": [
       "27341517928804691",
       "27335635946059556",
-      "27937793019177176"
+      "27937793019177176",
+      "28046483408306158"
     ],
     "interactions": [
       {
@@ -200,7 +204,8 @@
     "tactics": [
       "principio_escudo",
       "data_dump_selectivo",
-      "domestication_mutualism"
+      "domestication_mutualism",
+      "demanda_objetividad_moral"
     ],
     "tone": "civil",
     "verdict": "audiencia",
@@ -208,7 +213,8 @@
     "what_not_to_do": "No usar 'consent' como argumento único (fácilmente deflectado a bebés/mascotas). No entrar en definiciones de diccionario de 'exploitation' o 'benefit'. No hacer analogías humanas fuertes (esclavitud). No decir 'the animal would rather not exist'. Exponer la estructura, no las palabras.",
     "threads": [
       "27341517928804691",
-      "27335635946059556"
+      "27335635946059556",
+      "28500475619575577"
     ],
     "interactions": [
       {
@@ -807,7 +813,9 @@
         "our_reply_summary": "Reply etiquetada (245 palabras, filo, sustancia). Mostré que su primera frase es el post (convención + poder) y que su reply usa el escudo en un solo sentido otra vez: derechos para humanos, \"different status\" para la vaca, sin criterio — \"different status\" repite la diferencia, el título sigue sin argumento. Recibo de una línea: definir someone=human contesta por vocabulario, ya estuvimos ahí en julio. El eje del reply: título ≠ tutela — un padre responde sin poseer, un tutor no puede vender; la ley de propiedad protege el reclamo del dueño (nadie se lleva a tu vaca) y ese mismo título es lo que le deja confinarla, venderla y matarla; el perro que no quiere que le quiten está protegido por un deber hacia el perro, sin título; el cerdo tiene el título y ninguno de los deberes. Cierre: ¿qué hace legítimo que un ser consciente exista como propiedad?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "tactic": "propiedad_como_proteccion",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Anna (1d, reply a Bernard): 'The line falls where it does because we operate in self-interest… We decide what gets legal protection… If you don't want your dog taken, there needs to be a legally recognised ownership title… You're also conflating two completely different questions… We can impose duties on humans regarding animals without pretending animals have identical rights… You still have to make that argument rather than simply assuming your conclusion.'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho (título ≠ tutela): Anna DEFENDIÓ la estación en vez de migrar — sostiene que el título es lo que le permite recuperar a su perra (chip/registro) y concede la distinción deber/título en sus propias palabras ('we can impose duties on humans regarding animals without pretending animals have identical rights'). De paso concede la tesis del post: 'we operate in self-interest… we decide what gets legal protection… laws vary' = convención + poder, no justificación. Cierra con burden-flip ('you still have to make that argument rather than assuming your conclusion') y salida anunciada ('I'm not explaining this again'). Sin concesión, sin nueva estación: engaged de sustancia."
       }
     ]
   },
@@ -1041,7 +1049,8 @@
     "what_not_to_do": "No pelear 'vegan cult'. No tomarse personal el 'little Bernie'. Máximo: reencuadrar la objeción de formato en una línea, sin filo.",
     "threads": [
       "27363745576581926",
-      "27335635946059556"
+      "27335635946059556",
+      "28500475619575577"
     ],
     "interactions": [
       {
@@ -2895,7 +2904,9 @@
         "our_reply_summary": "Reply etiquetada (204 palabras, filo paciente, ÚLTIMO round con él). Recibo: la analogía del abuso desapareció y el mismo párrafo está bajo el post de Matt, lo contesto una vez aquí. Su definición terminada con redacción nueva: en el campo el animal es afectado por el uso de tierra, en la granja el animal está dentro del reclamo (criado, retenido, vendido, dispuesto bajo título) — la ganancia ES ese cuerpo; afectar y poseer son relaciones distintas y ensanchar \"exploitation\" hace desaparecer el título dentro de la palabra. Su pregunta espejo contestada de frente: sí es objeción seria a cómo se manejan los campos, no da a nadie título sobre cerdos, y la ganadería está dentro del cargo (forraje, pastoreo, los cuerpos que posee). Cierre: la misma pregunta con paciencia + ¿existe la esclavitud necesaria? En el hilo de Matt: SILENCIO deliberado (cuarta estación).",
         "framework": "algo-a-alguien-sujeto-derecho",
         "tactic": "crop_deaths_flip",
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "Wheeldon (1d, reply a Bernard): 'clearly both amount to exploitation. If exploitation of animals is immoral, then all acts of animal exploitation are immoral, not just the acts you select to suit your agenda. Exactly the same as if child abuse is immoral…' — cero mención del título, de afectar-vs-poseer ni de su propia definición.",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras el reply que terminó SU definición de exploitation (afectar ≠ poseer; su propia definición traza la línea), Wheeldon no defendió la definición ni tocó el título — regresó a la estación #1 (la analogía del abuso infantil, 'if exploitation is immoral then ALL acts are immoral') que él mismo había abandonado un turno antes. Ciclo cerrado: estación 1 → 2 → 1 sin defender ninguna. Decisión del 19-sep vigente: última vuelta, la pregunta queda visible sin contestar."
       }
     ],
     "user_id": "1742478160",
@@ -2908,5 +2919,27 @@
     "verdict": "sofista de crop-deaths; insulta a terceros cuando lo acorralan; probable sink tras 2 rounds | 2026-09-19 r3: pegó el MISMO párrafo (exploitation sin propiedad + crop deaths + \"enjoy ya jail sentence\") en dos hilos; cuarta estación con espejo de la pregunta del título. Sink confirmado: un round más en el post propio, silencio en el de Matt.",
     "register": "filo",
     "what_not_to_do": "NO abrir debate intramural en el post propio (regala la salida al carnista). NO responder rápido — paciencia. NO litigar la definición de veganismo. NO tratarlo como carnista (el draft del 19-sep que lo hacía se RETIRÓ sin postear). NO purismo de vuelta ni golpearse el pecho. El desarrollo largo va a un post propio sobre la cláusula, otro día. ROUND 2 (hilo de Matt): NO aceptar la atribución 'you find wild animals dying acceptable' — nadie dijo eso; verificar contra el arco y devolverla. NO competir en body-count de crop deaths. NO pelear su definición de exploitation — tomarla en serio y mostrar que describe la granja en su forma más pura (el animal ES la ganancia)."
+  },
+  {
+    "tactics": [
+      "relativismo_moral",
+      "apelacion_mayoria",
+      "naturalismo",
+      "libertarian_autonomy"
+    ],
+    "threads": [
+      "28354739720849914"
+    ],
+    "interactions": [],
+    "user_id": "100034907401951",
+    "name": "Hank Winters",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100034907401951/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Si camina, vuela o nada es comida (mascotas incluidas); la moral es subjetiva y a la mayoría no le importa; es supervivencia y la naturaleza lo hace; deja de forzar a otros.",
+    "analisis": "2026-09-21: único comentario raíz en la copia del post del relativismo en VEGANnoyance. Rant de baja elaboración que empaqueta cuatro esquives en uno: relativismo (\"very subjective\") que enuncia como regla universal (\"fair game\"), apelación a la mayoría (\"the majority dont give 2 shits about the moral part\"), naturalismo/supervivencia, y autonomía libertaria (\"stop trying to force others to agree\"). Registro burlón (Pokémon buffet). No es troll puro: hay tesis. Valor lurker: es la ÚNICA voz en ese post en ese grupo; sin respuesta el post queda con el dismissal como última palabra.",
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No pelear la ortografía ni el tono. No sermonear. No listar los cuatro esquives como catálogo. Una o dos líneas por pieza, corto, y la pregunta del título al cierre. No perseguir una segunda vuelta si responde con más de lo mismo."
   }
 ]

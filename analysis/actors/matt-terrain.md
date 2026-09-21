@@ -96,4 +96,4 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** Esquive definicional (give = yield a product, del diccionario) + sello-insulto: your entire premise is, again, based on ignorance.
 - **Nuestra respuesta:** Volteó su diccionario: yield a product es el sentido para cosas (campo/mina/máquina) — usarlo para ella re-enuncia el post (la gramática la archiva como sitio de producción). Un solo round (sink). Cerró con la pregunta del título.
 
-_Hilos: 27341517928804691, 27335635946059556, 27937793019177176_
+_Hilos: 27341517928804691, 27335635946059556, 27937793019177176, 28046483408306158_

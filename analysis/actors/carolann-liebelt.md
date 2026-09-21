@@ -28,6 +28,10 @@ Principal contrincante de Bernard. Su argumento MUTA cada vez que se le cierra u
   - _Contra:_ Name the circularity: 'That's the conclusion, not the evidence. You're assuming animals are food in order to prove it's OK to treat them as food.' Then ask what would justify the hierarchy: 'What makes human interests categorically outweigh animal interests? Intelligence? Sentience? Social bonds? Those criteria don't carve at human vs. animal the way you need them to.'
 - **Is-Ought / Naturalistic Fallacy** (`is_ought`) — Derives a moral 'should' from a descriptive 'is'. 'Biologically designed to eat meat' → 'therefore morally right to eat meat'. The jump from biological fact to moral justification needs justification that is never given.
   - _Contra:_ Separate is from should: 'That's what we can do — it says nothing about what we should do. We're also biologically capable of many things we consider wrong. Capability doesn't confer permission.'
+- **Ecocentrism / Conservation over the individual** (`ecocentrismo_conservacion`) — Shifts the moral unit from the sentient INDIVIDUAL to an abstraction — 'the species', 'the ecosystem', 'nature', 'the balance', 'stewardship of the herd' — so individual animals can be bred, managed or killed for 'conservation', 'ecological health' or 'the food web'. In vegan debates: 'farming is part of the ecosystem', 'we're stewards keeping the balance', 'it's the circle of life', 'invasive species must be culled'.
+  - _Contra:_ The moral unit is the concrete sentient individual, not the abstraction. A species or an ecosystem doesn't feel anything — only an individual does. 'Conservation' or 'balance' that kills a someone for the sake of a collective is the category error: you can't owe a debt to an abstraction by harming the only ones who can actually be harmed. And farming isn't an ecosystem in balance — it's a human industry of massive forced breeding, the opposite of leaving nature alone. Caring about a concrete animal who can suffer and caring about the environment aren't in tension; the conflict only appears once you let the abstraction outrank the individual who feels.
+- **Moral Relativism Shield** (`relativismo_moral`) — Uses 'morality is subjective' as a conversation-stopper rather than an argument. Does not engage with the specific moral claim. 'My morals are fine with me eating animals as morals are subjective.'
+  - _Contra:_ Point out that they don't actually live by pure moral relativism — they have lines they wouldn't cross even if others called them moral. 'You wouldn't say torturing a child is equally valid because morals are subjective.' One line, for the lurker. Don't overextend.
 
 ## Counter-arsenal
 
@@ -97,6 +101,18 @@ Principal contrincante de Bernard. Su argumento MUTA cada vez que se le cierra u
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
+- **Ecocentrism / Conservation over the individual** (`ecocentrismo_conservacion`)
+  - `filtro-especie-vs-individuo` → _deploy as:_ marco
+- **Moral Relativism Shield** (`relativismo_moral`)
+  - `antropoespecismo` → _deploy as:_ marco
+  - `violencia-especista` → _deploy as:_ marco
+  - `especidio` → _deploy as:_ marco (con cautela)
+  - `conocimiento-compromete` → _deploy as:_ marco
+  - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
+  - `dimension-politica-tomar-posicion` → _deploy as:_ marco
+  - `no-es-opcion-de-vida` → _deploy as:_ marco
+  - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
+  - `respetar-no-es-opcion` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -128,4 +144,4 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 - **Su jugada:** Tras desviar a nutricion/ultra-processed, deflexion I-didnt-run-away + ad-hominem (salud mental, jab del B12).
 - **Nuestra respuesta:** Conced nutricion/B12 de frente, nombr en una linea que la rama nutricional es el desvio, devolv al hueso: que justifica criar/poseer/matar a un sujeto (someone->property) cuando hay alternativa. Recuperacion tras un reply previo ego-driven.
 
-_Hilos: 27341517928804691, 27335635946059556_
+_Hilos: 27341517928804691, 27335635946059556, 28500475619575577_
