@@ -51,7 +51,7 @@ outward-facing se queda en Claude.
 
 **Handoff:** `notif-scan` → `openUrl` → `thread-extract` → (jugada decidida) →
 `comment-prepare` deja el draft en una tab viva → **Claude+MCP**: `list_pages` →
-`select_page` esa tab → re-leer el composer (Art. 2) → `press_key Enter`
+`select_page` esa tab → re-leer el composer (Art. 2) → envío atómico con `DESTINO` + Enter sintético (`press_key Enter` bloqueado por hook)
 (irreversible, GO de Bernard) → verificación histérica `div[role=article]` +
 screenshot. Todos los scripts **en prueba**: si un hilo sale raro (render nuevo de
 FB, deuda que no cuadra, target no encontrado), caer al path MCP de la regla como

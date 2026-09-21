@@ -224,7 +224,7 @@ async function main() {
           styleGate: { wordCount: gate.wordCount, softFlags: gate.softFlags || [] },
           check,
           nextStep: clean
-            ? 'Claude+MCP: list_pages → select_page la tab en esta url → re-leer el composer (Art. 2) → press_key Enter → verificación histérica por div[role=article] + screenshot. Si quedó mal, BORRAR.'
+            ? 'Claude+MCP: list_pages → select_page la tab en esta url → re-leer el composer (Art. 2) → envío atómico con DESTINO + Enter sintético en evaluate_script (press_key Enter bloqueado por hook; ver comment-post-and-verify PASO 5) → verificación histérica por div[role=article] + screenshot. Si quedó mal, BORRAR.'
             : 'REVISAR: el draft quedó sucio (mención pisada / orden / truncado). Limpiar (Meta+a→Backspace) y re-preparar, o caer al golden path MCP.',
         },
         null,

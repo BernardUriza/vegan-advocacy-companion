@@ -64,8 +64,11 @@ cd scripts && node comment-prepare.mjs \
 
 Devuelve `{ ok, check:{ mentionIntact, startsOK, endsOK, newlines, head, tail }, nextStep }`.
 Si `ok:true` → **Claude+MCP toma la tab viva** (`list_pages` → `select_page` la
-url) → re-lee el composer (Art. 2, no confío en el return del script) → `press_key
-Enter` (el acto irreversible) → verificación histérica (PASO 6 abajo). Si `ok:false`
+url) → re-lee el composer (Art. 2, no confío en el return del script) → envío
+atómico con `DESTINO` + Enter sintético (PASO 5 abajo; `press_key Enter` está
+bloqueado por hook) → verificación histérica (PASO 6 abajo). El `--body-file` de
+`comment-prepare` va con RUTA ABSOLUTA: el hook de procedencia resuelve rutas
+relativas desde otro cwd y falla cerrado. Si `ok:false`
 o el draft salió sucio → limpiar (`Meta+a`→`Backspace`) y re-preparar, o caer al
 path MCP de abajo. **En prueba** (render nuevo de FB, target no encontrado) → path
 MCP como fallback. El script respeta el firewall: el `Enter` NUNCA es suyo.
@@ -121,8 +124,23 @@ párrafos están en orden, `newlines` ≈ los del borrador. **Si quedó revuelto
 la mención pegada** (ej. `"…available?@<AUTHOR>"`): limpiar con teclado real —
 `press_key Meta+a` → `press_key Backspace` → repetir el paste del paso 3.
 
-**5. Enviar.** `press_key Enter`. (En el reply box de FB, Enter envía; los `\n` ya
-pegados son soft-breaks, no envían.)
+**5. Enviar — Enter SINTÉTICO dentro de UN `evaluate_script` con `DESTINO` (2026-09-21).**
+`press_key Enter` está BLOQUEADO por el hook global `rule18-outbound-send.sh` (un Enter
+real en llamada aparte esquiva el registro de destinatarios — regla
+`destino-lo-define-el-proyecto`). El envío va en una sola llamada atómica que, en este
+orden: (a) declara `const DESTINO = "<nombre exacto del grupo>"` (tiene que estar en
+`.claude/destinatarios-canales.txt`) y lo compara contra el link del grupo en la página
+(`titulo !== DESTINO` → abort); (b) asserta `location.href.startsWith('https://www.facebook.com/groups/<gid>/posts/<pid>/')`
+(el hook elige el registro de canales porque el script menciona `facebook.com`); (c)
+localiza el composer POR CONTENIDO (una frase ancla del draft), compara el ARREGLO de
+líneas no vacías contra el draft (N líneas, heads/tail — nunca por longitud); (d) relee el
+delta del hilo: aborta si ya existe `Reply by Bernard Uriza Orozco to <AUTHOR>'s …` con el
+contenido del draft (duplicado); (e) caret al final y
+`box.dispatchEvent(new KeyboardEvent('keydown', { key:'Enter', code:'Enter', keyCode:13, which:13, bubbles:true, cancelable:true }))`.
+Lexical lo consume (`defaultPrevented:true`) y publica; verificado 5/5 el 2026-09-21.
+Gotcha del hook: resuelve el registro desde el **cwd** — si el Bash anterior te dejó
+parado en `scripts/`, busca `scripts/.claude/…` y bloquea; regresa a la raíz antes.
+(Los `\n` ya pegados son soft-breaks, no envían.)
 
 **6. Verificación histérica (recibos).** En `evaluate_script`, el comentario
 posteado vive en **`div[role="article"]`** (NO en tag `<article>` — eso da falso

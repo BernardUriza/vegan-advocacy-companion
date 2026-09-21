@@ -96,4 +96,8 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** Esquive definicional (give = yield a product, del diccionario) + sello-insulto: your entire premise is, again, based on ignorance.
 - **Nuestra respuesta:** Volteó su diccionario: yield a product es el sentido para cosas (campo/mina/máquina) — usarlo para ella re-enuncia el post (la gramática la archiva como sitio de producción). Un solo round (sink). Cerró con la pregunta del título.
 
+### Hilo `28046483408306158` — 2026-09-21 · outcome: **pending**
+- **Su jugada:** Raíz en la copia de VS Meat Eaters: "I got a bit lost. Sorry. Is that the question? What makes it legitimate for a sentient being to exist as property??" — aclaración simple.
+- **Nuestra respuesta:** Mini-reply (82 palabras): sí, esa es la pregunta; reformulada sin el resto del post (qué justifica que un ser consciente, alguien con punto de vista, exista como propiedad de otro cuando nada lo requiere); comer carne y que algún animal se vea afectado quedan concedidos; el post es sobre el título mismo. Una vuelta y ya si sigue con crop deaths.
+
 _Hilos: 27341517928804691, 27335635946059556, 27937793019177176, 28046483408306158_

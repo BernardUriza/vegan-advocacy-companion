@@ -86,6 +86,14 @@
         "outcome": "escalated",
         "outcome_evidence": "CarolAnn: 'Sometimes I worry about your mental health and your ability to follow a conversation... I assume its a lack of B vitamins'",
         "outcome_note": "algo-a-alguien: la reply de recibos la empujó a puro ad-hominem clínico (salud mental / B vitamins) sin tocar el marco — sello-insulto para el lurker, argumento abandonado."
+      },
+      {
+        "thread_id": "28500475619575577",
+        "date": "2026-09-21",
+        "their_move": "Raíz: \"Humans are omnivores so eating animals is not immoral. We don't have to justify our biology or nutritional needs. Humans are part of the ecosystem, and that ecosystem eats each other.\" + bajo Anna: \"Even your examples are subjective, though.\"",
+        "our_reply_summary": "Concedo biología entera (nadie pidió justificar la digestión); nada en el ecosistema tiene título (el lobo no cría/registra/vende al venado; la granja es el único lugar donde el animal es propiedad antes de ser comida); su \"subjetivo\" se apaga con su propia biología (hecho) vs el punto de vista del cerdo (opinión); ¿pueden comer carne? obvio; ¿qué legitima la propiedad?",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "outcome": "pending"
       }
     ]
   },
@@ -189,6 +197,14 @@
         "date": "2026-08-08",
         "their_move": "Esquive definicional (give = yield a product, del diccionario) + sello-insulto: your entire premise is, again, based on ignorance.",
         "our_reply_summary": "Volteó su diccionario: yield a product es el sentido para cosas (campo/mina/máquina) — usarlo para ella re-enuncia el post (la gramática la archiva como sitio de producción). Un solo round (sink). Cerró con la pregunta del título.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "28046483408306158",
+        "date": "2026-09-21",
+        "their_move": "Raíz en la copia de VS Meat Eaters: \"I got a bit lost. Sorry. Is that the question? What makes it legitimate for a sentient being to exist as property??\" — aclaración simple.",
+        "our_reply_summary": "Mini-reply (82 palabras): sí, esa es la pregunta; reformulada sin el resto del post (qué justifica que un ser consciente, alguien con punto de vista, exista como propiedad de otro cuando nada lo requiere); comer carne y que algún animal se vea afectado quedan concedidos; el post es sobre el título mismo. Una vuelta y ya si sigue con crop deaths.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }
@@ -306,6 +322,14 @@
         "outcome": "conceded",
         "outcome_evidence": "it is not necessary to own livestock to have the type of relationship that exists between humans and livestock. Ownership is a human construct that only benefits humans as it protects our interests from those of other humans.",
         "outcome_note": "ORO. Adam concedió el título espontáneamente dentro de su defensa de reciprocidad: la relación humano-livestock no necesita propiedad, y 'ownership is a human construct that only benefits humans'. El framework algo-a-alguien-sujeto-derecho aterrizó en el punto exacto (el título carece de justificación moral); él sigue defendiendo el USO por reciprocidad, pero el TÍTULO quedó concedido. Interlocutor analítico de buena fe — segunda veta de oro en ese perfil (como Bowman)."
+      },
+      {
+        "thread_id": "28500475619575577",
+        "date": "2026-09-21",
+        "their_move": "Comentario raíz en el post del relativismo: \"What are you willing to do make your idea of morality objective? Are you willing to be the moral authority? What consequences are you going to mete out?\" — demanda de objetividad + desplazamiento de justificación a ejecución.",
+        "our_reply_summary": "El post reclama dos cosas chicas (el escudo se apaga con la pérdida propia; \"we decided\" = poder), ninguna necesita autoridad; consecuencias cero, la única es poner una razón junto al título; consistencia con sus propios juicios (humanos que no negocian/razonan no son poseíbles → esos rasgos no hacen el trabajo; falta el que sí, con sus consecuencias); tres falsadores explícitos; simetría del estándar; recibo de julio (el título ordena reclamos entre humanos) en una línea; vuelta a la pregunta.",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "outcome": "pending"
       }
     ]
   },
@@ -816,6 +840,14 @@
         "outcome": "engaged",
         "outcome_evidence": "Anna (1d, reply a Bernard): 'The line falls where it does because we operate in self-interest… We decide what gets legal protection… If you don't want your dog taken, there needs to be a legally recognised ownership title… You're also conflating two completely different questions… We can impose duties on humans regarding animals without pretending animals have identical rights… You still have to make that argument rather than simply assuming your conclusion.'",
         "outcome_note": "algo-a-alguien-sujeto-derecho (título ≠ tutela): Anna DEFENDIÓ la estación en vez de migrar — sostiene que el título es lo que le permite recuperar a su perra (chip/registro) y concede la distinción deber/título en sus propias palabras ('we can impose duties on humans regarding animals without pretending animals have identical rights'). De paso concede la tesis del post: 'we operate in self-interest… we decide what gets legal protection… laws vary' = convención + poder, no justificación. Cierra con burden-flip ('you still have to make that argument rather than assuming your conclusion') y salida anunciada ('I'm not explaining this again'). Sin concesión, sin nueva estación: engaged de sustancia."
+      },
+      {
+        "thread_id": "28500475619575577",
+        "date": "2026-09-21",
+        "their_move": "Round 2 (reply a mi reply, 1d): \"the line falls where it does because we operate in self-interest… we decide what gets legal protection… laws vary\"; la perra prueba su punto (chip + registro = título para recuperarla); me acusa de conflar protección con estatus idéntico; \"we can impose duties on humans regarding animals without identical rights\"; burden-flip \"you still have to make that argument\"; \"I'm not explaining this again\".",
+        "our_reply_summary": "Último round con ella en este hilo: su primer párrafo es la tesis del post (decisión + poder explica el título, no lo justifica); concedo el mecanismo legal vigente (la ley empaqueta responsabilidad dentro de propiedad) y lo separo de justificación con padre/tutor (recuperan al dependiente sin derecho a venderlo); su propia frase deber-sin-derechos-idénticos traza la línea deber/título; las dos respuestas dadas explican el sistema, ninguna es razón para el título; pregunta plantada y visible.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ]
   },
@@ -2930,7 +2962,16 @@
     "threads": [
       "28354739720849914"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "thread_id": "28354739720849914",
+        "date": "2026-09-21",
+        "their_move": "Único raíz en la copia de VEGANnoyance: \"if it walks flys or swims its fair game… includes all the precious pets… very subjective… the majority dont give 2 shits about the moral part its survival… in nature… stop trying to force others to agree\".",
+        "our_reply_summary": "\"Subjetivo\" y en la misma frase una regla para todos = el escudo de un solo sentido; la mayoría es un conteo (el post ya concede que el poder decide; no convierte el título en razón); una pregunta no fuerza nada (\"do it\": lo hago); las mascotas: casi todos saben que un perro es alguien, el switch a \"algo\" por especie es lo que hay que justificar; pregunta al cierre. 169 palabras, sin sermón.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
     "user_id": "100034907401951",
     "name": "Hank Winters",
     "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100034907401951/",
