@@ -78,6 +78,8 @@ La contrincante más hostil del hilo vegan-market. Dominancia social, no argumen
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `violencia-estructural-infraestructura` → _deploy as:_ marco
   - `respetar-no-es-opcion` → _deploy as:_ marco
+- **Property as Protection / Ownership-Guardianship Conflation** (`propiedad_como_proteccion`)
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
 - **Begging the Question / Circular Reasoning** (`peticion_de_principio`)
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `domesticar-eufemismo-dominar` → _deploy as:_ marco

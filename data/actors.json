@@ -103,7 +103,9 @@
         "their_move": "Goalpost a might-makes-right: If any other animal had the capacity to capture and farm animals, they would. Our superior intelligence... apex species... We have no moral obligation to stop eating meat.",
         "our_reply_summary": "Concedí el hecho (más poder/inteligencia), nombré el salto de goalpost (biología→ecosistema→dominancia), y clavé que el poder explica el resultado, no funda el título (is/ought). Cerré con la pregunta del post.",
         "framework": "dominacion-no-es-superioridad-moral",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "tx 2026-09-25: último turno de CarolAnn es el de 'apex species' (2d), anterior a mi reply.",
+        "outcome_note": "dominacion-no-es-superioridad-moral: reply de poder-explica/no-justifica publicado hace ~23h; sin respuesta aún, dentro de ventana."
       }
     ]
   },
@@ -113,13 +115,14 @@
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/100018422793817/",
     "bando": "anti-vegan",
     "postura_nucleo": "No existe consumo sin daño; si todo daña, el veganismo no es moralmente superior.",
-    "analisis": "El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qué comes, vistes o habitas que NO dañe'. Sócrates hostil: pregunta para tender trampa, no para aprender. Seco, retórico, no insultante. Argumentativo de verdad — busca pelea dialéctica. No muerde los argumentos de Bernard; los elude. SINK CONFIRMADO (2026-06-20): corre el MISMO guion en cada hilo (tu-quoque / goalpost / hipocresia) y NUNCA concede; tras nombrarle limpio la evasion colapsa al loop terminal \"my statement stands, you are avoiding/lying\" con cero argumento nuevo. Medido en 3 hilos el mismo dia (mercado, especismo, hipocresia): el primer intercambio limpio educa al lurker; del 2do round en adelante el retorno es cero.",
+    "analisis": "El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qué comes, vistes o habitas que NO dañe'. Sócrates hostil: pregunta para tender trampa, no para aprender. Seco, retórico, no insultante. Argumentativo de verdad — busca pelea dialéctica. No muerde los argumentos de Bernard; los elude. SINK CONFIRMADO (2026-06-20): corre el MISMO guion en cada hilo (tu-quoque / goalpost / hipocresia) y NUNCA concede; tras nombrarle limpio la evasion colapsa al loop terminal \"my statement stands, you are avoiding/lying\" con cero argumento nuevo. Medido en 3 hilos el mismo dia (mercado, especismo, hipocresia): el primer intercambio limpio educa al lurker; del 2do round en adelante el retorno es cero. 2026-09-25: en el post del relativismo (copia VS Meat Eaters) pasó de \"me perdí\" a CONTESTAR el título con una razón: \"what justifies it is it makes food collection/supply easier, nothing wrong with it\". Primer turno de buena fe medible; merece una vuelta respetuosa, no filo.",
     "tactics": [
       "futility_no_clean_option",
       "socrates_hostil",
       "crop_deaths_flip",
       "data_dump_selectivo",
-      "presentismo"
+      "presentismo",
+      "conveniencia_como_justificacion"
     ],
     "tone": "hostile_rhetorical",
     "verdict": "sink_un_round",
@@ -216,7 +219,9 @@
         "their_move": "Raíz en la copia de VS Meat Eaters: \"I got a bit lost. Sorry. Is that the question? What makes it legitimate for a sentient being to exist as property??\" — aclaración simple.",
         "our_reply_summary": "Mini-reply (82 palabras): sí, esa es la pregunta; reformulada sin el resto del post (qué justifica que un ser consciente, alguien con punto de vista, exista como propiedad de otro cuando nada lo requiere); comer carne y que algún animal se vea afectado quedan concedidos; el post es sobre el título mismo. Una vuelta y ya si sigue con crop deaths.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "3d: 'what justifies it, is it make the food collection/supply easier. And there's nothing wrong with it.'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: la pregunta limpia aterrizó — Matt dejó de perderse y CONTESTÓ el título con una razón (conveniencia del abasto). Primer interlocutor que pone una justificación sobre la mesa en vez de esquivarla. No conceded."
       }
     ]
   },
@@ -339,7 +344,9 @@
         "their_move": "Comentario raíz en el post del relativismo: \"What are you willing to do make your idea of morality objective? Are you willing to be the moral authority? What consequences are you going to mete out?\" — demanda de objetividad + desplazamiento de justificación a ejecución.",
         "our_reply_summary": "El post reclama dos cosas chicas (el escudo se apaga con la pérdida propia; \"we decided\" = poder), ninguna necesita autoridad; consecuencias cero, la única es poner una razón junto al título; consistencia con sus propios juicios (humanos que no negocian/razonan no son poseíbles → esos rasgos no hacen el trabajo; falta el que sí, con sus consecuencias); tres falsadores explícitos; simetría del estándar; recibo de julio (el título ordena reclamos entre humanos) en una línea; vuelta a la pregunta.",
         "framework": "sobreposicion-de-especies-criterio-leido",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "tx 2026-09-25: ningún turno de Adam posterior a mi reply.",
+        "outcome_note": "sobreposicion-de-especies-criterio-leido: le ofrecí qué me movería + recordatorio de su concesión de julio; no regresó en 3-4 días."
       }
     ]
   },
@@ -867,7 +874,9 @@
         "their_move": "Burden-flip / retreat: I already answered. We do not owe you a philosophical justification... animals are property because we humans decided that. (+ pieza fuerte propiedad=protección)",
         "our_reply_summary": "El burden-flip ES la tesis del post (una decisión nombra al que tuvo el poder, no la justifica); contra propiedad=protección, distinción título vs tutela: responder por alguien (padre/tutor) no exige poseerlo. UNA vuelta, back al título.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "tx 2026-09-25: último turno de Anna es el 'we decided that' (2d).",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: reply título-vs-tutela hace ~23h; sin respuesta aún."
       }
     ]
   },
@@ -2989,7 +2998,9 @@
         "their_move": "Único raíz en la copia de VEGANnoyance: \"if it walks flys or swims its fair game… includes all the precious pets… very subjective… the majority dont give 2 shits about the moral part its survival… in nature… stop trying to force others to agree\".",
         "our_reply_summary": "\"Subjetivo\" y en la misma frase una regla para todos = el escudo de un solo sentido; la mayoría es un conteo (el post ya concede que el poder decide; no convierte el título en razón); una pregunta no fuerza nada (\"do it\": lo hago); las mascotas: casi todos saben que un perro es alguien, el switch a \"algo\" por especie es lo que hay que justificar; pregunta al cierre. 169 palabras, sin sermón.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "silent",
+        "outcome_evidence": "tx 2026-09-25 (complete:true) solo trae los turnos de Linda y míos.",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: sin respuesta; su raíz ya no aparece en el hilo re-extraído (borrada o oculta)."
       }
     ],
     "user_id": "100034907401951",
@@ -3006,7 +3017,11 @@
   {
     "tactics": [
       "insulto_ad_hominem",
-      "relativismo_moral"
+      "relativismo_moral",
+      "negacion_punto_de_vista",
+      "naturalismo",
+      "apelacion_normal",
+      "species_hierarchy"
     ],
     "threads": [],
     "interactions": [
@@ -3016,7 +3031,9 @@
         "their_move": "Jab patologizante (insult-seal): The real question is: Did the psychosis make vegans go vegan, or did the veganism cause the psychosis?",
         "our_reply_summary": "No mordí el bait; nombré (frase fresca, no que-es-una-etiqueta) que patologizar al que pregunta reemplaza la respuesta; devolví la pregunta exacta del post. Corto.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "escalated",
+        "outcome_evidence": "17h: 'You just keep proving my point that you ARE delusional... Animals do not have a PoV. Humans have dominion over them... Veganism is a cult'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: no mordí el bait y devolví la pregunta; ella subió el sello (delusional/cult/psychosis) pero TRAJO sustancia nueva: naturalismo + 'animals do not have a PoV' + dominion. El insulto escaló; el argumento se destapó."
       }
     ],
     "user_id": "100007626876163",
@@ -3024,7 +3041,7 @@
     "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100007626876163/",
     "bando": "anti-vegan",
     "postura_nucleo": "El veganismo es patología; los veganos ya están psicóticos o la dieta los enloqueció.",
-    "analisis": "2026-09-24: drive-by en el post del relativismo (copia VEGANnoyance). Un solo jab quiásmico patologizante: \"Did the psychosis make vegans go vegan, or did the veganism cause the psychosis?\". No engancha el argumento — lo esquiva patologizando al que pregunta. Es un sello PARA EL LURKER (le ahorra pensar el problema moral tildando de loco al vegano). Un solo turno; veredicto provisional.",
+    "analisis": "2026-09-24: drive-by en el post del relativismo (copia VEGANnoyance). Un solo jab quiásmico patologizante: \"Did the psychosis make vegans go vegan, or did the veganism cause the psychosis?\". No engancha el argumento — lo esquiva patologizando al que pregunta. Es un sello PARA EL LURKER (le ahorra pensar el problema moral tildando de loco al vegano). Un solo turno; veredicto provisional. 2026-09-25: round 2 (17h) escaló el sello (\"delusional / cult / psychosis is mandatory\") pero trajo sustancia: naturalismo+normal (\"no justification needed for what is normal and natural\"), dominion, y la pieza clave \"Animals do not have a PoV\" — la primera respuesta real al título (niega al sujeto). Argumento+insulto → contestar el argumento, una línea al sello.",
     "tone": "dismissive",
     "verdict": "audiencia",
     "register": "filo",

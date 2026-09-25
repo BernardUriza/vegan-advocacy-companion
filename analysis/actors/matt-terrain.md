@@ -10,7 +10,7 @@
 
 ## Análisis
 
-El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qué comes, vistes o habitas que NO dañe'. Sócrates hostil: pregunta para tender trampa, no para aprender. Seco, retórico, no insultante. Argumentativo de verdad — busca pelea dialéctica. No muerde los argumentos de Bernard; los elude. SINK CONFIRMADO (2026-06-20): corre el MISMO guion en cada hilo (tu-quoque / goalpost / hipocresia) y NUNCA concede; tras nombrarle limpio la evasion colapsa al loop terminal "my statement stands, you are avoiding/lying" con cero argumento nuevo. Medido en 3 hilos el mismo dia (mercado, especismo, hipocresia): el primer intercambio limpio educa al lurker; del 2do round en adelante el retorno es cero.
+El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qué comes, vistes o habitas que NO dañe'. Sócrates hostil: pregunta para tender trampa, no para aprender. Seco, retórico, no insultante. Argumentativo de verdad — busca pelea dialéctica. No muerde los argumentos de Bernard; los elude. SINK CONFIRMADO (2026-06-20): corre el MISMO guion en cada hilo (tu-quoque / goalpost / hipocresia) y NUNCA concede; tras nombrarle limpio la evasion colapsa al loop terminal "my statement stands, you are avoiding/lying" con cero argumento nuevo. Medido en 3 hilos el mismo dia (mercado, especismo, hipocresia): el primer intercambio limpio educa al lurker; del 2do round en adelante el retorno es cero. 2026-09-25: en el post del relativismo (copia VS Meat Eaters) pasó de "me perdí" a CONTESTAR el título con una razón: "what justifies it is it makes food collection/supply easier, nothing wrong with it". Primer turno de buena fe medible; merece una vuelta respetuosa, no filo.
 
 ## Tácticas
 
@@ -24,6 +24,8 @@ El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qu
   - _Contra:_ Concede what's true in the data, then expose the frame: 'Yes, Beyond Meat's stock crashed — that's one company with execution problems. The plant-based category grew 6% that year.' Don't match dump for dump. One incisive concede-and-reframe.
 - **Presentism / Dismiss the Trend** (`presentismo`) — Dismisses projections or trends by insisting only the present moment counts. 'We live in the present, not 2035.' Used to wave away measured trajectories without engaging them.
   - _Contra:_ A trend isn't refuted by saying 'but it's not the future yet.' The trajectory is measured in the present — that's the point. Dismissing tomorrow doesn't change today's direction.
+- **Convenience as Justification** (`conveniencia_como_justificacion`) — Answers the property question with the owner's convenience: "what justifies it is that it makes food collection/supply easier, and there is nothing wrong with it." Distinct from taste (preferencia_gusto): it names a systemic benefit to the owner as the reason for the title. Rare and valuable — it is an actual answer to the question instead of a dodge (Matt Terrain, 2026-09-22).
+  - _Contra:_ Credit the straight answer first (it is more than most give). Grant that convenience is real and explains why the system is built on the title: owning the animal makes breeding, moving and selling her simple. Then test whether convenience-for-the-owner can carry a title over SOMEONE: for a thing it can (convenience is all a chair needs); over a being with a point of view, the owner's convenience is the reason every title over a subject has been defended with, and it describes the owner's gain, never a reason the owned one could accept. Back to the question: does easier-for-us make the title legitimate over someone with a point of view of her own?
 
 ## Counter-arsenal
 
@@ -57,6 +59,8 @@ El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qu
 - **Presentism / Dismiss the Trend** (`presentismo`)
   - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
   - `momento-truman-traicion-de-los-tuyos` → _deploy as:_ marco
+- **Convenience as Justification** (`conveniencia_como_justificacion`)
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -96,7 +100,7 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** Esquive definicional (give = yield a product, del diccionario) + sello-insulto: your entire premise is, again, based on ignorance.
 - **Nuestra respuesta:** Volteó su diccionario: yield a product es el sentido para cosas (campo/mina/máquina) — usarlo para ella re-enuncia el post (la gramática la archiva como sitio de producción). Un solo round (sink). Cerró con la pregunta del título.
 
-### Hilo `28046483408306158` — 2026-09-21 · outcome: **pending**
+### Hilo `28046483408306158` — 2026-09-21 · outcome: **engaged**
 - **Su jugada:** Raíz en la copia de VS Meat Eaters: "I got a bit lost. Sorry. Is that the question? What makes it legitimate for a sentient being to exist as property??" — aclaración simple.
 - **Nuestra respuesta:** Mini-reply (82 palabras): sí, esa es la pregunta; reformulada sin el resto del post (qué justifica que un ser consciente, alguien con punto de vista, exista como propiedad de otro cuando nada lo requiere); comer carne y que algún animal se vea afectado quedan concedidos; el post es sobre el título mismo. Una vuelta y ya si sigue con crop deaths.
 
