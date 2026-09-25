@@ -101,4 +101,8 @@ No morder el bait de la psicosis, no sonar herido (el golpe pega), no defender e
 - **Su jugada:** Jab patologizante (insult-seal): The real question is: Did the psychosis make vegans go vegan, or did the veganism cause the psychosis?
 - **Nuestra respuesta:** No mordí el bait; nombré (frase fresca, no que-es-una-etiqueta) que patologizar al que pregunta reemplaza la respuesta; devolví la pregunta exacta del post. Corto.
 
+### Hilo `28354739720849914` — 2026-09-25 · outcome: **pending**
+- **Su jugada:** Escaló el sello (delusional / cult / psychosis) + naturalismo/normal + dominion + Animals do not have a PoV.
+- **Nuestra respuesta:** Una línea al insulto; tomé "no PoV" como la primera respuesta real (si no hay nadie, el título es sobre una cosa); punto de vista en llano (perro que se encoge ante la mano que la golpeó, cerdo que pelea por no subir al camión); concedí normal/natural en una línea; pregunta del título.
+
 _Hilos: —_

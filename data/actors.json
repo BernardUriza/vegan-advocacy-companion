@@ -222,6 +222,14 @@
         "outcome": "engaged",
         "outcome_evidence": "3d: 'what justifies it, is it make the food collection/supply easier. And there's nothing wrong with it.'",
         "outcome_note": "algo-a-alguien-sujeto-derecho: la pregunta limpia aterrizó — Matt dejó de perderse y CONTESTÓ el título con una razón (conveniencia del abasto). Primer interlocutor que pone una justificación sobre la mesa en vez de esquivarla. No conceded."
+      },
+      {
+        "thread_id": "28046483408306158",
+        "date": "2026-09-25",
+        "their_move": "Contestó el título con una razón: what justifies it, is it make the food collection/supply easier. And there is nothing wrong with it.",
+        "our_reply_summary": "Reconocí la respuesta derecha (buena fe); concedí que la conveniencia explica por qué existe el título; probé si carga el título: para una cosa basta, sobre alguien con punto de vista la razón queda toda del lado del dueño. Cerré: ¿hacer el abasto más fácil legitima que un ser sintiente exista como propiedad?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ]
   },
@@ -3034,6 +3042,14 @@
         "outcome": "escalated",
         "outcome_evidence": "17h: 'You just keep proving my point that you ARE delusional... Animals do not have a PoV. Humans have dominion over them... Veganism is a cult'",
         "outcome_note": "algo-a-alguien-sujeto-derecho: no mordí el bait y devolví la pregunta; ella subió el sello (delusional/cult/psychosis) pero TRAJO sustancia nueva: naturalismo + 'animals do not have a PoV' + dominion. El insulto escaló; el argumento se destapó."
+      },
+      {
+        "thread_id": "28354739720849914",
+        "date": "2026-09-25",
+        "their_move": "Escaló el sello (delusional / cult / psychosis) + naturalismo/normal + dominion + Animals do not have a PoV.",
+        "our_reply_summary": "Una línea al insulto; tomé \"no PoV\" como la primera respuesta real (si no hay nadie, el título es sobre una cosa); punto de vista en llano (perro que se encoge ante la mano que la golpeó, cerdo que pelea por no subir al camión); concedí normal/natural en una línea; pregunta del título.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "user_id": "100007626876163",
