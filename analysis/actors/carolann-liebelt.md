@@ -144,8 +144,12 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 - **Su jugada:** Tras desviar a nutricion/ultra-processed, deflexion I-didnt-run-away + ad-hominem (salud mental, jab del B12).
 - **Nuestra respuesta:** Conced nutricion/B12 de frente, nombr en una linea que la rama nutricional es el desvio, devolv al hueso: que justifica criar/poseer/matar a un sujeto (someone->property) cuando hay alternativa. Recuperacion tras un reply previo ego-driven.
 
-### Hilo `28500475619575577` — 2026-09-21 · outcome: **pending**
+### Hilo `28500475619575577` — 2026-09-21 · outcome: **goalpost**
 - **Su jugada:** Raíz: "Humans are omnivores so eating animals is not immoral. We don't have to justify our biology or nutritional needs. Humans are part of the ecosystem, and that ecosystem eats each other." + bajo Anna: "Even your examples are subjective, though."
 - **Nuestra respuesta:** Concedo biología entera (nadie pidió justificar la digestión); nada en el ecosistema tiene título (el lobo no cría/registra/vende al venado; la granja es el único lugar donde el animal es propiedad antes de ser comida); su "subjetivo" se apaga con su propia biología (hecho) vs el punto de vista del cerdo (opinión); ¿pueden comer carne? obvio; ¿qué legitima la propiedad?
+
+### Hilo `28500475619575577` — 2026-09-24 · outcome: **pending**
+- **Su jugada:** Goalpost a might-makes-right: If any other animal had the capacity to capture and farm animals, they would. Our superior intelligence... apex species... We have no moral obligation to stop eating meat.
+- **Nuestra respuesta:** Concedí el hecho (más poder/inteligencia), nombré el salto de goalpost (biología→ecosistema→dominancia), y clavé que el poder explica el resultado, no funda el título (is/ought). Cerré con la pregunta del post.
 
 _Hilos: 27341517928804691, 27335635946059556, 28500475619575577_

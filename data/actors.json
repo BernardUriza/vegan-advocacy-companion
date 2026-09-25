@@ -93,6 +93,16 @@
         "their_move": "Raíz: \"Humans are omnivores so eating animals is not immoral. We don't have to justify our biology or nutritional needs. Humans are part of the ecosystem, and that ecosystem eats each other.\" + bajo Anna: \"Even your examples are subjective, though.\"",
         "our_reply_summary": "Concedo biología entera (nadie pidió justificar la digestión); nada en el ecosistema tiene título (el lobo no cría/registra/vende al venado; la granja es el único lugar donde el animal es propiedad antes de ser comida); su \"subjetivo\" se apaga con su propia biología (hecho) vs el punto de vista del cerdo (opinión); ¿pueden comer carne? obvio; ¿qué legitima la propiedad?",
         "framework": "dominacion-no-es-superioridad-moral",
+        "outcome": "goalpost",
+        "outcome_evidence": "Round 2 (2d): 'If any other animal had the capacity to capture and farm animals, they would. Our superior intelligence... makes us the apex species... We have no moral obligation to stop eating meat.'",
+        "outcome_note": "dominacion-no-es-superioridad-moral: concedí la biología entera; ella abandonó 'omnivore' y saltó a 'apex species / superior intelligence / no moral obligation' — movió el eje de biología a might-makes-right sin defender el anterior. No conceded."
+      },
+      {
+        "thread_id": "28500475619575577",
+        "date": "2026-09-24",
+        "their_move": "Goalpost a might-makes-right: If any other animal had the capacity to capture and farm animals, they would. Our superior intelligence... apex species... We have no moral obligation to stop eating meat.",
+        "our_reply_summary": "Concedí el hecho (más poder/inteligencia), nombré el salto de goalpost (biología→ecosistema→dominancia), y clavé que el poder explica el resultado, no funda el título (is/ought). Cerré con la pregunta del post.",
+        "framework": "dominacion-no-es-superioridad-moral",
         "outcome": "pending"
       }
     ]
@@ -846,6 +856,16 @@
         "date": "2026-09-21",
         "their_move": "Round 2 (reply a mi reply, 1d): \"the line falls where it does because we operate in self-interest… we decide what gets legal protection… laws vary\"; la perra prueba su punto (chip + registro = título para recuperarla); me acusa de conflar protección con estatus idéntico; \"we can impose duties on humans regarding animals without identical rights\"; burden-flip \"you still have to make that argument\"; \"I'm not explaining this again\".",
         "our_reply_summary": "Último round con ella en este hilo: su primer párrafo es la tesis del post (decisión + poder explica el título, no lo justifica); concedo el mecanismo legal vigente (la ley empaqueta responsabilidad dentro de propiedad) y lo separo de justificación con padre/tutor (recuperan al dependiente sin derecho a venderlo); su propia frase deber-sin-derechos-idénticos traza la línea deber/título; las dos respuestas dadas explican el sistema, ninguna es razón para el título; pregunta plantada y visible.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "goalpost",
+        "outcome_evidence": "Round 3 (2d): 'We don't owe you a philosophical justification for why humans have chosen to treat animals as property... So yes, animals are property because we humans decided that.'",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras pedirle el criterio, se retiró al burden-flip 'I already answered / we don't owe you a philosophical justification / animals are property because we decided'. Estación clásica de su retreat-cycle. No conceded."
+      },
+      {
+        "thread_id": "28500475619575577",
+        "date": "2026-09-24",
+        "their_move": "Burden-flip / retreat: I already answered. We do not owe you a philosophical justification... animals are property because we humans decided that. (+ pieza fuerte propiedad=protección)",
+        "our_reply_summary": "El burden-flip ES la tesis del post (una decisión nombra al que tuvo el poder, no la justifica); contra propiedad=protección, distinción título vs tutela: responder por alguien (padre/tutor) no exige poseerlo. UNA vuelta, back al título.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }
@@ -2982,5 +3002,32 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No pelear la ortografía ni el tono. No sermonear. No listar los cuatro esquives como catálogo. Una o dos líneas por pieza, corto, y la pregunta del título al cierre. No perseguir una segunda vuelta si responde con más de lo mismo."
+  },
+  {
+    "tactics": [
+      "insulto_ad_hominem",
+      "relativismo_moral"
+    ],
+    "threads": [],
+    "interactions": [
+      {
+        "thread_id": "28354739720849914",
+        "date": "2026-09-24",
+        "their_move": "Jab patologizante (insult-seal): The real question is: Did the psychosis make vegans go vegan, or did the veganism cause the psychosis?",
+        "our_reply_summary": "No mordí el bait; nombré (frase fresca, no que-es-una-etiqueta) que patologizar al que pregunta reemplaza la respuesta; devolví la pregunta exacta del post. Corto.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "100007626876163",
+    "name": "Linda Frucchione",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100007626876163/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "El veganismo es patología; los veganos ya están psicóticos o la dieta los enloqueció.",
+    "analisis": "2026-09-24: drive-by en el post del relativismo (copia VEGANnoyance). Un solo jab quiásmico patologizante: \"Did the psychosis make vegans go vegan, or did the veganism cause the psychosis?\". No engancha el argumento — lo esquiva patologizando al que pregunta. Es un sello PARA EL LURKER (le ahorra pensar el problema moral tildando de loco al vegano). Un solo turno; veredicto provisional.",
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No morder el bait de la psicosis, no sonar herido (el golpe pega), no defender el estado mental de los veganos. Nombrar la evasion (patologizar reemplaza la respuesta) con frase FRESCA (no \"that is a label\", quemado) y devolver la pregunta exacta del post."
   }
 ]
