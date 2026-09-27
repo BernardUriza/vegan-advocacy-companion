@@ -65,10 +65,16 @@ function walkArticles({ ME, postId }) {
       .map((e) => e.getAttribute('aria-label'));
     if (ls.length) { postReactionLabels = ls; break; }
   }
+  // Tras expandir, FB a veces monta debajo los comentarios de OTRO post del feed;
+  // sin este filtro entraban al árbol y a la tabla de deuda (visto 2026-09-27).
+  const foreignComment = (a) => !!postId && [...a.querySelectorAll('a[href*="comment_id="]')]
+    .some((l) => { const mm = l.href.match(/\/posts\/(\d+)/); return mm && mm[1] !== postId; });
   const rows = [];
+  let foreignDropped = 0;
   for (const a of arts) {
     const label = a.getAttribute('aria-label') || '';
     if (!label) continue; // articles vacíos (header/media)
+    if (foreignComment(a)) { foreignDropped++; continue; }
     // autor + target desde el aria-label
     // "Comment by X N ago" | "Reply by X to Y's reply/comment N ago"
     let author = null,
@@ -114,7 +120,7 @@ function walkArticles({ ME, postId }) {
     })();
     rows.push({ author, user_id, target, isMine, label: label.slice(0, 90), ageStr, text, reactionLabels });
   }
-  return { postOwner, rows, postReactionLabels };
+  return { postOwner, rows, postReactionLabels, foreignDropped };
 }
 
 function normKey(r) {
@@ -287,7 +293,7 @@ async function main() {
         truncatedComments: exp.truncatedRemaining,
         undatedTurns,
       },
-      counts: { rawArticles: raw.length, uniqueTurns: turns.length },
+      counts: { rawArticles: raw.length, uniqueTurns: turns.length, foreignDropped: walked.foreignDropped },
       freshestTurnMin,
       stale,
       maxAgeDays: MAX_AGE_DAYS,
