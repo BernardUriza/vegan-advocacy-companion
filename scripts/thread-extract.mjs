@@ -51,13 +51,15 @@ function walkArticles({ ME, postId }) {
     const mm = al.match(/^(.+?)['’]s Post/);
     if (mm) postOwner = mm[1].trim();
   }
-  const arts = [...document.querySelectorAll('div[role="article"]')];
   const COMMENT_ART = 'div[role="article"][aria-label^="Comment by"], div[role="article"][aria-label^="Reply by"]';
   const POST_REACTION = /^(Like|Love|Care|Haha|Wow|Sad|Angry): .*\b(people|person)\b/;
   const ownComment = (a) => !!postId && !!a.querySelector(`a[href*="/posts/${postId}/"]`);
   let postReactionLabels = [];
   const anchor = [...document.querySelectorAll(COMMENT_ART)].find(ownComment);
   const scope = anchor?.closest('[role="dialog"]') ?? null;
+  // El post abre como dialog y la página de ATRÁS (feed) sigue cargando comentarios de
+  // otros posts: el walk se acota al dialog; sin dialog, a todo el documento.
+  const arts = [...(scope ?? document).querySelectorAll('div[role="article"]')];
   for (let p = anchor?.parentElement; p; p = p === scope ? null : p.parentElement) {
     if ([...p.querySelectorAll(COMMENT_ART)].some((a) => !ownComment(a))) break;
     const ls = [...p.querySelectorAll('[aria-label]')]
