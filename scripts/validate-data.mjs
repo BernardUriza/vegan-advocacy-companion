@@ -129,6 +129,16 @@ for (const a of actors) {
     }
   }
 }
+// 4i. Optional lurker signal (lurker-sweep): if present, a non-negative integer plus a parseable timestamp.
+for (const a of actors) {
+  for (const it of a.interactions ?? []) {
+    const where = `actor "${a.name}" interaction [${it.thread_id ?? '?'} ${it.date ?? '?'}]`;
+    const hasR = it.lurker_reactions !== undefined, hasT = it.lurker_checked_at !== undefined;
+    if (hasR && !(Number.isInteger(it.lurker_reactions) && it.lurker_reactions >= 0)) errors.push(`${where} lurker_reactions must be a non-negative integer, got ${JSON.stringify(it.lurker_reactions)}`);
+    if (hasT && !Number.isFinite(Date.parse(it.lurker_checked_at))) errors.push(`${where} lurker_checked_at is not a parseable date: ${JSON.stringify(it.lurker_checked_at)}`);
+    if (hasR !== hasT) errors.push(`${where} lurker_reactions and lurker_checked_at must be set together`);
+  }
+}
 if (missingFw) {
   warnings.push(`${missingFw} interaction(s) lack a "framework" id (moat-attribution gap — invisible to framework-stats)${missingFwClosed ? `; ${missingFwClosed} of them are already CLOSED, so their effectiveness is lost permanently` : ''}`);
 }

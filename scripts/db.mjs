@@ -195,10 +195,29 @@ export function updateInteractionOutcome(userId, threadId, dateOrNeedle, needle,
   return { user_id: userId, thread_id: threadId, outcome: it.outcome, note: it.outcome_note ?? null };
 }
 
-// Efectividad de un framework (el moat): agrega los outcomes de cada interacción
-// de todos los actores donde se desplegó ese framework. Devuelve {deploys, ...outcomes}.
+// Señal del lurker: reacciones a MI reply de esa interacción, mismo match que
+// updateInteractionOutcome (user_id, thread_id, date, needle de their_move); aborta si no es único.
+export function updateInteractionLurker(userId, threadId, date, needle, { reactions, checkedAt = new Date().toISOString() }) {
+  if (!Number.isInteger(reactions) || reactions < 0) throw new Error(`reactions inválido: ${reactions}`);
+  const actors = readActors();
+  const actor = actors.find(a => a.user_id === userId);
+  if (!actor) throw new Error(`Actor ${userId} not found`);
+  const deburr = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
+  const cand = (actor.interactions ?? []).filter(
+    x => x.thread_id === threadId && x.date === date && deburr(x.their_move).includes(deburr(needle))
+  );
+  if (cand.length !== 1) throw new Error(`match no único (${cand.length}) para ${userId}/${threadId}/${date} needle="${needle}"`);
+  const it = cand[0];
+  it.lurker_reactions = reactions;
+  it.lurker_checked_at = checkedAt;
+  writeJsonAtomic(ACTORS_PATH, actors);
+  return { user_id: userId, thread_id: threadId, date, lurker_reactions: reactions, lurker_checked_at: checkedAt };
+}
+
+// Efectividad de un framework (el moat): outcomes del oponente + `lurker` (reacciones a mis
+// replies medidas: {measured, totalReactions, meanReactions}).
 export function getFrameworkWinRate(frameworkId) {
-  const result = { deploys: 0, conceded: 0, engaged: 0, silent: 0, escalated: 0, goalpost: 0, pending: 0, misattributed: 0 };
+  const result = { deploys: 0, conceded: 0, engaged: 0, silent: 0, escalated: 0, goalpost: 0, pending: 0, misattributed: 0, lurker: { measured: 0, totalReactions: 0, meanReactions: null } };
   if (!frameworkId) return result;
   for (const actor of readActors()) {
     for (const interaction of actor.interactions ?? []) {
@@ -210,9 +229,14 @@ export function getFrameworkWinRate(frameworkId) {
       if (interaction.misattributed) { result.misattributed++; continue; }
       result.deploys++;
       const o = interaction.outcome;
-      if (o && o !== 'deploys' && Object.prototype.hasOwnProperty.call(result, o)) result[o]++;
+      if (o && o !== 'deploys' && o !== 'lurker' && Object.prototype.hasOwnProperty.call(result, o)) result[o]++;
+      if (Number.isInteger(interaction.lurker_reactions)) {
+        result.lurker.measured++;
+        result.lurker.totalReactions += interaction.lurker_reactions;
+      }
     }
   }
+  if (result.lurker.measured) result.lurker.meanReactions = Math.round((result.lurker.totalReactions / result.lurker.measured) * 100) / 100;
   return result;
 }
 

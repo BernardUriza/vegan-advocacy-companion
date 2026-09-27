@@ -61,7 +61,13 @@ inexistentes `theirAgeMin`/`ourAgeMin` y escribí 3 scripts /tmp de más). Campo
   terceros; confirmar con el contenido antes de elegir blanco (frescura ≠ deuda).
 - **`turns[]`**: `author`, `user_id`, `target` (a quién responde; `(root)` si es
   comentario al post), `isMine` (bool, es Bernard), `label` (el aria-label
-  "Comment/Reply by X to Y N ago"), `ageStr` (`"10 hours"`), `text`.
+  "Comment/Reply by X to Y N ago"), `ageStr` (`"10 hours"`), `text`, **`reactions`**
+  (entero, 0 si ninguna — la huella del LURKER en ese comentario; sale del botón aria
+  `"N reactions; see who reacted to this"` y, de respaldo, del dígito pegado DESPUÉS de
+  `LikeReply[Share]`; un número del cuerpo nunca cuenta. Parser puro: `lurker.mjs`).
+- **`postReactions`** (raíz, opcional): suma de los labels `"Haha: 3 people"` del
+  contenedor del post, anclado a un comentario cuyo link lleva el `post_id`; `null` si no
+  hay reacciones visibles o no se pudo anclar (nunca se toma de otro post del feed).
 - **`me`, `postOwner`, `postIsMine`, `expand`, `counts`** a nivel raíz. **NO**
   trae el body del post raíz (turns[0] suele ser el 1er comentario, no el post —
   bug conocido, backlog G.35). Filtrar turnos dirigidos a Bernard:
