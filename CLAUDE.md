@@ -37,14 +37,15 @@ outward-facing se queda en Claude.
 | `thread-extract.mjs` | 2 | Toma la `openUrl`, expande TODO, walk de `div[role=article]`, dedup de los 2 renders de FB, árbol padre→hijo + **tabla de deuda** determinista. `--json` alimenta dossiers/transcript. | paso 0 de [thread-actor-dossier] |
 | `comment-prepare.mjs` | 4 (prep) | **PREPARACIÓN reversible:** abre el hilo, localiza el comentario por `--author`+`--anchor`, abre su Reply, pega el `--body-file` como **reply etiquetada** (respeta la auto-mención; gotcha anidado), verifica async — y **NO envía**. Deja la tab **viva** con el draft y reporta el handoff. | paso 0 de [comment-post-and-verify] |
 | `reflex.mjs` | 0 | **emit/apply del reflex LLM del moat.** `emit` arma packets (arco verbatim + interacciones con framework) de `.coagent/tx-*.json`; Claude juzga el `outcome` (incl. el `conceded` que keywords pierde) + nota por framework → `.coagent/reflex-verdicts.json`; `apply` los escribe vía `db.updateInteractionOutcome` (puede sobrescribir). El JUICIO es del LLM, la mecánica del script. | etapa 0 de [outcome-reflex] |
+| `seed-coagent.mjs` | 3 | Recibo de consulta (`seed`/`finalize`, lo exigen los hooks de procedencia) y **transporte**: `insert` pega el master YA gateado (sha del recibo) en el composer de ChatGPT por trozos, verifica por arreglo de líneas y **NO envía** (tab viva); `read` lee la respuesta por estabilidad. Lógica en `coagent-transport.mjs`. | [coagent-advise] |
 | `close-outcomes.mjs` | 0 (fallback) | Cierre por **keywords** + guard de frescura (silent solo si la reply-ancla > umbral). Fallback offline del reflex LLM; lo sobrescribe cuando el keyword se equivocó. | [outcome-reflex] / OUTCOME-LOOP.md |
 
 **`fb-lib.mjs` — método → caller (todo método tiene dueño; Art. 6):**
 
 | Método | Qué entrega | Callers |
 |---|---|---|
-| `openScratchPage()` | tab **efímera** (`done()` la cierra) — para leer/scrapear | `notif-scan.mjs`, `thread-extract.mjs` |
-| `openPersistentPage()` | tab **persistente** (`detach()` suelta el CDP, la tab sigue viva) — para dejar el draft cargado y que Claude+MCP haga el `Enter` | `comment-prepare.mjs` |
+| `openScratchPage()` | tab **efímera** (`done()` la cierra) — para leer/scrapear | `notif-scan.mjs`, `thread-extract.mjs`, `seed-coagent.mjs read` |
+| `openPersistentPage()` | tab **persistente** (`detach()` suelta el CDP, la tab sigue viva) — para dejar el draft cargado y que Claude+MCP haga el `Enter` | `comment-prepare.mjs`, `seed-coagent.mjs insert` |
 | `ageMinutes(text)` | minutos desde "15m"/"3h" **y** "15 minutes ago"/"3 hours ago" (ambos renders de FB) | `thread-extract.mjs` (tabla de deuda) |
 | `fmtAge(min)` | minutos → "27m"/"4h" para display | `thread-extract.mjs` |
 | `CDP_URL` | endpoint del Chrome de debug (`9333`, override `CDP_URL`) | los tres scripts |
@@ -55,9 +56,9 @@ outward-facing se queda en Claude.
 (irreversible, GO de Bernard) → verificación histérica `div[role=article]` +
 screenshot. Todos los scripts **en prueba**: si un hilo sale raro (render nuevo de
 FB, deuda que no cuadra, target no encontrado), caer al path MCP de la regla como
-confirmación/fallback. **Etapa 3 (coagent) es MCP a propósito** — sin script: la
-interfaz de ChatGPT cambia más seguido que la de FB y la consulta debe ser a
-conciencia (decisión de Bernard, 2026-06-16).
+confirmación/fallback. **Etapa 3 (coagent):** el juicio (componer el master) y el Send quedan en
+Claude+MCP; desde G.41 (2026-09-27) el transporte del master y la lectura de la
+respuesta son `seed-coagent.mjs insert`/`read`.
 
 ## El iceberg del especismo (`iceberg/`)
 

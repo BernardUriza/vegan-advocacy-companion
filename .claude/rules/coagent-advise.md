@@ -192,20 +192,47 @@ munición ≠ mejor reply: un draft que apila frameworks contradice el norte de
 Los frameworks `deploy_as: auto-disciplina-del-activista` (ej. `lenguaje-carne-hachazo`)
 NO son armas contra el oponente — informan CÓMO se redacta, no qué se le lanza.
 
-## El seed grande va por ARCHIVO, no se re-teclea inline (engrasado 2026-06-19)
+## El seed grande va por ARCHIVO y lo transporta `seed-coagent insert` (G.41, 2026-09-27)
 
-Cuando el master prompt es grande (lote: ~8.5k chars), **componerlo en un archivo**
-(`.coagent/master-prompt-batch.md`) y de ahí insertarlo — NUNCA re-teclear el cuerpo
-a mano. La inserción del bulk es mecánica y reversible (misma forma que
-`comment-prepare`): hoy se embebe inline en `evaluate_script` (gotcha del `args` del
-skill `/coagent` — el texto va como literal en el body de la función, no por `args`),
-pero ese inline-a-mano fue la fricción de la corrida en lote. El root fix es
-**scriptear la inserción** (`scripts/seed-coagent.mjs`, backlog G.41): lee el archivo,
-teclea por CDP en `#prompt-textarea` (ChatGPT acepta `execCommand`, no es Lexical),
-deja la tab viva para que Claude verifique `location.href`+contenido y haga el Enter.
-El JUICIO (componer el prompt) se queda con Claude; solo el bulk-insert se scriptea.
-Hasta que exista el script: componer en archivo y embeber inline es el path, pero es
-el smell a eliminar — no es la forma final.
+El master prompt se compone en un archivo (`.coagent/master-<fecha>.md`) — NUNCA se
+re-teclea ni se embebe inline en un `evaluate_script` (eso costaba ~10k chars de tokens
+por corrida y era frágil). Tras `seed-gate` + `seed-coagent seed`, el transporte es:
+
+```bash
+node scripts/seed-coagent.mjs insert --post-id <id> --master .coagent/<master>.md [--url <chat>]
+```
+
+- **Solo transporta un master con gate:** exige el recibo parcial de `seed` para ese
+  post y que su `master_sha` sea el del archivo. Si editaste el master tras el seed,
+  re-corre seed-gate + `seed`.
+- **Coagent por identidad:** sin `--url` lee `COAGENT_CHATGPT_URL` del `.env` (la misma
+  llave que `resolve-coagent.py`; en un worktree cae al `.env` del checkout principal).
+  Para una conversación NUEVA (corridas en paralelo, abajo) pasa la URL base del GPT
+  `--url https://chatgpt.com/g/g-iCKKoRd5A-insult-gpt`: el assert exige ese GPT y sin `/c/`.
+- **Tab nueva propia** (`openPersistentPage`, nunca navega las de Bernard), espera
+  `form .ProseMirror`, rechaza si el composer no está vacío, pega por `ClipboardEvent`
+  **en trozos de líneas completas (≤1500 chars, `--chunk`)**: un paste largo único lo
+  convierte ChatGPT en adjunto "Pasted text.txt" y el composer queda vacío (visto
+  2026-09-27 con un master de 20k). Verifica por el **arreglo de líneas no vacías**
+  contra el archivo; si no cuadra, limpia (DOM select + Backspace real por CDP), cierra
+  su tab y falla. Deja el seed en `window.__seed` (`sha`, `lines`).
+- **NUNCA envía.** Imprime `{ok, url, pageUrl, chunks, lines, nextStep}`. El Send es de
+  Claude+MCP en UN `evaluate_script`: assert `location.href`, assert que las líneas del
+  composer == `window.__seed.lines` (sin re-embeber el texto), y click en
+  `form button[aria-label="Send"]`; en llamada aparte, la frase única del seed aparece
+  1 vez (no re-enviar).
+
+La respuesta se lee sin escribir el polling a mano (read-only, tab efímera):
+
+```bash
+node scripts/seed-coagent.mjs read --url <location.href tras enviar> --phrase "<frase única del seed>" --out .coagent/<respuesta>.md
+```
+
+Ancla en la última aparición de la frase DENTRO de un mensaje tuyo (ignora citas en la
+respuesta), espera por estabilidad de contenido (3 lecturas iguales a 1.5s), corta en
+`ChatGPT said:` y termina en `Latest response` / el siguiente `You said:`. Lógica pura
+en `scripts/coagent-transport.mjs` (tests: `coagent-transport.test.mjs`); si ChatGPT
+cambia el DOM, se arregla ahí y en el SKILL.md de `/coagent`.
 
 ## Corridas en paralelo (2+ agentes, un solo Chrome) — aprendido 2026-06-21
 
