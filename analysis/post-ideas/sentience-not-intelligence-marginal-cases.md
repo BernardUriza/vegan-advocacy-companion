@@ -74,3 +74,18 @@ NUNCA degradan a esos humanos.
 - No degradar al bebé / paciente con demencia — son la prueba de que el criterio es
   la sintiencia, no munición para bajar a nadie.
 - No pelear si el animal "es inteligente" — concedido o no, es irrelevante al eje.
+
+## Publicación 2026-09-27 (versión 2, tras coagent)
+
+Status: **Posted** (2026-09-27 ~10:58–11:01 CST) en los 3 grupos del registro. Texto final:
+`.coagent/drafts/0927-root-sentience.txt` (recibo `.coagent/root-sentience.consult.json`, sha `5e4278f5`).
+Cambios vs el borrador de junio: fuera "full protection" (el punto es el estatus de NO-PROPIEDAD,
+corrección de insult-gpt), fuera "want the day to keep going" (flanco "¿entiende la muerte?"),
+fuera el pivote "never how smart… It's whether…", puente explícito (la autoridad sobre un sujeto
+tiene que responder a su lado) y remate UNO solo en el título.
+
+- Vegans VS Meat Eaters (`683615698352965`) → https://www.facebook.com/groups/683615698352965/posts/28150669567887541/ — verificado en permalink (5/5 frases, autor Bernard, 1 copia).
+- Vegans V's Meat Eaters (Open Debates) 3 (`770211166362062`) → https://www.facebook.com/groups/770211166362062/posts/28604913169131821/ — verificado en permalink (5/5, 1 copia).
+- VEGANnoyance; The Group! (`2295597740524135`) → **pendiente de aprobación del admin** (visto en `my_pending_content`, 1 copia). URL cuando lo aprueben.
+
+Recibos: `.coagent/receipts/0927-root-sentience-*.png`.

@@ -44,7 +44,33 @@ caso del post ORIGINAL, no de la respuesta.
 
 ## GOLDEN PATH
 
-(se llena en la primera corrida, 2026-09-19)
+Llenado en la corrida del 2026-09-27 (semilla `sentience-not-intelligence-marginal-cases`).
+Por grupo, en UNA tab propia (`new_page`, nunca las de Bernard):
+
+1. **Etapa 3 antes de todo:** master x/y → `seed-gate` → `seed-coagent seed --post-id root-<slug>`
+   → coagent → style-gate de su y → `finalize`. El `mcp-publish-gate` bloquea el paste sin ese
+   recibo, y exige que el literal del script sea el body-file EXACTO (sha, con su `\n` final).
+2. **Abrir el composer:** en `https://www.facebook.com/groups/<gid>`, antes de abrir nada contar
+   las copias del texto ya presentes (si hay 1, abortar: ya se publicó); click en el
+   `div[role=button]` cuyo texto empieza con "Write something" → diálogo "Create post".
+3. **Pegar** (llamada propia): `div[contenteditable][role=textbox]` del diálogo, seleccionar todo,
+   `ClipboardEvent('paste')` con el draft; guardar el draft en `window.__draft`.
+4. **Publicar atómico** (otra llamada): `const DESTINO = '<nombre exacto del registro>'`, comparar
+   contra el `a[href*="/groups/<gid>"]`, assert del href, arreglo de líneas no vacías del
+   composer == draft, y `.click()` en el `div[role=button]` "Post" del diálogo.
+5. **Verificar en el PERMALINK, nunca en el feed.** El feed colapsa el texto ("See more"),
+   reordena por relevancia, y los links de hora vienen como `?__cft__` hasta que pasas el mouse.
+   Recipe: `?sorting_setting=CHRONOLOGICAL` → subir desde el texto hasta el contenedor que
+   trae "Bernard Uriza Orozco" + "Comment" → el `a[href^="?__cft__"]` → `mouseover`/`focus` →
+   su `href` ya es `/groups/<gid>/posts/<id>/` → abrir y comprobar las frases ancla + autor +
+   1 copia. **Nunca** subir por el DOM "hasta el primer `a[href*=/posts/]`": sale del post y
+   agarra el link de OTRO post (pasó el 2026-09-27: dio la URL de un post de Anita Kemper).
+   En la verificación nada de `.click()` (ni "See more"): el hook de envío lo lee como publicar.
+6. **Grupo privado con moderación** (VEGANnoyance): el post no sale en el feed; confirmarlo en
+   `/groups/<gid>/my_pending_content` (1 copia) y registrarlo como "pendiente de admin". NO
+   re-publicar porque "no aparece".
+7. Recibo `take_screenshot` → `.coagent/receipts/`, y `Status: Posted` + URL por grupo en la
+   semilla.
 
 ## Por qué existe (2026-09-19)
 
