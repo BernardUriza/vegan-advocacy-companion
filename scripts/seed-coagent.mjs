@@ -17,12 +17,16 @@
 //
 // Ciclo en dos fases (el draft llega DESPUÉS de sembrar):
 //   1. seed     → valida master (frameworks+guardrail) + seed-gate pass, escribe el
-//                 recibo PARCIAL {status:'seeded'}. (El tecleo CDP en ChatGPT es G.41;
-//                 hoy lo siembra el skill /coagent y esto estampa el recibo.)
+//                 recibo PARCIAL {status:'seeded'} con master_sha.
+//   1b. insert  → transporta ESE master (sha del recibo) al composer de ChatGPT por CDP,
+//                 SIN enviar; deja la tab viva. El Send lo hace Claude+MCP (G.41).
+//   1c. read    → lee la respuesta del coagent tras el seed, por estabilidad de contenido.
 //   2. finalize → tras leer el draft del coagent, estampa draft_sha {status:'consulted'}.
 //
 // Uso:
 //   node seed-coagent.mjs seed     --post-id <id> --author "<A>" --master <master.md>
+//   node seed-coagent.mjs insert   --post-id <id> --master <master.md> [--url <chat url>]
+//   node seed-coagent.mjs read     --phrase "<frase única del seed>" [--url <chat url>] [--out <f>]
 //   node seed-coagent.mjs finalize --post-id <id> --draft <draft.txt>
 //   node seed-coagent.mjs show     --post-id <id>
 
@@ -74,6 +78,16 @@ export function receiptPath(postId) {
   return resolve(COAGENT_DIR, `${postId}.consult.json`);
 }
 
+// insert solo transporta un master que YA pasó por `seed` (mismo sha): nunca uno sin gate.
+export function insertProblems(receipt, masterText) {
+  if (!receipt) return ['no hay recibo parcial — corre `seed` primero'];
+  const p = [];
+  if (receipt.seed_gate !== 'pass') p.push('el recibo no tiene seed_gate=pass');
+  if (!receipt.master_sha) p.push('recibo sin master_sha (legacy) — re-corre `seed`');
+  else if (receipt.master_sha !== draftSha(masterText)) p.push(`el master cambió tras el seed (sha ${draftSha(masterText)} ≠ recibo ${receipt.master_sha}) — re-corre seed-gate + \`seed\``);
+  return p;
+}
+
 function nowIso() {
   return new Date().toISOString();
 }
@@ -122,6 +136,7 @@ if (!isMain) {
     status: drafts.length ? 'consulted' : 'seeded',
     post_id: postId,
     master: masterPath,
+    master_sha: draftSha(text),
     frameworks: v.frameworks,
     guardrail: v.guardrail,
     seed_gate: 'pass',
@@ -155,11 +170,86 @@ if (!isMain) {
   writeFileSync(rp, JSON.stringify(r, null, 2) + '\n');
   console.log(`✓ recibo CONSULTADO: ${rp} (${r.drafts.length} draft(s) en el post)`);
   console.log(`  draft_sha: ${sha}${author ? ` (${author})` : ''} — ya puedes stagear con comment-prepare --body-file ${draftPath}`);
+} else if (cmd === 'insert') {
+  const postId = arg('--post-id');
+  const master = arg('--master');
+  if (!postId || !master) die('uso: seed-coagent.mjs insert --post-id <id> --master <master.md> [--url <chat url>]');
+  const masterPath = resolveUserPath(master, ROOT);
+  const text = readFileSync(masterPath, 'utf8');
+  const rp = receiptPath(postId);
+  const receipt = existsSync(rp) ? JSON.parse(readFileSync(rp, 'utf8')) : null;
+  const problems = insertProblems(receipt, text);
+  if (problems.length) die('INSERT BLOQUEADO:\n  - ' + problems.join('\n  - '));
+  const T = await import('./coagent-transport.mjs');
+  const { openPersistentPage } = await import('./fb-lib.mjs');
+  const target = T.resolveCoagentUrl({ url: arg('--url'), root: ROOT });
+  if (!target.url) die(target.error);
+  const out = (o, code) => { console.log(JSON.stringify(o, null, 2)); process.exit(code); };
+  const { page, detach } = await openPersistentPage();
+  const fail = async (o, code) => { await page.close().catch(() => {}); await detach(); out({ ok: false, url: target.url, ...o }, code); };
+  try {
+    await page.goto(target.url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+    await T.waitForComposer(page).catch(() => {});
+    const href = page.url();
+    if (!T.hrefMatches(target.url, href)) await fail({ stage: 'href', pageUrl: href, error: 'la tab no está en el chat del coagent resuelto' }, 2);
+    if ((await page.$(T.COMPOSER)) === null) await fail({ stage: 'composer', pageUrl: href, error: `no aparece ${T.COMPOSER} (¿sesión de ChatGPT? ¿DOM cambió?)` }, 2);
+    const lines = T.nonEmptyLines(text);
+    const meta = { postId, sha: draftSha(text), lines };
+    const pasted = await T.pasteSeed(page, text, meta, { chunk: Number(arg('--chunk')) || 1500 });
+    if (!pasted.ok) await fail({ stage: 'paste', pageUrl: href, ...pasted, note: 'tab cerrada: el borrador sin enviar (incl. un adjunto) muere con ella' }, 2);
+    const got = await T.settleComposer(page);
+    const cmp = T.compareLines(text, got || '');
+    if (!cmp.ok) {
+      const cleared = await T.clearComposer(page);
+      await fail({ stage: 'verify', pageUrl: href, compare: cmp, cleared }, 3);
+    }
+    await detach();
+    out({
+      ok: true,
+      url: target.url,
+      urlSource: target.source,
+      pageUrl: href,
+      postId,
+      masterSha: meta.sha,
+      chunks: pasted.chunks,
+      lines: { count: lines.length, first: lines[0], last: lines[lines.length - 1] },
+      nextStep: `NO se envió nada. Claude+MCP: list_pages → select_page la tab en ${href} (si hay varias, la que tenga window.__seed.sha === '${meta.sha}') → en UN evaluate_script: assert location.href (${T.isBaseGptUrl(target.url) ? `GPT ${T.gptIdOf(target.url)}, sin /c/` : `contiene ${T.chatIdOf(target.url)}`}), assert que las líneas no vacías de document.querySelector('${T.COMPOSER}').innerText (normalizadas: trim + espacios colapsados) son idénticas en orden a window.__seed.lines (${lines.length}), y solo entonces [...document.querySelectorAll('form button')].find(b => b.getAttribute('aria-label') === 'Send').click(). En llamada aparte: la frase única del seed aparece 1 sola vez (no re-enviar si ya está). Luego: node scripts/seed-coagent.mjs read --url <location.href tras el envío> --phrase "<frase única del seed>" --out <respuesta.md> (espera por estabilidad).`,
+    }, 0);
+  } catch (e) {
+    await fail({ stage: 'exception', error: e.message }, 1);
+  }
+} else if (cmd === 'read') {
+  const phrase = arg('--phrase');
+  if (!phrase) die('uso: seed-coagent.mjs read --phrase "<frase única del seed>" [--url <chat url>] [--out <file>] [--timeout-s N]');
+  const T = await import('./coagent-transport.mjs');
+  const { openScratchPage } = await import('./fb-lib.mjs');
+  const target = T.resolveCoagentUrl({ url: arg('--url'), root: ROOT });
+  if (!target.url) die(target.error);
+  const outFile = arg('--out') ? resolveUserPath(arg('--out'), ROOT) : null;
+  const timeout = (Number(arg('--timeout-s')) || 240) * 1000;
+  const { page, done } = await openScratchPage();
+  let res;
+  try {
+    await page.goto(target.url, { waitUntil: 'domcontentloaded', timeout: 45000 });
+    const href = page.url();
+    if (!T.hrefMatches(target.url, href)) res = { ok: false, stage: 'href', pageUrl: href, error: 'la tab no está en el chat pedido' };
+    else if (!(await T.waitForSeedText(page, phrase))) res = { ok: false, stage: 'seed', pageUrl: href, error: 'la frase no aparece en el chat' };
+    else res = { pageUrl: href, ...(await T.readReplyWhenStable(page, phrase, { timeout })) };
+  } finally {
+    await done();
+  }
+  if (res.ok && outFile) {
+    mkdirSync(dirname(outFile), { recursive: true });
+    writeFileSync(outFile, res.reply + '\n');
+  }
+  const { reply, ...rest } = res;
+  console.log(JSON.stringify({ url: target.url, ...rest, chars: reply ? reply.length : 0, head: reply ? reply.slice(0, 200) : null, out: res.ok ? outFile : null, ...(outFile ? {} : { reply }) }, null, 2));
+  process.exit(res.ok ? 0 : 3);
 } else if (cmd === 'show') {
   const postId = arg('--post-id');
   const rp = receiptPath(postId);
   if (!existsSync(rp)) die(`(sin recibo) ${rp}`);
   console.log(readFileSync(rp, 'utf8'));
 } else {
-  die('comandos: seed | finalize | show');
+  die('comandos: seed | insert | read | finalize | show');
 }
