@@ -195,13 +195,20 @@ if (!isMain) {
     if ((await page.$(T.COMPOSER)) === null) await fail({ stage: 'composer', pageUrl: href, error: `no aparece ${T.COMPOSER} (¿sesión de ChatGPT? ¿DOM cambió?)` }, 2);
     const lines = T.nonEmptyLines(text);
     const meta = { postId, sha: draftSha(text), lines };
-    const pasted = await T.pasteSeed(page, text, meta, { chunk: Number(arg('--chunk')) || 1500 });
-    if (!pasted.ok) await fail({ stage: 'paste', pageUrl: href, ...pasted, note: 'tab cerrada: el borrador sin enviar (incl. un adjunto) muere con ella' }, 2);
-    const got = await T.settleComposer(page);
-    const cmp = T.compareLines(text, got || '');
-    if (!cmp.ok) {
+    const attempts = [];
+    let pasted = null;
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      pasted = await T.pasteSeed(page, text, meta, { chunk: Number(arg('--chunk')) || 1500 });
+      if (!pasted.ok) {
+        const ours = !pasted.existing || pasted.existing.startsWith(T.nonEmptyLines(text)[0]);
+        const cleared = ours ? await T.clearComposer(page) : { cleared: false, note: 'borrador ajeno (no es un seed nuestro): no se toca' };
+        await fail({ stage: 'paste', pageUrl: href, ...pasted, cleared, attempts }, 2);
+      }
+      const cmp = T.compareLines(text, (await T.settleComposer(page)) || '');
+      if (cmp.ok) break;
       const cleared = await T.clearComposer(page);
-      await fail({ stage: 'verify', pageUrl: href, compare: cmp, cleared }, 3);
+      attempts.push({ attempt, compare: cmp, cleared });
+      if (attempt === 2 || !cleared.cleared) await fail({ stage: 'verify', pageUrl: href, attempts }, 3);
     }
     await detach();
     out({
@@ -212,6 +219,7 @@ if (!isMain) {
       postId,
       masterSha: meta.sha,
       chunks: pasted.chunks,
+      retried: attempts,
       lines: { count: lines.length, first: lines[0], last: lines[lines.length - 1] },
       nextStep: `NO se envió nada. Claude+MCP: list_pages → select_page la tab en ${href} (si hay varias, la que tenga window.__seed.sha === '${meta.sha}') → en UN evaluate_script: assert location.href (${T.isBaseGptUrl(target.url) ? `GPT ${T.gptIdOf(target.url)}, sin /c/` : `contiene ${T.chatIdOf(target.url)}`}), assert que las líneas no vacías de document.querySelector('${T.COMPOSER}').innerText (normalizadas: trim + espacios colapsados) son idénticas en orden a window.__seed.lines (${lines.length}), y solo entonces [...document.querySelectorAll('form button')].find(b => b.getAttribute('aria-label') === 'Send').click(). En llamada aparte: la frase única del seed aparece 1 sola vez (no re-enviar si ya está). Luego: node scripts/seed-coagent.mjs read --url <location.href tras el envío> --phrase "<frase única del seed>" --out <respuesta.md> (espera por estabilidad).`,
     }, 0);

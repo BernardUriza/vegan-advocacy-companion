@@ -214,8 +214,16 @@ node scripts/seed-coagent.mjs insert --post-id <id> --master .coagent/<master>.m
   **en trozos de líneas completas (≤1500 chars, `--chunk`)**: un paste largo único lo
   convierte ChatGPT en adjunto "Pasted text.txt" y el composer queda vacío (visto
   2026-09-27 con un master de 20k). Verifica por el **arreglo de líneas no vacías**
-  contra el archivo; si no cuadra, limpia (DOM select + Backspace real por CDP), cierra
-  su tab y falla. Deja el seed en `window.__seed` (`sha`, `lines`).
+  contra el archivo; si no cuadra, limpia y **reintenta una vez** (el primer paste al chat
+  canónico a veces pierde los `##`/`<!-- -->`: ProseMirror los formatea; visto
+  2026-09-27, el reintento pasó 25/25). Si falla dos veces, limpia, cierra su tab y sale
+  con `stage: verify` y los dos intentos. Deja el seed en `window.__seed` (`sha`, `lines`).
+- **El borrador sin enviar NO muere con la tab.** ChatGPT lo persiste por GPT con
+  debounce: cerrar la tab al instante lo resucita en la siguiente conversación del mismo
+  GPT (visto 2026-09-27: un `insert` falló con "composer not empty" por el draft de una
+  prueba anterior). `clearComposer` espera 2.5s y re-lee antes de dar por limpio. Si el
+  composer trae un borrador que NO empieza con la línea de identidad del seed, es de
+  Bernard: el script falla sin tocarlo.
 - **NUNCA envía.** Imprime `{ok, url, pageUrl, chunks, lines, nextStep}`. El Send es de
   Claude+MCP en UN `evaluate_script`: assert `location.href`, assert que las líneas del
   composer == `window.__seed.lines` (sin re-embeber el texto), y click en

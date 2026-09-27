@@ -184,7 +184,8 @@ export async function settleComposer(page, { tries = 12, gap = 600 } = {}) {
 }
 
 // Limpiar NO es enviar: selección por DOM + Backspace real por CDP (Input.dispatchKeyEvent).
-export async function clearComposer(page) {
+// ChatGPT persiste el borrador con debounce: cerrar la tab antes de ~2s lo resucita en el próximo chat del GPT.
+export async function clearComposer(page, { persistMs = 2500 } = {}) {
   const focused = await page.evaluate((sel) => {
     const box = document.querySelector(sel);
     if (!box) return false;
@@ -207,6 +208,8 @@ export async function clearComposer(page) {
     left = (await readComposer(page)) || '';
   }
   await page.evaluate(() => { delete window.__seed; });
+  await page.waitForTimeout(persistMs);
+  left = (await readComposer(page)) || '';
   return { cleared: !left.trim(), remaining: left.trim().length };
 }
 
