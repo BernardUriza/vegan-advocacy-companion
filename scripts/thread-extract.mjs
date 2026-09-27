@@ -13,6 +13,7 @@
 
 import { openScratchPage, ageMinutes, fmtAge, UNKNOWN_AGE, expandAllInPage, MAX_AGE_DAYS, isStaleMinutes } from './fb-lib.mjs';
 import { registerThread } from './db.mjs';
+import { parseReactionCount, sumPostReactionLabels } from './lurker.mjs';
 
 const url = process.argv.find((a) => a.startsWith('http'));
 const asJson = process.argv.includes('--json');
@@ -36,7 +37,7 @@ try {
 // "target article not found" (2026-07-08).
 
 // ---- corre DENTRO de la página: walk de los articles ----
-function walkArticles(ME) {
+function walkArticles({ ME, postId }) {
   // dueño del post: el heading/dialog "X's Post" o el primer link de autor del post.
   // En MI post, un comentario raíz de un oponente está dirigido a mi pregunta = deuda.
   let postOwner = '';
@@ -51,6 +52,19 @@ function walkArticles(ME) {
     if (mm) postOwner = mm[1].trim();
   }
   const arts = [...document.querySelectorAll('div[role="article"]')];
+  const COMMENT_ART = 'div[role="article"][aria-label^="Comment by"], div[role="article"][aria-label^="Reply by"]';
+  const POST_REACTION = /^(Like|Love|Care|Haha|Wow|Sad|Angry): .*\b(people|person)\b/;
+  const ownComment = (a) => !!postId && !!a.querySelector(`a[href*="/posts/${postId}/"]`);
+  let postReactionLabels = [];
+  const anchor = [...document.querySelectorAll(COMMENT_ART)].find(ownComment);
+  const scope = anchor?.closest('[role="dialog"]') ?? null;
+  for (let p = anchor?.parentElement; p; p = p === scope ? null : p.parentElement) {
+    if ([...p.querySelectorAll(COMMENT_ART)].some((a) => !ownComment(a))) break;
+    const ls = [...p.querySelectorAll('[aria-label]')]
+      .filter((e) => POST_REACTION.test(e.getAttribute('aria-label')) && !e.closest(COMMENT_ART))
+      .map((e) => e.getAttribute('aria-label'));
+    if (ls.length) { postReactionLabels = ls; break; }
+  }
   const rows = [];
   for (const a of arts) {
     const label = a.getAttribute('aria-label') || '';
@@ -73,6 +87,9 @@ function walkArticles(ME) {
     const clone = a.cloneNode(true);
     clone.querySelectorAll('div[role="article"]').forEach((n) => n.remove());
     const text = (clone.innerText || '').replace(/\s+/g, ' ').trim();
+    const reactionLabels = [...clone.querySelectorAll('[aria-label]')]
+      .map((e) => e.getAttribute('aria-label'))
+      .filter((l) => /reaction|reacted/i.test(l));
     const ulink = a.querySelector('a[href*="/user/"]');
     let user_id = null;
     if (ulink) {
@@ -95,9 +112,9 @@ function walkArticles(ME) {
       if (inText) return inText[1] + inText[2];
       return '';
     })();
-    rows.push({ author, user_id, target, isMine, label: label.slice(0, 90), ageStr, text });
+    rows.push({ author, user_id, target, isMine, label: label.slice(0, 90), ageStr, text, reactionLabels });
   }
-  return { postOwner, rows };
+  return { postOwner, rows, postReactionLabels };
 }
 
 function normKey(r) {
@@ -219,8 +236,9 @@ async function main() {
     await page.waitForTimeout(2500);
     const exp = await page.evaluate(expandAllInPage);
     await page.waitForTimeout(800);
-    const walked = await page.evaluate(walkArticles, ME);
-    const raw = walked.rows;
+    const walked = await page.evaluate(walkArticles, { ME, postId: (url.match(/\/posts\/(\d+)/) || [])[1] || null });
+    const raw = walked.rows.map(({ reactionLabels, ...r }) => ({ ...r, reactions: parseReactionCount({ labels: reactionLabels, text: r.text }) }));
+    const postReactions = sumPostReactionLabels(walked.postReactionLabels);
     // dueño del post: lo detectado, o asumir MÍO (el pipeline corre sobre mis posts
     // desde notificaciones) cuando no se pudo leer — y reportarlo (Art. 2).
     const postOwner = walked.postOwner || '';
@@ -273,6 +291,7 @@ async function main() {
       freshestTurnMin,
       stale,
       maxAgeDays: MAX_AGE_DAYS,
+      postReactions,
       turns,
       debt,
       unansweredRoots,
@@ -300,7 +319,7 @@ async function main() {
       for (const t of turns) {
         const who = t.isMine ? '🟦 YO' : '⬜ ' + t.author;
         const to = t.target ? ` → ${t.target}` : ' (raíz)';
-        console.log(`${who}${to}  [${fmtAge(ageMinutes(t.ageStr))}]`);
+        console.log(`${who}${to}  [${fmtAge(ageMinutes(t.ageStr))}]${t.reactions ? `  👍 ${t.reactions}` : ''}`);
         console.log(`   ${t.text.slice(0, 120)}`);
       }
       console.log(`\n=== DEUDA (post de ${postOwner || '?'}${postIsMine ? ' · TUYO' : ' · NO tuyo → raíces no cuentan'}) ===`);

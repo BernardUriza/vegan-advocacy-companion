@@ -1,4 +1,4 @@
-import { readActors, readFrameworks } from './db.mjs';
+import { readActors, readFrameworks, getFrameworkWinRate } from './db.mjs';
 
 // Efectividad por framework (el moat). Barre data/actors.json, agrega por el
 // campo `framework` de cada interacción, y reporta deploys + conteo por outcome.
@@ -24,14 +24,19 @@ for (const actor of actors) {
   }
 }
 
+for (const s of stats.values()) s.lurker = getFrameworkWinRate(s.id).lurker;
+
 const rows = [...stats.values()].sort((a, b) => b.deploys - a.deploys || a.name.localeCompare(b.name));
 
 const tested = rows.filter(r => r.deploys > 0);
 const untested = rows.filter(r => r.deploys === 0);
 
-const header = ['Framework', 'deploys', ...OUTCOMES];
+const header = ['Framework', 'deploys', ...OUTCOMES, 'lurker n', 'likes', 'likes/reply'];
 const widths = header.map(h => h.length);
-const display = tested.map(r => [r.name, String(r.deploys), ...OUTCOMES.map(o => String(r[o]))]);
+const display = tested.map(r => [
+  r.name, String(r.deploys), ...OUTCOMES.map(o => String(r[o])),
+  String(r.lurker.measured), String(r.lurker.totalReactions), r.lurker.meanReactions === null ? '-' : String(r.lurker.meanReactions),
+]);
 for (const row of display) row.forEach((cell, i) => { widths[i] = Math.max(widths[i], cell.length); });
 
 const pad = (cell, i, alignRight) => alignRight ? cell.padStart(widths[i]) : cell.padEnd(widths[i]);
@@ -44,6 +49,7 @@ for (const row of display) console.log(fmtRow(row));
 
 if (!tested.length) console.log('(ningún framework desplegado todavía)');
 
+console.log('\nlurker n = replies míos con reacciones medidas (lurker-sweep); likes = reacciones a esos replies.');
 console.log(`\nProbados: ${tested.length} · Sin probar: ${untested.length} de ${rows.length}`);
 if (untested.length) {
   console.log('\nSin probar (0 deploys):');
