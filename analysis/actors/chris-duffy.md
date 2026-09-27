@@ -106,4 +106,8 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** Recuento-de-hechos + point of view = anthropomorphism + título justificado porque provee (privaciones, campo, sin vacaciones, amor) + interrogatorio personal (answer the questions Bernie).
 - **Nuestra respuesta:** Concedí su cuidado de entrada (buena fe). Point of view no significa punto de vista HUMANO: la cabra siente/prefiere/confía/teme — él lo sabe mejor que nadie; nadie se sacrifica así por algo que no experimenta nada. Toda su lista es fiduciaria (apunta a la cabra) y nada requiere el título; el título añade solo can-be-sold-or-traded. Biografía no cambia la pregunta (una línea). Cierre: ¿qué añade el derecho-a-vender al amor que describes, y a beneficio de quién existe esa parte?
 
+### Hilo `28604913169131821` — 2026-09-27 · outcome: **pending**
+- **Su jugada:** Raíz en el post de sintiencia: we have had this conversation before and you did not like it; animals are property for their own good (rights, insurance, NSW feral law, protection from abuse, legally responsible for your dog). Animals are property.
+- **Nuestra respuesta:** Concedí que ya lo hablamos y la ley de NSW tal como está; separé responsabilidad de título (padre/hijo, tutor/pupilo); el título agrega el poder de criar, vender y decidir el uso final; la propiedad asegura el reclamo del dueño, el deber responde al animal; cierre: ¿qué agrega el título, más allá del deber, que haga legítimo poseerla?
+
 _Hilos: march-property, 27319402757682875_

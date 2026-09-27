@@ -112,4 +112,8 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** Sostuvo la respuesta: yes, it does — dominant species, we control our food supply, have the ability, why shouldnt we?? We care for the animal, provide all its needs and desires; livestock have no greater point of view than that.
 - **Nuestra respuesta:** Dominancia/capacidad explican control, la justificación del título la debe quien lo sostiene; el cuidado funda responsabilidad (tutor sin dueño), el título agrega el poder de decidir cuando los intereses de ella y el propósito del dueño se separan (el día del camión); tomé su concesión de que HAY punto de vista; cerré: si tiene punto de vista, ¿qué hace que la dominancia baste para volverla propiedad?
 
+### Hilo `28046483408306158` — 2026-09-27 · outcome: **pending**
+- **Su jugada:** I have answered as best I can. There is no other answer. How about you telling me what is bad about turning livestock, or any animal, into property?
+- **Nuestra respuesta:** Le contesté directo el caso positivo: el título hace que el lado de ella pierda siempre que choca con el propósito del dueño (cría, becerro, venta, camión); una silla no pierde nada, ella sí porque él concedió punto de vista; cierre: si tiene punto de vista, ¿qué justifica darle a alguien ese título sobre ella?
+
 _Hilos: 27341517928804691, 27335635946059556, 27937793019177176, 28046483408306158_
