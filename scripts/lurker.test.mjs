@@ -7,6 +7,7 @@ import {
   parseReactionCount, sumPostReactionLabels, draftHead, turnMatchesDraft,
   loadConsultDrafts, resolveDraftInteraction, matchMyTurns,
 } from './lurker.mjs';
+import { draftSha } from './seed-coagent.mjs';
 
 test('reaction count: trailing digit after LikeReply is the count', () => {
   assert.equal(parseReactionCount({ text: 'Bernard Uriza Orozco · 4hAj Meredith are you answering something?LikeReply3' }), 3);
@@ -77,6 +78,15 @@ test('resolver: ambiguous dates pick the exact day; unknown actor or no date giv
   assert.equal(resolveDraftInteraction({ author: 'Chris Duffy', consulted_at: '2026-09-10T18:00:00Z' }, 'T', actors), null);
 });
 
+test('resolver: draft_sha on the interaction wins over the date heuristic (two interactions, same actor, same day)', () => {
+  const two = [{ user_id: '9', name: 'Les M', interactions: [
+    { thread_id: 'T', date: '2026-09-28', their_move: 'first', draft_sha: 'aaa' },
+    { thread_id: 'T', date: '2026-09-28', their_move: 'second', draft_sha: 'bbb' },
+  ] }];
+  assert.equal(resolveDraftInteraction({ author: 'Les M', draft_sha: 'bbb', consulted_at: '2026-09-28T14:00:00Z' }, 'T', two).interaction.their_move, 'second');
+  assert.equal(resolveDraftInteraction({ author: 'Les M', draft_sha: 'zzz', consulted_at: '2026-09-28T14:00:00Z' }, 'T', two), null, 'unknown sha + ambiguous day never guesses');
+});
+
 test('matchMyTurns: matches my posted turn, skips turns without a consulted draft, never guesses', () => {
   const drafts = [{ author: 'Chris Duffy', draft_sha: 'abc', consulted_at: '2026-09-27T21:52:04.224Z', body: DRAFT }];
   const turns = [
@@ -100,14 +110,15 @@ test('matchMyTurns: two of my turns matching the same interaction are both skipp
   assert.equal(unmatched.length, 2);
 });
 
-test('loadConsultDrafts: reads drafts[] and the legacy single-draft shape, drops missing files', () => {
+test('loadConsultDrafts: reads drafts[] and the legacy single-draft shape, drops missing files and superseded shas', () => {
   const dir = mkdtempSync(join(tmpdir(), 'lurker-'));
   writeFileSync(join(dir, 'd1.txt'), DRAFT);
   writeFileSync(join(dir, '111.consult.json'), JSON.stringify({ drafts: [
-    { author: 'Chris Duffy', draft_sha: 'a', draft_file: join(dir, 'd1.txt'), consulted_at: '2026-09-27T21:52:04Z' },
+    { author: 'Chris Duffy', draft_sha: draftSha(DRAFT), draft_file: join(dir, 'd1.txt'), consulted_at: '2026-09-27T21:52:04Z' },
+    { author: 'Chris Duffy', draft_sha: 'stale', draft_file: join(dir, 'd1.txt'), consulted_at: '2026-09-27T20:00:00Z' },
     { author: 'Ghost', draft_sha: 'b', draft_file: join(dir, 'missing.txt') },
   ] }));
-  writeFileSync(join(dir, '222.consult.json'), JSON.stringify({ author: 'Chris Duffy', draft_sha: 'c', draft_file: join(dir, 'd1.txt'), consulted_at: '2026-09-27T21:52:04Z' }));
+  writeFileSync(join(dir, '222.consult.json'), JSON.stringify({ author: 'Chris Duffy', draft_sha: draftSha(DRAFT), draft_file: join(dir, 'd1.txt'), consulted_at: '2026-09-27T21:52:04Z' }));
   const a = loadConsultDrafts('111', dir);
   assert.equal(a.length, 1);
   assert.equal(a[0].body, DRAFT);

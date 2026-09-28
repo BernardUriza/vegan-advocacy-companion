@@ -159,7 +159,12 @@ emit` los omite. Un hilo viejo solo entra por replylink de Bernard (modo single)
   siguen.
 - **Cerrar el loop en el SSOT por cada post** (`appendInteraction(<user_id>,
   { thread_id, date, their_move, our_reply_summary, framework: <id del framework
-  desplegado en etapa-3>, outcome: "pending" })`). **El campo `framework` es
+  desplegado en etapa-3>, draft_sha: <el sha que imprimió `finalize`>, outcome: "pending" })`).
+  **`draft_sha` es OBLIGATORIO** (2026-09-28): es lo único que le permite al
+  `lurker-sweep` ligar el reply vivo a SU interacción cuando el mismo actor tiene
+  dos en el hilo (sin él, 17 de 21 replies salieron "sin match"). `finalize` exige
+  `--author` por la misma razón. Si un lote quedó sin ligar: `node
+  scripts/moat-link-drafts.mjs --since <fecha>` (dry-run) y `--apply`. **El campo `framework` es
   OBLIGATORIO** — es lo único que alimenta el moat de efectividad
   (`framework-stats` / `getFrameworkWinRate`); sin él, por más corridas que hagas,
   el moat queda vacío y nunca sabrás qué jugada funciona. Registrá el id del
@@ -193,7 +198,7 @@ emit` los omite. Un hilo viejo solo entra por replylink de Bernard (modo single)
   completo lo dicta el target. (Bug 2026-06-21: ignoré el `reply_comment_id` y elegí
   por la tabla de deuda → blanco equivocado.)
 - **Etapa 3 NO se salta — ni en single.** El draft SIEMPRE sale del coagent
-  (seed→finalize, con frameworks+guardrail+seed-gate); el hook de procedencia
+  (seed→finalize `--author "<target>"`, con frameworks+guardrail+seed-gate); el hook de procedencia
   (`.claude/hooks/coagent-provenance-gate.mjs`) BLOQUEA el staging si no hay recibo
   fresco que case por sha. "Solo un reply" cambia el cap, no exime la consulta.
 - **Solo análisis en etapas 2–3** — no se toca nada en FB hasta el gate de lote.

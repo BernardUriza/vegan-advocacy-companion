@@ -4,6 +4,7 @@
 import { readFileSync, readdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { draftSha } from './seed-coagent.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 export const COAGENT_DIR = process.env.COAGENT_DIR || resolve(ROOT, '.coagent');
@@ -90,7 +91,9 @@ export function loadConsultDrafts(postId, dir = COAGENT_DIR) {
   for (const d of drafts) {
     const file = d.draft_file && (existsSync(d.draft_file) ? d.draft_file : resolve(dir, d.draft_file));
     if (!file || !existsSync(file)) continue;
-    out.push({ ...d, author: d.author ?? r.author ?? null, consulted_at: d.consulted_at ?? r.consulted_at ?? null, body: readFileSync(file, 'utf8') });
+    const body = readFileSync(file, 'utf8');
+    if (d.draft_sha && draftSha(body) !== d.draft_sha) continue;
+    out.push({ ...d, author: d.author ?? r.author ?? null, consulted_at: d.consulted_at ?? r.consulted_at ?? null, body });
   }
   return out;
 }
@@ -117,9 +120,11 @@ function addDays(ymd, n) {
 export function resolveDraftInteraction(draft, threadId, actors) {
   const who = actors.filter((a) => a.name && draft.author && deburr(a.name).trim() === deburr(draft.author).trim());
   if (who.length !== 1) return null;
+  const inThread = (who[0].interactions ?? []).filter((i) => i.thread_id === threadId);
+  const bySha = draft.draft_sha ? inThread.filter((i) => i.draft_sha === draft.draft_sha) : [];
+  if (bySha.length === 1) return { user_id: who[0].user_id, name: who[0].name, interaction: bySha[0] };
   const day = localDate(draft.consulted_at);
   if (!day) return null;
-  const inThread = (who[0].interactions ?? []).filter((i) => i.thread_id === threadId);
   const near = inThread.filter((i) => i.date === day || i.date === addDays(day, 1));
   let pick = near.length === 1 ? near[0] : null;
   if (!pick && near.length > 1) {

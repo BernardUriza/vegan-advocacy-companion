@@ -44,6 +44,7 @@ for (const thread_id of fresh) {
     continue;
   }
   if (d.stale) { threads.push({ thread_id, url, stale: true }); continue; }
+  if (d.unavailable) { threads.push({ thread_id, url, error: 'post no disponible (borrado o restringido) — cerrar sus interacciones, no re-correr' }); continue; }
   if (!(d.turns ?? []).length) { threads.push({ thread_id, url, error: 'extracción vacía (0 turnos) — FB no terminó de cargar; re-correr' }); continue; }
   const drafts = loadConsultDrafts(thread_id);
   const { matched, unmatched } = matchMyTurns(d.turns ?? [], drafts, thread_id, readActors());

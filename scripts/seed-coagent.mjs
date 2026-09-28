@@ -27,7 +27,7 @@
 //   node seed-coagent.mjs seed     --post-id <id> --author "<A>" --master <master.md>
 //   node seed-coagent.mjs insert   --post-id <id> --master <master.md> [--url <chat url>]
 //   node seed-coagent.mjs read     --phrase "<frase única del seed>" [--url <chat url>] [--out <f>]
-//   node seed-coagent.mjs finalize --post-id <id> --draft <draft.txt>
+//   node seed-coagent.mjs finalize --post-id <id> --draft <draft.txt> --author "<A>"
 //   node seed-coagent.mjs show     --post-id <id>
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
@@ -152,7 +152,7 @@ if (!isMain) {
   const postId = arg('--post-id');
   const draft = arg('--draft');
   const author = arg('--author');
-  if (!postId || !draft) die('uso: seed-coagent.mjs finalize --post-id <id> --draft <file> [--author "<A>"]');
+  if (!postId || !draft || !author) die('uso: seed-coagent.mjs finalize --post-id <id> --draft <file> --author "<A>"  (el autor es obligatorio: sin él el lurker-sweep no puede ligar el draft a su interacción)');
   const rp = receiptPath(postId);
   if (!existsSync(rp)) die(`no hay recibo parcial para ${postId} — corre \`seed\` primero (no saltes la consulta).`);
   const r = JSON.parse(readFileSync(rp, 'utf8'));
@@ -161,8 +161,8 @@ if (!isMain) {
   const draftPath = resolveUserPath(draft, ROOT);
   const sha = draftSha(readFileSync(draftPath, 'utf8'));
   // upsert por sha: varios targets del mismo post acumulan, no se pisan
-  const entry = { author: author || null, draft_sha: sha, draft_file: draftPath, consulted_at: nowIso() };
   const i = r.drafts.findIndex((d) => d.draft_sha === sha);
+  const entry = { author, draft_sha: sha, draft_file: draftPath, consulted_at: i >= 0 && r.drafts[i].consulted_at ? r.drafts[i].consulted_at : nowIso() };
   if (i >= 0) r.drafts[i] = entry; else r.drafts.push(entry);
   r.status = 'consulted';
   r.consulted_at = entry.consulted_at;

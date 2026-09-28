@@ -245,6 +245,7 @@ async function main() {
     const exp = await page.evaluate(expandAllInPage);
     await page.waitForTimeout(800);
     const walked = await page.evaluate(walkArticles, { ME, postId: (url.match(/\/posts\/(\d+)/) || [])[1] || null });
+    const unavailable = !walked.rows.length && await page.evaluate(() => /This content isn't available right now/i.test(document.body.innerText || ''));
     const raw = walked.rows.map(({ reactionLabels, ...r }) => ({ ...r, reactions: parseReactionCount({ labels: reactionLabels, text: r.text }) }));
     const postReactions = sumPostReactionLabels(walked.postReactionLabels);
     // dueño del post: lo detectado, o asumir MÍO (el pipeline corre sobre mis posts
@@ -298,6 +299,7 @@ async function main() {
       counts: { rawArticles: raw.length, uniqueTurns: turns.length, foreignDropped: walked.foreignDropped },
       freshestTurnMin,
       stale,
+      unavailable: !!unavailable,
       maxAgeDays: MAX_AGE_DAYS,
       postReactions,
       turns,

@@ -97,7 +97,8 @@
         "outcome_evidence": "Round 2 (2d): 'If any other animal had the capacity to capture and farm animals, they would. Our superior intelligence... makes us the apex species... We have no moral obligation to stop eating meat.'",
         "outcome_note": "dominacion-no-es-superioridad-moral: concedí la biología entera; ella abandonó 'omnivore' y saltó a 'apex species / superior intelligence / no moral obligation' — movió el eje de biología a might-makes-right sin defender el anterior. No conceded.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-27T22:29:06.922Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "draft_sha": "adf8046353f3e8b4"
       },
       {
         "thread_id": "28500475619575577",
@@ -109,7 +110,8 @@
         "outcome_evidence": "Última reply mía hace 3 días (tx 28500475619575577, 2026-09-27 22:27); ningún turno de CarolAnn después.",
         "outcome_note": "dominacion-no-es-superioridad-moral: tras 'lo que una especie PUEDE hacer no dice qué tiene derecho a hacer' CarolAnn no volvió en 3 días. El goalpost omnívoro→apex se quedó sin cuarta estación.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-27T22:29:06.922Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "draft_sha": "83b5ff389f27566d"
       }
     ]
   },
@@ -227,7 +229,8 @@
         "outcome_evidence": "3d: 'what justifies it, is it make the food collection/supply easier. And there's nothing wrong with it.'",
         "outcome_note": "algo-a-alguien-sujeto-derecho: la pregunta limpia aterrizó — Matt dejó de perderse y CONTESTÓ el título con una razón (conveniencia del abasto). Primer interlocutor que pone una justificación sobre la mesa en vez de esquivarla. No conceded.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-27T22:29:06.922Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "draft_sha": "d17b6ed079173edb"
       },
       {
         "thread_id": "28046483408306158",
@@ -239,7 +242,8 @@
         "outcome_evidence": "1d: 'yes. It does. Because we are the dominant species... We care for the animal, provide all its needs and desires, and livestock animals gave no greater point of view than that.'",
         "outcome_note": "algo-a-alguien-sujeto-derecho: conceder la conveniencia y probar si carga el título lo mantuvo en la pregunta; contestó 'yes, it does' y subió a dominancia + cuidado + 'no greater PoV' — sigue de buena fe, sin conceder.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-27T22:29:06.922Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "draft_sha": "86ca9bcf48ab972c"
       },
       {
         "thread_id": "28046483408306158",
@@ -249,7 +253,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
         "outcome_evidence": "Su siguiente turno (8h): 'I've answered as best I can. There is no other answer. How about you telling me what is bad about turning livestock into property?'",
-        "outcome_note": "algo-a-alguien: sostuvo el título con poder (dominant species) y concedió de paso que el ganado tiene un punto de vista ('no greater point of view than that'); siguió contestando, sin insulto."
+        "outcome_note": "algo-a-alguien: sostuvo el título con poder (dominant species) y concedió de paso que el ganado tiene un punto de vista ('no greater point of view than that'); siguió contestando, sin insulto.",
+        "draft_sha": "176391a66d9a63e5",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "thread_id": "28046483408306158",
@@ -259,7 +266,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
         "outcome_evidence": "Su siguiente turno (6h): 'but how does any of those things happening to her, matter to her. ??'",
-        "outcome_note": "algo-a-alguien: invirtió la pregunta de buena fe (¿qué tiene de malo?) y recibió el lado de ella vs la decisión del dueño; volvió a preguntar en vez de cerrar."
+        "outcome_note": "algo-a-alguien: invirtió la pregunta de buena fe (¿qué tiene de malo?) y recibió el lado de ella vs la decisión del dueño; volvió a preguntar en vez de cerrar.",
+        "draft_sha": "f7b158c6c35997ed",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "thread_id": "28046483408306158",
@@ -269,7 +279,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
         "outcome_evidence": "Su siguiente turno (5h): 'sorry. Repeating yourself means nothing. An animal wants food and water and comfort, company if a herd or pack animal, that is all.'",
-        "outcome_note": "algo-a-alguien: tras la respuesta del perro/la silla se replegó a 'repeating yourself means nothing' pero volvió a conceder el lado de ella en sus palabras: 'an animal wants food and water and comfort, company'. Ronda 6; rendimiento marginal cayendo, no insulto."
+        "outcome_note": "algo-a-alguien: tras la respuesta del perro/la silla se replegó a 'repeating yourself means nothing' pero volvió a conceder el lado de ella en sus palabras: 'an animal wants food and water and comfort, company'. Ronda 6; rendimiento marginal cayendo, no insulto.",
+        "draft_sha": "f775a144734773ec",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "thread_id": "28046483408306158",
@@ -279,7 +292,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
         "outcome_evidence": "Matt Terrain: 'asked and answered. More than once. Pretty sure we're done.' (about an hour, tx 28046483408306158)",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: usar SU lista (food, water, comfort, company) como prueba de un lado propio no lo movió; cerró con 'asked and answered, pretty sure we're done' sin decir por qué el dueño decide sobre las cuatro. Sin concesión; loop terminal, no perseguir."
+        "outcome_note": "algo-a-alguien-sujeto-derecho: usar SU lista (food, water, comfort, company) como prueba de un lado propio no lo movió; cerró con 'asked and answered, pretty sure we're done' sin decir por qué el dueño decide sobre las cuatro. Sin concesión; loop terminal, no perseguir.",
+        "draft_sha": "1f7a82103a50321f",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       }
     ]
   },
@@ -406,7 +422,8 @@
         "outcome_evidence": "tx 2026-09-25: ningún turno de Adam posterior a mi reply.",
         "outcome_note": "sobreposicion-de-especies-criterio-leido: le ofrecí qué me movería + recordatorio de su concesión de julio; no regresó en 3-4 días.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-27T22:29:06.922Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "draft_sha": "f2b9a0849c6276e7"
       }
     ]
   },
@@ -672,7 +689,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
         "outcome_evidence": "Dori Cavy Sims · 5h: 'she is food.'",
-        "outcome_note": "algo-a-alguien: la pregunta en una línea aterrizó y ella contestó con un estatus, 'she is food' — etiqueta sin razón. Drive-by que engancha solo para sellar."
+        "outcome_note": "algo-a-alguien: la pregunta en una línea aterrizó y ella contestó con un estatus, 'she is food' — etiqueta sin razón. Drive-by que engancha solo para sellar.",
+        "draft_sha": "dddf70323536f9a2",
+        "lurker_reactions": 1,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "thread_id": "28604913169131821",
@@ -682,7 +702,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "escalated",
         "outcome_evidence": "Dori Cavy Sims · 5h: 'you must have a fetish. Referring to all animals as she.'",
-        "outcome_note": "algo-a-alguien: cero respuesta a la línea única; escaló a sello personal por decir 'she' ('you must have a fetish'). No enganchar más: troll puro en esta copia."
+        "outcome_note": "algo-a-alguien: cero respuesta a la línea única; escaló a sello personal por decir 'she' ('you must have a fetish'). No enganchar más: troll puro en esta copia.",
+        "draft_sha": "d7cca396a2a28c59",
+        "lurker_reactions": 1,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       }
     ]
   },
@@ -713,7 +736,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
         "outcome_evidence": "Jude Cooper · 7h: 'so it's ok to shoot, poison or trap a pig that's not owned? But if you buy or breed that pig, pay for it's feed... than you're a bad person for eating it? Wow, vegan logic.'",
-        "outcome_note": "algo-a-alguien: la distinción poseído/feral aterrizó y la volteó a straw ('so it's ok to shoot, poison or trap a pig that's not owned? ... Wow, vegan logic'). Enganchó el eje; lee la distinción como permiso para matar ferales y suma el 'yo lo cuido' (vet, feed, fencing) como legitimación."
+        "outcome_note": "algo-a-alguien: la distinción poseído/feral aterrizó y la volteó a straw ('so it's ok to shoot, poison or trap a pig that's not owned? ... Wow, vegan logic'). Enganchó el eje; lee la distinción como permiso para matar ferales y suma el 'yo lo cuido' (vet, feed, fencing) como legitimación.",
+        "draft_sha": "93f2ba581c73c0d2",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       }
     ]
   },
@@ -956,7 +982,7 @@
         "outcome_evidence": "Anna (1d, reply a Bernard): 'The line falls where it does because we operate in self-interest… We decide what gets legal protection… If you don't want your dog taken, there needs to be a legally recognised ownership title… You're also conflating two completely different questions… We can impose duties on humans regarding animals without pretending animals have identical rights… You still have to make that argument rather than simply assuming your conclusion.'",
         "outcome_note": "algo-a-alguien-sujeto-derecho (título ≠ tutela): Anna DEFENDIÓ la estación en vez de migrar — sostiene que el título es lo que le permite recuperar a su perra (chip/registro) y concede la distinción deber/título en sus propias palabras ('we can impose duties on humans regarding animals without pretending animals have identical rights'). De paso concede la tesis del post: 'we operate in self-interest… we decide what gets legal protection… laws vary' = convención + poder, no justificación. Cierra con burden-flip ('you still have to make that argument rather than assuming your conclusion') y salida anunciada ('I'm not explaining this again'). Sin concesión, sin nueva estación: engaged de sustancia.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-27T22:29:06.922Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "thread_id": "28500475619575577",
@@ -968,7 +994,8 @@
         "outcome_evidence": "Round 3 (2d): 'We don't owe you a philosophical justification for why humans have chosen to treat animals as property... So yes, animals are property because we humans decided that.'",
         "outcome_note": "algo-a-alguien-sujeto-derecho: tras pedirle el criterio, se retiró al burden-flip 'I already answered / we don't owe you a philosophical justification / animals are property because we decided'. Estación clásica de su retreat-cycle. No conceded.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-27T22:29:06.922Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "draft_sha": "a2287e6876af7a70"
       },
       {
         "thread_id": "28500475619575577",
@@ -980,7 +1007,8 @@
         "outcome_evidence": "Última reply mía hace 3 días; último turno de Anna hace 6 días (tx 28500475619575577).",
         "outcome_note": "algo-a-alguien-sujeto-derecho: 'humans decided' = quién escribió la regla, no la razón; me quedé en su punto fuerte (protección vía ownership) y Anna no volvió en 3 días. Estación 'no debo justificar' seguida de silencio.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-27T22:29:06.922Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "draft_sha": "655e09481ef2d566"
       }
     ]
   },
@@ -1115,9 +1143,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "escalated",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-27T22:29:06.922Z",
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
         "outcome_evidence": "Chris Duffy · 6h → Parnaibensis: 'it's not his fault his English is absolute trash so he uses AI to help. His point is also trash, animals are property end of story.'",
-        "outcome_note": "algo-a-alguien: no contestó mi reply (16h). 6h después escaló en otra rama: a Parnaibensis 'his English is absolute trash so he uses AI... his point is also trash, animals are property end of story', y raíz nueva 'give it a rest, show us how you're actually helping animals'. Sello + deflexión a activismo. La cortesía de junio se acabó."
+        "outcome_note": "algo-a-alguien: no contestó mi reply (16h). 6h después escaló en otra rama: a Parnaibensis 'his English is absolute trash so he uses AI... his point is also trash, animals are property end of story', y raíz nueva 'give it a rest, show us how you're actually helping animals'. Sello + deflexión a activismo. La cortesía de junio se acabó.",
+        "draft_sha": "b4efb3adfad665ba"
       }
     ]
   },
@@ -1627,7 +1656,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
         "outcome_evidence": "Les M: 'well, I haven't seen anyone making that argument… your entire argument seems to rest on the assumption…' (55 min, tx 28604913169131821)",
-        "outcome_note": "sobreposicion/algo-a-alguien: recibos verbatim + concesión de lo descriptivo + su propia concesión de intereses; Les respondió con burden-flip ('you've only assumed, not demonstrated') y la analogía de mascotas. Sigue sin fundar el título; conversación viva."
+        "outcome_note": "sobreposicion/algo-a-alguien: recibos verbatim + concesión de lo descriptivo + su propia concesión de intereses; Les respondió con burden-flip ('you've only assumed, not demonstrated') y la analogía de mascotas. Sigue sin fundar el título; conversación viva.",
+        "draft_sha": "2759bfe2d3a95da9",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "thread_id": "28150669567887541",
@@ -1637,7 +1669,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
         "outcome_evidence": "Les M · 6h: 'Does their interest in continuing to live suddenly carry less moral weight because nobody owns them?... You've successfully identified a distinction between livestock and wildlife. Congratulations.'",
-        "outcome_note": "algo-a-alguien: enganchó la distinción poseído/no-poseído y la acusó de goalpost ('so now we're shifting from animal deaths to the legal classification of ownership?'); contra-pregunta: '¿su interés en vivir pesa menos porque nadie los posee?' + 'welfare laws exist' + 'ownership ≠ unlimited authority'. Cierra igual que en la otra copia: 'you assert, not establish; demonstrate why the distinction requires veganism'."
+        "outcome_note": "algo-a-alguien: enganchó la distinción poseído/no-poseído y la acusó de goalpost ('so now we're shifting from animal deaths to the legal classification of ownership?'); contra-pregunta: '¿su interés en vivir pesa menos porque nadie los posee?' + 'welfare laws exist' + 'ownership ≠ unlimited authority'. Cierra igual que en la otra copia: 'you assert, not establish; demonstrate why the distinction requires veganism'.",
+        "draft_sha": "5b6c0232b1a83f06",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "thread_id": "28150669567887541",
@@ -1650,7 +1685,10 @@
           "collage-les-2026-09-27.png (5 recibos resaltados)"
         ],
         "outcome_evidence": "Les M · 6h: 'Although several of those people are distinguishing human cognition from animal cognition... But anyway, moving on.'",
-        "outcome_note": "sobreposicion-de-especies: los recibos aterrizaron ('Fair enough') pero esquiva la sobreposición: 'several of those people are distinguishing human cognition from animal cognition, not arguing that newborn babies and dementia patients should be considered property. But anyway, moving on.' El criterio-leído no lo tocó; migró a 'sentience ≠ ownership immoral'."
+        "outcome_note": "sobreposicion-de-especies: los recibos aterrizaron ('Fair enough') pero esquiva la sobreposición: 'several of those people are distinguishing human cognition from animal cognition, not arguing that newborn babies and dementia patients should be considered property. But anyway, moving on.' El criterio-leído no lo tocó; migró a 'sentience ≠ ownership immoral'.",
+        "draft_sha": "d679ff899c9acd8c",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "thread_id": "28604913169131821",
@@ -1660,7 +1698,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
         "outcome_evidence": "Les M · 6h: 'congratulations, you found some comments I hadn't seen Fair enough... What legitimises animal ownership? The position that humans can legitimately use animals for food... provided their welfare is appropriately protected.'",
-        "outcome_note": "algo-a-alguien: el collage de recibos aterrizó — concesión de PROCEDENCIA ('congratulations, you found some comments I hadn't seen. Fair enough'), no del marco. Luego repite la estación: 'why does sentience automatically make ownership immoral? you assume it' y ofrece SU legitimación: uso humano con bienestar protegido + responsabilidad legal (pet owner decide vivienda, reproducción, eutanasia). Exige además prueba de que el veganismo es obligación. Retreat-cycle: petición de principio invertida + bienestarismo como título."
+        "outcome_note": "algo-a-alguien: el collage de recibos aterrizó — concesión de PROCEDENCIA ('congratulations, you found some comments I hadn't seen. Fair enough'), no del marco. Luego repite la estación: 'why does sentience automatically make ownership immoral? you assume it' y ofrece SU legitimación: uso humano con bienestar protegido + responsabilidad legal (pet owner decide vivienda, reproducción, eutanasia). Exige además prueba de que el veganismo es obligación. Retreat-cycle: petición de principio invertida + bienestarismo como título.",
+        "draft_sha": "52f7b685ffbdc1b3",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "outcome": "pending",
@@ -1668,7 +1709,10 @@
         "date": "2026-09-28",
         "their_move": "Réplica 6h (Open Debates 3, tras el collage): \"congratulations, you found some comments I hadn't seen. Fair enough\" + reinterpreta (distinguen cognición, no dicen que los bebés sean propiedad) + su legitimación del título: uso humano \"provided their welfare is appropriately protected\", ownership = responsibilities, analogía del pet owner que decide vivienda/comida/reproducción/eutanasia + \"why does sentience automatically make ownership immoral? you assume it\" + \"you haven't established veganism is an obligation\".",
         "our_reply_summary": "Recibí el Fair enough sin celebrarlo; cerré la reinterpretación (si la cognición es la línea, saca al bebé; que nadie lo diga en voz alta muestra que el criterio no hace el trabajo); tomé su primera respuesta real (el uso legitima el título) y la desmonté con su propia mascota: la parte defendible del perro es cuidado que apunta al perro (cuando deja de apuntar lo llamamos mal dueño); la cerda se cría para venderse y \"apropiado\" se define dentro del sistema que ya decidió para qué es ella; circular: el título vale porque el uso vale y el uso vale porque el sistema lo llama apropiado. Cierre: antes de que el sistema llame apropiado al uso, ¿con qué fundamento es tuya para usarla? 244 palabras, filo profano.",
-        "framework": "bienestarismo-jugada-maestra-del-poder"
+        "framework": "bienestarismo-jugada-maestra-del-poder",
+        "draft_sha": "19443a21f947dd12",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "outcome": "pending",
@@ -1676,7 +1720,10 @@
         "date": "2026-09-28",
         "their_move": "Réplica 6h en la rama de crop deaths (VS Meat Eaters): \"so now we're shifting from animal deaths to the legal classification of ownership?\" + \"does their interest in continuing to live carry less moral weight because nobody owns them?\" + welfare laws/husbandry standards existen + \"you assert, not establish\" + \"you haven't established why that distinction requires veganism\".",
         "our_reply_summary": "Recibo: el post abrió en el título, la lista de muertes la trajeron Richard y él, nada se movió. Contesté de frente su pregunta buena: el interés pesa igual, no shit; lo que cambia es la relación: el canguro muere en un conflicto y alguien tiene que responder por matarlo (y a veces no puede); el novillo está bajo título antes del acto final, y el título convierte lo que necesitaría justificación en algo que el dueño reclama como suyo; los estándares regulan el derecho ya otorgado, no explican de dónde salió. Cierre: ¿qué convierte \"tengo que responder por hacerle esto\" en \"tengo derecho a hacerle esto\"? 152 palabras.",
-        "framework": "algo-a-alguien-sujeto-derecho"
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "a9b21c21789159ef",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -2916,7 +2963,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
         "outcome_evidence": "Parnaibensis Nws · 3h: 'whether an animal is considered property or not is, at the end of the day, not even a little bit relevant to that animal.'",
-        "outcome_note": "algo-a-alguien: del sello IA pasó a un argumento real — 'whether an animal is considered property or not is not even a little bit relevant to that animal; a livestock animal with all its needs met won't wake up thinking I'm property; it's a philosophical question for vegans to feel morally superior'. Bienestarismo puro como respuesta al eje de propiedad; el 'ai slop' sigue de escudo para no leer."
+        "outcome_note": "algo-a-alguien: del sello IA pasó a un argumento real — 'whether an animal is considered property or not is not even a little bit relevant to that animal; a livestock animal with all its needs met won't wake up thinking I'm property; it's a philosophical question for vegans to feel morally superior'. Bienestarismo puro como respuesta al eje de propiedad; el 'ai slop' sigue de escudo para no leer.",
+        "draft_sha": "7cbe557115e40586",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "outcome": "pending",
@@ -2924,7 +2974,10 @@
         "date": "2026-09-28",
         "their_move": "Réplica 3h: del sello IA pasó a \"whether an animal is considered property or not is not even a little bit relevant to that animal; a livestock animal with all its needs met and a stress free life won't wake up thinking I'm property; it's a philosophical question for vegans to feel morally superior\".",
         "our_reply_summary": "Concedí que no conoce la palabra (un recién nacido tampoco conoce \"custodia\" y decide mucho sobre él); el título trabaja el día en que lo que ella quiere y lo que el dueño planeó se separan, la note o no; \"needs met, stress free\" describe cómo se la mantiene hasta que llega el uso; \"irrelevante para ella\" es bullshit: fija quién decide cuando su lado y el propósito del dueño chocan. Cierre: si el título le es irrelevante, ¿por qué decide lo que pasa en el momento en que su lado deja de encajar en el plan? Cero defensa de autenticidad. 117 palabras.",
-        "framework": "consideracion-moral-no-cuanto-sufre"
+        "framework": "consideracion-moral-no-cuanto-sufre",
+        "draft_sha": "f923948bd68ecc88",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       }
     ],
     "user_id": "100024818371314",
@@ -3231,7 +3284,8 @@
         "outcome_evidence": "17h: 'You just keep proving my point that you ARE delusional... Animals do not have a PoV. Humans have dominion over them... Veganism is a cult'",
         "outcome_note": "algo-a-alguien-sujeto-derecho: no mordí el bait y devolví la pregunta; ella subió el sello (delusional/cult/psychosis) pero TRAJO sustancia nueva: naturalismo + 'animals do not have a PoV' + dominion. El insulto escaló; el argumento se destapó.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-27T22:29:06.922Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "draft_sha": "fa5575cde8c661c6"
       },
       {
         "thread_id": "28354739720849914",
@@ -3241,9 +3295,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-27T22:29:06.922Z",
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
         "outcome_evidence": "Última reply mía hace 2 días; último turno de Linda hace 3 días (tx 28354739720849914).",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: dejé el insulto donde estaba y aislé 'Animals do not have a PoV' como el único desacuerdo real; Linda no volvió en 2 días. El sello no cerró el intercambio: la pregunta quedó visible para el lurker."
+        "outcome_note": "algo-a-alguien-sujeto-derecho: dejé el insulto donde estaba y aislé 'Animals do not have a PoV' como el único desacuerdo real; Linda no volvió en 2 días. El sello no cerró el intercambio: la pregunta quedó visible para el lurker.",
+        "draft_sha": "86335e7e86ce88b8"
       }
     ],
     "user_id": "100007626876163",
@@ -3275,7 +3330,8 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-27T22:29:06.922Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "draft_sha": "3d85422b1040fa32"
       }
     ],
     "user_id": "100021775394973",
@@ -3307,7 +3363,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
         "outcome_evidence": "Kirk Sawler: 'all that and you left out my non vegan vegetables lol' (58 min, tx 28459136643743554)",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: voltear a Ralph (dos relaciones, una palabra) le sacó solo un jab ('you left out my non vegan vegetables lol'); no defendió el título del cerdito."
+        "outcome_note": "algo-a-alguien-sujeto-derecho: voltear a Ralph (dos relaciones, una palabra) le sacó solo un jab ('you left out my non vegan vegetables lol'); no defendió el título del cerdito.",
+        "draft_sha": "09c36498aaeef1fa",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "thread_id": "28459136643743554",
@@ -3317,7 +3376,10 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
         "outcome_evidence": "Kirk Sawler · 1h: 'ownership, property, means responsibility to make an animal happy, just because you are going to eat a pig doesn't mean it shouldn't be happy'",
-        "outcome_note": "algo-a-alguien: contestó con bienestar + tu-quoque: 'ownership means responsibility to make an animal happy... happy well fed pigs taste better; you vegans support the same big food companies'. La distinción Ralph/piglet no la tocó; la razón del título sigue ausente (redefine propiedad como responsabilidad)."
+        "outcome_note": "algo-a-alguien: contestó con bienestar + tu-quoque: 'ownership means responsibility to make an animal happy... happy well fed pigs taste better; you vegans support the same big food companies'. La distinción Ralph/piglet no la tocó; la razón del título sigue ausente (redefine propiedad como responsabilidad).",
+        "draft_sha": "0d48cd57887237e5",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "outcome": "pending",
@@ -3325,7 +3387,10 @@
         "date": "2026-09-28",
         "their_move": "Réplica 1h: \"ownership, property, means responsibility to make an animal happy... happy well fed pigs taste better, you vegans support the same big food companies\".",
         "our_reply_summary": "Tomé su propia frase como la respuesta: \"taste better\" dice hacia dónde corre la responsabilidad; la felicidad de Ralph es para Ralph, la del cerdito está doblada en lo que será para él; misma palabra, dirección opuesta. Concedí el tu-quoque de las empresas (prueba fuck-all del cerdito; lo compró para convertirlo en comida). Cierre: si su felicidad es parte del sabor y la de Ralph es suya, ¿qué hace al cerdito tuyo para ponerlo en el menú? 100 palabras.",
-        "framework": "bienestarismo-jugada-maestra-del-poder"
+        "framework": "bienestarismo-jugada-maestra-del-poder",
+        "draft_sha": "2ccdceb80dad61ec",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       }
     ],
     "user_id": "100008695478463",
@@ -3356,7 +3421,10 @@
         "framework": "antropoespecismo",
         "outcome": "engaged",
         "outcome_evidence": "Homer Cu: 'humans dont need need to justify speciesism. We are the apex species…' (46 min, tx 28459136643743554)",
-        "outcome_note": "antropoespecismo: nombrar que la especie hace el trabajo decisivo lo llevó a confesarlo en voz alta: 'humans dont need to justify speciesism. We are the apex species.' La táctica movió al oponente a might-makes-right explícito, que es lo que el lurker necesita ver."
+        "outcome_note": "antropoespecismo: nombrar que la especie hace el trabajo decisivo lo llevó a confesarlo en voz alta: 'humans dont need to justify speciesism. We are the apex species.' La táctica movió al oponente a might-makes-right explícito, que es lo que el lurker necesita ver.",
+        "draft_sha": "d5ffc6195e4f3be0",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "thread_id": "28459136643743554",
@@ -3366,7 +3434,10 @@
         "framework": "dominacion-no-es-superioridad-moral",
         "outcome": "engaged",
         "outcome_evidence": "Homer Cu · 7h: 'its both. We can and we make it legal as a human species.'",
-        "outcome_note": "dominacion-no-es-superioridad: tras el 'apex es confesión' dobló la apuesta: 'its both. We can and we make it legal as a human species.' Colapsa control y legitimidad a propósito (poder + ley = razón). La separación no aterrizó en él; para el lurker quedó dicha por él mismo."
+        "outcome_note": "dominacion-no-es-superioridad: tras el 'apex es confesión' dobló la apuesta: 'its both. We can and we make it legal as a human species.' Colapsa control y legitimidad a propósito (poder + ley = razón). La separación no aterrizó en él; para el lurker quedó dicha por él mismo.",
+        "draft_sha": "ed57ec32d1ef73c0",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       }
     ],
     "user_id": "100001248981179",
@@ -3400,7 +3471,10 @@
         "framework": "dominacion-no-es-superioridad-moral",
         "outcome": "engaged",
         "outcome_evidence": "Jason Lamy: 'the paperwork over my livestock proves i own them' (24 min, tx 28148343171453514)",
-        "outcome_note": "dominacion-no-es-superioridad-moral: 'nadie los posee en el campo' + 'tu segunda frase dice quién tiene el poder' lo llevó a 'the paperwork over my livestock proves i own them' (es-legal como respuesta a legítimo). Sin concesión."
+        "outcome_note": "dominacion-no-es-superioridad-moral: 'nadie los posee en el campo' + 'tu segunda frase dice quién tiene el poder' lo llevó a 'the paperwork over my livestock proves i own them' (es-legal como respuesta a legítimo). Sin concesión.",
+        "draft_sha": "58416d765e481dd6",
+        "lurker_reactions": 1,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "thread_id": "28148343171453514",
@@ -3410,7 +3484,10 @@
         "framework": "dominacion-no-es-superioridad-moral",
         "outcome": "engaged",
         "outcome_evidence": "Jason Lamy · 1h: 'my livestock arent a someone'",
-        "outcome_note": "dominacion-no-es-superioridad: del 'paperwork' pasó a negar el sujeto: 'my livestock arent a someone'. Es la estación 'algo' del eje, una línea sin razón. El título sigue sin contestar; ahora la pregunta es qué hace 'alguien' al perro y 'algo' a la vaca."
+        "outcome_note": "dominacion-no-es-superioridad: del 'paperwork' pasó a negar el sujeto: 'my livestock arent a someone'. Es la estación 'algo' del eje, una línea sin razón. El título sigue sin contestar; ahora la pregunta es qué hace 'alguien' al perro y 'algo' a la vaca.",
+        "draft_sha": "358f1c7ac668677a",
+        "lurker_reactions": 1,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
         "outcome": "pending",
@@ -3418,7 +3495,10 @@
         "date": "2026-09-28",
         "their_move": "Réplica 1h (su post de Steve Irwin): \"my livestock arent a someone\".",
         "our_reply_summary": "Corta (57 palabras): la prueba ordinaria que él aplicaría a un perro (se asusta, se calma donde conoce, evita a quien la asustó, quiere seguir) la pasa la vaca. Cierre: ¿qué le falta a la vaca que el perro tiene, aparte de tu damn paperwork? Tercera vuelta, última.",
-        "framework": "algo-a-alguien-sujeto-derecho"
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "8fbc27acaa8fbb57",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       }
     ],
     "user_id": "61550822695503",
@@ -3449,7 +3529,8 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
         "outcome_evidence": "thread-extract 2026-09-28: 0 articles; FB: 'This content isn't available right now'",
-        "outcome_note": "algo-a-alguien: el post de Jenna Marie ya no está disponible (2026-09-28 08:30 CST: 'This content isn't available right now'). Cerrado por hilo eliminado; sin evidencia de respuesta a la concesión de método."
+        "outcome_note": "algo-a-alguien: el post de Jenna Marie ya no está disponible (2026-09-28 08:30 CST: 'This content isn't available right now'). Cerrado por hilo eliminado; sin evidencia de respuesta a la concesión de método.",
+        "draft_sha": "84fd55c238e225a6"
       }
     ],
     "user_id": "618672476",
