@@ -3261,7 +3261,16 @@
       "28148824318072066",
       "28154276440860187"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "thread_id": "28148343171453514",
+        "date": "2026-09-27",
+        "their_move": "Bajo el comentario top (81r) de su post de Steve Irwin: even vegans destroy the environment and kill animals; y a Elaine: they are mass breed because us meat eaters need to eat, dont like it o well aint shit you can do to stop it.",
+        "our_reply_summary": "Concedí las muertes del campo (nadie es dueño ahí), tomé su segunda frase como la confesión: la razón del título es poder (we can, you cant stop us), y el poder solo dice quién gana; concedí que comer es necesario y pregunté si eso da derecho a poseer a un ser consciente; cierre: ¿o we can es toda la respuesta? Una sola vuelta, hilo ajeno.",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "outcome": "pending"
+      }
+    ],
     "user_id": "61550822695503",
     "name": "Jason Lamy",
     "profile_url": "https://www.facebook.com/groups/683615698352965/user/61550822695503/",
@@ -3281,7 +3290,16 @@
     "threads": [
       "28154276440860187"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "thread_id": "28154276440860187",
+        "date": "2026-09-27",
+        "their_move": "Raíz top (4r) en el post de Jenna Marie (¿alguien cambió de opinión por este grupo?): highly unlikely, lo que postean los vegtards es desinformación que insulta a los omnis y produce el efecto contrario; los influencers proyectan enojo.",
+        "our_reply_summary": "Concedí el método de frente (el insulto no convence, y mucho del grupo es eso); separé mensajero de pregunta; planteé el título sin ruido (un cerdo con lado propio no es un objeto para uso ajeno); cierre: con los insultos a un lado, ¿cómo lo contestarías? Registro compasivo, contraste de temperamento sin anunciarlo.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
     "user_id": "618672476",
     "name": "Sarah Jane",
     "profile_url": "https://www.facebook.com/groups/683615698352965/user/618672476/",
