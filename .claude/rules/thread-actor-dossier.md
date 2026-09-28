@@ -40,7 +40,7 @@ el blanco al turno cuyo id == ese, e **IGNORÁ `debt[]`/`owes:true`** (esa tabla
 frescura eligió mal: con el link anclando la réplica de Anna, `owes:true` apuntó a
 Indecent Bystander —un raíz— y casi contesto al equivocado). Confirmá el verbatim del
 target del link antes de decidir la jugada; si la extracción dejó ramas sin expandir
-(`expand.remaining > 0`), abrí el link para ver el comentario anclado. El replylink es
+(`complete:false`, o `completeness.pendingExpandButtons > 0` en alguna pasada), abrí el link para ver el comentario anclado. El replylink es
 orden directa: obedecerlo, corto o completo según lo que pida el target.
 El JSON alimenta el transcript (paso 4) y los dossiers (paso 5) directo. **En
 prueba** — si un hilo sale raro (render nuevo de FB, deuda que no cuadra), caer al

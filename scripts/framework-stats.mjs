@@ -16,7 +16,7 @@ for (const f of frameworks) {
 
 for (const actor of actors) {
   for (const it of actor.interactions ?? []) {
-    if (!it.framework) continue;
+    if (!it.framework || it.misattributed) continue;
     const s = stats.get(it.framework);
     if (!s) continue;
     s.deploys++;

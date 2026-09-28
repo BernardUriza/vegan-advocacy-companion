@@ -71,8 +71,18 @@ determinista, #5 bajar dependencia del coagent.
 ## J. Ideas de contenido (posts originales — no el pipeline reactivo)
 42. [Post Frida Kahlo "Sin esperanza"](post-frida-sin-esperanza.md) — re-postear/afilar el post de 2020 (violencia alimentaria normalizada, la obra ES el argumento). — Done (posteado 2026-06-20, copy afilada EN)
 
+## K. Deuda de la revisión /cruel-critic (2026-09-28, lo que NO se arregló ese día)
+43. `seed-gate`: el bloque GUARDRAIL y los blockquotes se excluyen de la detección, así que una jugada bienestarista escondida dentro del guardrail pasa LIMPIO; `guardrailIsReal` se conforma con una palabra de eje y una de daño. Acotar el largo del bloque o exigir que la jugada viva fuera. — Proposed
+44. Hook de procedencia: el cierre clonado compara contra peers por contenido de archivo actual, así que la v2 del draft del MISMO target (re-finalizada) se bloquea como clon de la v1. Excluir peers del mismo post + mismo autor. — Proposed
+45. `moat-link-drafts`: su dry-run propone 51 pareos draft→interacción aún sin escribir (varios por orden de array, que no es cronológico garantizado). Revisarlos contra el arco antes de `--apply`. — Proposed
+46. `db.mjs`: todas las escrituras son leer→modificar→renombrar sin lock; dos escritores simultáneos (reflex apply + lurker-sweep) se revierten entre sí, `conceded` incluido. Lock de archivo o escritura por patch. — Proposed
+47. `freshness.mjs` / `actor-heat.mjs`: una fecha `YYYY-MM-DD` se parsea como medianoche UTC (18:00 del día anterior en CDMX); el tope de 7d queda en ~5.75d en los bordes. — Proposed
+48. `db.updateInteractionOutcome`: needle ausente sin fecha se vuelve `''` y matchea todo; el dry-run del reflex no colapsa espacios y el apply sí. Hacer needle obligatorio y unificar la normalización. — Proposed
+49. `receipt-shots.mjs`: un recibo con frase no encontrada (sin resaltado amarillo) sale `ok:true` y el proceso exit 0. — Proposed
+50. `scout-feeds.mjs`: un timeout de un grupo mata la corrida y pierde los grupos anteriores. — Proposed
+
 ## I. Testing / CI
-39. Test mínimo de los accessors de `db.mjs` (getFrameworksByTactic, validate caza data mala). — Proposed
+39. Test mínimo de los accessors de `db.mjs` (getFrameworksByTactic, validate caza data mala). — Done 2026-09-28 (`db.test.mjs`: guard de conceded, needle 0/2, closeOutcome solo pending)
 40. Pre-commit hook que corre `validate-data.mjs` (bloquea commits con dangling refs/drift). — Proposed
 
 ---
