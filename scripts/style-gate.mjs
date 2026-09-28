@@ -45,7 +45,24 @@ const KILL_PHRASES = [
   "that's a label, not an argument",
   'a label, not an argument',
   'is standing in for the answer',
+  // frases estériles/diplomáticas (regla 2026-09-27: registro filo profano, nada curricular)
+  'I would respectfully disagree',
+  'respectfully disagree',
+  'raises an interesting point',
+  'argument may overlook',
+  'with all due respect',
+  'I appreciate your perspective',
+  'I hear you',
 ];
+
+// ------- check: profanidad presente (regla 2026-09-27, flag BLANDA) -------
+// El registro filo es profano por default; un draft con cero groserías avisa. El juicio de
+// registro (filo vs compasivo, donde SÍ va limpio) es del LLM, por eso nunca es hard.
+const PROFANITY = /\b(fuck(ing|ed|s)?|fuck-all|bullshit|damn|hell|no shit|what the fuck|crap|ass)\b/gi;
+function checkProfanity() {
+  const hits = text.match(PROFANITY) || [];
+  return { name: 'profanityCount', hard: false, soft: hits.length === 0, count: hits.length, evidence: [...new Set(hits.map((h) => h.toLowerCase()))].slice(0, 6) };
+}
 
 // ------- helpers de segmentación -------
 const lines = text.split('\n');
@@ -219,6 +236,7 @@ const checks = [
   detectWelfaristAxis(text, { lang: 'en', positional: true, quantumHardAt: 2 }),
   detectBiocentricAxis(text, { lang: 'en' }),
   checkNegateThenAffirm(),
+  checkProfanity(),
 ];
 
 const hardFlags = checks.filter((c) => c.hard).map((c) => c.name);
@@ -250,6 +268,7 @@ if (asJson) {
   console.log(`[${mark(checks[6].hard)}] welfaristAxis     ${checks[6].evidence.length ? checks[6].evidence.join(' | ') : 'eje no-bienestarista (ok)'}`);
   console.log(`[${mark(checks[7].hard)}] biocentricAxis    ${checks[7].evidence.length ? checks[7].evidence.join(' | ') : 'eje sensocéntrico (ok)'}`);
   console.log(`[${checks[8].hard ? 'X' : checks[8].soft ? '~' : '.'}] negateThenAffirm  ${checks[8].count ? 'pivote copular: ' + checks[8].evidence.map((h) => `"${h}"`).join(' | ') : checks[8].soft ? 'apositivo: ' + checks[8].softEvidence.join(' | ') : 'afirmativo (ok)'}`);
+  console.log(`[${checks[9].soft ? '~' : '.'}] profanityCount    ${checks[9].count} (${checks[9].count ? checks[9].evidence.join(', ') : 'cero: si el registro es filo, falta la voz profana'})`);
   if (softFlags.length) console.log(`\nflags blandas (avisan, no fallan): ${softFlags.join(', ')}`);
 }
 

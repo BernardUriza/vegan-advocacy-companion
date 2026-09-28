@@ -70,11 +70,12 @@ const author = arg('--author');
 const anchor = arg('--anchor') || '';
 const bodyFile = resolveUserPath(arg('--body-file'), ROOT);
 const bodyInline = arg('--body');
+const imageFile = resolveUserPath(arg('--image'), ROOT);
 const ME = process.env.ME || 'Bernard Uriza Orozco';
 const body = bodyFile ? readFileSync(bodyFile, 'utf8').replace(/\s+$/, '') : bodyInline;
 
 if (!url || !author || !body) {
-  console.error('uso: node comment-prepare.mjs --url "<openUrl>" --author "<Nombre>" [--anchor "<frase>"] (--body-file <f> | --body "<txt>")');
+  console.error('uso: node comment-prepare.mjs --url "<openUrl>" --author "<Nombre>" [--anchor "<frase>"] (--body-file <f> | --body "<txt>") [--image <png>]');
   process.exit(1);
 }
 
@@ -145,6 +146,42 @@ function readBack({ author, firstWords, lastWords }) {
     head: t.slice(0, 100),
     tail: t.slice(-100),
   };
+}
+
+// --- DENTRO de la página: el input[type=file] del composer que trae el draft ---
+// FB monta un input oculto por composer ("Attach a photo or video"); se elige el que sigue
+// al box en orden de documento y está más cerca, nunca el del composer raíz del post.
+function composerFileInput({ firstWords }) {
+  const boxes = [...document.querySelectorAll('div[contenteditable="true"][role="textbox"]')];
+  const box = boxes.find((b) => (b.innerText || '').includes(firstWords));
+  if (!box) return null;
+  const form = box.closest('form');
+  const scoped = form ? [...form.querySelectorAll('input[type="file"]')] : [];
+  if (scoped.length) return scoped[0];
+  const all = [...document.querySelectorAll('input[type="file"]')].filter((i) => /image/i.test(i.getAttribute('accept') || ''));
+  const after = all.filter((i) => box.compareDocumentPosition(i) & Node.DOCUMENT_POSITION_FOLLOWING);
+  return after[0] || null;
+}
+
+// El preview NO vive dentro del <form> del composer: FB lo monta en un contenedor hermano,
+// con su botón "Remove photo" (visto 2026-09-27). Se sube desde el box hasta el primer
+// ancestro que contenga ese botón y UN solo textbox — así el preview es de ESTE composer y
+// no del de otro comentario.
+function composerAttachmentState({ firstWords }) {
+  const boxes = [...document.querySelectorAll('div[contenteditable="true"][role="textbox"]')];
+  const box = boxes.find((b) => (b.innerText || '').includes(firstWords));
+  if (!box) return { found: false };
+  let anc = box.parentElement;
+  for (let d = 0; d < 30 && anc; d++, anc = anc.parentElement) {
+    const textboxes = anc.querySelectorAll('div[contenteditable="true"][role="textbox"]').length;
+    if (textboxes > 1) break;
+    const remove = anc.querySelector('[aria-label="Remove photo"], [aria-label="Remove video"]');
+    if (remove) {
+      const imgs = [...anc.querySelectorAll('img')].filter((i) => /^blob:|scontent|fbcdn/.test(i.src) && i.naturalWidth > 20);
+      return { found: true, previews: Math.max(imgs.length, 1), removeButton: true, depth: d, sizes: imgs.map((i) => `${i.naturalWidth}x${i.naturalHeight}`) };
+    }
+  }
+  return { found: true, previews: 0, removeButton: false };
 }
 
 // --- DENTRO de la página: links de post del diálogo que contiene el composer ---
@@ -222,6 +259,27 @@ async function main() {
     await page.waitForTimeout(1200); // dejar reconciliar a Lexical antes de leer
 
     const check = await page.evaluate(readBack, { author, firstWords, lastWords });
+    let attachment = null;
+    if (imageFile) {
+      const inputHandle = await page.evaluateHandle(composerFileInput, { firstWords });
+      const input = inputHandle.asElement();
+      if (!input) {
+        await failClose();
+        console.log(JSON.stringify({ ok: false, stage: 'attach', error: 'file input del composer no encontrado', imageFile }, null, 2));
+        process.exit(2);
+      }
+      await input.setInputFiles(imageFile);
+      for (let i = 0; i < 12; i++) {
+        await page.waitForTimeout(1000);
+        attachment = { imageFile, ...(await page.evaluate(composerAttachmentState, { firstWords })) };
+        if (attachment.previews) break;
+      }
+      if (!attachment.previews) {
+        await failClose();
+        console.log(JSON.stringify({ ok: false, stage: 'attach', error: 'sin preview de la imagen en el composer', attachment }, null, 2));
+        process.exit(2);
+      }
+    }
     const scopeRes = await page.evaluate(composerScopeLinks, { firstWords });
     const pageUrl = page.url();
     const identity = {
@@ -244,6 +302,7 @@ async function main() {
           loggedIn,
           opened,
           composerLabel: pasted.composerLabel,
+          attachment,
           styleGate: { wordCount: gate.wordCount, softFlags: gate.softFlags || [] },
           check,
           nextStep: !identity.sameThread
