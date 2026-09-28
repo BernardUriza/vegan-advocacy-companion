@@ -132,16 +132,27 @@ emit` los omite. Un hilo viejo solo entra por replylink de Bernard (modo single)
 - **Cargar el contexto de TODOS los blancos del lote desde el SSOT**
   (`getDossierSummary(<user_id>)` por target): postura, tácticas, `canonical_counter`
   y `what_not_to_do`.
-- Resolver el coagent por identidad (verificar `location.href` al escribir; reusar
-  su tab). **Seedearle UN master prompt de lote**: el tablero + las N jugadas
-  numeradas, cada una con su target verbatim, su jugada, su riesgo y su
-  `what_not_to_do`, pidiéndole que **stress-testee CADA una y redacte N borradores
-  numerados** como replies etiquetadas (norma del grupo, nunca root) en la voz de
-  Bernard — y que marque explícito si alguna jugada le parece débil.
+- Resolver el coagent por identidad (conversación canónica, `seed-coagent insert`
+  sin `--url`). **Seedearle UN master prompt de lote en LOOP INVERTIDO** (regla
+  [coagent-advise] § LOOP INVERTIDO, 2026-09-28): por target, el x completo —
+  guardrail + pregunta de fondo, verbatim del oponente en blockquote, arco del hilo,
+  resumen del dossier, el counter-framework con `enables`/`attack_surface`, la
+  instrucción de voz (filo verbatim, o "registro limpio" si es buena fe) y la jugada
+  en UNA línea — y **NINGUNA y pre-escrita**. El ask: *"escribe MI posición contra
+  este movimiento, en tu voz, una por target (no persuasión para una audiencia);
+  mantén tu registro agresivo con los debatientes, no te ancles a borradores ni frases
+  que te pasé antes, contesta desde tu propio modo creativo"*, que marque si alguna
+  jugada le parece débil y qué NO decir.
   - **Escape de calidad:** para un target sofisticado/alto-riesgo, darle su propio
     seed dedicado (no meterlo al lote) o pedir más profundidad en esa jugada.
+  - **Modo x/y secundario:** solo cuando ya hay una candidata que no debe cambiar de
+    fondo (replylink donde Bernard dicta la línea, corrección fina de un draft aprobado).
 - Esperar a que termine el streaming (estabilidad de contenido, no el stop-button
   stale). Recoger los N borradores.
+- **Pase de Claude = ENRIQUECIMIENTO, no reescritura:** sabor, personalidad y el
+  contexto que el coagent no tiene (dossier longitudinal, recibos de otros hilos,
+  imágenes que el extractor no ve). Si su salida deriva a daño/vida, Claude reescribe
+  el EJE. Luego style-gate/lint-prose/closer-clone y `finalize` sobre el draft FINAL.
 
 ### Etapa 4 — Style-gate, REVISIÓN DE LOTE, postear y verificar · regla [comment-post-and-verify]
 - **Paso 0 (style-gate POR-DRAFT):** pasar CADA borrador por [reply-output-style];

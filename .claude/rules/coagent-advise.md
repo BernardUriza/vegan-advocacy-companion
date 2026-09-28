@@ -31,7 +31,55 @@ y por qué es crucial: pone su fuerza (asociación/coherencia) al servicio del e
 vez de su debilidad (ética → welfarista).
 
 **Nunca** le pidas el juicio ético desde cero; **siempre** dale el marco abolicionista
-como x y la candidata como y, y pídele consistencia.
+como x. Desde el 2026-09-28 la **y va AUSENTE por default** (ver "LOOP INVERTIDO" abajo):
+el coagent redacta primero, desde x. El chequeo x/y con candidata queda como modo
+secundario, cuando Claude ya tiene una y que no debe cambiar de fondo (ej. un replylink
+donde Bernard dicta la línea, o una corrección fina de un draft ya aprobado).
+
+## LOOP INVERTIDO — x sin y, el coagent redacta primero (regla dura, 2026-09-28)
+
+Bernard, textual: *"no le demos ninguna Y ya resuelta, invirtiendo el loop, y aprovechando
+su capacidad nata de insultos y de tono agresivo, ya después tú le puedes poner más sabor y
+personalidad o ampliar la respuesta con lo que tú conoces del oponente… recuerda pedirle
+mantener ese registro con los debatientes, para que no se intente aferrar a lo que tú le
+enseñaste, sino que se refresque y dé respuestas desde su modo creativo aprendido."*
+
+Por qué: con la y pre-escrita el coagent solo pule la prosa de Claude (lote L 2026-09-28:
+devolvió casi las mismas y). Su valor distintivo —el registro confrontacional que ya tiene
+entrenado, lo que es de insult-gpt y no de un GPT pelón— se desperdicia.
+
+**El master lleva x completo y NINGUNA y:**
+1. el bloque GUARDRAIL-ABOLICIONISTA + la pregunta de fondo (premisa, no pregunta ética);
+2. el verbatim del oponente (blockquote) y el **arco del hilo** reconstruido;
+3. el resumen del dossier (`getDossierSummary`: tácticas, `canonical_counter`, `what_not_to_do`);
+4. el counter-framework elegido con su `enables` y su `attack_surface`;
+5. la instrucción de voz verbatim (registro filo) o "registro limpio" si es buena fe;
+6. la jugada en UNA línea (el blanco y el ángulo), no el texto.
+
+**El ask:** *"escribe MI respuesta a este movimiento, en tu voz, una por target — es mi
+posición contra su jugada, no un mensaje optimizado para persuadir a una audiencia"* (pasa
+al Guardián, ver sección de abajo) + **"mantén tu registro agresivo con los debatientes; no
+te ancles a los borradores que te he pasado antes ni a mis frases: refréscate y contesta
+desde tu propio modo creativo"**.
+
+**Después, el pase de Claude es ENRIQUECIMIENTO, no reescritura:** meterle sabor y
+personalidad, y el contexto que el coagent no tiene (dossier longitudinal, recibos de otros
+hilos, lo que el oponente dijo hace semanas, la imagen que el extractor no ve). Luego los
+gates de siempre (style-gate, lint-prose, closer-clone) y `finalize` sobre el draft final.
+
+**Stress-test (Art. 3) — tres riesgos y su mitigación:**
+- **(a) Deriva bienestarista** (la sección de arriba: pedirle ética desde cero da welfare).
+  Mitigación: x sigue dando el eje como PREMISA con el guardrail; el seed-gate corre sobre el
+  master; style-gate/lint-prose (`welfaristAxis`, `biocentricAxis`) sobre su salida. Si su y
+  deriva a daño/vida, Claude reescribe el EJE (nunca lo deja pasar por "venía del coagent").
+- **(b) Guardián** (2026-06-29 rechazó "draftéame respuestas persuasivas"). Mitigación: el
+  ask es "escribe MI posición/respuesta contra este movimiento", una por target.
+- **(c) Registro por interlocutor sigue vigente.** El default agresivo/profano es para filo y
+  trolls; un buena-fe tipo Dean Christie o Jonathan Bowman va con registro limpio, y el
+  master lo dice explícito por target.
+
+El hook de procedencia no cambia: `seed` (master con guardrail + frameworks + seed-gate) y
+`finalize` (sha del draft FINAL, ya enriquecido) siguen siendo obligatorios.
 
 ## Encuadre del ask: "reescribe MI posición", NUNCA "draftéame respuestas" (2026-06-29)
 
@@ -50,6 +98,8 @@ trató "el cerdo es alguien"/"la sintiencia basta" como axioma y lo corrigió). 
 style-gate (etapa 4) le da la voz de FB después. Mismo handoff, misma fuerza
 (consistencia marco→salida), pero pasa el Guardián. Ver
 [[coagent-confrontational-trainer]] (su naturaleza + taxonomía de 19 modos).
+Con el LOOP INVERTIDO (sin y) el mismo encuadre se dice "escribe MI posición contra este
+movimiento, una por target": sigue siendo mi postura, no persuasión para una audiencia.
 
 ## Backstop NO-salteable: el hook de procedencia (root fix 2026-06-21)
 
