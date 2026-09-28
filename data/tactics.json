@@ -542,5 +542,18 @@
       "100007626876163"
     ],
     "fallacy_type_id": null
+  },
+  {
+    "id": "legalidad_como_justificacion",
+    "name": "Appeal to Legality / \"We make it legal\"",
+    "category": "fallacy",
+    "definition": "Justifies owning or using an animal because the law allows it, or because \"we\" (humans) write the law that allows it. Treats the legal title as its own reason. Often paired with might-makes-right: \"we can and we make it legal.\"",
+    "canonical_counter": "The law is the title written down; citing it as the reason is the title justifying itself. It tells you who held the pen, and property law gets written by the ones holding the title. Owning people was legal too, written by the people doing the owning, and it got rewritten when someone demanded the reason behind it. Ask what the law should answer to, not what it says.",
+    "register": "filo",
+    "what_not_to_do": "Don't list a catalogue of formerly legal atrocities; one sharp example max, and any human-slavery parallel only by STRUCTURE (who writes the title), never equating the subjects. Don't argue legal technicalities or which jurisdictions protect animals. Don't concede that law and legitimacy are the same thing.",
+    "actors_known": [
+      "100001248981179"
+    ],
+    "fallacy_type_id": null
   }
 ]

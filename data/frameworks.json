@@ -103,7 +103,8 @@
     "related_tactics": [
       "species_hierarchy",
       "peticion_de_principio",
-      "inversion_carga"
+      "inversion_carga",
+      "legalidad_como_justificacion"
     ],
     "lurker_risk": "high"
   },
@@ -1299,7 +1300,8 @@
       "species_hierarchy",
       "naturalismo",
       "is_ought",
-      "apelacion_normal"
+      "apelacion_normal",
+      "legalidad_como_justificacion"
     ],
     "lurker_risk": "med"
   },
