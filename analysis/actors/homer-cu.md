@@ -47,5 +47,8 @@ No defender que los veganos son perfectos ni entrar al catálogo de grados. Conc
 
 ## Log de interacciones
 
-_(sin interacciones registradas)_
+### Hilo `28459136643743554` — 2026-09-27 · outcome: **pending**
+- **Su jugada:** Raíz (VEGANnoyance, post de sintiencia): Nothing to do with sentience. Everything to do with speciesism. Even vegans practice speciesism. The only difference is the degree.
+- **Nuestra respuesta:** Le tomé la palabra: si la línea de quién puede ser propiedad corre por especie, esa línea es la que hay que justificar (perro y cerdo, mismo lado propio, lados opuestos del mercado). Concedí la inconsistencia vegana sin catálogo de grados; los grados regulan el trato, el estatus es binario: bajo título o no. Cierre: ¿qué hace de la especie una razón para existir como propiedad?
+
 _Hilos: 28459136643743554_

@@ -3229,7 +3229,16 @@
     "threads": [
       "28459136643743554"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-27",
+        "their_move": "Raíz (VEGANnoyance, post de sintiencia): Nothing to do with sentience. Everything to do with speciesism. Even vegans practice speciesism. The only difference is the degree.",
+        "our_reply_summary": "Le tomé la palabra: si la línea de quién puede ser propiedad corre por especie, esa línea es la que hay que justificar (perro y cerdo, mismo lado propio, lados opuestos del mercado). Concedí la inconsistencia vegana sin catálogo de grados; los grados regulan el trato, el estatus es binario: bajo título o no. Cierre: ¿qué hace de la especie una razón para existir como propiedad?",
+        "framework": "antropoespecismo",
+        "outcome": "pending"
+      }
+    ],
     "user_id": "100001248981179",
     "name": "Homer Cu",
     "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100001248981179/",
