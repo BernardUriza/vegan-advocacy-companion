@@ -51,4 +51,8 @@ No defender que los veganos son perfectos ni entrar al catálogo de grados. Conc
 - **Su jugada:** Raíz (VEGANnoyance, post de sintiencia): Nothing to do with sentience. Everything to do with speciesism. Even vegans practice speciesism. The only difference is the degree.
 - **Nuestra respuesta:** Le tomé la palabra: si la línea de quién puede ser propiedad corre por especie, esa línea es la que hay que justificar (perro y cerdo, mismo lado propio, lados opuestos del mercado). Concedí la inconsistencia vegana sin catálogo de grados; los grados regulan el trato, el estatus es binario: bajo título o no. Cierre: ¿qué hace de la especie una razón para existir como propiedad?
 
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Réplica a mi reply (post de sintiencia, VEGANnoyance): "humans dont need to justify speciesism. We are the apex species. We dominate based on our written and unwritten rules. The moral argument is just based on the degree of speciesism depending on the person." — might-makes-right + rechazo de la carga + relativismo de grado.
+- **Nuestra respuesta:** Registro filo profano: su frase es la más honesta del post y una confesión; apex dice quién controla y escribe las reglas, fuck-all sobre si el título es legítimo; "grado de especismo" = preferencia respaldada por poder, que no lo vista de justificación; concedo la inconsistencia vegana (no da título a nadie); cierre: ¿o "we can" es toda la respuesta?
+
 _Hilos: 28459136643743554_

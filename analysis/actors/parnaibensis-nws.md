@@ -43,4 +43,8 @@ NO sonar herido; NO insultar de vuelta; NO entrar a discutir IA (seria aceptar e
 - **Su jugada:** youre pretending to be worried about animals and using ai?
 - **Nuestra respuesta:** Nombre que la acusacion de IA no toca la pregunta (etiqueta puesta donde iba el argumento); pedi que muestre el fallo; devolvi al hueso (propiedad de un conscious individual). Corto.
 
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Raíz (post de sintiencia, VEGANnoyance): sello IA — "didnt get past the first sentence because of the blatant use of ai… learn how to use your own words".
+- **Nuestra respuesta:** Una línea seca, sin defender autenticidad: no pasó de la primera oración y aun así reseñó todo el post; la pregunta en una línea (qué hace de un ser que siente un objeto legítimo de propiedad); "your own words on that one, whenever you're ready".
+
 _Hilos: 27330688236588406_

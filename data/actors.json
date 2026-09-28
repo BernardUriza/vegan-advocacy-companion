@@ -645,23 +645,40 @@
     "name": "Dori Cavy Sims",
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/1277660735/",
     "bando": "anti-vegan",
-    "postura_nucleo": "Los animales también explotan; hasta las plantas se explotan (companion planting).",
+    "postura_nucleo": "Drive-bys de una línea en las dos copias del post de sintiencia (\"And your point is?\", \"You write a lot of words and say little\"); antes: los animales también explotan.",
     "analisis": "Low-effort. Estira el término 'explotación' a plantas y animales no-sintientes para vaciarlo de carga moral. Error categorial: plantas no son sintientes; 'explotación' entre plantas no tiene víctima con intereses. Poco invertida en el debate.",
     "tactics": [
+      "insulto_ad_hominem",
       "naturalismo",
-      "is_ought",
-      "insulto_ad_hominem"
+      "is_ought"
     ],
     "tone": "low_effort",
     "verdict": "audiencia",
     "register": "filo",
-    "what_not_to_do": "No gastar una jugada principal. Si se responde: una línea que reponga la distinción de sentiencia, nada más.",
+    "what_not_to_do": "No gastar una jugada principal. Una línea que reponga la pregunta y pida algo de vuelta.",
     "threads": [
       "27341517928804691",
       "28604913169131821",
       "28459136643743554"
     ],
-    "interactions": []
+    "interactions": [
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-28",
+        "their_move": "Raíz drive-by (VEGANnoyance): \"And your point is?\"",
+        "our_reply_summary": "Una línea: el punto es la última línea del post; si hay alguien en la cerda con punto de vista, qué hace legítimo que exista como propiedad.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "28604913169131821",
+        "date": "2026-09-28",
+        "their_move": "Raíz drive-by (VS Meat Eaters, misma copia del post): \"You write a lot of words and say little.\"",
+        "our_reply_summary": "Una línea: si puede asustarse y las cosas le importan desde su lado, what the hell hace legítimo que exista como propiedad; \"say something back to that one\".",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ]
   },
   {
     "user_id": "61580416850698",
@@ -1618,6 +1635,14 @@
         "attachments": [
           "collage-les-2026-09-27.png (5 recibos resaltados)"
         ]
+      },
+      {
+        "thread_id": "28604913169131821",
+        "date": "2026-09-28",
+        "their_move": "Réplica a mi reply bajo su raíz (post de sintiencia, VS Meat Eaters): \"I haven't seen anyone making that argument… take it up with them\" + burden-flip (\"you've only assumed, not demonstrated\" que reconocer intereses hace ilegítima la propiedad) + analogía mascotas (people own pets, decide breeding/movement/euthanasia: is pet ownership immoral?) + \"interests worth considering ≠ override\" + \"objection to ownership ≠ proof of veganism\".",
+        "our_reply_summary": "Registro filo profano, con el collage de recibos adjunto (segunda vez, esta copia del post no lo tenía): recibo implícito (\"the screenshots are right here… never pinned on you\"); la carga la tiene quien reclama el título sobre el cuerpo de un sintiente (\"shrugging the burden back at me proves fuck-all\"); él ya concedió intereses worth considering → por qué el dueño gana cada vez que chocan (corrección del coagent: no \"no reason required\" sino \"final say cuando chocan\"); mascotas voltean: tutela (vet, movimiento, eutanasia POR ella) no requiere título, el título aparece en criar-para-vender/vender/matar; concedo veganismo-como-obligación es otra conversación; una línea al patrón (nobody said it → take it up with them → pets → veganism) y cierre en la pregunta del título.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -2848,6 +2873,14 @@
         "outcome": "silent",
         "outcome_evidence": "sin turnos posteriores (extract fresco 2026-07-05)",
         "outcome_note": "algo-a-alguien: el jab de 'using AI' no volvió tras la respuesta (5d) — sello sin argumento, expuesto y muerto."
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-28",
+        "their_move": "Raíz (post de sintiencia, VEGANnoyance): sello IA — \"didnt get past the first sentence because of the blatant use of ai… learn how to use your own words\".",
+        "our_reply_summary": "Una línea seca, sin defender autenticidad: no pasó de la primera oración y aun así reseñó todo el post; la pregunta en una línea (qué hace de un ser que siente un objeto legítimo de propiedad); \"your own words on that one, whenever you're ready\".",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "user_id": "100024818371314",
@@ -3227,6 +3260,14 @@
         "our_reply_summary": "Volteé su evidencia: con Ralph describe una relación de dos lados, con el cerdito un título de un solo lado hasta el plato; la misma palabra hace dos trabajos; ambos son seres conscientes con un lado propio; way the world works describe, no justifica. Cierre en el título.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-28",
+        "their_move": "Réplica a mi reply: \"all that and you left out my non vegan vegetables lol\" — jab crop_deaths sin argumento.",
+        "our_reply_summary": "Corta (100 palabras, filo profano): los dejé fuera porque no tocan la relación que pregunté; el animal atrapado en el campo no es suyo (no lo compró ni registró); el cerdito sí, desde que pagó hasta la cena; las verduras prueban fuck-all sobre eso; vuelta a la pregunta con Ralph.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
       }
     ],
     "user_id": "100008695478463",
@@ -3255,6 +3296,14 @@
         "their_move": "Raíz (VEGANnoyance, post de sintiencia): Nothing to do with sentience. Everything to do with speciesism. Even vegans practice speciesism. The only difference is the degree.",
         "our_reply_summary": "Le tomé la palabra: si la línea de quién puede ser propiedad corre por especie, esa línea es la que hay que justificar (perro y cerdo, mismo lado propio, lados opuestos del mercado). Concedí la inconsistencia vegana sin catálogo de grados; los grados regulan el trato, el estatus es binario: bajo título o no. Cierre: ¿qué hace de la especie una razón para existir como propiedad?",
         "framework": "antropoespecismo",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-28",
+        "their_move": "Réplica a mi reply (post de sintiencia, VEGANnoyance): \"humans dont need to justify speciesism. We are the apex species. We dominate based on our written and unwritten rules. The moral argument is just based on the degree of speciesism depending on the person.\" — might-makes-right + rechazo de la carga + relativismo de grado.",
+        "our_reply_summary": "Registro filo profano: su frase es la más honesta del post y una confesión; apex dice quién controla y escribe las reglas, fuck-all sobre si el título es legítimo; \"grado de especismo\" = preferencia respaldada por poder, que no lo vista de justificación; concedo la inconsistencia vegana (no da título a nadie); cierre: ¿o \"we can\" es toda la respuesta?",
+        "framework": "dominacion-no-es-superioridad-moral",
         "outcome": "pending"
       }
     ],
@@ -3286,6 +3335,14 @@
         "date": "2026-09-27",
         "their_move": "Bajo el comentario top (81r) de su post de Steve Irwin: even vegans destroy the environment and kill animals; y a Elaine: they are mass breed because us meat eaters need to eat, dont like it o well aint shit you can do to stop it.",
         "our_reply_summary": "Concedí las muertes del campo (nadie es dueño ahí), tomé su segunda frase como la confesión: la razón del título es poder (we can, you cant stop us), y el poder solo dice quién gana; concedí que comer es necesario y pregunté si eso da derecho a poseer a un ser consciente; cierre: ¿o we can es toda la respuesta? Una sola vuelta, hilo ajeno.",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "28148343171453514",
+        "date": "2026-09-28",
+        "their_move": "Réplica a mi reply (su post de Steve Irwin): \"the paperwork over my livestock proves i own them\" — es-legal como respuesta a qué-lo-hace-legítimo.",
+        "our_reply_summary": "Corta (72 palabras, filo profano): el papel prueba que tiene el título, nadie lo disputa; el título es lo cuestionado; el registro dice quién posee, fuck-all sobre por qué alguien puede poseer a un ser que siente; cierre: ¿o \"tengo los papeles\" es toda la respuesta? (el coagent quitó \"old deeds over people\": flanco innecesario). Una vuelta y salir.",
         "framework": "dominacion-no-es-superioridad-moral",
         "outcome": "pending"
       }

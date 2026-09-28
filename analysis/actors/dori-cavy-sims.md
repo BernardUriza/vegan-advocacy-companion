@@ -6,7 +6,7 @@
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/1277660735/
 - **Bando:** anti-vegan
 - **Veredicto:** audiencia · **Registro:** filo
-- **Postura núcleo:** Los animales también explotan; hasta las plantas se explotan (companion planting).
+- **Postura núcleo:** Drive-bys de una línea en las dos copias del post de sintiencia ("And your point is?", "You write a lot of words and say little"); antes: los animales también explotan.
 
 ## Análisis
 
@@ -14,17 +14,23 @@ Low-effort. Estira el término 'explotación' a plantas y animales no-sintientes
 
 ## Tácticas
 
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`) — Attacks the person instead of the argument. Used for social dominance in the thread, not to persuade. 'Intellectually challenged retards', 'idiots', 'vegan lab slop', 'cult'. Often combined with one real data point as cover.
+  - _Contra:_ Don't match the register. Name the evasion calmly: 'When the argument runs out, the insults start.' Contrast of temperament is visible to the lurker. One line max, then return to substance or disengage entirely.
 - **Appeal to Nature / Naturalismo** (`naturalismo`) — Justifies an action because it is 'natural', ignoring that many natural things are harmful and many beneficial things are unnatural. In vegan debates: 'we're biologically designed to eat meat', 'we're at the top of the food chain', 'lions eat meat'.
   - _Contra:_ Concede the biology entirely, then separate can from should (is-ought, Hume): 'Yes, we can digest meat — omnivore is a fact about digestion, not a moral status. The question is what justifies using a sentient being when we don't need to.' If they lean hard on 'natural', add the second layer: 'natural' doesn't carry moral weight by itself — a poisonous mushroom is natural and bad for us, medicine and hospitals are 'unnatural' and good. What makes something good or bad isn't whether it's natural; it's whether it satisfies or frustrates the interests of someone who can feel. So 'it's natural' answers nothing about whether it's right.
 - **Is-Ought / Naturalistic Fallacy** (`is_ought`) — Derives a moral 'should' from a descriptive 'is'. 'Biologically designed to eat meat' → 'therefore morally right to eat meat'. The jump from biological fact to moral justification needs justification that is never given.
   - _Contra:_ Separate is from should: 'That's what we can do — it says nothing about what we should do. We're also biologically capable of many things we consider wrong. Capability doesn't confer permission.'
-- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`) — Attacks the person instead of the argument. Used for social dominance in the thread, not to persuade. 'Intellectually challenged retards', 'idiots', 'vegan lab slop', 'cult'. Often combined with one real data point as cover.
-  - _Contra:_ Don't match the register. Name the evasion calmly: 'When the argument runs out, the insults start.' Contrast of temperament is visible to the lurker. One line max, then return to substance or disengage entirely.
 
 ## Counter-arsenal
 
 > Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
 
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
+  - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
+  - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
+  - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
+  - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
+  - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
 - **Appeal to Nature / Naturalismo** (`naturalismo`)
   - `antropoespecismo` → _deploy as:_ marco
   - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
@@ -41,18 +47,19 @@ Low-effort. Estira el término 'explotación' a plantas y animales no-sintientes
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
-- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
-  - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
-  - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
-  - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
-  - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
-  - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
 
 ## Qué NO hacer
 
-No gastar una jugada principal. Si se responde: una línea que reponga la distinción de sentiencia, nada más.
+No gastar una jugada principal. Una línea que reponga la pregunta y pida algo de vuelta.
 
 ## Log de interacciones
 
-_(sin interacciones registradas)_
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Raíz drive-by (VEGANnoyance): "And your point is?"
+- **Nuestra respuesta:** Una línea: el punto es la última línea del post; si hay alguien en la cerda con punto de vista, qué hace legítimo que exista como propiedad.
+
+### Hilo `28604913169131821` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Raíz drive-by (VS Meat Eaters, misma copia del post): "You write a lot of words and say little."
+- **Nuestra respuesta:** Una línea: si puede asustarse y las cosas le importan desde su lado, what the hell hace legítimo que exista como propiedad; "say something back to that one".
+
 _Hilos: 27341517928804691, 28604913169131821, 28459136643743554_
