@@ -18,6 +18,8 @@
   - _Contra:_ Concern for animal suffering doesn't prevent concern for human suffering — these aren't a zero-sum budget. 'Both matter. Noticing one doesn't cancel the other.' Then return to the original question.
 - **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`) — Asserts that human life is categorically more valuable than animal life as a premise, without arguing for the criterion. 'Human life is far more valuable than animal life, therefore exploitation is justified.'
   - _Contra:_ Ask for the criterion: 'What makes human interests categorically outweigh animal interests? Whatever criterion you give — sentience, capacity to suffer, social bonds, language — either also applies to some animals or fails to draw the line you need. The hierarchy needs an argument, not an assertion.'
+- **Appeal to Legality / "We make it legal"** (`legalidad_como_justificacion`) — Justifies owning or using an animal because the law allows it, or because "we" (humans) write the law that allows it. Treats the legal title as its own reason. Often paired with might-makes-right: "we can and we make it legal."
+  - _Contra:_ The law is the title written down; citing it as the reason is the title justifying itself. It tells you who held the pen, and property law gets written by the ones holding the title. Owning people was legal too, written by the people doing the owning, and it got rewritten when someone demanded the reason behind it. Ask what the law should answer to, not what it says.
 
 ## Counter-arsenal
 
@@ -40,6 +42,9 @@
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
   - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+- **Appeal to Legality / "We make it legal"** (`legalidad_como_justificacion`)
+  - `esclavitud-paralelismo` → _deploy as:_ marco
+  - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -54,5 +59,9 @@ No defender que los veganos son perfectos ni entrar al catálogo de grados. Conc
 ### Hilo `28459136643743554` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** Réplica a mi reply (post de sintiencia, VEGANnoyance): "humans dont need to justify speciesism. We are the apex species. We dominate based on our written and unwritten rules. The moral argument is just based on the degree of speciesism depending on the person." — might-makes-right + rechazo de la carga + relativismo de grado.
 - **Nuestra respuesta:** Registro filo profano: su frase es la más honesta del post y una confesión; apex dice quién controla y escribe las reglas, fuck-all sobre si el título es legítimo; "grado de especismo" = preferencia respaldada por poder, que no lo vista de justificación; concedo la inconsistencia vegana (no da título a nadie); cierre: ¿o "we can" es toda la respuesta?
+
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Réplica a mi reply (post de sintiencia, VEGANnoyance), contestando "is 'we can' the whole answer?": "its both. We can and we make it legal as a human species." — poder + ley como razón (legalidad_como_justificacion).
+- **Nuestra respuesta:** Registro filo profano: "both" es poder más papeleo; "we make it legal" dice quién tuvo la pluma y él ya lo había dicho ("we dominate based on our written and unwritten rules"): el título escribiéndose su propio permiso. Poseer personas también fue legal, escrito por quienes poseían (misma estructura, no mismo sujeto). El papeleo no agrega razón. Cierre: ¿a qué deben responder las reglas escritas además de que las escribimos nosotros?
 
 _Hilos: 28459136643743554_
