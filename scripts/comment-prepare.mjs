@@ -24,6 +24,7 @@ import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { openPersistentPage, expandAllInPage } from './fb-lib.mjs';
 import { resolveUserPath } from './paths.mjs';
+import { judgeThreadIdentity } from './thread-identity.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -146,6 +147,19 @@ function readBack({ author, firstWords, lastWords }) {
   };
 }
 
+// --- DENTRO de la página: links de post del diálogo que contiene el composer ---
+function composerScopeLinks({ firstWords }) {
+  const boxes = [...document.querySelectorAll('div[contenteditable="true"][role="textbox"]')];
+  const box = boxes.find((b) => (b.innerText || '').includes(firstWords));
+  if (!box) return { found: false, scope: null, links: [] };
+  const dialog = box.closest('div[role="dialog"]');
+  const root = dialog || document;
+  const links = [...root.querySelectorAll('a[href*="/groups/"]')]
+    .map((a) => a.href)
+    .filter((h) => /\/groups\/[^/?#]+\/(posts|permalink)\/\d+/.test(h));
+  return { found: true, scope: dialog ? 'dialog' : 'document', links };
+}
+
 async function main() {
   const bodyTrim = body.trim();
   const firstWords = bodyTrim.split('\n')[0].slice(0, 40);
@@ -208,23 +222,36 @@ async function main() {
     await page.waitForTimeout(1200); // dejar reconciliar a Lexical antes de leer
 
     const check = await page.evaluate(readBack, { author, firstWords, lastWords });
+    const scopeRes = await page.evaluate(composerScopeLinks, { firstWords });
+    const pageUrl = page.url();
+    const identity = {
+      scope: scopeRes.scope,
+      ...judgeThreadIdentity({ expectedUrl: url, pageUrl, dialogLinks: scopeRes.links }),
+    };
 
     await detach(); // deja la tab VIVA con el draft cargado
     detached = true;
 
-    const clean = check.ok && check.mentionIntact && check.startsOK !== false && check.endsOK !== false;
+    const draftOK = check.ok && check.mentionIntact && check.startsOK !== false && check.endsOK !== false;
+    const clean = draftOK && identity.sameThread;
     console.log(
       JSON.stringify(
         {
           ok: clean,
           url,
+          pageUrl,
+          identity,
           loggedIn,
           opened,
           composerLabel: pasted.composerLabel,
           styleGate: { wordCount: gate.wordCount, softFlags: gate.softFlags || [] },
           check,
-          nextStep: clean
-            ? 'Claude+MCP: list_pages → select_page la tab en esta url → re-leer el composer (Art. 2) → envío atómico con DESTINO + Enter sintético en evaluate_script (press_key Enter bloqueado por hook; ver comment-post-and-verify PASO 5) → verificación histérica por div[role=article] + screenshot. Si quedó mal, BORRAR.'
+          nextStep: !identity.sameThread
+            ? 'IDENTIDAD: el composer no está dentro del hilo pedido (identity.sameThread=false). NO enviar. Revisar identity.foreign y la tab; limpiar y re-preparar.'
+            : clean
+            ? (identity.urlRewritten
+                ? `OJO: FB reescribió la URL de la tab a ${pageUrl}. Buscar la tab por ESA url (o por el contenido del composer) y, en el envío atómico, assertar el hilo por los links del div[role=dialog] que contiene el composer (groups/${identity.expected.groupId}/posts/${identity.expected.postId}), nunca por location.href. `
+                : '') + 'Claude+MCP: list_pages → select_page la tab en esta url → re-leer el composer (Art. 2) → envío atómico con DESTINO + Enter sintético en evaluate_script (press_key Enter bloqueado por hook; ver comment-post-and-verify PASO 5) → verificación histérica por div[role=article] + screenshot. Si quedó mal, BORRAR.'
             : 'REVISAR: el draft quedó sucio (mención pisada / orden / truncado). Limpiar (Meta+a→Backspace) y re-preparar, o caer al golden path MCP.',
         },
         null,

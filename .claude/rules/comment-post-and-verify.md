@@ -141,6 +141,10 @@ Lexical lo consume (`defaultPrevented:true`) y publica; verificado 5/5 el 2026-0
 Gotcha del hook: resuelve el registro desde el **cwd** — si el Bash anterior te dejó
 parado en `scripts/`, busca `scripts/.claude/…` y bloquea; regresa a la raíz antes.
 (Los `\n` ya pegados son soft-breaks, no envían.)
+Si `comment-prepare` reporta `identity.urlRewritten:true`, el assert (b) de href NO aplica:
+FB abrió el post como diálogo sobre otro grupo. Localiza la tab por `pageUrl` (o por el
+contenido del composer) y assertá el hilo por los links `groups/<gid>/posts/<pid>` del
+`div[role=dialog]` que contiene el composer. Si `identity.sameThread:false`, no se envía.
 
 **6. Verificación histérica (recibos).** En `evaluate_script`, el comentario
 posteado vive en **`div[role="article"]`** (NO en tag `<article>` — eso da falso
@@ -183,6 +187,7 @@ peor que ninguno. Nunca dejar basura publicada.
 | Mi frase de verificación post-Enter da `allPresent:false` pero el post SÍ está completo | escribí mal la frase de check (puse "capable of doing something" cuando el draft dice "Being able to do something") — el falso negativo es del check, no del post | re-verificar con frases COPIADAS del body-file, no de memoria (Art. 2: no me fío del check, lo confirmo) |
 | Re-leer/enfocar el composer da `len:1` aunque `comment-prepare` confirmó el draft (len 786) — parece que el draft se PERDIÓ y casi re-pegas o abortas un post bueno (Art. 2) | hay VARIOS `div[contenteditable]` con aria `Reply to <AUTHOR>` abiertos a la vez (FB tiene un reply-box por comentario del hilo); `.find(b => aria.startsWith('Reply to <AUTHOR>'))` agarra el PRIMERO, casi siempre VACÍO. El draft está en otro de esos boxes | localizar el composer por **CONTENIDO**, nunca por aria-label: `.find(b => (b.innerText||'').includes('<frase ancla del draft>'))`; enfocar ESE, caret al final, y Enter. (Si además lees en la MISMA llamada que manipulaste el caret, el `len:1` es el stale de Lexical → re-leer en llamada aparte, paso 4. Diagnóstico definitivo: listar TODOS los `contenteditable` con su `len` y ver cuál trae el draft) |
 | Un Bash que solo MENCIONA `node …comment-prepare.mjs` (un `echo`, `grep`, un test) se auto-bloquea con `exit 2` (`GATE PROCEDENCIA`) | el matcher del hook `coagent-provenance-gate.mjs` es amplio A PROPÓSITO — fail-closed: un gate **no-salteable** prefiere un falso-positivo (bloquea de más) a un falso-negativo (deja pasar sin procedencia) | **NO debilitar/anclar el matcher** (anclarlo abriría formas de invocación que saltan el gate — contradice su razón de ser). Para depurar/probar el hook, NO metas el string en el comando bash: escribe el payload JSON a un archivo (Write) y corre `node .claude/hooks/coagent-provenance-gate.mjs < payload.json` |
+| La tab que dejó `comment-prepare` no está en `list_pages` con la URL pedida, y aparece una tab "Facebook" en `/groups/<OTRO gid>/permalink/<OTRO id>/` con el draft cargado (visto 2026-09-27, VEGANnoyance: `894315013991654/permalink/28496461986683585`) | FB abrió el post como **diálogo** encima de otro grupo y reescribió `location.href`; el hilo real vive dentro del `div[role=dialog]` | `comment-prepare` ya lo detecta: devuelve `pageUrl` e `identity` (`urlRewritten`, `sameThread`, `foreign`, lógica pura en `scripts/thread-identity.mjs`, tests en `thread-identity.test.mjs`) y solo da `ok:true` si los links del diálogo que contiene el composer apuntan al `groups/<gid>/posts/<pid>` pedido. En el envío (PASO 5) assertá el hilo por esos links del dialog, no por `location.href` |
 
 ## Por qué existe
 
