@@ -11,8 +11,9 @@ alineado por `slug` con index.json; cada fila = recibo a la izquierda, foto + ca
 estructurada... descripciones más pequeñas o referidas"). Fondo oscuro, la foto del animal es el héroe
 (esquinas redondas, ligera inclinación, alternando lado), la frase resaltada se RECORTA del screenshot real
 (línea del autor + banda amarilla ± contexto) y se pega como burbuja encima de la foto; número en círculo por
-tarjeta, leyenda y créditos en un pie pequeño. photos.json admite `short` (leyenda del pie) y `focus` (0..1,
-centro vertical del recorte de la foto).
+tarjeta, micro-leyenda de una línea por tarjeta y créditos en un pie pequeño. photos.json admite `short`
+(micro-leyenda) y `focus` (0..1, centro vertical del recorte de la foto). --anon tapa el nombre del autor con
+"Commenter N" y la mención azul a Bernard con una barra del color de la burbuja (nada más del render cambia).
 """
 import json, sys
 from pathlib import Path
@@ -28,7 +29,7 @@ try:
     tfont = ImageFont.truetype('/System/Library/Fonts/Helvetica.ttc', 26)
 except Exception:
     font = tfont = ImageFont.load_default()
-SOCIAL = '--social' in sys.argv
+SOCIAL = '--social' in sys.argv; ANON = '--anon' in sys.argv
 
 
 def yellow_bands(im):
@@ -52,6 +53,19 @@ def quote_crop(im, author_h=30, ctx=6):
     dd = ImageDraw.Draw(out)
     for k in range(3): dd.ellipse([10 + k * 12, author_h + 5, 14 + k * 12, author_h + 9], fill='#8a8d91')
     return out
+
+
+def anonymize(im, n, author_h=30):
+    px = im.load(); w, h = im.size; bg = im.getpixel((2, 2)); d = ImageDraw.Draw(im)
+    name_x = max((x for x in range(w) for y in range(author_h) if all(c > 215 for c in px[x, y])), default=0)
+    d.rectangle([0, 0, name_x + 8, author_h - 1], fill=bg)
+    d.text((9, 23), f'Commenter {n}', fill='#e4e6eb', font=ImageFont.truetype('/System/Library/Fonts/Helvetica.ttc', 20, index=1), anchor='ls')
+    link = [(x, y) for y in range(author_h, h) for x in range(w) if 90 <= px[x, y][0] <= 130 and 150 <= px[x, y][1] <= 180 and px[x, y][2] >= 235]
+    while link:
+        y0 = link[0][1]; band = [(x, y) for x, y in link if y0 - 4 <= y <= y0 + 26]; link = [t for t in link if t not in band]
+        xs = [x for x, _ in band]; ys = [y for _, y in band]
+        if max(xs) - min(xs) > 100: d.rectangle([min(xs) - 3, min(ys) - 6, max(xs) + 3, max(ys) + 6], fill=bg)
+    return im
 
 
 def rounded(im, r):
@@ -87,24 +101,24 @@ def social(index, photos_file, out, title):
     W, M = 1080, 40; PW, PH, OVER, GAP = 680, 270, 90, 22
     HB = '/System/Library/Fonts/Helvetica.ttc'
     tf = ImageFont.truetype(HB, 46, index=1); nf = ImageFont.truetype(HB, 26, index=1)
-    wf = ImageFont.truetype(HB, 20); lf = ImageFont.truetype(HB, 20); cf = ImageFont.truetype(HB, 18)
+    wf = ImageFont.truetype(HB, 20); lf = ImageFont.truetype(HB, 22); cf = ImageFont.truetype(HB, 18)
     while tf.getlength(title) > W - 2 * M and tf.size > 36: tf = ImageFont.truetype(HB, tf.size - 2, index=1)
     cards = []
     for n, i in enumerate(index, 1):
         ph = photos.get(i.get('slug'))
         if not ph: continue
         q = quote_crop(Image.open(i['file']).convert('RGB'))
+        if ANON: q = anonymize(q, n)
         bw = 740 if q.width <= 900 else 820; q = q.resize((bw, round(q.height * bw / q.width)), Image.LANCZOS)
         chip = Image.new('RGB', (bw + 24, q.height + 24), q.getpixel((2, 2))); chip.paste(q, (12, 12))
         chip = rounded(chip, 16)
         pim = cover(Image.open(Path(photos_file).parent / ph['file']).convert('RGB'), PW, PH, ph.get('focus', 0.5))
         pim = rounded(pim, 28).rotate((1.4, -0.9, 1.1, -1.5, 0.8)[(n - 1) % 5], Image.BICUBIC, expand=True)
         cards.append((n, i, ph, pim, chip))
-    legend = ' · '.join(f"{n} {ph.get('short') or ph['caption']}" for n, _, ph, *_ in cards)
     credits = 'Photos: ' + ' · '.join(f"{n} {ph.get('artist', '')} {ph.get('license', '')}".strip() for n, _, ph, *_ in cards)
-    ll, cl = wrap(legend, lf, W - 2 * M), wrap(credits, cf, W - 2 * M)
-    rows = [pim.height - OVER + chip.height + 28 for *_, pim, chip in cards]
-    H = M + 46 + 30 + sum(rows) + (len(cards) - 1) * GAP + 24 + len(ll) * 27 + len(cl) * 24 + M
+    cl = wrap(credits, cf, W - 2 * M); UNDER = 62
+    rows = [pim.height - OVER + chip.height + UNDER for *_, pim, chip in cards]
+    H = M + 46 + 30 + sum(rows) + (len(cards) - 1) * GAP + 24 + len(cl) * 24 + M
     canvas = Image.new('RGBA', (W, H), '#18191a'); d = ImageDraw.Draw(canvas)
     d.text((M, M), title, fill='#e4e6eb', font=tf); y = M + 46 + 30
     for n, i, ph, pim, chip in cards:
@@ -117,10 +131,10 @@ def social(index, photos_file, out, title):
         bx = (px + 26) if left else (px + pim.width - 26 - 48); by = y + 14
         d.ellipse([bx, by, bx + 48, by + 48], fill='#f7b928')
         d.text((bx + 24, by + 25), str(n), fill='#18191a', font=nf, anchor='mm')
-        d.text((cx + 12, cy + chip.height + 4), i.get('where', ''), fill='#8a8d91', font=wf)
-        y += pim.height - OVER + chip.height + 28 + GAP
+        d.text((cx + 12, cy + chip.height + 6), f"{n} · {ph.get('short') or ph['caption']}", fill='#c7cad0', font=lf)
+        d.text((cx + 12, cy + chip.height + 36), i.get('where', ''), fill='#8a8d91', font=wf)
+        y += pim.height - OVER + chip.height + UNDER + GAP
     y += 24 - GAP
-    for l in ll: d.text((M, y), l, fill='#b0b3b8', font=lf); y += 27
     for l in cl: d.text((M, y), l, fill='#6f7378', font=cf); y += 24
     canvas.convert('RGB').save(out, optimize=True)
     print(json.dumps({'ok': True, 'out': str(out), 'cards': len(cards), 'size': [W, H]}))
