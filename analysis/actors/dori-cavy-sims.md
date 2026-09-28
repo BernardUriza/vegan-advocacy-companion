@@ -20,6 +20,8 @@ Low-effort. Estira el término 'explotación' a plantas y animales no-sintientes
   - _Contra:_ Concede the biology entirely, then separate can from should (is-ought, Hume): 'Yes, we can digest meat — omnivore is a fact about digestion, not a moral status. The question is what justifies using a sentient being when we don't need to.' If they lean hard on 'natural', add the second layer: 'natural' doesn't carry moral weight by itself — a poisonous mushroom is natural and bad for us, medicine and hospitals are 'unnatural' and good. What makes something good or bad isn't whether it's natural; it's whether it satisfies or frustrates the interests of someone who can feel. So 'it's natural' answers nothing about whether it's right.
 - **Is-Ought / Naturalistic Fallacy** (`is_ought`) — Derives a moral 'should' from a descriptive 'is'. 'Biologically designed to eat meat' → 'therefore morally right to eat meat'. The jump from biological fact to moral justification needs justification that is never given.
   - _Contra:_ Separate is from should: 'That's what we can do — it says nothing about what we should do. We're also biologically capable of many things we consider wrong. Capability doesn't confer permission.'
+- **Taste/Preference as Justification** (`preferencia_gusto`) — Defends animal use by appeal to personal taste or dislike of the alternatives: "I just like the taste", "I tried plant-based and don’t enjoy it", "soy is nasty to me", sometimes mixed with a genuine constraint (allergies). Treats a preference as if it settled the moral question.
+  - _Contra:_ Concede the preference fully — nobody has to enjoy the alternatives, and a real allergy is a real constraint, not a character flaw. Then separate liking from justifying: a preference explains why you’d rather, it doesn’t answer whether your preference outweighs a sentient being’s life when an adequate alternative exists. Move the weight to the third party who pays for the preference.
 
 ## Counter-arsenal
 
@@ -47,6 +49,8 @@ Low-effort. Estira el término 'explotación' a plantas y animales no-sintientes
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
+- **Taste/Preference as Justification** (`preferencia_gusto`)
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -65,5 +69,9 @@ No gastar una jugada principal. Una línea que reponga la pregunta y pida algo d
 ### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
 - **Su jugada:** she is food.
 - **Nuestra respuesta:** food es el plan para ella escrito como su definición; food por decisión de quién y qué les dio la voz
+
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Réplica a "Food by whose decision, and what gave them the say?": "sucks. Ate some ham tonight. Delicious." (+ reacción de risa) — preferencia_gusto como respuesta.
+- **Nuestra respuesta:** Registro filo, corto: es un reporte de sabor que contesta sin querer mi pregunta (ham tonight, delicious, done); su lengua votó y la cerda no tuvo voto (fuck-all); "delicious" habla de su cena, la cerda era la que podía asustarse. Cierre: ¿qué le agrega "delicious" al reclamo de que era suya para volverla jamón? Última vuelta, no perseguir más.
 
 _Hilos: 27341517928804691, 28604913169131821, 28459136643743554_
