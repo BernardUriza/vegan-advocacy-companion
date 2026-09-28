@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { threadIdsFromUrl, judgeThreadIdentity } from './thread-identity.mjs';
+import { threadIdsFromUrl, judgeThreadIdentity, canonicalPostUrl } from './thread-identity.mjs';
 
 const EXPECTED = 'https://www.facebook.com/groups/2295597740524135/posts/28459136643743554/?comment_id=28462609856729566';
 const REWRITTEN = 'https://www.facebook.com/groups/894315013991654/permalink/28496461986683585/';
@@ -49,4 +49,11 @@ test('sin links en el diálogo: sameThread false (fail-closed)', () => {
   const j = judgeThreadIdentity({ expectedUrl: EXPECTED, pageUrl: REWRITTEN, dialogLinks: [] });
   assert.equal(j.sameThread, false);
   assert.equal(j.dialogPosts, 0);
+});
+
+test('canonicalPostUrl quita el ancla de comentario y normaliza permalink/post_id; deja intacto lo que no es un post de grupo', () => {
+  assert.equal(canonicalPostUrl('https://www.facebook.com/groups/2295597740524135/posts/28459136643743554/?comment_id=28462609856729566&reply_comment_id=28466764142980804'), 'https://www.facebook.com/groups/2295597740524135/posts/28459136643743554/');
+  assert.equal(canonicalPostUrl('https://www.facebook.com/groups/894315013991654/permalink/28496461986683585/'), 'https://www.facebook.com/groups/894315013991654/posts/28496461986683585/');
+  assert.equal(canonicalPostUrl('https://www.facebook.com/groups/683615698352965/?post_id=28148343171453514&comment_id=1'), 'https://www.facebook.com/groups/683615698352965/posts/28148343171453514/');
+  assert.equal(canonicalPostUrl('https://www.facebook.com/bernardovegano/posts/pfbid0abc?comment_id=1'), 'https://www.facebook.com/bernardovegano/posts/pfbid0abc?comment_id=1');
 });

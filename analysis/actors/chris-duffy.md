@@ -110,4 +110,8 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** Raíz en el post de sintiencia: we have had this conversation before and you did not like it; animals are property for their own good (rights, insurance, NSW feral law, protection from abuse, legally responsible for your dog). Animals are property.
 - **Nuestra respuesta:** Concedí que ya lo hablamos y la ley de NSW tal como está; separé responsabilidad de título (padre/hijo, tutor/pupilo); el título agrega el poder de criar, vender y decidir el uso final; la propiedad asegura el reclamo del dueño, el deber responde al animal; cierre: ¿qué agrega el título, más allá del deber, que haga legítimo poseerla?
 
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Raíz nueva (VEGANnoyance, post de sintiencia, 7h): "Animals are property mate, give it a rest. Why don't you focus on making animals lives better? Show us how you're actually helping animals, maybe rescue an animal from a shit owner..." — aserción + demanda de credenciales / deflexión a activismo. Antes le dijo a Parnaibensis que mi inglés es trash y uso IA.
+- **Nuestra respuesta:** Concedí el rescate en serio (vale más que un hilo); ignoré por completo lo del inglés/IA; no contesté la demanda de credenciales con currículum ("credential test, proves fuck-all"); volteé su frase: llamar a alguien shit owner ya dice que el título no fue la última palabra sobre esa cabra (tenía el papel y la categoría legal y aun así había que rescatarla). Cierre con sus palabras: ¿qué tenía la cabra bajo el shit owner que no tenga la que se vende? 149 palabras.
+
 _Hilos: march-property, 27319402757682875_

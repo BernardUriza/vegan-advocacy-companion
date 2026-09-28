@@ -656,6 +656,15 @@
         "outcome_evidence": "No Frank turn after Bernard's round-2",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome_note": "algo-a-alguien-sujeto-derecho: tras el reply round-2 sosteniendo el eje de propiedad, Frank no volvio."
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-28",
+        "their_move": "Raíz (VEGANnoyance, post de sintiencia, 5h): perros = lobos adaptados, dueño responsable; \"Veganism is misanthropic carnophobia with delusions of virtue, and incipient totalitarianism. It proposes a feral future full of wild dogs and hogs, unowned and out of control. Just say no.\" — propiedad_como_proteccion + sello + abolition_reductio (feral future).",
+        "our_reply_summary": "Concedí lo del perro entero y separé estar-a-cargo de poseer (la responsabilidad dice quién responde; el título necesita su propia razón); una línea al sello (totalitarismo por una pregunta en FB, nadie viene por tu perro); desmonté el feral future por construcción (nadie abre rejas; sin cría para venta nacen menos cerdos, no aparece la manada) y lo volteé: el cerdo real es lo opuesto a su pesadilla, owned, fenced, scheduled. Cierre con sus palabras: ¿qué hace de owned and under control la condición legítima para alguien que se asusta como tu perro? 183 palabras.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "d612058f86bbaed7",
+        "outcome": "pending"
       }
     ]
   },
@@ -1147,6 +1156,15 @@
         "outcome_evidence": "Chris Duffy · 6h → Parnaibensis: 'it's not his fault his English is absolute trash so he uses AI to help. His point is also trash, animals are property end of story.'",
         "outcome_note": "algo-a-alguien: no contestó mi reply (16h). 6h después escaló en otra rama: a Parnaibensis 'his English is absolute trash so he uses AI... his point is also trash, animals are property end of story', y raíz nueva 'give it a rest, show us how you're actually helping animals'. Sello + deflexión a activismo. La cortesía de junio se acabó.",
         "draft_sha": "b4efb3adfad665ba"
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-28",
+        "their_move": "Raíz nueva (VEGANnoyance, post de sintiencia, 7h): \"Animals are property mate, give it a rest. Why don't you focus on making animals lives better? Show us how you're actually helping animals, maybe rescue an animal from a shit owner...\" — aserción + demanda de credenciales / deflexión a activismo. Antes le dijo a Parnaibensis que mi inglés es trash y uso IA.",
+        "our_reply_summary": "Concedí el rescate en serio (vale más que un hilo); ignoré por completo lo del inglés/IA; no contesté la demanda de credenciales con currículum (\"credential test, proves fuck-all\"); volteé su frase: llamar a alguien shit owner ya dice que el título no fue la última palabra sobre esa cabra (tenía el papel y la categoría legal y aun así había que rescatarla). Cierre con sus palabras: ¿qué tenía la cabra bajo el shit owner que no tenga la que se vende? 149 palabras.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "b367b7774522c360",
+        "outcome": "pending"
       }
     ]
   },

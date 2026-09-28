@@ -94,4 +94,8 @@ NO entrar a competencia de body-count ni disputar que las crop-deaths ocurren. C
 - **Su jugada:** Ronda 2 crop-deaths: 55% tillage consumo-humano-directo + pivote grass-fed (menos muertes por caloria) + nutricion + insulto (lazy hypocrites, carnophobia, eat bugs/get back to us)
 - **Nuestra respuesta:** Conced crop-deaths sin disputar cifras; rol-del-dano (subproducto incidental vs proposito) sostiene feedlot O pasto idealizado; nombr el cambio de track (harm-exists => no-moral-difference no se sigue); pastoral = ownership not coexistence (de-centrado, NO entr a feasibility/calorias); ignor el insulto; cerr con la pregunta del marco.
 
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Raíz (VEGANnoyance, post de sintiencia, 5h): perros = lobos adaptados, dueño responsable; "Veganism is misanthropic carnophobia with delusions of virtue, and incipient totalitarianism. It proposes a feral future full of wild dogs and hogs, unowned and out of control. Just say no." — propiedad_como_proteccion + sello + abolition_reductio (feral future).
+- **Nuestra respuesta:** Concedí lo del perro entero y separé estar-a-cargo de poseer (la responsabilidad dice quién responde; el título necesita su propia razón); una línea al sello (totalitarismo por una pregunta en FB, nadie viene por tu perro); desmonté el feral future por construcción (nadie abre rejas; sin cría para venta nacen menos cerdos, no aparece la manada) y lo volteé: el cerdo real es lo opuesto a su pesadilla, owned, fenced, scheduled. Cierre con sus palabras: ¿qué hace de owned and under control la condición legítima para alguien que se asusta como tu perro? 183 palabras.
+
 _Hilos: 27341517928804691_

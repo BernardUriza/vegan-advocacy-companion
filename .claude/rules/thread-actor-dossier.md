@@ -48,6 +48,20 @@ path MCP (pasos 1–3) como confirmación/fallback. (Requiere `playwright-core` 
 `scripts/`; Chrome de debug vivo en 9333 — diagnóstico del `~/CLAUDE.md` si no
 responde.)
 
+### La URL de notificación ESCONDE raíces — el extractor navega a la URL canónica (2026-09-28)
+
+`thread-extract` recibe la `openUrl` de la notif (`?comment_id=…&reply_comment_id=…`), pero
+NO navega a ella: FB pinta el post anclado al comentario y deja raíces sin cargar, sin
+ningún botón "View more comments" que las prometa, así que `expandAll` termina y el JSON
+sale `complete:true` con un hueco. Caso: la raíz de Frank Teuton (5h, 1 reacción) bajo el
+post de sintiencia no apareció en dos extracciones seguidas (7 raíces); la URL limpia del
+post pintó las 8. Desde entonces el script navega a `canonicalPostUrl(url)`
+(`scripts/thread-identity.mjs`, `/groups/<gid>/posts/<pid>/`) y reporta `navUrl`; el
+`comment_id` sigue vivo en `url` para localizar el target en single y para
+`comment-prepare`, que sí abre la URL anclada porque necesita el foco en ese comentario.
+Si Bernard manda un replylink cuyo comentario no aparece en el `tx`, ese es el síntoma:
+no es que no exista, es que la vista anclada no lo cargó.
+
 ### Esquema del JSON de `thread-extract --json` (no re-parsear ad-hoc, 2026-06-19)
 
 Para leer la salida directo sin escribir re-parsers (lección: asumí campos

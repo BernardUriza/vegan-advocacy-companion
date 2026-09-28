@@ -14,6 +14,7 @@
 import { openScratchPage, ageMinutes, fmtAge, UNKNOWN_AGE, expandAllInPage, MAX_AGE_DAYS, isStaleMinutes } from './fb-lib.mjs';
 import { registerThread } from './db.mjs';
 import { parseReactionCount, sumPostReactionLabels } from './lurker.mjs';
+import { canonicalPostUrl } from './thread-identity.mjs';
 
 const url = process.argv.find((a) => a.startsWith('http'));
 const asJson = process.argv.includes('--json');
@@ -240,7 +241,8 @@ function buildUnansweredRoots(turns, ME, postIsMine) {
 async function main() {
   const { page, done } = await openScratchPage();
   try {
-    await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    const navUrl = canonicalPostUrl(url);
+    await page.goto(navUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(2500);
     const exp = await page.evaluate(expandAllInPage);
     await page.waitForTimeout(800);
@@ -300,6 +302,7 @@ async function main() {
       freshestTurnMin,
       stale,
       unavailable: !!unavailable,
+      navUrl,
       maxAgeDays: MAX_AGE_DAYS,
       postReactions,
       turns,

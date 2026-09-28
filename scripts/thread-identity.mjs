@@ -24,3 +24,14 @@ export function judgeThreadIdentity({ expectedUrl, pageUrl, dialogLinks = [] }) 
   const foreign = [...new Set(seen.filter((x) => x.postId !== expected.postId).map((x) => `${x.groupId}/${x.postId}`))];
   return { expected, page, urlRewritten, sameThread, dialogPosts: seen.length, foreign };
 }
+
+// La URL de una notificación (?comment_id=…&reply_comment_id=…) hace que FB pinte el post
+// ANCLADO al comentario y deje raíces sin cargar, sin botón "View more comments" que las
+// prometa (2026-09-28: el raíz de Frank Teuton, 5h, no salió con `complete:true`; la URL
+// limpia del post pintó las 8 raíces). Para EXTRAER se navega siempre a la URL canónica;
+// el comment_id sigue sirviendo para localizar el target (comment-prepare) y para el moat.
+export function canonicalPostUrl(url) {
+  const { groupId, postId } = threadIdsFromUrl(url);
+  if (!groupId || !postId) return url;
+  return `https://www.facebook.com/groups/${groupId}/posts/${postId}/`;
+}
