@@ -177,7 +177,7 @@ No responder al insulto en su nivel. No defender a Beyond Meat específicamente.
 - **Su jugada:** Round 2 (reply a mi reply, 1d): "the line falls where it does because we operate in self-interest… we decide what gets legal protection… laws vary"; la perra prueba su punto (chip + registro = título para recuperarla); me acusa de conflar protección con estatus idéntico; "we can impose duties on humans regarding animals without identical rights"; burden-flip "you still have to make that argument"; "I'm not explaining this again".
 - **Nuestra respuesta:** Último round con ella en este hilo: su primer párrafo es la tesis del post (decisión + poder explica el título, no lo justifica); concedo el mecanismo legal vigente (la ley empaqueta responsabilidad dentro de propiedad) y lo separo de justificación con padre/tutor (recuperan al dependiente sin derecho a venderlo); su propia frase deber-sin-derechos-idénticos traza la línea deber/título; las dos respuestas dadas explican el sistema, ninguna es razón para el título; pregunta plantada y visible.
 
-### Hilo `28500475619575577` — 2026-09-24 · outcome: **pending**
+### Hilo `28500475619575577` — 2026-09-24 · outcome: **silent**
 - **Su jugada:** Burden-flip / retreat: I already answered. We do not owe you a philosophical justification... animals are property because we humans decided that. (+ pieza fuerte propiedad=protección)
 - **Nuestra respuesta:** El burden-flip ES la tesis del post (una decisión nombra al que tuvo el poder, no la justifica); contra propiedad=protección, distinción título vs tutela: responder por alguien (padre/tutor) no exige poseerlo. UNA vuelta, back al título.
 

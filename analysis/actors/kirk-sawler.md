@@ -53,7 +53,7 @@ No burlarse de Ralph ni pedirle que trate al cerdo como al perro (eso es trato, 
 
 ## Log de interacciones
 
-### Hilo `28459136643743554` — 2026-09-27 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-09-27 · outcome: **engaged**
 - **Su jugada:** Raíz (VEGANnoyance, post de sintiencia): animals are property; Ralph is family and property, we own each other; the piglet I buy is property and we eat it; it is the way the world works.
 - **Nuestra respuesta:** Volteé su evidencia: con Ralph describe una relación de dos lados, con el cerdito un título de un solo lado hasta el plato; la misma palabra hace dos trabajos; ambos son seres conscientes con un lado propio; way the world works describe, no justifica. Cierre en el título.
 

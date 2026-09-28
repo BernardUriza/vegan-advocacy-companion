@@ -120,7 +120,7 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** but how does any of those things happening to her, matter to her. ??
 - **Nuestra respuesta:** Le importa en el mismo sentido cotidiano que a un perro: sin concepto de muerte ni lenguaje, basta un lado propio (evita lo que la asustó, se calma donde conoce); es la misma evidencia con la que reconocemos que hay alguien en el perro. Mover la silla no le pasa a nadie; moverla a ella sí. Cierre: si le importan, ¿qué hace legítimo poseerla?
 
-### Hilo `28046483408306158` — 2026-09-27 · outcome: **pending**
+### Hilo `28046483408306158` — 2026-09-27 · outcome: **engaged**
 - **Su jugada:** Ronda 6: sorry. Repeating yourself means nothing. An animal wants food and water and comfort, company if a herd or pack animal, that is all.
 - **Nuestra respuesta:** Corto (82 palabras): usé SU lista (food, water, comfort, company) como el lado propio de ella; un objeto no quiere nada; el título le da a otro la decisión sobre las cuatro, incluido el día en que paran; cierre en el título. Salgo del hilo tras esta vuelta.
 

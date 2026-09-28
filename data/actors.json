@@ -105,9 +105,9 @@
         "their_move": "Goalpost a might-makes-right: If any other animal had the capacity to capture and farm animals, they would. Our superior intelligence... apex species... We have no moral obligation to stop eating meat.",
         "our_reply_summary": "Concedí el hecho (más poder/inteligencia), nombré el salto de goalpost (biología→ecosistema→dominancia), y clavé que el poder explica el resultado, no funda el título (is/ought). Cerré con la pregunta del post.",
         "framework": "dominacion-no-es-superioridad-moral",
-        "outcome": "pending",
-        "outcome_evidence": "tx 2026-09-25: último turno de CarolAnn es el de 'apex species' (2d), anterior a mi reply.",
-        "outcome_note": "dominacion-no-es-superioridad-moral: reply de poder-explica/no-justifica publicado hace ~23h; sin respuesta aún, dentro de ventana.",
+        "outcome": "silent",
+        "outcome_evidence": "Última reply mía hace 3 días (tx 28500475619575577, 2026-09-27 22:27); ningún turno de CarolAnn después.",
+        "outcome_note": "dominacion-no-es-superioridad-moral: tras 'lo que una especie PUEDE hacer no dice qué tiene derecho a hacer' CarolAnn no volvió en 3 días. El goalpost omnívoro→apex se quedó sin cuarta estación.",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-27T22:29:06.922Z"
       }
@@ -277,7 +277,9 @@
         "their_move": "Ronda 6: sorry. Repeating yourself means nothing. An animal wants food and water and comfort, company if a herd or pack animal, that is all.",
         "our_reply_summary": "Corto (82 palabras): usé SU lista (food, water, comfort, company) como el lado propio de ella; un objeto no quiere nada; el título le da a otro la decisión sobre las cuatro, incluido el día en que paran; cierre en el título. Salgo del hilo tras esta vuelta.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Matt Terrain: 'asked and answered. More than once. Pretty sure we're done.' (about an hour, tx 28046483408306158)",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: usar SU lista (food, water, comfort, company) como prueba de un lado propio no lo movió; cerró con 'asked and answered, pretty sure we're done' sin decir por qué el dueño decide sobre las cuatro. Sin concesión; loop terminal, no perseguir."
       }
     ]
   },
@@ -968,9 +970,9 @@
         "their_move": "Burden-flip / retreat: I already answered. We do not owe you a philosophical justification... animals are property because we humans decided that. (+ pieza fuerte propiedad=protección)",
         "our_reply_summary": "El burden-flip ES la tesis del post (una decisión nombra al que tuvo el poder, no la justifica); contra propiedad=protección, distinción título vs tutela: responder por alguien (padre/tutor) no exige poseerlo. UNA vuelta, back al título.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
-        "outcome_evidence": "tx 2026-09-25: último turno de Anna es el 'we decided that' (2d).",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: reply título-vs-tutela hace ~23h; sin respuesta aún.",
+        "outcome": "silent",
+        "outcome_evidence": "Última reply mía hace 3 días; último turno de Anna hace 6 días (tx 28500475619575577).",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: 'humans decided' = quién escribió la regla, no la razón; me quedé en su punto fuerte (protección vía ownership) y Anna no volvió en 3 días. Estación 'no debo justificar' seguida de silencio.",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-27T22:29:06.922Z"
       }
@@ -1615,7 +1617,9 @@
         "their_move": "Raíz bajo el post de sintiencia (pegado en dos copias): acusación de procedencia (you invented an argument nobody made) + descriptivo (societies prioritise human interests) + relativismo (purely YOUR ethical choice) + concesión (a pig is sentient, interests worth considering) + strawman (same status as a human / obligates everyone to become vegan).",
         "our_reply_summary": "Recibo de procedencia sin drama (Matt y Linda dijeron esta semana que no hay punto de vista); concedí lo descriptivo (explica quién armó el sistema, no la razón del título); usé su concesión: si sus intereses son worth considering, el título debe explicar por qué el dueño conserva la decisión final; nadie pidió mismo estatus; cierre en el título.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Les M: 'well, I haven't seen anyone making that argument… your entire argument seems to rest on the assumption…' (55 min, tx 28604913169131821)",
+        "outcome_note": "sobreposicion/algo-a-alguien: recibos verbatim + concesión de lo descriptivo + su propia concesión de intereses; Les respondió con burden-flip ('you've only assumed, not demonstrated') y la analogía de mascotas. Sigue sin fundar el título; conversación viva."
       },
       {
         "thread_id": "28150669567887541",
@@ -3195,9 +3199,11 @@
         "their_move": "Escaló el sello (delusional / cult / psychosis) + naturalismo/normal + dominion + Animals do not have a PoV.",
         "our_reply_summary": "Una línea al insulto; tomé \"no PoV\" como la primera respuesta real (si no hay nadie, el título es sobre una cosa); punto de vista en llano (perro que se encoge ante la mano que la golpeó, cerdo que pelea por no subir al camión); concedí normal/natural en una línea; pregunta del título.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
+        "outcome": "silent",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-27T22:29:06.922Z"
+        "lurker_checked_at": "2026-09-27T22:29:06.922Z",
+        "outcome_evidence": "Última reply mía hace 2 días; último turno de Linda hace 3 días (tx 28354739720849914).",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: dejé el insulto donde estaba y aislé 'Animals do not have a PoV' como el único desacuerdo real; Linda no volvió en 2 días. El sello no cerró el intercambio: la pregunta quedó visible para el lurker."
       }
     ],
     "user_id": "100007626876163",
@@ -3259,7 +3265,9 @@
         "their_move": "Raíz (VEGANnoyance, post de sintiencia): animals are property; Ralph is family and property, we own each other; the piglet I buy is property and we eat it; it is the way the world works.",
         "our_reply_summary": "Volteé su evidencia: con Ralph describe una relación de dos lados, con el cerdito un título de un solo lado hasta el plato; la misma palabra hace dos trabajos; ambos son seres conscientes con un lado propio; way the world works describe, no justifica. Cierre en el título.",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Kirk Sawler: 'all that and you left out my non vegan vegetables lol' (58 min, tx 28459136643743554)",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: voltear a Ralph (dos relaciones, una palabra) le sacó solo un jab ('you left out my non vegan vegetables lol'); no defendió el título del cerdito."
       },
       {
         "thread_id": "28459136643743554",
@@ -3296,7 +3304,9 @@
         "their_move": "Raíz (VEGANnoyance, post de sintiencia): Nothing to do with sentience. Everything to do with speciesism. Even vegans practice speciesism. The only difference is the degree.",
         "our_reply_summary": "Le tomé la palabra: si la línea de quién puede ser propiedad corre por especie, esa línea es la que hay que justificar (perro y cerdo, mismo lado propio, lados opuestos del mercado). Concedí la inconsistencia vegana sin catálogo de grados; los grados regulan el trato, el estatus es binario: bajo título o no. Cierre: ¿qué hace de la especie una razón para existir como propiedad?",
         "framework": "antropoespecismo",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Homer Cu: 'humans dont need need to justify speciesism. We are the apex species…' (46 min, tx 28459136643743554)",
+        "outcome_note": "antropoespecismo: nombrar que la especie hace el trabajo decisivo lo llevó a confesarlo en voz alta: 'humans dont need to justify speciesism. We are the apex species.' La táctica movió al oponente a might-makes-right explícito, que es lo que el lurker necesita ver."
       },
       {
         "thread_id": "28459136643743554",
@@ -3336,7 +3346,9 @@
         "their_move": "Bajo el comentario top (81r) de su post de Steve Irwin: even vegans destroy the environment and kill animals; y a Elaine: they are mass breed because us meat eaters need to eat, dont like it o well aint shit you can do to stop it.",
         "our_reply_summary": "Concedí las muertes del campo (nadie es dueño ahí), tomé su segunda frase como la confesión: la razón del título es poder (we can, you cant stop us), y el poder solo dice quién gana; concedí que comer es necesario y pregunté si eso da derecho a poseer a un ser consciente; cierre: ¿o we can es toda la respuesta? Una sola vuelta, hilo ajeno.",
         "framework": "dominacion-no-es-superioridad-moral",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Jason Lamy: 'the paperwork over my livestock proves i own them' (24 min, tx 28148343171453514)",
+        "outcome_note": "dominacion-no-es-superioridad-moral: 'nadie los posee en el campo' + 'tu segunda frase dice quién tiene el poder' lo llevó a 'the paperwork over my livestock proves i own them' (es-legal como respuesta a legítimo). Sin concesión."
       },
       {
         "thread_id": "28148343171453514",

@@ -194,7 +194,7 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Naturalismo/historia (humans ate meat long before veganism) + shorthand inocente + mofa (congratulations on discovering verbs) + demanda: changing gives to takes requires an actual ethical argument; wordplay, not a valid argument.
 - **Nuestra respuesta:** Concedió lo cierto de entrada (shorthand, historia). Recibo de procedencia: indoctrinated es palabra SUYA, el post no la usa. Recibo central: exige el argumento ético a un post cuyo párrafo final ES esa pregunta — contestó el verbo y saltó la pregunta. La replantó idéntica.
 
-### Hilo `28604913169131821` — 2026-09-27 · outcome: **pending**
+### Hilo `28604913169131821` — 2026-09-27 · outcome: **engaged**
 - **Su jugada:** Raíz bajo el post de sintiencia (pegado en dos copias): acusación de procedencia (you invented an argument nobody made) + descriptivo (societies prioritise human interests) + relativismo (purely YOUR ethical choice) + concesión (a pig is sentient, interests worth considering) + strawman (same status as a human / obligates everyone to become vegan).
 - **Nuestra respuesta:** Recibo de procedencia sin drama (Matt y Linda dijeron esta semana que no hay punto de vista); concedí lo descriptivo (explica quién armó el sistema, no la razón del título); usé su concesión: si sus intereses son worth considering, el título debe explicar por qué el dueño conserva la decisión final; nadie pidió mismo estatus; cierre en el título.
 
