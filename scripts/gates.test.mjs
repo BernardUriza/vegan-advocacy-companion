@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { execFileSync, spawnSync } from 'node:child_process';
-import { writeFileSync, mkdtempSync, mkdirSync, symlinkSync, utimesSync } from 'node:fs';
+import { writeFileSync, readFileSync, mkdtempSync, mkdirSync, symlinkSync, utimesSync } from 'node:fs';
+import { draftSha } from './seed-coagent.mjs';
 import { tmpdir } from 'node:os';
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -201,4 +202,68 @@ test('provenance-gate: un cierre distinto al del draft consultado hoy no dispara
   assert.equal(r.status, 2);
   assert.doesNotMatch(r.stderr, /CIERRE CLONADO/);
   assert.match(r.stderr, /no hay recibo de consulta/);
+});
+
+const CP = 'comment-' + 'prepare';
+function runCmd(dir, command) {
+  const r = spawnSync('node', [GATE], { input: JSON.stringify({ tool_name: 'Bash', tool_input: { command } }), encoding: 'utf8', env: { ...process.env, CLAUDE_PROJECT_DIR: dir } });
+  return { status: r.status, stderr: r.stderr };
+}
+function consultedProject(bodyText) {
+  const dir = fakeProject();
+  const body = join(dir, 'body.txt');
+  writeFileSync(body, bodyText);
+  const master = join(dir, 'master.md');
+  const masterText = 'master\n<!-- GUARDRAIL-ABOLICIONISTA -->\nEJE: PROPIEDAD/ESCLAVITUD, no harm ni daño.\n<!-- /GUARDRAIL-ABOLICIONISTA -->\n`algo-a-alguien-sujeto-derecho`\n';
+  writeFileSync(master, masterText);
+  writeFileSync(join(dir, '.coagent', '999.consult.json'), JSON.stringify({ status: 'consulted', seed_gate: 'pass', frameworks: ['algo-a-alguien-sujeto-derecho'], master, master_sha: draftSha(masterText), drafts: [{ author: 'X', draft_sha: draftSha(bodyText), draft_file: body, consulted_at: new Date().toISOString() }] }));
+  return { dir, body, master };
+}
+const URL999 = '"https://www.facebook.com/groups/1/posts/999/"';
+const STEER = `${FILLER.repeat(6)}So what does the steer lack, in your own words?`;
+
+test('provenance-gate: una invocación limpia con recibo fresco y sha correcto PASA (exit 0)', () => {
+  const { dir, body } = consultedProject(STEER);
+  const r = runCmd(dir, `cd ${dir}/scripts && node ${CP}.mjs --url ${URL999} --author "X" --anchor "y" --body-file ${body}; cd ${dir}`);
+  assert.equal(r.status, 0, r.stderr);
+});
+
+test('provenance-gate: el bypass --body-file=aprobado --body "a mano" se bloquea', () => {
+  const { dir, body } = consultedProject(STEER);
+  const r = runCmd(dir, `node scripts/${CP}.mjs --url ${URL999} --author "X" --body-file=${body} --body "HAND WRITTEN"`);
+  assert.equal(r.status, 2);
+  assert.match(r.stderr, /flags no aceptados: --body/);
+});
+
+test('provenance-gate: --url=<post con recibo> más una URL suelta de otro post se bloquea', () => {
+  const { dir, body } = consultedProject(STEER);
+  const r = runCmd(dir, `node scripts/${CP}.mjs --url=${URL999} "https://www.facebook.com/groups/1/posts/555/" --author "X" --body-file ${body}`);
+  assert.equal(r.status, 2);
+  assert.match(r.stderr, /argumentos sueltos/);
+});
+
+test('provenance-gate: glob, sustitución y pipe se bloquean (fail-closed)', () => {
+  const { dir, body } = consultedProject(STEER);
+  for (const cmd of [
+    `node scripts/comment-prep*.mjs --url ${URL999} --author "X" --body-file ${body}`,
+    `node "scripts/${CP}".mjs --url ${URL999} --author "X" --body-file $(cat /tmp/x)`,
+    `node scripts/${CP}.mjs --url ${URL999} --author "X" --body-file ${body} | head -5`,
+  ]) {
+    assert.equal(runCmd(dir, cmd).status, 2, cmd);
+  }
+});
+
+test('provenance-gate: --body-file relativo se bloquea', () => {
+  const { dir } = consultedProject(STEER);
+  const r = runCmd(dir, `node scripts/${CP}.mjs --url ${URL999} --author "X" --body-file body.txt`);
+  assert.equal(r.status, 2);
+  assert.match(r.stderr, /no es ruta absoluta/);
+});
+
+test('provenance-gate: un master editado después del seed se bloquea por master_sha', () => {
+  const { dir, body, master } = consultedProject(STEER);
+  writeFileSync(master, readFileSync(master, 'utf8') + '\njugada nueva metida después del seed\n');
+  const r = runCmd(dir, `node scripts/${CP}.mjs --url ${URL999} --author "X" --body-file ${body}`);
+  assert.equal(r.status, 2);
+  assert.match(r.stderr, /el master cambió después del seed/);
 });

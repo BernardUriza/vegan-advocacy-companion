@@ -50,33 +50,59 @@ try {
 const toolName = payload.tool_name || payload.toolName || '';
 const command = payload.tool_input?.command || payload.toolInput?.command || '';
 
-// solo la invocación real de comment-prepare, no menciones sueltas (grep/cat/git)
-if (toolName !== 'Bash' || !/node\s+[^|;&]*comment-prepare\.mjs/.test(command)) process.exit(0);
+// Cualquier mención (glob, comillas partidas, variable) cae aquí; lo que no se pueda parsear
+// como UNA invocación limpia se bloquea (fail-closed, 2026-09-28: `--body-file=x --body y` pasaba).
+if (toolName !== 'Bash' || !/comment[\s"'\\_-]*prep/i.test(command)) process.exit(0);
 
-const invocations = (command.match(/node\s+[^|;&]*comment-prepare\.mjs/g) || []).length;
-if (invocations > 1) {
+let parseArgs, shellTokens;
+try {
+  ({ parseArgs, shellTokens } = await import(resolve(PROJECT_DIR, 'scripts/cli-args.mjs')));
+} catch (e) {
+  block(`GATE PROCEDENCIA: no pude cargar cli-args.mjs (${e.message}). Fail-closed.`);
+}
+const unparseable = (why) => block([
+  `GATE PROCEDENCIA — STAGING BLOQUEADO: invocación de comment-prepare no verificable (${why}).`,
+  'Forma única aceptada: node <ruta>/comment-prepare.mjs --url "<url>" --author "<A>" [--anchor "<f>"] --body-file <ruta ABSOLUTA> [--image <ruta ABSOLUTA>]',
+  'Sin pipes, sin $()/backticks/globs, sin --body inline, sin forma --flag=valor ambigua con otra copia del flag, una invocación por comando.',
+  'Para depurar el hook: escribe el payload JSON a un archivo y pásalo por stdin (ver comment-post-and-verify, FALLA→FIX).',
+]);
+const tokens = shellTokens(command);
+if (!tokens) unparseable('comillas sin cerrar');
+const isScript = (t) => typeof t === 'string' && /(^|\/)comment-prepare\.mjs$/.test(t);
+const scriptIdx = tokens.map((t, i) => (isScript(t) ? i : -1)).filter((i) => i >= 0);
+if (scriptIdx.length !== 1) {
   block([
-    `GATE PROCEDENCIA — STAGING BLOQUEADO: ${invocations} invocaciones de comment-prepare en el MISMO comando.`,
+    `GATE PROCEDENCIA — STAGING BLOQUEADO: ${scriptIdx.length} invocaciones reconocibles de comment-prepare en el comando.`,
     'Una por comando: cada corrida abre una tab persistente con el draft; dos corridas = dos tabs con el mismo reply (2026-09-27, Les M).',
-    'Tampoco la pipees (| head/grep): el pipe cerrado no detiene a node, y el JSON completo es el handoff.',
   ]);
 }
-if (/\|\s*(head|tail|grep|sed|awk|cut)\b/.test(command.slice(command.indexOf('comment-prepare.mjs')))) {
+const si = scriptIdx[0];
+if (tokens[si - 1] !== 'node') unparseable('el script no se invoca como `node <ruta>/comment-prepare.mjs`');
+const mentions = tokens.filter((t, i) => i !== si && typeof t === 'string' && /comment[\s_-]*prep/i.test(t));
+if (mentions.length) unparseable(`otra mención de comment-prepare en el comando: ${mentions.join(', ')}`);
+const dangerous = tokens.find((t) => typeof t === 'object' && '`$(){}*?<>'.includes(t.op));
+if (dangerous) unparseable(`operador de shell "${dangerous.op}" (sustitución/glob/redirección)`);
+let end = si + 1;
+while (end < tokens.length && typeof tokens[end] === 'string') end++;
+const tail = tokens.slice(end);
+if (tail.some((t) => typeof t === 'object' && t.op === '|')) {
   block([
-    'GATE PROCEDENCIA — STAGING BLOQUEADO: comment-prepare va pipeado a head/tail/grep/sed.',
+    'GATE PROCEDENCIA — STAGING BLOQUEADO: comment-prepare va pipeado.',
     'Corre la invocación sola y lee el JSON completo: es el handoff (ok, check, identity, attachment, nextStep).',
   ]);
 }
-const imageM = command.match(/--image[=\s]+(?:"([^"]+)"|'([^']+)'|([^\s"'|;&]+))/);
-const imageFile = imageM && (imageM[1] || imageM[2] || imageM[3]);
-
-const urlM = command.match(/--url[=\s]+(?:"([^"]+)"|'([^']+)'|([^\s"'|;&]+))/);
-const bodyM = command.match(/--body-file[=\s]+(?:"([^"]+)"|'([^']+)'|([^\s"'|;&]+))/);
-const url = urlM && (urlM[1] || urlM[2] || urlM[3]);
-const bodyFile = bodyM && (bodyM[1] || bodyM[2] || bodyM[3]);
-
+const { flags, positionals, unknown, repeated } = parseArgs(tokens.slice(si + 1, end));
+if (unknown.length) unparseable(`flags no aceptados: ${unknown.join(', ')}`);
+if (positionals.length) unparseable(`argumentos sueltos: ${positionals.join(' ').slice(0, 120)}`);
+if (repeated.length) unparseable(`flags repetidos: ${repeated.join(', ')}`);
+const url = flags['--url'];
+const bodyFile = flags['--body-file'];
+const imageFile = flags['--image'];
 if (!url) block('GATE PROCEDENCIA: comment-prepare sin --url; no puedo derivar el post_id para hallar el recibo del coagent.');
 if (!bodyFile) block('GATE PROCEDENCIA: comment-prepare sin --body-file; el draft debe venir de etapa 3 en un archivo.');
+if (!flags['--author']) block('GATE PROCEDENCIA: comment-prepare sin --author.');
+if (!isAbsolute(bodyFile)) block(`GATE PROCEDENCIA: --body-file "${bodyFile}" no es ruta absoluta; el hook y el script podrían leer archivos distintos.`);
+if (imageFile && !isAbsolute(imageFile)) block(`GATE PROCEDENCIA: --image "${imageFile}" no es ruta absoluta.`);
 
 const pidM = url.match(/(?:posts\/|post_id=|multi_permalinks=|story_fbid=)(\d+)/);
 if (!pidM) block(`GATE PROCEDENCIA: no pude derivar post_id de --url "${url}".`);
@@ -182,6 +208,9 @@ try {
   const masterText = readFileSync(abs(r.master), 'utf8');
   const v = validateMaster(masterText);
   if (v.problems.length) block('GATE PROCEDENCIA: el master del recibo ya no es válido:\n  - ' + v.problems.join('\n  - '));
+  if (r.master_sha && draftSha(masterText) !== r.master_sha) {
+    block(`GATE PROCEDENCIA: el master cambió después del seed (sha ${draftSha(masterText)} ≠ recibo ${r.master_sha}); re-corre seed-gate + seed.`);
+  }
 } catch (e) {
   block(`GATE PROCEDENCIA: no pude releer el master "${r.master}" (${e.message}). Fail-closed.`);
 }

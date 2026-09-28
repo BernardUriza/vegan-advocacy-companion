@@ -13,7 +13,6 @@
 // Uso:
 //   node comment-prepare.mjs --url "<openUrl>" --author "CarolAnn Liebelt" \
 //        --anchor "being an omnivore isn't a choice" --body-file ./draft.txt
-//   node comment-prepare.mjs --url "<url>" --author "X" --body "texto corto inline"
 //   (--anchor es opcional pero MUY recomendado: desambigua entre varios comentarios
 //    del mismo autor en el hilo. Sin él se toma el primer match del autor.)
 
@@ -25,12 +24,13 @@ import { fileURLToPath } from 'node:url';
 import { openPersistentPage, expandAllInPage } from './fb-lib.mjs';
 import { resolveUserPath } from './paths.mjs';
 import { judgeThreadIdentity } from './thread-identity.mjs';
+import { parseArgs } from './cli-args.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
+const parsed = parseArgs(process.argv.slice(2));
 function arg(name) {
-  const i = process.argv.indexOf(name);
-  return i >= 0 ? process.argv[i + 1] : null;
+  return parsed.flags[name] ?? null;
 }
 
 // PASO 0 mecánico — corre el style-gate DETERMINISTA (scripts/style-gate.mjs) sobre
@@ -65,17 +65,21 @@ function runStyleGate(bodyText, authorName) {
   }
 }
 
-const url = arg('--url') || process.argv.find((a) => a.startsWith('http'));
+const USAGE = 'uso: node comment-prepare.mjs --url "<openUrl>" --author "<Nombre>" [--anchor "<frase>"] --body-file <f> [--image <png>]';
+if (parsed.unknown.length || parsed.positionals.length || parsed.repeated.length) {
+  console.error(`argumentos no aceptados: ${[...parsed.unknown, ...parsed.positionals, ...parsed.repeated.map((r) => r + ' (repetido)')].join(', ')}\n${USAGE}`);
+  process.exit(1);
+}
+const url = arg('--url');
 const author = arg('--author');
 const anchor = arg('--anchor') || '';
 const bodyFile = resolveUserPath(arg('--body-file'), ROOT);
-const bodyInline = arg('--body');
 const imageFile = resolveUserPath(arg('--image'), ROOT);
 const ME = process.env.ME || 'Bernard Uriza Orozco';
-const body = bodyFile ? readFileSync(bodyFile, 'utf8').replace(/\s+$/, '') : bodyInline;
+const body = bodyFile ? readFileSync(bodyFile, 'utf8').replace(/\s+$/, '') : null;
 
 if (!url || !author || !body) {
-  console.error('uso: node comment-prepare.mjs --url "<openUrl>" --author "<Nombre>" [--anchor "<frase>"] (--body-file <f> | --body "<txt>") [--image <png>]');
+  console.error(USAGE);
   process.exit(1);
 }
 
@@ -90,11 +94,16 @@ function openComposer({ author, anchor, ME }) {
   const norm = (s) => (s || '').toLowerCase().replace(/\s+/g, ' ').trim();
   const na = norm(anchor);
   const arts = [...document.querySelectorAll('div[role="article"]')];
+  const ownText = (a) => {
+    const c = a.cloneNode(true);
+    c.querySelectorAll('div[role="article"]').forEach((n) => n.remove());
+    return c.textContent || '';
+  };
   const target = arts.find((a) => {
     const lbl = a.getAttribute('aria-label') || '';
-    const txt = a.innerText || '';
-    const mine = !!a.querySelector('[aria-label^="Edit or delete"]') || lbl.includes('by ' + ME);
-    return !mine && lbl.includes(author) && (na ? norm(txt).includes(na) : true);
+    const byAuthor = lbl.startsWith('Comment by ' + author) || lbl.startsWith('Reply by ' + author);
+    const mine = lbl.includes('by ' + ME);
+    return !mine && byAuthor && (na ? norm(ownText(a)).includes(na) : true);
   });
   if (!target) return { ok: false, error: 'target article not found', author, anchor };
   target.scrollIntoView({ block: 'center' });
@@ -133,7 +142,8 @@ function pasteBody({ author, body }) {
 // --- DENTRO de la página: re-leer el estado REAL (Lexical reconcilia async) ---
 function readBack({ author, firstWords, lastWords }) {
   const boxes = [...document.querySelectorAll('div[contenteditable="true"][role="textbox"]')];
-  const box = boxes.find((b) => /Reply/i.test(b.getAttribute('aria-label') || '') && (b.innerText || '').length > 30);
+  const box = boxes.find((b) => firstWords && (b.innerText || '').includes(firstWords))
+    || boxes.find((b) => /Reply/i.test(b.getAttribute('aria-label') || '') && (b.innerText || '').length > 30);
   if (!box) return { ok: false, error: 'composer empty/not found on readback' };
   const t = box.innerText || '';
   return {
@@ -228,7 +238,7 @@ async function main() {
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(2500);
     const loggedIn = await page.evaluate(
-      () => !!document.querySelector('a[href*="/me/"], [aria-label="Your profile"]') || /facebook/i.test(document.title)
+      () => !!document.querySelector('a[href*="/me/"], [aria-label="Your profile"]') && !document.querySelector('input[name="email"], input[name="pass"]')
     );
     if (!loggedIn) {
       await failClose();
@@ -319,7 +329,7 @@ async function main() {
     );
     process.exit(clean ? 0 : 3);
   } finally {
-    if (!detached) await detach();
+    if (!detached) await failClose();
   }
 }
 
