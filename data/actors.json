@@ -247,7 +247,9 @@
         "their_move": "Sostuvo la respuesta: yes, it does — dominant species, we control our food supply, have the ability, why shouldnt we?? We care for the animal, provide all its needs and desires; livestock have no greater point of view than that.",
         "our_reply_summary": "Dominancia/capacidad explican control, la justificación del título la debe quien lo sostiene; el cuidado funda responsabilidad (tutor sin dueño), el título agrega el poder de decidir cuando los intereses de ella y el propósito del dueño se separan (el día del camión); tomé su concesión de que HAY punto de vista; cerré: si tiene punto de vista, ¿qué hace que la dominancia baste para volverla propiedad?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Su siguiente turno (8h): 'I've answered as best I can. There is no other answer. How about you telling me what is bad about turning livestock into property?'",
+        "outcome_note": "algo-a-alguien: sostuvo el título con poder (dominant species) y concedió de paso que el ganado tiene un punto de vista ('no greater point of view than that'); siguió contestando, sin insulto."
       },
       {
         "thread_id": "28046483408306158",
@@ -255,13 +257,25 @@
         "their_move": "I have answered as best I can. There is no other answer. How about you telling me what is bad about turning livestock, or any animal, into property?",
         "our_reply_summary": "Le contesté directo el caso positivo: el título hace que el lado de ella pierda siempre que choca con el propósito del dueño (cría, becerro, venta, camión); una silla no pierde nada, ella sí porque él concedió punto de vista; cierre: si tiene punto de vista, ¿qué justifica darle a alguien ese título sobre ella?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Su siguiente turno (6h): 'but how does any of those things happening to her, matter to her. ??'",
+        "outcome_note": "algo-a-alguien: invirtió la pregunta de buena fe (¿qué tiene de malo?) y recibió el lado de ella vs la decisión del dueño; volvió a preguntar en vez de cerrar."
       },
       {
         "thread_id": "28046483408306158",
         "date": "2026-09-27",
         "their_move": "but how does any of those things happening to her, matter to her. ??",
         "our_reply_summary": "Le importa en el mismo sentido cotidiano que a un perro: sin concepto de muerte ni lenguaje, basta un lado propio (evita lo que la asustó, se calma donde conoce); es la misma evidencia con la que reconocemos que hay alguien en el perro. Mover la silla no le pasa a nadie; moverla a ella sí. Cierre: si le importan, ¿qué hace legítimo poseerla?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "engaged",
+        "outcome_evidence": "Su siguiente turno (5h): 'sorry. Repeating yourself means nothing. An animal wants food and water and comfort, company if a herd or pack animal, that is all.'",
+        "outcome_note": "algo-a-alguien: tras la respuesta del perro/la silla se replegó a 'repeating yourself means nothing' pero volvió a conceder el lado de ella en sus palabras: 'an animal wants food and water and comfort, company'. Ronda 6; rendimiento marginal cayendo, no insulto."
+      },
+      {
+        "thread_id": "28046483408306158",
+        "date": "2026-09-27",
+        "their_move": "Ronda 6: sorry. Repeating yourself means nothing. An animal wants food and water and comfort, company if a herd or pack animal, that is all.",
+        "our_reply_summary": "Corto (82 palabras): usé SU lista (food, water, comfort, company) como el lado propio de ella; un objeto no quiere nada; el título le da a otro la decisión sobre las cuatro, incluido el día en que paran; cierre en el título. Salgo del hilo tras esta vuelta.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }
@@ -635,14 +649,17 @@
     "analisis": "Low-effort. Estira el término 'explotación' a plantas y animales no-sintientes para vaciarlo de carga moral. Error categorial: plantas no son sintientes; 'explotación' entre plantas no tiene víctima con intereses. Poco invertida en el debate.",
     "tactics": [
       "naturalismo",
-      "is_ought"
+      "is_ought",
+      "insulto_ad_hominem"
     ],
     "tone": "low_effort",
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No gastar una jugada principal. Si se responde: una línea que reponga la distinción de sentiencia, nada más.",
     "threads": [
-      "27341517928804691"
+      "27341517928804691",
+      "28604913169131821",
+      "28459136643743554"
     ],
     "interactions": []
   },
@@ -651,17 +668,29 @@
     "name": "Jude Cooper",
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61580416850698/",
     "bando": "anti-vegan",
-    "postura_nucleo": "Sin postura propia; pile-on de Matt Terrain con 'he can't'.",
-    "analisis": "Apareció solo para rematar el argumento de Matt con 'he can't'. Pile-on de dos palabras. Bando no completamente confirmado: también reaccionó a un comentario de Bernard con valencia desconocida.",
-    "tactics": [],
-    "tone": "low_effort",
-    "verdict": "pozo_sin_fondo",
-    "register": "ignorar",
-    "what_not_to_do": "Ignorar. Dos palabras no merecen una respuesta. Su sustancia ('no hay consumo sin daño') ya se contesta en las respuestas a Matt.",
-    "threads": [
-      "27341517928804691"
+    "postura_nucleo": "Antes pile-on de dos palabras; 2026-09-27 trae argumento propio: crop_deaths_flip con la misma especie (feral pigs vs bacon pig, \"both are pigs\").",
+    "analisis": "Apareció solo para rematar el argumento de Matt con 'he can't'. Pile-on de dos palabras. Bando no completamente confirmado: también reaccionó a un comentario de Bernard con valencia desconocida. 2026-09-27 (VEGANnoyance, post de sintiencia): sube de pile-on a argumento real, el flip de crop deaths con cerdos ferales; merece una vuelta (relación de propiedad, no conteo).",
+    "tactics": [
+      "crop_deaths_flip"
     ],
-    "interactions": []
+    "tone": "low_effort",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "Nada de body-count ni cuál muerte es peor; no defender ni condenar el control de ferales; el feral no es de nadie, el de granja es propiedad desde antes de nacer.",
+    "threads": [
+      "27341517928804691",
+      "28459136643743554"
+    ],
+    "interactions": [
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-27",
+        "their_move": "Raíz (VEGANnoyance, post de sintiencia): crop_deaths_flip misma especie — you worry about the cute little piggy but turn a blind eye to feral pigs killed for crops; both are pigs.",
+        "our_reply_summary": "Both are pigs es mi punto: mismo sujeto, solo uno es posesión. El feral no es de nadie (conflicto por cultivo, cuestionable aparte); el de granja es propiedad desde antes de nacer hasta el camión. Sin conteo. Cierre en el título.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ]
   },
   {
     "user_id": "813709465",
@@ -1319,7 +1348,8 @@
       "peticion_de_principio",
       "welfare_rhetoric",
       "crop_deaths_flip",
-      "species_hierarchy"
+      "species_hierarchy",
+      "inversion_carga"
     ],
     "tone": "civil",
     "verdict": "audiencia",
@@ -1328,7 +1358,9 @@
     "threads": [
       "27363745576581926",
       "27375477042075446",
-      "27937793019177176"
+      "27937793019177176",
+      "28604913169131821",
+      "28150669567887541"
     ],
     "interactions": [
       {
@@ -1557,6 +1589,14 @@
         "date": "2026-08-08",
         "their_move": "Naturalismo/historia (humans ate meat long before veganism) + shorthand inocente + mofa (congratulations on discovering verbs) + demanda: changing gives to takes requires an actual ethical argument; wordplay, not a valid argument.",
         "our_reply_summary": "Concedió lo cierto de entrada (shorthand, historia). Recibo de procedencia: indoctrinated es palabra SUYA, el post no la usa. Recibo central: exige el argumento ético a un post cuyo párrafo final ES esa pregunta — contestó el verbo y saltó la pregunta. La replantó idéntica.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "28604913169131821",
+        "date": "2026-09-27",
+        "their_move": "Raíz bajo el post de sintiencia (pegado en dos copias): acusación de procedencia (you invented an argument nobody made) + descriptivo (societies prioritise human interests) + relativismo (purely YOUR ethical choice) + concesión (a pig is sentient, interests worth considering) + strawman (same status as a human / obligates everyone to become vegan).",
+        "our_reply_summary": "Recibo de procedencia sin drama (Matt y Linda dijeron esta semana que no hay punto de vista); concedí lo descriptivo (explica quién armó el sistema, no la razón del título); usé su concesión: si sus intereses son worth considering, el título debe explicar por qué el dueño conserva la decisión final; nadie pidió mismo estatus; cierre en el título.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "pending"
       }
@@ -3150,5 +3190,55 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No competir en body-count de insectos ni pelear cifras de rumiantes vs cosechas. Contestar UNA vez (no en las dos copias). Eje propiedad: en el campo nadie es propiedad, en la granja sí; ¿existe la esclavitud necesaria?"
+  },
+  {
+    "tactics": [
+      "apelacion_normal",
+      "conveniencia_como_justificacion",
+      "anecdota_personal_n1"
+    ],
+    "threads": [
+      "28459136643743554"
+    ],
+    "interactions": [
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-27",
+        "their_move": "Raíz (VEGANnoyance, post de sintiencia): animals are property; Ralph is family and property, we own each other; the piglet I buy is property and we eat it; it is the way the world works.",
+        "our_reply_summary": "Volteé su evidencia: con Ralph describe una relación de dos lados, con el cerdito un título de un solo lado hasta el plato; la misma palabra hace dos trabajos; ambos son seres conscientes con un lado propio; way the world works describe, no justifica. Cierre en el título.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "100008695478463",
+    "name": "Kirk Sawler",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100008695478463/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Los animales son propiedad porque se compran; Ralph (su perro) es familia y a la vez propiedad; el cerdito comprado se come a los 5 meses; \"it’s the way the world works\".",
+    "analisis": "2026-09-27 (VEGANnoyance, post de sintiencia): franco, no insultante. Su propia evidencia se voltea: describe con Ralph una relación de dos lados (\"we own each other\", \"I’m his person\") y con el cerdito un título de un solo lado hasta el plato; la misma palabra property hace dos trabajos en su comentario. Cierra con descripción (way the world works), no con razón.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No burlarse de Ralph ni pedirle que trate al cerdo como al perro (eso es trato, no título). No discutir legalidad de comprar. Voltear su propia evidencia (Ralph) y volver al título."
+  },
+  {
+    "tactics": [
+      "whataboutism",
+      "species_hierarchy"
+    ],
+    "threads": [
+      "28459136643743554"
+    ],
+    "interactions": [],
+    "user_id": "100001248981179",
+    "name": "Homer Cu",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100001248981179/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "\"Nothing to do with sentience. Everything to do with speciesism. Even vegans practice speciesism. The only difference is the degree.\"",
+    "analisis": "2026-09-27 (VEGANnoyance, post de sintiencia): tu quoque de grado — como los veganos también son especistas en algún grado, el criterio de sintiencia no decide nada. Confunde imperfección del agente con la pregunta por el título. Pendiente de contestar (lote siguiente).",
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No defender que los veganos son perfectos ni entrar al catálogo de grados. Conceder el grado y volver al título: que nadie sea perfecto no da razón para poseer a alguien."
   }
 ]

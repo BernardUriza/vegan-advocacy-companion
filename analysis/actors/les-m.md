@@ -26,6 +26,8 @@ El mejor steelman anti-vegano del hilo, y CIVIL. Hace tres cosas finas: (1) acus
   - _Contra:_ ABOLITIONIST axis, not harm-reduction (see abolitionist-framing rule). The distinction is NOT amount or role of harm (incidental vs purpose = welfarism, concedes the ground). It is PROPERTY/SLAVERY: in a crop field no one is owned — it's incidental death of someone who is not property; on a farm the animal is bred, owned and disposed of as property — that is slavery. Concede every crop death freely (it changes nothing, the axis was never harm), then name the status difference and invert the burden: the question isn't 'what justifies unnecessary harm' but 'does necessary slavery exist?'
 - **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`) — Asserts that human life is categorically more valuable than animal life as a premise, without arguing for the criterion. 'Human life is far more valuable than animal life, therefore exploitation is justified.'
   - _Contra:_ Ask for the criterion: 'What makes human interests categorically outweigh animal interests? Whatever criterion you give — sentience, capacity to suffer, social bonds, language — either also applies to some animals or fails to draw the line you need. The hierarchy needs an argument, not an assertion.'
+- **Burden of Proof Reversal** (`inversion_carga`) — Flips the burden of proof so the vegan must justify veganism rather than the carnist justifying exploitation. 'The onus is not on me, who is normal — it's on the fringe ideology.'
+  - _Contra:_ Name it and return the burden: 'The burden of proof is on whoever makes a claim. You're claiming it's justified to impose suffering on a sentient being for something we don't need. That's the claim that needs a justification, not the default of avoiding unnecessary harm.'
 
 ## Counter-arsenal
 
@@ -88,6 +90,11 @@ El mejor steelman anti-vegano del hilo, y CIVIL. Hace tres cosas finas: (1) acus
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
   - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+- **Burden of Proof Reversal** (`inversion_carga`)
+  - `esclavitud-paralelismo` → _deploy as:_ marco
+  - `crueldad-no-es-la-causa` → _deploy as:_ marco
+  - `consideracion-moral-no-cuanto-sufre` → _deploy as:_ premisa_portante
+  - `resistencia-al-cambio-es-defensa-del-privilegio` → _deploy as:_ auto-disciplina-del-activista
 
 ## Qué NO hacer
 
@@ -187,4 +194,8 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Naturalismo/historia (humans ate meat long before veganism) + shorthand inocente + mofa (congratulations on discovering verbs) + demanda: changing gives to takes requires an actual ethical argument; wordplay, not a valid argument.
 - **Nuestra respuesta:** Concedió lo cierto de entrada (shorthand, historia). Recibo de procedencia: indoctrinated es palabra SUYA, el post no la usa. Recibo central: exige el argumento ético a un post cuyo párrafo final ES esa pregunta — contestó el verbo y saltó la pregunta. La replantó idéntica.
 
-_Hilos: 27363745576581926, 27375477042075446, 27937793019177176_
+### Hilo `28604913169131821` — 2026-09-27 · outcome: **pending**
+- **Su jugada:** Raíz bajo el post de sintiencia (pegado en dos copias): acusación de procedencia (you invented an argument nobody made) + descriptivo (societies prioritise human interests) + relativismo (purely YOUR ethical choice) + concesión (a pig is sentient, interests worth considering) + strawman (same status as a human / obligates everyone to become vegan).
+- **Nuestra respuesta:** Recibo de procedencia sin drama (Matt y Linda dijeron esta semana que no hay punto de vista); concedí lo descriptivo (explica quién armó el sistema, no la razón del título); usé su concesión: si sus intereses son worth considering, el título debe explicar por qué el dueño conserva la decisión final; nadie pidió mismo estatus; cierre en el título.
+
+_Hilos: 27363745576581926, 27375477042075446, 27937793019177176, 28604913169131821, 28150669567887541_

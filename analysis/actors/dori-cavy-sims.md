@@ -18,6 +18,8 @@ Low-effort. Estira el término 'explotación' a plantas y animales no-sintientes
   - _Contra:_ Concede the biology entirely, then separate can from should (is-ought, Hume): 'Yes, we can digest meat — omnivore is a fact about digestion, not a moral status. The question is what justifies using a sentient being when we don't need to.' If they lean hard on 'natural', add the second layer: 'natural' doesn't carry moral weight by itself — a poisonous mushroom is natural and bad for us, medicine and hospitals are 'unnatural' and good. What makes something good or bad isn't whether it's natural; it's whether it satisfies or frustrates the interests of someone who can feel. So 'it's natural' answers nothing about whether it's right.
 - **Is-Ought / Naturalistic Fallacy** (`is_ought`) — Derives a moral 'should' from a descriptive 'is'. 'Biologically designed to eat meat' → 'therefore morally right to eat meat'. The jump from biological fact to moral justification needs justification that is never given.
   - _Contra:_ Separate is from should: 'That's what we can do — it says nothing about what we should do. We're also biologically capable of many things we consider wrong. Capability doesn't confer permission.'
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`) — Attacks the person instead of the argument. Used for social dominance in the thread, not to persuade. 'Intellectually challenged retards', 'idiots', 'vegan lab slop', 'cult'. Often combined with one real data point as cover.
+  - _Contra:_ Don't match the register. Name the evasion calmly: 'When the argument runs out, the insults start.' Contrast of temperament is visible to the lurker. One line max, then return to substance or disengage entirely.
 
 ## Counter-arsenal
 
@@ -39,6 +41,12 @@ Low-effort. Estira el término 'explotación' a plantas y animales no-sintientes
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
+  - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
+  - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
+  - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
+  - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
+  - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
 
 ## Qué NO hacer
 
@@ -47,4 +55,4 @@ No gastar una jugada principal. Si se responde: una línea que reponga la distin
 ## Log de interacciones
 
 _(sin interacciones registradas)_
-_Hilos: 27341517928804691_
+_Hilos: 27341517928804691, 28604913169131821, 28459136643743554_

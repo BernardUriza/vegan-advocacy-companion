@@ -86,6 +86,6 @@ tiene que responder a su lado) y remate UNO solo en el título.
 
 - Vegans VS Meat Eaters (`683615698352965`) → https://www.facebook.com/groups/683615698352965/posts/28150669567887541/ — verificado en permalink (5/5 frases, autor Bernard, 1 copia).
 - Vegans V's Meat Eaters (Open Debates) 3 (`770211166362062`) → https://www.facebook.com/groups/770211166362062/posts/28604913169131821/ — verificado en permalink (5/5, 1 copia).
-- VEGANnoyance; The Group! (`2295597740524135`) → **pendiente de aprobación del admin** (visto en `my_pending_content`, 1 copia). URL cuando lo aprueben.
+- VEGANnoyance; The Group! (`2295597740524135`) → https://www.facebook.com/groups/2295597740524135/posts/28459136643743554/ — aprobado por el admin ~2026-09-27 17:00 CST (notif `group_post_approved`); 5 raíces en las primeras 5h.
 
 Recibos: `.coagent/receipts/0927-root-sentience-*.png`.
