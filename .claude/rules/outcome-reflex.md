@@ -54,6 +54,15 @@ juicio (qué outcome, qué aprendió el framework) es del LLM = Claude**. Dos fa
      siguen libres.
 4. `validate-data.mjs` + (si `analysis/actors/` está despejado) `gen-dossiers.mjs`.
 
+**El emit NO es la etapa; la etapa termina en `apply` (2026-09-28).** Ese día corrió `emit`
+(13 packets a las 23:54), nadie escribió verdicts, y el lote entero salió sin re-juzgar el
+moat; el `reflex-verdicts.json` en disco era del día anterior. Desde entonces `apply` (no
+dry-run, sin errores) escribe el marcador `.coagent/reflex-applied.json` (`applied_at`,
+`verdicts`, `packets_mtime`), y el hook `coagent-provenance-gate` **bloquea el staging de
+cualquier reply** mientras `reflex-packets.json` sea más nuevo que ese marcador. Cero
+verdicts también es un `apply` válido (el marcador se escribe igual): lo que no vale es
+emitir y no juzgar.
+
 ## Tope de frescura del emit (2026-09-19)
 
 `reflex emit` omite las interacciones con `date` y los transcripts con `mtime` más viejos

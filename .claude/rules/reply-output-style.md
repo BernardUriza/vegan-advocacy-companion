@@ -308,12 +308,32 @@ muleta de la negación previa (ver "Afirmativo y contundente"). NO confundir con
 concesión-y-redirección (esa se conserva). El style-gate lo reformula a afirmativo
 ANTES de postear.
 
+## El cierre NO se clona en un lote (regla dura, 2026-09-28)
+
+La pregunta del título cierra cada reply, pero **con las palabras de ESE interlocutor y
+nunca igual dos veces**. El 2026-09-28 siete replies (Les, Homer, Kirk, Parnaibensis, Dori
+×2, Jason) cerraron con variantes de *"what makes it legitimate for her to exist as
+somebody's property?"*, cinco de ellas en el mismo post con minutos de diferencia, y dos de
+ellas contestando a *"blatant use of ai"* y a *"you write a lot of words and say little"*: la
+plantilla confirmó el sello ante el lurker. El norte es el lector silencioso; siete cierres
+iguales le dicen "bot" antes de que lea uno.
+
+- La pregunta se replantea desde la pieza que trajo el otro: el papel de Jason (*"when did the
+  paper ever say why anyone gets to?"*), el Ralph de Kirk (*"which of the two relations are
+  you defending?"*), el "apex" de Homer (*"is 'we can' the whole of it?"*).
+- Contra el sello-IA y los drive-bys, cero fórmula: ahí es donde más cuesta.
+- Mecánica: `style-gate.mjs a.txt b.txt …` (modo lote) caza cierres clonados entre drafts
+  (`closerClone`, flag dura); el gate de procedencia bloquea el staging si el cierre del
+  body-file clona el de cualquier draft consultado en las últimas 24h. SSOT del detector:
+  `scripts/closer-clone.mjs` (la pregunta final, LCS sobre el cierre más corto).
+
 ## Pre-post check (lo ejecuta etapa 4)
 
 Antes de postear, escanear el borrador contra este spec. **Reformular** (más
 corto/afilado/humano) si: pisa la kill-list, **abre con el nombre del destinatario**,
-se lee como mini-ensayo, performa tres metas a la vez, usa formato robótico, o NO
-devuelve al hueso del marco. Modelo de lo que SÍ (77 palabras, abre directo en la
+se lee como mini-ensayo, performa tres metas a la vez, usa formato robótico, NO
+devuelve al hueso del marco, o **cierra igual que otra reply del lote** (correr el
+style-gate con TODOS los drafts del lote, no uno por uno). Modelo de lo que SÍ (77 palabras, abre directo en la
 idea sin vocativo, concede sin refutar uno por uno, devuelve al hueso, planta la
 pregunta para el lurker):
 

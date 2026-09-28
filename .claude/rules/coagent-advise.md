@@ -68,6 +68,14 @@ trabajo de LLM: el style-gate de etapa 4 + el check x/y del coagent de arriba); 
 prueba que la etapa 3 **ocurrió** con frameworks. Ver
 `.claude/hooks/coagent-provenance-gate.mjs` y `scripts/seed-coagent.mjs`.
 
+El mismo hook carga dos guardas más, ambas mecánicas y ambas nacidas el 2026-09-28: (a)
+**etapa 0 incompleta**: si `.coagent/reflex-packets.json` es más nuevo que
+`.coagent/reflex-applied.json` (lo escribe `reflex.mjs apply`), no se stagea nada hasta
+juzgar y aplicar ([[outcome-reflex]]); (b) **cierre clonado**: el cierre del `--body-file`
+se compara (`scripts/closer-clone.mjs`) con el de cada draft consultado en las últimas 24h
+en cualquier post; un clon duro bloquea y pide replantear la pregunta con las palabras del
+interlocutor ([[reply-output-style]]). Tests: `scripts/gates.test.mjs`.
+
 ## La mecánica del DOM vive en `/coagent` (SSOT) — NO se duplica aquí
 
 Esta etapa ES el outbound seed-&-read del skill **`/coagent`** (su SKILL.md cita
