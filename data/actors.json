@@ -3536,6 +3536,15 @@
         "draft_sha": "8fbc27acaa8fbb57",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-28T14:55:15.443Z"
+      },
+      {
+        "thread_id": "28148343171453514",
+        "date": "2026-09-28",
+        "their_move": "Cuarta vuelta (su post de Steve Irwin): \"my cows arent pets my dogs are\".",
+        "our_reply_summary": "Posteada por Bernard a mano (versión del coagent, SINGLE-0928J): no shit, esa es la respuesta; pet y livestock son etiquetas que él reparte, la vaca no viene sellada; los mismos signos ordinarios que leería en un perro; llamarla livestock dice qué planea hacer con ella y prueba fuck-all sobre el título. Cierre: ¿qué hace de \"my cows aren't pets\" una razón para que sean suyas? 80 palabras.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "28c71cd5c86aae22",
+        "outcome": "pending"
       }
     ],
     "user_id": "61550822695503",
