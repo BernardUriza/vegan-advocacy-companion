@@ -1,4 +1,4 @@
-import { writeFileSync, renameSync } from 'fs';
+import { writeFileSync, renameSync, existsSync, readFileSync, unlinkSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { readActors, readTactics, readFrameworks } from './db.mjs';
@@ -11,10 +11,9 @@ import { readActors, readTactics, readFrameworks } from './db.mjs';
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const OUT_DIR = resolve(ROOT, 'analysis/actors');
 
-const actors = readActors();
-const tactics = readTactics();
-const frameworks = readFrameworks();
-const tacticById = Object.fromEntries(tactics.map(t => [t.id, t]));
+let tactics = [];
+let frameworks = [];
+let tacticById = {};
 
 // Same lookup logic as db.getFrameworksByTactic: a framework counters a tactic
 // when its related_tactics includes that tactic id.
@@ -22,9 +21,20 @@ function frameworksByTactic(tacticId) {
   return frameworks.filter(f => (f.related_tactics ?? []).includes(tacticId));
 }
 
-function slug(name) {
-  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+export function slug(name) {
+  return (name ?? '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
+
+export function dossierFilenames(actorList) {
+  const base = actorList.map(a => slug(a.name) || a.user_id);
+  const count = new Map();
+  for (const b of base) count.set(b, (count.get(b) ?? 0) + 1);
+  const collided = new Set([...count].filter(([, n]) => n > 1).map(([b]) => b));
+  const files = actorList.map((a, k) => `${collided.has(base[k]) ? `${base[k]}-${a.user_id}` : base[k]}.md`);
+  return { files, collided: [...collided] };
+}
+
+export const GENERATED_MARK = 'GENERATED from `data/actors.json` by `scripts/gen-dossiers.mjs`';
 
 function writeAtomic(path, text) {
   const tmp = `${path}.tmp.${process.pid}`;
@@ -36,7 +46,7 @@ function renderActor(a) {
   const lines = [];
   lines.push(`# ${a.name}`);
   lines.push('');
-  lines.push('> GENERATED from `data/actors.json` by `scripts/gen-dossiers.mjs`. Do not hand-edit — edit the JSON and regenerate.');
+  lines.push(`> ${GENERATED_MARK}. Do not hand-edit — edit the JSON and regenerate.`);
   lines.push('');
   lines.push(`- **user_id:** ${a.user_id ?? '(pendiente)'}`);
   if (a.profile_url) lines.push(`- **Perfil:** ${a.profile_url}`);
@@ -103,11 +113,25 @@ function renderActor(a) {
   return lines.join('\n');
 }
 
-let count = 0;
-for (const a of actors) {
-  const path = resolve(OUT_DIR, `${slug(a.name) || a.user_id}.md`);
-  writeAtomic(path, renderActor(a));
-  count++;
+function main() {
+  const actors = readActors();
+  tactics = readTactics();
+  frameworks = readFrameworks();
+  tacticById = Object.fromEntries(tactics.map(t => [t.id, t]));
+  const { files, collided } = dossierFilenames(actors);
+  actors.forEach((a, k) => writeAtomic(resolve(OUT_DIR, files[k]), renderActor(a)));
+  const written = new Set(files);
+  const removed = [];
+  for (const b of collided) {
+    const stale = resolve(OUT_DIR, `${b}.md`);
+    if (written.has(`${b}.md`) || !existsSync(stale)) continue;
+    if (!readFileSync(stale, 'utf8').includes(GENERATED_MARK)) continue;
+    unlinkSync(stale);
+    removed.push(`${b}.md`);
+  }
+  console.log(`✓ regenerated ${files.length} dossier(s) under analysis/actors/`);
+  if (collided.length) console.log(`  slug collisions suffixed with -<user_id>: ${collided.join(', ')}`);
+  if (removed.length) console.log(`  removed stale unsuffixed dossier(s): ${removed.join(', ')}`);
 }
 
-console.log(`✓ regenerated ${count} dossier(s) under analysis/actors/`);
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();

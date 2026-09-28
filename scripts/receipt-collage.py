@@ -15,22 +15,36 @@ número en círculo por tarjeta y créditos en un pie pequeño. photos.json admi
 "Commenter N" y la mención azul a Bernard con una barra del color de la burbuja (nada más del render cambia).
 --cards <dir> escribe además cada tarjeta como PNG propio (card-1.png…; título solo en la 1, créditos solo en la última).
 """
-import json, sys
+import argparse, json, sys
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
-args = [a for a in sys.argv[1:] if not a.startswith('--')]
-pairs_file = sys.argv[sys.argv.index('--pairs') + 1] if '--pairs' in sys.argv else None
-src = Path(args[0]); out = Path(args[1]); title = args[2] if len(args) > 2 else ''
+
+def parse_args(argv):
+    ap = argparse.ArgumentParser(prog='receipt-collage.py')
+    ap.add_argument('src'); ap.add_argument('out'); ap.add_argument('title', nargs='?', default='')
+    ap.add_argument('--pairs'); ap.add_argument('--cards')
+    ap.add_argument('--social', action='store_true'); ap.add_argument('--anon', action='store_true')
+    return ap.parse_intermixed_args(argv)
+
+
+def die(msg):
+    print(json.dumps({'ok': False, 'error': msg}), file=sys.stderr); sys.exit(2)
+
+
+opts = parse_args(sys.argv[1:])
+pairs_file = opts.pairs
+src = Path(opts.src); out = Path(opts.out); title = opts.title
 index = [i for i in json.loads((src / 'index.json').read_text()) if i.get('ok')]
+if not index: die(f'0 recibos usables (ok:true) en {src / "index.json"}; no se escribe imagen')
 W = 900; PAD = 18; CAP = 34; GAP = 14
 try:
     font = ImageFont.truetype('/System/Library/Fonts/Helvetica.ttc', 20)
     tfont = ImageFont.truetype('/System/Library/Fonts/Helvetica.ttc', 26)
 except Exception:
     font = tfont = ImageFont.load_default()
-SOCIAL = '--social' in sys.argv; ANON = '--anon' in sys.argv
-cards_dir = sys.argv[sys.argv.index('--cards') + 1] if '--cards' in sys.argv else None
+SOCIAL = opts.social; ANON = opts.anon
+cards_dir = opts.cards
 
 
 def yellow_bands(im):
@@ -115,6 +129,7 @@ def social(index, photos_file, out, title, cards_dir=None):
         pim = fit(Image.open(Path(photos_file).parent / ph['file']).convert('RGB'), PW, PH_MAX)
         pim = rounded(pim, 24).rotate((0.8, -0.6, 0.7, -0.8, 0.5)[(n - 1) % 5], Image.BICUBIC, expand=True)
         cards.append((n, i, ph, pim, chip))
+    if not cards: die(f'0 tarjetas: ningún slug de index.json tiene foto en {photos_file}; no se escribe imagen')
     credits = 'Photos: ' + ' · '.join(f"{n} {ph.get('artist', '')} {ph.get('license', '')}".strip() for n, _, ph, *_ in cards)
     cl = wrap(credits, cf, W - 2 * M)
     rows = [pim.height + 12 + 32 + chip.height + 34 for *_, pim, chip in cards]

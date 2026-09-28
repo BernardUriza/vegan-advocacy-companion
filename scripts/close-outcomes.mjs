@@ -22,6 +22,8 @@
 // DIFERIDA — ver OUTCOME-LOOP.md.
 
 import { readFileSync } from 'fs';
+import { resolve } from 'path';
+import { fileURLToPath } from 'url';
 import { getPendingInteractions, closeOutcome } from './db.mjs';
 import { ageMinutes } from './fb-lib.mjs';
 
@@ -32,16 +34,16 @@ import { ageMinutes } from './fb-lib.mjs';
 // como silent (fake-green, Art. 2) y colapsa maratones reales a silencio.
 const DEFAULT_SILENT_AFTER_MIN = 12 * 60;
 
-// ---- keyword sets para la clasificación (case-insensitive, word-ish boundaries) ----
+// Keywords con frontera de palabra; un `*` final = raíz (manipulat* → manipulative).
 const CONCEDED = [
   'fair enough', "you're right", 'you are right', 'youre right', 'good point',
   'i see your point', 'i see what you mean', 'i stand corrected', 'point taken',
   "you've convinced me", 'you have convinced me', 'i concede', 'agreed', "i'll give you that",
 ];
 const ESCALATED = [
-  'cult', 'brainwash', 'sheep', 'virtue signal', 'preachy', 'manipulat',
-  'idiot', 'stupid', 'moron', 'clown', 'pathetic', 'shut up', 'snowflake',
-  'triggered', 'extremist', 'nutjob', 'lunatic', 'troll', 'loser', 'pussy',
+  'cult', 'brainwash*', 'sheep', 'virtue signal*', 'preachy', 'manipulat*',
+  'idiot*', 'stupid*', 'moron*', 'clown', 'pathetic', 'shut up', 'snowflake',
+  'triggered', 'extremist', 'nutjob', 'lunatic', 'troll*', 'loser', 'pussy',
 ];
 const GOALPOST = [
   'but what about', 'what about', "that's not the point", 'thats not the point',
@@ -49,8 +51,18 @@ const GOALPOST = [
   'plants feel', 'predators', 'lions', 'we are omnivore', 'natural', 'circle of life',
 ];
 
-const norm = (s) => (s || '').toLowerCase().replace(/\s+/g, ' ').trim();
-const hits = (text, list) => list.filter((k) => text.includes(k));
+const norm = (s) => (s || '').toLowerCase().replace(/[\u2018\u2019]/g, "'").replace(/\s+/g, ' ').trim();
+const kwCache = new Map();
+export function keywordRegex(k) {
+  if (kwCache.has(k)) return kwCache.get(k);
+  const stem = k.endsWith('*');
+  const body = (stem ? k.slice(0, -1) : k).replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/ /g, '\\s+');
+  const re = new RegExp(`(?<!\\w)${body}${stem ? '\\w*' : '(?:s|es)?'}(?!\\w)`, 'i');
+  kwCache.set(k, re);
+  return re;
+}
+export const hits = (text, list) => list.filter((k) => keywordRegex(k).test(text)).map((k) => k.replace(/\*$/, ''));
+export const KEYWORDS = { CONCEDED, ESCALATED, GOALPOST };
 
 // ---- normaliza el turno: tolera thread-extract (isMine/ageStr) y el shape del prompt (mine/age) ----
 function normTurn(t) {
@@ -69,7 +81,7 @@ function normTurn(t) {
 // ---- clasifica el outcome de UNA interacción dada el transcript del hilo ----
 // La heurística mira lo que el oponente (actor) dijo DESPUÉS de tu última reply
 // en este hilo. Si no volvió a hablar → "silent".
-function classify(transcript, actor, silentAfterMin = DEFAULT_SILENT_AFTER_MIN) {
+export function classify(transcript, actor, silentAfterMin = DEFAULT_SILENT_AFTER_MIN) {
   const turns = transcript.map(normTurn);
   const oppById = (t) => actor.user_id && t.user_id && t.user_id === actor.user_id;
   const oppByName = (t) => !t.mine && actor.name && t.author === actor.name;
@@ -204,4 +216,4 @@ function main() {
   console.log(`\n  tally: ${JSON.stringify(tally)}  ${dryRun ? '(nada escrito — dry-run)' : '(escrito vía db.mjs)'}\n`);
 }
 
-main();
+if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) main();

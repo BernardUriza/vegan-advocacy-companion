@@ -95,3 +95,64 @@ test('getTactic returns the tactic with the matching id', () => {
 test('getTactic returns null for an unknown id', () => {
   assert.equal(getTactic('__no_such_tactic__'), null);
 });
+
+import { mkdtempSync, mkdirSync, copyFileSync, writeFileSync, readFileSync, rmSync } from 'fs';
+import { tmpdir } from 'os';
+import { join, dirname as pdirname } from 'path';
+import { fileURLToPath, pathToFileURL } from 'url';
+
+const HERE = pdirname(fileURLToPath(import.meta.url));
+const fixtureActors = () => [{
+  user_id: 'u1', name: 'Fixture One', tactics: [], threads: ['t1'],
+  interactions: [
+    { thread_id: 't1', date: '2026-09-01', their_move: 'you make fair points', outcome: 'conceded' },
+    { thread_id: 't1', date: '2026-09-02', their_move: 'plants feel pain too', outcome: 'pending' },
+    { thread_id: 't1', date: '2026-09-03', their_move: 'plants feel pain again', outcome: 'engaged' },
+    { thread_id: 't2', date: '2026-09-04', their_move: 'already closed', outcome: 'silent' },
+  ],
+}];
+
+async function sandboxDb(t) {
+  const dir = mkdtempSync(join(tmpdir(), 'db-test-'));
+  mkdirSync(join(dir, 'scripts')); mkdirSync(join(dir, 'data'));
+  for (const f of ['db.mjs', 'freshness.mjs']) copyFileSync(join(HERE, f), join(dir, 'scripts', f));
+  writeFileSync(join(dir, 'data', 'actors.json'), JSON.stringify(fixtureActors()));
+  t.after(() => rmSync(dir, { recursive: true, force: true }));
+  const db = await import(pathToFileURL(join(dir, 'scripts', 'db.mjs')).href);
+  const read = () => JSON.parse(readFileSync(join(dir, 'data', 'actors.json'), 'utf8'))[0].interactions;
+  return { db, read };
+}
+
+test('updateInteractionOutcome refuses to downgrade conceded without force', async (t) => {
+  const { db, read } = await sandboxDb(t);
+  assert.throws(() => db.updateInteractionOutcome('u1', 't1', '2026-09-01', 'fair points', { outcome: 'engaged' }), /REHÚSA degradar conceded/);
+  assert.equal(read()[0].outcome, 'conceded');
+});
+
+test('updateInteractionOutcome downgrades conceded when force:true', async (t) => {
+  const { db, read } = await sandboxDb(t);
+  const r = db.updateInteractionOutcome('u1', 't1', '2026-09-01', 'fair points', { outcome: 'engaged', force: true, note: 'rejudged' });
+  assert.equal(r.outcome, 'engaged');
+  assert.equal(read()[0].outcome, 'engaged');
+  assert.equal(read()[0].outcome_note, 'rejudged');
+});
+
+test('updateInteractionOutcome throws when the needle matches 0 or 2 interactions', async (t) => {
+  const { db, read } = await sandboxDb(t);
+  assert.throws(() => db.updateInteractionOutcome('u1', 't1', '2026-09-02', 'nothing like this', { outcome: 'silent' }), /match no único \(0\)/);
+  assert.throws(() => db.updateInteractionOutcome('u1', 't1', null, 'plants feel pain', { outcome: 'silent' }), /match no único \(2\)/);
+  assert.deepEqual(read().map(i => i.outcome), ['conceded', 'pending', 'engaged', 'silent']);
+  const r = db.updateInteractionOutcome('u1', 't1', '2026-09-02', 'plants feel pain', { outcome: 'goalpost' });
+  assert.equal(r.outcome, 'goalpost');
+});
+
+test('closeOutcome only touches a pending interaction', async (t) => {
+  const { db, read } = await sandboxDb(t);
+  const r = db.closeOutcome('u1', 't1', 'silent', 'no reply');
+  assert.deepEqual(r, { user_id: 'u1', thread_id: 't1', outcome: 'silent', evidence: 'no reply' });
+  assert.deepEqual(read().map(i => i.outcome), ['conceded', 'silent', 'engaged', 'silent']);
+  assert.equal(read()[1].outcome_evidence, 'no reply');
+  assert.equal(db.closeOutcome('u1', 't1', 'escalated'), null);
+  assert.equal(db.closeOutcome('u1', 't2', 'escalated'), null);
+  assert.deepEqual(read().map(i => i.outcome), ['conceded', 'silent', 'engaged', 'silent']);
+});

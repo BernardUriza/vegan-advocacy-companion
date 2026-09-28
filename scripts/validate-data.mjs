@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { readActors, readTactics, readFrameworks } from './db.mjs';
+import { dossierFilenames, GENERATED_MARK } from './gen-dossiers.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const ACTORS_MD_DIR = resolve(ROOT, 'analysis/actors');
@@ -143,6 +144,32 @@ if (missingFw) {
   warnings.push(`${missingFw} interaction(s) lack a "framework" id (moat-attribution gap — invisible to framework-stats)${missingFwClosed ? `; ${missingFwClosed} of them are already CLOSED, so their effectiveness is lost permanently` : ''}`);
 }
 
+// 4j. Interaction shape: outcome enum, YYYY-MM-DD date, draft_sha required from 2026-09-28 on.
+const OUTCOMES = new Set(['pending', 'conceded', 'engaged', 'silent', 'escalated', 'goalpost']);
+const DRAFT_SHA_SINCE = '2026-09-28';
+let missingSha = 0;
+for (const a of actors) {
+  for (const it of a.interactions ?? []) {
+    const where = `actor "${a.name}" (${a.user_id}) interaction [${it.thread_id ?? '?'} ${it.date ?? '?'}]`;
+    if (it.outcome !== undefined && !OUTCOMES.has(it.outcome)) warnings.push(`${where} outcome "${it.outcome}" is not one of {${[...OUTCOMES].join(', ')}}`);
+    const dateOk = typeof it.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(it.date);
+    if (!dateOk) warnings.push(`${where} date ${JSON.stringify(it.date)} does not match YYYY-MM-DD`);
+    else if (it.date >= DRAFT_SHA_SINCE && !it.draft_sha) { missingSha++; warnings.push(`${where} lacks draft_sha (required for interactions dated ${DRAFT_SHA_SINCE}+; run moat-link-drafts)`); }
+  }
+}
+
+// 4k. Dossier filenames: slug collisions get a -<user_id> suffix (gen-dossiers); a final-name clash would overwrite.
+const { files: dossierFiles, collided } = dossierFilenames(actors);
+for (const b of collided) {
+  const who = actors.filter((a, k) => dossierFiles[k].startsWith(`${b}-`)).map(a => a.user_id);
+  warnings.push(`dossier slug "${b}" is shared by ${who.length} actors (${who.join(', ')}) — gen-dossiers writes ${b}-<user_id>.md for each`);
+}
+const fileSeen = new Map();
+dossierFiles.forEach((f, k) => {
+  if (fileSeen.has(f)) errors.push(`dossier filename "${f}" collides for actors ${fileSeen.get(f)} and ${actors[k].user_id} — one dossier would overwrite the other`);
+  else fileSeen.set(f, actors[k].user_id);
+});
+
 // 5. Drift warning: a dossier markdown exists with a user_id absent from the JSON SSOT
 let mdWarnings = 0;
 try {
@@ -152,6 +179,9 @@ try {
     const m = body.match(/user_id:\*\*\s*([0-9]+)/);
     if (m && !actorIds.has(m[1])) {
       console.warn(`WARN: ${file} has user_id ${m[1]} not present in data/actors.json (regenerate or migrate)`);
+      mdWarnings++;
+    } else if (body.includes(GENERATED_MARK) && !fileSeen.has(file)) {
+      console.warn(`WARN: ${file} is a generated dossier that gen-dossiers no longer writes (stale; regenerate removes collided ones)`);
       mdWarnings++;
     }
   }
