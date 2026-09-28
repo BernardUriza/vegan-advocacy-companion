@@ -3249,5 +3249,48 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No defender que los veganos son perfectos ni entrar al catálogo de grados. Conceder el grado y volver al título: que nadie sea perfecto no da razón para poseer a alguien."
+  },
+  {
+    "tactics": [
+      "crop_deaths_flip",
+      "insulto_ad_hominem",
+      "futility_no_clean_option"
+    ],
+    "threads": [
+      "28148343171453514",
+      "28148824318072066",
+      "28154276440860187"
+    ],
+    "interactions": [],
+    "user_id": "61550822695503",
+    "name": "Jason Lamy",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/61550822695503/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Los veganos también matan y destruyen el ambiente; los animales se crían en masa porque los que comen carne necesitan comer, y no hay nada que hacer al respecto.",
+    "analisis": "2026-09-27 (VS Meat Eaters): autor del post de Steve Irwin (200 reacciones, 441 comentarios, meme de página Carnivore). Bajo el comentario top de Everette Dl (81r) tiró el crop_deaths_flip (17r) y, a Elaine, confesó el fundamento del título: se crían en masa porque los que comen carne necesitan comer, no te gusta, no hay nada que hagas. Insulta (retard vegan, stfu) y en otro hilo sostiene una guerra de pedophile sympathizer con John Bob. Veredicto: pozo, pero su confesión de poder es munición limpia para el lurker bajo el hilo con más tráfico del día.",
+    "tone": "hostile_rhetorical",
+    "verdict": "pozo_sin_fondo",
+    "register": "filo",
+    "what_not_to_do": "No body-count ni porcentajes (Ocin y Elaine ya perdieron ahí). No morder el insulto. Una sola vuelta: conceder las muertes del campo, nombrar que él mismo puso la razón del título en el poder (aint shit you can do), devolver la pregunta y salir."
+  },
+  {
+    "tactics": [
+      "insulto_ad_hominem",
+      "whataboutism"
+    ],
+    "threads": [
+      "28154276440860187"
+    ],
+    "interactions": [],
+    "user_id": "618672476",
+    "name": "Sarah Jane",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/618672476/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Casi nadie cambia de opinión por este grupo: lo que postean los veganos es desinformación que insulta a los omnívoros y produce el efecto contrario.",
+    "analisis": "2026-09-27 (VS Meat Eaters, post de Jenna Marie \"¿algún carnívoro cambió de opinión por este grupo?\"): comentario raíz con más reacciones del hilo (4r). Crítica de MÉTODO, no de fondo: los influencers veganos insultan, causan pleitos y odio; conclusión suya: no es reducir sufrimiento, es gente infeliz proyectando enojo. Usa \"vegtards\" y se sumó a un chiste contra John Bob, pero su punto central es de buena fe a medias y el lurker lo comparte. Persuadible por contraste de temperamento.",
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "compasivo",
+    "what_not_to_do": "No defender a los influencers ni a John Bob. No psicologizarla de vuelta. Conceder el método (el insulto no convence a nadie), y dejar la pregunta del título planteada sin insulto, que es la prueba viva de su punto al revés."
   }
 ]
