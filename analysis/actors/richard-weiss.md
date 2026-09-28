@@ -18,6 +18,8 @@
   - _Contra:_ ABOLITIONIST axis, not harm-reduction (see abolitionist-framing rule). The distinction is NOT amount or role of harm (incidental vs purpose = welfarism, concedes the ground). It is PROPERTY/SLAVERY: in a crop field no one is owned — it's incidental death of someone who is not property; on a farm the animal is bred, owned and disposed of as property — that is slavery. Concede every crop death freely (it changes nothing, the axis was never harm), then name the status difference and invert the burden: the question isn't 'what justifies unnecessary harm' but 'does necessary slavery exist?'
 - **Futility / No Clean Option** (`futility_no_clean_option`) — Uses 'everything causes harm' to claim veganism isn't morally superior. 'Tell me what you eat, wear, or live in that allows you to choose NOT hurting animals.' Used to reduce veganism to absurdity by demanding zero harm.
   - _Contra:_ Perfect is not the enemy of good. The question isn't zero-harm — it's unnecessary harm. 'Harm exists in every food system. The ethical question is whether we're justified in deliberately imposing harm on a sentient being when a reasonable alternative exists.' Don't bite the crop-deaths hook.
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`) — Attacks the person instead of the argument. Used for social dominance in the thread, not to persuade. 'Intellectually challenged retards', 'idiots', 'vegan lab slop', 'cult'. Often combined with one real data point as cover.
+  - _Contra:_ Don't match the register. Name the evasion calmly: 'When the argument runs out, the insults start.' Contrast of temperament is visible to the lurker. One line max, then return to substance or disengage entirely.
 
 ## Counter-arsenal
 
@@ -40,15 +42,29 @@
   - `antropoespecismo-universal-deslocalizar` → _deploy as:_ marco
   - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
   - `resistencia-al-cambio-es-defensa-del-privilegio` → _deploy as:_ auto-disciplina-del-activista
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
+  - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
+  - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
+  - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
+  - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
+  - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
 
 ## Qué NO hacer
 
-No competir en body-count de insectos ni pelear cifras de rumiantes vs cosechas. Contestar UNA vez (no en las dos copias). Eje propiedad: en el campo nadie es propiedad, en la granja sí; ¿existe la esclavitud necesaria?
+No competir en body-count de insectos ni pelear cifras de rumiantes vs cosechas. Si pega el mismo texto en dos grupos, se contesta en LOS DOS (orden de Bernard 2026-09-28: los lurkers de un grupo no ven el otro) con prosa y cierre distintos. Eje propiedad: en el campo nadie es propiedad, en la granja sí. Ante su sello (gunge/reaching), recibo del arco + la pregunta en una línea, sin defender el inglés.
 
 ## Log de interacciones
 
 ### Hilo `28150669567887541` — 2026-09-27 · outcome: **pending**
 - **Su jugada:** Raíz (pegado en dos grupos): insects you poison also run from the hand; if vegans kept their principles they would starve; the kindest path is ruminant meat.
 - **Nuestra respuesta:** Concedí las muertes en la cosecha; el escarabajo no es de nadie, el novillo es propiedad de la cría al camión; contar cuerpos deja el título intacto; kindest path habla de trato dentro del sistema; cierre: ¿existe la esclavitud necesaria?
+
+### Hilo `28604913169131821` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Raíz en la copia de Open Debates 3 (20h, copy-paste del mismo crop_deaths de VS Meat Eaters): insects you poison also run from the hand; if vegans kept to their principles they would starve; the kindest path is ruminant meat.
+- **Nuestra respuesta:** Segunda respuesta al mismo texto, OTRA prosa para otros lurkers: concedí los insectos; el starvation line inventa un principio (nunca fue que nadie muera; es que nadie nazca como posesión) y un vegano comiendo del campo lo cumple entero (el escarabajo no es de nadie); el novillo nace bajo el reclamo de alguien; contar cuerpos prueba fuck-all; kindest contesta cómo se lleva al poseído por el sistema y deja el título intacto. Cierre: ¿qué justifica el kindest path sobre el título del novillo, más allá de manejarle el viaje? 206 palabras.
+
+### Hilo `28604913169131821` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Réplica (20h, 1r) bajo el hilo de Aj Meredith (raíz "Reaching a bit there", 2r; yo: "are you answering something?", 3r): "commenting I think, on the gunge you speak, reaching high but staying low." Solo sello, pile-on con Aj.
+- **Nuestra respuesta:** Por orden de Bernard, más agresivo que la doctrina de una línea: recibo del arco (Aj soltó reaching sin decir qué; pregunté si contestaba algo; Richard llegó a calificar cómo hablo), "two of you, a row of likes, and not one fucking sentence about the argument", nombrar que calificar cómo habla alguien es lo que se hace cuando la pregunta no tiene respuesta que les guste, y la pregunta en una línea: ¿de dónde sale el título de alguien sobre un novillo? 88 palabras.
 
 _Hilos: 28150669567887541, 28604913169131821_
