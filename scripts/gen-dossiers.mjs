@@ -22,7 +22,7 @@ function frameworksByTactic(tacticId) {
 }
 
 export function slug(name) {
-  return (name ?? '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  return (name ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
 
 export function dossierFilenames(actorList) {

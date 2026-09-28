@@ -1,43 +1,34 @@
 # Rüdiger Preiss
 
+> GENERATED from `data/actors.json` by `scripts/gen-dossiers.mjs`. Do not hand-edit — edit the JSON and regenerate.
+
 - **user_id:** 655045000
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/655045000/
-- **Bando:** **Aliado pro-vegan** (entró sin coordinación)
-- **Postura núcleo:** "Que algo ocurra en la naturaleza dice qué ES, no qué DEBE ser; la carga la tiene quien cría y mata, no quien se abstiene."
+- **Bando:** aliado
+- **Veredicto:** aliado · **Registro:** na
+- **Postura núcleo:** Aliado pro-vegano. Ejecuta la inversión de carga canónica con precisión quirúrgica: separa CAN de SHOULD, no muerde anzuelos, cita Poore&Nemecek/Springmann/Xu cuando hace falta.
 
-## Análisis duro
+## Análisis
 
-Aliado de alto valor. Entró al hilo `ethical-framework` directo contra CarolAnn y
-aplicó **el marco exacto de Bernard** sin coordinación previa: is/ought riguroso,
-nombrar el goalpost-shift al vuelo, inversión de carga limpia. Maneja la falacia
-naturalista mejor que el data-dumper Jeff Rockwell — va al hueso filosófico, no a
-los datos.
+El mejor aliado del hilo (8 turnos). Su método ES el norte de Bernard: 'omnivore is a biological observation, not a moral conclusion'; mantiene UNA pregunta plantada ('what justifies breeding/exploiting/slaughtering when we can live without it') y no se desvía aunque Grant cambie de tema. Con Yolanda (buena fe) sube el rigor y baja el filo. No necesita refuerzo contra Grant; donde suma Bernard es en los frentes que Rüdiger no alcanzó (Les M).
 
-Tácticas observadas (a favor):
-- **is/ought** explícito ("tells us what IS, not what OUGHT TO BE") con ejemplos
-  duros (infanticidio/violación/canibalismo ocurren en la naturaleza).
-- **Nombrar el goalpost-shift** en vivo ("'alternatives aren't worth it' is a
-  convenience claim, not a moral claim — quite a shift of your goal post").
-- **Inversión de carga** ("the question is why breeding/commodifying/killing
-  becomes justified when alternatives exist").
-- **Carrion gambit** ("all other omnivores eat carrion, you exclude THAT from your
-  'natural' diet?") — expone la selectividad del naturalismo.
+Histórico (dossier escrito a mano, hilo ethical-framework, post 27341517928804691, 2026-06-17): entró directo contra CarolAnn aplicando el marco de Bernard sin coordinación. Tácticas a favor: is/ought explícito ("tells us what IS, not what OUGHT TO BE", con infanticidio/violación/canibalismo en la naturaleza); nombró el goalpost-shift en vivo ("alternatives aren't worth it is a convenience claim, not a moral claim"); inversión de carga ("why breeding/commodifying/killing becomes justified when alternatives exist"); carrion gambit (los omnívoros comen carroña, ella la excluye de su dieta natural). Resultado: forzó a CarolAnn a colapsar su claim moral en conveniencia. Veredicto: COORDINABLE; no competir ni pisarle el cierre, reforzar y complementar; si ya nombró un shift, Bernard no lo repite.
 
-Tono: civil, quirúrgico, sin insulto. Calidad de argumento alta.
+## Tácticas
 
-**Veredicto:** **COORDINABLE.** No competir ni pisarle el cierre; reforzar y
-complementar. Cuando Rüdiger ya nombró un shift, Bernard no lo repite — pocketea y
-devuelve al hueso. Candidato a aliado recurrente; vigilar si reaparece en otros
-hilos.
+_(ninguna registrada)_
 
-## Log de acciones
+## Counter-arsenal
 
-### Hilo `ethical-framework` (post 27341517928804691) — 2026-06-17
-- (8h) → CarolAnn: carrion gambit — los omnívoros comen carroña, ella la excluye de
-  su dieta "natural".
-- (8h) → CarolAnn: is/ought completo (infanticidio/violación/canibalismo en la
-  naturaleza; CAN ≠ OUGHT; la pregunta es por qué se justifica cuando hay
-  alternativas).
-- (5h) → CarolAnn: nombró el goalpost-shift ("convenience claim ≠ moral claim").
-- **Resultado:** forzó a CarolAnn a morder la bala (7h) y a colapsar su claim moral
-  en convenience (4h). Trabajo de aliado limpio; Bernard solo necesita pocketear.
+> Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
+
+_(sin tácticas → sin counter-frameworks)_
+
+## Qué NO hacer
+
+No duplicar su trabajo contra Grant (dogpile que no educa). Coordinar, no pisar.
+
+## Log de interacciones
+
+_(sin interacciones registradas)_
+_Hilos: 27363745576581926_
