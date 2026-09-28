@@ -38,3 +38,15 @@ como procedencia (comentarios públicos, citados porque el argumento existe), nu
 nacido como prueba del criterio. Qué no decir: que las fotos "prueban" cada capacidad; que
 bebés y cerdos tienen el mismo estatus completo; convertirlo en defensa de la inteligencia
 animal. Recibo: `.coagent/root-their-own-words.consult.json`.
+
+## Publicación (2026-09-28)
+
+- **Open Debates 3 (770211166362062): publicado 09:42 CST como `posts/28614974494792355` (visto en el
+  feed cronológico con la imagen) y BORRADO antes de las 09:46** — permalink "content isn't available",
+  0 copias en el feed, no está en Pending / Published / Declined / Removed de "Your content", y sin
+  aviso en el Support Inbox (último alerta: marzo 2025). Reglas del grupo (About, completas):
+  *"there are no rules aside from posting things that will cause the group to be removed, AND NO
+  POSTING OTHERS PERSONAL INFO… slurs, insults and profanity are all fine, but not on the OP's as it
+  will get the group banned."* Dos candidatos: la imagen con nombres (leída como "personal info") y/o
+  el "damn" en el OP (profanidad en OP prohibida ahí). Admins: Tanja + 3, moderadora Tina.
+- VEGANnoyance y VS Meat Eaters: NO publicado; decisión de Bernard pendiente tras la remoción.
