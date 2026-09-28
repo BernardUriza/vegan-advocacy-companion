@@ -1018,6 +1018,15 @@
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-28T14:55:15.443Z",
         "draft_sha": "655e09481ef2d566"
+      },
+      {
+        "thread_id": "28615704478052690",
+        "date": "2026-09-28",
+        "their_move": "Raíz bajo el post their-own-words: None of those traits are relevant... Species is... Humans > non humans.",
+        "our_reply_summary": "Filo profano: \"Species is\" confirma el post (los rasgos se sueltan cuando estorban); humans > non humans es un ranking sin razón: rasgo trae de vuelta al recién nacido, pertenencia es \"porque somos nosotros\". Cierre: qué significa el \">\" más allá de quién tiene el título.",
+        "framework": "antropoespecismo",
+        "draft_sha": "790b6b4a7b8c2880",
+        "outcome": "pending"
       }
     ]
   },
@@ -1746,6 +1755,24 @@
         "lurker_checked_at": "2026-09-28T14:55:15.443Z",
         "outcome_evidence": "Les M · 48m: 'What makes ownership legitimate is the legitimacy of the intended use, provided the animal is appropriately cared for'",
         "outcome_note": "algo-a-alguien: la separación título vs responder-por-el-acto lo obligó a dar la primera respuesta positiva al título: 'legitimacy of the intended use, provided welfare protected'. Circular (el uso legitima el título que habilita el uso) y bienestarista; es el blanco del siguiente turno."
+      },
+      {
+        "thread_id": "28604913169131821",
+        "date": "2026-09-28",
+        "their_move": "Réplica 52m (Open Debates 3, post de sintiencia): moved the goalposts; rasgos pueden ser diferencias moralmente relevantes; humans because they are humans; her interests count no significa decisive; el perro: el dueño decide eutanasia; you keep restating the conclusion as a question.",
+        "our_reply_summary": "Nada se movió; concedí cuentan≠siempre ganan; el título decide UN choque antes de que exista (si sigue). Su perro: la autoridad tiene que responder al perro; decidir su muerte para la cena hace que te lo quiten. La sintiencia deja lugar a tutela, excluye el cheque en blanco hacia el plato. \"because they are humans\" = la etiqueta del grupo cargando todo. Cierre: qué parte de ser humano.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "150c9c27aa6c6b6b",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "28150669567887541",
+        "date": "2026-09-28",
+        "their_move": "Réplica 48m (Vegans VS Meat Eaters, rama crop deaths): ownership legítimo por la legitimidad del uso con cuidado; entitled AND accountable; agricultor que mata fauna y ganadero = mismo interés en producir comida; establece por qué la propiedad responsable es inmoral.",
+        "our_reply_summary": "Le di el caso positivo completo: título = el fin de uno decide por default; sobre un novillo su lado pierde siempre; la razón por la que ninguna persona es propiedad no menciona inteligencia. Agricultor actúa contra un animal que existe por su cuenta; ganadero lo cría para SER la comida. Accountable del cómo no toca el si; legitimate intended use es el dueño calificando su título (bullshit). Cierre: qué cubre el whether.",
+        "framework": "crueldad-no-es-la-causa",
+        "draft_sha": "4bd1e0c4f94384ce",
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -2509,6 +2536,15 @@
         "outcome": "engaged",
         "outcome_evidence": "Dean Christie (4w): 'I appreciate that you acknowledged answering the wrong version of the question previously, and I agree that you've now addressed the why-is-the-cutoff-zero question more directly.'",
         "outcome_note": "Mismo arco: concedió que la pregunta del corte-en-cero ya fue contestada directamente y subió a la demanda de objetividad moral. Sigue en pie con el argumento de clase-sapiente; su última respuesta (4 semanas) espera la nuestra."
+      },
+      {
+        "thread_id": "28615704478052690",
+        "date": "2026-09-28",
+        "their_move": "Raíz bajo el post their-own-words (Open Debates 3): los comentarios citados no enuncian la regla rasgo=línea de propiedad; \"someone there\" es premisa adicional no demostrada; qué propiedad hace impermisible poseer y por qué lo implica.",
+        "our_reply_summary": "Concedí que las citas no enuncian la regla (funcionaban como razón en sus hilos) y que Anna lo confirmó (species is). Di la premisa explícita: el título decide de antemano contra el lado del otro; la razón por la que no poseemos humanos sin lenguaje nunca fue la capacidad sino que hay alguien. Cierre: qué propiedad hace impermisible poseer en el caso humano y por qué se detiene en la especie.",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "draft_sha": "2c6411ca70ee35d2",
+        "outcome": "pending"
       }
     ],
     "user_id": "1198831097",

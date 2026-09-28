@@ -55,7 +55,7 @@ No competir en body-count de insectos ni pelear cifras de rumiantes vs cosechas.
 
 ## Log de interacciones
 
-### Hilo `28150669567887541` — 2026-09-27 · outcome: **pending**
+### Hilo `28150669567887541` — 2026-09-27 · outcome: **silent**
 - **Su jugada:** Raíz (pegado en dos grupos): insects you poison also run from the hand; if vegans kept their principles they would starve; the kindest path is ruminant meat.
 - **Nuestra respuesta:** Concedí las muertes en la cosecha; el escarabajo no es de nadie, el novillo es propiedad de la cría al camión; contar cuerpos deja el título intacto; kindest path habla de trato dentro del sistema; cierre: ¿existe la esclavitud necesaria?
 
