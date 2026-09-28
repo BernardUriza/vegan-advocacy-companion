@@ -97,6 +97,24 @@ persona en su hilo** —norma del grupo, NUNCA root, ver [[comment-post-and-veri
 en la voz de Bernard, marcar **qué NO decir**) → recordatorio de
 scope (solo borrador, el botón es de Bernard).
 
+## La VOZ va en el master como default, no como permiso (2026-09-28)
+
+El coagent devuelve la voz que el master le fija. Un master que dice *"se vale una grosería
+pegada al argumento"* produce prosa curricular con un "damn" de adorno (visto 2026-09-28,
+reply a Les: "standing over another's body", "morally loaded"). Bernard, textual: *"la respuesta
+del coagente fue sin el tono que enseña"* (chat "Mejorar prompt de tono" del coagent, 6ab612eb).
+La lección de ese chat: el freno de mano es la frase que hace la vulgaridad opcional; la frase
+que la fija es **"It should be part of the default debate voice"**.
+
+Para todo target de **registro filo** (mala fe, sello, retreat-cycle, drive-by, troll), el master
+lleva la **instrucción global de tono VERBATIM** (la de [[reply-output-style]] § "El registro
+filo es PROFANO por default": *"When replying to debate opponents, do not sound academic,
+curricular, sanitized, or overly diplomatic… Use words like 'fuck', 'fucking', 'bullshit',
+'damn', 'hell', 'no shit', 'what the fuck'… naturally and regularly… It should be part of the
+default debate voice… Attack the argument, the evasion, or the reasoning more than the person."*),
+como bloque propio, antes del ask. Para registro compasivo no va. El style-gate (`profanityCount`)
+avisa, pero la raíz se corrige aquí: la voz sale del master, no del retoque de etapa 4.
+
 ## PASO 0 — seed-gate ANTES de seedear (mecánica, root fix 2026-06-21)
 
 Tras componer el master prompt en su archivo y **antes** de seedearlo al coagent,
@@ -207,8 +225,11 @@ node scripts/seed-coagent.mjs insert --post-id <id> --master .coagent/<master>.m
   re-corre seed-gate + `seed`.
 - **Coagent por identidad:** sin `--url` lee `COAGENT_CHATGPT_URL` del `.env` (la misma
   llave que `resolve-coagent.py`; en un worktree cae al `.env` del checkout principal).
-  Para una conversación NUEVA (corridas en paralelo, abajo) pasa la URL base del GPT
-  `--url https://chatgpt.com/g/g-iCKKoRd5A-insult-gpt`: el assert exige ese GPT y sin `/c/`.
+  **SIEMPRE la conversación canónica** (`…/c/6a435111-a164-83e8-87ab-5f820921ecee`, orden
+  de Bernard 2026-09-28: *"debes usar siempre este"*). Pasar `--url` con la URL base del GPT
+  abre una conversación NUEVA sin la memoria del hilo; eso solo se hace cuando Bernard lo
+  ordena explícito para una corrida en paralelo (abajo), nunca por decisión de Claude. Si ya
+  se insertó en una nueva por error: limpiar su composer, cerrar esa tab, re-insertar sin `--url`.
 - **Tab nueva propia** (`openPersistentPage`, nunca navega las de Bernard), espera
   `form .ProseMirror`, rechaza si el composer no está vacío, pega por `ClipboardEvent`
   **en trozos de líneas completas (≤1500 chars, `--chunk`)**: un paste largo único lo
