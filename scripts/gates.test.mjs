@@ -267,3 +267,48 @@ test('provenance-gate: un master editado después del seed se bloquea por master
   assert.equal(r.status, 2);
   assert.match(r.stderr, /el master cambió después del seed/);
 });
+
+// ---------- mcp-publish-gate: texto verificable por sha, Enter sintético = publicar ----------
+const MCP_GATE = resolve(HERE, '..', '.claude', 'hooks', 'mcp-publish-gate.mjs');
+function runMcp(dir, fn) {
+  const r = spawnSync('node', [MCP_GATE], { input: JSON.stringify({ tool_name: 'mcp__chrome-devtools__evaluate_script', tool_input: { function: fn } }), encoding: 'utf8', env: { ...process.env, CLAUDE_PROJECT_DIR: dir } });
+  return { status: r.status, stderr: r.stderr };
+}
+const PASTE = (lit) => `() => { const box = document.querySelector('div[contenteditable="true"][role="textbox"]'); const text = ${lit}; const dt = new DataTransfer(); dt.setData('text/plain', text); box.dispatchEvent(new ClipboardEvent('paste', { clipboardData: dt })); }`;
+
+test('publish-literals: extrae literales largos en backticks, comillas dobles y simples; marca ${} como dinámico', async () => {
+  const { longLiterals } = await import('./publish-literals.mjs');
+  const long = 'x'.repeat(130);
+  assert.equal(longLiterals('const a = `' + long + '`;')[0].text, long);
+  assert.equal(longLiterals('const a = "' + long + '\\nfin";')[0].text, long + '\nfin');
+  assert.equal(longLiterals("const a = '" + long + "';")[0].text, long);
+  assert.equal(longLiterals('const a = `' + long + '${b}`;')[0].dynamic, true);
+  assert.equal(longLiterals('const DESTINO = "Vegans V\'s Meat Eaters";').length, 0);
+});
+
+test('mcp-publish-gate: pegar el draft consultado como literal PASA; como comillas dobles también', () => {
+  const { dir } = consultedProject(STEER);
+  assert.equal(runMcp(dir, PASTE('`' + STEER + '`')).status, 0);
+  assert.equal(runMcp(dir, PASTE(JSON.stringify(STEER))).status, 0);
+});
+
+test('mcp-publish-gate: texto a mano en comillas dobles (antes pasaba) se bloquea', () => {
+  const { dir } = consultedProject(STEER);
+  const r = runMcp(dir, PASTE(JSON.stringify(FILLER.repeat(3) + 'hand written')));
+  assert.equal(r.status, 2);
+  assert.match(r.stderr, /NO es ninguno de/);
+});
+
+test('mcp-publish-gate: pegar desde window.__draft o con ${} no es verificable y se bloquea', () => {
+  const { dir } = consultedProject(STEER);
+  assert.equal(runMcp(dir, PASTE('window.__draft')).status, 2);
+  assert.equal(runMcp(dir, PASTE('`' + STEER + '${x}`')).status, 2);
+});
+
+test('mcp-publish-gate: el Enter sintético en un composer cuenta como publicar y exige recibo', () => {
+  const dir = fakeProject();
+  const fn = `() => { const box = document.querySelector('div[contenteditable="true"][role="textbox"]'); box.dispatchEvent(new KeyboardEvent('keydown', { key:'Enter', code:'Enter', keyCode:13, bubbles:true })); }`;
+  const r = runMcp(dir, fn);
+  assert.equal(r.status, 2);
+  assert.match(r.stderr, /ningún recibo de consulta/);
+});

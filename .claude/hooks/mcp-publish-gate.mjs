@@ -48,7 +48,8 @@ if (!src) process.exit(0);
 const touchesFacebookComposer =
   /Create post|aria-label="Reply to|Reply to \$\{|role="textbox"|contenteditable/i.test(src);
 const clicksPublish =
-  /\.click\(\)/.test(src) && /\b(Post|Publicar|Enviar|Comment|Reply)\b/.test(src);
+  (/\.click\(\)/.test(src) && /\b(Post|Publicar|Enviar|Comment|Reply)\b/.test(src)) ||
+  (/KeyboardEvent\(\s*['"]key(down|press)['"]/.test(src) && /['"]Enter['"]|keyCode\s*:\s*13/.test(src));
 const pastesText = /ClipboardEvent|insertText/.test(src);
 
 if (!touchesFacebookComposer || !(clicksPublish || pastesText)) process.exit(0);
@@ -102,28 +103,34 @@ if (!receipts.length) {
 
 // Si el script trae el TEXTO a publicar, exigir que sea uno de los drafts consultados.
 if (pastesText) {
-  const literals = [...src.matchAll(/`([\s\S]{120,})`/g)].map((m) => m[1]);
-  if (literals.length) {
-    const known = new Set(receipts.flatMap((r) => r.drafts.map((d) => d.draft_sha)));
-    // El sha canónico vive en seed-coagent.mjs (Art. 6) — reimplementarlo aquí daba
-    // un hash distinto (trim() vs normalizar CRLF + recortar solo el final).
-    let shaOf;
-    try {
-      ({ draftSha: shaOf } = await import(resolve(PROJECT_DIR, 'scripts/seed-coagent.mjs')));
-    } catch (e) {
-      block(`GATE PUBLICACIÓN MCP: no pude cargar seed-coagent.mjs (${e.message}). Fail-closed.`);
-    }
-    const matched = literals.some((t) => known.has(shaOf(t)));
-    if (!matched) {
-      block([
-        'GATE PUBLICACIÓN MCP — BLOQUEADO: el texto que estás pegando NO es ninguno de',
-        'los drafts que devolvió el coagent (sha no matchea ningún recibo fresco).',
-        `  sha(s) del script: ${literals.map(shaOf).join(', ')}`,
-        `  drafts consultados: ${[...known].join(', ')}`,
-        'Si lo editaste tras la consulta, re-finaliza:',
-        '  node scripts/seed-coagent.mjs finalize --post-id <id> --draft <draft.txt>',
-      ]);
-    }
+  let shaOf, longLiterals;
+  try {
+    ({ draftSha: shaOf } = await import(resolve(PROJECT_DIR, 'scripts/seed-coagent.mjs')));
+    ({ longLiterals } = await import(resolve(PROJECT_DIR, 'scripts/publish-literals.mjs')));
+  } catch (e) {
+    block(`GATE PUBLICACIÓN MCP: no pude cargar seed-coagent.mjs / publish-literals.mjs (${e.message}). Fail-closed.`);
+  }
+  const literals = longLiterals(src);
+  if (literals.some((l) => l.dynamic)) {
+    block('GATE PUBLICACIÓN MCP — BLOQUEADO: el texto a pegar se arma con ${…}; pégalo como literal completo para que su sha se pueda verificar.');
+  }
+  if (!literals.length) {
+    block([
+      'GATE PUBLICACIÓN MCP — BLOQUEADO: el script pega texto pero no trae el texto como literal (≥120 chars).',
+      'Sin literal no hay sha que verificar (window.__draft, JSON.stringify o variables no cuentan): pega el draft consultado literal.',
+    ]);
+  }
+  const known = new Set(receipts.flatMap((r) => r.drafts.map((d) => d.draft_sha)));
+  const unknown = literals.filter((l) => !known.has(shaOf(l.text)));
+  if (unknown.length) {
+    block([
+      'GATE PUBLICACIÓN MCP — BLOQUEADO: el texto que estás pegando NO es ninguno de',
+      'los drafts que devolvió el coagent (sha no matchea ningún recibo fresco).',
+      `  sha(s) del script: ${unknown.map((l) => shaOf(l.text)).join(', ')}`,
+      `  drafts consultados: ${[...known].join(', ')}`,
+      'Si lo editaste tras la consulta, re-finaliza:',
+      '  node scripts/seed-coagent.mjs finalize --post-id <id> --draft <draft.txt> --author "<A>"',
+    ]);
   }
 }
 
