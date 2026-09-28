@@ -49,4 +49,8 @@ animal. Recibo: `.coagent/root-their-own-words.consult.json`.
   POSTING OTHERS PERSONAL INFO… slurs, insults and profanity are all fine, but not on the OP's as it
   will get the group banned."* Dos candidatos: la imagen con nombres (leída como "personal info") y/o
   el "damn" en el OP (profanidad en OP prohibida ahí). Admins: Tanja + 3, moderadora Tina.
-- VEGANnoyance y VS Meat Eaters: NO publicado; decisión de Bernard pendiente tras la remoción.
+- Segunda versión (Bernard, tras la remoción): OP sin groserías, recibos (links numerados + créditos) DENTRO de la descripción, imagen anonimizada ("Commenter 1–5", menciones tapadas, fotos completas sin recorte) publicada como post multi-foto de 5 tarjetas (`receipt-collage.py --social --anon --cards`).
+- **VEGANnoyance (2295597740524135): enviado 09:59 CST → PENDIENTE DE ADMIN** (confirmado en `my_pending_content`: 1 copia, 5 fotos en cuadrícula; recibo `.coagent/receipts/2026-09-28h-root/posted-vegannoyance-pending.png`). Reglas del grupo: no bullying / "haunting people's messages", no IA spam, participar en el propio post.
+- **Vegans VS Meat Eaters (683615698352965): enviado 10:02 CST → PENDIENTE DE ADMIN** ("Pending admin approval · 1 post" en la cabecera del grupo; las 5 tarjetas ya aparecen en Recent media). Único admin: Jessica.
+- Open Debates 3: no se reintenta.
+- Pendiente: cuando los admins aprueben, verificar en el permalink y anotar la URL aquí.
