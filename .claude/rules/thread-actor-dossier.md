@@ -62,6 +62,12 @@ post pintó las 8. Desde entonces el script navega a `canonicalPostUrl(url)`
 Si Bernard manda un replylink cuyo comentario no aparece en el `tx`, ese es el síntoma:
 no es que no exista, es que la vista anclada no lo cargó.
 
+Corrección del mismo día: la canónica sola también miente. En Open Debates 3 pintó 5 turnos
+con 0 expansiones y `complete:true` (la anclada daba 17). FB carga un subconjunto distinto en
+cada vista, así que el extractor recorre las DOS (canónica y anclada, si la URL trae
+`comment_id`) y une los turnos con el dedup de siempre. Medido: 19 turnos en ese hilo, 8
+raíces en el de sintiencia (con Frank).
+
 ### Esquema del JSON de `thread-extract --json` (no re-parsear ad-hoc, 2026-06-19)
 
 Para leer la salida directo sin escribir re-parsers (lección: asumí campos

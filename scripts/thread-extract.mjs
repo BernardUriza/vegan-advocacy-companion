@@ -242,11 +242,18 @@ async function main() {
   const { page, done } = await openScratchPage();
   try {
     const navUrl = canonicalPostUrl(url);
-    await page.goto(navUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
-    await page.waitForTimeout(2500);
-    const exp = await page.evaluate(expandAllInPage);
-    await page.waitForTimeout(800);
-    const walked = await page.evaluate(walkArticles, { ME, postId: (url.match(/\/posts\/(\d+)/) || [])[1] || null });
+    const postIdArg = { ME, postId: (url.match(/\/posts\/(\d+)/) || [])[1] || null };
+    const pass = async (u) => {
+      await page.goto(u, { waitUntil: 'domcontentloaded', timeout: 30000 });
+      await page.waitForTimeout(2500);
+      const e = await page.evaluate(expandAllInPage);
+      await page.waitForTimeout(800);
+      return { e, w: await page.evaluate(walkArticles, postIdArg) };
+    };
+    const passes = [await pass(navUrl)];
+    if (navUrl !== url) passes.push(await pass(url));
+    const exp = passes.reduce((a, { e }) => (a && a.articles >= e.articles ? a : e), null);
+    const walked = { ...passes[0].w, rows: passes.flatMap(({ w }) => w.rows), postOwner: passes.map(({ w }) => w.postOwner).find(Boolean) || '', postReactionLabels: passes.map(({ w }) => w.postReactionLabels).find((l) => l && l.length) || passes[0].w.postReactionLabels, foreignDropped: passes.reduce((n, { w }) => n + (w.foreignDropped || 0), 0) };
     const unavailable = !walked.rows.length && await page.evaluate(() => /This content isn't available right now/i.test(document.body.innerText || ''));
     const raw = walked.rows.map(({ reactionLabels, ...r }) => ({ ...r, reactions: parseReactionCount({ labels: reactionLabels, text: r.text }) }));
     const postReactions = sumPostReactionLabels(walked.postReactionLabels);
