@@ -54,6 +54,26 @@ es centinela de "edad no parseada" (raíz vieja sin fechar), NO "fresco" — esa
 candidatas a confirmar, no deuda viva. El sweep SURFACEA; la jugada se decide con los
 dossiers. (En modo SINGLE/replylink se salta — el blanco lo da el link, no el moat.)
 
+**0.7. SCOUT — hilos AJENOS donde nadie carga el marco (2026-09-27).** Los pasos 0 y
+0.5 solo ven TUS posts y lo que FB te notifica. Con eso el volumen cayó ~10x desde
+junio (cuando estabas en 7–8 hilos/semana, incluidos hilos de otros) y el `lurker-sweep`
+midió 0 likes en 12 replies: el cuello es el ALCANCE. Cuando el lote trae menos deudas
+que el cap, rellenar con el scout:
+```bash
+node scout-feeds.mjs            # tabla: candidatos ajenos frescos con actividad
+node scout-feeds.mjs --json     # para pipear; --group <gid> · --max-age-h 48 · --scroll 8
+```
+Una carga de página por grupo, scroll humano con jitter (regla anti-bot: < 10 cargas por
+corrida), solo lectura. Descarta posts tuyos, hilos donde ya tienes una interacción en el moat, posts donde
+ya comentaste (previews), > 48h (y nunca más del tope de [[pipeline-freshness-cap]]) y sin actividad.
+`comments` es un piso (los 2 previews que FB pinta), `reactions` la señal fiable;
+`tactics_hint` es léxico, orienta la lectura y no la sustituye. El scout SURFACEA: la
+`openUrl` va a `thread-extract` (etapa 2) y la jugada se decide con dossiers + etapa 3
+como siempre. En un post ajeno se contesta al comentario que carga la táctica (reply
+etiquetada), o raíz solo si el post mismo es el argumento; el estilo es el de
+[[reply-output-style]] sin cambios. Los memes con 190 likes salen arriba por reacciones:
+eso mide lurkers presentes, no calidad de debate — el juicio sigue siendo tuyo.
+
 **1. Llegar a notificaciones sin abrir tabs de más.** `list_pages` primero — casi
 siempre ya hay una tab de FB abierta. Si hay una en `facebook.com/notifications`,
 `select_page` esa. Si no, navega una tab de FB existente a

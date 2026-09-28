@@ -269,7 +269,7 @@ export function getDossierSummaryWithArsenal(userId) {
 // auto-popula desde thread-extract.mjs en CADA extracción (ya recibe la URL con el
 // grupo), así nunca se desactualiza.
 
-function readThreads() {
+export function readThreads() {
   try {
     return JSON.parse(readFileSync(THREADS_PATH, 'utf8'));
   } catch {

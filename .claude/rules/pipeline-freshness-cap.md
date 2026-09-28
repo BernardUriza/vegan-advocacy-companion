@@ -32,6 +32,7 @@ decida por sí solo QUÉ hilo abrir.
 | `debt-sweep.mjs` | los `stale` se listan como VIEJOS y **no se extraen** (cero tabs) |
 | `reflex.mjs emit` | omite interacciones y transcripts (`mtime`) fuera del tope — de 59 packets a 2 |
 | `thread-extract.mjs` | reporta `stale` / `freshestTurnMin` (ya abrió; el caller lo ve) |
+| `scout-feeds.mjs` | tope propio de 48h (`--max-age-h`, recortado al tope global); edad por el tooltip del link de la hora (`UNKNOWN_AGE` = descartado, nunca "fresco") |
 | `.claude/hooks/pipeline-freshness-cap.mjs` | PreToolUse Bash: deniega `--max-age-days` > 14, `VEGAN_MAX_AGE_DAYS` > 14 o `--all-ages`/`--no-age-cap` sobre esos scripts |
 
 Tests: `node --test scripts/freshness.test.mjs scripts/hooks.freshness.test.mjs`.
