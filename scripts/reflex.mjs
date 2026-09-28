@@ -19,7 +19,7 @@
 // Uso:
 //   node reflex.mjs emit  [--tx-dir ../.coagent] [--out ../.coagent/reflex-packets.json]
 //   node reflex.mjs apply --verdicts ../.coagent/reflex-verdicts.json [--dry-run]
-import { readFileSync, writeFileSync, renameSync, readdirSync } from 'fs';
+import { readFileSync, writeFileSync, renameSync, readdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { readActors, updateInteractionOutcome } from './db.mjs';
@@ -137,6 +137,15 @@ if (cmd === 'emit') {
   if (errs.length) { console.error(`ABORT-worthy: ${errs.length} errores${dry ? '' : ' (algunos sí se escribieron antes del error)'}:`); for (const e of errs) console.error('  - ' + e); }
   console.log(`\n${dry ? '(dry-run) ' : ''}${ok.length} verdicts ${dry ? 'validados' : 'escritos'}:`);
   for (const o of ok) console.log('  ✓ ' + o);
+  if (!dry && !errs.length) {
+    // la etapa 0 termina AQUÍ, no en el emit: el marcador es lo que el gate de procedencia
+    // compara contra el mtime de reflex-packets.json (2026-09-28: 13 packets emitidos, cero juzgados)
+    const marker = fileArg('--applied-marker', '.coagent/reflex-applied.json');
+    const packets = fileArg('--packets', '.coagent/reflex-packets.json');
+    const packetsMtime = existsSync(packets) ? statSync(packets).mtime.toISOString() : null;
+    writeFileSync(marker, JSON.stringify({ applied_at: new Date().toISOString(), verdicts_file: vf, verdicts: ok.length, packets_mtime: packetsMtime }, null, 2) + '\n');
+    console.log(`  marcador etapa 0: ${marker}`);
+  }
 } else {
   console.error('uso: node reflex.mjs emit | apply --verdicts <file> [--dry-run]');
   process.exit(1);

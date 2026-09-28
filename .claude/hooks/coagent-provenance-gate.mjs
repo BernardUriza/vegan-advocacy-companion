@@ -21,7 +21,7 @@
 //      archivo existente; un reply que promete evidencia y sale sin ella es fake-green.
 // Cualquier falla → exit 2 (bloquea, stderr → Claude). OK → exit 0.
 
-import { readFileSync, existsSync } from 'fs';
+import { readFileSync, existsSync, statSync, readdirSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, resolve, isAbsolute } from 'path';
 
@@ -82,6 +82,71 @@ const pidM = url.match(/(?:posts\/|post_id=|multi_permalinks=|story_fbid=)(\d+)/
 if (!pidM) block(`GATE PROCEDENCIA: no pude derivar post_id de --url "${url}".`);
 const postId = pidM[1];
 
+// etapa 0 a medias (2026-09-28): `reflex emit` corrió (13 packets) y nadie escribió ni aplicó
+// verdicts; el lote salió sin re-juzgar el moat. La etapa termina en `apply`, que deja
+// .coagent/reflex-applied.json; packets más nuevos que el marcador = etapa 0 incompleta.
+const packetsFile = resolve(PROJECT_DIR, '.coagent', 'reflex-packets.json');
+const appliedFile = resolve(PROJECT_DIR, '.coagent', 'reflex-applied.json');
+if (existsSync(packetsFile)) {
+  const packetsMtime = statSync(packetsFile).mtimeMs;
+  const appliedAt = existsSync(appliedFile) ? statSync(appliedFile).mtimeMs : 0;
+  if (appliedAt < packetsMtime) {
+    block([
+      'GATE PROCEDENCIA — STAGING BLOQUEADO: etapa 0 (reflex) emitida pero NO aplicada.',
+      `  ${packetsFile} es más nuevo que ${existsSync(appliedFile) ? appliedFile : '(sin marcador reflex-applied.json)'}.`,
+      'Juzga los packets (Claude, arco completo → .coagent/reflex-verdicts.json) y corre',
+      '  node scripts/reflex.mjs apply --verdicts .coagent/reflex-verdicts.json',
+      'El emit no es la etapa; la etapa termina en apply (ver .claude/rules/outcome-reflex.md).',
+    ]);
+  }
+}
+
+// el draft staged DEBE ser el que devolvió el coagent (se compara por sha más abajo)
+let bodyText;
+try {
+  bodyText = readFileSync(abs(bodyFile), 'utf8');
+} catch (e) {
+  block(`GATE PROCEDENCIA: no pude leer --body-file "${bodyFile}" (${e.message}). Fail-closed.`);
+}
+
+// cierre clonado (2026-09-28): siete replies con la misma pregunta final, varias en el mismo
+// hilo con minutos de diferencia. Se compara el cierre del body-file con el de cada draft
+// consultado en las últimas 24h (cualquier post) cuyo archivo siga en disco.
+let detectCloserClones;
+try {
+  ({ detectCloserClones } = await import(resolve(PROJECT_DIR, 'scripts/closer-clone.mjs')));
+} catch (e) {
+  block(`GATE PROCEDENCIA: no pude cargar closer-clone.mjs (${e.message}). Fail-closed.`);
+}
+{
+  const coagentDir = resolve(PROJECT_DIR, '.coagent');
+  const bodyAbs = abs(bodyFile);
+  const peers = [];
+  for (const f of (existsSync(coagentDir) ? readdirSync(coagentDir) : []).filter((f) => f.endsWith('.consult.json'))) {
+    let rec;
+    try { rec = JSON.parse(readFileSync(resolve(coagentDir, f), 'utf8')); } catch { continue; }
+    for (const d of Array.isArray(rec.drafts) ? rec.drafts : []) {
+      const at = Date.parse(d.consulted_at || '');
+      if (!d.draft_file || !at || Date.now() - at > FRESH_MS) continue;
+      const p = abs(d.draft_file);
+      if (p === bodyAbs || !existsSync(p)) continue;
+      peers.push({ name: `${d.author || '?'} (${f.replace('.consult.json', '')})`, text: readFileSync(p, 'utf8') });
+    }
+  }
+  if (peers.length) {
+    const r = detectCloserClones([{ name: 'ESTE', text: bodyText }, ...peers]);
+    const clones = r.pairs.filter((p) => p.hard && (p.a === 'ESTE' || p.b === 'ESTE'));
+    if (clones.length) {
+      block([
+        'GATE PROCEDENCIA — STAGING BLOQUEADO: CIERRE CLONADO. Este draft termina igual que reply(s) ya consultadas en las últimas 24h:',
+        ...clones.map((p) => `  ↔ ${p.a === 'ESTE' ? p.b : p.a}  lcs=${p.lcs} run=${p.run}\n     «${p.closerA.slice(0, 110)}»\n     «${p.closerB.slice(0, 110)}»`),
+        'El mismo cierre en varias replies se lee como bot ante el lurker (y confirma el sello "blatant use of ai").',
+        'Replantea la pregunta del título con las palabras de ESTE interlocutor, re-consulta (x/y) y re-finaliza. Ver reply-output-style.md.',
+      ]);
+    }
+  }
+}
+
 const receiptFile = resolve(PROJECT_DIR, '.coagent', `${postId}.consult.json`);
 if (!existsSync(receiptFile)) {
   block([
@@ -121,13 +186,6 @@ try {
   block(`GATE PROCEDENCIA: no pude releer el master "${r.master}" (${e.message}). Fail-closed.`);
 }
 
-// el draft staged DEBE ser el que devolvió el coagent
-let bodyText;
-try {
-  bodyText = readFileSync(abs(bodyFile), 'utf8');
-} catch (e) {
-  block(`GATE PROCEDENCIA: no pude leer --body-file "${bodyFile}" (${e.message}). Fail-closed.`);
-}
 const bodySha = draftSha(bodyText);
 
 // recibos en imagen: lo que el texto promete, el composer lo tiene que llevar (Art. 2)

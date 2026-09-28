@@ -35,7 +35,15 @@ node scripts/style-gate.mjs <draft.txt> --name "<autor del comentario target>"
 - **flags blandas** (`wordCount` fuera de 150-350, `tricolon` aislado) **avisan**
   pero NO fallan el exit — son señales para el juicio, no vetos.
 
-`--json` emite el detalle por check (cada flag con su evidencia) para pipear.
+**Modo LOTE (2026-09-28):** `node scripts/style-gate.mjs a.txt b.txt c.txt` corre la tabla
+por draft Y el check `closerClone` entre ellos (SSOT `scripts/closer-clone.mjs`): el cierre
+de cada reply (su pregunta final, o las dos últimas oraciones) se compara por LCS sobre el
+cierre más corto; ≥0.7 o una racha común de 8+ palabras es flag DURA (exit 1), ≥0.45 o 5+
+avisa. Nació de siete replies con la misma pregunta final en un solo lote. En un lote se
+corre SIEMPRE con todos los drafts juntos, no uno por uno.
+
+`--json` emite el detalle por check (cada flag con su evidencia) para pipear; en lote,
+`{ clean, drafts[], batch }`.
 `--name` opcional: si se pasa, `opensWithName` solo marca cuando el vocativo inicial
 coincide con ese nombre (el destinatario que el tag de FB ya etiqueta).
 

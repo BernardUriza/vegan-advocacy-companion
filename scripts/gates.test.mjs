@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { execFileSync } from 'node:child_process';
-import { writeFileSync, mkdtempSync } from 'node:fs';
+import { execFileSync, spawnSync } from 'node:child_process';
+import { writeFileSync, mkdtempSync, mkdirSync, symlinkSync, utimesSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -116,4 +116,89 @@ test('seed-gate: welfarismo en la JUGADA bloquea aunque el guardrail esté', () 
 
 test('seed-gate: el léxico DENTRO del guardrail no cuenta como jugada', () => {
   assert.equal(runGate('seed-gate.mjs', `${PLAY}\n${GUARD}`), 0, 'nombrar "daño" para prohibirlo es legítimo');
+});
+
+// ---------- style-gate: modo LOTE (cierre clonado, 2026-09-28) ----------
+
+const Q = (subj, pron) => `The setup does not matter here and neither does the rest. ${FILLER.repeat(4)}So the question is still sitting there: if there's someone in ${subj}, what makes it legitimate for ${pron} to exist as somebody's property?`;
+function runBatch(bodies) {
+  const files = bodies.map((b, i) => { const f = join(TMP, `batch-${i}-${Math.abs(hash(b))}.txt`); writeFileSync(f, b, 'utf8'); return f; });
+  try { execFileSync('node', [resolve(HERE, 'style-gate.mjs'), ...files], { stdio: 'pipe' }); return 0; } catch (e) { return e.status; }
+}
+
+test('style-gate lote: la misma pregunta final con el sujeto cambiado bloquea (exit 1)', () => {
+  assert.equal(runBatch([Q('a pig', 'her'), Q('him', 'him')]), 1);
+});
+
+test('style-gate lote: cierres con las palabras de cada interlocutor pasan (exit 0)', () => {
+  assert.equal(runBatch([
+    `${FILLER.repeat(6)}Which of those two relations are you defending, the one with Ralph or the one with the piglet?`,
+    `${FILLER.repeat(6)}Paper says who owns. When did it ever say why anyone gets to?`,
+  ]), 0);
+});
+
+// ---------- coagent-provenance-gate: etapa 0 sin apply, cierre clonado ----------
+// El hook lee CLAUDE_PROJECT_DIR: se le da un proyecto falso con .coagent/ y un symlink a
+// scripts/ (importa seed-coagent.mjs y closer-clone.mjs desde ahí).
+
+const GATE = resolve(HERE, '..', '.claude', 'hooks', 'coagent-provenance-gate.mjs');
+const STAGE_CMD = (bodyFile) => `node scripts/${'comment-prepare'}.mjs --url "https://www.facebook.com/groups/1/posts/999/" --author "X" --anchor "y" --body-file ${bodyFile}`;
+function fakeProject() {
+  const dir = mkdtempSync(join(tmpdir(), 'prov-'));
+  mkdirSync(join(dir, '.coagent'));
+  symlinkSync(HERE, join(dir, 'scripts'));
+  return dir;
+}
+function runProvenance(dir, bodyFile) {
+  const r = spawnSync('node', [GATE], { input: JSON.stringify({ tool_name: 'Bash', tool_input: { command: STAGE_CMD(bodyFile) } }), encoding: 'utf8', env: { ...process.env, CLAUDE_PROJECT_DIR: dir } });
+  return { status: r.status, stderr: r.stderr };
+}
+
+test('provenance-gate: packets del reflex más nuevos que el marcador bloquean con la razón', () => {
+  const dir = fakeProject();
+  const body = join(dir, 'body.txt');
+  writeFileSync(body, Q('a pig', 'her'));
+  writeFileSync(join(dir, '.coagent', 'reflex-packets.json'), '[]');
+  const r = runProvenance(dir, body);
+  assert.equal(r.status, 2);
+  assert.match(r.stderr, /etapa 0 \(reflex\) emitida pero NO aplicada/);
+});
+
+test('provenance-gate: con el marcador reflex-applied posterior, la guarda de etapa 0 pasa (cae a la del recibo)', () => {
+  const dir = fakeProject();
+  const body = join(dir, 'body.txt');
+  writeFileSync(body, Q('a pig', 'her'));
+  writeFileSync(join(dir, '.coagent', 'reflex-packets.json'), '[]');
+  const old = new Date(Date.now() - 60000);
+  utimesSync(join(dir, '.coagent', 'reflex-packets.json'), old, old);
+  writeFileSync(join(dir, '.coagent', 'reflex-applied.json'), '{}');
+  const r = runProvenance(dir, body);
+  assert.equal(r.status, 2);
+  assert.match(r.stderr, /no hay recibo de consulta/);
+});
+
+test('provenance-gate: un cierre clonado contra un draft consultado hoy bloquea', () => {
+  const dir = fakeProject();
+  const peer = join(dir, 'peer.txt');
+  writeFileSync(peer, Q('him', 'him'));
+  writeFileSync(join(dir, '.coagent', '111.consult.json'), JSON.stringify({ status: 'consulted', drafts: [{ author: 'Kirk', draft_sha: 'x', draft_file: peer, consulted_at: new Date().toISOString() }] }));
+  const body = join(dir, 'body.txt');
+  writeFileSync(body, Q('a pig', 'her'));
+  const r = runProvenance(dir, body);
+  assert.equal(r.status, 2);
+  assert.match(r.stderr, /CIERRE CLONADO/);
+  assert.match(r.stderr, /Kirk \(111\)/);
+});
+
+test('provenance-gate: un cierre distinto al del draft consultado hoy no dispara la guarda de clones', () => {
+  const dir = fakeProject();
+  const peer = join(dir, 'peer.txt');
+  writeFileSync(peer, Q('him', 'him'));
+  writeFileSync(join(dir, '.coagent', '111.consult.json'), JSON.stringify({ status: 'consulted', drafts: [{ author: 'Kirk', draft_sha: 'x', draft_file: peer, consulted_at: new Date().toISOString() }] }));
+  const body = join(dir, 'body.txt');
+  writeFileSync(body, `${FILLER.repeat(6)}Paper says who owns. When did it ever say why anyone gets to?`);
+  const r = runProvenance(dir, body);
+  assert.equal(r.status, 2);
+  assert.doesNotMatch(r.stderr, /CIERRE CLONADO/);
+  assert.match(r.stderr, /no hay recibo de consulta/);
 });
