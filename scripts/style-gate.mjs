@@ -22,6 +22,9 @@ import { detectBiocentricAxis } from './biocentric-axis.mjs';
 import { detectCloserClones } from './closer-clone.mjs';
 
 // kill-phrases literales de la kill-list (case-insensitive)
+const OPENERS = new Set(['no', 'yes', 'sure', 'look', 'well', 'okay', 'ok', 'right', 'fine', 'fair', 'granted', 'agreed', 'true', 'exactly', 'honestly', 'again', 'so', 'and', 'but', 'still', 'nope', 'yeah', 'mate']);
+const ACRONYMS = new Set(['USDA', 'NSW', 'NASA', 'CDC', 'FAO', 'EPA', 'NHS', 'UNAM', 'IPCC', 'USA', 'OECD', 'DEFRA', 'RSPCA', 'PETA', 'WHO']);
+
 const KILL_PHRASES = [
   "Let's unpack",
   "It's worth noting",
@@ -59,13 +62,10 @@ export function analyzeDraft(text, { name = null, file = null } = {}) {
     const hits = [];
     const lower = text.toLowerCase();
     for (const p of KILL_PHRASES) {
-      let from = 0;
-      const needle = p.toLowerCase();
-      while (true) {
-        const at = lower.indexOf(needle, from);
-        if (at < 0) break;
-        hits.push({ phrase: p, index: at, context: text.slice(at, at + p.length + 24).replace(/\n/g, ' ') });
-        from = at + needle.length;
+      const re = new RegExp('(?<![\\w’\'])' + p.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?![\\w’\'])', 'g');
+      let m;
+      while ((m = re.exec(lower)) !== null) {
+        hits.push({ phrase: p, index: m.index, context: text.slice(m.index, m.index + p.length + 24).replace(/\n/g, ' ') });
       }
     }
     return { name: 'killPhrases', hard: hits.length > 0, count: hits.length, evidence: hits };
@@ -102,7 +102,7 @@ export function analyzeDraft(text, { name = null, file = null } = {}) {
         const m = matched.toLowerCase();
         hard = m === n || n.startsWith(m) || m.startsWith(n.split(/\s+/)[0]);
       } else {
-        hard = true;
+        hard = !OPENERS.has(matched.toLowerCase());
       }
     }
     return { name: 'opensWithName', hard, vocative: matched, providedName: name, firstLine: firstLine.slice(0, 80) };
@@ -144,7 +144,7 @@ export function analyzeDraft(text, { name = null, file = null } = {}) {
   function checkEmojiOrMarkdown() {
     const emojis = [...(text.match(/\p{Extended_Pictographic}/gu) || [])];
     const bold = [...(text.match(/\*\*[^*\n]+\*\*/g) || []), ...(text.match(/__[^_\n]+__/g) || [])];
-    const shoutWords = [...(text.match(/\b[A-Z]{4,}\b/g) || [])];
+    const shoutWords = [...(text.match(/\b[A-Z]{4,}\b/g) || [])].filter((w) => !ACRONYMS.has(w));
     const headings = [...(text.match(/^#{1,6}\s+.+$/gm) || [])];
     const hard = emojis.length > 0 || bold.length > 0 || shoutWords.length > 0 || headings.length > 0;
     return { name: 'emojiOrMarkdown', hard, emojis, bold, shoutWords, headings };

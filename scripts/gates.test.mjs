@@ -312,3 +312,16 @@ test('mcp-publish-gate: el Enter sintético en un composer cuenta como publicar 
   assert.equal(r.status, 2);
   assert.match(r.stderr, /ningún recibo de consulta/);
 });
+
+// ---------- style-gate: falsos positivos que la propia regla recomienda ----------
+test('style-gate: abrir con "No," o "Sure," no es vocativo; abrir con un nombre sí', () => {
+  const open = (first) => `${first} ${FILLER.repeat(6)}`;
+  assert.equal(runGate('style-gate.mjs', open("No, that doesn't follow.")), 0);
+  assert.equal(runGate('style-gate.mjs', open('Sure, crops kill animals.')), 0);
+  assert.equal(runGate('style-gate.mjs', open("Les, I don't think that follows.")), 1);
+});
+
+test('style-gate: kill-phrase con límite de palabra ("I hear your point" no es "I hear you") y acrónimos no son grito', () => {
+  assert.equal(runGate('style-gate.mjs', clean('I hear your point about the USDA rules. ')), 0);
+  assert.equal(runGate('style-gate.mjs', clean('I hear you. ')), 1);
+});
