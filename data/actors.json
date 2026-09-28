@@ -1722,7 +1722,7 @@
         "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
-        "outcome": "pending",
+        "outcome": "engaged",
         "thread_id": "28604913169131821",
         "date": "2026-09-28",
         "their_move": "Réplica 6h (Open Debates 3, tras el collage): \"congratulations, you found some comments I hadn't seen. Fair enough\" + reinterpreta (distinguen cognición, no dicen que los bebés sean propiedad) + su legitimación del título: uso humano \"provided their welfare is appropriately protected\", ownership = responsibilities, analogía del pet owner que decide vivienda/comida/reproducción/eutanasia + \"why does sentience automatically make ownership immoral? you assume it\" + \"you haven't established veganism is an obligation\".",
@@ -1730,10 +1730,12 @@
         "framework": "bienestarismo-jugada-maestra-del-poder",
         "draft_sha": "19443a21f947dd12",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "outcome_evidence": "Les M · 52m: 'Human societies can grant humans categorical protections because they are humans while still recognising that animals are sentient'",
+        "outcome_note": "bienestarismo-jugada-maestra: Les no soltó el 'fair enough' como concesión del título; contraatacó con 'moved the goalposts' y defendió que inteligencia/lenguaje/autoconciencia son diferencias moralmente relevantes y que 'humans because they are humans' basta. Engancha en serio, pero la especie volvió a hacer el trabajo decisivo: ahí está su flanco."
       },
       {
-        "outcome": "pending",
+        "outcome": "engaged",
         "thread_id": "28150669567887541",
         "date": "2026-09-28",
         "their_move": "Réplica 6h en la rama de crop deaths (VS Meat Eaters): \"so now we're shifting from animal deaths to the legal classification of ownership?\" + \"does their interest in continuing to live carry less moral weight because nobody owns them?\" + welfare laws/husbandry standards existen + \"you assert, not establish\" + \"you haven't established why that distinction requires veganism\".",
@@ -1741,7 +1743,9 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "draft_sha": "a9b21c21789159ef",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "outcome_evidence": "Les M · 48m: 'What makes ownership legitimate is the legitimacy of the intended use, provided the animal is appropriately cared for'",
+        "outcome_note": "algo-a-alguien: la separación título vs responder-por-el-acto lo obligó a dar la primera respuesta positiva al título: 'legitimacy of the intended use, provided welfare protected'. Circular (el uso legitima el título que habilita el uso) y bienestarista; es el blanco del siguiente turno."
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -2987,7 +2991,7 @@
         "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
-        "outcome": "pending",
+        "outcome": "escalated",
         "thread_id": "28459136643743554",
         "date": "2026-09-28",
         "their_move": "Réplica 3h: del sello IA pasó a \"whether an animal is considered property or not is not even a little bit relevant to that animal; a livestock animal with all its needs met and a stress free life won't wake up thinking I'm property; it's a philosophical question for vegans to feel morally superior\".",
@@ -2995,7 +2999,9 @@
         "framework": "consideracion-moral-no-cuanto-sufre",
         "draft_sha": "f923948bd68ecc88",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "outcome_evidence": "Parnaibensis Nws · 4h: 'yet again, you used ai to write your point lmao. as soon as you can use your own words ill take you seriously.'",
+        "outcome_note": "consideracion-moral: el recién-nacido/custodia no se contestó; regresó al sello IA puro ('use your own words'). Tras insulto posterior a una pregunta clara sin responder, la doctrina dice ignorar: la pregunta sin contestar es el recibo."
       }
     ],
     "user_id": "100024818371314",
@@ -3347,10 +3353,12 @@
         "their_move": "Raíz (pegado en dos grupos): insects you poison also run from the hand; if vegans kept their principles they would starve; the kindest path is ruminant meat.",
         "our_reply_summary": "Concedí las muertes en la cosecha; el escarabajo no es de nadie, el novillo es propiedad de la cría al camión; contar cuerpos deja el título intacto; kindest path habla de trato dentro del sistema; cierre: ¿existe la esclavitud necesaria?",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome": "pending",
+        "outcome": "silent",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-28T14:55:15.443Z",
-        "draft_sha": "3d85422b1040fa32"
+        "draft_sha": "3d85422b1040fa32",
+        "outcome_evidence": "Sin turno de Richard Weiss después del reply de Bernard (1d) en este hilo.",
+        "outcome_note": "algo-a-alguien: la distinción escarabajo-sin-dueño vs novillo-con-título la dejó sin respuesta; Les tomó la rama por él. Silencio de más de un día."
       },
       {
         "thread_id": "28604913169131821",
@@ -3419,7 +3427,7 @@
         "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
-        "outcome": "pending",
+        "outcome": "goalpost",
         "thread_id": "28459136643743554",
         "date": "2026-09-28",
         "their_move": "Réplica 1h: \"ownership, property, means responsibility to make an animal happy... happy well fed pigs taste better, you vegans support the same big food companies\".",
@@ -3427,7 +3435,9 @@
         "framework": "bienestarismo-jugada-maestra-del-poder",
         "draft_sha": "2ccdceb80dad61ec",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "outcome_evidence": "Kirk Sawler · 1h: 'I grew these potatoes, I'm guessing you get food from a grocery store' / 'that's a perfect vegan answer'",
+        "outcome_note": "bienestarismo-jugada-maestra: 'taste better' volteado como confesión de hacia dónde corre la responsabilidad; no lo contestó. Regresó al tu-quoque de vegetales/tienda ('I grew these potatoes', 'that's a perfect vegan answer'): cambio de terreno, sin tocar el cerdito."
       }
     ],
     "user_id": "100008695478463",
@@ -3527,7 +3537,7 @@
         "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       },
       {
-        "outcome": "pending",
+        "outcome": "engaged",
         "thread_id": "28148343171453514",
         "date": "2026-09-28",
         "their_move": "Réplica 1h (su post de Steve Irwin): \"my livestock arent a someone\".",
@@ -3535,7 +3545,9 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "draft_sha": "8fbc27acaa8fbb57",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-28T14:55:15.443Z"
+        "lurker_checked_at": "2026-09-28T14:55:15.443Z",
+        "outcome_evidence": "Jason Lamy: 'my cows arent pets my dogs are'",
+        "outcome_note": "algo-a-alguien: la prueba ordinaria del perro lo empujó a la distinción pet/livestock, que es precisamente el título etiquetado por uso."
       },
       {
         "thread_id": "28148343171453514",
@@ -3544,7 +3556,9 @@
         "our_reply_summary": "Posteada por Bernard a mano (versión del coagent, SINGLE-0928J): no shit, esa es la respuesta; pet y livestock son etiquetas que él reparte, la vaca no viene sellada; los mismos signos ordinarios que leería en un perro; llamarla livestock dice qué planea hacer con ella y prueba fuck-all sobre el título. Cierre: ¿qué hace de \"my cows aren't pets\" una razón para que sean suyas? 80 palabras.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "draft_sha": "28c71cd5c86aae22",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Jason Lamy · 7h: 'lmao i bought them thats why they are mine to own'",
+        "outcome_note": "algo-a-alguien: al preguntar qué hace de 'no son mascotas' una razón, dio la respuesta desnuda: la compra. 'I bought them' es el título justificándose a sí mismo; circular y confesado."
       }
     ],
     "user_id": "61550822695503",
