@@ -136,3 +136,16 @@ el hecho sin llamarlo mentira ("There is no slippery slope in this thread for me
 defend… you brought that in… it cuts the other way"), volteó su analogía del juez, nombró
 la negativa-como-respuesta, y cerró con la pregunta del título. Bernard: *"hay que
 aprender a detectar mejor esas (falsas o no) acusaciones, para podernos defender."*
+
+## Conceder sin releer también es la falla (2026-09-28, Dean Christie, post their-own-words)
+
+El lote K le concedió a Dean "Fair correction on the first part" (que las cinco citas del post
+solo listaban diferencias) sin releer los hilos de origen. Dean usó esa concesión como palanca
+("as you've now conceded… acknowledge your OP attributed an argument they never made"). Al
+releer los transcripts (`.coagent/tx-<post>.json` de cada link del OP), 4 de 5 citas traían la
+conclusión en el mismo comentario o en la pregunta de propiedad que contestaban; solo la de
+Samantha ("steward") pedía matiz. Hubo que retirar la concesión en público. Verificar antes de
+conceder aplica también cuando la concesión suena generosa y el oponente es de buena fe: antes
+de conceder una acusación sobre citas propias, abrir cada cita en su hilo. Bernard pidió en
+ese caso "recibos completos, reencuadre completo de cada hilo": la reply lleva cada cita con
+su contexto verbatim, numerada como en el OP.
