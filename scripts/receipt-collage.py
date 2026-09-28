@@ -9,11 +9,11 @@ alineado por `slug` con index.json; cada fila = recibo a la izquierda, foto + ca
 
 --social (con --pairs): versión vertical 1080px "tipo post" (2026-09-28, Bernard: "más llamativa y menos
 estructurada... descripciones más pequeñas o referidas"). Fondo oscuro, la foto del animal es el héroe
-(esquinas redondas, ligera inclinación, alternando lado), la frase resaltada se RECORTA del screenshot real
-(línea del autor + banda amarilla ± contexto) y se pega como burbuja encima de la foto; número en círculo por
-tarjeta, micro-leyenda de una línea por tarjeta y créditos en un pie pequeño. photos.json admite `short`
-(micro-leyenda) y `focus` (0..1, centro vertical del recorte de la foto). --anon tapa el nombre del autor con
+COMPLETA (sin recorte, esquinas redondas, ligera inclinación, alternando lado), debajo la micro-leyenda, la frase
+resaltada RECORTADA del screenshot real (línea del autor + banda amarilla ± contexto) como burbuja, y "grupo · edad";
+número en círculo por tarjeta y créditos en un pie pequeño. photos.json admite `short` (micro-leyenda). --anon tapa el nombre del autor con
 "Commenter N" y la mención azul a Bernard con una barra del color de la burbuja (nada más del render cambia).
+--cards <dir> escribe además cada tarjeta como PNG propio (card-1.png…; título solo en la 1, créditos solo en la última).
 """
 import json, sys
 from pathlib import Path
@@ -30,6 +30,7 @@ try:
 except Exception:
     font = tfont = ImageFont.load_default()
 SOCIAL = '--social' in sys.argv; ANON = '--anon' in sys.argv
+cards_dir = sys.argv[sys.argv.index('--cards') + 1] if '--cards' in sys.argv else None
 
 
 def yellow_bands(im):
@@ -80,10 +81,9 @@ def drop_shadow(canvas, im, xy, blur=18, off=(0, 10), alpha=150):
     canvas.alpha_composite(sh, (xy[0] - blur * 2 + off[0], xy[1] - blur * 2 + off[1]))
 
 
-def cover(im, w, h, focus=0.5):
-    r = max(w / im.width, h / im.height); im = im.resize((round(im.width * r), round(im.height * r)), Image.LANCZOS)
-    top = int(min(max(im.height * focus - h / 2, 0), im.height - h)); left = (im.width - w) // 2
-    return im.crop((left, top, left + w, top + h))
+def fit(im, w, max_h):
+    r = min(w / im.width, max_h / im.height)
+    return im.resize((round(im.width * r), round(im.height * r)), Image.LANCZOS)
 
 
 def wrap(text, f, width):
@@ -96,9 +96,9 @@ def wrap(text, f, width):
     return lines
 
 
-def social(index, photos_file, out, title):
+def social(index, photos_file, out, title, cards_dir=None):
     photos = {p['slug']: p for p in json.loads(Path(photos_file).read_text())}
-    W, M = 1080, 40; PW, PH, OVER, GAP = 680, 270, 90, 22
+    W, M = 1080, 40; PW, PH_MAX, GAP = 920, 640, 44
     HB = '/System/Library/Fonts/Helvetica.ttc'
     tf = ImageFont.truetype(HB, 46, index=1); nf = ImageFont.truetype(HB, 26, index=1)
     wf = ImageFont.truetype(HB, 20); lf = ImageFont.truetype(HB, 22); cf = ImageFont.truetype(HB, 18)
@@ -112,36 +112,55 @@ def social(index, photos_file, out, title):
         bw = 740 if q.width <= 900 else 820; q = q.resize((bw, round(q.height * bw / q.width)), Image.LANCZOS)
         chip = Image.new('RGB', (bw + 24, q.height + 24), q.getpixel((2, 2))); chip.paste(q, (12, 12))
         chip = rounded(chip, 16)
-        pim = cover(Image.open(Path(photos_file).parent / ph['file']).convert('RGB'), PW, PH, ph.get('focus', 0.5))
-        pim = rounded(pim, 28).rotate((1.4, -0.9, 1.1, -1.5, 0.8)[(n - 1) % 5], Image.BICUBIC, expand=True)
+        pim = fit(Image.open(Path(photos_file).parent / ph['file']).convert('RGB'), PW, PH_MAX)
+        pim = rounded(pim, 24).rotate((0.8, -0.6, 0.7, -0.8, 0.5)[(n - 1) % 5], Image.BICUBIC, expand=True)
         cards.append((n, i, ph, pim, chip))
     credits = 'Photos: ' + ' · '.join(f"{n} {ph.get('artist', '')} {ph.get('license', '')}".strip() for n, _, ph, *_ in cards)
-    cl = wrap(credits, cf, W - 2 * M); UNDER = 62
-    rows = [pim.height - OVER + chip.height + UNDER for *_, pim, chip in cards]
+    cl = wrap(credits, cf, W - 2 * M)
+    rows = [pim.height + 12 + 32 + chip.height + 34 for *_, pim, chip in cards]
     H = M + 46 + 30 + sum(rows) + (len(cards) - 1) * GAP + 24 + len(cl) * 24 + M
-    canvas = Image.new('RGBA', (W, H), '#18191a'); d = ImageDraw.Draw(canvas)
-    d.text((M, M), title, fill='#e4e6eb', font=tf); y = M + 46 + 30
-    for n, i, ph, pim, chip in cards:
-        left = n % 2 == 1
-        px = M - 10 if left else W - M - pim.width + 10
+    def draw_card(canvas, y, card):
+        n, i, ph, pim, chip = card; left = n % 2 == 1
+        px = M if left else W - M - pim.width
         drop_shadow(canvas, pim, (px, y)); canvas.alpha_composite(pim, (px, y))
-        cx = W - M - chip.width if left else M; cy = y + pim.height - OVER
-        drop_shadow(canvas, chip, (cx, cy), blur=14, off=(0, 8), alpha=200); canvas.alpha_composite(chip, (cx, cy))
         d = ImageDraw.Draw(canvas)
-        bx = (px + 26) if left else (px + pim.width - 26 - 48); by = y + 14
+        bx = (px - 8) if left else (px + pim.width - 40); by = y - 8
         d.ellipse([bx, by, bx + 48, by + 48], fill='#f7b928')
         d.text((bx + 24, by + 25), str(n), fill='#18191a', font=nf, anchor='mm')
-        d.text((cx + 12, cy + chip.height + 6), f"{n} · {ph.get('short') or ph['caption']}", fill='#c7cad0', font=lf)
-        d.text((cx + 12, cy + chip.height + 36), i.get('where', ''), fill='#8a8d91', font=wf)
-        y += pim.height - OVER + chip.height + UNDER + GAP
-    y += 24 - GAP
-    for l in cl: d.text((M, y), l, fill='#6f7378', font=cf); y += 24
-    canvas.convert('RGB').save(out, optimize=True)
-    print(json.dumps({'ok': True, 'out': str(out), 'cards': len(cards), 'size': [W, H]}))
+        tx = px + 8 if left else px + pim.width - 8
+        d.text((tx, y + pim.height + 12), f"{n} · {ph.get('short') or ph['caption']}", fill='#c7cad0', font=lf, anchor='la' if left else 'ra')
+        cx = (px + 8) if left else (px + pim.width - 8 - chip.width); cy = y + pim.height + 12 + 32
+        drop_shadow(canvas, chip, (cx, cy), blur=14, off=(0, 8), alpha=200); canvas.alpha_composite(chip, (cx, cy))
+        d = ImageDraw.Draw(canvas)
+        d.text((cx + 12, cy + chip.height + 6), i.get('where', ''), fill='#8a8d91', font=wf)
+        return pim.height + 12 + 32 + chip.height + 34
 
+    def draw_credits(canvas, y):
+        d = ImageDraw.Draw(canvas)
+        for l in cl: d.text((M, y), l, fill='#6f7378', font=cf); y += 24
+
+    canvas = Image.new('RGBA', (W, H), '#18191a')
+    ImageDraw.Draw(canvas).text((M, M), title, fill='#e4e6eb', font=tf); y = M + 46 + 30
+    for k, card in enumerate(cards):
+        y += draw_card(canvas, y, card) + (GAP if k < len(cards) - 1 else 24)
+    draw_credits(canvas, y)
+    canvas.convert('RGB').save(out, optimize=True)
+    result = {'ok': True, 'out': str(out), 'cards': len(cards), 'size': [W, H]}
+    if cards_dir:
+        Path(cards_dir).mkdir(parents=True, exist_ok=True); result['card_files'] = []
+        for k, card in enumerate(cards):
+            first, last = k == 0, k == len(cards) - 1
+            ch = (M + 46 + 30 if first else M) + rows[k] + (24 + len(cl) * 24 if last else 0) + M
+            cc = Image.new('RGBA', (W, ch), '#18191a'); yy = M
+            if first: ImageDraw.Draw(cc).text((M, M), title, fill='#e4e6eb', font=tf); yy += 46 + 30
+            yy += draw_card(cc, yy, card)
+            if last: draw_credits(cc, yy + 24)
+            cf_path = Path(cards_dir) / f'card-{card[0]}.png'; cc.convert('RGB').save(cf_path, optimize=True)
+            result['card_files'].append({'file': str(cf_path), 'size': [W, ch]})
+    print(json.dumps(result))
 
 if SOCIAL and pairs_file:
-    social(index, pairs_file, out, title); sys.exit(0)
+    social(index, pairs_file, out, title, cards_dir); sys.exit(0)
 shots = []
 for i in index:
     im = Image.open(i['file']).convert('RGB')
