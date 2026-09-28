@@ -54,6 +54,55 @@ Luego volver al hueso (la pregunta del marco) y, si aplica, una sola línea al s
 ([[insult-seal-defense]]: "ask your AI friend" / "get a dictionary" = etiqueta, no
 refutación).
 
+## Recibos en IMAGEN — el collage de evidencia (2026-09-27, Bernard)
+
+Cuando la acusación es del tipo **"nadie hizo ese argumento / te lo inventaste"** (Les M,
+raíz del post de sintiencia), los recibos no son solo el arco de ESE hilo: son los
+comentarios de **quienes SÍ lo dijeron**, en estos mismos grupos. Bernard: *"harás un
+collage con todas esas imágenes de los recibos con highlight amarillo en las partes más
+graves para ponerle a Les M y a todos, la prueba de que no estamos mintiendo, esos
+argumentos son los que ellos mismos han dado."* El collage se ADJUNTA a la reply; las citas
+van además **verbatim en el texto** con nombre, grupo y antigüedad — la imagen prueba, el
+texto se indexa y se lee sin abrirla.
+
+**La doctrina:**
+1. **Verificar primero, igual que siempre:** buscar en el moat y los transcripts
+   (`data/actors.json` `their_move`, `.coagent/tx-*.json`, `analysis/threads/`) quién dijo
+   literalmente lo que el acusador niega. Sin cita verbatim no hay recibo — no se cita de
+   memoria ni de un resumen ([[la-duda-no-va-en-su-firma]]).
+2. **La fecha sale del DOM vivo, no del tx viejo.** El transcript de junio decía "5
+   semanas" para Anna; FB en vivo marcaba **12**. `receipt-shots` devuelve el `label`
+   con la edad real: esa es la que va en el texto y en el caption.
+3. **Se resalta la frase, no el comentario.** El `<mark>` amarillo va sobre la oración
+   exacta que carga la afirmación; el resto del comentario queda visible como contexto (el
+   lurker ve que no recortamos).
+4. **Las citas son PROCEDENCIA, no acusación de hipocresía** (corrección del coagent): se
+   presentan como registro ("that argument is in these groups, in other people's own
+   words") y una sola línea cierra la trampa ("I didn't invent it, and I didn't say you
+   made it"). Nada de "mira cómo mienten".
+5. **Lo que el texto promete, el composer lo lleva.** Una reply que dice "screenshots
+   attached" y sale sin imagen es fake-green; el gate de procedencia lo bloquea (exige
+   `--image` con archivo existente).
+6. **Un collage por lote, en `.coagent/receipts/<lote>/`** con su `spec.json` (url, autor,
+   frases, `where`) — reproducible; copia visible en `~/Desktop/` para Bernard.
+
+**El runbook mecánico (canónico, `scripts/`):**
+```bash
+node scripts/receipt-shots.mjs --spec .coagent/receipts/<lote>/spec.json --out .coagent/receipts/<lote>
+python3 scripts/receipt-collage.py .coagent/receipts/<lote> .coagent/receipts/<lote>/collage.png "Título corto"
+node scripts/comment-prepare.mjs --url … --author … --anchor … --body-file <draft> --image <collage.png>
+```
+Gotchas pagados el 2026-09-27 (no re-descubrir): FB monta un **render oculto** de cada
+comentario — filtrar `checkVisibility()` o el screenshot sale vacío; el
+**element-screenshot de Playwright sale desplazado** dentro del diálogo de FB — captura del
+viewport + recorte por `getBoundingClientRect`; capturar la **burbuja** (autor + texto), no
+el `article` entero (arrastra las réplicas anidadas); en dark mode el `<mark>` lleva
+`color:#000` o el texto queda blanco sobre amarillo; normalizar apóstrofes curvos al buscar la
+frase; el **preview del adjunto vive fuera del `<form>`** (se verifica por `Remove photo` en
+el contenedor del composer); **una invocación de `comment-prepare` por Bash, sin pipe**
+(dos corridas = dos tabs con el mismo draft). El título del collage cabe en ~60 caracteres a
+900 px. Ver [[comment-post-and-verify]] (FALLA→FIX) y la tabla de scripts en `CLAUDE.md`.
+
 ## Si la acusación es VERDADERA → concederla limpia, desde la buena fe
 
 Si el arco muestra que **sí** introdujiste eso, lo mal-atribuiste, o **respondiste sin

@@ -14,6 +14,11 @@
 //   4. re-valida el master (no confía en el recibo a ciegas — Art. 2).
 //   5. sha(--body-file) == recibo.draft_sha (el draft staged ES el del coagent).
 //   6. recibo fresco (< 24h).
+//   7. (2026-09-27) UNA invocación por comando: dos `node …comment-prepare.mjs` en el mismo
+//      Bash stagearon el mismo draft en dos tabs (un `| head` cerró el pipe y node siguió).
+//   8. (2026-09-27) recibos en imagen: si el draft anuncia screenshots/imagen adjunta
+//      ("Screenshots attached", "see the screenshot", "image attached"), exige --image con un
+//      archivo existente; un reply que promete evidencia y sale sin ella es fake-green.
 // Cualquier falla → exit 2 (bloquea, stderr → Claude). OK → exit 0.
 
 import { readFileSync, existsSync } from 'fs';
@@ -47,6 +52,23 @@ const command = payload.tool_input?.command || payload.toolInput?.command || '';
 
 // solo la invocación real de comment-prepare, no menciones sueltas (grep/cat/git)
 if (toolName !== 'Bash' || !/node\s+[^|;&]*comment-prepare\.mjs/.test(command)) process.exit(0);
+
+const invocations = (command.match(/node\s+[^|;&]*comment-prepare\.mjs/g) || []).length;
+if (invocations > 1) {
+  block([
+    `GATE PROCEDENCIA — STAGING BLOQUEADO: ${invocations} invocaciones de comment-prepare en el MISMO comando.`,
+    'Una por comando: cada corrida abre una tab persistente con el draft; dos corridas = dos tabs con el mismo reply (2026-09-27, Les M).',
+    'Tampoco la pipees (| head/grep): el pipe cerrado no detiene a node, y el JSON completo es el handoff.',
+  ]);
+}
+if (/\|\s*(head|tail|grep|sed|awk|cut)\b/.test(command.slice(command.indexOf('comment-prepare.mjs')))) {
+  block([
+    'GATE PROCEDENCIA — STAGING BLOQUEADO: comment-prepare va pipeado a head/tail/grep/sed.',
+    'Corre la invocación sola y lee el JSON completo: es el handoff (ok, check, identity, attachment, nextStep).',
+  ]);
+}
+const imageM = command.match(/--image[=\s]+(?:"([^"]+)"|'([^']+)'|([^\s"'|;&]+))/);
+const imageFile = imageM && (imageM[1] || imageM[2] || imageM[3]);
 
 const urlM = command.match(/--url[=\s]+(?:"([^"]+)"|'([^']+)'|([^\s"'|;&]+))/);
 const bodyM = command.match(/--body-file[=\s]+(?:"([^"]+)"|'([^']+)'|([^\s"'|;&]+))/);
@@ -107,6 +129,19 @@ try {
   block(`GATE PROCEDENCIA: no pude leer --body-file "${bodyFile}" (${e.message}). Fail-closed.`);
 }
 const bodySha = draftSha(bodyText);
+
+// recibos en imagen: lo que el texto promete, el composer lo tiene que llevar (Art. 2)
+const promisesImage = /screenshots?\s+(are\s+)?attached|attached\s+screenshots?|see\s+(the\s+)?(attached\s+)?(screenshots?|image|collage)|image\s+attached|collage\s+attached|highlights\s+mine|capturas?\s+adjuntas?|imagen\s+adjunta/i.test(bodyText);
+if (promisesImage && !imageFile) {
+  block([
+    'GATE PROCEDENCIA — STAGING BLOQUEADO: el draft anuncia screenshots/imagen adjunta pero el comando no trae --image.',
+    'Arma el collage (scripts/receipt-shots.mjs → scripts/receipt-collage.py) y pásalo con --image <png>,',
+    'o quita la promesa del texto. Un reply que promete evidencia y sale sin ella es fake-green.',
+  ]);
+}
+if (imageFile && !existsSync(abs(imageFile))) {
+  block(`GATE PROCEDENCIA — STAGING BLOQUEADO: --image "${imageFile}" no existe en disco.`);
+}
 // varios targets pueden compartir un post → el recibo guarda drafts[]; el body-file debe
 // ser UNO de los drafts consultados. Normaliza el shape legacy single-draft.
 const drafts = Array.isArray(r.drafts) && r.drafts.length
