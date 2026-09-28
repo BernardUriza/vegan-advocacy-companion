@@ -715,6 +715,15 @@
         "draft_sha": "d7cca396a2a28c59",
         "lurker_reactions": 1,
         "lurker_checked_at": "2026-09-28T14:55:15.443Z"
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-28",
+        "their_move": "she is food.",
+        "our_reply_summary": "food es el plan para ella escrito como su definición; food por decisión de quién y qué les dio la voz",
+        "framework": "antropoespecismo",
+        "draft_sha": "4619005e14440a6f",
+        "outcome": "pending"
       }
     ]
   },
@@ -749,6 +758,15 @@
         "draft_sha": "93f2ba581c73c0d2",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-28T14:55:15.443Z"
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-28",
+        "their_move": "so it is ok to shoot/poison/trap an unowned pig but bad to eat one you bought and cared for? wow vegan logic",
+        "our_reply_summary": "expuse la trampa (nunca dije que matar al feral esté bien) y volteé su lista de costos: pagar lo que cuesta un título prueba que lo tienes, no que el cerdo deba ser propiedad; cierre con su lista",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "800df6698cc15372",
+        "outcome": "pending"
       }
     ]
   },
@@ -2545,6 +2563,15 @@
         "framework": "sobreposicion-de-especies-criterio-leido",
         "draft_sha": "2c6411ca70ee35d2",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "28615704478052690",
+        "date": "2026-09-28",
+        "their_move": "acusó que el OP atribuyó a los comentaristas una conclusión que no dijeron; pidió admitirlo tras nuestra concesión prematura",
+        "our_reply_summary": "retiré la concesión con los 5 recibos en contexto verbatim (CarolAnn, Anna, Samantha matizada por steward, Tiana, Matt); afirmé la atribución a su tamaño exacto; le pedí qué paso de la premisa del título asume la conclusión",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "draft_sha": "5114c529c17df18c",
+        "outcome": "pending"
       }
     ],
     "user_id": "1198831097",
@@ -3595,6 +3622,15 @@
         "outcome": "engaged",
         "outcome_evidence": "Jason Lamy · 7h: 'lmao i bought them thats why they are mine to own'",
         "outcome_note": "algo-a-alguien: al preguntar qué hace de 'no son mascotas' una razón, dio la respuesta desnuda: la compra. 'I bought them' es el título justificándose a sí mismo; circular y confesado."
+      },
+      {
+        "thread_id": "28148343171453514",
+        "date": "2026-09-28",
+        "their_move": "lmao i bought them thats why they are mine to own",
+        "our_reply_summary": "la compra transfiere el título, no lo funda; cuarta estación (papeles, no someone, no pets, recibo); qué compró el primer comprador antes de que alguien tuviera derecho a venderla",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "3c60098784c3f917",
+        "outcome": "pending"
       }
     ],
     "user_id": "61550822695503",

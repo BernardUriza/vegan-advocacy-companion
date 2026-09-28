@@ -35,4 +35,8 @@ Nada de body-count ni cuál muerte es peor; no defender ni condenar el control d
 - **Su jugada:** Raíz (VEGANnoyance, post de sintiencia): crop_deaths_flip misma especie — you worry about the cute little piggy but turn a blind eye to feral pigs killed for crops; both are pigs.
 - **Nuestra respuesta:** Both are pigs es mi punto: mismo sujeto, solo uno es posesión. El feral no es de nadie (conflicto por cultivo, cuestionable aparte); el de granja es propiedad desde antes de nacer hasta el camión. Sin conteo. Cierre en el título.
 
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** so it is ok to shoot/poison/trap an unowned pig but bad to eat one you bought and cared for? wow vegan logic
+- **Nuestra respuesta:** expuse la trampa (nunca dije que matar al feral esté bien) y volteé su lista de costos: pagar lo que cuesta un título prueba que lo tienes, no que el cerdo deba ser propiedad; cierre con su lista
+
 _Hilos: 27341517928804691, 28459136643743554_

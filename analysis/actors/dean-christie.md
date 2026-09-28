@@ -128,4 +128,8 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Raíz bajo el post their-own-words (Open Debates 3): los comentarios citados no enuncian la regla rasgo=línea de propiedad; "someone there" es premisa adicional no demostrada; qué propiedad hace impermisible poseer y por qué lo implica.
 - **Nuestra respuesta:** Concedí que las citas no enuncian la regla (funcionaban como razón en sus hilos) y que Anna lo confirmó (species is). Di la premisa explícita: el título decide de antemano contra el lado del otro; la razón por la que no poseemos humanos sin lenguaje nunca fue la capacidad sino que hay alguien. Cierre: qué propiedad hace impermisible poseer en el caso humano y por qué se detiene en la especie.
 
+### Hilo `28615704478052690` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** acusó que el OP atribuyó a los comentaristas una conclusión que no dijeron; pidió admitirlo tras nuestra concesión prematura
+- **Nuestra respuesta:** retiré la concesión con los 5 recibos en contexto verbatim (CarolAnn, Anna, Samantha matizada por steward, Tiana, Matt); afirmé la atribución a su tamaño exacto; le pedí qué paso de la premisa del título asume la conclusión
+
 _Hilos: 27468645086091974_
