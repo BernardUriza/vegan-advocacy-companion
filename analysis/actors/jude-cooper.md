@@ -31,7 +31,7 @@ Nada de body-count ni cuál muerte es peor; no defender ni condenar el control d
 
 ## Log de interacciones
 
-### Hilo `28459136643743554` — 2026-09-27 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-09-27 · outcome: **engaged**
 - **Su jugada:** Raíz (VEGANnoyance, post de sintiencia): crop_deaths_flip misma especie — you worry about the cute little piggy but turn a blind eye to feral pigs killed for crops; both are pigs.
 - **Nuestra respuesta:** Both are pigs es mi punto: mismo sujeto, solo uno es posesión. El feral no es de nadie (conflicto por cultivo, cuestionable aparte); el de granja es propiedad desde antes de nacer hasta el camión. Sin conteo. Cierre en el título.
 

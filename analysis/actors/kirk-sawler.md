@@ -57,8 +57,12 @@ No burlarse de Ralph ni pedirle que trate al cerdo como al perro (eso es trato, 
 - **Su jugada:** Raíz (VEGANnoyance, post de sintiencia): animals are property; Ralph is family and property, we own each other; the piglet I buy is property and we eat it; it is the way the world works.
 - **Nuestra respuesta:** Volteé su evidencia: con Ralph describe una relación de dos lados, con el cerdito un título de un solo lado hasta el plato; la misma palabra hace dos trabajos; ambos son seres conscientes con un lado propio; way the world works describe, no justifica. Cierre en el título.
 
-### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** Réplica a mi reply: "all that and you left out my non vegan vegetables lol" — jab crop_deaths sin argumento.
 - **Nuestra respuesta:** Corta (100 palabras, filo profano): los dejé fuera porque no tocan la relación que pregunté; el animal atrapado en el campo no es suyo (no lo compró ni registró); el cerdito sí, desde que pagó hasta la cena; las verduras prueban fuck-all sobre eso; vuelta a la pregunta con Ralph.
+
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Réplica 1h: "ownership, property, means responsibility to make an animal happy... happy well fed pigs taste better, you vegans support the same big food companies".
+- **Nuestra respuesta:** Tomé su propia frase como la respuesta: "taste better" dice hacia dónde corre la responsabilidad; la felicidad de Ralph es para Ralph, la del cerdito está doblada en lo que será para él; misma palabra, dirección opuesta. Concedí el tu-quoque de las empresas (prueba fuck-all del cerdito; lo compró para convertirlo en comida). Cierre: si su felicidad es parte del sabor y la de Ralph es suya, ¿qué hace al cerdito tuyo para ponerlo en el menú? 100 palabras.
 
 _Hilos: 28459136643743554_

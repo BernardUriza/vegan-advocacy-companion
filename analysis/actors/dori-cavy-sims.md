@@ -54,11 +54,11 @@ No gastar una jugada principal. Una línea que reponga la pregunta y pida algo d
 
 ## Log de interacciones
 
-### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** Raíz drive-by (VEGANnoyance): "And your point is?"
 - **Nuestra respuesta:** Una línea: el punto es la última línea del post; si hay alguien en la cerda con punto de vista, qué hace legítimo que exista como propiedad.
 
-### Hilo `28604913169131821` — 2026-09-28 · outcome: **pending**
+### Hilo `28604913169131821` — 2026-09-28 · outcome: **escalated**
 - **Su jugada:** Raíz drive-by (VS Meat Eaters, misma copia del post): "You write a lot of words and say little."
 - **Nuestra respuesta:** Una línea: si puede asustarse y las cosas le importan desde su lado, what the hell hace legítimo que exista como propiedad; "say something back to that one".
 
