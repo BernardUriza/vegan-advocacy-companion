@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
   nonEmptyLines, compareLines, extractReply, findSeedAnchor, chatIdOf, gptIdOf,
-  isBaseGptUrl, hrefMatches, parseEnvValue, chunkLines,
+  isBaseGptUrl, hrefMatches, parseEnvValue, chunkLines, readReplyWhenStable, isPlaceholderReply,
 } from './coagent-transport.mjs';
 import { insertProblems, draftSha } from './seed-coagent.mjs';
 
@@ -120,4 +120,58 @@ test('chunkLines: whole lines only, under the cap, and rejoining them rebuilds t
   assert.deepEqual(chunkLines('corto'), ['corto']);
   const long = 'y'.repeat(900);
   assert.deepEqual(chunkLines(`a\n${long}\nb`, 500), ['a', long, 'b'], 'a line longer than the cap travels alone, never split');
+});
+
+const seedThen = (reply) => ['You said:', 'hola soy claude code, lote de tres', 'ChatGPT said:', reply, 'Latest response'].join('\n');
+
+test('extractReply: a "Thinking"/"Searching" placeholder is NOT a finished reply', () => {
+  for (const ph of ['Thinking', 'Thinking…', 'Searching the web', 'Reasoning\nThought for 12s']) {
+    const r = extractReply(seedThen(ph), 'lote de tres');
+    assert.equal(r.ok, false, ph);
+    assert.equal(r.pending, true, ph);
+  }
+  assert.equal(isPlaceholderReply('Thought for 12s\nLas tres y son coherentes con x.'), false);
+  assert.equal(extractReply(seedThen('Thought for 12s\nLas tres y son coherentes con x.'), 'lote de tres').ok, true);
+});
+
+test('extractReply: a short fragment while the page is busy is pending; the same text idle is accepted', () => {
+  assert.equal(extractReply(seedThen('Las tres y son'), 'lote de tres', { busy: true }).pending, true);
+  assert.equal(extractReply(seedThen('Las tres y son'), 'lote de tres').ok, true);
+  const long = 'Las tres y son coherentes con x. Ajustes duros para Matt y para Les.';
+  assert.equal(extractReply(seedThen(long), 'lote de tres', { busy: true }).ok, true);
+});
+
+function fakeChat(frames) {
+  let tick = 0;
+  const frame = () => frames[Math.min(tick, frames.length - 1)];
+  const doc = {
+    querySelector: (sel) => (sel === 'main' ? { innerText: frame().main } : /stop/i.test(sel) && frame().busy ? {} : null),
+    querySelectorAll: () => [],
+  };
+  return {
+    evaluate: async (fn, arg) => {
+      const prev = globalThis.document;
+      globalThis.document = doc;
+      try { return fn(arg); } finally { globalThis.document = prev; }
+    },
+    waitForTimeout: async () => { tick++; },
+  };
+}
+
+test('readReplyWhenStable keeps waiting through a stable "Thinking" placeholder instead of returning it', async () => {
+  const final = 'Las tres y son coherentes con x. Matt: la alusión histórica sobra.';
+  const page = fakeChat([
+    ...Array(8).fill({ main: seedThen('Thinking'), busy: true }),
+    ...Array(8).fill({ main: seedThen(final), busy: false }),
+  ]);
+  const r = await readReplyWhenStable(page, 'lote de tres', { timeout: 5000, gap: 0 });
+  assert.equal(r.ok, true);
+  assert.equal(r.reply, final);
+});
+
+test('readReplyWhenStable never reports ok:true for a reply stuck on the placeholder', async () => {
+  const page = fakeChat([{ main: seedThen('Searching the web'), busy: true }]);
+  const r = await readReplyWhenStable(page, 'lote de tres', { timeout: 60, gap: 0 });
+  assert.equal(r.ok, false);
+  assert.equal(r.reply, undefined);
 });

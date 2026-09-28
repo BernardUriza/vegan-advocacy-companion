@@ -92,7 +92,16 @@ export function findSeedAnchor(text, phrase) {
   return -1;
 }
 
-export function extractReply(text, phrase) {
+const PLACEHOLDER_LINE = /^(?:thinking|searching(?: the web| for .*)?|reasoning|analy[sz]ing(?: .*)?|working|thought for \d+\s*s(?:econds)?|worked for \d+\s*s(?:econds)?|stopped thinking)\s*[.…]*$/i;
+export const MIN_BUSY_REPLY = 40;
+
+export function isPlaceholderReply(reply) {
+  const lines = nonEmptyLines(reply);
+  return !lines.length || lines.every((l) => PLACEHOLDER_LINE.test(l));
+}
+
+// `busy` = la página muestra stop/thinking: una respuesta corta ahí es un fragmento en curso.
+export function extractReply(text, phrase, { busy = false } = {}) {
   const at = findSeedAnchor(text || '', phrase);
   if (at < 0) return { ok: false, error: 'seed phrase not found in a user message' };
   const after = text.slice(at + phrase.length);
@@ -102,7 +111,16 @@ export function extractReply(text, phrase) {
   const cut = REPLY_ENDS.map((e) => reply.indexOf(e)).filter((x) => x >= 0);
   if (cut.length) reply = reply.slice(0, Math.min(...cut));
   reply = reply.trim();
-  return reply ? { ok: true, reply } : { ok: false, pending: true, error: 'reply marker present but empty' };
+  if (!reply) return { ok: false, pending: true, error: 'reply marker present but empty' };
+  if (isPlaceholderReply(reply)) return { ok: false, pending: true, error: 'reply is only a thinking/searching placeholder', partial: reply };
+  if (busy && reply.length < MIN_BUSY_REPLY) return { ok: false, pending: true, error: 'page still generating and the reply is too short', partial: reply };
+  return { ok: true, reply };
+}
+
+export function pageBusyInPage() {
+  const stop = document.querySelector('button[data-testid="stop-button"], button[aria-label="Stop streaming"], button[aria-label="Stop generating"]');
+  const thinking = [...document.querySelectorAll('main [class*="shimmer"], main [data-testid*="thinking" i]')].length > 0;
+  return !!stop || thinking;
 }
 
 export async function waitForComposer(page, timeout = 30000) {
@@ -239,7 +257,8 @@ export async function readReplyWhenStable(page, phrase, { timeout = 240000, gap 
     stable = len === prev && len > 0 ? stable + 1 : 0;
     prev = len;
     if (stable >= stableReads - 1) {
-      last = extractReply(await page.evaluate(() => document.querySelector('main')?.innerText || ''), phrase);
+      const busy = await page.evaluate(pageBusyInPage).catch(() => false);
+      last = extractReply(await page.evaluate(() => document.querySelector('main')?.innerText || ''), phrase, { busy });
       if (last.ok) return { ...last, waitedMs: Date.now() - t0 };
       stable = 0;
     }

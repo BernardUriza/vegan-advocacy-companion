@@ -11,26 +11,30 @@
 //
 // El <openUrl> lo sirve notif-scan.mjs (campo `openUrl` / línea "abrir:").
 
+import { pathToFileURL } from 'url';
 import { openScratchPage, ageMinutes, fmtAge, UNKNOWN_AGE, expandAllInPage, MAX_AGE_DAYS, isStaleMinutes } from './fb-lib.mjs';
 import { registerThread } from './db.mjs';
 import { parseReactionCount, sumPostReactionLabels } from './lurker.mjs';
 import { canonicalPostUrl } from './thread-identity.mjs';
 
+const isMain = !!process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 const url = process.argv.find((a) => a.startsWith('http'));
 const asJson = process.argv.includes('--json');
 const ME = process.env.ME || 'Bernard Uriza Orozco';
 
-if (!url) {
+if (isMain && !url) {
   console.error('uso: node thread-extract.mjs "<openUrl>" [--json]');
   process.exit(1);
 }
 
 // Auto-registrar el thread (thread_id -> group_id) para el debt-sweep: la openUrl
 // que recibimos YA trae el grupo, así el registro nunca se desactualiza.
-try {
-  const m = url.match(/\/groups\/(\d+)\/posts\/(\d+)/);
-  if (m) registerThread({ thread_id: m[2], group_id: m[1] });
-} catch {}
+if (isMain) {
+  try {
+    const m = url.match(/\/groups\/(\d+)\/posts\/(\d+)/);
+    if (m) registerThread({ thread_id: m[2], group_id: m[1] });
+  } catch {}
+}
 
 // El expand-all vive en fb-lib (`expandAllInPage`, SSOT — Art. 6). Estaba duplicado aquí y
 // en comment-prepare, y la copia de allá se quedó vieja: no cazaba el render
@@ -126,16 +130,102 @@ function walkArticles({ ME, postId }) {
   return { postOwner, rows, postReactionLabels, foreignDropped };
 }
 
-function normKey(r) {
-  // FB re-renderiza el subárbol enfocado en dos variantes (espaciada y pegada:
-  // "Frank Teuton Ants…" vs "Frank TeutonAnts…"). Quitar TODO whitespace colapsa
-  // ambas a la misma key → dedup real.
-  const head = r.text
-    .replace(/·\s*Follow/gi, '')
-    .replace(/\s+/g, '')
-    .slice(0, 90)
-    .toLowerCase();
+const AGE_TOKEN = String.raw`(?:\d+\s*(?:[smhdwy]|mo|yr)|a few seconds|just now)`;
+
+// Cuerpo del comentario sin el encabezado "Autor · 3h" ni el trailer "LikeReply[Share][N]":
+// la edad y el conteo de reacciones cambian entre pasadas y partían un mismo turno en dos.
+export function turnBody(r) {
+  let s = (r.text || '').replace(/·\s*Follow/gi, '').replace(/\s+/g, ' ').trim();
+  const author = (r.author || '').replace(/\s+/g, '');
+  if (author) {
+    let i = 0, j = 0;
+    while (i < s.length && j < author.length) {
+      if (/\s/.test(s[i])) { i++; continue; }
+      if (s[i] !== author[j]) break;
+      i++; j++;
+    }
+    if (j === author.length) s = s.slice(i);
+  }
+  s = s.replace(new RegExp(String.raw`^[^·]{0,40}·\s*${AGE_TOKEN}(?:\s*ago)?\s*`, 'i'), '');
+  s = s.replace(/(?:\s*(?:Edited|Top fan|Author))*\s*(?:\d+\s*[smhdwy]\s*)?Like\s*Reply\s*(?:Share)?\s*(?:Edited)?\s*\d*\s*$/i, '');
+  s = s.replace(/[.…]*\s*See more\s*$/i, '');
+  return s.trim();
+}
+
+export function normKey(r) {
+  const head = turnBody(r).replace(/\s+/g, '').slice(0, 60).toLowerCase();
   return (r.user_id || r.author) + '|' + (r.target || '') + '|' + head;
+}
+
+// Une las filas de N pasadas: orden de la pasada canónica (la 1ra), la copia más LARGA gana
+// (una truncada en "See more" pierde), y los turnos solo-anclados van tras su padre.
+export function mergeTurns(passRows) {
+  const out = [];
+  const idx = new Map();
+  passRows.forEach((rows, p) => {
+    for (const r of rows || []) {
+      const k = normKey(r);
+      if (idx.has(k)) {
+        const i = idx.get(k);
+        if (turnBody(r).length > turnBody(out[i]).length) out[i] = r;
+        continue;
+      }
+      let at = out.length;
+      if (p > 0 && r.target) {
+        let parent = -1;
+        for (let i = out.length - 1; i >= 0; i--) if (out[i].author === r.target) { parent = i; break; }
+        if (parent >= 0) {
+          at = parent + 1;
+          while (at < out.length && out[at].target === r.target && out[at].author !== r.target) at++;
+        }
+      }
+      out.splice(at, 0, r);
+      for (const [key, i] of idx) if (i >= at) idx.set(key, i + 1);
+      idx.set(k, at);
+    }
+  });
+  return out;
+}
+
+// Completitud POR pasada y OR de las fallas: una pasada sana no borra lo que otra dejó sin abrir.
+export function assessCompleteness(passes, turns, { unavailable = false } = {}) {
+  const perPass = passes.map(({ e = {}, rows = [] }) => {
+    const found = mergeTurns([rows]).filter((t) => t.target).length;
+    const missing = Math.max(0, (e.promisedReplies || 0) - found);
+    return { pending: e.pending || 0, truncated: e.truncatedRemaining || 0, promised: e.promisedReplies || 0, found, missing };
+  });
+  const max = (f) => perPass.reduce((m, x) => Math.max(m, x[f]), 0);
+  const sum = (f) => passes.reduce((n, { e = {} }) => n + (e[f] || 0), 0);
+  const foundReplies = turns.filter((t) => t.target).length;
+  const pendingMax = max('pending');
+  const truncatedMax = max('truncated');
+  const missingMax = max('missing');
+  const emptyExtraction = turns.length === 0 && !unavailable;
+  const failedPasses = perPass.filter((x) => x.pending > 0 || x.truncated > 0 || x.missing > 0).length;
+  const expand = {
+    passes: passes.length,
+    clickedSum: sum('clicked'),
+    roundsMax: passes.reduce((m, { e = {} }) => Math.max(m, e.rounds || 0), 0),
+    expandedTextSum: sum('expandedText'),
+    articlesMax: passes.reduce((m, { e = {} }) => Math.max(m, e.articles || 0), 0),
+    promisedRepliesMax: max('promised'),
+    pendingMax,
+    truncatedRemainingMax: truncatedMax,
+    perPass,
+  };
+  return {
+    complete: !(pendingMax > 0 || truncatedMax > 0 || missingMax > 0 || emptyExtraction),
+    expand,
+    completeness: {
+      pendingExpandButtons: pendingMax,
+      promisedReplies: max('promised'),
+      foundReplies,
+      missingReplies: missingMax,
+      truncatedComments: truncatedMax,
+      emptyExtraction,
+      failedPasses,
+    },
+  };
 }
 
 function buildDebt(turns, ME, postIsMine) {
@@ -252,37 +342,23 @@ async function main() {
     };
     const passes = [await pass(navUrl)];
     if (navUrl !== url) passes.push(await pass(url));
-    const exp = passes.reduce((a, { e }) => (a && a.articles >= e.articles ? a : e), null);
-    const walked = { ...passes[0].w, rows: passes.flatMap(({ w }) => w.rows), postOwner: passes.map(({ w }) => w.postOwner).find(Boolean) || '', postReactionLabels: passes.map(({ w }) => w.postReactionLabels).find((l) => l && l.length) || passes[0].w.postReactionLabels, foreignDropped: passes.reduce((n, { w }) => n + (w.foreignDropped || 0), 0) };
+    const walked = { rows: passes.flatMap(({ w }) => w.rows), postOwner: passes.map(({ w }) => w.postOwner).find(Boolean) || '', postReactionLabels: passes.map(({ w }) => w.postReactionLabels).find((l) => l && l.length) || passes[0].w.postReactionLabels, foreignDropped: passes.reduce((n, { w }) => n + (w.foreignDropped || 0), 0) };
     const unavailable = !walked.rows.length && await page.evaluate(() => /This content isn't available right now/i.test(document.body.innerText || ''));
-    const raw = walked.rows.map(({ reactionLabels, ...r }) => ({ ...r, reactions: parseReactionCount({ labels: reactionLabels, text: r.text }) }));
+    const withReactions = (rows) => rows.map(({ reactionLabels, ...r }) => ({ ...r, reactions: parseReactionCount({ labels: reactionLabels, text: r.text }) }));
+    const passRows = passes.map(({ w }) => withReactions(w.rows));
+    const raw = passRows.flat();
     const postReactions = sumPostReactionLabels(walked.postReactionLabels);
-    // dueño del post: lo detectado, o asumir MÍO (el pipeline corre sobre mis posts
-    // desde notificaciones) cuando no se pudo leer — y reportarlo (Art. 2).
     const postOwner = walked.postOwner || '';
     const postIsMine = postOwner ? postOwner === ME : true;
 
-    // dedup
-    const seen = new Set();
-    const turns = [];
-    for (const r of raw) {
-      const k = normKey(r);
-      if (seen.has(k)) continue;
-      seen.add(k);
-      turns.push(r);
-    }
+    const turns = mergeTurns(passRows);
 
     const debt = buildDebt(turns, ME, postIsMine);
     const unansweredRoots = buildUnansweredRoots(turns, ME, postIsMine);
-    // Completitud (Art. 2). Un total plausible sobre un hilo a medias fue el bug que hizo
-    // reportar deuda YA PAGADA (mine:0 cuando en realidad era mine:2). Tres formas de estar
-    // truncado, y cualquiera basta — ninguna es suficiente sola:
-    //   · quedaron botones de expandir sin abrir,
-    //   · FB prometió más réplicas de las que extrajimos (el testigo externo),
-    //   · quedaron cuerpos de comentario cortados en "See more" (el argumento del oponente).
-    const foundReplies = turns.filter((t) => t.target).length;
-    const missingReplies = Math.max(0, exp.promisedReplies - foundReplies);
-    const incomplete = exp.pending > 0 || missingReplies > 0 || exp.truncatedRemaining > 0;
+    const { complete, expand: exp, completeness } = assessCompleteness(
+      passes.map(({ e }, i) => ({ e, rows: passRows[i] })), turns, { unavailable: !!unavailable });
+    const incomplete = !complete;
+    const { foundReplies, missingReplies } = completeness;
     const undatedTurns = turns.filter((t) => ageMinutes(t.ageStr) === UNKNOWN_AGE).length;
     // TOPE DE FRESCURA: edad del turno más fresco del hilo. `stale:true` = todo el hilo
     // pasó MAX_AGE_DAYS; el caller (debt-sweep / el pipeline) no debe trabajarlo.
@@ -296,15 +372,8 @@ async function main() {
       postOwner: postOwner || '(no detectado — asumido mío)',
       postIsMine,
       expand: exp,
-      complete: !incomplete,
-      completeness: {
-        pendingExpandButtons: exp.pending,
-        promisedReplies: exp.promisedReplies,
-        foundReplies,
-        missingReplies,
-        truncatedComments: exp.truncatedRemaining,
-        undatedTurns,
-      },
+      complete,
+      completeness: { ...completeness, undatedTurns },
       counts: { rawArticles: raw.length, uniqueTurns: turns.length, foreignDropped: walked.foreignDropped },
       freshestTurnMin,
       stale,
@@ -322,15 +391,16 @@ async function main() {
     } else {
       console.log(`\n=== HILO (${turns.length} turnos únicos; ${raw.length} articles crudos) ===`);
       console.log(
-        `expand: ${exp.clicked} clicks en ${exp.rounds} rondas · ${exp.articles} articles` +
-          ` · réplicas ${foundReplies}/${exp.promisedReplies} prometidas` +
-          ` · ${exp.expandedText} "See more" abiertos${incomplete ? '' : ' · COMPLETO'}`
+        `expand (${exp.passes} pasadas): ${exp.clickedSum} clicks · ${exp.articlesMax} articles máx` +
+          ` · réplicas ${foundReplies}/${exp.promisedRepliesMax} prometidas` +
+          ` · ${exp.expandedTextSum} "See more" abiertos${incomplete ? '' : ' · COMPLETO'}`
       );
       if (incomplete) {
         const why = [
-          exp.pending > 0 ? `${exp.pending} sub-hilo(s) sin abrir` : null,
+          completeness.emptyExtraction ? 'cero turnos extraídos (el hilo no está marcado como no disponible)' : null,
+          exp.pendingMax > 0 ? `${exp.pendingMax} sub-hilo(s) sin abrir` : null,
           missingReplies > 0 ? `faltan ${missingReplies} réplicas que FB prometió` : null,
-          exp.truncatedRemaining > 0 ? `${exp.truncatedRemaining} comentario(s) cortados en "See more"` : null,
+          exp.truncatedRemainingMax > 0 ? `${exp.truncatedRemainingMax} comentario(s) cortados en "See more"` : null,
         ].filter(Boolean).join(' · ');
         console.log(`  ⚠️  EXTRACCIÓN INCOMPLETA (${why}). La deuda de abajo NO es confiable — re-corré o confirmá en vivo (Art. 2).`);
       }
@@ -372,7 +442,9 @@ async function main() {
   }
 }
 
-main().catch((e) => {
-  console.error('thread-extract FALLO:', e.message);
-  process.exit(1);
-});
+if (isMain) {
+  main().catch((e) => {
+    console.error('thread-extract FALLO:', e.message);
+    process.exit(1);
+  });
+}

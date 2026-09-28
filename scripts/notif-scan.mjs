@@ -1,4 +1,7 @@
-import { openScratchPage, ageMinutes, fmtAge, MAX_AGE_DAYS, isStaleMinutes } from './fb-lib.mjs';
+import { pathToFileURL } from 'url';
+import { openScratchPage, notifAgeMinutes, fmtAge, MAX_AGE_DAYS, isStaleMinutes } from './fb-lib.mjs';
+
+const isMain = !!process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 
 const NOTIF_URL = 'https://www.facebook.com/notifications';
 const asJson = process.argv.includes('--json');
@@ -69,12 +72,13 @@ function extractInPage() {
       href: a.href,
       openUrl,
       text: txt.slice(0, 160),
+      ageText: txt,
     });
   }
   return out;
 }
 
-function group(items) {
+export function group(items) {
   const security = items.filter((i) => i.notif_t === 'approve_from_another_device');
   const rest = items.filter((i) => i.notif_t !== 'approve_from_another_device');
   // RUIDO no-deuda: notifs sin post NI comment que abrir (page_user_activity,
@@ -94,9 +98,10 @@ function group(items) {
   const allGroups = [...byKey.values()].map((g) => {
     const tiers = g.notifs.map((n) => WEIGHT[n.notif_t]?.tier || 'bajo');
     const tier = tiers.includes('alto') ? 'alto' : 'bajo';
-    const freshest = Math.min(...g.notifs.map((n) => ageMinutes(n.text)));
+    const ageOf = (n) => notifAgeMinutes(n.ageText ?? n.text);
+    const freshest = Math.min(...g.notifs.map(ageOf));
     const hasReplyToReply = g.notifs.some((n) => n.reply_comment_id);
-    const sorted = g.notifs.sort((a, b) => ageMinutes(a.text) - ageMinutes(b.text));
+    const sorted = g.notifs.sort((a, b) => ageOf(a) - ageOf(b));
     const headline = sorted[0].text;
     const openUrl = sorted[0].openUrl; // abrir en la notif más fresca del hilo
     return { ...g, tier, freshestMin: freshest, hasReplyToReply, headline, openUrl };
@@ -197,7 +202,9 @@ async function main() {
   }
 }
 
-main().catch((e) => {
-  console.error('notif-scan FALLO:', e.message);
-  process.exit(1);
-});
+if (isMain) {
+  main().catch((e) => {
+    console.error('notif-scan FALLO:', e.message);
+    process.exit(1);
+  });
+}

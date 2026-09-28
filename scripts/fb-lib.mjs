@@ -81,6 +81,27 @@ export function ageMinutes(text) {
   return +short[1] * SHORT_MINUTES[short[2]];
 }
 
+const NOTIF_AGE_TOKEN = new RegExp(
+  [
+    String.raw`\ba few seconds ago\b`,
+    String.raw`\bjust now\b`,
+    String.raw`\babout an hour ago\b`,
+    String.raw`\ban?\s+(?:minute|hour|day|week|month|year)\s+ago\b`,
+    String.raw`\b\d+\s*(?:second|minute|hour|day|week|month|year)s?\s+ago\b`,
+    String.raw`(?<![\w.,])\d+\s*[mhdwy](?![\w])`,
+  ].join('|'),
+  'gi',
+);
+
+// Edad de una NOTIFICACIÓN: FB pone la edad AL FINAL ("…\" 29m·1 Reaction", "… 10h"); el
+// primer token del texto puede vivir dentro del comentario citado ("vegan for a year 2h").
+export function notifAgeMinutes(text) {
+  const matches = [...(text || '').matchAll(NOTIF_AGE_TOKEN)];
+  if (!matches.length) return UNKNOWN_AGE;
+  const last = matches[matches.length - 1][0];
+  return /just now/i.test(last) ? 0 : ageMinutes(last);
+}
+
 export function fmtAge(min) {
   if (min === UNKNOWN_AGE) return '?';
   if (min < 60) return `${min}m`;
