@@ -30,6 +30,14 @@ function assertVocab(entity, kind = 'actor') {
   if (violations.length) throw new Error(violations.join('\n'));
 }
 
+export function deriveActorsKnown(actors, tactics) {
+  return tactics.map(t => ({ ...t, actors_known: actors.filter(a => (a.tactics ?? []).includes(t.id)).map(a => a.user_id) }));
+}
+
+export function syncTacticActors(actors = readActors()) {
+  writeJsonAtomic(TACTICS_PATH, deriveActorsKnown(actors, readTactics()));
+}
+
 function syncThreads(actor) {
   const threads = new Set(actor.threads ?? []);
   for (const i of actor.interactions ?? []) if (i.thread_id) threads.add(i.thread_id);
@@ -105,6 +113,7 @@ export function upsertActor(actor) {
   if (idx >= 0) actors[idx] = merged;
   else actors.push(merged);
   writeJsonAtomic(ACTORS_PATH, actors);
+  syncTacticActors(actors);
   return merged;
 }
 

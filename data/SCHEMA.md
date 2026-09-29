@@ -5,8 +5,8 @@ escritos vía `scripts/db.mjs` (ESM, escritura atómica) y validados por
 `scripts/validate-data.mjs` (debe quedar verde — `node scripts/validate-data.mjs`).
 
 Las llaves de cruce: un actor referencia tácticas por `tactics[]`; una táctica
-lista de vuelta a sus actores por `actors_known[]` (consistencia bidireccional,
-chequeada); un framework contrarresta tácticas por `related_tactics[]`. La llave
+lista de vuelta a sus actores por `actors_known[]`, que es DERIVADO de `actor.tactics`
+(lo regenera `db.syncTacticActors()` en cada `upsertActor`; nunca se edita a mano); un framework contrarresta tácticas por `related_tactics[]`. La llave
 dura de un actor es `user_id` (el nombre se repite, el id no).
 
 ---
@@ -52,7 +52,7 @@ actores y frameworks referencian.
 | `canonical_counter` | string | El contra-movimiento de referencia. | sí |
 | `register` | string | Registro con el que se contrarresta: `filo` / `compasivo`. | sí |
 | `what_not_to_do` | string | El error típico al enfrentarla (el pantano a evitar). | sí |
-| `actors_known` | string[] | `user_id` de actores que la usan. Cada uno debe existir Y listar esta táctica de vuelta. | sí (validado: bidireccional) |
+| `actors_known` | string[] | `user_id` de actores que la usan. **Derivado** de `actor.tactics` por `db.syncTacticActors()`; se conserva materializado solo porque `backend/` lo lee. | sí (validado: igual a la derivación) |
 | `fallacy_type_id` | string \| null | Id de falacia del backend (`appeal_to_nature`, `ad_hominem`, …) o `null` si no mapea. | sí (validado contra lista conocida si no es null) |
 
 ---

@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { readActors, readTactics, readFrameworks, readVocab, vocabViolations } from './db.mjs';
+import { readActors, readTactics, readFrameworks, readVocab, vocabViolations, deriveActorsKnown } from './db.mjs';
 import { dossierFilenames, GENERATED_MARK } from './gen-dossiers.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -23,13 +23,12 @@ for (const a of actors) {
   }
 }
 
-// 2. No tactic claims an actor who doesn't list it back (bidirectional consistency)
-const byId = Object.fromEntries(actors.map(a => [a.user_id, a]));
+// 2. tactic.actors_known is derived from actor.tactics (db.syncTacticActors); any drift is an error
+const derived = Object.fromEntries(deriveActorsKnown(actors, tactics).map(t => [t.id, t.actors_known]));
 for (const t of tactics) {
-  for (const uid of t.actors_known) {
-    const a = byId[uid];
-    if (!a) errors.push(`tactic "${t.id}" claims unknown actor user_id "${uid}"`);
-    else if (!a.tactics.includes(t.id)) errors.push(`tactic "${t.id}" claims actor "${a.name}" but actor does not list it`);
+  const want = derived[t.id];
+  if (JSON.stringify(t.actors_known ?? []) !== JSON.stringify(want)) {
+    errors.push(`tactic "${t.id}" actors_known drifted from actor.tactics (${(t.actors_known ?? []).length} vs ${want.length}); run syncTacticActors() from scripts/db.mjs, never hand-edit it`);
   }
 }
 

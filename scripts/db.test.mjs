@@ -11,6 +11,7 @@ import {
   getFrameworksByTactic,
   readVocab,
   vocabViolations,
+  deriveActorsKnown,
 } from './db.mjs';
 
 const actors = readActors();
@@ -187,4 +188,9 @@ test('every vocab value that feeds actor-heat carries a numeric heat', () => {
 test('every framework classification is inside data/vocab.json', () => {
   const vocab = readVocab();
   assert.deepEqual(frameworks.flatMap(f => vocabViolations(f, vocab, 'framework')), []);
+});
+
+test('tactic.actors_known is exactly what actor.tactics derives', () => {
+  const derived = Object.fromEntries(deriveActorsKnown(actors, tactics).map(t => [t.id, t.actors_known]));
+  for (const t of tactics) assert.deepEqual(t.actors_known, derived[t.id], t.id);
 });

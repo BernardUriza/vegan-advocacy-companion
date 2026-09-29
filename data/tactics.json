@@ -9,10 +9,18 @@
     "what_not_to_do": "Don't debate whether humans are omnivores (they are). Don't attack the biology claim. Attack the is-ought leap. Don't get dragged into academically DEFINING 'natural' — the point is it's both incoherent (cities and consciousness are 'natural' too; the natural/artificial line is arbitrary) AND morally irrelevant. Keep the axis on interests/sentience, never on nature's supposed design (teleology — Darwin killed that). Anchors to [[sentiocentrism-not-biocentrism]]: good/bad = satisfying/frustrating the interests of a sentient subject.",
     "source": "https://respuestasveganas.org/lo-natural-es-bueno/",
     "actors_known": [
-      "100004284907337",
       "1338583394",
-      "1277660735",
+      "100004284907337",
       "100000650843692",
+      "1277660735",
+      "100002066280343",
+      "100000755924068",
+      "100003780189781",
+      "100003979186761",
+      "604363060",
+      "832080524",
+      "100034907401951",
+      "100007626876163",
       "100089071227800"
     ],
     "fallacy_type_id": "appeal_to_nature"
@@ -26,7 +34,8 @@
     "register": "filo",
     "what_not_to_do": "Don't chase each new goalpost. Don't treat each shift as a new debate. Naming the move is the move.",
     "actors_known": [
-      "1338583394"
+      "1338583394",
+      "100000050072653"
     ],
     "fallacy_type_id": null
   },
@@ -39,8 +48,19 @@
     "register": "filo",
     "what_not_to_do": "Don't write a philosophy essay on metaethics. One incisive observation, then leave it.",
     "actors_known": [
+      "1338583394",
       "100081126484836",
-      "669260908"
+      "669260908",
+      "100000650843692",
+      "813709465",
+      "100011355404997",
+      "100000418598784",
+      "100003886247108",
+      "61581270521234",
+      "965593289816591",
+      "1679128970037236",
+      "100034907401951",
+      "100007626876163"
     ],
     "fallacy_type_id": null
   },
@@ -53,7 +73,12 @@
     "register": "filo",
     "what_not_to_do": "Don't accept the frame that veganism is the 'fringe' that needs to justify itself. The default is not causing harm; exploitation is the departure from default.",
     "actors_known": [
-      "1338583394"
+      "1338583394",
+      "100002066280343",
+      "100003644215699",
+      "61581270521234",
+      "61563003837147",
+      "100004662660380"
     ],
     "fallacy_type_id": null
   },
@@ -66,7 +91,10 @@
     "register": "filo",
     "what_not_to_do": "Don't just list other 'normal but wrong' practices — pick one sharp example. Don't let the conversation drift to what's culturally relative.",
     "actors_known": [
-      "1338583394"
+      "1338583394",
+      "1640580380575005",
+      "100007626876163",
+      "100008695478463"
     ],
     "fallacy_type_id": "appeal_to_tradition"
   },
@@ -80,6 +108,11 @@
     "what_not_to_do": "Don't argue impact numbers, elasticity or how many animals a vegan 'saves'. Don't bite crop-death counts. Don't concede that the standard is some quantity of harm; the axis is the property relation, harm only in passing.",
     "actors_known": [
       "100018422793817",
+      "100000650843692",
+      "100018541819048",
+      "696225646",
+      "100021775394973",
+      "61550822695503",
       "100046325085471"
     ],
     "fallacy_type_id": null
@@ -93,7 +126,12 @@
     "register": "filo",
     "what_not_to_do": "Never make a list when they ask you to list. Never enumerate when they say 'be specific'. That's the trap — you enumerate, they pick one to attack.",
     "actors_known": [
-      "100018422793817"
+      "100018422793817",
+      "100000050072653",
+      "100002066280343",
+      "100035105043255",
+      "61563003837147",
+      "1198831097"
     ],
     "fallacy_type_id": null
   },
@@ -106,7 +144,11 @@
     "register": "filo",
     "what_not_to_do": "Don't debate semantics of 'exploitation' or 'benefit'. Don't use 'consent' as the only counter (easily deflected to infants/pets). Expose the structure, not the words.",
     "actors_known": [
-      "1037777423"
+      "1037777423",
+      "100003644215699",
+      "61581270521234",
+      "696225646",
+      "100003780189781"
     ],
     "fallacy_type_id": null
   },
@@ -119,7 +161,13 @@
     "register": "filo",
     "what_not_to_do": "Don't counter with your own data dump. Don't debate which dataset is better. Expose that they're measuring popularity, not moral justifiability.",
     "actors_known": [
-      "1037777423"
+      "100018422793817",
+      "1037777423",
+      "813709465",
+      "100010556977700",
+      "567273792",
+      "100003886247108",
+      "100003780189781"
     ],
     "fallacy_type_id": null
   },
@@ -132,7 +180,15 @@
     "register": "filo",
     "what_not_to_do": "Don't make factory farming the centerpiece of the argument — they'll pivot to 'I buy humane/pasture-raised'. The welfare critique works against factory farming; the moral frame works against all animal use.",
     "actors_known": [
-      "100004284907337"
+      "100004284907337",
+      "100018541819048",
+      "567273792",
+      "61581270521234",
+      "100000755924068",
+      "1640580380575005",
+      "1350950105",
+      "832080524",
+      "61571628458052"
     ],
     "fallacy_type_id": null
   },
@@ -145,7 +201,11 @@
     "register": "filo",
     "what_not_to_do": "Don't get dragged into defending your track record on human rights. Don't make it about priorities. It's a deflection — name it briefly and return.",
     "actors_known": [
-      "100004284907337"
+      "100004284907337",
+      "100018541819048",
+      "1742478160",
+      "100001248981179",
+      "618672476"
     ],
     "fallacy_type_id": null
   },
@@ -158,8 +218,19 @@
     "register": "filo",
     "what_not_to_do": "Don't frame the answer in terms of harm/unnecessary harm/least harm or 'byproduct vs purpose' — that's welfarism and it loses the lurker. Don't concede 'unnecessary harm everywhere / in crops too' as the axis. Don't compete on body-count. The axis is property/slavery (a possessed subject), not how much or why something is harmed.",
     "actors_known": [
+      "100018422793817",
       "100000050072653",
-      "100018422793817"
+      "100000650843692",
+      "61580416850698",
+      "567273792",
+      "100003886247108",
+      "61581270521234",
+      "100035105043255",
+      "100001131036088",
+      "100000547865199",
+      "1742478160",
+      "100021775394973",
+      "61550822695503"
     ],
     "fallacy_type_id": "false_equivalence"
   },
@@ -172,8 +243,13 @@
     "register": "filo",
     "what_not_to_do": "Don't argue that ants and aphids is irrelevant (they'll say 'examples from nature justify the pattern'). Argue that the biology terms they're using don't describe what farming actually is.",
     "actors_known": [
+      "1037777423",
       "100000650843692",
-      "1037777423"
+      "100018541819048",
+      "1350950105",
+      "1448957098",
+      "100003979186761",
+      "61571628458052"
     ],
     "fallacy_type_id": null
   },
@@ -186,8 +262,12 @@
     "register": "filo",
     "what_not_to_do": "Don't accept the framing that 'human life is worth more' needs no argument. Ask for the criterion.",
     "actors_known": [
+      "1338583394",
       "100004284907337",
-      "1338583394"
+      "100011355404997",
+      "100002066280343",
+      "61581270521234",
+      "100054560360296"
     ],
     "fallacy_type_id": null
   },
@@ -200,7 +280,11 @@
     "register": "filo",
     "what_not_to_do": "Don't get into libertarian philosophy. One sentence that breaks the conflation, then leave it. Low return.",
     "actors_known": [
-      "669260908"
+      "669260908",
+      "100011355404997",
+      "100003644215699",
+      "100003886247108",
+      "100034907401951"
     ],
     "fallacy_type_id": null
   },
@@ -213,9 +297,10 @@
     "register": "filo",
     "what_not_to_do": "Don't dispute the biology. Dispute the inference from biology to ethics.",
     "actors_known": [
-      "100004284907337",
       "1338583394",
-      "1277660735"
+      "100004284907337",
+      "1277660735",
+      "100002066280343"
     ],
     "fallacy_type_id": "appeal_to_nature"
   },
@@ -228,7 +313,19 @@
     "register": "filo",
     "what_not_to_do": "Don't argue that animals matter more than humans. Argue that the hierarchy needs a justification that isn't circular.",
     "actors_known": [
-      "100004284907337"
+      "100004284907337",
+      "100011355404997",
+      "61581270521234",
+      "100000755924068",
+      "100000547865199",
+      "100081660349433",
+      "100054560360296",
+      "100003780189781",
+      "854405343",
+      "100044887491107",
+      "832080524",
+      "100007626876163",
+      "100001248981179"
     ],
     "fallacy_type_id": null
   },
@@ -254,7 +351,9 @@
     "register": "filo",
     "what_not_to_do": "Don't get into a data fight about market trends. Don't try to prove veganism is growing. The meta-move is exposing that they're measuring popularity, not ethics.",
     "actors_known": [
-      "100011355404997"
+      "100011355404997",
+      "100010556977700",
+      "604363060"
     ],
     "fallacy_type_id": "appeal_to_tradition"
   },
@@ -267,7 +366,8 @@
     "register": "filo",
     "what_not_to_do": "Don't defend Beyond Meat specifically. Expose the composition fallacy.",
     "actors_known": [
-      "100011355404997"
+      "100011355404997",
+      "100010556977700"
     ],
     "fallacy_type_id": null
   },
@@ -280,7 +380,8 @@
     "register": "filo",
     "what_not_to_do": "Don't defend veganism as 'not a belief system'. Argue that even if it were, the ethical arguments still need a response.",
     "actors_known": [
-      "1338583394"
+      "1338583394",
+      "100000418598784"
     ],
     "fallacy_type_id": null
   },
@@ -293,7 +394,23 @@
     "register": "filo",
     "what_not_to_do": "Never insult back. Never get defensive about being called a cult member. The lurker sees who is composed and who is not — that's the entire value of the exchange.",
     "actors_known": [
-      "100011355404997"
+      "100000650843692",
+      "1277660735",
+      "100011355404997",
+      "100010556977700",
+      "100002202037155",
+      "100002066280343",
+      "100000418598784",
+      "100003886247108",
+      "100001131036088",
+      "100003780189781",
+      "100024818371314",
+      "1742478160",
+      "100034907401951",
+      "100007626876163",
+      "100021775394973",
+      "61550822695503",
+      "618672476"
     ],
     "fallacy_type_id": "ad_hominem"
   },
@@ -306,7 +423,9 @@
     "register": "compasivo",
     "what_not_to_do": "Don't dispute the experience. Don't debate whether their specific case was caused by the diet. Honor the story, then make the category distinction.",
     "actors_known": [
-      "813709465"
+      "813709465",
+      "567273792",
+      "100008695478463"
     ],
     "fallacy_type_id": null
   },
@@ -319,7 +438,8 @@
     "register": "filo",
     "what_not_to_do": "Don't argue veganism is actually popular. Expose that popularity isn't an argument.",
     "actors_known": [
-      "100011355404997"
+      "100011355404997",
+      "100034907401951"
     ],
     "fallacy_type_id": null
   },
@@ -332,6 +452,7 @@
     "register": "filo",
     "what_not_to_do": "Don't get drawn into defending specific future dates. Defend the existence of the trend, not the precision of the year.",
     "actors_known": [
+      "100018422793817",
       "100011355404997"
     ],
     "fallacy_type_id": null
@@ -345,7 +466,9 @@
     "register": "filo",
     "what_not_to_do": "Don’t get dragged into sci-fi logistics of a 100%-vegan world. Name that the endpoint (fewer animals bred to be killed) is the point, then return to the present moral question.",
     "actors_known": [
-      "813709465"
+      "100000050072653",
+      "813709465",
+      "904005715"
     ],
     "fallacy_type_id": null
   },
@@ -358,7 +481,9 @@
     "register": "wit",
     "what_not_to_do": "Never write a paragraph defending that you are not AI — that is the trap; the more polished the rebuttal, the more it looks generated. Do not get defensive or earnest. Keep it to one or two human sentences and point at the empty substance.",
     "actors_known": [
-      "100002202037155"
+      "100002202037155",
+      "100002066280343",
+      "100024818371314"
     ],
     "fallacy_type_id": "ad_hominem"
   },
@@ -371,6 +496,7 @@
     "register": "compasivo",
     "what_not_to_do": "Don’t dismiss the taste or the allergy as trivial — that reads as contempt to the lurker and to a good-faith person. Don’t argue that the alternatives actually taste great. Concede the constraint, then move the weight to the animal, gently.",
     "actors_known": [
+      "1277660735",
       "100035105043255"
     ],
     "fallacy_type_id": null
@@ -384,8 +510,8 @@
     "register": "filo",
     "what_not_to_do": "Don't argue everyone MUST feel disturbed — that hands them the subjectivity point. Grant that reactions vary, then press that variance doesn't dissolve the question.",
     "actors_known": [
-      "100000755924068",
-      "100011355404997"
+      "100011355404997",
+      "100000755924068"
     ],
     "fallacy_type_id": null
   },
@@ -438,6 +564,7 @@
     "what_not_to_do": "Don't accept the 'the environment OR the animal' framing — animalism supports environmental care; reject the dichotomy. Don't get pulled into ecology/population science. Don't argue the species/ecosystem doesn't matter at all — argue it isn't a SUBJECT, so it can't bear the interest that grounds the wrong. Keep the unit on the concrete individual who feels. Anchors to [[sentiocentrism-not-biocentrism]]: the criterion is a sentient subject's interests, and the bearer is the individual, never the collective.",
     "source": "https://respuestasveganas.org/veganismo-ecologismo/",
     "actors_known": [
+      "1338583394",
       "100003780189781"
     ],
     "fallacy_type_id": "category_error"
@@ -489,6 +616,7 @@
     "canonical_counter": "No huir al relativismo ni fingir acceso a hechos morales. Tres piezas: (1) La consistencia invocada no es interna-abstracta sino consistencia con los juicios que el interlocutor YA sostiene — eso no prueba verdad objetiva, pero SI elimina candidatos, que es todo lo que hace falta. (2) Simetria: el estandar que exige aplica igual a SU fundamento; si \"es solo una intuicion\" desarma mi posicion, desarma la suya. No para empatar, sino para mostrar que la demanda no puede ser unilateral. (3) Responder la pregunta de falsabilidad DE FRENTE, dando falsadores reales: si se mostrara que no hay nadie ahi (ningun punto de vista, ninguna experiencia); si se identificara un rasgo que vuelve licita la propiedad sobre un sujeto y estuvieramos dispuestos a aceptar sus consecuencias sobre los humanos que carecen de el; si la tutela fiduciaria y la propiedad no difirieran estructuralmente. Dar falsadores prueba que no es dogma y es lo mas fuerte que se puede hacer ante un interlocutor de buena fe.",
     "what_not_to_do": "NO responder \"toda etica es subjetiva\" (regala el marco al relativismo). NO reclamar acceso privilegiado a hechos morales que no se pueden mostrar. NO usar la simetria como tu-quoque para empatar y salir corriendo — se nombra y se sigue respondiendo. NO negarse a dar falsadores: la negativa confirma que es dogma. NO redactar el eje como dano. NO citar filosofos por nombre ni decir \"equilibrio reflexivo\": suena a profesor y pierde al lurker.",
     "actors_known": [
+      "1037777423",
       "1198831097"
     ],
     "fallacy_type_id": null
@@ -515,7 +643,8 @@
     "register": "filo",
     "what_not_to_do": "Don't argue that animals should have NO legal status or that nobody should be responsible — that hands her the 'so who feeds them?' point. Don't litigate animal-law reform or legal personhood as a policy. Don't accept 'protection' as the axis (welfarism: how well the owned are treated). Keep it to title vs duty, one example (child/ward), and back to the question.",
     "actors_known": [
-      "100011355404997"
+      "100011355404997",
+      "100018541819048"
     ],
     "fallacy_type_id": "false_equivalence"
   },
@@ -528,7 +657,8 @@
     "register": "compasivo",
     "what_not_to_do": "Don't mock or pounce on the answer — he answered in good faith this turn, and the lurker must see it respected. Don't turn it into a necessity/least-damage calculus (welfarist axis). Don't make the slavery parallel explicit or equate subjects; at most point at the structure (the owner's gain has always been the stated reason). One round, then leave the question standing.",
     "actors_known": [
-      "100018422793817"
+      "100018422793817",
+      "100008695478463"
     ],
     "fallacy_type_id": null
   },
@@ -554,8 +684,8 @@
     "register": "filo",
     "what_not_to_do": "Don't list a catalogue of formerly legal atrocities; one sharp example max, and any human-slavery parallel only by STRUCTURE (who writes the title), never equating the subjects. Don't argue legal technicalities or which jurisdictions protect animals. Don't concede that law and legitimacy are the same thing.",
     "actors_known": [
-      "100001248981179",
-      "61580416850698"
+      "61580416850698",
+      "100001248981179"
     ],
     "fallacy_type_id": null
   },
