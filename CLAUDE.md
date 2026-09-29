@@ -1,89 +1,68 @@
 # vegan-advocacy-companion
 
-## El pipeline de debate (4 etapas, engrasado)
+Pipeline para debatir en grupos veganos de Facebook ("Vegans V's Meat Eaters" y hermanos):
+de la notificación al reply publicado y verificado, escrito para el lector silencioso. Las
+reglas de `.claude/rules/` se cargan solas; este archivo es el mapa y no las repite.
 
-Flujo canónico para procesar la actividad de Facebook en los grupos de debate
-vegano — cada etapa con su GOLDEN PATH determinista (selectores, secuencias y
-gotchas ya pagados). Alto volumen, fricción cero:
+## El pipeline (cada etapa es una regla con su GOLDEN PATH)
 
-**0 [outcome-reflex]** (cerrar/re-juzgar el moat con LLM antes de trabajo nuevo) →
-**1 [notification-agrupation]** (agrupar por `post_id`) → **2 [thread-actor-dossier]**
-(perfilar actores, solo análisis) → **3 [coagent-advise]** (borrador del coagent)
-→ **4 [comment-post-and-verify]** (postear + verificar, irreversible, autorizado
-por jugada). La mecánica universal de inserción en editores ricos vive en el
-playbook (`chrome-devtools-contenteditable-input`).
+0 [outcome-reflex] re-juzga el moat con LLM → 1 [notification-agrupation] notifs, deuda del
+moat y scout → 2 [thread-actor-dossier] extraer y perfilar, solo análisis → 3 [coagent-advise]
+master en loop invertido a insult-gpt → 4 [comment-post-and-verify] style-gate, GO de lote,
+publicar y verificar. El atajo es `/vegan-pipeline`. Posts raíz propios: [root-post-publish].
+Eje y voz de todo lo que se escribe: [abolitionist-framing], [sentiocentrism-not-biocentrism],
+[reply-output-style]; defensas: [insult-seal-defense], [provenance-accusation-defense],
+[retreat-cycle-defense]. Mecánica transversal: [pipeline-freshness-cap].
 
-El estilo de los replies (humano, no robótico) lo gobierna
-[reply-output-style](.claude/rules/reply-output-style.md) — etapa 4 compara el
-borrador contra ese spec y reformula si suena a IA.
+**El firewall (Art. 4):** lo reversible se scriptea (scrapear, agrupar, expandir, preparar el
+draft en el composer SIN enviar). El juicio, el style-gate y el `Enter` que publica son de Claude
+con MCP, y solo con el GO explícito de Bernard, por jugada o por lote.
 
-## Scripts del pipeline (`scripts/`) — SSOT de automatización
+## Scripts (`scripts/`, detalle y flags en `scripts/CLAUDE.md`)
 
-Las partes **mecánicas y deterministas** (scrapear, agrupar, expandir, walk del
-árbol) están scripteadas con `playwright-core` + `connectOverCDP` al Chrome de
-debug (9333): colapsan ~6 round-trips del MCP en un `node`, sin quemar tokens.
-El **juicio** (qué jugada, prosa del dossier, master prompt), el **style-gate**, y
-el **acto irreversible** (el `Enter` que publica + su verificación histérica)
-NUNCA se scriptean — eso es de Claude + MCP + Bernard. La frontera es el firewall
-del Art. 4: lo **reversible** se scriptea (scrapear, agrupar, expandir, walk,
-**y preparar el draft en el composer SIN enviar**); el `Enter` y todo lo
-outward-facing se queda en Claude.
-
-| Script | Etapa | Qué hace | Lo invoca |
-|---|---|---|---|
-| `fb-lib.mjs` | — | **Lib canónica (Art. 6) — todo script la importa.** NO toca las tabs de Bernard: siempre abre tab nueva en el contexto logueado. Ver el mapeo método→caller abajo. | los demás scripts |
-| `notif-scan.mjs` | 1 | Scrapea notificaciones, agrupa por `post_id` real, separa el ruido de seguridad, ordena por deuda, y emite una **`openUrl` lista** por hilo. `--json` para pipear. | paso 0 de [notification-agrupation] |
-| `debt-sweep.mjs` | 1 (0.5) | **Deuda desde el MOAT, no desde FB.** El embudo de notificaciones es lossy (agrega/vence): la deuda real vive en `data/actors.json` (pending/goalpost). Itera esos `thread_id` (`getOpenDebtThreads`), reconstruye la openUrl vía `data/threads.json` (registro thread→group auto-poblado por `thread-extract`) y re-extrae en vivo reportando `owes:true`/`suspect` sin depender de que FB notifique. `freshestMin 99999` = edad sin fechar (candidata, no fresca). **Tope de frescura 7d** ([pipeline-freshness-cap]): los hilos `stale` se listan como VIEJOS y NO se abren. | paso 0.5 de [notification-agrupation] |
-| `scout-feeds.mjs` | 1 (0.7) | **Hilos AJENOS, no solo los tuyos.** Barre el feed cronológico de los grupos del registro (`destinatarios-canales.txt`), 1 carga por grupo, solo lectura (el único "click" es el hover que resuelve el permalink y la fecha), y surfacea posts de otros con < 48h y actividad donde Bernard NO ha comentado ni están en el moat, ordenados por reacciones/comentarios/frescura + pista léxica de táctica. `--json` para pipear. `comments` es PISO (solo los previews que FB pinta); `reactions` es la señal fiable. Lógica pura en `scout.mjs`. | paso 0.7 de [notification-agrupation] |
-| `thread-extract.mjs` | 2 | Toma la `openUrl`, expande TODO, walk de `div[role=article]`, dedup de los 2 renders de FB, árbol padre→hijo + **tabla de deuda** determinista. `--json` alimenta dossiers/transcript. | paso 0 de [thread-actor-dossier] |
-| `lurker-sweep.mjs` | 0 (moat) | **La señal del LURKER.** Re-extrae los hilos frescos del moat (tope 7d, los viejos no se abren), liga cada reply MÍO a su interacción vía los drafts consultados (`.coagent/<post_id>.consult.json`, match por cabeza del draft; sin match único no escribe) y guarda `lurker_reactions`/`lurker_checked_at` con `db.updateInteractionLurker`. `framework-stats` / `getFrameworkWinRate().lurker` lo agregan por framework. `--dry-run`, `--json`. | tras el reflex, en lote |
-| `moat-link-drafts.mjs` | 0 (moat) | **Liga draft→interacción por `draft_sha`.** El lurker-sweep solo puede medir un reply si sabe a QUÉ interacción pertenece; con dos interacciones del mismo actor en el mismo hilo la heurística de fecha es ambigua. Desde 2026-09-28 `appendInteraction` lleva `draft_sha` (el sha del `--body-file` que `finalize` estampó) y `finalize` exige `--author`. Este script es el backfill: propone por autor+hilo+día, desempata por orden cronológico, ignora entradas superseded (sha ≠ archivo) y versiones no posteadas (contra `tx-<id>.json` fresco); `--since YYYY-MM-DD`, `--apply`. | al cerrar un lote si quedaron interacciones sin `draft_sha` |
-| `comment-prepare.mjs` | 4 (prep) | **PREPARACIÓN reversible:** abre el hilo, localiza el comentario por `--author`+`--anchor`, abre su Reply, pega el `--body-file` como **reply etiquetada** (respeta la auto-mención; gotcha anidado), opcionalmente adjunta una imagen (`--image <png>`, `setInputFiles` sobre el `input[type=file]` del composer; el preview vive FUERA del `<form>`, se verifica por el botón "Remove photo" del mismo contenedor), verifica async — y **NO envía**. Deja la tab **viva** con el draft y reporta el handoff. **`--mode root`** (comentario raíz en un post ajeno que ES el argumento, típico del scout): `--author` = autor del post, aborta si el post es de otro, pega en el composer "Comment as …" fuera de todo comentario (vacío o no lo toca). | paso 0 de [comment-post-and-verify] |
-| `receipt-shots.mjs` + `receipt-collage.py` | 2/3 (recibos) | **Recibos de procedencia en imagen.** Ante "nadie hizo ese argumento", `receipt-shots` abre cada hilo (tab efímera), expande, localiza el comentario por autor + frase, envuelve la frase en `<mark>` amarillo y captura la burbuja (viewport + recorte por `getBoundingClientRect`; el element-screenshot de Playwright salía desplazado en el diálogo de FB). `receipt-collage.py` apila los PNG con caption grupo·fecha. El collage va como `--image` de `comment-prepare`. Spec JSON por lote en `.coagent/receipts/<lote>/spec.json`. | [provenance-accusation-defense] |
-| `reflex.mjs` | 0 | **emit/apply del reflex LLM del moat.** `emit` arma packets (arco verbatim + interacciones con framework) de `.coagent/tx-*.json`; Claude juzga el `outcome` (incl. el `conceded` que keywords pierde) + nota por framework → `.coagent/reflex-verdicts.json`; el arco de cada packet es solo del actor (`actorArc`: sus turnos, los tuyos a él y las respuestas que recibe); `apply` los escribe vía `db.updateInteractionOutcome` (puede sobrescribir) y deja el marcador `.coagent/reflex-applied.json`; el gate de procedencia **bloquea el staging** mientras los packets sean más nuevos que ese marcador (el emit no es la etapa). El JUICIO es del LLM, la mecánica del script. | etapa 0 de [outcome-reflex] |
-| `seed-coagent.mjs` | 3 | Recibo de consulta (`seed`/`finalize`, lo exigen los hooks de procedencia) y **transporte**: `insert` pega el master YA gateado (sha del recibo) en el composer de ChatGPT por trozos, verifica por arreglo de líneas y **NO envía** (tab viva); `read` lee la respuesta por estabilidad. Lógica en `coagent-transport.mjs`. | [coagent-advise] |
-| `close-outcomes.mjs` | 0 (fallback) | Cierre por **keywords** + guard de frescura (silent solo si la reply-ancla > umbral). Fallback offline del reflex LLM; lo sobrescribe cuando el keyword se equivocó. **`--stale [--dry-run]`**: cierra como `silent` la deuda del moat más vieja que el tope (sin transcript), guardando `closed_from`; se corre al cerrar cada lote ([pipeline-freshness-cap] ley 5). | [outcome-reflex] / OUTCOME-LOOP.md / cierre de lote |
-
-**`fb-lib.mjs` — método → caller (todo método tiene dueño; Art. 6):**
-
-| Método | Qué entrega | Callers |
+| Etapa | Script | Para qué |
 |---|---|---|
-| `openScratchPage()` | tab **efímera** (`done()` la cierra) — para leer/scrapear | `notif-scan.mjs`, `thread-extract.mjs`, `seed-coagent.mjs read` |
-| `openPersistentPage()` | tab **persistente** (`detach()` suelta el CDP, la tab sigue viva) — para dejar el draft cargado y que Claude+MCP haga el `Enter` | `comment-prepare.mjs`, `seed-coagent.mjs insert` |
-| `ageMinutes(text)` | minutos desde "15m"/"3h" **y** "15 minutes ago"/"3 hours ago" (ambos renders de FB) | `thread-extract.mjs` (tabla de deuda) |
-| `fmtAge(min)` | minutos → "27m"/"4h" para display | `thread-extract.mjs` |
-| `CDP_URL` | endpoint del Chrome de debug (`9333`, override `CDP_URL`) | los tres scripts |
+| 0 | `reflex.mjs emit` / `apply` | packets por actor → verdicts de Claude → escribe outcomes + marcador |
+| 0 | `close-outcomes.mjs --stale` | cierra como `silent` la deuda > 7d; correr al cerrar cada lote |
+| 0 | `lurker-sweep.mjs`, `moat-link-drafts.mjs` | reacciones del lurker por reply; backfill de `draft_sha` |
+| 1 | `notif-scan.mjs --json` | notifs agrupadas por `post_id` con `openUrl` |
+| 1 | `debt-sweep.mjs` · `scout-feeds.mjs --json` | deuda viva del moat · hilos ajenos < 48h |
+| 2 | `thread-extract.mjs "<url>" --json` | `root`, `turns[]`, `debt[]`; volcar a `.coagent/tx-<post_id>.json` |
+| 3 | `seed-gate.mjs` → `seed-coagent.mjs seed/insert/read/finalize` | gate del master, recibo, transporte a ChatGPT sin enviar, recibo del draft final |
+| 4 | `style-gate.mjs a.txt b.txt …` · `lint-prose.mjs` | gates de prosa por lote (cierres clonados incluidos) |
+| 4 | `comment-prepare.mjs … [--mode root] [--image]` | deja el reply o el raíz cargado en una tab viva, sin enviar |
+| — | `validate-data.mjs` · `gen-dossiers.mjs` | tras toda escritura al moat |
 
-**Handoff:** `notif-scan` → `openUrl` → `thread-extract` → (jugada decidida) →
-`comment-prepare` deja el draft en una tab viva → **Claude+MCP**: `list_pages` →
-`select_page` esa tab → re-leer el composer (Art. 2) → envío atómico con `DESTINO` + Enter sintético (`press_key Enter` bloqueado por hook)
-(irreversible, GO de Bernard) → verificación histérica `div[role=article]` +
-screenshot. Todos los scripts **en prueba**: si un hilo sale raro (render nuevo de
-FB, deuda que no cuadra, target no encontrado), caer al path MCP de la regla como
-confirmación/fallback. **Etapa 3 (coagent):** el juicio (componer el master) y el Send quedan en
-Claude+MCP; desde G.41 (2026-09-27) el transporte del master y la lectura de la
-respuesta son `seed-coagent.mjs insert`/`read`.
+Todos hablan con el Chrome de debug en **9333** por CDP (diagnóstico en `~/CLAUDE.md`). Tests:
+`node --test *.test.mjs` desde `scripts/`.
 
-## El iceberg del especismo (`iceberg/`)
+## Dónde vive cada cosa
 
-Página D3 que acomoda por niveles de profundidad lo que emerge de los grupos: nivel 0 = las
-frases verbatim, 1 = lo que presuponen, 2 = lo que se hace, 3 = cómo se defiende, 4 = cómo se
-reproduce, 5 = el fondo. **SSOT: `iceberg/data.js`**; `iceberg/moat.js` se genera con
-`node scripts/iceberg-build.mjs` (valida ids contra `data/tactics.json`/`data/frameworks.json`).
-Cada hilo procesado que enseñe algo nuevo deja un nodo ahí — ver `iceberg/README.md`.
+- `data/*.json` es el SSOT del moat (actores, tácticas, frameworks, hilos) y solo se escribe con
+  `scripts/db.mjs`. `analysis/actors/*.md` es vista generada: nunca a mano, y no se regenera si
+  otra sesión tiene cambios sin commitear ahí.
+- `.coagent/` es el estado de trabajo de cada lote: `tx-*.json`, masters, recibos
+  `<post_id>.consult.json`, drafts, respuestas del coagent, `receipts/` con screenshots.
+- `analysis/threads/` transcripts, `analysis/post-ideas/` semillas de posts raíz,
+  `analysis/frameworks/README.md` índice táctica → frameworks, `doctrine/` doctrina fundacional.
+- `iceberg/`: página D3 del iceberg del especismo; SSOT `iceberg/data.js`, `moat.js` se genera
+  con `node scripts/iceberg-build.mjs` (ver `iceberg/README.md`).
+- `.claude/destinatarios-canales.txt`: los únicos grupos donde se publica (lo llena Bernard).
+- `.claude/hooks/`: `coagent-provenance-gate` (staging sin recibo, reflex sin apply, cierre
+  clonado), `mcp-publish-gate` (paste por MCP sin draft consultado para ese post),
+  `pipeline-freshness-cap` (tope de edad).
+- Prototipo viejo, no es el producto: la extensión de Chrome (`manifest.json`, `background.js`,
+  `sidepanel/`, `content/`, `_locales/`) y `backend/` (Next.js). No se toca sin que Bernard lo pida.
 
-## Rules (`.claude/rules/`)
+## Gotchas que cuestan una vuelta
 
-- [outcome-reflex](.claude/rules/outcome-reflex.md) — **etapa cero** (corre SIEMPRE primero): el reflex de "qué tenemos hasta ahora". Re-juzga el `outcome` de cada interacción con **juicio de LLM** (no keywords), marca el `conceded` que el heurístico pierde (vive a veces en el `their_move`), y enriquece nota por framework. Mecánica al script (`reflex.mjs` emit/apply), juicio al LLM. El moat resultante mapea qué framework gana oro y en qué interlocutor.
-- [notification-agrupation](.claude/rules/notification-agrupation.md) — etapa uno (**arranca por `scripts/notif-scan.mjs`**): agrupar notificaciones por hilo (`post_id` real), separar el ruido de seguridad (`approve_from_another_device`), ponderar por deuda real (menciones/comentarios > reacciones), emitir la `openUrl` del hilo.
-- [thread-actor-dossier](.claude/rules/thread-actor-dossier.md) — etapa dos (**arranca por `scripts/thread-extract.mjs`**): expandir el hilo completo, extraer árbol + tabla de deuda, y perfilar a cada actor en un dossier duro persistente (`analysis/actors/<slug>.md`). Solo análisis, no se responde.
-- [coagent-advise](.claude/rules/coagent-advise.md) — etapa tres: seedear al coagent orquestador un master prompt denso con el tablero + la jugada de mayor palanca, para que la stress-testee y redacte el borrador. Claude no postea; el botón de enviar es de Bernard.
-- [comment-post-and-verify](.claude/rules/comment-post-and-verify.md) — etapa cuatro (irreversible, autorizada por jugada): paso 0 style-gate, **preparación reversible por `scripts/comment-prepare.mjs`** (localiza el comentario, abre el Reply, pega el draft etiquetado sin enviar y deja la tab viva), luego Claude+MCP re-verifica y hace el `Enter` irreversible + verificación histérica por `div[role=article]` + screenshot, y borra si quedó mal. El paste sintético existe porque el Lexical de FB rompe execCommand.
-- [reply-output-style](.claude/rules/reply-output-style.md) — el spec de 20 Q&A de cómo se redactan los replies: humano no robótico, 150–350 palabras, más mordaz al servicio del marco, kill-list de IA-tells, norte = inversión de carga / default ético. Etapa 4 compara contra esto y reformula.
-- [abolitionist-framing](.claude/rules/abolitionist-framing.md) — regla dura de fondo: el eje de cada reply es **propiedad/esclavitud** (sujeto poseído), NO "harm/daño/unnecessary harm" (eso es bienestarismo y pierde). Frente a crop_deaths/least-harm no se concede "daño innecesario en todos lados" (en la cosecha no hay esclavo, en la granja sí); se pregunta ¿existe la esclavitud necesaria? Gobierna reply-output-style (kill-list del style-gate) y coagent-advise (el master prompt pide marco abolicionista). Framework de eje: `algo-a-alguien-sujeto-derecho`.
-- [sentiocentrism-not-biocentrism](.claude/rules/sentiocentrism-not-biocentrism.md) — regla dura de eje, hermana de abolitionist-framing: el criterio de quién entra al círculo moral es la **SINTIENCIA** (un sujeto que siente/teme/busca vivir), NO la **VIDA**. Somos sensocentristas: nada de "living being / living individual / la vida" como criterio (abre el flanco plant-sentience); el sujeto se nombra "sentient being / **conscious being / ser con conciencia** / a subject who feels / alguien con experiencias" (la posesiva "its own life" está OK). Contra "los animales no tienen X" (razón/lenguaje/muerte): esas capacidades son ortogonales al criterio moral (humanos sin ellas conservan el estatus — casos marginales); el criterio es sentir/ser conciencia. Detector SSOT `scripts/biocentric-axis.mjs` cableado a los 3 gates (style-gate `biocentricAxis`, lint-prose, seed-gate `biocentricInPlay`), igual que el welfarista.
-- [insult-seal-defense](.claude/rules/insult-seal-defense.md) — regla dura: el "eres ignorante/arrogante" (y primos: get a dictionary/my darling/Bernie/cheap thrills) es un **sello PARA EL LURKER** que cubre la falta de argumento y le ahorra al observador el pensar. Ni callar (te ve indefenso) ni morder (patio de escuela) ni sonar herido (el golpe pegó). Doctrina: contestar solo cuando el insulto intenta CERRAR el intercambio; movimiento canónico = **recibos-como-refutación** (mostrar memoria precisa del arco → el gaslighting "no entiendes / tu traductor falla" se cae solo); el "that's a label, not an argument" quedó **QUEMADO** (2026-07-01, suena a robot) y está en la kill-list del style-gate. Graduación según argumento+insulto / solo-insulto / insulto-tras-pregunta-sin-responder. Afina la fila "Insultos" de reply-output-style.
-- [provenance-accusation-defense](.claude/rules/provenance-accusation-defense.md) — regla dura, hermana de insult-seal-defense: la **acusación de procedencia / burden-flip** ("tú introdujiste X / tú dijiste Y / es TU trabajo defenderlo") es un reclamo de hecho que se **VERIFICA contra el arco real** (`thread-extract --json`, orden cronológico, quién introdujo qué) — nunca conceder a ciegas ni asumir falsa. Si es FALSA → exponer el hecho sin drama ("muestra el hecho y deja que pese", no llamarla mentira: da salida emocional), y devolver la pieza a quien la trajo (suele cortar en su contra). Si es VERDADERA → conceder limpio. Nunca ignorar (el lurker lee el silencio como esquive). Verificar es barato; conceder una falsa o ignorar una verdadera es caro.
-- [retreat-cycle-defense](.claude/rules/retreat-cycle-defense.md) — regla dura, **patrón PADRE** del que insult-seal-defense (el sello) y provenance-accusation-defense (el burden-flip) son estaciones sueltas: el pozo de mala fe cuya meta NO es ganar sino **permanecer inalterado** — cada vez que lo acorralas migra a otra estación de retirada (relativismo → "no debo justificar" → burden-flip falso → deflexión semántica → petición de principio → insulto/gaslighting), abandonando la anterior sin defenderla. Contraataque: (1) reconocerlo como UN patrón, no N objeciones; (2) no perseguir cada estación — el **arco mapeado ES el arma** (recibos al lurker); (3) el que cambia de terreno es el que huye (nómbralo factual, sin ad-hominem); (4) imponer la MISMA pregunta con paciencia cada vuelta; (5) señalar el **switch de evasión** (no el gotcha formal "te contradijiste": *"cuando necesita autoridad dice que los humanos deciden el valor moral; cuando le piden justificarlo, lo vuelve 'es solo lo que la palabra significa' — el título sigue indefenso"*). Disciplina de 3 piezas innegociable (recibo factual → 1 línea nombrando el patrón → **vuelta inmediata al título**): nombrar la evasión nunca sustituye el argumento, y "prebunking" es regla INTERNA, jamás pose pública. Fundamento con fuentes (moving-goalposts + kettle logic; inoculación; backfire desmentido pero calibrado). Salir tras una vuelta si abre otra estación.
-- [pipeline-freshness-cap](.claude/rules/pipeline-freshness-cap.md) — regla dura de mecánica: el pipeline NUNCA abre/emite hilos, notifs ni interacciones de más de **7 días** (techo 14, hook bloquea subirlo). SSOT `scripts/freshness.mjs`; consumido por notif-scan (`stale`), `getOpenDebtThreads` (filtra), debt-sweep (VIEJOS, no se extraen), reflex emit (omite), thread-extract (`stale`). Un hilo viejo solo entra por replylink de Bernard; la deuda vieja del moat se cierra, no se reabre.
-- [root-post-publish](.claude/rules/root-post-publish.md) — el post raíz (semilla madurada de `analysis/post-ideas/`) se PUBLICA, no se deja en `pbcopy`: dejar el botón "para Bernard" tras su GO explícito es el gated-to-you mislabel. Se publica en TODOS los grupos con engagement del registro `.claude/destinatarios-canales.txt`, nunca uno solo. Verificación histérica por `div[role=article]` + screenshot, y `Status: Posted` con URL por grupo en el archivo de la semilla.
+- Los hooks bloquean cualquier comando Bash que MENCIONE el script de preparación de replies,
+  incluso en un mensaje de commit o un heredoc. Para rutas usa `scripts/comment-*.mjs`; en texto,
+  "reply staging". Para probar un hook, pásale el payload JSON por stdin desde un archivo.
+- Corre los scripts desde la raíz del repo: el hook de envío resuelve el registro de canales
+  desde el cwd.
+- `.claude/rules/` está gobernado por la constitución: nada de `cd` hacia ahí, globs ni pipes.
+  Rutas absolutas, una operación por comando.
+- Después de `reflex apply` no vuelvas a emitir sobre `.coagent/reflex-packets.json`: queda más
+  nuevo que el marcador y bloquea todo staging. Para inspeccionar, `emit --out <scratch>`.
+- La edad del post raíz que da `readThreadRoot` no es confiable; la de los turnos sí.
