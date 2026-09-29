@@ -76,4 +76,8 @@ No defender que los veganos son perfectos ni entrar al catálogo de grados. Conc
 - **Su jugada:** Réplica (VEGANnoyance, post de sintiencia): "except its not just about taste. Animal food is considered the best protein source… eating tofu only is a dietary choice. There is nothing morally wrong in my book eating animal sourced food." — goalpost a necesidad nutricional.
 - **Nuestra respuesta:** Filo profano: nombré el cambio de estación (we can → legal → I bought it → protein); concedí proteína completa sin pelear nutrición; su propia frase: si el tofu es dietary choice, la gallina del súper también; una preferencia en el deli no da ownership necesaria de alguien. Cierre: which line in it turns a dietary choice into a claim over her?
 
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Réplica (VEGANnoyance, post de sintiencia), contestando "which line in it turns a dietary choice into a claim over her?": "yup. Fuck that bird. Its human food. You got that right. Next" — confirma que no hay página: voluntad pelona + la conclusión como etiqueta, y salida.
+- **Nuestra respuesta:** Filo profano corto (83 palabras, cierre por consejo del coagent: una línea, no otra ronda): su "yup" es lo más honesto del hilo, el libro no tenía página; en su propia frase "that bird" viene primero y hubo que señalarla antes de renombrarla "human food", el renombre es toda la jugada; acepto el "Next". Cierre: when the reason is "fuck that bird", what is left holding up the "human food" part?
+
 _Hilos: 28459136643743554_
