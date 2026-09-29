@@ -62,6 +62,11 @@ cd scripts && node comment-prepare.mjs \
   --body-file <archivo con el draft aprobado>
 ```
 
+Comentario **raíz** en un post ajeno (el post mismo es el argumento, típico del scout): mismo
+script con `--mode root` y `--author "<autor del post>"`, sin `--anchor`. Aborta
+(`stage: root-author`) si el post es de otra persona y no toca un composer con texto. Antes del
+2026-09-28 los raíz salían por MCP a mano, fuera de este gate; ya no.
+
 Devuelve `{ ok, check:{ mentionIntact, startsOK, endsOK, newlines, head, tail }, nextStep }`.
 Si `ok:true` → **Claude+MCP toma la tab viva** (`list_pages` → `select_page` la
 url) → re-lee el composer (Art. 2, no confío en el return del script) → envío

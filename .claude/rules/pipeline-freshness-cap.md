@@ -19,8 +19,10 @@ decida por sí solo QUÉ hilo abrir.
    tratan como candidatas a confirmar, nunca como viejas — la misma honestidad que ya
    gobierna la tabla de deuda.
 5. **La deuda vieja del moat se CIERRA, no se reabre.** Un `pending`/`goalpost` de hace
-   meses se cierra por edad (`close-outcomes` / `reflex apply` como `silent`), y el
-   sweep lo lista para eso. Reabrirlo "a ver si contestaron" es la falla.
+   meses se cierra por edad con `node scripts/close-outcomes.mjs --stale` (queda `silent`
+   y el estado previo en `closed_from`), y el sweep lo lista para eso. Se corre al cerrar
+   cada lote: el 2026-09-28 había 21 acumuladas porque ese comando no existía. Reabrirlo
+   "a ver si contestaron" es la falla.
 
 ## Dónde vive (SSOT + consumidores)
 

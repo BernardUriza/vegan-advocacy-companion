@@ -70,7 +70,8 @@ ya comentaste (previews), > 48h (y nunca más del tope de [[pipeline-freshness-c
 `tactics_hint` es léxico, orienta la lectura y no la sustituye. El scout SURFACEA: la
 `openUrl` va a `thread-extract` (etapa 2) y la jugada se decide con dossiers + etapa 3
 como siempre. En un post ajeno se contesta al comentario que carga la táctica (reply
-etiquetada), o raíz solo si el post mismo es el argumento; el estilo es el de
+etiquetada), o raíz solo si el post mismo es el argumento (`comment-prepare --mode root`, con
+`--author` = autor del post: el script aborta si el post es de otro); el estilo es el de
 [[reply-output-style]] sin cambios. Los memes con 190 likes salen arriba por reacciones:
 eso mide lurkers presentes, no calidad de debate — el juicio sigue siendo tuyo.
 

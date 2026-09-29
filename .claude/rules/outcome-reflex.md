@@ -67,7 +67,11 @@ emitir y no juzgar.
 
 `reflex emit` omite las interacciones con `date` y los transcripts con `mtime` más viejos
 que 7 días ([[pipeline-freshness-cap]]) — de 59 packets a 2. Una interacción abierta de
-hace meses no se re-juzga: se cierra por edad (`close-outcomes` → `silent`).
+hace meses no se re-juzga: se cierra por edad (`close-outcomes.mjs --stale` → `silent` + `closed_from`).
+
+**El arco de cada packet es solo de ESE actor** (`actorArc`): sus turnos, los tuyos dirigidos a
+él y los de terceros que le contestan. Hasta el 2026-09-28 el emit metía todos tus turnos del
+hilo, y en un hilo de 42 turnos el arco de Frank Teuton terminaba en tus replies a Kirk y Dori.
 
 ## El guard de frescura sigue valiendo
 
