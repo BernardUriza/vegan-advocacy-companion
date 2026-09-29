@@ -1969,10 +1969,12 @@
         "our_reply_summary": "Le reconozco que contestó el whether y muestro que es el how con condición engrapada: el dueño sigue decidiendo lo que más le importa a ella. Su perro lo delata: la eutanasia se decide POR el perro; matarlo para un asado y llaman a la policía. En la granja la muerte es el propósito de criarla. \"Bullshit\" fue el veredicto, esto el razonamiento. Cierre: cuando su lado y \"human nutrition\" chocan, ¿qué le da la última palabra a la nutrición humana?",
         "framework": "bienestarismo-jugada-maestra-del-poder",
         "draft_sha": "e552dfe2f40dc333",
-        "outcome": "pending",
+        "outcome": "engaged",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-29T02:45:38.917Z",
-        "third_party_replies": []
+        "third_party_replies": [],
+        "outcome_evidence": "You disagree with how those interests are balanced. That's fine.",
+        "outcome_note": "bienestarismo-jugada-maestra: el perro de compañía lo obligó a explicitar su postura como 'balance' de intereses con resultado fijo; invirtió la carga (¿por qué siempre gana el animal?). Engaged."
       },
       {
         "thread_id": "28604913169131821",
@@ -1981,10 +1983,36 @@
         "our_reply_summary": "\"Rights aren't an intelligence test\" es el post entero en sus palabras: los rasgos nunca fueron la línea. \"Human invention\" dice quién tiene la pluma, no por qué la línea deja fuera al cerdo. Él pelea contra \"identical protections\"; yo afirmo menos: alguien con lado propio bajo el uso de otro necesita razón. Cierre: si la invención humana es el fundamento, ¿qué hace a la especie que escribió el marco la autorizada a usar a todos los demás?",
         "framework": "sobreposicion-de-especies-criterio-leido",
         "draft_sha": "5c429e1194465c9b",
-        "outcome": "pending",
+        "outcome": "engaged",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-29T02:45:38.917Z",
-        "third_party_replies": []
+        "third_party_replies": [],
+        "outcome_evidence": "Human rights aren't an individual intelligence test. They're protections HUMANS have established for other HUMANS",
+        "outcome_note": "sobreposicion-de-especies: el newborn/dementia quedó concedido en sus palabras (\"rights aren't an individual intelligence test\"); respondió con 'protecciones de humanos para humanos' y exigió un argumento positivo. Engaged, sin concesión del título."
+      },
+      {
+        "thread_id": "28150669567887541",
+        "date": "2026-09-28",
+        "their_move": "Réplica 6m (VS Meat Eaters, rama crop deaths): \"we're going around in circles again\" — su posición es un balance de intereses legítimos (nutrición humana vs cuidado del animal); invierte la carga: ¿por qué el interés del animal en seguir vivo siempre debe prevalecer?",
+        "our_reply_summary": "Filo (209 palabras): su balance tiene el resultado fijado antes de que ella nazca; báscula donde un plato siempre pierde = título con reglamento; el perro de compañía corta en su contra; los códigos esclavistas también regulaban el trato sin legitimar el título (misma estructura). Salida: un solo caso donde su interés en seguir viva gane, o what the hell is being balanced?",
+        "framework": "esclavitud-paralelismo",
+        "draft_sha": "23f88d233320bd9e",
+        "exposure_n": 34,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "28604913169131821",
+        "date": "2026-09-28",
+        "their_move": "Réplica 18m (Open Debates 3, post de sintiencia): \"round and round we go\" — derechos humanos = protecciones de humanos para humanos; exige \"an actual argument establishing your conclusion\", sin bebés ni preguntas retóricas; y de propiedad a veganismo.",
+        "our_reply_summary": "Filo (218 palabras): el argumento en cuatro pasos en prosa — poseer = última palabra sobre su cuerpo para fines ajenos; lo rechazamos entre humanos sin test de inteligencia; \"protecciones de humanos para humanos\" solo nombra el muro; la cerda tiene un lado propio; carne/leche/huevos son el producto del título y comprarlos lo paga. Salida: which step fails?",
+        "framework": "consideracion-moral-no-cuanto-sufre",
+        "draft_sha": "9ed009af42126599",
+        "exposure_n": 34,
+        "assignment": "randomized",
+        "propensity": 0.3333333333333333,
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -2832,12 +2860,26 @@
         "date": "2026-09-28",
         "their_move": "Réplica 5 (Open Debates 3, post their-own-words): \"did you actually ask them if that is what they meant? … You have an interpretation… You can not have it both ways\"; lectura alternativa: los rasgos eran solo su razón para creer que los humanos son moralmente distintos.",
         "our_reply_summary": "Registro limpio, 823 palabras por orden de Bernard: reencuadre raíz→rama de las cinco citas (CarolAnn, Anna, Samantha con matiz steward, Tiana + Nate Porter, Matt que hizo la pregunta él mismo); procedencia: Dean estuvo hace 5 semanas en el hilo de Anna y escribió que capacidades ligadas a la sapiencia pueden decidir si la propiedad es apropiada; mi respuesta de entonces fue el infante y su turno se fue a padres/tutores. Cierre: What ownership work do those capacities do in the infant case? (x/y del coagent aceptado).",
-        "outcome": "pending",
+        "outcome": "engaged",
         "framework": "filtro-especie-vs-individuo",
         "draft_sha": "93b0660a194a2aba",
         "exposure_n": 26,
         "assignment": "chosen",
-        "propensity": null
+        "propensity": null,
+        "outcome_evidence": "So you have a reading of their comments. You do not have evidence that they actually meant the specific proposition",
+        "outcome_note": "filtro-especie: los recibos por hilo movieron la disputa de 'atribución falsa' a 'lectura vs intención'; tomó el 'no puedo responder por su intención' como retirada y trajo una tercera opción que coincide con la frase del post. Buena fe, engaged."
+      },
+      {
+        "thread_id": "28615704478052690",
+        "date": "2026-09-28",
+        "their_move": "Réplica 12m (Open Debates 3, post their-own-words): \"And there it is\" — toma \"no puedo responder por su intención privada\" como retirada; falsa dicotomía: alguien puede decir \"más inteligentes, por tanto comerlos no es inmoral\" sin teoría del criterio de propiedad; no deja volver a lo de hace cinco semanas.",
+        "our_reply_summary": "Limpio (200 palabras): concede la tercera opción y que es lectura; muestra que esa tercera opción es la frase del post (\"becomes the reason she can stay on the market\"); suelta lo de hace cinco semanas; newborn/dementia prueban esa razón. Salida: why does the same gap do no ownership work at all in a newborn?",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "draft_sha": "ab2adc15b67d5a82",
+        "exposure_n": 27,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
       }
     ],
     "user_id": "1198831097",
@@ -4200,5 +4242,36 @@
     "verdict": "persuadible",
     "register": "compasivo",
     "what_not_to_do": "No defender el alma ni la vida como criterio (biocentrismo). No negar que la ostra es un caso límite real. Conceder el borde y regresar a los animales que sin duda sienten y que sí están en la granja."
+  },
+  {
+    "tactics": [
+      "inversion_carga"
+    ],
+    "threads": [
+      "28462611456729406"
+    ],
+    "interactions": [
+      {
+        "thread_id": "28462611456729406",
+        "date": "2026-09-28",
+        "their_move": "Réplica 17m (VEGANnoyance, post de Alex Krizel sobre ácido estomacal): \"Are we just moving that goal line again?\"",
+        "our_reply_summary": "Filo corto (83 palabras): la portería de la digestión la regalé entera; cerca, arete, cría, venta y título siguen ahí; el pH dice fuck-all de quién puede ser poseído. Salida: which goal line moved?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "0d3ce26fd948e6a9",
+        "exposure_n": 1,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "61553320636391",
+    "name": "Andras Osz",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Drive-by en el post del ácido estomacal de Krizel: acusa mover la portería cuando la reply concede la anatomía y pasa a propiedad.",
+    "analisis": "Primera aparición, una línea. Sin argumento propio aún; acusación de procedencia/goalpost.",
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No pelear pH ni anatomía; conceder y volver a propiedad."
   }
 ]

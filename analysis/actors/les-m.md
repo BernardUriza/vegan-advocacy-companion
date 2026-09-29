@@ -226,12 +226,20 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Réplica 48m (Vegans VS Meat Eaters, rama crop deaths): ownership legítimo por la legitimidad del uso con cuidado; entitled AND accountable; agricultor que mata fauna y ganadero = mismo interés en producir comida; establece por qué la propiedad responsable es inmoral.
 - **Nuestra respuesta:** Le di el caso positivo completo: título = el fin de uno decide por default; sobre un novillo su lado pierde siempre; la razón por la que ninguna persona es propiedad no menciona inteligencia. Agricultor actúa contra un animal que existe por su cuenta; ganadero lo cría para SER la comida. Accountable del cómo no toca el si; legitimate intended use es el dueño calificando su título (bullshit). Cierre: qué cubre el whether.
 
-### Hilo `28150669567887541` — 2026-09-28 · outcome: **pending**
+### Hilo `28150669567887541` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** Réplica (Vegans VS Meat Eaters, rama crop deaths): por fin contesta el WHETHER — "I consider breeding and raising livestock for human nutrition a legitimate use, provided their welfare is appropriately protected"; sentience no da derecho inviolable a no ser poseído; mascotas también son propiedad (eutanasia); el granjero de cosecha también mata por interés comercial; "that's bullshit isn't a philosophical rebuttal".
 - **Nuestra respuesta:** Le reconozco que contestó el whether y muestro que es el how con condición engrapada: el dueño sigue decidiendo lo que más le importa a ella. Su perro lo delata: la eutanasia se decide POR el perro; matarlo para un asado y llaman a la policía. En la granja la muerte es el propósito de criarla. "Bullshit" fue el veredicto, esto el razonamiento. Cierre: cuando su lado y "human nutrition" chocan, ¿qué le da la última palabra a la nutrición humana?
 
-### Hilo `28604913169131821` — 2026-09-28 · outcome: **pending**
+### Hilo `28604913169131821` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** Réplica (Open Debates 3, post de sintiencia): tono-policing ("increasingly worked up") + "human rights are a human invention... Rights aren't an individual intelligence test" + no hay que dar protecciones equivalentes a toda especie + relativismo cultural (perro/comida) + "where is YOUR argument".
 - **Nuestra respuesta:** "Rights aren't an intelligence test" es el post entero en sus palabras: los rasgos nunca fueron la línea. "Human invention" dice quién tiene la pluma, no por qué la línea deja fuera al cerdo. Él pelea contra "identical protections"; yo afirmo menos: alguien con lado propio bajo el uso de otro necesita razón. Cierre: si la invención humana es el fundamento, ¿qué hace a la especie que escribió el marco la autorizada a usar a todos los demás?
+
+### Hilo `28150669567887541` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Réplica 6m (VS Meat Eaters, rama crop deaths): "we're going around in circles again" — su posición es un balance de intereses legítimos (nutrición humana vs cuidado del animal); invierte la carga: ¿por qué el interés del animal en seguir vivo siempre debe prevalecer?
+- **Nuestra respuesta:** Filo (209 palabras): su balance tiene el resultado fijado antes de que ella nazca; báscula donde un plato siempre pierde = título con reglamento; el perro de compañía corta en su contra; los códigos esclavistas también regulaban el trato sin legitimar el título (misma estructura). Salida: un solo caso donde su interés en seguir viva gane, o what the hell is being balanced?
+
+### Hilo `28604913169131821` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Réplica 18m (Open Debates 3, post de sintiencia): "round and round we go" — derechos humanos = protecciones de humanos para humanos; exige "an actual argument establishing your conclusion", sin bebés ni preguntas retóricas; y de propiedad a veganismo.
+- **Nuestra respuesta:** Filo (218 palabras): el argumento en cuatro pasos en prosa — poseer = última palabra sobre su cuerpo para fines ajenos; lo rechazamos entre humanos sin test de inteligencia; "protecciones de humanos para humanos" solo nombra el muro; la cerda tiene un lado propio; carne/leche/huevos son el producto del título y comprarlos lo paga. Salida: which step fails?
 
 _Hilos: 27363745576581926, 27375477042075446, 27937793019177176, 28604913169131821, 28150669567887541, 27405978672358616, 27468645086091974, 4587084521560658_
