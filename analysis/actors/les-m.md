@@ -182,7 +182,7 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Retreat-cycle: vamos en circulos / acepto que tu criterio es sintiencia pero nunca justificaste por que es decisiva / yo respondi la tuya, responde la mia: por que 99% de humanidad deberia abandonar su marco de cientos de miles de anos? / el burden es tuyo.
 - **Nuestra respuesta:** SWITCH DE EVASION (doble-estandar): vamos en circulos porque exige que mi linea se justifique hasta el fondo mientras exime la suya. El principio esta dado (la sintiencia hace que EXISTA un alguien para quien ser propiedad cuenta; roca no, cerdo si). Aplica su demanda a su linea: 99%/cientos de miles de anos mide cuantos y cuanto tiempo, no por que; popularidad y edad explican una practica, no defienden su titulo. El burden lo carga quien reclama standing para poseer a un alguien.
 
-### Hilo `4587084521560658` — 2026-07-03 · outcome: **goalpost**
+### Hilo `4587084521560658` — 2026-07-03 · outcome: **silent**
 - **Su jugada:** Petitio (assuming your conclusion) + why-same-rights-as-humans + casos marginales (babies/dementia) + line-drawing (insects/fish/nematodes) + burden-flip.
 - **Nuestra respuesta:** La acusacion de asumir la conclusion es falsa: parto de lo que EL concede (son sintientes); no reclamo mismos derechos/igualdad, solo lo minimo (no ser propiedad); sus casos marginales cortan en su contra (bebes/demencia sin las capacidades y con estatus completo -> el criterio es sentir, no la capacidad superior). Tome el nucleo (Gish discipline), no persegui cada rama. Cierre: cual es el rasgo que hace el trabajo.
 
@@ -190,7 +190,7 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Retreat-cycle vuelta N (en rama suelta): assuming-your-conclusion + rechaza la premisa de categoria compartida + su criterio en forma final institucional (They are human; membership of the human species is the basis of universal human rights; human rights don't depend on intelligence/autonomy/reasoning) + burden-flip (new universal standard) + line-drawing + clear objective boundary vs tu framework.
 - **Nuestra respuesta:** CONSOLIDACION DE ARCO (~700w, orden de Bernard) en el hilo largo: cronica cronologica de las 6 vueltas con SUS dicciones verbatim encadenadas, crudas y sin adjetivos (registro, no alegato); registra la convergencia real (el mismo dice que los derechos no dependen de inteligencia/autonomia/razon = mis casos marginales); su fundamento final es institucional (como estan construidos los derechos = descriptivo, is-ought); una frontera puede ser clara y aun deber la razon; el principio dado desde roca-y-tractor archivado como assertion cada vuelta. Cierre: pregunta del titulo anclada en su concesion inicial. + CIERRE de la rama suelta (reply a su T16): la rama fue error mio, respondido en el hilo largo, continuando alla (el lurker ve todo el arco en un lugar).
 
-### Hilo `27937793019177176` — 2026-08-08 · outcome: **pending**
+### Hilo `27937793019177176` — 2026-08-08 · outcome: **silent**
 - **Su jugada:** Naturalismo/historia (humans ate meat long before veganism) + shorthand inocente + mofa (congratulations on discovering verbs) + demanda: changing gives to takes requires an actual ethical argument; wordplay, not a valid argument.
 - **Nuestra respuesta:** Concedió lo cierto de entrada (shorthand, historia). Recibo de procedencia: indoctrinated es palabra SUYA, el post no la usa. Recibo central: exige el argumento ético a un post cuyo párrafo final ES esa pregunta — contestó el verbo y saltó la pregunta. La replantó idéntica.
 
@@ -222,7 +222,7 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Réplica 52m (Open Debates 3, post de sintiencia): moved the goalposts; rasgos pueden ser diferencias moralmente relevantes; humans because they are humans; her interests count no significa decisive; el perro: el dueño decide eutanasia; you keep restating the conclusion as a question.
 - **Nuestra respuesta:** Nada se movió; concedí cuentan≠siempre ganan; el título decide UN choque antes de que exista (si sigue). Su perro: la autoridad tiene que responder al perro; decidir su muerte para la cena hace que te lo quiten. La sintiencia deja lugar a tutela, excluye el cheque en blanco hacia el plato. "because they are humans" = la etiqueta del grupo cargando todo. Cierre: qué parte de ser humano.
 
-### Hilo `28150669567887541` — 2026-09-28 · outcome: **pending**
+### Hilo `28150669567887541` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** Réplica 48m (Vegans VS Meat Eaters, rama crop deaths): ownership legítimo por la legitimidad del uso con cuidado; entitled AND accountable; agricultor que mata fauna y ganadero = mismo interés en producir comida; establece por qué la propiedad responsable es inmoral.
 - **Nuestra respuesta:** Le di el caso positivo completo: título = el fin de uno decide por default; sobre un novillo su lado pierde siempre; la razón por la que ninguna persona es propiedad no menciona inteligencia. Agricultor actúa contra un animal que existe por su cuenta; ganadero lo cría para SER la comida. Accountable del cómo no toca el si; legitimate intended use es el dueño calificando su título (bullshit). Cierre: qué cubre el whether.
 

@@ -120,7 +120,7 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 
 ## Log de interacciones
 
-### Hilo `27341517928804691` — 2026-06-16 · outcome: **goalpost**
+### Hilo `27341517928804691` — 2026-06-16 · outcome: **silent**
 - **Su jugada:** animal exploitation morally justified / part of ecosystem / biologically designed
 - **Nuestra respuesta:** Concede biología total. Separa 'omnívoro = hecho de digestión' de 'animals are food = juicio de valor que estás metiendo en la definición'. Cierra con UNA pregunta: capacidad no implica derecho.
 
@@ -136,7 +136,7 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 - **Su jugada:** Naturalismo ("evolved into herbivores?") + claim de necesidad + "incomplete diet" + salida dismissive "I am not interested".
 - **Nuestra respuesta:** Concede omnivoro, separa can/should, clava que "necesidad" es lo falso (consumidora con supermercado), nombra el "not interested" como tell, devuelve al hueso. Sin nutricion/B12.
 
-### Hilo `27405978672358616` — 2026-06-21 · outcome: **goalpost**
+### Hilo `27405978672358616` — 2026-06-21 · outcome: **silent**
 - **Su jugada:** Moving goalposts / reductio burlon: "Why eat at all? Why not get a feeding tube and live off of synthetic nutritional replacement?" — desvia de propiedad a metodo de alimentacion.
 - **Nuestra respuesta:** Nombra el cambio de tema sin perseguirlo: la conversacion era sobre tratar a un ser vivo como propiedad, no sobre tubos. Concede que podria sobrevivir de modos raros pero el metodo nunca fue el punto; elegir como alimentarme no responde por el ser del otro lado. El feeding tube es una forma de evitar la pregunta, no una refutacion. Devuelve al hueso: que hace aceptable volver propiedad a un ser vivo. Corto (deliberado).
 
@@ -144,7 +144,7 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 - **Su jugada:** Tras desviar a nutricion/ultra-processed, deflexion I-didnt-run-away + ad-hominem (salud mental, jab del B12).
 - **Nuestra respuesta:** Conced nutricion/B12 de frente, nombr en una linea que la rama nutricional es el desvio, devolv al hueso: que justifica criar/poseer/matar a un sujeto (someone->property) cuando hay alternativa. Recuperacion tras un reply previo ego-driven.
 
-### Hilo `28500475619575577` — 2026-09-21 · outcome: **goalpost**
+### Hilo `28500475619575577` — 2026-09-21 · outcome: **silent**
 - **Su jugada:** Raíz: "Humans are omnivores so eating animals is not immoral. We don't have to justify our biology or nutritional needs. Humans are part of the ecosystem, and that ecosystem eats each other." + bajo Anna: "Even your examples are subjective, though."
 - **Nuestra respuesta:** Concedo biología entera (nadie pidió justificar la digestión); nada en el ecosistema tiene título (el lobo no cría/registra/vende al venado; la granja es el único lugar donde el animal es propiedad antes de ser comida); su "subjetivo" se apaga con su propia biología (hecho) vs el punto de vista del cerdo (opinión); ¿pueden comer carne? obvio; ¿qué legitima la propiedad?
 

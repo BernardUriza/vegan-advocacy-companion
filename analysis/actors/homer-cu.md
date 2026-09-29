@@ -60,7 +60,7 @@ No defender que los veganos son perfectos ni entrar al catálogo de grados. Conc
 - **Su jugada:** Réplica a mi reply (post de sintiencia, VEGANnoyance): "humans dont need to justify speciesism. We are the apex species. We dominate based on our written and unwritten rules. The moral argument is just based on the degree of speciesism depending on the person." — might-makes-right + rechazo de la carga + relativismo de grado.
 - **Nuestra respuesta:** Registro filo profano: su frase es la más honesta del post y una confesión; apex dice quién controla y escribe las reglas, fuck-all sobre si el título es legítimo; "grado de especismo" = preferencia respaldada por poder, que no lo vista de justificación; concedo la inconsistencia vegana (no da título a nadie); cierre: ¿o "we can" es toda la respuesta?
 
-### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **escalated**
 - **Su jugada:** Réplica a mi reply (post de sintiencia, VEGANnoyance), contestando "is 'we can' the whole answer?": "its both. We can and we make it legal as a human species." — poder + ley como razón (legalidad_como_justificacion).
 - **Nuestra respuesta:** Registro filo profano: "both" es poder más papeleo; "we make it legal" dice quién tuvo la pluma y él ya lo había dicho ("we dominate based on our written and unwritten rules"): el título escribiéndose su propio permiso. Poseer personas también fue legal, escrito por quienes poseían (misma estructura, no mismo sujeto). El papeleo no agrega razón. Cierre: ¿a qué deben responder las reglas escritas además de que las escribimos nosotros?
 

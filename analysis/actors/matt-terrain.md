@@ -15,7 +15,7 @@ El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qu
 ## Tácticas
 
 - **Futility / No Clean Option** (`futility_no_clean_option`) — Uses 'everything causes harm' to claim veganism isn't morally superior. 'Tell me what you eat, wear, or live in that allows you to choose NOT hurting animals.' Used to reduce veganism to absurdity by demanding zero harm.
-  - _Contra:_ Perfect is not the enemy of good. The question isn't zero-harm — it's unnecessary harm. 'Harm exists in every food system. The ethical question is whether we're justified in deliberately imposing harm on a sentient being when a reasonable alternative exists.' Don't bite the crop-deaths hook.
+  - _Contra:_ Grant the imperfection whole: fields kill, nobody lives clean, and one person's plate doesn't empty a single barn. Then move the question off outcomes and onto the relation. Veganism was never a rescue plan with a body count; it's declining to be the party who buys the title over someone who feels. 'You're not saving anyone' measures the wrong thing: the question is whether that title has a reason, and that question doesn't depend on how many people refuse it.
 - **Hostile Socratic Method** (`socrates_hostil`) — Disguises a trap as curiosity. Asks questions not to learn but to set up whack-a-mole redirection. 'Could you say exactly what the problem is with exploiting animals?' / 'List the exploitative events that are the problem.'
   - _Contra:_ Don't bite. Answer the underlying question cleanly without following the redirect: 'Exploitation isn't a list of events — it's a relationship. Breeding a sentient being into existence for the purpose of using and killing it is the relationship, not a checklist.' Return the question.
 - **Crop Deaths / Bystander Flip** (`crop_deaths_flip`) — Uses the fact that crop agriculture kills field animals (mice, insects) to claim veganism causes more death, or to equate plant farming with animal farming morally. 'Growing crops kills innocent bystanders. Raising animals for purpose is cleaner.'
@@ -68,7 +68,7 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 
 ## Log de interacciones
 
-### Hilo `27341517928804691` — 2026-06-16 · outcome: **goalpost**
+### Hilo `27341517928804691` — 2026-06-16 · outcome: **silent**
 - **Su jugada:** I still don't see the distinction. Animals or crops. They both kill. List the exploitative events that are the problem.
 - **Nuestra respuesta:** Aterrizó la distinción de ROL del daño: subproducto de alimentar a todos vs el propósito mismo de la actividad. Reframeó 'exploitation' como RELACIÓN, no lista. Nombró que Matt usa esa distinción (accidente vs intención) en todo menos con animales. Devolvió la carga.
 
@@ -92,11 +92,11 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** Deflexión empírica sobre la data del post de mercado: "India is full of impoverished/sick people, China is the largest meat consumer growing, how accurate is the rest of your information?" — convierte 2 ejemplos en sospecha de toda la data, ceba guerra de cifras.
 - **Nuestra respuesta:** Concedí lo empírico libremente (China crece, India es parte económico); pivote: la data de mercado es DESCRIPTIVA, nunca fue el argumento — si el mercado dobla o colapsa la pregunta moral no se mueve. Devolví la carga: ¿qué principio justifica criar/matar a un sintiente cuando hay alternativa viable? Cero data propia, no mordí el body-count.
 
-### Hilo `27051763587778150` — 2026-07-03 · outcome: **goalpost**
+### Hilo `27051763587778150` — 2026-07-03 · outcome: **silent**
 - **Su jugada:** Naturalismo + burden-flip: we dont need to defend normal/natural/species-appropriate; its vegans who dont have one legit reason.
 - **Nuestra respuesta:** Dos piezas: normal/natural/species-appropriate describe un patron, no justifican el titulo (is-ought); muchas cosas comunes en la naturaleza no son permiso moral. Y no-necesito-defenderlo deja el claim central donde estaba: negarse a justificar no justifica el titulo. La carga cae en quien reclama autoridad de propiedad sobre un sujeto que siente. Sin morder el vegans-have-no-reason ni el pantano de cosechas. Cierre: que justifica el titulo de propiedad sobre alguien con punto de vista.
 
-### Hilo `27937793019177176` — 2026-08-08 · outcome: **pending**
+### Hilo `27937793019177176` — 2026-08-08 · outcome: **silent**
 - **Su jugada:** Esquive definicional (give = yield a product, del diccionario) + sello-insulto: your entire premise is, again, based on ignorance.
 - **Nuestra respuesta:** Volteó su diccionario: yield a product es el sentido para cosas (campo/mina/máquina) — usarlo para ella re-enuncia el post (la gramática la archiva como sitio de producción). Un solo round (sink). Cerró con la pregunta del título.
 

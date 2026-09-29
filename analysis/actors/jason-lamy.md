@@ -19,7 +19,7 @@
 - **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`) — Attacks the person instead of the argument. Used for social dominance in the thread, not to persuade. 'Intellectually challenged retards', 'idiots', 'vegan lab slop', 'cult'. Often combined with one real data point as cover.
   - _Contra:_ Don't match the register. Name the evasion calmly: 'When the argument runs out, the insults start.' Contrast of temperament is visible to the lurker. One line max, then return to substance or disengage entirely.
 - **Futility / No Clean Option** (`futility_no_clean_option`) — Uses 'everything causes harm' to claim veganism isn't morally superior. 'Tell me what you eat, wear, or live in that allows you to choose NOT hurting animals.' Used to reduce veganism to absurdity by demanding zero harm.
-  - _Contra:_ Perfect is not the enemy of good. The question isn't zero-harm — it's unnecessary harm. 'Harm exists in every food system. The ethical question is whether we're justified in deliberately imposing harm on a sentient being when a reasonable alternative exists.' Don't bite the crop-deaths hook.
+  - _Contra:_ Grant the imperfection whole: fields kill, nobody lives clean, and one person's plate doesn't empty a single barn. Then move the question off outcomes and onto the relation. Veganism was never a rescue plan with a body count; it's declining to be the party who buys the title over someone who feels. 'You're not saving anyone' measures the wrong thing: the question is whether that title has a reason, and that question doesn't depend on how many people refuse it.
 
 ## Counter-arsenal
 

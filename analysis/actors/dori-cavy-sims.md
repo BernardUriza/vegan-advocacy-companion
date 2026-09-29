@@ -70,7 +70,7 @@ No gastar una jugada principal. Una línea que reponga la pregunta y pida algo d
 - **Su jugada:** she is food.
 - **Nuestra respuesta:** food es el plan para ella escrito como su definición; food por decisión de quién y qué les dio la voz
 
-### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **escalated**
 - **Su jugada:** Réplica a "Food by whose decision, and what gave them the say?": "sucks. Ate some ham tonight. Delicious." (+ reacción de risa) — preferencia_gusto como respuesta.
 - **Nuestra respuesta:** Registro filo, corto: es un reporte de sabor que contesta sin querer mi pregunta (ham tonight, delicious, done); su lengua votó y la cerda no tuvo voto (fuck-all); "delicious" habla de su cena, la cerda era la que podía asustarse. Cierre: ¿qué le agrega "delicious" al reclamo de que era suya para volverla jamón? Última vuelta, no perseguir más.
 

@@ -15,13 +15,17 @@ Anti-vegan de buena fe, civil, engancha. Reductio práctico desde su realidad de
 ## Tácticas
 
 - **Futility / No Clean Option** (`futility_no_clean_option`) — Uses 'everything causes harm' to claim veganism isn't morally superior. 'Tell me what you eat, wear, or live in that allows you to choose NOT hurting animals.' Used to reduce veganism to absurdity by demanding zero harm.
-  - _Contra:_ Perfect is not the enemy of good. The question isn't zero-harm — it's unnecessary harm. 'Harm exists in every food system. The ethical question is whether we're justified in deliberately imposing harm on a sentient being when a reasonable alternative exists.' Don't bite the crop-deaths hook.
+  - _Contra:_ Grant the imperfection whole: fields kill, nobody lives clean, and one person's plate doesn't empty a single barn. Then move the question off outcomes and onto the relation. Veganism was never a rescue plan with a body count; it's declining to be the party who buys the title over someone who feels. 'You're not saving anyone' measures the wrong thing: the question is whether that title has a reason, and that question doesn't depend on how many people refuse it.
 - **Whataboutism / Human Exploitation Deflection** (`whataboutism`) — Deflects the animal ethics argument by pointing to human suffering: 'millions of humans are exploited every day and no one bats an eye'. Uses human suffering as an excuse to dismiss animal suffering rather than addressing both.
   - _Contra:_ Concern for animal suffering doesn't prevent concern for human suffering — these aren't a zero-sum budget. 'Both matter. Noticing one doesn't cancel the other.' Then return to the original question.
 - **Welfare Rhetoric / Comfortable Life Defense** (`welfare_rhetoric`) — Claims animal use is justified because the animals have a 'comfortable life' and 'painless death'. Assumes welfare during life negates the moral problem of killing for non-necessity.
   - _Contra:_ The problem isn't the quality of life — it's that the entire existence is designed around killing for something unnecessary. A comfortable life that ends in slaughter for non-necessity doesn't become morally neutral because the suffering was minimized.
 - **Domestication = Mutualism / Commensalism** (`domestication_mutualism`) — Frames domesticated animal use as a symbiotic or commensal relationship ('ants exploit aphids', 'humans and domesticates have commensal relationships that benefit both'). Misuses biology terms — commensalism means one benefits, the other is unaffected; mutualism means both benefit. Neither describes farming-to-slaughter.
   - _Contra:_ Expose the error in the biology term itself: commensalism means one benefits, the other is neither helped nor harmed — not slaughtered. Real mutualism doesn't include one party's death as its purpose. The analogy collapses on its own terms.
+- **Credential Demand / What Have You Done** (`demanda_credencial`) — Replaces the argument with a demand for the asker's résumé: 'what do you actually do for animals?', 'show us you rescue', 'if all you do is post, why should anyone listen?'. Circumstantial ad hominem: the question's validity is made to depend on the asker's deeds.
+  - _Contra:_ Grant the real work the other person does, without sarcasm, and grant your own limits. Then point out that a question stands or falls on its own: it would be the same question coming from them. Turn back to the question itself, ideally through something from their own experience (the bond, the rescue) that shows there is someone there.
+- **Property as Protection / Ownership-Guardianship Conflation** (`propiedad_como_proteccion`) — Defends the property status of animals by pointing at what it supposedly buys them: 'being property gives them legal protection — an identifiable person is responsible for feeding, housing, vet care. If they are nobody's property, who is accountable? Do you want your pet taken because someone else likes it?' Conflates OWNERSHIP (a title over a body: the right to use, sell, confine, kill) with GUARDIANSHIP (a duty toward someone). Used by relativists/sophists (Anna Angelika, 2026-09-19) as the one substantive reply to the property axis.
+  - _Contra:_ Separate title from duty. A parent is responsible for a child without owning them; a guardian answers for a ward without a right to sell or kill them — responsibility never required a title. Then show who the 'protection' of property actually runs to: property law protects the OWNER's interest in the asset (nobody may take my cow), while the same title is exactly what lets the owner confine, sell and kill her. The thing that keeps a pet from being 'taken' is a duty owed to the pet, which is guardianship, not ownership. Her own example cuts against her: what she wants for her dog is what the title denies the pig. Return to the axis: what makes it legitimate for a conscious being to exist as property — a duty toward someone needs no title; a title is what needs justifying.
 
 ## Counter-arsenal
 
@@ -67,6 +71,8 @@ Anti-vegan de buena fe, civil, engancha. Reductio práctico desde su realidad de
   - `domesticar-eufemismo-dominar` → _deploy as:_ marco
   - `violencia-estructural-infraestructura` → _deploy as:_ marco
   - `premisa-falsa-los-animales-nos-dan` → _deploy as:_ marco
+- **Property as Protection / Ownership-Guardianship Conflation** (`propiedad_como_proteccion`)
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -90,7 +96,7 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** Conflacion propiedad-legal con justificacion moral + cierre hostil/sello: NSW biosecurity law exige destruir si no son propiedad; 'I own my goats, otherwise you could come claim them'; '#11: do you understand now? I'm going to make sure this silly concept is squashed as it's utterly absurd and ridiculous'.
 - **Nuestra respuesta:** Reply etiquetada, corta. Una linea calmada (no mordi el absurd/ridiculous): no discrepamos sobre lo que la ley DICE sino sobre lo que la ley JUSTIFICA. Su punto de la ley devuelto: que la ley pueda ordenar destruir al animal PORQUE es propiedad muestra que el estatus de propiedad es lo que licencia matarlo — describe el sistema, no justifica el estatus. 'The law says so' no responde la pregunta del post. Cierre devolviendo el estatus de propiedad.
 
-### Hilo `27468645086091974` — 2026-06-29 · outcome: **goalpost**
+### Hilo `27468645086091974` — 2026-06-29 · outcome: **silent**
 - **Su jugada:** Ronda: la ley NSW exige destruir al no-propiedad (feral); ownership da proteccion+derechos; do you own animals?
 - **Nuestra respuesta:** Conced que la ley establece propiedad; describir!=justificar; conteste su pregunta directa (mi posesion no decide la pregunta moral); devolvi: que justifica asignar autoridad total sobre un conscious individual con punto de vista. Sin pelear los tecnicismos.
 
@@ -110,8 +116,12 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** Raíz en el post de sintiencia: we have had this conversation before and you did not like it; animals are property for their own good (rights, insurance, NSW feral law, protection from abuse, legally responsible for your dog). Animals are property.
 - **Nuestra respuesta:** Concedí que ya lo hablamos y la ley de NSW tal como está; separé responsabilidad de título (padre/hijo, tutor/pupilo); el título agrega el poder de criar, vender y decidir el uso final; la propiedad asegura el reclamo del dueño, el deber responde al animal; cierre: ¿qué agrega el título, más allá del deber, que haga legítimo poseerla?
 
-### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** Raíz nueva (VEGANnoyance, post de sintiencia, 7h): "Animals are property mate, give it a rest. Why don't you focus on making animals lives better? Show us how you're actually helping animals, maybe rescue an animal from a shit owner..." — aserción + demanda de credenciales / deflexión a activismo. Antes le dijo a Parnaibensis que mi inglés es trash y uso IA.
 - **Nuestra respuesta:** Concedí el rescate en serio (vale más que un hilo); ignoré por completo lo del inglés/IA; no contesté la demanda de credenciales con currículum ("credential test, proves fuck-all"); volteé su frase: llamar a alguien shit owner ya dice que el título no fue la última palabra sobre esa cabra (tenía el papel y la categoría legal y aun así había que rescatarla). Cierre con sus palabras: ¿qué tenía la cabra bajo el shit owner que no tenga la que se vende? 149 palabras.
 
-_Hilos: march-property, 27319402757682875_
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Réplica 20m (VEGANnoyance, post de sintiencia): demanda de credencial ("what do you do for animals… why should anyone listen to you?") + "Do you understand animals bond with their owners?"
+- **Nuestra respuesta:** Registro limpio: concedí que su rescate pesa más que mis posts; la pregunta vale igual la haga quien la haga; el vínculo necesita alguien del otro lado (nadie se apega a una ute), el cuidado da deber, no título. Cierre: qué le da ese vínculo al rescatista más allá de un deber hacia ella.
+
+_Hilos: march-property, 27319402757682875, 28459136643743554, 28604913169131821_

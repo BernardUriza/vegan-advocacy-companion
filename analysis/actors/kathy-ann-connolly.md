@@ -53,7 +53,7 @@ NO disputar el dato (los robot milkers existen, las vacas sí van solas — conc
 
 ## Log de interacciones
 
-### Hilo `27937793019177176` — 2026-08-08 · outcome: **pending**
+### Hilo `27937793019177176` — 2026-08-08 · outcome: **silent**
 - **Su jugada:** Empirismo bienestarista de buena fe: robot milkers, the cows go in of their own accord as many times a day as they want to.
 - **Nuestra respuesta:** Registro compasivo: concedió el dato completo de entrada. La voluntariedad ocurre dentro de la disponibilidad fabricada (criada para rendir mucho más de lo que un ternero tomaría; el robot responde una urgencia que el arreglo produce). El robot moderniza el cómo; el título queda intacto. Cierre en invitación genuina.
 

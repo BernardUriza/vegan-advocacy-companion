@@ -46,19 +46,19 @@ NO abrir debate intramural en el post propio (regala la salida al carnista). NO 
 
 ## Log de interacciones
 
-### Hilo `28046113755009790` — 2026-09-19 · outcome: **goalpost**
+### Hilo `28046113755009790` — 2026-09-19 · outcome: **silent**
 - **Su jugada:** Espejo de intención contra Barbara: crop deaths are not unintentional (evento permitido a sabiendas = intencional); slaughtering an animal for food is a pre-known incidental occurrence of a main event, igual que el ratón en la cosecha.
 - **Nuestra respuesta:** Concedió entero el punto de intención (llámalo intencional; describe la matanza como incidental si quieres) y movió el eje a estatus: el ratón nunca fue criado ni poseído, el cerdo sí desde que nace hasta el cuchillo; el espejo solo refleja parado en el eje de Barbara. Cerró en la pregunta del título de propiedad (sin la de esclavitud necesaria — coagent: demasiado cargada para actor nuevo).
 
-### Hilo `28046483408306158` — 2026-09-19 · outcome: **goalpost**
+### Hilo `28046483408306158` — 2026-09-19 · outcome: **silent**
 - **Su jugada:** Comentario raíz en el post del relativismo de Bernard, 12m tras publicarse: analogía de Francione — vegano que invoca 'possible and practicable' para seguir explotando es tan moral como quien dice que no puede dejar de abusar niños. Copy-paste del mismo texto que puso en el post de Matt Terrain. 1 like.
 - **Nuestra respuesta:** Tras ~1h de paciencia deliberada (estrategia de Bernard; texto validado por Insult en Discord): desmonta la analogía por asignación de silla — el que 'sigue' es quien paga el título sobre el cuerpo de un ser consciente, no el vegano; la cláusula cubre lo estructuralmente inescapable (carreteras, medicinas, cadenas) y no da permiso para comprar el producto directo del título; ratón bajo la máquina vs cerdo bajo título humano; 'my purity and your title are different questions' cierra el intramural; cierre con la pregunta del post. Cortés, sin filo contra veganos.
 
-### Hilo `28046113755009790` — 2026-09-19 · outcome: **goalpost**
+### Hilo `28046113755009790` — 2026-09-19 · outcome: **silent**
 - **Su jugada:** Round 2 (reply a Bernard, ~15:40): estira la definición de exploitation (desbalance de poder + ganancia + sin recompensa) para que los crop deaths sean 'animales salvajes explotados', y atribuye falsamente: 'you find wild animals paying with their lives acceptable'. Tercera estación (intención → definición → atribución). En ramas paralelas llamó 'liar' y 'nutter' a Barbara.
 - **Nuestra respuesta:** Tomó su definición y la terminó: bajo ella la granja es el caso más puro (el cerdo ES la ganancia; el ratón es alguien afectado) — afectar y poseer son relaciones distintas y su propia definición traza la línea. Recibo de atribución sin drama ('I said nobody owns the field mouse'); la pieza de la tierra devuelta en una línea (la ganadería como mayor usuario); nombró el cambio de terreno en una frase; cerró con la pregunta del título + ¿existe la esclavitud necesaria? Round 2 de 2: si abre cuarta estación, silencio con la pregunta visible.
 
-### Hilo `28046483408306158` — 2026-09-19 · outcome: **goalpost**
+### Hilo `28046483408306158` — 2026-09-19 · outcome: **silent**
 - **Su jugada:** Round 2 en MI post del relativismo (2h): copy-paste del mismo párrafo del hilo de Matt — 'an animal does not need to be the property of a human to be exploited', definición de exploitation estirada al uso de tierra, 'trillions of wild animals', tractores/'go drive a car around squashing people', 'Ps enjoy ya jail sentence', y espejo de mi pregunta de cierre hacia crop deaths.
 - **Nuestra respuesta:** Reply etiquetada (204 palabras, filo paciente, ÚLTIMO round con él). Recibo: la analogía del abuso desapareció y el mismo párrafo está bajo el post de Matt, lo contesto una vez aquí. Su definición terminada con redacción nueva: en el campo el animal es afectado por el uso de tierra, en la granja el animal está dentro del reclamo (criado, retenido, vendido, dispuesto bajo título) — la ganancia ES ese cuerpo; afectar y poseer son relaciones distintas y ensanchar "exploitation" hace desaparecer el título dentro de la palabra. Su pregunta espejo contestada de frente: sí es objeción seria a cómo se manejan los campos, no da a nadie título sobre cerdos, y la ganadería está dentro del cargo (forraje, pastoreo, los cuerpos que posee). Cierre: la misma pregunta con paciencia + ¿existe la esclavitud necesaria? En el hilo de Matt: SILENCIO deliberado (cuarta estación).
 
