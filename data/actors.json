@@ -34,8 +34,9 @@
         "our_reply_summary": "Concede biología total. Separa 'omnívoro = hecho de digestión' de 'animals are food = juicio de valor que estás metiendo en la definición'. Cierra con UNA pregunta: capacidad no implica derecho.",
         "outcome": "silent",
         "framework": "dominacion-no-es-superioridad-moral",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "dominacion-no-es-superioridad-moral: tras separar capacidad biologica de juicio moral, ella desvio a 'normal/onus is not on me'; shift de marco confirmado."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "dominacion-no-es-superioridad-moral: tras separar capacidad biologica de juicio moral, ella desvio a 'normal/onus is not on me'; shift de marco confirmado.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "27341517928804691",
@@ -74,8 +75,9 @@
         "our_reply_summary": "Nombra el cambio de tema sin perseguirlo: la conversacion era sobre tratar a un ser vivo como propiedad, no sobre tubos. Concede que podria sobrevivir de modos raros pero el metodo nunca fue el punto; elegir como alimentarme no responde por el ser del otro lado. El feeding tube es una forma de evitar la pregunta, no una refutacion. Devuelve al hueso: que hace aceptable volver propiedad a un ser vivo. Corto (deliberado).",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: tras nombrarle el cambio de tema, doblo el reductio en vez de tocar el estatus de propiedad."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras nombrarle el cambio de tema, doblo el reductio en vez de tocar el estatus de propiedad.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "27335635946059556",
@@ -94,11 +96,12 @@
         "our_reply_summary": "Concedo biología entera (nadie pidió justificar la digestión); nada en el ecosistema tiene título (el lobo no cría/registra/vende al venado; la granja es el único lugar donde el animal es propiedad antes de ser comida); su \"subjetivo\" se apaga con su propia biología (hecho) vs el punto de vista del cerdo (opinión); ¿pueden comer carne? obvio; ¿qué legitima la propiedad?",
         "framework": "dominacion-no-es-superioridad-moral",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
         "outcome_note": "dominacion-no-es-superioridad-moral: concedí la biología entera; ella abandonó 'omnivore' y saltó a 'apex species / superior intelligence / no moral obligation' — movió el eje de biología a might-makes-right sin defender el anterior. No conceded.",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-28T14:55:15.443Z",
-        "draft_sha": "adf8046353f3e8b4"
+        "draft_sha": "adf8046353f3e8b4",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "28500475619575577",
@@ -148,8 +151,9 @@
         "our_reply_summary": "Aterrizó la distinción de ROL del daño: subproducto de alimentar a todos vs el propósito mismo de la actividad. Reframeó 'exploitation' como RELACIÓN, no lista. Nombró que Matt usa esa distinción (accidente vs intención) en todo menos con animales. Devolvió la carga.",
         "outcome": "silent",
         "framework": "algo-a-alguien-sujeto-derecho",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: evadio exigiendo una lista de actos en vez de engancharse — deflexion de marco."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: evadio exigiendo una lista de actos en vez de engancharse — deflexion de marco.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "27375477042075446",
@@ -208,8 +212,9 @@
         "our_reply_summary": "Dos piezas: normal/natural/species-appropriate describe un patron, no justifican el titulo (is-ought); muchas cosas comunes en la naturaleza no son permiso moral. Y no-necesito-defenderlo deja el claim central donde estaba: negarse a justificar no justifica el titulo. La carga cae en quien reclama autoridad de propiedad sobre un sujeto que siente. Sin morder el vegans-have-no-reason ni el pantano de cosechas. Cierre: que justifica el titulo de propiedad sobre alguien con punto de vista.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "algo-a-alguien-sujeto-derecho separo patron (describe) de titulo (justifica), y Matt no toco el titulo: movio el poste de 'natural en la naturaleza' a 'somos naturalmente una especie carnivora' y re-emitio el mismo burden-flip ('sigues sin darme una razon legitima'). Cero defensa del titulo en dos vueltas. Es-a-debe intacto. Baja rentabilidad argumental, pero el lurker ve la evasion — reply corto, no perseguirlo."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "algo-a-alguien-sujeto-derecho separo patron (describe) de titulo (justifica), y Matt no toco el titulo: movio el poste de 'natural en la naturaleza' a 'somos naturalmente una especie carnivora' y re-emitio el mismo burden-flip ('sigues sin darme una razon legitima'). Cero defensa del titulo en dos vueltas. Es-a-debe intacto. Baja rentabilidad argumental, pero el lurker ve la evasion — reply corto, no perseguirlo.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "27937793019177176",
@@ -218,7 +223,8 @@
         "our_reply_summary": "Volteó su diccionario: yield a product es el sentido para cosas (campo/mina/máquina) — usarlo para ella re-enuncia el post (la gramática la archiva como sitio de producción). Un solo round (sink). Cerró con la pregunta del título.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
-        "outcome_evidence": "cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28"
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "closed_from": "pending"
       },
       {
         "thread_id": "28046483408306158",
@@ -400,8 +406,9 @@
         "our_reply_summary": "Le tome la concesion sin triunfalismo. Concedi que eso ES lo que hace la institucion: registra y hace exigibles reclamos entre personas. Y ahi mismo mostre que deja intacta la pregunta del animal bajo el titulo — revela a quien protege el sistema (el reclamante humano) y que el animal es aquello sobre lo que se organizan los reclamos humanos. Una burocracia estabiliza una practica y dice quien cuenta hoy como dueno; la cuestion de estatus sigue abierta. \"Convence a suficiente gente\" describe como cambian las instituciones, no por que el titulo presente es legitimo. Devolvi la pregunta rio arriba de la burocracia.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "Retirada del terreno moral a la realpolitik institucional ('cajole enough people, develop the institution') — estación clásica del retreat-cycle: cuando el título no se puede justificar, se vuelve 'así funciona la burocracia'. Tras nuestra reply no volvió (5 semanas)."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "Retirada del terreno moral a la realpolitik institucional ('cajole enough people, develop the institution') — estación clásica del retreat-cycle: cuando el título no se puede justificar, se vuelve 'así funciona la burocracia'. Tras nuestra reply no volvió (5 semanas).",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "27051763587778150",
@@ -952,8 +959,9 @@
         "our_reply_summary": "Concede el dano evitable en todos lados, distingue rol-del-dano (subproducto vs proposito: el animal ES el producto), no body-count, roza el jab de AI una linea, devuelve al hueso.",
         "framework": "no-necesidad-cambiaron-las-reglas",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "Tras conceder el daño evitable y distinguir rol-del-daño, Anna no concedió: movió el marco a intención/lost-life y reiteró el tu-quoque (treats/coffee) con insulto. Mueve postes, no reconoce el punto."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "Tras conceder el daño evitable y distinguir rol-del-daño, Anna no concedió: movió el marco a intención/lost-life y reiteró el tu-quoque (treats/coffee) con insulto. Mueve postes, no reconoce el punto.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "27395909046698912",
@@ -982,8 +990,9 @@
         "our_reply_summary": "Conced la variacion cultural (cierto); pero describe actitudes, no las justifica, y la variacion misma muestra que la linea es convencion no algo del animal; that-choice-is-yours re-afirma la autoridad reclamada; devolvi: por que esa autoridad debe existir sobre alguien con punto de vista.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: tras conceder la variación cultural, se retiró a 'we don't need to justify anything... no justification needed, it's our choice' — rechazo a justificar, NO concesión. Mueve el poste de 'es justificable' a 'no te debo justificación'. Pozo: la negativa a justificar es ella misma exponible para el lurker, pero rinde poco."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras conceder la variación cultural, se retiró a 'we don't need to justify anything... no justification needed, it's our choice' — rechazo a justificar, NO concesión. Mueve el poste de 'es justificable' a 'no te debo justificación'. Pozo: la negativa a justificar es ella misma exponible para el lurker, pero rinde poco.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "27496390256650790",
@@ -1045,11 +1054,12 @@
         "our_reply_summary": "Último round con ella en este hilo: su primer párrafo es la tesis del post (decisión + poder explica el título, no lo justifica); concedo el mecanismo legal vigente (la ley empaqueta responsabilidad dentro de propiedad) y lo separo de justificación con padre/tutor (recuperan al dependiente sin derecho a venderlo); su propia frase deber-sin-derechos-idénticos traza la línea deber/título; las dos respuestas dadas explican el sistema, ninguna es razón para el título; pregunta plantada y visible.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
         "outcome_note": "algo-a-alguien-sujeto-derecho: tras pedirle el criterio, se retiró al burden-flip 'I already answered / we don't owe you a philosophical justification / animals are property because we decided'. Estación clásica de su retreat-cycle. No conceded.",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-28T14:55:15.443Z",
-        "draft_sha": "a2287e6876af7a70"
+        "draft_sha": "a2287e6876af7a70",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "28500475619575577",
@@ -1114,7 +1124,7 @@
     ],
     "tone": "civil",
     "verdict": "persuadible",
-    "register": "filo",
+    "register": "compasivo",
     "what_not_to_do": "No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar 'gestión de feral animals' de 'criar y vender crías para matadero'. No martillo moral con un granjero de buena fe.",
     "threads": [
       "march-property",
@@ -1170,8 +1180,9 @@
         "our_reply_summary": "Conced que la ley establece propiedad; describir!=justificar; conteste su pregunta directa (mi posesion no decide la pregunta moral); devolvi: que justifica asignar autoridad total sobre un conscious individual con punto de vista. Sin pelear los tecnicismos.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: tras agotar el carril legal (NSW biosecurity/property), Chris abandono la pregunta de justificacion y se replego al standing/tu-quoque — 'what right do you have to judge or question those who do if you don't own any animals... you refuse to answer'. Mueve el poste de 'la propiedad es justificable' a 'no tienes legitimidad para preguntar'. Para el lurker: la credencial no es requisito para cuestionar una institucion."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras agotar el carril legal (NSW biosecurity/property), Chris abandono la pregunta de justificacion y se replego al standing/tu-quoque — 'what right do you have to judge or question those who do if you don't own any animals... you refuse to answer'. Mueve el poste de 'la propiedad es justificable' a 'no tienes legitimidad para preguntar'. Para el lurker: la credencial no es requisito para cuestionar una institucion.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "27468645086091974",
@@ -1714,8 +1725,9 @@
         "our_reply_summary": "La acusacion de asumir la conclusion es falsa: parto de lo que EL concede (son sintientes); no reclamo mismos derechos/igualdad, solo lo minimo (no ser propiedad); sus casos marginales cortan en su contra (bebes/demencia sin las capacidades y con estatus completo -> el criterio es sentir, no la capacidad superior). Tome el nucleo (Gish discipline), no persegui cada rama. Cierre: cual es el rasgo que hace el trabajo.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "algo-a-alguien: abrió vuelta N del retreat-cycle en una rama suelta en vez de defender la estación anterior — el arco consolidado del 7-04 lo dejó mapeado para el lurker."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "algo-a-alguien: abrió vuelta N del retreat-cycle en una rama suelta en vez de defender la estación anterior — el arco consolidado del 7-04 lo dejó mapeado para el lurker.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "4587084521560658",
@@ -1734,7 +1746,8 @@
         "our_reply_summary": "Concedió lo cierto de entrada (shorthand, historia). Recibo de procedencia: indoctrinated es palabra SUYA, el post no la usa. Recibo central: exige el argumento ético a un post cuyo párrafo final ES esa pregunta — contestó el verbo y saltó la pregunta. La replantó idéntica.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
-        "outcome_evidence": "cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28"
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "closed_from": "pending"
       },
       {
         "thread_id": "28604913169131821",
@@ -2254,7 +2267,8 @@
         "our_reply_summary": "Respuesta literal para leche: el ternero — la pregunta solo suena absurda con la cría ya removida del cuadro. Para huevo: el título sobre el cuerpo, no el destino del output. Sin sarcasmo de vuelta; cerró con ¿qué hace legítimo poseerla?",
         "framework": "premisa-falsa-los-animales-nos-dan",
         "outcome": "silent",
-        "outcome_evidence": "cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28"
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "closed_from": "pending"
       }
     ]
   },
@@ -2356,8 +2370,9 @@
         "our_reply_summary": "Filo ligero: crops-bred no toca el eje, los cultivos no son POSEIDOS como sujetos; nunca fue criado-para-existir sino poseido-como-un-quien. Quien/que es una distincion ordinaria que todos usamos (correccion del coagent: no afirmar que el lo dice de su perro), no un truco de diccionario. Cierre: cual es el criterio que pone al cerdo del lado que?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: dobló al cierre definicional — 'it is a dictionary dispute, someone only applies to people, until you accept that there's no point discussing the rest'. Petitio puro: hace de su conclusión (someone=solo personas) la precondición para seguir. Para el lurker: la 'disputa de diccionario' ES la pregunta que se está rogando."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: dobló al cierre definicional — 'it is a dictionary dispute, someone only applies to people, until you accept that there's no point discussing the rest'. Petitio puro: hace de su conclusión (someone=solo personas) la precondición para seguir. Para el lurker: la 'disputa de diccionario' ES la pregunta que se está rogando.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "27330688236588406",
@@ -2376,8 +2391,9 @@
         "our_reply_summary": "El diccionario no zanja lo moral; si someone rastrea especie o punto-de-vista ES la pregunta; definir someone=human antes mete la conclusion en la lengua; crops-are-bred es error de categoria (un cultivo no es alguien con standpoint). Devolvi la carga sobre el estatus. Cierre: que rasgo hace decisiva la membresia de especie.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "algo-a-alguien: acorralado en la petitio del diccionario migró a relativismo cultural (morals differ by culture, dog/cat vs Hindu cow) — estación nueva del retreat-cycle, la definicional abandonada sin defender. Deuda viva 21h."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "algo-a-alguien: acorralado en la petitio del diccionario migró a relativismo cultural (morals differ by culture, dog/cat vs Hindu cow) — estación nueva del retreat-cycle, la definicional abandonada sin defender. Deuda viva 21h.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "27330688236588406",
@@ -3318,7 +3334,8 @@
         "our_reply_summary": "Registro compasivo: concedió el dato completo de entrada. La voluntariedad ocurre dentro de la disponibilidad fabricada (criada para rendir mucho más de lo que un ternero tomaría; el robot responde una urgencia que el arreglo produce). El robot moderniza el cómo; el título queda intacto. Cierre en invitación genuina.",
         "framework": "premisa-falsa-los-animales-nos-dan",
         "outcome": "silent",
-        "outcome_evidence": "cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28"
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "closed_from": "pending"
       }
     ],
     "user_id": "61571628458052",
@@ -3351,8 +3368,9 @@
         "our_reply_summary": "Concedió entero el punto de intención (llámalo intencional; describe la matanza como incidental si quieres) y movió el eje a estatus: el ratón nunca fue criado ni poseído, el cerdo sí desde que nace hasta el cuchillo; el espejo solo refleja parado en el eje de Barbara. Cerró en la pregunta del título de propiedad (sin la de esclavitud necesaria — coagent: demasiado cargada para actor nuevo).",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: conceder la intención entera y mover a estatus funcionó — Wheeldon abandonó la estación de intención sin defenderla y saltó a estirar la definición de exploitation. El eje propiedad quedó sin tocar; él cambió de terreno."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: conceder la intención entera y mover a estatus funcionó — Wheeldon abandonó la estación de intención sin defenderla y saltó a estirar la definición de exploitation. El eje propiedad quedó sin tocar; él cambió de terreno.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "28046483408306158",
@@ -3361,8 +3379,9 @@
         "our_reply_summary": "Tras ~1h de paciencia deliberada (estrategia de Bernard; texto validado por Insult en Discord): desmonta la analogía por asignación de silla — el que 'sigue' es quien paga el título sobre el cuerpo de un ser consciente, no el vegano; la cláusula cubre lo estructuralmente inescapable (carreteras, medicinas, cadenas) y no da permiso para comprar el producto directo del título; ratón bajo la máquina vs cerdo bajo título humano; 'my purity and your title are different questions' cierra el intramural; cierre con la pregunta del post. Cortés, sin filo contra veganos.",
         "framework": "violencia-indirecta-quien-demanda",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "violencia-indirecta-quien-demanda: desmontar la analogía por asignación de silla (quien 'sigue' es el que paga el título) no fue defendido — abandonó la analogía de Francione sin sostenerla y pegó el mismo párrafo de 'exploitation sin propiedad' + crop deaths que usó en el hilo de Matt. Estación nueva, misma que allá."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "violencia-indirecta-quien-demanda: desmontar la analogía por asignación de silla (quien 'sigue' es el que paga el título) no fue defendido — abandonó la analogía de Francione sin sostenerla y pegó el mismo párrafo de 'exploitation sin propiedad' + crop deaths que usó en el hilo de Matt. Estación nueva, misma que allá.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "28046113755009790",
@@ -3371,8 +3390,9 @@
         "our_reply_summary": "Tomó su definición y la terminó: bajo ella la granja es el caso más puro (el cerdo ES la ganancia; el ratón es alguien afectado) — afectar y poseer son relaciones distintas y su propia definición traza la línea. Recibo de atribución sin drama ('I said nobody owns the field mouse'); la pieza de la tierra devuelta en una línea (la ganadería como mayor usuario); nombró el cambio de terreno en una frase; cerró con la pregunta del título + ¿existe la esclavitud necesaria? Round 2 de 2: si abre cuarta estación, silencio con la pregunta visible.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: tomar SU definición y terminarla (el cerdo ES la ganancia) no fue refutado — re-pegó el mismo párrafo de la definición, agregó 'enjoy ya jail sentence' y espejó la pregunta del título hacia crop deaths. Cuarta estación (re-aserción + insulto + espejo de pregunta). Plan de r2: silencio con la pregunta visible."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tomar SU definición y terminarla (el cerdo ES la ganancia) no fue refutado — re-pegó el mismo párrafo de la definición, agregó 'enjoy ya jail sentence' y espejó la pregunta del título hacia crop deaths. Cuarta estación (re-aserción + insulto + espejo de pregunta). Plan de r2: silencio con la pregunta visible.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "28046483408306158",
@@ -3382,8 +3402,9 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "tactic": "crop_deaths_flip",
         "outcome": "silent",
-        "outcome_evidence": "goalpost sin respuesta; cerrado por edad (tope 7d, pipeline-freshness-cap) 2026-09-28",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: tras el reply que terminó SU definición de exploitation (afectar ≠ poseer; su propia definición traza la línea), Wheeldon no defendió la definición ni tocó el título — regresó a la estación #1 (la analogía del abuso infantil, 'if exploitation is immoral then ALL acts are immoral') que él mismo había abandonado un turno antes. Ciclo cerrado: estación 1 → 2 → 1 sin defender ninguna. Decisión del 19-sep vigente: última vuelta, la pregunta queda visible sin contestar."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras el reply que terminó SU definición de exploitation (afectar ≠ poseer; su propia definición traza la línea), Wheeldon no defendió la definición ni tocó el título — regresó a la estación #1 (la analogía del abuso infantil, 'if exploitation is immoral then ALL acts are immoral') que él mismo había abandonado un turno antes. Ciclo cerrado: estación 1 → 2 → 1 sin defender ninguna. Decisión del 19-sep vigente: última vuelta, la pregunta queda visible sin contestar.",
+        "closed_from": "goalpost"
       }
     ],
     "user_id": "1742478160",
