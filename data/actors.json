@@ -25,7 +25,8 @@
       "27341517928804691",
       "27335635946059556",
       "28500475619575577",
-      "27405978672358616"
+      "27405978672358616",
+      "28614822664807538"
     ],
     "interactions": [
       {
@@ -118,6 +119,17 @@
         "lurker_checked_at": "2026-09-29T02:45:38.917Z",
         "draft_sha": "83b5ff389f27566d",
         "third_party_replies": []
+      },
+      {
+        "thread_id": "28614822664807538",
+        "date": "2026-09-28",
+        "their_move": "Scout, post de Amber Rose (Open Debates 3), rama con Brendan Keyes: \"Having pets is exploiting them… Eventually you will kill that pet when it is too old… I see absolutely no difference between owning chickens or a dairy cow\" + \"keeping a husky in an apartment is a-okay\".",
+        "our_reply_summary": "Filo profano: \"no difference\" es bullshit y su propio husky lo prueba; al husky nadie lo manda matar por viejo, la vaca y las gallinas pasan por otro filtro (livestock = salida escrita en la categoría); el individuo desaparece bajo la etiqueta de especie. Cierre: por qué uno recibe nombre y vejez y los otros curva de producción y fecha de salida.",
+        "framework": "filtro-especie-vs-individuo",
+        "draft_sha": "c3826fb1dc241ade",
+        "outcome": "pending",
+        "exposure_n": 9,
+        "assignment": "chosen"
       }
     ]
   },
@@ -2254,7 +2266,8 @@
       "27330688236588406",
       "27468645086091974",
       "27051763587778150",
-      "27496390256650790"
+      "27496390256650790",
+      "28469926949331190"
     ],
     "interactions": [
       {
@@ -2377,6 +2390,17 @@
         "outcome": "silent",
         "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
         "closed_from": "pending"
+      },
+      {
+        "thread_id": "28469926949331190",
+        "date": "2026-09-28",
+        "their_move": "Scout, post propio de Tiana (VEGANnoyance): \"Show me a lifelong vegan, born from a lifelong vegan, born from a lifelong vegan. Just one.\"",
+        "our_reply_summary": "Comentario raíz, filo profano corto: concedo que casi nadie tiene tres generaciones veganas; eso prueba cuándo empezó el cambio, fuck-all sobre si el hábito viejo se justificaba; nadie nace comiendo animales, la clasificación comida/familia se aprende; toda primera generación pareció antinatural. Cierre: qué dice el árbol genealógico de alguien sobre la vaca en la granja hoy.",
+        "framework": "tabula-rasa-ni-nacemos-ni-nos-hacen",
+        "draft_sha": "b8b51d3edca2cd90",
+        "outcome": "pending",
+        "exposure_n": 13,
+        "assignment": "chosen"
       }
     ]
   },
@@ -4088,7 +4112,19 @@
     "threads": [
       "28161481036806394"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "thread_id": "28161481036806394",
+        "date": "2026-09-28",
+        "their_move": "Scout, post \"Animals have souls\" de Mizati Yñori (VS Meat Eaters): a Susan Lynn Hebel, \"not all animals… you have to have a fully functioning brain so jellyfish, starfish, mussels, oysters and clams… physically cannot experience that stuff. So what about them?\"",
+        "our_reply_summary": "Registro limpio: le doy la razón, por eso no uso el alma como línea; el criterio es que haya alguien que experimente desde su lado; ostras y medusas son el borde honesto; vacas, cerdos, gallinas, ovejas y cabras están muy adentro de su propia línea. Cierre: con el cerebro que él dijo que hace falta, qué queda que convierta a uno en propiedad de alguien.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "f321e6831bf71a79",
+        "outcome": "pending",
+        "exposure_n": 1,
+        "assignment": "chosen"
+      }
+    ],
     "user_id": "100004879835857",
     "name": "John Kehren",
     "profile_url": "https://www.facebook.com/groups/683615698352965/user/100004879835857/",

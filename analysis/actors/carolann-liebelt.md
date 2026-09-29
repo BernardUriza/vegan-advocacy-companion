@@ -152,4 +152,8 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 - **Su jugada:** Goalpost a might-makes-right: If any other animal had the capacity to capture and farm animals, they would. Our superior intelligence... apex species... We have no moral obligation to stop eating meat.
 - **Nuestra respuesta:** Concedí el hecho (más poder/inteligencia), nombré el salto de goalpost (biología→ecosistema→dominancia), y clavé que el poder explica el resultado, no funda el título (is/ought). Cerré con la pregunta del post.
 
-_Hilos: 27341517928804691, 27335635946059556, 28500475619575577, 27405978672358616_
+### Hilo `28614822664807538` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Scout, post de Amber Rose (Open Debates 3), rama con Brendan Keyes: "Having pets is exploiting them… Eventually you will kill that pet when it is too old… I see absolutely no difference between owning chickens or a dairy cow" + "keeping a husky in an apartment is a-okay".
+- **Nuestra respuesta:** Filo profano: "no difference" es bullshit y su propio husky lo prueba; al husky nadie lo manda matar por viejo, la vaca y las gallinas pasan por otro filtro (livestock = salida escrita en la categoría); el individuo desaparece bajo la etiqueta de especie. Cierre: por qué uno recibe nombre y vejez y los otros curva de producción y fecha de salida.
+
+_Hilos: 27341517928804691, 27335635946059556, 28500475619575577, 27405978672358616, 28614822664807538_
