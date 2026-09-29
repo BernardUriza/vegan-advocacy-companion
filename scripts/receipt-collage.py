@@ -15,7 +15,7 @@ número en círculo por tarjeta y créditos en un pie pequeño. photos.json admi
 "Commenter N" y la mención azul a Bernard con una barra del color de la burbuja (nada más del render cambia).
 --cards <dir> escribe además cada tarjeta como PNG propio (card-1.png…; título solo en la 1, créditos solo en la última).
 """
-import argparse, json, sys
+import argparse, re, json, sys
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
@@ -70,11 +70,12 @@ def quote_crop(im, author_h=30, ctx=6):
     return out
 
 
-def anonymize(im, n, author_h=30):
+def anonymize(im, n, author_h=30, keep_author=False):
     px = im.load(); w, h = im.size; bg = im.getpixel((2, 2)); d = ImageDraw.Draw(im)
-    name_x = max((x for x in range(w) for y in range(author_h) if all(c > 215 for c in px[x, y])), default=0)
-    d.rectangle([0, 0, name_x + 8, author_h - 1], fill=bg)
-    d.text((9, 23), f'Commenter {n}', fill='#e4e6eb', font=ImageFont.truetype('/System/Library/Fonts/Helvetica.ttc', 20, index=1), anchor='ls')
+    if not keep_author:
+        name_x = max((x for x in range(w) for y in range(author_h) if all(c > 215 for c in px[x, y])), default=0)
+        d.rectangle([0, 0, name_x + 8, author_h - 1], fill=bg)
+        d.text((9, 23), f'Commenter {n}', fill='#e4e6eb', font=ImageFont.truetype('/System/Library/Fonts/Helvetica.ttc', 20, index=1), anchor='ls')
     link = [(x, y) for y in range(author_h, h) for x in range(w) if 90 <= px[x, y][0] <= 130 and 150 <= px[x, y][1] <= 180 and px[x, y][2] >= 235]
     while link:
         y0 = link[0][1]; band = [(x, y) for x, y in link if y0 - 4 <= y <= y0 + 26]; link = [t for t in link if t not in band]
@@ -177,8 +178,11 @@ def social(index, photos_file, out, title, cards_dir=None):
 if SOCIAL and pairs_file:
     social(index, pairs_file, out, title, cards_dir); sys.exit(0)
 shots = []
-for i in index:
+for n, i in enumerate(index, 1):
     im = Image.open(i['file']).convert('RGB')
+    if ANON:
+        mine = (i.get('label') or '').startswith(('Comment by Bernard', 'Reply by Bernard'))
+        im = anonymize(im, int(re.match(r'\d+', i['slug']).group()) if re.match(r'\d+', i.get('slug', '')) else n, keep_author=mine)
     if im.width != W - 2 * PAD:
         r = (W - 2 * PAD) / im.width
         im = im.resize((W - 2 * PAD, int(im.height * r)), Image.LANCZOS)
