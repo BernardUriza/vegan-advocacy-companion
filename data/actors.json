@@ -3943,6 +3943,18 @@
         "assignment": "chosen",
         "propensity": null,
         "outcome": "pending"
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-28",
+        "their_move": "Réplica (VEGANnoyance, post de sintiencia), contestando el \"fuck that bird\" volteado: \"so that's your best ai reply. Hahaha\" — sello de IA como octava estación.",
+        "our_reply_summary": "Despedida por orden de Bernard (filo, 193 palabras): recibo del arco entero (speciesism → apex → reglas → legal → supermercado → proteína → fuck that bird → sticker de IA) como un solo movimiento, poder con distinto disfraz; el poder explica cómo llegó al anaquel y no da derecho a ponerla ahí; sin defender si es IA. Salida: Where in any of them was a reason that had to do with the bird?",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "draft_sha": "3bc924abc2525c0c",
+        "exposure_n": 8,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
       }
     ],
     "user_id": "100001248981179",

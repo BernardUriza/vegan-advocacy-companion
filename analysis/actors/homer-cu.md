@@ -80,4 +80,8 @@ No defender que los veganos son perfectos ni entrar al catálogo de grados. Conc
 - **Su jugada:** Réplica (VEGANnoyance, post de sintiencia), contestando "which line in it turns a dietary choice into a claim over her?": "yup. Fuck that bird. Its human food. You got that right. Next" — confirma que no hay página: voluntad pelona + la conclusión como etiqueta, y salida.
 - **Nuestra respuesta:** Filo profano corto (83 palabras, cierre por consejo del coagent: una línea, no otra ronda): su "yup" es lo más honesto del hilo, el libro no tenía página; en su propia frase "that bird" viene primero y hubo que señalarla antes de renombrarla "human food", el renombre es toda la jugada; acepto el "Next". Cierre: when the reason is "fuck that bird", what is left holding up the "human food" part?
 
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Réplica (VEGANnoyance, post de sintiencia), contestando el "fuck that bird" volteado: "so that's your best ai reply. Hahaha" — sello de IA como octava estación.
+- **Nuestra respuesta:** Despedida por orden de Bernard (filo, 193 palabras): recibo del arco entero (speciesism → apex → reglas → legal → supermercado → proteína → fuck that bird → sticker de IA) como un solo movimiento, poder con distinto disfraz; el poder explica cómo llegó al anaquel y no da derecho a ponerla ahí; sin defender si es IA. Salida: Where in any of them was a reason that had to do with the bird?
+
 _Hilos: 28459136643743554_
