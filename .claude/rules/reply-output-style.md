@@ -306,7 +306,11 @@ como pivote** ("no es X, es Y" / "isn't X — it's Y" / "X, not Y" para definir)
 AI-tell que se lee aburrido; decir lo que ES, afirmativo y contundente, sin la
 muleta de la negación previa (ver "Afirmativo y contundente"). NO confundir con
 concesión-y-redirección (esa se conserva). El style-gate lo reformula a afirmativo
-ANTES de postear.
+ANTES de postear. · **coma DENTRO de la comilla al citar un fragmento** (`"human food,"`,
+`"fuck that bird,"`): es la convención que trae el texto copiado literal de ChatGPT, y
+Bernard la quiere fuera: `"human food",`. Pasó en la reply a Homer del 2026-09-28 (0928U),
+dos veces en 83 palabras. El style-gate la bloquea (`commaInsideQuote`, flag dura, también
+con comillas curvas) y `comment-prepare` no stagea hasta corregirla.
 
 ## El cierre NO se clona en un lote (regla dura, 2026-09-28)
 

@@ -141,6 +141,12 @@ export function analyzeDraft(text, { name = null, file = null } = {}) {
     return { name: 'negateThenAffirm', hard: hits.length > 0, soft: hits.length === 0 && soft.length > 0, count: hits.length, evidence: hits.slice(0, 4), softEvidence: soft.slice(0, 4) };
   }
 
+  // Copiado literal de ChatGPT: la coma queda DENTRO de la comilla ("human food,"); Bernard la quiere fuera ("human food",).
+  function checkCommaInsideQuote() {
+    const hits = [...text.matchAll(/(\S{0,20}),(["”])(?=\s|$)/g)].map((m) => `${m[1]},${m[2]}`);
+    return { name: 'commaInsideQuote', hard: hits.length > 0, count: hits.length, evidence: hits.slice(0, 4) };
+  }
+
   function checkEmojiOrMarkdown() {
     const emojis = [...(text.match(/\p{Extended_Pictographic}/gu) || [])];
     const bold = [...(text.match(/\*\*[^*\n]+\*\*/g) || []), ...(text.match(/__[^_\n]+__/g) || [])];
@@ -161,6 +167,7 @@ export function analyzeDraft(text, { name = null, file = null } = {}) {
     detectBiocentricAxis(text, { lang: 'en' }),
     checkNegateThenAffirm(),
     checkProfanity(),
+    checkCommaInsideQuote(),
   ];
   const hardFlags = checks.filter((c) => c.hard).map((c) => c.name);
   const softFlags = checks.filter((c) => !c.hard && c.soft).map((c) => c.name);
@@ -183,6 +190,7 @@ function printDraft(result) {
   console.log(`[${mark(checks[7].hard)}] biocentricAxis    ${checks[7].evidence.length ? checks[7].evidence.join(' | ') : 'eje sensocéntrico (ok)'}`);
   console.log(`[${checks[8].hard ? 'X' : checks[8].soft ? '~' : '.'}] negateThenAffirm  ${checks[8].count ? 'pivote copular: ' + checks[8].evidence.map((h) => `"${h}"`).join(' | ') : checks[8].soft ? 'apositivo: ' + checks[8].softEvidence.join(' | ') : 'afirmativo (ok)'}`);
   console.log(`[${checks[9].soft ? '~' : '.'}] profanityCount    ${checks[9].count} (${checks[9].count ? checks[9].evidence.join(', ') : 'cero: si el registro es filo, falta la voz profana'})`);
+  console.log(`[${mark(checks[10].hard)}] commaInsideQuote  ${checks[10].count ? checks[10].evidence.map((h) => `${h} → ${h.replace(/,(["”])$/, '$1,')}`).join(' | ') : 'coma fuera de la comilla (ok)'}`);
   if (softFlags.length) console.log(`\nflags blandas (avisan, no fallan): ${softFlags.join(', ')}`);
 }
 

@@ -44,6 +44,17 @@ test('style-gate: DOS tricolones bloquean (es un molde, kill-list)', () => {
   assert.equal(runGate('style-gate.mjs', body), 1, 'tricolon repetido debe dar exit 1, no solo pintar [X]');
 });
 
+// ---------- style-gate: coma dentro de la comilla ----------
+
+test('style-gate: coma DENTRO de la comilla bloquea (copiado de ChatGPT)', () => {
+  assert.equal(runGate('style-gate.mjs', clean('When the reason is "fuck that bird," the rest is a label. ')), 1);
+  assert.equal(runGate('style-gate.mjs', clean('When the reason is \u201cfuck that bird,\u201d the rest is a label. ')), 1);
+});
+
+test('style-gate: coma FUERA de la comilla y comilla que abre tras coma pasan', () => {
+  assert.equal(runGate('style-gate.mjs', clean('When the reason is "fuck that bird", the rest is a label. You said, "that bird" first. ')), 0);
+});
+
 // ---------- style-gate: kill phrases y formato ----------
 
 test('style-gate: kill-phrase literal bloquea', () => {
