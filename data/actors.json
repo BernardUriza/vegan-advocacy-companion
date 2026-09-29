@@ -1805,6 +1805,24 @@
         "framework": "crueldad-no-es-la-causa",
         "draft_sha": "4bd1e0c4f94384ce",
         "outcome": "pending"
+      },
+      {
+        "thread_id": "28150669567887541",
+        "date": "2026-09-28",
+        "their_move": "Réplica (Vegans VS Meat Eaters, rama crop deaths): por fin contesta el WHETHER — \"I consider breeding and raising livestock for human nutrition a legitimate use, provided their welfare is appropriately protected\"; sentience no da derecho inviolable a no ser poseído; mascotas también son propiedad (eutanasia); el granjero de cosecha también mata por interés comercial; \"that's bullshit isn't a philosophical rebuttal\".",
+        "our_reply_summary": "Le reconozco que contestó el whether y muestro que es el how con condición engrapada: el dueño sigue decidiendo lo que más le importa a ella. Su perro lo delata: la eutanasia se decide POR el perro; matarlo para un asado y llaman a la policía. En la granja la muerte es el propósito de criarla. \"Bullshit\" fue el veredicto, esto el razonamiento. Cierre: cuando su lado y \"human nutrition\" chocan, ¿qué le da la última palabra a la nutrición humana?",
+        "framework": "bienestarismo-jugada-maestra-del-poder",
+        "draft_sha": "e552dfe2f40dc333",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "28604913169131821",
+        "date": "2026-09-28",
+        "their_move": "Réplica (Open Debates 3, post de sintiencia): tono-policing (\"increasingly worked up\") + \"human rights are a human invention... Rights aren't an individual intelligence test\" + no hay que dar protecciones equivalentes a toda especie + relativismo cultural (perro/comida) + \"where is YOUR argument\".",
+        "our_reply_summary": "\"Rights aren't an intelligence test\" es el post entero en sus palabras: los rasgos nunca fueron la línea. \"Human invention\" dice quién tiene la pluma, no por qué la línea deja fuera al cerdo. Él pelea contra \"identical protections\"; yo afirmo menos: alguien con lado propio bajo el uso de otro necesita razón. Cierre: si la invención humana es el fundamento, ¿qué hace a la especie que escribió el marco la autorizada a usar a todos los demás?",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "draft_sha": "5c429e1194465c9b",
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -2590,6 +2608,15 @@
         "outcome": "engaged",
         "outcome_evidence": "Dean → Bernard (17m): \"you're still moving the goalposts. Your original post made a very specific claim\"",
         "outcome_note": "sobreposicion-de-especies-criterio-leido: la retirada de la concesión con recibos cita-por-cita no lo movió; lo lee como goalpost. El frente es de procedencia (qué afirmó el OP), no de marco."
+      },
+      {
+        "thread_id": "28615704478052690",
+        "date": "2026-09-28",
+        "their_move": "Réplica 3 (Open Debates 3, post their-own-words): \"you're still moving the goalposts\" — la primera concesión admitió el punto; releer y matizar es sustituir por una interpretación; exige: ¿las citas dicen lo que el OP afirmó o es tu interpretación? Si es interpretación, concede.",
+        "our_reply_summary": "Registro limpio + collage adjunto anonimizado (cada cita en su hilo original, conclusión resaltada). Separo cita (verbatim de ellos) de caracterización (la frase del OP es mía, con links). Uno por uno: 1 y 5 traen la conclusión en el comentario o contestan mi pregunta de propiedad; 2 y 4 en su siguiente reply; 3 (Samantha) matizado. Cuatro de cinco atan los rasgos a uso/permiso/propiedad en sus palabras. La primera concesión fue demasiado amplia; corregirla tras releer es lo contrario de mover el poste. Cierre: ¿objeta las citas o mi lectura de que eran la línea del mercado?",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "draft_sha": "1fd7922df9a71a67",
+        "outcome": "pending"
       }
     ],
     "user_id": "1198831097",
@@ -3586,6 +3613,15 @@
         "our_reply_summary": "Registro filo profano: \"both\" es poder más papeleo; \"we make it legal\" dice quién tuvo la pluma y él ya lo había dicho (\"we dominate based on our written and unwritten rules\"): el título escribiéndose su propio permiso. Poseer personas también fue legal, escrito por quienes poseían (misma estructura, no mismo sujeto). El papeleo no agrega razón. Cierre: ¿a qué deben responder las reglas escritas además de que las escribimos nosotros?",
         "framework": "esclavitud-paralelismo",
         "draft_sha": "3093acb217dfd866",
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-28",
+        "their_move": "Réplica (VEGANnoyance, post de sintiencia): sello + argumento — \"spare us the freshman philosophy seminar\"; cheeseburger ≠ chattel slavery; \"humans write the laws, congratulations\"; leones comiendo cebras sin permisos de zonificación; \"let me know when the cows start hiring defense attorneys\"; clutch your tofu / insufferably dramatic.",
+        "our_reply_summary": "Su león lo refuta: el león mata y jamás posee (sin escritura, venta, herencia); el título es la invención humana que defiende. \"Humans write the laws\" es justo por qué se pueden cuestionar: señalar el permiso escrito por el poseedor es poder de traje. Los abogados: los recién nacidos tampoco contratan; la pregunta cae en quien tiene la pluma. Una línea al sello (clutch-your-tofu) y la comparación queda en estructura. Cierre: antes de que el león saque su permiso, ¿qué le añade \"civilization\" a la vaca además de cerca, factura y derecho a llamarla comida?",
+        "framework": "esclavitud-paralelismo",
+        "draft_sha": "04ac9ce06121ae62",
         "outcome": "pending"
       }
     ],
