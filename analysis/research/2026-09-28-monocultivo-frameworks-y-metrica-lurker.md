@@ -15,9 +15,11 @@ retrasa el desgaste es la variación SUSTANTIVA (argumento nuevo), no la cosmét
 Clemons 1990). El efecto de verdad ilusoria no aplica a afirmaciones leídas como opinión moral (2023,
 d = −0.23). Ningún estudio mide debate adversarial en línea.
 
-**2. El 4/159 no prueba nada del framework.** (CONFIRMADO el principio, cálculos propios). Se eligió
-para interlocutores receptivos: es sesgo de selección. Beta(5,156) ≈ 3.1% [1%–6.5%] se traslapa con el
-resto (0/83). Sin aleatorización registrada no hay evaluación off-policy posible (requisito de
+**2. El oro de algo-a-alguien no prueba nada del framework.** (CONFIRMADO el principio, cálculos propios).
+Corrección del mismo día: son 3 conceded reales, no 4 (el cuarto, Bowman con sembrar-en-el-receptivo, está
+marcado misattributed por ser auto-disciplina). Se eligió para interlocutores receptivos: es sesgo de
+selección. Jeffreys 95% de 3/151 juzgadas = 0.6%–5.2%, y se traslapa con cada familia con 0 conceded
+(normalidad 0/14 → 0–16%; necesidad 0/14 → 0–16%). Sin aleatorización registrada no hay evaluación off-policy posible (requisito de
 positividad; Dudík, Langford & Li; Li et al. LinUCB, replay solo con tráfico aleatorio). Thompson
 sampling tolera recompensa retrasada mejor que UCB (Chapelle & Li 2011, vía resumen).
 

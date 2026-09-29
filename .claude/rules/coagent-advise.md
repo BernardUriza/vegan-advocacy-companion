@@ -81,6 +81,39 @@ gates de siempre (style-gate, lint-prose, closer-clone) y `finalize` sobre el dr
 El hook de procedencia no cambia: `seed` (master con guardrail + frameworks + seed-gate) y
 `finalize` (sha del draft FINAL, ya enriquecido) siguen siendo obligatorios.
 
+## Rotación de entrada y sorteo registrado (regla dura, 2026-09-28)
+
+El eje no se mueve nunca (propiedad, [[abolitionist-framing]]); la ENTRADA sí. `algo-a-alguien-sujeto-derecho`
+estaba en 159 de 242 interacciones, y con eso el moat no podía decir qué funciona: sus 3 conceded vienen de
+interlocutores civiles (Bowman, Adam Gaska, Dean Christie) a quienes se les eligió ese framework, que es sesgo
+de selección, no evidencia.
+Investigado en `analysis/research/2026-09-28-monocultivo-frameworks-y-metrica-lurker.md`: el desgaste por
+repetición llega entre la 3a y la 10a exposición a la misma persona y lo retrasa la variación sustantiva
+(argumento nuevo), no la cosmética; y sin un sorteo registrado no hay comparación posible entre frameworks.
+
+**La mecánica, antes de componer el master, por cada target:**
+
+```bash
+node scripts/framework-pick.mjs --post-id <id> --author "<nombre exacto>"
+```
+
+Devuelve `exposure_n`, el framework `blocked` (desde la 3a reply al mismo target, el de su reply anterior),
+un `shortlist` de hasta 3 armas de familias distintas que cuadran con sus tácticas, y `assignment`:
+`chosen` (eliges tú dentro del shortlist o fuera, salvo el bloqueado) o `randomized` (target civil,
+compasivo o persuadible sorteado al 25%: el framework ya está decidido). El pick se escribe una sola vez; re-correrlo devuelve el
+mismo, así que no se re-sortea. Después, `finalize` exige `--framework <id>` y lo rechaza si es el bloqueado,
+si es auto-disciplina o si no es el sorteado: sin finalize no hay recibo, y sin recibo el hook bloquea el
+staging.
+
+- El master le da al coagent el framework del pick con su `enables` y `attack_surface`, como siempre.
+- Variar la entrada es sustantivo: otro framework, otra pregunta, respuesta a su último movimiento. Reformular
+  la misma frase no cuenta, y el cierre sigue sin clonarse ([[reply-output-style]]).
+- Al registrar la interacción (`appendInteraction`) se copian del recibo de finalize `framework`,
+  `exposure_n`, `assignment` y `propensity`; desde el 2026-09-29 `db.mjs` rechaza una interacción sin ellos
+  o que repita el framework anterior del target a partir de la 3a exposición.
+- Los 79 frameworks tienen `family` (enum en `data/vocab.json`). `framework-stats.mjs` compara familias con
+  intervalos, y solo las filas `randomized` comparan causalmente. Nada de "win rate".
+
 ## Encuadre del ask: "reescribe MI posición", NUNCA "draftéame respuestas" (2026-06-29)
 
 insult-gpt es un **entrenador confrontacional**, y su modo **Guardián** lee

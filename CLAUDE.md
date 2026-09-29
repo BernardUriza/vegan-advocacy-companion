@@ -24,14 +24,15 @@ con MCP, y solo con el GO explícito de Bernard, por jugada o por lote.
 |---|---|---|
 | 0 | `reflex.mjs emit` / `apply` | packets por actor → verdicts de Claude → escribe outcomes + marcador |
 | 0 | `close-outcomes.mjs --stale` | cierra como `silent` la deuda > 7d; correr al cerrar cada lote |
-| 0 | `lurker-sweep.mjs`, `moat-link-drafts.mjs` | reacciones del lurker por reply; backfill de `draft_sha` |
+| 0 | `lurker-sweep.mjs`, `moat-link-drafts.mjs` | respuestas de terceros (proxy) y reacciones (secundario) por reply; backfill de `draft_sha` |
 | 1 | `notif-scan.mjs --json` | notifs agrupadas por `post_id` con `openUrl` |
 | 1 | `debt-sweep.mjs` · `scout-feeds.mjs --json` | deuda viva del moat · hilos ajenos < 48h |
 | 2 | `thread-extract.mjs "<url>" --json` | `root`, `turns[]`, `debt[]`; volcar a `.coagent/tx-<post_id>.json` |
-| 3 | `seed-gate.mjs` → `seed-coagent.mjs seed/insert/read/finalize` | gate del master, recibo, transporte a ChatGPT sin enviar, recibo del draft final |
+| 3 | `framework-pick.mjs` → `seed-gate.mjs` → `seed-coagent.mjs seed/insert/read/finalize` | exposición, framework bloqueado y sorteo por target; gate del master, recibo, transporte a ChatGPT sin enviar, recibo del draft final (`finalize --framework` valida el pick) |
 | 4 | `style-gate.mjs a.txt b.txt …` · `lint-prose.mjs` | gates de prosa por lote (cierres clonados incluidos) |
 | 4 | `comment-prepare.mjs … [--mode root] [--image]` | deja el reply o el raíz cargado en una tab viva, sin enviar |
 | — | `validate-data.mjs` · `gen-dossiers.mjs` | tras toda escritura al moat |
+| — | `framework-stats.mjs` | efectividad por familia con intervalo Jeffreys; solo lo sorteado compara |
 
 Todos hablan con el Chrome de debug en **9333** por CDP (diagnóstico en `~/CLAUDE.md`). Tests:
 `node --test *.test.mjs` desde `scripts/`.

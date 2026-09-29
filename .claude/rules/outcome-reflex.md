@@ -63,6 +63,17 @@ cualquier reply** mientras `reflex-packets.json` sea más nuevo que ese marcador
 verdicts también es un `apply` válido (el marcador se escribe igual): lo que no vale es
 emitir y no juzgar.
 
+## La señal del lector silencioso: terceros primero, likes al final (2026-09-28)
+
+Las reacciones a mis replies no distinguen una reply buena de una mala: 31 de 35 medidas tenían cero, los
+likes arrastran efecto rebaño y Facebook ordena comentarios por likes, así que cero puede ser cero exposición
+(`analysis/research/2026-09-28-monocultivo-frameworks-y-metrica-lurker.md`). El único marcador validado de
+persuasión es el `conceded`. El proxy que se registra además es la postura de los TERCEROS que contestan a mi
+reply: `lurker-sweep.mjs` guarda sus respuestas verbatim en `third_party_replies`, el packet del reflex las
+trae, y el verdict lleva `third_party_stance` (`apoyo | hostil | neutral | mixto | ninguno`, enum en
+`data/vocab.json`) cuando hay terceros. Es un proxy NO validado por la literatura: se reporta como tal, nunca
+como "el norte". `lurker_reactions` queda como dato secundario.
+
 ## Tope de frescura del emit (2026-09-19)
 
 `reflex emit` omite las interacciones con `date` y los transcripts con `mtime` más viejos
