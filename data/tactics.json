@@ -8,21 +8,6 @@
     "register": "filo",
     "what_not_to_do": "Don't debate whether humans are omnivores (they are). Don't attack the biology claim. Attack the is-ought leap. Don't get dragged into academically DEFINING 'natural' — the point is it's both incoherent (cities and consciousness are 'natural' too; the natural/artificial line is arbitrary) AND morally irrelevant. Keep the axis on interests/sentience, never on nature's supposed design (teleology — Darwin killed that). Anchors to [[sentiocentrism-not-biocentrism]]: good/bad = satisfying/frustrating the interests of a sentient subject.",
     "source": "https://respuestasveganas.org/lo-natural-es-bueno/",
-    "actors_known": [
-      "1338583394",
-      "100004284907337",
-      "100000650843692",
-      "1277660735",
-      "100002066280343",
-      "100000755924068",
-      "100003780189781",
-      "100003979186761",
-      "604363060",
-      "832080524",
-      "100034907401951",
-      "100007626876163",
-      "100089071227800"
-    ],
     "fallacy_type_id": "appeal_to_nature"
   },
   {
@@ -33,10 +18,6 @@
     "canonical_counter": "Name the move explicitly and briefly: 'notice what just happened — we just moved from [X] to [Y].' Then return to the original question without following the redirect. The lurker sees the pattern.",
     "register": "filo",
     "what_not_to_do": "Don't chase each new goalpost. Don't treat each shift as a new debate. Naming the move is the move.",
-    "actors_known": [
-      "1338583394",
-      "100000050072653"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -47,21 +28,6 @@
     "canonical_counter": "Point out that they don't actually live by pure moral relativism — they have lines they wouldn't cross even if others called them moral. 'You wouldn't say torturing a child is equally valid because morals are subjective.' One line, for the lurker. Don't overextend.",
     "register": "filo",
     "what_not_to_do": "Don't write a philosophy essay on metaethics. One incisive observation, then leave it.",
-    "actors_known": [
-      "1338583394",
-      "100081126484836",
-      "669260908",
-      "100000650843692",
-      "813709465",
-      "100011355404997",
-      "100000418598784",
-      "100003886247108",
-      "61581270521234",
-      "965593289816591",
-      "1679128970037236",
-      "100034907401951",
-      "100007626876163"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -72,14 +38,6 @@
     "canonical_counter": "Name it and return the burden: 'The burden of proof is on whoever makes a claim. You're claiming it's justified to impose suffering on a sentient being for something we don't need. That's the claim that needs a justification, not the default of avoiding unnecessary harm.'",
     "register": "filo",
     "what_not_to_do": "Don't accept the frame that veganism is the 'fringe' that needs to justify itself. The default is not causing harm; exploitation is the departure from default.",
-    "actors_known": [
-      "1338583394",
-      "100002066280343",
-      "100003644215699",
-      "61581270521234",
-      "61563003837147",
-      "100004662660380"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -90,12 +48,6 @@
     "canonical_counter": "Slavery was normal. Normalcy is a fact about behavior, not a moral argument. The question is whether the default is justifiable, not whether it's widespread.",
     "register": "filo",
     "what_not_to_do": "Don't just list other 'normal but wrong' practices — pick one sharp example. Don't let the conversation drift to what's culturally relative.",
-    "actors_known": [
-      "1338583394",
-      "1640580380575005",
-      "100007626876163",
-      "100008695478463"
-    ],
     "fallacy_type_id": "appeal_to_tradition"
   },
   {
@@ -106,15 +58,6 @@
     "canonical_counter": "Grant the imperfection whole: fields kill, nobody lives clean, and one person's plate doesn't empty a single barn. Then move the question off outcomes and onto the relation. Veganism was never a rescue plan with a body count; it's declining to be the party who buys the title over someone who feels. 'You're not saving anyone' measures the wrong thing: the question is whether that title has a reason, and that question doesn't depend on how many people refuse it.",
     "register": "filo",
     "what_not_to_do": "Don't argue impact numbers, elasticity or how many animals a vegan 'saves'. Don't bite crop-death counts. Don't concede that the standard is some quantity of harm; the axis is the property relation, harm only in passing.",
-    "actors_known": [
-      "100018422793817",
-      "100000650843692",
-      "100018541819048",
-      "696225646",
-      "100021775394973",
-      "61550822695503",
-      "100046325085471"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -125,14 +68,6 @@
     "canonical_counter": "Don't bite. Answer the underlying question cleanly without following the redirect: 'Exploitation isn't a list of events — it's a relationship. Breeding a sentient being into existence for the purpose of using and killing it is the relationship, not a checklist.' Return the question.",
     "register": "filo",
     "what_not_to_do": "Never make a list when they ask you to list. Never enumerate when they say 'be specific'. That's the trap — you enumerate, they pick one to attack.",
-    "actors_known": [
-      "100018422793817",
-      "100000050072653",
-      "100002066280343",
-      "100035105043255",
-      "61563003837147",
-      "1198831097"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -143,13 +78,6 @@
     "canonical_counter": "Expose what the term is smuggling: 'Mutually beneficial presupposes a reciprocity structurally impossible between breeder and bred-to-die. The benefits the animal receives are conditional on the exact thing being justified — its use and death. That's not mutual; the relationship was structured around one party's interests from the start.' Return the burden.",
     "register": "filo",
     "what_not_to_do": "Don't debate semantics of 'exploitation' or 'benefit'. Don't use 'consent' as the only counter (easily deflected to infants/pets). Expose the structure, not the words.",
-    "actors_known": [
-      "1037777423",
-      "100003644215699",
-      "61581270521234",
-      "696225646",
-      "100003780189781"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -160,15 +88,6 @@
     "canonical_counter": "Concede what's true in the data, then expose the frame: 'Yes, Beyond Meat's stock crashed — that's one company with execution problems. The plant-based category grew 6% that year.' Don't match dump for dump. One incisive concede-and-reframe.",
     "register": "filo",
     "what_not_to_do": "Don't counter with your own data dump. Don't debate which dataset is better. Expose that they're measuring popularity, not moral justifiability.",
-    "actors_known": [
-      "100018422793817",
-      "1037777423",
-      "813709465",
-      "100010556977700",
-      "567273792",
-      "100003886247108",
-      "100003780189781"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -179,17 +98,6 @@
     "canonical_counter": "The problem isn't the quality of life — it's that the entire existence is designed around killing for something unnecessary. A comfortable life that ends in slaughter for non-necessity doesn't become morally neutral because the suffering was minimized.",
     "register": "filo",
     "what_not_to_do": "Don't make factory farming the centerpiece of the argument — they'll pivot to 'I buy humane/pasture-raised'. The welfare critique works against factory farming; the moral frame works against all animal use.",
-    "actors_known": [
-      "100004284907337",
-      "100018541819048",
-      "567273792",
-      "61581270521234",
-      "100000755924068",
-      "1640580380575005",
-      "1350950105",
-      "832080524",
-      "61571628458052"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -200,13 +108,6 @@
     "canonical_counter": "Concern for animal suffering doesn't prevent concern for human suffering — these aren't a zero-sum budget. 'Both matter. Noticing one doesn't cancel the other.' Then return to the original question.",
     "register": "filo",
     "what_not_to_do": "Don't get dragged into defending your track record on human rights. Don't make it about priorities. It's a deflection — name it briefly and return.",
-    "actors_known": [
-      "100004284907337",
-      "100018541819048",
-      "1742478160",
-      "100001248981179",
-      "618672476"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -217,21 +118,6 @@
     "canonical_counter": "ABOLITIONIST axis, not harm-reduction (see abolitionist-framing rule). The distinction is NOT amount or role of harm (incidental vs purpose = welfarism, concedes the ground). It is PROPERTY/SLAVERY: in a crop field no one is owned — it's incidental death of someone who is not property; on a farm the animal is bred, owned and disposed of as property — that is slavery. Concede every crop death freely (it changes nothing, the axis was never harm), then name the status difference and invert the burden: the question isn't 'what justifies unnecessary harm' but 'does necessary slavery exist?'",
     "register": "filo",
     "what_not_to_do": "Don't frame the answer in terms of harm/unnecessary harm/least harm or 'byproduct vs purpose' — that's welfarism and it loses the lurker. Don't concede 'unnecessary harm everywhere / in crops too' as the axis. Don't compete on body-count. The axis is property/slavery (a possessed subject), not how much or why something is harmed.",
-    "actors_known": [
-      "100018422793817",
-      "100000050072653",
-      "100000650843692",
-      "61580416850698",
-      "567273792",
-      "100003886247108",
-      "61581270521234",
-      "100035105043255",
-      "100001131036088",
-      "100000547865199",
-      "1742478160",
-      "100021775394973",
-      "61550822695503"
-    ],
     "fallacy_type_id": "false_equivalence"
   },
   {
@@ -242,15 +128,6 @@
     "canonical_counter": "Expose the error in the biology term itself: commensalism means one benefits, the other is neither helped nor harmed — not slaughtered. Real mutualism doesn't include one party's death as its purpose. The analogy collapses on its own terms.",
     "register": "filo",
     "what_not_to_do": "Don't argue that ants and aphids is irrelevant (they'll say 'examples from nature justify the pattern'). Argue that the biology terms they're using don't describe what farming actually is.",
-    "actors_known": [
-      "1037777423",
-      "100000650843692",
-      "100018541819048",
-      "1350950105",
-      "1448957098",
-      "100003979186761",
-      "61571628458052"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -261,14 +138,6 @@
     "canonical_counter": "Name the circularity: 'That's the conclusion, not the evidence. You're assuming animals are food in order to prove it's OK to treat them as food.' Then ask what would justify the hierarchy: 'What makes human interests categorically outweigh animal interests? Intelligence? Sentience? Social bonds? Those criteria don't carve at human vs. animal the way you need them to.'",
     "register": "filo",
     "what_not_to_do": "Don't accept the framing that 'human life is worth more' needs no argument. Ask for the criterion.",
-    "actors_known": [
-      "1338583394",
-      "100004284907337",
-      "100011355404997",
-      "100002066280343",
-      "61581270521234",
-      "100054560360296"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -279,13 +148,6 @@
     "canonical_counter": "Pointing out that something causes harm isn't dictating. You can choose to eat meat; I can point out it harms a sentient being. Those are both true simultaneously. Nobody's forcing anything.",
     "register": "filo",
     "what_not_to_do": "Don't get into libertarian philosophy. One sentence that breaks the conflation, then leave it. Low return.",
-    "actors_known": [
-      "669260908",
-      "100011355404997",
-      "100003644215699",
-      "100003886247108",
-      "100034907401951"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -296,12 +158,6 @@
     "canonical_counter": "Separate is from should: 'That's what we can do — it says nothing about what we should do. We're also biologically capable of many things we consider wrong. Capability doesn't confer permission.'",
     "register": "filo",
     "what_not_to_do": "Don't dispute the biology. Dispute the inference from biology to ethics.",
-    "actors_known": [
-      "1338583394",
-      "100004284907337",
-      "1277660735",
-      "100002066280343"
-    ],
     "fallacy_type_id": "appeal_to_nature"
   },
   {
@@ -312,21 +168,6 @@
     "canonical_counter": "Ask for the criterion: 'What makes human interests categorically outweigh animal interests? Whatever criterion you give — sentience, capacity to suffer, social bonds, language — either also applies to some animals or fails to draw the line you need. The hierarchy needs an argument, not an assertion.'",
     "register": "filo",
     "what_not_to_do": "Don't argue that animals matter more than humans. Argue that the hierarchy needs a justification that isn't circular.",
-    "actors_known": [
-      "100004284907337",
-      "100011355404997",
-      "61581270521234",
-      "100000755924068",
-      "100000547865199",
-      "100081660349433",
-      "100054560360296",
-      "100003780189781",
-      "854405343",
-      "100044887491107",
-      "832080524",
-      "100007626876163",
-      "100001248981179"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -337,9 +178,6 @@
     "canonical_counter": "We don't hold lions morally responsible for killing because they can't reason about alternatives. We hold humans to a different standard because we can. Moral agency is precisely the capacity that makes human choices subject to moral evaluation — and that capacity is missing from the animal comparison.",
     "register": "filo",
     "what_not_to_do": "Don't argue about whether animals are moral agents. Argue that humans clearly are, and that's exactly why the comparison fails.",
-    "actors_known": [
-      "100004284907337"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -350,11 +188,6 @@
     "canonical_counter": "Popularity doesn't determine moral truth. Slavery was normal and popular — that didn't make it right. The moral question is independent of the trend line.",
     "register": "filo",
     "what_not_to_do": "Don't get into a data fight about market trends. Don't try to prove veganism is growing. The meta-move is exposing that they're measuring popularity, not ethics.",
-    "actors_known": [
-      "100011355404997",
-      "100010556977700",
-      "604363060"
-    ],
     "fallacy_type_id": "appeal_to_tradition"
   },
   {
@@ -365,10 +198,6 @@
     "canonical_counter": "One company with execution problems ≠ the category. Apple nearly went bankrupt in 1997 — that didn't prove personal computers were dying. Beyond Meat's stock tells you about Beyond Meat's business model, not the plant-based trend.",
     "register": "filo",
     "what_not_to_do": "Don't defend Beyond Meat specifically. Expose the composition fallacy.",
-    "actors_known": [
-      "100011355404997",
-      "100010556977700"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -379,10 +208,6 @@
     "canonical_counter": "The claim that causing unnecessary harm to sentient beings is wrong isn't a religious belief — it's an ethical proposition with reasons behind it. Calling it a belief system doesn't make the reasons disappear. What's the argument against the reasons?",
     "register": "filo",
     "what_not_to_do": "Don't defend veganism as 'not a belief system'. Argue that even if it were, the ethical arguments still need a response.",
-    "actors_known": [
-      "1338583394",
-      "100000418598784"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -393,25 +218,6 @@
     "canonical_counter": "Don't match the register. Name the evasion calmly: 'When the argument runs out, the insults start.' Contrast of temperament is visible to the lurker. One line max, then return to substance or disengage entirely.",
     "register": "filo",
     "what_not_to_do": "Never insult back. Never get defensive about being called a cult member. The lurker sees who is composed and who is not — that's the entire value of the exchange.",
-    "actors_known": [
-      "100000650843692",
-      "1277660735",
-      "100011355404997",
-      "100010556977700",
-      "100002202037155",
-      "100002066280343",
-      "100000418598784",
-      "100003886247108",
-      "100001131036088",
-      "100003780189781",
-      "100024818371314",
-      "1742478160",
-      "100034907401951",
-      "100007626876163",
-      "100021775394973",
-      "61550822695503",
-      "618672476"
-    ],
     "fallacy_type_id": "ad_hominem"
   },
   {
@@ -422,11 +228,6 @@
     "canonical_counter": "Honor the experience, separate the inference: 'That experience is real and the medical advice you got sounds genuinely bad. But one poorly-navigated vegan journey — especially with misdiagnosed oxalate issues — doesn't indict the diet as a category any more than one poorly-navigated omnivore diet would.' Empathize first, then separate n=1 from the category.",
     "register": "compasivo",
     "what_not_to_do": "Don't dispute the experience. Don't debate whether their specific case was caused by the diet. Honor the story, then make the category distinction.",
-    "actors_known": [
-      "813709465",
-      "567273792",
-      "100008695478463"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -437,10 +238,6 @@
     "canonical_counter": "The number of people who hold a view says nothing about whether it's justified. Most of humanity once accepted slavery. Being a minority isn't a refutation — it's just a head count.",
     "register": "filo",
     "what_not_to_do": "Don't argue veganism is actually popular. Expose that popularity isn't an argument.",
-    "actors_known": [
-      "100011355404997",
-      "100034907401951"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -451,10 +248,6 @@
     "canonical_counter": "A trend isn't refuted by saying 'but it's not the future yet.' The trajectory is measured in the present — that's the point. Dismissing tomorrow doesn't change today's direction.",
     "register": "filo",
     "what_not_to_do": "Don't get drawn into defending specific future dates. Defend the existence of the trend, not the precision of the year.",
-    "actors_known": [
-      "100018422793817",
-      "100011355404997"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -465,11 +258,6 @@
     "canonical_counter": "The reductio concedes the premise. We breed livestock into existence precisely to use them; stopping that means breeding fewer over time, not slaughtering the ones alive now. “No more animals bred to be killed” is the goal, not a nightmare. Pets and sanctuaries aren’t exploitation — the objection quietly swaps “using animals as resources” for “coexisting with animals.”",
     "register": "filo",
     "what_not_to_do": "Don’t get dragged into sci-fi logistics of a 100%-vegan world. Name that the endpoint (fewer animals bred to be killed) is the point, then return to the present moral question.",
-    "actors_known": [
-      "100000050072653",
-      "813709465",
-      "904005715"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -480,11 +268,6 @@
     "canonical_counter": "Do NOT protest authenticity or write a long defense — length and polish confirm the accusation to the lurker. Answer SHORT and unmistakably human: a dry, low-effort line that the substance was never addressed. The composure + brevity kills the jab; the lurker sees who dodged and who answered.",
     "register": "wit",
     "what_not_to_do": "Never write a paragraph defending that you are not AI — that is the trap; the more polished the rebuttal, the more it looks generated. Do not get defensive or earnest. Keep it to one or two human sentences and point at the empty substance.",
-    "actors_known": [
-      "100002202037155",
-      "100002066280343",
-      "100024818371314"
-    ],
     "fallacy_type_id": "ad_hominem"
   },
   {
@@ -495,10 +278,6 @@
     "canonical_counter": "Concede the preference fully — nobody has to enjoy the alternatives, and a real allergy is a real constraint, not a character flaw. Then separate liking from justifying: a preference explains why you’d rather, it doesn’t answer whether your preference outweighs a sentient being’s life when an adequate alternative exists. Move the weight to the third party who pays for the preference.",
     "register": "compasivo",
     "what_not_to_do": "Don’t dismiss the taste or the allergy as trivial — that reads as contempt to the lurker and to a good-faith person. Don’t argue that the alternatives actually taste great. Concede the constraint, then move the weight to the animal, gently.",
-    "actors_known": [
-      "1277660735",
-      "100035105043255"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -509,10 +288,6 @@
     "canonical_counter": "Calling a reaction 'just yours' doesn't establish it's unwarranted — it relocates the question instead of addressing it. The content (a body force-fed flesh) does its work regardless of who is or isn't bothered. And 'it's subjective' cuts both ways: it can't show the discomfort is wrong, only that you don't share it.",
     "register": "filo",
     "what_not_to_do": "Don't argue everyone MUST feel disturbed — that hands them the subjectivity point. Grant that reactions vary, then press that variance doesn't dissolve the question.",
-    "actors_known": [
-      "100011355404997",
-      "100000755924068"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -523,9 +298,6 @@
     "canonical_counter": "Art style explains the dream imagery, not the asymmetry in question: why the same flesh reads as horror raw and as normal once packaged and renamed food. Surrealism has nothing to do with a shrink-wrapped steak. The stylization answer re-describes the brushwork to avoid the question.",
     "register": "filo",
     "what_not_to_do": "Don't get into an art-history fight on their turf. Name that they answered a different question, then restate the actual one.",
-    "actors_known": [
-      "100011355404997"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -536,9 +308,6 @@
     "canonical_counter": "Don't accept the premise that the prior answers hit the actual question. Name which question they answered (usually 'can we / are they smart enough / are they really a someone') versus the one asked (what justifies owning a subject that wants to live). The question staying open isn't a communication failure — it's the answer never arriving. Return the burden.",
     "register": "compasivo",
     "what_not_to_do": "NO ponerse a la defensiva ni re-explicar bajo demanda (eso acepta el tone-policing). NO perseguir 'cuáles 3 personas'. NO conceder que fuiste poco claro. Reconocer la buena fe del tono, nombrar el cambio-de-pregunta, reinvertir la carga. Eje propiedad/sujeto, jamás daño.",
-    "actors_known": [
-      "100004662660380"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -549,9 +318,6 @@
     "canonical_counter": "ABOLITIONIST/subject axis, NOT a debate over plant neurobiology. Concede every signaling fact freely (plants signal, emit sounds, respond to anesthesia — fine, none of it is disputed). The axis was never how much something reacts; it's whether there is a SUBJECT — someone with a point of view for whom its own life can go well or badly from the inside. A plant has responses but no one home to mind them; an animal is a someone. Frameworks consideracion-moral-no-cuanto-sufre (I'm not debating reaction-complexity, I'm asking if there's a someone there) + algo-a-alguien-sujeto-derecho (someone vs something). If pressed: even granting plant-subjecthood, animal agriculture destroys far more plants via feed — but lead with the subject, mention body-count only at the pass.",
     "register": "compasivo",
     "what_not_to_do": "Don't argue 'plants don't really feel pain / lack nociceptors' — that fights on the welfarist pain/suffering axis and concedes that the criterion is suffering-capacity. Don't concede crop-death/plant-killing as morally equivalent harm. Don't get pulled into citing plant-neurobiology counter-studies. The axis is subject/property (is there a someone?), not the presence or amount of a damage-response.",
-    "actors_known": [
-      "585361402"
-    ],
     "fallacy_type_id": "false_equivalence"
   },
   {
@@ -563,10 +329,6 @@
     "register": "filo",
     "what_not_to_do": "Don't accept the 'the environment OR the animal' framing — animalism supports environmental care; reject the dichotomy. Don't get pulled into ecology/population science. Don't argue the species/ecosystem doesn't matter at all — argue it isn't a SUBJECT, so it can't bear the interest that grounds the wrong. Keep the unit on the concrete individual who feels. Anchors to [[sentiocentrism-not-biocentrism]]: the criterion is a sentient subject's interests, and the bearer is the individual, never the collective.",
     "source": "https://respuestasveganas.org/veganismo-ecologismo/",
-    "actors_known": [
-      "1338583394",
-      "100003780189781"
-    ],
     "fallacy_type_id": "category_error"
   },
   {
@@ -577,9 +339,6 @@
     "canonical_counter": "Esa capacidad es ORTOGONAL al estatus moral: humanos que NO la tienen (bebes, demencia avanzada, cerebro-muertos) conservan el estatus completo — casos marginales / sobreposicion de especies. Lo unico relevante es ser un sujeto que siente / una conciencia con intereses. El reductio del cerebro-muerto se desactiva igual: el criterio es la sintiencia/ser una conciencia, no una capacidad superior. Ademas 'experiencia metafisica' no esta definida — pedir el criterio operativo.",
     "register": "filo",
     "what_not_to_do": "NUNCA aceptar el reductio degradando al humano cerebro-muerto/vulnerable ('a ese si se podria') — los casos marginales se usan para mostrar que el criterio NO es la inteligencia, JAMAS para degradar a esos humanos. NO pelear si los animales tienen o no esa capacidad. NO redactar el eje como dano. Eje sensocentrico: el criterio es sentir/ser una conciencia con intereses, no una capacidad superior.",
-    "actors_known": [
-      "854405343"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -591,9 +350,6 @@
     "register": "compasivo",
     "what_not_to_do": "No aceptar el reencuadre a \"que hacer\" como si fuera el desacuerdo real; no sonar como que le mueves el poste (anclar en SU palabra, abuse). No usar eje bienestarista.",
     "source": "Marcus Yelvington 2026-07-02 (post 27330)",
-    "actors_known": [
-      "100094637395621"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -603,9 +359,6 @@
     "definition": "La réplica estándar al argumento de los casos marginales: no niega que un bebé o una persona con demencia carezcan de razón, lenguaje o reciprocidad — concede que esas capacidades no son suficientes ni necesarias en cada individuo — y sostiene que las capacidades \"explican por qué los humanos son tratados como personas\" COMO CLASE. El individuo hereda el estatus de la categoría a la que pertenece. Es más fina que species_hierarchy: no afirma superioridad, afirma que el estatus se predica del grupo.",
     "canonical_counter": "Dos cortes. (1) Explicar no es justificar: si las capacidades solo explican por que la practica surgio, estan haciendo trabajo descriptivo, y el titulo sigue sin defensa. (2) El salto de \"la clase suele tener X\" a \"este individuo sin X no puede ser propiedad\" necesita un principio adicional — que el estatus se herede de la clase — que nunca se enuncia; y cuando se enuncia, hay que preguntar por que la clase relevante es \"humano\" y no \"sujeto que siente\". La pertenencia de clase reintroduce el especismo por la puerta de atras. Contra-marco: re-individualizar (filtro-especie-vs-individuo): el titulo no se aplica a una categoria, se aplica a ALGUIEN.",
     "what_not_to_do": "NUNCA degradar al humano marginal para forzar la simetria (\"entonces al bebe si se le podria poseer\"). NO negar que las capacidades sean moralmente relevantes — lo son, para contratos, voto y culpabilidad; el punto es que no hacen el trabajo en la pregunta de la propiedad. NO pelear si los animales tienen o no esas capacidades: es ortogonal. NO redactar el eje como dano. NO llamarlo \"falacia\" en publico: en buena fe es una objecion seria y nombrarla asi pierde al lurker.",
-    "actors_known": [
-      "1198831097"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -615,10 +368,6 @@
     "definition": "Concede la consistencia interna del marco y exige un escalon mas: que gives you confidence que tu umbral es una VERDAD MORAL OBJETIVA y no una intuicion profunda; y que contaria como evidencia de que tu juicio fundacional esta equivocado. Suele venir de buena fe (es la pregunta correcta) y observa, con razon, que muchos marcos internamente consistentes llegan a conclusiones distintas.",
     "canonical_counter": "No huir al relativismo ni fingir acceso a hechos morales. Tres piezas: (1) La consistencia invocada no es interna-abstracta sino consistencia con los juicios que el interlocutor YA sostiene — eso no prueba verdad objetiva, pero SI elimina candidatos, que es todo lo que hace falta. (2) Simetria: el estandar que exige aplica igual a SU fundamento; si \"es solo una intuicion\" desarma mi posicion, desarma la suya. No para empatar, sino para mostrar que la demanda no puede ser unilateral. (3) Responder la pregunta de falsabilidad DE FRENTE, dando falsadores reales: si se mostrara que no hay nadie ahi (ningun punto de vista, ninguna experiencia); si se identificara un rasgo que vuelve licita la propiedad sobre un sujeto y estuvieramos dispuestos a aceptar sus consecuencias sobre los humanos que carecen de el; si la tutela fiduciaria y la propiedad no difirieran estructuralmente. Dar falsadores prueba que no es dogma y es lo mas fuerte que se puede hacer ante un interlocutor de buena fe.",
     "what_not_to_do": "NO responder \"toda etica es subjetiva\" (regala el marco al relativismo). NO reclamar acceso privilegiado a hechos morales que no se pueden mostrar. NO usar la simetria como tu-quoque para empatar y salir corriendo — se nombra y se sigue respondiendo. NO negarse a dar falsadores: la negativa confirma que es dogma. NO redactar el eje como dano. NO citar filosofos por nombre ni decir \"equilibrio reflexivo\": suena a profesor y pierde al lurker.",
-    "actors_known": [
-      "1037777423",
-      "1198831097"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -629,9 +378,6 @@
     "canonical_counter": "Two layers. STRATEGIC first: in your own post, do not feed the intramural debate — patience, let the post gather lurkers; the OP not biting internal drama is already text. When answering: short, courteous, acknowledge the point (Francione, yes), distinguish avoidable exploitation (buying the product of the title when walking past it is an option) from the structurally inescapable (roads, old medicine, supply chains nobody designed); the valid critique is of whoever uses the clause as an alibi, not of the concept. Take the long version to a root post of its own. PHILOSOPHICAL layer stays abolitionist: exploitation at issue = title/property over a conscious being; the field mouse belongs to no one; the seat of the one continuing the practice is the buyer of the title. Never defend the clause on harm-reduction terms.",
     "register": "filo",
     "what_not_to_do": "Do not open an intramural fight in your own post. Do not treat the purist as a carnist. Do not litigate the Vegan Society wording. Do not defend the clause via least/unavoidable harm (welfarism). Do not out-purist him. Do not call the analogy dishonest — show the seat it gets wrong and let it weigh.",
-    "actors_known": [
-      "1742478160"
-    ],
     "fallacy_type_id": "false_equivalence"
   },
   {
@@ -642,10 +388,6 @@
     "canonical_counter": "Separate title from duty. A parent is responsible for a child without owning them; a guardian answers for a ward without a right to sell or kill them — responsibility never required a title. Then show who the 'protection' of property actually runs to: property law protects the OWNER's interest in the asset (nobody may take my cow), while the same title is exactly what lets the owner confine, sell and kill her. The thing that keeps a pet from being 'taken' is a duty owed to the pet, which is guardianship, not ownership. Her own example cuts against her: what she wants for her dog is what the title denies the pig. Return to the axis: what makes it legitimate for a conscious being to exist as property — a duty toward someone needs no title; a title is what needs justifying.",
     "register": "filo",
     "what_not_to_do": "Don't argue that animals should have NO legal status or that nobody should be responsible — that hands her the 'so who feeds them?' point. Don't litigate animal-law reform or legal personhood as a policy. Don't accept 'protection' as the axis (welfarism: how well the owned are treated). Keep it to title vs duty, one example (child/ward), and back to the question.",
-    "actors_known": [
-      "100011355404997",
-      "100018541819048"
-    ],
     "fallacy_type_id": "false_equivalence"
   },
   {
@@ -656,10 +398,6 @@
     "canonical_counter": "Credit the straight answer first (it is more than most give). Grant that convenience is real and explains why the system is built on the title: owning the animal makes breeding, moving and selling her simple. Then test whether convenience-for-the-owner can carry a title over SOMEONE: for a thing it can (convenience is all a chair needs); over a being with a point of view, the owner's convenience is the reason every title over a subject has been defended with, and it describes the owner's gain, never a reason the owned one could accept. Back to the question: does easier-for-us make the title legitimate over someone with a point of view of her own?",
     "register": "compasivo",
     "what_not_to_do": "Don't mock or pounce on the answer — he answered in good faith this turn, and the lurker must see it respected. Don't turn it into a necessity/least-damage calculus (welfarist axis). Don't make the slavery parallel explicit or equate subjects; at most point at the structure (the owner's gain has always been the stated reason). One round, then leave the question standing.",
-    "actors_known": [
-      "100018422793817",
-      "100008695478463"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -670,9 +408,6 @@
     "canonical_counter": "Treat it as the first real answer to the question — and the right place to look: if there is nobody there, the title is over a thing and there is nothing to ask. Then test the claim against what the lurker already knows: a dog hides from the hand that hit her and waits at the door for one person; a pig avoids, remembers, fights to get out of the truck. That is what a point of view is: things happen TO her, from where she stands. Grant the rest (normal, natural, omnivore) in one line; the whole disagreement now rests on this one claim. Back to the question: if she does have a point of view, what makes it legitimate for her to exist as property?",
     "register": "filo",
     "what_not_to_do": "Don't data-dump neuroscience or cite numbers you can't defend live. Don't name the subject by being alive (\"living being\") — sentience only. Don't answer the insult beyond one fresh line. Don't argue equality with humans; the question is only whether someone is there.",
-    "actors_known": [
-      "100007626876163"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -683,10 +418,6 @@
     "canonical_counter": "The law is the title written down; citing it as the reason is the title justifying itself. It tells you who held the pen, and property law gets written by the ones holding the title. Owning people was legal too, written by the people doing the owning, and it got rewritten when someone demanded the reason behind it. Ask what the law should answer to, not what it says.",
     "register": "filo",
     "what_not_to_do": "Don't list a catalogue of formerly legal atrocities; one sharp example max, and any human-slavery parallel only by STRUCTURE (who writes the title), never equating the subjects. Don't argue legal technicalities or which jurisdictions protect animals. Don't concede that law and legitimacy are the same thing.",
-    "actors_known": [
-      "61580416850698",
-      "100001248981179"
-    ],
     "fallacy_type_id": null
   },
   {
@@ -697,9 +428,6 @@
     "canonical_counter": "Grant the real work the other person does, without sarcasm, and grant your own limits. Then point out that a question stands or falls on its own: it would be the same question coming from them. Turn back to the question itself, ideally through something from their own experience (the bond, the rescue) that shows there is someone there.",
     "register": "compasivo",
     "what_not_to_do": "Don't recite your activist credentials or get defensive. Don't belittle their rescue work. Don't make it a contest of who helps animals more.",
-    "actors_known": [
-      "100018541819048"
-    ],
     "fallacy_type_id": null
   }
 ]

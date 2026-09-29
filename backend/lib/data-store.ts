@@ -33,7 +33,6 @@ export interface Tactic {
   canonical_counter: string;
   register: string;
   what_not_to_do: string;
-  actors_known: string[];
   fallacy_type_id: string | null;
 }
 

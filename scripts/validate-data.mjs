@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { readActors, readTactics, readFrameworks, readVocab, vocabViolations, deriveActorsKnown } from './db.mjs';
+import { readActors, readTactics, readFrameworks, readVocab, vocabViolations } from './db.mjs';
 import { dossierFilenames, GENERATED_MARK } from './gen-dossiers.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -23,13 +23,9 @@ for (const a of actors) {
   }
 }
 
-// 2. tactic.actors_known is derived from actor.tactics (db.syncTacticActors); any drift is an error
-const derived = Object.fromEntries(deriveActorsKnown(actors, tactics).map(t => [t.id, t.actors_known]));
+// 2. Who uses a tactic is derived from actor.tactics (db.getActorsByTactic); a stored reverse index drifted once (130 pairs)
 for (const t of tactics) {
-  const want = derived[t.id];
-  if (JSON.stringify(t.actors_known ?? []) !== JSON.stringify(want)) {
-    errors.push(`tactic "${t.id}" actors_known drifted from actor.tactics (${(t.actors_known ?? []).length} vs ${want.length}); run syncTacticActors() from scripts/db.mjs, never hand-edit it`);
-  }
+  if ('actors_known' in t) errors.push(`tactic "${t.id}" stores actors_known; derive it with getActorsByTactic instead`);
 }
 
 // 3. Required fields present + unique user_ids

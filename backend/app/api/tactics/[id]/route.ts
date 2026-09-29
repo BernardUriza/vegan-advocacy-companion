@@ -11,7 +11,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ id: str
     }
 
     const knownActors = loadActors()
-      .filter((a) => tactic.actors_known.includes(a.user_id ?? ""))
+      .filter((a) => a.tactics.includes(tactic.id))
       .map((a) => ({ user_id: a.user_id, name: a.name, verdict: a.verdict, tone: a.tone }));
 
     return NextResponse.json({ ...tactic, knownActors }, { headers: CORS });
