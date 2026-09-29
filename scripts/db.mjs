@@ -25,6 +25,26 @@ export function vocabViolations(entity, vocab = readVocab(), kind = 'actor') {
     .map(field => `${kind} "${entity.name ?? entity.id}" ${field}="${entity[field]}" is outside data/vocab.json (${Object.keys(fields[field]).join(' | ')}); put the nuance in ${field}_note`);
 }
 
+export const ROTATION_SINCE = '2026-09-29';
+
+export function interactionProblems(actor, vocab = readVocab()) {
+  const problems = [];
+  const counted = (actor.interactions ?? []).filter(i => !i.misattributed);
+  counted.forEach((it, idx) => {
+    const where = `actor "${actor.name}" interaction ${it.thread_id} ${it.date}`;
+    problems.push(...vocabViolations({ ...it, name: where }, vocab, 'interaction'));
+    if (!it.date || it.date < ROTATION_SINCE) return;
+    if (it.exposure_n !== idx + 1) problems.push(`${where}: exposure_n=${it.exposure_n} but it is exposure ${idx + 1} to this actor (copy it from the framework-pick receipt)`);
+    if (!it.assignment) problems.push(`${where}: missing assignment (chosen | randomized), copy it from the framework-pick receipt`);
+    if (it.assignment === 'randomized' && !(it.propensity > 0 && it.propensity <= 1)) problems.push(`${where}: randomized without a propensity in (0,1]`);
+    const previous = counted[idx - 1]?.framework;
+    if (idx + 1 >= vocab.rotation.rotate_from_exposure.value && previous && it.framework === previous) {
+      problems.push(`${where}: repeats framework "${previous}" at exposure ${idx + 1}; from exposure ${vocab.rotation.rotate_from_exposure.value} the entry must change`);
+    }
+  });
+  return problems;
+}
+
 function assertVocab(entity, kind = 'actor') {
   const violations = vocabViolations(entity, readVocab(), kind);
   if (violations.length) throw new Error(violations.join('\n'));
@@ -113,6 +133,8 @@ export function appendInteraction(userId, interaction) {
   const actor = actors.find(a => a.user_id === userId);
   if (!actor) throw new Error(`Actor ${userId} not found`);
   (actor.interactions ??= []).push(interaction);
+  const problems = interactionProblems(actor);
+  if (problems.length) throw new Error(problems.join('\n'));
   syncThreads(actor);
   writeJsonAtomic(ACTORS_PATH, actors);
   return actor;
@@ -241,6 +263,11 @@ export function updateInteractionOutcome(userId, threadId, dateOrNeedle, needle,
   }
   if (fields.evidence) it.outcome_evidence = fields.evidence;
   if (fields.note) it.outcome_note = fields.note;
+  if (fields.third_party_stance) {
+    const allowed = readVocab().interaction.third_party_stance;
+    if (!Object.hasOwn(allowed, fields.third_party_stance)) throw new Error(`third_party_stance "${fields.third_party_stance}" fuera de data/vocab.json (${Object.keys(allowed).join(' | ')})`);
+    it.third_party_stance = fields.third_party_stance;
+  }
   if (fields.framework) {
     if (!getFramework(fields.framework)) throw new Error(`framework "${fields.framework}" no existe en data/frameworks.json`);
     it.framework = fields.framework;
@@ -252,19 +279,21 @@ export function updateInteractionOutcome(userId, threadId, dateOrNeedle, needle,
 
 // Señal del lurker: reacciones a MI reply de esa interacción, mismo match que
 // updateInteractionOutcome (user_id, thread_id, date, needle de their_move); aborta si no es único.
-export function updateInteractionLurker(userId, threadId, date, needle, { reactions, checkedAt = new Date().toISOString() }) {
+export function updateInteractionLurker(userId, threadId, date, needle, { reactions, thirdParty = null, draftSha = null, checkedAt = new Date().toISOString() }) {
   if (!Number.isInteger(reactions) || reactions < 0) throw new Error(`reactions inválido: ${reactions}`);
   const actors = readActors();
   const actor = actors.find(a => a.user_id === userId);
   if (!actor) throw new Error(`Actor ${userId} not found`);
   const deburr = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/\s+/g, ' ').trim();
-  const cand = (actor.interactions ?? []).filter(
+  const bySha = draftSha ? (actor.interactions ?? []).filter(x => x.thread_id === threadId && x.draft_sha === draftSha) : [];
+  const cand = bySha.length === 1 ? bySha : (actor.interactions ?? []).filter(
     x => x.thread_id === threadId && x.date === date && deburr(x.their_move).includes(deburr(needle))
   );
   if (cand.length !== 1) throw new Error(`match no único (${cand.length}) para ${userId}/${threadId}/${date} needle="${needle}"`);
   const it = cand[0];
   it.lurker_reactions = reactions;
   it.lurker_checked_at = checkedAt;
+  if (thirdParty) it.third_party_replies = thirdParty;
   writeJsonAtomic(ACTORS_PATH, actors);
   return { user_id: userId, thread_id: threadId, date, lurker_reactions: reactions, lurker_checked_at: checkedAt };
 }

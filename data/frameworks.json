@@ -16,7 +16,8 @@
       "species_hierarchy",
       "relativismo_moral"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "normalidad-y-naturaleza"
   },
   {
     "id": "gobekli-kilometro-cero",
@@ -36,7 +37,8 @@
       "species_hierarchy"
     ],
     "lurker_risk": "low",
-    "deploy_as_note": "marco (NUNCA premisa_portante)"
+    "deploy_as_note": "marco (NUNCA premisa_portante)",
+    "family": "poder-y-dominio"
   },
   {
     "id": "revolucionar-la-revolucion",
@@ -54,7 +56,8 @@
       "welfare_rhetoric"
     ],
     "lurker_risk": "high",
-    "deploy_as_note": "auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente"
+    "deploy_as_note": "auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente",
+    "family": "auto-disciplina"
   },
   {
     "id": "violencia-especista",
@@ -72,7 +75,8 @@
       "apelacion_normal",
       "welfare_rhetoric"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "anti-bienestarismo"
   },
   {
     "id": "especidio",
@@ -90,7 +94,8 @@
       "welfare_rhetoric"
     ],
     "lurker_risk": "high",
-    "deploy_as_note": "marco (con cautela)"
+    "deploy_as_note": "marco (con cautela)",
+    "family": "anti-bienestarismo"
   },
   {
     "id": "esclavitud-paralelismo",
@@ -109,7 +114,8 @@
       "inversion_carga",
       "legalidad_como_justificacion"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "analogia-opresiones"
   },
   {
     "id": "no-sabemos-que-tenemos-problema",
@@ -126,7 +132,8 @@
       "apelacion_normal",
       "futility_no_clean_option"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "normalidad-y-naturaleza"
   },
   {
     "id": "domesticar-eufemismo-dominar",
@@ -144,7 +151,8 @@
       "welfare_rhetoric",
       "peticion_de_principio"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "poder-y-dominio"
   },
   {
     "id": "algo-a-alguien-sujeto-derecho",
@@ -169,7 +177,8 @@
       "propiedad_como_proteccion",
       "preferencia_gusto"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "estatus-sujeto"
   },
   {
     "id": "no-necesidad-cambiaron-las-reglas",
@@ -188,7 +197,8 @@
       "crop_deaths_flip",
       "data_dump_selectivo"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "necesidad"
   },
   {
     "id": "njn-normal-justo-necesario",
@@ -207,7 +217,8 @@
       "apelacion_mayoria",
       "popularidad_como_justificacion"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "normalidad-y-naturaleza"
   },
   {
     "id": "matrix-pastilla-azul",
@@ -224,7 +235,8 @@
       "insulto_ad_hominem",
       "futility_no_clean_option"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "auto-disciplina"
   },
   {
     "id": "conocimiento-compromete",
@@ -242,7 +254,8 @@
       "futility_no_clean_option",
       "relativismo_moral"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "criterio-y-consistencia"
   },
   {
     "id": "veganismo-no-es-dieta-ni-estilo-de-vida",
@@ -261,7 +274,8 @@
       "relativismo_moral",
       "libertarian_autonomy"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "responsabilidad-estructural"
   },
   {
     "id": "dimension-politica-tomar-posicion",
@@ -279,7 +293,8 @@
       "libertarian_autonomy",
       "relativismo_moral"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "responsabilidad-estructural"
   },
   {
     "id": "liberar-la-mente-abre-todas-las-jaulas",
@@ -296,7 +311,8 @@
       "apelacion_normal",
       "naturalismo"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "normalidad-y-naturaleza"
   },
   {
     "id": "crueldad-no-es-la-causa",
@@ -313,7 +329,8 @@
       "welfare_rhetoric",
       "inversion_carga"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "anti-bienestarismo"
   },
   {
     "id": "pollo-inconsciente-reductio",
@@ -331,7 +348,8 @@
       "futility_no_clean_option",
       "abolition_reductio"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "anti-bienestarismo"
   },
   {
     "id": "lenguaje-carne-hachazo",
@@ -345,7 +363,8 @@
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md",
     "related_tactics": [],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "auto-disciplina"
   },
   {
     "id": "explotacion-vs-esclavitud-lexico",
@@ -361,7 +380,8 @@
     "related_tactics": [
       "species_hierarchy"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "auto-disciplina"
   },
   {
     "id": "carnismo-anonimato-critica",
@@ -377,7 +397,8 @@
     "related_tactics": [
       "reencuadre_veganismo_creencia"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "normalidad-y-naturaleza"
   },
   {
     "id": "genesis-invertido",
@@ -394,7 +415,8 @@
       "principio_escudo",
       "cherry_pick_empresa"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "normalidad-y-naturaleza"
   },
   {
     "id": "vegano-por-un-dia-racista-entre-semana",
@@ -411,7 +433,8 @@
       "abolition_reductio",
       "species_hierarchy"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "analogia-opresiones"
   },
   {
     "id": "no-es-opcion-de-vida",
@@ -429,7 +452,8 @@
       "libertarian_autonomy",
       "peticion_de_principio"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "analogia-opresiones"
   },
   {
     "id": "formar-activistas-no-veganos",
@@ -445,7 +469,8 @@
     "related_tactics": [
       "reencuadre_veganismo_creencia"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "auto-disciplina"
   },
   {
     "id": "entender-no-es-transformarse",
@@ -461,7 +486,8 @@
     "related_tactics": [
       "futility_no_clean_option"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "auto-disciplina"
   },
   {
     "id": "preocupa-mas-el-movimiento",
@@ -475,7 +501,8 @@
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md",
     "related_tactics": [],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "auto-disciplina"
   },
   {
     "id": "violencia-discursiva",
@@ -492,7 +519,8 @@
       "reencuadre_veganismo_creencia",
       "apelacion_normal"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "anti-bienestarismo"
   },
   {
     "id": "por-que-no-maltrato-rigor-conceptual",
@@ -509,7 +537,8 @@
       "welfare_rhetoric",
       "moving_goalposts"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "anti-bienestarismo"
   },
   {
     "id": "paralelo-luchas-sociales-centrismos",
@@ -527,7 +556,8 @@
       "apelacion_normal",
       "predator_comparison"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "analogia-opresiones"
   },
   {
     "id": "extranar-lo-naturalizado",
@@ -545,7 +575,8 @@
       "popularidad_como_justificacion",
       "naturalismo"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "normalidad-y-naturaleza"
   },
   {
     "id": "filtro-especie-vs-individuo",
@@ -565,7 +596,8 @@
       "reencuadre_veganismo_creencia",
       "pertenencia_de_clase"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "estatus-sujeto"
   },
   {
     "id": "semaforo-rojo-amarillo-welfarismo",
@@ -583,7 +615,8 @@
       "moving_goalposts",
       "abolition_reductio"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "anti-bienestarismo"
   },
   {
     "id": "arbol-causa-sintoma",
@@ -601,7 +634,8 @@
       "welfare_rhetoric",
       "moving_goalposts"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "anti-bienestarismo"
   },
   {
     "id": "consideracion-moral-no-cuanto-sufre",
@@ -620,7 +654,8 @@
       "principio_escudo",
       "plant_sentience_equivalence"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "estatus-sujeto"
   },
   {
     "id": "violencia-estructural-infraestructura",
@@ -638,7 +673,8 @@
       "domestication_mutualism",
       "futility_no_clean_option"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "responsabilidad-estructural"
   },
   {
     "id": "violencia-indirecta-quien-demanda",
@@ -656,7 +692,8 @@
       "futility_no_clean_option",
       "crop_deaths_flip"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "responsabilidad-estructural"
   },
   {
     "id": "sembrar-en-el-receptivo",
@@ -673,7 +710,8 @@
       "futility_no_clean_option",
       "insulto_ad_hominem"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "auto-disciplina"
   },
   {
     "id": "especismo-se-programa-en-la-infancia",
@@ -690,7 +728,8 @@
       "naturalismo",
       "apelacion_normal"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "normalidad-y-naturaleza"
   },
   {
     "id": "economia-especista-heredada",
@@ -706,7 +745,8 @@
     "related_tactics": [
       "futility_no_clean_option"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "responsabilidad-estructural"
   },
   {
     "id": "mentir-a-las-criaturas-sostiene-el-sistema",
@@ -722,7 +762,8 @@
     "related_tactics": [
       "apelacion_normal"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "normalidad-y-naturaleza"
   },
   {
     "id": "premisa-falsa-los-animales-nos-dan",
@@ -738,7 +779,8 @@
     "related_tactics": [
       "domestication_mutualism"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "estatus-sujeto"
   },
   {
     "id": "libros-de-texto-niegan-sintiencia",
@@ -754,7 +796,8 @@
     "related_tactics": [
       "species_hierarchy"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "estatus-sujeto"
   },
   {
     "id": "normalizar-solo-una-parte-realidad",
@@ -770,7 +813,8 @@
     "related_tactics": [
       "apelacion_normal"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "normalidad-y-naturaleza"
   },
   {
     "id": "educador-no-adoctrina-responde",
@@ -784,7 +828,8 @@
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md",
     "related_tactics": [],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "auto-disciplina"
   },
   {
     "id": "respeto-persona-no-idea-inmoral",
@@ -801,7 +846,8 @@
       "relativismo_moral",
       "reencuadre_veganismo_creencia"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "sello-y-mala-fe"
   },
   {
     "id": "single-issue-diluye-mensaje",
@@ -815,7 +861,8 @@
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Avolicion-Guerrero — texto extraido.md",
     "related_tactics": [],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "auto-disciplina"
   },
   {
     "id": "pandemia-cooptada-todo-vale",
@@ -831,7 +878,8 @@
     "related_tactics": [
       "whataboutism"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "auto-disciplina"
   },
   {
     "id": "bienestarismo-jugada-maestra-del-poder",
@@ -848,7 +896,8 @@
       "welfare_rhetoric",
       "cherry_pick_empresa"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "anti-bienestarismo"
   },
   {
     "id": "consideracion-moral-no-fin-del-sufrimiento",
@@ -864,7 +913,8 @@
     "related_tactics": [
       "welfare_rhetoric"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "anti-bienestarismo"
   },
   {
     "id": "informar-deber-ser-informado-derecho",
@@ -878,7 +928,8 @@
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Avolicion-Guerrero — texto extraido.md",
     "related_tactics": [],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "auto-disciplina"
   },
   {
     "id": "mensaje-importa-formas-determinantes",
@@ -894,7 +945,8 @@
     "related_tactics": [
       "data_dump_selectivo"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "auto-disciplina"
   },
   {
     "id": "gore-backfire-vaca-idilica",
@@ -910,7 +962,8 @@
     "related_tactics": [
       "welfare_rhetoric"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "auto-disciplina"
   },
   {
     "id": "antropoespecismo-universal-deslocalizar",
@@ -926,7 +979,8 @@
     "related_tactics": [
       "futility_no_clean_option"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "responsabilidad-estructural"
   },
   {
     "id": "sintomatismo-sintomas-inconexos",
@@ -940,7 +994,8 @@
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Avolicion-Guerrero — texto extraido.md",
     "related_tactics": [],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "auto-disciplina"
   },
   {
     "id": "nvc-observacion-sin-juicio",
@@ -956,7 +1011,8 @@
     "related_tactics": [
       "insulto_ad_hominem"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "auto-disciplina"
   },
   {
     "id": "ifs-hablarle-al-nino-herido",
@@ -972,7 +1028,8 @@
     "related_tactics": [
       "insulto_ad_hominem"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "auto-disciplina"
   },
   {
     "id": "mi-evocar-cambio-sin-confrontar",
@@ -989,7 +1046,8 @@
       "socrates_hostil",
       "reencuadre_veganismo_creencia"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "auto-disciplina"
   },
   {
     "id": "mi-desarrollar-discrepancia",
@@ -1006,7 +1064,8 @@
       "reencuadre_veganismo_creencia",
       "welfare_rhetoric"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "criterio-y-consistencia"
   },
   {
     "id": "trauma-informed-defensa-no-es-maldad",
@@ -1023,7 +1082,8 @@
       "insulto_ad_hominem",
       "anecdota_personal_n1"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "auto-disciplina"
   },
   {
     "id": "apego-seguridad-antes-que-razon",
@@ -1040,7 +1100,8 @@
       "data_dump_selectivo",
       "welfare_rhetoric"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "auto-disciplina"
   },
   {
     "id": "mensaje-para-el-humano-no-para-el-animal",
@@ -1057,7 +1118,8 @@
       "species_hierarchy",
       "futility_no_clean_option"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "responsabilidad-estructural"
   },
   {
     "id": "carnismo-es-algodonismo",
@@ -1074,7 +1136,8 @@
       "welfare_rhetoric",
       "reencuadre_veganismo_creencia"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "anti-bienestarismo"
   },
   {
     "id": "momento-truman-traicion-de-los-tuyos",
@@ -1091,7 +1154,8 @@
       "anecdota_personal_n1",
       "presentismo"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "normalidad-y-naturaleza"
   },
   {
     "id": "resistencia-al-cambio-es-defensa-del-privilegio",
@@ -1108,7 +1172,8 @@
       "futility_no_clean_option",
       "inversion_carga"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "auto-disciplina"
   },
   {
     "id": "estereotipo-prejuicio-discriminacion",
@@ -1125,7 +1190,8 @@
       "apelacion_normal",
       "reencuadre_veganismo_creencia"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "analogia-opresiones"
   },
   {
     "id": "tabula-rasa-ni-nacemos-ni-nos-hacen",
@@ -1143,7 +1209,8 @@
       "is_ought",
       "ai_accusation"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "normalidad-y-naturaleza"
   },
   {
     "id": "contraespecismo-postura-activa",
@@ -1157,7 +1224,8 @@
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md",
     "related_tactics": [],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "auto-disciplina"
   },
   {
     "id": "tres-dimensiones-del-veganismo",
@@ -1173,7 +1241,8 @@
     "related_tactics": [
       "reencuadre_veganismo_creencia"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "responsabilidad-estructural"
   },
   {
     "id": "hablamos-en-nombre-de-los-demas-animales",
@@ -1189,7 +1258,8 @@
     "related_tactics": [
       "data_dump_selectivo"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "auto-disciplina"
   },
   {
     "id": "medida-tres-plazos-corto-medio-largo",
@@ -1205,7 +1275,8 @@
     "related_tactics": [
       "welfare_rhetoric"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "auto-disciplina"
   },
   {
     "id": "metafora-del-fronton",
@@ -1219,7 +1290,8 @@
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md",
     "related_tactics": [],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "auto-disciplina"
   },
   {
     "id": "respetar-no-es-opcion",
@@ -1238,7 +1310,8 @@
       "libertarian_autonomy",
       "peticion_de_principio"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "estatus-sujeto"
   },
   {
     "id": "dimension-politica-entrar-estructuras-de-poder",
@@ -1252,7 +1325,8 @@
     "deploy_as": "marco",
     "source_ref": "doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md",
     "related_tactics": [],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "family": "responsabilidad-estructural"
   },
   {
     "id": "dos-caras-misma-moneda",
@@ -1271,7 +1345,8 @@
       "species_hierarchy",
       "is_ought"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "criterio-y-consistencia"
   },
   {
     "id": "transformacion-de-dentro-hacia-afuera",
@@ -1285,7 +1360,8 @@
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md",
     "related_tactics": [],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "auto-disciplina"
   },
   {
     "id": "dominacion-no-es-superioridad-moral",
@@ -1305,7 +1381,8 @@
       "apelacion_normal",
       "legalidad_como_justificacion"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "family": "poder-y-dominio"
   },
   {
     "id": "sobreposicion-de-especies-criterio-leido",
@@ -1327,7 +1404,8 @@
       "demanda_objetividad_moral"
     ],
     "lurker_risk": "med",
-    "deploy_as_note": "marco (NUNCA premisa_portante)"
+    "deploy_as_note": "marco (NUNCA premisa_portante)",
+    "family": "criterio-y-consistencia"
   },
   {
     "id": "el-sello-es-para-el-lurker",
@@ -1344,6 +1422,7 @@
       "insulto_ad_hominem",
       "ai_accusation"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "family": "sello-y-mala-fe"
   }
 ]

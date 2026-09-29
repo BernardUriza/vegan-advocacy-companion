@@ -84,11 +84,12 @@ const receipts = freshReceipts();
 
 const HOWTO = [
   'Flujo (etapa 3, .claude/rules/coagent-advise.md):',
-  '  1. compón el master (x={marco abolicionista}, y={candidata}) en .coagent/',
+  '  0. node scripts/framework-pick.mjs --post-id <id> --author "<A>"   # exposición, bloqueo y sorteo',
+  '  1. compón el master con el framework que permita el pick, en .coagent/',
   '  2. node scripts/seed-gate.mjs <master.md>          # debe salir LIMPIO',
   '  3. node scripts/seed-coagent.mjs seed --post-id <id> --author "<A>" --master <master.md>',
-  '  4. siembra al coagent, lee su y abolicionista, guárdala como draft',
-  '  5. node scripts/seed-coagent.mjs finalize --post-id <id> --draft <draft.txt>',
+  '  4. siembra al coagent, lee su respuesta, guárdala como draft',
+  '  5. node scripts/seed-coagent.mjs finalize --post-id <id> --draft <draft.txt> --author "<A>" --framework <id>',
 ];
 
 if (!receipts.length) {
@@ -137,7 +138,7 @@ if (pastesText) {
       `  sha(s) del script: ${unknown.map((l) => shaOf(l.text)).join(', ')}`,
       `  drafts consultados: ${[...known].join(', ')}`,
       'Si lo editaste tras la consulta, re-finaliza:',
-      '  node scripts/seed-coagent.mjs finalize --post-id <id> --draft <draft.txt> --author "<A>"',
+      '  node scripts/seed-coagent.mjs finalize --post-id <id> --draft <draft.txt> --author "<A>" --framework <id>',
     ]);
   }
 }

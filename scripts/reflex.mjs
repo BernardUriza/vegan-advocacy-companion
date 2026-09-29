@@ -106,6 +106,7 @@ if (cmd === 'emit') {
           their_move: it.their_move,
           our_reply_summary: it.our_reply_summary,
           current_outcome: it.outcome ?? 'pending',
+          third_party_replies: it.third_party_replies ?? [],
         })),
         exchange,
       });
@@ -117,7 +118,8 @@ if (cmd === 'emit') {
   console.log(`  tope ${MAX_AGE_DAYS}d: ${staleInteractions} interacciones y ${staleTx} transcripts más viejos quedaron fuera (se cierran por edad, no se re-juzgan)`);
   console.log('  Claude: lee el arco de cada packet, juzga outcome (conceded/engaged/silent/escalated/goalpost)');
   console.log('  + una nota corta por framework (qué aterrizó / por qué), y escribe .coagent/reflex-verdicts.json:');
-  console.log('  [{ user_id, thread_id, date, needle (substring del their_move), outcome, note, evidence }]');
+  console.log('  [{ user_id, thread_id, date, needle (substring del their_move), outcome, note, evidence, third_party_stance? }]');
+  console.log('  third_party_stance (apoyo|hostil|neutral|mixto|ninguno) solo si la interacción trae third_party_replies.');
 } else if (cmd === 'apply') {
   const vf = fileArg('--verdicts', '.coagent/reflex-verdicts.json');
   const dry = process.argv.includes('--dry-run');
@@ -128,7 +130,7 @@ if (cmd === 'emit') {
   for (const v of verdicts) {
     if (!OUTCOMES.has(v.outcome)) { errs.push(`outcome inválido "${v.outcome}" (${v.user_id}/${v.thread_id})`); continue; }
     try {
-      if (!dry) updateInteractionOutcome(v.user_id, v.thread_id, v.date ?? null, v.needle, { outcome: v.outcome, evidence: v.evidence, note: v.note, force: v.force });
+      if (!dry) updateInteractionOutcome(v.user_id, v.thread_id, v.date ?? null, v.needle, { outcome: v.outcome, evidence: v.evidence, note: v.note, force: v.force, third_party_stance: v.third_party_stance });
       else {
         // validar match en dry-run sin escribir
         const a = readActors().find((x) => x.user_id === v.user_id);

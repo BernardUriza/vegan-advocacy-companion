@@ -84,7 +84,7 @@ for (const [author, fs] of Object.entries(byAuthor)) {
     lines.push(`<a id="${anchor(f.id)}"></a>`);
     lines.push('');
     lines.push(`- **id:** \`${f.id}\` · **tradición:** ${f.tradition}`);
-    lines.push(`- **deploy_as:** ${f.deploy_as} · **registro:** ${f.register}`);
+    lines.push(`- **familia:** ${f.family} · **deploy_as:** ${f.deploy_as} · **registro:** ${f.register}`);
     lines.push('');
     lines.push(`**Qué es:** ${f.definition}`);
     lines.push('');

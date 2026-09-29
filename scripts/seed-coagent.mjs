@@ -27,7 +27,7 @@
 //   node seed-coagent.mjs seed     --post-id <id> --author "<A>" --master <master.md>
 //   node seed-coagent.mjs insert   --post-id <id> --master <master.md> [--url <chat url>]
 //   node seed-coagent.mjs read     --phrase "<frase única del seed>" [--url <chat url>] [--out <f>]
-//   node seed-coagent.mjs finalize --post-id <id> --draft <draft.txt> --author "<A>"
+//   node seed-coagent.mjs finalize --post-id <id> --draft <draft.txt> --author "<A>" --framework <id>
 //   node seed-coagent.mjs show     --post-id <id>
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
@@ -152,9 +152,16 @@ if (!isMain) {
   const postId = arg('--post-id');
   const draft = arg('--draft');
   const author = arg('--author');
-  if (!postId || !draft || !author) die('uso: seed-coagent.mjs finalize --post-id <id> --draft <file> --author "<A>"  (el autor es obligatorio: sin él el lurker-sweep no puede ligar el draft a su interacción)');
+  const framework = arg('--framework');
+  if (!postId || !draft || !author || !framework) die('uso: seed-coagent.mjs finalize --post-id <id> --draft <file> --author "<A>" --framework <id>  (autor y framework son obligatorios: el autor liga el draft a su interacción y el framework se valida contra framework-pick)');
   const rp = receiptPath(postId);
   if (!existsSync(rp)) die(`no hay recibo parcial para ${postId} — corre \`seed\` primero (no saltes la consulta).`);
+  const { readPick } = await import('./framework-pick.mjs');
+  const { pickProblems } = await import('./framework-rotation.mjs');
+  const pick = readPick(postId, author);
+  const allFrameworks = JSON.parse(readFileSync(resolve(ROOT, 'data/frameworks.json'), 'utf8'));
+  const rotation = pickProblems(pick, framework, allFrameworks);
+  if (rotation.length) die('FINALIZE BLOQUEADO por la rotación de frameworks:\n  - ' + rotation.join('\n  - '));
   const r = JSON.parse(readFileSync(rp, 'utf8'));
   // normaliza el shape legacy single-draft a drafts[]
   if (!Array.isArray(r.drafts)) r.drafts = r.draft_sha ? [{ author: r.author ?? null, draft_sha: r.draft_sha, draft_file: r.draft_file ?? null, consulted_at: r.consulted_at ?? null }] : [];
@@ -162,7 +169,11 @@ if (!isMain) {
   const sha = draftSha(readFileSync(draftPath, 'utf8'));
   // upsert por sha: varios targets del mismo post acumulan, no se pisan
   const i = r.drafts.findIndex((d) => d.draft_sha === sha);
-  const entry = { author, draft_sha: sha, draft_file: draftPath, consulted_at: i >= 0 && r.drafts[i].consulted_at ? r.drafts[i].consulted_at : nowIso() };
+  const entry = {
+    author, draft_sha: sha, draft_file: draftPath,
+    consulted_at: i >= 0 && r.drafts[i].consulted_at ? r.drafts[i].consulted_at : nowIso(),
+    framework, exposure_n: pick.exposure_n, assignment: pick.assignment, propensity: pick.propensity,
+  };
   if (i >= 0) r.drafts[i] = entry; else r.drafts.push(entry);
   r.status = 'consulted';
   r.consulted_at = entry.consulted_at;

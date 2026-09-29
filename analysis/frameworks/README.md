@@ -140,7 +140,7 @@
 <a id="antropoespecismo"></a>
 
 - **id:** `antropoespecismo` · **tradición:** antiespecismo abolicionista
-- **deploy_as:** marco · **registro:** filo
+- **familia:** normalidad-y-naturaleza · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** El prejuicio fundacional que sitúa al ser humano por encima del resto de la naturaleza y convierte a los demás animales en recursos/propiedad. Guerrero lo presenta como una ideología supremacista de especie, paralela estructuralmente al racismo y al sexismo.
 
@@ -156,7 +156,7 @@ _Fuente: doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md_
 <a id="gobekli-kilometro-cero"></a>
 
 - **id:** `gobekli-kilometro-cero` · **tradición:** antiespecismo abolicionista (lectura histórica)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** poder-y-dominio · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Tesis de que Göbekli Tepe (~12,000 años) marca el 'punto de partida' / 'quiebre psicológico' donde el humano se situó por encima de la naturaleza, habilitando la domesticación entendida como dominación. Corolario: el especismo no es eterno ni natural — tiene fecha de inicio, así que puede terminar.
 
@@ -172,7 +172,7 @@ _Fuente: doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md_
 <a id="revolucionar-la-revolucion"></a>
 
 - **id:** `revolucionar-la-revolucion` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** filo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** filo
 
 **Qué es:** Autocrítica del movimiento de liberación animal: la 'revolución' a revolucionar es el propio movimiento. 'El invierno crudo exige afilar el hacha' — el activismo se sabotea reproduciendo el lenguaje de la industria (decir 'carne' = 'sepultar a las víctimas de un hachazo'), corriendo campañas gradualistas incoherentes ('vegano por un día' = 'racista solo entre semana'), y perdiendo tiempo 'desdeciéndose'. La meta es 'soy alguien, no algo'.
 
@@ -188,7 +188,7 @@ _Fuente: doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md_
 <a id="esclavitud-paralelismo"></a>
 
 - **id:** `esclavitud-paralelismo` · **tradición:** antiespecismo abolicionista
-- **deploy_as:** marco · **registro:** filo
+- **familia:** analogia-opresiones · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Trazar la estructura idéntica entre la esclavitud negra del s. XVI–XIX y el uso animal: diferencia + superioridad moral = opresión. "el racismo... establecían una diferencia... Y esta diferencia estableció una superioridad moral. Y la suma de la diferencia más la superioridad, la opresión... es exactamente lo mismo. Lo único que varía son las víctimas".
 
@@ -204,7 +204,7 @@ _Fuente: doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md_
 <a id="no-sabemos-que-tenemos-problema"></a>
 
 - **id:** `no-sabemos-que-tenemos-problema` · **tradición:** antiespecismo abolicionista
-- **deploy_as:** marco · **registro:** compasivo
+- **familia:** normalidad-y-naturaleza · **deploy_as:** marco · **registro:** compasivo
 
 **Qué es:** El obstáculo primario no es el desacuerdo sino la inconsciencia del marco propio. "el principal problema que tenemos es que no sabemos que tenemos un problema. ¿Cómo vamos a luchar contra una enfermedad si no sabemos que estamos enfermos?".
 
@@ -220,7 +220,7 @@ _Fuente: doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md_
 <a id="domesticar-eufemismo-dominar"></a>
 
 - **id:** `domesticar-eufemismo-dominar` · **tradición:** antiespecismo abolicionista
-- **deploy_as:** marco · **registro:** filo
+- **familia:** poder-y-dominio · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** El vocabulario doméstico lava la relación de poder real. "Domesticar es un eufemismo. Domesticar implica dominar, someter y, sin embargo, es un término que lo tenemos totalmente interiorizado... No nos llama la atención".
 
@@ -236,7 +236,7 @@ _Fuente: doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md_
 <a id="algo-a-alguien-sujeto-derecho"></a>
 
 - **id:** `algo-a-alguien-sujeto-derecho` · **tradición:** antiespecismo abolicionista
-- **deploy_as:** marco · **registro:** compasivo
+- **familia:** estatus-sujeto · **deploy_as:** marco · **registro:** compasivo
 
 **Qué es:** El núcleo del veganismo individual es un cambio de estatus moral, no de dieta. "En vez de ser objetos de propiedad, pasan a ser sujetos de derecho... En vez de reconocerlos como algo, lo reconocemos como alguien".
 
@@ -252,7 +252,7 @@ _Fuente: doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md_
 <a id="no-necesidad-cambiaron-las-reglas"></a>
 
 - **id:** `no-necesidad-cambiaron-las-reglas` · **tradición:** antiespecismo abolicionista
-- **deploy_as:** premisa_portante · **registro:** filo
+- **familia:** necesidad · **deploy_as:** premisa_portante · **registro:** filo
 
 **Qué es:** Toda la causa pende de que el uso animal ya no es supervivencia. "si aún hoy necesitáramos... esclavizar, asesinar a los otros animales para sobrevivir... no existiría reivindicación posible... no nos encontramos en este escenario. Las reglas del juego han cambiado y han cambiado para siempre".
 
@@ -268,7 +268,7 @@ _Fuente: doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md_
 <a id="njn-normal-justo-necesario"></a>
 
 - **id:** `njn-normal-justo-necesario` · **tradición:** antiespecismo abolicionista
-- **deploy_as:** marco · **registro:** filo
+- **familia:** normalidad-y-naturaleza · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** El mecanismo psicológico que blinda la práctica: lo que se hace se siente normal, lo normal se siente justo, lo justo se siente necesario. "esta mentalidad de NJN, normal, justo y necesario... lo tenemos delante y no somos siquiera conscientes".
 
@@ -284,7 +284,7 @@ _Fuente: doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md_
 <a id="matrix-pastilla-azul"></a>
 
 - **id:** `matrix-pastilla-azul` · **tradición:** antiespecismo abolicionista
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** El activista no se coloca por encima: confiesa haber estado dentro del marco. "no hemos sido activistas toda la vida... Formábamos parte de la cosmovisión... Éramos pastillas azules".
 
@@ -300,7 +300,7 @@ _Fuente: doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md_
 <a id="conocimiento-compromete"></a>
 
 - **id:** `conocimiento-compromete` · **tradición:** antiespecismo abolicionista
-- **deploy_as:** marco · **registro:** filo
+- **familia:** criterio-y-consistencia · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Una vez vista la realidad sin filtro, la inacción deja de ser neutral. "a partir de ahora, el conocimiento compromete. No podemos hacer como que no sabemos... antes éramos cómplices, pero sin haberlo elegido".
 
@@ -316,7 +316,7 @@ _Fuente: doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md_
 <a id="veganismo-no-es-dieta-ni-estilo-de-vida"></a>
 
 - **id:** `veganismo-no-es-dieta-ni-estilo-de-vida` · **tradición:** antiespecismo abolicionista
-- **deploy_as:** marco · **registro:** filo
+- **familia:** responsabilidad-estructural · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Reducir el veganismo a hábitos de consumo lo despolitiza. "Pensar que alguien es vegano por dejar de consumir leche, huevos y queso es como pensar que en tiempos de la esclavitud alguien que dejara de consumir azúcar, tabaco y algodón dejara de ser racista".
 
@@ -332,7 +332,7 @@ _Fuente: doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md_
 <a id="dimension-politica-tomar-posicion"></a>
 
 - **id:** `dimension-politica-tomar-posicion` · **tradición:** antiespecismo abolicionista
-- **deploy_as:** marco · **registro:** filo
+- **familia:** responsabilidad-estructural · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** El veganismo es lucha social, no virtud privada. "esa dimensión política del veganismo... Tomar posición... un principio ético y político universal que reivindica consideración moral para los otros animales, en oposición a la ideología y práctica supremacista del ser humano".
 
@@ -348,7 +348,7 @@ _Fuente: doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md_
 <a id="liberar-la-mente-abre-todas-las-jaulas"></a>
 
 - **id:** `liberar-la-mente-abre-todas-las-jaulas` · **tradición:** antiespecismo abolicionista
-- **deploy_as:** marco · **registro:** compasivo
+- **familia:** normalidad-y-naturaleza · **deploy_as:** marco · **registro:** compasivo
 
 **Qué es:** El cierre que distingue el acto puntual del cambio de marco. "Al abrir una jaula, liberarás una vida. Pero si liberas tu mente, abrirás todas las jaulas. No solamente las ajenas, sino también las propias".
 
@@ -364,7 +364,7 @@ _Fuente: doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md_
 <a id="crueldad-no-es-la-causa"></a>
 
 - **id:** `crueldad-no-es-la-causa` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** anti-bienestarismo · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Casi todo el movimiento fija el problema en la crueldad, pero la crueldad es el cómo, no el porqué. Etimología: "cruel viene del latín crudelis... cruor, sangre derramada". "¿Y si no hubiera sangre? ¿Y si no hubiera jaulas?... ya desaparece el problema".
 
@@ -380,7 +380,7 @@ _Fuente: doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md_
 <a id="pollo-inconsciente-reductio"></a>
 
 - **id:** `pollo-inconsciente-reductio` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** premisa_portante · **registro:** filo
+- **familia:** anti-bienestarismo · **deploy_as:** premisa_portante · **registro:** filo
 
 **Qué es:** El sistema 'Unconscious Chicken Farming' de Andre Ford: "se le realiza un corte en el córtex prefrontal al pollo... ya no siente, ni sufre ni padece" mientras sus órganos crecen. Test de estrés del marco anti-crueldad: si el problema fuera el sufrimiento, este sistema lo 'resuelve'.
 
@@ -396,7 +396,7 @@ _Fuente: doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md_
 <a id="lenguaje-carne-hachazo"></a>
 
 - **id:** `lenguaje-carne-hachazo` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** filo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** filo
 
 **Qué es:** 'Carne' es el eufemismo de la industria: "cada vez que utilizamos el término carne, de un hachazo les estamos sepultando, convirtiendo en invisibles... La carne es el producto". Propuesta: nombrar al animal con nombre y apellidos.
 
@@ -410,7 +410,7 @@ _Fuente: doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md_
 <a id="explotacion-vs-esclavitud-lexico"></a>
 
 - **id:** `explotacion-vs-esclavitud-lexico` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** filo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** filo
 
 **Qué es:** Auditoría del léxico del movimiento. 'Explotación' y 'maltrato' apuntan al cómo (golpes, sangre); 'esclavitud' apunta a la jerarquía/propiedad. Propuesta superior a 'crueldad': "injusticia... con una sola palabra ya no estamos derivando la atención hacia el cómo les esclavizamos".
 
@@ -426,7 +426,7 @@ _Fuente: doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md_
 <a id="carnismo-anonimato-critica"></a>
 
 - **id:** `carnismo-anonimato-critica` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** normalidad-y-naturaleza · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Crítica al concepto 'carnismo' (Melanie Joy): renombra un síntoma (comer animales) como si fuera la causa, ocultando la raíz (antropoespecismo). Reductio: "por cada síntoma nos podríamos inventar un sistema de creencias" — lechecismo, huevismo, quesismo.
 
@@ -442,7 +442,7 @@ _Fuente: doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md_
 <a id="genesis-invertido"></a>
 
 - **id:** `genesis-invertido` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** normalidad-y-naturaleza · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Contra-jugada a 'la Biblia promueve el veganismo' (Gén 1:29). Samuel cita Gén 1:27-28: "someted a la tierra y a todo cuanto vive, a las aves del cielo, a los peces del mar, y a todo ganado". Conclusión: "la Biblia promueve el antropoespecismo".
 
@@ -458,7 +458,7 @@ _Fuente: doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md_
 <a id="vegano-por-un-dia-racista-entre-semana"></a>
 
 - **id:** `vegano-por-un-dia-racista-entre-semana` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** analogia-opresiones · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Reductio contra el gradualismo y campañas 'sé vegano por un día/cuaresma': "era como si, deja de ser racista por un día... Lunes, martes y miércoles no voy a ser racista. Pero los jueves y el fin de semana, ¡sí!". Si es justicia, no es fraccionable por días.
 
@@ -474,7 +474,7 @@ _Fuente: doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md_
 <a id="no-es-opcion-de-vida"></a>
 
 - **id:** `no-es-opcion-de-vida` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** marco · **registro:** compasivo
+- **familia:** analogia-opresiones · **deploy_as:** marco · **registro:** compasivo
 
 **Qué es:** Contra encuadrar el veganismo como 'lifestyle'. El surf es opcional; "pero ¿es una opción ser machista? ¿Podemos elegir ser racista? ¿Podemos elegir ser antropoespecista?... Obvio que no es una opción".
 
@@ -490,7 +490,7 @@ _Fuente: doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md_
 <a id="formar-activistas-no-veganos"></a>
 
 - **id:** `formar-activistas-no-veganos` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** "Yo no digo que soy vegano... vegano es un término que ha perdido su identidad... un vocablo vacío", capturado por la dieta. Cita de Jake: cuánto mejoraríamos si en vez de "convertir gente en vegana" nos dedicáramos a "formar activistas".
 
@@ -506,7 +506,7 @@ _Fuente: doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md_
 <a id="entender-no-es-transformarse"></a>
 
 - **id:** `entender-no-es-transformarse` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** Contra el defensismo 'nadie lo va a entender': "una cosa es explicar, otra entender... y luego aceptarlo hasta decidir la transformación personal". La gente entiende perfectamente el antiespecismo; lo que no siempre hacen es decidir dejar de serlo. La barrera es de voluntad, no cognitiva.
 
@@ -522,7 +522,7 @@ _Fuente: doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md_
 <a id="preocupa-mas-el-movimiento"></a>
 
 - **id:** `preocupa-mas-el-movimiento` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** filo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** filo
 
 **Qué es:** Tesis meta-estratégica: "me preocupa mucho más el movimiento que la sociedad... lo que acontece de puertas para adentro". Cada campaña que popularizó el veganismo-como-dieta hace que el movimiento gaste "tiempo valiosísimo para desdecirnos", mientras las víctimas siguen muriendo.
 
@@ -536,7 +536,7 @@ _Fuente: doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md_
 <a id="especismo-se-programa-en-la-infancia"></a>
 
 - **id:** `especismo-se-programa-en-la-infancia` · **tradición:** antiespecismo abolicionista (educación / transmisión cultural)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** normalidad-y-naturaleza · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** El especismo no se nace teniéndolo, se aprende antes de poder elaborar pensamiento crítico, a través de cuatro factores: familia, escuela, entorno social (incluida la religión) y medios. Guerrero: "la palabra sería una programación, se han programado para pensar de una manera muy particular y actuar acorde a esta manera, y la presión es absoluta, la influencia es total".
 
@@ -552,7 +552,7 @@ _Fuente: doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md_
 <a id="economia-especista-heredada"></a>
 
 - **id:** `economia-especista-heredada` · **tradición:** antiespecismo abolicionista (educación / transmisión cultural)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** responsabilidad-estructural · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Una niña, ante el acuario, insistió en que los peces deberían estar en el mar, y al ser presionada reveló el fondo aprendido: "si estuvieran en el mar, nos quedaríamos sin trabajo". La explotación se justifica por la economía que depende de ella, una respuesta heredada antes de poder razonarla.
 
@@ -568,7 +568,7 @@ _Fuente: doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md_
 <a id="mentir-a-las-criaturas-sostiene-el-sistema"></a>
 
 - **id:** `mentir-a-las-criaturas-sostiene-el-sistema` · **tradición:** antiespecismo abolicionista (educación / transmisión cultural)
-- **deploy_as:** marco · **registro:** compasivo
+- **familia:** normalidad-y-naturaleza · **deploy_as:** marco · **registro:** compasivo
 
 **Qué es:** El sistema se mantiene desvinculando a los niños del origen de la comida: se les oculta que la hamburguesa fue un animal al que hubo que matar. A los niños no se les enseña la cruda realidad porque, si la vieran, no la aceptarían. La biofilia infantil se vuelve especismo a través de la mentira sostenida.
 
@@ -584,7 +584,7 @@ _Fuente: doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md_
 <a id="premisa-falsa-los-animales-nos-dan"></a>
 
 - **id:** `premisa-falsa-los-animales-nos-dan` · **tradición:** antiespecismo abolicionista (educación / transmisión cultural)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** estatus-sujeto · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** El lenguaje infantil enseña que 'la vaca da leche', 'la gallina da huevos', como si la naturaleza regalara recursos. Guerrero invierte la prueba: nadie da nada, se coge lo que interesa. El test: sustituir a la vaca por una hembra humana — no te 'da' leche, ni una perra te 'da' su cachorro; 'dar' es una mentira gramatical para encubrir que se toma.
 
@@ -600,7 +600,7 @@ _Fuente: doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md_
 <a id="libros-de-texto-niegan-sintiencia"></a>
 
 - **id:** `libros-de-texto-niegan-sintiencia` · **tradición:** antiespecismo abolicionista (educación / transmisión cultural)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** estatus-sujeto · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Libros de texto y cuentos describen al animal por sus partes, reproducción, alimentación y desplazamiento, pero nunca mencionan que sienta dolor, que tenga emociones o capacidad de sufrir. Al verlo solo como partes se lo convierte en recurso, no en individuo; y los animales explotados aparecen ilustrados con una sonrisa.
 
@@ -616,7 +616,7 @@ _Fuente: doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md_
 <a id="normalizar-solo-una-parte-realidad"></a>
 
 - **id:** `normalizar-solo-una-parte-realidad` · **tradición:** antiespecismo abolicionista (educación / transmisión cultural)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** normalidad-y-naturaleza · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Existen juguetes de carnicería, granjas, circos, safaris, pesqueras, pero no un kit de la pena de muerte ni de la violencia entre humanos. Si el argumento es 'hay que normalizar la realidad', la trampa: solo se normaliza la parte conveniente. Incluso el juguete de la granja omite la matanza; nadie haría un kit donde el niño mate al conejito.
 
@@ -632,7 +632,7 @@ _Fuente: doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md_
 <a id="educador-no-adoctrina-responde"></a>
 
 - **id:** `educador-no-adoctrina-responde` · **tradición:** antiespecismo abolicionista (educación / transmisión cultural)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** Guerrero distingue su labor docente de hacer activismo en el aula: nunca ha hecho campaña ni impuesto un criterio. "no lo hacemos con los adultos, menos lo vamos a hacer con los niños". Pero los temas salen por la curiosidad infantil, y cuando salen hay que tratarlos con honestidad. La distinción: imponer una conclusión vs. no mentir cuando un niño pregunta.
 
@@ -646,7 +646,7 @@ _Fuente: doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md_
 <a id="respeto-persona-no-idea-inmoral"></a>
 
 - **id:** `respeto-persona-no-idea-inmoral` · **tradición:** antiespecismo abolicionista (educación / transmisión cultural)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** sello-y-mala-fe · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Frente a 'respeta mi opción de comer animales', se separa el respeto a la persona del respeto a la idea: nunca pedirías respeto por las ideas de un maltratador o un racista. El veganismo no es opción personal porque afecta a terceros; no es un gusto a tolerar sino un deber ético. Se puede ser cordial con la persona sin avalar la conducta.
 
@@ -662,7 +662,7 @@ _Fuente: doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md_
 <a id="single-issue-diluye-mensaje"></a>
 
 - **id:** `single-issue-diluye-mensaje` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** filo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** filo
 
 **Qué es:** Cuando una campaña mezcla la consigna antiespecista con causas monotemáticas (pandemias, medio ambiente, bienestarismo, mega-granjas), el mensaje de raíz queda invisibilizado: "se mezcla la pandemia, el medio ambiente, el bienestarismo... es un crisol que no termina siendo nada".
 
@@ -676,7 +676,7 @@ _Fuente: doctrine/rag/Avolicion-Guerrero — texto extraido.md_
 <a id="pandemia-cooptada-todo-vale"></a>
 
 - **id:** `pandemia-cooptada-todo-vale` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** filo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** filo
 
 **Qué es:** Agarrar cualquier tema coyuntural (COVID, zoonosis) y reconvertirlo en arma es 'la cultura del todo vale': "da igual qué tema agarre, que me va a servir, yo le voy a dar la vuelta". El argumento prudencial subordina a los animales a un beneficio humano.
 
@@ -692,7 +692,7 @@ _Fuente: doctrine/rag/Avolicion-Guerrero — texto extraido.md_
 <a id="bienestarismo-jugada-maestra-del-poder"></a>
 
 - **id:** `bienestarismo-jugada-maestra-del-poder` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** anti-bienestarismo · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Si el activismo focaliza el problema en el 'cómo' (sufrimiento, crueldad), el poder responde con campañas de bienestar animal y desarma la queja: 'cuanto mejor esté la vaca, mejor será la leche'. "Es una jugada maestra... atacan de sacar eso de la ecuación". La injusticia 'ha permanecido intacta'.
 
@@ -708,7 +708,7 @@ _Fuente: doctrine/rag/Avolicion-Guerrero — texto extraido.md_
 <a id="consideracion-moral-no-fin-del-sufrimiento"></a>
 
 - **id:** `consideracion-moral-no-fin-del-sufrimiento` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** anti-bienestarismo · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Dos objetivos que el activista debe elegir conscientemente: si tu meta es 'acabar con el sufrimiento', el día que el poder ofrezca animales que no sufren tu lucha termina; si tu meta es 'la consideración moral —que sean reconocidos como sujetos de derecho, que ya no sean recursos—', ninguna campaña de bienestar te desarma.
 
@@ -724,7 +724,7 @@ _Fuente: doctrine/rag/Avolicion-Guerrero — texto extraido.md_
 <a id="informar-deber-ser-informado-derecho"></a>
 
 - **id:** `informar-deber-ser-informado-derecho` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** Pasaron de perseguir gente con flyers (energía gastada, panfletos en el suelo) a poner una mesa y dejar que 'el filtro natural' acercara a los interesados: 'ya no obligamos a nadie a ser informado'. Síntesis: "informar es un deber, pero ser informado o informada es un derecho".
 
@@ -738,7 +738,7 @@ _Fuente: doctrine/rag/Avolicion-Guerrero — texto extraido.md_
 <a id="mensaje-importa-formas-determinantes"></a>
 
 - **id:** `mensaje-importa-formas-determinantes` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** Separa el QUÉ del CÓMO: "el mensaje es muy importante... pero las formas son determinantes, son las que nos van a llevar al éxito o al fracaso". Lo vivió descargando su descubrimiento sobre su familia en la mesa hasta que le pidieron 'que les dejes en paz'. La verdad mal entregada genera rechazo.
 
@@ -754,7 +754,7 @@ _Fuente: doctrine/rag/Avolicion-Guerrero — texto extraido.md_
 <a id="gore-backfire-vaca-idilica"></a>
 
 - **id:** `gore-backfire-vaca-idilica` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** Frente a vídeos hardcore de matadero, contrapone una imagen de vacas en un prado idílico y pregunta con cuál se queda la sociedad: con la bucólica, 'porque eso de que sufran los animales, con eso no puedo'. Pero "es la misma injusticia. Lo único que cambia es la forma de esclavitud... el problema es la esclavitud en sí misma".
 
@@ -770,7 +770,7 @@ _Fuente: doctrine/rag/Avolicion-Guerrero — texto extraido.md_
 <a id="antropoespecismo-universal-deslocalizar"></a>
 
 - **id:** `antropoespecismo-universal-deslocalizar` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** responsabilidad-estructural · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Criticar una mega-granja por territorio (que no se instale 'acá') solo la empuja a Chile o Bolivia y 'el problema de los animales sigue igual'. La raíz es universal: "el antropoespecismo está por encima de culturas, nacionalidades, religiones... va a hacer su trabajo: dominar, someter, esclavizar y asesinar a los demás animales".
 
@@ -786,7 +786,7 @@ _Fuente: doctrine/rag/Avolicion-Guerrero — texto extraido.md_
 <a id="sintomatismo-sintomas-inconexos"></a>
 
 - **id:** `sintomatismo-sintomas-inconexos` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** filo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** filo
 
 **Qué es:** Un activismo que sale cada día contra un síntoma distinto (corridas, mataderos, experimentación) 'sin establecer un nexo de unión con el síntoma del día anterior, de forma excluyente' confunde consecuencias con la causa. "Si padecemos una enfermedad pero no somos conscientes, ¿cómo vamos a dar con un diagnóstico?". La raíz es el antropoespecismo, no cada crueldad aislada.
 
@@ -800,7 +800,7 @@ _Fuente: doctrine/rag/Avolicion-Guerrero — texto extraido.md_
 <a id="mensaje-para-el-humano-no-para-el-animal"></a>
 
 - **id:** `mensaje-para-el-humano-no-para-el-animal` · **tradición:** educación antiespecista / psicología social del activismo
-- **deploy_as:** marco · **registro:** filo
+- **familia:** responsabilidad-estructural · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** El activismo de concienciación gasta el 95% de su esfuerzo dirigiendo la atención a los demás animales ('mira cómo son, también sienten, también sufren') hablándole a un homo sapiens al que le da igual: 'cuando llevas medio minuto explicando cómo son los demás animales, ese homo sapiens ya se ha dado la vuelta y se ha ido'. La educación antiespecista invierte el foco: 'también tiene un mensaje para usted, señor homo sapiens' — trabaja el rol que el humano tiene de sí mismo (el 'rey de la creación'), no solo el rol que asignó al animal.
 
@@ -816,7 +816,7 @@ _Fuente: doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md_
 <a id="carnismo-es-algodonismo"></a>
 
 - **id:** `carnismo-es-algodonismo` · **tradición:** meta-estrategia antiespecista / crítica al carnismo
-- **deploy_as:** marco · **registro:** filo
+- **familia:** anti-bienestarismo · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Cuando el movimiento por fin enfocaba el antropoespecismo, el carnismo de Melanie Joy desvió el foco hacia un mero síntoma. Paralelismo: 'en el siglo XIX, en vez de visibilizar el racismo, una autora dice: hay que luchar contra el algodonismo, porque hay un consumo brutal de algodón'. El algodón es un hábito más, no el enemigo; el racismo sí. Igual el carnismo: 'no deja de ser un hábito más, un síntoma más'. 'Lo último que le interesa al antropoespecismo es visibilizarse'.
 
@@ -832,7 +832,7 @@ _Fuente: doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md_
 <a id="momento-truman-traicion-de-los-tuyos"></a>
 
 - **id:** `momento-truman-traicion-de-los-tuyos` · **tradición:** educación antiespecista / fenomenología del despertar
-- **deploy_as:** marco · **registro:** compasivo
+- **familia:** normalidad-y-naturaleza · **deploy_as:** marco · **registro:** compasivo
 
 **Qué es:** El despertar como el instante en que el barco de Truman choca contra el muro pintado: 'toda su vida ha sido un engaño, una farsa'. El motor no es la culpa por el animal sino la indignación hacia los propios íntimos: '¿cómo es posible que ni mi familia, ni los maestros, ni mis amistades, nadie me informó antes de esto?'. Esa pregunta se vuelve obsesión — y produce al educador, no al consumidor culpable.
 
@@ -848,7 +848,7 @@ _Fuente: doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md_
 <a id="resistencia-al-cambio-es-defensa-del-privilegio"></a>
 
 - **id:** `resistencia-al-cambio-es-defensa-del-privilegio` · **tradición:** educación antiespecista / psicología de la resistencia
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** La gente prefiere negar la mayor — 'no te quieren escuchar, no quieren saber'. No es que el activista les provoque un problema; 'les está dando la oportunidad de conocerse a sí mismos'. Se resisten por los privilegios: '¿quién quiere bajarse del pedestal?', porque admitir el marco obliga a modificar 'tus ideas, tus comportamientos, tus hábitos, en aras de la ética'. La negativa a escuchar delata que se defiende una posición aventajada, no una verdad.
 
@@ -864,7 +864,7 @@ _Fuente: doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md_
 <a id="estereotipo-prejuicio-discriminacion"></a>
 
 - **id:** `estereotipo-prejuicio-discriminacion` · **tradición:** psicología social aplicada al antiespecismo
-- **deploy_as:** marco · **registro:** filo
+- **familia:** analogia-opresiones · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Definir el especismo solo como 'discriminación' es insuficiente: en psicología social la discriminación es apenas la fase conductual de una estructura de tres partes: estereotipo (cognitivo — 'el concepto que tenemos de los demás animales'), prejuicio (emocional — costumbres arraigadas que generan pertenencia de grupo) y discriminación (la suma). 'Discriminación se nos queda muy corto, porque la pregunta es: ¿y por qué discriminamos?'.
 
@@ -880,7 +880,7 @@ _Fuente: doctrine/rag/Instagram-AnimalHumano-1-Guerrero — texto extraido.md_
 <a id="tabula-rasa-ni-nacemos-ni-nos-hacen"></a>
 
 - **id:** `tabula-rasa-ni-nacemos-ni-nos-hacen` · **tradición:** antiespecismo abolicionista (naturaleza vs. crianza)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** normalidad-y-naturaleza · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** 'Cuidado que he leído que nacemos antropoespecistas, esto no es del todo cierto... hay un libro, La tabula rasa, de Steven Pinker, que hace saltar por los aires el debate entre la crianza y la enseñanza... nacemos o nos hacemos racistas, antropoespecistas'. El especismo ni es puramente innato ni puramente inculcado: es más complejo que cualquiera de los dos polos.
 
@@ -896,7 +896,7 @@ _Fuente: doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md_
 <a id="contraespecismo-postura-activa"></a>
 
 - **id:** `contraespecismo-postura-activa` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** filo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** filo
 
 **Qué es:** 'El antiespecismo sería: estoy en contra del especismo, pero aquí me quedo. El contraespecismo sería, además de posicionarme en contra, voy a hacer lo necesario para erradicarlo... una actitud activa... voy con todo contra el antropoespecismo'.
 
@@ -910,7 +910,7 @@ _Fuente: doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md_
 <a id="tres-dimensiones-del-veganismo"></a>
 
 - **id:** `tres-dimensiones-del-veganismo` · **tradición:** antiespecismo abolicionista (definición conceptual)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** responsabilidad-estructural · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** 'Las tres dimensiones del veganismo: la primera es la teórica, la científico-filosófica' (dejas de verte superior); la segunda es 'el veganismo práctico' (la transformación de hábitos, del desayuno a la cosmética); y la tercera el veganismo político: 'vegano es aquel que es activista... hace trascender del plano individual al colectivo'.
 
@@ -926,7 +926,7 @@ _Fuente: doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md_
 <a id="hablamos-en-nombre-de-los-demas-animales"></a>
 
 - **id:** `hablamos-en-nombre-de-los-demas-animales` · **tradición:** antiespecismo abolicionista (ética del discurso activista)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** 'Nunca se nos olvide que no hablamos en nombre propio, estamos hablando en nombre de los demás animales... toda información que demos, por mínima que sea, hay que pensarla dos, tres y cuatro veces'. El ejercicio: imaginar que los animales pudieran hablar un minuto y preguntarles si el mensaje que lanzamos —y la manera— es lo que les conviene.
 
@@ -942,7 +942,7 @@ _Fuente: doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md_
 <a id="medida-tres-plazos-corto-medio-largo"></a>
 
 - **id:** `medida-tres-plazos-corto-medio-largo` · **tradición:** antiespecismo abolicionista (meta-estrategia de activismo)
-- **deploy_as:** auto-disciplina-del-activista · **registro:** filo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** filo
 
 **Qué es:** Frente al neobienestarismo 'cortoplacista' que retoca síntomas, propone una medida corto+medio+largo plazo: 'uno, visibilizando el antropoespecismo; dos, visibilizando la educación antropoespecista; y luego educando en el veganismo político'. Corto = cambiar hábitos; medio = cuestionar tu rol y la educación recibida; largo = entrar en las estructuras de poder (p. ej. el sistema educativo) para las generaciones futuras.
 
@@ -958,7 +958,7 @@ _Fuente: doctrine/rag/Instagram-AnimalHumano-2-Guerrero — texto extraido.md_
 <a id="metafora-del-fronton"></a>
 
 - **id:** `metafora-del-fronton` · **tradición:** veganismo político / crítica estratégica del movimiento
-- **deploy_as:** auto-disciplina-del-activista · **registro:** filo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** filo
 
 **Qué es:** 'Si lanzas la pelota suave, el frontón te la devuelve despacio; si la lanzas fuerte, te la devuelve fuerte. Durante veinte años lanzamos el mensaje de que el veganismo es alimentación, estilo de vida, una opción — y eso es exactamente lo que la sociedad nos devuelve.'
 
@@ -972,7 +972,7 @@ _Fuente: doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md_
 <a id="respetar-no-es-opcion"></a>
 
 - **id:** `respetar-no-es-opcion` · **tradición:** veganismo político / default ético
-- **deploy_as:** marco · **registro:** filo
+- **familia:** estatus-sujeto · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** 'Si relacionamos el veganismo con una filosofía de vida, le estamos diciendo a la sociedad que respetar a los demás animales es una opción — como decir: no ser racista está bien, pero ser racista también está bien.'
 
@@ -988,7 +988,7 @@ _Fuente: doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md_
 <a id="dimension-politica-entrar-estructuras-de-poder"></a>
 
 - **id:** `dimension-politica-entrar-estructuras-de-poder` · **tradición:** veganismo político / dimensión colectiva
-- **deploy_as:** marco · **registro:** compasivo
+- **familia:** responsabilidad-estructural · **deploy_as:** marco · **registro:** compasivo
 
 **Qué es:** 'Así como la dimensión ideológica y la práctica tienen que ver con uno mismo, la política es trascender: sacar ese veganismo que tenemos dentro a la calle, propiciar la transformación social a través del activismo, ir a las calles y entrar en las estructuras de poder.'
 
@@ -1002,7 +1002,7 @@ _Fuente: doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md_
 <a id="dos-caras-misma-moneda"></a>
 
 - **id:** `dos-caras-misma-moneda` · **tradición:** veganismo político / síntesis
-- **deploy_as:** marco · **registro:** filo
+- **familia:** criterio-y-consistencia · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** 'No podemos entender el veganismo sin hacer frente al antropoespecismo, y no podemos entender el antropoespecismo sin abrazar el veganismo. Las seis creencias del antropoespecismo —necesidad, utilidad, pertenencia, superioridad, estatus, diferencia— se vuelven las seis certezas del veganismo.'
 
@@ -1018,7 +1018,7 @@ _Fuente: doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md_
 <a id="transformacion-de-dentro-hacia-afuera"></a>
 
 - **id:** `transformacion-de-dentro-hacia-afuera` · **tradición:** veganismo político / pedagogía del activista
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** 'El cambio ha de ser de dentro para afuera, no de fuera para dentro. Nuestro papel es compartir información, argumentar, invitar a la reflexión — y ahí debe finalizar. Lo que se nos impone, tarde o temprano lo vomitamos; lo que decide uno mismo, no hay gobierno ni ley ni presión social que pueda con esa decisión.'
 
@@ -1034,7 +1034,7 @@ _Fuente: doctrine/rag/Veganismo-Politico-Guerrero — texto extraido.md_
 <a id="violencia-especista"></a>
 
 - **id:** `violencia-especista` · **tradición:** psicología social vegana / estudios críticos animales
-- **deploy_as:** marco · **registro:** filo
+- **familia:** anti-bienestarismo · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** La violencia ejercida hacia los animales no-humanos como IMPLEMENTACIÓN del especismo: 'un vínculo relacional asimétrico y opresivo que los humanos ejercen sobre otros animales'. Una violencia social como cualquier otra (racista, sexista, homófoba), no una categoría aparte. Acuñado por Kachanoski junto con 'especídio' en la International Animal Rights Conference (Luxemburgo).
 
@@ -1050,7 +1050,7 @@ _Fuente: doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md_
 <a id="especidio"></a>
 
 - **id:** `especidio` · **tradición:** psicología social vegana
-- **deploy_as:** marco · **registro:** filo
+- **familia:** anti-bienestarismo · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Categoría de violencia especista estructural: el exterminio sistemático e institucionalizado de animales no-humanos (paralelo conceptual al genocidio). Parte de la taxonomía ENFOC (Enfoque de Violencia Especista), que ordena la violencia especista en cinco dimensiones: directa, indirecta, colateral, estructural y discursiva.
 
@@ -1066,7 +1066,7 @@ _Fuente: doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md_
 <a id="violencia-discursiva"></a>
 
 - **id:** `violencia-discursiva` · **tradición:** psicología social vegana / estudios críticos animales
-- **deploy_as:** marco · **registro:** filo
+- **familia:** anti-bienestarismo · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** La quinta dimensión: "todos aquellos discursos que comunican violentamente" — vocabulario ('pescado', 'ganado'), insultos ('¡no seas burro!'), refranes ('matar dos pájaros de un tiro'), publicidad, los silencios. "Es más fácil ajustar mi pensamiento que cambiar un hábito... se invisibiliza que un acto es violencia a través del discurso".
 
@@ -1082,7 +1082,7 @@ _Fuente: doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md_
 <a id="por-que-no-maltrato-rigor-conceptual"></a>
 
 - **id:** `por-que-no-maltrato-rigor-conceptual` · **tradición:** psicología social vegana / estudios críticos animales
-- **deploy_as:** premisa_portante · **registro:** filo
+- **familia:** anti-bienestarismo · **deploy_as:** premisa_portante · **registro:** filo
 
 **Qué es:** El rigor conceptual del término. "Violencia Especista no es maltrato animal. Cuando hablamos de maltrato, automáticamente pensamos en la contracara: el buen trato" — y el problema no es el trato sino la consideración moral. Trastorno mental tampoco aplica "porque no hablamos de casos aislados, hablamos de la norma".
 
@@ -1098,7 +1098,7 @@ _Fuente: doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md_
 <a id="paralelo-luchas-sociales-centrismos"></a>
 
 - **id:** `paralelo-luchas-sociales-centrismos` · **tradición:** psicología social vegana / estudios críticos animales
-- **deploy_as:** marco · **registro:** compasivo
+- **familia:** analogia-opresiones · **deploy_as:** marco · **registro:** compasivo
 
 **Qué es:** El especismo en la familia de los 'Centrismos': Antropocentrismo, Androcentrismo (→Sexismo), Heterocentrismo (→Homofobia), Etnocentrismo (→Racismo). "pensar que es una especie antes que pensar que es un individuo; pensar que es una mujer antes que un humano... Es lo mismo".
 
@@ -1114,7 +1114,7 @@ _Fuente: doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md_
 <a id="extranar-lo-naturalizado"></a>
 
 - **id:** `extranar-lo-naturalizado` · **tradición:** psicología social vegana / estudios críticos animales
-- **deploy_as:** marco · **registro:** compasivo
+- **familia:** normalidad-y-naturaleza · **deploy_as:** marco · **registro:** compasivo
 
 **Qué es:** El ejercicio: "Esté naturalizado, normalizado, avalado socialmente... vamos a hacer el ejercicio contrario: extrañarnos de aquello que vemos con naturalidad". El gesto: "deja a un lado la justificación que le quieres dar como especista y mira esa imagen: esto es violencia".
 
@@ -1130,7 +1130,7 @@ _Fuente: doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md_
 <a id="filtro-especie-vs-individuo"></a>
 
 - **id:** `filtro-especie-vs-individuo` · **tradición:** psicología social vegana / estudios críticos animales
-- **deploy_as:** marco · **registro:** compasivo
+- **familia:** estatus-sujeto · **deploy_as:** marco · **registro:** compasivo
 
 **Qué es:** El mecanismo cognitivo del especismo: "Dejamos de mirar individuos para pensar en especies". El opresor procesa al ser por su categoría ('es un cerdo', 'es ganado'), igual que el sexismo ve 'una mujer' antes que 'un humano'.
 
@@ -1146,7 +1146,7 @@ _Fuente: doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md_
 <a id="semaforo-rojo-amarillo-welfarismo"></a>
 
 - **id:** `semaforo-rojo-amarillo-welfarismo` · **tradición:** psicología social vegana / estudios críticos animales
-- **deploy_as:** marco · **registro:** filo
+- **familia:** anti-bienestarismo · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** Mapa de posiciones. Rojo: 'eres una cosa' (especismo milenario). Amarillo: el especismo del s.XXI que "no cuestiona el status de propiedad, pero sí la magnitud de la violencia: cuánto sufre la víctima de esclavitud, no el hecho de que sean esclavos" (welfarismo). El veganismo no es un tercer color: es salir del tablero.
 
@@ -1162,7 +1162,7 @@ _Fuente: doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md_
 <a id="arbol-causa-sintoma"></a>
 
 - **id:** `arbol-causa-sintoma` · **tradición:** psicología social vegana / estudios críticos animales
-- **deploy_as:** marco · **registro:** compasivo
+- **familia:** anti-bienestarismo · **deploy_as:** marco · **registro:** compasivo
 
 **Qué es:** "Si el Especismo es la causa, el tronco, la Violencia Especista es su consecuencia, el síntoma visible". Raíces invisibles (el prejuicio), tronco (la creencia), copa con ramas (los tipos de violencia). "Cuando hablamos de los golpes, solo hablamos del síntoma".
 
@@ -1178,7 +1178,7 @@ _Fuente: doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md_
 <a id="consideracion-moral-no-cuanto-sufre"></a>
 
 - **id:** `consideracion-moral-no-cuanto-sufre` · **tradición:** psicología social vegana / estudios críticos animales
-- **deploy_as:** premisa_portante · **registro:** compasivo
+- **familia:** estatus-sujeto · **deploy_as:** premisa_portante · **registro:** compasivo
 
 **Qué es:** El corazón del marco: "El problema no es cuánto sufre una víctima. El problema es la consideración moral que tenemos... ¿El problema es cuántos golpes recibe o que la víctima es un esclavo?". Definición: "ese vínculo de relación asimétrico y opresivo que ejercen los humanos hacia los demás animales".
 
@@ -1194,7 +1194,7 @@ _Fuente: doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md_
 <a id="violencia-estructural-infraestructura"></a>
 
 - **id:** `violencia-estructural-infraestructura` · **tradición:** psicología social vegana / estudios críticos animales
-- **deploy_as:** marco · **registro:** filo
+- **familia:** responsabilidad-estructural · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** "Son las estructuras que le sostienen... hemos montado todo un aparataje, una infraestructura al servicio de la violencia especista: mataderos, peleterías, aquariums". Su forma extrema es el especídio.
 
@@ -1210,7 +1210,7 @@ _Fuente: doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md_
 <a id="violencia-indirecta-quien-demanda"></a>
 
 - **id:** `violencia-indirecta-quien-demanda` · **tradición:** psicología social vegana / estudios críticos animales
-- **deploy_as:** marco · **registro:** filo
+- **familia:** responsabilidad-estructural · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** "Hay un humano que demanda, exige que otro humano ejerza violencia directa en su nombre, y paga por ello". El consumidor que no toca al animal pero financia el acto: "lo ejerce el 99% de la población".
 
@@ -1226,7 +1226,7 @@ _Fuente: doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md_
 <a id="sembrar-en-el-receptivo"></a>
 
 - **id:** `sembrar-en-el-receptivo` · **tradición:** psicología social vegana / estudios críticos animales
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** Autodisciplina: "no se trata de hablar con un humano de consciencia elevada que nos va a entender, sino con un humano que está despertando. Con que haya receptividad ya la conciencia social surge... nos entenderá quien esté listo".
 
@@ -1244,7 +1244,7 @@ _Fuente: doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md_
 <a id="nvc-observacion-sin-juicio"></a>
 
 - **id:** `nvc-observacion-sin-juicio` · **tradición:** registro compasivo / comunicación no violenta
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** El primer componente de la Comunicación No Violenta: distinguir lo que SE OBSERVA (un hecho concreto, verificable) de la EVALUACIÓN que le montamos encima. Rosenberg: mezclar observación y juicio hace que el otro escuche crítica y se cierre; describir el hecho desnudo, sin etiqueta moral sobre la persona, deja la puerta abierta. "Observing without evaluating is the highest form of human intelligence".
 
@@ -1262,7 +1262,7 @@ _Fuente: doctrine/rag/Nonviolent Communication (Rosenberg) — texto extraido.md
 <a id="ifs-hablarle-al-nino-herido"></a>
 
 - **id:** `ifs-hablarle-al-nino-herido` · **tradición:** registro compasivo / sistemas familiares internos
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** IFS modela la psique como un Yo central rodeado de 'partes': exiliados (que guardan dolor/vergüenza/miedo de experiencias tempranas) y protectores (gerentes y bomberos) cuyo trabajo es mantener al exiliado oculto para evitar la angustia. La hostilidad, la burla y el data-dump son PROTECTORES en acción — no la persona, sino la parte que blinda al exiliado herido bajo ella.
 
@@ -1280,7 +1280,7 @@ _Fuente: doctrine/rag/IFS - Sistemas Familiares Internos (Schwartz) — texto ex
 <a id="mi-evocar-cambio-sin-confrontar"></a>
 
 - **id:** `mi-evocar-cambio-sin-confrontar` · **tradición:** registro compasivo / entrevista motivacional
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** La EM nace tratando la ambivalencia: la persona articula y resuelve sus propias razones para cambiar, no el consejero. "Ni la persuasión directa ni la confrontación son métodos efectivos para resolver la ambivalencia" — confrontar dispara resistencia, que es parte natural y esperada del proceso. El cambio se evoca, no se impone; la resistencia se rueda, no se choca.
 
@@ -1296,7 +1296,7 @@ _Fuente: doctrine/rag/Entrevista Motivacional (Miller-Rollnick) — texto extrai
 <a id="mi-desarrollar-discrepancia"></a>
 
 - **id:** `mi-desarrollar-discrepancia` · **tradición:** registro compasivo / entrevista motivacional
-- **deploy_as:** marco · **registro:** compasivo
+- **familia:** criterio-y-consistencia · **deploy_as:** marco · **registro:** compasivo
 
 **Qué es:** Principio central de la EM: el cambio se motiva al hacer visible la brecha entre los VALORES que la persona ya sostiene y su conducta actual. No se le impone un valor nuevo — se ilumina la incoherencia entre lo que dice amar (no querer sufrimiento innecesario, amar a los animales) y lo que su plato sostiene, y se deja que esa tensión empuje.
 
@@ -1314,7 +1314,7 @@ _Fuente: doctrine/rag/Entrevista Motivacional (Miller-Rollnick) — texto extrai
 <a id="trauma-informed-defensa-no-es-maldad"></a>
 
 - **id:** `trauma-informed-defensa-no-es-maldad` · **tradición:** registro compasivo / atención informada por el trauma
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** El enfoque informado por el trauma reencuadra la pregunta de '¿qué te pasa?' a '¿qué te pasó?': conductas que parecen agresión, negación o cierre suelen ser respuestas aprendidas de protección, no maldad de carácter. La reacción defensiva ante el marco vegano (burla, rabia, evasión) se lee como un sistema protegiéndose de una culpa o disonancia que duele, no como un enemigo a derrotar.
 
@@ -1332,7 +1332,7 @@ _Fuente: doctrine/rag/Trauma-Informed Care (SAMHSA) — texto extraido.md_
 <a id="apego-seguridad-antes-que-razon"></a>
 
 - **id:** `apego-seguridad-antes-que-razon` · **tradición:** registro compasivo / teoría del apego
-- **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
+- **familia:** auto-disciplina · **deploy_as:** auto-disciplina-del-activista · **registro:** compasivo
 
 **Qué es:** La teoría del apego sostiene que un sistema nervioso que se siente amenazado prioriza la defensa sobre la exploración: solo desde una 'base segura' una persona se abre a información nueva o incómoda. Un interlocutor en alerta (atacado, ridiculizado, acorralado) no procesa el argumento — lo repele. La receptividad requiere primero seguridad relacional, no más presión.
 
@@ -1350,7 +1350,7 @@ _Fuente: doctrine/rag/Teoria del Apego (Bowlby-Ainsworth-Main) — texto extraid
 <a id="dominacion-no-es-superioridad-moral"></a>
 
 - **id:** `dominacion-no-es-superioridad-moral` · **tradición:** genealogía del especismo / crítica del poder (might ≠ right)
-- **deploy_as:** marco · **registro:** filo
+- **familia:** poder-y-dominio · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** La dominación humana sobre los demás animales no nació de superioridad moral sino de ventaja material: fuimos mejores en cooperación, tecnología y control del entorno. Pero el poder cambia cómo vemos a quien queda debajo: con el tiempo los animales dejaron de verse como seres vivos y pasaron a ser recursos, propiedad, productos, herramientas. A más control, menos necesidad sentida de justificarlo — lo que empezó como supervivencia se volvió entitlement, y una vez instalado el entitlement el respeto es lo primero que desaparece. El hecho de dominar explica CÓMO llegamos aquí; no lo convierte en justo.
 
@@ -1366,7 +1366,7 @@ _Fuente: doctrine/originals/dominacion-no-es-superioridad-moral.md_
 <a id="el-sello-es-para-el-lurker"></a>
 
 - **id:** `el-sello-es-para-el-lurker` · **tradición:** doctrina propia del pipeline (regla insult-seal-defense), afinada con el coagent
-- **deploy_as:** marco · **registro:** filo
+- **familia:** sello-y-mala-fe · **deploy_as:** marco · **registro:** filo
 
 **Qué es:** El insulto-sello ("ignorante", "arrogante", "cult", "you use AI") no va dirigido a quien lo recibe: va al lector silencioso, para ahorrarle la tarea de pensar y archivar el intercambio como cerrado. Cubre la falta de argumento justo donde debía ir la refutación. Callar lo deja pegar; devolverlo convierte el hilo en patio de escuela; sonar herido confirma el golpe.
 
@@ -1384,7 +1384,7 @@ _Fuente: .claude/rules/insult-seal-defense.md_
 <a id="sobreposicion-de-especies-criterio-leido"></a>
 
 - **id:** `sobreposicion-de-especies-criterio-leido` · **tradición:** antiespecismo, ética analítica
-- **deploy_as:** marco · **registro:** compasivo
+- **familia:** criterio-y-consistencia · **deploy_as:** marco · **registro:** compasivo
 
 **Qué es:** Ante la demanda de fundamentar por qué la sintiencia (y no la razón, el lenguaje, la agencia moral o la reciprocidad) es el umbral del estatus moral, el criterio no se POSTULA como axioma: se DERIVA de los juicios que el interlocutor ya acepta. Ningún humano que carece de razón, lenguaje o capacidad de reciprocidad (un bebé, una demencia avanzada) puede ser poseído como propiedad. Luego ninguna de esas capacidades es lo que hace el trabajo de excluir la propiedad. Lo único que queda en pie en todos los casos es que hay alguien ahí: un sujeto que siente.
 

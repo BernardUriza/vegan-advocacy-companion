@@ -99,6 +99,94 @@
       "compasivo": {
         "why": "Se despliega ante buena fe o herida visible."
       }
+    },
+    "family": {
+      "estatus-sujeto": {
+        "why": "Quién vs qué: el animal es alguien con un lado propio y la propiedad lo trata como cosa. El eje del proyecto dicho de frente."
+      },
+      "criterio-y-consistencia": {
+        "why": "Leer el criterio en los juicios que el otro ya sostiene (casos marginales, discrepancia, conocimiento que compromete)."
+      },
+      "poder-y-dominio": {
+        "why": "El poder explica el origen del título, nunca lo justifica (dominio, domesticación, legalidad escrita por quien posee)."
+      },
+      "analogia-opresiones": {
+        "why": "La estructura de opresión compartida con otros centrismos, nunca igualando a los sujetos."
+      },
+      "normalidad-y-naturaleza": {
+        "why": "Desnaturalizar lo normal: lo aprendido, lo heredado y lo que se esconde para que parezca natural."
+      },
+      "necesidad": {
+        "why": "La no-necesidad: ¿existe la esclavitud necesaria? Cuando el otro alega que poseer es indispensable."
+      },
+      "anti-bienestarismo": {
+        "why": "Violencia y no maltrato; la crueldad es síntoma y la propiedad la causa. Contra el eje de cuánto sufre."
+      },
+      "responsabilidad-estructural": {
+        "why": "Quién demanda y qué aparato lo sostiene; el veganismo como posición política, no dieta."
+      },
+      "sello-y-mala-fe": {
+        "why": "Neutralizar el sello-insulto y separar a la persona de la idea sin morder."
+      },
+      "auto-disciplina": {
+        "why": "Informa cómo escribe el activista; no se despliega contra nadie y no entra al sorteo."
+      }
+    }
+  },
+  "interaction": {
+    "assignment": {
+      "chosen": {
+        "why": "Claude eligió el framework por juicio. No entra a comparaciones causales."
+      },
+      "randomized": {
+        "why": "Sorteado por framework-pick.mjs entre los candidatos elegibles, con su propensity registrada. Solo estas filas comparan familias (research 2026-09-28)."
+      }
+    },
+    "third_party_stance": {
+      "apoyo": {
+        "why": "Un tercero respalda la reply o su pregunta."
+      },
+      "hostil": {
+        "why": "Un tercero ataca la reply o hace pile-on."
+      },
+      "neutral": {
+        "why": "Un tercero responde sin tomar partido (pregunta, dato, broma)."
+      },
+      "mixto": {
+        "why": "Varios terceros con posturas encontradas."
+      },
+      "ninguno": {
+        "why": "Nadie más respondió a la reply."
+      }
+    }
+  },
+  "rotation": {
+    "_why": "Parámetros de framework-pick.mjs (research analysis/research/2026-09-28-monocultivo-frameworks-y-metrica-lurker.md). El desgaste por repetición llega entre la 3a y la 10a exposición y lo retrasa la variación SUSTANTIVA; el 4/159 de algo-a-alguien es sesgo de selección y solo un sorteo registrado permite comparar.",
+    "rotate_from_exposure": {
+      "value": 3,
+      "why": "Desde la 3a reply al mismo target, el framework de su reply anterior queda bloqueado (entrada nueva obligatoria; el eje de propiedad no cambia)."
+    },
+    "randomize_rate": {
+      "value": 0.25,
+      "why": "Fracción de replies a targets de buena fe que se sortean entre los candidatos (20-30% recomendado)."
+    },
+    "top_k": {
+      "value": 3,
+      "why": "Candidatos elegibles de familias distintas entre los que se sortea."
+    },
+    "good_faith": {
+      "value": {
+        "register": [
+          "compasivo"
+        ],
+        "verdict": [
+          "persuadible"
+        ],
+        "tone": [
+          "civil"
+        ]
+      },
+      "why": "Quién entra al sorteo: el oro vive en los interlocutores civiles (Bowman compasivo, pero Adam Gaska y Dean Christie van en registro filo con tono civil: 2 de los 3 conceded). Excluir el tono civil dejaba fuera del sorteo justo donde se gana."
     }
   }
 }

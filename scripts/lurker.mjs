@@ -159,3 +159,16 @@ export function matchMyTurns(turns, drafts, threadId, actors) {
   }
   return { matched, unmatched };
 }
+
+// Respuestas de TERCEROS a mi reply: los turnos que siguen a mi turno (thread-extract inserta cada
+// reply tras su padre), dirigidos a mí, de alguien que no es el interlocutor, hasta mi siguiente turno.
+export function thirdPartyReplies(turns, myIndex, interlocutor) {
+  const out = [];
+  for (let j = myIndex + 1; j < turns.length; j++) {
+    const t = turns[j];
+    if (t.isMine) break;
+    if (!(t.target || '').includes('Bernard') || t.author === interlocutor) continue;
+    out.push({ author: t.author, user_id: t.user_id ?? null, text: (t.text || '').slice(0, 400) });
+  }
+  return out;
+}

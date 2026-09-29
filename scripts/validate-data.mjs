@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { readActors, readTactics, readFrameworks, readVocab, vocabViolations } from './db.mjs';
+import { readActors, readTactics, readFrameworks, readVocab, vocabViolations, interactionProblems } from './db.mjs';
 import { dossierFilenames, GENERATED_MARK } from './gen-dossiers.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -39,6 +39,7 @@ for (const a of actors) {
     seen.add(a.user_id);
   }
   errors.push(...vocabViolations(a, vocab));
+  errors.push(...interactionProblems(a, vocab));
   const threads = new Set(a.threads ?? []);
   for (const i of a.interactions ?? []) {
     if (i.thread_id && !threads.has(i.thread_id)) errors.push(`actor "${a.name}" has an interaction in thread ${i.thread_id} missing from threads[]`);

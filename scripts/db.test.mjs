@@ -12,6 +12,8 @@ import {
   readVocab,
   vocabViolations,
   getActorsByTactic,
+  interactionProblems,
+  ROTATION_SINCE,
 } from './db.mjs';
 
 const actors = readActors();
@@ -196,4 +198,18 @@ test('getActorsByTactic derives who uses a tactic from actor.tactics; tactics st
     const ids = getActorsByTactic(t.id).map(a => a.user_id);
     assert.deepEqual(ids, actors.filter(a => a.tactics.includes(t.id)).map(a => a.user_id));
   }
+});
+
+test('interactionProblems enforces exposure, assignment and rotation from ROTATION_SINCE, and leaves history alone', () => {
+  const vocab = readVocab();
+  const base = { thread_id: 't', framework: 'algo-a-alguien-sujeto-derecho', outcome: 'pending' };
+  const old = { name: 'A', interactions: [{ ...base, date: '2026-09-01' }, { ...base, date: '2026-09-02' }, { ...base, date: '2026-09-03' }] };
+  assert.deepEqual(interactionProblems(old, vocab), []);
+  const fresh = { name: 'B', interactions: [...old.interactions, { ...base, date: ROTATION_SINCE }] };
+  const problems = interactionProblems(fresh, vocab);
+  assert.ok(problems.some(p => /missing assignment/.test(p)));
+  assert.ok(problems.some(p => /exposure_n=undefined/.test(p)));
+  assert.ok(problems.some(p => /repeats framework/.test(p)));
+  const ok = { name: 'C', interactions: [...old.interactions, { ...base, date: ROTATION_SINCE, framework: 'dominacion-no-es-superioridad-moral', exposure_n: 4, assignment: 'randomized', propensity: 1 / 3 }] };
+  assert.deepEqual(interactionProblems(ok, vocab), []);
 });

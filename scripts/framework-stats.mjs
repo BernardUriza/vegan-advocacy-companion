@@ -1,57 +1,66 @@
-import { readActors, readFrameworks, getFrameworkWinRate } from './db.mjs';
+import { readActors, readFrameworks } from './db.mjs';
+import { jeffreysInterval } from './stats.mjs';
 
-// Efectividad por framework (el moat). Barre data/actors.json, agrega por el
-// campo `framework` de cada interacción, y reporta deploys + conteo por outcome.
-// Frameworks con 0 deploys = "sin probar". JSON es el SSOT (Art. 6).
+// Efectividad por FAMILIA y por framework, sin "win rate": conceded con su intervalo Jeffreys 95%,
+// separando lo sorteado (comparable) de lo elegido a mano (sesgo de selección). Terceros antes que likes.
+// Por qué: analysis/research/2026-09-28-monocultivo-frameworks-y-metrica-lurker.md
 
-const OUTCOMES = ['conceded', 'engaged', 'silent', 'escalated', 'goalpost', 'pending'];
+const OUTCOMES = ['conceded', 'engaged', 'silent', 'escalated', 'goalpost'];
+const STANCES = ['apoyo', 'hostil', 'neutral', 'mixto', 'ninguno'];
 
-const actors = readActors();
 const frameworks = readFrameworks();
+const familyOf = Object.fromEntries(frameworks.map(f => [f.id, f.family]));
+const nameOf = Object.fromEntries(frameworks.map(f => [f.id, f.name]));
 
-const stats = new Map();
-for (const f of frameworks) {
-  stats.set(f.id, { id: f.id, name: f.name, deploys: 0, ...Object.fromEntries(OUTCOMES.map(o => [o, 0])) });
-}
+const blank = () => ({ deploys: 0, pending: 0, randomized: 0, randomizedConceded: 0, lurkerMeasured: 0, likes: 0, ...Object.fromEntries([...OUTCOMES, ...STANCES].map(k => [k, 0])) });
+const byFamily = new Map();
+const byFramework = new Map();
 
-for (const actor of actors) {
+for (const actor of readActors()) {
   for (const it of actor.interactions ?? []) {
-    if (!it.framework || it.misattributed) continue;
-    const s = stats.get(it.framework);
-    if (!s) continue;
-    s.deploys++;
-    if (it.outcome && OUTCOMES.includes(it.outcome)) s[it.outcome]++;
+    if (!it.framework || it.misattributed || !familyOf[it.framework]) continue;
+    for (const [map, key] of [[byFamily, familyOf[it.framework]], [byFramework, it.framework]]) {
+      if (!map.has(key)) map.set(key, blank());
+      const s = map.get(key);
+      s.deploys++;
+      if (it.outcome === 'pending') s.pending++;
+      else if (OUTCOMES.includes(it.outcome)) s[it.outcome]++;
+      if (it.assignment === 'randomized') {
+        s.randomized++;
+        if (it.outcome === 'conceded') s.randomizedConceded++;
+      }
+      if (STANCES.includes(it.third_party_stance)) s[it.third_party_stance]++;
+      if (Number.isInteger(it.lurker_reactions)) { s.lurkerMeasured++; s.likes += it.lurker_reactions; }
+    }
   }
 }
 
-for (const s of stats.values()) s.lurker = getFrameworkWinRate(s.id).lurker;
+const pct = x => `${(x * 100).toFixed(1)}%`;
+const interval = s => {
+  const judged = s.deploys - s.pending;
+  const { lo, hi } = jeffreysInterval(s.conceded, judged);
+  return judged ? `${s.conceded}/${judged} [${pct(lo)}–${pct(hi)}]` : '—';
+};
+const randomizedCell = s => s.randomized ? `${s.randomizedConceded}/${s.randomized}` : '—';
+const stanceCell = s => STANCES.filter(k => k !== 'ninguno' && s[k]).map(k => `${k} ${s[k]}`).join(' · ') || '—';
 
-const rows = [...stats.values()].sort((a, b) => b.deploys - a.deploys || a.name.localeCompare(b.name));
-
-const tested = rows.filter(r => r.deploys > 0);
-const untested = rows.filter(r => r.deploys === 0);
-
-const header = ['Framework', 'deploys', ...OUTCOMES, 'lurker n', 'likes', 'likes/reply'];
-const widths = header.map(h => h.length);
-const display = tested.map(r => [
-  r.name, String(r.deploys), ...OUTCOMES.map(o => String(r[o])),
-  String(r.lurker.measured), String(r.lurker.totalReactions), r.lurker.meanReactions === null ? '-' : String(r.lurker.meanReactions),
-]);
-for (const row of display) row.forEach((cell, i) => { widths[i] = Math.max(widths[i], cell.length); });
-
-const pad = (cell, i, alignRight) => alignRight ? cell.padStart(widths[i]) : cell.padEnd(widths[i]);
-const fmtRow = (cells) => cells.map((c, i) => pad(c, i, i !== 0)).join('  ');
-
-console.log('Efectividad por framework — ordenado por deploys\n');
-console.log(fmtRow(header));
-console.log(widths.map(w => '-'.repeat(w)).join('  '));
-for (const row of display) console.log(fmtRow(row));
-
-if (!tested.length) console.log('(ningún framework desplegado todavía)');
-
-console.log('\nlurker n = replies míos con reacciones medidas (lurker-sweep); likes = reacciones a esos replies.');
-console.log(`\nProbados: ${tested.length} · Sin probar: ${untested.length} de ${rows.length}`);
-if (untested.length) {
-  console.log('\nSin probar (0 deploys):');
-  console.log('  ' + untested.map(r => r.name).join(', '));
+function table(title, rows, label) {
+  console.log(`\n${title}\n`);
+  const header = ['', 'deploys', 'conceded (IC95 Jeffreys)', 'sorteados c/n', 'terceros', 'likes/medidos'];
+  const body = rows.map(([k, s]) => [label(k), String(s.deploys), interval(s), randomizedCell(s), stanceCell(s), `${s.likes}/${s.lurkerMeasured}`]);
+  const w = header.map((h, i) => Math.max(h.length, ...body.map(r => r[i].length)));
+  const fmt = r => r.map((c, i) => (i === 0 ? c.padEnd(w[i]) : c.padStart(w[i]))).join('  ');
+  console.log(fmt(header));
+  console.log(w.map(n => '-'.repeat(n)).join('  '));
+  for (const r of body) console.log(fmt(r));
 }
+
+const sortRows = map => [...map.entries()].sort((a, b) => b[1].deploys - a[1].deploys);
+table('Por FAMILIA', sortRows(byFamily), k => k);
+table('Por framework', sortRows(byFramework), k => (nameOf[k] ?? k).slice(0, 60));
+
+const untested = frameworks.filter(f => f.family !== 'auto-disciplina' && !byFramework.has(f.id));
+console.log(`\nLectura honesta: un intervalo que se traslapa con el de otra familia NO la supera. Solo "sorteados" compara`);
+console.log(`causalmente; lo elegido a mano arrastra el sesgo de a quién se le desplegó. Likes = dato secundario.`);
+console.log(`\nArmas sin desplegar: ${untested.length} de ${frameworks.filter(f => f.family !== 'auto-disciplina').length}`);
+if (untested.length) console.log('  ' + untested.map(f => `${f.id} (${f.family})`).join(', '));

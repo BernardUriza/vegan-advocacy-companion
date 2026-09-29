@@ -1,4 +1,5 @@
-// Lurker sweep: re-extrae los hilos FRESCOS del moat y escribe lurker_reactions (reacciones a MI reply).
+// Lurker sweep: re-extrae los hilos FRESCOS del moat y escribe, por reply mía, las respuestas de terceros
+// (verbatim, para que el reflex codifique su postura) y lurker_reactions (dato secundario, no el norte).
 // Uso: node lurker-sweep.mjs [--dry-run] [--json] — nunca abre hilos de más de MAX_AGE_DAYS.
 
 import { execFileSync } from 'child_process';
@@ -6,7 +7,7 @@ import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { readActors, threadOpenUrl, updateInteractionLurker } from './db.mjs';
 import { MAX_AGE_DAYS, isStaleDate } from './freshness.mjs';
-import { loadConsultDrafts, matchMyTurns, COAGENT_DIR } from './lurker.mjs';
+import { loadConsultDrafts, matchMyTurns, thirdPartyReplies, COAGENT_DIR } from './lurker.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const asJson = process.argv.includes('--json');
@@ -51,16 +52,17 @@ for (const thread_id of fresh) {
   const rows = [];
   for (const m of matched) {
     const needle = m.interaction.their_move.slice(0, 40);
+    const thirdParty = thirdPartyReplies(d.turns, d.turns.indexOf(m.turn), m.name);
     let written = false, writeError = null;
     if (!dryRun) {
       try {
-        updateInteractionLurker(m.user_id, thread_id, m.interaction.date, needle, { reactions: m.turn.reactions ?? 0, checkedAt });
+        updateInteractionLurker(m.user_id, thread_id, m.interaction.date, needle, { reactions: m.turn.reactions ?? 0, thirdParty, draftSha: m.draft_sha, checkedAt });
         written = true;
       } catch (e) {
         writeError = String(e.message || e);
       }
     }
-    rows.push({ target: m.name, date: m.interaction.date, framework: m.interaction.framework ?? null, reactions: m.turn.reactions ?? 0, draft_sha: m.draft_sha, written, writeError });
+    rows.push({ target: m.name, date: m.interaction.date, framework: m.interaction.framework ?? null, reactions: m.turn.reactions ?? 0, thirdParty: thirdParty.length, draft_sha: m.draft_sha, written, writeError });
   }
   threads.push({
     thread_id, url, complete: d.complete !== false, postReactions: d.postReactions ?? null, drafts: drafts.length,
@@ -81,7 +83,7 @@ if (asJson) {
 }
 
 console.log('═'.repeat(64));
-console.log('  LURKER SWEEP — reacciones a mis replies (la huella del lector silencioso)');
+console.log('  LURKER SWEEP — terceros que responden a mis replies (proxy primario) + reacciones (secundario)');
 console.log('═'.repeat(64));
 console.log(`  ${fresh.size} hilo(s) frescos · tope ${MAX_AGE_DAYS}d · ${staleThreads.size} viejo(s) NO abiertos${dryRun ? ' · DRY-RUN (no escribe)' : ''}\n`);
 for (const t of threads) {
@@ -91,7 +93,7 @@ for (const t of threads) {
   console.log(`${t.thread_id} · post 👍 ${t.postReactions ?? '-'} · ${t.drafts} draft(s) consultados${t.complete ? '' : ' · ⚠️ EXTRACCIÓN INCOMPLETA'}`);
   for (const r of t.matched) {
     const st = r.writeError ? `✗ ${r.writeError}` : r.written ? 'escrito' : 'dry-run';
-    console.log(`   👍 ${String(r.reactions).padStart(3)}  → ${r.target} [${r.date}] ${r.framework ?? '(sin framework)'} · ${st}`);
+    console.log(`   💬 ${String(r.thirdParty).padStart(2)} terceros · 👍 ${String(r.reactions).padStart(3)}  → ${r.target} [${r.date}] ${r.framework ?? '(sin framework)'} · ${st}`);
   }
   for (const u of t.unmatched) console.log(`   👍 ${String(u.reactions).padStart(3)}  ?  → ${u.target ?? '(raíz)'} — sin match (${u.reason}): "${u.head}"`);
   console.log('');

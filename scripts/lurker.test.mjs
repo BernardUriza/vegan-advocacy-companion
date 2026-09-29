@@ -6,6 +6,7 @@ import { join } from 'path';
 import {
   parseReactionCount, sumPostReactionLabels, draftHead, turnMatchesDraft,
   loadConsultDrafts, resolveDraftInteraction, matchMyTurns,
+  thirdPartyReplies,
 } from './lurker.mjs';
 import { draftSha } from './seed-coagent.mjs';
 
@@ -134,4 +135,16 @@ test('updateInteractionLurker rejects bad counts and unknown actors before writi
   assert.throws(() => updateInteractionLurker('__no_actor__', 'T', '2026-09-27', 'n', { reactions: 1 }), /not found/);
   const wr = getFrameworkWinRate('algo-a-alguien-sujeto-derecho');
   assert.ok(wr.lurker && Number.isInteger(wr.lurker.measured) && Number.isInteger(wr.lurker.totalReactions));
+});
+
+test('thirdPartyReplies keeps replies to me from people other than the interlocutor, until my next turn', () => {
+  const turns = [
+    { author: 'Bernard Uriza Orozco', isMine: true, target: 'Kirk Sawler', text: 'mine' },
+    { author: 'Kirk Sawler', isMine: false, target: 'Bernard Uriza Orozco', text: 'kirk again' },
+    { author: 'Jude Cooper', isMine: false, target: 'Bernard Uriza Orozco', text: 'pile on', user_id: '1' },
+    { author: 'Dori Cavy Sims', isMine: false, target: 'Kirk Sawler', text: 'to kirk' },
+    { author: 'Bernard Uriza Orozco', isMine: true, target: 'Jude Cooper', text: 'mine 2' },
+    { author: 'Les M', isMine: false, target: 'Bernard Uriza Orozco', text: 'after next' },
+  ];
+  assert.deepEqual(thirdPartyReplies(turns, 0, 'Kirk Sawler'), [{ author: 'Jude Cooper', user_id: '1', text: 'pile on' }]);
 });

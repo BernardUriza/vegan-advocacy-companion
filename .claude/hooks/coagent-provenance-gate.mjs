@@ -179,10 +179,11 @@ if (!existsSync(receiptFile)) {
   block([
     `GATE PROCEDENCIA — STAGING BLOQUEADO: no hay recibo de consulta para el hilo ${postId}.`,
     'La etapa 3 (coagent) NO se ejecutó. NO redactes el reply a mano.',
-    'Flujo: compón el master (x={marco abolicionista}, y={candidata}) → seed-gate →',
+    `Flujo: node scripts/framework-pick.mjs --post-id ${postId} --author "<A>" →`,
+    '  compón el master con el framework que permita el pick → seed-gate →',
     `  node scripts/seed-coagent.mjs seed --post-id ${postId} --author "<A>" --master <master.md>`,
-    '  (siembra al coagent, lee la y abolicionista, guárdala) →',
-    `  node scripts/seed-coagent.mjs finalize --post-id ${postId} --draft <draft.txt>`,
+    '  (siembra al coagent, lee su respuesta, guárdala) →',
+    `  node scripts/seed-coagent.mjs finalize --post-id ${postId} --draft <draft.txt> --author "<A>" --framework <id>`,
     'Ver .claude/rules/coagent-advise.md.',
   ]);
 }
