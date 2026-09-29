@@ -43,7 +43,7 @@ Principal contrincante de Bernard. Su argumento MUTA cada vez que se le cierra u
   - `arbol-causa-sintoma` → _deploy as:_ marco
 - **Appeal to Nature / Naturalismo** (`naturalismo`)
   - `antropoespecismo` → _deploy as:_ marco
-  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `njn-normal-justo-necesario` → _deploy as:_ marco
   - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
@@ -59,7 +59,7 @@ Principal contrincante de Bernard. Su argumento MUTA cada vez que se le cierra u
   - `resistencia-al-cambio-es-defensa-del-privilegio` → _deploy as:_ auto-disciplina-del-activista
 - **Appeal to Normalcy / Default** (`apelacion_normal`)
   - `antropoespecismo` → _deploy as:_ marco
-  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco
   - `violencia-especista` → _deploy as:_ marco
   - `no-sabemos-que-tenemos-problema` → _deploy as:_ marco
   - `njn-normal-justo-necesario` → _deploy as:_ marco
@@ -74,7 +74,7 @@ Principal contrincante de Bernard. Su argumento MUTA cada vez que se le cierra u
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
 - **Reframe: Veganism as Belief System** (`reencuadre_veganismo_creencia`)
-  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente
+  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina-del-activista
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
   - `carnismo-anonimato-critica` → _deploy as:_ marco
@@ -95,7 +95,7 @@ Principal contrincante de Bernard. Su argumento MUTA cada vez que se le cierra u
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `filtro-especie-vs-individuo` → _deploy as:_ marco
   - `respetar-no-es-opcion` → _deploy as:_ marco
-  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco
 - **Is-Ought / Naturalistic Fallacy** (`is_ought`)
   - `conocimiento-compromete` → _deploy as:_ marco
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
@@ -106,7 +106,7 @@ Principal contrincante de Bernard. Su argumento MUTA cada vez que se le cierra u
 - **Moral Relativism Shield** (`relativismo_moral`)
   - `antropoespecismo` → _deploy as:_ marco
   - `violencia-especista` → _deploy as:_ marco
-  - `especidio` → _deploy as:_ marco (con cautela)
+  - `especidio` → _deploy as:_ marco
   - `conocimiento-compromete` → _deploy as:_ marco
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco

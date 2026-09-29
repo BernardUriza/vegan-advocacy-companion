@@ -23,7 +23,7 @@ Dismissal de una linea: repite la conclusion en disputa (no son alguien) con ton
 
 - **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`)
   - `antropoespecismo` → _deploy as:_ marco
-  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
   - `explotacion-vs-esclavitud-lexico` → _deploy as:_ auto-disciplina-del-activista
@@ -34,7 +34,7 @@ Dismissal de una linea: repite la conclusion en disputa (no son alguien) con ton
   - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
-  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco
 
 ## Qué NO hacer
 

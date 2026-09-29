@@ -33,9 +33,10 @@ Low-effort. Estira el término 'explotación' a plantas y animales no-sintientes
   - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
   - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
   - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+  - `el-sello-es-para-el-lurker` → _deploy as:_ marco
 - **Appeal to Nature / Naturalismo** (`naturalismo`)
   - `antropoespecismo` → _deploy as:_ marco
-  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `njn-normal-justo-necesario` → _deploy as:_ marco
   - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco

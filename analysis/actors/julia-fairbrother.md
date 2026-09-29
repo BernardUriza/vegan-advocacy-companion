@@ -45,13 +45,13 @@ La carnista más elaborada del hilo — escribe párrafos, no one-liners. Alto v
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `filtro-especie-vs-individuo` → _deploy as:_ marco
   - `respetar-no-es-opcion` → _deploy as:_ marco
-  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco
 - **Predator Comparison / Lion Argument** (`predator_comparison`)
   - `paralelo-luchas-sociales-centrismos` → _deploy as:_ marco
 - **Welfare Rhetoric / Comfortable Life Defense** (`welfare_rhetoric`)
-  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente
+  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina-del-activista
   - `violencia-especista` → _deploy as:_ marco
-  - `especidio` → _deploy as:_ marco (con cautela)
+  - `especidio` → _deploy as:_ marco
   - `domesticar-eufemismo-dominar` → _deploy as:_ marco
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
   - `crueldad-no-es-la-causa` → _deploy as:_ marco
@@ -72,7 +72,7 @@ La carnista más elaborada del hilo — escribe párrafos, no one-liners. Alto v
   - `pandemia-cooptada-todo-vale` → _deploy as:_ auto-disciplina-del-activista
 - **Appeal to Nature / Naturalismo** (`naturalismo`)
   - `antropoespecismo` → _deploy as:_ marco
-  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `njn-normal-justo-necesario` → _deploy as:_ marco
   - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
@@ -83,7 +83,7 @@ La carnista más elaborada del hilo — escribe párrafos, no one-liners. Alto v
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
 - **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`)
   - `antropoespecismo` → _deploy as:_ marco
-  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
   - `explotacion-vs-esclavitud-lexico` → _deploy as:_ auto-disciplina-del-activista
@@ -94,7 +94,7 @@ La carnista más elaborada del hilo — escribe párrafos, no one-liners. Alto v
   - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
-  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco
 
 ## Qué NO hacer
 

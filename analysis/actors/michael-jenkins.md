@@ -25,7 +25,7 @@ Primer choque (VEGANnoyance, mi post sobre someone). Substantivo, no troll (el r
 
 - **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`)
   - `antropoespecismo` → _deploy as:_ marco
-  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
   - `explotacion-vs-esclavitud-lexico` → _deploy as:_ auto-disciplina-del-activista
@@ -36,7 +36,7 @@ Primer choque (VEGANnoyance, mi post sobre someone). Substantivo, no troll (el r
   - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
-  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco
 - **Crop Deaths / Bystander Flip** (`crop_deaths_flip`)
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `violencia-indirecta-quien-demanda` → _deploy as:_ marco

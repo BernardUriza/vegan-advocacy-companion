@@ -28,9 +28,9 @@ Primera aparición (hilo cow-gives-milk, 2026-08-08). Trae un dato real (los AMS
   - `violencia-estructural-infraestructura` → _deploy as:_ marco
   - `premisa-falsa-los-animales-nos-dan` → _deploy as:_ marco
 - **Welfare Rhetoric / Comfortable Life Defense** (`welfare_rhetoric`)
-  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente
+  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina-del-activista
   - `violencia-especista` → _deploy as:_ marco
-  - `especidio` → _deploy as:_ marco (con cautela)
+  - `especidio` → _deploy as:_ marco
   - `domesticar-eufemismo-dominar` → _deploy as:_ marco
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
   - `crueldad-no-es-la-causa` → _deploy as:_ marco

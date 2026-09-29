@@ -24,14 +24,15 @@ Su jab inicial era sarcasmo light, no argumento. Bernard lo pivoteo (lo felicito
 > Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
 
 - **AI Accusation / Bot Dismissal** (`ai_accusation`)
-  - `educador-no-adoctrina-responde` → _deploy as:_ auto-disciplina-del-activista
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
+  - `el-sello-es-para-el-lurker` → _deploy as:_ marco
 - **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
   - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
   - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
   - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
   - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
   - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+  - `el-sello-es-para-el-lurker` → _deploy as:_ marco
 
 ## Qué NO hacer
 

@@ -49,6 +49,7 @@ La contrincante más hostil del hilo vegan-market. Dominancia social, no argumen
   - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
   - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
   - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+  - `el-sello-es-para-el-lurker` → _deploy as:_ marco
 - **Cherry-Pick: One Company = Category** (`cherry_pick_empresa`)
   - `genesis-invertido` → _deploy as:_ marco
   - `arbol-causa-sintoma` → _deploy as:_ marco
@@ -59,12 +60,12 @@ La contrincante más hostil del hilo vegan-market. Dominancia social, no argumen
 - **Appeal to Majority / Bandwagon** (`apelacion_mayoria`)
   - `njn-normal-justo-necesario` → _deploy as:_ marco
 - **Presentism / Dismiss the Trend** (`presentismo`)
-  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco
   - `momento-truman-traicion-de-los-tuyos` → _deploy as:_ marco
 - **Moral Relativism Shield** (`relativismo_moral`)
   - `antropoespecismo` → _deploy as:_ marco
   - `violencia-especista` → _deploy as:_ marco
-  - `especidio` → _deploy as:_ marco (con cautela)
+  - `especidio` → _deploy as:_ marco
   - `conocimiento-compromete` → _deploy as:_ marco
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
@@ -87,10 +88,10 @@ La contrincante más hostil del hilo vegan-market. Dominancia social, no argumen
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `filtro-especie-vs-individuo` → _deploy as:_ marco
   - `respetar-no-es-opcion` → _deploy as:_ marco
-  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco
 - **Species Hierarchy / Human Exceptionalism** (`species_hierarchy`)
   - `antropoespecismo` → _deploy as:_ marco
-  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
   - `explotacion-vs-esclavitud-lexico` → _deploy as:_ auto-disciplina-del-activista
@@ -101,7 +102,7 @@ La contrincante más hostil del hilo vegan-market. Dominancia social, no argumen
   - `mensaje-para-el-humano-no-para-el-animal` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
-  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco
 
 ## Qué NO hacer
 

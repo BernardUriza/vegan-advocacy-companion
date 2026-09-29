@@ -29,7 +29,7 @@ import { resolveUserPath } from './paths.mjs';
 //   enables       what deploying it buys you in a thread
 //   register      "compasivo" | "filo" (the reply-output-style register it serves)
 //   attack_surface honest risk: where it backfires / who attacks it
-//   deploy_as     "marco" | "auto-disciplina-del-activista" | "auto-disciplina del activista" | …
+//   deploy_as     closed enum in data/vocab.json (framework.deploy_as); nuance goes in deploy_as_note
 //   source_ref    path to the doctrine/rag source it was extracted from
 //   related_tactics  ONLY ids that resolve in data/tactics.json — invalid ids are FILTERED, not erased
 //

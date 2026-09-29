@@ -38,6 +38,7 @@ Entra a defender a Yolanda con agresión (1 turno): 'I've shown you plenty of ev
   - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
   - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
   - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+  - `el-sello-es-para-el-lurker` → _deploy as:_ marco
 - **Selective Data Dump** (`data_dump_selectivo`)
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `mensaje-importa-formas-determinantes` → _deploy as:_ auto-disciplina-del-activista
@@ -46,7 +47,7 @@ Entra a defender a Yolanda con agresión (1 turno): 'I've shown you plenty of ev
 - **Moral Relativism Shield** (`relativismo_moral`)
   - `antropoespecismo` → _deploy as:_ marco
   - `violencia-especista` → _deploy as:_ marco
-  - `especidio` → _deploy as:_ marco (con cautela)
+  - `especidio` → _deploy as:_ marco
   - `conocimiento-compromete` → _deploy as:_ marco
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco

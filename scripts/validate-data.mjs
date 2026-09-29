@@ -68,6 +68,7 @@ for (const f of frameworks) {
   for (const field of ['id', 'name', 'author', 'definition', 'enables', 'attack_surface', 'deploy_as']) {
     if (!f[field]) errors.push(`framework "${f.id ?? '(no id)'}" missing required field "${field}"`);
   }
+  errors.push(...vocabViolations(f, vocab, 'framework'));
   if (f.id) {
     if (seenFw.has(f.id)) errors.push(`duplicate framework id "${f.id}"`);
     seenFw.add(f.id);
@@ -103,15 +104,6 @@ for (const t of tactics) {
 for (const f of frameworks) {
   if (f.source_ref && !existsSync(resolve(ROOT, f.source_ref))) {
     errors.push(`framework "${f.id}" source_ref does not exist on disk: "${f.source_ref}"`);
-  }
-}
-
-// 4f. ERROR: deploy_as must start with one of the 3 valid values (suffixes like
-// "marco (con cautela)" / "auto-disciplina-del-activista" are allowed).
-const VALID_DEPLOY_AS = ['marco', 'premisa_portante', 'auto-disciplina'];
-for (const f of frameworks) {
-  if (f.deploy_as && !VALID_DEPLOY_AS.some(v => f.deploy_as.startsWith(v))) {
-    errors.push(`framework "${f.id}" deploy_as "${f.deploy_as}" does not start with one of {${VALID_DEPLOY_AS.join(', ')}}`);
   }
 }
 

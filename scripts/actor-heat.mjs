@@ -9,7 +9,7 @@ const HALF_LIFE_DAYS = 14; // freshness se reduce a la mitad cada 14 días
 
 const vocab = readVocab();
 const weight = (field, value) => {
-  const w = vocab[field]?.[value]?.heat;
+  const w = vocab.actor[field]?.[value]?.heat;
   if (w === undefined) throw new Error(`${field}="${value}" has no heat in data/vocab.json`);
   return w;
 };

@@ -31,10 +31,11 @@ Troll contemptuoso (4 turnos), cero argumento. Su único contenido sustantivo es
   - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
   - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
   - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+  - `el-sello-es-para-el-lurker` → _deploy as:_ marco
 - **Moral Relativism Shield** (`relativismo_moral`)
   - `antropoespecismo` → _deploy as:_ marco
   - `violencia-especista` → _deploy as:_ marco
-  - `especidio` → _deploy as:_ marco (con cautela)
+  - `especidio` → _deploy as:_ marco
   - `conocimiento-compromete` → _deploy as:_ marco
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
@@ -42,7 +43,7 @@ Troll contemptuoso (4 turnos), cero argumento. Su único contenido sustantivo es
   - `respeto-persona-no-idea-inmoral` → _deploy as:_ marco
   - `respetar-no-es-opcion` → _deploy as:_ marco
 - **Reframe: Veganism as Belief System** (`reencuadre_veganismo_creencia`)
-  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente
+  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina-del-activista
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
   - `dimension-politica-tomar-posicion` → _deploy as:_ marco
   - `carnismo-anonimato-critica` → _deploy as:_ marco

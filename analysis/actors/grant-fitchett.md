@@ -35,7 +35,7 @@ Motor del hilo (14 turnos). Repite el bucle CAN→SHOULD sin avanzar: cuando Rü
 
 - **Appeal to Nature / Naturalismo** (`naturalismo`)
   - `antropoespecismo` → _deploy as:_ marco
-  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `njn-normal-justo-necesario` → _deploy as:_ marco
   - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco
@@ -56,10 +56,10 @@ Motor del hilo (14 turnos). Repite el bucle CAN→SHOULD sin avanzar: cuando Rü
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `filtro-especie-vs-individuo` → _deploy as:_ marco
   - `respetar-no-es-opcion` → _deploy as:_ marco
-  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco
 - **Hostile Socratic Method** (`socrates_hostil`)
   - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
-  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco
 - **Burden of Proof Reversal** (`inversion_carga`)
   - `esclavitud-paralelismo` → _deploy as:_ marco
   - `crueldad-no-es-la-causa` → _deploy as:_ marco
@@ -71,9 +71,10 @@ Motor del hilo (14 turnos). Repite el bucle CAN→SHOULD sin avanzar: cuando Rü
   - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
   - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
   - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
+  - `el-sello-es-para-el-lurker` → _deploy as:_ marco
 - **AI Accusation / Bot Dismissal** (`ai_accusation`)
-  - `educador-no-adoctrina-responde` → _deploy as:_ auto-disciplina-del-activista
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
+  - `el-sello-es-para-el-lurker` → _deploy as:_ marco
 
 ## Qué NO hacer
 

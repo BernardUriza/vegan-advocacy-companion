@@ -957,9 +957,10 @@
         "date": "2026-06-20",
         "their_move": "Insulto + escudo: Lol dude this is a fun pastime group not a debate club, you cant debate your way out of a paper bag, you use AI, embarrassing, I dont have to justify.",
         "our_reply_summary": "Cierre corto (contraste de temperamento): le tomo la palabra — si es solo un pasatiempo y no es en serio, dejo de leer sus arrebatos como argumentos; bridge al hilo Frida donde esta el punto real. Reclasifica sus insultos de argumento a ruido con calma cordial, sin insultar de vuelta.",
-        "framework": null,
+        "framework": "el-sello-es-para-el-lurker",
         "outcome": "silent",
-        "outcome_evidence": "opponent did not reply after your reply to them"
+        "outcome_evidence": "opponent did not reply after your reply to them",
+        "framework_note": "atribuido 2026-09-28 desde our_reply_summary: contraste de temperamento, le tomé la palabra del pasatiempo y reclasifiqué sus insultos de argumento a ruido; el framework se creó después del reply"
       },
       {
         "thread_id": "27395909046698912",
@@ -1304,7 +1305,9 @@
         "their_move": "ai_accusation: tras ser pivoteado (admitio que lucra con veganos), deflecto a \"if you are going to use ai, at least try to hide it\" en vez de argumentar.",
         "our_reply_summary": "Counter wit/breve (~50 palabras): nombre la acusacion-de-IA como el modo de no tener nada que agregar; devolvi a su propia admision (el dijo que los veganos lo hacen rico, solo coincidi); NO defendi autenticidad; cerre con \"what exactly are you disputing?\". Voz humana, sin ensayo.",
         "outcome": "engaged",
-        "outcome_evidence": "opponent kept arguing (1 civil follow-up turn(s), no concession/escalation/goalpost markers)"
+        "outcome_evidence": "opponent kept arguing (1 civil follow-up turn(s), no concession/escalation/goalpost markers)",
+        "framework": "el-sello-es-para-el-lurker",
+        "framework_note": "atribuido 2026-09-28 desde our_reply_summary: línea seca contra la acusación de IA, sin defender autenticidad, devuelta a su propia admisión; el framework se creó después del reply"
       }
     ]
   },

@@ -1,30 +1,104 @@
 {
-  "_about": "Vocabulario cerrado de los campos de clasificación de data/actors.json. db.mjs lo lee en cada escritura (upsertActor rechaza un valor fuera de aquí), validate-data.mjs lo exige sobre todo el moat y actor-heat.mjs saca sus pesos de 'heat'. El matiz de un caso va en el campo <campo>_note del actor, nunca en el valor del enum: un verdict de tres líneas dejaba a actor-heat en su default sin avisar (2026-09-28).",
-  "bando": {
-    "anti-vegan": { "why": "Defiende el uso/propiedad de animales.", "heat": 0.6 },
-    "ambiguo": { "why": "Sin postura fija; el más movible.", "heat": 1.0 },
-    "aliado": { "why": "Del lado vegano (incluye a quien antes se etiquetaba pro-vegan).", "heat": 0.4 }
+  "_about": "Vocabulario cerrado de los campos de clasificación del moat, por entidad. db.mjs lo lee en cada escritura (upsertActor / upsertFramework rechazan un valor fuera de aquí), validate-data.mjs lo exige sobre todo data/ y actor-heat.mjs saca sus pesos de heat. El matiz de un caso va en <campo>_note, nunca en el valor: un verdict de tres líneas dejaba a actor-heat en su default sin avisar (2026-09-28).",
+  "actor": {
+    "bando": {
+      "anti-vegan": {
+        "why": "Defiende el uso/propiedad de animales.",
+        "heat": 0.6
+      },
+      "ambiguo": {
+        "why": "Sin postura fija; el más movible.",
+        "heat": 1
+      },
+      "aliado": {
+        "why": "Del lado vegano (incluye a quien antes se etiquetaba pro-vegan).",
+        "heat": 0.4
+      }
+    },
+    "verdict": {
+      "audiencia": {
+        "why": "Se debate ante galería: máxima palanca sobre el lurker.",
+        "heat": 1
+      },
+      "persuadible": {
+        "why": "Buena fe; mover a esta persona es la conversión real (el oro del moat vino de aquí).",
+        "heat": 0.85
+      },
+      "aliado": {
+        "why": "Refuerza, no convierte.",
+        "heat": 0.45
+      },
+      "pozo_sin_fondo": {
+        "why": "No se mueve; vale solo por el lurker. Incluye el sink tras un round (retreat-cycle-defense: una vuelta de recibos y silencio).",
+        "heat": 0.25
+      },
+      "troll_no_enganchar": {
+        "why": "Insulto por deporte; ni compasión ni filo (reply-output-style).",
+        "heat": 0.05
+      }
+    },
+    "register": {
+      "compasivo": {
+        "why": "Herida visible, buena fe, persuadible: limpio, sin groserías (reply-output-style).",
+        "heat": 1
+      },
+      "filo": {
+        "why": "Mala fe, escudo, sello, retreat-cycle: profano por default, pegado al argumento.",
+        "heat": 0.7
+      },
+      "wit": {
+        "why": "Humor seco contra la sátira o el sarcasmo del otro.",
+        "heat": 0.6
+      },
+      "na": {
+        "why": "No aplica: aliados o actores que no se contestan como rivales.",
+        "heat": 0.3
+      },
+      "no_enganchar": {
+        "why": "Troll puro: una línea que nombre el vacío o silencio.",
+        "heat": 0.1
+      }
+    },
+    "tone": {
+      "civil": {
+        "why": "Cortés, argumenta."
+      },
+      "dismissive": {
+        "why": "Descarta sin argumentar (incluye desdén y respuestas secas)."
+      },
+      "sarcastic": {
+        "why": "Burla como forma de respuesta."
+      },
+      "hostile": {
+        "why": "Insulto o agresión directa (incluye la hostilidad retórica)."
+      },
+      "low_effort": {
+        "why": "Drive-by de una línea."
+      },
+      "apathetic": {
+        "why": "Indiferente, no invierte en el intercambio."
+      }
+    }
   },
-  "verdict": {
-    "audiencia": { "why": "Se debate ante galería: máxima palanca sobre el lurker.", "heat": 1.0 },
-    "persuadible": { "why": "Buena fe; mover a esta persona es la conversión real (el oro del moat vino de aquí).", "heat": 0.85 },
-    "aliado": { "why": "Refuerza, no convierte.", "heat": 0.45 },
-    "pozo_sin_fondo": { "why": "No se mueve; vale solo por el lurker. Incluye el sink tras un round (retreat-cycle-defense: una vuelta de recibos y silencio).", "heat": 0.25 },
-    "troll_no_enganchar": { "why": "Insulto por deporte; ni compasión ni filo (reply-output-style).", "heat": 0.05 }
-  },
-  "register": {
-    "compasivo": { "why": "Herida visible, buena fe, persuadible: limpio, sin groserías (reply-output-style).", "heat": 1.0 },
-    "filo": { "why": "Mala fe, escudo, sello, retreat-cycle: profano por default, pegado al argumento.", "heat": 0.7 },
-    "wit": { "why": "Humor seco contra la sátira o el sarcasmo del otro.", "heat": 0.6 },
-    "na": { "why": "No aplica: aliados o actores que no se contestan como rivales.", "heat": 0.3 },
-    "no_enganchar": { "why": "Troll puro: una línea que nombre el vacío o silencio.", "heat": 0.1 }
-  },
-  "tone": {
-    "civil": { "why": "Cortés, argumenta." },
-    "dismissive": { "why": "Descarta sin argumentar (incluye desdén y respuestas secas)." },
-    "sarcastic": { "why": "Burla como forma de respuesta." },
-    "hostile": { "why": "Insulto o agresión directa (incluye la hostilidad retórica)." },
-    "low_effort": { "why": "Drive-by de una línea." },
-    "apathetic": { "why": "Indiferente, no invierte en el intercambio." }
+  "framework": {
+    "deploy_as": {
+      "marco": {
+        "why": "Encuadre que se planta como la intuición del lector; si lo refutan, la pregunta del título sigue en pie. Nunca premisa portante (reply-output-style)."
+      },
+      "premisa_portante": {
+        "why": "El reply se apoya en él; si cae, cae el argumento. Uso excepcional y declarado."
+      },
+      "auto-disciplina-del-activista": {
+        "why": "Informa CÓMO se redacta; no es arma contra el oponente. getFrameworksByTactic({ weaponsOnly }) lo filtra."
+      }
+    },
+    "register": {
+      "filo": {
+        "why": "Se despliega contra mala fe o escudo."
+      },
+      "compasivo": {
+        "why": "Se despliega ante buena fe o herida visible."
+      }
+    }
   }
 }

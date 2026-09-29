@@ -24,9 +24,9 @@
 > Munición candidata por táctica (`getFrameworksByTactic`). Surfaceo, NO la jugada — etapa-3 elige UN solo framework respetando su `attack_surface`.
 
 - **Welfare Rhetoric / Comfortable Life Defense** (`welfare_rhetoric`)
-  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente
+  - `revolucionar-la-revolucion` → _deploy as:_ auto-disciplina-del-activista
   - `violencia-especista` → _deploy as:_ marco
-  - `especidio` → _deploy as:_ marco (con cautela)
+  - `especidio` → _deploy as:_ marco
   - `domesticar-eufemismo-dominar` → _deploy as:_ marco
   - `veganismo-no-es-dieta-ni-estilo-de-vida` → _deploy as:_ marco
   - `crueldad-no-es-la-causa` → _deploy as:_ marco

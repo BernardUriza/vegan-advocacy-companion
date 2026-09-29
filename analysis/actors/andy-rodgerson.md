@@ -25,7 +25,7 @@ Honesto y civil: admite we-decided y que el driver fue la economia. El gap: la e
 
 - **Appeal to Nature / Naturalismo** (`naturalismo`)
   - `antropoespecismo` → _deploy as:_ marco
-  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `njn-normal-justo-necesario` → _deploy as:_ marco
   - `liberar-la-mente-abre-todas-las-jaulas` → _deploy as:_ marco

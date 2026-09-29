@@ -40,7 +40,7 @@ El arguer más peligroso por civil y por estructurado. No insulta, no naturaliza
   - `violencia-estructural-infraestructura` → _deploy as:_ marco
   - `premisa-falsa-los-animales-nos-dan` → _deploy as:_ marco
 - **Demanda de Objetividad Moral / Falsabilidad del Fundamento** (`demanda_objetividad_moral`)
-  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco
 
 ## Qué NO hacer
 

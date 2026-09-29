@@ -180,6 +180,11 @@ test('every thread an actor has an interaction in is listed in threads[]', () =>
 test('every vocab value that feeds actor-heat carries a numeric heat', () => {
   const vocab = readVocab();
   for (const field of ['bando', 'verdict', 'register']) {
-    for (const [value, spec] of Object.entries(vocab[field])) assert.equal(typeof spec.heat, 'number', `${field}.${value}`);
+    for (const [value, spec] of Object.entries(vocab.actor[field])) assert.equal(typeof spec.heat, 'number', `${field}.${value}`);
   }
+});
+
+test('every framework classification is inside data/vocab.json', () => {
+  const vocab = readVocab();
+  assert.deepEqual(frameworks.flatMap(f => vocabViolations(f, vocab, 'framework')), []);
 });

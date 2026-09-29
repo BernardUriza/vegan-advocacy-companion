@@ -49,7 +49,7 @@ El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qu
   - `resistencia-al-cambio-es-defensa-del-privilegio` → _deploy as:_ auto-disciplina-del-activista
 - **Hostile Socratic Method** (`socrates_hostil`)
   - `mi-evocar-cambio-sin-confrontar` → _deploy as:_ auto-disciplina-del-activista
-  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco
 - **Crop Deaths / Bystander Flip** (`crop_deaths_flip`)
   - `no-necesidad-cambiaron-las-reglas` → _deploy as:_ premisa_portante
   - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
@@ -59,7 +59,7 @@ El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qu
   - `apego-seguridad-antes-que-razon` → _deploy as:_ auto-disciplina-del-activista
   - `hablamos-en-nombre-de-los-demas-animales` → _deploy as:_ auto-disciplina-del-activista
 - **Presentism / Dismiss the Trend** (`presentismo`)
-  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco
   - `momento-truman-traicion-de-los-tuyos` → _deploy as:_ marco
 - **Convenience as Justification** (`conveniencia_como_justificacion`)
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco

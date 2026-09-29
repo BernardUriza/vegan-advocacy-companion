@@ -9,7 +9,6 @@ const TACTICS_PATH = resolve(ROOT, 'data/tactics.json');
 const FRAMEWORKS_PATH = resolve(ROOT, 'data/frameworks.json');
 const THREADS_PATH = resolve(ROOT, 'data/threads.json');
 const VOCAB_PATH = resolve(ROOT, 'data/vocab.json');
-export const VOCAB_FIELDS = ['bando', 'verdict', 'register', 'tone'];
 
 export function readActors() {
   return JSON.parse(readFileSync(ACTORS_PATH, 'utf8'));
@@ -19,14 +18,15 @@ export function readVocab() {
   return JSON.parse(readFileSync(VOCAB_PATH, 'utf8'));
 }
 
-export function vocabViolations(actor, vocab = readVocab()) {
-  return VOCAB_FIELDS
-    .filter(field => actor[field] !== undefined && !Object.hasOwn(vocab[field], actor[field]))
-    .map(field => `actor "${actor.name}" ${field}="${actor[field]}" is outside data/vocab.json (${Object.keys(vocab[field]).join(' | ')}); put the nuance in ${field}_note`);
+export function vocabViolations(entity, vocab = readVocab(), kind = 'actor') {
+  const fields = vocab[kind];
+  return Object.keys(fields)
+    .filter(field => entity[field] !== undefined && !Object.hasOwn(fields[field], entity[field]))
+    .map(field => `${kind} "${entity.name ?? entity.id}" ${field}="${entity[field]}" is outside data/vocab.json (${Object.keys(fields[field]).join(' | ')}); put the nuance in ${field}_note`);
 }
 
-function assertVocab(actor) {
-  const violations = vocabViolations(actor);
+function assertVocab(entity, kind = 'actor') {
+  const violations = vocabViolations(entity, readVocab(), kind);
   if (violations.length) throw new Error(violations.join('\n'));
 }
 
@@ -77,7 +77,7 @@ export function getFrameworksByAuthor(author) {
 // auto-disciplina como si fuera arma. `weaponsOnly` es opt-in para no romper el
 // contrato histórico (devolver TODOS los que referencian la táctica).
 export function isSelfDiscipline(framework) {
-  return /auto-disciplina/i.test(framework?.deploy_as ?? '');
+  return framework?.deploy_as === 'auto-disciplina-del-activista';
 }
 
 export function getFrameworksByTactic(tacticId, { weaponsOnly = false } = {}) {
@@ -88,11 +88,10 @@ export function getFrameworksByTactic(tacticId, { weaponsOnly = false } = {}) {
 export function upsertFramework(framework) {
   const frameworks = readFrameworks();
   const idx = frameworks.findIndex(f => f.id === framework.id);
-  if (idx >= 0) {
-    frameworks[idx] = { ...frameworks[idx], ...framework };
-  } else {
-    frameworks.push(framework);
-  }
+  const merged = idx >= 0 ? { ...frameworks[idx], ...framework } : framework;
+  assertVocab(merged, 'framework');
+  if (idx >= 0) frameworks[idx] = merged;
+  else frameworks.push(merged);
   writeJsonAtomic(FRAMEWORKS_PATH, frameworks);
   return frameworks[idx >= 0 ? idx : frameworks.length - 1];
 }
@@ -242,6 +241,11 @@ export function updateInteractionOutcome(userId, threadId, dateOrNeedle, needle,
   }
   if (fields.evidence) it.outcome_evidence = fields.evidence;
   if (fields.note) it.outcome_note = fields.note;
+  if (fields.framework) {
+    if (!getFramework(fields.framework)) throw new Error(`framework "${fields.framework}" no existe en data/frameworks.json`);
+    it.framework = fields.framework;
+    if (fields.framework_note) it.framework_note = fields.framework_note;
+  }
   writeJsonAtomic(ACTORS_PATH, actors);
   return { user_id: userId, thread_id: threadId, outcome: it.outcome, note: it.outcome_note ?? null };
 }

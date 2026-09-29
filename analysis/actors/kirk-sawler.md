@@ -27,7 +27,7 @@
 
 - **Appeal to Normalcy / Default** (`apelacion_normal`)
   - `antropoespecismo` → _deploy as:_ marco
-  - `gobekli-kilometro-cero` → _deploy as:_ marco (NUNCA premisa_portante)
+  - `gobekli-kilometro-cero` → _deploy as:_ marco
   - `violencia-especista` → _deploy as:_ marco
   - `no-sabemos-que-tenemos-problema` → _deploy as:_ marco
   - `njn-normal-justo-necesario` → _deploy as:_ marco

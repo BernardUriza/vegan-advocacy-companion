@@ -27,7 +27,7 @@
     "enables": "Imagen potente para el lurker: si el especismo EMPEZÓ en un punto, puede TERMINAR — desnaturaliza el 'siempre ha sido así' sin pelear biología.",
     "register": "filo",
     "attack_surface": "ALTO. Descansa en la lectura romántica de Klaus Schmidt (religión antes que agricultura, cazadores-recolectores puros), HOY DEBATIDA: hoces de sílex, piedras de molienda, fitolitos de cereal y ocupación residencial apuntan a procesamiento de plantas y sedentarismo (Banning, 'Paradise Found or Common Sense Lost?', Open Archaeology 2022). NUNCA usar como premisa portante: un oponente fino ataca la arqueología y tira el argumento. Solo como marco con salida a prueba de concesión ('aunque me equivoque en la fecha exacta, la pregunta moral sigue en pie').",
-    "deploy_as": "marco (NUNCA premisa_portante)",
+    "deploy_as": "marco",
     "source_ref": "doctrine/rag/Antropoespecismo-Guerrero — texto extraido.md",
     "related_tactics": [
       "naturalismo",
@@ -35,7 +35,8 @@
       "apelacion_normal",
       "species_hierarchy"
     ],
-    "lurker_risk": "low"
+    "lurker_risk": "low",
+    "deploy_as_note": "marco (NUNCA premisa_portante)"
   },
   {
     "id": "revolucionar-la-revolucion",
@@ -46,13 +47,14 @@
     "enables": "NO es un arma contra el carnista — es disciplina interna del activista: precisión de lenguaje (no usar los eufemismos de la industria), encuadre abolicionista coherente (justicia, no dieta; alguien, no algo), rechazo de campañas single-issue/welfaristas incoherentes.",
     "register": "filo",
     "attack_surface": "No aplica como argumento al oponente (es meta-estrategia, no premisa de debate). Riesgo interno: el purismo de lenguaje puede leerse como gatekeeping ante un interlocutor de buena fe — en registro compasivo no se corrige al otro por decir 'carne'.",
-    "deploy_as": "auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente",
+    "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Revolucionar-la-revolucion-Guerrero — texto extraido.md",
     "related_tactics": [
       "reencuadre_veganismo_creencia",
       "welfare_rhetoric"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "deploy_as_note": "auto-disciplina del activista (informa reply-output-style), NO arma contra el oponente"
   },
   {
     "id": "violencia-especista",
@@ -81,13 +83,14 @@
     "enables": "Nombra la escala industrial como exterminio estructural, no actos individuales — desplaza la conversación de '¿por qué TÚ comes carne?' a 'qué sistema sostiene esto'.",
     "register": "filo",
     "attack_surface": "ALTO en Facebook: el paralelo con genocidio enciende y se lee como exageración u ofensa ante el lurker; reservar para audiencia ya sensibilizada, casi nunca en debate abierto. Término muy de nicho académico.",
-    "deploy_as": "marco (con cautela)",
+    "deploy_as": "marco",
     "source_ref": "doctrine/rag/Violencia-Especista-Kachanoski — texto extraido.md",
     "related_tactics": [
       "relativismo_moral",
       "welfare_rhetoric"
     ],
-    "lurker_risk": "high"
+    "lurker_risk": "high",
+    "deploy_as_note": "marco (con cautela)"
   },
   {
     "id": "esclavitud-paralelismo",
@@ -780,9 +783,7 @@
     "attack_surface": "Un padre puede sostener que aun 'solo responder' ya influye sobre su hijo y socava su derecho a educarlo; la frontera entre 'responder honestamente' y 'sembrar' es porosa y el oponente la explota para acusar igual de adoctrinamiento. La defensa: la alternativa ('responde la mentira que sus padres prefieren') tampoco es neutral.",
     "deploy_as": "auto-disciplina-del-activista",
     "source_ref": "doctrine/rag/Educacion-Especista-Guerrero — texto extraido.md",
-    "related_tactics": [
-      "ai_accusation"
-    ],
+    "related_tactics": [],
     "lurker_risk": "low"
   },
   {
@@ -1315,7 +1316,7 @@
     "enables": "Es la respuesta a la demanda de FUNDAMENTACIÓN — la superficie de ataque de algo-a-alguien-sujeto-derecho. Desarma el \"eso es solo tu intuición / un marco que adoptaste\" sin apelar a un hecho moral externo: el principio no viene de fuera, se lee por consistencia de los juicios que el propio interlocutor ya sostiene. Concede honestamente que toda fundamentación moral termina en una intuición, y traslada la pregunta a cuál intuición sobrevive el test de consistencia sin excepciones ad hoc. Convierte la demanda \"justifica la sintiencia\" en la pregunta \"qué otro rasgo hace ese trabajo, si los humanos que carecen de todos los que nombras conservan el estatus\".",
     "register": "compasivo",
     "attack_surface": "JAMÁS degradar al humano marginal (\"a un bebé sí se le podría poseer\") — los casos marginales muestran que el criterio NO es la inteligencia, nunca que esos humanos valgan menos. Si el interlocutor MUERDE LA BALA (acepta que un humano sin razón podría ser propiedad), no se le persigue: ya se autoexpuso ante el lurker. Tampoco convertirlo en catálogo académico (\"el argumento de la sobreposición de especies\") — se dice en llano. Riesgo de sonar a profesor: es una pregunta, no una lección.",
-    "deploy_as": "marco (NUNCA premisa_portante)",
+    "deploy_as": "marco",
     "source_ref": ".claude/rules/sentiocentrism-not-biocentrism.md",
     "related_tactics": [
       "criterio_capacidad_superior",
@@ -1325,6 +1326,24 @@
       "pertenencia_de_clase",
       "demanda_objetividad_moral"
     ],
-    "lurker_risk": "med"
+    "lurker_risk": "med",
+    "deploy_as_note": "marco (NUNCA premisa_portante)"
+  },
+  {
+    "id": "el-sello-es-para-el-lurker",
+    "name": "El sello es para el lurker: quitarle al insulto su función de cierre",
+    "author": "Bernard Uriza Orozco",
+    "tradition": "doctrina propia del pipeline (regla insult-seal-defense), afinada con el coagent",
+    "definition": "El insulto-sello (\"ignorante\", \"arrogante\", \"cult\", \"you use AI\") no va dirigido a quien lo recibe: va al lector silencioso, para ahorrarle la tarea de pensar y archivar el intercambio como cerrado. Cubre la falta de argumento justo donde debía ir la refutación. Callar lo deja pegar; devolverlo convierte el hilo en patio de escuela; sonar herido confirma el golpe.",
+    "enables": "Contestar SOLO cuando el sello intenta cerrar el intercambio para el lurker, en una línea fresca y humana que nombre qué falta (el argumento que no llegó) y devuelva la pregunta pendiente; ante el gaslighting de comprensión, los recibos del arco hacen el trabajo. Contra la acusación de IA: brevedad seca y visible, nunca defensa de autenticidad.",
+    "register": "filo",
+    "attack_surface": "Quemado: \"that's a label, not an argument\" suena a robot (2026-07-01). Nombrar el patrón demasiado se vuelve excursión meta y el lurker siente que TÚ esquivas; siempre vuelve a la pregunta en la misma vuelta. Un párrafo defendiendo que no eres IA confirma la acusación. Insulto después de una pregunta clara sin contestar: ignorarlo suele pegar más.",
+    "deploy_as": "marco",
+    "source_ref": ".claude/rules/insult-seal-defense.md",
+    "related_tactics": [
+      "insulto_ad_hominem",
+      "ai_accusation"
+    ],
+    "lurker_risk": "low"
   }
 ]
