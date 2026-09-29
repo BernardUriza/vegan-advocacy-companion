@@ -1,7 +1,8 @@
 // Parser de argumentos compartido por comment-prepare.mjs y el hook de procedencia: si los dos
 // leen el mismo argv de la misma forma, no hay invocación que el hook valide y el script lea distinto.
 
-export const PREPARE_FLAGS = new Set(['--url', '--author', '--anchor', '--body-file', '--image']);
+export const PREPARE_FLAGS = new Set(['--url', '--author', '--anchor', '--body-file', '--image', '--mode']);
+export const PREPARE_MODES = new Set(['reply', 'root']);
 
 export function parseArgs(argv, allowed = PREPARE_FLAGS) {
   const flags = {};

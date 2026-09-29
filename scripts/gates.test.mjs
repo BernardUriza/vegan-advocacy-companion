@@ -268,6 +268,14 @@ test('provenance-gate: un master editado después del seed se bloquea por master
   assert.match(r.stderr, /el master cambió después del seed/);
 });
 
+test('provenance-gate: --mode root pasa; un --mode desconocido se bloquea', () => {
+  const { dir, body } = consultedProject(STEER);
+  assert.equal(runCmd(dir, `node scripts/${CP}.mjs --url ${URL999} --author "X" --body-file ${body} --mode root`).status, 0);
+  const r = runCmd(dir, `node scripts/${CP}.mjs --url ${URL999} --author "X" --body-file ${body} --mode sideways`);
+  assert.equal(r.status, 2);
+  assert.match(r.stderr, /solo reply o root/);
+});
+
 // ---------- mcp-publish-gate: texto verificable por sha, Enter sintético = publicar ----------
 const MCP_GATE = resolve(HERE, '..', '.claude', 'hooks', 'mcp-publish-gate.mjs');
 function runMcp(dir, fn) {
@@ -290,6 +298,15 @@ test('mcp-publish-gate: pegar el draft consultado como literal PASA; como comill
   const { dir } = consultedProject(STEER);
   assert.equal(runMcp(dir, PASTE('`' + STEER + '`')).status, 0);
   assert.equal(runMcp(dir, PASTE(JSON.stringify(STEER))).status, 0);
+});
+
+test('mcp-publish-gate: el draft de un post pegado en OTRO post se bloquea; en el suyo pasa', () => {
+  const { dir } = consultedProject(STEER);
+  const onPost = (pid) => `() => { if (!location.href.startsWith('https://www.facebook.com/groups/1/posts/${pid}/')) return; ${PASTE('`' + STEER + '`').slice(6)} }`;
+  assert.equal(runMcp(dir, onPost('999')).status, 0);
+  const r = runMcp(dir, onPost('555'));
+  assert.equal(r.status, 2);
+  assert.match(r.stderr, /post 555/);
 });
 
 test('mcp-publish-gate: texto a mano en comillas dobles (antes pasaba) se bloquea', () => {

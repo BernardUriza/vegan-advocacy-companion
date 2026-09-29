@@ -54,15 +54,15 @@ const command = payload.tool_input?.command || payload.toolInput?.command || '';
 // como UNA invocación limpia se bloquea (fail-closed, 2026-09-28: `--body-file=x --body y` pasaba).
 if (toolName !== 'Bash' || !/comment[\s"'\\_-]*prep/i.test(command)) process.exit(0);
 
-let parseArgs, shellTokens;
+let parseArgs, shellTokens, PREPARE_MODES;
 try {
-  ({ parseArgs, shellTokens } = await import(resolve(PROJECT_DIR, 'scripts/cli-args.mjs')));
+  ({ parseArgs, shellTokens, PREPARE_MODES } = await import(resolve(PROJECT_DIR, 'scripts/cli-args.mjs')));
 } catch (e) {
   block(`GATE PROCEDENCIA: no pude cargar cli-args.mjs (${e.message}). Fail-closed.`);
 }
 const unparseable = (why) => block([
   `GATE PROCEDENCIA — STAGING BLOQUEADO: invocación de comment-prepare no verificable (${why}).`,
-  'Forma única aceptada: node <ruta>/comment-prepare.mjs --url "<url>" --author "<A>" [--anchor "<f>"] --body-file <ruta ABSOLUTA> [--image <ruta ABSOLUTA>]',
+  'Forma única aceptada: node <ruta>/comment-prepare.mjs --url "<url>" --author "<A>" [--anchor "<f>"] --body-file <ruta ABSOLUTA> [--image <ruta ABSOLUTA>] [--mode reply|root]',
   'Sin pipes, sin $()/backticks/globs, sin --body inline, sin forma --flag=valor ambigua con otra copia del flag, una invocación por comando.',
   'Para depurar el hook: escribe el payload JSON a un archivo y pásalo por stdin (ver comment-post-and-verify, FALLA→FIX).',
 ]);
@@ -101,6 +101,7 @@ const imageFile = flags['--image'];
 if (!url) block('GATE PROCEDENCIA: comment-prepare sin --url; no puedo derivar el post_id para hallar el recibo del coagent.');
 if (!bodyFile) block('GATE PROCEDENCIA: comment-prepare sin --body-file; el draft debe venir de etapa 3 en un archivo.');
 if (!flags['--author']) block('GATE PROCEDENCIA: comment-prepare sin --author.');
+if (flags['--mode'] != null && !PREPARE_MODES.has(flags['--mode'])) unparseable(`--mode "${flags['--mode']}" (solo reply o root)`);
 if (!isAbsolute(bodyFile)) block(`GATE PROCEDENCIA: --body-file "${bodyFile}" no es ruta absoluta; el hook y el script podrían leer archivos distintos.`);
 if (imageFile && !isAbsolute(imageFile)) block(`GATE PROCEDENCIA: --image "${imageFile}" no es ruta absoluta.`);
 

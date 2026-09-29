@@ -21,10 +21,10 @@ import { execFileSync } from 'node:child_process';
 import { tmpdir } from 'node:os';
 import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { openPersistentPage, expandAllInPage } from './fb-lib.mjs';
+import { openPersistentPage, expandAllInPage, readThreadRoot } from './fb-lib.mjs';
 import { resolveUserPath } from './paths.mjs';
 import { judgeThreadIdentity } from './thread-identity.mjs';
-import { parseArgs } from './cli-args.mjs';
+import { parseArgs, PREPARE_MODES } from './cli-args.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -65,13 +65,18 @@ function runStyleGate(bodyText, authorName) {
   }
 }
 
-const USAGE = 'uso: node comment-prepare.mjs --url "<openUrl>" --author "<Nombre>" [--anchor "<frase>"] --body-file <f> [--image <png>]';
+const USAGE = 'uso: node comment-prepare.mjs --url "<openUrl>" --author "<Nombre>" [--anchor "<frase>"] --body-file <f> [--image <png>] [--mode reply|root]';
 if (parsed.unknown.length || parsed.positionals.length || parsed.repeated.length) {
   console.error(`argumentos no aceptados: ${[...parsed.unknown, ...parsed.positionals, ...parsed.repeated.map((r) => r + ' (repetido)')].join(', ')}\n${USAGE}`);
   process.exit(1);
 }
 const url = arg('--url');
 const author = arg('--author');
+const mode = arg('--mode') || 'reply';
+if (!PREPARE_MODES.has(mode)) {
+  console.error(`--mode "${mode}" no aceptado (reply | root)\n${USAGE}`);
+  process.exit(1);
+}
 const anchor = arg('--anchor') || '';
 const bodyFile = resolveUserPath(arg('--body-file'), ROOT);
 const imageFile = resolveUserPath(arg('--image'), ROOT);
@@ -139,8 +144,30 @@ function pasteBody({ author, body }) {
   return { ok: true, composerLabel: box.getAttribute('aria-label') };
 }
 
+// --- DENTRO de la página (modo root): pegar en el composer del POST, fuera de todo comentario ---
+// Un raíz en post ajeno no lleva auto-mención; el composer es el "Comment as …" que no vive
+// dentro de ningún div[role=article]. Si trae texto, es un borrador de Bernard: no se toca.
+function pasteRoot({ body }) {
+  const boxes = [...document.querySelectorAll('div[contenteditable="true"][role="textbox"]')]
+    .filter((b) => /^(Comment as|Write a comment|Write a public comment)/i.test(b.getAttribute('aria-label') || ''))
+    .filter((b) => !b.closest('div[role="article"]'));
+  if (boxes.length !== 1) return { ok: false, error: `root composer ambiguo (${boxes.length})` };
+  const box = boxes[0];
+  if ((box.innerText || '').trim().length) return { ok: false, error: 'root composer no está vacío (¿borrador de Bernard?)' };
+  box.focus();
+  const sel = window.getSelection();
+  const range = document.createRange();
+  range.selectNodeContents(box);
+  sel.removeAllRanges();
+  sel.addRange(range);
+  const dt = new DataTransfer();
+  dt.setData('text/plain', body);
+  box.dispatchEvent(new ClipboardEvent('paste', { clipboardData: dt, bubbles: true, cancelable: true }));
+  return { ok: true, composerLabel: box.getAttribute('aria-label') };
+}
+
 // --- DENTRO de la página: re-leer el estado REAL (Lexical reconcilia async) ---
-function readBack({ author, firstWords, lastWords }) {
+function readBack({ author, firstWords, lastWords, requireMention }) {
   const boxes = [...document.querySelectorAll('div[contenteditable="true"][role="textbox"]')];
   const box = boxes.find((b) => firstWords && (b.innerText || '').includes(firstWords))
     || boxes.find((b) => /Reply/i.test(b.getAttribute('aria-label') || '') && (b.innerText || '').length > 30);
@@ -149,7 +176,7 @@ function readBack({ author, firstWords, lastWords }) {
   return {
     ok: true,
     len: t.length,
-    mentionIntact: t.includes(author),
+    mentionIntact: requireMention ? t.includes(author) : true,
     startsOK: firstWords ? t.includes(firstWords) : null,
     endsOK: lastWords ? t.trimEnd().endsWith(lastWords) : null,
     newlines: (t.match(/\n/g) || []).length,
@@ -252,15 +279,26 @@ async function main() {
       console.error(`[warn] quedaron ${exp.pending} sub-hilo(s) sin abrir — el target puede seguir colapsado`);
     }
 
-    const opened = await page.evaluate(openComposer, { author, anchor, ME });
-    if (!opened.ok) {
-      await failClose();
-      console.log(JSON.stringify({ ok: false, stage: 'open', ...opened }, null, 2));
-      process.exit(2);
+    let opened;
+    if (mode === 'root') {
+      const postRoot = await readThreadRoot(page);
+      if (postRoot.author !== author) {
+        await failClose();
+        console.log(JSON.stringify({ ok: false, stage: 'root-author', error: 'el post no es del --author (raíz en el post equivocado)', expected: author, found: postRoot.author }, null, 2));
+        process.exit(2);
+      }
+      opened = { ok: true, mode, postAuthor: postRoot.author, postHead: (postRoot.text || '').slice(0, 100) };
+    } else {
+      opened = await page.evaluate(openComposer, { author, anchor, ME });
+      if (!opened.ok) {
+        await failClose();
+        console.log(JSON.stringify({ ok: false, stage: 'open', ...opened }, null, 2));
+        process.exit(2);
+      }
+      await page.waitForTimeout(900);
     }
-    await page.waitForTimeout(900);
 
-    const pasted = await page.evaluate(pasteBody, { author, body });
+    const pasted = mode === 'root' ? await page.evaluate(pasteRoot, { body }) : await page.evaluate(pasteBody, { author, body });
     if (!pasted.ok) {
       await failClose();
       console.log(JSON.stringify({ ok: false, stage: 'paste', opened, ...pasted }, null, 2));
@@ -268,7 +306,7 @@ async function main() {
     }
     await page.waitForTimeout(1200); // dejar reconciliar a Lexical antes de leer
 
-    const check = await page.evaluate(readBack, { author, firstWords, lastWords });
+    const check = await page.evaluate(readBack, { author, firstWords, lastWords, requireMention: mode === 'reply' });
     let attachment = null;
     if (imageFile) {
       const inputHandle = await page.evaluateHandle(composerFileInput, { firstWords });

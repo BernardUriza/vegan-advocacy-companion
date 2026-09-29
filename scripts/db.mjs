@@ -1,7 +1,7 @@
 import { readFileSync, writeFileSync, renameSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { MAX_AGE_DAYS, ageDaysFromDate } from './freshness.mjs';
+import { MAX_AGE_DAYS, ageDaysFromDate, isStaleDate } from './freshness.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const ACTORS_PATH = resolve(ROOT, 'data/actors.json');
@@ -156,6 +156,33 @@ export function closeOutcome(userId, threadId, outcome, evidence) {
   if (evidence) it.outcome_evidence = evidence;
   writeJsonAtomic(ACTORS_PATH, actors);
   return { user_id: userId, thread_id: threadId, outcome, evidence: evidence ?? null };
+}
+
+// Deuda vieja del moat (pipeline-freshness-cap ley 5): un pending/goalpost más viejo que el
+// tope se cierra como silent, guardando de qué estado venía en `closed_from`. Pura: muta y
+// devuelve lo cerrado; closeStaleInteractions es la que escribe.
+export function markStaleClosures(actors, { maxAgeDays = MAX_AGE_DAYS, now = Date.now() } = {}) {
+  const today = new Date(now).toISOString().slice(0, 10);
+  const closed = [];
+  for (const a of actors) {
+    for (const it of a.interactions ?? []) {
+      const from = it.outcome ?? 'pending';
+      if (from !== 'pending' && from !== 'goalpost') continue;
+      if (!it.date || !isStaleDate(it.date, maxAgeDays, now)) continue;
+      it.outcome = 'silent';
+      it.closed_from = from;
+      it.outcome_evidence = `cerrado por edad (> ${maxAgeDays}d, pipeline-freshness-cap) ${today}`;
+      closed.push({ user_id: a.user_id, name: a.name, thread_id: it.thread_id, date: it.date, closed_from: from });
+    }
+  }
+  return closed;
+}
+
+export function closeStaleInteractions({ dryRun = false, ...opts } = {}) {
+  const actors = readActors();
+  const closed = markStaleClosures(actors, opts);
+  if (!dryRun && closed.length) writeJsonAtomic(ACTORS_PATH, actors);
+  return closed;
 }
 
 // Escritura PRECISA y RE-JUZGABLE de un outcome (el reflex LLM la usa). A diferencia

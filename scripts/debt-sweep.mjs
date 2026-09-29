@@ -134,7 +134,7 @@ export function report({ results, staleSkipped }, { json = asJson } = {}) {
   if (staleSkipped.length) {
     console.log(`⏳ VIEJOS (> ${MAX_AGE_DAYS}d) — ${staleSkipped.length} hilo(s) con deuda abierta en el moat que NO se abren:`);
     for (const s of staleSkipped) console.log(`     ${s.thread_id} (${s.slug ?? '?'}) · última ${s.newestDate} (${s.ageDays}d) · ${s.moatActors.join(', ')}`);
-    console.log('     → ciérralos en el moat (close-outcomes / reflex apply como silent), no los reabras.\n');
+    console.log('     → ciérralos: node scripts/close-outcomes.mjs --stale (silent + closed_from). No los reabras.\n');
   }
 
   for (const r of results) {

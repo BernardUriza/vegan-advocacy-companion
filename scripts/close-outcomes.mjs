@@ -11,6 +11,7 @@
 //   node close-outcomes.mjs <transcript.json> --dry-run  # clasifica sin escribir
 //   node close-outcomes.mjs <transcript.json> --silent-after-hours 6   # umbral del guard (default 12)
 //   cat transcript.json | node close-outcomes.mjs --stdin
+//   node close-outcomes.mjs --stale [--dry-run]    # cierra como silent la deuda > tope (7d), sin transcript
 //
 // Guard de frescura: una jugada que daría `silent` pero cuya reply-ancla es más
 // reciente que --silent-after-hours queda `pending` (no se escribe) — el oponente
@@ -24,7 +25,7 @@
 import { readFileSync } from 'fs';
 import { resolve } from 'path';
 import { fileURLToPath } from 'url';
-import { getPendingInteractions, closeOutcome } from './db.mjs';
+import { getPendingInteractions, closeOutcome, closeStaleInteractions } from './db.mjs';
 import { ageMinutes } from './fb-lib.mjs';
 
 // Guard de frescura (root fix 2026-06-21): "silent" solo es honesto si el oponente
@@ -149,8 +150,16 @@ function loadTranscript() {
   return JSON.parse(readFileSync(fileArg, 'utf8'));
 }
 
+function mainStale(dryRun) {
+  const closed = closeStaleInteractions({ dryRun });
+  console.log(`\n=== CIERRE POR EDAD ${dryRun ? '(dry-run)' : ''} — ${closed.length} interacción(es) > tope ===`);
+  for (const c of closed) console.log(`  ✓ ${c.name} (${c.user_id}) t=${c.thread_id} ${c.date} ${c.closed_from} → silent`);
+  console.log(dryRun ? '  (nada escrito — dry-run)\n' : '  (escrito vía db.mjs; closed_from guarda el estado previo)\n');
+}
+
 function main() {
   const dryRun = process.argv.includes('--dry-run');
+  if (process.argv.includes('--stale')) return mainStale(dryRun);
   const hoursFlag = process.argv.findIndex((a) => a === '--silent-after-hours');
   const silentAfterMin =
     hoursFlag >= 0 && process.argv[hoursFlag + 1]

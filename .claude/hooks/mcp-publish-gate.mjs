@@ -120,7 +120,15 @@ if (pastesText) {
       'Sin literal no hay sha que verificar (window.__draft, JSON.stringify o variables no cuentan): pega el draft consultado literal.',
     ]);
   }
-  const known = new Set(receipts.flatMap((r) => r.drafts.map((d) => d.draft_sha)));
+  // Si el script nombra el hilo (/posts/<id>, el assert de href), el draft tiene que ser de
+  // ESE post: un draft consultado para otro post pasaba el gate pegado donde fuera.
+  const postIds = [...new Set([...src.matchAll(/\/posts\/(\d+)/g)].map((m) => m[1]))];
+  if (postIds.length > 1) block(`GATE PUBLICACIÓN MCP — BLOQUEADO: el script nombra ${postIds.length} posts (${postIds.join(', ')}); un paste va a un solo hilo.`);
+  const scoped = postIds.length ? receipts.filter((r) => r.file === `${postIds[0]}.consult.json`) : receipts;
+  if (postIds.length && !scoped.length) {
+    block(`GATE PUBLICACIÓN MCP — BLOQUEADO: no hay recibo de consulta fresco para el post ${postIds[0]} que el script está tocando.`);
+  }
+  const known = new Set(scoped.flatMap((r) => r.drafts.map((d) => d.draft_sha)));
   const unknown = literals.filter((l) => !known.has(shaOf(l.text)));
   if (unknown.length) {
     block([

@@ -45,13 +45,23 @@ function writeAtomic(path, data) {
   writeFileSync(tmp, JSON.stringify(data, null, 2) + '\n', 'utf8');
   renameSync(tmp, path);
 }
+// El arco de UN actor: sus turnos, los de Bernard dirigidos a él y los de terceros que le
+// contestan. Los turnos de Bernard a otros quedan fuera: en un hilo grande le hacían creer
+// al juez que Bernard había contestado al último (2026-09-28, Frank Teuton en 28459…).
+export function actorArc(turns, name) {
+  return (turns || [])
+    .filter((t) => t.author === name || t.target === name)
+    .map((t) => ({ who: t.isMine ? 'BERNARD' : t.author, target: t.target || null, age: t.ageStr || '', text: (t.text || '').trim() }));
+}
+
 function threadIdOf(doc) {
   if (doc.post_id) return String(doc.post_id);
   const m = String(doc.url || '').match(/\/posts\/(\d+)/) || String(doc.url || '').match(/post_id=(\d+)/);
   return m ? m[1] : null;
 }
 
-const cmd = process.argv[2];
+const isMain = process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+const cmd = isMain ? process.argv[2] : null;
 
 if (cmd === 'emit') {
   const txDir = fileArg('--tx-dir', '.coagent');
@@ -85,9 +95,7 @@ if (cmd === 'emit') {
     for (const [tid, its] of Object.entries(byThread)) {
       const doc = tx[tid];
       if (!doc) continue; // sin transcript fresco no se puede juzgar el arco
-      const exchange = doc.turns
-        .filter((t) => t.author === actor.name || t.isMine || t.target === actor.name)
-        .map((t) => ({ who: t.isMine ? 'BERNARD' : t.author, target: t.target || null, age: t.ageStr || '', text: (t.text || '').trim() }));
+      const exchange = actorArc(doc.turns, actor.name);
       packets.push({
         user_id: actor.user_id,
         name: actor.name,
@@ -146,7 +154,7 @@ if (cmd === 'emit') {
     writeFileSync(marker, JSON.stringify({ applied_at: new Date().toISOString(), verdicts_file: vf, verdicts: ok.length, packets_mtime: packetsMtime }, null, 2) + '\n');
     console.log(`  marcador etapa 0: ${marker}`);
   }
-} else {
+} else if (isMain) {
   console.error('uso: node reflex.mjs emit | apply --verdicts <file> [--dry-run]');
   process.exit(1);
 }
