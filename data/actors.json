@@ -3024,7 +3024,8 @@
       "ecocentrismo_conservacion"
     ],
     "threads": [
-      "27330688236588406"
+      "27330688236588406",
+      "28620931384196666"
     ],
     "interactions": [
       {
@@ -3076,6 +3077,18 @@
         "outcome": "silent",
         "outcome_evidence": "sin turnos posteriores a la reply (extract fresco 2026-07-05)",
         "outcome_note": "algo-a-alguien: tras la respuesta al insult-pit triplicado no volvió (5d) — el capstone quedó como última palabra sustantiva; los sellos no taparon la pregunta."
+      },
+      {
+        "thread_id": "28620931384196666",
+        "date": "2026-09-28",
+        "their_move": "Raíz en post ajeno de Chris Pearson (Open Debates 3, león cazado como trofeo): \"Lol showing your lack of knowledge on these animals.\" — sello de credencial sin contenido; luego a Chris: \"your really wanting attention. Its sad\".",
+        "our_reply_summary": "Filo (117 palabras): que nombre el conocimiento que falta; lo que el post sí sabe (rastreado 9 millas, irritado por ellos, muerto y posado) lo hace más difícil de defender; el saber de los cazadores es poder y justifica fuck-all. Cierre: Which fact about lions made his body theirs to pose with?",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "draft_sha": "dd032a5e466b9e9c",
+        "exposure_n": 6,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
       }
     ],
     "user_id": "100003780189781",
