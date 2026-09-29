@@ -5,7 +5,7 @@
 - **user_id:** 100000418598784
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100000418598784/
 - **Bando:** anti-vegan
-- **Veredicto:** troll_no_enganchar · **Registro:** no_enganchar
+- **Veredicto:** troll_no_enganchar · **Registro:** no_enganchar · **Tono:** hostile
 - **Postura núcleo:** Sneer puro: 'vegan cult hive mind', veganismo es 'dysphoric harmful lifestyle', relativismo cultural. Atacó a Bernard directo ('little Bernie', 'weak manner to frame').
 
 ## Análisis

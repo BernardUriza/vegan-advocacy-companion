@@ -5,7 +5,7 @@
 - **user_id:** 1037777423
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/1037777423/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** Toda explotación es justificable si es mutuamente beneficiosa; los beneficios no tienen que ser iguales.
 
 ## Análisis
@@ -88,4 +88,4 @@ No usar 'consent' como argumento único (fácilmente deflectado a bebés/mascota
 - **Su jugada:** Comentario raíz en el post del relativismo: "What are you willing to do make your idea of morality objective? Are you willing to be the moral authority? What consequences are you going to mete out?" — demanda de objetividad + desplazamiento de justificación a ejecución.
 - **Nuestra respuesta:** El post reclama dos cosas chicas (el escudo se apaga con la pérdida propia; "we decided" = poder), ninguna necesita autoridad; consecuencias cero, la única es poner una razón junto al título; consistencia con sus propios juicios (humanos que no negocian/razonan no son poseíbles → esos rasgos no hacen el trabajo; falta el que sí, con sus consecuencias); tres falsadores explícitos; simetría del estándar; recibo de julio (el título ordena reclamos entre humanos) en una línea; vuelta a la pregunta.
 
-_Hilos: 27341517928804691, 27335635946059556, 28500475619575577_
+_Hilos: 27341517928804691, 27335635946059556, 28500475619575577, 27051763587778150, 27496390256650790_

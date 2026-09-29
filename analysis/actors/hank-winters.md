@@ -5,7 +5,7 @@
 - **user_id:** 100034907401951
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/100034907401951/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** dismissive
 - **Postura núcleo:** Si camina, vuela o nada es comida (mascotas incluidas); la moral es subjetiva y a la mayoría no le importa; es supervivencia y la naturaleza lo hace; deja de forzar a otros.
 
 ## Análisis

@@ -5,7 +5,7 @@
 - **user_id:** 100081660349433
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/100081660349433/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** dismissive
 - **Postura núcleo:** Might-makes-right explicito: los animales pueden usarse porque tienen menor cognicion, dependen de nosotros, no pueden defenderse — y saben bien cocinados.
 
 ## Análisis

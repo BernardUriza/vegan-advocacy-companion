@@ -5,7 +5,7 @@
 - **user_id:** 100003780189781
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/100003780189781/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** sarcastic
 - **Postura núcleo:** Los granjeros no son DUEÑOS, son "stewards" que manejan livestock/recursos naturales; los animales sienten dolor/miedo/curiosidad pero no tienen sentido de sí ni concepto de la muerte, así que no tienen interés en vivir — es solo como funciona el mundo.
 
 ## Análisis

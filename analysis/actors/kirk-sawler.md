@@ -5,7 +5,7 @@
 - **user_id:** 100008695478463
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/100008695478463/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** Los animales son propiedad porque se compran; Ralph (su perro) es familia y a la vez propiedad; el cerdito comprado se come a los 5 meses; "it’s the way the world works".
 
 ## Análisis

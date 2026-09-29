@@ -5,7 +5,7 @@
 - **user_id:** 100046325085471
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100046325085471/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** dismissive
 - **Postura núcleo:** Futilidad de mercado: tu 1-2% no cambia la oferta y la demanda, no salvas ni un animal.
 
 ## Análisis

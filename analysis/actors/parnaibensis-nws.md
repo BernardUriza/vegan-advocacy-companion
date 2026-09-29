@@ -5,7 +5,7 @@
 - **user_id:** 100024818371314
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/100024818371314/
 - **Bando:** anti-vegan
-- **Veredicto:** pozo sin fondo · **Registro:** filo
+- **Veredicto:** pozo_sin_fondo · **Registro:** filo · **Tono:** dismissive
 - **Postura núcleo:** Sello-insulto ai_accusation: youre pretending to be worried about animals and using ai? — intenta cerrar el intercambio para el lurker via la acusacion de IA.
 
 ## Análisis
@@ -51,4 +51,4 @@ NO sonar herido; NO insultar de vuelta; NO entrar a discutir IA (seria aceptar e
 - **Su jugada:** Réplica 3h: del sello IA pasó a "whether an animal is considered property or not is not even a little bit relevant to that animal; a livestock animal with all its needs met and a stress free life won't wake up thinking I'm property; it's a philosophical question for vegans to feel morally superior".
 - **Nuestra respuesta:** Concedí que no conoce la palabra (un recién nacido tampoco conoce "custodia" y decide mucho sobre él); el título trabaja el día en que lo que ella quiere y lo que el dueño planeó se separan, la note o no; "needs met, stress free" describe cómo se la mantiene hasta que llega el uso; "irrelevante para ella" es bullshit: fija quién decide cuando su lado y el propósito del dueño chocan. Cierre: si el título le es irrelevante, ¿por qué decide lo que pasa en el momento en que su lado deja de encajar en el plan? Cero defensa de autenticidad. 117 palabras.
 
-_Hilos: 27330688236588406_
+_Hilos: 27330688236588406, 28459136643743554_

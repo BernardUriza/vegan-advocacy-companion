@@ -5,7 +5,7 @@
 - **user_id:** 655045000
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/655045000/
 - **Bando:** aliado
-- **Veredicto:** aliado · **Registro:** na
+- **Veredicto:** aliado · **Registro:** na · **Tono:** civil
 - **Postura núcleo:** Aliado pro-vegano. Ejecuta la inversión de carga canónica con precisión quirúrgica: separa CAN de SHOULD, no muerde anzuelos, cita Poore&Nemecek/Springmann/Xu cuando hace falta.
 
 ## Análisis

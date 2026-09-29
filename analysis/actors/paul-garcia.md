@@ -5,7 +5,7 @@
 - **user_id:** 813709465
 - **Perfil:** https://www.facebook.com/profile.php?id=813709465
 - **Bando:** anti-vegan
-- **Veredicto:** persuadible · **Registro:** compasivo
+- **Veredicto:** persuadible · **Registro:** compasivo · **Tono:** civil
 - **Postura núcleo:** 'Plant-based' es marketing vacío; las proyecciones son press releases; sus 8 años vegano le arruinaron la salud.
 
 ## Análisis

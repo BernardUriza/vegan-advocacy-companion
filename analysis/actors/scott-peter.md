@@ -5,7 +5,7 @@
 - **user_id:** 100004662660380
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/100004662660380/
 - **Bando:** ambiguo
-- **Veredicto:** audiencia · **Registro:** compasivo
+- **Veredicto:** audiencia · **Registro:** compasivo · **Tono:** civil
 - **Postura núcleo:** No argumenta él mismo; afirma que otros ya respondieron bien y que el problema es que Bernard no se explica. Veneer de buena fe ('me gusta que preguntes') sobre un dismissal.
 
 ## Análisis

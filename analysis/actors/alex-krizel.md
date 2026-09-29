@@ -5,7 +5,7 @@
 - **user_id:** 100089071227800
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/100089071227800/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** sarcastic
 - **Postura núcleo:** Naturalismo anatómico: el pH gástrico ~1.5 prueba que somos carroñeros, no herbívoros (diálogo de Sama Hoole, admite que probablemente es IA pero "the point remains").
 
 ## Análisis

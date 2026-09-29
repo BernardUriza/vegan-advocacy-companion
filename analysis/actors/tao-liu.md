@@ -5,7 +5,7 @@
 - **user_id:** 100002202037155
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100002202037155/
 - **Bando:** ambiguo
-- **Veredicto:** audiencia · **Registro:** wit
+- **Veredicto:** audiencia · **Registro:** wit · **Tono:** sarcastic
 - **Postura núcleo:** Vendor que lucra con veganos ("I make vegan foods, vegans make me rich"); no es anti-vegano ideologico, trollea low-effort y cuando le contestan deflecta acusando de IA en vez de argumentar.
 
 ## Análisis

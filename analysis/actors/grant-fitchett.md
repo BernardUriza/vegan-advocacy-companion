@@ -5,7 +5,7 @@
 - **user_id:** 100002066280343
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100002066280343/
 - **Bando:** anti-vegan
-- **Veredicto:** pozo_sin_fondo · **Registro:** no_enganchar
+- **Veredicto:** pozo_sin_fondo · **Registro:** no_enganchar · **Tono:** hostile
 - **Postura núcleo:** Humanos son omnívoros biológicos; 'animals are resources / here for us'; no necesita justificar comer carne, el vegano sí.
 
 ## Análisis

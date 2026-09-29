@@ -24,7 +24,8 @@
     "threads": [
       "27341517928804691",
       "27335635946059556",
-      "28500475619575577"
+      "28500475619575577",
+      "27405978672358616"
     ],
     "interactions": [
       {
@@ -133,15 +134,18 @@
       "presentismo",
       "conveniencia_como_justificacion"
     ],
-    "tone": "hostile_rhetorical",
-    "verdict": "sink_un_round",
+    "tone": "hostile",
+    "verdict": "pozo_sin_fondo",
     "register": "filo",
     "what_not_to_do": "NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop deaths (pantano cebado para eso). NO intentar demostrar que el veganismo causa daño-cero. NO perseguir el loop terminal: ENTRAR UNA SOLA VEZ por hilo (nombrar la evasion + devolver al hueso) y dejar que su reafirmacion vacia quede como ultima palabra visible. NO redactar un 2do/3er rebuttal en el mismo hilo — es sink, el lurker ya vio el patron.",
     "threads": [
       "27341517928804691",
       "27335635946059556",
       "27937793019177176",
-      "28046483408306158"
+      "28046483408306158",
+      "27375477042075446",
+      "27319402757682875",
+      "27051763587778150"
     ],
     "interactions": [
       {
@@ -304,7 +308,9 @@
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-28T14:55:15.443Z"
       }
-    ]
+    ],
+    "verdict_note": "sink_un_round",
+    "tone_note": "hostile_rhetorical"
   },
   {
     "user_id": "1037777423",
@@ -326,7 +332,9 @@
     "threads": [
       "27341517928804691",
       "27335635946059556",
-      "28500475619575577"
+      "28500475619575577",
+      "27051763587778150",
+      "27496390256650790"
     ],
     "interactions": [
       {
@@ -483,7 +491,7 @@
     ],
     "tone": "apathetic",
     "verdict": "pozo_sin_fondo",
-    "register": "ignorar",
+    "register": "no_enganchar",
     "what_not_to_do": "No perseguir. Gastar pólvora en alguien que no va a engancharse. Su frase ya quedó contestada indirectamente en las respuestas a CarolAnn/Julia.",
     "threads": [
       "27341517928804691"
@@ -494,18 +502,19 @@
     "user_id": "1549719792",
     "name": "Jeff Rockwell",
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/1549719792/",
-    "bando": "pro-vegan",
+    "bando": "aliado",
     "postura_nucleo": "El veganismo es la opción moral por defecto y la sostenible; el daño cero no existe pero el daño innecesario sí se evita.",
     "analisis": "El único aliado de Bernard en el hilo. Cubre el flanco ambiental/sistémico con data (biomasa, uso de tierra). Riesgo: data-dump sin estructura puede ser atacado por 'sin citar fuentes'. Coordinable: Bernard sostiene el frente ético/lógico, Jeff el ambiental/nutricional, sin pisarse.",
     "tactics": [],
     "tone": "civil",
     "verdict": "aliado",
-    "register": "any",
+    "register": "na",
     "what_not_to_do": "No duplicar su data. Construir encima. No responderle a él directamente — dividir trabajo sin pisarse.",
     "threads": [
       "27341517928804691"
     ],
-    "interactions": []
+    "interactions": [],
+    "register_note": "any"
   },
   {
     "user_id": "669260908",
@@ -518,7 +527,7 @@
       "relativismo_moral",
       "libertarian_autonomy"
     ],
-    "tone": "calm",
+    "tone": "civil",
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No escribir un ensayo de metaética. Una observación incisiva (él mismo tiene líneas que no cruza aunque 'la moral es subjetiva') y salir. Bajo retorno.",
@@ -537,7 +546,8 @@
         "framework": "no-es-opcion-de-vida",
         "outcome_note": "no-es-opcion-de-vida: tras separar dano inevitable de evitable, Steve no respondio; ancla ~11d."
       }
-    ]
+    ],
+    "tone_note": "calm"
   },
   {
     "user_id": "100000050072653",
@@ -557,7 +567,11 @@
     "register": "filo",
     "what_not_to_do": "No entrar en body-count de crop deaths. La distinción es intención y necesidad, no cantidad. En 'exterminar razas': el mundo que transiciona no extermina, deja de criar.",
     "threads": [
-      "27341517928804691"
+      "27341517928804691",
+      "27375477042075446",
+      "27405978672358616",
+      "27468645086091974",
+      "27330688236588406"
     ],
     "interactions": [
       {
@@ -637,12 +651,13 @@
       "futility_no_clean_option",
       "relativismo_moral"
     ],
-    "tone": "disdainful",
+    "tone": "dismissive",
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "NO entrar a competencia de body-count ni disputar que las crop-deaths ocurren. Conceder el dato, devolver al rol-del-dano (subproducto incidental vs muerte intencional como proposito) y al hecho de que comer animales SUMA crop-deaths (70%+ del cultivo los alimenta). No responder al insulto en su registro.",
     "threads": [
-      "27341517928804691"
+      "27341517928804691",
+      "28459136643743554"
     ],
     "interactions": [
       {
@@ -674,7 +689,8 @@
         "draft_sha": "d612058f86bbaed7",
         "outcome": "pending"
       }
-    ]
+    ],
+    "tone_note": "disdainful"
   },
   {
     "user_id": "1277660735",
@@ -887,7 +903,12 @@
     "threads": [
       "27335635946059556",
       "27363745576581926",
-      "28500475619575577"
+      "28500475619575577",
+      "27375477042075446",
+      "27395909046698912",
+      "27405978672358616",
+      "27496390256650790",
+      "28615704478052690"
     ],
     "interactions": [
       {
@@ -1139,7 +1160,8 @@
       "march-property",
       "27319402757682875",
       "28459136643743554",
-      "28604913169131821"
+      "28604913169131821",
+      "27468645086091974"
     ],
     "interactions": [
       {
@@ -1523,7 +1545,10 @@
       "27375477042075446",
       "27937793019177176",
       "28604913169131821",
-      "28150669567887541"
+      "28150669567887541",
+      "27405978672358616",
+      "27468645086091974",
+      "4587084521560658"
     ],
     "interactions": [
       {
@@ -2155,7 +2180,11 @@
     "threads": [
       "27395909046698912",
       "27405978672358616",
-      "27937793019177176"
+      "27937793019177176",
+      "27330688236588406",
+      "27468645086091974",
+      "27051763587778150",
+      "27496390256650790"
     ],
     "interactions": [
       {
@@ -2348,9 +2377,9 @@
     "bando": "anti-vegan",
     "postura_nucleo": "Crop deaths = hipocresia vegana; el veganismo es un culto. Pero opera como troll: insulto por deporte, no argumento.",
     "analisis": "Troll puro. Abre con crop_deaths_flip (vegetable farming kills animals -> cowardly cultists, HahaReply, Laughable/Pathetic) y al nombrarsele la distincion accidental/deliberate escala a insulto en chino (偽善雜種 = bastardo hipocrita), copy-pasteando la MISMA linea de insulto a varios (a Bernard y a Teddy). Aparte posteo una provocacion misogina grotesca (engineer a brainless animal that consists of nothing but a vagina). No busca debate, busca herir. Un aliado pro-vegan (Teddy Spirrel) ya lo expone publicamente.",
-    "tone": "hostil",
-    "verdict": "pozo sin fondo",
-    "register": "ninguno",
+    "tone": "hostile",
+    "verdict": "pozo_sin_fondo",
+    "register": "no_enganchar",
     "what_not_to_do": "NO enganchar — troll puro. No responder insulto con insulto, no dignificar la provocacion misogina. Mi punto algo-a-alguien ya aterrizo (accidental != deliberate breeding) y el respondio con insulto = derrota silenciosa ante el lurker, y Teddy ya lo expone. Maximo aceptable: UNA linea que nombre que cambio a insulto en cuanto se nombro la distincion, y salir. O silencio."
   },
   {
@@ -2433,7 +2462,9 @@
       "demanda_objetividad_moral"
     ],
     "threads": [
-      "27468645086091974"
+      "27468645086091974",
+      "27496390256650790",
+      "28615704478052690"
     ],
     "interactions": [
       {
@@ -2827,7 +2858,8 @@
       "peticion_de_principio"
     ],
     "threads": [
-      "27330688236588406"
+      "27330688236588406",
+      "4587084521560658"
     ],
     "interactions": [
       {
@@ -2932,7 +2964,7 @@
     "bando": "anti-vegan",
     "postura_nucleo": "Los granjeros no son DUEÑOS, son \"stewards\" que manejan livestock/recursos naturales; los animales sienten dolor/miedo/curiosidad pero no tienen sentido de sí ni concepto de la muerte, así que no tienen interés en vivir — es solo como funciona el mundo.",
     "analisis": "Mala fe con paragraph sustancial. Relabela la propiedad como \"stewardship\" (principio_escudo) y su propia definición de diccionario mete al animal junto con \"land, water and natural resources\" y \"product\" — es decir, ADMITE los marcadores de alguien (pain, fear, curiosity, basic emotions) y los archiva como ALGO/recurso. Niega la subjetividad por un criterio (no concept of death -> no interest) que es species_hierarchy. Cierra con naturalismo (\"the way the world works before/after humans\"). Capa de burla: \"cheap thrills\", \"get a dictionary\", y se mofa de la DIGNIDAD de Bernard mientras se la roba al sujeto al llamarlo recurso. El target del replylink es su réplica burlona a Philip (\"paying with his dignity\").",
-    "tone": "sarcastico",
+    "tone": "sarcastic",
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No morder el insulto de la dignidad — UNA línea de contraste de temperamento y al hueso. No debatir el diccionario/semántica de \"steward\" ni hacer data-dump propio. No conceder daño/welfare (eje es propiedad/esclavitud, no harm). Voltear su PROPIA evidencia: admitió dolor/miedo/curiosidad (someone) y lo archivó como livestock/recurso (something) — ahí está el robo de dignidad. No pelear si entienden la muerte: no se necesita el concepto de muerte para ser alguien (species_hierarchy = criterio que no traza la línea)."
@@ -2972,7 +3004,9 @@
     "tactics": [
       "abolition_reductio"
     ],
-    "threads": [],
+    "threads": [
+      "27330688236588406"
+    ],
     "interactions": [
       {
         "thread_id": "27330688236588406",
@@ -3001,16 +3035,20 @@
     "postura_nucleo": "Property-is-normal via mascotas: \"What makes it not ok for my child to own goldfish?\" — reto de consistencia/reductio al eje de propiedad usando una mascota.",
     "analisis": "27330 (post propio de Bernard, eje propiedad): comment raiz de una linea, limpio y sin insulto. Corre un reductio: si poseer un sujeto sintiente esta mal, entonces el pez dorado del hijo tambien -> intenta mostrar que el eje de propiedad prueba demasiado. Tono civil; podria ser buena fe / probe genuino. La respuesta abolicionista NO esquiva: muerde la bala (idealmente tampoco propiedad), y devuelve al eje someone-vs-something + lo que distingue la granja es criar-para-matar, no el cariño.",
     "tone": "civil",
-    "verdict": "audiencia / posible buena fe — reductio limpio, persuadible si se le contesta de frente sin esquivar",
-    "register": "buena fe a probar (de frente, muerde la bala con honestidad)",
+    "verdict": "audiencia",
+    "register": "compasivo",
     "what_not_to_do": "NO esquivar el goldfish ni decir mascotas son distintas por cariño; muerde la bala (un sujeto no deberia ser propiedad de nadie) y aterriza el eje en que la granja ADEMAS cria-y-mata. NO welfarista.",
-    "profile_url": "https://www.facebook.com/profile.php?id=904005715"
+    "profile_url": "https://www.facebook.com/profile.php?id=904005715",
+    "verdict_note": "audiencia / posible buena fe — reductio limpio, persuadible si se le contesta de frente sin esquivar",
+    "register_note": "buena fe a probar (de frente, muerde la bala con honestidad)"
   },
   {
     "tactics": [
       "domestication_mutualism"
     ],
-    "threads": [],
+    "threads": [
+      "27330688236588406"
+    ],
     "interactions": [
       {
         "thread_id": "27330688236588406",
@@ -3038,11 +3076,14 @@
     "bando": "anti-vegan",
     "postura_nucleo": "Domesticacion-como-mutualismo: \"Symbiotic relationships\" — la granja es una relacion simbiotica/mutualista, no propiedad.",
     "analisis": "27330: comment raiz de dos palabras (\"Symbiotic relationships.\"). Claim de domestication_mutualism: enmarca cria/granja como beneficio mutuo. Low-effort framing pero educa al lurker si se expone el error biologico: la simbiosis es beneficio mutuo, no criar-a-un-individuo-para-matarlo; una parte termina muerta. No es mutualismo, es propiedad.",
-    "tone": "dismissive/terse",
-    "verdict": "audiencia — framing de baja inversion; el rebuttal corto gana al lurker",
-    "register": "filo ligero (exponer el error del termino)",
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "filo",
     "what_not_to_do": "NO conceder \"simbiosis\"; exponer que criar-para-matar no es beneficio mutuo. NO welfarista (no \"sufren menos\"); el eje es que un sujeto es poseido y matado, no mutualidad.",
-    "profile_url": "https://www.facebook.com/profile.php?id=1448957098"
+    "profile_url": "https://www.facebook.com/profile.php?id=1448957098",
+    "verdict_note": "audiencia — framing de baja inversion; el rebuttal corto gana al lurker",
+    "register_note": "filo ligero (exponer el error del termino)",
+    "tone_note": "dismissive/terse"
   },
   {
     "tactics": [
@@ -3142,7 +3183,8 @@
       "insulto_ad_hominem"
     ],
     "threads": [
-      "27330688236588406"
+      "27330688236588406",
+      "28459136643743554"
     ],
     "interactions": [
       {
@@ -3189,7 +3231,7 @@
     "postura_nucleo": "Sello-insulto ai_accusation: youre pretending to be worried about animals and using ai? — intenta cerrar el intercambio para el lurker via la acusacion de IA.",
     "analisis": "No es argumento, es un sello para el lurker (insult-seal): la acusacion de IA cubre la falta de contra-argumento e intenta archivar el intercambio. Se contesta SOLO porque intenta cerrar; movimiento canonico = etiqueta-no-argumento + nombra el error, corto. Que una herramienta ayude a redactar no toca si un cerdo es alguien.",
     "tone": "dismissive",
-    "verdict": "pozo sin fondo",
+    "verdict": "pozo_sin_fondo",
     "register": "filo",
     "what_not_to_do": "NO sonar herido; NO insultar de vuelta; NO entrar a discutir IA (seria aceptar el cambio de tema); corto, devolver al hueso."
   },
@@ -3295,16 +3337,14 @@
     ],
     "user_id": "100094637395621",
     "name": "Marcus Yelvington",
-    "stance": "anti-vegan",
-    "disposition": "buena_fe",
     "verdict": "persuadible",
-    "core_position": "Concede que el abuso animal esta mal; reencuadra el desacuerdo a que-hacer-al-respecto (policy), no al estatus.",
     "bando": "anti-vegan",
     "register": "compasivo",
-    "tone": "buena fe / civil",
+    "tone": "civil",
     "postura_nucleo": "Concede que el abuso animal esta mal; reencuadra el desacuerdo a que-hacer-al-respecto (policy), no al estatus de propiedad.",
     "analisis": "Actor nuevo (post 27330), buena fe. Abre concediendo el common ground y desplazando a politica. Persuadible: el reframe es honesto, no hostil. El oro vive en la buena fe (moat).",
-    "what_not_to_do": "No acusarlo; no aceptar el reencuadre a policy como el desacuerdo real; no eje bienestarista; no abrir con su nombre."
+    "what_not_to_do": "No acusarlo; no aceptar el reencuadre a policy como el desacuerdo real; no eje bienestarista; no abrir con su nombre.",
+    "tone_note": "buena fe / civil"
   },
   {
     "tactics": [
@@ -3430,13 +3470,16 @@
     "user_id": "1742478160",
     "name": "Philip Wheeldon",
     "profile_url": "https://www.facebook.com/groups/683615698352965/user/1742478160/",
-    "bando": "anti-vegan (CONFIRMADO 2026-09-19 ~15:40 en el hilo de Matt Terrain: llama 'liar' y 'nutter' a Barbara, sostiene que el goal de la ganadería es producir comida, y estira la definición de exploitation para que los crop deaths cuenten como exploitación de animales salvajes → tu-quoque contra el vegano. La lectura de Insult como purista abolicionista quedó refutada por su propio turno siguiente.)",
+    "bando": "anti-vegan",
     "postura_nucleo": "La cláusula possible-and-practicable no es coartada: quien la invoca para seguir explotando es tan moral como quien dice que no puede dejar de abusar niños. La intención no distingue el campo de la granja.",
     "analisis": "Sofista dialéctico, civil, sin insulto (2026-09-19). Corrige a otros veganos en comentarios ajenos — el arquetipo del purista que flanquea por la izquierda. Pega el MISMO texto (child abuse) como raíz en posts distintos. En el post del relativismo de Bernard NO ataca el post: hace piling-on por encima, y el efecto retórico es regalarle al carnista arrinconado un debate intramural (\"ni ustedes se ponen de acuerdo\"). Su comentario ya tiene 1 like = posición pública comprometida (no lo va a borrar). Estrategia decidida por Bernard: PACIENCIA — dejar que el post acumule lurkers; la no-respuesta inicial ya es texto (el OP no muerde drama interno). Cuando se conteste: corto, cortés, reconociendo el punto (Francione, sí) y distinguiendo lo evitable de lo estructuralmente inescapable; la crítica válida es a quien usa la cláusula como coartada, no al concepto. El contraste (racional vs purista que se golpea el pecho) es el premio. En el hilo de Matt Terrain se le concedió el punto de intención y se movió el eje a estatus — alineado con él si es purista.",
-    "tone": "civil_sophist_then_insults",
-    "verdict": "sofista de crop-deaths; insulta a terceros cuando lo acorralan; probable sink tras 2 rounds | 2026-09-19 r3: pegó el MISMO párrafo (exploitation sin propiedad + crop deaths + \"enjoy ya jail sentence\") en dos hilos; cuarta estación con espejo de la pregunta del título. Sink confirmado: un round más en el post propio, silencio en el de Matt.",
+    "tone": "hostile",
+    "verdict": "pozo_sin_fondo",
     "register": "filo",
-    "what_not_to_do": "NO abrir debate intramural en el post propio (regala la salida al carnista). NO responder rápido — paciencia. NO litigar la definición de veganismo. NO tratarlo como carnista (el draft del 19-sep que lo hacía se RETIRÓ sin postear). NO purismo de vuelta ni golpearse el pecho. El desarrollo largo va a un post propio sobre la cláusula, otro día. ROUND 2 (hilo de Matt): NO aceptar la atribución 'you find wild animals dying acceptable' — nadie dijo eso; verificar contra el arco y devolverla. NO competir en body-count de crop deaths. NO pelear su definición de exploitation — tomarla en serio y mostrar que describe la granja en su forma más pura (el animal ES la ganancia)."
+    "what_not_to_do": "NO abrir debate intramural en el post propio (regala la salida al carnista). NO responder rápido — paciencia. NO litigar la definición de veganismo. NO tratarlo como carnista (el draft del 19-sep que lo hacía se RETIRÓ sin postear). NO purismo de vuelta ni golpearse el pecho. El desarrollo largo va a un post propio sobre la cláusula, otro día. ROUND 2 (hilo de Matt): NO aceptar la atribución 'you find wild animals dying acceptable' — nadie dijo eso; verificar contra el arco y devolverla. NO competir en body-count de crop deaths. NO pelear su definición de exploitation — tomarla en serio y mostrar que describe la granja en su forma más pura (el animal ES la ganancia).",
+    "bando_note": "anti-vegan (CONFIRMADO 2026-09-19 ~15:40 en el hilo de Matt Terrain: llama 'liar' y 'nutter' a Barbara, sostiene que el goal de la ganadería es producir comida, y estira la definición de exploitation para que los crop deaths cuenten como exploitación de animales salvajes → tu-quoque contra el vegano. La lectura de Insult como purista abolicionista quedó refutada por su propio turno siguiente.)",
+    "verdict_note": "sofista de crop-deaths; insulta a terceros cuando lo acorralan; probable sink tras 2 rounds | 2026-09-19 r3: pegó el MISMO párrafo (exploitation sin propiedad + crop deaths + \"enjoy ya jail sentence\") en dos hilos; cuarta estación con espejo de la pregunta del título. Sink confirmado: un round más en el post propio, silencio en el de Matt.",
+    "tone_note": "civil_sophist_then_insults"
   },
   {
     "tactics": [
@@ -3491,7 +3534,9 @@
       "apelacion_normal",
       "species_hierarchy"
     ],
-    "threads": [],
+    "threads": [
+      "28354739720849914"
+    ],
     "interactions": [
       {
         "thread_id": "28354739720849914",
@@ -3812,10 +3857,11 @@
     "bando": "anti-vegan",
     "postura_nucleo": "Los veganos también matan y destruyen el ambiente; los animales se crían en masa porque los que comen carne necesitan comer, y no hay nada que hacer al respecto.",
     "analisis": "2026-09-27 (VS Meat Eaters): autor del post de Steve Irwin (200 reacciones, 441 comentarios, meme de página Carnivore). Bajo el comentario top de Everette Dl (81r) tiró el crop_deaths_flip (17r) y, a Elaine, confesó el fundamento del título: se crían en masa porque los que comen carne necesitan comer, no te gusta, no hay nada que hagas. Insulta (retard vegan, stfu) y en otro hilo sostiene una guerra de pedophile sympathizer con John Bob. Veredicto: pozo, pero su confesión de poder es munición limpia para el lurker bajo el hilo con más tráfico del día.",
-    "tone": "hostile_rhetorical",
+    "tone": "hostile",
     "verdict": "pozo_sin_fondo",
     "register": "filo",
-    "what_not_to_do": "No body-count ni porcentajes (Ocin y Elaine ya perdieron ahí). No morder el insulto. Una sola vuelta: conceder las muertes del campo, nombrar que él mismo puso la razón del título en el poder (aint shit you can do), devolver la pregunta y salir."
+    "what_not_to_do": "No body-count ni porcentajes (Ocin y Elaine ya perdieron ahí). No morder el insulto. Una sola vuelta: conceder las muertes del campo, nombrar que él mismo puso la razón del título en el poder (aint shit you can do), devolver la pregunta y salir.",
+    "tone_note": "hostile_rhetorical"
   },
   {
     "tactics": [

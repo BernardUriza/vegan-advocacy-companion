@@ -5,7 +5,7 @@
 - **user_id:** 100044887491107
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/100044887491107/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** dismissive
 - **Postura núcleo:** Niega el estatus de alguien con desden: animals are not a someone, long winded question answered (la negacion como cierre, no como argumento).
 
 ## Análisis

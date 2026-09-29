@@ -5,7 +5,7 @@
 - **user_id:** 832080524
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/832080524/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** Acepta que los animales son individuos pero "no en el mismo sentido que los humanos"; el uso humano no es esclavitud sino cuidado (vet bills/refugio) y la matanza occidental es menos cruel que la depredacion salvaje.
 
 ## Análisis

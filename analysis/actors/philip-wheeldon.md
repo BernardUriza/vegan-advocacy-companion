@@ -4,8 +4,11 @@
 
 - **user_id:** 1742478160
 - **Perfil:** https://www.facebook.com/groups/683615698352965/user/1742478160/
-- **Bando:** anti-vegan (CONFIRMADO 2026-09-19 ~15:40 en el hilo de Matt Terrain: llama 'liar' y 'nutter' a Barbara, sostiene que el goal de la ganadería es producir comida, y estira la definición de exploitation para que los crop deaths cuenten como exploitación de animales salvajes → tu-quoque contra el vegano. La lectura de Insult como purista abolicionista quedó refutada por su propio turno siguiente.)
-- **Veredicto:** sofista de crop-deaths; insulta a terceros cuando lo acorralan; probable sink tras 2 rounds | 2026-09-19 r3: pegó el MISMO párrafo (exploitation sin propiedad + crop deaths + "enjoy ya jail sentence") en dos hilos; cuarta estación con espejo de la pregunta del título. Sink confirmado: un round más en el post propio, silencio en el de Matt. · **Registro:** filo
+- **Bando:** anti-vegan
+- **Veredicto:** pozo_sin_fondo · **Registro:** filo · **Tono:** hostile
+  - _Bando, matiz:_ anti-vegan (CONFIRMADO 2026-09-19 ~15:40 en el hilo de Matt Terrain: llama 'liar' y 'nutter' a Barbara, sostiene que el goal de la ganadería es producir comida, y estira la definición de exploitation para que los crop deaths cuenten como exploitación de animales salvajes → tu-quoque contra el vegano. La lectura de Insult como purista abolicionista quedó refutada por su propio turno siguiente.)
+  - _Veredicto, matiz:_ sofista de crop-deaths; insulta a terceros cuando lo acorralan; probable sink tras 2 rounds | 2026-09-19 r3: pegó el MISMO párrafo (exploitation sin propiedad + crop deaths + "enjoy ya jail sentence") en dos hilos; cuarta estación con espejo de la pregunta del título. Sink confirmado: un round más en el post propio, silencio en el de Matt.
+  - _Tono, matiz:_ civil_sophist_then_insults
 - **Postura núcleo:** La cláusula possible-and-practicable no es coartada: quien la invoca para seguir explotando es tan moral como quien dice que no puede dejar de abusar niños. La intención no distingue el campo de la granja.
 
 ## Análisis

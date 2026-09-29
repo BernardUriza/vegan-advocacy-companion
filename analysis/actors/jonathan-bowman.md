@@ -5,7 +5,7 @@
 - **user_id:** 61563003837147
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/61563003837147/
 - **Bando:** anti-vegan
-- **Veredicto:** persuadible · **Registro:** compasivo
+- **Veredicto:** persuadible · **Registro:** compasivo · **Tono:** civil
 - **Postura núcleo:** 'Hay evidencia factual que apoya comer carne; nunca he oído un argumento valioso de por qué está mal; estoy listo para escuchar pero solo oigo información falsa.'
 
 ## Análisis

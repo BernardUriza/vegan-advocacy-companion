@@ -5,7 +5,7 @@
 - **user_id:** 100003886247108
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100003886247108/
 - **Bando:** anti-vegan
-- **Veredicto:** pozo_sin_fondo · **Registro:** filo
+- **Veredicto:** pozo_sin_fondo · **Registro:** filo · **Tono:** hostile
 - **Postura núcleo:** Regenerative farming / pastured animals = menos muerte. Mismo crop-deaths-flip que Yolanda pero hostil ('Blinkered Triggered Vegan').
 
 ## Análisis

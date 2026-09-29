@@ -5,7 +5,7 @@
 - **user_id:** 100003979186761
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/100003979186761/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** Domesticacion como mutualismo / 'win-win entre especies': hace ~10,000 anos humanos y ciertos animales llegaron a un arreglo donde los animales 'felizmente se quedan' a ser alimentados y cuidados — mas confiable que cazar, beneficioso para ambas especies.
 
 ## Análisis

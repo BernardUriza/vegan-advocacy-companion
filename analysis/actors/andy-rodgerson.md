@@ -5,7 +5,7 @@
 - **user_id:** 604363060
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/604363060/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** We decided, movido por economia (herbivoros mas faciles/baratos de criar); rabbits as food/pests; las decisiones no son arbitrarias sino economicas.
 
 ## Análisis

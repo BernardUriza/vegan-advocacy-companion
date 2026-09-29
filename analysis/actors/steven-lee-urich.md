@@ -5,7 +5,7 @@
 - **user_id:** 854405343
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/854405343/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** El estatus moral va con 'la capacidad de tener una experiencia metafisica', NO con la sintiencia. Voltea los casos marginales contra la sintiencia: 'si las morales se basaran en sentir, seria moralmente bueno matar y comer a un humano cerebro-muerto (que carece de sintiencia)'.
 
 ## Análisis

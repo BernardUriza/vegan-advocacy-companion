@@ -4,7 +4,8 @@
 
 - **user_id:** 100094637395621
 - **Bando:** anti-vegan
-- **Veredicto:** persuadible · **Registro:** compasivo
+- **Veredicto:** persuadible · **Registro:** compasivo · **Tono:** civil
+  - _Tono, matiz:_ buena fe / civil
 - **Postura núcleo:** Concede que el abuso animal esta mal; reencuadra el desacuerdo a que-hacer-al-respecto (policy), no al estatus de propiedad.
 
 ## Análisis

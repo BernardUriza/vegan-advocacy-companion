@@ -5,7 +5,7 @@
 - **user_id:** 1350950105
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/1350950105/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** compasivo
+- **Veredicto:** audiencia · **Registro:** compasivo · **Tono:** civil
 - **Postura núcleo:** Husbandry/stewardship como alto moral: cuidar bien y optimizar el peso del animal es superior a cazar; se siente bien sobre el bienestar Y sobre proveer con minimo esfuerzo/maximo beneficio.
 
 ## Análisis

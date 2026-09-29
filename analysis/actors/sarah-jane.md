@@ -5,7 +5,7 @@
 - **user_id:** 618672476
 - **Perfil:** https://www.facebook.com/groups/683615698352965/user/618672476/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** compasivo
+- **Veredicto:** audiencia · **Registro:** compasivo · **Tono:** dismissive
 - **Postura núcleo:** Casi nadie cambia de opinión por este grupo: lo que postean los veganos es desinformación que insulta a los omnívoros y produce el efecto contrario.
 
 ## Análisis

@@ -5,7 +5,7 @@
 - **user_id:** 61581270521234
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/61581270521234/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** El más SOFISTICADO del hilo. 'La pregunta asume que las alternativas son equivalentes'; 'mi principio: humanos pueden usar animales si se minimiza el sufrimiento innecesario'; 'usar animales no es objetivamente malo, es una creencia moral, no un hecho'.
 
 ## Análisis
@@ -234,4 +234,4 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Réplica (Open Debates 3, post de sintiencia): tono-policing ("increasingly worked up") + "human rights are a human invention... Rights aren't an individual intelligence test" + no hay que dar protecciones equivalentes a toda especie + relativismo cultural (perro/comida) + "where is YOUR argument".
 - **Nuestra respuesta:** "Rights aren't an intelligence test" es el post entero en sus palabras: los rasgos nunca fueron la línea. "Human invention" dice quién tiene la pluma, no por qué la línea deja fuera al cerdo. Él pelea contra "identical protections"; yo afirmo menos: alguien con lado propio bajo el uso de otro necesita razón. Cierre: si la invención humana es el fundamento, ¿qué hace a la especie que escribió el marco la autorizada a usar a todos los demás?
 
-_Hilos: 27363745576581926, 27375477042075446, 27937793019177176, 28604913169131821, 28150669567887541_
+_Hilos: 27363745576581926, 27375477042075446, 27937793019177176, 28604913169131821, 28150669567887541, 27405978672358616, 27468645086091974, 4587084521560658_

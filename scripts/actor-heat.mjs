@@ -1,4 +1,4 @@
-import { readActors } from './db.mjs';
+import { readActors, readVocab } from './db.mjs';
 
 // actor-heat — score de "heat" por actor para priorizar el lote (etapa-1/2).
 // Pura lectura de actors.json: combina freshness (interacción más reciente),
@@ -7,31 +7,11 @@ import { readActors } from './db.mjs';
 
 const HALF_LIFE_DAYS = 14; // freshness se reduce a la mitad cada 14 días
 
-// leverage: a quién mover el dial educa a más lurkers
-const LEVERAGE = {
-  audiencia: 1.0,        // se debate ante galería — máxima palanca sobre el lurker
-  persuadible: 0.85,     // mover a esta persona es la conversión real
-  aliado: 0.45,          // refuerza, no convierte
-  pozo_sin_fondo: 0.25,  // no se mueve; solo vale por el lurker
-  troll_no_enganchar: 0.05,
-};
-
-// persuadibilidad por registro de respuesta
-const REGISTER_PERSUADE = {
-  compasivo: 1.0,        // herida/buena fe → mueve
-  filo: 0.7,             // mala fe/escudo → educa al lurker, no convierte al rival
-  wit: 0.6,
-  any: 0.5,
-  na: 0.3,
-  ignorar: 0.1,
-  no_enganchar: 0.1,
-};
-
-const BANDO_PERSUADE = {
-  ambiguo: 1.0,          // sin postura fija → el más movible
-  'anti-vegan': 0.6,
-  'pro-vegan': 0.4,
-  aliado: 0.4,
+const vocab = readVocab();
+const weight = (field, value) => {
+  const w = vocab[field]?.[value]?.heat;
+  if (w === undefined) throw new Error(`${field}="${value}" has no heat in data/vocab.json`);
+  return w;
 };
 
 const NOW = Date.now();
@@ -56,8 +36,8 @@ function freshnessScore(actor) {
 
 function heatFor(actor) {
   const { score: fresh, ageDays } = freshnessScore(actor);
-  const leverage = LEVERAGE[actor.verdict] ?? 0.3;
-  const persuade = (REGISTER_PERSUADE[actor.register] ?? 0.4) * (BANDO_PERSUADE[actor.bando] ?? 0.5);
+  const leverage = weight('verdict', actor.verdict);
+  const persuade = weight('register', actor.register) * weight('bando', actor.bando);
   // freshness pondera el conjunto: un actor sin interacciones aún tiene un piso
   // bajo (no es deuda viva), pero leverage*persuade lo deja en el ranking.
   const heat = (0.2 + 0.8 * fresh) * leverage * persuade;

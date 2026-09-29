@@ -5,7 +5,7 @@
 - **user_id:** 100011355404997
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100011355404997/
 - **Bando:** anti-vegan
-- **Veredicto:** pozo_sin_fondo · **Registro:** filo
+- **Veredicto:** pozo_sin_fondo · **Registro:** filo · **Tono:** hostile
 - **Postura núcleo:** El veganismo es una minoría irrelevante de idiotas; Beyond Meat colapsó; vivimos en el presente, no en 2035.
 
 ## Análisis
@@ -185,4 +185,4 @@ No responder al insulto en su nivel. No defender a Beyond Meat específicamente.
 - **Su jugada:** Raíz bajo el post their-own-words: None of those traits are relevant... Species is... Humans > non humans.
 - **Nuestra respuesta:** Filo profano: "Species is" confirma el post (los rasgos se sueltan cuando estorban); humans > non humans es un ranking sin razón: rasgo trae de vuelta al recién nacido, pertenencia es "porque somos nosotros". Cierre: qué significa el ">" más allá de quién tiene el título.
 
-_Hilos: 27335635946059556, 27363745576581926, 28500475619575577_
+_Hilos: 27335635946059556, 27363745576581926, 28500475619575577, 27375477042075446, 27395909046698912, 27405978672358616, 27496390256650790, 28615704478052690_

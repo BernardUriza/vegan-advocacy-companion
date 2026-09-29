@@ -5,7 +5,8 @@
 - **user_id:** 100000650843692
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100000650843692/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** dismissive
+  - _Tono, matiz:_ disdainful
 - **Postura núcleo:** La domesticacion es mutualismo natural; el veganismo es neurosis ecocida que mata mas animales via monocultivo que la ganaderia.
 
 ## Análisis
@@ -98,4 +99,4 @@ NO entrar a competencia de body-count ni disputar que las crop-deaths ocurren. C
 - **Su jugada:** Raíz (VEGANnoyance, post de sintiencia, 5h): perros = lobos adaptados, dueño responsable; "Veganism is misanthropic carnophobia with delusions of virtue, and incipient totalitarianism. It proposes a feral future full of wild dogs and hogs, unowned and out of control. Just say no." — propiedad_como_proteccion + sello + abolition_reductio (feral future).
 - **Nuestra respuesta:** Concedí lo del perro entero y separé estar-a-cargo de poseer (la responsabilidad dice quién responde; el título necesita su propia razón); una línea al sello (totalitarismo por una pregunta en FB, nadie viene por tu perro); desmonté el feral future por construcción (nadie abre rejas; sin cría para venta nacen menos cerdos, no aparece la manada) y lo volteé: el cerdo real es lo opuesto a su pesadilla, owned, fenced, scheduled. Cierre con sus palabras: ¿qué hace de owned and under control la condición legítima para alguien que se asusta como tu perro? 183 palabras.
 
-_Hilos: 27341517928804691_
+_Hilos: 27341517928804691, 28459136643743554_

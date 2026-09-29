@@ -5,7 +5,8 @@
 - **user_id:** 669260908
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/669260908/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
+  - _Tono, matiz:_ calm
 - **Postura núcleo:** La moral es subjetiva; vive y deja vivir; no me dictes qué comer.
 
 ## Análisis

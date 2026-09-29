@@ -5,7 +5,7 @@
 - **user_id:** 61580416850698
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/61580416850698/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** low_effort
 - **Postura núcleo:** Antes pile-on de dos palabras; 2026-09-27 trae argumento propio: crop_deaths_flip con la misma especie (feral pigs vs bacon pig, "both are pigs").
 
 ## Análisis

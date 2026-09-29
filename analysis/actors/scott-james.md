@@ -5,7 +5,7 @@
 - **user_id:** 100000050072653
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100000050072653/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** sarcastic
 - **Postura núcleo:** Ir vegano es el verdadero daño: mata 'bystanders' (cultivos) por lucro y exterminaría las razas domésticas.
 
 ## Análisis
@@ -72,4 +72,4 @@ No entrar en body-count de crop deaths. La distinción es intención y necesidad
 - **Su jugada:** Tu-quoque de propiedad: you get owned every time you tap nonsense on your phone (dos sentidos de owned).
 - **Nuestra respuesta:** Separe los dos sentidos: el coloquial (una app captura tu atencion, te pone bajo terminos) conserva tu standing como persona -no eres activo transferible, no te crian/venden/matan-; el cerdo esta bajo titulo LITERAL (criado, gestionado, dispuesto como recurso). La metafora no toca la institucion. Cierre: que justifica el titulo literal sobre alguien con punto de vista.
 
-_Hilos: 27341517928804691_
+_Hilos: 27341517928804691, 27375477042075446, 27405978672358616, 27468645086091974, 27330688236588406_

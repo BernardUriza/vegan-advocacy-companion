@@ -5,7 +5,9 @@
 - **user_id:** 904005715
 - **Perfil:** https://www.facebook.com/profile.php?id=904005715
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia / posible buena fe — reductio limpio, persuadible si se le contesta de frente sin esquivar · **Registro:** buena fe a probar (de frente, muerde la bala con honestidad)
+- **Veredicto:** audiencia · **Registro:** compasivo · **Tono:** civil
+  - _Veredicto, matiz:_ audiencia / posible buena fe — reductio limpio, persuadible si se le contesta de frente sin esquivar
+  - _Registro, matiz:_ buena fe a probar (de frente, muerde la bala con honestidad)
 - **Postura núcleo:** Property-is-normal via mascotas: "What makes it not ok for my child to own goldfish?" — reto de consistencia/reductio al eje de propiedad usando una mascota.
 
 ## Análisis
@@ -40,4 +42,4 @@ NO esquivar el goldfish ni decir mascotas son distintas por cariño; muerde la b
 - **Su jugada:** Reductio de consistencia (buena fe): pet stores breeding goldfish for children to own — intenta sacar el debate a toda tenencia de mascotas
 - **Nuestra respuesta:** Mordi el reductio sin abrir el frente de mascotas: si es relevante y es la misma pregunta, mas chica; chico/nino/afecto no disuelven el titulo. Funde en el sujeto consciente con punto de vista; no exencion para pets, no le digo a nadie que suelte su pez; el titulo de propiedad sobre un someone es el mismo en pet shop y en granja.
 
-_Hilos: —_
+_Hilos: 27330688236588406_

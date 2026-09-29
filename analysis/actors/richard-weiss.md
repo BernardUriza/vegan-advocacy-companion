@@ -5,7 +5,7 @@
 - **user_id:** 100021775394973
 - **Perfil:** https://www.facebook.com/groups/683615698352965/user/100021775394973/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** dismissive
 - **Postura núcleo:** Los veganos también matan (insectos envenenados); la ruta más amable es comer carne de rumiante.
 
 ## Análisis

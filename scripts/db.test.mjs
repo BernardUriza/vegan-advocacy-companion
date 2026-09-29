@@ -9,6 +9,8 @@ import {
   getFramework,
   getFrameworksByAuthor,
   getFrameworksByTactic,
+  readVocab,
+  vocabViolations,
 } from './db.mjs';
 
 const actors = readActors();
@@ -155,4 +157,29 @@ test('closeOutcome only touches a pending interaction', async (t) => {
   assert.equal(db.closeOutcome('u1', 't1', 'escalated'), null);
   assert.equal(db.closeOutcome('u1', 't2', 'escalated'), null);
   assert.deepEqual(read().map(i => i.outcome), ['conceded', 'silent', 'engaged', 'silent']);
+});
+
+test('every actor classification is inside data/vocab.json', () => {
+  const vocab = readVocab();
+  assert.deepEqual(actors.flatMap(a => vocabViolations(a, vocab)), []);
+});
+
+test('vocabViolations sends free text to the _note field instead of accepting it', () => {
+  const [violation] = vocabViolations({ name: 'X', verdict: 'audiencia / probablemente buena fe' });
+  assert.match(violation, /verdict_note/);
+  assert.deepEqual(vocabViolations({ name: 'X', verdict: 'audiencia', register: 'filo', bando: 'ambiguo', tone: 'civil' }), []);
+});
+
+test('every thread an actor has an interaction in is listed in threads[]', () => {
+  for (const a of actors) {
+    const threads = new Set(a.threads);
+    for (const i of a.interactions) assert.ok(threads.has(i.thread_id), `${a.name} missing thread ${i.thread_id}`);
+  }
+});
+
+test('every vocab value that feeds actor-heat carries a numeric heat', () => {
+  const vocab = readVocab();
+  for (const field of ['bando', 'verdict', 'register']) {
+    for (const [value, spec] of Object.entries(vocab[field])) assert.equal(typeof spec.heat, 'number', `${field}.${value}`);
+  }
 });

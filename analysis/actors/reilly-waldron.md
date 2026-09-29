@@ -5,7 +5,7 @@
 - **user_id:** 100000376804071
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100000376804071/
 - **Bando:** aliado
-- **Veredicto:** aliado · **Registro:** na
+- **Veredicto:** aliado · **Registro:** na · **Tono:** civil
 - **Postura núcleo:** Aliado pro-vegano. Argumento moral fuerte ('possible, not necessary → therefore wrong') pero resbala a condescendencia.
 
 ## Análisis

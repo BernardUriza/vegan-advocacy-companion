@@ -5,7 +5,7 @@
 - **user_id:** 965593289816591
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/965593289816591/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** dismissive
 - **Postura núcleo:** One-liner en el hilo Frida: "your assumption that this offends people is erroneous" — niega la premisa del post privatizando la reacción (no ofende a nadie, lo proyectas tú).
 
 ## Análisis

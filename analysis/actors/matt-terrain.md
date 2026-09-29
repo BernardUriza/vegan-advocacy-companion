@@ -5,7 +5,9 @@
 - **user_id:** 100018422793817
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100018422793817/
 - **Bando:** anti-vegan
-- **Veredicto:** sink_un_round · **Registro:** filo
+- **Veredicto:** pozo_sin_fondo · **Registro:** filo · **Tono:** hostile
+  - _Veredicto, matiz:_ sink_un_round
+  - _Tono, matiz:_ hostile_rhetorical
 - **Postura núcleo:** No existe consumo sin daño; si todo daña, el veganismo no es moralmente superior.
 
 ## Análisis
@@ -124,4 +126,4 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** Ronda 6: sorry. Repeating yourself means nothing. An animal wants food and water and comfort, company if a herd or pack animal, that is all.
 - **Nuestra respuesta:** Corto (82 palabras): usé SU lista (food, water, comfort, company) como el lado propio de ella; un objeto no quiere nada; el título le da a otro la decisión sobre las cuatro, incluido el día en que paran; cierre en el título. Salgo del hilo tras esta vuelta.
 
-_Hilos: 27341517928804691, 27335635946059556, 27937793019177176, 28046483408306158_
+_Hilos: 27341517928804691, 27335635946059556, 27937793019177176, 28046483408306158, 27375477042075446, 27319402757682875, 27051763587778150_

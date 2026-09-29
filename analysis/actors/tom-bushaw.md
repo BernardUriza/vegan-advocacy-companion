@@ -5,7 +5,7 @@
 - **user_id:** 100052829564612
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100052829564612/
 - **Bando:** aliado
-- **Veredicto:** aliado · **Registro:** na
+- **Veredicto:** aliado · **Registro:** na · **Tono:** civil
 - **Postura núcleo:** Aliado pro-vegano. Le pega a Anna: 'si estuvieras segura no estarías aquí defendiéndolo tan duro'.
 
 ## Análisis

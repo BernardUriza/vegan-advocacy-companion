@@ -5,7 +5,7 @@
 - **user_id:** 567273792
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/567273792/
 - **Bando:** anti-vegan
-- **Veredicto:** persuadible · **Registro:** compasivo
+- **Veredicto:** persuadible · **Registro:** compasivo · **Tono:** civil
 - **Postura núcleo:** Anti-vegana de BUENA FE: come/cría animales por 'least harm' y salud; trabaja en la industria por convicción; cree que pasturas integradas con cultivo causan menos muerte que el monocultivo.
 
 ## Análisis

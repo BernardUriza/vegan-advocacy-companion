@@ -5,7 +5,7 @@
 - **user_id:** 100018541819048
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100018541819048/
 - **Bando:** anti-vegan
-- **Veredicto:** persuadible · **Registro:** compasivo
+- **Veredicto:** persuadible · **Registro:** compasivo · **Tono:** civil
 - **Postura núcleo:** Granjero NSW dueño de cabras; custodianship sin propiedad es imposible — la ley me obliga a destruir feral animals, 'your way means they die'.
 
 ## Análisis
@@ -124,4 +124,4 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** Réplica 20m (VEGANnoyance, post de sintiencia): demanda de credencial ("what do you do for animals… why should anyone listen to you?") + "Do you understand animals bond with their owners?"
 - **Nuestra respuesta:** Registro limpio: concedí que su rescate pesa más que mis posts; la pregunta vale igual la haga quien la haga; el vínculo necesita alguien del otro lado (nadie se apega a una ute), el cuidado da deber, no título. Cierre: qué le da ese vínculo al rescatista más allá de un deber hacia ella.
 
-_Hilos: march-property, 27319402757682875, 28459136643743554, 28604913169131821_
+_Hilos: march-property, 27319402757682875, 28459136643743554, 28604913169131821, 27468645086091974_

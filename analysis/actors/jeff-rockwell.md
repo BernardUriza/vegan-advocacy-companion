@@ -4,8 +4,9 @@
 
 - **user_id:** 1549719792
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/1549719792/
-- **Bando:** pro-vegan
-- **Veredicto:** aliado · **Registro:** any
+- **Bando:** aliado
+- **Veredicto:** aliado · **Registro:** na · **Tono:** civil
+  - _Registro, matiz:_ any
 - **Postura núcleo:** El veganismo es la opción moral por defecto y la sostenible; el daño cero no existe pero el daño innecesario sí se evita.
 
 ## Análisis

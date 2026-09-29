@@ -5,7 +5,7 @@
 - **user_id:** 100010556977700
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100010556977700/
 - **Bando:** anti-vegan
-- **Veredicto:** pozo_sin_fondo · **Registro:** filo
+- **Veredicto:** pozo_sin_fondo · **Registro:** filo · **Tono:** hostile
 - **Postura núcleo:** El veganismo está muriendo / es ridiculizado; los números lo prueban.
 
 ## Análisis

@@ -5,7 +5,8 @@
 - **user_id:** 61550822695503
 - **Perfil:** https://www.facebook.com/groups/683615698352965/user/61550822695503/
 - **Bando:** anti-vegan
-- **Veredicto:** pozo_sin_fondo · **Registro:** filo
+- **Veredicto:** pozo_sin_fondo · **Registro:** filo · **Tono:** hostile
+  - _Tono, matiz:_ hostile_rhetorical
 - **Postura núcleo:** Los veganos también matan y destruyen el ambiente; los animales se crían en masa porque los que comen carne necesitan comer, y no hay nada que hacer al respecto.
 
 ## Análisis

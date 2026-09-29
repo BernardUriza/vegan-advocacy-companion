@@ -5,7 +5,7 @@
 - **user_id:** 100004284907337
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100004284907337/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** Comer carne es biológicamente natural y nutricionalmente superior; la vida humana vale más que la animal.
 
 ## Análisis

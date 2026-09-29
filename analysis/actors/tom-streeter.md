@@ -5,7 +5,7 @@
 - **user_id:** 696225646
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/696225646/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** dismissive
 - **Postura núcleo:** 'Es todo a la vez — biología, tradición, nutrición, economía, cultura. Si quieres UNA verdad universal, no existe.' Futility / no-clean-option.
 
 ## Análisis

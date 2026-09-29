@@ -5,7 +5,7 @@
 - **user_id:** 61571628458052
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/61571628458052/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** compasivo
+- **Veredicto:** audiencia · **Registro:** compasivo · **Tono:** civil
 - **Postura núcleo:** Empirismo bienestarista: los robot milkers prueban que las vacas van voluntariamente a ser ordeñadas — no hay coerción.
 
 ## Análisis

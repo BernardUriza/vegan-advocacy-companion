@@ -5,7 +5,7 @@
 - **user_id:** 100000547865199
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/100000547865199/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** Los animales no son someone (son cosas/propiedad); no-querer-danar-lo-vivo incluye plantas.
 
 ## Análisis

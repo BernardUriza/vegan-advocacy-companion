@@ -5,7 +5,7 @@
 - **user_id:** 100035105043255
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100035105043255/
 - **Bando:** ambiguo
-- **Veredicto:** audiencia · **Registro:** compasivo
+- **Veredicto:** audiencia · **Registro:** compasivo · **Tono:** civil
 - **Postura núcleo:** Buena fe; cría sus propios animales (humane self-farming). Tras conceder biología y aceptar que el sufrimiento importa, su última defensa pivotó a GUSTO/preferencia: no soporta el plant-based, no le gusta el 70%, soya nasty, y una alergia REAL a la mayoría de nueces.
 
 ## Análisis

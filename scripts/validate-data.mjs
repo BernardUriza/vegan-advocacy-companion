@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { readActors, readTactics, readFrameworks } from './db.mjs';
+import { readActors, readTactics, readFrameworks, readVocab, vocabViolations } from './db.mjs';
 import { dossierFilenames, GENERATED_MARK } from './gen-dossiers.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -11,6 +11,7 @@ const errors = [];
 const warnings = [];
 
 const actors = readActors();
+const vocab = readVocab();
 const tactics = readTactics();
 const tacticIds = new Set(tactics.map(t => t.id));
 const actorIds = new Set(actors.map(a => a.user_id).filter(Boolean));
@@ -41,6 +42,11 @@ for (const a of actors) {
   if (a.user_id) {
     if (seen.has(a.user_id)) errors.push(`duplicate user_id "${a.user_id}" (${a.name})`);
     seen.add(a.user_id);
+  }
+  errors.push(...vocabViolations(a, vocab));
+  const threads = new Set(a.threads ?? []);
+  for (const i of a.interactions ?? []) {
+    if (i.thread_id && !threads.has(i.thread_id)) errors.push(`actor "${a.name}" has an interaction in thread ${i.thread_id} missing from threads[]`);
   }
 }
 

@@ -51,7 +51,10 @@ function renderActor(a) {
   lines.push(`- **user_id:** ${a.user_id ?? '(pendiente)'}`);
   if (a.profile_url) lines.push(`- **Perfil:** ${a.profile_url}`);
   lines.push(`- **Bando:** ${a.bando}`);
-  lines.push(`- **Veredicto:** ${a.verdict} · **Registro:** ${a.register}`);
+  lines.push(`- **Veredicto:** ${a.verdict} · **Registro:** ${a.register} · **Tono:** ${a.tone}`);
+  for (const [field, label] of [['bando', 'Bando'], ['verdict', 'Veredicto'], ['register', 'Registro'], ['tone', 'Tono']]) {
+    if (a[`${field}_note`]) lines.push(`  - _${label}, matiz:_ ${a[`${field}_note`]}`);
+  }
   lines.push(`- **Postura núcleo:** ${a.postura_nucleo}`);
   lines.push('');
   lines.push('## Análisis');

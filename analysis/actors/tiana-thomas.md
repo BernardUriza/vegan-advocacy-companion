@@ -5,7 +5,7 @@
 - **user_id:** 100000755924068
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100000755924068/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** El malestar del cuadro de Frida es proyección del espectador: ella pintaba SU sufrimiento (alimentación forzada por enfermedad), no una crítica al consumo de carne.
 
 ## Análisis
@@ -126,4 +126,4 @@ NO pelear el body-count ni el "welfare mejora" (concederlo: mejor trato no cambi
 - **Su jugada:** Reductio burlón sobre el producto: If no one takes the milk/egg, does the producer keep it? Where? inside?
 - **Nuestra respuesta:** Respuesta literal para leche: el ternero — la pregunta solo suena absurda con la cría ya removida del cuadro. Para huevo: el título sobre el cuerpo, no el destino del output. Sin sarcasmo de vuelta; cerró con ¿qué hace legítimo poseerla?
 
-_Hilos: 27395909046698912, 27405978672358616, 27937793019177176_
+_Hilos: 27395909046698912, 27405978672358616, 27937793019177176, 27330688236588406, 27468645086091974, 27051763587778150, 27496390256650790_

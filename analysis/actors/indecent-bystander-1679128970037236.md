@@ -5,7 +5,7 @@
 - **user_id:** 1679128970037236
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/1679128970037236/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** Valor del animal = rendimiento instrumental: pigs taste better, easier to control, more food per animal than cats. (NOTA: uid del comentario 1679128970037236; el moat tenia otro Indecent Bystander uid 965593289816591 sin ints — posible cuenta distinta o uid stale.)
 
 ## Análisis

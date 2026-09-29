@@ -5,7 +5,7 @@
 - **user_id:** 1277660735
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/1277660735/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** low_effort
 - **Postura núcleo:** Drive-bys de una línea en las dos copias del post de sintiencia ("And your point is?", "You write a lot of words and say little"); antes: los animales también explotan.
 
 ## Análisis

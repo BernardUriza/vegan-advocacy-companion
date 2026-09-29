@@ -5,7 +5,7 @@
 - **user_id:** 100001248981179
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/100001248981179/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** dismissive
 - **Postura núcleo:** "Nothing to do with sentience. Everything to do with speciesism. Even vegans practice speciesism. The only difference is the degree."
 
 ## Análisis

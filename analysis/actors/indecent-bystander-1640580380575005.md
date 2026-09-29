@@ -5,7 +5,7 @@
 - **user_id:** 1640580380575005
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/1640580380575005/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** Welfarista "humane slaughter": concede que la mayoria cree que esta mal hacer sufrir a un animal sin buena razon, pero sostiene que el sacrificio humanitario NO es crueldad-por-diversion ni daño-que-no-compra-nada, asi que queda fuera de ese consenso. "Asi opera el mundo, salvo por lo humanitario, que es nuestra innovacion."
 
 ## Análisis

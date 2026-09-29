@@ -5,7 +5,7 @@
 - **user_id:** 100081126484836
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100081126484836/
 - **Bando:** anti-vegan
-- **Veredicto:** pozo_sin_fondo · **Registro:** ignorar
+- **Veredicto:** pozo_sin_fondo · **Registro:** no_enganchar · **Tono:** apathetic
 - **Postura núcleo:** Mis morales están bien con comer animales porque la moral es subjetiva.
 
 ## Análisis

@@ -8,9 +8,32 @@ const ACTORS_PATH = resolve(ROOT, 'data/actors.json');
 const TACTICS_PATH = resolve(ROOT, 'data/tactics.json');
 const FRAMEWORKS_PATH = resolve(ROOT, 'data/frameworks.json');
 const THREADS_PATH = resolve(ROOT, 'data/threads.json');
+const VOCAB_PATH = resolve(ROOT, 'data/vocab.json');
+export const VOCAB_FIELDS = ['bando', 'verdict', 'register', 'tone'];
 
 export function readActors() {
   return JSON.parse(readFileSync(ACTORS_PATH, 'utf8'));
+}
+
+export function readVocab() {
+  return JSON.parse(readFileSync(VOCAB_PATH, 'utf8'));
+}
+
+export function vocabViolations(actor, vocab = readVocab()) {
+  return VOCAB_FIELDS
+    .filter(field => actor[field] !== undefined && !Object.hasOwn(vocab[field], actor[field]))
+    .map(field => `actor "${actor.name}" ${field}="${actor[field]}" is outside data/vocab.json (${Object.keys(vocab[field]).join(' | ')}); put the nuance in ${field}_note`);
+}
+
+function assertVocab(actor) {
+  const violations = vocabViolations(actor);
+  if (violations.length) throw new Error(violations.join('\n'));
+}
+
+function syncThreads(actor) {
+  const threads = new Set(actor.threads ?? []);
+  for (const i of actor.interactions ?? []) if (i.thread_id) threads.add(i.thread_id);
+  actor.threads = [...threads];
 }
 
 export function readTactics() {
@@ -77,13 +100,13 @@ export function upsertFramework(framework) {
 export function upsertActor(actor) {
   const actors = readActors();
   const idx = actors.findIndex(a => a.user_id === actor.user_id);
-  if (idx >= 0) {
-    actors[idx] = { ...actors[idx], ...actor };
-  } else {
-    actors.push({ tactics: [], threads: [], interactions: [], ...actor });
-  }
+  const merged = idx >= 0 ? { ...actors[idx], ...actor } : { tactics: [], threads: [], interactions: [], ...actor };
+  assertVocab(merged);
+  syncThreads(merged);
+  if (idx >= 0) actors[idx] = merged;
+  else actors.push(merged);
   writeJsonAtomic(ACTORS_PATH, actors);
-  return actors[idx >= 0 ? idx : actors.length - 1];
+  return merged;
 }
 
 export function appendInteraction(userId, interaction) {
@@ -91,6 +114,7 @@ export function appendInteraction(userId, interaction) {
   const actor = actors.find(a => a.user_id === userId);
   if (!actor) throw new Error(`Actor ${userId} not found`);
   (actor.interactions ??= []).push(interaction);
+  syncThreads(actor);
   writeJsonAtomic(ACTORS_PATH, actors);
   return actor;
 }

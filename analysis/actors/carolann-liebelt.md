@@ -5,7 +5,7 @@
 - **user_id:** 1338583394
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/1338583394/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** dismissive
 - **Postura núcleo:** Comer animales es natural y normal; la carga de prueba la tiene el vegano, no yo.
 
 ## Análisis
@@ -152,4 +152,4 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 - **Su jugada:** Goalpost a might-makes-right: If any other animal had the capacity to capture and farm animals, they would. Our superior intelligence... apex species... We have no moral obligation to stop eating meat.
 - **Nuestra respuesta:** Concedí el hecho (más poder/inteligencia), nombré el salto de goalpost (biología→ecosistema→dominancia), y clavé que el poder explica el resultado, no funda el título (is/ought). Cerré con la pregunta del post.
 
-_Hilos: 27341517928804691, 27335635946059556, 28500475619575577_
+_Hilos: 27341517928804691, 27335635946059556, 28500475619575577, 27405978672358616_

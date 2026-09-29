@@ -5,7 +5,7 @@
 - **user_id:** 100054560360296
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/100054560360296/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** Silogismo no-humano->no-someone->propiedad: 'They are not people, so they are not someone. As they are not people, they are property.' Usa la membresia de especie (ser 'people'/humano) como el criterio que convierte a un animal en propiedad.
 
 ## Análisis
@@ -60,4 +60,4 @@ NO afirmar 'los animales SI son personas/someone' como premisa demostrada (petic
 - **Su jugada:** Silogismo no-humano->no-comparable: one group is human, the other is not, you cant compare humans with animals.
 - **Nuestra respuesta:** Conced la diferencia de especie y exigi por que ESA diferencia decide propiedad; la comparacion es estructural (ambos sujetos con punto de vista), no identidad; humans-count-because-human mete la conclusion en la categoria; SIN afirmar son-someone como premisa demostrada (evite la petitio inversa). Cierre: que rasgo moralmente relevante hace aceptable poseer a un sujeto que siente cuando la unica diferencia es que no es humano.
 
-_Hilos: 27330688236588406_
+_Hilos: 27330688236588406, 4587084521560658_

@@ -5,7 +5,7 @@
 - **user_id:** 1198831097
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/1198831097/
 - **Bando:** anti-vegan
-- **Veredicto:** audiencia · **Registro:** filo
+- **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
 - **Postura núcleo:** Pide definir someone; sugiere que mi definicion no es la comun.
 
 ## Análisis
@@ -140,4 +140,4 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Réplica 4 (Open Debates 3, post their-own-words): "the objection is to your reading that those traits were being used as the market line… the quotations are theirs. The conclusion you are drawing from them is yours."
 - **Nuestra respuesta:** Registro limpio: le doy la palabra interpretación entera; la pruebo contra la alternativa con recibos verbatim (CarolAnn apex→no moral obligation; Matt "yes. It does. Because we are the dominant species"); el argumento corre con cualquier lectura (recién nacido tumba los rasgos; Anna los soltó por species); su primera pregunta ya tiene respuesta. Cierre: qué más hacía "superior intelligence" en un comentario que termina en "no moral obligation".
 
-_Hilos: 27468645086091974_
+_Hilos: 27468645086091974, 27496390256650790, 28615704478052690_

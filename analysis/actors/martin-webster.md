@@ -5,7 +5,7 @@
 - **user_id:** 585361402
 - **Perfil:** https://www.facebook.com/groups/2295597740524135/user/585361402/
 - **Bando:** anti-vegan
-- **Veredicto:** persuadible · **Registro:** compasivo
+- **Veredicto:** persuadible · **Registro:** compasivo · **Tono:** civil
 - **Postura núcleo:** Plant-sentience equivalence: las plantas tambien senalizan, emiten sonidos, se anestesian y 'disfrutan musica' — ¿no son 'beings' por tu definicion? Intenta colapsar la categoria moral planta/animal por sentience-creep.
 
 ## Análisis
