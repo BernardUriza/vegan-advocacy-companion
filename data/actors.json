@@ -3332,10 +3332,12 @@
       "relativismo_moral",
       "apelacion_mayoria",
       "naturalismo",
-      "libertarian_autonomy"
+      "libertarian_autonomy",
+      "insulto_ad_hominem"
     ],
     "threads": [
-      "28354739720849914"
+      "28354739720849914",
+      "28459136643743554"
     ],
     "interactions": [
       {
@@ -3347,6 +3349,15 @@
         "outcome": "silent",
         "outcome_evidence": "tx 2026-09-25 (complete:true) solo trae los turnos de Linda y míos.",
         "outcome_note": "algo-a-alguien-sujeto-derecho: sin respuesta; su raíz ya no aparece en el hilo re-extraído (borrada o oculta)."
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-28",
+        "their_move": "Raíz (VEGANnoyance, post de sintiencia, 17h): \"Again with your soap box either eat meat or shut up about it\" — sello de cierre, su \"stop forcing others\" de la semana pasada en corto.",
+        "our_reply_summary": "Drive-by corto (73 palabras): su \"Again\" admite que la pregunta de la semana pasada sigue sin respuesta; \"eat meat or shut up\" vuelve una pregunta un bozal y no contesta nada; cierre con sus palabras: she never got a soap box, what made her yours in the first place?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "c221293cc3f5c352",
+        "outcome": "pending"
       }
     ],
     "user_id": "100034907401951",

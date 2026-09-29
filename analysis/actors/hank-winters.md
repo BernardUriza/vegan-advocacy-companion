@@ -22,6 +22,8 @@
   - _Contra:_ Concede the biology entirely, then separate can from should (is-ought, Hume): 'Yes, we can digest meat — omnivore is a fact about digestion, not a moral status. The question is what justifies using a sentient being when we don't need to.' If they lean hard on 'natural', add the second layer: 'natural' doesn't carry moral weight by itself — a poisonous mushroom is natural and bad for us, medicine and hospitals are 'unnatural' and good. What makes something good or bad isn't whether it's natural; it's whether it satisfies or frustrates the interests of someone who can feel. So 'it's natural' answers nothing about whether it's right.
 - **Autonomy / Anti-Dictation Frame** (`libertarian_autonomy`) — Reframes the moral argument as a political imposition: 'don't expect me to welcome you dictating what I can eat'. Conflates making an ethical argument with forcing compliance.
   - _Contra:_ Pointing out that something causes harm isn't dictating. You can choose to eat meat; I can point out it harms a sentient being. Those are both true simultaneously. Nobody's forcing anything.
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`) — Attacks the person instead of the argument. Used for social dominance in the thread, not to persuade. 'Intellectually challenged retards', 'idiots', 'vegan lab slop', 'cult'. Often combined with one real data point as cover.
+  - _Contra:_ Don't match the register. Name the evasion calmly: 'When the argument runs out, the insults start.' Contrast of temperament is visible to the lurker. One line max, then return to substance or disengage entirely.
 
 ## Counter-arsenal
 
@@ -57,6 +59,12 @@
   - `no-es-opcion-de-vida` → _deploy as:_ marco
   - `violencia-estructural-infraestructura` → _deploy as:_ marco
   - `respetar-no-es-opcion` → _deploy as:_ marco
+- **Ad Hominem / Dominance Social Attack** (`insulto_ad_hominem`)
+  - `matrix-pastilla-azul` → _deploy as:_ auto-disciplina-del-activista
+  - `sembrar-en-el-receptivo` → _deploy as:_ auto-disciplina-del-activista
+  - `nvc-observacion-sin-juicio` → _deploy as:_ auto-disciplina-del-activista
+  - `ifs-hablarle-al-nino-herido` → _deploy as:_ auto-disciplina-del-activista
+  - `trauma-informed-defensa-no-es-maldad` → _deploy as:_ auto-disciplina-del-activista
 
 ## Qué NO hacer
 
@@ -68,4 +76,8 @@ No pelear la ortografía ni el tono. No sermonear. No listar los cuatro esquives
 - **Su jugada:** Único raíz en la copia de VEGANnoyance: "if it walks flys or swims its fair game… includes all the precious pets… very subjective… the majority dont give 2 shits about the moral part its survival… in nature… stop trying to force others to agree".
 - **Nuestra respuesta:** "Subjetivo" y en la misma frase una regla para todos = el escudo de un solo sentido; la mayoría es un conteo (el post ya concede que el poder decide; no convierte el título en razón); una pregunta no fuerza nada ("do it": lo hago); las mascotas: casi todos saben que un perro es alguien, el switch a "algo" por especie es lo que hay que justificar; pregunta al cierre. 169 palabras, sin sermón.
 
-_Hilos: 28354739720849914_
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Raíz (VEGANnoyance, post de sintiencia, 17h): "Again with your soap box either eat meat or shut up about it" — sello de cierre, su "stop forcing others" de la semana pasada en corto.
+- **Nuestra respuesta:** Drive-by corto (73 palabras): su "Again" admite que la pregunta de la semana pasada sigue sin respuesta; "eat meat or shut up" vuelve una pregunta un bozal y no contesta nada; cierre con sus palabras: she never got a soap box, what made her yours in the first place?
+
+_Hilos: 28354739720849914, 28459136643743554_
