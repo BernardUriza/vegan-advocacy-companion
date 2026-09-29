@@ -291,8 +291,8 @@
         "our_reply_summary": "Corto (82 palabras): usé SU lista (food, water, comfort, company) como el lado propio de ella; un objeto no quiere nada; el título le da a otro la decisión sobre las cuatro, incluido el día en que paran; cierre en el título. Salgo del hilo tras esta vuelta.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "engaged",
-        "outcome_evidence": "Matt Terrain: 'asked and answered. More than once. Pretty sure we're done.' (about an hour, tx 28046483408306158)",
-        "outcome_note": "algo-a-alguien-sujeto-derecho: usar SU lista (food, water, comfort, company) como prueba de un lado propio no lo movió; cerró con 'asked and answered, pretty sure we're done' sin decir por qué el dueño decide sobre las cuatro. Sin concesión; loop terminal, no perseguir.",
+        "outcome_evidence": "Matt → Bernard (18h): \"asked and answered. More than once. Pretty sure we're done.\"",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: usar SU lista (food, water, comfort, company) como el 'side of her own' lo sacó del intercambio: 'asked and answered, we're done'. Salida sin conceder, pero sin contraargumento — recibo visible para el lurker.",
         "draft_sha": "1f7a82103a50321f",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-28T14:55:15.443Z"
@@ -724,7 +724,9 @@
         "our_reply_summary": "food es el plan para ella escrito como su definición; food por decisión de quién y qué les dio la voz",
         "framework": "antropoespecismo",
         "draft_sha": "4619005e14440a6f",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Dori → Bernard: \"sucks. Ate some ham tonight. Delicious.\"",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: contestó a 'food by whose decision' con un reporte de gusto (ham, delicious) — sigue en el intercambio pero sin argumento; el framework obligó a la preferencia a mostrarse desnuda."
       },
       {
         "thread_id": "28459136643743554",
@@ -1791,7 +1793,9 @@
         "our_reply_summary": "Nada se movió; concedí cuentan≠siempre ganan; el título decide UN choque antes de que exista (si sigue). Su perro: la autoridad tiene que responder al perro; decidir su muerte para la cena hace que te lo quiten. La sintiencia deja lugar a tutela, excluye el cheque en blanco hacia el plato. \"because they are humans\" = la etiqueta del grupo cargando todo. Cierre: qué parte de ser humano.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "draft_sha": "150c9c27aa6c6b6b",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Les → Bernard (4m): \"you're getting increasingly worked up demanding I justify my position... human rights are a human invention\"",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: Les por fin pone su premisa sobre la mesa (human rights = invención humana, 'which part of being human'), con tono-policing ('increasingly worked up'). Aterrizó: dejó de pedir que yo justifique y empezó a justificar él."
       },
       {
         "thread_id": "28150669567887541",
@@ -2572,7 +2576,9 @@
         "our_reply_summary": "Concedí que las citas no enuncian la regla (funcionaban como razón en sus hilos) y que Anna lo confirmó (species is). Di la premisa explícita: el título decide de antemano contra el lado del otro; la razón por la que no poseemos humanos sin lenguaje nunca fue la capacidad sino que hay alguien. Cierre: qué propiedad hace impermisible poseer en el caso humano y por qué se detiene en la especie.",
         "framework": "sobreposicion-de-especies-criterio-leido",
         "draft_sha": "2c6411ca70ee35d2",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Dean → Bernard (49m): \"you're now changing the argument from the one you made in your OP\"",
+        "outcome_note": "sobreposicion-de-especies-criterio-leido: Dean contestó y siguió presionando sobre la atribución de las citas; buena fe exigente, no concede."
       },
       {
         "thread_id": "28615704478052690",
@@ -2581,7 +2587,9 @@
         "our_reply_summary": "retiré la concesión con los 5 recibos en contexto verbatim (CarolAnn, Anna, Samantha matizada por steward, Tiana, Matt); afirmé la atribución a su tamaño exacto; le pedí qué paso de la premisa del título asume la conclusión",
         "framework": "sobreposicion-de-especies-criterio-leido",
         "draft_sha": "5114c529c17df18c",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Dean → Bernard (17m): \"you're still moving the goalposts. Your original post made a very specific claim\"",
+        "outcome_note": "sobreposicion-de-especies-criterio-leido: la retirada de la concesión con recibos cita-por-cita no lo movió; lo lee como goalpost. El frente es de procedencia (qué afirmó el OP), no de marco."
       }
     ],
     "user_id": "1198831097",
@@ -3520,8 +3528,8 @@
         "draft_sha": "2ccdceb80dad61ec",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-28T14:55:15.443Z",
-        "outcome_evidence": "Kirk Sawler · 1h: 'I grew these potatoes, I'm guessing you get food from a grocery store' / 'that's a perfect vegan answer'",
-        "outcome_note": "bienestarismo-jugada-maestra: 'taste better' volteado como confesión de hacia dónde corre la responsabilidad; no lo contestó. Regresó al tu-quoque de vegetales/tienda ('I grew these potatoes', 'that's a perfect vegan answer'): cambio de terreno, sin tocar el cerdito."
+        "outcome_evidence": "Kirk → Bernard (3h): \"that's a perfect vegan answer\" / \"I only grow non vegan vegetables\"",
+        "outcome_note": "bienestarismo-jugada-maestra-del-poder: el volteo 'la felicidad del cerdo es para ti' no tuvo respuesta de fondo; contestó con dos jabs ('perfect vegan answer', 'I only grow non vegan vegetables'). Sigue en retirada por burla."
       }
     ],
     "user_id": "100008695478463",

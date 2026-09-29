@@ -66,7 +66,7 @@ No gastar una jugada principal. Una línea que reponga la pregunta y pida algo d
 - **Su jugada:** Raíz drive-by (VS Meat Eaters, misma copia del post): "You write a lot of words and say little."
 - **Nuestra respuesta:** Una línea: si puede asustarse y las cosas le importan desde su lado, what the hell hace legítimo que exista como propiedad; "say something back to that one".
 
-### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** she is food.
 - **Nuestra respuesta:** food es el plan para ella escrito como su definición; food por decisión de quién y qué les dio la voz
 
