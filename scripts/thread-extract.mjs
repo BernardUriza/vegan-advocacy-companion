@@ -12,7 +12,7 @@
 // El <openUrl> lo sirve notif-scan.mjs (campo `openUrl` / línea "abrir:").
 
 import { pathToFileURL } from 'url';
-import { openScratchPage, ageMinutes, fmtAge, UNKNOWN_AGE, expandAllInPage, MAX_AGE_DAYS, isStaleMinutes } from './fb-lib.mjs';
+import { openScratchPage, ageMinutes, fmtAge, UNKNOWN_AGE, expandAllInPage, MAX_AGE_DAYS, isStaleMinutes, readThreadRoot } from './fb-lib.mjs';
 import { registerThread } from './db.mjs';
 import { parseReactionCount, sumPostReactionLabels } from './lurker.mjs';
 import { canonicalPostUrl } from './thread-identity.mjs';
@@ -338,9 +338,10 @@ async function main() {
       await page.waitForTimeout(2500);
       const e = await page.evaluate(expandAllInPage);
       await page.waitForTimeout(800);
-      return { e, w: await page.evaluate(walkArticles, postIdArg) };
+      return { e, w: await page.evaluate(walkArticles, postIdArg), root: await readThreadRoot(page).catch(() => null) };
     };
     const passes = [await pass(navUrl)];
+    const rootInfo = passes[0].root;
     if (navUrl !== url) passes.push(await pass(url));
     const walked = { rows: passes.flatMap(({ w }) => w.rows), postOwner: passes.map(({ w }) => w.postOwner).find(Boolean) || '', postReactionLabels: passes.map(({ w }) => w.postReactionLabels).find((l) => l && l.length) || passes[0].w.postReactionLabels, foreignDropped: passes.reduce((n, { w }) => n + (w.foreignDropped || 0), 0) };
     const unavailable = !walked.rows.length && await page.evaluate(() => /This content isn't available right now/i.test(document.body.innerText || ''));
@@ -381,6 +382,7 @@ async function main() {
       navUrl,
       maxAgeDays: MAX_AGE_DAYS,
       postReactions,
+      root: rootInfo && rootInfo.text ? { author: rootInfo.author, user_id: rootInfo.user_id, text: rootInfo.text, via: rootInfo.via } : null,
       turns,
       debt,
       unansweredRoots,

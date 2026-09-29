@@ -88,9 +88,12 @@ inexistentes `theirAgeMin`/`ourAgeMin` y escribí 3 scripts /tmp de más). Campo
 - **`postReactions`** (raíz, opcional): suma de los labels `"Haha: 3 people"` del
   contenedor del post, anclado a un comentario cuyo link lleva el `post_id`; `null` si no
   hay reacciones visibles o no se pudo anclar (nunca se toma de otro post del feed).
-- **`me`, `postOwner`, `postIsMine`, `expand`, `counts`** a nivel raíz. **NO**
-  trae el body del post raíz (turns[0] suele ser el 1er comentario, no el post —
-  bug conocido, backlog G.35). Filtrar turnos dirigidos a Bernard:
+- **`me`, `postOwner`, `postIsMine`, `expand`, `counts`** a nivel raíz.
+- **`root`** (desde 2026-09-28, cierra G.35): `{ author, user_id, text, via }` del post raíz,
+  leído con `fb-lib.readThreadRoot` en la vista canónica; `null` si no se pudo leer. Sin edad a
+  propósito: el lector toma el primer timestamp del scope y con comentarios nuevos marcaba la
+  hora de un comentario (Krizel: "7:44 PM" en un post de las 5:52 AM). `turns[]` sigue siendo
+  solo comentarios. Filtrar turnos dirigidos a Bernard:
   `t.isMine || (t.target||'').includes('Bernard')`.
 
 ### Path MCP (confirmación / fallback / cuando necesitas uids de botones)
