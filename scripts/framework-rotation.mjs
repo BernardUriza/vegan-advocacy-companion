@@ -53,8 +53,13 @@ export function planPick({ actor, frameworks, policy, rng = Math.random }) {
   return { ...base, assignment: 'randomized', framework: shortlist[i].id, propensity: 1 / shortlist.length };
 }
 
-export function pickProblems(pick, frameworkId, frameworks) {
+export function isStalePick(pick, actor) {
+  return Boolean(pick) && exposureOf(actor).exposure_n !== pick.exposure_n;
+}
+
+export function pickProblems(pick, frameworkId, frameworks, actor) {
   if (!pick) return ['no hay recibo de framework-pick para este target: corre `node scripts/framework-pick.mjs` antes del master'];
+  if (actor && isStalePick(pick, actor)) return [`el pick es de la exposición ${pick.exposure_n} y el target ya va en la ${exposureOf(actor).exposure_n}: re-corre \`node scripts/framework-pick.mjs\``];
   const f = frameworks.find(x => x.id === frameworkId);
   if (!f) return [`framework "${frameworkId}" no existe en data/frameworks.json`];
   const problems = [];

@@ -160,7 +160,9 @@ if (!isMain) {
   const { pickProblems } = await import('./framework-rotation.mjs');
   const pick = readPick(postId, author);
   const allFrameworks = JSON.parse(readFileSync(resolve(ROOT, 'data/frameworks.json'), 'utf8'));
-  const rotation = pickProblems(pick, framework, allFrameworks);
+  const { readActors } = await import('./db.mjs');
+  const pickActor = pick ? readActors().find((a) => a.user_id === pick.user_id) : undefined;
+  const rotation = pickProblems(pick, framework, allFrameworks, pickActor);
   if (rotation.length) die('FINALIZE BLOQUEADO por la rotación de frameworks:\n  - ' + rotation.join('\n  - '));
   const r = JSON.parse(readFileSync(rp, 'utf8'));
   // normaliza el shape legacy single-draft a drafts[]

@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { planPick, pickProblems, exposureOf, distinctFamilies } from './framework-rotation.mjs';
+import { planPick, pickProblems, exposureOf, distinctFamilies, isStalePick } from './framework-rotation.mjs';
 import { readFrameworks, readVocab } from './db.mjs';
 
 const policy = readVocab().rotation;
@@ -65,6 +65,15 @@ test('an actor new to the moat is exposure 1 and falls back to estatus-sujeto wh
 test('distinctFamilies keeps the first of each family up to k', () => {
   const c = [{ id: 'a', family: 'x' }, { id: 'b', family: 'x' }, { id: 'c', family: 'y' }];
   assert.deepEqual(distinctFamilies(c, 3).map(x => x.id), ['a', 'c']);
+});
+
+test('a pick is consumed once the target gets a new interaction', () => {
+  const before = actor({ interactions: [{ framework: 'antropoespecismo' }] });
+  const pick = planPick({ actor: before, frameworks, policy, rng: seq(0.9) });
+  assert.equal(isStalePick(pick, before), false);
+  const after = actor({ interactions: [{ framework: 'antropoespecismo' }, { framework: 'algo-a-alguien-sujeto-derecho' }] });
+  assert.equal(isStalePick(pick, after), true);
+  assert.match(pickProblems(pick, 'algo-a-alguien-sujeto-derecho', frameworks, after)[0], /re-corre/);
 });
 
 test('without a pick receipt finalize has nothing to validate against', () => {

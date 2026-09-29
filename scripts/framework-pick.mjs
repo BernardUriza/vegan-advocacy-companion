@@ -2,13 +2,14 @@
 //   node scripts/framework-pick.mjs --post-id <id> --author "<nombre exacto>" [--user-id <id>]
 // Escribe .coagent/picks/<post_id>-<slug>.json una sola vez: re-correrlo devuelve el mismo pick,
 // para que nadie re-sortee hasta que salga el framework que quería. `finalize --framework` lo valida.
+// Una interacción nueva registrada al target (su exposición cambió) consume el pick y el siguiente se re-planea.
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { randomInt } from 'crypto';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { readActors, readFrameworks, readVocab } from './db.mjs';
-import { planPick } from './framework-rotation.mjs';
+import { planPick, isStalePick } from './framework-rotation.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const PICKS_DIR = resolve(ROOT, '.coagent/picks');
@@ -42,12 +43,12 @@ if (isMain) {
     console.error('uso: framework-pick.mjs --post-id <id> --author "<nombre exacto>" [--user-id <id>]');
     process.exit(1);
   }
+  const actor = resolveActor(readActors(), author, arg('--user-id'));
   const existing = readPick(postId, author);
-  if (existing) {
+  if (existing && !isStalePick(existing, actor)) {
     console.log(JSON.stringify({ ...existing, reused: true }, null, 2));
     process.exit(0);
   }
-  const actor = resolveActor(readActors(), author, arg('--user-id'));
   const rng = () => randomInt(0, 1_000_000) / 1_000_000;
   const plan = planPick({ actor, frameworks: readFrameworks(), policy: readVocab().rotation, rng });
   const pick = { post_id: postId, author, user_id: actor?.user_id ?? null, picked_at: new Date().toISOString(), ...plan };
