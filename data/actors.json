@@ -746,6 +746,15 @@
         "outcome": "escalated",
         "outcome_evidence": "Dori → Bernard (1h): \"and? Will you grieve long for her? Will you cry and wallow in your grief for 'her'? Please post a video!\"",
         "outcome_note": "algo-a-alguien-sujeto-derecho: tras 'taste report' ya no trajo razón; subió a burla ('will you grieve… post a video'). El framework dejó la preferencia desnuda; ella cambió a mofa, sello tras pregunta sin contestar."
+      },
+      {
+        "thread_id": "28604913169131821",
+        "date": "2026-09-28",
+        "their_move": "Réplica drive-by (Open Debates 3, post de sintiencia): \"you must have a fetish. Referring to all animals as she.\"",
+        "our_reply_summary": "Una línea filo: agarró el pronombre porque la pregunta sigue ahí; fetish es un dodge; she porque ahí hay alguien, it es la palabra que necesita la propiedad. Cierre: qué contesta vigilar el she sobre poseerla.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "440e1ac4aed54ae4",
+        "outcome": "pending"
       }
     ]
   },
@@ -2666,6 +2675,17 @@
         "our_reply_summary": "Registro limpio + collage adjunto anonimizado (cada cita en su hilo original, conclusión resaltada). Separo cita (verbatim de ellos) de caracterización (la frase del OP es mía, con links). Uno por uno: 1 y 5 traen la conclusión en el comentario o contestan mi pregunta de propiedad; 2 y 4 en su siguiente reply; 3 (Samantha) matizado. Cuatro de cinco atan los rasgos a uso/permiso/propiedad en sus palabras. La primera concesión fue demasiado amplia; corregirla tras releer es lo contrario de mover el poste. Cierre: ¿objeta las citas o mi lectura de que eran la línea del mercado?",
         "framework": "sobreposicion-de-especies-criterio-leido",
         "draft_sha": "1fd7922df9a71a67",
+        "outcome": "engaged",
+        "outcome_evidence": "Dean 3m: \"So yes, the quotations are theirs. The conclusion you're drawing from them is yours. That's the actual point of disagreement.\"",
+        "outcome_note": "sobreposicion-de-especies: la separación cita-verbatim vs caracterización aterrizó ('the quotations are theirs'); Dean ahora estrecha la disputa a si la inferencia está garantizada. Buena fe exigente, sigue sin tocar el criterio de propiedad."
+      },
+      {
+        "thread_id": "28615704478052690",
+        "date": "2026-09-28",
+        "their_move": "Réplica 4 (Open Debates 3, post their-own-words): \"the objection is to your reading that those traits were being used as the market line… the quotations are theirs. The conclusion you are drawing from them is yours.\"",
+        "our_reply_summary": "Registro limpio: le doy la palabra interpretación entera; la pruebo contra la alternativa con recibos verbatim (CarolAnn apex→no moral obligation; Matt \"yes. It does. Because we are the dominant species\"); el argumento corre con cualquier lectura (recién nacido tumba los rasgos; Anna los soltó por species); su primera pregunta ya tiene respuesta. Cierre: qué más hacía \"superior intelligence\" en un comentario que termina en \"no moral obligation\".",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "draft_sha": "21a93bfe11f74019",
         "outcome": "pending"
       }
     ],
@@ -3613,6 +3633,15 @@
         "lurker_checked_at": "2026-09-28T14:55:15.443Z",
         "outcome_evidence": "Kirk → Bernard (3h): \"that's a perfect vegan answer\" / \"I only grow non vegan vegetables\"",
         "outcome_note": "bienestarismo-jugada-maestra-del-poder: el volteo 'la felicidad del cerdo es para ti' no tuvo respuesta de fondo; contestó con dos jabs ('perfect vegan answer', 'I only grow non vegan vegetables'). Sigue en retirada por burla."
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-28",
+        "their_move": "Tres drive-bys tras mi reply de happy pigs: \"that is a perfect vegan answer\", \"I only grow non vegan vegetables\", \"I grew these potatoes, I am guessing you get food from a grocery store\" (con foto).",
+        "our_reply_summary": "Filo con humor: nice potatoes; una papa no conoce a Ralph ni se asusta ni se pone feliz; tres comentarios sobre verduras y cero sobre su \"happy well fed pigs taste better\"; la felicidad de Ralph es para Ralph, la del cerdito se cuenta en el plato. Cierre: para quién es esa felicidad, el cerdito o la comida junto a las papas.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "17446177a70f630b",
+        "outcome": "pending"
       }
     ],
     "user_id": "100008695478463",
@@ -3680,6 +3709,17 @@
         "our_reply_summary": "Su león lo refuta: el león mata y jamás posee (sin escritura, venta, herencia); el título es la invención humana que defiende. \"Humans write the laws\" es justo por qué se pueden cuestionar: señalar el permiso escrito por el poseedor es poder de traje. Los abogados: los recién nacidos tampoco contratan; la pregunta cae en quien tiene la pluma. Una línea al sello (clutch-your-tofu) y la comparación queda en estructura. Cierre: antes de que el león saque su permiso, ¿qué le añade \"civilization\" a la vaca además de cerca, factura y derecho a llamarla comida?",
         "framework": "esclavitud-paralelismo",
         "draft_sha": "04ac9ce06121ae62",
+        "outcome": "escalated",
+        "outcome_evidence": "Homer 34m: \"Humans indeed can own and nothing morally wrong with that. I own the pet fish... I own the chicken bred for my food... Cry more.\"",
+        "outcome_note": "esclavitud-paralelismo: el volteo del león (solo los humanos poseen) no lo tocó; regresó a 'humans can own, nothing wrong' + 'Cry more'. Repite la estación de dominio con sello; no hay estación nueva."
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-28",
+        "their_move": "Réplica (VEGANnoyance, post de sintiencia): concede que el león no posee; \"Humans indeed can own and nothing morally wrong… I own the pet dogs that I care. I own the chicken bred for my food… Cry more.\"",
+        "our_reply_summary": "Filo profano corto: tomé la concesión del león (poseer es humano); su lista usa dos verbos (pet dogs that I care / chicken bred for my food) y solo uno fue criado para su plato; su \"nothing morally wrong\" sale del mismo cajón subjetivo; cry more en media línea. Cierre: qué hace de \"bred for my food\" una razón y no un recibo.",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "draft_sha": "c46c582cbd18c389",
         "outcome": "pending"
       }
     ],

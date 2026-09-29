@@ -5,7 +5,7 @@
 - **user_id:** 100018541819048
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/100018541819048/
 - **Bando:** anti-vegan
-- **Veredicto:** persuadible · **Registro:** filo
+- **Veredicto:** persuadible · **Registro:** compasivo
 - **Postura núcleo:** Granjero NSW dueño de cabras; custodianship sin propiedad es imposible — la ley me obliga a destruir feral animals, 'your way means they die'.
 
 ## Análisis

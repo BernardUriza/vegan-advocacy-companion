@@ -132,8 +132,12 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** acusó que el OP atribuyó a los comentaristas una conclusión que no dijeron; pidió admitirlo tras nuestra concesión prematura
 - **Nuestra respuesta:** retiré la concesión con los 5 recibos en contexto verbatim (CarolAnn, Anna, Samantha matizada por steward, Tiana, Matt); afirmé la atribución a su tamaño exacto; le pedí qué paso de la premisa del título asume la conclusión
 
-### Hilo `28615704478052690` — 2026-09-28 · outcome: **pending**
+### Hilo `28615704478052690` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** Réplica 3 (Open Debates 3, post their-own-words): "you're still moving the goalposts" — la primera concesión admitió el punto; releer y matizar es sustituir por una interpretación; exige: ¿las citas dicen lo que el OP afirmó o es tu interpretación? Si es interpretación, concede.
 - **Nuestra respuesta:** Registro limpio + collage adjunto anonimizado (cada cita en su hilo original, conclusión resaltada). Separo cita (verbatim de ellos) de caracterización (la frase del OP es mía, con links). Uno por uno: 1 y 5 traen la conclusión en el comentario o contestan mi pregunta de propiedad; 2 y 4 en su siguiente reply; 3 (Samantha) matizado. Cuatro de cinco atan los rasgos a uso/permiso/propiedad en sus palabras. La primera concesión fue demasiado amplia; corregirla tras releer es lo contrario de mover el poste. Cierre: ¿objeta las citas o mi lectura de que eran la línea del mercado?
+
+### Hilo `28615704478052690` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** Réplica 4 (Open Debates 3, post their-own-words): "the objection is to your reading that those traits were being used as the market line… the quotations are theirs. The conclusion you are drawing from them is yours."
+- **Nuestra respuesta:** Registro limpio: le doy la palabra interpretación entera; la pruebo contra la alternativa con recibos verbatim (CarolAnn apex→no moral obligation; Matt "yes. It does. Because we are the dominant species"); el argumento corre con cualquier lectura (recién nacido tumba los rasgos; Anna los soltó por species); su primera pregunta ya tiene respuesta. Cierre: qué más hacía "superior intelligence" en un comentario que termina en "no moral obligation".
 
 _Hilos: 27468645086091974_
