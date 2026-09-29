@@ -148,4 +148,8 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Réplica 12m (Open Debates 3, post their-own-words): "And there it is" — toma "no puedo responder por su intención privada" como retirada; falsa dicotomía: alguien puede decir "más inteligentes, por tanto comerlos no es inmoral" sin teoría del criterio de propiedad; no deja volver a lo de hace cinco semanas.
 - **Nuestra respuesta:** Limpio (200 palabras): concede la tercera opción y que es lectura; muestra que esa tercera opción es la frase del post ("becomes the reason she can stay on the market"); suelta lo de hace cinco semanas; newborn/dementia prueban esa razón. Salida: why does the same gap do no ownership work at all in a newborn?
 
+### Hilo `28615704478052690` — 2026-09-28 · outcome: **pending**
+- **Su jugada:** PS por orden de Bernard (replylink a mi reply C): remate a la "tercera opción" de Dean (más inteligentes, por tanto comerlos no es inmoral) llevada a su mejor versión, la clase sapiente (Cohen).
+- **Nuestra respuesta:** Limpio (240 palabras), colgado del comentario de Dean bajo la C: la clase protege al recién nacido por algo que no está en él; caso inverso (individuo racional de especie no racional); tutela responde al pupilo y nunca incluye vender/consumir/destruir, el título sí. Sin citar a Dean ni lo de hace cinco semanas. Salida: what is the class doing that this individual couldn't challenge?
+
 _Hilos: 27468645086091974, 27496390256650790, 28615704478052690_
