@@ -12,7 +12,8 @@
       "100004284907337",
       "1338583394",
       "1277660735",
-      "100000650843692"
+      "100000650843692",
+      "100089071227800"
     ],
     "fallacy_type_id": "appeal_to_nature"
   },
@@ -74,11 +75,12 @@
     "name": "Futility / No Clean Option",
     "category": "rhetoric",
     "definition": "Uses 'everything causes harm' to claim veganism isn't morally superior. 'Tell me what you eat, wear, or live in that allows you to choose NOT hurting animals.' Used to reduce veganism to absurdity by demanding zero harm.",
-    "canonical_counter": "Perfect is not the enemy of good. The question isn't zero-harm — it's unnecessary harm. 'Harm exists in every food system. The ethical question is whether we're justified in deliberately imposing harm on a sentient being when a reasonable alternative exists.' Don't bite the crop-deaths hook.",
+    "canonical_counter": "Grant the imperfection whole: fields kill, nobody lives clean, and one person's plate doesn't empty a single barn. Then move the question off outcomes and onto the relation. Veganism was never a rescue plan with a body count; it's declining to be the party who buys the title over someone who feels. 'You're not saving anyone' measures the wrong thing: the question is whether that title has a reason, and that question doesn't depend on how many people refuse it.",
     "register": "filo",
-    "what_not_to_do": "Don't engage with crop-death body counts. Don't try to prove veganism causes zero harm. The standard is avoidable harm, not zero harm.",
+    "what_not_to_do": "Don't argue impact numbers, elasticity or how many animals a vegan 'saves'. Don't bite crop-death counts. Don't concede that the standard is some quantity of harm; the axis is the property relation, harm only in passing.",
     "actors_known": [
-      "100018422793817"
+      "100018422793817",
+      "100046325085471"
     ],
     "fallacy_type_id": null
   },
@@ -552,7 +554,21 @@
     "register": "filo",
     "what_not_to_do": "Don't list a catalogue of formerly legal atrocities; one sharp example max, and any human-slavery parallel only by STRUCTURE (who writes the title), never equating the subjects. Don't argue legal technicalities or which jurisdictions protect animals. Don't concede that law and legitimacy are the same thing.",
     "actors_known": [
-      "100001248981179"
+      "100001248981179",
+      "61580416850698"
+    ],
+    "fallacy_type_id": null
+  },
+  {
+    "id": "demanda_credencial",
+    "name": "Credential Demand / What Have You Done",
+    "category": "rhetoric",
+    "definition": "Replaces the argument with a demand for the asker's résumé: 'what do you actually do for animals?', 'show us you rescue', 'if all you do is post, why should anyone listen?'. Circumstantial ad hominem: the question's validity is made to depend on the asker's deeds.",
+    "canonical_counter": "Grant the real work the other person does, without sarcasm, and grant your own limits. Then point out that a question stands or falls on its own: it would be the same question coming from them. Turn back to the question itself, ideally through something from their own experience (the bond, the rescue) that shows there is someone there.",
+    "register": "compasivo",
+    "what_not_to_do": "Don't recite your activist credentials or get defensive. Don't belittle their rescue work. Don't make it a contest of who helps animals more.",
+    "actors_known": [
+      "100018541819048"
     ],
     "fallacy_type_id": null
   }

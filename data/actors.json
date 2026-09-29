@@ -735,7 +735,9 @@
         "our_reply_summary": "Registro filo, corto: es un reporte de sabor que contesta sin querer mi pregunta (ham tonight, delicious, done); su lengua votó y la cerda no tuvo voto (fuck-all); \"delicious\" habla de su cena, la cerda era la que podía asustarse. Cierre: ¿qué le agrega \"delicious\" al reclamo de que era suya para volverla jamón? Última vuelta, no perseguir más.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "draft_sha": "a5d49cf35ce6428b",
-        "outcome": "pending"
+        "outcome": "escalated",
+        "outcome_evidence": "Dori → Bernard (1h): \"and? Will you grieve long for her? Will you cry and wallow in your grief for 'her'? Please post a video!\"",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: tras 'taste report' ya no trajo razón; subió a burla ('will you grieve… post a video'). El framework dejó la preferencia desnuda; ella cambió a mofa, sello tras pregunta sin contestar."
       }
     ]
   },
@@ -747,7 +749,8 @@
     "postura_nucleo": "Antes pile-on de dos palabras; 2026-09-27 trae argumento propio: crop_deaths_flip con la misma especie (feral pigs vs bacon pig, \"both are pigs\").",
     "analisis": "Apareció solo para rematar el argumento de Matt con 'he can't'. Pile-on de dos palabras. Bando no completamente confirmado: también reaccionó a un comentario de Bernard con valencia desconocida. 2026-09-27 (VEGANnoyance, post de sintiencia): sube de pile-on a argumento real, el flip de crop deaths con cerdos ferales; merece una vuelta (relación de propiedad, no conteo).",
     "tactics": [
-      "crop_deaths_flip"
+      "crop_deaths_flip",
+      "legalidad_como_justificacion"
     ],
     "tone": "low_effort",
     "verdict": "audiencia",
@@ -778,7 +781,9 @@
         "our_reply_summary": "expuse la trampa (nunca dije que matar al feral esté bien) y volteé su lista de costos: pagar lo que cuesta un título prueba que lo tienes, no que el cerdo deba ser propiedad; cierre con su lista",
         "framework": "algo-a-alguien-sujeto-derecho",
         "draft_sha": "800df6698cc15372",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Jude → Bernard (46m): \"if i buy the pig, I'm responsible for the pig. The pig is mine… That's the law.\"",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: aceptó implícitamente la distinción poseído/no-poseído y la defendió con la ley ('I own it… That's the law') + culling de ferales por la cosecha. Sigue en el intercambio; su respuesta es-legal, no reason."
       }
     ]
   },
@@ -1093,7 +1098,9 @@
       "futility_no_clean_option",
       "whataboutism",
       "welfare_rhetoric",
-      "domestication_mutualism"
+      "domestication_mutualism",
+      "demanda_credencial",
+      "propiedad_como_proteccion"
     ],
     "tone": "civil",
     "verdict": "persuadible",
@@ -1101,7 +1108,9 @@
     "what_not_to_do": "No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar 'gestión de feral animals' de 'criar y vender crías para matadero'. No martillo moral con un granjero de buena fe.",
     "threads": [
       "march-property",
-      "27319402757682875"
+      "27319402757682875",
+      "28459136643743554",
+      "28604913169131821"
     ],
     "interactions": [
       {
@@ -1203,7 +1212,9 @@
         "our_reply_summary": "Concedí el rescate en serio (vale más que un hilo); ignoré por completo lo del inglés/IA; no contesté la demanda de credenciales con currículum (\"credential test, proves fuck-all\"); volteé su frase: llamar a alguien shit owner ya dice que el título no fue la última palabra sobre esa cabra (tenía el papel y la categoría legal y aun así había que rescatarla). Cierre con sus palabras: ¿qué tenía la cabra bajo el shit owner que no tenga la que se vende? 149 palabras.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "draft_sha": "b367b7774522c360",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Chris → Bernard (20m): \"If all you do is write things on the internet… why should anyone listen to you? Do you understand animals bond with their owners?\"",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: la concesión del rescate + 'shit owner prueba que el título no zanja nada' no la tocó; pivotó a credencial ('what do you do for animals… why should anyone listen') y al vínculo dueño-animal. Buena fe, sigue hablando."
       }
     ]
   },
@@ -1804,7 +1815,9 @@
         "our_reply_summary": "Le di el caso positivo completo: título = el fin de uno decide por default; sobre un novillo su lado pierde siempre; la razón por la que ninguna persona es propiedad no menciona inteligencia. Agricultor actúa contra un animal que existe por su cuenta; ganadero lo cría para SER la comida. Accountable del cómo no toca el si; legitimate intended use es el dueño calificando su título (bullshit). Cierre: qué cubre el whether.",
         "framework": "crueldad-no-es-la-causa",
         "draft_sha": "4bd1e0c4f94384ce",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Les → Bernard (1h): \"You asked what justifies the WHETHER… Fine. I consider breeding and raising livestock for human nutrition a legitimate use\"",
+        "outcome_note": "crueldad-no-es-la-causa: empujó a Les a contestar el WHETHER explícito ('I consider breeding… a legitimate use… I don't accept that sentience automatically grants…'). Avance real, no concesión."
       },
       {
         "thread_id": "28150669567887541",
@@ -3613,7 +3626,9 @@
         "our_reply_summary": "Registro filo profano: \"both\" es poder más papeleo; \"we make it legal\" dice quién tuvo la pluma y él ya lo había dicho (\"we dominate based on our written and unwritten rules\"): el título escribiéndose su propio permiso. Poseer personas también fue legal, escrito por quienes poseían (misma estructura, no mismo sujeto). El papeleo no agrega razón. Cierre: ¿a qué deben responder las reglas escritas además de que las escribimos nosotros?",
         "framework": "esclavitud-paralelismo",
         "draft_sha": "3093acb217dfd866",
-        "outcome": "pending"
+        "outcome": "escalated",
+        "outcome_evidence": "Homer → Bernard (1h): \"Oh, spare us the freshman philosophy seminar. Comparing eating a cheeseburger to chattel slavery…\"",
+        "outcome_note": "esclavitud-paralelismo: el paralelo 'el que escribe la regla es el dueño' pegó; respondió con sello ('freshman philosophy seminar', 'clutch your tofu') + reducción al absurdo del león. Escalada con argumento residual."
       },
       {
         "thread_id": "28459136643743554",
@@ -3750,5 +3765,43 @@
     "verdict": "audiencia",
     "register": "compasivo",
     "what_not_to_do": "No defender a los influencers ni a John Bob. No psicologizarla de vuelta. Conceder el método (el insulto no convence a nadie), y dejar la pregunta del título planteada sin insulto, que es la prueba viva de su punto al revés."
+  },
+  {
+    "tactics": [
+      "futility_no_clean_option"
+    ],
+    "threads": [
+      "28608459382110533"
+    ],
+    "interactions": [],
+    "user_id": "100046325085471",
+    "name": "Matthew Falcone",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/100046325085471/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Futilidad de mercado: tu 1-2% no cambia la oferta y la demanda, no salvas ni un animal.",
+    "analisis": "Autor de un post raíz provocador en Open Debates 3 (2026-09-27, 9 reacciones). Mide el veganismo por impacto de mercado; admite de paso que la oferta sigue a la demanda. Primer contacto.",
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No discutir elasticidad ni cuántos animales salva un vegano; no prometer impacto."
+  },
+  {
+    "tactics": [
+      "naturalismo"
+    ],
+    "threads": [
+      "28462611456729406"
+    ],
+    "interactions": [],
+    "user_id": "100089071227800",
+    "name": "Alex Krizel",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100089071227800/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Naturalismo anatómico: el pH gástrico ~1.5 prueba que somos carroñeros, no herbívoros (diálogo de Sama Hoole, admite que probablemente es IA pero \"the point remains\").",
+    "analisis": "Postea en VEGANnoyance un diálogo satírico copiado de X (SamaHoole) con 25 reacciones; él mismo concede que es IA. El argumento es de capacidad digestiva: can, no should. Primer contacto.",
+    "tone": "sarcastic",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No pelear el pH ni la biología (conceder entera). No acusarlo de IA (nos lo devuelven)."
   }
 ]
