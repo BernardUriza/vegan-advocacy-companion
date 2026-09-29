@@ -4080,5 +4080,24 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No pelear el pH ni la biología (conceder entera). No acusarlo de IA (nos lo devuelven)."
+  },
+  {
+    "tactics": [
+      "plant_sentience_equivalence"
+    ],
+    "threads": [
+      "28161481036806394"
+    ],
+    "interactions": [],
+    "user_id": "100004879835857",
+    "name": "John Kehren",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/100004879835857/",
+    "bando": "ambiguo",
+    "postura_nucleo": "Pide pruebas del alma y, ante el argumento de la sintiencia, pregunta por los animales sin sistema nervioso central (medusas, ostras, almejas).",
+    "analisis": "Primer contacto (hilo \"Animals have souls\" de Mizati Yñori, Vegans VS Meat Eaters, 2026-09-28). Escéptico del alma pero ya razona con el criterio correcto: dolor, gozo y deseo requieren un cerebro funcional. Su pregunta es de buena fe y afila la línea en vez de negarla.",
+    "tone": "civil",
+    "verdict": "persuadible",
+    "register": "compasivo",
+    "what_not_to_do": "No defender el alma ni la vida como criterio (biocentrismo). No negar que la ostra es un caso límite real. Conceder el borde y regresar a los animales que sin duda sienten y que sí están en la granja."
   }
 ]

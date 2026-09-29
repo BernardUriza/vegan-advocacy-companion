@@ -349,7 +349,8 @@ node scripts/seed-coagent.mjs read --url <location.href tras enviar> --phrase "<
 ```
 
 Ancla en la última aparición de la frase DENTRO de un mensaje tuyo (ignora citas en la
-respuesta), espera por estabilidad de contenido (3 lecturas iguales a 1.5s), corta en
+respuesta), espera por estabilidad de contenido (6 lecturas iguales a 2s = 12s quieto, tope 360s, frase hasta 90s:
+insult-gpt tarda hasta ~2 min y pausa a media respuesta; ajustable con `--gap-ms`/`--stable-reads`/`--timeout-s`), corta en
 `ChatGPT said:` y termina en `Latest response` / el siguiente `You said:`. Lógica pura
 en `scripts/coagent-transport.mjs` (tests: `coagent-transport.test.mjs`); si ChatGPT
 cambia el DOM, se arregla ahí y en el SKILL.md de `/coagent`.

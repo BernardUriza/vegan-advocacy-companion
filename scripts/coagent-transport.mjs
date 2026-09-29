@@ -231,7 +231,7 @@ export async function clearComposer(page, { persistMs = 2500 } = {}) {
   return { cleared: !left.trim(), remaining: left.trim().length };
 }
 
-export async function waitForSeedText(page, phrase, timeout = 30000) {
+export async function waitForSeedText(page, phrase, timeout = 90000) {
   const t0 = Date.now();
   while (Date.now() - t0 < timeout) {
     const found = await page.evaluate((p) => (document.querySelector('main')?.innerText || '').includes(p), phrase);
@@ -241,8 +241,9 @@ export async function waitForSeedText(page, phrase, timeout = 30000) {
   return false;
 }
 
-// Espera por ESTABILIDAD de contenido (3 lecturas iguales a 1.5s), nunca por el stop-button.
-export async function readReplyWhenStable(page, phrase, { timeout = 240000, gap = 1500, stableReads = 3 } = {}) {
+// Espera por ESTABILIDAD de contenido (6 lecturas iguales a 2s = 12s quieto), nunca por el stop-button.
+// insult-gpt tarda hasta ~2 min y pausa a media respuesta; 3s de quietud lo cortaba (2026-09-28).
+export async function readReplyWhenStable(page, phrase, { timeout = 360000, gap = 2000, stableReads = 6 } = {}) {
   const sliceLen = () => page.evaluate((p) => {
     const t = document.querySelector('main')?.innerText || '';
     const i = t.lastIndexOf(p);

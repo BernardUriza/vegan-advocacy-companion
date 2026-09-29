@@ -239,13 +239,15 @@ if (!isMain) {
   }
 } else if (cmd === 'read') {
   const phrase = arg('--phrase');
-  if (!phrase) die('uso: seed-coagent.mjs read --phrase "<frase única del seed>" [--url <chat url>] [--out <file>] [--timeout-s N]');
+  if (!phrase) die('uso: seed-coagent.mjs read --phrase "<frase única del seed>" [--url <chat url>] [--out <file>] [--timeout-s N] [--gap-ms N] [--stable-reads N]');
   const T = await import('./coagent-transport.mjs');
   const { openScratchPage } = await import('./fb-lib.mjs');
   const target = T.resolveCoagentUrl({ url: arg('--url'), root: ROOT });
   if (!target.url) die(target.error);
   const outFile = arg('--out') ? resolveUserPath(arg('--out'), ROOT) : null;
-  const timeout = (Number(arg('--timeout-s')) || 240) * 1000;
+  const timeout = (Number(arg('--timeout-s')) || 360) * 1000;
+  const gap = Number(arg('--gap-ms')) || undefined;
+  const stableReads = Number(arg('--stable-reads')) || undefined;
   const { page, done } = await openScratchPage();
   let res;
   try {
@@ -253,7 +255,7 @@ if (!isMain) {
     const href = page.url();
     if (!T.hrefMatches(target.url, href)) res = { ok: false, stage: 'href', pageUrl: href, error: 'la tab no está en el chat pedido' };
     else if (!(await T.waitForSeedText(page, phrase))) res = { ok: false, stage: 'seed', pageUrl: href, error: 'la frase no aparece en el chat' };
-    else res = { pageUrl: href, ...(await T.readReplyWhenStable(page, phrase, { timeout })) };
+    else res = { pageUrl: href, ...(await T.readReplyWhenStable(page, phrase, { timeout, gap, stableReads })) };
   } finally {
     await done();
   }
