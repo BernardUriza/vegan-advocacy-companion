@@ -68,8 +68,12 @@ script con `--mode root` y `--author "<autor del post>"`, sin `--anchor`. Aborta
 2026-09-28 los raíz salían por MCP a mano, fuera de este gate; ya no.
 
 Devuelve `{ ok, check:{ mentionIntact, startsOK, endsOK, newlines, head, tail }, nextStep }`.
-Si `ok:true` → **Claude+MCP toma la tab viva** (`list_pages` → `select_page` la
-url) → re-lee el composer (Art. 2, no confío en el return del script) → envío
+Si `ok:true` → **Claude+MCP toma la tab viva** (`list_pages` → el `pageId` de esa
+url, pasado a CADA `evaluate_script`/`take_screenshot`/`close_page`; **nunca
+`select_page` ni `bringToFront`**: la selección es global y le arrebata a Bernard la
+tab en la que está trabajando. Lote 0930A, 2026-09-30: cuatro replies enviadas por
+`pageId` mientras él firmaba en Docusign en la tab 1, sin tocarla) → re-lee el
+composer (Art. 2, no confío en el return del script) → envío
 atómico con `DESTINO` + Enter sintético (PASO 5 abajo; `press_key Enter` está
 bloqueado por hook) → verificación histérica (PASO 6 abajo). El `--body-file` de
 `comment-prepare` va con RUTA ABSOLUTA: el hook de procedencia resuelve rutas
