@@ -75,7 +75,7 @@ No gastar una jugada principal. Una línea que reponga la pregunta y pida algo d
 - **Su jugada:** Réplica a "Food by whose decision, and what gave them the say?": "sucks. Ate some ham tonight. Delicious." (+ reacción de risa) — preferencia_gusto como respuesta.
 - **Nuestra respuesta:** Registro filo, corto: es un reporte de sabor que contesta sin querer mi pregunta (ham tonight, delicious, done); su lengua votó y la cerda no tuvo voto (fuck-all); "delicious" habla de su cena, la cerda era la que podía asustarse. Cierre: ¿qué le agrega "delicious" al reclamo de que era suya para volverla jamón? Última vuelta, no perseguir más.
 
-### Hilo `28604913169131821` — 2026-09-28 · outcome: **pending**
+### Hilo `28604913169131821` — 2026-09-28 · outcome: **escalated**
 - **Su jugada:** Réplica drive-by (Open Debates 3, post de sintiencia): "you must have a fetish. Referring to all animals as she."
 - **Nuestra respuesta:** Una línea filo: agarró el pronombre porque la pregunta sigue ahí; fetish es un dodge; she porque ahí hay alguien, it es la palabra que necesita la propiedad. Cierre: qué contesta vigilar el she sobre poseerla.
 

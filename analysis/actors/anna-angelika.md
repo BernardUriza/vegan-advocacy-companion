@@ -182,8 +182,12 @@ No responder al insulto en su nivel. No defender a Beyond Meat específicamente.
 - **Su jugada:** Burden-flip / retreat: I already answered. We do not owe you a philosophical justification... animals are property because we humans decided that. (+ pieza fuerte propiedad=protección)
 - **Nuestra respuesta:** El burden-flip ES la tesis del post (una decisión nombra al que tuvo el poder, no la justifica); contra propiedad=protección, distinción título vs tutela: responder por alguien (padre/tutor) no exige poseerlo. UNA vuelta, back al título.
 
-### Hilo `28615704478052690` — 2026-09-28 · outcome: **pending**
+### Hilo `28615704478052690` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** Raíz bajo el post their-own-words: None of those traits are relevant... Species is... Humans > non humans.
 - **Nuestra respuesta:** Filo profano: "Species is" confirma el post (los rasgos se sueltan cuando estorban); humans > non humans es un ranking sin razón: rasgo trae de vuelta al recién nacido, pertenencia es "porque somos nosotros". Cierre: qué significa el ">" más allá de quién tiene el título.
+
+### Hilo `28615704478052690` — 2026-09-30 · outcome: **pending**
+- **Su jugada:** Réplica (Open Debates 3, post their-own-words): "What the heck are you rambling about?" — niega haber usado rasgos, "go argue with the people who made that argument"; personhood comes with a set of rights, non-humans do not possess those rights (círculo).
+- **Nuestra respuesta:** Filo corto (93 palabras): dije que tiró los rasgos y lo volvió a hacer; personhood es el mismo círculo con otro papel tapiz (protege al humano no sintiente por la etiqueta, deja fuera a la cerda por la etiqueta). Cierre: what the fuck is personhood doing here, besides saying "human" twice.
 
 _Hilos: 27335635946059556, 27363745576581926, 28500475619575577, 27375477042075446, 27395909046698912, 27405978672358616, 27496390256650790, 28615704478052690_

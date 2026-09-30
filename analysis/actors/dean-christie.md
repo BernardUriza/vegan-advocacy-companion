@@ -144,12 +144,16 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Réplica 5 (Open Debates 3, post their-own-words): "did you actually ask them if that is what they meant? … You have an interpretation… You can not have it both ways"; lectura alternativa: los rasgos eran solo su razón para creer que los humanos son moralmente distintos.
 - **Nuestra respuesta:** Registro limpio, 823 palabras por orden de Bernard: reencuadre raíz→rama de las cinco citas (CarolAnn, Anna, Samantha con matiz steward, Tiana + Nate Porter, Matt que hizo la pregunta él mismo); procedencia: Dean estuvo hace 5 semanas en el hilo de Anna y escribió que capacidades ligadas a la sapiencia pueden decidir si la propiedad es apropiada; mi respuesta de entonces fue el infante y su turno se fue a padres/tutores. Cierre: What ownership work do those capacities do in the infant case? (x/y del coagent aceptado).
 
-### Hilo `28615704478052690` — 2026-09-28 · outcome: **pending**
+### Hilo `28615704478052690` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** Réplica 12m (Open Debates 3, post their-own-words): "And there it is" — toma "no puedo responder por su intención privada" como retirada; falsa dicotomía: alguien puede decir "más inteligentes, por tanto comerlos no es inmoral" sin teoría del criterio de propiedad; no deja volver a lo de hace cinco semanas.
 - **Nuestra respuesta:** Limpio (200 palabras): concede la tercera opción y que es lectura; muestra que esa tercera opción es la frase del post ("becomes the reason she can stay on the market"); suelta lo de hace cinco semanas; newborn/dementia prueban esa razón. Salida: why does the same gap do no ownership work at all in a newborn?
 
-### Hilo `28615704478052690` — 2026-09-28 · outcome: **pending**
+### Hilo `28615704478052690` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** PS por orden de Bernard (replylink a mi reply C): remate a la "tercera opción" de Dean (más inteligentes, por tanto comerlos no es inmoral) llevada a su mejor versión, la clase sapiente (Cohen).
 - **Nuestra respuesta:** Limpio (240 palabras), colgado del comentario de Dean bajo la C: la clase protege al recién nacido por algo que no está en él; caso inverso (individuo racional de especie no racional); tutela responde al pupilo y nunca incluye vender/consumir/destruir, el título sí. Sin citar a Dean ni lo de hace cinco semanas. Salida: what is the class doing that this individual couldn't challenge?
+
+### Hilo `28615704478052690` — 2026-09-30 · outcome: **pending**
+- **Su jugada:** Réplica 8 (Open Debates 3, post their-own-words): "piling logical fallacies" — strawman (nunca dijo que la especie sola baste), falso dilema (marco multivariable: capacidades, especie, relaciones, vulnerabilidad, derechos, intereses), petición de principio en el hipotético inverso, equívoco relevante vs criterio; "own the distinction".
+- **Nuestra respuesta:** Limpio (263 palabras): concedí el strawman y retiré el hipotético como prueba; las cinco citas quedan cerradas de mi lado (palabras de ellos, lectura mía); tomé su lista textual de variables y la corrí sobre la cerda y el recién nacido: vulnerabilidad, intereses y capacidades no la sacan, derechos son lo explicado, la relación es lo que se prueba; queda la pertenencia salvo otra variable. Cierre: cuál variable de su lista, que no sea especie ni la relación misma, deja al recién nacido fuera y a la cerda en el mercado.
 
 _Hilos: 27468645086091974, 27496390256650790, 28615704478052690_

@@ -44,7 +44,7 @@ Nada de body-count ni cuál muerte es peor; no defender ni condenar el control d
 - **Su jugada:** so it is ok to shoot/poison/trap an unowned pig but bad to eat one you bought and cared for? wow vegan logic
 - **Nuestra respuesta:** expuse la trampa (nunca dije que matar al feral esté bien) y volteé su lista de costos: pagar lo que cuesta un título prueba que lo tienes, no que el cerdo deba ser propiedad; cierre con su lista
 
-### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** Réplica 46m: "if i buy the pig… I own it… If I slaughter the pig, I own the meat. That's the law." + culling de ferales + "without farming animals we won't feed 8 billion" + cult/emotion/study the law.
 - **Nuestra respuesta:** Concedí la cadena como descripción exacta del título; la ley registra cómo pasa de mano, no qué lo legitima; una línea al sello; su 8 mil millones es la tesis de propiedad necesaria. Cierre: ¿poseer a un cerdo que puede asustarse es lo que hace falta para alimentar 8 mil millones, o solo lo que la ley permite?
 

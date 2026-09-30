@@ -120,8 +120,12 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** Raíz nueva (VEGANnoyance, post de sintiencia, 7h): "Animals are property mate, give it a rest. Why don't you focus on making animals lives better? Show us how you're actually helping animals, maybe rescue an animal from a shit owner..." — aserción + demanda de credenciales / deflexión a activismo. Antes le dijo a Parnaibensis que mi inglés es trash y uso IA.
 - **Nuestra respuesta:** Concedí el rescate en serio (vale más que un hilo); ignoré por completo lo del inglés/IA; no contesté la demanda de credenciales con currículum ("credential test, proves fuck-all"); volteé su frase: llamar a alguien shit owner ya dice que el título no fue la última palabra sobre esa cabra (tenía el papel y la categoría legal y aun así había que rescatarla). Cierre con sus palabras: ¿qué tenía la cabra bajo el shit owner que no tenga la que se vende? 149 palabras.
 
-### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **engaged**
 - **Su jugada:** Réplica 20m (VEGANnoyance, post de sintiencia): demanda de credencial ("what do you do for animals… why should anyone listen to you?") + "Do you understand animals bond with their owners?"
 - **Nuestra respuesta:** Registro limpio: concedí que su rescate pesa más que mis posts; la pregunta vale igual la haga quien la haga; el vínculo necesita alguien del otro lado (nadie se apega a una ute), el cuidado da deber, no título. Cierre: qué le da ese vínculo al rescatista más allá de un deber hacia ella.
+
+### Hilo `28459136643743554` — 2026-09-30 · outcome: **pending**
+- **Su jugada:** Réplica 23h (VEGANnoyance, post de sintiencia): insurance / nadie responde por animales salvajes / colgaban por robar caballos (=valor) / "just because you don't like it doesn't mean it's bad" + "I just rescued a lamb yesterday. Tell me what your ideal situation is with my new lamb".
+- **Nuestra respuesta:** Compasivo (278 palabras): concedí la maquinaria legal entera; seguro es para activos y la horca por caballos protegía la cartera del dueño; mi ideal con la cordera es lo que ya hace (cuidarla, responder por ella, que nadie se la quite) sin la parte del título que con ella no va a usar (venderla, criar para vender, camión). Cierre: qué parte del título necesita con esta cordera más allá de ser responsable de su cuidado.
 
 _Hilos: march-property, 27319402757682875, 28459136643743554, 28604913169131821, 27468645086091974_
