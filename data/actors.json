@@ -2068,7 +2068,7 @@
         "third_party_replies": []
       },
       {
-        "outcome": "pending",
+        "outcome": "engaged",
         "date": "2026-09-30",
         "thread_id": "28604913169131821",
         "their_move": "Réplica (Open Debates 3, post de sintiencia): \"finally, an actual argument!\" — el salto interests→no ownership; me atribuye definir ownership como autoridad irrestricta; human rights protect ALL humans regardless of cognition; sentient = observación, entitlement = posición filosófica; \"demonstrate why everyone else is morally obligated\".",
@@ -2080,7 +2080,21 @@
         "propensity": 0.3333333333333333,
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-30T23:05:21.463Z",
-        "third_party_replies": []
+        "third_party_replies": [],
+        "outcome_evidence": "Les→Bernard 5h: 'You can call that species membership if you want. Fine. But then your position is equally a membership rule: sentient = cannot be property. Why should that be the decisive rule?'",
+        "outcome_note": "antropoespecismo: aterrizó a medias. Les aceptó que su regla 'all humans regardless of cognition' es membresía ('call it species membership if you want. Fine') y que ambas posturas son filosóficas, pero contraatacó con tu-quoque: 'sentient = cannot be property' también es regla de membresía; reencuadra veto→balance de intereses; 'Try again'. Sin concesión del título."
+      },
+      {
+        "thread_id": "28604913169131821",
+        "date": "2026-09-30",
+        "their_move": "Réplica (Open Debates 3, post de sintiencia, 5h): \"finally admitted both positions are philosophical\"; el puente interests→no ownership sigue sin probarse; tu-quoque: \"sentient = cannot be property\" también es regla de membresía; acepta \"call it species membership. Fine\"; balancing interests ≠ veto; \"you still haven't proven the IF. Try again\".",
+        "our_reply_summary": "Filo (262 palabras): concedí \"both philosophical, no shit\"; el tu-quoque no cuadra: la membresía marca algo ajeno a lo que protege, la sintiencia es la condición de que haya alguien a quien el título anule; su defensa del recién nacido ya usa ese criterio (\"species label has fuck-all to do with it\"); la carga es del que reclama título; cierre con su \"balancing\": ¿en qué caso gana ella, y si nunca, qué se pesa?",
+        "framework": "consideracion-moral-no-cuanto-sufre",
+        "draft_sha": "ad1336f243e41053",
+        "exposure_n": 37,
+        "assignment": "randomized",
+        "propensity": 0.3333333333333333,
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -2980,7 +2994,7 @@
         "third_party_replies": []
       },
       {
-        "outcome": "pending",
+        "outcome": "engaged",
         "date": "2026-09-30",
         "thread_id": "28615704478052690",
         "their_move": "Réplica 8 (Open Debates 3, post their-own-words): \"piling logical fallacies\" — strawman (nunca dijo que la especie sola baste), falso dilema (marco multivariable: capacidades, especie, relaciones, vulnerabilidad, derechos, intereses), petición de principio en el hipotético inverso, equívoco relevante vs criterio; \"own the distinction\".",
@@ -2992,7 +3006,21 @@
         "propensity": null,
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-30T23:05:21.463Z",
-        "third_party_replies": []
+        "third_party_replies": [],
+        "outcome_evidence": "Dean→Bernard 5h: 'before you try to make me solve your newly constructed newborn-versus-pig thought experiment, own the actual concession you've now made: the commenters gave you the words; you supplied the meaning.'",
+        "outcome_note": "mi-desarrollar-discrepancia: no tocó la pregunta (qué variable de SU lista separa al recién nacido del cerdo); convirtió 'las palabras son de ellos, la lectura es mía' en concesión de que el OP falla, llamó falso dilema a su propia lista y exige 'own the concession' antes de contestar. Retirada a procedencia, buena fe pedante; sin concesión."
+      },
+      {
+        "thread_id": "28615704478052690",
+        "date": "2026-09-30",
+        "their_move": "Réplica 9 (Open Debates 3, their-own-words, 5h): convierte \"the words are theirs, the reading is mine\" en concesión de que el OP falla; llama falso dilema a su propia lista; petición de principio en \"newborn off the market, pig on it\"; derechos pueden fundarse en combinaciones; \"own the actual concession\" antes de contestar el caso.",
+        "our_reply_summary": "Limpio (200 palabras): poseí la lectura en una frase (enmarcada así desde el día uno); su corrección coincide con la conclusión del OP (\"those traits were never the property line\"); la lista es suya y abierta (\"unless another variable does it\"); el split recién nacido/cerda es juicio compartido + práctica defendida; cierre con sus palabras: ¿qué combinación separa a este recién nacido de esta cerda?",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "draft_sha": "c0b8b395ef248bce",
+        "exposure_n": 30,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
       }
     ],
     "user_id": "1198831097",
@@ -3255,6 +3283,18 @@
             "text": "Chris Pearson · 1dBernard Uriza Orozco Exactly. Her idea of knowledge is expertise in getting what she wants from an animal. She knows how to use and control animals. That’s the knowledge she keeps bragging about.LikeReply"
           }
         ]
+      },
+      {
+        "thread_id": "28620931384196666",
+        "date": "2026-09-30",
+        "their_move": "Réplica (Open Debates 3, post del león de Chris Pearson, 2d): \"extremely cute\"; licensed and cleared, on the list eight months; no irritated; \"technically no need to justify anything\"; \"if you don't understand you don't get to make posts like this, thank you for showing your ignorance\".",
+        "our_reply_summary": "Filo corto (143 palabras): concedí la mecánica de la caza y la lista; lista/permiso/licencia/disparo son permisos entre humanos y el león solo aparece como el elegido (\"calling that knowledge is bullshit, it's paperwork\"); \"no need to justify\" es el permiso que se trata como razón; una línea al sello; cierre: ¿quién licenció a los que escribieron la licencia para poner su cuerpo en una lista?",
+        "framework": "antropoespecismo",
+        "draft_sha": "6267b2d496f4a3bc",
+        "exposure_n": 7,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
       }
     ],
     "user_id": "100003780189781",
@@ -3654,7 +3694,8 @@
       "naturalismo"
     ],
     "threads": [
-      "27330688236588406"
+      "27330688236588406",
+      "28459136643743554"
     ],
     "interactions": [
       {
@@ -3666,6 +3707,18 @@
         "outcome": "silent",
         "outcome_evidence": "Sin turnos de Morgan Jenkins después de nuestra última reply; ancla de 5 semanas.",
         "outcome_note": "Gish gallop (especie + welfare comparativo + dientes + wild-is-worse + meta anti-vegano) contestado; no volvió en 5 semanas."
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-09-30",
+        "their_move": "Raíz en mi post de sintiencia (VEGANnoyance, 2d, \"I'll be serious for a second\"): concede que son sintientes; \"livestock is property but don't tell me they are slaves\"; vet care, campo, granero, heno; \"they have a final purpose but most farms treat livestock right\".",
+        "our_reply_summary": "Limpio (183 palabras): concedí sintiencia, diferencias de mente y todo el trato; solté la palabra que rechaza; tomé sus palabras \"livestock is property\" y \"final purpose\": el cuidado vive dentro de la relación y el final lo decide otro; la propiedad añade criar, vender, mover y terminar, y el cuidado no la toca; cierre: ¿quién decide ese final y qué le da ese poder sobre un animal que él acepta que siente?",
+        "framework": "crueldad-no-es-la-causa",
+        "draft_sha": "c7e1a4fab31979ec",
+        "exposure_n": 2,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
       }
     ],
     "user_id": "832080524",
