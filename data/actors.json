@@ -3021,6 +3021,18 @@
         "assignment": "chosen",
         "propensity": null,
         "outcome": "pending"
+      },
+      {
+        "thread_id": "28615704478052690",
+        "date": "2026-09-30",
+        "their_move": "Réplica 10 (Open Debates 3, their-own-words, 14m): pide actualizar el OP con su frase (\"my interpretations… I cannot claim they explicitly stated these traits were their criterion\") como condición; \"once you've made that correction, I'm happy to move on\" a lo sustantivo (newborn, pig, moral status, rights, species membership).",
+        "our_reply_summary": "Limpio (133 palabras): edité el OP con una línea en mis palabras (\"the quotes are theirs; what I say they were doing is my reading; links to judge in context\"), no su frase porque no cuadra con los cinco hilos; le tomé la palabra en \"happy to move on\"; cierre al individuo: cualquier cuenta de estatus moral aterriza en este recién nacido y esta cerda, ¿cuál alcanza a uno y se detiene en la otra sin mirar primero la etiqueta de especie?",
+        "framework": "filtro-especie-vs-individuo",
+        "draft_sha": "2a4fb91090b87b4e",
+        "exposure_n": 31,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
       }
     ],
     "user_id": "1198831097",

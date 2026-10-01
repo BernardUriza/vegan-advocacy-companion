@@ -242,8 +242,12 @@ No pelear el relativismo en abstracto (concederlo: no hace falta un hecho moral 
 - **Su jugada:** Réplica 18m (Open Debates 3, post de sintiencia): "round and round we go" — derechos humanos = protecciones de humanos para humanos; exige "an actual argument establishing your conclusion", sin bebés ni preguntas retóricas; y de propiedad a veganismo.
 - **Nuestra respuesta:** Filo (218 palabras): el argumento en cuatro pasos en prosa — poseer = última palabra sobre su cuerpo para fines ajenos; lo rechazamos entre humanos sin test de inteligencia; "protecciones de humanos para humanos" solo nombra el muro; la cerda tiene un lado propio; carne/leche/huevos son el producto del título y comprarlos lo paga. Salida: which step fails?
 
-### Hilo `28604913169131821` — 2026-09-30 · outcome: **pending**
+### Hilo `28604913169131821` — 2026-09-30 · outcome: **engaged**
 - **Su jugada:** Réplica (Open Debates 3, post de sintiencia): "finally, an actual argument!" — el salto interests→no ownership; me atribuye definir ownership como autoridad irrestricta; human rights protect ALL humans regardless of cognition; sentient = observación, entitlement = posición filosófica; "demonstrate why everyone else is morally obligated".
 - **Nuestra respuesta:** Filo (288 palabras): nunca dije irrestricta, dije última palabra y él mismo concedió que no hay veto; balance con resultado fijo = título con reglamento; "ALL humans regardless" es la pertenencia como muro, una posición (el humano vale por ser humano), la mía también lo es; la premisa que falta es más chica (un título sobre alguien necesita razón que no sea "somos nosotros"). Cierre: qué hace "human" en su frase que "someone with a side of her own" no pueda, aparte de nombrar al club.
+
+### Hilo `28604913169131821` — 2026-09-30 · outcome: **pending**
+- **Su jugada:** Réplica (Open Debates 3, post de sintiencia, 5h): "finally admitted both positions are philosophical"; el puente interests→no ownership sigue sin probarse; tu-quoque: "sentient = cannot be property" también es regla de membresía; acepta "call it species membership. Fine"; balancing interests ≠ veto; "you still haven't proven the IF. Try again".
+- **Nuestra respuesta:** Filo (262 palabras): concedí "both philosophical, no shit"; el tu-quoque no cuadra: la membresía marca algo ajeno a lo que protege, la sintiencia es la condición de que haya alguien a quien el título anule; su defensa del recién nacido ya usa ese criterio ("species label has fuck-all to do with it"); la carga es del que reclama título; cierre con su "balancing": ¿en qué caso gana ella, y si nunca, qué se pesa?
 
 _Hilos: 27363745576581926, 27375477042075446, 27937793019177176, 28604913169131821, 28150669567887541, 27405978672358616, 27468645086091974, 4587084521560658_

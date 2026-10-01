@@ -80,4 +80,8 @@ No perseguir cada punto del gallop (teeth/pandas/halal/carnist/AI). No competir 
 - **Su jugada:** Gish gallop: species-diff + welfare-comparativo (stun vs Komodo) + farmers spend ££££ + omnivoro/teeth + wild-is-worse + meta anti-vegano (carnist/AI).
 - **Nuestra respuesta:** Nombre el gallop en una linea; concedi el bloque empirico (especies difieren, wild brutal, farmers gastan, humanos digieren) sin conceder el titulo; clave que todo eso es ortogonal a la propiedad; el cuidado es downstream del titulo; wild-is-worse compara muertes (no era la pregunta); no claiming identical. Cierre: que justifica poner al sujeto bajo titulo humano.
 
-_Hilos: 27330688236588406_
+### Hilo `28459136643743554` — 2026-09-30 · outcome: **pending**
+- **Su jugada:** Raíz en mi post de sintiencia (VEGANnoyance, 2d, "I'll be serious for a second"): concede que son sintientes; "livestock is property but don't tell me they are slaves"; vet care, campo, granero, heno; "they have a final purpose but most farms treat livestock right".
+- **Nuestra respuesta:** Limpio (183 palabras): concedí sintiencia, diferencias de mente y todo el trato; solté la palabra que rechaza; tomé sus palabras "livestock is property" y "final purpose": el cuidado vive dentro de la relación y el final lo decide otro; la propiedad añade criar, vender, mover y terminar, y el cuidado no la toca; cierre: ¿quién decide ese final y qué le da ese poder sobre un animal que él acepta que siente?
+
+_Hilos: 27330688236588406, 28459136643743554_
