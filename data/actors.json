@@ -3307,6 +3307,18 @@
         "assignment": "chosen",
         "propensity": null,
         "outcome": "pending"
+      },
+      {
+        "thread_id": "28620931384196666",
+        "date": "2026-09-30",
+        "their_move": "Sello (Open Debates 3, post del león, 20m): \"your trying hard but miss the reality\" — mismo sello \"reality\" que en junio (27330), cero argumento tras mi reply de la licencia; a Chris: \"no sweetheart\".",
+        "our_reply_summary": "Filo (226 palabras), replylink de Bernard: reencuadre completo con recibos verbatim. Junio: miedo/curiosidad/emociones, \"they are not property\", \"Disposed of no\", \"no justification needed\", \"not getting the reality\"; ahora: \"this particular animal\", licensed, \"on the list… since he was attacked\", \"need to justify anything\". Switch nombrado: individuo cuando se le rastrea, línea en lista cuando se dispone de su cuerpo; \"Disposed of no\" duró hasta que alguien pagó la licencia; lo único constante es \"no justification needed\". Cierre: ¿al menos eso es reality? y si es \"this particular animal\" que siente miedo, ¿qué hizo legítimo vender el derecho a matarlo?",
+        "framework": "filtro-especie-vs-individuo",
+        "draft_sha": "a6b754727e97bd41",
+        "exposure_n": 8,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
       }
     ],
     "user_id": "100003780189781",
