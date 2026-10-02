@@ -57,3 +57,14 @@ test('canonicalPostUrl quita el ancla de comentario y normaliza permalink/post_i
   assert.equal(canonicalPostUrl('https://www.facebook.com/groups/683615698352965/?post_id=28148343171453514&comment_id=1'), 'https://www.facebook.com/groups/683615698352965/posts/28148343171453514/');
   assert.equal(canonicalPostUrl('https://www.facebook.com/bernardovegano/posts/pfbid0abc?comment_id=1'), 'https://www.facebook.com/bernardovegano/posts/pfbid0abc?comment_id=1');
 });
+
+test('post sin comentarios: sin links, el contenido confirma el hilo solo si la URL no se reescribió', () => {
+  const MARK = 'https://www.facebook.com/groups/770211166362062/posts/28648574331432371/';
+  const ok = judgeThreadIdentity({ expectedUrl: MARK, pageUrl: MARK, dialogLinks: [], scopeHasTarget: true });
+  assert.equal(ok.sameThread, true);
+  assert.equal(ok.via, 'content');
+  assert.equal(judgeThreadIdentity({ expectedUrl: MARK, pageUrl: MARK, dialogLinks: [], scopeHasTarget: false }).sameThread, false);
+  assert.equal(judgeThreadIdentity({ expectedUrl: MARK, pageUrl: REWRITTEN, dialogLinks: [], scopeHasTarget: true }).sameThread, false);
+  assert.equal(judgeThreadIdentity({ expectedUrl: MARK, pageUrl: MARK, dialogLinks: [REWRITTEN], scopeHasTarget: true }).sameThread, false);
+  assert.equal(judgeThreadIdentity({ expectedUrl: EXPECTED, pageUrl: EXPECTED, dialogLinks: IN_DIALOG }).via, 'links');
+});

@@ -15,14 +15,18 @@ export function threadIdsFromUrl(url) {
   return { groupId: g ? g[1] : null, postId: q ? q[1] : null };
 }
 
-export function judgeThreadIdentity({ expectedUrl, pageUrl, dialogLinks = [] }) {
+// Un post sin comentarios no pinta links /posts/ en su diálogo (Mark Smith, 2026-10-02): sin
+// links, el hilo se confirma por contenido (post o ancla en el scope) y solo si la URL no se reescribió.
+export function judgeThreadIdentity({ expectedUrl, pageUrl, dialogLinks = [], scopeHasTarget = false }) {
   const expected = threadIdsFromUrl(expectedUrl);
   const page = threadIdsFromUrl(pageUrl);
   const seen = dialogLinks.map(threadIdsFromUrl).filter((x) => x.postId);
-  const sameThread = seen.some((x) => x.postId === expected.postId && x.groupId === expected.groupId);
   const urlRewritten = page.postId !== expected.postId || page.groupId !== expected.groupId;
+  const byLinks = seen.some((x) => x.postId === expected.postId && x.groupId === expected.groupId);
+  const byContent = !seen.length && !urlRewritten && scopeHasTarget === true;
+  const sameThread = byLinks || byContent;
   const foreign = [...new Set(seen.filter((x) => x.postId !== expected.postId).map((x) => `${x.groupId}/${x.postId}`))];
-  return { expected, page, urlRewritten, sameThread, dialogPosts: seen.length, foreign };
+  return { expected, page, urlRewritten, sameThread, via: byLinks ? 'links' : byContent ? 'content' : null, dialogPosts: seen.length, foreign };
 }
 
 // La URL de una notificación (?comment_id=…&reply_comment_id=…) hace que FB pinte el post

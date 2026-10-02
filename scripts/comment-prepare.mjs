@@ -149,7 +149,7 @@ function pasteBody({ author, body }) {
 // dentro de ningún div[role=article]. Si trae texto, es un borrador de Bernard: no se toca.
 function pasteRoot({ body }) {
   const boxes = [...document.querySelectorAll('div[contenteditable="true"][role="textbox"]')]
-    .filter((b) => /^(Comment as|Write a comment|Write a public comment)/i.test(b.getAttribute('aria-label') || ''))
+    .filter((b) => /^(Comment as|Answer as|Write a comment|Write a public comment)/i.test(b.getAttribute('aria-label') || ''))
     .filter((b) => !b.closest('div[role="article"]'));
   if (boxes.length !== 1) return { ok: false, error: `root composer ambiguo (${boxes.length})` };
   const box = boxes[0];
@@ -222,16 +222,18 @@ function composerAttachmentState({ firstWords }) {
 }
 
 // --- DENTRO de la página: links de post del diálogo que contiene el composer ---
-function composerScopeLinks({ firstWords }) {
+function composerScopeLinks({ firstWords, needle }) {
   const boxes = [...document.querySelectorAll('div[contenteditable="true"][role="textbox"]')];
   const box = boxes.find((b) => (b.innerText || '').includes(firstWords));
-  if (!box) return { found: false, scope: null, links: [] };
+  if (!box) return { found: false, scope: null, links: [], hasNeedle: false };
   const dialog = box.closest('div[role="dialog"]');
   const root = dialog || document;
   const links = [...root.querySelectorAll('a[href*="/groups/"]')]
     .map((a) => a.href)
     .filter((h) => /\/groups\/[^/?#]+\/(posts|permalink)\/\d+/.test(h));
-  return { found: true, scope: dialog ? 'dialog' : 'document', links };
+  const flat = (s) => (s || '').replace(/[’‘]/g, "'").replace(/\s+/g, ' ');
+  const hasNeedle = !!needle && flat(root.innerText).includes(flat(needle));
+  return { found: true, scope: dialog ? 'dialog' : 'document', links, hasNeedle };
 }
 
 async function main() {
@@ -328,11 +330,12 @@ async function main() {
         process.exit(2);
       }
     }
-    const scopeRes = await page.evaluate(composerScopeLinks, { firstWords });
+    const needle = mode === 'root' ? (opened.postHead || '').slice(0, 60) : anchor;
+    const scopeRes = await page.evaluate(composerScopeLinks, { firstWords, needle });
     const pageUrl = page.url();
     const identity = {
       scope: scopeRes.scope,
-      ...judgeThreadIdentity({ expectedUrl: url, pageUrl, dialogLinks: scopeRes.links }),
+      ...judgeThreadIdentity({ expectedUrl: url, pageUrl, dialogLinks: scopeRes.links, scopeHasTarget: scopeRes.hasNeedle }),
     };
 
     await detach(); // deja la tab VIVA con el draft cargado
