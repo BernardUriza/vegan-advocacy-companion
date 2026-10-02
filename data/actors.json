@@ -4642,11 +4642,14 @@
         "their_move": "Raíz (VEGANnoyance, post de sintiencia, 20h) + 4 réplicas de pile-on: \"emotionally manipulative gobbledegook\", \"vegan narcissist\", \"most disingenuous group member\"; \"Cattle ranchers ride horse. Dogs were bred to help us hunt\"; y \"If you keep an animal as property so you can exploit its existence for your sense of self, you are no vegan.\"",
         "our_reply_summary": "Filo (127 palabras), una sola reply a su raíz: una línea al pile-on; su frase de propiedad es la tesis del post apuntada a mascotas; caballo y perro = animales criados para un propósito humano, \"how food and pets work\" describe el arreglo y \"proves fuck-all about the right to it\". Cierre: what is it called when the animal is a cow?",
         "framework": "antropoespecismo",
-        "draft_sha": "e69dc9b34c5a27c6",
+        "draft_sha": "33879d748a3b1855",
         "exposure_n": 1,
         "assignment": "chosen",
         "propensity": null,
-        "outcome": "pending"
+        "outcome": "pending",
+        "draft_sha_previous": [
+          "e69dc9b34c5a27c6"
+        ]
       }
     ],
     "user_id": "100056247520740",
