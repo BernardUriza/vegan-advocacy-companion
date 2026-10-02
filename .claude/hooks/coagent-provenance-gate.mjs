@@ -65,6 +65,7 @@ const unparseable = (why) => block([
   'Forma única aceptada: node <ruta>/comment-prepare.mjs --url "<url>" --author "<A>" [--anchor "<f>"] --body-file <ruta ABSOLUTA> [--image <ruta ABSOLUTA>] [--mode reply|root]',
   'Sin pipes, sin $()/backticks/globs, sin --body inline, sin forma --flag=valor ambigua con otra copia del flag, una invocación por comando.',
   'Para depurar el hook: escribe el payload JSON a un archivo y pásalo por stdin (ver comment-post-and-verify, FALLA→FIX).',
+  'Si solo querías LEERLO o greppearlo (no stagear): usa la herramienta Read, o nombra la ruta con glob (`scripts/comment-*.mjs`), nunca el nombre completo.',
 ]);
 const tokens = shellTokens(command);
 if (!tokens) unparseable('comillas sin cerrar');
@@ -74,6 +75,7 @@ if (scriptIdx.length !== 1) {
   block([
     `GATE PROCEDENCIA — STAGING BLOQUEADO: ${scriptIdx.length} invocaciones reconocibles de comment-prepare en el comando.`,
     'Una por comando: cada corrida abre una tab persistente con el draft; dos corridas = dos tabs con el mismo reply (2026-09-27, Les M).',
+    'Si solo querías LEERLO o greppearlo (no stagear): usa la herramienta Read, o nombra la ruta con glob (`scripts/comment-*.mjs`), nunca el nombre completo.',
   ]);
 }
 const si = scriptIdx[0];
