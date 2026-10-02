@@ -27,7 +27,7 @@ con MCP, y solo con el GO explícito de Bernard, por jugada o por lote.
 | 0 | `lurker-sweep.mjs`, `moat-link-drafts.mjs` | respuestas de terceros (proxy) y reacciones (secundario) por reply; backfill de `draft_sha` |
 | 1 | `notif-scan.mjs --json` | notifs agrupadas por `post_id` con `openUrl` |
 | 1 | `debt-sweep.mjs` · `scout-feeds.mjs --json` | deuda viva del moat · hilos ajenos < 48h |
-| 2 | `thread-extract.mjs "<url>" --json` | `root`, `turns[]`, `debt[]`; volcar a `.coagent/tx-<post_id>.json` |
+| 2 | `thread-extract.mjs "<url>" --out .coagent/tx-<post_id>.json` | `root`, `turns[]`, `debt[]`; `--out` UNE con el tx anterior (lo que la vista ya no carga queda `retained`), nunca redirigir `--json >` sobre un tx existente |
 | 3 | `framework-pick.mjs` → `seed-gate.mjs` → `seed-coagent.mjs seed/insert/read/finalize` | exposición, framework bloqueado y sorteo por target; gate del master, recibo, transporte a ChatGPT sin enviar, recibo del draft final (`finalize --framework` valida el pick) |
 | 4 | `style-gate.mjs a.txt b.txt …` · `lint-prose.mjs` | gates de prosa por lote (cierres clonados incluidos) |
 | 3–4 | `quote-check.mjs <draft>` | toda cita de 4+ palabras existe verbatim en transcripts/moat/hilos; `finalize` lo corre y bloquea (`--quote-ok` para comillas que no son cita) |
