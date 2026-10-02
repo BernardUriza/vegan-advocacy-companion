@@ -32,7 +32,7 @@ No pelear pH ni anatomía; conceder y volver a propiedad.
 
 ## Log de interacciones
 
-### Hilo `28462611456729406` — 2026-09-28 · outcome: **pending**
+### Hilo `28462611456729406` — 2026-09-28 · outcome: **silent**
 - **Su jugada:** Réplica 17m (VEGANnoyance, post de Alex Krizel sobre ácido estomacal): "Are we just moving that goal line again?"
 - **Nuestra respuesta:** Filo corto (83 palabras): la portería de la digestión la regalé entera; cerca, arete, cría, venta y título siguen ahí; el pH dice fuck-all de quién puede ser poseído. Salida: which goal line moved?
 

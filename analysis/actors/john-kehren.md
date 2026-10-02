@@ -31,7 +31,7 @@ No defender el alma ni la vida como criterio (biocentrismo). No negar que la ost
 
 ## Log de interacciones
 
-### Hilo `28161481036806394` — 2026-09-28 · outcome: **pending**
+### Hilo `28161481036806394` — 2026-09-28 · outcome: **silent**
 - **Su jugada:** Scout, post "Animals have souls" de Mizati Yñori (VS Meat Eaters): a Susan Lynn Hebel, "not all animals… you have to have a fully functioning brain so jellyfish, starfish, mussels, oysters and clams… physically cannot experience that stuff. So what about them?"
 - **Nuestra respuesta:** Registro limpio: le doy la razón, por eso no uso el alma como línea; el criterio es que haya alguien que experimente desde su lado; ostras y medusas son el borde honesto; vacas, cerdos, gallinas, ovejas y cabras están muy adentro de su propia línea. Cierre: con el cerebro que él dijo que hace falta, qué queda que convierta a uno en propiedad de alguien.
 

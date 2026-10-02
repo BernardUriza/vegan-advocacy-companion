@@ -130,4 +130,8 @@ NO pelear el body-count ni el "welfare mejora" (concederlo: mejor trato no cambi
 - **Su jugada:** Scout, post propio de Tiana (VEGANnoyance): "Show me a lifelong vegan, born from a lifelong vegan, born from a lifelong vegan. Just one."
 - **Nuestra respuesta:** Comentario raíz, filo profano corto: concedo que casi nadie tiene tres generaciones veganas; eso prueba cuándo empezó el cambio, fuck-all sobre si el hábito viejo se justificaba; nadie nace comiendo animales, la clasificación comida/familia se aprende; toda primera generación pareció antinatural. Cierre: qué dice el árbol genealógico de alguien sobre la vaca en la granja hoy.
 
+### Hilo `28469926949331190` — 2026-10-02 · outcome: **pending**
+- **Su jugada:** Biology is not a "habit" and is not taught.
+- **Nuestra respuesta:** Filo (135 palabras): concedí que comer es biología; cité verbatim su frase de junio "someone has to possess them" y "Animals < humans" como creencia aprendida; no stomach writes a property title. Cierre: which part of the body has "someone has to possess them" written in it?
+
 _Hilos: 27395909046698912, 27405978672358616, 27937793019177176, 27330688236588406, 27468645086091974, 27051763587778150, 27496390256650790, 28469926949331190_

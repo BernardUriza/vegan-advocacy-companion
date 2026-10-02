@@ -65,7 +65,7 @@ No burlarse de Ralph ni pedirle que trate al cerdo como al perro (eso es trato, 
 - **Su jugada:** Réplica 1h: "ownership, property, means responsibility to make an animal happy... happy well fed pigs taste better, you vegans support the same big food companies".
 - **Nuestra respuesta:** Tomé su propia frase como la respuesta: "taste better" dice hacia dónde corre la responsabilidad; la felicidad de Ralph es para Ralph, la del cerdito está doblada en lo que será para él; misma palabra, dirección opuesta. Concedí el tu-quoque de las empresas (prueba fuck-all del cerdito; lo compró para convertirlo en comida). Cierre: si su felicidad es parte del sabor y la de Ralph es suya, ¿qué hace al cerdito tuyo para ponerlo en el menú? 100 palabras.
 
-### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **silent**
 - **Su jugada:** Tres drive-bys tras mi reply de happy pigs: "that is a perfect vegan answer", "I only grow non vegan vegetables", "I grew these potatoes, I am guessing you get food from a grocery store" (con foto).
 - **Nuestra respuesta:** Filo con humor: nice potatoes; una papa no conoce a Ralph ni se asusta ni se pone feliz; tres comentarios sobre verduras y cero sobre su "happy well fed pigs taste better"; la felicidad de Ralph es para Ralph, la del cerdito se cuenta en el plato. Cierre: para quién es esa felicidad, el cerdito o la comida junto a las papas.
 

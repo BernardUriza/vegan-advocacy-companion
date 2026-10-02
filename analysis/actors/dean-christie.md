@@ -156,12 +156,16 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Réplica 8 (Open Debates 3, post their-own-words): "piling logical fallacies" — strawman (nunca dijo que la especie sola baste), falso dilema (marco multivariable: capacidades, especie, relaciones, vulnerabilidad, derechos, intereses), petición de principio en el hipotético inverso, equívoco relevante vs criterio; "own the distinction".
 - **Nuestra respuesta:** Limpio (263 palabras): concedí el strawman y retiré el hipotético como prueba; las cinco citas quedan cerradas de mi lado (palabras de ellos, lectura mía); tomé su lista textual de variables y la corrí sobre la cerda y el recién nacido: vulnerabilidad, intereses y capacidades no la sacan, derechos son lo explicado, la relación es lo que se prueba; queda la pertenencia salvo otra variable. Cierre: cuál variable de su lista, que no sea especie ni la relación misma, deja al recién nacido fuera y a la cerda en el mercado.
 
-### Hilo `28615704478052690` — 2026-09-30 · outcome: **pending**
+### Hilo `28615704478052690` — 2026-09-30 · outcome: **engaged**
 - **Su jugada:** Réplica 9 (Open Debates 3, their-own-words, 5h): convierte "the words are theirs, the reading is mine" en concesión de que el OP falla; llama falso dilema a su propia lista; petición de principio en "newborn off the market, pig on it"; derechos pueden fundarse en combinaciones; "own the actual concession" antes de contestar el caso.
 - **Nuestra respuesta:** Limpio (200 palabras): poseí la lectura en una frase (enmarcada así desde el día uno); su corrección coincide con la conclusión del OP ("those traits were never the property line"); la lista es suya y abierta ("unless another variable does it"); el split recién nacido/cerda es juicio compartido + práctica defendida; cierre con sus palabras: ¿qué combinación separa a este recién nacido de esta cerda?
 
-### Hilo `28615704478052690` — 2026-09-30 · outcome: **pending**
+### Hilo `28615704478052690` — 2026-09-30 · outcome: **engaged**
 - **Su jugada:** Réplica 10 (Open Debates 3, their-own-words, 14m): pide actualizar el OP con su frase ("my interpretations… I cannot claim they explicitly stated these traits were their criterion") como condición; "once you've made that correction, I'm happy to move on" a lo sustantivo (newborn, pig, moral status, rights, species membership).
 - **Nuestra respuesta:** Limpio (133 palabras): edité el OP con una línea en mis palabras ("the quotes are theirs; what I say they were doing is my reading; links to judge in context"), no su frase porque no cuadra con los cinco hilos; le tomé la palabra en "happy to move on"; cierre al individuo: cualquier cuenta de estatus moral aterriza en este recién nacido y esta cerda, ¿cuál alcanza a uno y se detiene en la otra sin mirar primero la etiqueta de especie?
+
+### Hilo `28615704478052690` — 2026-10-02 · outcome: **pending**
+- **Su jugada:** Réplica 11 (Open Debates 3, their-own-words, 1d): acepta el edit ("now accurately distinguishes"), deja cerrado lo de las citas y anuncia que entra a recién nacido vs cerda sin aceptar que la explicación tenga que estar en capacidades individuales; "one I am happy to have".
+- **Nuestra respuesta:** Limpio (103 palabras), seguimiento por orden de Bernard: gracias por revisar el edit; concedí su punto de método (relaciones, pertenencia, prácticas, reciprocidad, combinaciones, nada descartado); única condición: que la cuenta aterrice en el recién nacido fuera del mercado y la cerda disponible para poseer, criar y vender. Cierre: the floor is yours, what explains that split?
 
 _Hilos: 27468645086091974, 27496390256650790, 28615704478052690_

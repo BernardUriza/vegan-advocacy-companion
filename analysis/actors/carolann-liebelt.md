@@ -156,4 +156,8 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 - **Su jugada:** Scout, post de Amber Rose (Open Debates 3), rama con Brendan Keyes: "Having pets is exploiting them… Eventually you will kill that pet when it is too old… I see absolutely no difference between owning chickens or a dairy cow" + "keeping a husky in an apartment is a-okay".
 - **Nuestra respuesta:** Filo profano: "no difference" es bullshit y su propio husky lo prueba; al husky nadie lo manda matar por viejo, la vaca y las gallinas pasan por otro filtro (livestock = salida escrita en la categoría); el individuo desaparece bajo la etiqueta de especie. Cierre: por qué uno recibe nombre y vejez y los otros curva de producción y fecha de salida.
 
+### Hilo `28614822664807538` — 2026-10-02 · outcome: **pending**
+- **Su jugada:** backyard chickens and cows also have names.
+- **Nuestra respuesta:** Filo (107 palabras): concedí que tienen nombre; Daisy y Henrietta con nombre igual salen en el camión cuando baja la leche o los huevos; el nombre no les compra la vejez del husky, es palabra bonita sobre el título ("you name her like family and sell her like stock"). Cierre: when the milk drops, what does the name do for Daisy?
+
 _Hilos: 27341517928804691, 27335635946059556, 28500475619575577, 27405978672358616, 28614822664807538_

@@ -60,11 +60,11 @@ No competir en body-count de insectos ni pelear cifras de rumiantes vs cosechas.
 - **Su jugada:** Raíz (pegado en dos grupos): insects you poison also run from the hand; if vegans kept their principles they would starve; the kindest path is ruminant meat.
 - **Nuestra respuesta:** Concedí las muertes en la cosecha; el escarabajo no es de nadie, el novillo es propiedad de la cría al camión; contar cuerpos deja el título intacto; kindest path habla de trato dentro del sistema; cierre: ¿existe la esclavitud necesaria?
 
-### Hilo `28604913169131821` — 2026-09-28 · outcome: **pending**
+### Hilo `28604913169131821` — 2026-09-28 · outcome: **silent**
 - **Su jugada:** Raíz en la copia de Open Debates 3 (20h, copy-paste del mismo crop_deaths de VS Meat Eaters): insects you poison also run from the hand; if vegans kept to their principles they would starve; the kindest path is ruminant meat.
 - **Nuestra respuesta:** Segunda respuesta al mismo texto, OTRA prosa para otros lurkers: concedí los insectos; el starvation line inventa un principio (nunca fue que nadie muera; es que nadie nazca como posesión) y un vegano comiendo del campo lo cumple entero (el escarabajo no es de nadie); el novillo nace bajo el reclamo de alguien; contar cuerpos prueba fuck-all; kindest contesta cómo se lleva al poseído por el sistema y deja el título intacto. Cierre: ¿qué justifica el kindest path sobre el título del novillo, más allá de manejarle el viaje? 206 palabras.
 
-### Hilo `28604913169131821` — 2026-09-28 · outcome: **pending**
+### Hilo `28604913169131821` — 2026-09-28 · outcome: **silent**
 - **Su jugada:** Réplica (20h, 1r) bajo el hilo de Aj Meredith (raíz "Reaching a bit there", 2r; yo: "are you answering something?", 3r): "commenting I think, on the gunge you speak, reaching high but staying low." Solo sello, pile-on con Aj.
 - **Nuestra respuesta:** Por orden de Bernard, más agresivo que la doctrina de una línea: recibo del arco (Aj soltó reaching sin decir qué; pregunté si contestaba algo; Richard llegó a calificar cómo hablo), "two of you, a row of likes, and not one fucking sentence about the argument", nombrar que calificar cómo habla alguien es lo que se hace cuando la pregunta no tiene respuesta que les guste, y la pregunta en una línea: ¿de dónde sale el título de alguien sobre un novillo? 88 palabras.
 

@@ -73,7 +73,7 @@ No body-count ni porcentajes (Ocin y Elaine ya perdieron ahí). No morder el ins
 - **Su jugada:** Cuarta vuelta (su post de Steve Irwin): "my cows arent pets my dogs are".
 - **Nuestra respuesta:** Posteada por Bernard a mano (versión del coagent, SINGLE-0928J): no shit, esa es la respuesta; pet y livestock son etiquetas que él reparte, la vaca no viene sellada; los mismos signos ordinarios que leería en un perro; llamarla livestock dice qué planea hacer con ella y prueba fuck-all sobre el título. Cierre: ¿qué hace de "my cows aren't pets" una razón para que sean suyas? 80 palabras.
 
-### Hilo `28148343171453514` — 2026-09-28 · outcome: **pending**
+### Hilo `28148343171453514` — 2026-09-28 · outcome: **silent**
 - **Su jugada:** lmao i bought them thats why they are mine to own
 - **Nuestra respuesta:** la compra transfiere el título, no lo funda; cuarta estación (papeles, no someone, no pets, recibo); qué compró el primer comprador antes de que alguien tuviera derecho a venderla
 

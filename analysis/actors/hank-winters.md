@@ -77,7 +77,7 @@ No pelear la ortografía ni el tono. No sermonear. No listar los cuatro esquives
 - **Su jugada:** Único raíz en la copia de VEGANnoyance: "if it walks flys or swims its fair game… includes all the precious pets… very subjective… the majority dont give 2 shits about the moral part its survival… in nature… stop trying to force others to agree".
 - **Nuestra respuesta:** "Subjetivo" y en la misma frase una regla para todos = el escudo de un solo sentido; la mayoría es un conteo (el post ya concede que el poder decide; no convierte el título en razón); una pregunta no fuerza nada ("do it": lo hago); las mascotas: casi todos saben que un perro es alguien, el switch a "algo" por especie es lo que hay que justificar; pregunta al cierre. 169 palabras, sin sermón.
 
-### Hilo `28459136643743554` — 2026-09-28 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **silent**
 - **Su jugada:** Raíz (VEGANnoyance, post de sintiencia, 17h): "Again with your soap box either eat meat or shut up about it" — sello de cierre, su "stop forcing others" de la semana pasada en corto.
 - **Nuestra respuesta:** Drive-by corto (73 palabras): su "Again" admite que la pregunta de la semana pasada sigue sin respuesta; "eat meat or shut up" vuelve una pregunta un bozal y no contesta nada; cierre con sus palabras: she never got a soap box, what made her yours in the first place?
 

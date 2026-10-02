@@ -104,11 +104,11 @@ No morder el insulto de la dignidad — UNA línea de contraste de temperamento 
 - **Su jugada:** Raíz en post ajeno de Chris Pearson (Open Debates 3, león cazado como trofeo): "Lol showing your lack of knowledge on these animals." — sello de credencial sin contenido; luego a Chris: "your really wanting attention. Its sad".
 - **Nuestra respuesta:** Filo (117 palabras): que nombre el conocimiento que falta; lo que el post sí sabe (rastreado 9 millas, irritado por ellos, muerto y posado) lo hace más difícil de defender; el saber de los cazadores es poder y justifica fuck-all. Cierre: Which fact about lions made his body theirs to pose with?
 
-### Hilo `28620931384196666` — 2026-09-30 · outcome: **pending**
+### Hilo `28620931384196666` — 2026-09-30 · outcome: **escalated**
 - **Su jugada:** Réplica (Open Debates 3, post del león de Chris Pearson, 2d): "extremely cute"; licensed and cleared, on the list eight months; no irritated; "technically no need to justify anything"; "if you don't understand you don't get to make posts like this, thank you for showing your ignorance".
 - **Nuestra respuesta:** Filo corto (143 palabras): concedí la mecánica de la caza y la lista; lista/permiso/licencia/disparo son permisos entre humanos y el león solo aparece como el elegido ("calling that knowledge is bullshit, it's paperwork"); "no need to justify" es el permiso que se trata como razón; una línea al sello; cierre: ¿quién licenció a los que escribieron la licencia para poner su cuerpo en una lista?
 
-### Hilo `28620931384196666` — 2026-09-30 · outcome: **pending**
+### Hilo `28620931384196666` — 2026-09-30 · outcome: **escalated**
 - **Su jugada:** Sello (Open Debates 3, post del león, 20m): "your trying hard but miss the reality" — mismo sello "reality" que en junio (27330), cero argumento tras mi reply de la licencia; a Chris: "no sweetheart".
 - **Nuestra respuesta:** Filo (226 palabras), replylink de Bernard: reencuadre completo con recibos verbatim. Junio: miedo/curiosidad/emociones, "they are not property", "Disposed of no", "no justification needed", "not getting the reality"; ahora: "this particular animal", licensed, "on the list… since he was attacked", "need to justify anything". Switch nombrado: individuo cuando se le rastrea, línea en lista cuando se dispone de su cuerpo; "Disposed of no" duró hasta que alguien pagó la licencia; lo único constante es "no justification needed". Cierre: ¿al menos eso es reality? y si es "this particular animal" que siente miedo, ¿qué hizo legítimo vender el derecho a matarlo?
 
