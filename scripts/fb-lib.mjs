@@ -22,13 +22,34 @@ async function connect() {
 // Tab EFÍMERA: para leer/scrapear (etapas 1-2). Se cierra al terminar. Uso:
 //   const { page, done } = await openScratchPage();
 //   try { ... } finally { await done(); }
-export async function openScratchPage() {
+export const DEFAULT_DEADLINE_MS = Number(process.env.FB_DEADLINE_MS) || 240000;
+
+// page.evaluate no tiene timeout propio: un expand trabado dejó thread-extract 30 min mudo (2026-10-02).
+// Al vencer: nombra script, etapa y URL, cierra la tab y sale con 2 (el catch del caller no lo pisa).
+function armDeadline({ page, ms, stage, close }) {
+  const timer = setTimeout(async () => {
+    const script = (process.argv[1] || 'script').split('/').pop();
+    const where = typeof stage === 'function' ? stage() : '';
+    console.error(`${script} FALLO: sin terminar tras ${ms}ms${where ? ` (etapa: ${where})` : ''} (url: ${page.url()})`);
+    const exit = process.exit.bind(process);
+    process.exit = () => {};
+    await Promise.race([close().catch(() => {}), new Promise((r) => setTimeout(r, 5000))]);
+    exit(2);
+  }, ms);
+  timer.unref();
+  return () => clearTimeout(timer);
+}
+
+export async function openScratchPage({ deadlineMs = DEFAULT_DEADLINE_MS, stage } = {}) {
   const { browser, ctx } = await connect();
   const page = await ctx.newPage();
+  let clear = () => {};
   const done = async () => {
+    clear();
     await page.close().catch(() => {});
     await browser.close().catch(() => {}); // detacha CDP, NO mata el Chrome de Bernard
   };
+  clear = armDeadline({ page, ms: deadlineMs, stage, close: done });
   return { browser, ctx, page, done };
 }
 
@@ -39,12 +60,15 @@ export async function openScratchPage() {
 // scriptea, el acto irreversible se queda en Claude). Uso:
 //   const { page, detach } = await openPersistentPage();
 //   ... preparar draft ...; await detach();   // tab queda abierta
-export async function openPersistentPage() {
+export async function openPersistentPage({ deadlineMs = DEFAULT_DEADLINE_MS, stage } = {}) {
   const { browser, ctx } = await connect();
   const page = await ctx.newPage();
+  let clear = () => {};
   const detach = async () => {
+    clear();
     await browser.close().catch(() => {}); // suelta el CDP; la tab persiste abierta
   };
+  clear = armDeadline({ page, ms: deadlineMs, stage, close: async () => { await page.close().catch(() => {}); await detach(); } });
   return { browser, ctx, page, detach };
 }
 

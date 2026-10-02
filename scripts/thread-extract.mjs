@@ -21,10 +21,7 @@ const isMain = !!process.argv[1] && import.meta.url === pathToFileURL(process.ar
 const url = process.argv.find((a) => a.startsWith('http'));
 const asJson = process.argv.includes('--json');
 const ME = process.env.ME || 'Bernard Uriza Orozco';
-const DEADLINE_MS = Number(process.env.THREAD_EXTRACT_TIMEOUT_MS) || 240000;
 let stage = 'connect';
-let closeTab = null;
-let timedOut = false;
 
 if (isMain && !url) {
   console.error('uso: node thread-extract.mjs "<openUrl>" [--json]');
@@ -333,8 +330,7 @@ function buildUnansweredRoots(turns, ME, postIsMine) {
 }
 
 async function main() {
-  const { page, done } = await openScratchPage();
-  closeTab = done;
+  const { page, done } = await openScratchPage({ stage: () => stage });
   try {
     const navUrl = canonicalPostUrl(url);
     const postIdArg = { ME, postId: (url.match(/\/posts\/(\d+)/) || [])[1] || null };
@@ -453,15 +449,7 @@ async function main() {
 }
 
 if (isMain) {
-  const watchdog = setTimeout(async () => {
-    timedOut = true;
-    console.error(`thread-extract FALLO: sin terminar tras ${DEADLINE_MS}ms (etapa: ${stage})`);
-    await Promise.race([closeTab?.().catch(() => {}), new Promise((r) => setTimeout(r, 5000))]);
-    process.exit(2);
-  }, DEADLINE_MS);
-  watchdog.unref();
   main().catch((e) => {
-    if (timedOut) return;
     console.error(`thread-extract FALLO (etapa: ${stage}):`, e.message);
     process.exit(1);
   });

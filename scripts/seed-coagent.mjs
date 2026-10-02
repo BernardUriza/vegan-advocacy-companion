@@ -164,6 +164,9 @@ if (!isMain) {
   const pickActor = pick ? readActors().find((a) => a.user_id === pick.user_id) : undefined;
   const rotation = pickProblems(pick, framework, allFrameworks, pickActor);
   if (rotation.length) die('FINALIZE BLOQUEADO por la rotación de frameworks:\n  - ' + rotation.join('\n  - '));
+  const QC = await import('./quote-check.mjs');
+  const unquoted = QC.verifyQuotes(readFileSync(resolveUserPath(draft, ROOT), 'utf8'), QC.loadCorpus(ROOT), QC.quoteOkArgs(process.argv)).filter((q) => !q.found);
+  if (unquoted.length) die('FINALIZE BLOQUEADO: cita(s) sin fuente verbatim (corrige contra el transcript o pasa --quote-ok "<frag>" si no es cita):\n  - ' + unquoted.map((q) => `"${q.quote}"`).join('\n  - '));
   const r = JSON.parse(readFileSync(rp, 'utf8'));
   // normaliza el shape legacy single-draft a drafts[]
   if (!Array.isArray(r.drafts)) r.drafts = r.draft_sha ? [{ author: r.author ?? null, draft_sha: r.draft_sha, draft_file: r.draft_file ?? null, consulted_at: r.consulted_at ?? null }] : [];
@@ -250,7 +253,7 @@ if (!isMain) {
   const timeout = (Number(arg('--timeout-s')) || 360) * 1000;
   const gap = Number(arg('--gap-ms')) || undefined;
   const stableReads = Number(arg('--stable-reads')) || undefined;
-  const { page, done } = await openScratchPage();
+  const { page, done } = await openScratchPage({ deadlineMs: 600000 });
   let res;
   try {
     await page.goto(target.url, { waitUntil: 'domcontentloaded', timeout: 45000 });
