@@ -891,6 +891,18 @@
         "third_party_replies": [],
         "outcome_evidence": "Jude→Bernard 1d: 'so we're in agreement than. Excellent.'",
         "outcome_note": "dominacion-no-es-superioridad-moral: cierre sarcástico 'so we're in agreement then. Excellent' tras separar ley de legitimidad; no contestó qué legitima el título."
+      },
+      {
+        "thread_id": "28459136643743554",
+        "date": "2026-10-02",
+        "their_move": "so we are in agreement than. Excellent. (salida ante \"is owning a pig what it takes to feed 8 billion, or just what the law allows?\")",
+        "our_reply_summary": "Filo (71 palabras): de acuerdo solo en qué dice la ley; el reclamo de necesidad de los 8 mil millones lo trajo él y lo dejó en la mesa. Cierre: ¿necesario para alimentar a 8 mil millones, o solo lo que la ley deja hacer?",
+        "framework": "no-necesidad-cambiaron-las-reglas",
+        "draft_sha": "3af801246ddc865b",
+        "exposure_n": 4,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
       }
     ]
   },
@@ -3863,7 +3875,8 @@
     ],
     "threads": [
       "28046113755009790",
-      "28046483408306158"
+      "28046483408306158",
+      "28203900659231098"
     ],
     "interactions": [
       {
@@ -3910,6 +3923,18 @@
         "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-09-28",
         "outcome_note": "algo-a-alguien-sujeto-derecho: tras el reply que terminó SU definición de exploitation (afectar ≠ poseer; su propia definición traza la línea), Wheeldon no defendió la definición ni tocó el título — regresó a la estación #1 (la analogía del abuso infantil, 'if exploitation is immoral then ALL acts are immoral') que él mismo había abandonado un turno antes. Ciclo cerrado: estación 1 → 2 → 1 sin defender ninguna. Decisión del 19-sep vigente: última vuelta, la pregunta queda visible sin contestar.",
         "closed_from": "goalpost"
+      },
+      {
+        "thread_id": "28203900659231098",
+        "date": "2026-10-02",
+        "their_move": "Scout, post de Madly InLuv (Vegans VS Meat Eaters, steakhouses vs vegan restaurants): \"vegans are against all forms of animal exploitation for any purpose, regardless of wether exploited animals feel pain\"; \"Cats are human property, exactly the same as farm animals are human property. So explain why vegans are against gentle old ladies having cats?\"; \"vegan nutter\".",
+        "our_reply_summary": "Filo (184 palabras): concedí que describió bien la posición (objeción a explotación y propiedad para cualquier propósito); la sintiencia es la razón de que exista la pregunta (un título sobre una silla no toca a nadie); el gato prueba la diferencia: a la señora se le exige que todo sea por el gato, venderlo al peso deja de ser compañía. Cierre: por qué el gato tiene reclamo contra venderse al peso y la vaca tiene precio por kilo.",
+        "framework": "crueldad-no-es-la-causa",
+        "draft_sha": "e3ff6b117fb59f43",
+        "exposure_n": 5,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
       }
     ],
     "user_id": "1742478160",
@@ -4622,5 +4647,73 @@
     "verdict_note": "Pile-on de cinco comentarios en 20h; una sola reply y salir.",
     "register": "filo",
     "what_not_to_do": "No defenderse de manipulative/narcissist ni sonar herido. No contestar cinco comentarios: uno solo. No usar la fórmula quemada de la etiqueta. Voltear su frase de propiedad y salir."
+  },
+  {
+    "tactics": [
+      "hipocresia_clausula_practicable",
+      "whataboutism",
+      "naturalismo"
+    ],
+    "threads": [
+      "28211773511777146"
+    ],
+    "interactions": [
+      {
+        "thread_id": "28211773511777146",
+        "date": "2026-10-02",
+        "their_move": "Post propio \"Be honest, what are your thoughts on indigenous tribes that eat animals?\"; a Robbie: \"non-vegans pointing out the double standards that vegans have towards humans eating animals or using animals as a resource\"; a Rüdiger: \"well even Eskimos gotta eat.\"",
+        "our_reply_summary": "Filo (133 palabras): su \"even Eskimos gotta eat\" es la distinción: supervivencia real vs frente al refri del súper, un solo estándar; ser humano no da título sobre un ser que siente, la necesidad cambia lo exigible a la persona y deja al animal igual; usar la subsistencia indígena para cubrir la lista del súper es bullshit. Cierre: quién en este hilo está en el caso gotta-eat y quién lo pide prestado.",
+        "framework": "antropoespecismo",
+        "draft_sha": "3d45970689d8de23",
+        "exposure_n": 1,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "838293183",
+    "name": "Phil Holmes",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/838293183/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Los veganos tienen doble estándar con los pueblos indígenas que comen animales; hasta los esquimales tienen que comer.",
+    "analisis": "Autor del post \"Be honest, what are your thoughts on indigenous tribes that eat animals?\" (Vegans VS Meat Eaters, 2026-10-02). A Robbie Broyles: \"non-vegans pointing out the double standards that vegans have towards humans eating animals or using animals as a resource\". A Rüdiger: \"well even Eskimos gotta eat\" — trae la necesidad como excepción él mismo.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No romantizar ni juzgar a pueblos indígenas; no pelear antropología; el blanco es el supuesto doble estándar, no los Inuit."
+  },
+  {
+    "tactics": [
+      "apelacion_normal",
+      "conveniencia_como_justificacion",
+      "anecdota_personal_n1"
+    ],
+    "threads": [
+      "28648574331432371"
+    ],
+    "interactions": [
+      {
+        "thread_id": "28648574331432371",
+        "date": "2026-10-02",
+        "their_move": "Post propio (Open Debates 3): mercado de ganado de Banbury, su familia poseyó un tercio 40 años; foto de su tío y abuelo con trofeos junto a un animal con cabestro; \"A thousand families fed, not by the animals that went through, but by the jobs created. Vegans, would you turn your back on that for no other reason than my feelings?\"",
+        "our_reply_summary": "Comentario raíz, registro casi limpio (165 palabras): concedí historia, empleos, trabajo y orgullo; los animales los llevaron ahí para venderlos (el stockyard existía para pasar sus cuerpos de un dueño a otro); en su foto todos tienen nombre y trofeo, el del cabestro es el único al que nadie le preguntó, y es el premio. Cierre: si nos pregunta por sus sentimientos, ¿y los de él?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "a9af3fced811a9b4",
+        "exposure_n": 1,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "100008613459447",
+    "name": "Mark Smith",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/100008613459447/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "El mercado de ganado de su familia en Banbury alimentó a mil familias con empleos; renunciar a eso sería por puro sentimiento.",
+    "analisis": "Post propio en Open Debates 3 (2026-10-01): su familia poseyó un tercio del mercado de ganado de Banbury 40 años; foto de su tío y abuelo con trofeos junto a un animal con cabestro, corrales llenos, ruedo de subasta \"Banbury Stockyard\". \"A thousand families fed, not by the animals that went through, but by the jobs created. Vegans, would you turn your back on that for no other reason than my feelings?\" Orgullo familiar, no troll.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No atacar a su familia ni burlarse del orgullo; conceder los empleos y la prosperidad enteros; no pelear economía."
   }
 ]
