@@ -12,6 +12,7 @@
 // El <openUrl> lo sirve notif-scan.mjs (campo `openUrl` / línea "abrir:").
 
 import { pathToFileURL } from 'url';
+import { existsSync, readFileSync, writeFileSync, renameSync } from 'fs';
 import { openScratchPage, ageMinutes, fmtAge, UNKNOWN_AGE, expandAllInPage, MAX_AGE_DAYS, isStaleMinutes, readThreadRoot } from './fb-lib.mjs';
 import { registerThread } from './db.mjs';
 import { parseReactionCount, sumPostReactionLabels } from './lurker.mjs';
@@ -20,6 +21,7 @@ import { canonicalPostUrl } from './thread-identity.mjs';
 const isMain = !!process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 const url = process.argv.find((a) => a.startsWith('http'));
 const asJson = process.argv.includes('--json');
+const outFile = (() => { const i = process.argv.indexOf('--out'); return i > 0 && process.argv[i + 1] ? process.argv[i + 1] : null; })();
 const ME = process.env.ME || 'Bernard Uriza Orozco';
 let stage = 'connect';
 
@@ -186,6 +188,14 @@ export function mergeTurns(passRows) {
     }
   });
   return out;
+}
+
+// --out une con el tx anterior: lo vivo manda, lo que solo estaba antes se conserva como `retained`
+// (2026-10-02: una vista anclada pisó el "backyard chickens" de CarolAnn). Deuda y frescura usan solo lo vivo.
+export function mergeWithPrior(liveTurns, priorTurns = []) {
+  const live = new Set(liveTurns.map(normKey));
+  const retained = priorTurns.filter((t) => !live.has(normKey(t))).map((t) => ({ ...t, retained: true }));
+  return { turns: mergeTurns([liveTurns, retained]), retainedCount: retained.length };
 }
 
 // Completitud POR pasada y OR de las fallas: una pasada sana no borra lo que otra dejó sin abrir.
@@ -392,7 +402,16 @@ async function main() {
       unansweredRoots,
     };
 
-    if (asJson) {
+    if (outFile) {
+      let prior = [];
+      if (existsSync(outFile)) { try { prior = JSON.parse(readFileSync(outFile, 'utf8')).turns || []; } catch {} }
+      const merged = mergeWithPrior(turns, prior);
+      out.turns = merged.turns;
+      out.counts.retainedTurns = merged.retainedCount;
+      writeFileSync(outFile + '.tmp', JSON.stringify(out, null, 2) + '\n');
+      renameSync(outFile + '.tmp', outFile);
+      console.log(JSON.stringify({ ok: true, out: outFile, liveTurns: turns.length, retainedTurns: merged.retainedCount, complete, stale }));
+    } else if (asJson) {
       console.log(JSON.stringify(out, null, 2));
     } else {
       console.log(`\n=== HILO (${turns.length} turnos únicos; ${raw.length} articles crudos) ===`);

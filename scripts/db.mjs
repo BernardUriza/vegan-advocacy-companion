@@ -277,6 +277,21 @@ export function updateInteractionOutcome(userId, threadId, dateOrNeedle, needle,
   return { user_id: userId, thread_id: threadId, outcome: it.outcome, note: it.outcome_note ?? null };
 }
 
+// Una reply publicada que se EDITA (corrección de cita, 2026-10-02) sigue siendo la misma interacción:
+// apunta al sha nuevo y conserva los anteriores para que lurker-sweep ligue cualquiera de las dos versiones.
+export function reviseInteractionDraftSha(userId, threadId, oldSha, newSha) {
+  const actors = readActors();
+  const actor = actors.find(a => a.user_id === userId);
+  if (!actor) throw new Error(`Actor ${userId} not found`);
+  const cand = (actor.interactions ?? []).filter(x => x.thread_id === threadId && x.draft_sha === oldSha);
+  if (cand.length !== 1) throw new Error(`match no único (${cand.length}) para ${userId}/${threadId} draft_sha=${oldSha}`);
+  const it = cand[0];
+  it.draft_sha_previous = [...(it.draft_sha_previous ?? []), oldSha];
+  it.draft_sha = newSha;
+  writeJsonAtomic(ACTORS_PATH, actors);
+  return { user_id: userId, thread_id: threadId, draft_sha: newSha, draft_sha_previous: it.draft_sha_previous };
+}
+
 // Señal del lurker: reacciones a MI reply de esa interacción, mismo match que
 // updateInteractionOutcome (user_id, thread_id, date, needle de their_move); aborta si no es único.
 export function updateInteractionLurker(userId, threadId, date, needle, { reactions, thirdParty = null, draftSha = null, checkedAt = new Date().toISOString() }) {

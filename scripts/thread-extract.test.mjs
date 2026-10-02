@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { turnBody, normKey, mergeTurns, assessCompleteness } from './thread-extract.mjs';
+import { turnBody, normKey, mergeTurns, assessCompleteness, mergeWithPrior } from './thread-extract.mjs';
 
 const row = (author, target, text, extra = {}) => ({ author, user_id: extra.user_id || author, target, text, ageStr: '', ...extra });
 const BODY = "you've just invented an argument that nobody has made";
@@ -89,4 +89,16 @@ test('debt-sweep exits non-zero only when EVERY attempted thread failed or was i
   assert.equal(sweepExitCode([{ extraction: 'failed' }, { extraction: 'ok' }]), 0);
   assert.equal(sweepExitCode([{ unresolved: true }]), 0);
   assert.equal(stderrTail('a\nb\nc\nthread-extract FALLO: boom\n', 2), 'c\nthread-extract FALLO: boom');
+});
+
+test('mergeWithPrior conserva el turno que la vista anclada perdió (CarolAnn 2026-10-02) y no duplica los vivos', () => {
+  const daisy = row('Bernard Uriza Orozco', 'CarolAnn Liebelt', 'Bernard Uriza Orozco · 1dCarolAnn Liebelt Sure they have names. That makes it worse for your point.');
+  const names = row('CarolAnn Liebelt', 'Bernard Uriza Orozco', 'CarolAnn Liebelt · 3dBernard Uriza Orozco backyard chickens and cows also have names.LikeReply');
+  const farming = row('CarolAnn Liebelt', 'Bernard Uriza Orozco', "CarolAnn Liebelt · 18mBernard Uriza Orozco You don't live in farming country, do you?LikeReply");
+  const { turns, retainedCount } = mergeWithPrior([daisy, farming], [names, daisy]);
+  assert.equal(retainedCount, 1);
+  assert.equal(turns.length, 3);
+  assert.equal(turns.filter((t) => t.retained).length, 1);
+  assert.ok(turns.find((t) => t.retained).text.includes('backyard chickens'));
+  assert.equal(mergeWithPrior([daisy], []).retainedCount, 0);
 });
