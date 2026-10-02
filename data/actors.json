@@ -15,7 +15,8 @@
       "peticion_de_principio",
       "is_ought",
       "ecocentrismo_conservacion",
-      "relativismo_moral"
+      "relativismo_moral",
+      "demanda_credencial"
     ],
     "tone": "dismissive",
     "verdict": "audiencia",
@@ -144,6 +145,18 @@
         "framework": "domesticar-eufemismo-dominar",
         "draft_sha": "e8ba8004c7e75c30",
         "exposure_n": 10,
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending"
+      },
+      {
+        "thread_id": "28614822664807538",
+        "date": "2026-10-02",
+        "their_move": "You don't live in farming country, do you? (demanda de credencial ante \"what does the name do for Daisy?\")",
+        "our_reply_summary": "Filo, reencuadre completo por replylink de Bernard (283 palabras): no contesté el código postal (\"changes fuck-all about Daisy\"); recorrí su arco desde junio con citas verbatim (ecosystem, normal, animals are food, purpose on earth, herbivores, feeding tube, post about food, don't have to justify our biology, apex species, no difference, names, postcode); una frase de patrón (muchas salidas, la conclusión nunca se movió); el \"purpose on earth\" lo escribieron quienes ya reclaman su cuerpo. Cierre: who gave Daisy that \"purpose on earth\"?",
+        "framework": "antropoespecismo",
+        "draft_sha": "aa730e9813a490e9",
+        "exposure_n": 11,
         "assignment": "chosen",
         "propensity": null,
         "outcome": "pending"

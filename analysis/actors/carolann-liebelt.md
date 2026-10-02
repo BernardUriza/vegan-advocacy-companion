@@ -32,6 +32,8 @@ Principal contrincante de Bernard. Su argumento MUTA cada vez que se le cierra u
   - _Contra:_ The moral unit is the concrete sentient individual, not the abstraction. A species or an ecosystem doesn't feel anything — only an individual does. 'Conservation' or 'balance' that kills a someone for the sake of a collective is the category error: you can't owe a debt to an abstraction by harming the only ones who can actually be harmed. And farming isn't an ecosystem in balance — it's a human industry of massive forced breeding, the opposite of leaving nature alone. Caring about a concrete animal who can suffer and caring about the environment aren't in tension; the conflict only appears once you let the abstraction outrank the individual who feels.
 - **Moral Relativism Shield** (`relativismo_moral`) — Uses 'morality is subjective' as a conversation-stopper rather than an argument. Does not engage with the specific moral claim. 'My morals are fine with me eating animals as morals are subjective.'
   - _Contra:_ Point out that they don't actually live by pure moral relativism — they have lines they wouldn't cross even if others called them moral. 'You wouldn't say torturing a child is equally valid because morals are subjective.' One line, for the lurker. Don't overextend.
+- **Credential Demand / What Have You Done** (`demanda_credencial`) — Replaces the argument with a demand for the asker's résumé: 'what do you actually do for animals?', 'show us you rescue', 'if all you do is post, why should anyone listen?'. Circumstantial ad hominem: the question's validity is made to depend on the asker's deeds.
+  - _Contra:_ Grant the real work the other person does, without sarcasm, and grant your own limits. Then point out that a question stands or falls on its own: it would be the same question coming from them. Turn back to the question itself, ideally through something from their own experience (the bond, the rescue) that shows there is someone there.
 
 ## Counter-arsenal
 
@@ -159,5 +161,9 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 ### Hilo `28614822664807538` — 2026-10-02 · outcome: **pending**
 - **Su jugada:** backyard chickens and cows also have names.
 - **Nuestra respuesta:** Filo (107 palabras): concedí que tienen nombre; Daisy y Henrietta con nombre igual salen en el camión cuando baja la leche o los huevos; el nombre no les compra la vejez del husky, es palabra bonita sobre el título ("you name her like family and sell her like stock"). Cierre: when the milk drops, what does the name do for Daisy?
+
+### Hilo `28614822664807538` — 2026-10-02 · outcome: **pending**
+- **Su jugada:** You don't live in farming country, do you? (demanda de credencial ante "what does the name do for Daisy?")
+- **Nuestra respuesta:** Filo, reencuadre completo por replylink de Bernard (283 palabras): no contesté el código postal ("changes fuck-all about Daisy"); recorrí su arco desde junio con citas verbatim (ecosystem, normal, animals are food, purpose on earth, herbivores, feeding tube, post about food, don't have to justify our biology, apex species, no difference, names, postcode); una frase de patrón (muchas salidas, la conclusión nunca se movió); el "purpose on earth" lo escribieron quienes ya reclaman su cuerpo. Cierre: who gave Daisy that "purpose on earth"?
 
 _Hilos: 27341517928804691, 27335635946059556, 28500475619575577, 27405978672358616, 28614822664807538_
