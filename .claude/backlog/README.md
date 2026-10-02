@@ -80,6 +80,7 @@ determinista, #5 bajar dependencia del coagent.
 48. `db.updateInteractionOutcome`: needle ausente sin fecha se vuelve `''` y matchea todo; el dry-run del reflex no colapsa espacios y el apply sí. Hacer needle obligatorio y unificar la normalización. — Proposed
 49. `receipt-shots.mjs`: un recibo con frase no encontrada (sin resaltado amarillo) sale `ok:true` y el proceso exit 0. — Proposed
 50. `scout-feeds.mjs`: un timeout de un grupo mata la corrida y pierde los grupos anteriores. — Proposed
+51. `.coagent/tx-<post>.json` se escribe por redirección y una re-extracción menos completa (`complete:false`, vista anclada) PISA turnos que ya teníamos: el 2026-10-02 se perdió "backyard chickens and cows also have names" de CarolAnn y `quote-check` solo lo encontró porque el moat lo guardaba en `their_move`. Propuesta: `thread-extract --out <tx>` que una los turnos con el archivo existente usando el mismo dedup de `mergeTurns`, nunca reemplazar. Decisión de Bernard: ¿unir siempre, o solo cuando la nueva extracción salga `complete:false`? — Proposed 2026-10-02 by Claude
 
 ## I. Testing / CI
 39. Test mínimo de los accessors de `db.mjs` (getFrameworksByTactic, validate caza data mala). — Done 2026-09-28 (`db.test.mjs`: guard de conceded, needle 0/2, closeOutcome solo pending)

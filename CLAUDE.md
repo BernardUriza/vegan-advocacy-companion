@@ -30,6 +30,7 @@ con MCP, y solo con el GO explícito de Bernard, por jugada o por lote.
 | 2 | `thread-extract.mjs "<url>" --json` | `root`, `turns[]`, `debt[]`; volcar a `.coagent/tx-<post_id>.json` |
 | 3 | `framework-pick.mjs` → `seed-gate.mjs` → `seed-coagent.mjs seed/insert/read/finalize` | exposición, framework bloqueado y sorteo por target; gate del master, recibo, transporte a ChatGPT sin enviar, recibo del draft final (`finalize --framework` valida el pick) |
 | 4 | `style-gate.mjs a.txt b.txt …` · `lint-prose.mjs` | gates de prosa por lote (cierres clonados incluidos) |
+| 3–4 | `quote-check.mjs <draft>` | toda cita de 4+ palabras existe verbatim en transcripts/moat/hilos; `finalize` lo corre y bloquea (`--quote-ok` para comillas que no son cita) |
 | 4 | `comment-prepare.mjs … [--mode root] [--image]` | deja el reply o el raíz cargado en una tab viva, sin enviar |
 | — | `validate-data.mjs` · `gen-dossiers.mjs` | tras toda escritura al moat |
 | — | `framework-stats.mjs` | efectividad por familia con intervalo Jeffreys; solo lo sorteado compara |
