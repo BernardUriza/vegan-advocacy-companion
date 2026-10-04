@@ -3212,7 +3212,21 @@
         "draft_sha": "cd0dbbe09fcd2564",
         "exposure_n": 35,
         "assignment": "chosen",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "\"you haven't established why those present characteristics should be the determining factors in the first place\"",
+        "outcome_note": "filtro-especie-vs-individuo: aceptó la versión ajustada (\"yes, that's a clearer version of your position\") y siguió civil, pero reparte la carga: dice que no tiene que probar que su rasgo sea el decisivo antes de que yo justifique por qué lo que la cerda ya es hoy debe decidir. Sigue sin dar el paso de agencia moral a título."
+      },
+      {
+        "date": "2026-10-04",
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending",
+        "thread_id": "28615704478052690",
+        "their_move": "Réplica 15 (their-own-words, minutos): acepta la versión ajustada (\"yes, that's a clearer version of your position\") y reparte la carga: \"you haven't established why those present characteristics should be the determining factors in the first place\"; no le toca probar que su rasgo sea \"the sole or overriding consideration\" antes de que yo justifique mi criterio.",
+        "our_reply_summary": "Limpio (170 palabras): concedí el reparto de carga y retiré \"outweighs\"; di mi razón dentro de los dos casos: ser poseída, criada y vendida le ocurre a quien está ahí hoy, y un acto así solo agravia a alguien para quien las cosas ya cuentan desde su lado; su rasgo contesta otra pregunta (quién deberá obligaciones). Pedido más estrecho: una cuenta en la que ser vendida agravia a la recién nacida y deja sin agravio a la cerda. Cierre: What does that account look like?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "063d91fc215a9695",
+        "exposure_n": 36
       }
     ],
     "user_id": "1198831097",
@@ -4068,7 +4082,21 @@
         "draft_sha": "93becb3f4bbaf5dd",
         "exposure_n": 7,
         "assignment": "chosen",
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "\"nice little pointless rant. Would you like to talk about how vegans are against people having fish in a garden pond\"",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: la pregunta lechuga/gata/vaca quedó sin tocar; contestó con sello (\"pointless rant\", \"tip ya pram over\") y abrió estación nueva, los peces de estanque. Cuarta estación del hilo: steakhouses, gato, plantas, estanque."
+      },
+      {
+        "date": "2026-10-04",
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending",
+        "thread_id": "28203900659231098",
+        "their_move": "Réplica (post de Madly InLuv, 2h): \"nice little pointless rant. Would you like to talk about how vegans are against people having fish in a garden pond, or will you get all emotional and tip ya pram over again..\" Cuarta estación; la pregunta lechuga/gata/vaca quedó sin tocar.",
+        "our_reply_summary": "Filo (103 palabras), vuelta de recibos y última con él: concedí el estanque (peces comprados y mantenidos como adorno también están bajo título, igual que el gato); cuatro paradas en tres días (steakhouses, gatos, lechuga, estanque), algo concedido en cada una, y la vaca sin salir, cuando él escribió que los gatos son propiedad \"exactly the same as farm animals are human property\"; al sello, una línea (\"My pram's fine, thanks\"). Cierre: So when does the cow get her turn? Si abre quinta estación, silencio.",
+        "framework": "el-sello-es-para-el-lurker",
+        "draft_sha": "0661cdadba348ec7",
+        "exposure_n": 8
       }
     ],
     "user_id": "1742478160",
@@ -4881,7 +4909,21 @@
         "draft_sha": "26abb7d79f8fb757",
         "exposure_n": 3,
         "assignment": "chosen",
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "\"before I utterly destroy that argument, tell me, what do you think the alter is for?\"",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: el cabestro lo sacó del data-dump; se burla (\"morse codes shit\") pero devuelve la pregunta y promete destruir la respuesta: por primera vez discute el objeto de su propia foto."
+      },
+      {
+        "date": "2026-10-04",
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending",
+        "thread_id": "28648574331432371",
+        "their_move": "Réplica (su post de Banbury, 56m): \"Nope, they don't do any morse codes shit with their legs either… before I utterly destroy that argument, tell me, what do you think the alter is for?\"",
+        "our_reply_summary": "Seco (83 palabras): contesté su pregunta de frente: el cabestro le dirige la cabeza, quien tiene la cuerda lo lleva adonde quiere, lo para frente al juez y el comprador y evita que se vaya; concedí el morse (un animal que jala solo quiere estar en otro lado); el cabestro es cómo otro decidió por él ese día. Cierre: Destroy away, I'm listening: what made him theirs to decide for?",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "draft_sha": "5b21e78913fba36e",
+        "exposure_n": 4
       }
     ],
     "user_id": "100008613459447",
@@ -4956,5 +4998,39 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No competir en conteo de muertes ni defender el smartphone; no decir que mi marco es el único válido; no repetir la comparación con esclavistas o asesinos que ya le hicieron; no pelear si el rodeo es cruel (ese es el eje del hilo y es el equivocado)."
+  },
+  {
+    "tactics": [
+      "domestication_mutualism",
+      "propiedad_como_proteccion",
+      "anecdota_personal_n1"
+    ],
+    "threads": [
+      "28229074166713747"
+    ],
+    "interactions": [
+      {
+        "date": "2026-10-04",
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending",
+        "thread_id": "28229074166713747",
+        "their_move": "Scout, su post en Vegans VS Meat Eaters (14h, 14 reacciones): \"And vegans say cows are slaves, and are forced to be milked\" con video de una vaca metida sola en un robot de ordeño buscando grano; en comentarios: \"they stand there and get inseminated\", \"Calves get removed because cows often stomp on them or abandon them\".",
+        "our_reply_summary": "Comentario raíz, filo moderado (127 palabras): concedí el video entero (entra sola, hay grano, nadie la arrastra); esa caminata es la única decisión del clip que es suya; el resto lo enumeró ella (\"they stand there and get inseminated\", \"Calves get removed\"): preñez, cría, leche y fecha de salida las decide quien tiene el título; caminar a la comida muestra a una vaca con hambre que quiere cosas, y de quién es quedó resuelto antes de la puerta. Cierre: besides the walk to the grain, which decision about her body is hers?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "6aa772cddd19e93f",
+        "exposure_n": 1
+      }
+    ],
+    "user_id": "1241731695",
+    "name": "Kirstin Morgan",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/1241731695/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Las vacas lecheras entran solas al robot de ordeño, así que lo de esclavas y ordeño forzado es propaganda vegana; ella conoce el oficio y los veganos no.",
+    "analisis": "Scout 2026-10-04, su post en Vegans VS Meat Eaters (14 reacciones, 36 comentarios): comparte un video de Reinie Kennedy de una vaca metida en un robot Lely Astronaut buscando grano, con el texto \"And vegans say cows are slaves, and are forced to be milked\". En los comentarios contesta con datos de oficio: \"they stand there and get inseminated\", \"Calves get removed because cows often stomp on them or abandon them\", \"The average age of a herd is 10\". Jude Cooper y Michael Colwell la respaldan; Philip Wheeldon pega ahí su plantilla de las plantas.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No pelear edades de sacrificio ni si el video está manipulado (ya se lo dijeron); no discutir la palabra slave ni compararla con esclavitud humana; no negar que la vaca entra sola: se concede entero."
   }
 ]
