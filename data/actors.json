@@ -4004,6 +4004,17 @@
         "outcome": "engaged",
         "outcome_evidence": "\"ya chatting mush... if a person wants to sell their cat per kg of live weight or per kg of dead weight, they can do.\"",
         "outcome_note": "La distinción cuidado/título con la gata lo llevó a doblar: el gato adoptado también es propiedad explotada y su dueña puede venderlo por kilo; trata la muerte como punto irrelevante."
+      },
+      {
+        "thread_id": "28203900659231098",
+        "date": "2026-10-03",
+        "their_move": "Réplica (post de Madly InLuv, 1d): \"ya chatting mush. adopting a cat is a moot point\"; el gato adoptado es propiedad explotada; \"if a person wants to sell their cat per kg of live weight or per kg of dead weight, they can do\"; la compañía se le impuso al gato por \"humans taking unfair advantage of the imbalance of power that exists between humans and animals\"; que maten o no al animal es punto irrelevante.",
+        "our_reply_summary": "Filo (143 palabras): concedí el gato entero (criar y vender gatos como propiedad también; cuidar a un rescatado es cuidado y el título es el resto feo); su \"they can do\" es lo que significa un título y su \"unfair advantage of the imbalance of power\" es el argumento dicho por él; pega más fuerte en la vaca. Cierre: what does \"unfair advantage of the imbalance of power\" say about the cow?",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "draft_sha": "82c9656a4c049507",
+        "exposure_n": 6,
+        "assignment": "chosen",
+        "outcome": "pending"
       }
     ],
     "user_id": "1742478160",
@@ -4745,6 +4756,17 @@
         "outcome": "engaged",
         "outcome_evidence": "\"so long story short, it's ok to eat animals to survive in the wilderness but not when you're in a civilisation... Got it.\"",
         "outcome_note": "La distinción necesidad real vs refri del súper la resumió con sorna pero sin disputarla; 2 reacciones de terceros a mi reply. Ojo: en el mismo hilo escribe \"Humans shouldn't objectify or exploit other animals\"; su bando es ambiguo."
+      },
+      {
+        "thread_id": "28211773511777146",
+        "date": "2026-10-03",
+        "their_move": "so long story short, it is ok to eat animals to survive in the wilderness but not when you are in a civilisation... Got it.",
+        "our_reply_summary": "Filo ligero (69 palabras): casi; quité el \"ok\": la supervivencia cambia lo que se le puede pedir a la persona, el animal sigue siendo alguien que siente y el hambre de nadie escribe un título sobre ella. Cierre: If you \"Got it\", what is the wilderness still doing for people buying animals inside a civilisation?",
+        "framework": "no-necesidad-cambiaron-las-reglas",
+        "draft_sha": "b627682f675d4d49",
+        "exposure_n": 2,
+        "assignment": "chosen",
+        "outcome": "pending"
       }
     ],
     "user_id": "838293183",
@@ -4762,7 +4784,8 @@
     "tactics": [
       "apelacion_normal",
       "conveniencia_como_justificacion",
-      "anecdota_personal_n1"
+      "anecdota_personal_n1",
+      "ai_accusation"
     ],
     "threads": [
       "28648574331432371"
@@ -4781,6 +4804,17 @@
         "outcome": "goalpost",
         "outcome_evidence": "\"The environmental footprint of Artificial Intelligence is tied directly to the scale...\"",
         "outcome_note": "La pregunta por el animal del cabestro no se tocó: pegó un texto largo sobre la huella ambiental de la IA (sello-IA en forma de tu-quoque ecológico)."
+      },
+      {
+        "thread_id": "28648574331432371",
+        "date": "2026-10-03",
+        "their_move": "Réplica a mi raíz (1d): pegó un texto largo con formato de resumen generado, \"The environmental footprint of Artificial Intelligence is tied directly to the scale...\", cuatro secciones (electricidad, agua, e-waste, minería); nada sobre el mercado ni el animal del cabestro.",
+        "our_reply_summary": "Seco y limpio (60 palabras): concedí que los servidores gastan luz y agua; pregunté por el del cabestro y cuatro secciones de centros de datos no lo mencionan; sin defensa de autenticidad. Cierre: the animals that \"went through\" Banbury, did any of them get a say?",
+        "framework": "el-sello-es-para-el-lurker",
+        "draft_sha": "6e3fe35b8afcedd1",
+        "exposure_n": 2,
+        "assignment": "chosen",
+        "outcome": "pending"
       }
     ],
     "user_id": "100008613459447",
@@ -4793,5 +4827,40 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No atacar a su familia ni burlarse del orgullo; conceder los empleos y la prosperidad enteros; no pelear economía."
+  },
+  {
+    "tactics": [
+      "relativismo_moral",
+      "legalidad_como_justificacion",
+      "apelacion_normal",
+      "crop_deaths_flip",
+      "hipocresia_clausula_practicable"
+    ],
+    "threads": [
+      "28223401477281016"
+    ],
+    "interactions": [
+      {
+        "thread_id": "28223401477281016",
+        "date": "2026-10-03",
+        "their_move": "Scout, post anti-rodeo de Śhen Neupane (Vegans VS Meat Eaters, 75 reacciones), réplica a Yoshi Lewis (5h): comer animales es legal y normal; \"having an opinion about the ethics doesn’t automatically declare your way is the only valid way\"; smartphone y transporte matan animales; \"What gives you the right to draw your own line and then proclaim thats the only true way?\"; \"So are you a murderer too? Or are you just a hypocrite?\"",
+        "our_reply_summary": "Filo (154 palabras), primera entrada mía al hilo: concedí teléfonos, transporte, cultivos y carreteras; el becerro del chute está en otra parte: el que muere bajo una cosechadora no era de nadie, a él lo criaron, compraron y lazaron porque alguien tiene título; legal = título reconocido, normal = costumbre. Cierre: what the hell gives anyone the right to draw that one around the calf?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "c26d5fe1287e646b",
+        "exposure_n": 1,
+        "assignment": "chosen",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "710263180",
+    "name": "Chris Clark",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/710263180/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Cada quien vive distinto; comer animales es legal y normal; tener una opinión ética no vuelve tu camino el único válido, y el vegano también traza su línea de muertes aceptables.",
+    "analisis": "Scout 2026-10-03, post anti-rodeo de Śhen Neupane en Vegans VS Meat Eaters (75 reacciones, hilo casi todo de indignación por crueldad). Es el único que argumenta: relativismo civil (\"You can not declare your ethical framework the only one\"), legalidad y normalidad, y el flip de hipocresía (smartphone, transporte, hábitats: \"you obviously draw a line on acceptable killing for necessity and convenience\"). Cierra con \"So are you a murderer too? Or are you just a hypocrite?\" a quien lo comparó con esclavistas.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No competir en conteo de muertes ni defender el smartphone; no decir que mi marco es el único válido; no repetir la comparación con esclavistas o asesinos que ya le hicieron; no pelear si el rodeo es cruel (ese es el eje del hilo y es el equivocado)."
   }
 ]

@@ -50,4 +50,8 @@ No romantizar ni juzgar a pueblos indígenas; no pelear antropología; el blanco
 - **Su jugada:** Post propio "Be honest, what are your thoughts on indigenous tribes that eat animals?"; a Robbie: "non-vegans pointing out the double standards that vegans have towards humans eating animals or using animals as a resource"; a Rüdiger: "well even Eskimos gotta eat."
 - **Nuestra respuesta:** Filo (133 palabras): su "even Eskimos gotta eat" es la distinción: supervivencia real vs frente al refri del súper, un solo estándar; ser humano no da título sobre un ser que siente, la necesidad cambia lo exigible a la persona y deja al animal igual; usar la subsistencia indígena para cubrir la lista del súper es bullshit. Cierre: quién en este hilo está en el caso gotta-eat y quién lo pide prestado.
 
+### Hilo `28211773511777146` — 2026-10-03 · outcome: **pending**
+- **Su jugada:** so long story short, it is ok to eat animals to survive in the wilderness but not when you are in a civilisation... Got it.
+- **Nuestra respuesta:** Filo ligero (69 palabras): casi; quité el "ok": la supervivencia cambia lo que se le puede pedir a la persona, el animal sigue siendo alguien que siente y el hambre de nadie escribe un título sobre ella. Cierre: If you "Got it", what is the wilderness still doing for people buying animals inside a civilisation?
+
 _Hilos: 28211773511777146_
