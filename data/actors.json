@@ -3220,13 +3220,27 @@
         "date": "2026-10-04",
         "assignment": "chosen",
         "propensity": null,
-        "outcome": "pending",
+        "outcome": "engaged",
         "thread_id": "28615704478052690",
         "their_move": "Réplica 15 (their-own-words, minutos): acepta la versión ajustada (\"yes, that's a clearer version of your position\") y reparte la carga: \"you haven't established why those present characteristics should be the determining factors in the first place\"; no le toca probar que su rasgo sea \"the sole or overriding consideration\" antes de que yo justifique mi criterio.",
         "our_reply_summary": "Limpio (170 palabras): concedí el reparto de carga y retiré \"outweighs\"; di mi razón dentro de los dos casos: ser poseída, criada y vendida le ocurre a quien está ahí hoy, y un acto así solo agravia a alguien para quien las cosas ya cuentan desde su lado; su rasgo contesta otra pregunta (quién deberá obligaciones). Pedido más estrecho: una cuenta en la que ser vendida agravia a la recién nacida y deja sin agravio a la cerda. Cierre: What does that account look like?",
         "framework": "algo-a-alguien-sujeto-derecho",
         "draft_sha": "063d91fc215a9695",
-        "exposure_n": 36
+        "exposure_n": 36,
+        "outcome_evidence": "\"That's the principle doing the work in your argument, and you haven't actually given an argument for it.\"",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: dar mi razón positiva lo llevó a lo que él llama \"the actual point of disagreement\": pide el argumento de por qué un acto solo agravia a alguien para quien las cosas ya cuentan desde su lado, y por qué la sintiencia presente basta mientras la agencia moral en desarrollo no. Civil; cazó el principio como aserción sin argumento."
+      },
+      {
+        "date": "2026-10-04",
+        "assignment": "chosen",
+        "propensity": null,
+        "outcome": "pending",
+        "thread_id": "28615704478052690",
+        "their_move": "Réplica 16 (their-own-words, 19m): \"I think we're finally at the actual point of disagreement\"; mi principio (un acto solo agravia a alguien para quien las cosas ya cuentan desde su lado) es \"the principle doing the work in your argument, and you haven't actually given an argument for it\"; que la individua exista hoy no prueba que solo sus rasgos de hoy importen. Pregunta: \"what is your argument that present sentience and interests are sufficient to determine this distinction, while developmental moral agency is not?\"",
+        "our_reply_summary": "Limpio (241 palabras): concedí que fue aserción; angosté el alcance (su futuro puede importar; mi afirmación es sobre este tipo de acto); argumento: agraviar a alguien es distinto de estropear algo (la silla), hace falta alguien del lado receptor, y admití que ahí toca fondo, en el mismo suelo de su frase sobre la cerda; suficiencia mostrada en la recién nacida sola (la descripción del agravio de venderla hoy está completa con lo que es hoy; su futuro suma razones encima). Asimetría: un rasgo suma razones donde está y su ausencia deja en pie las anteriores. Cierre: what makes the lack of that trait remove the wrong, rather than just stop adding to it? Réplica anticipada por el coagent: que la agencia futura estructura el tipo de derecho desde el inicio.",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "draft_sha": "f805c7613875d045",
+        "exposure_n": 37
       }
     ],
     "user_id": "1198831097",
@@ -4090,13 +4104,15 @@
         "date": "2026-10-04",
         "assignment": "chosen",
         "propensity": null,
-        "outcome": "pending",
+        "outcome": "escalated",
         "thread_id": "28203900659231098",
         "their_move": "Réplica (post de Madly InLuv, 2h): \"nice little pointless rant. Would you like to talk about how vegans are against people having fish in a garden pond, or will you get all emotional and tip ya pram over again..\" Cuarta estación; la pregunta lechuga/gata/vaca quedó sin tocar.",
         "our_reply_summary": "Filo (103 palabras), vuelta de recibos y última con él: concedí el estanque (peces comprados y mantenidos como adorno también están bajo título, igual que el gato); cuatro paradas en tres días (steakhouses, gatos, lechuga, estanque), algo concedido en cada una, y la vaca sin salir, cuando él escribió que los gatos son propiedad \"exactly the same as farm animals are human property\"; al sello, una línea (\"My pram's fine, thanks\"). Cierre: So when does the cow get her turn? Si abre quinta estación, silencio.",
         "framework": "el-sello-es-para-el-lurker",
         "draft_sha": "0661cdadba348ec7",
-        "exposure_n": 8
+        "exposure_n": 8,
+        "outcome_evidence": "\"bless the vegan nutter is know crying about fish being exploited as garden decoration\"",
+        "outcome_note": "el-sello-es-para-el-lurker: la vuelta de recibos lo dejó sin estación nueva; contestó solo sello (\"vegan nutter… crying about fish\") y la vaca sigue sin salir. Se queda en silencio: la pregunta sin contestar es el recibo."
       }
     ],
     "user_id": "1742478160",

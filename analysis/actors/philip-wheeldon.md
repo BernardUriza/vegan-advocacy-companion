@@ -78,7 +78,7 @@ NO abrir debate intramural en el post propio (regala la salida al carnista). NO 
 - **Su jugada:** Réplica (post de Madly InLuv, 4h): "says you who kills living things that are systematically bred, exploited and commodified, to sustain yourself"; si yo tengo derecho a elegir dentro de la ley qué mato, "then so does everyone else... So get over it". No tocó a la vaca.
 - **Nuestra respuesta:** Filo (142 palabras): concedí trigo, lechuga y el derecho legal a elegir; su palabra mete a la lechuga y a la gata en un costal que él mismo separó ayer con "The cat didn't consent to the companionship"; el título sobre quien puede negarse es la pregunta. Cierre: Which of the three can have something forced on her: the lettuce, the cat or the cow?
 
-### Hilo `28203900659231098` — 2026-10-04 · outcome: **pending**
+### Hilo `28203900659231098` — 2026-10-04 · outcome: **escalated**
 - **Su jugada:** Réplica (post de Madly InLuv, 2h): "nice little pointless rant. Would you like to talk about how vegans are against people having fish in a garden pond, or will you get all emotional and tip ya pram over again.." Cuarta estación; la pregunta lechuga/gata/vaca quedó sin tocar.
 - **Nuestra respuesta:** Filo (103 palabras), vuelta de recibos y última con él: concedí el estanque (peces comprados y mantenidos como adorno también están bajo título, igual que el gato); cuatro paradas en tres días (steakhouses, gatos, lechuga, estanque), algo concedido en cada una, y la vaca sin salir, cuando él escribió que los gatos son propiedad "exactly the same as farm animals are human property"; al sello, una línea ("My pram's fine, thanks"). Cierre: So when does the cow get her turn? Si abre quinta estación, silencio.
 
