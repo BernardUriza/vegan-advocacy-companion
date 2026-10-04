@@ -62,6 +62,21 @@ Una sola corrida, n=1 por molde y mismo día: dirección clara, magnitud sin con
 `.coagent/coagent-resp-1003e-exp.md`. El modelo siguió la cuota que fijó el master ("at least two swear words
 each") y la temperatura de las muestras sin copiar sus palabras.
 
+## Segunda medición: lote real 1003F (2026-10-03, ~22:50 CST)
+
+Targets nuevos (Dean Christie limpio; Tiana Thomas y Chris Clark filo), master compuesto con la plantilla
+(`.coagent/master-2026-10-03f-lote.md`), respuesta en `.coagent/coagent-resp-1003f.md`:
+
+| Target | Registro pedido | Groserías por mil | Pivotes duros (style-gate) |
+|---|---|---|---|
+| A Dean | limpio | 0 | 0 (un apositivo blando) |
+| B Tiana | filo, mín. 1 | 17 | 0 |
+| C Chris Clark | filo, mín. 2 | 11 | 0 |
+
+Las dos de filo suman 14 por mil contra el techo histórico de 7 con el molde viejo. Con esta y la prueba
+anterior van dos corridas en la misma dirección. El gate no caza la forma invertida ("That list proves who can
+do more. It does not prove who gets the title."), afirmar y luego negar; se reescribió a mano en el draft.
+
 ## El GPT no es de Bernard (leído 2026-10-03 en la API de ChatGPT, solo lectura)
 
 `/backend-api/gizmos/g-iCKKoRd5A`: autor "Soffia Moes", `share_recipient: marketplace`, permisos de la cuenta
