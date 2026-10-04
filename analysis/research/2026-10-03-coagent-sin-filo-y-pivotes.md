@@ -12,8 +12,8 @@ Groserías por cada mil palabras y pivotes de negación en las 29 respuestas gua
 - Groserías: entre 0 y 7 por mil en 27 de 29 respuestas. Las dos excepciones (11 y 16) son replies sueltas
   de ~120–250 palabras a Homer el 28-sep. Los tres seeds del 3-oct dieron 1, 7 y 0. El día no fue distinto
   del resto: el coagent nunca entregó el registro que pide el bloque de voz.
-- Pivotes de negación: 0 en 15 de las 17 respuestas anteriores al 30-sep; 1 a 3 en la mayoría desde
-  entonces. Coincide con la entrada de la línea "sin 'no es X, es Y' como pivote" en los masters. Es
+- Pivotes de negación (conteo con un regex grueso, orientativo): 0 en 17 de las 19 respuestas del 27 y
+  28-sep; 1 a 3 en 6 de las 10 respuestas del 30-sep en adelante. Coincide con la entrada de la línea "sin 'no es X, es Y' como pivote" en los masters. Es
   correlación con pocas muestras, no prueba de causa.
 - En los masters el bloque de voz va una sola vez, cerca del final, seguido de las reglas de formato y del ask.
 
