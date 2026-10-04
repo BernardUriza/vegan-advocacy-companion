@@ -142,10 +142,12 @@ try {
 // hilo con minutos de diferencia. Se compara el cierre del body-file con el de cada draft
 // consultado en las últimas 24h (cualquier post) cuyo archivo siga en disco.
 let detectCloserClones;
+let detectScopeDenialRepeats;
 try {
   ({ detectCloserClones } = await import(resolve(PROJECT_DIR, 'scripts/closer-clone.mjs')));
+  ({ detectScopeDenialRepeats } = await import(resolve(PROJECT_DIR, 'scripts/scope-denial.mjs')));
 } catch (e) {
-  block(`GATE PROCEDENCIA: no pude cargar closer-clone.mjs (${e.message}). Fail-closed.`);
+  block(`GATE PROCEDENCIA: no pude cargar closer-clone.mjs / scope-denial.mjs (${e.message}). Fail-closed.`);
 }
 {
   const coagentDir = resolve(PROJECT_DIR, '.coagent');
@@ -158,8 +160,8 @@ try {
       const at = Date.parse(d.consulted_at || '');
       if (!d.draft_file || !at || Date.now() - at > FRESH_MS) continue;
       const p = abs(d.draft_file);
-      if (p === bodyAbs || !existsSync(p)) continue;
-      peers.push({ name: `${d.author || '?'} (${f.replace('.consult.json', '')})`, text: readFileSync(p, 'utf8') });
+      if (p === bodyAbs || !existsSync(p) || peers.some((x) => x.path === p)) continue;
+      peers.push({ name: `${d.author || '?'} (${f.replace('.consult.json', '')})`, path: p, text: readFileSync(p, 'utf8') });
     }
   }
   if (peers.length) {
@@ -171,6 +173,16 @@ try {
         ...clones.map((p) => `  ↔ ${p.a === 'ESTE' ? p.b : p.a}  lcs=${p.lcs} run=${p.run}\n     «${p.closerA.slice(0, 110)}»\n     «${p.closerB.slice(0, 110)}»`),
         'El mismo cierre en varias replies se lee como bot ante el lurker (y confirma el sello "blatant use of ai").',
         'Replantea la pregunta del título con las palabras de ESTE interlocutor, re-consulta (x/y) y re-finaliza. Ver reply-output-style.md.',
+      ]);
+    }
+    // molde repetido (2026-10-03): "tells me… says fuck-all about…" salió igual en dos lotes del mismo día.
+    const repeats = detectScopeDenialRepeats([{ name: 'ESTE', text: bodyText }, ...peers]).pairs.filter((p) => p.a === 'ESTE' || p.b === 'ESTE');
+    if (repeats.length) {
+      block([
+        'GATE PROCEDENCIA — STAGING BLOQUEADO: MOLDE REPETIDO. Este draft concede-y-niega con el mismo par de verbos que reply(s) ya consultadas en las últimas 24h:',
+        ...repeats.map((p) => `  ↔ ${p.a === 'ESTE' ? p.b : p.a}  molde=${p.template}\n     «${p.snippetA.slice(0, 110)}»\n     «${p.snippetB.slice(0, 110)}»`),
+        'La jugada (conceder el hecho, negar la conclusión) se conserva; la misma fórmula dos veces se lee a molde.',
+        'Cambia los verbos o la entrada de ESTE draft y re-finaliza. Ver reply-output-style.md § "Conceder el hecho y negar la conclusión".',
       ]);
     }
   }

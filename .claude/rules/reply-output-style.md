@@ -214,7 +214,8 @@ los 132 drafts desde junio. NO es el pivote "no es X, es Y" y ningún gate la bl
   salida "aunque mi argumento falle, mi conclusión puede ser cierta". En el hilo se muestra el hueco en llano.
 - **Lo que sí se vigila es la fórmula.** El mismo par de verbos en dos replies del lote ("tells me… says
   fuck-all about…" dos veces) se lee a molde igual que un cierre clonado. `style-gate` en modo lote lo bloquea
-  (`scopeDenialRepeat`, SSOT `scripts/scope-denial.mjs`); con verbos distintos solo avisa.
+  (`scopeDenialRepeat`, SSOT `scripts/scope-denial.mjs`); con verbos distintos solo avisa. El gate de
+  procedencia hace lo mismo contra los drafts consultados en las últimas 24 h de cualquier post.
 
 Investigado en `analysis/research/2026-10-03-afirmar-luego-negar-y-nombre-del-salto.md`.
 

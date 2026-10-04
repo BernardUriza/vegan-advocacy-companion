@@ -202,6 +202,24 @@ test('provenance-gate: un cierre clonado contra un draft consultado hoy bloquea'
   assert.match(r.stderr, /Kirk \(111\)/);
 });
 
+test('provenance-gate: el mismo molde de conceder-y-negar que un draft consultado hoy bloquea; con otros verbos pasa a la guarda del recibo', () => {
+  const dir = fakeProject();
+  const peer = join(dir, 'peer.txt');
+  writeFileSync(peer, `${FILLER.repeat(4)}"Legal" tells me the title is recognised. Neither says a damn thing about why it should exist. So who drew that line around the calf?`);
+  writeFileSync(join(dir, '.coagent', '111.consult.json'), JSON.stringify({ status: 'consulted', drafts: [{ author: 'Chris', draft_sha: 'x', draft_file: peer, consulted_at: new Date().toISOString() }] }));
+  const same = join(dir, 'same.txt');
+  writeFileSync(same, `${FILLER.repeat(4)}"The one who can" tells me who has the power. It says fuck-all about who gets the title. Since when does caring for her make her yours to sell?`);
+  const blocked = runProvenance(dir, same);
+  assert.equal(blocked.status, 2);
+  assert.match(blocked.stderr, /MOLDE REPETIDO/);
+  assert.match(blocked.stderr, /Chris \(111\)/);
+  const varied = join(dir, 'varied.txt');
+  writeFileSync(varied, `${FILLER.repeat(4)}Having the reins explains who is in charge. It doesn't explain why she is yours. Since when does caring for her make her yours to sell?`);
+  const passed = runProvenance(dir, varied);
+  assert.doesNotMatch(passed.stderr, /MOLDE REPETIDO/);
+  assert.match(passed.stderr, /no hay recibo de consulta/);
+});
+
 test('provenance-gate: un cierre distinto al del draft consultado hoy no dispara la guarda de clones', () => {
   const dir = fakeProject();
   const peer = join(dir, 'peer.txt');

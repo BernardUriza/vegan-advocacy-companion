@@ -47,9 +47,10 @@ pero es una subordinada pegada a una afirmación, distinta del par de oraciones 
 
 ## Abierto
 
-- El molde se compara solo dentro del lote. Dos replies con el mismo molde en lotes distintos del mismo día
-  (como pasó) no se cruzan; el gate de procedencia podría compararlo contra los drafts de las últimas 24 h
-  igual que hace con los cierres.
+- Cerrado el mismo día: el gate de procedencia compara el molde del body-file contra los drafts consultados
+  en las últimas 24 h de cualquier post, igual que los cierres (`MOLDE REPETIDO`). Probado contra el caso real:
+  stagear el draft de Tiana con el de Chris Clark todavía fresco bloquea con `molde=tell>say`. De paso se
+  deduplicaron los pares del hook por ruta de archivo (un draft finalizado tres veces salía tres veces).
 - Leer la lista completa de patrones del paper Antislop y el estudio de corpus de Silvennoinen sobre negación
   contrastiva en humanos.
 
