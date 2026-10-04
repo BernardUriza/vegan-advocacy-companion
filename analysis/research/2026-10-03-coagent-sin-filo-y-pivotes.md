@@ -43,13 +43,40 @@ que el registro tibio venga desde el 27-sep.
 - `scripts/style-gate.mjs` `negateThenAffirm`: tres variantes nuevas con test (pronombre, sin predicado,
   do-support). Los 15 drafts publicados del 2 y 3 de octubre pasan el detector ampliado.
 
-## Abierto (decide Bernard)
+## Prueba del molde nuevo (2026-10-03, ~22:10 CST, con GO de Bernard)
 
-1. Abrir Configure de insult-gpt y ver qué modelo tiene; fijar uno si el campo existe.
-2. Prueba A/B: el mismo master en una conversación nueva contra la canónica, comparando `profanityCount`.
-   Contradice la regla de conversación canónica, por eso no se corrió.
-3. Medir el próximo lote con el molde nuevo. Si las groserías siguen bajo 7 por mil, la causa está en el
-   GPT y no en el master.
+Mismos tres targets del lote 1003B (Wheeldon, Mark Smith, Phil Holmes), mismas lecturas y frameworks, en la
+conversación canónica. Único cambio: el molde (copia versionada en `analysis/research/2026-10-03-master-molde-voz.md`): una línea de voz
+en inglés al inicio, reglas de formato antes de la voz, bloque de voz verbatim como último bloque antes del
+ask, la línea afirmativa en positivo, tres muestras de registro en `<example>`, y ninguna mención del patrón
+prohibido. Nada se publicó; esos targets ya tenían reply.
+
+| | Molde viejo (1003B) | Molde nuevo (1003E) |
+|---|---|---|
+| Groserías por mil palabras | 7 | 19 |
+| Groserías en A / C (filo) | 1 / 1 | 3 / 2 |
+| Pivotes de negación (style-gate) | 2 en el texto entregado | 0 en A, B y C |
+| B (registro seco, máx. 1 grosería) | 1 | 0 |
+
+Una sola corrida, n=1 por molde y mismo día: dirección clara, magnitud sin confirmar. Respuesta en
+`.coagent/coagent-resp-1003e-exp.md`. El modelo siguió la cuota que fijó el master ("at least two swear words
+each") y la temperatura de las muestras sin copiar sus palabras.
+
+## El GPT no es de Bernard (leído 2026-10-03 en la API de ChatGPT, solo lectura)
+
+`/backend-api/gizmos/g-iCKKoRd5A`: autor "Soffia Moes", `share_recipient: marketplace`, permisos de la cuenta
+`can_read: true`, `can_view_config: false`, `can_write: false`. Sin modelo fijado (`model` y `default_model`
+nulos): corre en el modelo que esté seleccionado en el chat, que en la conversación canónica marca "5.5 High".
+`version_updated_at` 2024-10-28; `updated_at` 2026-10-02 (metadato, no prueba que cambiaran las
+instrucciones). Consecuencia: fijar el modelo en el builder no es posible, y la regla que lo llamaba "GPT
+custom de Bernard" estaba mal; es un GPT público de la tienda.
+
+## Abierto
+
+1. Repetir la medición en el siguiente lote real con el molde nuevo; si se sostiene arriba de ~15 por mil en
+   targets filo, la causa queda cerrada en la composición del master.
+2. La prueba A/B en conversación nueva ya no hace falta para explicar la tibieza; queda solo si el molde
+   nuevo deja de rendir.
 
 ## Fuentes
 

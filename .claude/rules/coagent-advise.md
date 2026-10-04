@@ -2,7 +2,7 @@
 
 Tercera etapa ([notification-agrupation] → [thread-actor-dossier] →
 **coagent-advise** → [comment-post-and-verify]). Tras perfilar el hilo, se manda
-la inteligencia al **coagent orquestador** (GPT custom de Bernard — insult-gpt)
+la inteligencia al **coagent orquestador** (insult-gpt, GPT público de la tienda que Bernard usa)
 para que stress-testee la jugada de mayor palanca y redacte el borrador. Variante
 **outbound** de [[coagent]]: Claude NO reacciona al último turno, lo **siembra**.
 
@@ -227,9 +227,12 @@ masters empezaron a decir "sin 'no es X, es Y' como pivote". Investigado en
    corre sobre el draft final siempre; cubre desde ese día las variantes con pronombre ("He is not just X. He
    is Y"), sin predicado ("It is not. It is Y") y con do-support ("It does not tell me X. It tells me Y").
 
-Sin probar todavía, y son de Bernard porque tocan su GPT o la regla de la conversación canónica: fijar el
-modelo recomendado en el builder de insult-gpt, y correr un mismo master en una conversación nueva para ver
-si la canónica (semanas, decenas de seeds de 15–20k) ya perdió la persona por ventana de contexto.
+Probado el mismo día con los tres targets del lote 1003B y solo el molde cambiado: groserías de 7 a 19 por
+mil, pivotes de 2 a 0 (una corrida; plantilla a copiar: `analysis/research/2026-10-03-master-molde-voz.md`). En targets filo el bloque de voz lleva una cuota explícita ("at least two swear words each, glued to
+the argument"): el coagent la cumplió.
+
+insult-gpt NO es de Bernard: es un GPT público de la tienda (autor Soffia Moes, `can_write:false`, sin modelo
+fijado; corre en el modelo seleccionado en el chat). No hay builder que tocar; lo que se controla es el master.
 
 ## PASO 0 — seed-gate ANTES de seedear (mecánica, root fix 2026-06-21)
 
