@@ -46,7 +46,7 @@ No romantizar ni juzgar a pueblos indígenas; no pelear antropología; el blanco
 
 ## Log de interacciones
 
-### Hilo `28211773511777146` — 2026-10-02 · outcome: **pending**
+### Hilo `28211773511777146` — 2026-10-02 · outcome: **engaged**
 - **Su jugada:** Post propio "Be honest, what are your thoughts on indigenous tribes that eat animals?"; a Robbie: "non-vegans pointing out the double standards that vegans have towards humans eating animals or using animals as a resource"; a Rüdiger: "well even Eskimos gotta eat."
 - **Nuestra respuesta:** Filo (133 palabras): su "even Eskimos gotta eat" es la distinción: supervivencia real vs frente al refri del súper, un solo estándar; ser humano no da título sobre un ser que siente, la necesidad cambia lo exigible a la persona y deja al animal igual; usar la subsistencia indígena para cubrir la lista del súper es bullshit. Cierre: quién en este hilo está en el caso gotta-eat y quién lo pide prestado.
 

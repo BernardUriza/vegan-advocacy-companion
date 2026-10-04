@@ -147,7 +147,9 @@
         "exposure_n": 10,
         "assignment": "chosen",
         "propensity": null,
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "Su siguiente turno: \"You don't live in farming country, do you?\"",
+        "outcome_note": "El verbo crudo bajo el nombre (Daisy sale en el camión) no recibió respuesta; saltó a pedir credencial de zona rural."
       },
       {
         "thread_id": "28614822664807538",
@@ -159,6 +161,19 @@
         "exposure_n": 11,
         "assignment": "chosen",
         "propensity": null,
+        "outcome": "engaged",
+        "outcome_evidence": "\"It clear you have no concept of how small farms work and how long they choose to keep their animals. Not all cows end up as beef.\"",
+        "outcome_note": "El reencuadre con su arco desde junio no la sacó de la conversación: contestó el fondo por primera vez con un dato (no todas terminan en carne), y dejó escapar \"how long they choose to keep their animals\"."
+      },
+      {
+        "thread_id": "28614822664807538",
+        "date": "2026-10-03",
+        "their_move": "It clear you have no concept of how small farms work and how long they choose to keep their animals. Not all cows end up as beef. Not all chickens are culled when they stop laying.",
+        "our_reply_summary": "Filo (112 palabras): concedí que no todas terminan en carne; su \"how long they choose to keep their animals\" es el punto: la vejez del husky se le debe, la de Daisy es un favor; granja amable y dura operan con el mismo título. Cierre: what does Daisy have going for her the year they choose otherwise?",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "draft_sha": "294dc39ecf54a3e5",
+        "exposure_n": 12,
+        "assignment": "chosen",
         "outcome": "pending"
       }
     ]
@@ -2151,6 +2166,19 @@
         "exposure_n": 38,
         "assignment": "chosen",
         "propensity": null,
+        "outcome": "engaged",
+        "outcome_evidence": "\"You've finally stated your moral opinion clearly, mate. You still haven't turned it into a compulsory conclusion for everyone else\"",
+        "outcome_note": "Pagar la carga con sus propias concesiones lo obligó a nombrar mi premisa completa y a plantarse en pertenencia categórica (\"No. You don't get to ban the distinction\"); ya no discute que la suya también es posición filosófica."
+      },
+      {
+        "thread_id": "28604913169131821",
+        "date": "2026-10-03",
+        "their_move": "Réplica (Open Debates 3, post de sintiencia, 1d): \"you have just finally written your assumption out in full\"; \"purely YOUR moral premise\"; se niega a nombrar la diferencia sin decir human (\"No. You don’t get to ban the distinction\"); \"included categorically within human rights\"; \"You still haven’t turned it into a compulsory conclusion for everyone else\".",
+        "our_reply_summary": "Filo, reply de CIERRE (224 palabras): concedí que es mi premisa moral y que ninguna sale obligatoria de un hecho; la suya tampoco (cité su \"both positions are philosophical positions\"); su \"No\" como la línea más honesta: la distinción se sostiene, no se argumenta; human because human; dejé las dos premisas sobre la mesa. Cierre: what the hell turns \"included categorically\" into a compulsory conclusion for the pig? Si abre otra estación, silencio.",
+        "framework": "antropoespecismo",
+        "draft_sha": "bf3473f09237d8ee",
+        "exposure_n": 39,
+        "assignment": "chosen",
         "outcome": "pending"
       }
     ],
@@ -2584,6 +2612,19 @@
         "exposure_n": 14,
         "assignment": "randomized",
         "propensity": 0.3333333333333333,
+        "outcome": "engaged",
+        "outcome_evidence": "\"the whole body. Domesticated animals are symbiotic with humans.\"",
+        "outcome_note": "Separar hambre (biología) de título (creencia) la movió de \"biología\" a \"simbiosis\": contestó la pregunta literal y cambió de defensa."
+      },
+      {
+        "thread_id": "28469926949331190",
+        "date": "2026-10-03",
+        "their_move": "the whole body. Domesticated animals are symbiotic with humans.",
+        "our_reply_summary": "Filo moderado (113 palabras): concedí la dependencia (la criamos nosotros); \"symbiotic\" tapa quién lleva el registro de cría, se queda con las crías, las vende y fija el final; cité su frase de junio \"The one doing all the brainwork holds the reins\". Cierre: which symbiosis has one partner holding the reins on the other’s breeding, her calves and the date she dies?",
+        "framework": "domesticar-eufemismo-dominar",
+        "draft_sha": "36d247eda9bb5866",
+        "exposure_n": 15,
+        "assignment": "chosen",
         "outcome": "pending"
       }
     ]
@@ -3117,6 +3158,19 @@
         "exposure_n": 32,
         "assignment": "chosen",
         "propensity": null,
+        "outcome": "engaged",
+        "outcome_evidence": "\"The pig has interests, is sentient and has a point of view, but does not have that same developmental capacity for moral agency.\"",
+        "outcome_note": "Cederle el piso sin precargar la respuesta sacó su explicación completa: naturaleza de desarrollo hacia agencia moral + red de reciprocidad; concede que la cerda es sintiente y tiene punto de vista."
+      },
+      {
+        "thread_id": "28615704478052690",
+        "date": "2026-10-03",
+        "their_move": "Réplica 12 (Open Debates 3, their-own-words, 1d): su explicación del split recién nacido/cerda: \"whether the organism is of a nature to develop moral agency\"; el recién nacido es miembro de un tipo de organismo cuya naturaleza de desarrollo incluye agencia moral y vive en una red de obligaciones recíprocas; concede \"The pig has interests, is sentient and has a point of view\"; excluye por adelantado casos adicionales.",
+        "our_reply_summary": "Limpio (236 palabras): agradecí la explicación y me quedé en sus dos casos; la agencia moral dice quién puede deber obligaciones, pero falta el paso a que alguien sintiente y con punto de vista pueda ser poseída; la protección llega por el tipo y eso necesita razón propia; la recién nacida no devuelve nada. Cierre: how does \"developmental nature\" get from who can owe obligations to ownership being \"permissible\"?",
+        "framework": "filtro-especie-vs-individuo",
+        "draft_sha": "bd148b46c7482163",
+        "exposure_n": 33,
+        "assignment": "chosen",
         "outcome": "pending"
       }
     ],
@@ -3947,7 +4001,9 @@
         "exposure_n": 5,
         "assignment": "chosen",
         "propensity": null,
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "\"ya chatting mush... if a person wants to sell their cat per kg of live weight or per kg of dead weight, they can do.\"",
+        "outcome_note": "La distinción cuidado/título con la gata lo llevó a doblar: el gato adoptado también es propiedad explotada y su dueña puede venderlo por kilo; trata la muerte como punto irrelevante."
       }
     ],
     "user_id": "1742478160",
@@ -4646,10 +4702,12 @@
         "exposure_n": 1,
         "assignment": "chosen",
         "propensity": null,
-        "outcome": "pending",
+        "outcome": "escalated",
         "draft_sha_previous": [
           "e69dc9b34c5a27c6"
-        ]
+        ],
+        "outcome_evidence": "\"Your best argument is NPD, do better. People have owned pets and eaten animals for millenia, without issue\"",
+        "outcome_note": "Devolverle su frase de propiedad no produjo argumento: más sello (NPD, incapacidades mentales) y apelación a milenios. La pregunta queda sin contestar a la vista."
       }
     ],
     "user_id": "100056247520740",
@@ -4684,7 +4742,9 @@
         "exposure_n": 1,
         "assignment": "chosen",
         "propensity": null,
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "\"so long story short, it's ok to eat animals to survive in the wilderness but not when you're in a civilisation... Got it.\"",
+        "outcome_note": "La distinción necesidad real vs refri del súper la resumió con sorna pero sin disputarla; 2 reacciones de terceros a mi reply. Ojo: en el mismo hilo escribe \"Humans shouldn't objectify or exploit other animals\"; su bando es ambiguo."
       }
     ],
     "user_id": "838293183",
@@ -4718,7 +4778,9 @@
         "exposure_n": 1,
         "assignment": "chosen",
         "propensity": null,
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "\"The environmental footprint of Artificial Intelligence is tied directly to the scale...\"",
+        "outcome_note": "La pregunta por el animal del cabestro no se tocó: pegó un texto largo sobre la huella ambiental de la IA (sello-IA en forma de tu-quoque ecológico)."
       }
     ],
     "user_id": "100008613459447",

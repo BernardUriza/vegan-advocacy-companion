@@ -60,7 +60,7 @@ No defenderse de manipulative/narcissist ni sonar herido. No contestar cinco com
 
 ## Log de interacciones
 
-### Hilo `28459136643743554` — 2026-10-02 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-10-02 · outcome: **escalated**
 - **Su jugada:** Raíz (VEGANnoyance, post de sintiencia, 20h) + 4 réplicas de pile-on: "emotionally manipulative gobbledegook", "vegan narcissist", "most disingenuous group member"; "Cattle ranchers ride horse. Dogs were bred to help us hunt"; y "If you keep an animal as property so you can exploit its existence for your sense of self, you are no vegan."
 - **Nuestra respuesta:** Filo (127 palabras), una sola reply a su raíz: una línea al pile-on; su frase de propiedad es la tesis del post apuntada a mascotas; caballo y perro = animales criados para un propósito humano, "how food and pets work" describe el arreglo y "proves fuck-all about the right to it". Cierre: what is it called when the animal is a cow?
 

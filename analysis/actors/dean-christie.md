@@ -164,8 +164,12 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Réplica 10 (Open Debates 3, their-own-words, 14m): pide actualizar el OP con su frase ("my interpretations… I cannot claim they explicitly stated these traits were their criterion") como condición; "once you've made that correction, I'm happy to move on" a lo sustantivo (newborn, pig, moral status, rights, species membership).
 - **Nuestra respuesta:** Limpio (133 palabras): edité el OP con una línea en mis palabras ("the quotes are theirs; what I say they were doing is my reading; links to judge in context"), no su frase porque no cuadra con los cinco hilos; le tomé la palabra en "happy to move on"; cierre al individuo: cualquier cuenta de estatus moral aterriza en este recién nacido y esta cerda, ¿cuál alcanza a uno y se detiene en la otra sin mirar primero la etiqueta de especie?
 
-### Hilo `28615704478052690` — 2026-10-02 · outcome: **pending**
+### Hilo `28615704478052690` — 2026-10-02 · outcome: **engaged**
 - **Su jugada:** Réplica 11 (Open Debates 3, their-own-words, 1d): acepta el edit ("now accurately distinguishes"), deja cerrado lo de las citas y anuncia que entra a recién nacido vs cerda sin aceptar que la explicación tenga que estar en capacidades individuales; "one I am happy to have".
 - **Nuestra respuesta:** Limpio (103 palabras), seguimiento por orden de Bernard: gracias por revisar el edit; concedí su punto de método (relaciones, pertenencia, prácticas, reciprocidad, combinaciones, nada descartado); única condición: que la cuenta aterrice en el recién nacido fuera del mercado y la cerda disponible para poseer, criar y vender. Cierre: the floor is yours, what explains that split?
+
+### Hilo `28615704478052690` — 2026-10-03 · outcome: **pending**
+- **Su jugada:** Réplica 12 (Open Debates 3, their-own-words, 1d): su explicación del split recién nacido/cerda: "whether the organism is of a nature to develop moral agency"; el recién nacido es miembro de un tipo de organismo cuya naturaleza de desarrollo incluye agencia moral y vive en una red de obligaciones recíprocas; concede "The pig has interests, is sentient and has a point of view"; excluye por adelantado casos adicionales.
+- **Nuestra respuesta:** Limpio (236 palabras): agradecí la explicación y me quedé en sus dos casos; la agencia moral dice quién puede deber obligaciones, pero falta el paso a que alguien sintiente y con punto de vista pueda ser poseída; la protección llega por el tipo y eso necesita razón propia; la recién nacida no devuelve nada. Cierre: how does "developmental nature" get from who can owe obligations to ownership being "permissible"?
 
 _Hilos: 27468645086091974, 27496390256650790, 28615704478052690_

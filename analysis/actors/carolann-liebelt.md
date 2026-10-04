@@ -158,12 +158,16 @@ No perseguir cada nuevo goalpost. No debatir si el veganismo es una creencia. No
 - **Su jugada:** Scout, post de Amber Rose (Open Debates 3), rama con Brendan Keyes: "Having pets is exploiting them… Eventually you will kill that pet when it is too old… I see absolutely no difference between owning chickens or a dairy cow" + "keeping a husky in an apartment is a-okay".
 - **Nuestra respuesta:** Filo profano: "no difference" es bullshit y su propio husky lo prueba; al husky nadie lo manda matar por viejo, la vaca y las gallinas pasan por otro filtro (livestock = salida escrita en la categoría); el individuo desaparece bajo la etiqueta de especie. Cierre: por qué uno recibe nombre y vejez y los otros curva de producción y fecha de salida.
 
-### Hilo `28614822664807538` — 2026-10-02 · outcome: **pending**
+### Hilo `28614822664807538` — 2026-10-02 · outcome: **goalpost**
 - **Su jugada:** backyard chickens and cows also have names.
 - **Nuestra respuesta:** Filo (107 palabras): concedí que tienen nombre; Daisy y Henrietta con nombre igual salen en el camión cuando baja la leche o los huevos; el nombre no les compra la vejez del husky, es palabra bonita sobre el título ("you name her like family and sell her like stock"). Cierre: when the milk drops, what does the name do for Daisy?
 
-### Hilo `28614822664807538` — 2026-10-02 · outcome: **pending**
+### Hilo `28614822664807538` — 2026-10-02 · outcome: **engaged**
 - **Su jugada:** You don't live in farming country, do you? (demanda de credencial ante "what does the name do for Daisy?")
 - **Nuestra respuesta:** Filo, reencuadre completo por replylink de Bernard (283 palabras): no contesté el código postal ("changes fuck-all about Daisy"); recorrí su arco desde junio con citas verbatim (ecosystem, normal, animals are food, purpose on earth, herbivores, feeding tube, post about food, don't have to justify our biology, apex species, no difference, names, postcode); una frase de patrón (muchas salidas, la conclusión nunca se movió); el "purpose on earth" lo escribieron quienes ya reclaman su cuerpo. Cierre: who gave Daisy that "purpose on earth"?
+
+### Hilo `28614822664807538` — 2026-10-03 · outcome: **pending**
+- **Su jugada:** It clear you have no concept of how small farms work and how long they choose to keep their animals. Not all cows end up as beef. Not all chickens are culled when they stop laying.
+- **Nuestra respuesta:** Filo (112 palabras): concedí que no todas terminan en carne; su "how long they choose to keep their animals" es el punto: la vejez del husky se le debe, la de Daisy es un favor; granja amable y dura operan con el mismo título. Cierre: what does Daisy have going for her the year they choose otherwise?
 
 _Hilos: 27341517928804691, 27335635946059556, 28500475619575577, 27405978672358616, 28614822664807538_
