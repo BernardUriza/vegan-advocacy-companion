@@ -3199,6 +3199,19 @@
         "draft_sha": "5a6be80ab103bae7",
         "exposure_n": 34,
         "assignment": "chosen",
+        "outcome": "engaged",
+        "outcome_evidence": "let me see if I understand your position correctly… Is that an accurate representation of what you're asking?",
+        "outcome_note": "sobreposicion-de-especies-criterio-leido: la condición concreta de qué me movería aterrizó; Dean la parafrasea con cuidado y pide confirmar antes de argumentar. Sigue civil y avanzando, sin concesión."
+      },
+      {
+        "thread_id": "28615704478052690",
+        "date": "2026-10-04",
+        "their_move": "Réplica 14 (their-own-words, 10h): parafrasea mi posición (\"the relevant basis… isn't primarily that she is of a nature to develop moral agency, but that she is already a sentient individual with interests and a point of view\") y pregunta si, mostrando que la capacidad de desarrollo \"is relevant to that distinction\", yo reconsideraría. \"Is that an accurate representation of what you're asking?\"",
+        "our_reply_summary": "Limpio (127 palabras): sí a las dos primeras partes; ajuste en la tercera: que el rasgo es relevante ya está concedido (decide a quién se le pedirán cuentas); lo que me movería es que muestre que ese rasgo decide quién puede ser poseída, criada y vendida, por encima de lo que la individua ya es hoy, con su frase sobre la cerda. Cierre: Is that a version you're willing to argue for?",
+        "framework": "filtro-especie-vs-individuo",
+        "draft_sha": "cd0dbbe09fcd2564",
+        "exposure_n": 35,
+        "assignment": "chosen",
         "outcome": "pending"
       }
     ],
@@ -4042,6 +4055,19 @@
         "draft_sha": "82c9656a4c049507",
         "exposure_n": 6,
         "assignment": "chosen",
+        "outcome": "goalpost",
+        "outcome_evidence": "says you who kills living things that are systematically bred, exploited and commodified, to sustain yourself… So get over it",
+        "outcome_note": "dominacion-no-es-superioridad-moral: no tocó su propia frase del 'unfair advantage' aplicada a la vaca; saltó a un tu-quoque (tú también matas seres vivos criados sistemáticamente) y a 'within the law… so does everyone else'."
+      },
+      {
+        "thread_id": "28203900659231098",
+        "date": "2026-10-04",
+        "their_move": "Réplica (post de Madly InLuv, 4h): \"says you who kills living things that are systematically bred, exploited and commodified, to sustain yourself\"; si yo tengo derecho a elegir dentro de la ley qué mato, \"then so does everyone else... So get over it\". No tocó a la vaca.",
+        "our_reply_summary": "Filo (142 palabras): concedí trigo, lechuga y el derecho legal a elegir; su palabra mete a la lechuga y a la gata en un costal que él mismo separó ayer con \"The cat didn't consent to the companionship\"; el título sobre quien puede negarse es la pregunta. Cierre: Which of the three can have something forced on her: the lettuce, the cat or the cow?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "93becb3f4bbaf5dd",
+        "exposure_n": 7,
+        "assignment": "chosen",
         "outcome": "pending"
       }
     ],
@@ -4842,6 +4868,19 @@
         "draft_sha": "6e3fe35b8afcedd1",
         "exposure_n": 2,
         "assignment": "chosen",
+        "outcome": "engaged",
+        "outcome_evidence": "No, talking animals are only in fairytales. Like the idea of a meal that didn't cost a life.",
+        "outcome_note": "el-sello-es-para-el-lurker: la brevedad seca funcionó; dejó el texto pegado de la IA y contestó la pregunta del cabestro, con sorna y un tu-quoque de que toda comida cuesta vidas."
+      },
+      {
+        "thread_id": "28648574331432371",
+        "date": "2026-10-04",
+        "their_move": "Réplica (su post de Banbury, 8h): \"No, talking animals are only in fairytales. Like the idea of a meal that didn't cost a life.\"",
+        "our_reply_summary": "Seco (71 palabras): su \"No\" es la respuesta honesta; nadie pidió que hablara, el cabestro está porque contesta con las patas; concedí las muertes en los campos: a esos nadie los crió, paseó en un ring ni subastó, y Banbury existía para eso. Cierre: So what was the halter for?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "26abb7d79f8fb757",
+        "exposure_n": 3,
+        "assignment": "chosen",
         "outcome": "pending"
       }
     ],
@@ -4890,8 +4929,21 @@
         "draft_sha": "6dd32b6d1dc19ff3",
         "exposure_n": 2,
         "assignment": "randomized",
-        "outcome": "pending",
-        "propensity": 0.3333333333333333
+        "outcome": "goalpost",
+        "propensity": 0.3333333333333333,
+        "outcome_evidence": "I'm not defending anything… Each person is entitled to live their own life and follow their own ethical framework so long as that framework isn't illegal.",
+        "outcome_note": "dominacion-no-es-superioridad-moral: ante '¿qué defiendes, la cuerda o el permiso?' se retiró a 'no defiendo nada, solo afirmo una verdad' y movió el criterio a 'mientras no sea ilegal', que él mismo había descartado como fuente de moralidad."
+      },
+      {
+        "thread_id": "28223401477281016",
+        "date": "2026-10-04",
+        "their_move": "Réplica (post anti-rodeo, 5h): \"I'm not defending anything… I'm just stating a truth\"; cada persona tiene derecho a su marco ético \"so long as that framework isn't illegal\"; no entiende cómo alguien come perros pero \"it's not my place to say that they shouldn't do that. That's their business not mine.\"",
+        "our_reply_summary": "Filo moderado (173 palabras): concedí que no le toca vigilar a nadie; \"stating a truth\" es una posición; puse lado a lado su frase de ayer sobre la legalidad y la de hoy; \"each person\" y \"their business\" dejan fuera al becerro, el único que no eligió marco; su incomodidad con el perro es por el perro. Cierre: if it's \"not my place to say\", who exactly holds the dog's place?",
+        "framework": "antropoespecismo",
+        "draft_sha": "47b4f4cadf21827a",
+        "exposure_n": 3,
+        "assignment": "chosen",
+        "outcome": "pending"
       }
     ],
     "user_id": "710263180",
