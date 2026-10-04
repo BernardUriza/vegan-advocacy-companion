@@ -153,9 +153,14 @@ export function analyzeDraft(text, { name = null, file = null } = {}) {
     const hits = [];
     const reCopula = /\b(?:the\s+[\p{L}'’-]+|it|that|this)\s+is\s+not\s+[\p{L}][\s\S]{1,110}?\b(?:the\s+[\p{L}'’-]+|it|that|this)\s+is\b(?!\s+not\b)/giu;
     const reContraction = /\bis\s*n[’']t\b[^.!?]{2,70}?[—,-]\s*(?:it|that|the)[’']?s\b/giu;
+    // variantes que entregó el coagent el 2026-10-03 y pasaban: "He is not just X. He is Y", "It is not. It is Y", "It does not tell me X. It tells me Y"
+    const rePronoun = /\b(he|she|they)\s+(?:is|are)\s+not\s+[\p{L}][\s\S]{1,110}?[.!?]\s+\1\s+(?:is|are)\b(?!\s+not\b)/giu;
+    const reBare = /\b(it|that)\s+is\s+not[.!?]\s+\1\s+is\b(?!\s+not\b)/giu;
+    const reDoSupport = /\b(it|that|this|he|she)\s+does\s+not\s+([\p{L}]+)\b[^.!?]{0,110}[.!?]\s+\1\s+\2s\b/giu;
     let m;
-    while ((m = reCopula.exec(text)) !== null) hits.push(m[0].replace(/\s+/g, ' ').slice(0, 90));
-    while ((m = reContraction.exec(text)) !== null) hits.push(m[0].replace(/\s+/g, ' ').slice(0, 90));
+    for (const re of [reCopula, reContraction, rePronoun, reBare, reDoSupport]) {
+      while ((m = re.exec(text)) !== null) hits.push(m[0].replace(/\s+/g, ' ').slice(0, 90));
+    }
     const soft = [];
     const reAppos = /\b([\p{L}’'-]+),\s+not\s+(?!(?:toward|towards|for|to|in|into|on|of|with|within|at|by|from|the|a|an|as|about)\b)([\p{L}’'-]+)\b/giu;
     while ((m = reAppos.exec(text)) !== null) soft.push(m[0].replace(/\s+/g, ' '));

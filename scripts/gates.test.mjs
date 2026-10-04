@@ -349,6 +349,13 @@ test('style-gate: abrir con "No," o "Sure," no es vocativo; abrir con un nombre 
   assert.equal(runGate('style-gate.mjs', open("Les, I don't think that follows.")), 1);
 });
 
+test('style-gate: pivotes de negación con pronombre, sin predicado y con do-support bloquean', () => {
+  assert.equal(runGate('style-gate.mjs', clean('He is not just an animal affected by a world humans built. He is bred and bought because somebody holds title over him. ')), 1);
+  assert.equal(runGate('style-gate.mjs', clean('You treat yours as the starting floor. It is not. It is human because human. ')), 1);
+  assert.equal(runGate('style-gate.mjs', clean('It does not tell me why the title is legitimate. It tells me the title is recognised. ')), 1);
+  assert.equal(runGate('style-gate.mjs', clean("Her lack of moral agency explains why nobody asks her to account for herself. It doesn't yet explain why someone else may own her. ")), 0);
+});
+
 test('style-gate: una palabra capitalizada que no es nombre del moat no es vocativo', () => {
   const open = (first) => `${first} ${FILLER.repeat(6)}`;
   assert.equal(runGate('style-gate.mjs', open('Thanks, this is the account I was asking for.')), 0);

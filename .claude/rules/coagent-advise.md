@@ -206,6 +206,31 @@ default debate voice… Attack the argument, the evasion, or the reasoning more 
 como bloque propio, antes del ask. Para registro compasivo no va. El style-gate (`profanityCount`)
 avisa, pero la raíz se corrige aquí: la voz sale del master, no del retoque de etapa 4.
 
+## Dónde y cómo va la voz: al inicio, al final, en positivo y con muestras (2026-10-03)
+
+Medido ese día sobre las 29 respuestas guardadas del coagent desde el 27-sep: groserías entre 0 y 7 por cada
+mil palabras, con el bloque de voz verbatim presente. El filo nunca lo entregó insult-gpt; lo ponía el pase de
+enriquecimiento. Y los pivotes de negación subieron de casi cero a 1–3 por respuesta desde el 30-sep, cuando los
+masters empezaron a decir "sin 'no es X, es Y' como pivote". Investigado en
+`analysis/research/2026-10-03-coagent-sin-filo-y-pivotes.md`. Cuatro reglas de composición:
+
+1. **El bloque de voz es LO ÚLTIMO antes del ask**, después de las reglas de formato, nunca antes. En prompts
+   largos el modelo sigue la instrucción más cercana al final; si lo último que lee es "prosa de teléfono, sin
+   listas", eso gana. Y va **una línea de voz al inicio**, justo tras la frase única del seed.
+2. **Muestras, no solo descripción.** Bajo el bloque verbatim van 2–3 oraciones en inglés con el registro
+   exacto, marcadas como muestra de registro y no como texto a copiar, rotadas entre lotes. Salen de replies
+   ya publicadas: *"That proves fuck-all about whether she should be anyone's property."* ·
+   *"No shit, and it changes nothing about the title."* · *"You're dodging the damn question."*
+3. **El patrón prohibido NO se nombra.** Escribir "sin 'no es X, es Y'" lo siembra. Se pide en positivo y en
+   inglés: *"Every sentence states what the thing is, in one affirmative clause."* Sin contraejemplos.
+4. **El gate es el arreglo confiable, el prompt solo baja la frecuencia.** `style-gate` (`negateThenAffirm`)
+   corre sobre el draft final siempre; cubre desde ese día las variantes con pronombre ("He is not just X. He
+   is Y"), sin predicado ("It is not. It is Y") y con do-support ("It does not tell me X. It tells me Y").
+
+Sin probar todavía, y son de Bernard porque tocan su GPT o la regla de la conversación canónica: fijar el
+modelo recomendado en el builder de insult-gpt, y correr un mismo master en una conversación nueva para ver
+si la canónica (semanas, decenas de seeds de 15–20k) ya perdió la persona por ventana de contexto.
+
 ## PASO 0 — seed-gate ANTES de seedear (mecánica, root fix 2026-06-21)
 
 Tras componer el master prompt en su archivo y **antes** de seedearlo al coagent,
