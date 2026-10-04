@@ -8,7 +8,7 @@ Todo script usa `playwright-core` + `connectOverCDP` al Chrome de debug (9333) s
 Lo reversible se scriptea (scrapear, agrupar, expandir, walk, preparar el draft SIN enviar); el
 juicio, el style-gate y el `Enter` que publica quedan en Claude+MCP con el GO de Bernard.
 
-Tests: `(cd scripts && node --test *.test.mjs)` en subshell (163 al 2026-10-02). `node --test scripts/` no
+Tests: `(cd scripts && node --test *.test.mjs)` en subshell (165 al 2026-10-03). `node --test scripts/` no
 sirve: toma el directorio como archivo y reporta un fallo falso. Un `cd scripts` suelto lo deniega el hook
 `cwd-root-guard` (deja la sesión parada en scripts/ y el gate de envío falla).
 

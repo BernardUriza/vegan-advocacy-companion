@@ -23,7 +23,26 @@ import { detectCloserClones } from './closer-clone.mjs';
 
 // kill-phrases literales de la kill-list (case-insensitive)
 const OPENERS = new Set(['no', 'yes', 'sure', 'look', 'well', 'okay', 'ok', 'right', 'fine', 'fair', 'granted', 'agreed', 'true', 'exactly', 'honestly', 'again', 'so', 'and', 'but', 'still', 'nope', 'yeah', 'mate']);
-const ACRONYMS = new Set(['USDA', 'NSW', 'NASA', 'CDC', 'FAO', 'EPA', 'NHS', 'UNAM', 'IPCC', 'USA', 'OECD', 'DEFRA', 'RSPCA', 'PETA', 'WHO']);
+// Sin --name, vocativo = nombre de alguien del moat: "Les," bloquea, "Thanks," y "Phones," no.
+let actorNames;
+function knownActorNames() {
+  if (actorNames !== undefined) return actorNames;
+  try {
+    const raw = JSON.parse(readFileSync(new URL('../data/actors.json', import.meta.url), 'utf8'));
+    actorNames = new Set();
+    for (const actor of Array.isArray(raw) ? raw : raw.actors || []) {
+      const full = (actor.name || '').trim().toLowerCase();
+      if (!full) continue;
+      actorNames.add(full);
+      actorNames.add(full.split(/\s+/)[0]);
+    }
+  } catch {
+    actorNames = null;
+  }
+  return actorNames;
+}
+
+const ACRONYMS =new Set(['USDA', 'NSW', 'NASA', 'CDC', 'FAO', 'EPA', 'NHS', 'UNAM', 'IPCC', 'USA', 'OECD', 'DEFRA', 'RSPCA', 'PETA', 'WHO']);
 
 const KILL_PHRASES = [
   "Let's unpack",
@@ -92,7 +111,7 @@ export function analyzeDraft(text, { name = null, file = null } = {}) {
   // abrir el cuerpo con el nombre del destinatario: "Scott," / "Scott James," / "Les M,"
   function checkOpensWithName() {
     const firstLine = (nonEmptyLines[0] || '').trim();
-    const vocativeMatch = firstLine.match(/^([A-Z][\w'’.-]+(?:\s+[A-Z][\w'’.-]+){0,2}),/);
+    const vocativeMatch = firstLine.match(/^([A-Z][\w'’-]+(?:\s+[A-Z][\w'’-]*){0,2}),/);
     let hard = false;
     let matched = null;
     if (vocativeMatch) {
@@ -102,7 +121,9 @@ export function analyzeDraft(text, { name = null, file = null } = {}) {
         const m = matched.toLowerCase();
         hard = m === n || n.startsWith(m) || m.startsWith(n.split(/\s+/)[0]);
       } else {
-        hard = !OPENERS.has(matched.toLowerCase());
+        const m = matched.toLowerCase();
+        const known = knownActorNames();
+        hard = !OPENERS.has(m) && (known ? known.has(m) || known.has(m.split(/\s+/)[0]) : true);
       }
     }
     return { name: 'opensWithName', hard, vocative: matched, providedName: name, firstLine: firstLine.slice(0, 80) };

@@ -349,6 +349,14 @@ test('style-gate: abrir con "No," o "Sure," no es vocativo; abrir con un nombre 
   assert.equal(runGate('style-gate.mjs', open("Les, I don't think that follows.")), 1);
 });
 
+test('style-gate: una palabra capitalizada que no es nombre del moat no es vocativo', () => {
+  const open = (first) => `${first} ${FILLER.repeat(6)}`;
+  assert.equal(runGate('style-gate.mjs', open('Thanks, this is the account I was asking for.')), 0);
+  assert.equal(runGate('style-gate.mjs', open('Phones, transport, crops, roads, all of it.')), 0);
+  assert.equal(runGate('style-gate.mjs', open('Sure. Phones, transport, crops, roads, all of it.')), 0);
+  assert.equal(runGate('style-gate.mjs', open('Les M, that does not follow.')), 1);
+});
+
 test('style-gate: kill-phrase con límite de palabra ("I hear your point" no es "I hear you") y acrónimos no son grito', () => {
   assert.equal(runGate('style-gate.mjs', clean('I hear your point about the USDA rules. ')), 0);
   assert.equal(runGate('style-gate.mjs', clean('I hear you. ')), 1);
