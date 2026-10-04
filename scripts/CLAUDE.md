@@ -8,7 +8,7 @@ Todo script usa `playwright-core` + `connectOverCDP` al Chrome de debug (9333) s
 Lo reversible se scriptea (scrapear, agrupar, expandir, walk, preparar el draft SIN enviar); el
 juicio, el style-gate y el `Enter` que publica quedan en Claude+MCP con el GO de Bernard.
 
-Tests: `(cd scripts && node --test *.test.mjs)` en subshell (166 al 2026-10-03). `node --test scripts/` no
+Tests: `(cd scripts && node --test *.test.mjs)` en subshell (167 al 2026-10-03). `node --test scripts/` no
 sirve: toma el directorio como archivo y reporta un fallo falso. Un `cd scripts` suelto lo deniega el hook
 `cwd-root-guard` (deja la sesión parada en scripts/ y el gate de envío falla).
 
@@ -30,7 +30,7 @@ sirve: toma el directorio como archivo y reporta un fallo falso. Un `cd scripts`
 | `seed-coagent.mjs` | 3 | Recibo de consulta (`seed`/`finalize --framework`, lo exigen los hooks; finalize rechaza un framework bloqueado, de auto-disciplina o distinto del sorteado) y transporte: `insert` pega el master gateado por trozos, verifica por arreglo de líneas y NO envía; `read` lee la respuesta por estabilidad. Lógica en `coagent-transport.mjs`. | [coagent-advise] |
 | `quote-check.mjs` | 3/4 | Cada cita entre comillas de 4+ palabras debe existir verbatim (normaliza apóstrofes, espacios y mayúsculas) en `.coagent/tx-*.json`, `their_move` del moat o `analysis/threads/`. `finalize` lo corre y bloquea; `--quote-ok "<frag>"` libera una comilla que no es cita. Nació el 2026-10-02: la verificación se hizo a mano tres veces y el red-team cazó una paráfrasis ya publicada ("food and pets" por "food or pets"). | `seed-coagent finalize` |
 | `close-outcomes.mjs` | 0 (fallback) | Cierre por keywords + guard de frescura, fallback offline del reflex. `--stale [--dry-run]` cierra como `silent` la deuda más vieja que el tope, sin transcript, guardando `closed_from`. | [outcome-reflex] / cierre de lote |
-| `style-gate.mjs` / `seed-gate.mjs` / `lint-prose.mjs` | 3/4 | Gates deterministas de la prosa (kill-list, vocativo, staccato, eje welfarista/biocéntrico, cierre clonado en modo lote). Detectores SSOT: `welfarist-axis.mjs`, `biocentric-axis.mjs`, `closer-clone.mjs`. Ver `STYLE-GATE.md`, `SEED-GATE.md`. | etapas 3 y 4 |
+| `style-gate.mjs` / `seed-gate.mjs` / `lint-prose.mjs` | 3/4 | Gates deterministas de la prosa (kill-list, vocativo, staccato, eje welfarista/biocéntrico, cierre clonado en modo lote). Detectores SSOT: `welfarist-axis.mjs`, `biocentric-axis.mjs`, `closer-clone.mjs`, `scope-denial.mjs` (mismo molde de conceder-y-negar en dos drafts del lote). Ver `STYLE-GATE.md`, `SEED-GATE.md`. | etapas 3 y 4 |
 | `validate-data.mjs` / `gen-dossiers.mjs` | — | Integridad de `data/*.json` y regeneración de `analysis/actors/*.md` (vista generada). | tras cualquier escritura al moat |
 
 ## `fb-lib.mjs` — método → caller

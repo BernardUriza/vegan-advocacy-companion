@@ -195,6 +195,29 @@ cierto, y no toca el título"), que SÍ es humana y se conserva. Lo prohibido es
 **pivote definicional por negación** ("no es A, es B") como forma de afirmar. El
 style-gate (etapa 4) lo caza y reformula a afirmativo ANTES de postear.
 
+## Conceder el hecho y negar la conclusión ES la jugada (2026-10-03)
+
+*"Paying those costs proves you paid them. It proves fuck-all about whether she should be anyone's property."*
+Afirmar primero y negar después limita el alcance de lo que el otro probó: concede su hecho y muestra que no
+llega a su conclusión. Es la concesión-y-redirección de arriba, la forma clásica *concessio*, y aparece en 23 de
+los 132 drafts desde junio. NO es el pivote "no es X, es Y" y ningún gate la bloquea por sí sola.
+
+- **El nombre interno del salto es brecha ser/deber** (is-ought): de un hecho (quién puede, quién pagó, qué
+  permite la ley, qué es natural) a un derecho. Falta la premisa puente ("pagar da título legítimo sobre
+  alguien que siente") y la reply la pide.
+- **"Afirmación del consecuente" NO es el nombre.** Esa es una falacia formal de condicionales (si P entonces
+  Q; Q; luego P) y solo aplica si el otro enunció el condicional. Cuando el salto es de evidencia a autor
+  ("está ahí, luego fue B") el nombre seguro es *non sequitur*; "la evidencia cuadra con varias explicaciones"
+  es subdeterminación. Tampoco "falacia naturalista": la etiqueta tiene dos sentidos y se presta a pleito.
+- **Los nombres son detector interno, nunca se dicen en público** (igual que "kettle logic" en
+  [[retreat-cycle-defense]]). Acusar una falacia por su nombre carga a quien acusa con probarla y abre la
+  salida "aunque mi argumento falle, mi conclusión puede ser cierta". En el hilo se muestra el hueco en llano.
+- **Lo que sí se vigila es la fórmula.** El mismo par de verbos en dos replies del lote ("tells me… says
+  fuck-all about…" dos veces) se lee a molde igual que un cierre clonado. `style-gate` en modo lote lo bloquea
+  (`scopeDenialRepeat`, SSOT `scripts/scope-denial.mjs`); con verbos distintos solo avisa.
+
+Investigado en `analysis/research/2026-10-03-afirmar-luego-negar-y-nombre-del-salto.md`.
+
 ## La voz (mecánica, de las 16 del coagent + ajustes de Bernard)
 
 | Dimensión | Regla |

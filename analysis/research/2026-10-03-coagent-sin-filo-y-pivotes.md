@@ -74,8 +74,10 @@ Targets nuevos (Dean Christie limpio; Tiana Thomas y Chris Clark filo), master c
 | C Chris Clark | filo, mín. 2 | 11 | 0 |
 
 Las dos de filo suman 14 por mil contra el techo histórico de 7 con el molde viejo. Con esta y la prueba
-anterior van dos corridas en la misma dirección. El gate no caza la forma invertida ("That list proves who can
-do more. It does not prove who gets the title."), afirmar y luego negar; se reescribió a mano en el draft.
+anterior van dos corridas en la misma dirección. La forma invertida ("That list proves who can do more. It does not
+prove who gets the title."), afirmar y luego negar, se anotó aquí como hueco del gate y era una lectura
+equivocada: es la concesión-y-redirección que la regla conserva. Ver
+`2026-10-03-afirmar-luego-negar-y-nombre-del-salto.md`.
 
 ## El GPT no es de Bernard (leído 2026-10-03 en la API de ChatGPT, solo lectura)
 

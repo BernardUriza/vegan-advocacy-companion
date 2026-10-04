@@ -20,6 +20,7 @@ import { pathToFileURL } from 'url';
 import { detectWelfaristAxis } from './welfarist-axis.mjs';
 import { detectBiocentricAxis } from './biocentric-axis.mjs';
 import { detectCloserClones } from './closer-clone.mjs';
+import { detectScopeDenialRepeats } from './scope-denial.mjs';
 
 // kill-phrases literales de la kill-list (case-insensitive)
 const OPENERS = new Set(['no', 'yes', 'sure', 'look', 'well', 'okay', 'ok', 'right', 'fine', 'fair', 'granted', 'agreed', 'true', 'exactly', 'honestly', 'again', 'so', 'and', 'but', 'still', 'nope', 'yeah', 'mate']);
@@ -229,6 +230,14 @@ function printBatch(batch) {
     console.log(`        «${p.closerB.slice(0, 100)}»`);
   }
   if (batch.hard) console.log('  → el mismo cierre en varias replies se lee como bot ([[reply-output-style]]); replantea la pregunta con las palabras de cada interlocutor.');
+  const scope = batch.scope;
+  console.log(`[${scope.hard ? 'X' : scope.soft ? '~' : '.'}] scopeDenialRepeat ${scope.count ? `${scope.count} par(es) con el mismo molde de concesión` : scope.soft ? `${scope.draftsWithMove} drafts conceden-y-niegan con verbos distintos (ok, vigila la fórmula)` : 'la concesión-y-redirección no se repite (ok)'}`);
+  for (const p of scope.pairs) {
+    console.log(`    X ${p.a} ↔ ${p.b}  molde=${p.template}`);
+    console.log(`        «${p.snippetA.slice(0, 110)}»`);
+    console.log(`        «${p.snippetB.slice(0, 110)}»`);
+  }
+  if (scope.hard) console.log('  → conceder el hecho y negar la conclusión es la jugada; el MISMO par de verbos en dos replies del lote es fórmula. Cambia la entrada de una.');
 }
 
 function main() {
@@ -250,8 +259,9 @@ function main() {
     }
   });
   const results = drafts.map((d) => analyzeDraft(d.text, { name, file: d.file }));
-  const batch = drafts.length >= 2 ? detectCloserClones(drafts.map((d) => ({ name: d.file, text: d.text }))) : null;
-  const clean = results.every((r) => r.clean) && !(batch && batch.hard);
+  const named = drafts.map((d) => ({ name: d.file, text: d.text }));
+  const batch = drafts.length >= 2 ? { ...detectCloserClones(named), scope: detectScopeDenialRepeats(named) } : null;
+  const clean = results.every((r) => r.clean) && !(batch && (batch.hard || batch.scope.hard));
 
   if (asJson) {
     console.log(JSON.stringify(results.length === 1 && !batch ? results[0] : { clean, drafts: results, batch }, null, 2));

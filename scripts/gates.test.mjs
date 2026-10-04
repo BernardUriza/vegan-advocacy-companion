@@ -356,6 +356,22 @@ test('style-gate: pivotes de negación con pronombre, sin predicado y con do-sup
   assert.equal(runGate('style-gate.mjs', clean("Her lack of moral agency explains why nobody asks her to account for herself. It doesn't yet explain why someone else may own her. ")), 0);
 });
 
+test('scope-denial: conceder-y-negar no bloquea solo; el mismo par de verbos en dos drafts del lote sí', async () => {
+  const { detectScopeDenials, detectScopeDenialRepeats } = await import('./scope-denial.mjs');
+  const tiana = '"The one who can" tells me who has the skills and the power. It says fuck-all about who gets the title.';
+  const chris = '"Legal" tells me the title is recognised, and "normal" tells me people are used to it. Neither says a damn thing about why it should exist.';
+  const dean = "Her lack of moral agency explains why nobody asks her to account for herself. It doesn't yet explain why someone else may own her.";
+  assert.equal(detectScopeDenials(tiana)[0].template, 'tell>say');
+  assert.equal(detectScopeDenials(dean)[0].template, 'explain>explain');
+  assert.equal(detectScopeDenials('Daisy with a name still gets bred and sent off on the truck.').length, 0);
+  assert.equal(runGate('style-gate.mjs', clean(`${tiana} `)), 0, 'un solo draft con la jugada pasa');
+  const same = detectScopeDenialRepeats([{ name: 'a', text: tiana }, { name: 'b', text: chris }]);
+  assert.equal(same.hard, true);
+  const varied = detectScopeDenialRepeats([{ name: 'a', text: tiana }, { name: 'b', text: dean }]);
+  assert.equal(varied.hard, false);
+  assert.equal(varied.soft, true);
+});
+
 test('style-gate: una palabra capitalizada que no es nombre del moat no es vocativo', () => {
   const open = (first) => `${first} ${FILLER.repeat(6)}`;
   assert.equal(runGate('style-gate.mjs', open('Thanks, this is the account I was asking for.')), 0);
