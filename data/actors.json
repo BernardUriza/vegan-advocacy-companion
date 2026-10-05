@@ -3265,6 +3265,19 @@
         "exposure_n": 38,
         "assignment": "chosen",
         "draft_sha": "d62cdc27a4b375fc",
+        "outcome": "engaged",
+        "outcome_evidence": "Dean 4m: \"that is precisely the conclusion you're trying to establish. I haven't granted it.\"",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: el caso de la recién nacida vendida a un buen hogar lo llevó a negar que haya concedido que esa venta es un agravio ('I haven't granted it') y a acusar que 'wrong' y 'standing last word' van cargados. Rechaza la lectura 'membership in the kind': dice que es una característica del tipo y que cualquier organismo con esa capacidad cumpliría. Pregunta por qué la capacidad de desarrollo no es relevante, aunque ya se la concedí como relevante tres veces. Sigue civil, sin conceder; regresión asimétrica confirmada."
+      },
+      {
+        "thread_id": "28615704478052690",
+        "date": "2026-10-04",
+        "their_move": "Réplica 18 (their-own-words, 18m tras el reencuadre): \"that last step is not an accurate representation of my position\" — no es la etiqueta de especie sino una característica del tipo, cualquier organismo con esa capacidad cumpliría; acusa que meto \"wrong\" de contrabando y sobre la venta de la recién nacida a un buen hogar escribe \"I haven’t granted it\"; \"standing last word\" va cargado; dos pendientes: por qué bastan sintiencia e intereses presentes, y por qué la capacidad de desarrollo no es una distinción relevante.",
+        "our_reply_summary": "FURIA por orden de Bernard, primer reply profano a Dean (380 palabras, 4 groserías pegadas al argumento): acepto su corrección en su tamaño; la recién nacida que nunca desarrollará agencia moral no tiene la característica, la tiene su tipo: cada una juzgada por el grupo en que nació = especismo con mejor vocabulario; su \"I haven’t granted it\" es el costo de mantenerle precio al lechón (aclaro que nunca avaló esa venta); su rasgo ya se lo concedí relevante tres veces, el paso que nadie argumentó es el suyo (por qué carecer de él autoriza poseer); descripción seca del título (vender, cruzar, matar); toda premisa toca fondo y solo a la mía se le piden papeles. Cierre: sí o no, vender a esa recién nacida es un agravio, y qué de ella lo hace.",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "exposure_n": 39,
+        "assignment": "chosen",
+        "draft_sha": "0bf0f6466f704438",
         "outcome": "pending"
       }
     ],
