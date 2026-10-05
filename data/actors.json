@@ -2193,6 +2193,19 @@
         "assignment": "randomized",
         "propensity": 0.3333333333333333,
         "draft_sha": "cf72ce2cbf3f273c",
+        "outcome": "engaged",
+        "outcome_evidence": "Les 28m: \"Mine permits animal ownership. Yours doesn't. So what? That isn't an argument against mine unless you first establish that owning a sentient non-human animal is inherently immoral.\"",
+        "outcome_note": "consideracion-moral-no-cuanto-sufre: el mapa de lo que firmó no lo movió; tomó mi concesión de la vara lógica como victoria ('That's been my point all along') y contestó la pregunta de cierre con 'Mine permits animal ownership. Yours doesn't. So what?'. Repite el estribillo (falta probar que es inherentemente inmoral) y que las obligaciones de trato existen porque el ganado no equivale a camiones. Sin concesión nueva; tercer cierre suyo con la misma fórmula."
+      },
+      {
+        "thread_id": "28604913169131821",
+        "date": "2026-10-04",
+        "their_move": "Réplica (Open Debates 3, post de sintiencia, 22m tras el mapa): toma mi concesión de la vara lógica como \"my point all along\"; a cuál necesita a alguien poseído: \"Mine permits animal ownership. Yours doesn’t. So what?\"; \"Legal ownership can allocate responsibility and control while simultaneously imposing duties towards the animal\"; obligaciones porque \"livestock aren’t morally equivalent to trucks\"; sin veto absoluto; \"prove that animal ownership is inherently wrong\"; tercera vez con la misma fórmula de cierre.",
+        "our_reply_summary": "Filo corto (188 palabras): le tomo \"So what?\" como la línea del hilo; su párrafo de propiedad con deberes es la defensa de todo sistema que puso un título sobre alguien (deberes del dueño, límites, sin veto del poseído), sujetos distintos y misma defensa; su prueba de \"inherently wrong\" es la que todo dueño ha puesto y nadie pasó, los títulos sobre personas terminaron igual. Las dos premisas a la vista. Cierre: cuando la poseída puede asustarse y quiere el día siguiente, a quién se supone que satisface \"So what?\". Si repite la fórmula por cuarta vez, silencio.",
+        "framework": "esclavitud-paralelismo",
+        "exposure_n": 41,
+        "assignment": "chosen",
+        "draft_sha": "ef10ddd6e041ece6",
         "outcome": "pending"
       }
     ],
