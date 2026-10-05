@@ -68,7 +68,7 @@ No defender que los veganos son perfectos ni entrar al catálogo de grados. Conc
 - **Su jugada:** Réplica (VEGANnoyance, post de sintiencia): sello + argumento — "spare us the freshman philosophy seminar"; cheeseburger ≠ chattel slavery; "humans write the laws, congratulations"; leones comiendo cebras sin permisos de zonificación; "let me know when the cows start hiring defense attorneys"; clutch your tofu / insufferably dramatic.
 - **Nuestra respuesta:** Su león lo refuta: el león mata y jamás posee (sin escritura, venta, herencia); el título es la invención humana que defiende. "Humans write the laws" es justo por qué se pueden cuestionar: señalar el permiso escrito por el poseedor es poder de traje. Los abogados: los recién nacidos tampoco contratan; la pregunta cae en quien tiene la pluma. Una línea al sello (clutch-your-tofu) y la comparación queda en estructura. Cierre: antes de que el león saque su permiso, ¿qué le añade "civilization" a la vaca además de cerca, factura y derecho a llamarla comida?
 
-### Hilo `28459136643743554` — 2026-09-28 · outcome: **goalpost**
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **silent**
 - **Su jugada:** Réplica (VEGANnoyance, post de sintiencia): concede que el león no posee; "Humans indeed can own and nothing morally wrong… I own the pet dogs that I care. I own the chicken bred for my food… Cry more."
 - **Nuestra respuesta:** Filo profano corto: tomé la concesión del león (poseer es humano); su lista usa dos verbos (pet dogs that I care / chicken bred for my food) y solo uno fue criado para su plato; su "nothing morally wrong" sale del mismo cajón subjetivo; cry more en media línea. Cierre: qué hace de "bred for my food" una razón y no un recibo.
 

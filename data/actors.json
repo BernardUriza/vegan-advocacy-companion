@@ -2182,6 +2182,18 @@
         "outcome": "engaged",
         "outcome_evidence": "\"What turns ‘included categorically’ into a compulsory conclusion for the pig?” Nothing. I never said it does\"",
         "outcome_note": "La reply de cierre con las dos premisas desnudas le sacó la concesión que importa al lurker: a la pregunta de qué vuelve su categoría obligatoria para la cerda contestó \"Nothing. I never said it does\", y cerró en \"YOU believe… I don't\". Se deja en silencio a propósito."
+      },
+      {
+        "thread_id": "28604913169131821",
+        "date": "2026-10-04",
+        "their_move": "Réplica (Open Debates 3, post de sintiencia, 20h): \"you have just conceded the whole point\"; ambas son premisas filosóficas; a qué vuelve obligatoria la inclusión categórica para la cerda: \"Nothing. I never said it does\"; \"Human rights are categorical protections for HUMANS\"; \"the simple answer: YOU believe sentience creates a moral boundary against being used as food. I do not\"; no demostré que todos estén lógicamente obligados; no llega a \"therefore veganism\".",
+        "our_reply_summary": "Filo, REENCUADRE de mapa y salida (292 palabras): tomo su simple answer y pongo en fila lo que firmó en cuarenta comentarios (Fair enough a los recibos, obligaciones porque no son propiedad inanimada, someone there to override, both philosophical, species membership, No y Nothing); su lado cuenta para corral, camión, veterinario y método y cero en el título; nombro el especismo una vez; concedo entera su vara de obligatoriedad lógica (ninguna regla moral la pasó). Cierre: dos ethical preference, cuál necesita a alguien poseído para funcionar. Segunda reply de cierre: si abre otra vuelta, silencio.",
+        "framework": "consideracion-moral-no-cuanto-sufre",
+        "exposure_n": 40,
+        "assignment": "randomized",
+        "propensity": 0.3333333333333333,
+        "draft_sha": "cf72ce2cbf3f273c",
+        "outcome": "pending"
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -3234,13 +3246,26 @@
         "date": "2026-10-04",
         "assignment": "chosen",
         "propensity": null,
-        "outcome": "pending",
+        "outcome": "engaged",
         "thread_id": "28615704478052690",
         "their_move": "Réplica 16 (their-own-words, 19m): \"I think we're finally at the actual point of disagreement\"; mi principio (un acto solo agravia a alguien para quien las cosas ya cuentan desde su lado) es \"the principle doing the work in your argument, and you haven't actually given an argument for it\"; que la individua exista hoy no prueba que solo sus rasgos de hoy importen. Pregunta: \"what is your argument that present sentience and interests are sufficient to determine this distinction, while developmental moral agency is not?\"",
         "our_reply_summary": "Limpio (241 palabras): concedí que fue aserción; angosté el alcance (su futuro puede importar; mi afirmación es sobre este tipo de acto); argumento: agraviar a alguien es distinto de estropear algo (la silla), hace falta alguien del lado receptor, y admití que ahí toca fondo, en el mismo suelo de su frase sobre la cerda; suficiencia mostrada en la recién nacida sola (la descripción del agravio de venderla hoy está completa con lo que es hoy; su futuro suma razones encima). Asimetría: un rasgo suma razones donde está y su ausencia deja en pie las anteriores. Cierre: what makes the lack of that trait remove the wrong, rather than just stop adding to it? Réplica anticipada por el coagent: que la agencia futura estructura el tipo de derecho desde el inicio.",
         "framework": "sobreposicion-de-especies-criterio-leido",
         "draft_sha": "f805c7613875d045",
-        "exposure_n": 37
+        "exposure_n": 37,
+        "outcome_evidence": "Dean 4h: \"What present right or interest does the sale itself violate in the piglet, independently of how the piglet is subsequently treated, and why does possessing that interest entail a right not to be owned or transferred?\"",
+        "outcome_note": "sobreposicion-de-especies-criterio-leido: el argumento de la silla (agraviar a alguien vs estropear algo) lo obligó a pasar de 'no diste argumento' a pedir el paso de interés a derecho contra la venta, en el lechón y sin apoyarse en el trato posterior. Sigue civil y sin conceder; objeta el pronombre 'her' compartido entre recién nacida y lechón."
+      },
+      {
+        "thread_id": "28615704478052690",
+        "date": "2026-10-04",
+        "their_move": "Réplica 17 (their-own-words, 4h): pide precisión con el pronombre (\"much more precise about who her is\", recién nacida vs lechón); \"A being can be harmed without every harmful act constituting a rights violation\"; pregunta central: \"What present right or interest does the sale itself violate in the piglet, independently of how the piglet is subsequently treated, and why does possessing that interest entail a right not to be owned or transferred?\"",
+        "our_reply_summary": "Limpio, REENCUADRE con sumario (387 palabras): mapa de lo cerrado (citas, su criterio de agencia moral, su concesión de que la cerda tiene intereses y punto de vista, mis concesiones); le doy el pronombre; caso de la recién nacida vendida a un hogar bueno y rico: el agravio está en la venta, que cambia su posición (última palabra permanente del comprador); declaro mi premisa como premisa; su rasgo es un hecho del tipo, así que la pertenencia carga la protección. Cierre: en esa venta, qué parte del agravio depende de la agencia futura y no alcanza al lechón.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "exposure_n": 38,
+        "assignment": "chosen",
+        "draft_sha": "d62cdc27a4b375fc",
+        "outcome": "pending"
       }
     ],
     "user_id": "1198831097",
@@ -4335,7 +4360,7 @@
         "third_party_replies": []
       },
       {
-        "outcome": "goalpost",
+        "outcome": "silent",
         "thread_id": "28459136643743554",
         "date": "2026-09-28",
         "their_move": "Réplica 1h: \"ownership, property, means responsibility to make an animal happy... happy well fed pigs taste better, you vegans support the same big food companies\".",
@@ -4344,9 +4369,10 @@
         "draft_sha": "2ccdceb80dad61ec",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-30T23:05:21.463Z",
-        "outcome_evidence": "Kirk → Bernard (3h): \"that's a perfect vegan answer\" / \"I only grow non vegan vegetables\"",
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-05",
         "outcome_note": "bienestarismo-jugada-maestra-del-poder: el volteo 'la felicidad del cerdo es para ti' no tuvo respuesta de fondo; contestó con dos jabs ('perfect vegan answer', 'I only grow non vegan vegetables'). Sigue en retirada por burla.",
-        "third_party_replies": []
+        "third_party_replies": [],
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "28459136643743554",
@@ -4447,12 +4473,13 @@
         "our_reply_summary": "Filo profano corto: tomé la concesión del león (poseer es humano); su lista usa dos verbos (pet dogs that I care / chicken bred for my food) y solo uno fue criado para su plato; su \"nothing morally wrong\" sale del mismo cajón subjetivo; cry more en media línea. Cierre: qué hace de \"bred for my food\" una razón y no un recibo.",
         "framework": "dominacion-no-es-superioridad-moral",
         "draft_sha": "c46c582cbd18c389",
-        "outcome": "goalpost",
+        "outcome": "silent",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-09-30T23:05:21.463Z",
         "third_party_replies": [],
-        "outcome_evidence": "Homer 33m: 'except its not just about taste. Animal food is considered the best protein source… There is nothing morally wrong in my book eating animal sourced food.'",
-        "outcome_note": "dominacion-no-es-superioridad-moral: tras 'bred for my food ¿razón o recibo?' dejó el título y saltó a nutrición (proteína, aminoácidos) + 'nothing morally wrong in my book'. El framework lo sacó del poder como razón; se refugió en necesidad dietaria."
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-05",
+        "outcome_note": "dominacion-no-es-superioridad-moral: tras 'bred for my food ¿razón o recibo?' dejó el título y saltó a nutrición (proteína, aminoácidos) + 'nothing morally wrong in my book'. El framework lo sacó del poder como razón; se refugió en necesidad dietaria.",
+        "closed_from": "goalpost"
       },
       {
         "thread_id": "28459136643743554",

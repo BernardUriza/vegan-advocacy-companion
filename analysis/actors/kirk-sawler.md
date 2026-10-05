@@ -61,7 +61,7 @@ No burlarse de Ralph ni pedirle que trate al cerdo como al perro (eso es trato, 
 - **Su jugada:** Réplica a mi reply: "all that and you left out my non vegan vegetables lol" — jab crop_deaths sin argumento.
 - **Nuestra respuesta:** Corta (100 palabras, filo profano): los dejé fuera porque no tocan la relación que pregunté; el animal atrapado en el campo no es suyo (no lo compró ni registró); el cerdito sí, desde que pagó hasta la cena; las verduras prueban fuck-all sobre eso; vuelta a la pregunta con Ralph.
 
-### Hilo `28459136643743554` — 2026-09-28 · outcome: **goalpost**
+### Hilo `28459136643743554` — 2026-09-28 · outcome: **silent**
 - **Su jugada:** Réplica 1h: "ownership, property, means responsibility to make an animal happy... happy well fed pigs taste better, you vegans support the same big food companies".
 - **Nuestra respuesta:** Tomé su propia frase como la respuesta: "taste better" dice hacia dónde corre la responsabilidad; la felicidad de Ralph es para Ralph, la del cerdito está doblada en lo que será para él; misma palabra, dirección opuesta. Concedí el tu-quoque de las empresas (prueba fuck-all del cerdito; lo compró para convertirlo en comida). Cierre: si su felicidad es parte del sabor y la de Ralph es suya, ¿qué hace al cerdito tuyo para ponerlo en el menú? 100 palabras.
 
