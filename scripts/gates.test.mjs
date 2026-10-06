@@ -402,3 +402,21 @@ test('style-gate: kill-phrase con límite de palabra ("I hear your point" no es 
   assert.equal(runGate('style-gate.mjs', clean('I hear your point about the USDA rules. ')), 0);
   assert.equal(runGate('style-gate.mjs', clean('I hear you. ')), 1);
 });
+
+// ---------- style-gate: brazo de voz (voice_trial 2026-10-06) ----------
+
+test('style-gate --voice limpio: una grosería bloquea; sin flag solo avisa', () => {
+  const body = clean('That is bullshit and it changes nothing about the title. ');
+  assert.equal(runGate('style-gate.mjs', body, ['--voice', 'limpio']), 1);
+  assert.equal(runGate('style-gate.mjs', body), 0);
+  assert.equal(runGate('style-gate.mjs', clean(), ['--voice', 'limpio']), 0);
+});
+
+test('style-gate --voice profano: cero groserías avisa pero no bloquea (la cuota la exige finalize)', () => {
+  assert.equal(runGate('style-gate.mjs', clean(), ['--voice', 'profano']), 0);
+  assert.equal(runGate('style-gate.mjs', clean('That is bullshit, and no shit it changes nothing. '), ['--voice', 'profano']), 0);
+});
+
+test('style-gate --voice con un brazo inventado sale 2 (uso), no 0', () => {
+  assert.equal(runGate('style-gate.mjs', clean(), ['--voice', 'grosero']), 2);
+});

@@ -1,4 +1,4 @@
-import { readActors, readFrameworks } from './db.mjs';
+import { readActors, readFrameworks, readVocab } from './db.mjs';
 import { jeffreysInterval } from './stats.mjs';
 
 // Efectividad por FAMILIA y por framework, sin "win rate": conceded con su intervalo Jeffreys 95%,
@@ -58,6 +58,41 @@ function table(title, rows, label) {
 const sortRows = map => [...map.entries()].sort((a, b) => b[1].deploys - a[1].deploys);
 table('Por FAMILIA', sortRows(byFamily), k => k);
 table('Por framework', sortRows(byFramework), k => (nameOf[k] ?? k).slice(0, 60));
+
+// Por VOZ: solo lo sorteado por voice_trial (profano vs filo limpio). Outcome primario: postura de
+// terceros (apoyo vs hostil); secundarios: escalated, conceded, likes. El corte es mecánico: n por brazo
+// contra readout_n / stop_n y stop_date (data/vocab.json → rotation.voice_trial).
+const trial = readVocab().rotation.voice_trial?.value;
+if (trial) {
+  const byVoice = new Map(trial.arms.map(a => [a, blank()]));
+  for (const actor of readActors()) {
+    for (const it of actor.interactions ?? []) {
+      if (it.misattributed || it.voice_assignment !== 'randomized' || !(it.date >= trial.since) || !byVoice.has(it.voice)) continue;
+      const s = byVoice.get(it.voice);
+      s.deploys++;
+      if (it.outcome === 'pending') s.pending++;
+      else if (OUTCOMES.includes(it.outcome)) s[it.outcome]++;
+      if (STANCES.includes(it.third_party_stance)) s[it.third_party_stance]++;
+      if (Number.isInteger(it.lurker_reactions)) { s.lurkerMeasured++; s.likes += it.lurker_reactions; }
+    }
+  }
+  const ratio = (k, n) => n ? `${k}/${n} [${pct(jeffreysInterval(k, n).lo)}–${pct(jeffreysInterval(k, n).hi)}]` : '—';
+  console.log(`\nPor VOZ (voice_trial desde ${trial.since}; solo sorteados; corte a ${trial.stop_n}/brazo o ${trial.stop_date})\n`);
+  const header = ['brazo', 'n', 'apoyo/(apoyo+hostil)', 'escalated', 'conceded', 'terceros', 'likes/medidos'];
+  const body = [...byVoice.entries()].map(([arm, s]) => {
+    const judged = s.deploys - s.pending;
+    return [arm, String(s.deploys), ratio(s.apoyo, s.apoyo + s.hostil), ratio(s.escalated, judged), ratio(s.conceded, judged), stanceCell(s), `${s.likes}/${s.lurkerMeasured}`];
+  });
+  const w = header.map((h, i) => Math.max(h.length, ...body.map(r => r[i].length)));
+  const fmt = r => r.map((c, i) => (i === 0 ? c.padEnd(w[i]) : c.padStart(w[i]))).join('  ');
+  console.log(fmt(header));
+  console.log(w.map(n => '-'.repeat(n)).join('  '));
+  for (const r of body) console.log(fmt(r));
+  const minN = Math.min(...[...byVoice.values()].map(s => s.deploys));
+  const stage = minN >= trial.stop_n ? `n alcanzado: CORTE, decide la doctrina` : minN >= trial.readout_n ? `lectura interina (≥${trial.readout_n}/brazo); el corte es a ${trial.stop_n}` : `recolectando: faltan ${trial.readout_n - minN} por brazo para la lectura interina`;
+  const daysLeft = Math.ceil((new Date(trial.stop_date) - Date.now()) / 86400000);
+  console.log(`\n${stage} · ${daysLeft >= 0 ? `${daysLeft} días hasta ${trial.stop_date}` : `stop_date ${trial.stop_date} ya pasó: CORTE`}. Si los intervalos de apoyo se traslapan al corte, el registro no mueve a terceros.`);
+}
 
 const untested = frameworks.filter(f => f.family !== 'auto-disciplina' && !byFramework.has(f.id));
 console.log(`\nLectura honesta: un intervalo que se traslapa con el de otra familia NO la supera. Solo "sorteados" compara`);

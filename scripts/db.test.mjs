@@ -14,6 +14,7 @@ import {
   getActorsByTactic,
   interactionProblems,
   ROTATION_SINCE,
+  VOICE_SINCE,
 } from './db.mjs';
 
 const actors = readActors();
@@ -211,5 +212,22 @@ test('interactionProblems enforces exposure, assignment and rotation from ROTATI
   assert.ok(problems.some(p => /exposure_n=undefined/.test(p)));
   assert.ok(problems.some(p => /repeats framework/.test(p)));
   const ok = { name: 'C', interactions: [...old.interactions, { ...base, date: ROTATION_SINCE, framework: 'dominacion-no-es-superioridad-moral', exposure_n: 4, assignment: 'randomized', propensity: 1 / 3 }] };
+  assert.deepEqual(interactionProblems(ok, vocab), []);
+});
+
+test('interactionProblems requires voice, voice_assignment and a voice_propensity from VOICE_SINCE, and leaves earlier rows alone', () => {
+  const vocab = readVocab();
+  const base = { thread_id: 't', framework: 'algo-a-alguien-sujeto-derecho', outcome: 'pending', exposure_n: 1, assignment: 'chosen' };
+  const before = { name: 'A', interactions: [{ ...base, date: '2026-10-01' }] };
+  assert.deepEqual(interactionProblems(before, vocab), []);
+  const missing = { name: 'B', interactions: [{ ...base, date: VOICE_SINCE }] };
+  const problems = interactionProblems(missing, vocab);
+  assert.ok(problems.some(p => /missing voice \(profano/.test(p)));
+  assert.ok(problems.some(p => /missing voice_assignment/.test(p)));
+  const bad = { name: 'C', interactions: [{ ...base, date: VOICE_SINCE, voice: 'profano', voice_assignment: 'randomized' }] };
+  assert.ok(interactionProblems(bad, vocab).some(p => /voice_propensity/.test(p)));
+  const outside = { name: 'D', interactions: [{ ...base, date: VOICE_SINCE, voice: 'grosero', voice_assignment: 'chosen' }] };
+  assert.ok(interactionProblems(outside, vocab).some(p => /voice="grosero" is outside/.test(p)));
+  const ok = { name: 'E', interactions: [{ ...base, date: VOICE_SINCE, voice: 'limpio', voice_assignment: 'randomized', voice_propensity: 0.5 }] };
   assert.deepEqual(interactionProblems(ok, vocab), []);
 });

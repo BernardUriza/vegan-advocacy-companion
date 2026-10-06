@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { planPick, pickProblems, exposureOf, distinctFamilies, isStalePick } from './framework-rotation.mjs';
+import { planPick, pickProblems, exposureOf, distinctFamilies, isStalePick, planVoice, voiceProblems, observedVoice } from './framework-rotation.mjs';
 import { readFrameworks, readVocab } from './db.mjs';
 
 const policy = readVocab().rotation;
@@ -84,4 +84,53 @@ test('a civil filo interlocutor (the Dean/Adam profile) is eligible for the draw
   const p = planPick({ actor: actor({ tone: 'civil' }), frameworks, policy, rng: seq(0.01, 0) });
   assert.equal(p.good_faith, true);
   assert.equal(p.assignment, 'randomized');
+});
+
+// ---------- voice_trial (2026-10-06): el brazo de voz se sortea solo en filo y finalize lo exige ----------
+
+const SWEAR = 'That is bullshit and you know it. ';
+const CLEAN = 'That does not follow, and the title is still undefended. ';
+
+test('a filo target is drawn 50/50 into profano or limpio, with the draw and its propensity logged', () => {
+  const profano = planPick({ actor: actor(), frameworks, policy, rng: seq(0.9, 0.1) });
+  assert.equal(profano.assignment, 'chosen');
+  assert.equal(profano.voice, 'profano');
+  assert.equal(profano.voice_assignment, 'randomized');
+  assert.equal(profano.voice_draw, 0.1);
+  assert.equal(profano.voice_propensity, 0.5);
+  const limpio = planPick({ actor: actor(), frameworks, policy, rng: seq(0.9, 0.7) });
+  assert.equal(limpio.voice, 'limpio');
+  assert.equal(limpio.voice_propensity, 0.5);
+});
+
+test('the voice draw consumes the rng AFTER the framework draw, so a randomized framework keeps its index', () => {
+  const p = planPick({ actor: actor({ register: 'compasivo' }), frameworks, policy, rng: seq(0.01, 0.99, 0.2) });
+  assert.equal(p.assignment, 'randomized');
+  assert.equal(p.framework, p.shortlist.at(-1).id);
+  assert.equal(p.voice_assignment, 'chosen');
+  assert.equal(p.voice, null);
+});
+
+test('compasivo, wit and no_enganchar never enter the voice trial: the voice is observed from the draft', () => {
+  for (const register of ['compasivo', 'wit', 'na', 'no_enganchar']) {
+    const v = planVoice(actor({ register }), policy, seq(0.01));
+    assert.deepEqual(v, { voice: null, voice_assignment: 'chosen', voice_draw: null, voice_propensity: null }, register);
+  }
+  assert.equal(observedVoice(SWEAR + CLEAN), 'profano');
+  assert.equal(observedVoice(CLEAN.repeat(3)), 'limpio');
+});
+
+test('voiceProblems enforces the drawn arm: profano needs the trial minimum, limpio needs zero', () => {
+  const profano = { voice: 'profano', voice_assignment: 'randomized' };
+  const limpio = { voice: 'limpio', voice_assignment: 'randomized' };
+  assert.match(voiceProblems(profano, CLEAN + SWEAR, policy)[0], /PROFANO.*1 grosería/);
+  assert.deepEqual(voiceProblems(profano, SWEAR + SWEAR + CLEAN, policy), []);
+  assert.match(voiceProblems(limpio, CLEAN + SWEAR, policy)[0], /LIMPIO.*1 grosería/);
+  assert.deepEqual(voiceProblems(limpio, CLEAN.repeat(3), policy), []);
+});
+
+test('a chosen voice (or a pick from before the trial) never blocks finalize', () => {
+  assert.deepEqual(voiceProblems({ voice: null, voice_assignment: 'chosen' }, SWEAR, policy), []);
+  assert.deepEqual(voiceProblems({ exposure_n: 2, assignment: 'chosen' }, SWEAR, policy), []);
+  assert.deepEqual(voiceProblems(null, SWEAR, policy), []);
 });

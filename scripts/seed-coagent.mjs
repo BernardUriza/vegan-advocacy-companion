@@ -157,21 +157,29 @@ if (!isMain) {
   const rp = receiptPath(postId);
   if (!existsSync(rp)) die(`no hay recibo parcial para ${postId} — corre \`seed\` primero (no saltes la consulta).`);
   const { readPick } = await import('./framework-pick.mjs');
-  const { pickProblems } = await import('./framework-rotation.mjs');
+  const { pickProblems, voiceProblems, observedVoice } = await import('./framework-rotation.mjs');
   const editOf = arg('--edit-of');
   const prior = editOf ? (JSON.parse(readFileSync(rp, 'utf8')).drafts || []).find((d) => d.draft_sha === editOf && d.author === author) : null;
   if (editOf && !prior) die(`--edit-of ${editOf}: no hay draft consultado de ${author} con ese sha en ${rp}`);
   if (prior && prior.framework !== framework) die(`--edit-of: una edición conserva el framework de la reply original (${prior.framework})`);
-  const pick = prior ? { exposure_n: prior.exposure_n, assignment: prior.assignment, propensity: prior.propensity } : readPick(postId, author);
+  const pick = prior
+    ? { exposure_n: prior.exposure_n, assignment: prior.assignment, propensity: prior.propensity, voice: prior.voice ?? null, voice_assignment: prior.voice_assignment ?? 'chosen', voice_propensity: prior.voice_propensity ?? null }
+    : readPick(postId, author);
+  const draftText = readFileSync(resolveUserPath(draft, ROOT), 'utf8');
+  const { readActors, readVocab } = await import('./db.mjs');
   if (!prior) {
     const allFrameworks = JSON.parse(readFileSync(resolve(ROOT, 'data/frameworks.json'), 'utf8'));
-    const { readActors } = await import('./db.mjs');
     const pickActor = pick ? readActors().find((a) => a.user_id === pick.user_id) : undefined;
     const rotation = pickProblems(pick, framework, allFrameworks, pickActor);
     if (rotation.length) die('FINALIZE BLOQUEADO por la rotación de frameworks:\n  - ' + rotation.join('\n  - '));
   }
+  // la voz la fija el pick (voice_trial): un draft del brazo contrario no se finaliza, aunque sea edición
+  const voiceIssues = voiceProblems(pick, draftText, readVocab().rotation);
+  if (voiceIssues.length) die('FINALIZE BLOQUEADO por la voz:\n  - ' + voiceIssues.join('\n  - '));
+  // picks y recibos anteriores al trial no traen brazo: la voz se observa del draft, no se inventa
+  const voice = pick.voice ?? observedVoice(draftText);
   const QC = await import('./quote-check.mjs');
-  const unquoted = QC.verifyQuotes(readFileSync(resolveUserPath(draft, ROOT), 'utf8'), QC.loadCorpus(ROOT), QC.quoteOkArgs(process.argv)).filter((q) => !q.found);
+  const unquoted = QC.verifyQuotes(draftText, QC.loadCorpus(ROOT), QC.quoteOkArgs(process.argv)).filter((q) => !q.found);
   if (unquoted.length) die('FINALIZE BLOQUEADO: cita(s) sin fuente verbatim (corrige contra el transcript o pasa --quote-ok "<frag>" si no es cita):\n  - ' + unquoted.map((q) => `"${q.quote}"`).join('\n  - '));
   const r = JSON.parse(readFileSync(rp, 'utf8'));
   // normaliza el shape legacy single-draft a drafts[]
@@ -184,6 +192,7 @@ if (!isMain) {
     author, draft_sha: sha, draft_file: draftPath,
     consulted_at: i >= 0 && r.drafts[i].consulted_at ? r.drafts[i].consulted_at : nowIso(),
     framework, exposure_n: pick.exposure_n, assignment: pick.assignment, propensity: pick.propensity,
+    voice, voice_assignment: pick.voice_assignment ?? 'chosen', voice_propensity: pick.voice_propensity ?? null,
     ...(prior ? { edit_of: editOf } : {}),
   };
   if (i >= 0) r.drafts[i] = entry; else r.drafts.push(entry);

@@ -1,6 +1,8 @@
 // Rotación y sorteo de frameworks por target (etapa 3). Lógica pura: sin disco ni Chrome.
 // Política en data/vocab.json (rotation); CLI en framework-pick.mjs; la valida seed-coagent finalize.
 
+import { countProfanity } from './style-gate.mjs';
+
 const SELF_DISCIPLINE = 'auto-disciplina';
 const FALLBACK_FAMILY = 'estatus-sujeto';
 
@@ -40,6 +42,18 @@ export function distinctFamilies(candidates, k) {
   return out;
 }
 
+// Sorteo de VOZ (voice_trial, 2026-10-06): solo los registros del trial se sortean; para el resto la voz
+// no se asigna, se observa del draft en finalize (observedVoice). El rng se consume al final para no
+// mover los sorteos de framework ya registrados.
+export function planVoice(actor, policy, rng = Math.random) {
+  const t = policy.voice_trial?.value;
+  const eligible = Boolean(t) && Boolean(actor) && t.registers.includes(actor.register);
+  if (!eligible) return { voice: null, voice_assignment: 'chosen', voice_draw: null, voice_propensity: null };
+  const draw = rng();
+  const first = draw < t.rate;
+  return { voice: first ? t.arms[0] : t.arms[1], voice_assignment: 'randomized', voice_draw: draw, voice_propensity: first ? t.rate : 1 - t.rate };
+}
+
 export function planPick({ actor, frameworks, policy, rng = Math.random }) {
   const { exposure_n, previous_framework } = exposureOf(actor);
   const blocked = exposure_n >= policy.rotate_from_exposure.value && previous_framework ? [previous_framework] : [];
@@ -48,9 +62,23 @@ export function planPick({ actor, frameworks, policy, rng = Math.random }) {
   const draw = rng();
   const randomized = goodFaith && shortlist.length > 1 && draw < policy.randomize_rate.value;
   const base = { exposure_n, previous_framework, blocked, good_faith: goodFaith, shortlist, draw };
-  if (!randomized) return { ...base, assignment: 'chosen', framework: null, propensity: null };
-  const i = Math.min(shortlist.length - 1, Math.floor(rng() * shortlist.length));
-  return { ...base, assignment: 'randomized', framework: shortlist[i].id, propensity: 1 / shortlist.length };
+  const framework = randomized
+    ? (() => { const i = Math.min(shortlist.length - 1, Math.floor(rng() * shortlist.length)); return { assignment: 'randomized', framework: shortlist[i].id, propensity: 1 / shortlist.length }; })()
+    : { assignment: 'chosen', framework: null, propensity: null };
+  return { ...base, ...framework, ...planVoice(actor, policy, rng) };
+}
+
+export function observedVoice(draftText) {
+  return countProfanity(draftText) > 0 ? 'profano' : 'limpio';
+}
+
+export function voiceProblems(pick, draftText, policy) {
+  if (!pick || pick.voice_assignment !== 'randomized') return [];
+  const n = countProfanity(draftText);
+  const min = policy.voice_trial.value.min_profanity;
+  if (pick.voice === 'profano' && n < min) return [`este target salió SORTEADO al brazo PROFANO y el draft trae ${n} grosería(s), mínimo ${min}: la voz la fija el pick, el master la pide y el pase la conserva`];
+  if (pick.voice === 'limpio' && n > 0) return [`este target salió SORTEADO al brazo LIMPIO y el draft trae ${n} grosería(s): filo sin profanidad, el mismo mordisco sin la palabra`];
+  return [];
 }
 
 export function isStalePick(pick, actor) {

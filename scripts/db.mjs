@@ -26,6 +26,7 @@ export function vocabViolations(entity, vocab = readVocab(), kind = 'actor') {
 }
 
 export const ROTATION_SINCE = '2026-09-29';
+export const VOICE_SINCE = '2026-10-06';
 
 export function interactionProblems(actor, vocab = readVocab()) {
   const problems = [];
@@ -41,6 +42,10 @@ export function interactionProblems(actor, vocab = readVocab()) {
     if (idx + 1 >= vocab.rotation.rotate_from_exposure.value && previous && it.framework === previous) {
       problems.push(`${where}: repeats framework "${previous}" at exposure ${idx + 1}; from exposure ${vocab.rotation.rotate_from_exposure.value} the entry must change`);
     }
+    if (it.date < VOICE_SINCE) return;
+    if (!it.voice) problems.push(`${where}: missing voice (profano | limpio), copy it from the finalize receipt`);
+    if (!it.voice_assignment) problems.push(`${where}: missing voice_assignment (chosen | randomized), copy it from the finalize receipt`);
+    if (it.voice_assignment === 'randomized' && !(it.voice_propensity > 0 && it.voice_propensity < 1)) problems.push(`${where}: voice randomized without a voice_propensity in (0,1)`);
   });
   return problems;
 }

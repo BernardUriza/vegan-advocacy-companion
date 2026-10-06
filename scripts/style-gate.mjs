@@ -63,11 +63,17 @@ const KILL_PHRASES = [
   'I hear you',
 ];
 
-// El registro filo es profano por default (2026-09-27); un draft con cero groserías avisa.
-// El juicio de registro (filo vs compasivo, donde SÍ va limpio) es del LLM, por eso nunca es hard.
+// El registro filo es profano por default (2026-09-27); sin brazo, un draft con cero groserías avisa.
+// Con `voice` (el brazo que sorteó framework-pick, voice_trial 2026-10-06) el check se vuelve contrato:
+// profano exige el mínimo del trial, limpio exige cero. El juicio de registro (filo vs compasivo) sigue
+// siendo del LLM; por eso sin brazo nunca es hard.
 const PROFANITY = /\b(fuck(ing|ed|s)?|fuck-all|bullshit|damn|hell|no shit|what the fuck|crap|ass)\b/gi;
+export function countProfanity(text) {
+  return (text.match(PROFANITY) || []).length;
+}
 
-export function analyzeDraft(text, { name = null, file = null } = {}) {
+export function analyzeDraft(text, { name = null, file = null, voice = null, profaneMin = 2 } = {}) {
+  const PROFANE_MIN = profaneMin;
   const lines = text.split('\n');
   const nonEmptyLines = lines.map((l) => l.trim()).filter(Boolean);
   const words = (text.match(/[\p{L}\p{N}']+/gu) || []);
@@ -75,7 +81,10 @@ export function analyzeDraft(text, { name = null, file = null } = {}) {
 
   function checkProfanity() {
     const hits = text.match(PROFANITY) || [];
-    return { name: 'profanityCount', hard: false, soft: hits.length === 0, count: hits.length, evidence: [...new Set(hits.map((h) => h.toLowerCase()))].slice(0, 6) };
+    const n = hits.length;
+    const hard = voice === 'limpio' && n > 0;
+    const soft = voice === 'profano' ? n < PROFANE_MIN : voice === 'limpio' ? false : n === 0;
+    return { name: 'profanityCount', hard, soft, voice, count: n, evidence: [...new Set(hits.map((h) => h.toLowerCase()))].slice(0, 6) };
   }
 
   function checkKillPhrases() {
@@ -216,7 +225,11 @@ function printDraft(result) {
   console.log(`[${mark(checks[6].hard)}] welfaristAxis     ${checks[6].evidence.length ? checks[6].evidence.join(' | ') : 'eje no-bienestarista (ok)'}`);
   console.log(`[${mark(checks[7].hard)}] biocentricAxis    ${checks[7].evidence.length ? checks[7].evidence.join(' | ') : 'eje sensocéntrico (ok)'}`);
   console.log(`[${checks[8].hard ? 'X' : checks[8].soft ? '~' : '.'}] negateThenAffirm  ${checks[8].count ? 'pivote copular: ' + checks[8].evidence.map((h) => `"${h}"`).join(' | ') : checks[8].soft ? 'apositivo: ' + checks[8].softEvidence.join(' | ') : 'afirmativo (ok)'}`);
-  console.log(`[${checks[9].soft ? '~' : '.'}] profanityCount    ${checks[9].count} (${checks[9].count ? checks[9].evidence.join(', ') : 'cero: si el registro es filo, falta la voz profana'})`);
+  const prof = checks.find((c) => c.name === 'profanityCount');
+  const profNote = prof.voice === 'limpio' ? (prof.hard ? 'brazo LIMPIO con groserías → quítalas' : 'brazo limpio, cero (ok)')
+    : prof.voice === 'profano' ? (prof.soft ? 'brazo PROFANO, faltan: pide el mínimo del trial' : 'brazo profano (ok)')
+    : prof.count ? prof.evidence.join(', ') : 'cero: si el registro es filo, falta la voz profana';
+  console.log(`[${prof.hard ? 'X' : prof.soft ? '~' : '.'}] profanityCount    ${prof.count} (${profNote})`);
   console.log(`[${mark(checks[10].hard)}] commaInsideQuote  ${checks[10].count ? checks[10].evidence.map((h) => `${h} → ${h.replace(/,(["”])$/, '$1,')}`).join(' | ') : 'coma fuera de la comilla (ok)'}`);
   if (softFlags.length) console.log(`\nflags blandas (avisan, no fallan): ${softFlags.join(', ')}`);
 }
@@ -240,14 +253,20 @@ function printBatch(batch) {
   if (scope.hard) console.log('  → conceder el hecho y negar la conclusión es la jugada; el MISMO par de verbos en dos replies del lote es fórmula. Cambia la entrada de una.');
 }
 
-function main() {
+async function main() {
   const args = process.argv.slice(2);
   const asJson = args.includes('--json');
   const nameIdx = args.indexOf('--name');
   const name = nameIdx >= 0 ? args[nameIdx + 1] : null;
-  const files = args.filter((a, i) => !a.startsWith('--') && !(nameIdx >= 0 && i === nameIdx + 1));
+  const voiceIdx = args.indexOf('--voice');
+  const voice = voiceIdx >= 0 ? args[voiceIdx + 1] : null;
+  if (voice && !['profano', 'limpio'].includes(voice)) {
+    console.error(`--voice "${voice}": el brazo es profano | limpio (lo da framework-pick)`);
+    process.exit(2);
+  }
+  const files = args.filter((a, i) => !a.startsWith('--') && !(nameIdx >= 0 && i === nameIdx + 1) && !(voiceIdx >= 0 && i === voiceIdx + 1));
   if (!files.length) {
-    console.error('uso: node style-gate.mjs <draft.txt> [<draft2.txt> ...] [--json] [--name "Nombre"]');
+    console.error('uso: node style-gate.mjs <draft.txt> [<draft2.txt> ...] [--json] [--name "Nombre"] [--voice profano|limpio]');
     process.exit(2);
   }
   const drafts = files.map((file) => {
@@ -258,7 +277,8 @@ function main() {
       process.exit(2);
     }
   });
-  const results = drafts.map((d) => analyzeDraft(d.text, { name, file: d.file }));
+  const profaneMin = voice ? (await import('./db.mjs')).readVocab().rotation.voice_trial.value.min_profanity : 2;
+  const results = drafts.map((d) => analyzeDraft(d.text, { name, file: d.file, voice, profaneMin }));
   const named = drafts.map((d) => ({ name: d.file, text: d.text }));
   const batch = drafts.length >= 2 ? { ...detectCloserClones(named), scope: detectScopeDenialRepeats(named) } : null;
   const clean = results.every((r) => r.clean) && !(batch && (batch.hard || batch.scope.hard));

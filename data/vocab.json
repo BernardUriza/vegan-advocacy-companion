@@ -158,6 +158,22 @@
       "ninguno": {
         "why": "Nadie más respondió a la reply."
       }
+    },
+    "voice": {
+      "profano": {
+        "why": "La reply lleva groserías pegadas al argumento (registro filo profano, orden 2026-09-27). Si el pick la sorteó, finalize exige el mínimo de voice_trial."
+      },
+      "limpio": {
+        "why": "La reply sale sin groserías: compasivo por doctrina, o filo limpio cuando el pick la sorteó a ese brazo (finalize exige cero)."
+      }
+    },
+    "voice_assignment": {
+      "chosen": {
+        "why": "La voz no se sorteó (target fuera de voice_trial.registers); voice se observa del draft en finalize. No compara."
+      },
+      "randomized": {
+        "why": "framework-pick sorteó el brazo de voz (voice_trial) y finalize verificó que el draft lo cumple. Solo estas filas comparan profano vs limpio."
+      }
     }
   },
   "rotation": {
@@ -187,6 +203,24 @@
         ]
       },
       "why": "Quién entra al sorteo: el oro vive en los interlocutores civiles (Bowman compasivo, pero Adam Gaska y Dean Christie van en registro filo con tono civil: 2 de los 3 conceded). Excluir el tono civil dejaba fuera del sorteo justo donde se gana."
+    },
+    "voice_trial": {
+      "value": {
+        "since": "2026-10-06",
+        "rate": 0.5,
+        "registers": [
+          "filo"
+        ],
+        "arms": [
+          "profano",
+          "limpio"
+        ],
+        "min_profanity": 2,
+        "readout_n": 30,
+        "stop_n": 70,
+        "stop_date": "2026-11-05"
+      },
+      "why": "Experimento pre-registrado (analysis/research/2026-10-05-gemini-auditoria-estrategia.md): el filo profano no tiene evidencia ni a favor ni en contra ante terceros. Cada target filo se sortea 50/50 entre profano (al menos min_profanity groserías) y filo limpio (cero). Outcome primario: third_party_stance apoyo vs hostil; secundarios escalated, conceded, lurker_reactions. Lectura interina a readout_n por brazo; corte a stop_n por brazo o en stop_date, lo que llegue primero. Decisión de Bernard 2026-10-05."
     }
   }
 }
