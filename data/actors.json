@@ -1009,14 +1009,16 @@
         "exposure_n": 4,
         "assignment": "chosen",
         "propensity": null,
-        "outcome": "pending",
+        "outcome": "engaged",
         "reply_depth": 2,
         "reply_position": 3,
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "opponent_reactions": 1,
-        "third_party_replies_to_opponent": []
+        "third_party_replies_to_opponent": [],
+        "outcome_evidence": "Jude 3d: \"It's quite legal to own an animal… There are laws about animal welfare\"",
+        "outcome_note": "Tras mi pregunta (¿necesario para 8 mil millones o solo legal?) contestó 3d después: sello de comprensión (\"obviously you have a problem understanding\") + reafirma legalidad y leyes de bienestar; la necesidad no la toca. algo-a-alguien aterrizó en que ya no niega el título: lo defiende por la ley."
       }
     ]
   },
@@ -2399,14 +2401,16 @@
         "exposure_n": 41,
         "assignment": "chosen",
         "draft_sha": "ef10ddd6e041ece6",
-        "outcome": "pending",
+        "outcome": "engaged",
         "lurker_reactions": 1,
         "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
         "reply_position": 23,
         "opponent_reactions": 0,
-        "third_party_replies_to_opponent": []
+        "third_party_replies_to_opponent": [],
+        "outcome_evidence": "Les 21h: \"you're STILL doing exactly the same thing... using human slavery as the emotional template\"",
+        "outcome_note": "Les contestó 21h después con argumento, no sello: acusa de usar la esclavitud humana como plantilla emocional y de no haber establecido la equivalencia; redefine su \"so what\". Vuelta nueva tras las dos replies de cierre: aplica el criterio de silencio."
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -2871,9 +2875,11 @@
         "draft_sha": "79068d4ad405d561",
         "exposure_n": 16,
         "assignment": "chosen",
-        "outcome": "pending",
+        "outcome": "escalated",
         "reply_depth": 2,
-        "reply_position": 3
+        "reply_position": 3,
+        "outcome_evidence": "Tiana 1d: \"you just equated humans with animals. Dismissed.\"",
+        "outcome_note": "Tras mi reply (su lista es cuidado + la mano del dueño) cerró con sello: \"you just equated humans with animals. Dismissed.\" Sin argumento; el framework no movió nada y el sello cierra para el lurker."
       }
     ]
   },
@@ -3587,14 +3593,16 @@
         "exposure_n": 39,
         "assignment": "chosen",
         "draft_sha": "0bf0f6466f704438",
-        "outcome": "pending",
+        "outcome": "engaged",
         "lurker_reactions": 0,
         "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
         "reply_position": 34,
         "opponent_reactions": 0,
-        "third_party_replies_to_opponent": []
+        "third_party_replies_to_opponent": [],
+        "outcome_evidence": "Dean 23h: \"A newborn who never develops moral agency still had the capacity for moral agency\"",
+        "outcome_note": "Dean contestó 23h después defendiendo por fin SU criterio: capacidad vs desarrollo (la recién nacida \"had the capacity for moral agency\"). Primera vez que paga la cuenta de su premisa en vez de pedir la mía; sigue sin conceder."
       }
     ],
     "user_id": "1198831097",
@@ -5384,8 +5392,8 @@
         "assignment": "chosen",
         "propensity": null,
         "outcome": "engaged",
-        "outcome_evidence": "\"so long story short, it's ok to eat animals to survive in the wilderness but not when you're in a civilisation... Got it.\"",
-        "outcome_note": "La distinción necesidad real vs refri del súper la resumió con sorna pero sin disputarla; 2 reacciones de terceros a mi reply. Ojo: en el mismo hilo escribe \"Humans shouldn't objectify or exploit other animals\"; su bando es ambiguo.",
+        "outcome_evidence": "ver third_party_replies_to_opponent",
+        "outcome_note": "Terceros bajo la rama tras mi reply: Robbie Broyles refuta a Phil dos veces (\"the pretend standards I made up\", \"Humans shouldn't objectify or exploit other animals\"); Emory Lance Wolfe y Rüdiger Preiss lo respaldan (natives, Eskimos). Contraste mixto.",
         "reply_depth": 2,
         "reply_position": 2,
         "lurker_reactions": 2,
@@ -5408,7 +5416,8 @@
             "user_id": "655045000",
             "text": "Rüdiger Preiss · 3dPhil Holmes http://theveganeskimo.com/index.php/en/THEVEGANESKIMO.COMAll recipesAll recipesLikeReplyShare"
           }
-        ]
+        ],
+        "third_party_stance": "mixto"
       },
       {
         "thread_id": "28211773511777146",
@@ -5501,7 +5510,7 @@
         "date": "2026-10-04",
         "assignment": "chosen",
         "propensity": null,
-        "outcome": "pending",
+        "outcome": "engaged",
         "thread_id": "28648574331432371",
         "their_move": "Réplica (su post de Banbury, 56m): \"Nope, they don't do any morse codes shit with their legs either… before I utterly destroy that argument, tell me, what do you think the alter is for?\"",
         "our_reply_summary": "Seco (83 palabras): contesté su pregunta de frente: el cabestro le dirige la cabeza, quien tiene la cuerda lo lleva adonde quiere, lo para frente al juez y el comprador y evita que se vaya; concedí el morse (un animal que jala solo quiere estar en otro lado); el cabestro es cómo otro decidió por él ese día. Cierre: Destroy away, I'm listening: what made him theirs to decide for?",
@@ -5509,7 +5518,9 @@
         "draft_sha": "5b21e78913fba36e",
         "exposure_n": 4,
         "reply_depth": 2,
-        "reply_position": 6
+        "reply_position": 6,
+        "outcome_evidence": "Mark 23h: \"Same as a dog? Same as putting reins on a child?… That halter is a testament to how happy that bull is\"",
+        "outcome_note": "Tras mi respuesta directa sobre el cabestro, contestó 23h: \"Same as a dog? Same as putting reins on a child?\" y el cabestro como prueba de que el toro está contento. Analogías para diluir, pero contesta la pregunta."
       }
     ],
     "user_id": "100008613459447",
@@ -5629,7 +5640,10 @@
             "user_id": "61580416850698",
             "text": "Jude Cooper · 1dKirstin Morgan yep, unless you're in their cult, they'll have a problem with you breathing LikeReplyShare1"
           }
-        ]
+        ],
+        "outcome_evidence": "ver third_party_replies_to_opponent",
+        "outcome_note": "Klaudia Ram y Peter Ross discuten con Kirstin bajo SU post, no bajo mi comentario raíz; no atribuible a mi reply. Se registra como clima del hilo, no como apoyo.",
+        "third_party_stance": "neutral"
       }
     ],
     "user_id": "1241731695",
