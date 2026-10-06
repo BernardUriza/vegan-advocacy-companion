@@ -28,7 +28,7 @@ con MCP, y solo con el GO explícito de Bernard, por jugada o por lote.
 | 1 | `notif-scan.mjs --json` | notifs agrupadas por `post_id` con `openUrl` |
 | 1 | `debt-sweep.mjs` · `scout-feeds.mjs --json` | deuda viva del moat · hilos ajenos < 48h |
 | 2 | `thread-extract.mjs "<url>" --out .coagent/tx-<post_id>.json` | `root`, `turns[]`, `debt[]`; `--out` UNE con el tx anterior (lo que la vista ya no carga queda `retained`), nunca redirigir `--json >` sobre un tx existente |
-| 3 | `framework-pick.mjs` → `seed-gate.mjs` → `seed-coagent.mjs seed/insert/read/finalize` | exposición, framework bloqueado y sorteo por target; gate del master, recibo, transporte a ChatGPT sin enviar, recibo del draft final (`finalize --framework` valida el pick) |
+| 3 | `framework-pick.mjs` → `seed-gate.mjs` → `seed-coagent.mjs seed/insert/read/finalize` | exposición, framework bloqueado, sorteo por target y brazo de voz (`voice_trial`, 50/50 profano/limpio en filo); gate del master, recibo, transporte a ChatGPT sin enviar, recibo del draft final (`finalize --framework` valida el pick y el brazo de voz) |
 | 4 | `style-gate.mjs a.txt b.txt …` · `lint-prose.mjs` | gates de prosa por lote (cierres clonados incluidos) |
 | 3–4 | `quote-check.mjs <draft>` | toda cita de 4+ palabras existe verbatim en transcripts/moat/hilos; `finalize` lo corre y bloquea (`--quote-ok` para comillas que no son cita) |
 | 4 | `comment-prepare.mjs … [--mode root] [--image]` | deja el reply o el raíz cargado en una tab viva, sin enviar |

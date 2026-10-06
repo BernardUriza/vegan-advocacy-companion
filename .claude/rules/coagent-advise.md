@@ -234,6 +234,28 @@ the argument"): el coagent la cumplió.
 insult-gpt NO es de Bernard: es un GPT público de la tienda (autor Soffia Moes, `can_write:false`, sin modelo
 fijado; corre en el modelo seleccionado en el chat). No hay builder que tocar; lo que se controla es el master.
 
+## El brazo de voz lo dicta el pick, no el gusto del lote (voice_trial, 2026-10-06)
+
+El filo profano no tiene evidencia ni a favor ni en contra ante terceros (research del 28-sep punto 5; Gemini
+retiró sus citas el 2026-10-05, `analysis/research/2026-10-05-gemini-auditoria-estrategia.md`). Bernard decidió
+medirlo: desde el 2026-10-06, `framework-pick` sortea **50/50** cada target de registro `filo` entre dos brazos y
+el pick trae `voice` (`profano | limpio`), `voice_assignment: randomized` y `voice_propensity: 0.5`. Política en
+`data/vocab.json` → `rotation.voice_trial` (corte a 70 por brazo o el 2026-11-05).
+
+- **Brazo `profano`:** el molde actual completo (bloque de voz verbatim + muestras + cuota "at least two swear
+  words each, glued to the argument"). `finalize` rechaza el draft con menos de `min_profanity` (2) groserías.
+- **Brazo `limpio` = filo LIMPIO, no compasivo.** Mismo mordisco, cero groserías: nombrar la evasión sin diplomacia
+  ("No, that doesn't follow", "You're dodging the point", "That claim refutes something nobody said"), kill-list de
+  frases estériles intacta, una idea, cierre en la pregunta del título. El bloque de voz va igual al final del
+  master, con muestras limpias; plantilla en `analysis/research/2026-10-03-master-molde-voz.md` § "Voice, brazo
+  limpio". `finalize` rechaza el draft con una sola grosería.
+- **Registro compasivo, wit, na, no_enganchar:** fuera del sorteo (`voice_assignment: chosen`, `voice: null` en el
+  pick); `finalize` observa la voz del draft y la registra. La doctrina del compasivo limpio no cambia.
+- El pase de enriquecimiento de Claude **respeta el brazo**: meterle una grosería a un draft del brazo limpio, o
+  quitárselas a uno profano, rompe la comparación y `finalize` lo bloquea. `style-gate --voice <brazo>` avisa antes.
+- Al registrar la interacción se copian del recibo `voice`, `voice_assignment` y `voice_propensity`; `db.mjs`
+  los exige desde `VOICE_SINCE`. `framework-stats` lee el trial en "Por VOZ" y dice cuándo cortar.
+
 ## PASO 0 — seed-gate ANTES de seedear (mecánica, root fix 2026-06-21)
 
 Tras componer el master prompt en su archivo y **antes** de seedearlo al coagent,

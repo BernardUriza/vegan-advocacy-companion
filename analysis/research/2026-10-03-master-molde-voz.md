@@ -80,6 +80,20 @@ Register samples. They show the temperature only; do not reuse their words:
 
 A and C go at that temperature, at least two swear words each, glued to the argument. B goes dry, one at most.
 
+## Voice, brazo limpio (voice_trial 2026-10-06; sustituye al bloque anterior cuando el pick dice `voice: limpio`)
+
+"When replying to debate opponents, do not sound academic, curricular, sanitized, or overly diplomatic. Name the dodge, the contradiction, the loose premise or the bad faith in plain words, with no softening and no swearing: not one profanity anywhere in the text. The bite comes from precision and from refusing the detour, never from a curse. Attack the argument, the evasion, or the reasoning more than the person."
+
+Every sentence states what the thing is, directly, in one affirmative clause.
+
+Register samples. They show the temperature only; do not reuse their words:
+
+<example>That proves nothing about whether she should be anyone's property.</example>
+<example>Sure, and it changes nothing about the title.</example>
+<example>You're dodging the question, and it's still sitting right there.</example>
+
+A and C go at that temperature, zero swear words, the edge in the claim itself. B goes dry.
+
 ## Ask
 
 Escribe MI posición contra cada movimiento, en tu voz, una por target. Es mi postura contra su jugada, no un mensaje optimizado para persuadir a una audiencia. Refréscate y contesta desde tu propio modo creativo, sin anclarte a lo que escribiste antes en esta conversación. Solo los tres textos, marcados A, B y C. Solo borrador: el botón de publicar no es tuyo ni mío.

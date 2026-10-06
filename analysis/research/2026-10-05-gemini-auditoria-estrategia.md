@@ -78,3 +78,21 @@ Tamaño de muestra (n): 140 posts (70 por brazo).
 Poder estadístico: Con n=70 por grupo y tu base actual de ~17% de engagement, este tamaño solo detectará efectos grandes (ej. si el Brazo B salta a un 35% de engagement). Si la diferencia real entre ambos estilos es sutil (ej. 17% vs 22%), 14 días no alcanzarán la significancia estadística (p<0.05) y requerirás un mes de recolección.
 
 Regla de decisión: Si el Brazo B supera al A por más del 15% en interacciones de terceros, la profanidad es un lastre de atención. Si hay empate estadístico, el registro no importa y puedes priorizar el que cueste menos tokens.
+
+## Pre-registro del experimento de voz (escrito antes del primer dato, 2026-10-05)
+
+Decisión de Bernard: sorteo **50/50** en todo target de registro `filo`, desde el 2026-10-06. Mecánica en
+`data/vocab.json` → `rotation.voice_trial`; el pick asigna el brazo, `finalize` lo exige (profano ≥ 2 groserías,
+limpio = 0), la interacción lo registra, `framework-stats` "Por VOZ" lo lee.
+
+- **Brazos:** `profano` (molde actual) vs `limpio` (filo sin groserías; mismo mordisco). El compasivo no entra.
+- **Outcome primario:** `third_party_stance` de los terceros que contestan a la reply, `apoyo / (apoyo + hostil)`,
+  con intervalo Jeffreys 95%. Es un proxy no validado (research 28-sep); con 3 de 80 interacciones con terceros
+  hoy, se espera escaso. **Secundarios:** `escalated / juzgadas`, `conceded`, `lurker_reactions`.
+- **n y corte:** lectura interina a 30 por brazo; corte a 70 por brazo o el 2026-11-05, lo primero. Con 70 por brazo
+  solo se detecta un efecto grande.
+- **Regla de decisión:** si al corte los intervalos de `apoyo` se traslapan, el registro no mueve a terceros y el
+  default se decide por otro criterio (costo, gusto de Bernard), no por "funciona mejor". Si se separan, gana el
+  brazo con más apoyo y menos `escalated`; si se contradicen entre sí, se reporta la contradicción, no un ganador.
+- **Lo que invalida la lectura:** `lurker-sweep` sin correr al cerrar cada lote (sin terceros no hay outcome);
+  drafts enriquecidos fuera del brazo (`finalize` lo bloquea); targets `filo` reclasificados a mitad del trial.
