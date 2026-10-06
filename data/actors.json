@@ -3603,6 +3603,21 @@
         "third_party_replies_to_opponent": [],
         "outcome_evidence": "Dean 23h: \"A newborn who never develops moral agency still had the capacity for moral agency\"",
         "outcome_note": "Dean contestó 23h después defendiendo por fin SU criterio: capacidad vs desarrollo (la recién nacida \"had the capacity for moral agency\"). Primera vez que paga la cuenta de su premisa en vez de pedir la mía; sigue sin conceder."
+      },
+      {
+        "thread_id": "28615704478052690",
+        "date": "2026-10-05",
+        "their_move": "Réplica 19 (their-own-words, 23h): defiende por fin SU criterio: la recién nacida \"had the capacity for moral agency, even if that capacity was never realised\"; analogía de la hembra que nunca madura; \"morally relevant\" no es \"sufficient\"; \"someone\" ya carga la conclusión; \"Why is sentience alone sufficient?\"",
+        "our_reply_summary": "Filo limpio (brazo sorteado limpio; 255 palabras): le reconocí que por fin defendió su criterio; una capacidad nunca realizada es la clase leída sobre la niña (lo llama capacidad para no llamarlo pertenencia); la cerda ya tiene realizado lo que él concedió; por qué basta la sintiencia: la propiedad decide por el cuerpo y el futuro del poseído y la sintiencia es donde hay alguien a quien pasarle por encima; su criterio debe el mismo paso. Cierre: ¿qué agrega una capacidad nunca realizada, contra ser poseída, que su punto de vista real no aporte ya?",
+        "outcome": "pending",
+        "framework": "filtro-especie-vs-individuo",
+        "draft_sha": "101adae1a6844c68",
+        "exposure_n": 40,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5
       }
     ],
     "user_id": "1198831097",
@@ -5521,6 +5536,21 @@
         "reply_position": 6,
         "outcome_evidence": "Mark 23h: \"Same as a dog? Same as putting reins on a child?… That halter is a testament to how happy that bull is\"",
         "outcome_note": "Tras mi respuesta directa sobre el cabestro, contestó 23h: \"Same as a dog? Same as putting reins on a child?\" y el cabestro como prueba de que el toro está contento. Analogías para diluir, pero contesta la pregunta."
+      },
+      {
+        "thread_id": "28648574331432371",
+        "date": "2026-10-05",
+        "their_move": "Réplica (su post de Banbury, 23h): \"Same as a dog? Same as putting reins on a child?\"; el cabestro es seguridad y prueba de que el toro está contento; \"What makes him theirs? A bill of sale. Which is also the the same way duty of care is enforced\"; igual con los hijos: \"take care of what is yours, or we will punish you\"",
+        "our_reply_summary": "Filo limpio (brazo sorteado limpio; 184 palabras): le reconocí \"A bill of sale\" como la respuesta directa; el papel explica cómo cambió de manos el reclamo, no por qué él era comprable; la analogía de los niños se voltea: responsables sin ser dueños, nadie los vende; el mismo papel que crea el deber de cuidado crea el poder de venderlo; la seguridad del cabestro concedida. Cierre: qué compró el papel, la responsabilidad por él o a él.",
+        "outcome": "pending",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "85666bfc4522f9e9",
+        "exposure_n": 5,
+        "assignment": "randomized",
+        "propensity": 0.3333333333333333,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5
       }
     ],
     "user_id": "100008613459447",
@@ -5656,5 +5686,40 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No pelear edades de sacrificio ni si el video está manipulado (ya se lo dijeron); no discutir la palabra slave ni compararla con esclavitud humana; no negar que la vaca entra sola: se concede entero."
+  },
+  {
+    "tactics": [
+      "crop_deaths_flip"
+    ],
+    "threads": [
+      "28704551619167975"
+    ],
+    "interactions": [
+      {
+        "thread_id": "28704551619167975",
+        "date": "2026-10-05",
+        "their_move": "Post propio (Open Debates 3, 8h, 3 reacciones): \"Is eating a crop-raiding rabbit more ethical. A question for the vegans. If i shoot a rabbit to protect a veggie crop and eat that rabbit is that better than that rabbit being poisoned and die a slow painfully death?\"",
+        "our_reply_summary": "Comentario raíz, filo profano (brazo sorteado profano; 190 palabras, 2 groserías): concedí la bala sobre el veneno; el conejo no es propiedad de nadie y si matar al que come la cosecha está bien es otra pregunta; la trampa es conejo contra conejo para cubrir a la vaca, el cerdo y la gallina criados como stock; su propia hortaliza es la prueba de que el corral no hace falta. Cierre: ¿qué nos dice un conejo \"crop-raiding\" del animal que nunca tuvo que criar como propiedad para \"protect a veggie crop\"?",
+        "outcome": "pending",
+        "framework": "no-necesidad-cambiaron-las-reglas",
+        "draft_sha": "97cff23f1455d852",
+        "exposure_n": 1,
+        "assignment": "randomized",
+        "propensity": 0.5,
+        "voice": "profano",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5
+      }
+    ],
+    "user_id": "100000380272431",
+    "name": "Andrew Evans",
+    "profile_url": "https://www.facebook.com/groups/770211166362062/user/100000380272431/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Plantea el conejo que come la cosecha como dilema de daño: dispararlo y comerlo vs veneno lento; busca que el vegano elija el menor daño y conceda que comer al animal sale mejor.",
+    "analisis": "Post raíz en Open Debates 3 (2026-10-05, 8h): \"A question for the vegans\". Es el crop_deaths_flip en forma de pregunta civil: pone dos muertes en la balanza (bala rápida vs veneno lento) para que la respuesta se dé en términos de cantidad de daño. El conejo no es propiedad de nadie; la trampa es contestar cuál muerte es más ética en vez de notar que ninguna de las dos es la granja. Tono civil, sin insulto; hilo con Steve Adams (troll, \"vegtarded\") y Paul Garcia (afina la comparación).",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No competir en cuál muerte duele menos (eso es bienestarismo y concede el eje). No negar que la bala es mejor que el veneno lento: se concede. No tratar al conejo silvestre como si fuera la cerda de la granja: nadie lo posee."
   }
 ]

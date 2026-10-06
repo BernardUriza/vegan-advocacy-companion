@@ -48,7 +48,7 @@ Nada de body-count ni cuál muerte es peor; no defender ni condenar el control d
 - **Su jugada:** Réplica 46m: "if i buy the pig… I own it… If I slaughter the pig, I own the meat. That's the law." + culling de ferales + "without farming animals we won't feed 8 billion" + cult/emotion/study the law.
 - **Nuestra respuesta:** Concedí la cadena como descripción exacta del título; la ley registra cómo pasa de mano, no qué lo legitima; una línea al sello; su 8 mil millones es la tesis de propiedad necesaria. Cierre: ¿poseer a un cerdo que puede asustarse es lo que hace falta para alimentar 8 mil millones, o solo lo que la ley permite?
 
-### Hilo `28459136643743554` — 2026-10-02 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-10-02 · outcome: **engaged**
 - **Su jugada:** so we are in agreement than. Excellent. (salida ante "is owning a pig what it takes to feed 8 billion, or just what the law allows?")
 - **Nuestra respuesta:** Filo (71 palabras): de acuerdo solo en qué dice la ley; el reclamo de necesidad de los 8 mil millones lo trajo él y lo dejó en la mesa. Cierre: ¿necesario para alimentar a 8 mil millones, o solo lo que la ley deja hacer?
 

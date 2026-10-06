@@ -138,7 +138,7 @@ NO pelear el body-count ni el "welfare mejora" (concederlo: mejor trato no cambi
 - **Su jugada:** the whole body. Domesticated animals are symbiotic with humans.
 - **Nuestra respuesta:** Filo moderado (113 palabras): concedí la dependencia (la criamos nosotros); "symbiotic" tapa quién lleva el registro de cría, se queda con las crías, las vende y fija el final; cité su frase de junio "The one doing all the brainwork holds the reins". Cierre: which symbiosis has one partner holding the reins on the other’s breeding, her calves and the date she dies?
 
-### Hilo `28469926949331190` — 2026-10-03 · outcome: **pending**
+### Hilo `28469926949331190` — 2026-10-03 · outcome: **escalated**
 - **Su jugada:** The one who can plan, discover and understand genetics, who can cure and store hay & grain, who can pull a stuck calf and treat mastitis with antibiotic they invented, the one who can give many more good years and a better death than any nature can offer.
 - **Nuestra respuesta:** Filo moderado (140 palabras): su lista es real y mucha es cuidado (becerro atorado, mastitis, heno); planear genética, decidir cría, quedarse con becerros y elegir "a better death" es la mano del dueño, la misma que fija la fecha; "The one who can" dice quién tiene poder, no quién tiene título; enfermeras y padres cuidan y nadie les da la propiedad. Cierre: since when does being able to care for her give you the right to breed, sell and end her?
 

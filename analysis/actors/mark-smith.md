@@ -70,8 +70,12 @@ No atacar a su familia ni burlarse del orgullo; conceder los empleos y la prospe
 - **Su jugada:** Réplica (su post de Banbury, 8h): "No, talking animals are only in fairytales. Like the idea of a meal that didn't cost a life."
 - **Nuestra respuesta:** Seco (71 palabras): su "No" es la respuesta honesta; nadie pidió que hablara, el cabestro está porque contesta con las patas; concedí las muertes en los campos: a esos nadie los crió, paseó en un ring ni subastó, y Banbury existía para eso. Cierre: So what was the halter for?
 
-### Hilo `28648574331432371` — 2026-10-04 · outcome: **pending**
+### Hilo `28648574331432371` — 2026-10-04 · outcome: **engaged**
 - **Su jugada:** Réplica (su post de Banbury, 56m): "Nope, they don't do any morse codes shit with their legs either… before I utterly destroy that argument, tell me, what do you think the alter is for?"
 - **Nuestra respuesta:** Seco (83 palabras): contesté su pregunta de frente: el cabestro le dirige la cabeza, quien tiene la cuerda lo lleva adonde quiere, lo para frente al juez y el comprador y evita que se vaya; concedí el morse (un animal que jala solo quiere estar en otro lado); el cabestro es cómo otro decidió por él ese día. Cierre: Destroy away, I'm listening: what made him theirs to decide for?
+
+### Hilo `28648574331432371` — 2026-10-05 · outcome: **pending**
+- **Su jugada:** Réplica (su post de Banbury, 23h): "Same as a dog? Same as putting reins on a child?"; el cabestro es seguridad y prueba de que el toro está contento; "What makes him theirs? A bill of sale. Which is also the the same way duty of care is enforced"; igual con los hijos: "take care of what is yours, or we will punish you"
+- **Nuestra respuesta:** Filo limpio (brazo sorteado limpio; 184 palabras): le reconocí "A bill of sale" como la respuesta directa; el papel explica cómo cambió de manos el reclamo, no por qué él era comprable; la analogía de los niños se voltea: responsables sin ser dueños, nadie los vende; el mismo papel que crea el deber de cuidado crea el poder de venderlo; la seguridad del cabestro concedida. Cierre: qué compró el papel, la responsabilidad por él o a él.
 
 _Hilos: 28648574331432371_
