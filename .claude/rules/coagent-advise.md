@@ -255,6 +255,12 @@ el pick trae `voice` (`profano | limpio`), `voice_assignment: randomized` y `voi
   quitárselas a uno profano, rompe la comparación y `finalize` lo bloquea. `style-gate --voice <brazo>` avisa antes.
 - Al registrar la interacción se copian del recibo `voice`, `voice_assignment` y `voice_propensity`; `db.mjs`
   los exige desde `VOICE_SINCE`. `framework-stats` lee el trial en "Por VOZ" y dice cuándo cortar.
+- **El brazo es por PERSONA, no por reply (ronda 3 con Gemini, 2026-10-05).** El primer sorteo de un target
+  desde `since` se hereda en toda reply posterior a esa persona, en cualquier post (`voice_inherited: true` en el
+  pick): un mismo lector no ve a Bernard profano hoy y limpio mañana con el mismo oponente. La n que compara es la
+  columna `targets`. El análisis primario solo cuenta `reply_position ≤ 3` (de la posición 4 en adelante casi
+  nadie más entra: 2/181); al elegir a quién contestar, una reply en la posición 1–3 de su comentario raíz vale
+  para el experimento y una vuelta 9 con Les no.
 
 ## PASO 0 — seed-gate ANTES de seedear (mecánica, root fix 2026-06-21)
 
