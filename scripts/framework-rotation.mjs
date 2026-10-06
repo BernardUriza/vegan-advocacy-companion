@@ -49,6 +49,9 @@ export function planVoice(actor, policy, rng = Math.random) {
   const t = policy.voice_trial?.value;
   const eligible = Boolean(t) && Boolean(actor) && t.registers.includes(actor.register);
   if (!eligible) return { voice: null, voice_assignment: 'chosen', voice_draw: null, voice_propensity: null };
+  // sticky por target: el brazo que ya recibió desde `since` se hereda (un lector no ve dos registros de la misma persona)
+  const prior = (actor.interactions ?? []).find(i => !i.misattributed && i.date >= t.since && i.voice_assignment === 'randomized' && t.arms.includes(i.voice));
+  if (prior) return { voice: prior.voice, voice_assignment: 'randomized', voice_draw: null, voice_propensity: prior.voice_propensity ?? null, voice_inherited: true };
   const draw = rng();
   const first = draw < t.rate;
   return { voice: first ? t.arms[0] : t.arms[1], voice_assignment: 'randomized', voice_draw: draw, voice_propensity: first ? t.rate : 1 - t.rate };

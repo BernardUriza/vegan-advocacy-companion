@@ -11,7 +11,7 @@ import { readActors, threadOpenUrl, updateInteractionLurker, updateInteractionPl
 import { MAX_AGE_DAYS, isStaleDate } from './freshness.mjs';
 import { readFileSync, existsSync } from 'fs';
 import { resolve } from 'path';
-import { loadConsultDrafts, matchMyTurns, thirdPartyReplies, annotate, COAGENT_DIR } from './lurker.mjs';
+import { loadConsultDrafts, matchMyTurns, thirdPartyReplies, thirdPartyRepliesToOpponent, opponentTurnIndex, annotate, COAGENT_DIR } from './lurker.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const asJson = process.argv.includes('--json');
@@ -77,17 +77,21 @@ for (const thread_id of fresh) {
   const rows = [];
   for (const m of matched) {
     const needle = m.interaction.their_move.slice(0, 40);
-    const thirdParty = thirdPartyReplies(d.turns, d.turns.indexOf(m.turn), m.name);
+    const myIndex = d.turns.indexOf(m.turn);
+    const thirdParty = thirdPartyReplies(d.turns, myIndex, m.name);
+    const toOpponent = thirdPartyRepliesToOpponent(d.turns, myIndex, m.name);
+    const oppIdx = opponentTurnIndex(d.turns, myIndex, m.name);
+    const opponentReactions = oppIdx >= 0 && Number.isInteger(d.turns[oppIdx].reactions) ? d.turns[oppIdx].reactions : null;
     let written = false, writeError = null;
     if (!dryRun) {
       try {
-        updateInteractionLurker(m.user_id, thread_id, m.interaction.date, needle, { reactions: m.turn.reactions ?? 0, thirdParty, draftSha: m.draft_sha, checkedAt, depth: m.turn.depth, position: m.turn.position });
+        updateInteractionLurker(m.user_id, thread_id, m.interaction.date, needle, { reactions: m.turn.reactions ?? 0, thirdParty, draftSha: m.draft_sha, checkedAt, depth: m.turn.depth, position: m.turn.position, opponentReactions, thirdPartyToOpponent: toOpponent });
         written = true;
       } catch (e) {
         writeError = String(e.message || e);
       }
     }
-    rows.push({ target: m.name, date: m.interaction.date, framework: m.interaction.framework ?? null, reactions: m.turn.reactions ?? 0, thirdParty: thirdParty.length, depth: m.turn.depth, position: m.turn.position, draft_sha: m.draft_sha, written, writeError });
+    rows.push({ target: m.name, date: m.interaction.date, framework: m.interaction.framework ?? null, reactions: m.turn.reactions ?? 0, thirdParty: thirdParty.length, toOpponent: toOpponent.length, opponentReactions, depth: m.turn.depth, position: m.turn.position, draft_sha: m.draft_sha, written, writeError });
   }
   threads.push({
     thread_id, url, complete: d.complete !== false, postReactions: d.postReactions ?? null, drafts: drafts.length,
@@ -118,7 +122,7 @@ for (const t of threads) {
   console.log(`${t.thread_id} · post 👍 ${t.postReactions ?? '-'} · ${t.drafts} draft(s) consultados${t.complete ? '' : ' · ⚠️ EXTRACCIÓN INCOMPLETA'}`);
   for (const r of t.matched) {
     const st = r.writeError ? `✗ ${r.writeError}` : r.written ? 'escrito' : 'dry-run';
-    console.log(`   💬 ${String(r.thirdParty).padStart(2)} terceros · 👍 ${String(r.reactions).padStart(3)} · d${r.depth}/p${r.position}  → ${r.target} [${r.date}] ${r.framework ?? '(sin framework)'} · ${st}`);
+    console.log(`   💬 ${String(r.thirdParty).padStart(2)} terceros (+${r.toOpponent} al oponente, 👍 opp ${r.opponentReactions ?? '-'}) · 👍 ${String(r.reactions).padStart(3)} · d${r.depth}/p${r.position}  → ${r.target} [${r.date}] ${r.framework ?? '(sin framework)'} · ${st}`);
   }
   for (const u of t.unmatched) console.log(`   👍 ${String(u.reactions).padStart(3)}  ?  → ${u.target ?? '(raíz)'} — sin match (${u.reason}): "${u.head}"`);
   console.log('');

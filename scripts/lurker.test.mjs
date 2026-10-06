@@ -177,3 +177,20 @@ test('updateInteractionLurker y updateInteractionPlacement rechazan una ubicaciÃ
   assert.throws(() => updateInteractionLurker('x', 'T', '2026-10-06', 'n', { reactions: 0, depth: 5, position: 1 }), /reply_depth/);
   assert.throws(() => updateInteractionPlacement('x', 'T', 'sha', { depth: 1, position: 0 }), /reply_position/);
 });
+
+test('thirdPartyRepliesToOpponent y opponentTurnIndex: el tercero que le contesta al oponente tras mi reply, y el turno al que respondÃ­', async () => {
+  const { thirdPartyRepliesToOpponent, opponentTurnIndex, thirdPartyReplies } = await import('./lurker.mjs');
+  const turns = [
+    { author: 'Les M', target: null, text: 'root' },
+    { author: 'Bernard Uriza Orozco', target: 'Les M', isMine: true, text: 'mine' },
+    { author: 'Ana', target: 'Les M', text: 'refuting Les' },
+    { author: 'Ana', target: 'Bernard Uriza Orozco', text: 'to me' },
+    { author: 'Les M', target: 'Bernard Uriza Orozco', text: 'les again' },
+    { author: 'Bernard Uriza Orozco', target: 'Les M', isMine: true, text: 'mine 2' },
+    { author: 'Bob', target: 'Les M', text: 'after my second turn' },
+  ];
+  assert.equal(opponentTurnIndex(turns, 1, 'Les M'), 0);
+  assert.deepEqual(thirdPartyRepliesToOpponent(turns, 1, 'Les M').map((r) => r.text), ['refuting Les']);
+  assert.deepEqual(thirdPartyReplies(turns, 1, 'Les M').map((r) => r.text), ['to me']);
+  assert.deepEqual(thirdPartyRepliesToOpponent(turns, 1, null), []);
+});

@@ -299,7 +299,7 @@ export function reviseInteractionDraftSha(userId, threadId, oldSha, newSha) {
 
 // Señal del lurker: reacciones a MI reply de esa interacción, mismo match que
 // updateInteractionOutcome (user_id, thread_id, date, needle de their_move); aborta si no es único.
-export function updateInteractionLurker(userId, threadId, date, needle, { reactions, thirdParty = null, draftSha = null, checkedAt = new Date().toISOString(), depth = null, position = null }) {
+export function updateInteractionLurker(userId, threadId, date, needle, { reactions, thirdParty = null, draftSha = null, checkedAt = new Date().toISOString(), depth = null, position = null, opponentReactions = null, thirdPartyToOpponent = null }) {
   if (!Number.isInteger(reactions) || reactions < 0) throw new Error(`reactions inválido: ${reactions}`);
   placementProblem(depth, position);
   const actors = readActors();
@@ -316,6 +316,8 @@ export function updateInteractionLurker(userId, threadId, date, needle, { reacti
   it.lurker_checked_at = checkedAt;
   if (thirdParty) it.third_party_replies = thirdParty;
   if (depth !== null) { it.reply_depth = depth; it.reply_position = position; }
+  if (Number.isInteger(opponentReactions) && opponentReactions >= 0) it.opponent_reactions = opponentReactions;
+  if (thirdPartyToOpponent) it.third_party_replies_to_opponent = thirdPartyToOpponent;
   writeJsonAtomic(ACTORS_PATH, actors);
   return { user_id: userId, thread_id: threadId, date, lurker_reactions: reactions, lurker_checked_at: checkedAt };
 }

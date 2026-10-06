@@ -64,42 +64,53 @@ table('Por framework', sortRows(byFramework), k => (nameOf[k] ?? k).slice(0, 60)
 // contra readout_n / stop_n y stop_date (data/vocab.json → rotation.voice_trial).
 const trial = readVocab().rotation.voice_trial?.value;
 if (trial) {
-  const byVoice = new Map(trial.arms.map(a => [a, blank()]));
-  for (const actor of readActors()) {
-    for (const it of actor.interactions ?? []) {
-      if (it.misattributed || it.voice_assignment !== 'randomized' || !(it.date >= trial.since) || !byVoice.has(it.voice)) continue;
-      const s = byVoice.get(it.voice);
-      if (Number.isInteger(it.reply_depth)) {
-        const k = `d${it.reply_depth}`;
-        (s.byDepth ??= {})[k] ??= { n: 0, third: 0 };
-        s.byDepth[k].n++;
-        if ((it.third_party_replies ?? []).length) s.byDepth[k].third++;
+  const maxPos = trial.primary_max_position ?? Infinity;
+  const build = (keep) => {
+    const byVoice = new Map(trial.arms.map(a => [a, { ...blank(), targets: new Set(), byDepth: {} }]));
+    for (const actor of readActors()) {
+      for (const it of actor.interactions ?? []) {
+        if (it.misattributed || it.voice_assignment !== 'randomized' || !(it.date >= trial.since) || !byVoice.has(it.voice) || !keep(it)) continue;
+        const s = byVoice.get(it.voice);
+        s.deploys++;
+        s.targets.add(actor.user_id);
+        if (it.outcome === 'pending') s.pending++;
+        else if (OUTCOMES.includes(it.outcome)) s[it.outcome]++;
+        if (STANCES.includes(it.third_party_stance)) s[it.third_party_stance]++;
+        if (Number.isInteger(it.lurker_reactions)) { s.lurkerMeasured++; s.likes += it.lurker_reactions; }
+        if (Number.isInteger(it.reply_depth)) {
+          const k = `d${it.reply_depth}`;
+          s.byDepth[k] ??= { n: 0, third: 0 };
+          s.byDepth[k].n++;
+          if ((it.third_party_replies ?? []).length || (it.third_party_replies_to_opponent ?? []).length) s.byDepth[k].third++;
+        }
       }
-      s.deploys++;
-      if (it.outcome === 'pending') s.pending++;
-      else if (OUTCOMES.includes(it.outcome)) s[it.outcome]++;
-      if (STANCES.includes(it.third_party_stance)) s[it.third_party_stance]++;
-      if (Number.isInteger(it.lurker_reactions)) { s.lurkerMeasured++; s.likes += it.lurker_reactions; }
     }
-  }
+    return byVoice;
+  };
   const ratio = (k, n) => n ? `${k}/${n} [${pct(jeffreysInterval(k, n).lo)}–${pct(jeffreysInterval(k, n).hi)}]` : '—';
-  console.log(`\nPor VOZ (voice_trial desde ${trial.since}; solo sorteados; corte a ${trial.stop_n}/brazo o ${trial.stop_date})\n`);
-  const header = ['brazo', 'n', 'apoyo/(apoyo+hostil)', 'escalated', 'conceded', 'terceros', 'likes/medidos'];
-  const body = [...byVoice.entries()].map(([arm, s]) => {
-    const judged = s.deploys - s.pending;
-    return [arm, String(s.deploys), ratio(s.apoyo, s.apoyo + s.hostil), ratio(s.escalated, judged), ratio(s.conceded, judged), stanceCell(s), `${s.likes}/${s.lurkerMeasured}`];
-  });
-  const w = header.map((h, i) => Math.max(h.length, ...body.map(r => r[i].length)));
-  const fmt = r => r.map((c, i) => (i === 0 ? c.padEnd(w[i]) : c.padStart(w[i]))).join('  ');
-  console.log(fmt(header));
-  console.log(w.map(n => '-'.repeat(n)).join('  '));
-  for (const r of body) console.log(fmt(r));
-  console.log('\nbrazo × profundidad (n · con terceros); la profundidad confunde al brazo si se reparte distinto:');
-  for (const [arm, s] of byVoice) console.log(`  ${arm.padEnd(8)} ${['d0', 'd1', 'd2'].map(k => `${k} ${s.byDepth?.[k]?.n ?? 0}·${s.byDepth?.[k]?.third ?? 0}`).join('   ')}`);
-  const minN = Math.min(...[...byVoice.values()].map(s => s.deploys));
-  const stage = minN >= trial.stop_n ? `n alcanzado: CORTE, decide la doctrina` : minN >= trial.readout_n ? `lectura interina (≥${trial.readout_n}/brazo); el corte es a ${trial.stop_n}` : `recolectando: faltan ${trial.readout_n - minN} por brazo para la lectura interina`;
+  const print = (title, byVoice) => {
+    console.log(`\n${title}\n`);
+    const header = ['brazo', 'n', 'targets', 'apoyo/(apoyo+hostil)', 'escalated', 'conceded', 'terceros', 'likes/medidos'];
+    const body = [...byVoice.entries()].map(([arm, s]) => {
+      const judged = s.deploys - s.pending;
+      return [arm, String(s.deploys), String(s.targets.size), ratio(s.apoyo, s.apoyo + s.hostil), ratio(s.escalated, judged), ratio(s.conceded, judged), stanceCell(s), `${s.likes}/${s.lurkerMeasured}`];
+    });
+    const w = header.map((h, i) => Math.max(h.length, ...body.map(r => r[i].length)));
+    const fmt = r => r.map((c, i) => (i === 0 ? c.padEnd(w[i]) : c.padStart(w[i]))).join('  ');
+    console.log(fmt(header));
+    console.log(w.map(n => '-'.repeat(n)).join('  '));
+    for (const r of body) console.log(fmt(r));
+  };
+  const primary = build(it => !Number.isInteger(it.reply_position) || it.reply_position <= maxPos);
+  const all = build(() => true);
+  print(`Por VOZ — PRIMARIO (voice_trial desde ${trial.since}; sorteados; posición ≤ ${maxPos}; sticky por ${trial.unit}; corte ${trial.stop_n}/brazo o ${trial.stop_date})`, primary);
+  print('Por VOZ — secundario (todas las posiciones)', all);
+  console.log('\nbrazo × profundidad en el primario (n · con terceros a mí o al oponente):');
+  for (const [arm, s] of primary) console.log(`  ${arm.padEnd(8)} ${['d0', 'd1', 'd2'].map(k => `${k} ${s.byDepth[k]?.n ?? 0}·${s.byDepth[k]?.third ?? 0}`).join('   ')}`);
+  const minN = Math.min(...[...primary.values()].map(s => s.deploys));
+  const stage = minN >= trial.stop_n ? 'n alcanzado: CORTE, decide la doctrina' : minN >= trial.readout_n ? `lectura interina (≥${trial.readout_n}/brazo); el corte es a ${trial.stop_n}` : `recolectando: faltan ${trial.readout_n - minN} por brazo (primario) para la lectura interina`;
   const daysLeft = Math.ceil((new Date(trial.stop_date) - Date.now()) / 86400000);
-  console.log(`\n${stage} · ${daysLeft >= 0 ? `${daysLeft} días hasta ${trial.stop_date}` : `stop_date ${trial.stop_date} ya pasó: CORTE`}. Si los intervalos de apoyo se traslapan al corte, el registro no mueve a terceros.`);
+  console.log(`\n${stage} · ${daysLeft >= 0 ? `${daysLeft} días hasta ${trial.stop_date}` : `stop_date ${trial.stop_date} ya pasó: CORTE`}. Si los intervalos de apoyo se traslapan al corte, el registro no mueve a terceros. La n que compara es "targets", no "n": el brazo es por persona.`);
 }
 
 const untested = frameworks.filter(f => f.family !== 'auto-disciplina' && !byFramework.has(f.id));

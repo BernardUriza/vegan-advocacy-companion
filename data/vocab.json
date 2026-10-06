@@ -218,9 +218,11 @@
         "min_profanity": 2,
         "readout_n": 30,
         "stop_n": 70,
-        "stop_date": "2026-11-05"
+        "stop_date": "2026-11-05",
+        "unit": "target",
+        "primary_max_position": 3
       },
-      "why": "Experimento pre-registrado (analysis/research/2026-10-05-gemini-auditoria-estrategia.md): el filo profano no tiene evidencia ni a favor ni en contra ante terceros. Cada target filo se sortea 50/50 entre profano (al menos min_profanity groserías) y filo limpio (cero). Outcome primario: third_party_stance apoyo vs hostil; secundarios escalated, conceded, lurker_reactions. Lectura interina a readout_n por brazo; corte a stop_n por brazo o en stop_date, lo que llegue primero. Decisión de Bernard 2026-10-05."
+      "why": "Experimento pre-registrado (analysis/research/2026-10-05-gemini-auditoria-estrategia.md): el filo profano no tiene evidencia ni a favor ni en contra ante terceros. Cada target filo se sortea 50/50 entre profano (al menos min_profanity groserías) y filo limpio (cero). Outcome primario: third_party_stance apoyo vs hostil; secundarios escalated, conceded, lurker_reactions. Lectura interina a readout_n por brazo; corte a stop_n por brazo o en stop_date, lo que llegue primero. Decisión de Bernard 2026-10-05. Ronda 3 con Gemini (2026-10-05): la unidad de aleatorización es el TARGET (sticky: su primer sorteo desde `since` se hereda en toda reply posterior, en cualquier post; un mismo lector no ve dos registros de la misma persona), y el análisis primario se restringe a reply_position ≤ primary_max_position (la tasa de terceros colapsa de la posición 4 en adelante: 2/181); todas las posiciones quedan como secundario."
     }
   }
 }

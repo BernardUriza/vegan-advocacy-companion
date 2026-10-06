@@ -177,6 +177,25 @@ export function annotate(turns) {
   });
 }
 
+// El turno del oponente al que respondí: el suyo más cercano antes del mío.
+export function opponentTurnIndex(turns, myIndex, interlocutor) {
+  for (let j = myIndex - 1; j >= 0; j--) if (turns[j].author === interlocutor && !turns[j].isMine) return j;
+  return -1;
+}
+
+// Terceros que le contestan al OPONENTE después de mi reply (Gemini 2026-10-05: el lurker que refuta al
+// otro no me escribe a mí). Mismo tramo que thirdPartyReplies: hasta mi siguiente turno.
+export function thirdPartyRepliesToOpponent(turns, myIndex, interlocutor) {
+  const out = [];
+  for (let j = myIndex + 1; j < turns.length; j++) {
+    const t = turns[j];
+    if (t.isMine) break;
+    if (!interlocutor || !(t.target || '').includes(interlocutor) || t.author === interlocutor) continue;
+    out.push({ author: t.author, user_id: t.user_id ?? null, text: (t.text || '').slice(0, 400) });
+  }
+  return out;
+}
+
 // Respuestas de TERCEROS a mi reply: los turnos que siguen a mi turno (thread-extract inserta cada
 // reply tras su padre), dirigidos a mí, de alguien que no es el interlocutor, hasta mi siguiente turno.
 export function thirdPartyReplies(turns, myIndex, interlocutor) {

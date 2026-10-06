@@ -107,6 +107,9 @@ if (cmd === 'emit') {
           our_reply_summary: it.our_reply_summary,
           current_outcome: it.outcome ?? 'pending',
           third_party_replies: it.third_party_replies ?? [],
+          third_party_replies_to_opponent: it.third_party_replies_to_opponent ?? [],
+          opponent_reactions: it.opponent_reactions ?? null,
+          lurker_reactions: it.lurker_reactions ?? null,
         })),
         exchange,
       });
@@ -119,7 +122,8 @@ if (cmd === 'emit') {
   console.log('  Claude: lee el arco de cada packet, juzga outcome (conceded/engaged/silent/escalated/goalpost)');
   console.log('  + una nota corta por framework (qué aterrizó / por qué), y escribe .coagent/reflex-verdicts.json:');
   console.log('  [{ user_id, thread_id, date, needle (substring del their_move), outcome, note, evidence, third_party_stance? }]');
-  console.log('  third_party_stance (apoyo|hostil|neutral|mixto|ninguno) solo si la interacción trae third_party_replies.');
+  console.log('  third_party_stance (apoyo|hostil|neutral|mixto|ninguno) si la interacción trae third_party_replies o third_party_replies_to_opponent:');
+  console.log('  un tercero que refuta al OPONENTE cuenta como apoyo; uno que lo respalda, como hostil (es el contraste del intercambio, no mi nodo solo).');
 } else if (cmd === 'apply') {
   const vf = fileArg('--verdicts', '.coagent/reflex-verdicts.json');
   const dry = process.argv.includes('--dry-run');

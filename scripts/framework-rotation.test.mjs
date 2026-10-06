@@ -134,3 +134,23 @@ test('a chosen voice (or a pick from before the trial) never blocks finalize', (
   assert.deepEqual(voiceProblems({ exposure_n: 2, assignment: 'chosen' }, SWEAR, policy), []);
   assert.deepEqual(voiceProblems(null, SWEAR, policy), []);
 });
+
+test('sticky por target: el brazo sorteado desde voice_trial.since se hereda en la siguiente reply, sin consumir rng', () => {
+  const since = policy.voice_trial.value.since;
+  const a = actor({ interactions: [{ framework: 'antropoespecismo', date: since, voice: 'limpio', voice_assignment: 'randomized', voice_propensity: 0.5 }] });
+  const v = planVoice(a, policy, seq(0.01));
+  assert.equal(v.voice, 'limpio');
+  assert.equal(v.voice_assignment, 'randomized');
+  assert.equal(v.voice_inherited, true);
+  assert.equal(v.voice_propensity, 0.5);
+  const p = planPick({ actor: a, frameworks, policy, rng: seq(0.9) });
+  assert.equal(p.voice, 'limpio');
+});
+
+test('una interacción anterior al trial, o con voz observada (chosen), no hereda nada: se sortea', () => {
+  const before = actor({ interactions: [{ framework: 'antropoespecismo', date: '2026-10-01', voice: 'profano', voice_assignment: 'randomized', voice_propensity: 0.5 }] });
+  assert.equal(planVoice(before, policy, seq(0.9)).voice, 'limpio');
+  const chosen = actor({ interactions: [{ framework: 'antropoespecismo', date: policy.voice_trial.value.since, voice: 'profano', voice_assignment: 'chosen' }] });
+  assert.equal(planVoice(chosen, policy, seq(0.9)).voice, 'limpio');
+  assert.equal(planVoice(chosen, policy, seq(0.9)).voice_inherited, undefined);
+});
