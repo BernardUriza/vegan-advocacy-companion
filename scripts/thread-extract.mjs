@@ -128,7 +128,11 @@ function walkArticles({ ME, postId }) {
       if (inText) return inText[1] + inText[2];
       return '';
     })();
-    rows.push({ author, user_id, target, isMine, label: label.slice(0, 90), ageStr, text, reactionLabels });
+    // profundidad REAL en el DOM (0 = comentario raíz, 1 = reply al comentario, 2 = reply a una reply);
+    // FB pinta las replies en lista plana bajo su raíz, así que el label solo distingue comment/reply
+    let depth = 0;
+    for (let p = a.parentElement; p; p = p.parentElement) if (p.getAttribute('role') === 'article') depth++;
+    rows.push({ author, user_id, target, isMine, depth, label: label.slice(0, 90), ageStr, text, reactionLabels });
   }
   return { postOwner, rows, postReactionLabels, foreignDropped };
 }
