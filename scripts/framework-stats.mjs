@@ -69,6 +69,12 @@ if (trial) {
     for (const it of actor.interactions ?? []) {
       if (it.misattributed || it.voice_assignment !== 'randomized' || !(it.date >= trial.since) || !byVoice.has(it.voice)) continue;
       const s = byVoice.get(it.voice);
+      if (Number.isInteger(it.reply_depth)) {
+        const k = `d${it.reply_depth}`;
+        (s.byDepth ??= {})[k] ??= { n: 0, third: 0 };
+        s.byDepth[k].n++;
+        if ((it.third_party_replies ?? []).length) s.byDepth[k].third++;
+      }
       s.deploys++;
       if (it.outcome === 'pending') s.pending++;
       else if (OUTCOMES.includes(it.outcome)) s[it.outcome]++;
@@ -88,6 +94,8 @@ if (trial) {
   console.log(fmt(header));
   console.log(w.map(n => '-'.repeat(n)).join('  '));
   for (const r of body) console.log(fmt(r));
+  console.log('\nbrazo × profundidad (n · con terceros); la profundidad confunde al brazo si se reparte distinto:');
+  for (const [arm, s] of byVoice) console.log(`  ${arm.padEnd(8)} ${['d0', 'd1', 'd2'].map(k => `${k} ${s.byDepth?.[k]?.n ?? 0}·${s.byDepth?.[k]?.third ?? 0}`).join('   ')}`);
   const minN = Math.min(...[...byVoice.values()].map(s => s.deploys));
   const stage = minN >= trial.stop_n ? `n alcanzado: CORTE, decide la doctrina` : minN >= trial.readout_n ? `lectura interina (≥${trial.readout_n}/brazo); el corte es a ${trial.stop_n}` : `recolectando: faltan ${trial.readout_n - minN} por brazo para la lectura interina`;
   const daysLeft = Math.ceil((new Date(trial.stop_date) - Date.now()) / 86400000);

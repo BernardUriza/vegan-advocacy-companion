@@ -39,8 +39,10 @@ y la profundidad 2 llegan juntas. No se puede separar "nadie lee el nivel 2" de 
 oponente no se ve.
 
 **Lo que sí autoriza este dato:** medir mejor, no cortar todavía. (a) Registrar `depth` y `position` en cada
-interacción nueva (el extractor ya trae `depth`); (b) en el readout del voice_trial (30/brazo) cruzar brazo ×
-profundidad; (c) si a 70/brazo la posición 4+ sigue en ~1% de terceros, proponerle a Bernard una regla de salida
+interacción (HECHO 2026-10-05: `reply_depth`/`reply_position` en el moat, 116 de 120 interacciones con `draft_sha`
+llenadas desde los tx con `lurker-sweep --backfill-placement`; 5 en d0, 23 en d1, 88 en d2; `lurker-sweep` las
+escribe en cada corrida); (b) en el readout del voice_trial (30/brazo) cruzar brazo ×
+profundidad (HECHO: `framework-stats` "Por VOZ" imprime brazo × d0/d1/d2 con terceros); (c) si a 70/brazo la posición 4+ sigue en ~1% de terceros, proponerle a Bernard una regla de salida
 por posición (no una denylist de personas), registrada en `notification-agrupation.md` con esta tabla.
 
 ## Visibilidad sin sesión (la prueba barata de Gemini)

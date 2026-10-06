@@ -8,28 +8,13 @@
 import { readdirSync, readFileSync, statSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { thirdPartyReplies } from './lurker.mjs';
+import { thirdPartyReplies, depthOf, annotate } from './lurker.mjs';
 import { jeffreysInterval } from './stats.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DIR = resolve(ROOT, '.coagent');
 
-// tx anteriores al campo `depth`: se deriva del aria-label (null → raíz; "'s comment" → 1; "'s reply" → 2)
-export function depthOf(turn) {
-  if (Number.isInteger(turn.depth)) return turn.depth;
-  if (!turn.target) return 0;
-  return /'s comment/.test(turn.label || '') ? 1 : 2;
-}
-
-// posición de la reply dentro de la lista de su comentario raíz (0 = es la raíz)
-export function annotate(turns) {
-  let pos = 0;
-  return turns.map((t) => {
-    const depth = depthOf(t);
-    pos = depth === 0 ? 0 : pos + 1;
-    return { ...t, depth, position: pos };
-  });
-}
+export { depthOf, annotate };
 
 export function collect(files, { since = null } = {}) {
   const rows = [];

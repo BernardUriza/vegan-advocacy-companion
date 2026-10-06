@@ -160,6 +160,23 @@ export function matchMyTurns(turns, drafts, threadId, actors) {
   return { matched, unmatched };
 }
 
+// Ubicación de un turno en el hilo: profundidad (0 raíz, 1 reply al comentario, 2 reply a una reply; del DOM
+// cuando thread-extract la trae, del aria-label en tx viejos) y posición en la lista de su comentario raíz.
+export function depthOf(turn) {
+  if (Number.isInteger(turn.depth)) return turn.depth;
+  if (!turn.target) return 0;
+  return /'s comment/.test(turn.label || '') ? 1 : 2;
+}
+
+export function annotate(turns) {
+  let pos = 0;
+  return turns.map((t) => {
+    const depth = depthOf(t);
+    pos = depth === 0 ? 0 : pos + 1;
+    return { ...t, depth, position: pos };
+  });
+}
+
 // Respuestas de TERCEROS a mi reply: los turnos que siguen a mi turno (thread-extract inserta cada
 // reply tras su padre), dirigidos a mí, de alguien que no es el interlocutor, hasta mi siguiente turno.
 export function thirdPartyReplies(turns, myIndex, interlocutor) {

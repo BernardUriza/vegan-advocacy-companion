@@ -148,3 +148,32 @@ test('thirdPartyReplies keeps replies to me from people other than the interlocu
   ];
   assert.deepEqual(thirdPartyReplies(turns, 0, 'Kirk Sawler'), [{ author: 'Jude Cooper', user_id: '1', text: 'pile on' }]);
 });
+
+test('annotate (SSOT de ubicación) numera profundidad y posición bajo el comentario raíz más cercano', async () => {
+  const { annotate, depthOf } = await import('./lurker.mjs');
+  assert.equal(depthOf({ depth: 1, target: 'X', label: "Reply by A to X's reply" }), 1);
+  const t = annotate([
+    { target: null, label: 'Comment by A 1h' },
+    { target: 'A', label: "Reply by B to A's comment 1h" },
+    { target: 'B', label: "Reply by C to B's reply 1h" },
+    { target: null, label: 'Comment by D 1h' },
+  ]);
+  assert.deepEqual(t.map((x) => [x.depth, x.position]), [[0, 0], [1, 1], [2, 2], [0, 0]]);
+});
+
+test('placementProblem: depth 0|1|2, position entera, raíz sii posición 0, y van juntos', async () => {
+  const { placementProblem } = await import('./db.mjs');
+  assert.doesNotThrow(() => placementProblem(null, null));
+  assert.doesNotThrow(() => placementProblem(0, 0));
+  assert.doesNotThrow(() => placementProblem(2, 9));
+  assert.throws(() => placementProblem(3, 1), /reply_depth/);
+  assert.throws(() => placementProblem(1, 0), /reply_position/);
+  assert.throws(() => placementProblem(0, 2), /reply_position/);
+  assert.throws(() => placementProblem(1, null), /reply_position/);
+});
+
+test('updateInteractionLurker y updateInteractionPlacement rechazan una ubicación inválida antes de leer el moat', async () => {
+  const { updateInteractionLurker, updateInteractionPlacement } = await import('./db.mjs');
+  assert.throws(() => updateInteractionLurker('x', 'T', '2026-10-06', 'n', { reactions: 0, depth: 5, position: 1 }), /reply_depth/);
+  assert.throws(() => updateInteractionPlacement('x', 'T', 'sha', { depth: 1, position: 0 }), /reply_position/);
+});

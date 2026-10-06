@@ -1,13 +1,17 @@
 // Lurker sweep: re-extrae los hilos FRESCOS del moat y escribe, por reply mía, las respuestas de terceros
 // (verbatim, para que el reflex codifique su postura) y lurker_reactions (dato secundario, no el norte).
 // Uso: node lurker-sweep.mjs [--dry-run] [--json] — nunca abre hilos de más de MAX_AGE_DAYS.
+//      node lurker-sweep.mjs --backfill-placement [--dry-run] — sin Chrome: escribe reply_depth/reply_position
+//      desde los .coagent/tx-*.json ya extraídos, solo donde el draft empata por draft_sha único.
 
 import { execFileSync } from 'child_process';
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { readActors, threadOpenUrl, updateInteractionLurker } from './db.mjs';
+import { readActors, threadOpenUrl, updateInteractionLurker, updateInteractionPlacement } from './db.mjs';
 import { MAX_AGE_DAYS, isStaleDate } from './freshness.mjs';
-import { loadConsultDrafts, matchMyTurns, thirdPartyReplies, COAGENT_DIR } from './lurker.mjs';
+import { readFileSync, existsSync } from 'fs';
+import { resolve } from 'path';
+import { loadConsultDrafts, matchMyTurns, thirdPartyReplies, annotate, COAGENT_DIR } from './lurker.mjs';
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const asJson = process.argv.includes('--json');
@@ -20,6 +24,26 @@ function extractThread(url) {
     stdio: ['ignore', 'pipe', 'ignore'],
   });
   return JSON.parse(out.toString('utf8'));
+}
+
+if (process.argv.includes('--backfill-placement')) {
+  const done = [], skipped = [];
+  const threadIds = new Set(readActors().flatMap(a => (a.interactions ?? []).filter(i => i.draft_sha && i.reply_depth === undefined).map(i => i.thread_id)));
+  for (const thread_id of threadIds) {
+    const tx = resolve(COAGENT_DIR, `tx-${thread_id}.json`);
+    if (!existsSync(tx)) { skipped.push({ thread_id, reason: 'sin tx' }); continue; }
+    const turns = annotate(JSON.parse(readFileSync(tx, 'utf8')).turns ?? []);
+    const { matched } = matchMyTurns(turns, loadConsultDrafts(thread_id), thread_id, readActors());
+    for (const m of matched) {
+      if (m.interaction.reply_depth !== undefined || !m.interaction.draft_sha) continue;
+      const row = { thread_id, target: m.name, date: m.interaction.date, depth: m.turn.depth, position: m.turn.position };
+      if (dryRun) { done.push(row); continue; }
+      try { updateInteractionPlacement(m.user_id, thread_id, m.interaction.draft_sha, { depth: m.turn.depth, position: m.turn.position }); done.push(row); }
+      catch (e) { skipped.push({ ...row, reason: String(e.message || e) }); }
+    }
+  }
+  console.log(JSON.stringify({ dryRun, written: done.length, skipped: skipped.length, byDepth: done.reduce((a, r) => ({ ...a, [r.depth]: (a[r.depth] ?? 0) + 1 }), {}), skippedDetail: skipped.slice(0, 12) }, null, 2));
+  process.exit(0);
 }
 
 const fresh = new Set();
@@ -48,7 +72,8 @@ for (const thread_id of fresh) {
   if (d.unavailable) { threads.push({ thread_id, url, error: 'post no disponible (borrado o restringido) — cerrar sus interacciones, no re-correr' }); continue; }
   if (!(d.turns ?? []).length) { threads.push({ thread_id, url, error: 'extracción vacía (0 turnos) — FB no terminó de cargar; re-correr' }); continue; }
   const drafts = loadConsultDrafts(thread_id);
-  const { matched, unmatched } = matchMyTurns(d.turns ?? [], drafts, thread_id, readActors());
+  d.turns = annotate(d.turns ?? []);
+  const { matched, unmatched } = matchMyTurns(d.turns, drafts, thread_id, readActors());
   const rows = [];
   for (const m of matched) {
     const needle = m.interaction.their_move.slice(0, 40);
@@ -56,13 +81,13 @@ for (const thread_id of fresh) {
     let written = false, writeError = null;
     if (!dryRun) {
       try {
-        updateInteractionLurker(m.user_id, thread_id, m.interaction.date, needle, { reactions: m.turn.reactions ?? 0, thirdParty, draftSha: m.draft_sha, checkedAt });
+        updateInteractionLurker(m.user_id, thread_id, m.interaction.date, needle, { reactions: m.turn.reactions ?? 0, thirdParty, draftSha: m.draft_sha, checkedAt, depth: m.turn.depth, position: m.turn.position });
         written = true;
       } catch (e) {
         writeError = String(e.message || e);
       }
     }
-    rows.push({ target: m.name, date: m.interaction.date, framework: m.interaction.framework ?? null, reactions: m.turn.reactions ?? 0, thirdParty: thirdParty.length, draft_sha: m.draft_sha, written, writeError });
+    rows.push({ target: m.name, date: m.interaction.date, framework: m.interaction.framework ?? null, reactions: m.turn.reactions ?? 0, thirdParty: thirdParty.length, depth: m.turn.depth, position: m.turn.position, draft_sha: m.draft_sha, written, writeError });
   }
   threads.push({
     thread_id, url, complete: d.complete !== false, postReactions: d.postReactions ?? null, drafts: drafts.length,
@@ -93,7 +118,7 @@ for (const t of threads) {
   console.log(`${t.thread_id} · post 👍 ${t.postReactions ?? '-'} · ${t.drafts} draft(s) consultados${t.complete ? '' : ' · ⚠️ EXTRACCIÓN INCOMPLETA'}`);
   for (const r of t.matched) {
     const st = r.writeError ? `✗ ${r.writeError}` : r.written ? 'escrito' : 'dry-run';
-    console.log(`   💬 ${String(r.thirdParty).padStart(2)} terceros · 👍 ${String(r.reactions).padStart(3)}  → ${r.target} [${r.date}] ${r.framework ?? '(sin framework)'} · ${st}`);
+    console.log(`   💬 ${String(r.thirdParty).padStart(2)} terceros · 👍 ${String(r.reactions).padStart(3)} · d${r.depth}/p${r.position}  → ${r.target} [${r.date}] ${r.framework ?? '(sin framework)'} · ${st}`);
   }
   for (const u of t.unmatched) console.log(`   👍 ${String(u.reactions).padStart(3)}  ?  → ${u.target ?? '(raíz)'} — sin match (${u.reason}): "${u.head}"`);
   console.log('');

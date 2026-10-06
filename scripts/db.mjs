@@ -299,8 +299,9 @@ export function reviseInteractionDraftSha(userId, threadId, oldSha, newSha) {
 
 // Señal del lurker: reacciones a MI reply de esa interacción, mismo match que
 // updateInteractionOutcome (user_id, thread_id, date, needle de their_move); aborta si no es único.
-export function updateInteractionLurker(userId, threadId, date, needle, { reactions, thirdParty = null, draftSha = null, checkedAt = new Date().toISOString() }) {
+export function updateInteractionLurker(userId, threadId, date, needle, { reactions, thirdParty = null, draftSha = null, checkedAt = new Date().toISOString(), depth = null, position = null }) {
   if (!Number.isInteger(reactions) || reactions < 0) throw new Error(`reactions inválido: ${reactions}`);
+  placementProblem(depth, position);
   const actors = readActors();
   const actor = actors.find(a => a.user_id === userId);
   if (!actor) throw new Error(`Actor ${userId} not found`);
@@ -314,8 +315,31 @@ export function updateInteractionLurker(userId, threadId, date, needle, { reacti
   it.lurker_reactions = reactions;
   it.lurker_checked_at = checkedAt;
   if (thirdParty) it.third_party_replies = thirdParty;
+  if (depth !== null) { it.reply_depth = depth; it.reply_position = position; }
   writeJsonAtomic(ACTORS_PATH, actors);
   return { user_id: userId, thread_id: threadId, date, lurker_reactions: reactions, lurker_checked_at: checkedAt };
+}
+
+// Dónde quedó MI reply en el hilo (research 2026-10-06-profundidad-vs-reacciones): reply_depth 0|1|2 y
+// reply_position (0 = raíz; n = n-ésima en la lista de su comentario raíz). Van juntos o no van.
+export function placementProblem(depth, position) {
+  if (depth === null && position === null) return;
+  if (![0, 1, 2].includes(depth)) throw new Error(`reply_depth inválido: ${depth} (0 | 1 | 2)`);
+  if (!Number.isInteger(position) || position < 0 || (depth === 0) !== (position === 0)) throw new Error(`reply_position inválido: ${position} con depth ${depth}`);
+}
+
+// Backfill de la ubicación sin tocar la señal del lurker (tx viejos, sin Chrome). Match por draft_sha único.
+export function updateInteractionPlacement(userId, threadId, draftSha, { depth, position }) {
+  placementProblem(depth, position);
+  const actors = readActors();
+  const actor = actors.find(a => a.user_id === userId);
+  if (!actor) throw new Error(`Actor ${userId} not found`);
+  const cand = (actor.interactions ?? []).filter(x => x.thread_id === threadId && x.draft_sha === draftSha);
+  if (cand.length !== 1) throw new Error(`match no único (${cand.length}) para ${userId}/${threadId} draft_sha=${draftSha}`);
+  cand[0].reply_depth = depth;
+  cand[0].reply_position = position;
+  writeJsonAtomic(ACTORS_PATH, actors);
+  return { user_id: userId, thread_id: threadId, draft_sha: draftSha, reply_depth: depth, reply_position: position };
 }
 
 // Efectividad de un framework (el moat): outcomes del oponente + `lurker` (reacciones a mis

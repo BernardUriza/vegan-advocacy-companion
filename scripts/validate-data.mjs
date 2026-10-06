@@ -1,7 +1,7 @@
 import { readFileSync, readdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { readActors, readTactics, readFrameworks, readVocab, vocabViolations, interactionProblems } from './db.mjs';
+import { readActors, readTactics, readFrameworks, readVocab, vocabViolations, interactionProblems, placementProblem } from './db.mjs';
 import { dossierFilenames, GENERATED_MARK } from './gen-dossiers.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -132,6 +132,9 @@ for (const a of actors) {
     if (hasR && !(Number.isInteger(it.lurker_reactions) && it.lurker_reactions >= 0)) errors.push(`${where} lurker_reactions must be a non-negative integer, got ${JSON.stringify(it.lurker_reactions)}`);
     if (hasT && !Number.isFinite(Date.parse(it.lurker_checked_at))) errors.push(`${where} lurker_checked_at is not a parseable date: ${JSON.stringify(it.lurker_checked_at)}`);
     if (hasR !== hasT) errors.push(`${where} lurker_reactions and lurker_checked_at must be set together`);
+    if (it.reply_depth !== undefined || it.reply_position !== undefined) {
+      try { placementProblem(it.reply_depth ?? null, it.reply_position ?? null); } catch (e) { errors.push(`${where} ${e.message}`); }
+    }
   }
 }
 if (missingFw) {

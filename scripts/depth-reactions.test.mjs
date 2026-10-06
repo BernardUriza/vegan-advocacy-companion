@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { depthOf, annotate, summarize } from './depth-reactions.mjs';
 
-test('depthOf uses the DOM depth when present and falls back to the aria-label for old tx', () => {
+test('depth-reactions re-exporta el SSOT de lurker.mjs: depthOf usa el depth del DOM when present and falls back to the aria-label for old tx', () => {
   assert.equal(depthOf({ depth: 2, target: null }), 2);
   assert.equal(depthOf({ target: null, label: 'Comment by A 3 hours ago' }), 0);
   assert.equal(depthOf({ target: 'A', label: "Reply by B to A's comment 2 hours ago" }), 1);
