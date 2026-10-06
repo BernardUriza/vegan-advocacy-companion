@@ -137,11 +137,13 @@
         "assignment": "chosen",
         "outcome_evidence": "CarolAnn→Bernard 1d: 'backyard chickens and cows also have names.'",
         "outcome_note": "filtro-especie-vs-individuo: contestó 'backyard chickens and cows also have names', esquiva el filtro por el nombre y no toca la salida escrita en la categoría livestock; deuda viva.",
-        "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_reactions": 1,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 22
+        "reply_position": 21,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28614822664807538",
@@ -157,7 +159,12 @@
         "outcome_evidence": "Su siguiente turno: \"You don't live in farming country, do you?\"",
         "outcome_note": "El verbo crudo bajo el nombre (Daisy sale en el camión) no recibió respuesta; saltó a pedir credencial de zona rural.",
         "reply_depth": 2,
-        "reply_position": 27
+        "reply_position": 24,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28614822664807538",
@@ -173,7 +180,12 @@
         "outcome_evidence": "\"It clear you have no concept of how small farms work and how long they choose to keep their animals. Not all cows end up as beef.\"",
         "outcome_note": "El reencuadre con su arco desde junio no la sacó de la conversación: contestó el fondo por primera vez con un dato (no todas terminan en carne), y dejó escapar \"how long they choose to keep their animals\".",
         "reply_depth": 2,
-        "reply_position": 24
+        "reply_position": 26,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28614822664807538",
@@ -186,7 +198,12 @@
         "assignment": "chosen",
         "outcome": "pending",
         "reply_depth": 2,
-        "reply_position": 26
+        "reply_position": 28,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       }
     ]
   },
@@ -781,12 +798,14 @@
         "draft_sha": "d612058f86bbaed7",
         "outcome": "silent",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Sin turnos de Frank tras mi reply de hace 4d.",
         "outcome_note": "Concedí lo del perro entero y planté el título; Frank no volvió en 4 días.",
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "opponent_reactions": 2,
+        "third_party_replies_to_opponent": []
       }
     ],
     "tone_note": "disdainful"
@@ -825,10 +844,12 @@
         "outcome_note": "algo-a-alguien: la pregunta en una línea aterrizó y ella contestó con un estatus, 'she is food' — etiqueta sin razón. Drive-by que engancha solo para sellar.",
         "draft_sha": "dddf70323536f9a2",
         "lurker_reactions": 1,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "opponent_reactions": 2,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28604913169131821",
@@ -841,10 +862,12 @@
         "outcome_note": "algo-a-alguien: cero respuesta a la línea única; escaló a sello personal por decir 'she' ('you must have a fetish'). No enganchar más: troll puro en esta copia.",
         "draft_sha": "d7cca396a2a28c59",
         "lurker_reactions": 1,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -857,10 +880,12 @@
         "outcome_evidence": "Dori → Bernard: \"sucks. Ate some ham tonight. Delicious.\"",
         "outcome_note": "algo-a-alguien-sujeto-derecho: contestó a 'food by whose decision' con un reporte de gusto (ham, delicious) — sigue en el intercambio pero sin argumento; el framework obligó a la preferencia a mostrarse desnuda.",
         "lurker_reactions": 1,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 5
+        "reply_position": 5,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -873,10 +898,12 @@
         "outcome_evidence": "Dori → Bernard (1h): \"and? Will you grieve long for her? Will you cry and wallow in your grief for 'her'? Please post a video!\"",
         "outcome_note": "algo-a-alguien-sujeto-derecho: tras 'taste report' ya no trajo razón; subió a burla ('will you grieve… post a video'). El framework dejó la preferencia desnuda; ella cambió a mofa, sello tras pregunta sin contestar.",
         "lurker_reactions": 1,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 3
+        "reply_position": 3,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28604913169131821",
@@ -887,12 +914,14 @@
         "draft_sha": "440e1ac4aed54ae4",
         "outcome": "escalated",
         "lurker_reactions": 1,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Dori→Bernard 1d: 'getting a bit testy are you?'",
         "outcome_note": "algo-a-alguien: tono-policing ('getting a bit testy are you?'), cero argumento; troll, no enganchar.",
         "reply_depth": 2,
-        "reply_position": 3
+        "reply_position": 3,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       }
     ]
   },
@@ -926,11 +955,13 @@
         "outcome_evidence": "Jude Cooper · 7h: 'so it's ok to shoot, poison or trap a pig that's not owned? But if you buy or breed that pig, pay for it's feed... than you're a bad person for eating it? Wow, vegan logic.'",
         "outcome_note": "algo-a-alguien: la distinción poseído/feral aterrizó y la volteó a straw ('so it's ok to shoot, poison or trap a pig that's not owned? ... Wow, vegan logic'). Enganchó el eje; lee la distinción como permiso para matar ferales y suma el 'yo lo cuido' (vet, feed, fencing) como legitimación.",
         "draft_sha": "93f2ba581c73c0d2",
-        "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_reactions": 1,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "opponent_reactions": 3,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -943,10 +974,12 @@
         "outcome_evidence": "Jude → Bernard (46m): \"if i buy the pig, I'm responsible for the pig. The pig is mine… That's the law.\"",
         "outcome_note": "algo-a-alguien-sujeto-derecho: aceptó implícitamente la distinción poseído/no-poseído y la defendió con la ley ('I own it… That's the law') + culling de ferales por la cosecha. Sigue en el intercambio; su respuesta es-legal, no reason.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 7
+        "reply_position": 7,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -957,12 +990,14 @@
         "draft_sha": "320508ae5502ee49",
         "outcome": "engaged",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Jude→Bernard 1d: 'so we're in agreement than. Excellent.'",
         "outcome_note": "dominacion-no-es-superioridad-moral: cierre sarcástico 'so we're in agreement then. Excellent' tras separar ley de legitimidad; no contestó qué legitima el título.",
         "reply_depth": 2,
-        "reply_position": 5
+        "reply_position": 5,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -976,7 +1011,12 @@
         "propensity": null,
         "outcome": "pending",
         "reply_depth": 2,
-        "reply_position": 3
+        "reply_position": 3,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       }
     ]
   },
@@ -1278,12 +1318,14 @@
         "draft_sha": "790b6b4a7b8c2880",
         "outcome": "engaged",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Anna→Bernard 1d: 'A non-sentient human is still protected under human rights because personhood comes with a set of rights. Non-humans do not possess those rights.'",
         "outcome_note": "antropoespecismo: nueva estación, petición de principio: 'personhood comes with a set of rights. Non-humans do not possess those rights'; niega haber usado rasgos y me manda con quienes sí ('go argue with the people who actually made that argument').",
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "outcome": "pending",
@@ -1297,12 +1339,14 @@
         "assignment": "chosen",
         "propensity": null,
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Último turno es mío, 1d.",
         "outcome_note": "Recibió el \"what the fuck is personhood doing here\"; 1 día sin respuesta, dentro del guard de frescura.",
         "reply_depth": 2,
-        "reply_position": 3
+        "reply_position": 3,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       }
     ]
   },
@@ -1443,13 +1487,15 @@
         "framework": "algo-a-alguien-sujeto-derecho",
         "outcome": "escalated",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "outcome_evidence": "Chris Duffy · 6h → Parnaibensis: 'it's not his fault his English is absolute trash so he uses AI to help. His point is also trash, animals are property end of story.'",
         "outcome_note": "algo-a-alguien: no contestó mi reply (16h). 6h después escaló en otra rama: a Parnaibensis 'his English is absolute trash so he uses AI... his point is also trash, animals are property end of story', y raíz nueva 'give it a rest, show us how you're actually helping animals'. Sello + deflexión a activismo. La cortesía de junio se acabó.",
         "draft_sha": "b4efb3adfad665ba",
         "third_party_replies": [],
         "reply_depth": 1,
-        "reply_position": 3
+        "reply_position": 3,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -1462,10 +1508,23 @@
         "outcome_evidence": "Chris → Bernard (20m): \"If all you do is write things on the internet… why should anyone listen to you? Do you understand animals bond with their owners?\"",
         "outcome_note": "algo-a-alguien-sujeto-derecho: la concesión del rescate + 'shit owner prueba que el título no zanja nada' no la tocó; pivotó a credencial ('what do you do for animals… why should anyone listen') y al vínculo dueño-animal. Buena fe, sigue hablando.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
-        "third_party_replies": [],
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [
+          {
+            "author": "Jason Patrick Fisher",
+            "user_id": "100056247520740",
+            "text": "Jason Patrick Fisher · 4dBernard Uriza Orozco You're so absurdly manipulative it's comical. LikeReply"
+          },
+          {
+            "author": "Jason Patrick Fisher",
+            "user_id": "100056247520740",
+            "text": "Jason Patrick Fisher · 4dBernard Uriza Orozco If you keep an animal as property so you can exploit its existence for your sense of self, you're no vegan.LikeReply"
+          }
+        ],
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -1476,12 +1535,14 @@
         "draft_sha": "9fcbf0ae4e45befa",
         "outcome": "engaged",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Chris→Bernard 23h: 'Tell me what your ideal situation is with my new lamb. I'm interested to hear what your dreams sound like.'",
         "outcome_note": "algo-a-alguien: contestó con insurance / nadie responde por animales salvajes / colgaban por robar caballos (=valor) y una invitación concreta: 'I just rescued a lamb yesterday. Tell me what your ideal situation is with my new lamb'.",
         "reply_depth": 2,
-        "reply_position": 6
+        "reply_position": 6,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "outcome": "pending",
@@ -1495,12 +1556,14 @@
         "assignment": "chosen",
         "propensity": null,
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Último turno es mío, 1d.",
         "outcome_note": "Concedí la maquinaria legal y le contesté lo de la cordera de frente; 1 día sin respuesta.",
         "reply_depth": 2,
-        "reply_position": 4
+        "reply_position": 4,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       }
     ]
   },
@@ -2021,10 +2084,12 @@
         "outcome_note": "sobreposicion/algo-a-alguien: recibos verbatim + concesión de lo descriptivo + su propia concesión de intereses; Les respondió con burden-flip ('you've only assumed, not demonstrated') y la analogía de mascotas. Sigue sin fundar el título; conversación viva.",
         "draft_sha": "2759bfe2d3a95da9",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28150669567887541",
@@ -2072,10 +2137,12 @@
         "outcome_note": "algo-a-alguien: el collage de recibos aterrizó — concesión de PROCEDENCIA ('congratulations, you found some comments I hadn't seen. Fair enough'), no del marco. Luego repite la estación: 'why does sentience automatically make ownership immoral? you assume it' y ofrece SU legitimación: uso humano con bienestar protegido + responsabilidad legal (pet owner decide vivienda, reproducción, eutanasia). Exige además prueba de que el veganismo es obligación. Retreat-cycle: petición de principio invertida + bienestarismo como título.",
         "draft_sha": "52f7b685ffbdc1b3",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 3
+        "reply_position": 3,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "outcome": "engaged",
@@ -2086,12 +2153,14 @@
         "framework": "bienestarismo-jugada-maestra-del-poder",
         "draft_sha": "19443a21f947dd12",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "outcome_evidence": "Les M · 52m: 'Human societies can grant humans categorical protections because they are humans while still recognising that animals are sentient'",
         "outcome_note": "bienestarismo-jugada-maestra: Les no soltó el 'fair enough' como concesión del título; contraatacó con 'moved the goalposts' y defendió que inteligencia/lenguaje/autoconciencia son diferencias moralmente relevantes y que 'humans because they are humans' basta. Engancha en serio, pero la especie volvió a hacer el trabajo decisivo: ahí está su flanco.",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 5
+        "reply_position": 5,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "outcome": "engaged",
@@ -2120,10 +2189,12 @@
         "outcome_evidence": "Les → Bernard (4m): \"you're getting increasingly worked up demanding I justify my position... human rights are a human invention\"",
         "outcome_note": "algo-a-alguien-sujeto-derecho: Les por fin pone su premisa sobre la mesa (human rights = invención humana, 'which part of being human'), con tono-policing ('increasingly worked up'). Aterrizó: dejó de pedir que yo justifique y empezó a justificar él.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 7
+        "reply_position": 7,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28150669567887541",
@@ -2166,12 +2237,14 @@
         "draft_sha": "5c429e1194465c9b",
         "outcome": "engaged",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Human rights aren't an individual intelligence test. They're protections HUMANS have established for other HUMANS",
         "outcome_note": "sobreposicion-de-especies: el newborn/dementia quedó concedido en sus palabras (\"rights aren't an individual intelligence test\"); respondió con 'protecciones de humanos para humanos' y exigió un argumento positivo. Engaged, sin concesión del título.",
         "reply_depth": 2,
-        "reply_position": 9
+        "reply_position": 9,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28150669567887541",
@@ -2206,10 +2279,12 @@
         "outcome_evidence": "Les→Bernard 1d: 'finally, an actual argument! And since you asked which step fails, I'll tell you. It's the enormous leap between a pig has interests and therefore humans cannot legitimately own or use it.'",
         "outcome_note": "consideracion-moral-no-cuanto-sufre: 'finally, an actual argument!'; ataca el salto interests→no ownership, acusa de definir ownership como autoridad irrestricta, 'sentient es observación, entitlement es posición filosófica'. Primer intercambio en que discute las premisas.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 11
+        "reply_position": 11,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "outcome": "engaged",
@@ -2223,12 +2298,14 @@
         "assignment": "randomized",
         "propensity": 0.3333333333333333,
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Les→Bernard 5h: 'You can call that species membership if you want. Fine. But then your position is equally a membership rule: sentient = cannot be property. Why should that be the decisive rule?'",
         "outcome_note": "antropoespecismo: aterrizó a medias. Les aceptó que su regla 'all humans regardless of cognition' es membresía ('call it species membership if you want. Fine') y que ambas posturas son filosóficas, pero contraatacó con tu-quoque: 'sentient = cannot be property' también es regla de membresía; reencuadra veto→balance de intereses; 'Try again'. Sin concesión del título.",
         "reply_depth": 2,
-        "reply_position": 13
+        "reply_position": 13,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28604913169131821",
@@ -2244,7 +2321,12 @@
         "outcome_evidence": "\"Sentience means there’s someone there to override” — agreed\" / \"Why doesn’t its interest in continued life always defeat the human interest\"",
         "outcome_note": "El tu-quoque cayó parcial: concedió \"Sentience means there is someone there to override — agreed\" y admitió que el balance nunca le da a ella el fin. Se retiró al burden-flip (\"20 comments asking questions\"). No es concesión del título.",
         "reply_depth": 2,
-        "reply_position": 15
+        "reply_position": 15,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28604913169131821",
@@ -2260,7 +2342,12 @@
         "outcome_evidence": "\"You've finally stated your moral opinion clearly, mate. You still haven't turned it into a compulsory conclusion for everyone else\"",
         "outcome_note": "Pagar la carga con sus propias concesiones lo obligó a nombrar mi premisa completa y a plantarse en pertenencia categórica (\"No. You don't get to ban the distinction\"); ya no discute que la suya también es posición filosófica.",
         "reply_depth": 2,
-        "reply_position": 17
+        "reply_position": 17,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28604913169131821",
@@ -2275,7 +2362,12 @@
         "outcome_evidence": "\"What turns ‘included categorically’ into a compulsory conclusion for the pig?” Nothing. I never said it does\"",
         "outcome_note": "La reply de cierre con las dos premisas desnudas le sacó la concesión que importa al lurker: a la pregunta de qué vuelve su categoría obligatoria para la cerda contestó \"Nothing. I never said it does\", y cerró en \"YOU believe… I don't\". Se deja en silencio a propósito.",
         "reply_depth": 2,
-        "reply_position": 19
+        "reply_position": 19,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28604913169131821",
@@ -2291,7 +2383,12 @@
         "outcome_evidence": "Les 28m: \"Mine permits animal ownership. Yours doesn't. So what? That isn't an argument against mine unless you first establish that owning a sentient non-human animal is inherently immoral.\"",
         "outcome_note": "consideracion-moral-no-cuanto-sufre: el mapa de lo que firmó no lo movió; tomó mi concesión de la vara lógica como victoria ('That's been my point all along') y contestó la pregunta de cierre con 'Mine permits animal ownership. Yours doesn't. So what?'. Repite el estribillo (falta probar que es inherentemente inmoral) y que las obligaciones de trato existen porque el ganado no equivale a camiones. Sin concesión nueva; tercer cierre suyo con la misma fórmula.",
         "reply_depth": 2,
-        "reply_position": 21
+        "reply_position": 21,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28604913169131821",
@@ -2302,7 +2399,14 @@
         "exposure_n": 41,
         "assignment": "chosen",
         "draft_sha": "ef10ddd6e041ece6",
-        "outcome": "pending"
+        "outcome": "pending",
+        "lurker_reactions": 1,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "reply_depth": 2,
+        "reply_position": 23,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       }
     ],
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/61581270521234/"
@@ -2741,7 +2845,7 @@
         "outcome_evidence": "\"the whole body. Domesticated animals are symbiotic with humans.\"",
         "outcome_note": "Separar hambre (biología) de título (creencia) la movió de \"biología\" a \"simbiosis\": contestó la pregunta literal y cambió de defensa.",
         "reply_depth": 2,
-        "reply_position": 6
+        "reply_position": 7
       },
       {
         "thread_id": "28469926949331190",
@@ -2756,7 +2860,7 @@
         "outcome_evidence": "\"The one who can plan, discover and understand genetics… the one who can give many more good years and a better death\"",
         "outcome_note": "Contrastar 'symbiotic' con quién lleva las riendas la llevó a decir abiertamente que las riendas son del que puede: capacidad como título.",
         "reply_depth": 2,
-        "reply_position": 4
+        "reply_position": 5
       },
       {
         "thread_id": "28469926949331190",
@@ -2769,7 +2873,7 @@
         "assignment": "chosen",
         "outcome": "pending",
         "reply_depth": 2,
-        "reply_position": 2
+        "reply_position": 3
       }
     ]
   },
@@ -3151,10 +3255,12 @@
         "outcome_evidence": "Dean → Bernard (49m): \"you're now changing the argument from the one you made in your OP\"",
         "outcome_note": "sobreposicion-de-especies-criterio-leido: Dean contestó y siguió presionando sobre la atribución de las citas; buena fe exigente, no concede.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28615704478052690",
@@ -3167,10 +3273,12 @@
         "outcome_evidence": "Dean → Bernard (17m): \"you're still moving the goalposts. Your original post made a very specific claim\"",
         "outcome_note": "sobreposicion-de-especies-criterio-leido: la retirada de la concesión con recibos cita-por-cita no lo movió; lo lee como goalpost. El frente es de procedencia (qué afirmó el OP), no de marco.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 3
+        "reply_position": 3,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28615704478052690",
@@ -3183,10 +3291,12 @@
         "outcome_evidence": "Dean 3m: \"So yes, the quotations are theirs. The conclusion you're drawing from them is yours. That's the actual point of disagreement.\"",
         "outcome_note": "sobreposicion-de-especies: la separación cita-verbatim vs caracterización aterrizó ('the quotations are theirs'); Dean ahora estrecha la disputa a si la inferencia está garantizada. Buena fe exigente, sigue sin tocar el criterio de propiedad.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 5
+        "reply_position": 5,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28615704478052690",
@@ -3197,12 +3307,14 @@
         "draft_sha": "21a93bfe11f74019",
         "outcome": "engaged",
         "lurker_reactions": 1,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Dean 9m: 'you're still avoiding the one question that matters: did you actually ask them if that's what they meant?… You have an interpretation.'",
         "outcome_note": "sobreposicion-de-especies-criterio-leido: aceptó separar cita vs caracterización y que la disputa es la lectura; no concede la lectura, sube la vara a 'did you ask them?'. Buena fe que muele; el criterio leído (newborn/dementia) no lo ha tocado.",
         "reply_depth": 2,
-        "reply_position": 7
+        "reply_position": 7,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28615704478052690",
@@ -3218,10 +3330,12 @@
         "outcome_evidence": "So you have a reading of their comments. You do not have evidence that they actually meant the specific proposition",
         "outcome_note": "filtro-especie: los recibos por hilo movieron la disputa de 'atribución falsa' a 'lectura vs intención'; tomó el 'no puedo responder por su intención' como retirada y trajo una tercera opción que coincide con la frase del post. Buena fe, engaged.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 9
+        "reply_position": 9,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28615704478052690",
@@ -3237,10 +3351,12 @@
         "outcome_evidence": "Dean→Bernard 1d (al PS): 'you're now piling logical fallacies on top of the original problem.'",
         "outcome_note": "sobreposicion-de-especies: sin réplica directa a la reply C; su siguiente turno contesta al PS.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 11
+        "reply_position": 11,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28615704478052690",
@@ -3256,10 +3372,12 @@
         "outcome_evidence": "Dean→Bernard 1d: 'I never argued that species membership alone is sufficient to determine moral status… A moral framework can consider individual capacities, species membership, relationships, vulnerability…'",
         "outcome_note": "filtro-especie-vs-individuo: tres cargos: strawman (nunca dijo que la especie sola baste), falso dilema (marco multivariable: capacidades, especie, relaciones, vulnerabilidad), petición de principio en el hipotético inverso. Sigue en buena fe, sin conceder.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 12
+        "reply_position": 12,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "outcome": "engaged",
@@ -3273,12 +3391,14 @@
         "assignment": "chosen",
         "propensity": null,
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Dean→Bernard 5h: 'before you try to make me solve your newly constructed newborn-versus-pig thought experiment, own the actual concession you've now made: the commenters gave you the words; you supplied the meaning.'",
         "outcome_note": "mi-desarrollar-discrepancia: no tocó la pregunta (qué variable de SU lista separa al recién nacido del cerdo); convirtió 'las palabras son de ellos, la lectura es mía' en concesión de que el OP falla, llamó falso dilema a su propia lista y exige 'own the concession' antes de contestar. Retirada a procedencia, buena fe pedante; sin concesión.",
         "reply_depth": 2,
-        "reply_position": 14
+        "reply_position": 14,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28615704478052690",
@@ -3294,7 +3414,12 @@
         "outcome_evidence": "Pidió \"update the OP\".",
         "outcome_note": "Convirtió la lectura poseída en exigencia de editar el OP; se resolvió con el edit.",
         "reply_depth": 2,
-        "reply_position": 16
+        "reply_position": 16,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28615704478052690",
@@ -3324,7 +3449,12 @@
         "outcome_evidence": "\"The pig has interests, is sentient and has a point of view, but does not have that same developmental capacity for moral agency.\"",
         "outcome_note": "Cederle el piso sin precargar la respuesta sacó su explicación completa: naturaleza de desarrollo hacia agencia moral + red de reciprocidad; concede que la cerda es sintiente y tiene punto de vista.",
         "reply_depth": 2,
-        "reply_position": 20
+        "reply_position": 20,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28615704478052690",
@@ -3339,7 +3469,12 @@
         "outcome_evidence": "\"what would cause you to reconsider it? What would you need to see or understand\"",
         "outcome_note": "Pedir el paso de 'quién puede deber' a 'puede ser poseída' no lo hizo dar el paso: devolvió una pregunta de falsación (qué me haría reconsiderar), de buena fe.",
         "reply_depth": 2,
-        "reply_position": 22
+        "reply_position": 22,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28615704478052690",
@@ -3354,7 +3489,12 @@
         "outcome_evidence": "let me see if I understand your position correctly… Is that an accurate representation of what you're asking?",
         "outcome_note": "sobreposicion-de-especies-criterio-leido: la condición concreta de qué me movería aterrizó; Dean la parafrasea con cuidado y pide confirmar antes de argumentar. Sigue civil y avanzando, sin concesión.",
         "reply_depth": 2,
-        "reply_position": 24
+        "reply_position": 24,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28615704478052690",
@@ -3369,7 +3509,12 @@
         "outcome_evidence": "\"you haven't established why those present characteristics should be the determining factors in the first place\"",
         "outcome_note": "filtro-especie-vs-individuo: aceptó la versión ajustada (\"yes, that's a clearer version of your position\") y siguió civil, pero reparte la carga: dice que no tiene que probar que su rasgo sea el decisivo antes de que yo justifique por qué lo que la cerda ya es hoy debe decidir. Sigue sin dar el paso de agencia moral a título.",
         "reply_depth": 2,
-        "reply_position": 26
+        "reply_position": 26,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "date": "2026-10-04",
@@ -3385,7 +3530,12 @@
         "outcome_evidence": "\"That's the principle doing the work in your argument, and you haven't actually given an argument for it.\"",
         "outcome_note": "algo-a-alguien-sujeto-derecho: dar mi razón positiva lo llevó a lo que él llama \"the actual point of disagreement\": pide el argumento de por qué un acto solo agravia a alguien para quien las cosas ya cuentan desde su lado, y por qué la sintiencia presente basta mientras la agencia moral en desarrollo no. Civil; cazó el principio como aserción sin argumento.",
         "reply_depth": 2,
-        "reply_position": 28
+        "reply_position": 28,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "date": "2026-10-04",
@@ -3401,7 +3551,12 @@
         "outcome_evidence": "Dean 4h: \"What present right or interest does the sale itself violate in the piglet, independently of how the piglet is subsequently treated, and why does possessing that interest entail a right not to be owned or transferred?\"",
         "outcome_note": "sobreposicion-de-especies-criterio-leido: el argumento de la silla (agraviar a alguien vs estropear algo) lo obligó a pasar de 'no diste argumento' a pedir el paso de interés a derecho contra la venta, en el lechón y sin apoyarse en el trato posterior. Sigue civil y sin conceder; objeta el pronombre 'her' compartido entre recién nacida y lechón.",
         "reply_depth": 2,
-        "reply_position": 30
+        "reply_position": 30,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28615704478052690",
@@ -3416,7 +3571,12 @@
         "outcome_evidence": "Dean 4m: \"that is precisely the conclusion you're trying to establish. I haven't granted it.\"",
         "outcome_note": "algo-a-alguien-sujeto-derecho: el caso de la recién nacida vendida a un buen hogar lo llevó a negar que haya concedido que esa venta es un agravio ('I haven't granted it') y a acusar que 'wrong' y 'standing last word' van cargados. Rechaza la lectura 'membership in the kind': dice que es una característica del tipo y que cualquier organismo con esa capacidad cumpliría. Pregunta por qué la capacidad de desarrollo no es relevante, aunque ya se la concedí como relevante tres veces. Sigue civil, sin conceder; regresión asimétrica confirmada.",
         "reply_depth": 2,
-        "reply_position": 32
+        "reply_position": 32,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28615704478052690",
@@ -3427,7 +3587,14 @@
         "exposure_n": 39,
         "assignment": "chosen",
         "draft_sha": "0bf0f6466f704438",
-        "outcome": "pending"
+        "outcome": "pending",
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "reply_depth": 2,
+        "reply_position": 34,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       }
     ],
     "user_id": "1198831097",
@@ -3682,17 +3849,25 @@
         "outcome_evidence": "Chris Pearson: \"Exactly. Her idea of knowledge is expertise in getting what she wants from an animal.\"",
         "outcome_note": "Sello inicial (\"lack of knowledge\"); el autor del post respaldó la reply en público.",
         "lurker_reactions": 3,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [
           {
             "author": "Chris Pearson",
             "user_id": "1496732845",
-            "text": "Chris Pearson · 1dBernard Uriza Orozco Exactly. Her idea of knowledge is expertise in getting what she wants from an animal. She knows how to use and control animals. That’s the knowledge she keeps bragging about.LikeReply"
+            "text": "Chris Pearson · 6dBernard Uriza Orozco Exactly. Her idea of knowledge is expertise in getting what she wants from an animal. She knows how to use and control animals. That’s the knowledge she keeps bragging about.LikeReply1"
           }
         ],
         "third_party_stance": "apoyo",
         "reply_depth": 1,
-        "reply_position": 6
+        "reply_position": 6,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": [
+          {
+            "author": "Mark Lumsley",
+            "user_id": "513628121",
+            "text": "Mark Lumsley · 6dSamantha Mckenna Bernard didn't make the OP.LikeReply1"
+          }
+        ]
       },
       {
         "thread_id": "28620931384196666",
@@ -3708,7 +3883,12 @@
         "outcome_evidence": "\"your trying hard but miss the reality\"",
         "outcome_note": "Al \"licensed = paperwork\" respondió con sello (\"miss the reality\") sin tocar el permiso-como-razón.",
         "reply_depth": 2,
-        "reply_position": 11
+        "reply_position": 11,
+        "lurker_reactions": 1,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28620931384196666",
@@ -3724,7 +3904,12 @@
         "outcome_evidence": "\"you know no one’s reading your long ass comments because you have absolutely nothing to say\"",
         "outcome_note": "Los recibos verbatim de junio no los tocó; puro sello (\"no one’s reading your long ass comments\"). Pregunta clara sin contestar: se deja en silencio.",
         "reply_depth": 2,
-        "reply_position": 14
+        "reply_position": 14,
+        "lurker_reactions": 1,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       }
     ],
     "user_id": "100003780189781",
@@ -3977,10 +4162,12 @@
         "outcome_note": "algo-a-alguien: del sello IA pasó a un argumento real — 'whether an animal is considered property or not is not even a little bit relevant to that animal; a livestock animal with all its needs met won't wake up thinking I'm property; it's a philosophical question for vegans to feel morally superior'. Bienestarismo puro como respuesta al eje de propiedad; el 'ai slop' sigue de escudo para no leer.",
         "draft_sha": "7cbe557115e40586",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 1,
-        "reply_position": 2
+        "reply_position": 2,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "outcome": "escalated",
@@ -3991,12 +4178,14 @@
         "framework": "consideracion-moral-no-cuanto-sufre",
         "draft_sha": "f923948bd68ecc88",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "outcome_evidence": "Parnaibensis Nws · 4h: 'yet again, you used ai to write your point lmao. as soon as you can use your own words ill take you seriously.'",
         "outcome_note": "consideracion-moral: el recién-nacido/custodia no se contestó; regresó al sello IA puro ('use your own words'). Tras insulto posterior a una pregunta clara sin responder, la doctrina dice ignorar: la pregunta sin contestar es el recibo.",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 4
+        "reply_position": 4,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       }
     ],
     "user_id": "100024818371314",
@@ -4156,7 +4345,12 @@
         "outcome_evidence": "Último turno es mío, 1d.",
         "outcome_note": "Buena fe, concedió sentient+property+final purpose; 1 día sin respuesta a mi reply. Candidato a oro.",
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       }
     ],
     "user_id": "832080524",
@@ -4273,7 +4467,12 @@
         "outcome_evidence": "\"ya chatting mush... if a person wants to sell their cat per kg of live weight or per kg of dead weight, they can do.\"",
         "outcome_note": "La distinción cuidado/título con la gata lo llevó a doblar: el gato adoptado también es propiedad explotada y su dueña puede venderlo por kilo; trata la muerte como punto irrelevante.",
         "reply_depth": 2,
-        "reply_position": 8
+        "reply_position": 8,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28203900659231098",
@@ -4288,7 +4487,12 @@
         "outcome_evidence": "says you who kills living things that are systematically bred, exploited and commodified, to sustain yourself… So get over it",
         "outcome_note": "dominacion-no-es-superioridad-moral: no tocó su propia frase del 'unfair advantage' aplicada a la vaca; saltó a un tu-quoque (tú también matas seres vivos criados sistemáticamente) y a 'within the law… so does everyone else'.",
         "reply_depth": 2,
-        "reply_position": 10
+        "reply_position": 10,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28203900659231098",
@@ -4303,7 +4507,12 @@
         "outcome_evidence": "\"nice little pointless rant. Would you like to talk about how vegans are against people having fish in a garden pond\"",
         "outcome_note": "algo-a-alguien-sujeto-derecho: la pregunta lechuga/gata/vaca quedó sin tocar; contestó con sello (\"pointless rant\", \"tip ya pram over\") y abrió estación nueva, los peces de estanque. Cuarta estación del hilo: steakhouses, gato, plantas, estanque.",
         "reply_depth": 2,
-        "reply_position": 12
+        "reply_position": 12,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "date": "2026-10-04",
@@ -4319,7 +4528,12 @@
         "outcome_evidence": "\"bless the vegan nutter is know crying about fish being exploited as garden decoration\"",
         "outcome_note": "el-sello-es-para-el-lurker: la vuelta de recibos lo dejó sin estación nueva; contestó solo sello (\"vegan nutter… crying about fish\") y la vaca sigue sin salir. Se queda en silencio: la pregunta sin contestar es el recibo.",
         "reply_depth": 2,
-        "reply_position": 14
+        "reply_position": 14,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       }
     ],
     "user_id": "1742478160",
@@ -4368,12 +4582,20 @@
         "draft_sha": "c221293cc3f5c352",
         "outcome": "silent",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
-        "third_party_replies": [],
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [
+          {
+            "author": "Jason Patrick Fisher",
+            "user_id": "100056247520740",
+            "text": "Jason Patrick Fisher · 4dBernard Uriza OrozcoOh look, more manipulative forced perspective horseshit from a vegan narcissist. JFC you guys don't even realize you're all the same asshole, do you?LikeReplyEdited"
+          }
+        ],
         "outcome_evidence": "Sin turnos de Hank tras mi reply de 3d.",
         "outcome_note": "\"Eat meat or shut up\" recibió la pregunta del título; no volvió.",
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "opponent_reactions": 2,
+        "third_party_replies_to_opponent": []
       }
     ],
     "user_id": "100034907401951",
@@ -4480,12 +4702,14 @@
         "draft_sha": "0ed14ff7375177a1",
         "outcome": "silent",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Sin turnos tras mi reply de 4d.",
         "outcome_note": "Concedí los insectos y separé cosecha de título; no volvió.",
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28604913169131821",
@@ -4496,12 +4720,14 @@
         "draft_sha": "ba38ccb750e85f3b",
         "outcome": "silent",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Sin turnos tras mi reply de 4d.",
         "outcome_note": "El conteo de Aj (\"reaching\" sin decir qué) quedó sin respuesta.",
         "reply_depth": 2,
-        "reply_position": 3
+        "reply_position": 3,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       }
     ],
     "user_id": "100021775394973",
@@ -4536,10 +4762,18 @@
         "outcome_note": "algo-a-alguien-sujeto-derecho: voltear a Ralph (dos relaciones, una palabra) le sacó solo un jab ('you left out my non vegan vegetables lol'); no defendió el título del cerdito.",
         "draft_sha": "09c36498aaeef1fa",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
-        "third_party_replies": [],
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [
+          {
+            "author": "Jason Patrick Fisher",
+            "user_id": "100056247520740",
+            "text": "Jason Patrick Fisher · 4dBernard Uriza Orozco He answered you, and you manipulated what he said. Buddy... Are you the fuck okay?LikeReply"
+          }
+        ],
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -4552,10 +4786,12 @@
         "outcome_note": "algo-a-alguien: contestó con bienestar + tu-quoque: 'ownership means responsibility to make an animal happy... happy well fed pigs taste better; you vegans support the same big food companies'. La distinción Ralph/piglet no la tocó; la razón del título sigue ausente (redefine propiedad como responsabilidad).",
         "draft_sha": "0d48cd57887237e5",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 9
+        "reply_position": 9,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "outcome": "silent",
@@ -4566,13 +4802,15 @@
         "framework": "bienestarismo-jugada-maestra-del-poder",
         "draft_sha": "2ccdceb80dad61ec",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-05",
         "outcome_note": "bienestarismo-jugada-maestra-del-poder: el volteo 'la felicidad del cerdo es para ti' no tuvo respuesta de fondo; contestó con dos jabs ('perfect vegan answer', 'I only grow non vegan vegetables'). Sigue en retirada por burla.",
         "third_party_replies": [],
         "closed_from": "goalpost",
         "reply_depth": 2,
-        "reply_position": 7
+        "reply_position": 7,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -4583,12 +4821,14 @@
         "draft_sha": "17446177a70f630b",
         "outcome": "silent",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "Sin turnos tras mi reply de 3d.",
         "outcome_note": "Tras los drive-bys de vegetales, \"who is that happiness for\" quedó sin respuesta.",
         "reply_depth": 2,
-        "reply_position": 3
+        "reply_position": 3,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       }
     ],
     "user_id": "100008695478463",
@@ -4623,10 +4863,18 @@
         "outcome_note": "antropoespecismo: nombrar que la especie hace el trabajo decisivo lo llevó a confesarlo en voz alta: 'humans dont need to justify speciesism. We are the apex species.' La táctica movió al oponente a might-makes-right explícito, que es lo que el lurker necesita ver.",
         "draft_sha": "d5ffc6195e4f3be0",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "opponent_reactions": 3,
+        "third_party_replies_to_opponent": [
+          {
+            "author": "Jason Patrick Fisher",
+            "user_id": "100056247520740",
+            "text": "Jason Patrick Fisher · 4dHomer Cu all he ever does is force his perspective with manipulation tactics. This guy's the most disingenuous group member we've had for awhile lolLikeReply"
+          }
+        ]
       },
       {
         "thread_id": "28459136643743554",
@@ -4639,10 +4887,12 @@
         "outcome_note": "dominacion-no-es-superioridad: tras el 'apex es confesión' dobló la apuesta: 'its both. We can and we make it legal as a human species.' Colapsa control y legitimidad a propósito (poder + ley = razón). La separación no aterrizó en él; para el lurker quedó dicha por él mismo.",
         "draft_sha": "ed57ec32d1ef73c0",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 16
+        "reply_position": 16,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -4655,10 +4905,12 @@
         "outcome_evidence": "Homer → Bernard (1h): \"Oh, spare us the freshman philosophy seminar. Comparing eating a cheeseburger to chattel slavery…\"",
         "outcome_note": "esclavitud-paralelismo: el paralelo 'el que escribe la regla es el dueño' pegó; respondió con sello ('freshman philosophy seminar', 'clutch your tofu') + reducción al absurdo del león. Escalada con argumento residual.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 14
+        "reply_position": 14,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -4671,10 +4923,12 @@
         "outcome_evidence": "Homer 34m: \"Humans indeed can own and nothing morally wrong with that. I own the pet fish... I own the chicken bred for my food... Cry more.\"",
         "outcome_note": "esclavitud-paralelismo: el volteo del león (solo los humanos poseen) no lo tocó; regresó a 'humans can own, nothing wrong' + 'Cry more'. Repite la estación de dominio con sello; no hay estación nueva.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 12
+        "reply_position": 12,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -4685,13 +4939,15 @@
         "draft_sha": "c46c582cbd18c389",
         "outcome": "silent",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-05",
         "outcome_note": "dominacion-no-es-superioridad-moral: tras 'bred for my food ¿razón o recibo?' dejó el título y saltó a nutrición (proteína, aminoácidos) + 'nothing morally wrong in my book'. El framework lo sacó del poder como razón; se refugió en necesidad dietaria.",
         "closed_from": "goalpost",
         "reply_depth": 2,
-        "reply_position": 10
+        "reply_position": 10,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -4705,12 +4961,14 @@
         "assignment": "chosen",
         "propensity": null,
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "\"yup. Fuck that bird. Its human food. You got that right. Next\"",
         "outcome_note": "Contestó la carta de la elección con \"yup. Fuck that bird. Its human food\" — abandonó la razón en voz alta.",
         "reply_depth": 2,
-        "reply_position": 8
+        "reply_position": 8,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -4724,12 +4982,14 @@
         "propensity": null,
         "outcome": "escalated",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "outcome_evidence": "\"so that’s your best ai reply. Hahaha\"",
         "outcome_note": "Al mapa de recibos de ocho estaciones respondió con sello IA (\"so that is your best ai reply. Hahaha\"); un tercero (Jason P. Fisher) se sumó al pile-on.",
         "reply_depth": 2,
-        "reply_position": 6
+        "reply_position": 6,
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       },
       {
         "thread_id": "28459136643743554",
@@ -4745,10 +5005,12 @@
         "outcome_evidence": "Homer→Bernard 1d: 'tell your ai to read the replies again. It lacks understand.'",
         "outcome_note": "dominacion-no-es-superioridad-moral: tras la despedida con el arco mapeado, 'tell your ai to read the replies again. It lacks understand.' Sello IA otra vez; cerrado, no reabrir.",
         "lurker_reactions": 0,
-        "lurker_checked_at": "2026-09-30T23:05:21.463Z",
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
         "third_party_replies": [],
         "reply_depth": 2,
-        "reply_position": 4
+        "reply_position": 4,
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       }
     ],
     "user_id": "100001248981179",
@@ -5081,7 +5343,12 @@
         "outcome_evidence": "\"Your best argument is NPD, do better. People have owned pets and eaten animals for millenia, without issue\"",
         "outcome_note": "Devolverle su frase de propiedad no produjo argumento: más sello (NPD, incapacidades mentales) y apelación a milenios. La pregunta queda sin contestar a la vista.",
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "lurker_reactions": 1,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 1,
+        "third_party_replies_to_opponent": []
       }
     ],
     "user_id": "100056247520740",
@@ -5120,7 +5387,28 @@
         "outcome_evidence": "\"so long story short, it's ok to eat animals to survive in the wilderness but not when you're in a civilisation... Got it.\"",
         "outcome_note": "La distinción necesidad real vs refri del súper la resumió con sorna pero sin disputarla; 2 reacciones de terceros a mi reply. Ojo: en el mismo hilo escribe \"Humans shouldn't objectify or exploit other animals\"; su bando es ambiguo.",
         "reply_depth": 2,
-        "reply_position": 2
+        "reply_position": 2,
+        "lurker_reactions": 2,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": [
+          {
+            "author": "Elki Phoenix",
+            "user_id": "100081335095095",
+            "text": "Elki Phoenix · 3dPhil Holmes Yes, Phil, that's exactly how it works here on earth. If you find that you're living on a barren plain or tundra where little to no suitable plant foods are growing or otherwise available, then you would have to take the animals who can survive on grass and scrub for food for survival. But I suspect that's not you, and it's certainly not most of the population. Most of"
+          },
+          {
+            "author": "Christina Cornish",
+            "user_id": "1034528242",
+            "text": "Christina Cornish · 3dPhil Holmes lol I eat animals on my farm. And no vegans crying will stop it. Why well I bought my 700 acre farm not damn vegans I pay my land taxes and bills again the damn vegans do not pay it. Therefore no damn vegan can tell me or others what to eat. Because it was the vegans only damn choice not to eat animals. Funny story those vegans sure got no god damn issues eating v"
+          },
+          {
+            "author": "Rüdiger Preiss",
+            "user_id": "655045000",
+            "text": "Rüdiger Preiss · 3dPhil Holmes http://theveganeskimo.com/index.php/en/THEVEGANESKIMO.COMAll recipesAll recipesLikeReplyShare"
+          }
+        ]
       },
       {
         "thread_id": "28211773511777146",
@@ -5133,7 +5421,12 @@
         "assignment": "chosen",
         "outcome": "pending",
         "reply_depth": 2,
-        "reply_position": 8
+        "reply_position": 8,
+        "lurker_reactions": 0,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": []
       }
     ],
     "user_id": "838293183",
@@ -5255,7 +5548,7 @@
         "outcome_evidence": "\"I'm not claiming legality or normality magically makes something moral\" / \"That's a defensible ethical position\"",
         "outcome_note": "Separar cosecha de título no movió su relativismo, pero concedió que legalidad y normalidad no vuelven moral nada y que la posición es defendible.",
         "reply_depth": 2,
-        "reply_position": 4
+        "reply_position": 9
       },
       {
         "thread_id": "28223401477281016",
@@ -5320,7 +5613,23 @@
         "draft_sha": "6aa772cddd19e93f",
         "exposure_n": 1,
         "reply_depth": 0,
-        "reply_position": 0
+        "reply_position": 0,
+        "lurker_reactions": 1,
+        "lurker_checked_at": "2026-10-06T02:13:28.361Z",
+        "third_party_replies": [],
+        "opponent_reactions": 0,
+        "third_party_replies_to_opponent": [
+          {
+            "author": "Susan Lynn Hebel",
+            "user_id": "1364445090",
+            "text": "Susan Lynn Hebel · 1dKirstin Morgan You're full of shit. You have the audacity to call vegans out for using A.I. then use an obviously manipulated video to push your point and then you project such wilful ignorance all to make you feel good about exploitation cows. It's pure projection.LikeReplyShare1"
+          },
+          {
+            "author": "Jude Cooper",
+            "user_id": "61580416850698",
+            "text": "Jude Cooper · 1dKirstin Morgan yep, unless you're in their cult, they'll have a problem with you breathing LikeReplyShare1"
+          }
+        ]
       }
     ],
     "user_id": "1241731695",
