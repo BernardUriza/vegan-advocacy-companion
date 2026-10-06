@@ -1,8 +1,9 @@
 // Lurker sweep: re-extrae los hilos FRESCOS del moat y escribe, por reply mía, las respuestas de terceros
 // (verbatim, para que el reflex codifique su postura) y lurker_reactions (dato secundario, no el norte).
 // Uso: node lurker-sweep.mjs [--dry-run] [--json] — nunca abre hilos de más de MAX_AGE_DAYS.
-//      node lurker-sweep.mjs --backfill-placement [--dry-run] — sin Chrome: escribe reply_depth/reply_position
-//      desde los .coagent/tx-*.json ya extraídos, solo donde el draft empata por draft_sha único.
+//      node lurker-sweep.mjs --backfill-placement [--dry-run] [--force] — sin Chrome: escribe reply_depth/reply_position
+//      desde los .coagent/tx-*.json ya extraídos, solo donde el draft empata por draft_sha único. --force recalcula
+//      también las que ya tienen ubicación (2026-10-05: 78 filas salieron d0/p0 por un depth del DOM que mentía).
 
 import { execFileSync } from 'child_process';
 import { dirname } from 'path';
@@ -28,14 +29,15 @@ function extractThread(url) {
 
 if (process.argv.includes('--backfill-placement')) {
   const done = [], skipped = [];
-  const threadIds = new Set(readActors().flatMap(a => (a.interactions ?? []).filter(i => i.draft_sha && i.reply_depth === undefined).map(i => i.thread_id)));
+  const force = process.argv.includes('--force');
+  const threadIds = new Set(readActors().flatMap(a => (a.interactions ?? []).filter(i => i.draft_sha && (force || i.reply_depth === undefined)).map(i => i.thread_id)));
   for (const thread_id of threadIds) {
     const tx = resolve(COAGENT_DIR, `tx-${thread_id}.json`);
     if (!existsSync(tx)) { skipped.push({ thread_id, reason: 'sin tx' }); continue; }
     const turns = annotate(JSON.parse(readFileSync(tx, 'utf8')).turns ?? []);
     const { matched } = matchMyTurns(turns, loadConsultDrafts(thread_id), thread_id, readActors());
     for (const m of matched) {
-      if (m.interaction.reply_depth !== undefined || !m.interaction.draft_sha) continue;
+      if ((!force && m.interaction.reply_depth !== undefined) || !m.interaction.draft_sha) continue;
       const row = { thread_id, target: m.name, date: m.interaction.date, depth: m.turn.depth, position: m.turn.position };
       if (dryRun) { done.push(row); continue; }
       try { updateInteractionPlacement(m.user_id, thread_id, m.interaction.draft_sha, { depth: m.turn.depth, position: m.turn.position }); done.push(row); }

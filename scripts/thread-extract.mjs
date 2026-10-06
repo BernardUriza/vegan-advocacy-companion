@@ -128,10 +128,9 @@ function walkArticles({ ME, postId }) {
       if (inText) return inText[1] + inText[2];
       return '';
     })();
-    // profundidad REAL en el DOM (0 = comentario raíz, 1 = reply al comentario, 2 = reply a una reply);
-    // FB pinta las replies en lista plana bajo su raíz, así que el label solo distingue comment/reply
-    let depth = 0;
-    for (let p = a.parentElement; p; p = p.parentElement) if (p.getAttribute('role') === 'article') depth++;
+    // profundidad: FB NO anida los article en el DOM (medido 2026-10-05: 69/69 con cero ancestros), el único
+    // testigo es el aria-label: raíz 0, "to X's comment" 1, "to X's reply" 2. Misma regla que lurker.depthOf.
+    const depth = !target ? 0 : /'s comment/.test(label) ? 1 : 2;
     rows.push({ author, user_id, target, isMine, depth, label: label.slice(0, 90), ageStr, text, reactionLabels });
   }
   return { postOwner, rows, postReactionLabels, foreignDropped };
