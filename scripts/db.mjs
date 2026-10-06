@@ -26,7 +26,7 @@ export function vocabViolations(entity, vocab = readVocab(), kind = 'actor') {
 }
 
 export const ROTATION_SINCE = '2026-09-29';
-export const VOICE_SINCE = '2026-10-06';
+export const VOICE_SINCE = '2026-10-05';
 
 export function interactionProblems(actor, vocab = readVocab()) {
   const problems = [];

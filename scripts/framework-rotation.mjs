@@ -42,7 +42,7 @@ export function distinctFamilies(candidates, k) {
   return out;
 }
 
-// Sorteo de VOZ (voice_trial, 2026-10-06): solo los registros del trial se sortean; para el resto la voz
+// Sorteo de VOZ (voice_trial, 2026-10-05): solo los registros del trial se sortean; para el resto la voz
 // no se asigna, se observa del draft en finalize (observedVoice). El rng se consume al final para no
 // mover los sorteos de framework ya registrados.
 export function planVoice(actor, policy, rng = Math.random) {

@@ -64,7 +64,7 @@ const KILL_PHRASES = [
 ];
 
 // El registro filo es profano por default (2026-09-27); sin brazo, un draft con cero groserías avisa.
-// Con `voice` (el brazo que sorteó framework-pick, voice_trial 2026-10-06) el check se vuelve contrato:
+// Con `voice` (el brazo que sorteó framework-pick, voice_trial 2026-10-05) el check se vuelve contrato:
 // profano exige el mínimo del trial, limpio exige cero. El juicio de registro (filo vs compasivo) sigue
 // siendo del LLM; por eso sin brazo nunca es hard.
 const PROFANITY = /\b(fuck(ing|ed|s)?|fuck-all|bullshit|damn|hell|no shit|what the fuck|crap|ass)\b/gi;

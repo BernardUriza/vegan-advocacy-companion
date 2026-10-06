@@ -108,7 +108,7 @@ observador vea quién razona y quién evade.
 
 ## El registro filo es PROFANO por default (regla dura, 2026-09-27)
 
-**En prueba desde el 2026-10-06 (decisión de Bernard, 2026-10-05).** El default profano no tiene evidencia ante
+**En prueba desde el 2026-10-05 (decisión de Bernard ese día).** El default profano no tiene evidencia ante
 terceros ni a favor ni en contra, así que `framework-pick` sortea 50/50 cada target filo entre `profano` y `limpio`
 (filo sin groserías, mismo mordisco) y `finalize` exige el brazo sorteado ([[coagent-advise]] § "El brazo de voz lo
 dicta el pick"). Esta sección sigue describiendo el brazo profano; la doctrina vuelve a decidirse con el readout

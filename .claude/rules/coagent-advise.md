@@ -234,11 +234,11 @@ the argument"): el coagent la cumplió.
 insult-gpt NO es de Bernard: es un GPT público de la tienda (autor Soffia Moes, `can_write:false`, sin modelo
 fijado; corre en el modelo seleccionado en el chat). No hay builder que tocar; lo que se controla es el master.
 
-## El brazo de voz lo dicta el pick, no el gusto del lote (voice_trial, 2026-10-06)
+## El brazo de voz lo dicta el pick, no el gusto del lote (voice_trial, 2026-10-05)
 
 El filo profano no tiene evidencia ni a favor ni en contra ante terceros (research del 28-sep punto 5; Gemini
 retiró sus citas el 2026-10-05, `analysis/research/2026-10-05-gemini-auditoria-estrategia.md`). Bernard decidió
-medirlo: desde el 2026-10-06, `framework-pick` sortea **50/50** cada target de registro `filo` entre dos brazos y
+medirlo: desde el 2026-10-05, `framework-pick` sortea **50/50** cada target de registro `filo` entre dos brazos y
 el pick trae `voice` (`profano | limpio`), `voice_assignment: randomized` y `voice_propensity: 0.5`. Política en
 `data/vocab.json` → `rotation.voice_trial` (corte a 70 por brazo o el 2026-11-05).
 

@@ -81,7 +81,7 @@ Regla de decisión: Si el Brazo B supera al A por más del 15% en interacciones 
 
 ## Pre-registro del experimento de voz (escrito antes del primer dato, 2026-10-05)
 
-Decisión de Bernard: sorteo **50/50** en todo target de registro `filo`, desde el 2026-10-06. Mecánica en
+Decisión de Bernard: sorteo **50/50** en todo target de registro `filo`, desde el 2026-10-05 (adelantado del 06 antes del primer dato, para que el primer lote real cuente). Mecánica en
 `data/vocab.json` → `rotation.voice_trial`; el pick asigna el brazo, `finalize` lo exige (profano ≥ 2 groserías,
 limpio = 0), la interacción lo registra, `framework-stats` "Por VOZ" lo lee.
 
@@ -201,7 +201,7 @@ Regla de decisión: Si el Brazo B supera al A por más del 15% en interacciones 
 
 ## Pre-registro del experimento de voz (escrito antes del primer dato, 2026-10-05)
 
-Decisión de Bernard: sorteo **50/50** en todo target de registro `filo`, desde el 2026-10-06. Mecánica en
+Decisión de Bernard: sorteo **50/50** en todo target de registro `filo`, desde el 2026-10-05 (adelantado del 06 antes del primer dato, para que el primer lote real cuente). Mecánica en
 `data/vocab.json` → `rotation.voice_trial`; el pick asigna el brazo, `finalize` lo exige (profano ≥ 2 groserías,
 limpio = 0), la interacción lo registra, `framework-stats` "Por VOZ" lo lee.
 
