@@ -6,14 +6,14 @@ override = []
 [core]
 id = "agent-constitution"
 repo = "https://github.com/BernardUriza/agent-constitution.git"
-rev = "3ebddfec242194705a411bf023315eb0efea764f"
+rev = "38ba1cf9afbd2c63dbf6b9061573572fa4bb5fc9"
 tree = "sha256:586ffd222f887c29106d9d4d3a44a5cb47884b4201b9813e312cce13a4752fcc"
 
 [repo]
 id = "vegan-advocacy-companion"
 surfaces = ["CLAUDE.md", ".claude/CLAUDE.md", ".claude/rules/**", ".claude/overrides/**"]
 imports = []
-surfaces_tree = "sha256:839b7129b417a3de272631e9c4e6884ba45df2d8682f881e79bb56e712bd1581"
+surfaces_tree = "sha256:5d065fe30a5d7af4238212593940b1b29c38bb157beb7e8529ff62193b70243f"
 
 [hooks]
 entries = [
@@ -30,12 +30,12 @@ policy = ["repo", "bernard", "core"]
 methodology = []
 
 [lock]
-canonical_sha256 = "23723c8acc34efeff5fdb331f1144ec3817b2bacfaad01ceb2c9fc7cd2a72200"
+canonical_sha256 = "83d01fd3106ae125fa10e5ee1eba7d5479a3070d84640025ee8a92326cea0167"
 
 [[overlay]]
 id = "bernard"
 layer = "personal"
 scope = "machine-only"
 repo = "https://github.com/BernardUriza/constitution-bernard.git"
-rev = "d476046d1985c0f4543d363bd99b03c422396624"
-tree = "sha256:440977dbb852f3f95fc69b401865a318cff565bd0838ad1815239c9f9441bc84"
+rev = "19706ded90147896eae21fd8807eb242f36f36cf"
+tree = "sha256:5e8f7062696fbee852bb19ade23491fafdb29e564a05f8d507d9054ed529ce77"
