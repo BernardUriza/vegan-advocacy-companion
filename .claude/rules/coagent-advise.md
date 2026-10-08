@@ -395,8 +395,9 @@ node scripts/seed-coagent.mjs insert --post-id <id> --master .coagent/<master>.m
 - **NUNCA envía.** Imprime `{ok, url, pageUrl, chunks, lines, nextStep}`. El Send es de
   Claude+MCP en UN `evaluate_script`: assert `location.href`, assert que las líneas del
   composer == `window.__seed.lines` (sin re-embeber el texto), y click en
-  `form button[aria-label="Send"]`; en llamada aparte, la frase única del seed aparece
-  1 vez (no re-enviar).
+  `form button[data-testid="send-button"]` (el aria-label pasó de "Send" a "Send prompt"
+  el 2026-10-07: matchear por `startsWith('Send')` o por el testid, nunca por igualdad);
+  en llamada aparte, la frase única del seed aparece 1 vez (no re-enviar).
 
 La respuesta se lee sin escribir el polling a mano (read-only, tab efímera):
 
