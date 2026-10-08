@@ -175,3 +175,20 @@ test('readReplyWhenStable never reports ok:true for a reply stuck on the placeho
   assert.equal(r.ok, false);
   assert.equal(r.reply, undefined);
 });
+
+test('conversationTextInPage rebuilds the You said / ChatGPT said markers from data-message-author-role', async () => {
+  const { conversationTextInPage } = await import('./coagent-transport.mjs');
+  const el = (role, text) => ({ getAttribute: (a) => (a === 'data-message-author-role' ? role : null), innerText: text });
+  const prev = globalThis.document;
+  globalThis.document = {
+    querySelectorAll: (sel) => (sel === '[data-message-author-role]' ? [el('user', 'seed frase-unica'), el('assistant', 'la respuesta')] : []),
+    querySelector: () => ({ innerText: 'main sin etiquetas' }),
+  };
+  try {
+    const text = conversationTextInPage();
+    assert.equal(text, 'You said:\nseed frase-unica\nChatGPT said:\nla respuesta\n');
+    assert.equal(extractReply(text, 'frase-unica').reply, 'la respuesta');
+    globalThis.document.querySelectorAll = () => [];
+    assert.equal(conversationTextInPage(), 'main sin etiquetas');
+  } finally { globalThis.document = prev; }
+});

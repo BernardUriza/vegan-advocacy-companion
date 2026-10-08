@@ -117,6 +117,17 @@ export function extractReply(text, phrase, { busy = false } = {}) {
   return { ok: true, reply };
 }
 
+// ChatGPT quitó del innerText las etiquetas "You said:" / "ChatGPT said:" (2026-10-07); los turnos llevan
+// data-message-author-role, así que el texto se reconstruye con los marcadores que extractReply ya entiende.
+export function conversationTextInPage() {
+  const turns = [...document.querySelectorAll('[data-message-author-role]')];
+  if (!turns.length) return document.querySelector('main')?.innerText || '';
+  return turns.map((el) => {
+    const label = el.getAttribute('data-message-author-role') === 'user' ? 'You said:' : 'ChatGPT said:';
+    return `${label}\n${el.innerText || ''}`;
+  }).join('\n') + '\n';
+}
+
 export function pageBusyInPage() {
   const stop = document.querySelector('button[data-testid="stop-button"], button[aria-label="Stop streaming"], button[aria-label="Stop generating"]');
   const thinking = [...document.querySelectorAll('main [class*="shimmer"], main [data-testid*="thinking" i]')].length > 0;
@@ -234,8 +245,8 @@ export async function clearComposer(page, { persistMs = 2500 } = {}) {
 export async function waitForSeedText(page, phrase, timeout = 90000) {
   const t0 = Date.now();
   while (Date.now() - t0 < timeout) {
-    const found = await page.evaluate((p) => (document.querySelector('main')?.innerText || '').includes(p), phrase);
-    if (found) return true;
+    const text = await page.evaluate(conversationTextInPage);
+    if (text.includes(phrase)) return true;
     await page.waitForTimeout(1000);
   }
   return false;
@@ -244,11 +255,11 @@ export async function waitForSeedText(page, phrase, timeout = 90000) {
 // Espera por ESTABILIDAD de contenido (6 lecturas iguales a 2s = 12s quieto), nunca por el stop-button.
 // insult-gpt tarda hasta ~2 min y pausa a media respuesta; 3s de quietud lo cortaba (2026-09-28).
 export async function readReplyWhenStable(page, phrase, { timeout = 360000, gap = 2000, stableReads = 6 } = {}) {
-  const sliceLen = () => page.evaluate((p) => {
-    const t = document.querySelector('main')?.innerText || '';
-    const i = t.lastIndexOf(p);
+  const sliceLen = async () => {
+    const t = await page.evaluate(conversationTextInPage);
+    const i = t.lastIndexOf(phrase);
     return i < 0 ? -1 : t.length - i;
-  }, phrase);
+  };
   const t0 = Date.now();
   let prev = -2;
   let stable = 0;
@@ -259,7 +270,7 @@ export async function readReplyWhenStable(page, phrase, { timeout = 360000, gap 
     prev = len;
     if (stable >= stableReads - 1) {
       const busy = await page.evaluate(pageBusyInPage).catch(() => false);
-      last = extractReply(await page.evaluate(() => document.querySelector('main')?.innerText || ''), phrase, { busy });
+      last = extractReply(await page.evaluate(conversationTextInPage), phrase, { busy });
       if (last.ok) return { ...last, waitedMs: Date.now() - t0 };
       stable = 0;
     }
