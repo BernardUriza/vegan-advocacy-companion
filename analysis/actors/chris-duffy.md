@@ -124,7 +124,7 @@ No negar la realidad legal del NSW Biosecurity Act. Conceder lo legal, separar '
 - **Su jugada:** Réplica 20m (VEGANnoyance, post de sintiencia): demanda de credencial ("what do you do for animals… why should anyone listen to you?") + "Do you understand animals bond with their owners?"
 - **Nuestra respuesta:** Registro limpio: concedí que su rescate pesa más que mis posts; la pregunta vale igual la haga quien la haga; el vínculo necesita alguien del otro lado (nadie se apega a una ute), el cuidado da deber, no título. Cierre: qué le da ese vínculo al rescatista más allá de un deber hacia ella.
 
-### Hilo `28459136643743554` — 2026-09-30 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-09-30 · outcome: **silent**
 - **Su jugada:** Réplica 23h (VEGANnoyance, post de sintiencia): insurance / nadie responde por animales salvajes / colgaban por robar caballos (=valor) / "just because you don't like it doesn't mean it's bad" + "I just rescued a lamb yesterday. Tell me what your ideal situation is with my new lamb".
 - **Nuestra respuesta:** Compasivo (278 palabras): concedí la maquinaria legal entera; seguro es para activos y la horca por caballos protegía la cartera del dueño; mi ideal con la cordera es lo que ya hace (cuidarla, responder por ella, que nadie se la quite) sin la parte del título que con ella no va a usar (venderla, criar para vender, camión). Cierre: qué parte del título necesita con esta cordera más allá de ser responsable de su cuidado.
 
