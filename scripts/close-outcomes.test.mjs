@@ -55,3 +55,21 @@ test('markStaleClosures closes old pending/goalpost as silent and keeps closed_f
   assert.equal(i3.outcome, 'pending');
   assert.equal(i4.outcome, 'conceded');
 });
+
+test('markStaleClosures leaves a superseded goalpost alone: a newer interaction in the same thread means the debt was followed up', async () => {
+  const { markStaleClosures } = await import('./db.mjs');
+  const now = Date.parse('2026-10-15T12:00:00Z');
+  const actors = [{ user_id: '1', name: 'A', interactions: [
+    { thread_id: 't1', date: '2026-10-05', outcome: 'goalpost' },
+    { thread_id: 't1', date: '2026-10-07', outcome: 'goalpost' },
+    { thread_id: 't1', date: '2026-10-15', outcome: 'pending' },
+    { thread_id: 't2', date: '2026-10-03', outcome: 'goalpost' },
+  ] }];
+  const closed = markStaleClosures(actors, { maxAgeDays: 7, now });
+  assert.deepEqual(closed.map((c) => [c.thread_id, c.date]), [['t2', '2026-10-03']]);
+  const [i1, i2, i3, i4] = actors[0].interactions;
+  assert.equal(i1.outcome, 'goalpost');
+  assert.equal(i2.outcome, 'goalpost');
+  assert.equal(i3.outcome, 'pending');
+  assert.equal(i4.outcome, 'silent');
+});

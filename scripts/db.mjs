@@ -215,10 +215,17 @@ export function markStaleClosures(actors, { maxAgeDays = MAX_AGE_DAYS, now = Dat
   const today = new Date(now).toISOString().slice(0, 10);
   const closed = [];
   for (const a of actors) {
+    const latestByThread = new Map();
+    for (const it of a.interactions ?? []) {
+      if (!it.date) continue;
+      const prev = latestByThread.get(it.thread_id);
+      if (!prev || it.date > prev) latestByThread.set(it.thread_id, it.date);
+    }
     for (const it of a.interactions ?? []) {
       const from = it.outcome ?? 'pending';
       if (from !== 'pending' && from !== 'goalpost') continue;
       if (!it.date || !isStaleDate(it.date, maxAgeDays, now)) continue;
+      if (it.date < latestByThread.get(it.thread_id)) continue;
       it.outcome = 'silent';
       it.closed_from = from;
       it.outcome_evidence = `cerrado por edad (> ${maxAgeDays}d, pipeline-freshness-cap) ${today}`;
