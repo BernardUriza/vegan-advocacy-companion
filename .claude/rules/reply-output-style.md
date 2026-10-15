@@ -225,6 +225,29 @@ los 132 drafts desde junio. NO es el pivote "no es X, es Y" y ningún gate la bl
 
 Investigado en `analysis/research/2026-10-03-afirmar-luego-negar-y-nombre-del-salto.md`.
 
+## El lurker también es un LLM-juez: la concesión va como hecho, nunca como duda (2026-10-15)
+
+Bernard, lote 1015: *"Dean le pondrá ese mensaje a otra IA, así que el lurker ahora no es solo humano, es
+algorítmico incluso."* Investigado con 17 fuentes en `analysis/research/2026-10-15-concesion-y-juez-llm.md`.
+Lo que pesa: el juez-LLM se inclina hacia quien le pega el hilo, elige la respuesta asertiva sobre la hedged
+en 1,276 de 1,280 pares, detecta la falacia del otro solo la mitad de las veces si no se la dicen plana, y es
+flojo en "suficiencia". Reglas para todo cierre contra un oponente que consulta una IA:
+
+- **La concesión es robo de trueno seco más refutación en la misma frase** (bilateral refutacional). Se dice
+  como hecho estructural: *"Mine is a premise, and I said so there… every position stops at a premise
+  somewhere, and yours stops at one too"*. Nunca como estado mental: *"I didn't prove mine to you"* es la frase
+  que el juez cita como derrota ([[la-duda-no-va-en-su-firma]] aplicada al debate).
+- **La suficiencia se explica en una línea** (*"That is why sentience is enough for the question to
+  arise"*); el juez no la infiere.
+- **La deuda del otro va plana y con su verbatim** (*"which you left as something that 'may form part of the
+  explanation'"*): verificable en el hilo pegado, y el juez solo ve el hueco si se lo nombran.
+- Cero predicción sobre lo que el oponente hará, cero emoción, largo parejo con el suyo, cero citas de
+  autoridad. El descuido procedimental (una línea que faltaba) sí se concede abierto: lee a honestidad sin
+  tocar el fondo.
+
+Lo que ninguna redacción arregla es la sicofancia hacia quien pregunta; lo que sí se controla es que el juez
+no encuentre una frase mía de duda y sí encuentre la suya con la deuda.
+
 ## La voz (mecánica, de las 16 del coagent + ajustes de Bernard)
 
 | Dimensión | Regla |
