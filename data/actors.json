@@ -442,7 +442,8 @@
       "27335635946059556",
       "28500475619575577",
       "27051763587778150",
-      "27496390256650790"
+      "27496390256650790",
+      "28829725286650607"
     ],
     "interactions": [
       {
@@ -551,6 +552,21 @@
         "third_party_replies": [],
         "reply_depth": 1,
         "reply_position": 1
+      },
+      {
+        "date": "2026-10-15",
+        "thread_id": "28829725286650607",
+        "framework": "domesticar-eufemismo-dominar",
+        "exposure_n": 11,
+        "assignment": "randomized",
+        "propensity": 0.3333333333333333,
+        "voice": "profano",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "draft_sha": "11bcb1bd93c3fc62",
+        "their_move": "Raíz (1d, 2 reacciones) en el post de Jennifer Young (OD3, \"If you can't bear to see the animals being tortured or killed then maybe you shouldn't be the one causing it\"): \"If we are OK with it, does that mean it is ok or are you presenting a false choice?\"",
+        "our_reply_summary": "Reply etiquetada profana (161 palabras, scout, framework sorteado): le concedí la falsa elección de frente (ver la matanza prueba fuck-all sobre el título, estar \"OK with it\" prueba igual de poco en ambas direcciones); la domesticación como relación mutua tiene estructura: una parte cría, decide dónde vive, vende y fija el día de la muerte; la palabra deja fuera el título; su propia concesión de julio verbatim (\"it is not necessary to own livestock to have the type of relationship…\"): el título agrega poderes que la relación nunca necesitó. Cierre: if being \"OK with it\" settles nothing, what is that title resting on?",
+        "outcome": "pending"
       }
     ]
   },
@@ -1024,7 +1040,7 @@
       },
       {
         "date": "2026-10-15",
-        "outcome": "pending",
+        "outcome": "engaged",
         "propensity": null,
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
@@ -1035,7 +1051,24 @@
         "exposure_n": 5,
         "voice": "limpio",
         "their_move": "Réplica (mi post de sintiencia, VEGANnoyance, 1w, 1 reacción): \"I thought i was quite clear, obviously you have a problem understanding. It's quite legal to own an animal… humans are biologically omnivores… 99% people don't. I'm defending my right to eat a species appropriate diet, to raise animals ethically for food… I value my paddocks too much to run pigs… cattle don't kill the wildlife either. You say I walked off, I answered you 3 days ago\"",
-        "our_reply_summary": "Reply etiquetada, filo limpio (138 palabras, 0 groserías): le reconocí que sí contestó y que debí decir que dejó sin responder lo de alimentar a 8 mil millones; su nueva réplica defiende un derecho a una dieta; concedí omnívoros, ley, su ganado y pastizales y el 99% como elección; cada punto dice qué pueden o qué les permiten hacer a los humanos; la propiedad va más lejos: entrega autoridad para criar a un animal que siente y luego venderla o decidir su destino; ser omnívoro deja esa autoridad sin explicar y la ley que la escribe también. Cierre: ¿de dónde \"my right to eat a species appropriate diet\" le da a alguien título sobre alguien que siente?"
+        "our_reply_summary": "Reply etiquetada, filo limpio (138 palabras, 0 groserías): le reconocí que sí contestó y que debí decir que dejó sin responder lo de alimentar a 8 mil millones; su nueva réplica defiende un derecho a una dieta; concedí omnívoros, ley, su ganado y pastizales y el 99% como elección; cada punto dice qué pueden o qué les permiten hacer a los humanos; la propiedad va más lejos: entrega autoridad para criar a un animal que siente y luego venderla o decidir su destino; ser omnívoro deja esa autoridad sin explicar y la ley que la escribe también. Cierre: ¿de dónde \"my right to eat a species appropriate diet\" le da a alguien título sobre alguien que siente?",
+        "outcome_evidence": "Jude 9h: \"When you purchase an animal, your given a receipt to prove you own it… So your 'someone' doesn't refer to an animal, as animals aren't someone.\"",
+        "outcome_note": "dominacion-no-es-superioridad-moral: contestó en 9h con el récord legal (dueño responsable si el perro muerde, recibo de compra, cría = propiedad de la cría) + alimentar a 8 mil millones + 'animals aren't someone'. Aterrizó: aceptó discutir el título y lo defiende por legalidad y por negar que haya alguien; no concede nada."
+      },
+      {
+        "date": "2026-10-15",
+        "thread_id": "28459136643743554",
+        "framework": "esclavitud-paralelismo",
+        "exposure_n": 6,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "draft_sha": "cba1cd4691a98a0c",
+        "their_move": "Reply (9h) a mi reply: \"ownership of animals is legal, in fact, if my dog bit you, I'm libel for it… When you purchase an animal, your given a receipt to prove you own it. If I breed that animal, I own the offspring to keep, kill or sell legally… Farming is how we feed 8 billion people… you can rest assured that i don't own any slave… So your 'someone' doesn't refer to an animal, as animals aren't someone.\"",
+        "our_reply_summary": "Reply etiquetada limpia (190 palabras): concedí entera su cadena legal como descripción del título (ya lo había concedido); tomé su propio \"slave\": la ley ha reconocido propiedad sobre personas con papeleo y deberes del dueño, los sujetos son distintos y el hueco es el mismo: el recibo prueba que el título existe bajo esa ley, no que deba existir. Su respuesta al título se reduce a \"animals aren't someone\"; la vaca en la carretera se asusta del coche y su definición la excluye antes del argumento. Cierre: when you say \"animals aren't someone\", what does the receipt prove about that frightened cow?",
+        "outcome": "pending"
       }
     ]
   },
@@ -5957,5 +5990,77 @@
     "postura_nucleo": "Drive-by: \"plants have feelings, too! Now what'cha gonna eat?!?!?\" — equivalencia planta/animal como reductio del veganismo, sin argumento.",
     "analisis": "Raíz en mi post de sintiencia en VEGANnoyance (2026-10-06, 1d, 0 reacciones). Un solo comentario, formato de chiste con signos múltiples; además reaccionó al post. Tu-quoque vegetal clásico: si las plantas sienten, el vegano no puede comer nada. No hay brazo argumental que seguir; conviene una línea que deje el criterio (hay alguien que siente / no hay nadie en la lechuga) y la pregunta de propiedad, sin perseguirla.",
     "what_not_to_do": "No dar cátedra de neurobiología vegetal ni pelear estudios; no tratarla como interlocutora de fondo; una idea, corto, y fuera."
+  },
+  {
+    "tactics": [
+      "criterio_capacidad_superior",
+      "pertenencia_de_clase"
+    ],
+    "threads": [
+      "28388885640732598"
+    ],
+    "interactions": [
+      {
+        "date": "2026-10-15",
+        "thread_id": "28388885640732598",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "exposure_n": 1,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "draft_sha": "9c526fe46adc5298",
+        "their_move": "Raíz (1h, 3 reacciones) en el post \"3 años después\" de That Vegan Disabled Gal (Vegans VS Meat Eaters): \"Cows don't understand words, just like dogs don't. They understand tones that associate with good things like food\"; a April Butcher: \"Cows are not humans they don't develop language like a child or disabled person does… Have you trained a dog? Cause I have, and I have a license to do so.\"",
+        "our_reply_summary": "Reply etiquetada limpia (120 palabras, scout): concedí que ni perros ni vacas entienden palabras y usé su perro (reconoce la voz, siente miedo, busca consuelo sin una palabra); nombré el cambio de criterio (palabras → la especie desarrolla lenguaje) y que la vaca se cayó del razonamiento; el niño sin habla queda fuera del mercado y ella lee el miedo del perro sin pedirle una frase. Cierre: what does \"understand words\" have to do with making a cow somebody's property and meat?",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "100007350496767",
+    "name": "Corina Giunta",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/100007350496767/",
+    "bando": "anti-vegan",
+    "verdict": "audiencia",
+    "register": "filo",
+    "tone": "dismissive",
+    "postura_nucleo": "\"Cows don’t understand words, just like dogs don’t. They understand tones\"; ante casos marginales: \"Cows are not humans they don’t develop language like a child or disabled person does\" — la capacidad lingüística como línea, y la pertenencia a la especie cuando el individuo no la tiene.",
+    "analisis": "Raíz (1h, 3 reacciones) en el post \"3 años después\" de That Vegan Disabled Gal (Vegans VS Meat Eaters, 2026-10-15). Entrenadora de perros con licencia; su argumento es cognitivo (entender palabras) y al apretarle April Butcher con el niño/discapacitado migró a pertenencia de clase (\"they don’t develop language like a child or disabled person does\"). April pegó con el niño y la raza, mal enmarcado; el hilo es un pile-on. Civil pero dismissive (\"omg you are truly missing my point\"). Engageable para el lurker si se concede lo empírico (ni perros ni vacas entienden palabras) y se pregunta qué tiene que ver entender palabras con poder ser poseída.",
+    "what_not_to_do": "No repetir el \"do you eat them too?\" de April ni la analogía racial; no degradar al niño ni al discapacitado; no pelear la inteligencia de las vacas vs perros (concederlo); no dar lección de etología."
+  },
+  {
+    "tactics": [
+      "data_dump_selectivo",
+      "naturalismo"
+    ],
+    "threads": [
+      "28679360868387796"
+    ],
+    "interactions": [
+      {
+        "date": "2026-10-15",
+        "thread_id": "28679360868387796",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "exposure_n": 1,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "profano",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "draft_sha": "def9b86f1e729125",
+        "their_move": "Post raíz propio (VEGANnoyance, 32h, 18 reacciones, 0 comentarios): estudio Orr & Gilks 1931, Maasai vs Kikuyu: \"five inches taller, weighed 23 pounds more, and were 50% stronger\"; dieta de leche, carne y sangre vs maíz y mijo; más enfermedades entre los Kikuyu.",
+        "our_reply_summary": "Comentario RAÍZ profano (143 palabras, scout, --mode root): tomé los números como vienen; describen a quien come y dicen fuck-all sobre la vaca que da la leche, la carne y la sangre; más fuerza da más poder sobre un animal y ningún derecho sobre su cuerpo; el estudio mide cuerpos, dietas y enfermedad y nunca examina el damn título que pone a una vaca sintiente en el menú. Cierre: what the hell do five inches and 50% more strength establish about who gets to own the cow?",
+        "outcome": "pending"
+      }
+    ],
+    "user_id": "100000128834478",
+    "name": "Peter Cunderlik",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100000128834478/",
+    "bando": "anti-vegan",
+    "verdict": "audiencia",
+    "register": "filo",
+    "tone": "civil",
+    "postura_nucleo": "Post raíz: el estudio Orr & Gilks 1931 (Maasai vs Kikuyu): los pastores de ganado eran 5 pulgadas más altos, 23 libras más pesados y 50% más fuertes; la dieta animal produce cuerpos mejores.",
+    "analisis": "Raíz propia en VEGANnoyance (2026-10-14, 32h, 18 reacciones, 0 comentarios). Data-dump nutricional de hace un siglo, con la salvedad del propio estudio copiada (genética y nutrición no se separan). El post es el argumento: la dieta que da estatura y fuerza queda justificada por sus efectos en quien come. Civil, sin insultos. Para el lurker: conceder el dato entero (más altos, más fuertes) y nombrar que el estudio mide lo que la dieta hace por el que come y nada sobre la vaca, la cabra o quien queda como propiedad para producirla.",
+    "what_not_to_do": "No pelear la nutrición (B12, proteína vegetal) ni la metodología de 1931; no acusar de cherry-pick; no sonar a nutriólogo; ir en raíz (el post es el argumento) con --mode root."
   }
 ]
