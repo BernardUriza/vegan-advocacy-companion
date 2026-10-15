@@ -35,8 +35,12 @@ No competir en cuál muerte duele menos (eso es bienestarismo y concede el eje).
 - **Su jugada:** Post propio (Open Debates 3, 8h, 3 reacciones): "Is eating a crop-raiding rabbit more ethical. A question for the vegans. If i shoot a rabbit to protect a veggie crop and eat that rabbit is that better than that rabbit being poisoned and die a slow painfully death?"
 - **Nuestra respuesta:** Comentario raíz, filo profano (brazo sorteado profano; 190 palabras, 2 groserías): concedí la bala sobre el veneno; el conejo no es propiedad de nadie y si matar al que come la cosecha está bien es otra pregunta; la trampa es conejo contra conejo para cubrir a la vaca, el cerdo y la gallina criados como stock; su propia hortaliza es la prueba de que el corral no hace falta. Cierre: ¿qué nos dice un conejo "crop-raiding" del animal que nunca tuvo que criar como propiedad para "protect a veggie crop"?
 
-### Hilo `28704551619167975` — 2026-10-07 · outcome: **pending**
+### Hilo `28704551619167975` — 2026-10-07 · outcome: **goalpost**
 - **Su jugada:** Réplica a mi raíz en su post del conejo (Open Debates 3, 1d, 1 reacción): "off again about cattle, is that the vegan way of trying to except what dies for vegans to eat while telling others not to eat meat? I have cows they pay for the farm but its a lifestyle thing. Just got a couple of calfs dropping so wahoo more money."
 - **Nuestra respuesta:** Reply etiquetada, filo profano (brazo heredado; 138 palabras, 2 groserías): él mismo trajo el ganado y contestó la pregunta del título (son suyos porque "pay for the farm"); concedí que en los campos mueren animales y que a ninguno lo crió nadie para venderlo; el becerro de esta semana nació con título y precio; "lifestyle thing" explica por qué sigue, no por qué el becerro es de alguien. Cierre: ¿qué agrega el "lifestyle thing" que hace suyo al becerro antes de que llegue el dinero?
+
+### Hilo `28704551619167975` — 2026-10-15 · outcome: **pending**
+- **Su jugada:** Réplica (su post del conejo, 6d, 0 reacciones): "it's the same as humans life death and taxes in between just with cattle it life feed and death .Really no different."
+- **Nuestra respuesta:** Reply etiquetada, filo profano (120 palabras, 3 groserías): concedí que humanos y ganado nacen y mueren; en su versión "taxes in between" el humano nace sin dueño y en la de "feed" el becerro ya es propiedad de alguien, él mismo dijo que las vacas pagan la granja y que los becerros son más dinero; el título es la diferencia que su comparación de ciclos salta; la biología describe nacer y morir y no entrega título sobre el animal en medio. Cierre: si es "Really no different", ¿quién decide cuándo termina el "feed" y llega la muerte del becerro que posee?
 
 _Hilos: 28704551619167975_

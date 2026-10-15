@@ -52,4 +52,8 @@ Nada de body-count ni cuál muerte es peor; no defender ni condenar el control d
 - **Su jugada:** so we are in agreement than. Excellent. (salida ante "is owning a pig what it takes to feed 8 billion, or just what the law allows?")
 - **Nuestra respuesta:** Filo (71 palabras): de acuerdo solo en qué dice la ley; el reclamo de necesidad de los 8 mil millones lo trajo él y lo dejó en la mesa. Cierre: ¿necesario para alimentar a 8 mil millones, o solo lo que la ley deja hacer?
 
+### Hilo `28459136643743554` — 2026-10-15 · outcome: **pending**
+- **Su jugada:** Réplica (mi post de sintiencia, VEGANnoyance, 1w, 1 reacción): "I thought i was quite clear, obviously you have a problem understanding. It's quite legal to own an animal… humans are biologically omnivores… 99% people don't. I'm defending my right to eat a species appropriate diet, to raise animals ethically for food… I value my paddocks too much to run pigs… cattle don't kill the wildlife either. You say I walked off, I answered you 3 days ago"
+- **Nuestra respuesta:** Reply etiquetada, filo limpio (138 palabras, 0 groserías): le reconocí que sí contestó y que debí decir que dejó sin responder lo de alimentar a 8 mil millones; su nueva réplica defiende un derecho a una dieta; concedí omnívoros, ley, su ganado y pastizales y el 99% como elección; cada punto dice qué pueden o qué les permiten hacer a los humanos; la propiedad va más lejos: entrega autoridad para criar a un animal que siente y luego venderla o decidir su destino; ser omnívoro deja esa autoridad sin explicar y la ley que la escribe también. Cierre: ¿de dónde "my right to eat a species appropriate diet" le da a alguien título sobre alguien que siente?
+
 _Hilos: 27341517928804691, 28459136643743554_

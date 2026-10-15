@@ -31,8 +31,12 @@ No dar cátedra de neurobiología vegetal ni pelear estudios; no tratarla como i
 
 ## Log de interacciones
 
-### Hilo `28459136643743554` — 2026-10-07 · outcome: **pending**
+### Hilo `28459136643743554` — 2026-10-07 · outcome: **engaged**
 - **Su jugada:** Raíz drive-by en mi post de sintiencia (VEGANnoyance, 1d, 0 reacciones): "…plants have feelings, too! Now what'cha gonna eat?!?!?"
 - **Nuestra respuesta:** Reply etiquetada corta, filo profano (brazo sorteado; 85 palabras, 2 groserías): nadie en casa en la lechuga (sin cerebro, sin punto de vista), alguien en casa en el cerdo y eso es lo que el chiste necesita que se olvide; si aparece alguien en una planta la misma pregunta lo cubre. Cierre: "what'cha gonna eat" tiene respuesta fácil, el que no tiene a nadie adentro; ¿cuál de los dos creía que era?
+
+### Hilo `28459136643743554` — 2026-10-15 · outcome: **pending**
+- **Su jugada:** Réplica (mi post de sintiencia, VEGANnoyance, 6d, 0 reacciones): "then WHY does a plant react to music??? And WHY does a cow or pig or whatever have \"somebody\" in them…they're human? DNA says otherwise………."
+- **Nuestra respuesta:** Reply etiquetada, filo profano (104 palabras, 3 groserías): las plantas responden al sonido y la luz, un termostato a la temperatura, reaccionar no prueba que alguien sienta; nadie llamó humano al cerdo, el ADN dice la especie; el cerdo se asusta, busca consuelo y vive lo que le pasa, eso es "somebody"; un perro tiene ADN de perro y aun así se ve que un perro asustado tiene una experiencia propia; la etiqueta de especie no da razón para hacer propiedad a un animal que siente. Cierre: cuando un perro está asustado, ¿qué le dice "DNA says otherwise" sobre si hay "somebody" sintiéndolo?
 
 _Hilos: 28459136643743554_

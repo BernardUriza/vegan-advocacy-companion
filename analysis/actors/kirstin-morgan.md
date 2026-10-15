@@ -41,7 +41,7 @@ No pelear edades de sacrificio ni si el video está manipulado (ya se lo dijeron
 
 ## Log de interacciones
 
-### Hilo `28229074166713747` — 2026-10-04 · outcome: **pending**
+### Hilo `28229074166713747` — 2026-10-04 · outcome: **silent**
 - **Su jugada:** Scout, su post en Vegans VS Meat Eaters (14h, 14 reacciones): "And vegans say cows are slaves, and are forced to be milked" con video de una vaca metida sola en un robot de ordeño buscando grano; en comentarios: "they stand there and get inseminated", "Calves get removed because cows often stomp on them or abandon them".
 - **Nuestra respuesta:** Comentario raíz, filo moderado (127 palabras): concedí el video entero (entra sola, hay grano, nadie la arrastra); esa caminata es la única decisión del clip que es suya; el resto lo enumeró ella ("they stand there and get inseminated", "Calves get removed"): preñez, cría, leche y fecha de salida las decide quien tiene el título; caminar a la comida muestra a una vaca con hambre que quiere cosas, y de quién es quedó resuelto antes de la puerta. Cierre: besides the walk to the grain, which decision about her body is hers?
 
