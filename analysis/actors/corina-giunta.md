@@ -35,8 +35,12 @@ No repetir el "do you eat them too?" de April ni la analogía racial; no degrada
 
 ## Log de interacciones
 
-### Hilo `28388885640732598` — 2026-10-15 · outcome: **pending**
+### Hilo `28388885640732598` — 2026-10-15 · outcome: **goalpost**
 - **Su jugada:** Raíz (1h, 3 reacciones) en el post "3 años después" de That Vegan Disabled Gal (Vegans VS Meat Eaters): "Cows don't understand words, just like dogs don't. They understand tones that associate with good things like food"; a April Butcher: "Cows are not humans they don't develop language like a child or disabled person does… Have you trained a dog? Cause I have, and I have a license to do so."
 - **Nuestra respuesta:** Reply etiquetada limpia (120 palabras, scout): concedí que ni perros ni vacas entienden palabras y usé su perro (reconoce la voz, siente miedo, busca consuelo sin una palabra); nombré el cambio de criterio (palabras → la especie desarrolla lenguaje) y que la vaca se cayó del razonamiento; el niño sin habla queda fuera del mercado y ella lee el miedo del perro sin pedirle una frase. Cierre: what does "understand words" have to do with making a cow somebody's property and meat?
+
+### Hilo `28388885640732598` — 2026-10-16 · outcome: **pending**
+- **Su jugada:** Reply (22h) a mi reply del perro (post "3 años después", Vegans VS Meat Eaters): "yes and guess what a cow isn't a dog. They are a bovine completely different animals. It's called respect your food until it's time."
+- **Nuestra respuesta:** Reply etiquetada limpia (101 palabras, vuelta 2): concedí que una vaca es un bovino y un perro un perro; el perro estaba por lo que ella lee sin palabras (reconocer, miedo, consuelo) y la vaca lo experimenta igual; nombré las tres estaciones (palabras → qué especie desarrolla lenguaje → "bovine") y que la etiqueta decide antes de mirar a la vaca; "respect your food until it's time" ya le asigna un propósito y le da a otro el control de su futuro. Cierre: when you say "until it's time", who gets to decide that time for her?
 
 _Hilos: 28388885640732598_

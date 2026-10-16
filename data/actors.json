@@ -566,6 +566,24 @@
         "draft_sha": "11bcb1bd93c3fc62",
         "their_move": "Raíz (1d, 2 reacciones) en el post de Jennifer Young (OD3, \"If you can't bear to see the animals being tortured or killed then maybe you shouldn't be the one causing it\"): \"If we are OK with it, does that mean it is ok or are you presenting a false choice?\"",
         "our_reply_summary": "Reply etiquetada profana (161 palabras, scout, framework sorteado): le concedí la falsa elección de frente (ver la matanza prueba fuck-all sobre el título, estar \"OK with it\" prueba igual de poco en ambas direcciones); la domesticación como relación mutua tiene estructura: una parte cría, decide dónde vive, vende y fija el día de la muerte; la palabra deja fuera el título; su propia concesión de julio verbatim (\"it is not necessary to own livestock to have the type of relationship…\"): el título agrega poderes que la relación nunca necesitó. Cierre: if being \"OK with it\" settles nothing, what is that title resting on?",
+        "outcome": "engaged",
+        "outcome_evidence": "Adam Gaska · 15h: 'Yes, ownership sanctioned by society is not necessary just like if society shuns raisi g livestock, I still will. I don't need yours, or anyone's, approval.' Tercero: Jennifer Young (OP) le contesta con sello ('you need to actually have a soul'), no con argumento.",
+        "outcome_note": "domesticar-eufemismo-dominar: la estructura de la relación (cría, vende, fija el día de la muerte) no la discutió; concedió por segunda vez que el título no es necesario ('ownership sanctioned by society is not necessary') y se replegó al rechazo de la carga ('I don't need yours, or anyone's, approval'). La pregunta por lo que sostiene el título quedó sin contestar; el eufemismo no lo defendió.",
+        "third_party_stance": "apoyo"
+      },
+      {
+        "date": "2026-10-16",
+        "thread_id": "28829725286650607",
+        "framework": "consideracion-moral-no-cuanto-sufre",
+        "exposure_n": 12,
+        "assignment": "randomized",
+        "propensity": 0.3333333333333333,
+        "voice": "profano",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "draft_sha": "a4d106cab1ad0fc2",
+        "their_move": "Reply (15h) a mi reply del título (post de Jennifer Young, OD3): \"Yes, ownership sanctioned by society is not necessary just like if society shuns raisi g livestock, I still will. I don't need yours, or anyone's, approval.\"",
+        "our_reply_summary": "Reply etiquetada profana (139 palabras, vuelta 12, framework sorteado): le concedí que no necesita mi aprobación y que la de la sociedad nunca entró en mi pregunta; \"I still will\" dice qué está dispuesto a hacer y establece fuck-all sobre a qué tiene derecho; ya reconoció que la relación humano-ganado existe sin propiedad, y el título agrega el poder de criar, vender y decidir cuándo muere una vaca que puede asustarse y buscar refugio; ni el permiso social ni su voluntad de seguir sin él dan una damn justification para reclamar a otro sujeto sintiente como propiedad. Cierre: if ownership is \"not necessary\", what the hell is it still doing there?",
         "outcome": "pending"
       }
     ]
@@ -1068,6 +1086,23 @@
         "draft_sha": "cba1cd4691a98a0c",
         "their_move": "Reply (9h) a mi reply: \"ownership of animals is legal, in fact, if my dog bit you, I'm libel for it… When you purchase an animal, your given a receipt to prove you own it. If I breed that animal, I own the offspring to keep, kill or sell legally… Farming is how we feed 8 billion people… you can rest assured that i don't own any slave… So your 'someone' doesn't refer to an animal, as animals aren't someone.\"",
         "our_reply_summary": "Reply etiquetada limpia (190 palabras): concedí entera su cadena legal como descripción del título (ya lo había concedido); tomé su propio \"slave\": la ley ha reconocido propiedad sobre personas con papeleo y deberes del dueño, los sujetos son distintos y el hueco es el mismo: el recibo prueba que el título existe bajo esa ley, no que deba existir. Su respuesta al título se reduce a \"animals aren't someone\"; la vaca en la carretera se asusta del coche y su definición la excluye antes del argumento. Cierre: when you say \"animals aren't someone\", what does the receipt prove about that frightened cow?",
+        "outcome": "engaged",
+        "outcome_evidence": "Jude Cooper · 21h: \"'frightened' is a natural instinct that animals, including ourselves, possess... As for slavery, are you likening slavery to raising animals for food? An animal given all the food it needs, water, protection from predators, shelter, parasite control, medical care... That's a far fetch.\"",
+        "outcome_note": "esclavitud-paralelismo: aterrizó lo que prueba el recibo (título bajo esa ley, no legitimidad) y ella migró a dos estaciones: 'frightened' es instinto (deflación del sujeto) y la lista de bienestar (comida, agua, refugio, veterinario, leyes de abuso) como respuesta a 'are you likening slavery to raising animals for food?'. El paralelismo lo tomó como equiparación de sujetos, que es su attack_surface: la próxima vuelta va al estatus sin la palabra."
+      },
+      {
+        "date": "2026-10-16",
+        "thread_id": "28459136643743554",
+        "framework": "consideracion-moral-no-cuanto-sufre",
+        "exposure_n": 7,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "draft_sha": "34a75ff4c4aad2c3",
+        "their_move": "Reply (21h) a mi reply del recibo, mi post de sintiencia (VEGANnoyance): \"'frightened' is a natural instinct that animals, including ourselves, possess… I've seen cows frightened of a plastic bag… As for slavery, are you likening slavery to raising animals for food? An animal given all the food it needs, water, protection from predators, shelter, parasite control, medical care and days of just being the animal it should be? That's a far fetch… If I was flogging my cows… I would be charged for abuse.\"",
+        "our_reply_summary": "Reply etiquetada limpia (193 palabras, vuelta 7): el instinto es el cómo y la que se asusta es ella; concedí entera su lista (comida, agua, refugio, veterinario, responsabilidad legal) y nombré que describe lo que hace por animales que ya posee y deja la propiedad sin explicar; el mismo título que la hace responsable le deja criarla, venderla y decidir cuándo se acaba su tiempo; sobre la comparación que ella trajo: lo que discutí es qué prueba un recibo, y la pregunta del título se sostiene sin la comparación. Cierre: if she gets \"days of just being the animal it should be\" on your land, what makes her yours and not just well kept?",
         "outcome": "pending"
       }
     ]
@@ -4561,6 +4596,7 @@
       "whataboutism"
     ],
     "threads": [
+      "28398852796402549",
       "28046113755009790",
       "28046483408306158",
       "28203900659231098"
@@ -4693,6 +4729,21 @@
         "third_party_replies": [],
         "opponent_reactions": 0,
         "third_party_replies_to_opponent": []
+      },
+      {
+        "date": "2026-10-16",
+        "thread_id": "28398852796402549",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "exposure_n": 9,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "draft_sha": "e5a8696653cf2d11",
+        "their_move": "Su post en Vegans VS Meat Eaters (8h, 8 reacciones, 44 comentarios; link de Bernard): captura de Feeah Posey (vegana) concediendo que \"the majority of vegans look down on other people\"; en su comentario a David Huggens repite tres veces el párrafo de crop deaths: \"crop deaths are intentionally allowed to occur so farm machinery can be used in crops. Therefore… vegans must believe it to be socially acceptable to intentionally allow animals to be killed… in the name of human edible food crop production.\" David le contesta con \"REDUCING HARM WHERE IT IS PRACTICAL AND REASONABLE\" y Roderick Huffsmith se lo cobra con el bombero voluntario.",
+        "our_reply_summary": "Reply etiquetada limpia (164 palabras, vuelta 9, bajo su comentario a David): le concedí entero el hecho (farmers know, they proceed, call it intentionally allowed; I've conceded that before) y que lo repite como si decidiera quién puede poseer a quién; el lema de practical and reasonable es la respuesta de David, mi posición es que un sujeto sintiente no sea propiedad de nadie; el ratón del campo no es de nadie (nadie lo cría como stock, le pone precio ni reclama sus crías) y la ternera es propiedad de alguien antes de nacer; el campo no contiene ningún título que abolir y la granja está construida alrededor de uno. Cierre: how does calling crop deaths \"socially acceptable\" establish the farmer's right to own the calf?",
+        "outcome": "pending"
       }
     ],
     "user_id": "1742478160",
@@ -6013,6 +6064,24 @@
         "draft_sha": "9c526fe46adc5298",
         "their_move": "Raíz (1h, 3 reacciones) en el post \"3 años después\" de That Vegan Disabled Gal (Vegans VS Meat Eaters): \"Cows don't understand words, just like dogs don't. They understand tones that associate with good things like food\"; a April Butcher: \"Cows are not humans they don't develop language like a child or disabled person does… Have you trained a dog? Cause I have, and I have a license to do so.\"",
         "our_reply_summary": "Reply etiquetada limpia (120 palabras, scout): concedí que ni perros ni vacas entienden palabras y usé su perro (reconoce la voz, siente miedo, busca consuelo sin una palabra); nombré el cambio de criterio (palabras → la especie desarrolla lenguaje) y que la vaca se cayó del razonamiento; el niño sin habla queda fuera del mercado y ella lee el miedo del perro sin pedirle una frase. Cierre: what does \"understand words\" have to do with making a cow somebody's property and meat?",
+        "outcome": "goalpost",
+        "outcome_evidence": "Corina Giunta · 22h: 'yes and guess what a cow isn't a dog. They are a bovine completely different animals. It's called respect your food until it's time.' Tercero: April Butcher le discute la inteligencia de las vacas (refuta al oponente).",
+        "outcome_note": "sobreposicion-de-especies-criterio-leido: el niño sin habla y el perro sin palabras no los tocó; movió el criterio por tercera vez: 'cows don't understand words' → 'they don't develop language' → 'a cow isn't a dog, they are a bovine, completely different animals' + 'respect your food until it's time'. La etiqueta de especie y la palabra 'food' sustituyen al criterio que se cayó.",
+        "third_party_stance": "apoyo"
+      },
+      {
+        "date": "2026-10-16",
+        "thread_id": "28388885640732598",
+        "framework": "filtro-especie-vs-individuo",
+        "exposure_n": 2,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "draft_sha": "4cce7f2c11341a4c",
+        "their_move": "Reply (22h) a mi reply del perro (post \"3 años después\", Vegans VS Meat Eaters): \"yes and guess what a cow isn't a dog. They are a bovine completely different animals. It's called respect your food until it's time.\"",
+        "our_reply_summary": "Reply etiquetada limpia (101 palabras, vuelta 2): concedí que una vaca es un bovino y un perro un perro; el perro estaba por lo que ella lee sin palabras (reconocer, miedo, consuelo) y la vaca lo experimenta igual; nombré las tres estaciones (palabras → qué especie desarrolla lenguaje → \"bovine\") y que la etiqueta decide antes de mirar a la vaca; \"respect your food until it's time\" ya le asigna un propósito y le da a otro el control de su futuro. Cierre: when you say \"until it's time\", who gets to decide that time for her?",
         "outcome": "pending"
       }
     ],
