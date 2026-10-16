@@ -1,7 +1,8 @@
 import { readFileSync, readdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { readActors, readTactics, readFrameworks, readVocab, vocabViolations, interactionProblems, placementProblem } from './db.mjs';
+import { readActors, readTactics, readFrameworks, readVocab, vocabViolations, interactionProblems, placementProblem, latestDateByThread, isSupersededInteraction } from './db.mjs';
+import { MAX_AGE_DAYS, isStaleDate } from './freshness.mjs';
 import { dossierFilenames, GENERATED_MARK } from './gen-dossiers.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -152,6 +153,18 @@ for (const a of actors) {
     const dateOk = typeof it.date === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(it.date);
     if (!dateOk) warnings.push(`${where} date ${JSON.stringify(it.date)} does not match YYYY-MM-DD`);
     else if (it.date >= DRAFT_SHA_SINCE && !it.draft_sha) { missingSha++; warnings.push(`${where} lacks draft_sha (required for interactions dated ${DRAFT_SHA_SINCE}+; run moat-link-drafts)`); }
+  }
+}
+
+// 4l. A pending interaction superseded by a later one in the same actor-thread and older than the
+// freshness cap is in limbo: debt-sweep hides it, close-outcomes --stale skips it, and the reflex only
+// emits within the cap. It needs a verdict (or a deliberate close), otherwise it stays pending forever.
+for (const a of actors) {
+  const latest = latestDateByThread(a);
+  for (const it of a.interactions ?? []) {
+    if (it.misattributed || (it.outcome ?? 'pending') !== 'pending') continue;
+    if (!isSupersededInteraction(it, latest) || !isStaleDate(it.date, MAX_AGE_DAYS)) continue;
+    warnings.push(`actor "${a.name}" (${a.user_id}) interaction [${it.thread_id} ${it.date}] is pending, superseded by ${latest.get(it.thread_id)} and older than ${MAX_AGE_DAYS}d — nothing closes it: judge it in the reflex or close it on purpose`);
   }
 }
 

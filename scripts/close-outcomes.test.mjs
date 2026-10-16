@@ -86,3 +86,26 @@ test('isSupersededInteraction: un goalpost con interacción posterior en el mism
   assert.equal(isSupersededInteraction(actor.interactions[1], latest), false);
   assert.equal(isSupersededInteraction(actor.interactions[2], latest), false);
 });
+
+test('getOpenDebtThreads: a superseded goalpost is not open debt, a misattributed later interaction does not supersede, same-day stays open', async () => {
+  const { getOpenDebtThreads } = await import('./db.mjs');
+  const now = Date.parse('2026-10-16T12:00:00Z');
+  const actors = [
+    { user_id: 'u1', name: 'A', interactions: [
+      { thread_id: 't1', date: '2026-10-12', outcome: 'goalpost' },
+      { thread_id: 't1', date: '2026-10-14', outcome: 'silent' },
+    ] },
+    { user_id: 'u2', name: 'B', interactions: [
+      { thread_id: 't2', date: '2026-10-13', outcome: 'pending' },
+      { thread_id: 't2', date: '2026-10-15', outcome: 'engaged', misattributed: true },
+    ] },
+    { user_id: 'u3', name: 'C', interactions: [
+      { thread_id: 't3', date: '2026-10-15', outcome: 'goalpost' },
+      { thread_id: 't3', date: '2026-10-15', outcome: 'pending' },
+    ] },
+  ];
+  const open = getOpenDebtThreads({ includeStale: true, now, actors });
+  const ids = open.map((t) => t.thread_id).sort();
+  assert.deepEqual(ids, ['t2', 't3']);
+  assert.equal(open.find((t) => t.thread_id === 't3').actors.length, 2);
+});

@@ -214,7 +214,7 @@ export function closeOutcome(userId, threadId, outcome, evidence) {
 export function latestDateByThread(actor) {
   const latestByThread = new Map();
   for (const it of actor.interactions ?? []) {
-    if (!it.date) continue;
+    if (!it.date || it.misattributed) continue;
     const prev = latestByThread.get(it.thread_id);
     if (!prev || it.date > prev) latestByThread.set(it.thread_id, it.date);
   }
@@ -454,13 +454,13 @@ export function threadOpenUrl(threadId) {
 // muertos (2026-09-19). `includeStale: true` los devuelve marcados, para listarlos
 // SIN abrirlos. Cada hilo trae `newestDate` y `ageDays` (null si ninguna fecha parsea:
 // sin fecha no se declara viejo, Art. 2).
-export function getOpenDebtThreads({ maxAgeDays = MAX_AGE_DAYS, includeStale = false, now = Date.now() } = {}) {
+export function getOpenDebtThreads({ maxAgeDays = MAX_AGE_DAYS, includeStale = false, now = Date.now(), actors = readActors() } = {}) {
   const OPEN = new Set(['pending', 'goalpost']);
   const byThread = new Map();
-  for (const actor of readActors()) {
+  for (const actor of actors) {
     const latestByThread = latestDateByThread(actor);
     for (const it of actor.interactions ?? []) {
-      if (!OPEN.has(it.outcome ?? 'pending')) continue;
+      if (it.misattributed || !OPEN.has(it.outcome ?? 'pending')) continue;
       if (isSupersededInteraction(it, latestByThread)) continue;
       const tid = it.thread_id;
       if (!byThread.has(tid)) byThread.set(tid, { thread_id: tid, actors: [] });
