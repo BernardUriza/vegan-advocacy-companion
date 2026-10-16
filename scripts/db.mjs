@@ -211,21 +211,30 @@ export function closeOutcome(userId, threadId, outcome, evidence) {
 // Deuda vieja del moat (pipeline-freshness-cap ley 5): un pending/goalpost más viejo que el
 // tope se cierra como silent, guardando de qué estado venía en `closed_from`. Pura: muta y
 // devuelve lo cerrado; closeStaleInteractions es la que escribe.
+export function latestDateByThread(actor) {
+  const latestByThread = new Map();
+  for (const it of actor.interactions ?? []) {
+    if (!it.date) continue;
+    const prev = latestByThread.get(it.thread_id);
+    if (!prev || it.date > prev) latestByThread.set(it.thread_id, it.date);
+  }
+  return latestByThread;
+}
+
+export function isSupersededInteraction(it, latestByThread) {
+  return Boolean(it.date) && it.date < latestByThread.get(it.thread_id);
+}
+
 export function markStaleClosures(actors, { maxAgeDays = MAX_AGE_DAYS, now = Date.now() } = {}) {
   const today = new Date(now).toISOString().slice(0, 10);
   const closed = [];
   for (const a of actors) {
-    const latestByThread = new Map();
-    for (const it of a.interactions ?? []) {
-      if (!it.date) continue;
-      const prev = latestByThread.get(it.thread_id);
-      if (!prev || it.date > prev) latestByThread.set(it.thread_id, it.date);
-    }
+    const latestByThread = latestDateByThread(a);
     for (const it of a.interactions ?? []) {
       const from = it.outcome ?? 'pending';
       if (from !== 'pending' && from !== 'goalpost') continue;
       if (!it.date || !isStaleDate(it.date, maxAgeDays, now)) continue;
-      if (it.date < latestByThread.get(it.thread_id)) continue;
+      if (isSupersededInteraction(it, latestByThread)) continue;
       it.outcome = 'silent';
       it.closed_from = from;
       it.outcome_evidence = `cerrado por edad (> ${maxAgeDays}d, pipeline-freshness-cap) ${today}`;
@@ -449,8 +458,10 @@ export function getOpenDebtThreads({ maxAgeDays = MAX_AGE_DAYS, includeStale = f
   const OPEN = new Set(['pending', 'goalpost']);
   const byThread = new Map();
   for (const actor of readActors()) {
+    const latestByThread = latestDateByThread(actor);
     for (const it of actor.interactions ?? []) {
       if (!OPEN.has(it.outcome ?? 'pending')) continue;
+      if (isSupersededInteraction(it, latestByThread)) continue;
       const tid = it.thread_id;
       if (!byThread.has(tid)) byThread.set(tid, { thread_id: tid, actors: [] });
       byThread.get(tid).actors.push({

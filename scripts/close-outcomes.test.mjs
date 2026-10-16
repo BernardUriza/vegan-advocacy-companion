@@ -73,3 +73,16 @@ test('markStaleClosures leaves a superseded goalpost alone: a newer interaction 
   assert.equal(i3.outcome, 'pending');
   assert.equal(i4.outcome, 'silent');
 });
+
+test('isSupersededInteraction: un goalpost con interacción posterior en el mismo hilo no es deuda abierta (misma regla que el cierre por edad)', async () => {
+  const { latestDateByThread, isSupersededInteraction } = await import('./db.mjs');
+  const actor = { interactions: [
+    { thread_id: 't1', date: '2026-10-02', outcome: 'goalpost' },
+    { thread_id: 't1', date: '2026-10-03', outcome: 'silent' },
+    { thread_id: 't2', date: '2026-10-02', outcome: 'goalpost' },
+  ] };
+  const latest = latestDateByThread(actor);
+  assert.equal(isSupersededInteraction(actor.interactions[0], latest), true);
+  assert.equal(isSupersededInteraction(actor.interactions[1], latest), false);
+  assert.equal(isSupersededInteraction(actor.interactions[2], latest), false);
+});
