@@ -43,7 +43,7 @@ No repetir el "do you eat them too?" de April ni la analogía racial; no degrada
 - **Su jugada:** Reply (22h) a mi reply del perro (post "3 años después", Vegans VS Meat Eaters): "yes and guess what a cow isn't a dog. They are a bovine completely different animals. It's called respect your food until it's time."
 - **Nuestra respuesta:** Reply etiquetada limpia (101 palabras, vuelta 2): concedí que una vaca es un bovino y un perro un perro; el perro estaba por lo que ella lee sin palabras (reconocer, miedo, consuelo) y la vaca lo experimenta igual; nombré las tres estaciones (palabras → qué especie desarrolla lenguaje → "bovine") y que la etiqueta decide antes de mirar a la vaca; "respect your food until it's time" ya le asigna un propósito y le da a otro el control de su futuro. Cierre: when you say "until it's time", who gets to decide that time for her?
 
-### Hilo `28388885640732598` — 2026-10-17 · outcome: **pending**
+### Hilo `28388885640732598` — 2026-10-17 · outcome: **silent**
 - **Su jugada:** Reply (1d) a mi reply del propósito: "you act like dogs don't have a purpose either. Dogs have a job to do…" (caza, cobro, guardianes de ganado, rescate).
 - **Nuestra respuesta:** Reply etiquetada limpia (146 palabras, vuelta 3): concedí los trabajos; el trabajo no vuelve comida al perro; escena del guardián junto a la vaca (los dos legalmente poseíbles, ni trabajo ni especie justifican el título); recibos de su arco palabras → especie → trabajos. Cierre: "a job to do".
 

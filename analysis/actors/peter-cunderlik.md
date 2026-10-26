@@ -46,8 +46,12 @@ No pelear la nutrición (B12, proteína vegetal) ni la metodología de 1931; no 
 
 ## Log de interacciones
 
-### Hilo `28679360868387796` — 2026-10-15 · outcome: **pending**
+### Hilo `28679360868387796` — 2026-10-15 · outcome: **silent**
 - **Su jugada:** Post raíz propio (VEGANnoyance, 32h, 18 reacciones, 0 comentarios): estudio Orr & Gilks 1931, Maasai vs Kikuyu: "five inches taller, weighed 23 pounds more, and were 50% stronger"; dieta de leche, carne y sangre vs maíz y mijo; más enfermedades entre los Kikuyu.
 - **Nuestra respuesta:** Comentario RAÍZ profano (143 palabras, scout, --mode root): tomé los números como vienen; describen a quien come y dicen fuck-all sobre la vaca que da la leche, la carne y la sangre; más fuerza da más poder sobre un animal y ningún derecho sobre su cuerpo; el estudio mide cuerpos, dietas y enfermedad y nunca examina el damn título que pone a una vaca sintiente en el menú. Cierre: what the hell do five inches and 50% more strength establish about who gets to own the cow?
 
-_Hilos: 28679360868387796_
+### Hilo `28830892399901308` — 2026-10-26 · outcome: **pending**
+- **Su jugada:** Post raíz (VEGANnoyance): fresas de California fumigadas con cloropicrina, gas de trinchera; The cow in the pasture next door has never once needed the soil under her sterilised.
+- **Nuestra respuesta:** Raíz profana (152 palabras): concedo todo lo del gas; en el campo nadie es poseído; la única con dueño en su post es la vaca del pasto vecino, presentada como opción limpia. Cierre con su frase de la vaca.
+
+_Hilos: 28679360868387796, 28830892399901308_

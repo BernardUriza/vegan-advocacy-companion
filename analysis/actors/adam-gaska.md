@@ -96,7 +96,7 @@ No usar 'consent' como argumento único (fácilmente deflectado a bebés/mascota
 - **Su jugada:** Reply (15h) a mi reply del título (post de Jennifer Young, OD3): "Yes, ownership sanctioned by society is not necessary just like if society shuns raisi g livestock, I still will. I don't need yours, or anyone's, approval."
 - **Nuestra respuesta:** Reply etiquetada profana (139 palabras, vuelta 12, framework sorteado): le concedí que no necesita mi aprobación y que la de la sociedad nunca entró en mi pregunta; "I still will" dice qué está dispuesto a hacer y establece fuck-all sobre a qué tiene derecho; ya reconoció que la relación humano-ganado existe sin propiedad, y el título agrega el poder de criar, vender y decidir cuándo muere una vaca que puede asustarse y buscar refugio; ni el permiso social ni su voluntad de seguir sin él dan una damn justification para reclamar a otro sujeto sintiente como propiedad. Cierre: if ownership is "not necessary", what the hell is it still doing there?
 
-### Hilo `28829725286650607` — 2026-10-17 · outcome: **pending**
+### Hilo `28829725286650607` — 2026-10-17 · outcome: **silent**
 - **Su jugada:** Reply (17h): "Ownership is a human construct… The animal that depends on and trusts its human does not do so because it is acknowledging that it is owned, but out of its own desire. This they have consented to."
 - **Nuestra respuesta:** Reply etiquetada profana (153 palabras, 3 groserías, vuelta 13): concedí el constructo y que la confianza es real; su frase admite que ella nunca supo que era poseída; quien recibe la confianza controla cerca, crianza, venta y el día; "consented" estira la confianza sobre un arreglo hecho por otro. Cierre: "consented to".
 

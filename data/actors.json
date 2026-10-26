@@ -5303,7 +5303,8 @@
     "threads": [
       "28148343171453514",
       "28148824318072066",
-      "28154276440860187"
+      "28154276440860187",
+      "28536621809292313"
     ],
     "interactions": [
       {
@@ -5385,6 +5386,21 @@
         "outcome_note": "\"What did the first buyer buy\" cerró el arco de cuatro estaciones; no volvió.",
         "reply_depth": 2,
         "reply_position": 22
+      },
+      {
+        "thread_id": "28536621809292313",
+        "date": "2026-10-26",
+        "their_move": "you try to give animals personhood they arent a who when they are dead and slabs of meat it be a different story if i was eating them alive",
+        "our_reply_summary": "Reply profana (113 palabras) en el post de Nate: su \"different story\" admite que vivo es otra cosa; toda la propiedad se ejerce viva; \"livestock\" la mete al inventario antes del slab. Cierre: why does owning her while she is alive get a free pass?",
+        "framework": "violencia-discursiva",
+        "draft_sha": "41133d52eb72f5f0",
+        "exposure_n": 6,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "profano",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending"
       }
     ],
     "user_id": "61550822695503",
@@ -6186,7 +6202,8 @@
       "naturalismo"
     ],
     "threads": [
-      "28679360868387796"
+      "28679360868387796",
+      "28830892399901308"
     ],
     "interactions": [
       {
@@ -6205,6 +6222,21 @@
         "outcome": "silent",
         "closed_from": "pending",
         "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-26"
+      },
+      {
+        "thread_id": "28830892399901308",
+        "date": "2026-10-26",
+        "their_move": "Post raíz (VEGANnoyance): fresas de California fumigadas con cloropicrina, gas de trinchera; The cow in the pasture next door has never once needed the soil under her sterilised.",
+        "our_reply_summary": "Raíz profana (152 palabras): concedo todo lo del gas; en el campo nadie es poseído; la única con dueño en su post es la vaca del pasto vecino, presentada como opción limpia. Cierre con su frase de la vaca.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "1f96293d61ef6b4b",
+        "exposure_n": 2,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "profano",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending"
       }
     ],
     "user_id": "100000128834478",
@@ -6224,8 +6256,26 @@
       "insulto_ad_hominem",
       "reencuadre_veganismo_creencia"
     ],
-    "threads": [],
-    "interactions": [],
+    "threads": [
+      "28536621809292313"
+    ],
+    "interactions": [
+      {
+        "thread_id": "28536621809292313",
+        "date": "2026-10-26",
+        "their_move": "Post raíz: respeta a los veganos porque empujan estándares que dan higher quality meat via better practices and animal welfare; murder & rape son buzzwords de culpa.",
+        "our_reply_summary": "Raíz profana (124 palabras): el crédito es por un mejor producto; el título queda intacto; los veganos piden que nadie la posea. Cierre: how does \"higher quality meat\" make it legitimate for the cow to be somebody property?",
+        "framework": "bienestarismo-jugada-maestra-del-poder",
+        "draft_sha": "5f161f5f05940f7b",
+        "exposure_n": 1,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "profano",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending"
+      }
+    ],
     "user_id": "100068859878230",
     "name": "Nate Hoffman",
     "profile_url": "https://www.facebook.com/groups/683615698352965/user/100068859878230/",
@@ -6242,8 +6292,26 @@
     "tactics": [
       "apelacion_normal"
     ],
-    "threads": [],
-    "interactions": [],
+    "threads": [
+      "28535115126109648"
+    ],
+    "interactions": [
+      {
+        "thread_id": "28535115126109648",
+        "date": "2026-10-26",
+        "their_move": "Same on an omnivorous diet.",
+        "our_reply_summary": "Reply limpia compasiva (74 palabras): de acuerdo, la salud empata; la única diferencia es que un plato necesita a una sintiente poseída; elegir poseer necesita razón. Cierre: what is left to justify owning her?",
+        "framework": "no-necesidad-cambiaron-las-reglas",
+        "draft_sha": "dec92698f3da3d5e",
+        "exposure_n": 1,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "chosen",
+        "voice_propensity": null,
+        "outcome": "pending"
+      }
+    ],
     "user_id": "100000919717091",
     "name": "Tim West",
     "profile_url": "https://www.facebook.com/groups/683615698352965/user/100000919717091/",

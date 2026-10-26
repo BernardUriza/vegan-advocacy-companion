@@ -77,4 +77,8 @@ No body-count ni porcentajes (Ocin y Elaine ya perdieron ahí). No morder el ins
 - **Su jugada:** lmao i bought them thats why they are mine to own
 - **Nuestra respuesta:** la compra transfiere el título, no lo funda; cuarta estación (papeles, no someone, no pets, recibo); qué compró el primer comprador antes de que alguien tuviera derecho a venderla
 
-_Hilos: 28148343171453514, 28148824318072066, 28154276440860187_
+### Hilo `28536621809292313` — 2026-10-26 · outcome: **pending**
+- **Su jugada:** you try to give animals personhood they arent a who when they are dead and slabs of meat it be a different story if i was eating them alive
+- **Nuestra respuesta:** Reply profana (113 palabras) en el post de Nate: su "different story" admite que vivo es otra cosa; toda la propiedad se ejerce viva; "livestock" la mete al inventario antes del slab. Cierre: why does owning her while she is alive get a free pass?
+
+_Hilos: 28148343171453514, 28148824318072066, 28154276440860187, 28536621809292313_
