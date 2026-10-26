@@ -601,7 +601,9 @@
         "voice": "profano",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending"
+        "outcome": "silent",
+        "closed_from": "pending",
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-26"
       }
     ]
   },
@@ -1137,7 +1139,9 @@
         "voice": "limpio",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending"
+        "outcome": "silent",
+        "closed_from": "pending",
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-26"
       }
     ]
   },
@@ -3837,7 +3841,9 @@
         "voice": "limpio",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending"
+        "outcome": "silent",
+        "closed_from": "pending",
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-26"
       }
     ],
     "user_id": "1198831097",
@@ -4794,9 +4800,10 @@
         "draft_sha": "e5a8696653cf2d11",
         "their_move": "Su post en Vegans VS Meat Eaters (8h, 8 reacciones, 44 comentarios; link de Bernard): captura de Feeah Posey (vegana) concediendo que \"the majority of vegans look down on other people\"; en su comentario a David Huggens repite tres veces el párrafo de crop deaths: \"crop deaths are intentionally allowed to occur so farm machinery can be used in crops. Therefore… vegans must believe it to be socially acceptable to intentionally allow animals to be killed… in the name of human edible food crop production.\" David le contesta con \"REDUCING HARM WHERE IT IS PRACTICAL AND REASONABLE\" y Roderick Huffsmith se lo cobra con el bombero voluntario.",
         "our_reply_summary": "Reply etiquetada limpia (164 palabras, vuelta 9, bajo su comentario a David): le concedí entero el hecho (farmers know, they proceed, call it intentionally allowed; I've conceded that before) y que lo repite como si decidiera quién puede poseer a quién; el lema de practical and reasonable es la respuesta de David, mi posición es que un sujeto sintiente no sea propiedad de nadie; el ratón del campo no es de nadie (nadie lo cría como stock, le pone precio ni reclama sus crías) y la ternera es propiedad de alguien antes de nacer; el campo no contiene ningún título que abolir y la granja está construida alrededor de uno. Cierre: how does calling crop deaths \"socially acceptable\" establish the farmer's right to own the calf?",
-        "outcome": "goalpost",
-        "outcome_evidence": "Lots of vegans even directly own non-human eukaryotic living organisims themselves.",
-        "outcome_note": "algo-a-alguien: ignoró la distinción ratón sin dueño / vaca poseída y pegó otra vez el párrafo de crop deaths más tu-quoque de veganos con mascotas. Pozo de copy-paste."
+        "outcome": "silent",
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-26",
+        "outcome_note": "algo-a-alguien: ignoró la distinción ratón sin dueño / vaca poseída y pegó otra vez el párrafo de crop deaths más tu-quoque de veganos con mascotas. Pozo de copy-paste.",
+        "closed_from": "goalpost"
       }
     ],
     "user_id": "1742478160",
@@ -6011,7 +6018,7 @@
       },
       {
         "date": "2026-10-15",
-        "outcome": "pending",
+        "outcome": "silent",
         "propensity": null,
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
@@ -6022,7 +6029,9 @@
         "exposure_n": 3,
         "voice": "profano",
         "their_move": "Réplica (su post del conejo, 6d, 0 reacciones): \"it's the same as humans life death and taxes in between just with cattle it life feed and death .Really no different.\"",
-        "our_reply_summary": "Reply etiquetada, filo profano (120 palabras, 3 groserías): concedí que humanos y ganado nacen y mueren; en su versión \"taxes in between\" el humano nace sin dueño y en la de \"feed\" el becerro ya es propiedad de alguien, él mismo dijo que las vacas pagan la granja y que los becerros son más dinero; el título es la diferencia que su comparación de ciclos salta; la biología describe nacer y morir y no entrega título sobre el animal en medio. Cierre: si es \"Really no different\", ¿quién decide cuándo termina el \"feed\" y llega la muerte del becerro que posee?"
+        "our_reply_summary": "Reply etiquetada, filo profano (120 palabras, 3 groserías): concedí que humanos y ganado nacen y mueren; en su versión \"taxes in between\" el humano nace sin dueño y en la de \"feed\" el becerro ya es propiedad de alguien, él mismo dijo que las vacas pagan la granja y que los becerros son más dinero; el título es la diferencia que su comparación de ciclos salta; la biología describe nacer y morir y no entrega título sobre el animal en medio. Cierre: si es \"Really no different\", ¿quién decide cuándo termina el \"feed\" y llega la muerte del becerro que posee?",
+        "closed_from": "pending",
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-26"
       }
     ],
     "user_id": "100000380272431",
@@ -6070,7 +6079,7 @@
       },
       {
         "date": "2026-10-15",
-        "outcome": "pending",
+        "outcome": "silent",
         "propensity": null,
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
@@ -6081,7 +6090,9 @@
         "exposure_n": 2,
         "voice": "profano",
         "their_move": "Réplica (mi post de sintiencia, VEGANnoyance, 6d, 0 reacciones): \"then WHY does a plant react to music??? And WHY does a cow or pig or whatever have \\\"somebody\\\" in them…they're human? DNA says otherwise……….\"",
-        "our_reply_summary": "Reply etiquetada, filo profano (104 palabras, 3 groserías): las plantas responden al sonido y la luz, un termostato a la temperatura, reaccionar no prueba que alguien sienta; nadie llamó humano al cerdo, el ADN dice la especie; el cerdo se asusta, busca consuelo y vive lo que le pasa, eso es \"somebody\"; un perro tiene ADN de perro y aun así se ve que un perro asustado tiene una experiencia propia; la etiqueta de especie no da razón para hacer propiedad a un animal que siente. Cierre: cuando un perro está asustado, ¿qué le dice \"DNA says otherwise\" sobre si hay \"somebody\" sintiéndolo?"
+        "our_reply_summary": "Reply etiquetada, filo profano (104 palabras, 3 groserías): las plantas responden al sonido y la luz, un termostato a la temperatura, reaccionar no prueba que alguien sienta; nadie llamó humano al cerdo, el ADN dice la especie; el cerdo se asusta, busca consuelo y vive lo que le pasa, eso es \"somebody\"; un perro tiene ADN de perro y aun así se ve que un perro asustado tiene una experiencia propia; la etiqueta de especie no da razón para hacer propiedad a un animal que siente. Cierre: cuando un perro está asustado, ¿qué le dice \"DNA says otherwise\" sobre si hay \"somebody\" sintiéndolo?",
+        "closed_from": "pending",
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-26"
       }
     ],
     "user_id": "100007953433242",
@@ -6153,7 +6164,9 @@
         "voice": "limpio",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending"
+        "outcome": "silent",
+        "closed_from": "pending",
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-26"
       }
     ],
     "user_id": "100007350496767",
@@ -6189,7 +6202,9 @@
         "draft_sha": "def9b86f1e729125",
         "their_move": "Post raíz propio (VEGANnoyance, 32h, 18 reacciones, 0 comentarios): estudio Orr & Gilks 1931, Maasai vs Kikuyu: \"five inches taller, weighed 23 pounds more, and were 50% stronger\"; dieta de leche, carne y sangre vs maíz y mijo; más enfermedades entre los Kikuyu.",
         "our_reply_summary": "Comentario RAÍZ profano (143 palabras, scout, --mode root): tomé los números como vienen; describen a quien come y dicen fuck-all sobre la vaca que da la leche, la carne y la sangre; más fuerza da más poder sobre un animal y ningún derecho sobre su cuerpo; el estudio mide cuerpos, dietas y enfermedad y nunca examina el damn título que pone a una vaca sintiente en el menú. Cierre: what the hell do five inches and 50% more strength establish about who gets to own the cow?",
-        "outcome": "pending"
+        "outcome": "silent",
+        "closed_from": "pending",
+        "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-26"
       }
     ],
     "user_id": "100000128834478",
@@ -6202,5 +6217,42 @@
     "postura_nucleo": "Post raíz: el estudio Orr & Gilks 1931 (Maasai vs Kikuyu): los pastores de ganado eran 5 pulgadas más altos, 23 libras más pesados y 50% más fuertes; la dieta animal produce cuerpos mejores.",
     "analisis": "Raíz propia en VEGANnoyance (2026-10-14, 32h, 18 reacciones, 0 comentarios). Data-dump nutricional de hace un siglo, con la salvedad del propio estudio copiada (genética y nutrición no se separan). El post es el argumento: la dieta que da estatura y fuerza queda justificada por sus efectos en quien come. Civil, sin insultos. Para el lurker: conceder el dato entero (más altos, más fuertes) y nombrar que el estudio mide lo que la dieta hace por el que come y nada sobre la vaca, la cabra o quien queda como propiedad para producirla.",
     "what_not_to_do": "No pelear la nutrición (B12, proteína vegetal) ni la metodología de 1931; no acusar de cherry-pick; no sonar a nutriólogo; ir en raíz (el post es el argumento) con --mode root."
+  },
+  {
+    "tactics": [
+      "welfare_rhetoric",
+      "insulto_ad_hominem",
+      "reencuadre_veganismo_creencia"
+    ],
+    "threads": [],
+    "interactions": [],
+    "user_id": "100068859878230",
+    "name": "Nate Hoffman",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/100068859878230/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Respeta a los veganos porque empujan el bienestar animal que da carne de mejor calidad; desprecia el murder/rape como buzzwords de culpa.",
+    "analisis": "2026-10-26 (VS Meat Eaters, post 28536621809292313, 6h, 10r, ~77 turnos): post de \"respeto a los veganos\" que les acredita mejores estándares de bienestar = mejor carne. En el hilo insulta sin freno (fuckwits, weak pussy twat, bitch) a Mark Lumsley y Susan Lynn Hebel, y remata con \"a child isn't someone?\" contra Harry Barr. Veredicto: pozo, pero su post confunde el fin del veganismo con la reforma del bienestar: munición limpia para el lurker.",
+    "tone": "hostile",
+    "verdict": "pozo_sin_fondo",
+    "register": "filo",
+    "what_not_to_do": "No morder los insultos ni defender a Susan/Mark. No discutir si los veganos mejoraron o no los estándares. Una vuelta: aceptar el crédito al revés (eso es bienestar, el veganismo pide abolir el título), y que murder/rape describen lo que se hace con un sujeto poseído.",
+    "tone_note": "hostile_rhetorical"
+  },
+  {
+    "tactics": [
+      "apelacion_normal"
+    ],
+    "threads": [],
+    "interactions": [],
+    "user_id": "100000919717091",
+    "name": "Tim West",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/100000919717091/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Se puede estar sano y feliz con dieta omnívora igual que con una vegetal.",
+    "analisis": "2026-10-26 (VS Meat Eaters, post de Holly Anne Ormandy \"Vegan tears\", 28535115126109648): a Michael Majorsmith (\"humans can be happy and healthy on a plant based diet\") le contesta \"Same on an omnivorous diet\". Un renglón civil, sin insulto. Primera aparición.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "compasivo",
+    "what_not_to_do": "No pelear la salud ni citar estudios: conceder de frente que sí, y por eso la salud no decide nada. Corto."
   }
 ]
