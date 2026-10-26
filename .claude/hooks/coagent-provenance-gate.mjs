@@ -143,11 +143,13 @@ try {
 // consultado en las últimas 24h (cualquier post) cuyo archivo siga en disco.
 let detectCloserClones;
 let detectScopeDenialRepeats;
+let detectOwnershipLitanyRepeats;
 try {
   ({ detectCloserClones } = await import(resolve(PROJECT_DIR, 'scripts/closer-clone.mjs')));
   ({ detectScopeDenialRepeats } = await import(resolve(PROJECT_DIR, 'scripts/scope-denial.mjs')));
+  ({ detectOwnershipLitanyRepeats } = await import(resolve(PROJECT_DIR, 'scripts/ownership-litany.mjs')));
 } catch (e) {
-  block(`GATE PROCEDENCIA: no pude cargar closer-clone.mjs / scope-denial.mjs (${e.message}). Fail-closed.`);
+  block(`GATE PROCEDENCIA: no pude cargar closer-clone.mjs / scope-denial.mjs / ownership-litany.mjs (${e.message}). Fail-closed.`);
 }
 {
   const coagentDir = resolve(PROJECT_DIR, '.coagent');
@@ -183,6 +185,15 @@ try {
         ...repeats.map((p) => `  ↔ ${p.a === 'ESTE' ? p.b : p.a}  molde=${p.template}\n     «${p.snippetA.slice(0, 110)}»\n     «${p.snippetB.slice(0, 110)}»`),
         'La jugada (conceder el hecho, negar la conclusión) se conserva; la misma fórmula dos veces se lee a molde.',
         'Cambia los verbos o la entrada de ESTE draft y re-finaliza. Ver reply-output-style.md § "Conceder el hecho y negar la conclusión".',
+      ]);
+    }
+    const litanies = detectOwnershipLitanyRepeats([{ name: 'ESTE', text: bodyText }, ...peers]).pairs.filter((p) => p.a === 'ESTE' || p.b === 'ESTE');
+    if (litanies.length) {
+      block([
+        'GATE PROCEDENCIA — STAGING BLOQUEADO: LETANÍA REPETIDA. Este draft lista los poderes del dueño (criar/poseer/vender/matar) igual que reply(s) consultadas en las últimas 24h:',
+        ...litanies.map((p) => `  ↔ ${p.a === 'ESTE' ? p.b : p.a}\n     «${p.snippetA.slice(0, 110)}»\n     «${p.snippetB.slice(0, 110)}»`),
+        'Adam la recibió tres días seguidos (15-17 oct) y Dean cuatro veces: el lurker la lee a fórmula.',
+        'Nombra UN poder concreto con las palabras de ESTE interlocutor y re-finaliza. Ver reply-output-style.md § "El cierre NO se clona".',
       ]);
     }
   }

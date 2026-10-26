@@ -379,6 +379,11 @@ iguales le dicen "bot" antes de que lea uno.
   paper ever say why anyone gets to?"*), el Ralph de Kirk (*"which of the two relations are
   you defending?"*), el "apex" de Homer (*"is 'we can' the whole of it?"*).
 - Contra el sello-IA y los drive-bys, cero fórmula: ahí es donde más cuesta.
+- Lo mismo vale para el cuerpo: la letanía de poderes del dueño ("breeds her, sells her, decides when
+  she dies") va a lo más una vez por lote y por día. Salió en 13 drafts desde el 28-sep, tres días
+  seguidos a Adam y cuatro veces a Dean. En las demás replies se nombra UN poder concreto con las
+  palabras del interlocutor. `style-gate` (lote) y el gate de procedencia (24 h) la bloquean
+  (`ownershipLitany`, SSOT `scripts/ownership-litany.mjs`).
 - Mecánica: `style-gate.mjs a.txt b.txt …` (modo lote) caza cierres clonados entre drafts
   (`closerClone`, flag dura); el gate de procedencia bloquea el staging si el cierre del
   body-file clona el de cualquier draft consultado en las últimas 24h. SSOT del detector:

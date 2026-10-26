@@ -220,6 +220,36 @@ test('provenance-gate: el mismo molde de conceder-y-negar que un draft consultad
   assert.match(passed.stderr, /no hay recibo de consulta/);
 });
 
+test('provenance-gate: la letanía criar/vender/matar que ya llevó un draft consultado hoy bloquea (Adam 16 y 17-oct)', () => {
+  const dir = fakeProject();
+  const peer = join(dir, 'peer.txt');
+  writeFileSync(peer, `${FILLER.repeat(4)}The title adds something specific: the power to breed a cow, sell her, and decide when she dies. Where did that consent come from?`);
+  writeFileSync(join(dir, '.coagent', '111.consult.json'), JSON.stringify({ status: 'consulted', drafts: [{ author: 'Adam', draft_sha: 'x', draft_file: peer, consulted_at: new Date().toISOString() }] }));
+  const same = join(dir, 'same.txt');
+  writeFileSync(same, `${FILLER.repeat(4)}The person she trusts also controls the fence, her breeding, her sale and the day she's sent away. Which part of that did she sign?`);
+  const blocked = runProvenance(dir, same);
+  assert.equal(blocked.status, 2);
+  assert.match(blocked.stderr, /LETANÍA REPETIDA/);
+  assert.match(blocked.stderr, /Adam \(111\)/);
+  const one = join(dir, 'one.txt');
+  writeFileSync(one, `${FILLER.repeat(4)}The person she trusts also holds the papers that say when she goes on the truck. Which part of that did she sign?`);
+  const passed = runProvenance(dir, one);
+  assert.doesNotMatch(passed.stderr, /LETANÍA REPETIDA/);
+});
+
+test('ownership-litany: una letanía en el lote pasa; dos bloquean; dos poderes sueltos no son letanía (lote 1026A)', async () => {
+  const { detectOwnershipLitanies, detectOwnershipLitanyRepeats } = await import('./ownership-litany.mjs');
+  const jason = 'The animal is alive when someone breeds her, claims her as property, sells her, and decides when she dies.';
+  const tim = 'A farmed cow is someone who feels, and she gets bred, owned and sold so the omnivore plate exists.';
+  const nate = "Whoever holds the papers on her still picks the day she's killed.";
+  assert.deepEqual(detectOwnershipLitanies(jason)[0].categories, ['breed', 'own', 'sell', 'kill']);
+  assert.equal(detectOwnershipLitanies(nate).length, 0);
+  assert.equal(detectOwnershipLitanies('It has its own life, and nobody sold it anything.').length, 0);
+  assert.equal(detectOwnershipLitanyRepeats([{ name: 'a', text: jason }, { name: 'b', text: nate }]).hard, false);
+  assert.equal(detectOwnershipLitanyRepeats([{ name: 'a', text: jason }, { name: 'b', text: tim }]).hard, true);
+  assert.equal(runGate('style-gate.mjs', clean(`${jason} `)), 0, 'un solo draft con la letanía pasa');
+});
+
 test('provenance-gate: un cierre distinto al del draft consultado hoy no dispara la guarda de clones', () => {
   const dir = fakeProject();
   const peer = join(dir, 'peer.txt');

@@ -21,6 +21,7 @@ import { detectWelfaristAxis } from './welfarist-axis.mjs';
 import { detectBiocentricAxis } from './biocentric-axis.mjs';
 import { detectCloserClones } from './closer-clone.mjs';
 import { detectScopeDenialRepeats } from './scope-denial.mjs';
+import { detectOwnershipLitanyRepeats } from './ownership-litany.mjs';
 
 // kill-phrases literales de la kill-list (case-insensitive)
 const OPENERS = new Set(['no', 'yes', 'sure', 'look', 'well', 'okay', 'ok', 'right', 'fine', 'fair', 'granted', 'agreed', 'true', 'exactly', 'honestly', 'again', 'so', 'and', 'but', 'still', 'nope', 'yeah', 'mate']);
@@ -251,6 +252,14 @@ function printBatch(batch) {
     console.log(`        «${p.snippetB.slice(0, 110)}»`);
   }
   if (scope.hard) console.log('  → conceder el hecho y negar la conclusión es la jugada; el MISMO par de verbos en dos replies del lote es fórmula. Cambia la entrada de una.');
+  const lit = batch.litany;
+  console.log(`[${lit.hard ? 'X' : '.'}] ownershipLitany   ${lit.count ? `${lit.draftsWithLitany} drafts con la letanía criar/poseer/vender/matar` : 'la letanía de propiedad sale a lo más una vez (ok)'}`);
+  for (const p of lit.pairs) {
+    console.log(`    X ${p.a} ↔ ${p.b}`);
+    console.log(`        «${p.snippetA.slice(0, 110)}»`);
+    console.log(`        «${p.snippetB.slice(0, 110)}»`);
+  }
+  if (lit.hard) console.log('  → la lista de poderes del dueño es una jugada; repetida en el lote es molde. Deja una y en las demás nombra UN poder concreto con las palabras del interlocutor.');
 }
 
 async function main() {
@@ -280,8 +289,8 @@ async function main() {
   const profaneMin = voice ? (await import('./db.mjs')).readVocab().rotation.voice_trial.value.min_profanity : 2;
   const results = drafts.map((d) => analyzeDraft(d.text, { name, file: d.file, voice, profaneMin }));
   const named = drafts.map((d) => ({ name: d.file, text: d.text }));
-  const batch = drafts.length >= 2 ? { ...detectCloserClones(named), scope: detectScopeDenialRepeats(named) } : null;
-  const clean = results.every((r) => r.clean) && !(batch && (batch.hard || batch.scope.hard));
+  const batch = drafts.length >= 2 ? { ...detectCloserClones(named), scope: detectScopeDenialRepeats(named), litany: detectOwnershipLitanyRepeats(named) } : null;
+  const clean = results.every((r) => r.clean) && !(batch && (batch.hard || batch.scope.hard || batch.litany.hard));
 
   if (asJson) {
     console.log(JSON.stringify(results.length === 1 && !batch ? results[0] : { clean, drafts: results, batch }, null, 2));
