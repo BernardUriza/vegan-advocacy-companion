@@ -76,6 +76,15 @@ test('a pick is consumed once the target gets a new interaction', () => {
   assert.match(pickProblems(pick, 'algo-a-alguien-sujeto-derecho', frameworks, after)[0], /re-corre/);
 });
 
+test('a pick planned before the target was profiled is re-planned once the actor exists (Nate Hoffman, 2026-10-26)', () => {
+  const blind = { ...planPick({ actor: null, frameworks, policy, rng: seq(0.9) }), user_id: null };
+  assert.equal(blind.voice, null);
+  const profiled = actor({ user_id: '100068859878230', register: 'filo' });
+  assert.equal(isStalePick(blind, profiled), true);
+  assert.equal(isStalePick(blind, null), false);
+  assert.equal(isStalePick({ ...blind, user_id: '100068859878230' }, profiled), false);
+});
+
 test('without a pick receipt finalize has nothing to validate against', () => {
   assert.match(pickProblems(null, 'algo-a-alguien-sujeto-derecho', frameworks)[0], /framework-pick/);
 });

@@ -85,7 +85,10 @@ export function voiceProblems(pick, draftText, policy) {
 }
 
 export function isStalePick(pick, actor) {
-  return Boolean(pick) && exposureOf(actor).exposure_n !== pick.exposure_n;
+  if (!pick) return false;
+  // Planeado antes de perfilar: sin registro ni tácticas, el target filo quedaba fuera del voice_trial.
+  if (pick.user_id === null && actor?.user_id) return true;
+  return exposureOf(actor).exposure_n !== pick.exposure_n;
 }
 
 export function pickProblems(pick, frameworkId, frameworks, actor) {
