@@ -4563,11 +4563,13 @@
     "tactics": [
       "species_hierarchy",
       "welfare_rhetoric",
-      "naturalismo"
+      "naturalismo",
+      "preferencia_gusto"
     ],
     "threads": [
       "27330688236588406",
-      "28459136643743554"
+      "28459136643743554",
+      "28966371949686685"
     ],
     "interactions": [
       {
@@ -4608,7 +4610,7 @@
     "profile_url": "https://www.facebook.com/groups/2295597740524135/user/832080524/",
     "bando": "anti-vegan",
     "postura_nucleo": "Acepta que los animales son individuos pero \"no en el mismo sentido que los humanos\"; el uso humano no es esclavitud sino cuidado (vet bills/refugio) y la matanza occidental es menos cruel que la depredacion salvaje.",
-    "analisis": "Gish gallop clasico (2026-07-03, post 27330, 8h): apila ~8 puntos en un comentario — diferencia de especie (crian distinto a sus crias), welfare-comparativo (stun vs Komodo dragon desgarrando un feto), \"farmers spend ££££\", omnivoro/teeth-argument (pandas), meta anti-vegano (carnist/AI/emotional manipulation), y wild-is-worse. El nucleo real es human-exceptionalism + care-justifica-uso. Registro civil-cortante, algo troll en el meta. No perseguir el gallop; nombrar la tecnica, tomar el nucleo (diferencias ortogonales al titulo; el cuidado es downstream del titulo), volver al hueso.",
+    "analisis": "Gish gallop clasico (2026-07-03, post 27330, 8h): apila ~8 puntos en un comentario — diferencia de especie (crian distinto a sus crias), welfare-comparativo (stun vs Komodo dragon desgarrando un feto), \"farmers spend ££££\", omnivoro/teeth-argument (pandas), meta anti-vegano (carnist/AI/emotional manipulation), y wild-is-worse. El nucleo real es human-exceptionalism + care-justifica-uso. Registro civil-cortante, algo troll en el meta. No perseguir el gallop; nombrar la tecnica, tomar el nucleo (diferencias ortogonales al titulo; el cuidado es downstream del titulo), volver al hueso. | 2026-11-04 (VEGANnoyance, post baby deer, 4h): raíz de dos palabras, \"Frozen venison!\". El que el 30-sep concedió sintiencia y propiedad baja al chiste del plato; renombra a la cervatilla rescatada como producto, que es exactamente el movimiento que el post describe (\"call her livestock\").",
     "tone": "civil",
     "verdict": "audiencia",
     "register": "filo",
@@ -6330,5 +6332,83 @@
     "verdict": "audiencia",
     "register": "compasivo",
     "what_not_to_do": "No pelear la salud ni citar estudios: conceder de frente que sí, y por eso la salud no decide nada. Corto."
+  },
+  {
+    "tactics": [
+      "demanda_credencial",
+      "ecocentrismo_conservacion"
+    ],
+    "threads": [
+      "28656662030621623"
+    ],
+    "interactions": [],
+    "user_id": "1120441344072210",
+    "name": "Trollkors",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/1120441344072210/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "El cazador es el verdadero salvador de animales; el activista no salva a nadie. Rescatar a una cervatilla y cazar son compatibles y hasta el mismo oficio.",
+    "analisis": "Raíz drive-by en mi post del baby deer (Vegans VS Meat Eaters, 2026-11-04, 8h, 2 reacciones): \"I bet that boy hunts and he has now officially saved more animals than most activists.\" Dos jugadas en una línea: (1) demanda de credencial / what-have-you-done contra los activistas, (2) el tropo cazador-conservacionista: cazar y salvar como el mismo oficio, contando a la cervatilla rescatada como crédito del cazador. Nombre de usuario con troll en el handle; avatar de lobo con lentes. No hay argumento sobre el título: el rescate del video es justo lo que su propio comentario celebra (ella salió caminando porque nadie la poseía).",
+    "tone": "sarcastic",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No defender el currículum activista ni contar animales salvados (es la trampa de la credencial). No pelear si el nieto caza. No acusar de hipocresía a la familia del video. Tomar su propia frase: el cazador salvó a la cervatilla soltándola, no quedándosela; devolver al título."
+  },
+  {
+    "tactics": [
+      "insulto_ad_hominem"
+    ],
+    "threads": [
+      "28656662030621623"
+    ],
+    "interactions": [],
+    "user_id": "529993792",
+    "name": "Shiv Shiv",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/529993792/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Sin texto: contesta con provocación visual.",
+    "analisis": "Raíz sin texto en mi post del baby deer (Vegans VS Meat Eaters, 2026-11-04, 1h): adjuntó un reel propio de 17 s (facebook.com/reel/1160689596520614) de un cazador con arco compuesto apuntando a un venado entre los árboles; visto a ojo en tres cuadros (3 s, 9 s, 15 s): el venado al fondo, el arco en primer plano, al final el venado ya no se ve. No se confirmó el disparo. Es provocación pura bajo un post de rescate: cero palabras, cero argumento. No enganchar.",
+    "tone": "low_effort",
+    "verdict": "troll_no_enganchar",
+    "register": "no_enganchar",
+    "what_not_to_do": "No contestar un video sin palabras con un párrafo. Si algún día trae texto, leerlo primero."
+  },
+  {
+    "tactics": [
+      "species_hierarchy",
+      "preferencia_gusto"
+    ],
+    "threads": [
+      "28966371949686685"
+    ],
+    "interactions": [],
+    "user_id": "100000250226616",
+    "name": "Lech Kaminski Robins",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100000250226616/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "El rescate es útil porque habitúa al venado al humano y facilita la caza; el animal es insumo de la parrilla.",
+    "analisis": "Raíz en mi post del baby deer (VEGANnoyance, 2026-11-04, 6h): \"Handy as young. Gets them used to human contact early on. Some hunters will say handy, others will say it will make the hunt less challenging. Either way, fire up the barbie\". Lee el rescate como inversión del cazador: la cervatilla se vuelve presa fácil. Remata con el chiste de la parrilla. Es la jugada del post en carne viva: la misma animal pasa de \"she\" a insumo en dos oraciones, sin que nada en ella cambie. Grupo hostil (VEGANnoyance), registro burlón.",
+    "tone": "sarcastic",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No discutir ética de la caza ni habituación de fauna. No sonar herido por el chiste. Usar su propio movimiento (rescate → presa) como la prueba de lo que el post pregunta y devolver al título."
+  },
+  {
+    "tactics": [
+      "preferencia_gusto"
+    ],
+    "threads": [
+      "28966371949686685"
+    ],
+    "interactions": [],
+    "user_id": "100072740814330",
+    "name": "Vincent Coutable",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100072740814330/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Chiste de venado: esperaba el filete al final.",
+    "analisis": "Raíz drive-by en mi post del baby deer (VEGANnoyance, 2026-11-04, 6h): \"I was expecting a venison steak in the end\". Mismo chiste que Morgan Jenkins (\"Frozen venison!\"). Sin argumento.",
+    "tone": "low_effort",
+    "verdict": "pozo_sin_fondo",
+    "register": "filo",
+    "what_not_to_do": "No contestar dos veces el mismo chiste en el mismo hilo; si se contesta a Morgan, a Vincent silencio."
   }
 ]

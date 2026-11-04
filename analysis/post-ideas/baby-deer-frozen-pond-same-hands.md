@@ -3,7 +3,7 @@
 Status: Posted (2026-11-03 22:00–22:10 CST, video adjunto, draft `.coagent/drafts/1103-root-baby-deer.txt` sha d97351c44c04701a, framework `filtro-especie-vs-individuo`)
 - 770211166362062 Vegans V's Meat Eaters (Open Debates) 3 → https://www.facebook.com/groups/770211166362062/posts/29115714938051639/ (verificado en permalink; recibo `.coagent/receipts/post-2026-11-03-root-baby-deer-g770211166362062.png`)
 - 683615698352965 Vegans VS Meat Eaters → https://www.facebook.com/groups/683615698352965/posts/28656662030621623/ (verificado en permalink: texto completo + autor + video; recibo `…-g683615698352965.png`)
-- 2295597740524135 VEGANnoyance; The Group! → PENDIENTE DE ADMIN (grupo con moderación; 1 copia en `/my_pending_content`, recibo `…-g2295597740524135-pending.png`). No re-publicar; confirmar permalink cuando el admin apruebe.
+- 2295597740524135 VEGANnoyance; The Group! → https://www.facebook.com/groups/2295597740524135/posts/28966371949686685/ (aprobado por admin la noche del 2026-11-03, notif `group_post_approved`; extraído 2026-11-04 09:05 con 3 comentarios y 2 reacciones). Recibo del pendiente: `…-g2295597740524135-pending.png`.
 - FB marcó el video con aviso solo visible para Bernard: "An ownership link was added to your video by a content owner" (Content ID de ViralHog). El post queda arriba.
 Capturado: 2026-11-03 por Bernard (orden: *"para el siguiente post usaremos este video, descárgalo"*)
 
@@ -26,4 +26,4 @@ Qué NO hacer: acusar de hipocresía a la familia del video (el lurker está de 
 
 ## Siguiente paso
 
-Confirmar la aprobación del admin en VEGANnoyance y anotar su permalink. Registrar reacciones/comentarios de los tres posts en el siguiente lote (`lurker-sweep`). Aprendizaje mecánico: el video se adjunta con `upload_file` sobre el botón "Photo/video" DEL diálogo del composer (uid del snapshot), nunca sobre el input "Choose Files" de nivel superior (abre un segundo composer, pasó en el grupo 1).
+Lote 1104A (2026-11-04): replies a Trollkors (VVME), Lech Kaminski Robins y Morgan Jenkins (VEGANnoyance); Shiv Shiv (reel de cazador sin texto) y Vincent Coutable (mismo chiste que Morgan) sin contestar. Registrar reacciones/comentarios de los tres posts en el siguiente lote (`lurker-sweep`). Aprendizaje mecánico: el video se adjunta con `upload_file` sobre el botón "Photo/video" DEL diálogo del composer (uid del snapshot), nunca sobre el input "Choose Files" de nivel superior (abre un segundo composer, pasó en el grupo 1).

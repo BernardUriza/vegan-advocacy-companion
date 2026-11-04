@@ -1,0 +1,18 @@
+# Bernard Uriza Orozco — baby deer en el estanque helado (VEGANnoyance; The Group!, 2295597740524135)
+
+Post: https://www.facebook.com/groups/2295597740524135/posts/28966371949686685/
+Extraído: 2026-11-04 09:05 CST (`.coagent/tx-28966371949686685.json`), 3 comentarios, reacciones al post: 2
+
+## Raíz (Bernard)
+
+The first line of the description is what stayed with me. A woman was heading out to feed the farm animals when she spotted a small deer stranded on a frozen pond. Her grandson walked out onto the ice and carried her back, they built her a shelter out of pallets with straw and corn, and by morning she had gone back into the woods on her own. They saw a frightened little deer, somebody who was cold and wanted to get away, and they knew exactly what to do. I'm glad they did. Nobody stopped on that ice to check how smart she was or what use she had. The answer was already in the young man's arms. But I keep coming back to that first line. She was on her way to feed the farm animals. Those animals can be frightened too. Things matter to them from their own side, exactly the way they mattered to the deer on the pond. The clip doesn't say what happens to the animals on this farm. What it shows is how easily we recognize an individual when she's stranded out in the open. Put the same kind of animal behind a farm fence, call her livestock, and the conversation turns into what she's for and who decides her future. The deer got to leave because that decision was hers. For an animal owned as livestock, somebody else is holding it. So the question this clip leaves me with is simple: what makes it legitimate for an animal who feels the cold just as much to be somebody's property?
+
+## Comentarios
+
+- **Morgan Jenkins** (`832080524`, 4 hours, 0 reacciones) (raíz): Frozen venison!
+- **Lech Kaminski Robins** (`100000250226616`, 6 hours, 0 reacciones) (raíz): Handy as young. Gets them used to human contact early on. Some hunters will say handy, others will say it will make the hunt less challenging. Either way, fire up the barbie
+- **Vincent Coutable** (`100072740814330`, 6 hours, 0 reacciones) (raíz): I was expecting a venison steak in the end
+
+## Notas
+
+- Aprobado por admin ~10h antes del scan (notif `group_post_approved`). Tres raíces, las tres el mismo chiste: la cervatilla rescatada como venado al plato. Morgan Jenkins ya tiene dossier (Gish gallop 2026-07-03; concedió sintiencia+propiedad 2026-09-30).
