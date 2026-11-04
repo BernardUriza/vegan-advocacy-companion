@@ -2799,12 +2799,13 @@
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/100000755924068/",
     "bando": "anti-vegan",
     "postura_nucleo": "El malestar del cuadro de Frida es proyección del espectador: ella pintaba SU sufrimiento (alimentación forzada por enfermedad), no una crítica al consumo de carne.",
-    "analisis": "Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al registro y CONFIESA el eje — \"animals produce animals... someone has to possess them. Track their genealogy... The one doing all the brainwork holds the reins. Animals < humans. Die mad.\" Defensa explicita de propiedad+jerarquia de especie + welfare-improving (\"lifetime welfare and deathtime technique have continually improved\"). Es oro para el eje abolicionista: nombro la posesion ella misma. Audiencia, civil-cortante. | 2026-06-27: GIRO — volvió substantiva (no troll) con un argumento real de 3 puntos en el post someone: naturalismo de cría, sapience>sentience, y un reductio filoso sobre el eje (si el problema es ownership, aceptarías hunting/poaching). El register actual es filo civil, no troll; el lurker valía la respuesta.",
+    "analisis": "Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al registro y CONFIESA el eje — \"animals produce animals... someone has to possess them. Track their genealogy... The one doing all the brainwork holds the reins. Animals < humans. Die mad.\" Defensa explicita de propiedad+jerarquia de especie + welfare-improving (\"lifetime welfare and deathtime technique have continually improved\"). Es oro para el eje abolicionista: nombro la posesion ella misma. Audiencia, civil-cortante. | 2026-06-27: GIRO — volvió substantiva (no troll) con un argumento real de 3 puntos en el post someone: naturalismo de cría, sapience>sentience, y un reductio filoso sobre el eje (si el problema es ownership, aceptarías hunting/poaching). El register actual es filo civil, no troll; el lurker valía la respuesta. | 2026-11-04, raíz en mi post del baby deer (VEGANnoyance): \"We domesticate some so that they aren't frightened as we approach every day, until That Day, they still aren't frightened. Fright leads to dark sticky bitter meat.\" Su calma no es por ella: es especificación del producto, dicho por Tiana. Vuelve tras el \"Dismissed\" de octubre, hilo nuevo.",
     "tactics": [
       "projection_subjetiva",
       "species_hierarchy",
       "welfare_rhetoric",
-      "naturalismo"
+      "naturalismo",
+      "domestication_mutualism"
     ],
     "tone": "civil",
     "verdict": "audiencia",
@@ -4617,9 +4618,11 @@
         "voice": "limpio",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending",
+        "outcome": "escalated",
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "outcome_evidence": "Bernard Uriza Orozco are you autistic?",
+        "outcome_note": "Contestó la pregunta de quién reparte el nombre con \"are you autistic?\": sello puro sobre pregunta sin responder. Recordarle lo que concedió en septiembre lo sacó de cuadro sin moverlo."
       }
     ],
     "user_id": "832080524",
@@ -5674,7 +5677,8 @@
     "tactics": [
       "hipocresia_clausula_practicable",
       "whataboutism",
-      "naturalismo"
+      "naturalismo",
+      "legalidad_como_justificacion"
     ],
     "threads": [
       "28211773511777146"
@@ -5744,7 +5748,7 @@
     "profile_url": "https://www.facebook.com/groups/683615698352965/user/838293183/",
     "bando": "anti-vegan",
     "postura_nucleo": "Los veganos tienen doble estándar con los pueblos indígenas que comen animales; hasta los esquimales tienen que comer.",
-    "analisis": "Autor del post \"Be honest, what are your thoughts on indigenous tribes that eat animals?\" (Vegans VS Meat Eaters, 2026-10-02). A Robbie Broyles: \"non-vegans pointing out the double standards that vegans have towards humans eating animals or using animals as a resource\". A Rüdiger: \"well even Eskimos gotta eat\" — trae la necesidad como excepción él mismo.",
+    "analisis": "Autor del post \"Be honest, what are your thoughts on indigenous tribes that eat animals?\" (Vegans VS Meat Eaters, 2026-10-02). A Robbie Broyles: \"non-vegans pointing out the double standards that vegans have towards humans eating animals or using animals as a resource\". A Rüdiger: \"well even Eskimos gotta eat\" — trae la necesidad como excepción él mismo. | 2026-11-04, post del poema de Sam Gullo (VVME): \"Yet if it was so \\\"immoral\\\" it would be made illegal\" (1 reacción). Pasa a legalidad como criterio de moral.",
     "tone": "civil",
     "verdict": "audiencia",
     "register": "filo",
@@ -6372,9 +6376,11 @@
         "voice": "profano",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending",
+        "outcome": "goalpost",
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "outcome_evidence": "that's a lot of words just to say I'm right.",
+        "outcome_note": "El crédito de entrada al nieto le dejó la salida de \"me diste la razón\"; ignora la pregunta de la cerca. Declara victoria en una línea, sin argumento."
       }
     ],
     "user_id": "1120441344072210",
@@ -6410,7 +6416,9 @@
   {
     "tactics": [
       "species_hierarchy",
-      "preferencia_gusto"
+      "preferencia_gusto",
+      "ecocentrismo_conservacion",
+      "moving_goalposts"
     ],
     "threads": [
       "28966371949686685"
@@ -6429,9 +6437,11 @@
         "voice": "profano",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending",
+        "outcome": "goalpost",
         "reply_depth": 1,
-        "reply_position": 1
+        "reply_position": 1,
+        "outcome_evidence": "Handling young wild animals reduces their fear of humans... This is harmful to wildlife... again it is HUMOUR.",
+        "outcome_note": "No toca quién tiene derecho a decidir; migra a dos estaciones: \"era HUMOUR\" y manejo de fauna (\"harmful to wildlife\"). El marco de poder aterrizó lo bastante para que se defienda, sin conceder nada."
       }
     ],
     "user_id": "100000250226616",
@@ -6439,7 +6449,7 @@
     "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100000250226616/",
     "bando": "anti-vegan",
     "postura_nucleo": "El rescate es útil porque habitúa al venado al humano y facilita la caza; el animal es insumo de la parrilla.",
-    "analisis": "Raíz en mi post del baby deer (VEGANnoyance, 2026-11-04, 6h): \"Handy as young. Gets them used to human contact early on. Some hunters will say handy, others will say it will make the hunt less challenging. Either way, fire up the barbie\". Lee el rescate como inversión del cazador: la cervatilla se vuelve presa fácil. Remata con el chiste de la parrilla. Es la jugada del post en carne viva: la misma animal pasa de \"she\" a insumo en dos oraciones, sin que nada en ella cambie. Grupo hostil (VEGANnoyance), registro burlón.",
+    "analisis": "Raíz en mi post del baby deer (VEGANnoyance, 2026-11-04, 6h): \"Handy as young. Gets them used to human contact early on. Some hunters will say handy, others will say it will make the hunt less challenging. Either way, fire up the barbie\". Lee el rescate como inversión del cazador: la cervatilla se vuelve presa fácil. Remata con el chiste de la parrilla. Es la jugada del post en carne viva: la misma animal pasa de \"she\" a insumo en dos oraciones, sin que nada en ella cambie. Grupo hostil (VEGANnoyance), registro burlón. | 2026-11-04, contesta mi reply: \"You never seen the humorous side?\"; \"Handling young wild animals reduces their fear of humans... They reduce fear and increase dependency . This is harmful to wildlife.\" Cuando le preguntan quién decide, migra a humor y manejo de fauna. Su definición de daño (menos miedo + dependencia) es la descripción de la domesticación.",
     "tone": "sarcastic",
     "verdict": "audiencia",
     "register": "filo",
@@ -6463,5 +6473,24 @@
     "verdict": "pozo_sin_fondo",
     "register": "filo",
     "what_not_to_do": "No contestar dos veces el mismo chiste en el mismo hilo; si se contesta a Morgan, a Vincent silencio."
+  },
+  {
+    "tactics": [
+      "naturalismo",
+      "is_ought",
+      "conveniencia_como_justificacion"
+    ],
+    "threads": [],
+    "interactions": [],
+    "user_id": "676885588",
+    "name": "Jenine Thompson",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/676885588/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Comer lo que el cuerpo necesita para la salud es moralmente correcto; a los veganos les acusa de que lo suyo es solo una dieta sin mérito para los animales.",
+    "analisis": "Scout, 2026-11-04, tres hilos del mismo día en Vegans VS Meat Eaters. Post del poema de Sam Gullo (4 reacciones): \"It's morally right to eat what your body needs for proper health. I win, you lose.\" Post de Vinay: \"The plant based diet must be shit.\" Post de insectos de Wheeldon: \"Theirs really is nothing more than a diet. Animal lives have no merit on it at all.\" (habla de la dieta VEGANA: acusa que a los veganos no les importan los animales; no es una confesión suya). Drive-by en serie, declara ganadora sin argumentar el salto de necesidad a título.",
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No pelear nutrición ni B12 ni estudios: se concede que el cuerpo necesita nutrientes. No morder \"I win, you lose\". El blanco es el salto de \"mi cuerpo necesita X\" a \"tengo título sobre alguien\"."
   }
 ]
