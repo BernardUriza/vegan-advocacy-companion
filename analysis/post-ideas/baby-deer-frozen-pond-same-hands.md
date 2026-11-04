@@ -1,6 +1,6 @@
 # Baby deer en el estanque helado — las mismas manos que la rescatan alimentan a los animales de la granja
 
-Status: Seed
+Status: Drafted (2026-11-03; coagent en loop invertido, draft final `.coagent/drafts/1103-root-baby-deer.txt`, sha d97351c44c04701a, framework `filtro-especie-vs-individuo`; esperando GO de Bernard para publicar en los 3 grupos con el video)
 Capturado: 2026-11-03 por Bernard (orden: *"para el siguiente post usaremos este video, descárgalo"*)
 
 ## Video (adjunto del post)
