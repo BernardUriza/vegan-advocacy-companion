@@ -40,3 +40,6 @@ scripts/coagent-prompt-*.txt
 # bytecode de python (receipt-collage.py)
 __pycache__/
 *.pyc
+
+# video de post raiz (30 MB; se regenera con yt-dlp, ver la semilla)
+analysis/post-ideas/assets/shorts-*/*.mp4
