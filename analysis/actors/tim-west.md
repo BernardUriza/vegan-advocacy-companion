@@ -44,7 +44,7 @@ No pelear la salud ni citar estudios: conceder de frente que sí, y por eso la s
 
 ## Log de interacciones
 
-### Hilo `28535115126109648` — 2026-10-26 · outcome: **pending**
+### Hilo `28535115126109648` — 2026-10-26 · outcome: **silent**
 - **Su jugada:** Same on an omnivorous diet.
 - **Nuestra respuesta:** Reply limpia compasiva (74 palabras): de acuerdo, la salud empata; la única diferencia es que un plato necesita a una sintiente poseída; elegir poseer necesita razón. Cierre: what is left to justify owning her?
 
