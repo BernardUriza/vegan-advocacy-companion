@@ -4603,6 +4603,23 @@
         "opponent_reactions": 1,
         "third_party_replies_to_opponent": [],
         "closed_from": "pending"
+      },
+      {
+        "thread_id": "28966371949686685",
+        "date": "2026-11-04",
+        "their_move": "Raíz en mi post del baby deer (VEGANnoyance, 4h): \"Frozen venison!\"",
+        "our_reply_summary": "Limpio (61 palabras): en el clip she, en su comentario venado congelado, mismo animal nuevo nombre; él ya me dijo en septiembre que son sintientes y propiedad; el chiste vive en el hueco entre las dos; cierre: ¿quién reparte el nombre nuevo y qué se lo da?",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "ee8a044f5d928fc6",
+        "exposure_n": 3,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending",
+        "reply_depth": 1,
+        "reply_position": 1
       }
     ],
     "user_id": "832080524",
@@ -6341,7 +6358,25 @@
     "threads": [
       "28656662030621623"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "thread_id": "28656662030621623",
+        "date": "2026-11-04",
+        "their_move": "Raíz en mi post del baby deer (Vegans VS Meat Eaters, 8h, 2 reacciones): \"I bet that boy hunts and he has now officially saved more animals than most activists.\"",
+        "our_reply_summary": "Profano (126 palabras): crédito entero al nieto aunque cace; su \"saved\" significó soltarla; contar a la cervatilla como una salvada exige ver a una con su propio lado; detrás de la cerca el mismo animal pasa frío y miedo y otro sostiene la puerta; cierre: ¿qué queda de tu palabra saved cuando el mismo animal se queda detrás de la cerca?",
+        "framework": "filtro-especie-vs-individuo",
+        "draft_sha": "f59fbd07c3312537",
+        "exposure_n": 1,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "profano",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending",
+        "reply_depth": 1,
+        "reply_position": 1
+      }
+    ],
     "user_id": "1120441344072210",
     "name": "Trollkors",
     "profile_url": "https://www.facebook.com/groups/683615698352965/user/1120441344072210/",
@@ -6380,7 +6415,25 @@
     "threads": [
       "28966371949686685"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "thread_id": "28966371949686685",
+        "date": "2026-11-04",
+        "their_move": "Raíz en mi post del baby deer (VEGANnoyance, 6h): \"Handy as young. Gets them used to human contact early on. Some hunters will say handy, others will say it will make the hunt less challenging. Either way, fire up the barbie\"",
+        "our_reply_summary": "Profano (116 palabras): de she a handy en dos oraciones sin que ella cambie; less challenging describe la ventaja del que sostiene el arma y dice fuck-all de ella; el poder decide quién gana el encuentro y deja abierto si alguien tenía derecho a empezarlo; cierre: ¿qué hace al que enciende la parrilla el que elige cómo termina su historia?",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "draft_sha": "b34bfd599e05ecac",
+        "exposure_n": 1,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "profano",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending",
+        "reply_depth": 1,
+        "reply_position": 1
+      }
+    ],
     "user_id": "100000250226616",
     "name": "Lech Kaminski Robins",
     "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100000250226616/",

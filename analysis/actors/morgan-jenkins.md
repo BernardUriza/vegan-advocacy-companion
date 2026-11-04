@@ -10,7 +10,7 @@
 
 ## Análisis
 
-Gish gallop clasico (2026-07-03, post 27330, 8h): apila ~8 puntos en un comentario — diferencia de especie (crian distinto a sus crias), welfare-comparativo (stun vs Komodo dragon desgarrando un feto), "farmers spend ££££", omnivoro/teeth-argument (pandas), meta anti-vegano (carnist/AI/emotional manipulation), y wild-is-worse. El nucleo real es human-exceptionalism + care-justifica-uso. Registro civil-cortante, algo troll en el meta. No perseguir el gallop; nombrar la tecnica, tomar el nucleo (diferencias ortogonales al titulo; el cuidado es downstream del titulo), volver al hueso.
+Gish gallop clasico (2026-07-03, post 27330, 8h): apila ~8 puntos en un comentario — diferencia de especie (crian distinto a sus crias), welfare-comparativo (stun vs Komodo dragon desgarrando un feto), "farmers spend ££££", omnivoro/teeth-argument (pandas), meta anti-vegano (carnist/AI/emotional manipulation), y wild-is-worse. El nucleo real es human-exceptionalism + care-justifica-uso. Registro civil-cortante, algo troll en el meta. No perseguir el gallop; nombrar la tecnica, tomar el nucleo (diferencias ortogonales al titulo; el cuidado es downstream del titulo), volver al hueso. | 2026-11-04 (VEGANnoyance, post baby deer, 4h): raíz de dos palabras, "Frozen venison!". El que el 30-sep concedió sintiencia y propiedad baja al chiste del plato; renombra a la cervatilla rescatada como producto, que es exactamente el movimiento que el post describe ("call her livestock").
 
 ## Tácticas
 
@@ -20,6 +20,8 @@ Gish gallop clasico (2026-07-03, post 27330, 8h): apila ~8 puntos en un comentar
   - _Contra:_ The problem isn't the quality of life — it's that the entire existence is designed around killing for something unnecessary. A comfortable life that ends in slaughter for non-necessity doesn't become morally neutral because the suffering was minimized.
 - **Appeal to Nature / Naturalismo** (`naturalismo`) — Justifies an action because it is 'natural', ignoring that many natural things are harmful and many beneficial things are unnatural. In vegan debates: 'we're biologically designed to eat meat', 'we're at the top of the food chain', 'lions eat meat'.
   - _Contra:_ Concede the biology entirely, then separate can from should (is-ought, Hume): 'Yes, we can digest meat — omnivore is a fact about digestion, not a moral status. The question is what justifies using a sentient being when we don't need to.' If they lean hard on 'natural', add the second layer: 'natural' doesn't carry moral weight by itself — a poisonous mushroom is natural and bad for us, medicine and hospitals are 'unnatural' and good. What makes something good or bad isn't whether it's natural; it's whether it satisfies or frustrates the interests of someone who can feel. So 'it's natural' answers nothing about whether it's right.
+- **Taste/Preference as Justification** (`preferencia_gusto`) — Defends animal use by appeal to personal taste or dislike of the alternatives: "I just like the taste", "I tried plant-based and don’t enjoy it", "soy is nasty to me", sometimes mixed with a genuine constraint (allergies). Treats a preference as if it settled the moral question.
+  - _Contra:_ Concede the preference fully — nobody has to enjoy the alternatives, and a real allergy is a real constraint, not a character flaw. Then separate liking from justifying: a preference explains why you’d rather, it doesn’t answer whether your preference outweighs a sentient being’s life when an adequate alternative exists. Move the weight to the third party who pays for the preference.
 
 ## Counter-arsenal
 
@@ -69,6 +71,8 @@ Gish gallop clasico (2026-07-03, post 27330, 8h): apila ~8 puntos en un comentar
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
+- **Taste/Preference as Justification** (`preferencia_gusto`)
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -84,4 +88,8 @@ No perseguir cada punto del gallop (teeth/pandas/halal/carnist/AI). No competir 
 - **Su jugada:** Raíz en mi post de sintiencia (VEGANnoyance, 2d, "I'll be serious for a second"): concede que son sintientes; "livestock is property but don't tell me they are slaves"; vet care, campo, granero, heno; "they have a final purpose but most farms treat livestock right".
 - **Nuestra respuesta:** Limpio (183 palabras): concedí sintiencia, diferencias de mente y todo el trato; solté la palabra que rechaza; tomé sus palabras "livestock is property" y "final purpose": el cuidado vive dentro de la relación y el final lo decide otro; la propiedad añade criar, vender, mover y terminar, y el cuidado no la toca; cierre: ¿quién decide ese final y qué le da ese poder sobre un animal que él acepta que siente?
 
-_Hilos: 27330688236588406, 28459136643743554_
+### Hilo `28966371949686685` — 2026-11-04 · outcome: **pending**
+- **Su jugada:** Raíz en mi post del baby deer (VEGANnoyance, 4h): "Frozen venison!"
+- **Nuestra respuesta:** Limpio (61 palabras): en el clip she, en su comentario venado congelado, mismo animal nuevo nombre; él ya me dijo en septiembre que son sintientes y propiedad; el chiste vive en el hueco entre las dos; cierre: ¿quién reparte el nombre nuevo y qué se lo da?
+
+_Hilos: 27330688236588406, 28459136643743554, 28966371949686685_
