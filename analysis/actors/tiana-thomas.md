@@ -10,7 +10,7 @@
 
 ## Análisis
 
-Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al registro y CONFIESA el eje — "animals produce animals... someone has to possess them. Track their genealogy... The one doing all the brainwork holds the reins. Animals < humans. Die mad." Defensa explicita de propiedad+jerarquia de especie + welfare-improving ("lifetime welfare and deathtime technique have continually improved"). Es oro para el eje abolicionista: nombro la posesion ella misma. Audiencia, civil-cortante. | 2026-06-27: GIRO — volvió substantiva (no troll) con un argumento real de 3 puntos en el post someone: naturalismo de cría, sapience>sentience, y un reductio filoso sobre el eje (si el problema es ownership, aceptarías hunting/poaching). El register actual es filo civil, no troll; el lurker valía la respuesta.
+Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al registro y CONFIESA el eje — "animals produce animals... someone has to possess them. Track their genealogy... The one doing all the brainwork holds the reins. Animals < humans. Die mad." Defensa explicita de propiedad+jerarquia de especie + welfare-improving ("lifetime welfare and deathtime technique have continually improved"). Es oro para el eje abolicionista: nombro la posesion ella misma. Audiencia, civil-cortante. | 2026-06-27: GIRO — volvió substantiva (no troll) con un argumento real de 3 puntos en el post someone: naturalismo de cría, sapience>sentience, y un reductio filoso sobre el eje (si el problema es ownership, aceptarías hunting/poaching). El register actual es filo civil, no troll; el lurker valía la respuesta. | 2026-11-04, raíz en mi post del baby deer (VEGANnoyance): "We domesticate some so that they aren't frightened as we approach every day, until That Day, they still aren't frightened. Fright leads to dark sticky bitter meat." Su calma no es por ella: es especificación del producto, dicho por Tiana. Vuelve tras el "Dismissed" de octubre, hilo nuevo.
 
 ## Tácticas
 
@@ -22,6 +22,8 @@ Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al 
   - _Contra:_ The problem isn't the quality of life — it's that the entire existence is designed around killing for something unnecessary. A comfortable life that ends in slaughter for non-necessity doesn't become morally neutral because the suffering was minimized.
 - **Appeal to Nature / Naturalismo** (`naturalismo`) — Justifies an action because it is 'natural', ignoring that many natural things are harmful and many beneficial things are unnatural. In vegan debates: 'we're biologically designed to eat meat', 'we're at the top of the food chain', 'lions eat meat'.
   - _Contra:_ Concede the biology entirely, then separate can from should (is-ought, Hume): 'Yes, we can digest meat — omnivore is a fact about digestion, not a moral status. The question is what justifies using a sentient being when we don't need to.' If they lean hard on 'natural', add the second layer: 'natural' doesn't carry moral weight by itself — a poisonous mushroom is natural and bad for us, medicine and hospitals are 'unnatural' and good. What makes something good or bad isn't whether it's natural; it's whether it satisfies or frustrates the interests of someone who can feel. So 'it's natural' answers nothing about whether it's right.
+- **Domestication = Mutualism / Commensalism** (`domestication_mutualism`) — Frames domesticated animal use as a symbiotic or commensal relationship ('ants exploit aphids', 'humans and domesticates have commensal relationships that benefit both'). Misuses biology terms — commensalism means one benefits, the other is unaffected; mutualism means both benefit. Neither describes farming-to-slaughter.
+  - _Contra:_ Expose the error in the biology term itself: commensalism means one benefits, the other is neither helped nor harmed — not slaughtered. Real mutualism doesn't include one party's death as its purpose. The analogy collapses on its own terms.
 
 ## Counter-arsenal
 
@@ -71,6 +73,10 @@ Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al 
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
+- **Domestication = Mutualism / Commensalism** (`domestication_mutualism`)
+  - `domesticar-eufemismo-dominar` → _deploy as:_ marco
+  - `violencia-estructural-infraestructura` → _deploy as:_ marco
+  - `premisa-falsa-los-animales-nos-dan` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -142,4 +148,8 @@ NO pelear el body-count ni el "welfare mejora" (concederlo: mejor trato no cambi
 - **Su jugada:** The one who can plan, discover and understand genetics, who can cure and store hay & grain, who can pull a stuck calf and treat mastitis with antibiotic they invented, the one who can give many more good years and a better death than any nature can offer.
 - **Nuestra respuesta:** Filo moderado (140 palabras): su lista es real y mucha es cuidado (becerro atorado, mastitis, heno); planear genética, decidir cría, quedarse con becerros y elegir "a better death" es la mano del dueño, la misma que fija la fecha; "The one who can" dice quién tiene poder, no quién tiene título; enfermeras y padres cuidan y nadie les da la propiedad. Cierre: since when does being able to care for her give you the right to breed, sell and end her?
 
-_Hilos: 27395909046698912, 27405978672358616, 27937793019177176, 27330688236588406, 27468645086091974, 27051763587778150, 27496390256650790, 28469926949331190_
+### Hilo `28966371949686685` — 2026-11-04 · outcome: **pending**
+- **Su jugada:** Raíz en mi post del baby deer (VEGANnoyance): "We domesticate some so that they aren't frightened as we approach every day, until That Day, they still aren't frightened. Fright leads to dark sticky bitter meat."
+- **Nuestra respuesta:** Limpio (108 palabras): el post nunca habló de muerte horrible; concedo la mansedumbre; su última oración hace de la calma receta de la carne; la venadita se fue cuando quiso, la domesticada recibe una fecha que nunca oye; cierre: quién escribe "That Day" y quién le preguntó.
+
+_Hilos: 27395909046698912, 27405978672358616, 27937793019177176, 27330688236588406, 27468645086091974, 27051763587778150, 27496390256650790, 28469926949331190, 28966371949686685_

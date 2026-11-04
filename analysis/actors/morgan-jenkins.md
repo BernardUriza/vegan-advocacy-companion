@@ -88,7 +88,7 @@ No perseguir cada punto del gallop (teeth/pandas/halal/carnist/AI). No competir 
 - **Su jugada:** Raíz en mi post de sintiencia (VEGANnoyance, 2d, "I'll be serious for a second"): concede que son sintientes; "livestock is property but don't tell me they are slaves"; vet care, campo, granero, heno; "they have a final purpose but most farms treat livestock right".
 - **Nuestra respuesta:** Limpio (183 palabras): concedí sintiencia, diferencias de mente y todo el trato; solté la palabra que rechaza; tomé sus palabras "livestock is property" y "final purpose": el cuidado vive dentro de la relación y el final lo decide otro; la propiedad añade criar, vender, mover y terminar, y el cuidado no la toca; cierre: ¿quién decide ese final y qué le da ese poder sobre un animal que él acepta que siente?
 
-### Hilo `28966371949686685` — 2026-11-04 · outcome: **pending**
+### Hilo `28966371949686685` — 2026-11-04 · outcome: **escalated**
 - **Su jugada:** Raíz en mi post del baby deer (VEGANnoyance, 4h): "Frozen venison!"
 - **Nuestra respuesta:** Limpio (61 palabras): en el clip she, en su comentario venado congelado, mismo animal nuevo nombre; él ya me dijo en septiembre que son sintientes y propiedad; el chiste vive en el hueco entre las dos; cierre: ¿quién reparte el nombre nuevo y qué se lo da?
 

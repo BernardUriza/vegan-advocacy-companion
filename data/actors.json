@@ -2819,7 +2819,8 @@
       "27468645086091974",
       "27051763587778150",
       "27496390256650790",
-      "28469926949331190"
+      "28469926949331190",
+      "28966371949686685"
     ],
     "interactions": [
       {
@@ -3023,6 +3024,21 @@
         "third_party_replies": [],
         "opponent_reactions": 0,
         "third_party_replies_to_opponent": []
+      },
+      {
+        "thread_id": "28966371949686685",
+        "date": "2026-11-04",
+        "their_move": "Raíz en mi post del baby deer (VEGANnoyance): \"We domesticate some so that they aren't frightened as we approach every day, until That Day, they still aren't frightened. Fright leads to dark sticky bitter meat.\"",
+        "our_reply_summary": "Limpio (108 palabras): el post nunca habló de muerte horrible; concedo la mansedumbre; su última oración hace de la calma receta de la carne; la venadita se fue cuando quiso, la domesticada recibe una fecha que nunca oye; cierre: quién escribe \"That Day\" y quién le preguntó.",
+        "framework": "domesticar-eufemismo-dominar",
+        "draft_sha": "448a2027e8e2dbf6",
+        "exposure_n": 17,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending"
       }
     ]
   },
@@ -5681,7 +5697,8 @@
       "legalidad_como_justificacion"
     ],
     "threads": [
-      "28211773511777146"
+      "28211773511777146",
+      "28660102386944254"
     ],
     "interactions": [
       {
@@ -5741,6 +5758,21 @@
         "third_party_replies_to_opponent": [],
         "outcome_evidence": "Sin turno de Phil tras 'Close. I'd drop the \"ok\"' (1w).",
         "outcome_note": "no-necesidad-cambiaron-las-reglas: su 'Got it' sarcástico se le confirmó quitando el 'ok' (la necesidad cambia lo exigible a la persona, no el estatus del animal); no volvió en 11 días."
+      },
+      {
+        "thread_id": "28660102386944254",
+        "date": "2026-11-04",
+        "their_move": "Raíz en post del poema de Sam Gullo (VVME): \"Yet if it was so \\\"immoral\\\" it would be made illegal\"",
+        "our_reply_summary": "Limpio (123 palabras): \"immoral\" llega antes que \"illegal\"; poseer personas fue legal y el papeleo lo escribían los dueños (solo por estructura); la ley dice quién tiene el título y nada más; el poema ya concedió lo legal; cierre: quién podía llamarlo mal antes de que fuera \"made illegal\".",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "draft_sha": "f8c8881a9ebe1f71",
+        "exposure_n": 3,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending"
       }
     ],
     "user_id": "838293183",
@@ -6442,6 +6474,21 @@
         "reply_position": 1,
         "outcome_evidence": "Handling young wild animals reduces their fear of humans... This is harmful to wildlife... again it is HUMOUR.",
         "outcome_note": "No toca quién tiene derecho a decidir; migra a dos estaciones: \"era HUMOUR\" y manejo de fauna (\"harmful to wildlife\"). El marco de poder aterrizó lo bastante para que se defienda, sin conceder nada."
+      },
+      {
+        "thread_id": "28966371949686685",
+        "date": "2026-11-04",
+        "their_move": "Contesta mi reply: \"You never seen the humorous side?... They reduce fear and increase dependency . This is harmful to wildlife. It is, as the name suggests - WILD... again it is HUMOUR.\"",
+        "our_reply_summary": "Profano (138 palabras): concedo chiste y dato; su \"reduce fear and increase dependency\" es el modelo de negocio de la granja; wild y livestock dicen quién tiene el título; cierre: qué hizo la vaca para perder la palabra.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "9eb1d0fa22098380",
+        "exposure_n": 2,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "profano",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending"
       }
     ],
     "user_id": "100000250226616",
@@ -6480,8 +6527,26 @@
       "is_ought",
       "conveniencia_como_justificacion"
     ],
-    "threads": [],
-    "interactions": [],
+    "threads": [
+      "28660102386944254"
+    ],
+    "interactions": [
+      {
+        "thread_id": "28660102386944254",
+        "date": "2026-11-04",
+        "their_move": "Raíz en post del poema de Sam Gullo (VVME, 4 reacciones): \"It's morally right to eat what your body needs for proper health. I win, you lose.\"",
+        "our_reply_summary": "Limpio (105 palabras): concedo nutrientes; un requisito nutricional no dice a quién se posee; el súper tiene el resto a dos pasillos; cantó victoria un paso antes; cierre: qué necesita tu cuerpo que te dé un reclamo sobre ella.",
+        "framework": "no-necesidad-cambiaron-las-reglas",
+        "draft_sha": "f881e7f520e857f8",
+        "exposure_n": 1,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending"
+      }
+    ],
     "user_id": "676885588",
     "name": "Jenine Thompson",
     "profile_url": "https://www.facebook.com/groups/683615698352965/user/676885588/",

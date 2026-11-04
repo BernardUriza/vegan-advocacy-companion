@@ -32,7 +32,7 @@ No defender el currículum activista ni contar animales salvados (es la trampa d
 
 ## Log de interacciones
 
-### Hilo `28656662030621623` — 2026-11-04 · outcome: **pending**
+### Hilo `28656662030621623` — 2026-11-04 · outcome: **goalpost**
 - **Su jugada:** Raíz en mi post del baby deer (Vegans VS Meat Eaters, 8h, 2 reacciones): "I bet that boy hunts and he has now officially saved more animals than most activists."
 - **Nuestra respuesta:** Profano (126 palabras): crédito entero al nieto aunque cace; su "saved" significó soltarla; contar a la cervatilla como una salvada exige ver a una con su propio lado; detrás de la cerca el mismo animal pasa frío y miedo y otro sostiene la puerta; cierre: ¿qué queda de tu palabra saved cuando el mismo animal se queda detrás de la cerca?
 

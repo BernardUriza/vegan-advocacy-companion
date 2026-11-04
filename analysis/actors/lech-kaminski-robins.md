@@ -10,7 +10,7 @@
 
 ## Análisis
 
-Raíz en mi post del baby deer (VEGANnoyance, 2026-11-04, 6h): "Handy as young. Gets them used to human contact early on. Some hunters will say handy, others will say it will make the hunt less challenging. Either way, fire up the barbie". Lee el rescate como inversión del cazador: la cervatilla se vuelve presa fácil. Remata con el chiste de la parrilla. Es la jugada del post en carne viva: la misma animal pasa de "she" a insumo en dos oraciones, sin que nada en ella cambie. Grupo hostil (VEGANnoyance), registro burlón.
+Raíz en mi post del baby deer (VEGANnoyance, 2026-11-04, 6h): "Handy as young. Gets them used to human contact early on. Some hunters will say handy, others will say it will make the hunt less challenging. Either way, fire up the barbie". Lee el rescate como inversión del cazador: la cervatilla se vuelve presa fácil. Remata con el chiste de la parrilla. Es la jugada del post en carne viva: la misma animal pasa de "she" a insumo en dos oraciones, sin que nada en ella cambie. Grupo hostil (VEGANnoyance), registro burlón. | 2026-11-04, contesta mi reply: "You never seen the humorous side?"; "Handling young wild animals reduces their fear of humans... They reduce fear and increase dependency . This is harmful to wildlife." Cuando le preguntan quién decide, migra a humor y manejo de fauna. Su definición de daño (menos miedo + dependencia) es la descripción de la domesticación.
 
 ## Tácticas
 
@@ -18,6 +18,10 @@ Raíz en mi post del baby deer (VEGANnoyance, 2026-11-04, 6h): "Handy as young. 
   - _Contra:_ Ask for the criterion: 'What makes human interests categorically outweigh animal interests? Whatever criterion you give — sentience, capacity to suffer, social bonds, language — either also applies to some animals or fails to draw the line you need. The hierarchy needs an argument, not an assertion.'
 - **Taste/Preference as Justification** (`preferencia_gusto`) — Defends animal use by appeal to personal taste or dislike of the alternatives: "I just like the taste", "I tried plant-based and don’t enjoy it", "soy is nasty to me", sometimes mixed with a genuine constraint (allergies). Treats a preference as if it settled the moral question.
   - _Contra:_ Concede the preference fully — nobody has to enjoy the alternatives, and a real allergy is a real constraint, not a character flaw. Then separate liking from justifying: a preference explains why you’d rather, it doesn’t answer whether your preference outweighs a sentient being’s life when an adequate alternative exists. Move the weight to the third party who pays for the preference.
+- **Ecocentrism / Conservation over the individual** (`ecocentrismo_conservacion`) — Shifts the moral unit from the sentient INDIVIDUAL to an abstraction — 'the species', 'the ecosystem', 'nature', 'the balance', 'stewardship of the herd' — so individual animals can be bred, managed or killed for 'conservation', 'ecological health' or 'the food web'. In vegan debates: 'farming is part of the ecosystem', 'we're stewards keeping the balance', 'it's the circle of life', 'invasive species must be culled'.
+  - _Contra:_ The moral unit is the concrete sentient individual, not the abstraction. A species or an ecosystem doesn't feel anything — only an individual does. 'Conservation' or 'balance' that kills a someone for the sake of a collective is the category error: you can't owe a debt to an abstraction by harming the only ones who can actually be harmed. And farming isn't an ecosystem in balance — it's a human industry of massive forced breeding, the opposite of leaving nature alone. Caring about a concrete animal who can suffer and caring about the environment aren't in tension; the conflict only appears once you let the abstraction outrank the individual who feels.
+- **Moving Goalposts** (`moving_goalposts`) — Changes the argument every time the current one is closed. Classic CarolAnn pattern: nutrition → omnivores → 'millions of years' → ecosystem → 'normal/default' → 'veganism is a belief system'. Each shift abandons the previous terrain without conceding it.
+  - _Contra:_ Name the move explicitly and briefly: 'notice what just happened — we just moved from [X] to [Y].' Then return to the original question without following the redirect. The lurker sees the pattern.
 
 ## Counter-arsenal
 
@@ -39,6 +43,12 @@ Raíz en mi post del baby deer (VEGANnoyance, 2026-11-04, 6h): "Handy as young. 
   - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco
 - **Taste/Preference as Justification** (`preferencia_gusto`)
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
+- **Ecocentrism / Conservation over the individual** (`ecocentrismo_conservacion`)
+  - `filtro-especie-vs-individuo` → _deploy as:_ marco
+- **Moving Goalposts** (`moving_goalposts`)
+  - `por-que-no-maltrato-rigor-conceptual` → _deploy as:_ premisa_portante
+  - `semaforo-rojo-amarillo-welfarismo` → _deploy as:_ marco
+  - `arbol-causa-sintoma` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -46,8 +56,12 @@ No discutir ética de la caza ni habituación de fauna. No sonar herido por el c
 
 ## Log de interacciones
 
-### Hilo `28966371949686685` — 2026-11-04 · outcome: **pending**
+### Hilo `28966371949686685` — 2026-11-04 · outcome: **goalpost**
 - **Su jugada:** Raíz en mi post del baby deer (VEGANnoyance, 6h): "Handy as young. Gets them used to human contact early on. Some hunters will say handy, others will say it will make the hunt less challenging. Either way, fire up the barbie"
 - **Nuestra respuesta:** Profano (116 palabras): de she a handy en dos oraciones sin que ella cambie; less challenging describe la ventaja del que sostiene el arma y dice fuck-all de ella; el poder decide quién gana el encuentro y deja abierto si alguien tenía derecho a empezarlo; cierre: ¿qué hace al que enciende la parrilla el que elige cómo termina su historia?
+
+### Hilo `28966371949686685` — 2026-11-04 · outcome: **pending**
+- **Su jugada:** Contesta mi reply: "You never seen the humorous side?... They reduce fear and increase dependency . This is harmful to wildlife. It is, as the name suggests - WILD... again it is HUMOUR."
+- **Nuestra respuesta:** Profano (138 palabras): concedo chiste y dato; su "reduce fear and increase dependency" es el modelo de negocio de la granja; wild y livestock dicen quién tiene el título; cierre: qué hizo la vaca para perder la palabra.
 
 _Hilos: 28966371949686685_

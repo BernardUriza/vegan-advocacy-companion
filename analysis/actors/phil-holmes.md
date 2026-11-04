@@ -10,7 +10,7 @@
 
 ## Análisis
 
-Autor del post "Be honest, what are your thoughts on indigenous tribes that eat animals?" (Vegans VS Meat Eaters, 2026-10-02). A Robbie Broyles: "non-vegans pointing out the double standards that vegans have towards humans eating animals or using animals as a resource". A Rüdiger: "well even Eskimos gotta eat" — trae la necesidad como excepción él mismo.
+Autor del post "Be honest, what are your thoughts on indigenous tribes that eat animals?" (Vegans VS Meat Eaters, 2026-10-02). A Robbie Broyles: "non-vegans pointing out the double standards that vegans have towards humans eating animals or using animals as a resource". A Rüdiger: "well even Eskimos gotta eat" — trae la necesidad como excepción él mismo. | 2026-11-04, post del poema de Sam Gullo (VVME): "Yet if it was so \"immoral\" it would be made illegal" (1 reacción). Pasa a legalidad como criterio de moral.
 
 ## Tácticas
 
@@ -20,6 +20,8 @@ Autor del post "Be honest, what are your thoughts on indigenous tribes that eat 
   - _Contra:_ Concern for animal suffering doesn't prevent concern for human suffering — these aren't a zero-sum budget. 'Both matter. Noticing one doesn't cancel the other.' Then return to the original question.
 - **Appeal to Nature / Naturalismo** (`naturalismo`) — Justifies an action because it is 'natural', ignoring that many natural things are harmful and many beneficial things are unnatural. In vegan debates: 'we're biologically designed to eat meat', 'we're at the top of the food chain', 'lions eat meat'.
   - _Contra:_ Concede the biology entirely, then separate can from should (is-ought, Hume): 'Yes, we can digest meat — omnivore is a fact about digestion, not a moral status. The question is what justifies using a sentient being when we don't need to.' If they lean hard on 'natural', add the second layer: 'natural' doesn't carry moral weight by itself — a poisonous mushroom is natural and bad for us, medicine and hospitals are 'unnatural' and good. What makes something good or bad isn't whether it's natural; it's whether it satisfies or frustrates the interests of someone who can feel. So 'it's natural' answers nothing about whether it's right.
+- **Appeal to Legality / "We make it legal"** (`legalidad_como_justificacion`) — Justifies owning or using an animal because the law allows it, or because "we" (humans) write the law that allows it. Treats the legal title as its own reason. Often paired with might-makes-right: "we can and we make it legal."
+  - _Contra:_ The law is the title written down; citing it as the reason is the title justifying itself. It tells you who held the pen, and property law gets written by the ones holding the title. Owning people was legal too, written by the people doing the owning, and it got rewritten when someone demanded the reason behind it. Ask what the law should answer to, not what it says.
 
 ## Counter-arsenal
 
@@ -39,6 +41,9 @@ Autor del post "Be honest, what are your thoughts on indigenous tribes that eat 
   - `tabula-rasa-ni-nacemos-ni-nos-hacen` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
+- **Appeal to Legality / "We make it legal"** (`legalidad_como_justificacion`)
+  - `esclavitud-paralelismo` → _deploy as:_ marco
+  - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -54,4 +59,8 @@ No romantizar ni juzgar a pueblos indígenas; no pelear antropología; el blanco
 - **Su jugada:** so long story short, it is ok to eat animals to survive in the wilderness but not when you are in a civilisation... Got it.
 - **Nuestra respuesta:** Filo ligero (69 palabras): casi; quité el "ok": la supervivencia cambia lo que se le puede pedir a la persona, el animal sigue siendo alguien que siente y el hambre de nadie escribe un título sobre ella. Cierre: If you "Got it", what is the wilderness still doing for people buying animals inside a civilisation?
 
-_Hilos: 28211773511777146_
+### Hilo `28660102386944254` — 2026-11-04 · outcome: **pending**
+- **Su jugada:** Raíz en post del poema de Sam Gullo (VVME): "Yet if it was so \"immoral\" it would be made illegal"
+- **Nuestra respuesta:** Limpio (123 palabras): "immoral" llega antes que "illegal"; poseer personas fue legal y el papeleo lo escribían los dueños (solo por estructura); la ley dice quién tiene el título y nada más; el poema ya concedió lo legal; cierre: quién podía llamarlo mal antes de que fuera "made illegal".
+
+_Hilos: 28211773511777146, 28660102386944254_
