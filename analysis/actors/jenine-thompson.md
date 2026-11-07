@@ -10,7 +10,7 @@
 
 ## Análisis
 
-Scout, 2026-11-04, tres hilos del mismo día en Vegans VS Meat Eaters. Post del poema de Sam Gullo (4 reacciones): "It's morally right to eat what your body needs for proper health. I win, you lose." Post de Vinay: "The plant based diet must be shit." Post de insectos de Wheeldon: "Theirs really is nothing more than a diet. Animal lives have no merit on it at all." (habla de la dieta VEGANA: acusa que a los veganos no les importan los animales; no es una confesión suya). Drive-by en serie, declara ganadora sin argumentar el salto de necesidad a título.
+Scout, 2026-11-04, tres hilos del mismo día en Vegans VS Meat Eaters. Post del poema de Sam Gullo (4 reacciones): "It's morally right to eat what your body needs for proper health. I win, you lose." Post de Vinay: "The plant based diet must be shit." Post de insectos de Wheeldon: "Theirs really is nothing more than a diet. Animal lives have no merit on it at all." (habla de la dieta VEGANA: acusa que a los veganos no les importan los animales; no es una confesión suya). Drive-by en serie, declara ganadora sin argumentar el salto de necesidad a título. | 2026-11-04, contesta mi reply: "The only way this can be done is with a combination of meat and plants. It is morally right to eat the det your body is biologically meant to eat; the omnivorous diet." Luego a Susan Lynn Hebel: toma "appropriate supplementation" como si Susan admitiera que se necesitan productos animales. Susan la corrige (B12 por suplemento o fortificado).
 
 ## Tácticas
 
@@ -50,7 +50,7 @@ No pelear nutrición ni B12 ni estudios: se concede que el cuerpo necesita nutri
 
 ## Log de interacciones
 
-### Hilo `28660102386944254` — 2026-11-04 · outcome: **pending**
+### Hilo `28660102386944254` — 2026-11-04 · outcome: **engaged**
 - **Su jugada:** Raíz en post del poema de Sam Gullo (VVME, 4 reacciones): "It's morally right to eat what your body needs for proper health. I win, you lose."
 - **Nuestra respuesta:** Limpio (105 palabras): concedo nutrientes; un requisito nutricional no dice a quién se posee; el súper tiene el resto a dos pasillos; cantó victoria un paso antes; cierre: qué necesita tu cuerpo que te dé un reclamo sobre ella.
 

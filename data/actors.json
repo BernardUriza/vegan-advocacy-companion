@@ -2799,7 +2799,7 @@
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/100000755924068/",
     "bando": "anti-vegan",
     "postura_nucleo": "El malestar del cuadro de Frida es proyección del espectador: ella pintaba SU sufrimiento (alimentación forzada por enfermedad), no una crítica al consumo de carne.",
-    "analisis": "Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al registro y CONFIESA el eje — \"animals produce animals... someone has to possess them. Track their genealogy... The one doing all the brainwork holds the reins. Animals < humans. Die mad.\" Defensa explicita de propiedad+jerarquia de especie + welfare-improving (\"lifetime welfare and deathtime technique have continually improved\"). Es oro para el eje abolicionista: nombro la posesion ella misma. Audiencia, civil-cortante. | 2026-06-27: GIRO — volvió substantiva (no troll) con un argumento real de 3 puntos en el post someone: naturalismo de cría, sapience>sentience, y un reductio filoso sobre el eje (si el problema es ownership, aceptarías hunting/poaching). El register actual es filo civil, no troll; el lurker valía la respuesta. | 2026-11-04, raíz en mi post del baby deer (VEGANnoyance): \"We domesticate some so that they aren't frightened as we approach every day, until That Day, they still aren't frightened. Fright leads to dark sticky bitter meat.\" Su calma no es por ella: es especificación del producto, dicho por Tiana. Vuelve tras el \"Dismissed\" de octubre, hilo nuevo.",
+    "analisis": "Hilo Frida (06-21): projection_subjetiva. Hilo 405 (06-22, NUEVO): da vuelta al registro y CONFIESA el eje — \"animals produce animals... someone has to possess them. Track their genealogy... The one doing all the brainwork holds the reins. Animals < humans. Die mad.\" Defensa explicita de propiedad+jerarquia de especie + welfare-improving (\"lifetime welfare and deathtime technique have continually improved\"). Es oro para el eje abolicionista: nombro la posesion ella misma. Audiencia, civil-cortante. | 2026-06-27: GIRO — volvió substantiva (no troll) con un argumento real de 3 puntos en el post someone: naturalismo de cría, sapience>sentience, y un reductio filoso sobre el eje (si el problema es ownership, aceptarías hunting/poaching). El register actual es filo civil, no troll; el lurker valía la respuesta. | 2026-11-04, raíz en mi post del baby deer (VEGANnoyance): \"We domesticate some so that they aren't frightened as we approach every day, until That Day, they still aren't frightened. Fright leads to dark sticky bitter meat.\" Su calma no es por ella: es especificación del producto, dicho por Tiana. Vuelve tras el \"Dismissed\" de octubre, hilo nuevo. | 2026-11-05, contesta mi reply en su propio hilo (baby deer, VEGANnoyance): \"animals are not immortal. They will all die, they will all be eaten. Only those eaten by mankind will be dead BEFORE being eaten. And they live better, longer (yes longer!) lives and die much better deaths. THAT is what the power of decision has decided.\" No defiende la receta del miedo; migra a mueren-mejor/viven-más y cierra con el poder de decidir como la justificación: confiesa que el título es poder.",
     "tactics": [
       "projection_subjetiva",
       "species_hierarchy",
@@ -3038,7 +3038,9 @@
         "voice": "limpio",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "Only those eaten by mankind will be dead BEFORE being eaten... THAT is what the power of decision has decided.",
+        "outcome_note": "domesticar-eufemismo-dominar aterrizó: no defendió la receta del miedo; migró a 'mueren mejor/viven más' y a 'el poder de decisión decidió', que es la pregunta del título concedida como hecho de poder."
       }
     ]
   },
@@ -3197,7 +3199,8 @@
       "27468645086091974",
       "27496390256650790",
       "28615704478052690",
-      "28469305356060016"
+      "28469305356060016",
+      "28966371949686685"
     ],
     "interactions": [
       {
@@ -3868,7 +3871,7 @@
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/1198831097/",
     "bando": "anti-vegan",
     "postura_nucleo": "Pide definir someone; sugiere que mi definicion no es la comun.",
-    "analisis": "Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil con anzuelo (tu definicion no es la comun) -> riesgo de pantano semantico. No troll. Engageable para el lurker si se define limpio y se invierte la carga.",
+    "analisis": "Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil con anzuelo (tu definicion no es la comun) -> riesgo de pantano semantico. No troll. Engageable para el lurker si se define limpio y se invierte la carga. | 2026-11-05, raíz en mi post del baby deer (VEGANnoyance), me etiqueta: sentir miedo/frío da razón para considerar su bienestar, falta el argumento de que poseerlos sea ilegítimo; rescatar al venado y tener animales de granja es consistente con responsabilidades hacia ambos; la gente decidió por la venada (la cargó, la abrigó), así que \"decidir por sí misma\" no es mi único criterio. Pide: ¿qué hace ilegítima la propiedad, el estatus legal o lo que el dueño hace?",
     "tone": "civil",
     "verdict": "audiencia",
     "register": "filo",
@@ -4637,8 +4640,8 @@
         "outcome": "escalated",
         "reply_depth": 1,
         "reply_position": 1,
-        "outcome_evidence": "Bernard Uriza Orozco are you autistic?",
-        "outcome_note": "Contestó la pregunta de quién reparte el nombre con \"are you autistic?\": sello puro sobre pregunta sin responder. Recordarle lo que concedió en septiembre lo sacó de cuadro sin moverlo."
+        "outcome_evidence": "are you autistic?",
+        "outcome_note": "sello-insulto sin argumento tras el recibo de septiembre; no enganchar más."
       }
     ],
     "user_id": "832080524",
@@ -5772,7 +5775,9 @@
         "voice": "limpio",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "sin turnos de Phil tras la reply",
+        "outcome_note": "sin respuesta a 3 días; el ejemplo de la esclavitud legal no ha recibido contestación."
       }
     ],
     "user_id": "838293183",
@@ -6411,8 +6416,9 @@
         "outcome": "goalpost",
         "reply_depth": 1,
         "reply_position": 1,
-        "outcome_evidence": "that's a lot of words just to say I'm right.",
-        "outcome_note": "El crédito de entrada al nieto le dejó la salida de \"me diste la razón\"; ignora la pregunta de la cerca. Declara victoria en una línea, sin argumento."
+        "outcome_evidence": "that's a lot of words just to say I'm right. / Barbara Fayad: you mean he ate more animals",
+        "outcome_note": "filtro-especie-vs-individuo: él se declaró ganador sin tocar el punto; dos terceros (RC Boyle, Barbara Fayad) lo refutaron a él.",
+        "third_party_stance": "apoyo"
       }
     ],
     "user_id": "1120441344072210",
@@ -6472,8 +6478,8 @@
         "outcome": "goalpost",
         "reply_depth": 1,
         "reply_position": 1,
-        "outcome_evidence": "Handling young wild animals reduces their fear of humans... This is harmful to wildlife... again it is HUMOUR.",
-        "outcome_note": "No toca quién tiene derecho a decidir; migra a dos estaciones: \"era HUMOUR\" y manejo de fauna (\"harmful to wildlife\"). El marco de poder aterrizó lo bastante para que se defienda, sin conceder nada."
+        "outcome_evidence": "You never seen the humorous side?",
+        "outcome_note": "sin cambio: el goalpost a 'humor' y al hecho documentado ya quedó registrado y contestado."
       },
       {
         "thread_id": "28966371949686685",
@@ -6488,7 +6494,9 @@
         "voice": "profano",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "sin turnos de Lech tras la reply",
+        "outcome_note": "sin respuesta a la segunda reply (dependencia como modelo de negocio de la granja)."
       }
     ],
     "user_id": "100000250226616",
@@ -6544,7 +6552,10 @@
         "voice": "limpio",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "It is morally right to eat the det your body is biologically meant to eat; the omnivorous diet.",
+        "outcome_note": "no-necesidad-cambiaron-las-reglas: no tocó el supermercado ni el título; repitió 'omnívoro biológico' y torció la palabra suplementación de Susan como concesión. Susan la refutó.",
+        "third_party_stance": "apoyo"
       }
     ],
     "user_id": "676885588",
@@ -6552,10 +6563,30 @@
     "profile_url": "https://www.facebook.com/groups/683615698352965/user/676885588/",
     "bando": "anti-vegan",
     "postura_nucleo": "Comer lo que el cuerpo necesita para la salud es moralmente correcto; a los veganos les acusa de que lo suyo es solo una dieta sin mérito para los animales.",
-    "analisis": "Scout, 2026-11-04, tres hilos del mismo día en Vegans VS Meat Eaters. Post del poema de Sam Gullo (4 reacciones): \"It's morally right to eat what your body needs for proper health. I win, you lose.\" Post de Vinay: \"The plant based diet must be shit.\" Post de insectos de Wheeldon: \"Theirs really is nothing more than a diet. Animal lives have no merit on it at all.\" (habla de la dieta VEGANA: acusa que a los veganos no les importan los animales; no es una confesión suya). Drive-by en serie, declara ganadora sin argumentar el salto de necesidad a título.",
+    "analisis": "Scout, 2026-11-04, tres hilos del mismo día en Vegans VS Meat Eaters. Post del poema de Sam Gullo (4 reacciones): \"It's morally right to eat what your body needs for proper health. I win, you lose.\" Post de Vinay: \"The plant based diet must be shit.\" Post de insectos de Wheeldon: \"Theirs really is nothing more than a diet. Animal lives have no merit on it at all.\" (habla de la dieta VEGANA: acusa que a los veganos no les importan los animales; no es una confesión suya). Drive-by en serie, declara ganadora sin argumentar el salto de necesidad a título. | 2026-11-04, contesta mi reply: \"The only way this can be done is with a combination of meat and plants. It is morally right to eat the det your body is biologically meant to eat; the omnivorous diet.\" Luego a Susan Lynn Hebel: toma \"appropriate supplementation\" como si Susan admitiera que se necesitan productos animales. Susan la corrige (B12 por suplemento o fortificado).",
     "tone": "dismissive",
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No pelear nutrición ni B12 ni estudios: se concede que el cuerpo necesita nutrientes. No morder \"I win, you lose\". El blanco es el salto de \"mi cuerpo necesita X\" a \"tengo título sobre alguien\"."
+  },
+  {
+    "tactics": [
+      "demanda_credencial",
+      "apelacion_normal"
+    ],
+    "threads": [
+      "28656662030621623"
+    ],
+    "interactions": [],
+    "user_id": "1034528242",
+    "name": "Christina Cornish",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/1034528242/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Los que no son granjeros no saben nada de animales, y los mismos que critican tienen mascotas.",
+    "analisis": "2026-11-05, raíz en mi post del baby deer (Vegans VS Meat Eaters, 0 reacciones): \"I love how non farmers, know nothing about animals. Always making comments funny story they these same people making these comments have animals as pets... Hmmmm\". Credencial (solo el granjero sabe) más tu-quoque de mascotas. Drive-by.",
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No pelear credenciales de granja ni defender tener mascotas en abstracto. Conceder que el granjero sabe de animales; esa experiencia es exactamente la que dice que son alguien. No acusarla de hipocresía."
   }
 ]

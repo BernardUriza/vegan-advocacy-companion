@@ -10,7 +10,7 @@
 
 ## Análisis
 
-Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil con anzuelo (tu definicion no es la comun) -> riesgo de pantano semantico. No troll. Engageable para el lurker si se define limpio y se invierte la carga.
+Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil con anzuelo (tu definicion no es la comun) -> riesgo de pantano semantico. No troll. Engageable para el lurker si se define limpio y se invierte la carga. | 2026-11-05, raíz en mi post del baby deer (VEGANnoyance), me etiqueta: sentir miedo/frío da razón para considerar su bienestar, falta el argumento de que poseerlos sea ilegítimo; rescatar al venado y tener animales de granja es consistente con responsabilidades hacia ambos; la gente decidió por la venada (la cargó, la abrigó), así que "decidir por sí misma" no es mi único criterio. Pide: ¿qué hace ilegítima la propiedad, el estatus legal o lo que el dueño hace?
 
 ## Tácticas
 
@@ -216,4 +216,4 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Reply (2h) tras mi corrección del récord (copia their-own-words, VEGANnoyance): acepta que fue la cola de admins y no un repost; en el fondo contesta qué aporta la agencia moral: "capacity for moral agency may contribute by distinguishing the kinds of moral relationships and responsibilities an individual is capable of participating in"; devuelve la carga: por qué la sintiencia basta.
 - **Nuestra respuesta:** Reply etiquetada limpia (262 palabras): le reconocí la respuesta como hecho (la agencia decide en qué relaciones se participa); la propiedad se ejerce sobre ella sin pedirle participar; suficiencia en una línea (alguien vive ese cuerpo y ese futuro desde su lado); alguien que nunca tendrá agencia varía en relaciones abiertas y no en estar fuera del mercado; "may contribute" ya contribuyó a otra pregunta. Cierre con sus palabras: "kinds of moral relationships" / "participate in".
 
-_Hilos: 27468645086091974, 27496390256650790, 28615704478052690, 28469305356060016_
+_Hilos: 27468645086091974, 27496390256650790, 28615704478052690, 28469305356060016, 28966371949686685_

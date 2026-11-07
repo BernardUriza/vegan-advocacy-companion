@@ -18,3 +18,9 @@ Imagen: mujer en el mostrador de carnes del súper, carrito con leche; poema de 
 - **Phil Holmes** (`838293183`, 3 hours, 1 reacciones) (raíz): Phil Holmes · 3hYet if it was so "immoral" it would be made illegalLikeReplyShare1
 - **Jenine Thompson** (`676885588`, 6 hours, 4 reacciones) (raíz): Jenine Thompson · 6hIt's morally right to eat what your body needs for proper health. I win, you lose.LikeReplyShare4
 - **Matt Terrain** (`100018422793817`, 40 minutes, 0 reacciones) (raíz): Matt Terrain · 40mVegans. Perpetually implying their food is harm free.LikeReplyShare
+
+## Actualización 2026-11-07 (lote 1107A)
+
+- **Jenine Thompson** a mi reply (3 días): "Your body needs a balance of nutrients. The only way this can be done is with a combination of meat and plants. It is morally right to eat the det your body is biologically meant to eat; the omnivorous diet."
+- **Susan Lynn Hebel** le contesta (omnívoro describe lo que podemos comer, no lo que debemos; ningún nutriente exclusivo de la carne). Jenine: "'appropriate supplementation'. You just agreed with me." Susan: la suplementación no vuelve necesarios los productos animales; B12 por suplemento o fortificado.
+- **Phil Holmes**: sin respuesta a mi reply. Matt Terrain y Susan, pleito largo de insultos entre los dos.

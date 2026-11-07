@@ -16,3 +16,11 @@ The first line of the description is what stayed with me. A woman was heading ou
 ## Notas
 
 - Aprobado por admin ~10h antes del scan (notif `group_post_approved`). Tres raíces, las tres el mismo chiste: la cervatilla rescatada como venado al plato. Morgan Jenkins ya tiene dossier (Gish gallop 2026-07-03; concedió sintiencia+propiedad 2026-09-30).
+
+## Actualización 2026-11-07 (lote 1107A)
+
+- **Tiana Thomas**, en su propio hilo y etiquetándome, 2 días: "animals are not immortal. They will all die, they will all be eaten. Only those eaten by mankind will be dead BEFORE being eaten. And they live better, longer (yes longer!) lives and die much better deaths. THAT is what the power of decision has decided."
+- **Dean Christie** (`1198831097`, raíz que me etiqueta, 2 días): sentir miedo y frío da una razón para considerar su bienestar; falta el argumento de que eso vuelva ilegítimo poseerlos. Se puede rescatar a un venado y tener animales de granja creyendo tener responsabilidades con ambos. El clip no dice qué pasa con los de la granja; darles de comer puede ser cuidado. "The deer got to leave because that decision was hers" carga mucho: la gente intervino, la cargó y decidió dónde abrigarla, decisiones justificadas porque la ayudaban. Pregunta: "What, specifically, makes ownership illegitimate in your view? Is it the legal status itself, even where an animal is well cared for, or particular things an owner might do?"
+- **Morgan Jenkins** a mi reply: "are you autistic?" (sello, no se engancha).
+- **Lech Kaminski Robins** a mi segunda reply: humor del "barbie", la habituación reduce el miedo y aumenta la dependencia, "This is harmful to wildlife".
+- **Brett Long** (raíz, 1 día): chiste de deslizar al venado "like Bambi". Sin contestar.
