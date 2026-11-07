@@ -3041,6 +3041,21 @@
         "outcome": "engaged",
         "outcome_evidence": "Only those eaten by mankind will be dead BEFORE being eaten... THAT is what the power of decision has decided.",
         "outcome_note": "domesticar-eufemismo-dominar aterrizó: no defendió la receta del miedo; migró a 'mueren mejor/viven más' y a 'el poder de decisión decidió', que es la pregunta del título concedida como hecho de poder."
+      },
+      {
+        "thread_id": "28966371949686685",
+        "date": "2026-11-07",
+        "their_move": "Contesta mi reply: \"animals are not immortal. They will all die, they will all be eaten... THAT is what the power of decision has decided.\"",
+        "our_reply_summary": "Limpio (93): concedo que todos mueren y que vivan más; ella ya contestó quién pone \"That Day\": the power of decision; eso dice quién tiene la pluma, no el permiso; cierre: qué le da a the power of decision el derecho de decidir por ella.",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "draft_sha": "49222290b6c313ff",
+        "exposure_n": 18,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending"
       }
     ]
   },
@@ -3864,6 +3879,21 @@
         "outcome": "silent",
         "closed_from": "pending",
         "outcome_evidence": "cerrado por edad (> 7d, pipeline-freshness-cap) 2026-10-26"
+      },
+      {
+        "thread_id": "28966371949686685",
+        "date": "2026-11-07",
+        "their_move": "Raíz en mi post del baby deer (VEGANnoyance), me etiqueta: \"What, specifically, makes ownership illegitimate in your view? Is it the legal status itself, even where an animal is well cared for, or particular things an owner might do?\" Concede sentir; dice que en el hielo decidieron por ella.",
+        "our_reply_summary": "Limpio (187 palabras): concedo el hielo como hecho; su frase \"justified because they helped her\" es mi criterio; respuesta: el estatus mismo, el título hace que las decisiones respondan al dueño y el buen trato queda a su discreción; sentir basta para que la pregunta exista; cierre: cuando la venden, ¿a nombre de quién se decide?",
+        "framework": "sobreposicion-de-especies-criterio-leido",
+        "draft_sha": "05b31a8b5db3a923",
+        "exposure_n": 45,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending"
       }
     ],
     "user_id": "1198831097",
@@ -6556,6 +6586,21 @@
         "outcome_evidence": "It is morally right to eat the det your body is biologically meant to eat; the omnivorous diet.",
         "outcome_note": "no-necesidad-cambiaron-las-reglas: no tocó el supermercado ni el título; repitió 'omnívoro biológico' y torció la palabra suplementación de Susan como concesión. Susan la refutó.",
         "third_party_stance": "apoyo"
+      },
+      {
+        "thread_id": "28660102386944254",
+        "date": "2026-11-07",
+        "their_move": "Contesta mi reply: \"It is morally right to eat the det your body is biologically meant to eat; the omnivorous diet.\"",
+        "our_reply_summary": "Limpio (93): concedo omnívoros; omnívoro es un rango, biologically meant mete un propósito que la biología no escribió; aun concediéndolo falta el paso al título; cierre: qué parte de biologically meant pone tu nombre en su título.",
+        "framework": "antropoespecismo",
+        "draft_sha": "609aadd94397c098",
+        "exposure_n": 2,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending"
       }
     ],
     "user_id": "676885588",
@@ -6577,7 +6622,23 @@
     "threads": [
       "28656662030621623"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "thread_id": "28656662030621623",
+        "date": "2026-11-07",
+        "their_move": "Raíz en mi post del baby deer (VVME): \"I love how non farmers, know nothing about animals... these same people making these comments have animals as pets... Hmmmm\"",
+        "our_reply_summary": "Profano (121): los granjeros conocen a los animales y lo que saben es que hay alguien; las mascotas lo aclaran: al perro nombre, a la vaca arete con número; esa etiqueta cambia el papeleo; cierre: qué saben que la vuelva propiedad de alguien.",
+        "framework": "filtro-especie-vs-individuo",
+        "draft_sha": "23be173c6638370d",
+        "exposure_n": 1,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "profano",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "outcome": "pending"
+      }
+    ],
     "user_id": "1034528242",
     "name": "Christina Cornish",
     "profile_url": "https://www.facebook.com/groups/683615698352965/user/1034528242/",

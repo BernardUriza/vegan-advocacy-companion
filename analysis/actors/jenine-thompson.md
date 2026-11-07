@@ -54,4 +54,8 @@ No pelear nutrición ni B12 ni estudios: se concede que el cuerpo necesita nutri
 - **Su jugada:** Raíz en post del poema de Sam Gullo (VVME, 4 reacciones): "It's morally right to eat what your body needs for proper health. I win, you lose."
 - **Nuestra respuesta:** Limpio (105 palabras): concedo nutrientes; un requisito nutricional no dice a quién se posee; el súper tiene el resto a dos pasillos; cantó victoria un paso antes; cierre: qué necesita tu cuerpo que te dé un reclamo sobre ella.
 
+### Hilo `28660102386944254` — 2026-11-07 · outcome: **pending**
+- **Su jugada:** Contesta mi reply: "It is morally right to eat the det your body is biologically meant to eat; the omnivorous diet."
+- **Nuestra respuesta:** Limpio (93): concedo omnívoros; omnívoro es un rango, biologically meant mete un propósito que la biología no escribió; aun concediéndolo falta el paso al título; cierre: qué parte de biologically meant pone tu nombre en su título.
+
 _Hilos: 28660102386944254_

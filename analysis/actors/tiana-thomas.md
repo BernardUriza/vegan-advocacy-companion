@@ -152,4 +152,8 @@ NO pelear el body-count ni el "welfare mejora" (concederlo: mejor trato no cambi
 - **Su jugada:** Raíz en mi post del baby deer (VEGANnoyance): "We domesticate some so that they aren't frightened as we approach every day, until That Day, they still aren't frightened. Fright leads to dark sticky bitter meat."
 - **Nuestra respuesta:** Limpio (108 palabras): el post nunca habló de muerte horrible; concedo la mansedumbre; su última oración hace de la calma receta de la carne; la venadita se fue cuando quiso, la domesticada recibe una fecha que nunca oye; cierre: quién escribe "That Day" y quién le preguntó.
 
+### Hilo `28966371949686685` — 2026-11-07 · outcome: **pending**
+- **Su jugada:** Contesta mi reply: "animals are not immortal. They will all die, they will all be eaten... THAT is what the power of decision has decided."
+- **Nuestra respuesta:** Limpio (93): concedo que todos mueren y que vivan más; ella ya contestó quién pone "That Day": the power of decision; eso dice quién tiene la pluma, no el permiso; cierre: qué le da a the power of decision el derecho de decidir por ella.
+
 _Hilos: 27395909046698912, 27405978672358616, 27937793019177176, 27330688236588406, 27468645086091974, 27051763587778150, 27496390256650790, 28469926949331190, 28966371949686685_
