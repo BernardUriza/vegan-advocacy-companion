@@ -1,6 +1,7 @@
 # Data layer schema — `data/*.json`
 
-SSOT de la capa de datos del pipeline de debate vegano. Tres arrays JSON, leídos y
+SSOT de la capa de datos del pipeline de debate vegano. Tres arrays JSON del moat, más el registro
+de hilos y la lista de autores vetados, leídos y
 escritos vía `scripts/db.mjs` (ESM, escritura atómica) y validados por
 `scripts/validate-data.mjs` (debe quedar verde — `node scripts/validate-data.mjs`).
 
@@ -76,9 +77,37 @@ doctrina. Munición que `getFrameworksByTactic()` surfacea por táctica del targ
 
 ---
 
+## `threads.json` — registro hilo → grupo (lo puebla `thread-extract`)
+
+Objeto por `thread_id`. Solo se escribe con `db.registerThread`.
+
+| Campo | Tipo | Significado |
+|---|---|---|
+| `group_id` | string | Grupo de FB del post; con el `thread_id` reconstruye la `openUrl`. |
+| `slug` | string | Slug del transcript en `analysis/threads/`. |
+| `owner_id` / `owner_name` | string | Autor del post, cuando no es Bernard. Se conserva entre corridas. |
+| `comments_off` | `true` | Solo aparece si FB pintó el aviso de comentarios apagados. `debt-sweep` no abre ese hilo. |
+
+## `post-author-vetoes.json` — autores en cuyos posts no se comenta
+
+Array. Solo se escribe con `db.vetoPostAuthor`; lógica pura en `scripts/post-author-veto.mjs`.
+Ley en `.claude/rules/notification-agrupation.md` § Veto de autor. Solo Bernard quita una entrada.
+
+| Campo | Tipo | Significado |
+|---|---|---|
+| `user_id` | string \| null | Llave dura; si falta, se empata por nombre sin distinguir mayúsculas. |
+| `name` | string | Nombre del autor tal como lo pinta FB. |
+| `reason` | `comments_off` \| `manual` | Apagó los comentarios de su post, o lo vetó Bernard a mano. |
+| `since` | `YYYY-MM-DD` | Primer día del veto; no se pisa al acumular hilos. |
+| `threads` | string[] | Hilos donde se le vio apagar los comentarios. |
+| `evidence` | string | El aviso verbatim de FB. |
+
+---
+
 ## Chequeos de `validate-data.mjs`
 
 ERROR (rompe el build, exit 1):
+0. Entrada de `post-author-vetoes.json` sin `name`, con `reason` fuera del enum o con `since` mal fechado.
 1. Actor referencia una táctica inexistente.
 2. Táctica reclama un actor desconocido, o un actor que no la lista de vuelta.
 3. Campos requeridos de actor (`name`, `bando`, `verdict`, `register`) + `user_id` único.

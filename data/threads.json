@@ -322,7 +322,10 @@
   "28721895640764928": {
     "thread_id": "28721895640764928",
     "group_id": "683615698352965",
-    "slug": "dog-meat-vinay"
+    "slug": "dog-meat-vinay",
+    "owner_id": "100001629866647",
+    "owner_name": "Vinay Kumar",
+    "comments_off": true
   },
   "29025958730394673": {
     "thread_id": "29025958730394673",

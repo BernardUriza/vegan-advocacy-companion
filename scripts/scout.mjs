@@ -47,9 +47,10 @@ export function tacticsHint(text, known = null) {
 }
 
 // Un post ajeno, fresco, donde Bernard NO ha participado y que ya tiene conversación.
-export function isCandidate(p, { threadsKnown = new Set(), maxAgeMin = SCOUT_MAX_AGE_MIN } = {}) {
+export function isCandidate(p, { threadsKnown = new Set(), maxAgeMin = SCOUT_MAX_AGE_MIN, isVetoedAuthor = () => false } = {}) {
   if (!p.post_id) return { ok: false, why: 'sin permalink' };
   if (p.author === ME) return { ok: false, why: 'post mío' };
+  if (isVetoedAuthor({ user_id: p.user_id, name: p.author })) return { ok: false, why: 'autor vetado (apagó comentarios)' };
   if (p.bernardCommented) return { ok: false, why: 'ya comenté' };
   if (threadsKnown.has(p.post_id)) return { ok: false, why: 'ya respondí ahí (moat)' };
   if (p.ageMin === UNKNOWN_AGE) return { ok: false, why: 'edad desconocida' };

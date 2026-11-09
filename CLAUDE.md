@@ -39,6 +39,7 @@ con MCP, y solo con el GO explícito de Bernard, por jugada o por lote.
 | 3–4 | `quote-check.mjs <draft>` | toda cita de 4+ palabras existe verbatim en transcripts/moat/hilos; `finalize` lo corre y bloquea (`--quote-ok` para comillas que no son cita) |
 | 4 | `comment-prepare.mjs … [--mode root] [--image]` | deja el reply o el raíz cargado en una tab viva, sin enviar |
 | — | `validate-data.mjs` · `gen-dossiers.mjs` | tras toda escritura al moat |
+| 1/2/4 | `post-author-veto.mjs` | lógica del veto de autor; `thread-extract` reporta `commentsOff`/`ownerVetoed`, `debt-sweep` lista `🚫 VETADOS`, el staging aborta con `comments-off`/`vetoed-author` |
 | — | `framework-stats.mjs` | efectividad por familia con intervalo Jeffreys; solo lo sorteado compara |
 
 Todos hablan con el Chrome de debug en **9333** por CDP (diagnóstico en `~/CLAUDE.md`). Tests:
@@ -49,6 +50,9 @@ Todos hablan con el Chrome de debug en **9333** por CDP (diagnóstico en `~/CLAU
 - `data/*.json` es el SSOT del moat (actores, tácticas, frameworks, hilos) y solo se escribe con
   `scripts/db.mjs`. `analysis/actors/*.md` es vista generada: nunca a mano, y no se regenera si
   otra sesión tiene cambios sin commitear ahí.
+- `data/post-author-vetoes.json`: autores en cuyos posts ya no se comenta porque apagaron los
+  comentarios del suyo (o los vetó Bernard). Lo escribe el extractor vía `db.vetoPostAuthor`; scout,
+  debt-sweep y el staging lo respetan. Solo Bernard quita una entrada.
 - `.coagent/` es el estado de trabajo de cada lote: `tx-*.json`, masters, recibos
   `<post_id>.consult.json`, drafts, respuestas del coagent, `receipts/` con screenshots.
 - `analysis/threads/` transcripts, `analysis/post-ideas/` semillas de posts raíz,

@@ -1,7 +1,8 @@
 import { readFileSync, readdirSync, existsSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
-import { readActors, readTactics, readFrameworks, readVocab, vocabViolations, interactionProblems, placementProblem, latestDateByThread, isSupersededInteraction } from './db.mjs';
+import { readActors, readTactics, readFrameworks, readVocab, vocabViolations, interactionProblems, placementProblem, latestDateByThread, isSupersededInteraction, readPostAuthorVetoes } from './db.mjs';
+import { vetoProblems } from './post-author-veto.mjs';
 import { MAX_AGE_DAYS, isStaleDate } from './freshness.mjs';
 import { dossierFilenames, GENERATED_MARK } from './gen-dossiers.mjs';
 
@@ -10,6 +11,7 @@ const ACTORS_MD_DIR = resolve(ROOT, 'analysis/actors');
 
 const errors = [];
 const warnings = [];
+errors.push(...vetoProblems(readPostAuthorVetoes()));
 
 const actors = readActors();
 const vocab = readVocab();

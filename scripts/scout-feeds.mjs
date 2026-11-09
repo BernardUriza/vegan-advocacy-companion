@@ -4,7 +4,7 @@
 //   node scout-feeds.mjs [--json] [--group <gid>] [--max-age-h 48] [--scroll 8] [--debug]
 
 import { openScratchPage, fmtAge } from './fb-lib.mjs';
-import { readActors, readTactics } from './db.mjs';
+import { readActors, readTactics, readPostAuthorVetoes, getPostAuthorVeto } from './db.mjs';
 import { sumPostReactionLabels } from './lurker.mjs';
 import { ME, ageMinutesFromTooltip, readGroupsRegistry, tacticsHint, rank, SCOUT_MAX_AGE_MIN } from './scout.mjs';
 import { UNKNOWN_AGE } from './freshness.mjs';
@@ -130,7 +130,8 @@ for (const g of groups) {
   all.push(...await scoutGroup(g, known));
   if (g !== groups[groups.length - 1]) await sleep(jitter(3000));
 }
-const { kept, dropped } = rank(all, { threadsKnown, maxAgeMin });
+const vetoes = readPostAuthorVetoes();
+const { kept, dropped } = rank(all, { threadsKnown, maxAgeMin, isVetoedAuthor: (who) => !!getPostAuthorVeto(who, vetoes) });
 
 if (asJson) {
   console.log(JSON.stringify({ scannedAt: new Date().toISOString(), groups: groups.map((g) => g.id), pageLoads: groups.length, seen: all.length, candidates: kept, dropped }, null, 2));

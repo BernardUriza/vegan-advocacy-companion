@@ -14,7 +14,8 @@
 import { pathToFileURL } from 'url';
 import { existsSync, readFileSync, writeFileSync, renameSync } from 'fs';
 import { openScratchPage, ageMinutes, fmtAge, UNKNOWN_AGE, expandAllInPage, MAX_AGE_DAYS, isStaleMinutes, readThreadRoot } from './fb-lib.mjs';
-import { registerThread } from './db.mjs';
+import { registerThread, vetoPostAuthor, getPostAuthorVeto } from './db.mjs';
+import { parseCommentsOff } from './post-author-veto.mjs';
 import { parseReactionCount, sumPostReactionLabels } from './lurker.mjs';
 import { canonicalPostUrl } from './thread-identity.mjs';
 
@@ -342,6 +343,16 @@ function buildUnansweredRoots(turns, ME, postIsMine) {
   return out;
 }
 
+// El aviso "X turned off commenting" veta a X solo si X es el autor del post (un admin también puede apagarlos).
+export function recordPostOwner({ url, owner, commentsOff, postIsMine }, db = { registerThread, vetoPostAuthor, getPostAuthorVeto }) {
+  const m = (url || '').match(/\/groups\/(\d+)\/posts\/(\d+)/);
+  if (!m || !owner?.name || postIsMine) return false;
+  const byOwner = commentsOff.off && (commentsOff.by || '').trim().toLowerCase() === owner.name.trim().toLowerCase();
+  if (byOwner) db.vetoPostAuthor({ ...owner, thread_id: m[2], evidence: commentsOff.notice });
+  db.registerThread({ thread_id: m[2], group_id: m[1], owner_id: owner.user_id, owner_name: owner.name, comments_off: commentsOff.off });
+  return !!db.getPostAuthorVeto(owner);
+}
+
 async function main() {
   const { page, done } = await openScratchPage({ stage: () => stage });
   try {
@@ -368,6 +379,9 @@ async function main() {
     const postReactions = sumPostReactionLabels(walked.postReactionLabels);
     const postOwner = walked.postOwner || '';
     const postIsMine = postOwner ? postOwner === ME : true;
+    const commentsOff = parseCommentsOff(await page.evaluate(() => document.body.innerText || ''));
+    const owner = { user_id: rootInfo?.user_id ?? null, name: rootInfo?.author || postOwner || null };
+    const ownerVetoed = recordPostOwner({ url, owner, commentsOff, postIsMine });
 
     const turns = mergeTurns(passRows);
 
@@ -396,6 +410,9 @@ async function main() {
       freshestTurnMin,
       stale,
       unavailable: !!unavailable,
+      commentsOff: commentsOff.off,
+      commentsOffBy: commentsOff.by,
+      ownerVetoed,
       navUrl,
       maxAgeDays: MAX_AGE_DAYS,
       postReactions,
@@ -413,7 +430,7 @@ async function main() {
       out.counts.retainedTurns = merged.retainedCount;
       writeFileSync(outFile + '.tmp', JSON.stringify(out, null, 2) + '\n');
       renameSync(outFile + '.tmp', outFile);
-      console.log(JSON.stringify({ ok: true, out: outFile, liveTurns: turns.length, retainedTurns: merged.retainedCount, complete, stale }));
+      console.log(JSON.stringify({ ok: true, out: outFile, liveTurns: turns.length, retainedTurns: merged.retainedCount, complete, stale, commentsOff: commentsOff.off, commentsOffBy: commentsOff.by, ownerVetoed }));
     } else if (asJson) {
       console.log(JSON.stringify(out, null, 2));
     } else {
@@ -433,6 +450,8 @@ async function main() {
         console.log(`  ⚠️  EXTRACCIÓN INCOMPLETA (${why}). La deuda de abajo NO es confiable — re-corré o confirmá en vivo (Art. 2).`);
       }
       if (undatedTurns) console.log(`  ⏳ ${undatedTurns}/${turns.length} turnos SIN FECHAR — su deuda se surfacea como ambigua, no como pagada.`);
+      if (commentsOff.off) console.log(`  🚫 COMENTARIOS APAGADOS por ${commentsOff.by}: aquí ya no se puede contestar; la deuda de abajo no se trabaja.`);
+      if (ownerVetoed) console.log(`  🚫 AUTOR VETADO (${owner.name}): no se comenta en sus posts.`);
       console.log('');
       for (const t of turns) {
         const who = t.isMine ? '🟦 YO' : '⬜ ' + t.author;

@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync, renameSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { MAX_AGE_DAYS, ageDaysFromDate, isStaleDate } from './freshness.mjs';
+import { findVeto, upsertVeto } from './post-author-veto.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const ACTORS_PATH = resolve(ROOT, 'data/actors.json');
@@ -9,6 +10,7 @@ const TACTICS_PATH = resolve(ROOT, 'data/tactics.json');
 const FRAMEWORKS_PATH = resolve(ROOT, 'data/frameworks.json');
 const THREADS_PATH = resolve(ROOT, 'data/threads.json');
 const VOCAB_PATH = resolve(ROOT, 'data/vocab.json');
+const VETOES_PATH = resolve(ROOT, 'data/post-author-vetoes.json');
 
 export function readActors() {
   return JSON.parse(readFileSync(ACTORS_PATH, 'utf8'));
@@ -427,13 +429,43 @@ export function getThreadMeta(threadId) {
   return readThreads()[threadId] ?? null;
 }
 
-export function registerThread({ thread_id, group_id, slug }) {
+export function registerThread({ thread_id, group_id, slug, owner_id, owner_name, comments_off }) {
   if (!thread_id || !group_id) return null;
   const threads = readThreads();
   const prev = threads[thread_id] ?? {};
-  threads[thread_id] = { thread_id, group_id, slug: slug ?? prev.slug ?? null };
+  const next = { thread_id, group_id, slug: slug ?? prev.slug ?? null };
+  const owner = { owner_id: owner_id ?? prev.owner_id, owner_name: owner_name ?? prev.owner_name };
+  for (const [k, v] of Object.entries(owner)) if (v !== undefined && v !== null) next[k] = v;
+  if (comments_off ?? prev.comments_off) next.comments_off = true;
+  threads[thread_id] = next;
   writeJsonAtomic(THREADS_PATH, threads);
   return threads[thread_id];
+}
+
+export function readPostAuthorVetoes() {
+  try {
+    return JSON.parse(readFileSync(VETOES_PATH, 'utf8'));
+  } catch {
+    return [];
+  }
+}
+
+export function getPostAuthorVeto(who, vetoes = readPostAuthorVetoes()) {
+  return findVeto(vetoes, who);
+}
+
+export function vetoPostAuthor({ user_id = null, name, reason = 'comments_off', thread_id = null, since = new Date().toISOString().slice(0, 10), evidence = null }) {
+  const { list, entry, created } = upsertVeto(readPostAuthorVetoes(), { user_id, name, reason, thread_id, since, evidence });
+  writeJsonAtomic(VETOES_PATH, list);
+  return { ...entry, created };
+}
+
+export function getThreadVeto(threadId, vetoes = readPostAuthorVetoes()) {
+  const meta = getThreadMeta(String(threadId));
+  if (!meta) return null;
+  const veto = findVeto(vetoes, { user_id: meta.owner_id, name: meta.owner_name });
+  if (veto) return { ...veto, why: 'autor vetado' };
+  return meta.comments_off ? { name: meta.owner_name ?? null, reason: 'comments_off', why: 'comentarios apagados' } : null;
 }
 
 // Construye la openUrl canónica de un thread desde el registro (null si no está
@@ -478,7 +510,7 @@ export function getOpenDebtThreads({ maxAgeDays = MAX_AGE_DAYS, includeStale = f
     const newestDate = dated.length ? dated.sort().at(-1) : null;
     const ageDays = newestDate ? Math.round(ageDaysFromDate(newestDate, now) * 10) / 10 : null;
     const stale = ageDays !== null && ageDays > maxAgeDays;
-    return { ...t, newestDate, ageDays, stale };
+    return { ...t, newestDate, ageDays, stale, vetoed: getThreadVeto(t.thread_id) };
   });
   return includeStale ? threads : threads.filter((t) => !t.stale);
 }

@@ -121,13 +121,39 @@ const fixtureActors = () => [{
 async function sandboxDb(t) {
   const dir = mkdtempSync(join(tmpdir(), 'db-test-'));
   mkdirSync(join(dir, 'scripts')); mkdirSync(join(dir, 'data'));
-  for (const f of ['db.mjs', 'freshness.mjs']) copyFileSync(join(HERE, f), join(dir, 'scripts', f));
+  for (const f of ['db.mjs', 'freshness.mjs', 'post-author-veto.mjs']) copyFileSync(join(HERE, f), join(dir, 'scripts', f));
   writeFileSync(join(dir, 'data', 'actors.json'), JSON.stringify(fixtureActors()));
   t.after(() => rmSync(dir, { recursive: true, force: true }));
   const db = await import(pathToFileURL(join(dir, 'scripts', 'db.mjs')).href);
   const read = () => JSON.parse(readFileSync(join(dir, 'data', 'actors.json'), 'utf8'))[0].interactions;
-  return { db, read };
+  const readData = (f) => JSON.parse(readFileSync(join(dir, 'data', f), 'utf8'));
+  return { db, read, readData };
 }
+
+test('vetoPostAuthor persiste el veto y el hilo del autor deja de ser deuda abrible', async (t) => {
+  const { db, readData } = await sandboxDb(t);
+  db.registerThread({ thread_id: 't1', group_id: 'g1', slug: 'dog-meat', owner_id: '100001629866647', owner_name: 'Vinay Kumar' });
+  const open = () => db.getOpenDebtThreads({ now: Date.parse('2026-09-04'), actors: [{ user_id: 'u9', name: 'Samantha', interactions: [{ thread_id: 't1', date: '2026-09-03', outcome: 'pending' }] }] });
+  assert.equal(open()[0].vetoed, null);
+  const v = db.vetoPostAuthor({ user_id: '100001629866647', name: 'Vinay Kumar', thread_id: 't1', since: '2026-11-09', evidence: 'Vinay Kumar turned off commenting for this post.' });
+  assert.equal(v.created, true);
+  assert.equal(readData('post-author-vetoes.json')[0].name, 'Vinay Kumar');
+  assert.equal(db.getPostAuthorVeto({ user_id: null, name: 'Vinay Kumar' }).since, '2026-11-09');
+  assert.equal(open()[0].vetoed.why, 'autor vetado');
+  assert.equal(db.vetoPostAuthor({ user_id: '100001629866647', name: 'Vinay Kumar', thread_id: 't9' }).created, false);
+  assert.equal(readData('post-author-vetoes.json').length, 1);
+});
+
+test('registerThread conserva dueño y marca de comentarios apagados entre extracciones', async (t) => {
+  const { db, readData } = await sandboxDb(t);
+  db.registerThread({ thread_id: 't1', group_id: 'g1', slug: 's', owner_id: '7', owner_name: 'Otro Autor', comments_off: true });
+  db.registerThread({ thread_id: 't1', group_id: 'g1' });
+  assert.deepEqual(readData('threads.json').t1, { thread_id: 't1', group_id: 'g1', slug: 's', owner_id: '7', owner_name: 'Otro Autor', comments_off: true });
+  assert.equal(db.getThreadVeto('t1').why, 'comentarios apagados');
+  db.registerThread({ thread_id: 't2', group_id: 'g1', comments_off: false });
+  assert.deepEqual(readData('threads.json').t2, { thread_id: 't2', group_id: 'g1', slug: null });
+  assert.equal(db.getThreadVeto('t2'), null);
+});
 
 test('updateInteractionOutcome refuses to downgrade conceded without force', async (t) => {
   const { db, read } = await sandboxDb(t);

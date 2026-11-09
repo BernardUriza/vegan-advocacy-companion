@@ -47,6 +47,11 @@ Cadena: 0 [outcome-reflex] → 1 [notification-agrupation] → 2 [thread-actor-d
 - Menciones y comentarios en tu post = deuda alta; reacciones = informativas;
   `approve_from_another_device` = seguridad, se reporta aparte y explícito.
 - Dismissive ≠ ruido: una burla raíz en TU post es deuda. "X y N otros comentaron" esconde N raíces.
+- Veto de autor: quien apaga los comentarios de SU post queda vetado y ningún post suyo se abre, se
+  surfacea ni recibe comentario nuestro (SSOT `data/post-author-vetoes.json`, solo vía `db.mjs`; el
+  extractor lo escribe al ver el aviso). Si los apagó un admin, solo se marca el hilo. El veto es al
+  autor del post, no a quien comenta ahí. `debt-sweep` los lista como `🚫 VETADOS` sin abrir. Solo
+  Bernard levanta un veto.
 - En single (replylink) esta etapa se salta.
 
 ## thread-actor-dossier — etapa 2, solo análisis
@@ -103,6 +108,8 @@ Cadena: 0 [outcome-reflex] → 1 [notification-agrupation] → 2 [thread-actor-d
 - Staging por script, UNA invocación limpia por comando, desde la raíz del repo, sin pipes ni repetir,
   con `--body-file` e `--image` en ruta ABSOLUTA; el `--anchor` sale del texto scrapeado real. Deja el
   draft en una tab viva sin enviar.
+- Staging con `stage: comments-off` o `vetoed-author`: ese reply no sale y no se reintenta. Se reporta
+  NO publicado, sin interacción en el moat, y se anota en el transcript del hilo.
 - La tab se toma por `pageId`; nunca `select_page` ni `bringToFront`. El composer se relee en llamada
   aparte (Lexical es async) y se localiza por CONTENIDO, nunca por aria-label.
 - Envío atómico en UN `evaluate_script`: `const DESTINO = "<grupo exacto del registro>"` comparado con la

@@ -101,6 +101,9 @@ inexistentes `theirAgeMin`/`ourAgeMin` y escribí 3 scripts /tmp de más). Campo
   contenedor del post, anclado a un comentario cuyo link lleva el `post_id`; `null` si no
   hay reacciones visibles o no se pudo anclar (nunca se toma de otro post del feed).
 - **`me`, `postOwner`, `postIsMine`, `expand`, `counts`** a nivel raíz.
+- **`commentsOff`, `commentsOffBy`, `ownerVetoed`** (desde 2026-11-09): el aviso de comentarios
+  apagados, quién los apagó y si el dueño del post está vetado. Con `ownerVetoed:true` el hilo no
+  entra al lote ([[notification-agrupation]] § Veto de autor).
 - **`root`** (desde 2026-09-28, cierra G.35): `{ author, user_id, text, via }` del post raíz,
   leído con `fb-lib.readThreadRoot` en la vista canónica; `null` si no se pudo leer. Sin edad a
   propósito: el lector toma el primer timestamp del scope y con comentarios nuevos marcaba la

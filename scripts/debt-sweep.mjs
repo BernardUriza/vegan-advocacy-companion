@@ -76,10 +76,15 @@ export function sweepExitCode(results) {
 function sweep() {
   const results = [];
   const staleSkipped = [];
-  for (const { thread_id, actors, stale, newestDate, ageDays } of getOpenDebtThreads({ includeStale: true })) {
+  const vetoedSkipped = [];
+  for (const { thread_id, actors, stale, newestDate, ageDays, vetoed } of getOpenDebtThreads({ includeStale: true })) {
     const meta = getThreadMeta(thread_id);
     const url = threadOpenUrl(thread_id);
     const moatActors = actors.map((a) => `${a.name}(${a.outcome})`);
+    if (vetoed) {
+      vetoedSkipped.push({ thread_id, slug: meta?.slug ?? null, owner: vetoed.name, why: vetoed.why, moatActors });
+      continue;
+    }
     // TOPE DE FRESCURA: la deuda abierta más reciente de este hilo ya pasó MAX_AGE_DAYS —
     // se lista, NO se abre (cero tabs, cero thread-extract). Ver pipeline-freshness-cap.md.
     if (stale) {
@@ -95,6 +100,10 @@ function sweep() {
       const verdict = classifyExtraction(d);
       const owes = (d.debt ?? []).filter((x) => x.owes);
       const suspect = (d.debt ?? []).filter((x) => x.suspect && !x.owes);
+      if (d.commentsOff || d.ownerVetoed) {
+        vetoedSkipped.push({ thread_id, slug: meta?.slug ?? null, owner: d.commentsOffBy ?? d.postOwner ?? null, why: d.commentsOff ? 'comentarios apagados' : 'autor vetado', moatActors });
+        continue;
+      }
       results.push({
         thread_id,
         slug: meta?.slug ?? null,
@@ -114,15 +123,15 @@ function sweep() {
       results.push({ thread_id, slug: meta?.slug ?? null, url, error: String(e.message || e).slice(0, 200), stderrTail: e.stderrTail ?? null, moatActors, extraction: 'failed' });
     }
   }
-  return { results, staleSkipped };
+  return { results, staleSkipped, vetoedSkipped };
 }
 
-export function report({ results, staleSkipped }, { json = asJson } = {}) {
+export function report({ results, staleSkipped, vetoedSkipped = [] }, { json = asJson } = {}) {
   const score = (r) => (r.owes?.length ?? 0) * 100 + (r.suspect?.length ?? 0) * 10 - (r.unresolved ? -1 : 0);
   results.sort((a, b) => score(b) - score(a));
 
   if (json) {
-    console.log(JSON.stringify({ generatedFrom: 'moat', maxAgeDays: MAX_AGE_DAYS, threads: results, staleSkipped }, null, 2));
+    console.log(JSON.stringify({ generatedFrom: 'moat', maxAgeDays: MAX_AGE_DAYS, threads: results, staleSkipped, vetoedSkipped }, null, 2));
     return;
   }
 
@@ -135,6 +144,11 @@ export function report({ results, staleSkipped }, { json = asJson } = {}) {
     console.log(`⏳ VIEJOS (> ${MAX_AGE_DAYS}d) — ${staleSkipped.length} hilo(s) con deuda abierta en el moat que NO se abren:`);
     for (const s of staleSkipped) console.log(`     ${s.thread_id} (${s.slug ?? '?'}) · última ${s.newestDate} (${s.ageDays}d) · ${s.moatActors.join(', ')}`);
     console.log('     → ciérralos: node scripts/close-outcomes.mjs --stale (silent + closed_from). No los reabras.\n');
+  }
+  if (vetoedSkipped.length) {
+    console.log(`🚫 VETADOS — ${vetoedSkipped.length} hilo(s) en posts donde ya no se comenta:`);
+    for (const v of vetoedSkipped) console.log(`     ${v.thread_id} (${v.slug ?? '?'}) · ${v.owner ?? '?'} · ${v.why} · ${v.moatActors.join(', ')}`);
+    console.log('');
   }
 
   for (const r of results) {

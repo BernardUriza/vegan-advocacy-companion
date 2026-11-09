@@ -151,6 +151,48 @@ sola fila: es **deuda oculta a expandir** — la etapa 1 debe señalar que ese h
 esconde ~N comentarios raíz por triagear, no contar solo al autor nombrado. La
 frescura/conteo del agregado pesa por los N escondidos, no por el uno visible.
 
+## Veto de autor: quien apaga los comentarios de su post no vuelve a recibir uno nuestro (2026-11-09)
+
+Orden de Bernard, verbatim: *"si alguien apaga los comentarios en su post, nunca volvamos a
+comentar en un post suyo! Vinay Kumar queda betado."* Un autor que cierra su propio post a media
+conversación ya decidió que ahí no se debate: el reply consultado, enriquecido y aprobado se queda
+sin dónde aterrizar, y el lector silencioso de ese hilo deja de existir. Volver a invertir etapas
+0 a 3 en otro post suyo es regalarle el mismo interruptor.
+
+**La ley.**
+
+1. El aviso de FB `<Nombre> turned off commenting for this post.` es la señal. Si `<Nombre>` es el
+   autor del post, ese autor queda vetado: ningún post suyo se abre, se surfacea ni recibe un
+   comentario nuestro, ni reply ni raíz, en ningún grupo.
+2. Si los apagó un admin (el nombre del aviso no es el del autor), solo ese hilo queda marcado
+   `comments_off` en `data/threads.json`. El autor no se veta: él no cerró nada.
+3. El veto es al AUTOR DEL POST, no a quien comenta en él. Samantha Mckenna debatía en el post de
+   Vinay y sigue siendo deuda legítima en cualquier otro hilo.
+4. Solo Bernard levanta un veto (Art. 7: la kill-list es suya). También puede vetar a mano:
+   `vetoPostAuthor({ user_id, name, reason: 'manual', since })` desde `scripts/db.mjs`.
+5. La deuda abierta que queda dentro de un hilo vetado o cerrado no se persigue: `debt-sweep` la
+   lista como `🚫 VETADOS` sin abrirla y `close-outcomes --stale` la cierra por edad.
+
+**Dónde vive.**
+
+| Pieza | Qué hace |
+|---|---|
+| `data/post-author-vetoes.json` | SSOT: `{ user_id, name, reason, since, threads[], evidence }`. Solo se escribe con `db.vetoPostAuthor` |
+| `scripts/post-author-veto.mjs` | lógica pura: `parseCommentsOff` (el aviso tiene que ser la línea entera, una mención a media frase no dispara), `findVeto`, `upsertVeto`, `vetoProblems` |
+| `thread-extract.mjs` | detecta el aviso en cada extracción, veta al dueño y marca el hilo (`recordPostOwner`); reporta `commentsOff`, `commentsOffBy`, `ownerVetoed` |
+| `scout-feeds.mjs` | descarta los posts de un autor vetado (`autor vetado (apagó comentarios)`) |
+| `debt-sweep.mjs` | los hilos vetados o cerrados salen a `vetoedSkipped` (`🚫 VETADOS`), sin abrir tab |
+| staging (`scripts/comment-*.mjs`) | aborta antes de abrir un composer con `stage: comments-off` o `stage: vetoed-author` y cierra su tab |
+| `validate-data.mjs` | falla si una entrada del veto no trae nombre, razón del enum o fecha |
+
+Tests: `scripts/post-author-veto.test.mjs` y los dos casos nuevos de `scripts/db.test.mjs`.
+
+**Caso que la originó (lote 1109A, 2026-11-09).** El reply a Samantha Mckenna en el post de carne
+de perro de Vinay Kumar (`28721895640764928`, Vegans VS Meat Eaters) pasó etapa 3, gates y el GO de
+lote. El staging falló con `own Reply button not found in target`, un error que no nombraba la
+causa; la página viva decía *"Vinay Kumar turned off commenting for this post."* Vinay Kumar
+(`100001629866647`) es el primer vetado, escrito por el propio extractor al detectar el aviso.
+
 ## Por qué existe
 
 Registrada 2026-06-16. Bernard se pierde en debates veganos de grupos grandes

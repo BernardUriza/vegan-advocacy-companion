@@ -22,6 +22,8 @@ import { tmpdir } from 'node:os';
 import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { openPersistentPage, expandAllInPage, readThreadRoot } from './fb-lib.mjs';
+import { getPostAuthorVeto, vetoPostAuthor, registerThread } from './db.mjs';
+import { parseCommentsOff } from './post-author-veto.mjs';
 import { resolveUserPath } from './paths.mjs';
 import { judgeThreadIdentity } from './thread-identity.mjs';
 import { parseArgs, PREPARE_MODES } from './cli-args.mjs';
@@ -281,12 +283,33 @@ async function main() {
       console.error(`[warn] quedaron ${exp.pending} sub-hilo(s) sin abrir — el target puede seguir colapsado`);
     }
 
+    const postRoot = await readThreadRoot(page).catch(() => null);
+    const commentsOff = parseCommentsOff(await page.evaluate(() => document.body.innerText || ''));
+    const tm = url.match(/\/groups\/(\d+)\/posts\/(\d+)/);
+    const ownerIsOther = !!postRoot?.author && postRoot.author !== ME;
+    if (commentsOff.off && ownerIsOther && tm) {
+      const byOwner = (commentsOff.by || '').trim().toLowerCase() === postRoot.author.trim().toLowerCase();
+      if (byOwner) vetoPostAuthor({ user_id: postRoot.user_id, name: postRoot.author, thread_id: tm[2], evidence: commentsOff.notice });
+      registerThread({ thread_id: tm[2], group_id: tm[1], owner_id: postRoot.user_id, owner_name: postRoot.author, comments_off: true });
+    }
+    const veto = ownerIsOther ? getPostAuthorVeto({ user_id: postRoot.user_id, name: postRoot.author }) : null;
+    if (commentsOff.off || veto) {
+      await failClose();
+      console.log(JSON.stringify({
+        ok: false,
+        stage: commentsOff.off ? 'comments-off' : 'vetoed-author',
+        error: commentsOff.off ? commentsOff.notice : `${veto.name} está vetado desde ${veto.since} (${veto.reason}): no se comenta en sus posts`,
+        postAuthor: postRoot?.author ?? null,
+        veto: veto ?? null,
+      }, null, 2));
+      process.exit(2);
+    }
+
     let opened;
     if (mode === 'root') {
-      const postRoot = await readThreadRoot(page);
-      if (postRoot.author !== author) {
+      if (postRoot?.author !== author) {
         await failClose();
-        console.log(JSON.stringify({ ok: false, stage: 'root-author', error: 'el post no es del --author (raíz en el post equivocado)', expected: author, found: postRoot.author }, null, 2));
+        console.log(JSON.stringify({ ok: false, stage: 'root-author', error: 'el post no es del --author (raíz en el post equivocado)', expected: author, found: postRoot?.author ?? null }, null, 2));
         process.exit(2);
       }
       opened = { ok: true, mode, postAuthor: postRoot.author, postHead: (postRoot.text || '').slice(0, 100) };
@@ -361,7 +384,7 @@ async function main() {
             : clean
             ? (identity.urlRewritten
                 ? `OJO: FB reescribió la URL de la tab a ${pageUrl}. Buscar la tab por ESA url (o por el contenido del composer) y, en el envío atómico, assertar el hilo por los links del div[role=dialog] que contiene el composer (groups/${identity.expected.groupId}/posts/${identity.expected.postId}), nunca por location.href. `
-                : '') + 'Claude+MCP: list_pages → select_page la tab en esta url → re-leer el composer (Art. 2) → envío atómico con DESTINO + Enter sintético en evaluate_script (press_key Enter bloqueado por hook; ver comment-post-and-verify PASO 5) → verificación histérica por div[role=article] + screenshot. Si quedó mal, BORRAR.'
+                : '') + 'Claude+MCP: list_pages → tomar la tab de esta url por pageId (nunca select_page) → re-leer el composer (Art. 2) → envío atómico con DESTINO + Enter sintético en evaluate_script (press_key Enter bloqueado por hook; ver comment-post-and-verify PASO 5) → verificación histérica por div[role=article] + screenshot. Si quedó mal, BORRAR.'
             : 'REVISAR: el draft quedó sucio (mención pisada / orden / truncado). Limpiar (Meta+a→Backspace) y re-preparar, o caer al golden path MCP.',
         },
         null,
