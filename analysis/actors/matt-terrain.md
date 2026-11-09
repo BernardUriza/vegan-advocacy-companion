@@ -134,4 +134,8 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** Ronda 6: sorry. Repeating yourself means nothing. An animal wants food and water and comfort, company if a herd or pack animal, that is all.
 - **Nuestra respuesta:** Corto (82 palabras): usé SU lista (food, water, comfort, company) como el lado propio de ella; un objeto no quiere nada; el título le da a otro la decisión sobre las cuatro, incluido el día en que paran; cierre en el título. Salgo del hilo tras esta vuelta.
 
+### Hilo `28728836200070872` — 2026-11-09 · outcome: **pending**
+- **Su jugada:** Post raíz propio (Vegans VS Meat Eaters): un "supposed vegan" tiene una serpiente casi 40 años en un plato de plástico dentro de un tanque: "No freedom, no sunshine, no rain, no vegetation. . But keep a cow in a paddock, or a pig in a shed, and we are the evil ones." Remata con hipocresía por azúcar, alcohol y cigarros.
+- **Nuestra respuesta:** Comentario raíz, entrada única. Le doy la razón sobre la serpiente sin defender al dueño: alguien la tiene y decide todo sobre sus días, ese es el problema sea quien sea. Su lista de carencias está escrita desde el lado de la serpiente porque ve que hay alguien ahí; la siguiente frase pide un pase para el potrero y el cobertizo, donde al cerdo le falta la misma lista y el dueño además elige el día en que sale. Cierre: si "No freedom" es el cargo contra el de la serpiente, cuál es la defensa para "a pig in a shed".
+
 _Hilos: 27341517928804691, 27335635946059556, 27937793019177176, 28046483408306158, 27375477042075446, 27319402757682875, 27051763587778150, 28728836200070872, 29025958730394673_

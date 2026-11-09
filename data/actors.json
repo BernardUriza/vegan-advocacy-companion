@@ -419,6 +419,21 @@
         "third_party_replies": [],
         "reply_depth": 2,
         "reply_position": 11
+      },
+      {
+        "date": "2026-11-09",
+        "outcome": "pending",
+        "assignment": "chosen",
+        "propensity": null,
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "thread_id": "28728836200070872",
+        "their_move": "Post raíz propio (Vegans VS Meat Eaters): un \"supposed vegan\" tiene una serpiente casi 40 años en un plato de plástico dentro de un tanque: \"No freedom, no sunshine, no rain, no vegetation. . But keep a cow in a paddock, or a pig in a shed, and we are the evil ones.\" Remata con hipocresía por azúcar, alcohol y cigarros.",
+        "our_reply_summary": "Comentario raíz, entrada única. Le doy la razón sobre la serpiente sin defender al dueño: alguien la tiene y decide todo sobre sus días, ese es el problema sea quien sea. Su lista de carencias está escrita desde el lado de la serpiente porque ve que hay alguien ahí; la siguiente frase pide un pase para el potrero y el cobertizo, donde al cerdo le falta la misma lista y el dueño además elige el día en que sale. Cierre: si \"No freedom\" es el cargo contra el de la serpiente, cuál es la defensa para \"a pig in a shed\".",
+        "framework": "conocimiento-compromete",
+        "draft_sha": "0eb2eb33749f5e0b",
+        "exposure_n": 15,
+        "voice": "limpio"
       }
     ],
     "verdict_note": "sink_un_round",
@@ -3919,6 +3934,21 @@
         "voice_propensity": 0.5,
         "outcome_evidence": "You previously called your conclusion derived. Now you say your position stops at a premise. Which premise?",
         "outcome_note": "algo-a-alguien-sujeto-derecho: contestó en 1 h con fondo y sin conceder. Usó como palanca que antes dije 'derived' y ahora 'stops at a premise' ('Which premise?'), negó que las razones del granjero 'outrank her side' (los deberes limitan a quién vende) y dejó sin tocar la venta del tutor que financia su retiro. Sigue pidiendo por qué la sintiencia sola basta; su 'capacity for moral agency' queda como 'one possible factor among several', sin defender."
+      },
+      {
+        "date": "2026-11-09",
+        "outcome": "pending",
+        "assignment": "chosen",
+        "propensity": null,
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "thread_id": "28966371949686685",
+        "their_move": "Contesta mi reply (VEGANnoyance, baby deer): \"You previously called your conclusion derived. Now you say your position stops at a premise. Which premise?\" Niega que las razones del granjero pesen más que ella (los deberes limitan a quién vende) y deja la capacidad de agencia moral como \"one possible factor among several\".",
+        "our_reply_summary": "Reply de cierre. El registro como hecho: hace cinco semanas contesté \"derived\" y nombré el principio en la misma reply; una conclusión derivada se detiene en el principio del que deriva, misma estructura hoy. La premisa pedida es el paso intermedio (alguien con un lado propio no puede volverse el ingreso de otro), y él ya lo usa: su \"a human can lack moral agency and still be protected from ownership\" hace incorrecta la venta del tutor. Dos premisas lado a lado; la suya no explica a la niña del caso estipulado. Cierre: cuál de sus \"several\" factores está en la niña y falta en la vaca. Después de esta, silencio.",
+        "framework": "filtro-especie-vs-individuo",
+        "draft_sha": "43b832342122e3b9",
+        "exposure_n": 47,
+        "voice": "limpio"
       }
     ],
     "user_id": "1198831097",
@@ -6763,7 +6793,23 @@
     "threads": [
       "29025958730394673"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "date": "2026-11-09",
+        "outcome": "pending",
+        "assignment": "chosen",
+        "propensity": null,
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5,
+        "thread_id": "29025958730394673",
+        "their_move": "Comentario raíz en el post \"bored vegan\" de Remiel Bird (VEGANnoyance), con link de Plant Based News: \"If your veganism is based on not wanting to harm animals, how do justify killing over 7 billion animals a year to protect crops? At least the animals that are slaughtered for food aren't wasted like the ones destroyed to protect crops.\"",
+        "our_reply_summary": "Concedo los siete mil millones y el link completos: su pregunta parte de \"If your veganism is based on\" y lo mío parte de otra cosa, la propiedad. El ratón del cultivo no es de nadie; el cerdo nació para ser propiedad de alguien y su dueño fijó el día de su muerte antes de que naciera. Su \"aren't wasted\" es palabra de cosas (madera, sobras); para que consuele, ella ya tiene que ser inventario. Cierre: qué la vuelve algo que se puede \"wasted\" o usar.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "f3b3d472e413efc6",
+        "exposure_n": 1,
+        "voice": "profano"
+      }
+    ],
     "user_id": "100000351368861",
     "name": "Joey Gockel",
     "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100000351368861/",
