@@ -117,4 +117,8 @@ No morder el insulto de la dignidad — UNA línea de contraste de temperamento 
 - **Su jugada:** Sello (Open Debates 3, post del león, 20m): "your trying hard but miss the reality" — mismo sello "reality" que en junio (27330), cero argumento tras mi reply de la licencia; a Chris: "no sweetheart".
 - **Nuestra respuesta:** Filo (226 palabras), replylink de Bernard: reencuadre completo con recibos verbatim. Junio: miedo/curiosidad/emociones, "they are not property", "Disposed of no", "no justification needed", "not getting the reality"; ahora: "this particular animal", licensed, "on the list… since he was attacked", "need to justify anything". Switch nombrado: individuo cuando se le rastrea, línea en lista cuando se dispone de su cuerpo; "Disposed of no" duró hasta que alguien pagó la licencia; lo único constante es "no justification needed". Cierre: ¿al menos eso es reality? y si es "this particular animal" que siente miedo, ¿qué hizo legítimo vender el derecho a matarlo?
 
+### Hilo `28721895640764928` — 2026-11-08 · outcome: **pending**
+- **Su jugada:** Raíz en el post de Vinay sobre carne de perro (VVME, 31 reacciones): "farming them for meat on a commercial scale simply isn't practical."
+- **Nuestra respuesta:** Le concedí la foto (es res) y los datos de escala; contestó una pregunta moral con un estudio de factibilidad; perro y vaca sienten igual, el uso comercial solo explica cómo se les clasifica. Cierre: si el perro se volviera "practical or viable" mañana, ¿el del sillón pasa a la granja?
+
 _Hilos: 27330688236588406, 28620931384196666, 28721895640764928_

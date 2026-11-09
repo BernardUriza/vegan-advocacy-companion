@@ -221,4 +221,8 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Raíz en mi post del baby deer (VEGANnoyance), me etiqueta: "What, specifically, makes ownership illegitimate in your view? Is it the legal status itself, even where an animal is well cared for, or particular things an owner might do?" Concede sentir; dice que en el hielo decidieron por ella.
 - **Nuestra respuesta:** Limpio (187 palabras): concedo el hielo como hecho; su frase "justified because they helped her" es mi criterio; respuesta: el estatus mismo, el título hace que las decisiones respondan al dueño y el buen trato queda a su discreción; sentir basta para que la pregunta exista; cierre: cuando la venden, ¿a nombre de quién se decide?
 
+### Hilo `28966371949686685` — 2026-11-08 · outcome: **pending**
+- **Su jugada:** Contesta mi reply (VEGANnoyance, baby deer): "The question is why sentience alone makes the discretion that comes with title morally impermissible." Caso de la venta con cuidado igual: "If you think the sale still wrongs her, what makes it wrong?"
+- **Nuestra respuesta:** Tomé su "The farmer's" como respuesta: la venta sirve a su retiro. Recién nacido vendido a una familia igual de buena: incorrecto aunque el cuidado sea idéntico, porque el tutor lo vuelve fuente de ingreso. Suficiencia: el tractor no tiene lado propio, la vaca sí. Mi premisa es premisa; la suya (las "own reasons" del vendedor por encima de ella) sigue sin argumento.
+
 _Hilos: 27468645086091974, 27496390256650790, 28615704478052690, 28469305356060016, 28966371949686685_

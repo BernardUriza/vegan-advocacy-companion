@@ -3898,6 +3898,21 @@
         "outcome": "engaged",
         "outcome_evidence": "The question is why sentience alone makes the discretion that comes with title morally impermissible.",
         "outcome_note": "sobreposicion-de-especies-criterio-leido: Dean aceptó la distinción tutela/título ('I understand your distinction… We've been over it') y movió la carga a por qué la sintiencia sola prohíbe la discreción del título; trae el caso de la venta del granjero que se retira. No concede fondo."
+      },
+      {
+        "thread_id": "28966371949686685",
+        "date": "2026-11-08",
+        "their_move": "Contesta mi reply (VEGANnoyance, baby deer): \"The question is why sentience alone makes the discretion that comes with title morally impermissible.\" Caso de la venta con cuidado igual: \"If you think the sale still wrongs her, what makes it wrong?\"",
+        "our_reply_summary": "Tomé su \"The farmer's\" como respuesta: la venta sirve a su retiro. Recién nacido vendido a una familia igual de buena: incorrecto aunque el cuidado sea idéntico, porque el tutor lo vuelve fuente de ingreso. Suficiencia: el tractor no tiene lado propio, la vaca sí. Mi premisa es premisa; la suya (las \"own reasons\" del vendedor por encima de ella) sigue sin argumento.",
+        "framework": "algo-a-alguien-sujeto-derecho",
+        "draft_sha": "567531dcde223334",
+        "outcome": "pending",
+        "exposure_n": 46,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5
       }
     ],
     "user_id": "1198831097",
@@ -4215,6 +4230,21 @@
         "third_party_replies": [],
         "opponent_reactions": 0,
         "third_party_replies_to_opponent": []
+      },
+      {
+        "thread_id": "28721895640764928",
+        "date": "2026-11-08",
+        "their_move": "Raíz en el post de Vinay sobre carne de perro (VVME, 31 reacciones): \"farming them for meat on a commercial scale simply isn't practical.\"",
+        "our_reply_summary": "Le concedí la foto (es res) y los datos de escala; contestó una pregunta moral con un estudio de factibilidad; perro y vaca sienten igual, el uso comercial solo explica cómo se les clasifica. Cierre: si el perro se volviera \"practical or viable\" mañana, ¿el del sillón pasa a la granja?",
+        "framework": "dominacion-no-es-superioridad-moral",
+        "draft_sha": "05a3202d47358ee7",
+        "outcome": "pending",
+        "exposure_n": 9,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "limpio",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5
       }
     ],
     "user_id": "100003780189781",
@@ -6648,6 +6678,21 @@
         "outcome": "goalpost",
         "outcome_evidence": "Lots Vegans own animals and it funny that their property.",
         "outcome_note": "filtro-especie-vs-individuo: no tocó el 'somebody in there'; brincó al tu-quoque de que los veganos también tienen mascotas como propiedad."
+      },
+      {
+        "thread_id": "28656662030621623",
+        "date": "2026-11-08",
+        "their_move": "Contesta mi reply (VVME, baby deer): \"Why dont you go ask your Vegan buddies who own pets. Lots Vegans own animals and it funny that their property.\"",
+        "our_reply_summary": "Concedí que el perro de un vegano es propiedad ante la ley, el mío incluido: ese es el punto; perro y vaca en la misma columna, \"pet\" y \"livestock\" esconden el mismo título; sin exención para veganos. Cierre con su \"funny\".",
+        "framework": "domesticar-eufemismo-dominar",
+        "draft_sha": "742febec54cb8548",
+        "outcome": "pending",
+        "exposure_n": 2,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "profano",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5
       }
     ],
     "user_id": "1034528242",
@@ -6669,7 +6714,23 @@
     "threads": [
       "28721895640764928"
     ],
-    "interactions": [],
+    "interactions": [
+      {
+        "thread_id": "28721895640764928",
+        "date": "2026-11-08",
+        "their_move": "Raíz en el post de Vinay sobre carne de perro (VVME): \"Pretty easy to determine between friends and food can you not ? dogs and cats ... actually see us as family\"",
+        "our_reply_summary": "Concedí el vínculo del perro; su regla mide cuánto afecto nos devuelve el animal; el cerdo siente sin vernos como familia; su \"some ppl do eat dogs\" le tumba la regla; la línea la trazan humanos por lo que quieren del animal. Cierre con su \"between friends and food\".",
+        "framework": "antropoespecismo",
+        "draft_sha": "51e5e48194cc3e8b",
+        "outcome": "pending",
+        "exposure_n": 1,
+        "assignment": "chosen",
+        "propensity": null,
+        "voice": "profano",
+        "voice_assignment": "randomized",
+        "voice_propensity": 0.5
+      }
+    ],
     "user_id": "61563282663741",
     "name": "Nick Banks",
     "profile_url": "https://www.facebook.com/groups/683615698352965/user/61563282663741/",
