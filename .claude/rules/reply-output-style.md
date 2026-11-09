@@ -1,3 +1,11 @@
+---
+paths:
+  - ".coagent/**"
+  - "analysis/post-ideas/**"
+  - "scripts/style-gate.mjs"
+  - "scripts/lint-prose.mjs"
+---
+
 # Reply Output Style — humano, no robótico (el spec de 20 Q&A)
 
 Cómo se redacta CADA reply de Bernard en el grupo. Destilado de 20 Q&A: 16 al

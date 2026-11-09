@@ -1,8 +1,14 @@
 # vegan-advocacy-companion
 
 Pipeline para debatir en grupos veganos de Facebook ("Vegans V's Meat Eaters" y hermanos):
-de la notificación al reply publicado y verificado, escrito para el lector silencioso. Las
-reglas de `.claude/rules/` se cargan solas; este archivo es el mapa y no las repite.
+de la notificación al reply publicado y verificado, escrito para el lector silencioso. Este
+archivo es el mapa y no repite las reglas.
+
+**Cómo cargan las reglas (2026-11-09):** `.claude/rules/00-nucleo-pipeline.md` trae las leyes de
+las 13 y es lo único siempre en contexto. Cada regla completa lleva `paths:` y carga sola al tocar
+con Read/Write/Edit un archivo de su etapa (todo `.coagent/` las carga todas). Un `node scripts/…`
+por Bash no dispara nada: antes de arrancar una etapa así, `Read` de `.claude/rules/<slug>.md`.
+Una ley nueva se escribe en la regla completa y en su sección del núcleo, mismo turno.
 
 ## El pipeline (cada etapa es una regla con su GOLDEN PATH)
 

@@ -1,3 +1,11 @@
+---
+paths:
+  - ".coagent/**"
+  - "scripts/reflex.mjs"
+  - "scripts/close-outcomes.mjs"
+  - "scripts/lurker-sweep.mjs"
+---
+
 # Outcome Reflex — etapa 0: cerrar/re-juzgar el moat con LLM, no con keywords
 
 Stage 0 del pipeline ([outcome-reflex] → [notification-agrupation] → … →

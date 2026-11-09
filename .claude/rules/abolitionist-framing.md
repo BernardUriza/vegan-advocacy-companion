@@ -1,3 +1,12 @@
+---
+paths:
+  - ".coagent/**"
+  - "analysis/post-ideas/**"
+  - "scripts/welfarist-axis.mjs"
+  - "scripts/seed-gate.mjs"
+  - "scripts/lint-prose.mjs"
+---
+
 # Abolitionist Framing — el eje es PROPIEDAD/ESCLAVITUD, no "harm"
 
 Regla dura y de fondo (2026-06-21). Gobierna el EJE de cada reply, por encima del

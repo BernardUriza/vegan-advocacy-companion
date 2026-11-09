@@ -1,3 +1,10 @@
+---
+paths:
+  - ".coagent/**"
+  - "scripts/receipt-shots.mjs"
+  - "scripts/receipt-collage.py"
+---
+
 # Provenance-Accusation Defense — "tú introdujiste/dijiste X" se VERIFICA contra el arco, no se concede ni se ignora
 
 Regla dura de debate (2026-06-30, Bernard). Gobierna cómo se responde a la

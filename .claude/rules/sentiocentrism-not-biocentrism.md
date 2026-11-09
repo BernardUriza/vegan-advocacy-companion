@@ -1,3 +1,10 @@
+---
+paths:
+  - ".coagent/**"
+  - "analysis/post-ideas/**"
+  - "scripts/biocentric-axis.mjs"
+---
+
 # Sentiocentrism, Not Biocentrism — el criterio es la SINTIENCIA, no la VIDA
 
 Regla dura de eje (2026-06-29, Bernard). Hermana de [[abolitionist-framing]]: esa

@@ -1,3 +1,8 @@
+---
+paths:
+  - ".coagent/**"
+---
+
 # Retreat-Cycle Defense — la retirada-en-cadena para permanecer INALTERADA
 
 Regla dura de debate (2026-07-01, Bernard, del hilo de Anna Angelika post 27496).

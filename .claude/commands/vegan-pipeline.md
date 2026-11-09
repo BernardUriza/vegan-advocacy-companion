@@ -62,6 +62,15 @@ no 9222). Reusar la tab de FB / del coagent abierta; nunca abrir a ciegas.
 
 ## Instrucciones
 
+**Paso previo, antes de la etapa 0 (2026-11-09): cargar las reglas completas.** Desde ese día
+solo `.claude/rules/00-nucleo-pipeline.md` está siempre en contexto; las 13 reglas completas
+llevan `paths:` y cargan al tocar un archivo de `.coagent/` con Read/Write/Edit. Las etapas 0 y 1
+arrancan por Bash puro, que no dispara nada, así que lo primero de la corrida es un `Read` de
+cualquier archivo de `.coagent/` (por ejemplo `.coagent/reflex-applied.json`) y confirmar que
+llegaron [outcome-reflex], [coagent-advise], [reply-output-style] y [comment-post-and-verify]. Si
+alguna no llegó, `Read` directo de `.claude/rules/<slug>.md`. Sin las reglas completas en
+contexto no se corre ninguna etapa: el núcleo decide, no opera.
+
 **Tope de frescura (regla [pipeline-freshness-cap], 2026-09-19): el pipeline NUNCA abre ni
 emite hilos/notifs/interacciones de más de 7 días** (techo 14; el hook deniega subirlo).
 `notif-scan` los saca a `stale`, `debt-sweep` los lista como VIEJOS sin extraer, `reflex

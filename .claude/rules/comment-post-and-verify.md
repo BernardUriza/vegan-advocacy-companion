@@ -1,3 +1,10 @@
+---
+paths:
+  - ".coagent/**"
+  - "scripts/comment-*.mjs"
+  - "scripts/thread-identity.mjs"
+---
+
 # Comment Post & Verify — etapa cuatro: el paso irreversible (GOLDEN PATH)
 
 Cierre de la cadena [notification-agrupation] → [thread-actor-dossier] →

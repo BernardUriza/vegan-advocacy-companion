@@ -1,3 +1,11 @@
+---
+paths:
+  - ".coagent/**"
+  - "scripts/notif-scan.mjs"
+  - "scripts/debt-sweep.mjs"
+  - "scripts/scout-feeds.mjs"
+---
+
 # Notification Agrupation — etapa uno: agrupar por hilo, no por notificación
 
 Primera etapa del pipeline (→ [thread-actor-dossier] → [coagent-advise] →

@@ -1,3 +1,8 @@
+---
+paths:
+  - ".coagent/**"
+---
+
 # Insult-Seal Defense — el "eres ignorante/arrogante" es un sello PARA EL LURKER
 
 Regla dura (2026-06-28, Bernard). Gobierna cómo se responde al insulto-sello —

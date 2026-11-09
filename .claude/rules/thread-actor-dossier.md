@@ -1,3 +1,15 @@
+---
+paths:
+  - ".coagent/**"
+  - "analysis/threads/**"
+  - "analysis/actors/**"
+  - "data/actors.json"
+  - "data/tactics.json"
+  - "data/threads.json"
+  - "scripts/thread-extract.mjs"
+  - "scripts/db.mjs"
+---
+
 # Thread Actor Dossier — etapa dos: extraer hilo completo y perfilar actores
 
 Segunda etapa ([notification-agrupation] → **thread-actor-dossier** →

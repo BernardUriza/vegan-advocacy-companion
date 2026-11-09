@@ -1,3 +1,14 @@
+---
+paths:
+  - ".coagent/**"
+  - "scripts/freshness.mjs"
+  - "scripts/notif-scan.mjs"
+  - "scripts/debt-sweep.mjs"
+  - "scripts/reflex.mjs"
+  - "scripts/scout-feeds.mjs"
+  - ".claude/hooks/pipeline-freshness-cap.mjs"
+---
+
 # Pipeline Freshness Cap — el pipeline NUNCA abre nada de más de 7 días
 
 Regla dura de mecánica (2026-09-19, Bernard: *"está el pipe abriendo mensajes de hace

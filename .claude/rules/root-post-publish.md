@@ -1,3 +1,10 @@
+---
+paths:
+  - ".coagent/**"
+  - "analysis/post-ideas/**"
+  - ".claude/destinatarios-canales.txt"
+---
+
 # Root Post Publish — el post raíz lo PUBLICA Claude, en TODOS los grupos con engagement
 
 Cuando una semilla de `analysis/post-ideas/` madura a post raíz redactado, el

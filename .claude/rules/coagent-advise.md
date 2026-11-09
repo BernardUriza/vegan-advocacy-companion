@@ -1,3 +1,13 @@
+---
+paths:
+  - ".coagent/**"
+  - "scripts/seed-coagent.mjs"
+  - "scripts/seed-gate.mjs"
+  - "scripts/framework-pick.mjs"
+  - "scripts/coagent-transport.mjs"
+  - "data/frameworks.json"
+---
+
 # Coagent Advise — etapa tres: seedear al coagent un master prompt de la jugada
 
 Tercera etapa ([notification-agrupation] → [thread-actor-dossier] →
