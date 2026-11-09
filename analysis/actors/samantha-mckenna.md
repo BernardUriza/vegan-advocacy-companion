@@ -12,6 +12,7 @@
 
 Mala fe con paragraph sustancial. Relabela la propiedad como "stewardship" (principio_escudo) y su propia definición de diccionario mete al animal junto con "land, water and natural resources" y "product" — es decir, ADMITE los marcadores de alguien (pain, fear, curiosity, basic emotions) y los archiva como ALGO/recurso. Niega la subjetividad por un criterio (no concept of death -> no interest) que es species_hierarchy. Cierra con naturalismo ("the way the world works before/after humans"). Capa de burla: "cheap thrills", "get a dictionary", y se mofa de la DIGNIDAD de Bernard mientras se la roba al sujeto al llamarlo recurso. El target del replylink es su réplica burlona a Philip ("paying with his dignity").
 2026-11-08, raíz en el post de Vinay sobre carne de perro (31 reacciones, el comentario más votado del hilo): que no se cría perro para carne en el primer mundo porque "simply isn't practical" a escala comercial; el perro es animal de trabajo. Toda su respuesta es de viabilidad comercial; no toca a quién se posee.
+2026-11-09, mismo hilo (9h, su raíz ya en 59 reacciones): contesta mi reply en tono civil, sin un solo apodo. Concede que el ganado siente miedo, dolor y forma lazos ("They absolutely do") y que el valor comercial no determina el valor del animal; se repliega a que solo explicaba la agricultura y deja la ética como "a separate ethical question" que acepta discutir. Estación nueva, la misma de junio: sentir no es entender; la vaca no comprende el matadero ni su mortalidad "in the way a human does", y atribuírselo es "anthropomorphise". Es criterio_capacidad_superior: la capacidad que falta se usa como frontera.
 
 ## Tácticas
 
@@ -29,6 +30,8 @@ Mala fe con paragraph sustancial. Relabela la propiedad como "stewardship" (prin
   - _Contra:_ The moral unit is the concrete sentient individual, not the abstraction. A species or an ecosystem doesn't feel anything — only an individual does. 'Conservation' or 'balance' that kills a someone for the sake of a collective is the category error: you can't owe a debt to an abstraction by harming the only ones who can actually be harmed. And farming isn't an ecosystem in balance — it's a human industry of massive forced breeding, the opposite of leaving nature alone. Caring about a concrete animal who can suffer and caring about the environment aren't in tension; the conflict only appears once you let the abstraction outrank the individual who feels.
 - **Convenience as Justification** (`conveniencia_como_justificacion`) — Answers the property question with the owner's convenience: "what justifies it is that it makes food collection/supply easier, and there is nothing wrong with it." Distinct from taste (preferencia_gusto): it names a systemic benefit to the owner as the reason for the title. Rare and valuable — it is an actual answer to the question instead of a dodge (Matt Terrain, 2026-09-22).
   - _Contra:_ Credit the straight answer first (it is more than most give). Grant that convenience is real and explains why the system is built on the title: owning the animal makes breeding, moving and selling her simple. Then test whether convenience-for-the-owner can carry a title over SOMEONE: for a thing it can (convenience is all a chair needs); over a being with a point of view, the owner's convenience is the reason every title over a subject has been defended with, and it describes the owner's gain, never a reason the owned one could accept. Back to the question: does easier-for-us make the title legitimate over someone with a point of view of her own?
+- **Criterio de Capacidad Superior / Reductio de Casos Marginales** (`criterio_capacidad_superior`) — Sustituye la sintiencia por una capacidad superior (experiencia metafisica, sapiencia, razon, autoconciencia, concepto de muerte) como el criterio del estatus moral, para excluir a los animales — y a veces voltea el argumento de casos marginales CONTRA la sintiencia ('si el criterio fuera sentir, seria moral comerse a un humano cerebro-muerto que no siente').
+  - _Contra:_ Esa capacidad es ORTOGONAL al estatus moral: humanos que NO la tienen (bebes, demencia avanzada, cerebro-muertos) conservan el estatus completo — casos marginales / sobreposicion de especies. Lo unico relevante es ser un sujeto que siente / una conciencia con intereses. El reductio del cerebro-muerto se desactiva igual: el criterio es la sintiencia/ser una conciencia, no una capacidad superior. Ademas 'experiencia metafisica' no esta definida — pedir el criterio operativo.
 
 ## Counter-arsenal
 
@@ -78,10 +81,12 @@ Mala fe con paragraph sustancial. Relabela la propiedad como "stewardship" (prin
   - `filtro-especie-vs-individuo` → _deploy as:_ marco
 - **Convenience as Justification** (`conveniencia_como_justificacion`)
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
+- **Criterio de Capacidad Superior / Reductio de Casos Marginales** (`criterio_capacidad_superior`)
+  - `sobreposicion-de-especies-criterio-leido` → _deploy as:_ marco
 
 ## Qué NO hacer
 
-No morder el insulto de la dignidad — UNA línea de contraste de temperamento y al hueso. No debatir el diccionario/semántica de "steward" ni hacer data-dump propio. No conceder daño/welfare (eje es propiedad/esclavitud, no harm). Voltear su PROPIA evidencia: admitió dolor/miedo/curiosidad (someone) y lo archivó como livestock/recurso (something) — ahí está el robo de dignidad. No pelear si entienden la muerte: no se necesita el concepto de muerte para ser alguien (species_hierarchy = criterio que no traza la línea).
+No morder el insulto de la dignidad — UNA línea de contraste de temperamento y al hueso. No debatir el diccionario/semántica de "steward" ni hacer data-dump propio. No conceder daño/welfare (eje es propiedad/esclavitud, no harm). Voltear su PROPIA evidencia: admitió dolor/miedo/curiosidad (someone) y lo archivó como livestock/recurso (something) — ahí está el robo de dignidad. No pelear si entienden la muerte: no se necesita el concepto de muerte para ser alguien (species_hierarchy = criterio que no traza la línea). 2026-11-09: no discutir cuánto entiende una vaca ni defender que comprende la muerte (se le concede entero); no leerle la cartilla por junio mientras siga civil; tomarle la invitación a la pregunta ética en vez de reclamarle el repliegue.
 
 ## Log de interacciones
 
@@ -117,7 +122,7 @@ No morder el insulto de la dignidad — UNA línea de contraste de temperamento 
 - **Su jugada:** Sello (Open Debates 3, post del león, 20m): "your trying hard but miss the reality" — mismo sello "reality" que en junio (27330), cero argumento tras mi reply de la licencia; a Chris: "no sweetheart".
 - **Nuestra respuesta:** Filo (226 palabras), replylink de Bernard: reencuadre completo con recibos verbatim. Junio: miedo/curiosidad/emociones, "they are not property", "Disposed of no", "no justification needed", "not getting the reality"; ahora: "this particular animal", licensed, "on the list… since he was attacked", "need to justify anything". Switch nombrado: individuo cuando se le rastrea, línea en lista cuando se dispone de su cuerpo; "Disposed of no" duró hasta que alguien pagó la licencia; lo único constante es "no justification needed". Cierre: ¿al menos eso es reality? y si es "this particular animal" que siente miedo, ¿qué hizo legítimo vender el derecho a matarlo?
 
-### Hilo `28721895640764928` — 2026-11-08 · outcome: **pending**
+### Hilo `28721895640764928` — 2026-11-08 · outcome: **engaged**
 - **Su jugada:** Raíz en el post de Vinay sobre carne de perro (VVME, 31 reacciones): "farming them for meat on a commercial scale simply isn't practical."
 - **Nuestra respuesta:** Le concedí la foto (es res) y los datos de escala; contestó una pregunta moral con un estudio de factibilidad; perro y vaca sienten igual, el uso comercial solo explica cómo se les clasifica. Cierre: si el perro se volviera "practical or viable" mañana, ¿el del sillón pasa a la granja?
 

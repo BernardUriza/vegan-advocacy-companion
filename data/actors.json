@@ -215,19 +215,21 @@
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/100018422793817/",
     "bando": "anti-vegan",
     "postura_nucleo": "No existe consumo sin daño; si todo daña, el veganismo no es moralmente superior.",
-    "analisis": "El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qué comes, vistes o habitas que NO dañe'. Sócrates hostil: pregunta para tender trampa, no para aprender. Seco, retórico, no insultante. Argumentativo de verdad — busca pelea dialéctica. No muerde los argumentos de Bernard; los elude. SINK CONFIRMADO (2026-06-20): corre el MISMO guion en cada hilo (tu-quoque / goalpost / hipocresia) y NUNCA concede; tras nombrarle limpio la evasion colapsa al loop terminal \"my statement stands, you are avoiding/lying\" con cero argumento nuevo. Medido en 3 hilos el mismo dia (mercado, especismo, hipocresia): el primer intercambio limpio educa al lurker; del 2do round en adelante el retorno es cero. 2026-09-25: en el post del relativismo (copia VS Meat Eaters) pasó de \"me perdí\" a CONTESTAR el título con una razón: \"what justifies it is it makes food collection/supply easier, nothing wrong with it\". Primer turno de buena fe medible; merece una vuelta respetuosa, no filo.",
+    "analisis": "El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qué comes, vistes o habitas que NO dañe'. Sócrates hostil: pregunta para tender trampa, no para aprender. Seco, retórico, no insultante. Argumentativo de verdad — busca pelea dialéctica. No muerde los argumentos de Bernard; los elude. SINK CONFIRMADO (2026-06-20): corre el MISMO guion en cada hilo (tu-quoque / goalpost / hipocresia) y NUNCA concede; tras nombrarle limpio la evasion colapsa al loop terminal \"my statement stands, you are avoiding/lying\" con cero argumento nuevo. Medido en 3 hilos el mismo dia (mercado, especismo, hipocresia): el primer intercambio limpio educa al lurker; del 2do round en adelante el retorno es cero. 2026-09-25: en el post del relativismo (copia VS Meat Eaters) pasó de \"me perdí\" a CONTESTAR el título con una razón: \"what justifies it is it makes food collection/supply easier, nothing wrong with it\". Primer turno de buena fe medible; merece una vuelta respetuosa, no filo.\n2026-11-09: post propio en Vegans VS Meat Eaters (9h, 6 reacciones, 33 comentarios) contra David Huggens, vegano que tiene una serpiente desde los 12 años: \"has kept this snake in a tiny plastic dish inside a small glass tank, for almost 40 years. No freedom, no sunshine, no rain, no vegetation. But keep a cow in a paddock, or a pig in a shed, and we are the evil ones.\" El hilo es un pleito de insultos entre David, Harry Barr y Damien Mcdevitt. Lo valioso: Matt describe el cautiverio de la serpiente como algo que se le hace A ELLA (\"No freedom\"), que es reconocer un lado propio en un animal poseído, y en la misma frase lo usa como tu-quoque para absolver el corral y el cobertizo. El mismo día, en el post de Remiel Bird (VEGANnoyance), le corre a Remiel el guion de siempre (azúcar, alcohol, café, \"there is no alternative sustenance that involves no killing\") y Remiel le contesta en conteo de daño.",
     "tactics": [
       "futility_no_clean_option",
       "socrates_hostil",
       "crop_deaths_flip",
       "data_dump_selectivo",
       "presentismo",
-      "conveniencia_como_justificacion"
+      "conveniencia_como_justificacion",
+      "hipocresia_clausula_practicable",
+      "whataboutism"
     ],
     "tone": "hostile",
     "verdict": "pozo_sin_fondo",
     "register": "filo",
-    "what_not_to_do": "NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop deaths (pantano cebado para eso). NO intentar demostrar que el veganismo causa daño-cero. NO perseguir el loop terminal: ENTRAR UNA SOLA VEZ por hilo (nombrar la evasion + devolver al hueso) y dejar que su reafirmacion vacia quede como ultima palabra visible. NO redactar un 2do/3er rebuttal en el mismo hilo — es sink, el lurker ya vio el patron.",
+    "what_not_to_do": "NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop deaths (pantano cebado para eso). NO intentar demostrar que el veganismo causa daño-cero. NO perseguir el loop terminal: ENTRAR UNA SOLA VEZ por hilo (nombrar la evasion + devolver al hueso) y dejar que su reafirmacion vacia quede como ultima palabra visible. NO redactar un 2do/3er rebuttal en el mismo hilo — es sink, el lurker ya vio el patron. 2026-11-09 (post de la serpiente): no defender a David ni su terrario; no entrar al pleito de insultos; concederle entero que la serpiente en el traste está mal y cobrarle su propia frase.",
     "threads": [
       "27341517928804691",
       "27335635946059556",
@@ -235,7 +237,9 @@
       "28046483408306158",
       "27375477042075446",
       "27319402757682875",
-      "27051763587778150"
+      "27051763587778150",
+      "28728836200070872",
+      "29025958730394673"
     ],
     "interactions": [
       {
@@ -3056,7 +3060,7 @@
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
         "outcome": "pending",
-        "outcome_evidence": "sin turno de Tiana tras la reply del 1d",
+        "outcome_evidence": "sin turno de Tiana tras la reply del 1d (hilo re-extraído anclado, 18 turnos vivos)",
         "outcome_note": "dominacion-no-es-superioridad-moral: reply de hace 1 día sin respuesta todavía."
       }
     ]
@@ -3906,25 +3910,27 @@
         "our_reply_summary": "Tomé su \"The farmer's\" como respuesta: la venta sirve a su retiro. Recién nacido vendido a una familia igual de buena: incorrecto aunque el cuidado sea idéntico, porque el tutor lo vuelve fuente de ingreso. Suficiencia: el tractor no tiene lado propio, la vaca sí. Mi premisa es premisa; la suya (las \"own reasons\" del vendedor por encima de ella) sigue sin argumento.",
         "framework": "algo-a-alguien-sujeto-derecho",
         "draft_sha": "567531dcde223334",
-        "outcome": "pending",
+        "outcome": "engaged",
         "exposure_n": 46,
         "assignment": "chosen",
         "propensity": null,
         "voice": "limpio",
         "voice_assignment": "randomized",
-        "voice_propensity": 0.5
+        "voice_propensity": 0.5,
+        "outcome_evidence": "You previously called your conclusion derived. Now you say your position stops at a premise. Which premise?",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: contestó en 1 h con fondo y sin conceder. Usó como palanca que antes dije 'derived' y ahora 'stops at a premise' ('Which premise?'), negó que las razones del granjero 'outrank her side' (los deberes limitan a quién vende) y dejó sin tocar la venta del tutor que financia su retiro. Sigue pidiendo por qué la sintiencia sola basta; su 'capacity for moral agency' queda como 'one possible factor among several', sin defender."
       }
     ],
     "user_id": "1198831097",
     "name": "Dean Christie",
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/1198831097/",
     "bando": "anti-vegan",
-    "postura_nucleo": "Pide definir someone; sugiere que mi definicion no es la comun.",
-    "analisis": "Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil con anzuelo (tu definicion no es la comun) -> riesgo de pantano semantico. No troll. Engageable para el lurker si se define limpio y se invierte la carga. | 2026-11-05, raíz en mi post del baby deer (VEGANnoyance), me etiqueta: sentir miedo/frío da razón para considerar su bienestar, falta el argumento de que poseerlos sea ilegítimo; rescatar al venado y tener animales de granja es consistente con responsabilidades hacia ambos; la gente decidió por la venada (la cargó, la abrigó), así que \"decidir por sí misma\" no es mi único criterio. Pide: ¿qué hace ilegítima la propiedad, el estatus legal o lo que el dueño hace?\n2026-11-07, post baby deer (VEGANnoyance): acepta la distinción tutela/título (\"We've been over it\") y pide por qué la sintiencia sola hace impermisible la discreción del título; caso: el granjero que se retira vende a la vaca a un comprador con igual cuidado. \"If you think the sale still wrongs her, what makes it wrong?\" Reabre el caso del recién nacido: cómo se estableció que la sintiencia sola explica la protección.",
+    "postura_nucleo": "La sintiencia da intereses propios y deberes de cuidado, pero no vuelve ilegítimo el título: un dueño puede vender por sus propias razones mientras respete esos deberes. Lo que protege al recién nacido sería la \"capacity for moral agency\", que deja como \"one possible factor among several\" sin defenderla; a mí me pide probar por qué la sintiencia sola basta.",
+    "analisis": "Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil con anzuelo (tu definicion no es la comun) -> riesgo de pantano semantico. No troll. Engageable para el lurker si se define limpio y se invierte la carga. | 2026-11-05, raíz en mi post del baby deer (VEGANnoyance), me etiqueta: sentir miedo/frío da razón para considerar su bienestar, falta el argumento de que poseerlos sea ilegítimo; rescatar al venado y tener animales de granja es consistente con responsabilidades hacia ambos; la gente decidió por la venada (la cargó, la abrigó), así que \"decidir por sí misma\" no es mi único criterio. Pide: ¿qué hace ilegítima la propiedad, el estatus legal o lo que el dueño hace?\n2026-11-07, post baby deer (VEGANnoyance): acepta la distinción tutela/título (\"We've been over it\") y pide por qué la sintiencia sola hace impermisible la discreción del título; caso: el granjero que se retira vende a la vaca a un comprador con igual cuidado. \"If you think the sale still wrongs her, what makes it wrong?\" Reabre el caso del recién nacido: cómo se estableció que la sintiencia sola explica la protección.\n2026-11-08 (11h), post baby deer (VEGANnoyance): contesta en menos de una hora. \"You still haven't shown why sentience, by itself, makes holding those powers morally wrong. You've stated that you believe it does.\" Niega que las razones del granjero \"outrank her side\": los deberes limitan a quién vende y puede cobrar respetándolos; \"You think the transfer of title still wrongs her. That's the disagreement.\" Palanca de procedencia: \"You previously called your conclusion derived. Now you say your position stops at a premise. Which premise?\" (cierto: lo dije hace 5 semanas en 27468645086091974, derivada del principio de que un sujeto consciente tiene intereses propios; las dos frases describen la misma estructura). No tocó la venta del tutor con cuidado idéntico. Cumple el criterio de salida: repite que mi premisa es premisa y la suya queda como lista abierta.",
     "tone": "civil",
     "verdict": "audiencia",
     "register": "filo",
-    "what_not_to_do": "No litigar cual definicion es la comun, no dar definicion academica/juridica, no tratarla como premisa cerrada. Definir llano, anclar en la intuicion, invertir la carga."
+    "what_not_to_do": "No litigar cual definicion es la comun, no dar definicion academica/juridica, no tratarla como premisa cerrada. Definir llano, anclar en la intuicion, invertir la carga. 2026-11-09: no abrir un caso nuevo ni otra ronda de la venta; no conceder que cambié de posición (derivada y premisa son la misma estructura, se dice como hecho); reply de cierre corta con las dos premisas lado a lado, y después silencio."
   },
   {
     "tactics": [
@@ -4097,7 +4103,8 @@
       "species_hierarchy",
       "data_dump_selectivo",
       "ecocentrismo_conservacion",
-      "conveniencia_como_justificacion"
+      "conveniencia_como_justificacion",
+      "criterio_capacidad_superior"
     ],
     "threads": [
       "27330688236588406",
@@ -4238,13 +4245,15 @@
         "our_reply_summary": "Le concedí la foto (es res) y los datos de escala; contestó una pregunta moral con un estudio de factibilidad; perro y vaca sienten igual, el uso comercial solo explica cómo se les clasifica. Cierre: si el perro se volviera \"practical or viable\" mañana, ¿el del sillón pasa a la granja?",
         "framework": "dominacion-no-es-superioridad-moral",
         "draft_sha": "05a3202d47358ee7",
-        "outcome": "pending",
+        "outcome": "engaged",
         "exposure_n": 9,
         "assignment": "chosen",
         "propensity": null,
         "voice": "limpio",
         "voice_assignment": "randomized",
-        "voice_propensity": 0.5
+        "voice_propensity": 0.5,
+        "outcome_evidence": "I'm not disputing that cattle experience fear, pain or form social bonds. They absolutely do. However, experiencing emotions and understanding a situation are two different things.",
+        "outcome_note": "dominacion-no-es-superioridad-moral: contestó en 2 h. Concede que el ganado siente miedo, dolor y forma lazos ('They absolutely do') y que el valor comercial no determina el valor del animal; se retira a 'solo explicaba la agricultura' y abre estación nueva: sentir no es entender (la vaca no comprende el matadero ni su mortalidad) más 'anthropomorphise'. Deja la pregunta ética como 'separate'. No es concesión de fondo."
       }
     ],
     "user_id": "100003780189781",
@@ -4252,11 +4261,11 @@
     "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100003780189781/",
     "bando": "anti-vegan",
     "postura_nucleo": "Los granjeros no son DUEÑOS, son \"stewards\" que manejan livestock/recursos naturales; los animales sienten dolor/miedo/curiosidad pero no tienen sentido de sí ni concepto de la muerte, así que no tienen interés en vivir — es solo como funciona el mundo.",
-    "analisis": "Mala fe con paragraph sustancial. Relabela la propiedad como \"stewardship\" (principio_escudo) y su propia definición de diccionario mete al animal junto con \"land, water and natural resources\" y \"product\" — es decir, ADMITE los marcadores de alguien (pain, fear, curiosity, basic emotions) y los archiva como ALGO/recurso. Niega la subjetividad por un criterio (no concept of death -> no interest) que es species_hierarchy. Cierra con naturalismo (\"the way the world works before/after humans\"). Capa de burla: \"cheap thrills\", \"get a dictionary\", y se mofa de la DIGNIDAD de Bernard mientras se la roba al sujeto al llamarlo recurso. El target del replylink es su réplica burlona a Philip (\"paying with his dignity\").\n2026-11-08, raíz en el post de Vinay sobre carne de perro (31 reacciones, el comentario más votado del hilo): que no se cría perro para carne en el primer mundo porque \"simply isn't practical\" a escala comercial; el perro es animal de trabajo. Toda su respuesta es de viabilidad comercial; no toca a quién se posee.",
+    "analisis": "Mala fe con paragraph sustancial. Relabela la propiedad como \"stewardship\" (principio_escudo) y su propia definición de diccionario mete al animal junto con \"land, water and natural resources\" y \"product\" — es decir, ADMITE los marcadores de alguien (pain, fear, curiosity, basic emotions) y los archiva como ALGO/recurso. Niega la subjetividad por un criterio (no concept of death -> no interest) que es species_hierarchy. Cierra con naturalismo (\"the way the world works before/after humans\"). Capa de burla: \"cheap thrills\", \"get a dictionary\", y se mofa de la DIGNIDAD de Bernard mientras se la roba al sujeto al llamarlo recurso. El target del replylink es su réplica burlona a Philip (\"paying with his dignity\").\n2026-11-08, raíz en el post de Vinay sobre carne de perro (31 reacciones, el comentario más votado del hilo): que no se cría perro para carne en el primer mundo porque \"simply isn't practical\" a escala comercial; el perro es animal de trabajo. Toda su respuesta es de viabilidad comercial; no toca a quién se posee.\n2026-11-09, mismo hilo (9h, su raíz ya en 59 reacciones): contesta mi reply en tono civil, sin un solo apodo. Concede que el ganado siente miedo, dolor y forma lazos (\"They absolutely do\") y que el valor comercial no determina el valor del animal; se repliega a que solo explicaba la agricultura y deja la ética como \"a separate ethical question\" que acepta discutir. Estación nueva, la misma de junio: sentir no es entender; la vaca no comprende el matadero ni su mortalidad \"in the way a human does\", y atribuírselo es \"anthropomorphise\". Es criterio_capacidad_superior: la capacidad que falta se usa como frontera.",
     "tone": "sarcastic",
     "verdict": "audiencia",
     "register": "filo",
-    "what_not_to_do": "No morder el insulto de la dignidad — UNA línea de contraste de temperamento y al hueso. No debatir el diccionario/semántica de \"steward\" ni hacer data-dump propio. No conceder daño/welfare (eje es propiedad/esclavitud, no harm). Voltear su PROPIA evidencia: admitió dolor/miedo/curiosidad (someone) y lo archivó como livestock/recurso (something) — ahí está el robo de dignidad. No pelear si entienden la muerte: no se necesita el concepto de muerte para ser alguien (species_hierarchy = criterio que no traza la línea)."
+    "what_not_to_do": "No morder el insulto de la dignidad — UNA línea de contraste de temperamento y al hueso. No debatir el diccionario/semántica de \"steward\" ni hacer data-dump propio. No conceder daño/welfare (eje es propiedad/esclavitud, no harm). Voltear su PROPIA evidencia: admitió dolor/miedo/curiosidad (someone) y lo archivó como livestock/recurso (something) — ahí está el robo de dignidad. No pelear si entienden la muerte: no se necesita el concepto de muerte para ser alguien (species_hierarchy = criterio que no traza la línea). 2026-11-09: no discutir cuánto entiende una vaca ni defender que comprende la muerte (se le concede entero); no leerle la cartilla por junio mientras siga civil; tomarle la invitación a la pregunta ética en vez de reclamarle el repliegue."
   },
   {
     "tactics": [
@@ -6686,13 +6695,15 @@
         "our_reply_summary": "Concedí que el perro de un vegano es propiedad ante la ley, el mío incluido: ese es el punto; perro y vaca en la misma columna, \"pet\" y \"livestock\" esconden el mismo título; sin exención para veganos. Cierre con su \"funny\".",
         "framework": "domesticar-eufemismo-dominar",
         "draft_sha": "742febec54cb8548",
-        "outcome": "pending",
+        "outcome": "goalpost",
         "exposure_n": 2,
         "assignment": "chosen",
         "propensity": null,
         "voice": "profano",
         "voice_assignment": "randomized",
-        "voice_propensity": 0.5
+        "voice_propensity": 0.5,
+        "outcome_evidence": "because the idiot vegans claim the not own animals yaa they do lol.",
+        "outcome_note": "domesticar-eufemismo-dominar: la concesión de frente ('a vegan's dog is legally property, mine included') le quitó el tu-quoque y contestó repitiéndolo con insulto a terceros ('idiot vegans'); la pregunta de qué saben los granjeros que la vuelva propiedad sigue sin tocar. Segunda vuelta en la misma estación: salida por silencio."
       }
     ],
     "user_id": "1034528242",
@@ -6728,7 +6739,9 @@
         "propensity": null,
         "voice": "profano",
         "voice_assignment": "randomized",
-        "voice_propensity": 0.5
+        "voice_propensity": 0.5,
+        "outcome_evidence": "sin notificación ni turno de Nick tras la reply",
+        "outcome_note": "antropoespecismo: reply de hace ~12 h; ninguna notificación de Nick y la vista del hilo (67 turnos, complete:false) no cargó su rama, así que no hay evidencia de respuesta."
       }
     ],
     "user_id": "61563282663741",
@@ -6741,5 +6754,25 @@
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No discutir si el cerdo también quiere a la gente. Conceder el vínculo con el perro y mostrar que el criterio mide la relación con nosotros, no a quien siente."
+  },
+  {
+    "tactics": [
+      "crop_deaths_flip",
+      "futility_no_clean_option"
+    ],
+    "threads": [
+      "29025958730394673"
+    ],
+    "interactions": [],
+    "user_id": "100000351368861",
+    "name": "Joey Gockel",
+    "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100000351368861/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Si el veganismo es no querer dañar animales, no puede justificar los miles de millones que mueren protegiendo cultivos; al menos al animal sacrificado para comer no se le desperdicia.",
+    "analisis": "2026-11-08, raíz en el post de Remiel Bird \"bored vegan here. someone debate me\" (VEGANnoyance, 136 comentarios): \"If your veganism is based on not wanting to harm animals, how do justify killing over 7 billion animals a year to protect crops? At least the animals that are slaughtered for food aren't wasted like the ones destroyed to protect crops.\" Con link de plantbasednews. Es el crop_deaths_flip de libro, montado sobre la premisa de que el veganismo es un conteo de daño; \"aren't wasted\" trata al animal como material cuyo único defecto posible es el desperdicio. Remiel le contestó con el conteo (menos bocas, menos cultivos), que es jugar en su cancha. Una pregunta directa con fuente, sin insulto.",
+    "tone": "civil",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No competir en el conteo de muertes ni citar estudios de cuántos animales mueren por hectárea. No conceder que la cosecha y la granja son lo mismo en menor grado. No discutir la cifra de 7 mil millones (se le concede). El eje es a quién se posee: en el campo de cultivo nadie es propiedad de nadie."
   }
 ]

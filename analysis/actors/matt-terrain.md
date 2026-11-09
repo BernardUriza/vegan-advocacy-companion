@@ -13,6 +13,7 @@
 ## Análisis
 
 El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qué comes, vistes o habitas que NO dañe'. Sócrates hostil: pregunta para tender trampa, no para aprender. Seco, retórico, no insultante. Argumentativo de verdad — busca pelea dialéctica. No muerde los argumentos de Bernard; los elude. SINK CONFIRMADO (2026-06-20): corre el MISMO guion en cada hilo (tu-quoque / goalpost / hipocresia) y NUNCA concede; tras nombrarle limpio la evasion colapsa al loop terminal "my statement stands, you are avoiding/lying" con cero argumento nuevo. Medido en 3 hilos el mismo dia (mercado, especismo, hipocresia): el primer intercambio limpio educa al lurker; del 2do round en adelante el retorno es cero. 2026-09-25: en el post del relativismo (copia VS Meat Eaters) pasó de "me perdí" a CONTESTAR el título con una razón: "what justifies it is it makes food collection/supply easier, nothing wrong with it". Primer turno de buena fe medible; merece una vuelta respetuosa, no filo.
+2026-11-09: post propio en Vegans VS Meat Eaters (9h, 6 reacciones, 33 comentarios) contra David Huggens, vegano que tiene una serpiente desde los 12 años: "has kept this snake in a tiny plastic dish inside a small glass tank, for almost 40 years. No freedom, no sunshine, no rain, no vegetation. But keep a cow in a paddock, or a pig in a shed, and we are the evil ones." El hilo es un pleito de insultos entre David, Harry Barr y Damien Mcdevitt. Lo valioso: Matt describe el cautiverio de la serpiente como algo que se le hace A ELLA ("No freedom"), que es reconocer un lado propio en un animal poseído, y en la misma frase lo usa como tu-quoque para absolver el corral y el cobertizo. El mismo día, en el post de Remiel Bird (VEGANnoyance), le corre a Remiel el guion de siempre (azúcar, alcohol, café, "there is no alternative sustenance that involves no killing") y Remiel le contesta en conteo de daño.
 
 ## Tácticas
 
@@ -28,6 +29,10 @@ El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qu
   - _Contra:_ A trend isn't refuted by saying 'but it's not the future yet.' The trajectory is measured in the present — that's the point. Dismissing tomorrow doesn't change today's direction.
 - **Convenience as Justification** (`conveniencia_como_justificacion`) — Answers the property question with the owner's convenience: "what justifies it is that it makes food collection/supply easier, and there is nothing wrong with it." Distinct from taste (preferencia_gusto): it names a systemic benefit to the owner as the reason for the title. Rare and valuable — it is an actual answer to the question instead of a dodge (Matt Terrain, 2026-09-22).
   - _Contra:_ Credit the straight answer first (it is more than most give). Grant that convenience is real and explains why the system is built on the title: owning the animal makes breeding, moving and selling her simple. Then test whether convenience-for-the-owner can carry a title over SOMEONE: for a thing it can (convenience is all a chair needs); over a being with a point of view, the owner's convenience is the reason every title over a subject has been defended with, and it describes the owner's gain, never a reason the owned one could accept. Back to the question: does easier-for-us make the title legitimate over someone with a point of view of her own?
+- **Hypocrisy via the possible-and-practicable clause** (`hipocresia_clausula_practicable`) — Francione analogy: a vegan who is against exploitation but invokes the Vegan Society clause (as far as is possible and practicable) to keep exploiting is as moral as someone against child abuse who keeps abusing because stopping is not practicable. Used by abolitionist PURISTS against welfarist vegans (flanking from the left, often in other vegans posts) and occasionally by anti-vegans as a tu-quoque. In a vegan-authored post it turns the comments into an intramural debate, which hands the cornered carnist an exit (they cannot even agree, so it IS subjective).
+  - _Contra:_ Two layers. STRATEGIC first: in your own post, do not feed the intramural debate — patience, let the post gather lurkers; the OP not biting internal drama is already text. When answering: short, courteous, acknowledge the point (Francione, yes), distinguish avoidable exploitation (buying the product of the title when walking past it is an option) from the structurally inescapable (roads, old medicine, supply chains nobody designed); the valid critique is of whoever uses the clause as an alibi, not of the concept. Take the long version to a root post of its own. PHILOSOPHICAL layer stays abolitionist: exploitation at issue = title/property over a conscious being; the field mouse belongs to no one; the seat of the one continuing the practice is the buyer of the title. Never defend the clause on harm-reduction terms.
+- **Whataboutism / Human Exploitation Deflection** (`whataboutism`) — Deflects the animal ethics argument by pointing to human suffering: 'millions of humans are exploited every day and no one bats an eye'. Uses human suffering as an excuse to dismiss animal suffering rather than addressing both.
+  - _Contra:_ Concern for animal suffering doesn't prevent concern for human suffering — these aren't a zero-sum budget. 'Both matter. Noticing one doesn't cancel the other.' Then return to the original question.
 
 ## Counter-arsenal
 
@@ -63,10 +68,13 @@ El más resbaladizo de clasificar. Ataca por el flanco de la futilidad: 'dime qu
   - `momento-truman-traicion-de-los-tuyos` → _deploy as:_ marco
 - **Convenience as Justification** (`conveniencia_como_justificacion`)
   - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
+- **Whataboutism / Human Exploitation Deflection** (`whataboutism`)
+  - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
+  - `pandemia-cooptada-todo-vale` → _deploy as:_ auto-disciplina-del-activista
 
 ## Qué NO hacer
 
-NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop deaths (pantano cebado para eso). NO intentar demostrar que el veganismo causa daño-cero. NO perseguir el loop terminal: ENTRAR UNA SOLA VEZ por hilo (nombrar la evasion + devolver al hueso) y dejar que su reafirmacion vacia quede como ultima palabra visible. NO redactar un 2do/3er rebuttal en el mismo hilo — es sink, el lurker ya vio el patron.
+NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop deaths (pantano cebado para eso). NO intentar demostrar que el veganismo causa daño-cero. NO perseguir el loop terminal: ENTRAR UNA SOLA VEZ por hilo (nombrar la evasion + devolver al hueso) y dejar que su reafirmacion vacia quede como ultima palabra visible. NO redactar un 2do/3er rebuttal en el mismo hilo — es sink, el lurker ya vio el patron. 2026-11-09 (post de la serpiente): no defender a David ni su terrario; no entrar al pleito de insultos; concederle entero que la serpiente en el traste está mal y cobrarle su propia frase.
 
 ## Log de interacciones
 
@@ -126,4 +134,4 @@ NO morder el anzuelo de 'listar eventos'. NO meterse al body-count de crop death
 - **Su jugada:** Ronda 6: sorry. Repeating yourself means nothing. An animal wants food and water and comfort, company if a herd or pack animal, that is all.
 - **Nuestra respuesta:** Corto (82 palabras): usé SU lista (food, water, comfort, company) como el lado propio de ella; un objeto no quiere nada; el título le da a otro la decisión sobre las cuatro, incluido el día en que paran; cierre en el título. Salgo del hilo tras esta vuelta.
 
-_Hilos: 27341517928804691, 27335635946059556, 27937793019177176, 28046483408306158, 27375477042075446, 27319402757682875, 27051763587778150_
+_Hilos: 27341517928804691, 27335635946059556, 27937793019177176, 28046483408306158, 27375477042075446, 27319402757682875, 27051763587778150, 28728836200070872, 29025958730394673_

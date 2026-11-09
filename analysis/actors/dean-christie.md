@@ -6,12 +6,13 @@
 - **Perfil:** https://www.facebook.com/groups/770211166362062/user/1198831097/
 - **Bando:** anti-vegan
 - **Veredicto:** audiencia · **Registro:** filo · **Tono:** civil
-- **Postura núcleo:** Pide definir someone; sugiere que mi definicion no es la comun.
+- **Postura núcleo:** La sintiencia da intereses propios y deberes de cuidado, pero no vuelve ilegítimo el título: un dueño puede vender por sus propias razones mientras respete esos deberes. Lo que protege al recién nacido sería la "capacity for moral agency", que deja como "one possible factor among several" sin defenderla; a mí me pide probar por qué la sintiencia sola basta.
 
 ## Análisis
 
 Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil con anzuelo (tu definicion no es la comun) -> riesgo de pantano semantico. No troll. Engageable para el lurker si se define limpio y se invierte la carga. | 2026-11-05, raíz en mi post del baby deer (VEGANnoyance), me etiqueta: sentir miedo/frío da razón para considerar su bienestar, falta el argumento de que poseerlos sea ilegítimo; rescatar al venado y tener animales de granja es consistente con responsabilidades hacia ambos; la gente decidió por la venada (la cargó, la abrigó), así que "decidir por sí misma" no es mi único criterio. Pide: ¿qué hace ilegítima la propiedad, el estatus legal o lo que el dueño hace?
 2026-11-07, post baby deer (VEGANnoyance): acepta la distinción tutela/título ("We've been over it") y pide por qué la sintiencia sola hace impermisible la discreción del título; caso: el granjero que se retira vende a la vaca a un comprador con igual cuidado. "If you think the sale still wrongs her, what makes it wrong?" Reabre el caso del recién nacido: cómo se estableció que la sintiencia sola explica la protección.
+2026-11-08 (11h), post baby deer (VEGANnoyance): contesta en menos de una hora. "You still haven't shown why sentience, by itself, makes holding those powers morally wrong. You've stated that you believe it does." Niega que las razones del granjero "outrank her side": los deberes limitan a quién vende y puede cobrar respetándolos; "You think the transfer of title still wrongs her. That's the disagreement." Palanca de procedencia: "You previously called your conclusion derived. Now you say your position stops at a premise. Which premise?" (cierto: lo dije hace 5 semanas en 27468645086091974, derivada del principio de que un sujeto consciente tiene intereses propios; las dos frases describen la misma estructura). No tocó la venta del tutor con cuidado idéntico. Cumple el criterio de salida: repite que mi premisa es premisa y la suya queda como lista abierta.
 
 ## Tácticas
 
@@ -37,7 +38,7 @@ Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil c
 
 ## Qué NO hacer
 
-No litigar cual definicion es la comun, no dar definicion academica/juridica, no tratarla como premisa cerrada. Definir llano, anclar en la intuicion, invertir la carga.
+No litigar cual definicion es la comun, no dar definicion academica/juridica, no tratarla como premisa cerrada. Definir llano, anclar en la intuicion, invertir la carga. 2026-11-09: no abrir un caso nuevo ni otra ronda de la venta; no conceder que cambié de posición (derivada y premisa son la misma estructura, se dice como hecho); reply de cierre corta con las dos premisas lado a lado, y después silencio.
 
 ## Log de interacciones
 
@@ -221,7 +222,7 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Raíz en mi post del baby deer (VEGANnoyance), me etiqueta: "What, specifically, makes ownership illegitimate in your view? Is it the legal status itself, even where an animal is well cared for, or particular things an owner might do?" Concede sentir; dice que en el hielo decidieron por ella.
 - **Nuestra respuesta:** Limpio (187 palabras): concedo el hielo como hecho; su frase "justified because they helped her" es mi criterio; respuesta: el estatus mismo, el título hace que las decisiones respondan al dueño y el buen trato queda a su discreción; sentir basta para que la pregunta exista; cierre: cuando la venden, ¿a nombre de quién se decide?
 
-### Hilo `28966371949686685` — 2026-11-08 · outcome: **pending**
+### Hilo `28966371949686685` — 2026-11-08 · outcome: **engaged**
 - **Su jugada:** Contesta mi reply (VEGANnoyance, baby deer): "The question is why sentience alone makes the discretion that comes with title morally impermissible." Caso de la venta con cuidado igual: "If you think the sale still wrongs her, what makes it wrong?"
 - **Nuestra respuesta:** Tomé su "The farmer's" como respuesta: la venta sirve a su retiro. Recién nacido vendido a una familia igual de buena: incorrecto aunque el cuidado sea idéntico, porque el tutor lo vuelve fuente de ingreso. Suficiencia: el tractor no tiene lado propio, la vaca sí. Mi premisa es premisa; la suya (las "own reasons" del vendedor por encima de ella) sigue sin argumento.
 

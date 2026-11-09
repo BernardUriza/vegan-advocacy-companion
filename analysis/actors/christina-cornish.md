@@ -56,7 +56,7 @@ No pelear credenciales de granja ni defender tener mascotas en abstracto. Conced
 - **Su jugada:** Raíz en mi post del baby deer (VVME): "I love how non farmers, know nothing about animals... these same people making these comments have animals as pets... Hmmmm"
 - **Nuestra respuesta:** Profano (121): los granjeros conocen a los animales y lo que saben es que hay alguien; las mascotas lo aclaran: al perro nombre, a la vaca arete con número; esa etiqueta cambia el papeleo; cierre: qué saben que la vuelva propiedad de alguien.
 
-### Hilo `28656662030621623` — 2026-11-08 · outcome: **pending**
+### Hilo `28656662030621623` — 2026-11-08 · outcome: **goalpost**
 - **Su jugada:** Contesta mi reply (VVME, baby deer): "Why dont you go ask your Vegan buddies who own pets. Lots Vegans own animals and it funny that their property."
 - **Nuestra respuesta:** Concedí que el perro de un vegano es propiedad ante la ley, el mío incluido: ese es el punto; perro y vaca en la misma columna, "pet" y "livestock" esconden el mismo título; sin exención para veganos. Cierre con su "funny".
 
