@@ -37,10 +37,10 @@ function tagUnits(seen) {
   return out;
 }
 
-function timeAnchorOf(key) {
+function timeAnchorsOf(key) {
   const u = document.querySelector(`[data-scout="${CSS.escape(key)}"]`);
-  if (!u) return null;
-  return [...u.querySelectorAll('a[href]')].find((a) => !a.closest('div[role="article"]') && /^\?__cft__/.test(a.getAttribute('href')) && !(a.innerText || '').trim()) || null;
+  if (!u) return [];
+  return [...u.querySelectorAll('a[href]')].filter((a) => !a.closest('div[role="article"]') && /^\?__cft__/.test(a.getAttribute('href'))).slice(0, 3);
 }
 
 function readUnit({ key, me }) {
@@ -65,10 +65,12 @@ function readUnit({ key, me }) {
 }
 
 async function readPost(page, group, key, known) {
-  const h = await page.evaluateHandle(timeAnchorOf, key);
-  const el = h.asElement();
+  const list = await page.evaluateHandle(timeAnchorsOf, key);
+  const n = await page.evaluate((a) => a.length, list);
   let post_id = null, ageMin = UNKNOWN_AGE, tips = [];
-  if (el) {
+  for (let i = 0; i < n && !post_id; i++) {
+    const el = (await page.evaluateHandle(([a, k]) => a[k], [list, i])).asElement();
+    if (!el) continue;
     await el.scrollIntoViewIfNeeded().catch(() => {});
     await el.hover({ timeout: 4000 }).catch(() => {});
     for (let w = 0; w < 6 && ageMin === UNKNOWN_AGE; w++) {
@@ -91,9 +93,10 @@ async function readPost(page, group, key, known) {
 }
 
 async function scoutGroup(group, known) {
-  const { page, done } = await openScratchPage();
+  const { page, done } = await openScratchPage({ deadlineMs: 420000, stage: `scout ${group.id}` });
   const posts = [];
   const seen = [];
+  let pastWindow = false;
   try {
     await page.goto(`https://www.facebook.com/groups/${group.id}/?sorting_setting=CHRONOLOGICAL`, { waitUntil: 'domcontentloaded', timeout: 45000 });
     await sleep(jitter(4000));
@@ -103,10 +106,12 @@ async function scoutGroup(group, known) {
         seen.push(key);
         const p = await readPost(page, group, key, known);
         if (p) posts.push(p);
+        if (p && p.ageMin !== UNKNOWN_AGE && p.ageMin > maxAgeMin) pastWindow = true;
       }
-      if (s === scrolls) break;
-      await page.evaluate(() => window.scrollBy(0, 1600));
-      await page.mouse.wheel(0, 400);
+      if (s === scrolls || pastWindow) break;
+      const vp = page.viewportSize() || { width: 1200, height: 800 };
+      await page.mouse.move(Math.round(vp.width / 2), Math.round(vp.height / 2));
+      await page.mouse.wheel(0, 1600);
       await sleep(jitter(1500));
     }
   } finally {
