@@ -3039,8 +3039,8 @@
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
         "outcome": "engaged",
-        "outcome_evidence": "Only those eaten by mankind will be dead BEFORE being eaten... THAT is what the power of decision has decided.",
-        "outcome_note": "domesticar-eufemismo-dominar aterrizó: no defendió la receta del miedo; migró a 'mueren mejor/viven más' y a 'el poder de decisión decidió', que es la pregunta del título concedida como hecho de poder."
+        "outcome_evidence": "THAT is what the power of decision has decided.",
+        "outcome_note": "domesticar-eufemismo-dominar: contestó con 'the power of decision has decided', que admite quién tiene la pluma; siguió el intercambio sin conceder."
       },
       {
         "thread_id": "28966371949686685",
@@ -3055,7 +3055,9 @@
         "voice": "limpio",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "sin turno de Tiana tras la reply del 1d",
+        "outcome_note": "dominacion-no-es-superioridad-moral: reply de hace 1 día sin respuesta todavía."
       }
     ]
   },
@@ -3893,7 +3895,9 @@
         "voice": "limpio",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending"
+        "outcome": "engaged",
+        "outcome_evidence": "The question is why sentience alone makes the discretion that comes with title morally impermissible.",
+        "outcome_note": "sobreposicion-de-especies-criterio-leido: Dean aceptó la distinción tutela/título ('I understand your distinction… We've been over it') y movió la carga a por qué la sintiencia sola prohíbe la discreción del título; trae el caso de la venta del granjero que se retira. No concede fondo."
       }
     ],
     "user_id": "1198831097",
@@ -3901,7 +3905,7 @@
     "profile_url": "https://www.facebook.com/groups/770211166362062/user/1198831097/",
     "bando": "anti-vegan",
     "postura_nucleo": "Pide definir someone; sugiere que mi definicion no es la comun.",
-    "analisis": "Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil con anzuelo (tu definicion no es la comun) -> riesgo de pantano semantico. No troll. Engageable para el lurker si se define limpio y se invierte la carga. | 2026-11-05, raíz en mi post del baby deer (VEGANnoyance), me etiqueta: sentir miedo/frío da razón para considerar su bienestar, falta el argumento de que poseerlos sea ilegítimo; rescatar al venado y tener animales de granja es consistente con responsabilidades hacia ambos; la gente decidió por la venada (la cargó, la abrigó), así que \"decidir por sí misma\" no es mi único criterio. Pide: ¿qué hace ilegítima la propiedad, el estatus legal o lo que el dueño hace?",
+    "analisis": "Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil con anzuelo (tu definicion no es la comun) -> riesgo de pantano semantico. No troll. Engageable para el lurker si se define limpio y se invierte la carga. | 2026-11-05, raíz en mi post del baby deer (VEGANnoyance), me etiqueta: sentir miedo/frío da razón para considerar su bienestar, falta el argumento de que poseerlos sea ilegítimo; rescatar al venado y tener animales de granja es consistente con responsabilidades hacia ambos; la gente decidió por la venada (la cargó, la abrigó), así que \"decidir por sí misma\" no es mi único criterio. Pide: ¿qué hace ilegítima la propiedad, el estatus legal o lo que el dueño hace?\n2026-11-07, post baby deer (VEGANnoyance): acepta la distinción tutela/título (\"We've been over it\") y pide por qué la sintiencia sola hace impermisible la discreción del título; caso: el granjero que se retira vende a la vaca a un comprador con igual cuidado. \"If you think the sale still wrongs her, what makes it wrong?\" Reabre el caso del recién nacido: cómo se estableció que la sintiencia sola explica la protección.",
     "tone": "civil",
     "verdict": "audiencia",
     "register": "filo",
@@ -4077,11 +4081,13 @@
       "naturalismo",
       "species_hierarchy",
       "data_dump_selectivo",
-      "ecocentrismo_conservacion"
+      "ecocentrismo_conservacion",
+      "conveniencia_como_justificacion"
     ],
     "threads": [
       "27330688236588406",
-      "28620931384196666"
+      "28620931384196666",
+      "28721895640764928"
     ],
     "interactions": [
       {
@@ -4216,7 +4222,7 @@
     "profile_url": "https://www.facebook.com/groups/2295597740524135/user/100003780189781/",
     "bando": "anti-vegan",
     "postura_nucleo": "Los granjeros no son DUEÑOS, son \"stewards\" que manejan livestock/recursos naturales; los animales sienten dolor/miedo/curiosidad pero no tienen sentido de sí ni concepto de la muerte, así que no tienen interés en vivir — es solo como funciona el mundo.",
-    "analisis": "Mala fe con paragraph sustancial. Relabela la propiedad como \"stewardship\" (principio_escudo) y su propia definición de diccionario mete al animal junto con \"land, water and natural resources\" y \"product\" — es decir, ADMITE los marcadores de alguien (pain, fear, curiosity, basic emotions) y los archiva como ALGO/recurso. Niega la subjetividad por un criterio (no concept of death -> no interest) que es species_hierarchy. Cierra con naturalismo (\"the way the world works before/after humans\"). Capa de burla: \"cheap thrills\", \"get a dictionary\", y se mofa de la DIGNIDAD de Bernard mientras se la roba al sujeto al llamarlo recurso. El target del replylink es su réplica burlona a Philip (\"paying with his dignity\").",
+    "analisis": "Mala fe con paragraph sustancial. Relabela la propiedad como \"stewardship\" (principio_escudo) y su propia definición de diccionario mete al animal junto con \"land, water and natural resources\" y \"product\" — es decir, ADMITE los marcadores de alguien (pain, fear, curiosity, basic emotions) y los archiva como ALGO/recurso. Niega la subjetividad por un criterio (no concept of death -> no interest) que es species_hierarchy. Cierra con naturalismo (\"the way the world works before/after humans\"). Capa de burla: \"cheap thrills\", \"get a dictionary\", y se mofa de la DIGNIDAD de Bernard mientras se la roba al sujeto al llamarlo recurso. El target del replylink es su réplica burlona a Philip (\"paying with his dignity\").\n2026-11-08, raíz en el post de Vinay sobre carne de perro (31 reacciones, el comentario más votado del hilo): que no se cría perro para carne en el primer mundo porque \"simply isn't practical\" a escala comercial; el perro es animal de trabajo. Toda su respuesta es de viabilidad comercial; no toca a quién se posee.",
     "tone": "sarcastic",
     "verdict": "audiencia",
     "register": "filo",
@@ -4671,7 +4677,7 @@
         "reply_depth": 1,
         "reply_position": 1,
         "outcome_evidence": "are you autistic?",
-        "outcome_note": "sello-insulto sin argumento tras el recibo de septiembre; no enganchar más."
+        "outcome_note": "algo-a-alguien-sujeto-derecho: contestó con insulto ('are you autistic?'), sin argumento. Pozo; no reengachar."
       }
     ],
     "user_id": "832080524",
@@ -5805,9 +5811,9 @@
         "voice": "limpio",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending",
-        "outcome_evidence": "sin turnos de Phil tras la reply",
-        "outcome_note": "sin respuesta a 3 días; el ejemplo de la esclavitud legal no ha recibido contestación."
+        "outcome": "silent",
+        "outcome_evidence": "sin turno de Phil tras la reply de hace 4d",
+        "outcome_note": "dominacion-no-es-superioridad-moral: la analogía de la ley que legalizó poseer personas quedó sin respuesta en 4 días."
       }
     ],
     "user_id": "838293183",
@@ -6446,8 +6452,8 @@
         "outcome": "goalpost",
         "reply_depth": 1,
         "reply_position": 1,
-        "outcome_evidence": "that's a lot of words just to say I'm right. / Barbara Fayad: you mean he ate more animals",
-        "outcome_note": "filtro-especie-vs-individuo: él se declaró ganador sin tocar el punto; dos terceros (RC Boyle, Barbara Fayad) lo refutaron a él.",
+        "outcome_evidence": "that's a lot of words just to say I'm right.",
+        "outcome_note": "filtro-especie-vs-individuo: 'a lot of words just to say I'm right' es retirada sin tocar el punto; dos terceros (RC Boyle, Barbara Fayad) le refutan la tesis del cazador-salvador.",
         "third_party_stance": "apoyo"
       }
     ],
@@ -6509,7 +6515,7 @@
         "reply_depth": 1,
         "reply_position": 1,
         "outcome_evidence": "You never seen the humorous side?",
-        "outcome_note": "sin cambio: el goalpost a 'humor' y al hecho documentado ya quedó registrado y contestado."
+        "outcome_note": "dominacion-no-es-superioridad-moral: se movió al 'humorous side' y al dato de manejo de fauna; no contestó quién decide su fin."
       },
       {
         "thread_id": "28966371949686685",
@@ -6524,9 +6530,9 @@
         "voice": "profano",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending",
-        "outcome_evidence": "sin turnos de Lech tras la reply",
-        "outcome_note": "sin respuesta a la segunda reply (dependencia como modelo de negocio de la granja)."
+        "outcome": "silent",
+        "outcome_evidence": "sin turno de Lech tras la segunda reply",
+        "outcome_note": "algo-a-alguien-sujeto-derecho: la vuelta de 'reduce fear and increase dependency' como modelo de negocio de la granja no tuvo respuesta en 4 días."
       }
     ],
     "user_id": "100000250226616",
@@ -6583,8 +6589,8 @@
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
         "outcome": "engaged",
-        "outcome_evidence": "It is morally right to eat the det your body is biologically meant to eat; the omnivorous diet.",
-        "outcome_note": "no-necesidad-cambiaron-las-reglas: no tocó el supermercado ni el título; repitió 'omnívoro biológico' y torció la palabra suplementación de Susan como concesión. Susan la refutó.",
+        "outcome_evidence": "It is morally right to eat the det your body is biologically meant to eat",
+        "outcome_note": "no-necesidad-cambiaron-las-reglas: contestó repitiendo la tesis con 'biologically meant'; Susan Lynn Hebel le refutó la B12 dos veces.",
         "third_party_stance": "apoyo"
       },
       {
@@ -6600,7 +6606,9 @@
         "voice": "limpio",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending"
+        "outcome": "pending",
+        "outcome_evidence": "sin turno de Jenine tras la reply del 1d",
+        "outcome_note": "antropoespecismo: reply de hace 1 día sin respuesta todavía."
       }
     ],
     "user_id": "676885588",
@@ -6617,7 +6625,8 @@
   {
     "tactics": [
       "demanda_credencial",
-      "apelacion_normal"
+      "apelacion_normal",
+      "whataboutism"
     ],
     "threads": [
       "28656662030621623"
@@ -6636,7 +6645,9 @@
         "voice": "profano",
         "voice_assignment": "randomized",
         "voice_propensity": 0.5,
-        "outcome": "pending"
+        "outcome": "goalpost",
+        "outcome_evidence": "Lots Vegans own animals and it funny that their property.",
+        "outcome_note": "filtro-especie-vs-individuo: no tocó el 'somebody in there'; brincó al tu-quoque de que los veganos también tienen mascotas como propiedad."
       }
     ],
     "user_id": "1034528242",
@@ -6644,10 +6655,30 @@
     "profile_url": "https://www.facebook.com/groups/683615698352965/user/1034528242/",
     "bando": "anti-vegan",
     "postura_nucleo": "Los que no son granjeros no saben nada de animales, y los mismos que critican tienen mascotas.",
-    "analisis": "2026-11-05, raíz en mi post del baby deer (Vegans VS Meat Eaters, 0 reacciones): \"I love how non farmers, know nothing about animals. Always making comments funny story they these same people making these comments have animals as pets... Hmmmm\". Credencial (solo el granjero sabe) más tu-quoque de mascotas. Drive-by.",
+    "analisis": "2026-11-05, raíz en mi post del baby deer (Vegans VS Meat Eaters, 0 reacciones): \"I love how non farmers, know nothing about animals. Always making comments funny story they these same people making these comments have animals as pets... Hmmmm\". Credencial (solo el granjero sabe) más tu-quoque de mascotas. Drive-by.\n2026-11-07, contestó mi reply con tu-quoque: \"Why dont you go ask your Vegan buddies who own pets. Lots Vegans own animals and it funny that their property.\" No tocó el \"somebody in there\".",
     "tone": "dismissive",
     "verdict": "audiencia",
     "register": "filo",
     "what_not_to_do": "No pelear credenciales de granja ni defender tener mascotas en abstracto. Conceder que el granjero sabe de animales; esa experiencia es exactamente la que dice que son alguien. No acusarla de hipocresía."
+  },
+  {
+    "tactics": [
+      "afecto_como_criterio",
+      "species_hierarchy"
+    ],
+    "threads": [
+      "28721895640764928"
+    ],
+    "interactions": [],
+    "user_id": "61563282663741",
+    "name": "Nick Banks",
+    "profile_url": "https://www.facebook.com/groups/683615698352965/user/61563282663741/",
+    "bando": "anti-vegan",
+    "postura_nucleo": "Perros y gatos son amigos porque nos ven como familia; los demás son comida, y además hay quien come perro.",
+    "analisis": "2026-11-08, raíz en el post de Vinay Kumar sobre carne de perro (Vegans VS Meat Eaters, 112 reacciones al post): \"Pretty easy to determine between friends and food can you not ? dogs and cats are some of the only animals that dont just see us as predators that feed them and actually see us as family siblings/parents\". Criterio afectivo: el estatus moral depende del vínculo con el humano.",
+    "tone": "dismissive",
+    "verdict": "audiencia",
+    "register": "filo",
+    "what_not_to_do": "No discutir si el cerdo también quiere a la gente. Conceder el vínculo con el perro y mostrar que el criterio mide la relación con nosotros, no a quien siente."
   }
 ]

@@ -11,6 +11,7 @@
 ## Análisis
 
 Primer choque (post someone, Vegans V Meat Eaters). Demanda definicional civil con anzuelo (tu definicion no es la comun) -> riesgo de pantano semantico. No troll. Engageable para el lurker si se define limpio y se invierte la carga. | 2026-11-05, raíz en mi post del baby deer (VEGANnoyance), me etiqueta: sentir miedo/frío da razón para considerar su bienestar, falta el argumento de que poseerlos sea ilegítimo; rescatar al venado y tener animales de granja es consistente con responsabilidades hacia ambos; la gente decidió por la venada (la cargó, la abrigó), así que "decidir por sí misma" no es mi único criterio. Pide: ¿qué hace ilegítima la propiedad, el estatus legal o lo que el dueño hace?
+2026-11-07, post baby deer (VEGANnoyance): acepta la distinción tutela/título ("We've been over it") y pide por qué la sintiencia sola hace impermisible la discreción del título; caso: el granjero que se retira vende a la vaca a un comprador con igual cuidado. "If you think the sale still wrongs her, what makes it wrong?" Reabre el caso del recién nacido: cómo se estableció que la sintiencia sola explica la protección.
 
 ## Tácticas
 
@@ -216,7 +217,7 @@ No litigar cual definicion es la comun, no dar definicion academica/juridica, no
 - **Su jugada:** Reply (2h) tras mi corrección del récord (copia their-own-words, VEGANnoyance): acepta que fue la cola de admins y no un repost; en el fondo contesta qué aporta la agencia moral: "capacity for moral agency may contribute by distinguishing the kinds of moral relationships and responsibilities an individual is capable of participating in"; devuelve la carga: por qué la sintiencia basta.
 - **Nuestra respuesta:** Reply etiquetada limpia (262 palabras): le reconocí la respuesta como hecho (la agencia decide en qué relaciones se participa); la propiedad se ejerce sobre ella sin pedirle participar; suficiencia en una línea (alguien vive ese cuerpo y ese futuro desde su lado); alguien que nunca tendrá agencia varía en relaciones abiertas y no en estar fuera del mercado; "may contribute" ya contribuyó a otra pregunta. Cierre con sus palabras: "kinds of moral relationships" / "participate in".
 
-### Hilo `28966371949686685` — 2026-11-07 · outcome: **pending**
+### Hilo `28966371949686685` — 2026-11-07 · outcome: **engaged**
 - **Su jugada:** Raíz en mi post del baby deer (VEGANnoyance), me etiqueta: "What, specifically, makes ownership illegitimate in your view? Is it the legal status itself, even where an animal is well cared for, or particular things an owner might do?" Concede sentir; dice que en el hielo decidieron por ella.
 - **Nuestra respuesta:** Limpio (187 palabras): concedo el hielo como hecho; su frase "justified because they helped her" es mi criterio; respuesta: el estatus mismo, el título hace que las decisiones respondan al dueño y el buen trato queda a su discreción; sentir basta para que la pregunta exista; cierre: cuando la venden, ¿a nombre de quién se decide?
 

@@ -24,3 +24,8 @@ The first line of the description is what stayed with me. A woman was heading ou
 - **Morgan Jenkins** a mi reply: "are you autistic?" (sello, no se engancha).
 - **Lech Kaminski Robins** a mi segunda reply: humor del "barbie", la habituación reduce el miedo y aumenta la dependencia, "This is harmful to wildlife".
 - **Brett Long** (raíz, 1 día): chiste de deslizar al venado "like Bambi". Sin contestar.
+
+## Actualización 2026-11-08 (lote 1108A)
+
+- **Dean Christie** (1d) contestó mi reply del 1107A: acepta la distinción tutela/título ("We've been over it") y pide por qué la sintiencia sola hace impermisible la discreción del título. Caso nuevo: el granjero que se retira vende a la vaca a un comprador que la cuida igual de bien; "If you think the sale still wrongs her, what makes it wrong? Saying 'because she's property' just gives me your conclusion again." Reabre el recién nacido: cómo establecí que la sintiencia sola explica la protección.
+- Morgan Jenkins contestó con "are you autistic?" (escalated). Brett Long (2d) y Vincent Coutable (4d): chistes de raíz, sin argumento.

@@ -11,6 +11,7 @@
 ## Análisis
 
 2026-11-05, raíz en mi post del baby deer (Vegans VS Meat Eaters, 0 reacciones): "I love how non farmers, know nothing about animals. Always making comments funny story they these same people making these comments have animals as pets... Hmmmm". Credencial (solo el granjero sabe) más tu-quoque de mascotas. Drive-by.
+2026-11-07, contestó mi reply con tu-quoque: "Why dont you go ask your Vegan buddies who own pets. Lots Vegans own animals and it funny that their property." No tocó el "somebody in there".
 
 ## Tácticas
 
@@ -18,6 +19,8 @@
   - _Contra:_ Grant the real work the other person does, without sarcasm, and grant your own limits. Then point out that a question stands or falls on its own: it would be the same question coming from them. Turn back to the question itself, ideally through something from their own experience (the bond, the rescue) that shows there is someone there.
 - **Appeal to Normalcy / Default** (`apelacion_normal`) — Justifies an action because it is 'normal', 'what we do', or 'the default'. Confuses descriptive norm with moral justification. 'Humans eat meat by default. The onus is on the fringe ideology.'
   - _Contra:_ Slavery was normal. Normalcy is a fact about behavior, not a moral argument. The question is whether the default is justifiable, not whether it's widespread.
+- **Whataboutism / Human Exploitation Deflection** (`whataboutism`) — Deflects the animal ethics argument by pointing to human suffering: 'millions of humans are exploited every day and no one bats an eye'. Uses human suffering as an excuse to dismiss animal suffering rather than addressing both.
+  - _Contra:_ Concern for animal suffering doesn't prevent concern for human suffering — these aren't a zero-sum budget. 'Both matter. Noticing one doesn't cancel the other.' Then return to the original question.
 
 ## Counter-arsenal
 
@@ -39,6 +42,9 @@
   - `estereotipo-prejuicio-discriminacion` → _deploy as:_ marco
   - `dos-caras-misma-moneda` → _deploy as:_ marco
   - `dominacion-no-es-superioridad-moral` → _deploy as:_ marco
+- **Whataboutism / Human Exploitation Deflection** (`whataboutism`)
+  - `violencia-indirecta-quien-demanda` → _deploy as:_ marco
+  - `pandemia-cooptada-todo-vale` → _deploy as:_ auto-disciplina-del-activista
 
 ## Qué NO hacer
 
@@ -46,7 +52,7 @@ No pelear credenciales de granja ni defender tener mascotas en abstracto. Conced
 
 ## Log de interacciones
 
-### Hilo `28656662030621623` — 2026-11-07 · outcome: **pending**
+### Hilo `28656662030621623` — 2026-11-07 · outcome: **goalpost**
 - **Su jugada:** Raíz en mi post del baby deer (VVME): "I love how non farmers, know nothing about animals... these same people making these comments have animals as pets... Hmmmm"
 - **Nuestra respuesta:** Profano (121): los granjeros conocen a los animales y lo que saben es que hay alguien; las mascotas lo aclaran: al perro nombre, a la vaca arete con número; esa etiqueta cambia el papeleo; cierre: qué saben que la vuelva propiedad de alguien.
 

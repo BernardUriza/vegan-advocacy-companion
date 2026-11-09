@@ -429,5 +429,15 @@
     "register": "compasivo",
     "what_not_to_do": "Don't recite your activist credentials or get defensive. Don't belittle their rescue work. Don't make it a contest of who helps animals more.",
     "fallacy_type_id": null
+  },
+  {
+    "id": "afecto_como_criterio",
+    "name": "Affection as the Criterion",
+    "category": "rhetoric",
+    "definition": "Sorts animals into \"friends\" and \"food\" by the bond they have with us: the dog sees us as family, so she is spared; the pig does not, so she is food. The moral line is drawn at how the animal relates to humans, not at what the animal is (Nick Banks, 2026-11-08).",
+    "canonical_counter": "Grant the bond fully: the dog does treat you as family, that is real. Then point at what the criterion measures: how useful or attached the animal is to us. The pig feels, fears and prefers just like the dog; what she lacks is a seat at our table. A line drawn by our affection is a line about us. Back to the question: what makes it legitimate to own the one who feels whether or not she loves you back?",
+    "register": "filo",
+    "what_not_to_do": "Do not argue that pigs also love humans (it accepts affection as the criterion). Do not mock the love for dogs; it is the intuition we want. Do not turn it into intelligence rankings.",
+    "fallacy_type_id": null
   }
 ]

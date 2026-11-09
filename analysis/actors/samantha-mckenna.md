@@ -11,6 +11,7 @@
 ## Análisis
 
 Mala fe con paragraph sustancial. Relabela la propiedad como "stewardship" (principio_escudo) y su propia definición de diccionario mete al animal junto con "land, water and natural resources" y "product" — es decir, ADMITE los marcadores de alguien (pain, fear, curiosity, basic emotions) y los archiva como ALGO/recurso. Niega la subjetividad por un criterio (no concept of death -> no interest) que es species_hierarchy. Cierra con naturalismo ("the way the world works before/after humans"). Capa de burla: "cheap thrills", "get a dictionary", y se mofa de la DIGNIDAD de Bernard mientras se la roba al sujeto al llamarlo recurso. El target del replylink es su réplica burlona a Philip ("paying with his dignity").
+2026-11-08, raíz en el post de Vinay sobre carne de perro (31 reacciones, el comentario más votado del hilo): que no se cría perro para carne en el primer mundo porque "simply isn't practical" a escala comercial; el perro es animal de trabajo. Toda su respuesta es de viabilidad comercial; no toca a quién se posee.
 
 ## Tácticas
 
@@ -26,6 +27,8 @@ Mala fe con paragraph sustancial. Relabela la propiedad como "stewardship" (prin
   - _Contra:_ Concede what's true in the data, then expose the frame: 'Yes, Beyond Meat's stock crashed — that's one company with execution problems. The plant-based category grew 6% that year.' Don't match dump for dump. One incisive concede-and-reframe.
 - **Ecocentrism / Conservation over the individual** (`ecocentrismo_conservacion`) — Shifts the moral unit from the sentient INDIVIDUAL to an abstraction — 'the species', 'the ecosystem', 'nature', 'the balance', 'stewardship of the herd' — so individual animals can be bred, managed or killed for 'conservation', 'ecological health' or 'the food web'. In vegan debates: 'farming is part of the ecosystem', 'we're stewards keeping the balance', 'it's the circle of life', 'invasive species must be culled'.
   - _Contra:_ The moral unit is the concrete sentient individual, not the abstraction. A species or an ecosystem doesn't feel anything — only an individual does. 'Conservation' or 'balance' that kills a someone for the sake of a collective is the category error: you can't owe a debt to an abstraction by harming the only ones who can actually be harmed. And farming isn't an ecosystem in balance — it's a human industry of massive forced breeding, the opposite of leaving nature alone. Caring about a concrete animal who can suffer and caring about the environment aren't in tension; the conflict only appears once you let the abstraction outrank the individual who feels.
+- **Convenience as Justification** (`conveniencia_como_justificacion`) — Answers the property question with the owner's convenience: "what justifies it is that it makes food collection/supply easier, and there is nothing wrong with it." Distinct from taste (preferencia_gusto): it names a systemic benefit to the owner as the reason for the title. Rare and valuable — it is an actual answer to the question instead of a dodge (Matt Terrain, 2026-09-22).
+  - _Contra:_ Credit the straight answer first (it is more than most give). Grant that convenience is real and explains why the system is built on the title: owning the animal makes breeding, moving and selling her simple. Then test whether convenience-for-the-owner can carry a title over SOMEONE: for a thing it can (convenience is all a chair needs); over a being with a point of view, the owner's convenience is the reason every title over a subject has been defended with, and it describes the owner's gain, never a reason the owned one could accept. Back to the question: does easier-for-us make the title legitimate over someone with a point of view of her own?
 
 ## Counter-arsenal
 
@@ -73,6 +76,8 @@ Mala fe con paragraph sustancial. Relabela la propiedad como "stewardship" (prin
   - `hablamos-en-nombre-de-los-demas-animales` → _deploy as:_ auto-disciplina-del-activista
 - **Ecocentrism / Conservation over the individual** (`ecocentrismo_conservacion`)
   - `filtro-especie-vs-individuo` → _deploy as:_ marco
+- **Convenience as Justification** (`conveniencia_como_justificacion`)
+  - `algo-a-alguien-sujeto-derecho` → _deploy as:_ marco
 
 ## Qué NO hacer
 
@@ -112,4 +117,4 @@ No morder el insulto de la dignidad — UNA línea de contraste de temperamento 
 - **Su jugada:** Sello (Open Debates 3, post del león, 20m): "your trying hard but miss the reality" — mismo sello "reality" que en junio (27330), cero argumento tras mi reply de la licencia; a Chris: "no sweetheart".
 - **Nuestra respuesta:** Filo (226 palabras), replylink de Bernard: reencuadre completo con recibos verbatim. Junio: miedo/curiosidad/emociones, "they are not property", "Disposed of no", "no justification needed", "not getting the reality"; ahora: "this particular animal", licensed, "on the list… since he was attacked", "need to justify anything". Switch nombrado: individuo cuando se le rastrea, línea en lista cuando se dispone de su cuerpo; "Disposed of no" duró hasta que alguien pagó la licencia; lo único constante es "no justification needed". Cierre: ¿al menos eso es reality? y si es "this particular animal" que siente miedo, ¿qué hizo legítimo vender el derecho a matarlo?
 
-_Hilos: 27330688236588406, 28620931384196666_
+_Hilos: 27330688236588406, 28620931384196666, 28721895640764928_

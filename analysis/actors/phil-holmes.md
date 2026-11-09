@@ -59,7 +59,7 @@ No romantizar ni juzgar a pueblos indígenas; no pelear antropología; el blanco
 - **Su jugada:** so long story short, it is ok to eat animals to survive in the wilderness but not when you are in a civilisation... Got it.
 - **Nuestra respuesta:** Filo ligero (69 palabras): casi; quité el "ok": la supervivencia cambia lo que se le puede pedir a la persona, el animal sigue siendo alguien que siente y el hambre de nadie escribe un título sobre ella. Cierre: If you "Got it", what is the wilderness still doing for people buying animals inside a civilisation?
 
-### Hilo `28660102386944254` — 2026-11-04 · outcome: **pending**
+### Hilo `28660102386944254` — 2026-11-04 · outcome: **silent**
 - **Su jugada:** Raíz en post del poema de Sam Gullo (VVME): "Yet if it was so \"immoral\" it would be made illegal"
 - **Nuestra respuesta:** Limpio (123 palabras): "immoral" llega antes que "illegal"; poseer personas fue legal y el papeleo lo escribían los dueños (solo por estructura); la ley dice quién tiene el título y nada más; el poema ya concedió lo legal; cierre: quién podía llamarlo mal antes de que fuera "made illegal".
 

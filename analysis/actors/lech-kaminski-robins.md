@@ -60,7 +60,7 @@ No discutir ética de la caza ni habituación de fauna. No sonar herido por el c
 - **Su jugada:** Raíz en mi post del baby deer (VEGANnoyance, 6h): "Handy as young. Gets them used to human contact early on. Some hunters will say handy, others will say it will make the hunt less challenging. Either way, fire up the barbie"
 - **Nuestra respuesta:** Profano (116 palabras): de she a handy en dos oraciones sin que ella cambie; less challenging describe la ventaja del que sostiene el arma y dice fuck-all de ella; el poder decide quién gana el encuentro y deja abierto si alguien tenía derecho a empezarlo; cierre: ¿qué hace al que enciende la parrilla el que elige cómo termina su historia?
 
-### Hilo `28966371949686685` — 2026-11-04 · outcome: **pending**
+### Hilo `28966371949686685` — 2026-11-04 · outcome: **silent**
 - **Su jugada:** Contesta mi reply: "You never seen the humorous side?... They reduce fear and increase dependency . This is harmful to wildlife. It is, as the name suggests - WILD... again it is HUMOUR."
 - **Nuestra respuesta:** Profano (138 palabras): concedo chiste y dato; su "reduce fear and increase dependency" es el modelo de negocio de la granja; wild y livestock dicen quién tiene el título; cierre: qué hizo la vaca para perder la palabra.
 
